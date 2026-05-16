@@ -1,0 +1,98 @@
+grammar_point: will_would_habits
+title: Will/Would for Habits
+description: Use of 'will' and 'would' to describe characteristic or typical behaviour, especially behaviour that is predictable, annoying, or noteworthy.
+level: C1
+
+meaning:
+  core_meaning: "'Will' can describe present habitual behaviour that is characteristic or typical of a person or thing, often with a tone of observation, admiration, or irritation. 'Would' is the past equivalent, describing habitual behaviour in the past. This is distinct from 'will' for future or 'would' for conditionals."
+  timeline: "'Will' = present habits. 'Would' = past habits (similar to 'used to' but with a more narrative, reflective tone)."
+  contrast: |
+    Future: "She will call you tomorrow." (prediction)
+    Present habit: "She will sit for hours reading." (characteristic behaviour)
+    Past habit with would: "She would sit for hours reading." (characteristic past behaviour)
+    Past habit with used to: "She used to sit for hours reading." (past habit, no longer true)
+  ccqs:
+    - question: "Is the speaker talking about a habit or a one-time event?"
+      answer: "A habit — something that happens regularly or characteristically."
+    - question: "Is the speaker expressing any attitude towards this behaviour?"
+      answer: "Often yes — admiration, irritation, or amusement at the characteristic behaviour."
+  example_generator:
+    contexts: ["describing personality traits", "telling anecdotes", "complaining about behaviour", "nostalgic reminiscence", "character descriptions in literature"]
+    cultural_notes: ["This use of 'will' is more common in British English and in literary or formal registers", "In American English, 'would' for past habits is more common than 'will' for present habits"]
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Subject + will/would + base verb (habitual): 'He will often arrive late to meetings.' 'She would always bring flowers when she visited.' 'The cat will sit on my laptop whenever I try to work.'"
+    example_generator:
+      contexts: ["describing people", "describing places", "describing typical situations"]
+      min_examples: 4
+  negative:
+    structure: "Subject + will/would + not + base verb: 'He will never admit he is wrong.' 'She would never complain, no matter how difficult things were.' 'The car won't start on cold mornings.'"
+    example_generator:
+      contexts: ["describing stubbornness", "describing reliability", "describing typical problems"]
+      min_examples: 4
+  questions:
+    structure: "This structure is not typically used in questions for habitual meaning. Questions about habits use present simple or past simple: 'Does he always arrive late?' / 'Did she always bring flowers?'"
+    example_generator:
+      contexts: []
+      min_examples: 0
+
+sub_rules:
+  - rule: "'Will' for present characteristic behaviour"
+    type: "semantic"
+    examples: ["He will spend hours talking on the phone. (characteristic — he always does this)", "She will insist on doing everything herself. (typical of her)", "Accidents will happen. (a general truth about accidents)"]
+  - rule: "'Would' for past characteristic behaviour"
+    type: "semantic"
+    examples: ["He would always make us laugh. (characteristic past behaviour)", "She would sit by the window for hours. (typical past activity)", "Every summer, we would go to the seaside. (past routine)"]
+  - rule: "Tone — often implies the speaker's attitude (admiration, irritation, amusement)"
+    type: "pragmatic"
+    examples: ["He will keep interrupting! (irritation)", "She would always remember everyone's birthday. (admiration)", "The dog will steal food from the table. (amusement/irritation)"]
+  - rule: "With inanimate subjects — describes typical behaviour of things"
+    type: "semantic"
+    examples: ["Oil will float on water. (characteristic property)", "The car will make a strange noise when it's cold. (typical behaviour)", "This software will crash if you open too many files. (characteristic problem)"]
+  - rule: "Contrast with 'used to' for past habits"
+    type: "semantic"
+    examples: ["Used to: 'She used to live in Paris.' (fact about the past)", "Would: 'She would always greet me with a smile.' (characteristic behaviour — more vivid/narrative)"]
+
+use:
+  - name: "Describing someone's character or personality"
+    description: "Used to describe what someone typically does, revealing their character."
+    examples: ["He will always help anyone who asks.", "She will never say no to a challenge.", "My grandmother would always have a story to tell."]
+    key_point: "Creates a vivid character portrait."
+  - name: "Expressing irritation or amusement at typical behaviour"
+    description: "Used to comment on behaviour the speaker finds annoying or endearing."
+    examples: ["He will leave his clothes all over the floor!", "The printer will jam at the worst possible moment.", "She would always arrive exactly on time — never early, never late."]
+    key_point: "Tone of voice conveys the speaker's attitude."
+  - name: "Nostalgic reminiscence"
+    description: "'Would' is used in nostalgic descriptions of past routines and traditions."
+    examples: ["On Sundays, we would all gather at my grandmother's house.", "He would always kiss her goodbye at the station.", "In those days, people would leave their doors unlocked."]
+    key_point: "Creates a warm, reflective tone."
+  - name: "Describing typical properties or behaviours of things"
+    description: "Used with inanimate subjects to describe what something typically does."
+    examples: ["Water will boil at 100 degrees.", "A good wine will improve with age.", "This fabric will shrink if you wash it in hot water."]
+    key_point: "Describes inherent properties or predictable behaviours."
+
+phonetics:
+  - note: "In the habitual use, 'will' is often stressed to emphasise the characteristic nature of the behaviour: 'He WILL interrupt.' In the past habit use, 'would' is typically unstressed /wəd/."
+    example_generator:
+      contexts: ["storytelling", "character descriptions"]
+    l1_issue: "Learners may confuse habitual 'will' with future 'will'. Context and adverbs (always, often, never) help distinguish them."
+
+teaching:
+  methodology: "Awareness-raising through literary and authentic texts"
+  tips:
+    - "This is primarily a receptive skill at C1 — students should recognise and understand it, not necessarily produce it."
+    - "Use literary extracts, anecdotes, and character descriptions to illustrate the structure."
+    - "Contrast habitual 'will/would' with future 'will' and conditional 'would'."
+    - "Discuss the speaker's attitude — is the behaviour annoying, admirable, or amusing?"
+  recommended_activities:
+    - name: "Meaning identification"
+      duration: 15
+      adaptation_notes: "Give students sentences with 'will/would' and have them identify whether the meaning is future, conditional, or habitual."
+    - name: "Character description writing"
+      duration: 20
+      adaptation_notes: "Students write a character description of someone they know using 'will' for present habits or 'would' for past habits."
+    - name: "Literary analysis"
+      duration: 20
+      adaptation_notes: "Find examples in literature or film and discuss the effect of using 'will/would' for habits. What attitude does it convey?"

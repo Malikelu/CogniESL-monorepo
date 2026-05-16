@@ -1,0 +1,110 @@
+grammar_point: inversion_negative
+title: "Negative Inversion (Never, Rarely, Seldom, Hardly)"
+description: "Inverting auxiliary verb and subject after negative adverbs (never, rarely, seldom, hardly, scarcely) for formal emphasis."
+level: C1
+
+meaning:
+  core_meaning: "Inverts normal word order (Subject + Verb) to emphasize negative statements in formal writing/speech."
+  timeline: "Matches the tense of the original sentence: Present (do/does), Past (did), Perfect (have/had)."
+  contrast: "Normal: \"I have never seen this.\" (neutral)\n\nInverted: \"Never have I seen this.\" (formal, emphatic)\n\n"
+  ccqs:
+    - question: "Is this sentence formal or informal?"
+      answer: "Formal — inversion after negative adverbs is a formal structure."
+    - question: "Does the auxiliary verb come before or after the subject?"
+      answer: "Before — that's what makes it inverted."
+    - question: "Can we say 'Never I have seen this'?"
+      answer: "No — the auxiliary must come before the subject: 'Never have I seen this'."
+    - question: "Is this structure common in everyday conversation?"
+      answer: "No — it's mainly used in writing, speeches, and formal contexts."
+  example_generator:
+    contexts: ["formal writing", "speeches", "literature", "academic English"]
+    cultural_notes: ["Common in news headlines, political speeches, and literary writing", "Using inversion incorrectly can sound unnatural — it should be reserved for deliberate emphasis"]
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Negative Adverb + Auxiliary + Subject + Main Verb: \"Never have I seen such a thing.\" (Normal: I have never seen such a thing.)\n\nNegative Adverbs: never, rarely, seldom, hardly, scarcely, little, nowhere.\n\nAuxiliary must be present (do/does/did, have/has/had, will, etc.)\n\n"
+    example_generator:
+      contexts: ["food and daily routines", "weather and nature", "formal writing"]
+      min_examples: 4
+  negative:
+    structure: "Negative Adverb + Auxiliary + Subject + not + Verb: \"Never have I not wanted to help.\" (rare)"
+    example_generator:
+      contexts: ["entertainment and media", "negation"]
+      min_examples: 4
+  questions:
+    structure: "Negative Adverb + Auxiliary + Subject + Verb: \"Never have you seen this?\" (rare, rhetorical)"
+    example_generator:
+      contexts: ["everyday situations"]
+      min_examples: 4
+
+sub_rules:
+  - rule: "Common negative adverbs that trigger inversion: never, rarely, seldom, hardly, scarcely, barely, little, nowhere, no sooner"
+    type: lexical
+    examples: ["Never have I been so embarrassed.", "Rarely does he arrive on time.", "Seldom do we see such talent."]
+  - rule: "If there is no auxiliary in the normal sentence, add do/does/did"
+    type: grammatical
+    examples: ["Never did I imagine this would happen. (normal: I never imagined...)", "Rarely do they complain. (normal: They rarely complain.)"]
+  - rule: "'Hardly/Scarcely...when' and 'No sooner...than' are paired structures"
+    type: grammatical
+    examples: ["Hardly had I arrived when the phone rang.", "No sooner had we left than it started raining."]
+  - rule: "Only after/only when/only by also trigger inversion"
+    type: grammatical
+    examples: ["Only after the meeting did I realise the truth.", "Only when you try do you understand."]
+  - rule: "Not only...but also triggers inversion in the first clause"
+    type: grammatical
+    examples: ["Not only is she intelligent, but she is also kind.", "Not only did he fail, but he also gave up."]
+
+use:
+  - name: Formal Emphasis
+    description: "Emphasize negative statements in formal writing, speeches, or literature."
+    examples:
+      - "Never before have I felt so proud."
+      - "Seldom do we get such opportunities."
+    key_point: "More common in writing than spoken English."
+  - name: Rhetorical Effect
+    description: "Create dramatic effect in stories or speeches."
+    examples:
+      - "Little did I know what would happen next."
+      - "Nowhere could I find my keys."
+    key_point: "Adds a literary, dramatic tone."
+  - name: Fixed Phrases
+    description: "Common inverted phrases: 'Never have I ever...' (game)."
+    examples:
+      - "Never have I ever eaten sushi."
+    key_point: "Casual use in games, but formal otherwise."
+  - name: Paired Structures
+    description: "Hardly/Scarcely...when and No sooner...than for sequential events."
+    examples:
+      - "Hardly had she left when the trouble started."
+      - "No sooner had I sat down than the doorbell rang."
+    key_point: "The inverted clause uses past perfect; the 'when/than' clause uses past simple."
+
+phonetics:
+  - note: "The negative adverb carries strong stress: NEVER have I seen..."
+    example_generator:
+      contexts: ["sentence stress", "formal speech"]
+    l1_issue: "Learners may stress the auxiliary instead of the negative adverb, losing the emphatic effect."
+  - note: "In spoken inversion, there is often a pause after the negative adverb, creating dramatic effect"
+    example_generator:
+      contexts: ["pausing", "dramatic speech"]
+    l1_issue: "Rushing through the inverted structure makes it sound unnatural and loses its rhetorical impact."
+
+teaching:
+  methodology: "Guided discovery with literary analysis"
+  tips:
+    - "Week 1: Basic inversion with 'never' + present/past auxiliaries."
+    - "Week 2: Other negative adverbs (rarely, seldom, hardly)."
+    - "Week 3: Formal vs casual use; rhetorical effect."
+    - "Use news headlines: Rewrite normal sentences as inverted for practice."
+    - "Analyse literary excerpts to see inversion in context."
+  recommended_activities:
+    - name: "Headline Inversion"
+      duration: 15
+      adaptation_notes: "Students rewrite neutral news headlines using negative inversion for dramatic effect."
+    - name: "Formal Transformation"
+      duration: 10
+      adaptation_notes: "Students rewrite informal sentences as formal inverted sentences and discuss the register difference."
+    - name: "Literary Analysis"
+      duration: 15
+      adaptation_notes: "Students find examples of negative inversion in a literary text and explain the effect."

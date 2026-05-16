@@ -1,0 +1,121 @@
+grammar_point: comment_clauses
+title: "Comment Clauses"
+description: "Short parenthetical clauses inserted into a sentence to express the speaker's attitude, opinion, or source of information without changing the main proposition."
+level: C1
+
+meaning:
+  core_meaning: "Comment clauses are short interrupting clauses placed within or at the edges of a sentence to convey the speaker's stance — such as certainty, doubt, or attribution — toward the surrounding statement."
+  timeline: "Timeless — comment clauses can be used with any tense in the main clause."
+  contrast: "Unlike relative clauses, comment clauses do not modify a noun; they comment on the whole clause. Unlike conjunctions (e.g. 'because', 'although'), they are syntactically optional and can be removed without breaking the sentence."
+  ccqs:
+    - question: "If I remove 'I think' from 'She is, I think, the best candidate,' does the main fact change?"
+      answer: "No — 'She is the best candidate' remains. 'I think' only shows the speaker's opinion."
+    - question: "In 'He was, apparently, very angry,' is the speaker certain he was angry?"
+      answer: "No — 'apparently' means the speaker heard it from someone else or is not fully certain."
+    - question: "Are comment clauses grammatically necessary for the sentence to be correct?"
+      answer: "No — they are optional additions that add the speaker's perspective."
+  example_generator:
+    contexts:
+      - news reporting
+      - academic writing
+      - everyday conversation
+      - professional emails
+    cultural_notes:
+      - "In British English, comment clauses like 'I suppose' and 'I reckon' are common in informal speech."
+      - "In academic writing, 'it seems' and 'it appears' are preferred over 'I think' for hedging."
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Main clause with comment clause inserted (usually between commas, dashes, or brackets). Position: mid-position (between subject and verb, or after the verb 'be') is most common."
+    example_generator:
+      contexts:
+        - news reporting
+        - academic writing
+        - everyday conversation
+      min_examples: 4
+  negative:
+    structure: "The main clause can be negative; the comment clause itself is not negated. The comment clause remains unchanged regardless of the main clause's polarity."
+    example_generator:
+      contexts:
+        - expressing doubt
+        - reporting negative information
+      min_examples: 3
+  questions:
+    structure: "Comment clauses can appear in questions, typically after the auxiliary or at the end: 'She is coming, isn't she, do you think?'"
+    example_generator:
+      contexts:
+        - checking information
+        - seeking confirmation
+      min_examples: 3
+
+sub_rules:
+  - rule: "Comment clauses with mental verbs (think, believe, suppose, expect, imagine, guess)"
+    type: "grammatical"
+    examples:
+      - "He is, I believe, the most qualified applicant."
+      - "She will, I expect, arrive before noon."
+      - "They have, I imagine, already heard the news."
+  - rule: "Comment clauses with evidential adverbs (apparently, reportedly, allegedly, supposedly)"
+    type: "grammatical"
+    examples:
+      - "The company is, reportedly, facing financial difficulties."
+      - "He was, allegedly, involved in the scheme."
+  - rule: "Comment clauses with 'if' conditionals as comment (if you don't mind me saying, if I may)"
+    type: "pragmatic"
+    examples:
+      - "This is, if I may say so, a terrible idea."
+      - "You are, if you don't mind me asking, rather late."
+  - rule: "Comment clauses at the end of sentences (less formal)"
+    type: "stylistic"
+    examples:
+      - "She's the best person for the job, I think."
+      - "He didn't mean to offend anyone, I believe."
+
+use:
+  - context: "Expressing opinion or belief"
+    description: "The speaker signals that the statement is their personal view, not an established fact."
+    examples:
+      - "The new policy is, I think, a step in the right direction."
+      - "She is, in my opinion, the strongest candidate."
+  - context: "Reporting hearsay or second-hand information"
+    description: "The speaker distances themselves from the truth of the statement, indicating it came from another source."
+    examples:
+      - "The minister has, reportedly, decided to resign."
+      - "The building was, apparently, evacuated within minutes."
+  - context: "Hedging in academic or professional writing"
+    description: "Softens claims to avoid overstatement, common in research papers and formal reports."
+    examples:
+      - "The results suggest, it seems, a correlation between the two variables."
+      - "This approach is, it appears, more effective than the previous one."
+  - context: "Adding politeness or tentativeness"
+    description: "Makes statements sound less direct or confrontational."
+    examples:
+      - "You might, I suppose, want to reconsider."
+      - "That is, if you don't mind me saying, not entirely accurate."
+
+phonetics:
+  - note: "Comment clauses are typically spoken with a lower pitch and enclosed by brief pauses, corresponding to written commas."
+    example_generator:
+      - contexts:
+        - spoken English
+        - presentations
+    l1_issue: "Speakers of languages without parenthetical insertion (e.g. Japanese, Korean) may struggle with mid-sentence pauses and intonation patterns."
+
+teaching:
+  methodology: "Guided discovery — present examples from authentic texts and have learners identify the comment clause and its function."
+  tips:
+    - "Start with high-frequency comment clauses: I think, I believe, apparently, reportedly."
+    - "Show learners how removing the comment clause does not break the sentence."
+    - "Contrast comment clauses with relative clauses to prevent confusion."
+    - "Use news articles as authentic input — comment clauses are extremely common in journalism."
+  recommended_activities:
+    - name: "Comment clause spotting"
+      duration: 15
+      adaptation_notes: "Provide a short news article. Learners underline all comment clauses and classify them as opinion, hearsay, or hedging."
+    - name: "Add a comment clause"
+      duration: 20
+      adaptation_notes: "Give learners bare statements. They add appropriate comment clauses to show doubt, opinion, or second-hand information."
+    - name: "Formal vs informal rewriting"
+      duration: 15
+      adaptation_notes: "Learners rewrite informal comment clauses (I think, I guess) with formal alternatives (it seems, it appears) for academic writing."

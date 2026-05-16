@@ -1,0 +1,71 @@
+grammar_point: unreal_past_tenses
+title: "Unreal Uses of Past Tenses"
+description: "Using past tense forms to express hypothetical, unreal, or polite meanings — not past time. Includes second conditional, wishes, and polite requests."
+level: B2
+
+meaning:
+  core_meaning: "Past tense forms can show distance from reality, not distance in time. If I had money = I do not have money now (unreal). I wish I knew = I do not know now (unreal)."
+  timeline: "Present/future hypothetical — the situation is imagined, not real."
+  contrast: "Real = If I have time, I will help. (possible) vs Unreal = If I had time, I would help. (hypothetical — I do not have time)"
+  ccqs:
+    - question: Is this situation real or imagined?
+      answer: Imagined = past tense for unreality.
+    - question: Are we talking about now or the past?
+      answer: Now, but using past tense to show it is unreal.
+  example_generator:
+    contexts: ["hypothetical situations", "wishes", "polite requests", "second and third conditionals"]
+    cultural_notes: ["This is one of the most difficult areas for L1 speakers", "Many languages do not use tense for unreality in the same way"]
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "If + past simple, would + base verb / I wish + past simple / If only + past perfect"
+    example_generator:
+      contexts: ["second conditional", "wishes", "third conditional"]
+      min_examples: 4
+  negative:
+    structure: "If + past simple, would not + base verb / I wish + did not + verb"
+    example_generator:
+      contexts: ["negative hypothetical"]
+      min_examples: 3
+  questions:
+    structure: "What would you do if...?: What would you do if you won the lottery?"
+    example_generator:
+      contexts: ["question formation"]
+      min_examples: 3
+
+sub_rules:
+  - rule: "Were for all persons in formal English (If I were...)"
+    type: grammatical
+    examples: ["If I were you, I would study. (formal)", "If I was you, I would study. (informal)"]
+  - rule: "Wish + past simple for present wishes"
+    type: grammatical
+    examples: ["I wish I spoke French. (I do not speak French now)", "I wish I had more time. (I do not have more time now)"]
+  - rule: "Wish + past perfect for past regrets"
+    type: grammatical
+    examples: ["I wish I had studied harder. (I did not study hard in the past)", "I wish I had known. (I did not know)"]
+  - rule: "If only is stronger than I wish"
+    type: pragmatic
+    examples: ["If only I had more time! (stronger than I wish I had more time)"]
+
+use:
+  - context: "Hypothetical situations"
+    description: "Imagining different realities"
+    examples: ["If I won the lottery, I would buy a house.", "If I could fly, I would travel the world."]
+  - context: "Wishes and regrets"
+    description: "Wanting things to be different"
+    examples: ["I wish I spoke better English.", "I wish I had studied harder at school."]
+
+phonetics:
+  - note: "Weak form of would /wʊd/ → /əd/ in connected speech"
+    example_generator:
+      contexts: ["connected speech"]
+    l1_issue: "Many L1 speakers use present tense instead of past for hypotheticals"
+
+teaching:
+  methodology: "PPP"
+  tips: ["Use the distance from reality metaphor", "Contrast real vs unreal conditionals explicitly", "Use timelines to visualize"]
+  recommended_activities:
+    - name: "Hypothetical Scenarios"
+      duration: 15
+      adaptation_notes: "Students discuss hypothetical situations using unreal past."

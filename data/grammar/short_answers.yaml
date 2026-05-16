@@ -1,0 +1,91 @@
+grammar_point: short_answers
+title: "Short Answers"
+description: "Brief responses to yes/no questions that avoid repeating the full sentence. Uses the auxiliary verb from the question."
+level: A1
+
+meaning:
+  core_meaning: "Short, natural responses to yes/no questions. Instead of repeating the whole sentence ('Yes, I like coffee'), we use just the subject and the auxiliary verb ('Yes, I do'). This is how native speakers typically respond in conversation."
+  timeline: "Present time — responding to a question about now or in general. The tense of the short answer matches the tense of the question."
+  contrast: "Full answer: 'Yes, I like coffee.' / Short answer: 'Yes, I do.' / Full answer: 'No, she cannot swim.' / Short answer: 'No, she can't.' The short answer is more natural in conversation."
+  ccqs:
+    - question: "Do we repeat the whole sentence in the answer?"
+      answer: "No — we use a short answer with just the subject and auxiliary."
+    - question: "Does the auxiliary in the answer match the auxiliary in the question?"
+      answer: "Yes — if the question uses 'do', the answer uses 'do'."
+    - question: "Is 'Yes, I like coffee' wrong?"
+      answer: "No — it is grammatically correct, but 'Yes, I do' is more natural in conversation."
+  example_generator:
+    contexts: ["everyday conversation", "classroom interaction", "meeting people", "ordering food", "making plans"]
+    cultural_notes: ["Short answers are the default in spoken English — full answers can sound overly formal or emphatic", "In British English, short answers are almost always used in casual conversation", "Answering only 'Yes' or 'No' without the auxiliary can sound blunt or rude in English"]
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Yes, subject + auxiliary verb: 'Yes, I do.' / 'Yes, she can.' / 'Yes, they are.' / 'Yes, he has.'"
+    example_generator:
+      contexts: ["do/does questions", "can questions", "be questions", "have questions"]
+      min_examples: 4
+  negative:
+    structure: "No, subject + auxiliary + n't (contracted): 'No, I don't.' / 'No, she can't.' / 'No, they aren't.' / 'No, he hasn't.'"
+    example_generator:
+      contexts: ["negative responses", "disagreeing", "correcting"]
+      min_examples: 3
+  questions:
+    structure: "Short answers respond to questions but are not questions themselves. The question form is: Auxiliary + subject + ...?: 'Do you like coffee?' / 'Can she swim?' / 'Are they ready?'"
+    example_generator:
+      contexts: ["yes/no questions"]
+      min_examples: 3
+
+sub_rules:
+  - rule: "The auxiliary in the answer must match the auxiliary in the question"
+    type: "grammatical"
+    examples: ["Do you like coffee? -> Yes, I do. (not 'Yes, I like.')", "Can she swim? -> Yes, she can. (not 'Yes, she swims.')", "Are you tired? -> Yes, I am.", "Have you finished? -> Yes, I have. (not 'Yes, I finished.')"]
+  - rule: "Use contractions in negative short answers"
+    type: "grammatical"
+    examples: ["No, I don't. (not 'No, I do not.')", "No, she can't.", "No, they aren't.", "No, he hasn't."]
+  - rule: "With 'be', use the same form as the question"
+    type: "grammatical"
+    examples: ["Are you happy? -> Yes, I am. / No, I'm not.", "Is she a teacher? -> Yes, she is. / No, she isn't.", "Are they coming? -> Yes, they are. / No, they aren't."]
+  - rule: "With 'have' (as auxiliary), use 'have' in the answer"
+    type: "grammatical"
+    examples: ["Have you been to Paris? -> Yes, I have. / No, I haven't.", "Has she finished? -> Yes, she has. / No, she hasn't."]
+
+use:
+  - context: "Everyday conversation"
+    description: "Short answers are the natural, default way to respond to yes/no questions in spoken English."
+    examples: ["Do you want tea? -> Yes, please. / No, thanks.", "Can you help me? -> Yes, of course. / No, sorry, I can't.", "Are you coming tonight? -> Yes, I am. / No, I'm not."]
+  - context: "Classroom interaction"
+    description: "Teachers use short answers to confirm understanding and encourage natural responses."
+    examples: ["Do you understand? -> Yes, I do.", "Can you repeat that? -> Yes, I can.", "Have you done your homework? -> Yes, I have. / No, I haven't."]
+  - context: "Service encounters"
+    description: "In shops, restaurants, and other service situations, short answers are standard."
+    examples: ["Do you have a reservation? -> Yes, I do. / No, I don't.", "Can I pay by card? -> Yes, you can. / No, I'm afraid not."]
+
+phonetics:
+  - note: "In affirmative short answers, the auxiliary is stressed: 'Yes, I DO.' / 'Yes, she CAN.' This gives a confident, natural sound."
+    example_generator:
+      contexts: ["stress and emphasis"]
+    l1_issue: "Learners may produce flat, unstressed short answers that sound uncertain or unnatural."
+  - note: "In negative short answers, the contraction carries the stress. The final t sound in negative contractions is often clearly pronounced."
+    example_generator:
+      contexts: ["negative pronunciation"]
+    l1_issue: "Some learners may say 'No, I do not' in full, which sounds overly formal in casual conversation."
+
+teaching:
+  methodology: "PPP"
+  tips:
+    - "Drill with rapid-fire questions: teacher asks, students respond with short answers only."
+    - "Emphasise the auxiliary matching rule: 'Do? -> do. Can? -> can. Are? -> am/is/are.'"
+    - "Practice contractions in negative answers from the start: 'don't', 'can't', 'aren't', 'hasn't'."
+    - "Role-play service encounters (shop, restaurant) where short answers are natural."
+    - "Contrast with full answers to show when each is appropriate."
+  recommended_activities:
+    - name: "Rapid-Fire Questions"
+      duration: 5
+      adaptation_notes: "Teacher fires yes/no questions at students one after another. Students must respond with a short answer within 2 seconds. Great for building automaticity."
+    - name: "Auxiliary Matching Game"
+      duration: 10
+      adaptation_notes: "Students receive cards with questions and cards with answers. They must match them correctly. Can be done as a memory game or relay race."
+    - name: "Information Gap: Find Someone Who..."
+      duration: 15
+      adaptation_notes: "Students circulate asking yes/no questions and record short answers. They then report findings to the class."

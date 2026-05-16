@@ -1,0 +1,119 @@
+grammar_point: reported_statements
+title: Reported Statements (Indirect Speech)
+description: A structure to paraphrase what someone said in the past, without using
+  their exact words, with tense and pronoun changes (backshifting).
+level: B1
+meaning:
+  core_meaning: Reports what someone said in the past by paraphrasing their words,
+    with grammatical adjustments to fit the new context (reporter's time and perspective).
+  timeline: All reporting verbs are in past tense (said, told, explained); the reported
+    clause is backshifted to a past tense relative to the reporting verb.
+  contrast: 'Direct speech: ''I am happy'' (exact words, quotes)
+
+    Reported speech: He said he was happy (paraphrased, no quotes, backshifted)
+
+    No backshift rule: If the reported statement is still true and the reporting verb
+    is present tense: ''He says he likes coffee'' (no backshift)
+
+    '
+  ccqs:
+  - question: Do tenses change in reported speech
+    answer: Yes. Tenses shift back when the reporting verb is past.
+  example_generator:
+    contexts:
+    - everyday situations
+    cultural_notes: []
+    min_examples: 5
+form:
+  affirmative:
+    structure: "Reporting verb (say/tell) + that + backshifted clause (tense changes\
+      \ apply)\nPronouns and time/place expressions change to match the reporter's\
+      \ context\nTense backshift rules:\n  Present simple → Past simple\n  Present\
+      \ continuous → Past continuous\n  Past simple → Past perfect\n  Present perfect\
+      \ → Past perfect\n  Will → Would\n  Can → Could\n  May → Might\nTime/place expression\
+      \ changes:\n  Now → Then, Today → That day, Yesterday → The day before, Tomorrow\
+      \ → The next day, Here → There\n"
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+  negative:
+    structure: Reporting verb + that + negative backshifted clause
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+  questions:
+    structure: 'Reporting verb + if/whether + backshifted clause (for yes/no questions,
+      but this is statements – wait, no, reported statements use ''that'', questions
+      use ''if/whether''. For statements, questions are not applicable here. Wait,
+      the formation for questions in reported statements? No, reported statements
+      are statements, so questions would be reported questions. So for reported statements,
+      questions are not part of the formation. Maybe adjust: formation for reported
+      statements doesn''t have a questions section, or note that reported statements
+      use ''that'' (optional).'
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+sub_rules:
+- rule: 'Tense backshift: present → past, past → past perfect, will → would, can →
+    could'
+  type: grammatical
+  examples:
+  - '''I am happy.'' → He said he was happy'
+  - '''I went to Paris.'' → She said she had gone to Paris'
+  - '''I will come.'' → He said he would come'
+  - '''I can swim.'' → She said she could swim'
+- rule: 'Pronoun changes: I → he/she, my → his/her, we → they, our → their'
+  type: grammatical
+  examples:
+  - '''I like my job.'' → He said he liked his job'
+  - '''We finished our work.'' → They said they had finished their work'
+- rule: 'Time expression changes: today → that day, yesterday → the day before, tomorrow
+    → the next day'
+  type: grammatical
+  examples:
+  - '''I am leaving today.'' → He said he was leaving that day'
+  - '''I came yesterday.'' → She said she had come the day before'
+use:
+- name: Conversation Reporting
+  description: Summarize what someone said in a past conversation.
+  examples:
+  - She told me she was moving to London next month.
+  - He said he had finished the project.
+  key_point: Most common everyday use.
+- name: News and Media
+  description: Report statements from public figures or sources.
+  examples:
+  - The prime minister said that the economy was growing.
+  - The report stated that temperatures would rise.
+  key_point: 'Uses formal reporting verbs: state, announce, explain, claim.'
+- name: Academic Writing
+  description: Cite sources or report findings without direct quotes.
+  examples:
+  - Smith (2020) argued that climate change was accelerating.
+  key_point: Avoids overusing direct quotes.
+phonetics:
+- note: 'That is usually weak in reported speech: /ðət/. ''He said that he was tired''
+    → /hiː sed ðət hiː wəz taɪəd/.'
+  example_generator:
+    contexts:
+    - reported speech pronunciation
+  l1_issue: Many L1 speakers over-pronounce 'that' in reported speech. Teach the weak
+    form /ðət/.
+teaching:
+  methodology: PPP
+  tips:
+  - Start with simple present → past backshift, then add more complex tenses.
+  - Use a timeline to show tense backshift visually.
+  - Practice with 'say' vs 'tell' immediately to avoid confusion.
+  recommended_activities:
+  - name: Tense Shift Practice
+    duration: 15
+    adaptation_notes: 'Give students direct speech sentences. They convert to reported
+      speech with correct tense backshift: ''I am happy'' → ''He said he was happy.'''
+  - name: Pronoun Changes
+    duration: 10
+    adaptation_notes: 'Students practice changing pronouns in reported speech: ''I
+      like my job'' → ''He said he liked his job.'''

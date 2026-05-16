@@ -1,0 +1,126 @@
+grammar_point: focus_background
+title: "Focus and Background Information"
+description: "Manipulating sentence structure to highlight new, important, or contrastive information while backgrounding given or assumed knowledge."
+level: C2
+
+meaning:
+  core_meaning: "English allows speakers to rearrange sentence elements so that the most important or newsworthy information receives prominence (focus), while known or less important information is backgrounded. This is achieved through cleft sentences, passives, fronting, and end-weight principles."
+  timeline: "Applicable across all tenses; the choice of focus structure depends on discourse context rather than time reference."
+  contrast: "Neutral: 'Shakespeare wrote the play in 1599.' / It-cleft: 'It was Shakespeare who wrote the play.' (focus on agent) / Wh-cleft: 'What Shakespeare wrote was a masterpiece.' (focus on creation) / Passive: 'The play was written in 1599.' (focus on play/date)"
+  ccqs:
+    - question: "Do we use a cleft sentence when we want to emphasise one particular element?"
+      answer: "Yes — cleft sentences single out one element for focus."
+    - question: "Is the background information usually something the listener already knows?"
+      answer: "Yes — backgrounded information is typically given or assumed."
+    - question: "Can we use the passive to move the most important information to the end?"
+      answer: "Yes — the passive allows end-focus on the agent or the action."
+  example_generator:
+    contexts: ["academic writing", "news reporting", "everyday conversation", "literary analysis", "legal discourse"]
+    cultural_notes: ["English relies heavily on word order for focus, unlike languages that use particles or intonation alone."]
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "It + be + FOCUS + who/that + rest of sentence (It-cleft) / Wh-clause + be + FOCUS (Wh-cleft or pseudo-cleft) / Subject + verb + complement (neutral, with end-focus on final element)"
+    example_generator:
+      contexts: ["news reporting", "academic writing", "everyday conversation", "literary analysis"]
+      min_examples: 4
+  negative:
+    structure: "It + be + not + FOCUS + who/that + rest of sentence (negative cleft) / It + be + FOCUS + who/that + not/n't + verb (negated clause)"
+    example_generator:
+      contexts: ["argumentation", "correcting misunderstandings", "formal debate"]
+      min_examples: 3
+  questions:
+    structure: "Wh-clause + be + FOCUS? (pseudo-cleft question) / Is/Was it + FOCUS + who/that + clause? (cleft question)"
+    example_generator:
+      contexts: ["interviewing", "investigative questioning", "classroom discussion"]
+      min_examples: 3
+
+sub_rules:
+  - rule: "It-cleft sentences"
+    type: "grammatical"
+    examples:
+      - "It was Marie Curie who discovered radium. (focus on Marie Curie)"
+      - "It is the economy that concerns voters most. (focus on the economy)"
+      - "It was in 1969 that humans first walked on the Moon. (focus on time)"
+  - rule: "Wh-cleft (pseudo-cleft) sentences"
+    type: "grammatical"
+    examples:
+      - "What we need now is a clear plan. (focus on a clear plan)"
+      - "What she did was completely unexpected. (focus on the action)"
+      - "Where he went remains a mystery. (focus on location)"
+  - rule: "Passive for end-focus"
+    type: "grammatical"
+    examples:
+      - "The Mona Lisa was painted by Leonardo da Vinci. (focus on da Vinci)"
+      - "The decision was made after hours of deliberation. (focus on the decision)"
+  - rule: "Fronting for focus"
+    type: "grammatical"
+    examples:
+      - "A wonderful performer she truly was. (fronted complement)"
+      - "This question we must answer first. (fronted object)"
+  - rule: "End-weight principle"
+    type: "stylistic"
+    examples:
+      - "It is important to consider all options. (extraposition — heavy clause moved right)"
+      - "She gave the book to the student who had been waiting all week. (heavy NP at end)"
+
+use:
+  - context: "Correcting misinformation"
+    description: "Cleft sentences are frequently used to correct a misunderstanding or clarify who, what, or when."
+    examples:
+      - "It wasn't John who broke the vase — it was the cat."
+      - "What actually happened was quite different from the report."
+  - context: "Academic and scientific writing"
+    description: "Focus structures help writers highlight findings, methods, or arguments while backgrounding established knowledge."
+    examples:
+      - "It is this variable that accounts for the observed effect."
+      - "What the data reveal is a significant correlation between the two factors."
+  - context: "Narrative and storytelling"
+    description: "Writers use focus structures to create suspense, drama, or emphasis in narratives."
+    examples:
+      - "It was a dark and stormy night when the stranger arrived."
+      - "Never before had she felt such terror."
+  - context: "News and journalism"
+    description: "News reports use clefts and passives to foreground the most newsworthy element."
+    examples:
+      - "It is the Prime Minister who will address the nation tonight."
+      - "Three people were killed in the accident, police confirmed."
+  - context: "Everyday conversation"
+    description: "Speakers naturally use focus structures to highlight what matters in the conversation."
+    examples:
+      - "What I really want is a cup of tea."
+      - "It's the children I'm worried about, not myself."
+
+phonetics:
+  - note: "Nuclear stress typically falls on the focused element in cleft sentences."
+    example_generator:
+      - contexts: ["spoken emphasis in cleft sentences"]
+    l1_issue: "Speakers whose L1 uses particles for focus (e.g., Japanese 'wa', Arabic) may underuse English word-order focus strategies."
+  - note: "Wh-cleft sentences often have a two-tone pattern: rising on the wh-clause, falling on the focus."
+    example_generator:
+      - contexts: ["intonation patterns in pseudo-clefts"]
+    l1_issue: "Tonal language speakers (e.g., Mandarin, Vietnamese) may need practice with English intonation contours for focus."
+
+teaching:
+  methodology: "Guided discovery"
+  tips:
+    - "Start with it-clefts using familiar contexts (correcting: 'It wasn't me — it was John')."
+    - "Use information-gap activities where students must identify the focused element."
+    - "Compare neutral vs cleft versions of the same sentence to show the difference in emphasis."
+    - "Introduce wh-clefts after it-clefts are secure, as they are more abstract."
+    - "Use authentic texts (news articles, academic abstracts) to show focus structures in context."
+    - "Practice rewriting sentences to shift focus to different elements."
+  recommended_activities:
+    - name: "Spot the Focus"
+      duration: 15
+      adaptation_notes: "Give students 10 sentences and ask them to identify which element is in focus and why the author chose that structure."
+    - name: "Cleft Sentence Auction"
+      duration: 20
+      adaptation_notes: "Students bid on whether cleft sentences are grammatically correct or appropriate for the context. Works well as a competitive group activity."
+    - name: "News Rewrite"
+      duration: 25
+      adaptation_notes: "Students take a neutral news paragraph and rewrite key sentences using cleft structures to foreground different elements. Compare versions as a class."
+    - name: "Focus Shift Drill"
+      duration: 15
+      adaptation_notes: "Give a base sentence. Students must rewrite it with focus on the subject, then the object, then the time, then the place — using appropriate structures each time."

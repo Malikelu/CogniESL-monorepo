@@ -1,0 +1,100 @@
+grammar_point: compound_adjectives_numbers
+title: Compound Adjectives with Numbers
+description: Compound adjectives formed with a number and a noun (usually a unit of measurement) used before another noun, where the noun in the compound is always singular.
+level: B1
+
+meaning:
+  core_meaning: "A compound adjective with a number is formed by combining a number, a hyphen, and a singular noun (usually a unit of time, distance, weight, or money). This compound adjective is placed before a noun to describe it. The noun in the compound is always singular, even if the number is plural."
+  timeline: "Timeless — used across all tenses as a modifier before a noun."
+  contrast: |
+    Separate words: "The journey took three hours." (noun phrase, no hyphen)
+    Compound adjective: "It was a three-hour journey." (compound modifier before noun)
+    Incorrect: "a three-hours journey" (the noun must be singular in the compound)
+  ccqs:
+    - question: "Is the number-noun combination being used before a noun to describe it?"
+      answer: "Yes — it is a compound adjective modifying the noun that follows."
+    - question: "Is the noun in the compound singular or plural?"
+      answer: "Always singular — even with numbers greater than one: 'a ten-minute walk', not 'a ten-minutes walk'."
+  example_generator:
+    contexts: ["describing duration", "describing distance", "describing age", "describing size", "describing cost"]
+    cultural_notes: ["This structure is universal in English but the specific units may differ (miles vs kilometres, pounds vs kilos)", "In American English, some measurements differ (e.g., 'two-by-four' for lumber)"]
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Number + hyphen + singular noun (as adjective) + noun: 'a five-minute walk', 'a two-litre bottle', 'a ten-year-old child', 'a fifty-mile journey'."
+    example_generator:
+      contexts: ["travel and distance", "time and duration", "age", "money"]
+      min_examples: 4
+  negative:
+    structure: "Compound adjectives with numbers are not typically negated directly. Negation applies to the main clause: 'It wasn't a five-minute walk — it took much longer.'"
+    example_generator:
+      contexts: ["correcting assumptions", "expressing surprise at duration"]
+      min_examples: 3
+  questions:
+    structure: "How + adjective + a + number-noun + noun?: 'How long a journey was it?' / Standard questions: 'Was it a five-minute walk?'"
+    example_generator:
+      contexts: ["asking about duration", "asking about distance", "asking about age"]
+      min_examples: 3
+
+sub_rules:
+  - rule: "The noun in the compound is always singular"
+    type: "spelling"
+    examples: ["a ten-minute walk (not ten-minutes)", "a two-year contract (not two-years)", "a five-pound note (not five-pounds)"]
+  - rule: "Hyphens are essential when the compound comes before the noun"
+    type: "spelling"
+    examples: ["a three-hour journey (before noun — hyphenated)", "The journey was three hours. (after verb — no hyphen)"]
+  - rule: "Common measurement nouns used in compounds"
+    type: "grammatical"
+    examples: ["Time: minute, hour, day, week, month, year", "Distance: mile, kilometre, foot, metre", "Weight: pound, kilo, gram, ton", "Money: pound, dollar, euro", "Age: year, month, week"]
+  - rule: "Compound adjectives with numbers can include 'old' for age"
+    type: "grammatical"
+    examples: ["a five-year-old child", "a ten-year-old car", "a two-year-old building"]
+  - rule: "Fractions and decimals in compound adjectives"
+    type: "grammatical"
+    examples: ["a half-hour break", "a two-and-a-half-hour flight", "a 2.5-kilometre walk"]
+
+use:
+  - name: "Describing duration"
+    description: "Used to describe how long something takes or lasts."
+    examples: ["It's a ten-minute drive to the airport.", "We had a two-hour meeting.", "She went on a three-week holiday."]
+    key_point: "Very common when giving travel information or describing schedules."
+  - name: "Describing distance"
+    description: "Used to describe how far something is."
+    examples: ["It's a five-mile walk to the village.", "They live on a fifty-acre farm.", "The hotel is just a two-minute walk from the beach."]
+    key_point: "Common in directions and travel descriptions."
+  - name: "Describing age"
+    description: "Used to describe how old someone or something is."
+    examples: ["She's a fifteen-year-old student.", "He bought a ten-year-old car.", "The ceremony is a two-hundred-year-old tradition."]
+    key_point: "The 'old' is part of the compound: 'a five-year-old child'."
+  - name: "Describing size, weight, or cost"
+    description: "Used to describe physical properties or price."
+    examples: ["He ordered a sixteen-ounce steak.", "She carries a two-litre bottle of water.", "It was a fifty-pound fine.", "He drives a two-seater sports car."]
+    key_point: "Common in shopping, cooking, and product descriptions."
+
+phonetics:
+  - note: "The stress in compound adjectives with numbers typically falls on the first element: 'a FIVE-minute walk', 'a THREE-hour journey'. The hyphenated elements are spoken as one unit."
+    example_generator:
+      contexts: ["giving directions", "describing products"]
+    l1_issue: "Speakers whose L1 uses plural forms in similar constructions (e.g., Spanish 'de tres horas') may incorrectly pluralise the noun: 'a three-hours journey'."
+
+teaching:
+  methodology: "PPP with visual and real-world examples"
+  tips:
+    - "Use real objects and situations: 'This is a two-litre bottle.' 'The journey is a three-hour drive.'"
+    - "Emphasise the singular noun rule — this is the most common error."
+    - "Practise the hyphen rule: hyphenated before the noun, no hyphen after the verb."
+    - "Use timelines, maps, and shopping contexts for authentic practice."
+  recommended_activities:
+    - name: "Measurement matching"
+      duration: 10
+      adaptation_notes: "Match compound adjectives to pictures or real objects: 'a five-pound note', 'a two-litre bottle', etc."
+    - name: "Hyphen hunt"
+      duration: 10
+      adaptation_notes: "Give students a text and have them find and underline all compound adjectives with numbers. Check for correct hyphenation and singular nouns."
+    - name: "Real-world descriptions"
+      duration: 15
+      adaptation_notes: "Students describe their daily routines using compound adjectives: 'It's a twenty-minute bus ride to school.' 'I have a one-hour lunch break.'"
+    - name: "Error correction"
+      duration: 10
+      adaptation_notes: "Provide sentences with errors (e.g., 'a three-hours journey') and have students identify and correct them."

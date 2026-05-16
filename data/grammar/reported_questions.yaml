@@ -1,0 +1,115 @@
+grammar_point: reported_questions
+title: Reported Questions (Indirect Questions)
+description: A structure to paraphrase questions someone asked in the past, with tense
+  backshifting and no question inversion or question marks.
+level: B1
+meaning:
+  core_meaning: Reports a question that was asked in the past, paraphrasing the original
+    question without using its exact words or question structure.
+  timeline: 'Same backshift rules as reported statements: tenses shift to past relative
+    to the past reporting verb.'
+  contrast: 'Direct question: ''Where are you going?'' (inverted, question mark)
+
+    Reported question: He asked where I was going (no inversion, no question mark)
+
+    ''Say'' is used for statements; ''ask''/''inquire'' is used for questions.
+
+    '
+  ccqs:
+  - question: Do we use question word order in reported questions
+    answer: No. Reported questions use statement word order.
+  example_generator:
+    contexts:
+    - everyday situations
+    cultural_notes: []
+    min_examples: 5
+form:
+  affirmative:
+    structure: 'Yes/No questions: Reporting verb (ask/inquire) + if/whether + subject
+      + backshifted verb
+
+      Wh-questions: Reporting verb + wh-word + subject + backshifted verb
+
+      Same backshift rules as reported statements apply
+
+      No question mark, no auxiliary verb inversion
+
+      '
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+  negative:
+    structure: Reporting verb + if/whether + subject + negative backshifted verb /
+      Reporting verb + wh-word + subject + negative backshifted verb
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+  questions:
+    structure: N/A (Reported questions are statements about a question, so no interrogative
+      form for the reported clause)
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+sub_rules:
+- rule: 'Wh- questions: reporting verb + wh-word + subject + verb (statement order)'
+  type: grammatical
+  examples:
+  - He asked where I lived
+  - She wanted to know what I was doing
+  - They asked why I was late
+- rule: 'Yes/no questions: reporting verb + if/whether + subject + verb'
+  type: grammatical
+  examples:
+  - He asked if I was hungry
+  - She wanted to know whether I had finished
+  - They asked if I could help
+- rule: No auxiliary inversion in reported questions
+  type: grammatical
+  examples:
+  - He asked where I lived (NOT where did I live)
+  - She asked if I was hungry (NOT if was I hungry)
+use:
+- name: Conversation Reporting
+  description: Summarize questions asked in past conversations.
+  examples:
+  - She asked if I wanted to join the meeting.
+  - He asked where the bathroom was.
+  key_point: Most common everyday use.
+- name: Interview Reporting
+  description: Report questions from job interviews, surveys, or research.
+  examples:
+  - The interviewer asked if I had any relevant experience.
+  - They asked why I applied for the role.
+  key_point: 'Uses formal reporting verbs: inquire, question, ask.'
+- name: News and Media
+  description: Report questions asked to public figures.
+  examples:
+  - The journalist asked whether the prime minister would resign.
+  key_point: Formal register for public reporting.
+phonetics:
+- note: 'Reported questions typically have falling intonation (not rising like direct
+    questions): ''He asked where I lived ↘'' NOT ''He asked where I lived ↗.'''
+  example_generator:
+    contexts:
+    - reported question intonation
+  l1_issue: Many L1 speakers use rising intonation for reported questions. Teach falling
+    intonation — they are statements, not questions.
+teaching:
+  methodology: PPP
+  tips:
+  - Start with yes/no questions (if/whether) before moving to wh-questions.
+  - Contrast direct and reported questions side by side to show word order changes.
+  - 'Practice with common wh-words: what, where, when, why, how.'
+  recommended_activities:
+  - name: Direct to Reported
+    duration: 15
+    adaptation_notes: 'Give students direct questions. They convert to reported speech:
+      ''Where do you live?'' → ''He asked where I lived.'' ''Are you hungry?'' → ''She
+      asked if I was hungry.'''
+  - name: Statement Order
+    duration: 10
+    adaptation_notes: 'Students identify and correct word order errors in reported
+      questions: ''He asked where did I live'' → ''He asked where I lived.'''

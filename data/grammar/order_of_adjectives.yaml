@@ -1,0 +1,121 @@
+grammar_point: order_of_adjectives
+title: Order of Adjectives
+description: 'The fixed sequence in which multiple adjectives appear before a noun:
+  opinion-size-age-shape-color-origin-material-purpose. Essential for natural-sounding
+  descriptions.'
+level: B1
+meaning:
+  core_meaning: English has a fixed order for adjectives. Changing the order sounds
+    unnatural, even if meaning stays similar.
+  timeline: N/A (Not tense-based; this is about word order rules for adjectives.)
+  contrast: '''CORRECT ORDER'' = Natural: "a big red ball" (size before color)
+
+    ''WRONG ORDER'' = Unnatural: "a red big ball" (sounds wrong to natives)
+
+    ''ONE ADJECTIVE'' = No order needed: "a red ball" or "a big ball"
+
+    '
+  ccqs:
+  - question: What is the correct order of adjectives
+    answer: Opinion, size, age, shape, color, origin, material, purpose. Use OSASCOMP.
+  example_generator:
+    contexts:
+    - everyday situations
+    cultural_notes: []
+    min_examples: 5
+form:
+  affirmative:
+    structure: 'Order: Opinion → Size → Age → Shape → Color → Origin → Material →
+      Purpose + Noun
+
+      Short form: OSASCOMP (Opinion, Size, Age, Shape, Color, Origin, Material, Purpose)
+
+      "a beautiful (opinion) large (size) old (age) round (shape) blue (color) French
+      (origin) wooden (material) dining (purpose) table"
+
+      '
+    example_generator:
+      contexts:
+      - food and daily routines
+      - weather and nature
+      min_examples: 4
+  negative:
+    structure: 'Negation doesn''t change adjective order:
+
+      "It''s not a very big old house." "Those aren''t comfortable modern office chairs."
+
+      '
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+  questions:
+    structure: 'Questions don''t change order: "Is it a big old house?" "Are those
+      comfortable black shoes?"
+
+      '
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+sub_rules:
+- rule: 'OSASCOMP order: Opinion, Size, Age, Shape, Color, Origin, Material, Purpose'
+  type: word_order
+  examples:
+  - a beautiful big old round red Italian leather racing car
+- rule: Maximum 2-3 adjectives before a noun in natural speech
+  type: usage
+  examples:
+  - a beautiful old house (natural — 2 adjectives)
+  - a beautiful small old round brown Chinese wooden jewelry box (unnatural — too
+    many)
+- rule: No commas between adjectives of the same category
+  type: punctuation
+  examples:
+  - a big red car (no comma — size + color)
+  - a beautiful, expensive car (comma — both opinion, optional)
+use:
+- name: Describing Objects with Multiple Adjectives
+  description: Place adjectives in correct sequence before noun.
+  examples:
+  - a small old brown wooden box
+  - big round yellow American pillows
+  key_point: 'Memorize: Opinion-Size-Age-Shape-Color-Origin-Material-Purpose.'
+- name: Commas with Multiple Adjectives (Same Category)
+  description: Use commas between adjectives of same category, not across categories.
+  examples:
+  - a smart, talented young man (opinion, opinion, age)
+  - big, heavy suitcases (size, size)
+  key_point: Commas only between adjectives of the SAME type (e.g., two opinions).
+- name: Keeping Descriptions Concise
+  description: Limit to 2-3 adjectives for clarity; too many sounds unnatural.
+  examples:
+  - a lovely old house (2 adjectives)
+  - comfortable black shoes (2 adjectives)
+  key_point: Native speakers rarely use more than 3 adjectives before a noun.
+phonetics:
+- note: 'When multiple adjectives are used, the last adjective (closest to the noun)
+    receives the most stress: ''a big red CAR'', ''a beautiful old HOUSE.'''
+  example_generator:
+    contexts:
+    - adjective stress
+  l1_issue: Portuguese and Spanish speakers often put adjectives after the noun. Teach
+    that English adjectives go BEFORE the noun.
+teaching:
+  methodology: PPP
+  tips:
+  - 'Teach the OSASCOMP acronym: Opinion, Size, Age, Shape, Color, Origin, Material,
+    Purpose.'
+  - 'Use real objects: ''a big red book'' vs wrong ''a red big book'' - students hear
+    the difference.'
+  - 'Practice with product descriptions: real estate listings, menu items.'
+  - Start with 2 adjectives only (opinion + size, or size + color), add more gradually.
+  recommended_activities:
+  - name: Adjective Order Race
+    duration: 10
+    adaptation_notes: 'Give students scrambled adjectives. They race to put them in
+      the correct order: ''red / big / a / car'' → ''a big red car.'''
+  - name: OSASCOMP Practice
+    duration: 15
+    adaptation_notes: Students describe objects using multiple adjectives in the correct
+      order.

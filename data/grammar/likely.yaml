@@ -1,0 +1,112 @@
+grammar_point: likely
+title: "Likely (probability, expectation)"
+description: "Adjective and adverb used to express that something is probable or expected to happen."
+level: B1
+
+meaning:
+  core_meaning: "Expresses high probability (70-90% chance) that something will happen or is true. It is stronger than 'possible' but weaker than 'certain' or 'definitely'."
+  timeline: "Refers to future events or present probability based on current evidence."
+  contrast: "Likely = high probability (70-90%). Possible = low probability (30-50%). Certain = 100%."
+  ccqs:
+    - question: "Does 'likely' mean something will definitely happen"
+      answer: "No. 'Likely' means high probability (70-90%) but not 100%. 'Definitely' means certain."
+    - question: "Is 'likely' stronger or weaker than 'possible'"
+      answer: "Stronger. 'Likely' = high probability. 'Possible' = low probability."
+    - question: "Can we use 'likely' as both an adjective and an adverb"
+      answer: "Yes. Adjective: 'It is likely to rain.' Adverb: 'It will likely rain.'"
+  example_generator:
+    contexts:
+      - weather predictions
+      - news reports
+      - everyday expectations
+    cultural_notes:
+      - "Likely is more formal than 'will probably'"
+      - "Common in news headlines and academic writing"
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: >
+      Adjective: subject + be + likely + to + base verb
+      Adverb: subject + will likely + base verb
+      Formal: it is likely that + clause
+    example_generator:
+      - "It is likely to rain tomorrow."
+      - "She will likely get the job."
+      - "It is likely that prices will rise."
+    min_examples: 4
+  negative:
+    structure: >
+      subject + be + not likely + to + base verb
+      subject + will not likely + base verb
+    example_generator:
+      - "It is not likely to rain today."
+      - "She will not likely accept the offer."
+    min_examples: 4
+  questions:
+    structure: >
+      be + subject + likely + to + base verb
+      is it likely that + clause
+    example_generator:
+      - "Is it likely to rain"
+      - "Is she likely to come"
+    min_examples: 4
+
+sub_rules:
+  - rule: "Likely as adjective: subject + be + likely + to + base verb"
+    type: grammatical
+    examples:
+      - "It is likely to rain"
+      - "She is likely to succeed"
+  - rule: "Likely as adverb: subject + will likely + base verb"
+    type: grammatical
+    examples:
+      - "It will likely rain"
+      - "She will likely succeed"
+  - rule: "Formal structure: it is likely that + clause"
+    type: grammatical
+    examples:
+      - "It is likely that the economy will grow"
+      - "It is likely that she will accept"
+  - rule: "Likely vs probably: likely is more formal and slightly stronger"
+    type: semantic
+    examples:
+      - "It is likely to rain (more formal)"
+      - "It will probably rain (more common in speech)"
+
+use:
+  - context: "Future probability"
+    examples:
+      - "We are likely to see higher prices next year"
+      - "She is likely to get the job"
+  - context: "Present probability"
+    examples:
+      - "He is likely at home now"
+      - "The problem is likely caused by the update"
+  - context: "Formal predictions"
+    examples:
+      - "It is likely that the economy will grow"
+      - "The team is likely to win the championship"
+
+phonetics:
+  note: "'Likely' is pronounced /laɪkli/ with stress on the first syllable. In connected speech, it is often reduced: 'It's likely to' → /ɪts laɪkli tə/."
+  example_generator:
+    contexts: ["connected speech"]
+  l1_issue: "Portuguese and Spanish speakers may confuse 'likely' with 'like'. Teach the difference: 'likely' = probable, 'like' = similar to or enjoy."
+
+teaching:
+  methodology: "PPP with probability scales"
+  tips:
+    - "Use weather predictions: 'It is likely to rain tomorrow.'"
+    - "Contrast with 'possible' and 'certain' using a 0-100% probability scale."
+    - "Practice with news headlines: 'Economy likely to grow in 2026.'"
+  recommended_activities:
+    - name: "Probability Scale"
+      duration: 10
+      adaptation_notes: "Students place expressions on a 0-100% scale: impossible (0%), possible (30%), likely (70%), certain (100%)."
+    - name: "Weather Predictions"
+      duration: 15
+      adaptation_notes: "Students make weather predictions using 'likely': 'It is likely to rain in the afternoon. It is not likely to snow.'"
+    - name: "News Headlines"
+      duration: 15
+      adaptation_notes: "Students rewrite news headlines using 'likely': 'The president will probably visit' → 'The president is likely to visit.'"

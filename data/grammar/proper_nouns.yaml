@@ -1,0 +1,79 @@
+grammar_point: proper_nouns
+title: "Proper Nouns"
+description: "Names of specific people, places, organizations, and things. Always capitalized. Usually used without articles."
+level: A1
+
+meaning:
+  core_meaning: "Proper nouns name specific, unique things — a particular person (Maria), place (London), or thing (Coca-Cola). They are always capitalized."
+  timeline: "Timeless — proper nouns exist outside of tense."
+  contrast: |
+    'Proper noun' = "London" (specific place)
+    'Common noun' = "a city" (any city)
+  ccqs:
+    - question: "Does this noun name a specific person, place, or thing?"
+      answer: "Yes — it's a proper noun."
+    - question: "Is it capitalized?"
+      answer: "Yes — proper nouns are always capitalized."
+  example_generator:
+    contexts: ["names of people", "cities and countries", "brands and companies", "days and months", "titles and holidays"]
+    cultural_notes: ["Names vary across cultures — use diverse examples", "Some cultures put family name first"]
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Capitalized noun: 'Maria', 'London', 'Monday', 'Google'"
+    example_generator:
+      contexts: ["people", "places", "brands", "time expressions"]
+      min_examples: 5
+  negative:
+    structure: "Proper nouns don't change form for negation — the verb is negated: 'Maria doesn't live in London.'"
+    example_generator:
+      contexts: ["negative sentences with proper nouns"]
+      min_examples: 3
+  questions:
+    structure: "Proper nouns don't change form for questions — the verb changes: 'Does Maria live in London?'"
+    example_generator:
+      contexts: ["questions with proper nouns"]
+      min_examples: 3
+
+sub_rules:
+  - rule: "Most proper nouns don't use articles"
+    type: "grammatical"
+    examples: ["Maria ✅ / the Maria ❌", "London ✅ / the London ❌ (usually)"]
+  - rule: "Some proper nouns DO use 'the'"
+    type: "grammatical"
+    examples: ["the United States", "the United Kingdom", "the Nile", "the Alps", "the Pacific Ocean"]
+  - rule: "Days, months, and holidays are capitalized"
+    type: "spelling"
+    examples: ["Monday", "January", "Christmas", "Easter"]
+
+use:
+  - context: "Introducing people"
+    description: "Using proper nouns for names"
+    examples: ["My name is Ahmed.", "This is Maria.", "I'm from Brazil."]
+  - context: "Talking about places"
+    description: "Using proper nouns for locations"
+    examples: ["I live in Tokyo.", "She's from the United States.", "We visited the Eiffel Tower."]
+  - context: "Time expressions"
+    description: "Days, months, and holidays"
+    examples: ["I work on Monday.", "My birthday is in July.", "We celebrate Christmas."]
+
+phonetics:
+  - note: "Stress patterns vary by name — teach pronunciation of common names"
+    example_generator:
+      contexts: ["name pronunciation"]
+    l1_issue: "Names from different languages may have unfamiliar sounds"
+
+teaching:
+  methodology: "PPP (Present-Practice-Produce)"
+  tips:
+    - "Use students' own names as examples"
+    - "Practice capitalization rules explicitly"
+    - "Use maps and photos for place names"
+  recommended_activities:
+    - name: "Name Game"
+      duration: 10
+      adaptation_notes: "Students introduce themselves and others using proper nouns."
+    - name: "Capital City Quiz"
+      duration: 10
+      adaptation_notes: "Match countries to their capital cities."

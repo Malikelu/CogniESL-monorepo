@@ -1,0 +1,134 @@
+grammar_point: grammar_politeness
+title: "Grammatical Politeness (Would you mind..., Could I possibly..., I was wondering if)"
+description: "Grammaticised strategies for expressing politeness, deference, and social distance in English, including modal remoteness, past tense hedging, and indirect requests."
+level: B2
+
+meaning:
+  core_meaning: "English uses specific grammatical structures to encode politeness, deference, and social awareness. These include: (1) modal remoteness (using past forms of modals to soften requests), (2) past continuous for tentativeness, (3) negative questions for suggestions, and (4) conditional structures for hypothetical politeness. These strategies create social distance that signals respect."
+  timeline: "Politeness structures often use past tense forms (would, could, was wondering) to create psychological distance, even when referring to present or future situations."
+  contrast: "Direct: 'Give me the salt.' / Polite: 'Could you possibly pass the salt?' / Very polite: 'I was wondering if you might be able to pass the salt.' — Each step adds grammatical distance and politeness."
+  ccqs:
+    - question: "Is 'Could you help me?' more polite than 'Can you help me?'"
+      answer: "Yes — 'could' creates modal distance, making the request less direct."
+    - question: "Why do we use past tense ('I was wondering') for a present request?"
+      answer: "The past tense creates psychological distance, making the request feel less demanding."
+    - question: "Is 'Would you mind opening the door?' a real question?"
+      answer: "No — it is a polite request. 'No, I wouldn't mind' means 'Yes, I'll do it.'"
+  example_generator:
+    contexts: ["restaurant service", "workplace requests", "customer service", "formal invitations", "asking favours"]
+    cultural_notes: ["British English relies heavily on grammatical politeness strategies. Direct requests can sound rude in British culture, whereas in some cultures (e.g., German, Dutch, Israeli) directness is valued differently."]
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Could/Would + Subject + (possibly) + bare infinitive? / Would + Subject + mind + -ing? / I was wondering + if + Subject + could/would... / Do you think + Subject + could...?"
+    example_generator:
+      contexts: ["asking favours", "making requests", "seeking permission", "offering help"]
+      min_examples: 4
+  negative:
+    structure: "Couldn't/Wouldn't + Subject + (possibly) + bare infinitive? / Would + Subject + mind + not + -ing? / I don't suppose + Subject + could...?"
+    example_generator:
+      contexts: ["tentative requests", "soft refusals", "diplomatic disagreement"]
+      min_examples: 3
+  questions:
+    structure: "Is it + (adjective) + if + Subject + Verb...? / Would it be + (adjective) + if + Subject + Verb...? / Do you think + it would be + (adjective) + to...?"
+    example_generator:
+      contexts: ["asking permission", "making suggestions", "negotiating arrangements"]
+      min_examples: 3
+
+sub_rules:
+  - rule: "Modal remoteness (past forms of modals for politeness)"
+    type: "grammatical"
+    examples:
+      - "Could you help me? (more polite than 'Can you help me?')"
+      - "Would you mind waiting? (more polite than 'Do you mind waiting?')"
+      - "Might I suggest an alternative? (very formal, more polite than 'May I suggest?')"
+  - rule: "Past continuous for tentativeness"
+    type: "grammatical"
+    examples:
+      - "I was wondering if you could help me. (more polite than 'I wonder if...')"
+      - "I was hoping you might have time to look at this. (more polite than 'I hope...')"
+      - "I was thinking we could meet on Friday. (more polite than 'Let's meet on Friday.')"
+  - rule: "Negative questions for polite suggestions"
+    type: "pragmatic"
+    examples:
+      - "Wouldn't it be better to wait? (suggestion framed as a question)"
+      - "Couldn't we just ask him directly? (suggestion with 'couldn't')"
+      - "Don't you think we should reconsider? (seeking agreement)"
+  - rule: "Conditional structures for hypothetical politeness"
+    type: "grammatical"
+    examples:
+      - "If you could send me the file, I'd be very grateful."
+      - "I'd appreciate it if you would keep this confidential."
+      - "It would be wonderful if you could join us."
+  - rule: "Softening adverbs and hedging"
+    type: "lexical"
+    examples:
+      - "Could you possibly give me a hand? ('possibly' softens the request)"
+      - "Would you mind just checking this for me? ('just' minimises the imposition)"
+      - "I was wondering if perhaps you might be free. ('perhaps' and 'might' add layers of tentativeness)"
+
+use:
+  - context: "Workplace and professional communication"
+    description: "Politeness strategies are essential in professional settings to maintain good working relationships."
+    examples:
+      - "Could you possibly review this report by Friday?"
+      - "I was wondering if you might have time for a brief meeting."
+      - "Would you mind cc'ing me on that email?"
+  - context: "Customer service and service encounters"
+    description: "Service staff use politeness structures to be helpful without being presumptuous."
+    examples:
+      - "Would you like me to check availability for you?"
+      - "Could I possibly take your name and number?"
+      - "Might I suggest the special today? It's excellent."
+  - context: "Asking favours"
+    description: "When asking for a favour, speakers use increasingly polite structures to minimise the imposition."
+    examples:
+      - "I don't suppose you could lend me a hand, could you?"
+      - "Would you mind terribly if I asked you for a favour?"
+      - "If it's not too much trouble, could you possibly water my plants while I'm away?"
+  - context: "Formal invitations and requests"
+    description: "Formal events and written communication use the most elaborate politeness structures."
+    examples:
+      - "We would be delighted if you could join us for dinner."
+      - "I would be most grateful if you could confirm your attendance."
+      - "Would it be convenient if we rescheduled to Thursday?"
+  - context: "Refusing and disagreeing politely"
+    description: "Politeness strategies are also used when refusing or disagreeing to avoid causing offence."
+    examples:
+      - "I'm afraid I won't be able to make it. (softened refusal)"
+      - "That's a lovely idea, but I wonder if we might consider an alternative. (softened disagreement)"
+      - "I see your point, though I can't help feeling we should look at other options."
+
+phonetics:
+  - note: "Politeness is also conveyed through intonation — rising intonation on requests makes them sound more tentative and polite."
+    example_generator:
+      contexts: ["intonation in polite requests"]
+    l1_issue: "Speakers from cultures where falling intonation is standard for requests (e.g., German, Dutch) may sound abrupt in English if they don't use rising intonation."
+  - note: "Hedging words like 'possibly', 'just', and 'perhaps' are typically unstressed and spoken quickly, creating a sense of minimisation."
+    example_generator:
+      contexts: ["stress patterns in hedging language"]
+    l1_issue: "Learners may over-stress hedging words, making them sound sarcastic rather than polite."
+
+teaching:
+  methodology: "PPP (Presentation, Practice, Production)"
+  tips:
+    - "Present the concept of 'grammatical distance' — the more grammatical distance, the more polite."
+    - "Use a politeness scale: direct → could → would → would you mind → I was wondering if."
+    - "Role-play scenarios: asking a stranger for directions, asking a boss for time off, refusing an invitation."
+    - "Highlight the 'Would you mind...' trap — 'No' means 'I don't mind' (i.e., 'Yes, I'll do it')."
+    - "Compare politeness across cultures — what sounds polite in English may sound excessive in other languages, and vice versa."
+    - "Practice intonation: polite requests typically have a rising or level intonation, not falling."
+  recommended_activities:
+    - name: "Politeness Scale Ranking"
+      duration: 15
+      adaptation_notes: "Give students 10 requests. They rank them from most direct to most polite and discuss the grammatical features that create politeness."
+    - name: "Role-Play Scenarios"
+      duration: 25
+      adaptation_notes: "Students work in pairs with scenario cards (e.g., 'Ask your boss for a day off', 'Refuse an invitation politely'). They must use appropriate politeness structures."
+    - name: "Politeness Upgrade"
+      duration: 15
+      adaptation_notes: "Give students 5 direct requests. They must 'upgrade' each one to be progressively more polite, writing 3-4 versions of increasing politeness."
+    - name: "Cultural Comparison Discussion"
+      duration: 20
+      adaptation_notes: "Students discuss how requests and refusals work in their L1 compared to English. This raises awareness of cross-cultural pragmatic differences."

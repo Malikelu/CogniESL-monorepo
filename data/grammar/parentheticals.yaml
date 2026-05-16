@@ -1,0 +1,91 @@
+grammar_point: parentheticals
+title: "Parentheticals and Inserts"
+description: "Words or phrases inserted into a sentence that are grammatically independent and can be removed without affecting the core meaning."
+level: C2
+
+meaning:
+  core_meaning: "Elements inserted into a sentence that are grammatically independent and can be removed without affecting the core meaning. They add extra information, speaker attitude, or logical connections."
+  timeline: "Timeless — parentheticals can be used in any tense. The parenthetical itself has no tense; it comments on the main clause."
+  contrast: "Integrated clause = The man who called you is my boss. vs Parenthetical = The man, I believe, is my boss. (The parenthetical 'I believe' can be removed; the sentence still works.)"
+  ccqs:
+    - question: "If we remove the inserted phrase, is the sentence still grammatically complete?"
+      answer: "Yes — that is what makes it a parenthetical."
+    - question: "Does the inserted phrase change the core grammar of the sentence?"
+      answer: "No — it is grammatically independent."
+    - question: "Is the speaker adding their own opinion or attitude?"
+      answer: "Often yes — many parentheticals express the speaker's stance."
+  example_generator:
+    contexts: ["formal writing", "editorials", "academic texts", "spoken commentary", "news reports"]
+    cultural_notes: ["Parentheticals are common in British English journalism", "Overuse in spoken English can sound hesitant or unfocused", "In writing, they are usually set off by commas, dashes, or brackets"]
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Main clause with parenthetical inserted, set off by commas, dashes, or brackets: Subject + parenthetical + verb, or Subject + verb + parenthetical."
+    example_generator:
+      contexts: ["comment clauses", "connectors", "general inserts"]
+      min_examples: 4
+  negative:
+    structure: "The main clause is negated normally; the parenthetical remains unchanged. The parenthetical itself is never negated independently."
+    example_generator:
+      contexts: ["negative statements with parentheticals"]
+      min_examples: 3
+  questions:
+    structure: "The main clause is questioned; the parenthetical remains as an insert within the question."
+    example_generator:
+      contexts: ["questions with parentheticals"]
+      min_examples: 3
+
+sub_rules:
+  - rule: "Comment clauses — express speaker's attitude or certainty"
+    type: "grammatical"
+    examples: ["He is, I think, the best candidate.", "She will, I believe, succeed.", "It was, I suppose, a mistake.", "They are, I gather, leaving tomorrow."]
+  - rule: "Connector parentheticals — add logical relationship between ideas"
+    type: "grammatical"
+    examples: ["The results, however, were disappointing.", "She left, moreover, without apologising.", "He agreed, nevertheless, to help.", "The plan, therefore, was abandoned."]
+  - rule: "General inserts — add perspective, qualification, or aside"
+    type: "grammatical"
+    examples: ["He is, strictly speaking, not qualified for the role.", "It was, if you ask me, a terrible decision.", "The project, to be honest, is behind schedule.", "She is, so to speak, the heart of the team."]
+  - rule: "Punctuation — parentheticals must be separated from the main clause"
+    type: "punctuation"
+    examples: ["Commas: He is, I think, the best.", "Dashes: He is — I think — the best.", "Brackets: He is (I think) the best."]
+
+use:
+  - context: "Formal and academic writing"
+    description: "Parentheticals are common in essays, reports, and academic papers to add nuance, hedging, or logical connectors."
+    examples: ["The data, however, suggests a different conclusion.", "This approach, I would argue, is more effective."]
+  - context: "Spoken English and commentary"
+    description: "In speech, parentheticals add hesitation, opinion, or side comments."
+    examples: ["He is, you know, not really the right person.", "It was, I mean, quite surprising."]
+  - context: "Journalism and editorials"
+    description: "News writing uses parentheticals to add context or attribution."
+    examples: ["The minister, according to sources, will resign.", "The company, it seems, knew about the problem."]
+
+phonetics:
+  - note: "Parentheticals are typically spoken with lower pitch and faster speed than the main clause, creating a 'side comment' effect."
+    example_generator:
+      contexts: ["intonation patterns"]
+    l1_issue: "Speakers whose L1 does not use parentheticals may place them incorrectly or omit punctuation in writing, making sentences run-on."
+  - note: "In spoken English, parentheticals are often preceded and followed by a brief pause (reflected by commas in writing)."
+    example_generator:
+      contexts: ["pausing and rhythm"]
+    l1_issue: "Some L1 speakers produce parentheticals with the same stress as the main clause, making them sound like separate sentences."
+
+teaching:
+  methodology: "Guided discovery"
+  tips:
+    - "Start by showing students sentences with and without parentheticals and asking what difference the insert makes."
+    - "Use authentic editorials and opinion pieces to show parentheticals in context."
+    - "Practice punctuation: commas, dashes, and brackets all work but create different effects."
+    - "Have students add parentheticals to simple sentences to express attitude or connection."
+    - "Contrast parentheticals with relative clauses to highlight the 'removability' feature."
+  recommended_activities:
+    - name: "Spot the Parenthetical"
+      duration: 10
+      adaptation_notes: "Give students a short editorial text. They identify and underline all parentheticals, then discuss their function."
+    - name: "Add Your Voice"
+      duration: 15
+      adaptation_notes: "Students are given neutral sentences and must add parentheticals to express opinion, doubt, or connection (e.g., I think, however, strictly speaking)."
+    - name: "Punctuation Shift"
+      duration: 10
+      adaptation_notes: "Students rewrite the same sentence using commas, dashes, and brackets, and discuss how the tone changes."

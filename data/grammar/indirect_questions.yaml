@@ -1,0 +1,105 @@
+grammar_point: indirect_questions
+title: "Indirect Questions (Polite Information Requests)"
+description: "Polite ways to ask questions by embedding them in a statement, using question word + subject + verb (no inversion)."
+level: B2
+
+meaning:
+  core_meaning: "Ask questions indirectly to be more polite, less direct, or when embedding a question in a statement."
+  timeline: "N/A (Applies to all tenses; embedded question matches the time of the action)."
+  contrast: "'Direct Question' = Inverted, direct: \"Where is the station?\"\n\n'Indirect Question' = No inversion, polite: \"Can you tell me where the station is?\"\n\n'Yes/No Indirect' = If/whether: \"Do you know if he is coming?\"\n\n"
+  ccqs:
+    - question: "Does the embedded question use question word order (verb before subject)?"
+      answer: "No — it uses normal statement word order: subject + verb."
+    - question: "Is an indirect question more or less polite than a direct question?"
+      answer: "More polite — it softens the request."
+    - question: "Do we use 'if' or 'whether' for yes/no indirect questions?"
+      answer: "Both — 'if' and 'whether' are interchangeable in indirect yes/no questions."
+    - question: "Does 'Can you tell me where is the station?' follow the correct pattern?"
+      answer: "no — it should be 'Can you tell me where the station is?' (no inversion in the embedded part)."
+  example_generator:
+    contexts: ["everyday situations", "asking for directions", "customer service", "workplace communication"]
+    cultural_notes: ["Indirect questions are essential for polite English, especially with strangers and in professional settings", "Direct questions can sound rude or demanding in British English culture"]
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Introduction + question word + subject + verb: \"Can you tell me where the station is?\"\n\nYes/No indirect: If/whether + subject + verb: \"Do you know if he is coming?\"\n\n"
+    example_generator:
+      contexts: ["weather and nature", "asking for directions", "customer service"]
+      min_examples: 4
+  negative:
+    structure: "Negative in the embedded question: 'Can you tell me where the station isn't?' (rare), more common: 'I don't know where the station is.'"
+    example_generator:
+      contexts: ["everyday situations", "negation"]
+      min_examples: 4
+  questions:
+    structure: "Invert introduction verb: 'Could you tell me where the station is?'"
+    example_generator:
+      contexts: ["everyday situations"]
+      min_examples: 4
+
+sub_rules:
+  - rule: "Embedded questions use statement word order (subject before verb), not question word order"
+    type: grammatical
+    examples: ["Do you know where the bank is? (correct — subject 'the bank' before verb 'is')", "Do you know where is the bank? (incorrect — inverted word order)"]
+  - rule: "Common introduction phrases: Can you tell me..., Do you know..., I wonder..., I'd like to know..., Could you explain..."
+    type: lexical
+    examples: ["Can you tell me what time it is?", "Do you know whether the shop is open?", "I wonder how much this costs."]
+  - rule: "If and whether are interchangeable in indirect yes/no questions"
+    type: grammatical
+    examples: ["I don't know if he's coming.", "I don't know whether he's coming."]
+  - rule: "No auxiliary 'do/does/did' in the embedded question"
+    type: grammatical
+    examples: ["Tell me what you want. (not 'what do you want' when embedded)", "I wonder where she lives. (not 'where does she live' when embedded)"]
+  - rule: "Indirect questions can stand alone without an introduction phrase"
+    type: grammatical
+    examples: ["I don't know where he is. (statement with embedded question)", "I wonder if she'll come. (standalone indirect question)"]
+
+use:
+  - name: Polite Requests for Information
+    description: "Ask strangers or superiors for information politely."
+    examples:
+      - "Excuse me, can you tell me where the restroom is?"
+      - "Do you know what time the meeting starts?"
+    key_point: "More polite than direct questions."
+  - name: Embedded Questions in Statements
+    description: "Include a question in a statement."
+    examples:
+      - "I wonder if he will come."
+      - "She asked whether I liked it."
+    key_point: "Common in reported speech."
+  - name: Yes/No Indirect Questions
+    description: "Use if/whether for yes/no questions."
+    examples:
+      - "Do you know if it is raining?"
+      - "I don't know whether he is here."
+    key_point: "If and whether are interchangeable here."
+
+phonetics:
+  - note: "The introduction phrase often has rising intonation, while the embedded question falls"
+    example_generator:
+      contexts: ["question intonation"]
+    l1_issue: "Learners may use question intonation throughout, making 'where is he?' sound like a direct question even within an indirect structure."
+  - note: "'Whether' is often reduced to /ˈwɛð.ər/ in fast speech, sometimes sounding like 'wether'"
+    example_generator:
+      contexts: ["connected speech"]
+    l1_issue: "Learners may pronounce 'whether' too carefully, making it stand out unnaturally in casual speech."
+
+teaching:
+  methodology: "PPP with contrastive analysis"
+  tips:
+    - "Week 1: Wh- indirect questions (no inversion)."
+    - "Week 2: Yes/No indirect questions (if/whether)."
+    - "Week 3: Contrast direct vs indirect questions."
+    - "Role-play: Ask strangers for directions using indirect questions."
+    - "Use error correction drills: give students incorrect indirect questions to fix."
+  recommended_activities:
+    - name: "Politeness Upgrade"
+      duration: 15
+      adaptation_notes: "Students rewrite direct questions as indirect questions for a role-play scenario (hotel reception, tourist information)."
+    - name: "Word Order Fix"
+      duration: 10
+      adaptation_notes: "Students are given incorrect indirect questions and must identify and correct the word order."
+    - name: "Shop Assistant Role-Play"
+      duration: 15
+      adaptation_notes: "Pairs role-play customer and shop assistant, with the customer required to use indirect questions."

@@ -1,0 +1,109 @@
+grammar_point: noun_complement_clauses
+title: "Noun-Complement Clauses (The fact that..., The idea that..., The possibility that...)"
+description: "Clauses that complete the meaning of abstract nouns, introduced by 'that', 'whether', or a wh-word, functioning as the complement to the noun."
+level: C1
+
+meaning:
+  core_meaning: "A noun-complement clause is a subordinate clause that completes the meaning of a noun, just as a verb complement completes the meaning of a verb. The clause tells us WHAT the fact, idea, belief, etc., actually is. These clauses typically follow abstract nouns related to thought, knowledge, emotion, or communication, and are most commonly introduced by 'that'."
+  timeline: "The tense in the complement clause depends on the meaning, not on the main clause tense. 'The fact that she left is undeniable.' (past) / 'The fact that she is leaving is undeniable.' (present) / 'The fact that she will leave is undeniable.' (future)."
+  contrast: |
+    Without complement: "The news surprised everyone." (What news? We don't know.)
+    With complement: "The news that the factory would close surprised everyone." (Now we know the content of the news.)
+    Relative clause (modifies noun): "The news that he announced was shocking." (Which news? The one he announced.)
+    Complement clause (completes noun): "The news that the war was over was shocking." (What was the news? That the war was over.)
+  ccqs:
+    - question: "What is the difference between a relative clause and a noun-complement clause?"
+      answer: "A relative clause describes or identifies a noun (which one?). A noun-complement clause tells us the content of an abstract noun (what is the fact/idea/belief?)."
+    - question: "Can any noun take a complement clause?"
+      answer: "No — only certain abstract nouns, typically those related to thought, knowledge, emotion, or communication: fact, idea, belief, hope, suggestion, possibility, risk, danger, evidence, claim, etc."
+    - question: "Is 'that' always necessary in a noun-complement clause?"
+      answer: "In formal writing, 'that' is usually included. In informal speech, it is sometimes omitted: 'The fact she left early was strange' (informal) vs. 'The fact that she left early was strange' (formal)."
+    - question: "Can we use 'whether' instead of 'that'?"
+      answer: "Yes, when the complement involves uncertainty or a question: 'The question of whether he would come remained unanswered.' / 'The possibility that/whether she might change her mind cannot be ruled out.'"
+  example_generator:
+    contexts: ["academic writing", "formal reports", "news writing", "legal language", "IELTS/CAE essays"]
+    cultural_notes: ["Noun-complement clauses are a hallmark of formal written English. They are essential for academic essays, research papers, and professional reports. In many languages, the equivalent structure uses a different conjunction or word order, so learners may need explicit practice.", "In American English, the subjunctive is sometimes used after nouns of suggestion/demand: 'The recommendation that he be promoted was approved.' In British English, 'should' is more common: 'The recommendation that he should be promoted was approved.'"]
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Noun + that + clause: 'The fact that he was late didn't surprise anyone.' / 'The idea that we could fail never occurred to her.' / 'There is evidence that the treatment is effective.' The noun is usually abstract (fact, idea, belief, hope, suggestion, possibility, risk, evidence, claim, rumour, feeling, impression, etc.)."
+    example_generator:
+      contexts: ["academic writing", "formal reports", "news"]
+      min_examples: 4
+  negative:
+    structure: "The complement clause itself can be negative: 'The fact that she didn't attend the meeting was noted.' / 'The possibility that the project might not be completed on time is a concern.' / 'There is no evidence that the drug has any side effects.'"
+    example_generator:
+      contexts: ["negative complement clauses", "denial and absence"]
+      min_examples: 3
+  questions:
+    structure: "Noun-complement clauses can follow question nouns: 'The question of whether the government should intervene remains open.' / 'The issue of how the money should be spent has not been resolved.' / 'The debate over whether the policy is effective continues.'"
+    example_generator:
+      contexts: ["academic discussion", "policy debates", "formal questions"]
+      min_examples: 3
+
+sub_rules:
+  - rule: "Nouns of fact and knowledge (fact, evidence, proof, sign, indication)"
+    type: "grammatical"
+    examples: ["The evidence that he was at the scene is overwhelming.", "There was no sign that anything was wrong.", "The fact that the earth is round is undisputed."]
+  - rule: "Nouns of thought and belief (idea, belief, notion, assumption, theory, suspicion)"
+    type: "grammatical"
+    examples: ["The belief that hard work leads to success is deeply ingrained.", "The theory that the universe is expanding has been widely accepted.", "The assumption that all students have internet access is flawed."]
+  - rule: "Nouns of communication (claim, suggestion, proposal, recommendation, rumour, report)"
+    type: "grammatical"
+    examples: ["The claim that the product is 100% natural has been disputed.", "The suggestion that we should postpone the meeting was rejected.", "There are rumours that the CEO is resigning."]
+  - rule: "Nouns of emotion and attitude (hope, fear, concern, worry, disappointment, surprise)"
+    type: "grammatical"
+    examples: ["The hope that peace would prevail kept them going.", "The concern that children are spending too much time online is growing.", "The disappointment that the team had lost was visible on their faces."]
+  - rule: "Nouns of possibility and risk (possibility, risk, chance, danger, likelihood)"
+    type: "grammatical"
+    examples: ["The possibility that the flight might be delayed cannot be ruled out.", "The risk that the virus could mutate is a serious concern.", "There is a chance that the weather will improve by tomorrow."]
+  - rule: "Postponing the complement clause with 'it'"
+    type: "grammatical"
+    examples: ["It is a fact that the population is ageing.", "It is my belief that education can change lives.", "It was rumoured that the minister would resign."]
+
+use:
+  - context: "Academic writing"
+    description: "Noun-complement clauses are essential in academic discourse for presenting arguments, evidence, and theories."
+    examples: ["The fact that global temperatures are rising is supported by extensive data.", "The hypothesis that sleep deprivation affects cognitive function was confirmed by the study.", "There is growing evidence that early intervention improves outcomes."]
+  - context: "News and journalism"
+    description: "Journalists use noun-complement clauses to report claims, rumours, and findings."
+    examples: ["The claim that the minister had misled parliament was denied by Downing Street.", "Reports that the company is planning to lay off staff have been dismissed as speculation.", "The announcement that interest rates would be cut surprised the markets."]
+  - context: "Legal and official documents"
+    description: "Legal language uses noun-complement clauses for precision and formality."
+    examples: ["The allegation that the defendant had acted fraudulently was not upheld.", "The recommendation that the licence be revoked was accepted by the committee.", "There is no proof that the contract was signed under duress."]
+  - context: "Professional and business communication"
+    description: "Business reports and professional documents use noun-complement clauses to present findings and recommendations."
+    examples: ["The suggestion that we restructure the department was well received.", "The possibility that the merger might fall through cannot be ignored.", "The board acknowledged the risk that the new product might not succeed."]
+
+phonetics:
+  - note: "The word 'that' as a complementiser is almost always reduced to /ðət/ in connected speech, with a very short, unstressed vowel: 'The fact that he left' /ðə fækt ðət hi left/. It should not be stressed."
+    example_generator:
+      contexts: ["connected speech", "weak forms"]
+    l1_issue: "Learners may pronounce 'that' as /ðæt/ (the demonstrative form), making the sentence sound unnatural. Drill the weak form /ðət/ in context."
+  - note: "When the complement clause is long, speakers often pause briefly after the noun: 'The fact... that he had been lying all along... was shocking.' This helps the listener process the structure."
+    example_generator:
+      contexts: ["pausing in complex sentences", "spoken academic English"]
+    l1_issue: "Learners may rush through the structure without pausing, making it difficult for listeners to follow. Practice with deliberate pausing."
+
+teaching:
+  methodology: "Guided discovery"
+  tips:
+    - "Start by showing the difference between a relative clause and a noun-complement clause. Use minimal pairs: 'The news that he announced' (relative) vs. 'The news that the war was over' (complement). Ask: 'Which one tells us the content of the news?'"
+    - "Provide a list of nouns that take complement clauses and have students categorise them (fact, belief, emotion, communication, possibility)."
+    - "Practice transforming sentences: 'He was late. This fact surprised everyone.' → 'The fact that he was late surprised everyone.'"
+    - "Use authentic texts (news articles, academic abstracts) and have students identify noun-complement clauses."
+    - "Introduce the 'it' extraposition structure as an alternative: 'It is a fact that...' / 'It was rumoured that...'"
+  recommended_activities:
+    - name: "Clause identification"
+      duration: 15
+      adaptation_notes: "Give students 10 sentences, some with relative clauses and some with noun-complement clauses. Students identify which is which and explain the difference."
+    - name: "Sentence combining"
+      duration: 20
+      adaptation_notes: "Give students pairs of simple sentences. They must combine them using a noun-complement clause: 'The earth is round. This is a fact.' → 'The fact that the earth is round is undisputed.'"
+    - name: "Academic writing practice"
+      duration: 25
+      adaptation_notes: "Students write a short academic paragraph (80-100 words) on a given topic, using at least four noun-complement clauses. Peer review for accuracy and appropriateness."
+    - name: "Error correction"
+      duration: 15
+      adaptation_notes: "Provide sentences with common errors (wrong conjunction, missing 'that', confusion with relative clauses). Students identify and correct the errors."

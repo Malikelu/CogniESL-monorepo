@@ -1,0 +1,81 @@
+grammar_point: right_dislocation
+title: "Right-Dislocation"
+description: "Moving a noun phrase to the end of a sentence for emphasis or clarification, with a pronoun in the normal subject position: 'She is really smart, my sister.'"
+level: C1
+
+meaning:
+  core_meaning: "A structure where a noun phrase is moved to the end of a sentence and replaced by a pronoun. Used for emphasis or clarification in spoken English."
+  timeline: "Present — the dislocated element refers to the present."
+  contrast: "Standard = My sister is really smart. vs Right-dislocation = She is really smart, my sister."
+  ccqs:
+    - question: Is there a pronoun at the beginning and a noun at the end?
+      answer: Yes, that is right-dislocation.
+    - question: Is this formal or informal?
+      answer: Informal — used in spoken English.
+  example_generator:
+    contexts:
+      - spoken English
+      - informal conversation
+      - emphasis
+      - clarification
+    cultural_notes: []
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Pronoun + verb + complement + comma + noun phrase: She is really smart, my sister."
+    example_generator:
+      contexts:
+        - spoken English
+        - informal conversation
+        - emphasis
+      min_examples: 4
+  negative:
+    structure: "Same pattern: He did not show up, John."
+    example_generator:
+      contexts:
+        - spoken English
+        - informal conversation
+        - emphasis
+      min_examples: 4
+  questions:
+    structure: "Not typically used in questions."
+    example_generator:
+      contexts:
+        - spoken English
+        - informal conversation
+        - emphasis
+      min_examples: 4
+
+sub_rules:
+  - rule: The dislocated noun clarifies the pronoun
+    type: pragmatic
+    examples:
+      - She is really smart, my sister.
+      - He did not show up, John.
+      - They are very kind, my neighbors.
+
+use:
+  - context: Clarification
+    description: Used when the listener might not know who the pronoun refers to
+    examples:
+      - She is really smart, my sister.
+      - They are very kind, my neighbors.
+
+phonetics:
+  - note: Stress on the dislocated noun
+    example_generator:
+      contexts:
+        - emphasis
+    l1_issue: Some L1 speakers are not familiar with this structure.
+
+teaching:
+  methodology: Guided discovery
+  tips:
+    - Use authentic spoken examples
+    - Explain the clarifying function
+    - Practice with real names and relationships
+  recommended_activities:
+    - name: Dislocation Practice
+      duration: 10
+      adaptation_notes: Students transform standard sentences into right-dislocation.

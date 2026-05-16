@@ -1,0 +1,143 @@
+grammar_point: information_packaging
+title: "Information Packaging (It-clefts, Wh-clefts, Passive, Extraposition, Existential 'there')"
+description: "Grammatical structures used to organise information in a sentence according to what is already known (given) and what is new, important, or contrastive."
+level: C1
+
+meaning:
+  core_meaning: "Information packaging refers to the grammatical choices speakers and writers make to organise the flow of information in a sentence. English has several structures that allow the speaker to control what comes first (topic/given information) and what comes last (focus/new information). These include: it-clefts, wh-clefts (pseudo-clefts), passive voice, extraposition (it as preparatory subject), existential 'there', and fronting. Mastery of these structures is essential for coherent, natural-sounding discourse."
+  timeline: "Applicable across all tenses; information packaging is a discourse-level choice independent of time reference."
+  contrast: "Neutral: 'A dog bit the postman.' / It-cleft: 'It was a dog that bit the postman.' (focus on dog) / Wh-cleft: 'What bit the postman was a dog.' (focus on dog) / Passive: 'The postman was bitten by a dog.' (focus on postman) / Existential: 'There was a dog that bit the postman.' (introducing new entity)"
+  ccqs:
+    - question: "Do we use an it-cleft to emphasise one particular element?"
+      answer: "Yes — 'It was the DOG that bit the postman' (not the cat)."
+    - question: "Is the passive an information packaging device?"
+      answer: "Yes — it moves the patient to subject position and the agent to end-focus."
+    - question: "When do we use existential 'there'?"
+      answer: "To introduce a new entity into the discourse: 'There was a strange noise.'"
+  example_generator:
+    contexts: ["academic writing", "news reporting", "everyday conversation", "narrative writing", "formal presentations"]
+    cultural_notes: ["English relies heavily on grammatical structures for information packaging, whereas other languages may use word order, particles, or intonation. Learners from topic-prominent languages (e.g., Japanese, Korean) may find English information packaging structures particularly challenging."]
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "It + be + FOCUS + who/that + clause (it-cleft) / Wh-clause + be + FOCUS (wh-cleft) / Subject (patient) + be + past participle + by + agent (passive) / It + be + adjective/noun + to-infinitive/that-clause (extraposition) + There + be + new entity + modifier (existential)"
+    example_generator:
+      contexts: ["academic writing", "news reporting", "narrative", "formal presentations"]
+      min_examples: 4
+  negative:
+    structure: "It + be + not + FOCUS + who/that + clause (negative cleft) / Subject + be + not + past participle (passive negative) + There + be + no/n't any + new entity (negative existential)"
+    example_generator:
+      contexts: ["correcting misinformation", "denying claims", "reporting absence"]
+      min_examples: 3
+  questions:
+    structure: "Is/Was it + FOCUS + who/that + clause? (cleft question) / What + clause + be + FOCUS? (wh-cleft question) / Is/Are + there + entity? (existential question)"
+    example_generator:
+      contexts: ["investigative questioning", "clarifying information", "checking existence"]
+      min_examples: 3
+
+sub_rules:
+  - rule: "It-cleft sentences for narrow focus"
+    type: "grammatical"
+    examples:
+      - "It was John who broke the window. (focus on John — not Mary)"
+      - "It is the economy that voters care about most. (focus on the economy)"
+      - "It was in 1945 that the war ended. (focus on the date)"
+  - rule: "Wh-cleft (pseudo-cleft) for broad focus"
+    type: "grammatical"
+    examples:
+      - "What I need is a good night's sleep. (focus on the whole complement)"
+      - "What happened next was completely unexpected. (focus on the event)"
+      - "Where she went after that remains a mystery. (focus on location)"
+  - rule: "Passive voice for end-focus or agent defocusing"
+    type: "grammatical"
+    examples:
+      - "The Mona Lisa was painted by Leonardo da Vinci. (focus on da Vinci)"
+      - "Mistakes were made. (agent defocusing — common in political language)"
+      - "The building was demolished in 1987. (focus on the building/date)"
+  - rule: "Extraposition (it as preparatory subject)"
+    type: "grammatical"
+    examples:
+      - "It is important to read the instructions carefully. (instead of: 'To read the instructions carefully is important.')"
+      - "It seems that nobody noticed the error."
+      - "It was a pleasure meeting you."
+  - rule: "Existential 'there' for introducing new information"
+    type: "grammatical"
+    examples:
+      - "There was a knock at the door. (introducing 'a knock' into the discourse)"
+      - "There are several reasons for this decision."
+      - "There appears to be a problem with the system."
+  - rule: "Fronting for thematic emphasis"
+    type: "stylistic"
+    examples:
+      - "This question we must address first. (fronted object)"
+      - "A strange thing happened yesterday. (fronted complement for dramatic effect)"
+
+use:
+  - context: "Academic writing"
+    description: "Information packaging structures are essential for coherent academic prose, allowing writers to guide the reader's attention."
+    examples:
+      - "It is this variable that accounts for the observed effect. (it-cleft for focus)"
+      - "What the data reveal is a significant correlation. (wh-cleft for emphasis)"
+      - "It is widely acknowledged that further research is needed. (extraposition)"
+  - context: "News reporting"
+    description: "Journalists use information packaging to foreground the most newsworthy element."
+    examples:
+      - "It is the Prime Minister who will face the most difficult questions. (it-clear focus)"
+      - "The hostages were released after three days. (passive for end-focus)"
+      - "There are fears that the situation may deteriorate. (existential for new information)"
+  - context: "Everyday conversation"
+    description: "Speakers naturally use these structures to organise information flow."
+    examples:
+      - "What I really want is a cup of tea. (wh-cleft for emphasis)"
+      - "There's someone at the door. (existential for new entity)"
+      - "It was Sarah who told me about it. (it-cleft for focus)"
+  - context: "Narrative and storytelling"
+    description: "Writers use information packaging for dramatic effect and pacing."
+    examples:
+      - "It was a dark and stormy night when the letter arrived. (it-cleft for dramatic opening)"
+      - "There was something strange about the house. (existential for suspense)"
+      - "What happened next changed everything. (wh-cleft for narrative transition)"
+  - context: "Formal presentations and speeches"
+    description: "Speakers use these structures to highlight key points and maintain audience attention."
+    examples:
+      - "It is this issue that I want to address today. (it-cleft for focus)"
+      - "There are three main reasons for this change. (existential for listing)"
+      - "What we have achieved so far is remarkable. (wh-cleft for emphasis)"
+
+phonetics:
+  - note: "In it-cleft sentences, the focused element carries the nuclear stress: 'It was JOHN who broke the window.'"
+    example_generator:
+      - contexts: ["stress in cleft sentences"]
+    l1_issue: "Speakers from languages that use particles for focus (e.g., Japanese 'wa') may not place appropriate stress on the focused element."
+  - note: "Existential 'there' is always pronounced with a weak form /ðə(r)/, never with the full /ðeə(r)/ pronunciation."
+    example_generator:
+      - contexts: ["pronunciation of existential there"]
+    l1_issue: "Learners may pronounce 'there' in 'there is' with full stress, making it sound like the locative 'there' (as in 'over there')."
+  - note: "In wh-cleft sentences, the wh-clause typically has rising intonation and the focus has falling intonation: 'What I NEED... is a good night's SLEEP.'"
+    example_generator:
+      - contexts: ["intonation in wh-cleft sentences"]
+    l1_issue: "Tonal language speakers may need explicit practice with English intonation patterns for information focus."
+
+teaching:
+  methodology: "Guided discovery"
+  tips:
+    - "Start with the passive as an information packaging device — students already know the passive, so focus on its discourse function."
+    - "Introduce it-clefts next, using contrastive contexts: 'It wasn't Mary — it was John.'"
+    - "Use wh-clefts for emphasis in everyday speech: 'What I want is...'"
+    - "Teach extraposition as a way to make sentences more natural: 'It is important to...' is more natural than 'To... is important.'"
+    - "Use information-gap activities where students must choose the right packaging structure for the context."
+    - "Compare packaging across languages — show how English uses grammar where other languages use word order or particles."
+  recommended_activities:
+    - name: "Pack the Information"
+      duration: 20
+      adaptation_notes: "Give students a neutral sentence and a context. They must choose the best packaging structure (cleft, passive, existential, extraposition) and rewrite the sentence. Discuss choices as a class."
+    - name: "Discourse Flow Analysis"
+      duration: 20
+      adaptation_notes: "Students read a short text and identify all information packaging structures. They explain why the author chose each structure and what would change if a different structure were used."
+    - name: "Cleft Sentence Auction"
+      duration: 15
+      adaptation_notes: "Students bid on whether cleft sentences are grammatically correct and contextually appropriate. Competitive group activity."
+    - name: "News Rewrite"
+      duration: 25
+      adaptation_notes: "Students take a neutral news paragraph and rewrite it using at least four different information packaging structures. Compare versions for naturalness and effectiveness."

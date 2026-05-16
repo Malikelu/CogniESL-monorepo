@@ -1,0 +1,98 @@
+grammar_point: habitual_aspects
+title: "Habitual Aspects"
+description: "Expressing habitual actions — things that happen regularly. Uses used to, would, will for habits, be used to, get used to."
+level: B1
+
+meaning:
+  core_meaning: "Habitual aspect describes actions that happen regularly or repeatedly. Different structures express past habits, present habits, and getting accustomed to something."
+  timeline: "Past habits (used to, would) vs Present habits (will) vs Getting accustomed (be/get used to)"
+  contrast: "Used to = I used to play football. (past habit, not now) vs Will = He will sit for hours. (present habit, typical behavior)"
+  ccqs:
+    - question: Is this a past habit or a present habit?
+      answer: Past = used to/would, Present = will
+    - question: Does the person still do this?
+      answer: Used to = no longer, Will = still does
+  example_generator:
+    contexts:
+      - past routines
+      - typical behavior
+      - getting accustomed to new situations
+      - nostalgia
+    cultural_notes:
+      - Used to for past habits is very common in storytelling
+      - Would for past habits is more formal/literary
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Past: Subject + used to + base verb / Subject + would + base verb / Present: Subject + will + base verb"
+    example_generator:
+      contexts:
+        - past routines
+        - typical behavior
+        - present habits
+      min_examples: 4
+  negative:
+    structure: "Past: Subject + did not use to + base verb / Present: Subject + will not + base verb"
+    example_generator:
+      contexts:
+        - negative habits
+      min_examples: 3
+  questions:
+    structure: "Past: Did + subject + use to + verb? / Present: Does + subject + always + verb?"
+    example_generator:
+      contexts:
+        - asking about habits
+      min_examples: 3
+
+sub_rules:
+  - rule: Used to for past states and actions
+    type: grammatical
+    examples:
+      - I used to live in London. (state)
+      - She used to play tennis. (action)
+  - rule: Would only for past actions (not states)
+    type: grammatical
+    examples:
+      - We would go to the beach. (action)
+      - I would live in London. (state — WRONG, use used to)
+  - rule: Be used to = be accustomed to (followed by noun or -ing)
+    type: grammatical
+    examples:
+      - I am used to the noise.
+      - She is used to working late.
+  - rule: Get used to = become accustomed to (followed by noun or -ing)
+    type: grammatical
+    examples:
+      - I am getting used to the weather.
+      - You will get used to it.
+
+use:
+  - context: Past habits
+    description: Talking about things you did regularly in the past
+    examples:
+      - I used to walk to school.
+      - We would play in the park every day.
+  - context: Getting accustomed
+    description: Talking about adapting to new situations
+    examples:
+      - I am getting used to the new job.
+      - She is used to living alone.
+
+phonetics:
+  - note: Used to pronounced /juːst tuː/ (not /juːs tuː/)
+    example_generator:
+      contexts:
+        - pronunciation
+    l1_issue: Some L1 speakers confuse used to and be used to
+
+teaching:
+  methodology: PPP
+  tips:
+    - Contrast used to (past) vs be used to (present)
+    - Use nostalgia scenarios for past habits
+    - Use real-life adaptation scenarios for get used to
+  recommended_activities:
+    - name: Then and Now
+      duration: 15
+      adaptation_notes: Students compare past and present habits using used to and would.
