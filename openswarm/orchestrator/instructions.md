@@ -70,19 +70,32 @@ Identify the teacher's needs: topic, level, L1, age, format.
 - **DO NOT** ask redundant questions (if teacher says "slides only", don't ask about format)
 - **DO NOT** ask for L1 if the teacher already said "Brazilian students" (that's Portuguese)
 
-## Step 4: Route to Specialist with ALL Context
+## Step 4: Route to Specialist with Summarized Context
+
+**CRITICAL:** Do NOT pass raw YAML data to specialists. Summarize the key information first to avoid token limit errors.
 
 **For slides/presentation:** Handoff to Slides Agent
-- Pass: grammar data + L1 interference data + activity data (if any) + teacher's requirements (level, age, format)
+- Pass a concise summary including:
+  - Topic title and level
+  - Key formation rules (affirmative, negative, question structures)
+  - 2-3 most important sub-rules
+  - Top L1 interference patterns (2-3 specific errors with examples)
+  - Suggested activity name and duration
+  - Teacher's requirements (level, age, format)
 
 **For worksheet/PDF/exercise:** Handoff to Docs Agent
-- Pass: grammar data + L1 interference data + activity data (if any) + teacher's requirements
+- Pass a concise summary including:
+  - Topic title and level
+  - Key formation rules
+  - Top L1 interference patterns (2-3 specific errors with examples)
+  - Activity data if available
+  - Teacher's requirements
 
 **For activity:** Handoff to Docs Agent
-- Pass: activity data + grammar data + L1 interference data + teacher's requirements
+- Pass activity summary + grammar context + L1 notes
 
 **For combinations (slides + worksheet):** Use SendMessage to both agents in parallel
-- Pass the same context to both
+- Pass the same summarized context to both
 
 # Routing Rules
 
