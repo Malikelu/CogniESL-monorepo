@@ -1,5 +1,4 @@
 from agency_swarm import Agent, ModelSettings
-from openai.types.shared import Reasoning
 from dotenv import load_dotenv
 
 from config import get_default_model, is_openai_provider
@@ -8,7 +7,19 @@ from orchestrator.custom_tools import SearchGrammarTool, SearchActivitiesTool, G
 load_dotenv()
 
 
+def _is_reasoning_model() -> bool:
+    """Check if the configured model supports reasoning (o1, o3, etc.)."""
+    import os
+    model = os.getenv("DEFAULT_MODEL", "")
+    return model.startswith("o1") or model.startswith("o3") or model.startswith("o4")
+
+
 def create_orchestrator() -> Agent:
+    reasoning = None
+    if is_openai_provider() and _is_reasoning_model():
+        from openai.types.shared import Reasoning
+        reasoning = Reasoning(effort="medium", summary="auto")
+
     return Agent(
         name="Orchestrator",
         description=(
@@ -20,7 +31,7 @@ def create_orchestrator() -> Agent:
         tools=[SearchGrammarTool, SearchActivitiesTool, GetL1InterferenceTool],
         model=get_default_model(),
         model_settings=ModelSettings(
-            reasoning=Reasoning(effort="medium", summary="auto") if is_openai_provider() else None,
+            reasoning=reasoning,
         ),
         conversation_starters=[
             "I need slides for present simple for my Brazilian students.",

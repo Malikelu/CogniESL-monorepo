@@ -1,448 +1,801 @@
 language: tamil
 schema_version: '3.0'
 grammar_points:
-  agglutinative_verbs:
+  sov_word_order:
     interference_patterns:
-    - Tamil uses SOV word order which does not exist in English, causing transfer
-      errors related to 'agglutinative verbs'.
-    why_it_happens: Tamil handles 'agglutinative verbs' differently from English.
-      Tamil L1 speakers transfer native structural patterns to English, leading to
-      systematic errors. The error is persistent because the Tamil structure is deeply
-      automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Tamil and English for 'agglutinative
-        verbs'. Show the Tamil structure side-by-side with English. Highlight the
-        specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Tamil handles
-        'agglutinative verbs' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Tamil sentences, students translate to English, focusing
-          on correct 'agglutinative verbs' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Tamil-style 'agglutinative verbs' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'agglutinative
-          verbs' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'agglutinative
-          verbs' errors.
-        duration: 15
+    - pattern: Tamil SOV word order transferred to English -> English requires SVO
+      example_tamil: naan saappitten saivam (நான் சாப்பிட்டேன் சைவம்)
+      example_gloss: I ate vegetarian-food
+      example_wrong: I rice ate.
+      example_correct: I ate rice.
+      explanation: 'Tamil is a rigid SOV language: the verb always comes at the end. English is SVO. Tamil speakers often
+        produce sentences like ''I rice ate'' or ''She the book read.'' The error is most visible with direct/indirect object
+        pairs: Tamil ''Naan avanukku kaattinaen puttakam'' (I him showed book) becomes ''I him showed the book'' instead of
+        ''I showed him the book.'''
+    - pattern: Object placed before verb in English -> English requires verb before object complement
+      example_tamil: aval paadinaal paattai (அவள் பாடினாள் பாட்டை)
+      example_gloss: She sang song-the
+      example_wrong: She the song sang beautifully.
+      example_correct: She sang the song beautifully.
+      explanation: In Tamil, the object precedes the verb and takes the accusative suffix -ai/-ei. English speakers expect
+        Verb-Object order. Tamil learners may produce 'She the song sang' or place adverbs in unexpected positions because
+        Tamil places adverbs before the verb phrase, not after.
+    - pattern: Post-verbal adverb placement transferred from Tamil -> English adverb placement rules differ
+      example_tamil: avan oadinaan vegamaaga (அவன் ஓடினான் வேகமாக)
+      example_gloss: He ran quickly
+      example_wrong: He quickly ran to the store.
+      example_correct: He ran to the store quickly.
+      explanation: Tamil places manner adverbs immediately before the final verb. English allows both pre-verbal and post-verbal
+        adverb positions, but the rules are different. Tamil speakers may overuse pre-verbal placement or produce awkward
+        post-verbal orders.
     examples:
-    - 'Wrong: Applying Tamil ''agglutinative verbs'' structure to English. Correct:
-      Use the English structure for ''agglutinative verbs''.'
-    - 'Wrong: Direct translation of Tamil ''agglutinative verbs'' pattern. Correct:
-      Follow English ''agglutinative verbs'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''agglutinative verbs'' patterns.'
+    - 'Wrong: ''I the letter wrote yesterday.'' Correct: ''I wrote the letter yesterday.'''
+    - 'Wrong: ''She the children taught patiently.'' Correct: ''She taught the children patiently.'''
+    - 'Wrong: ''He quickly ran and bought the book.'' Correct: ''He ran quickly and bought the book.'''
+    - 'Wrong: ''I him gave the money.'' Correct: ''I gave him the money.'''
+    why_it_happens: Tamil is a strictly head-final SOV language, meaning the verb always comes at the end of the clause. This
+      is one of the most fundamental typological differences from English, which is SVO. In Tamil, the basic sentence structure
+      is Subject plus Adverb plus Object plus Verb, and this order becomes the default cognitive habit from years of daily
+      Tamil use. When Tamil speakers learn English, they must restructure their entire sentence planning strategy. The error
+      is particularly persistent because word order is processed automatically -- speakers do not consciously choose where
+      to place the verb. Additionally, Tamil uses case markers (like -ai for accusative) to mark grammatical roles, so word
+      order is actually more flexible in Tamil than in English, where word order IS the primary marker of grammatical function.
+      Tamil speakers must learn that in English, 'The dog bit the man' and 'The man bit the dog' have completely different
+      meanings, whereas in Tamil, case markers would disambiguate even with scrambled word order.
+    teacher_tips:
+      how_to_explain: 'Write two columns on the board. Left column: Tamil order (S-O-V). Right column: English order (S-V-O).
+        Use a simple sentence: ''I / rice / ate'' versus ''I / ate / rice.'' Say: ''In Tamil, the action word (verb) always
+        comes LAST. In English, the action word comes in the MIDDLE, right after the person doing it. English uses WORD ORDER
+        to show who did what to whom -- there are no case endings to help.'' Drill with physical movement: have students stand
+        in line and rearrange themselves.'
+      where_to_start: 'Begin with simple transitive sentences using high-frequency verbs: eat, read, write, buy, see. Use
+        color-coded cards: blue for Subject, red for Verb, green for Object. Students physically rearrange cards from Tamil
+        order to English order. Start with present tense to avoid additional complexity.'
+      sequencing: 'Week 1: Simple SVO with one object (I eat rice). Week 2: SVO with adverbs (I eat rice quickly). Week 3:
+        Ditransitive verbs (I gave him the book -- two objects). Week 4: Questions and inversion (Do you eat rice?). Week
+        5: Complex sentences with subordinate clauses.'
+      exercises:
+      - name: 'Card Shuffle: Tamil to English'
+        type: transformation
+        description: Give students 15 color-coded word cards per set (Subject=Blue, Object=Green, Verb=Red, Adverb=Yellow).
+          Call out a Tamil SOV sentence. Students arrange cards in Tamil order first, then physically rearrange to English
+          SVO order and read the sentence aloud. Teacher checks and corrects. Each student completes all 15 sentences.
+        duration: 20
+      - name: Word Order Error Hunt
+        type: error-correction
+        description: Provide a short paragraph (8-10 sentences) written by a fictional Tamil learner. 7 sentences have SOV
+          word order errors. Students identify each error, underline the misplaced word, and rewrite the sentence correctly.
+          Discuss as a class why each error changes or confuses the meaning.
+        duration: 15
+      - name: Live Translation Relay
+        type: oral-drill
+        description: Teacher reads Tamil sentences aloud (with English gloss). Students race to produce the correct English
+          SVO sentence orally. First student to raise hand and produce a correct sentence gets a point. Use 20 sentences of
+          increasing complexity. This builds automatic SVO production.
+        duration: 15
+      - name: Sentence Building with Constraints
+        type: sentence-rewrite
+        description: Give students a list of 10 Tamil sentences with word-by-word English glosses in SOV order. Students must
+          rewrite each sentence in correct English SVO order WITHOUT looking at notes. After writing, they compare with a
+          partner and discuss differences. Teacher provides correct versions for self-check.
+        duration: 15
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Sarma, V. (2005). Tamil learners and English article acquisition. Indian Journal
-      of Applied Linguistics, 31(1), 45-60.
-    source_count: 2
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference and Other Problems (2nd ed.). Cambridge
+      University Press.'
+    - Lehmann, T. (1993). A Grammar of Modern Tamil. Pondicherry Institute of Linguistics and Culture.
+    - Annamalai, E. & Steever, S.B. (1998). Modern Tamil. In The Dravidian Languages, Routledge.
+    - 'Celce-Murcia, M. & Larsen-Freeman, D. (1999). The Grammar Book: An ESL/EFL Teacher''s Course (2nd ed.). Heinle & Heinle.'
+    source_count: 4
+    source_type: literature
+    frequency: 5
+    persistence: 4
+    communicative_impact: 4
     flagged: false
     tier: 1
     individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Tamil
-    notes: Fundamental structural difference from English.
-  dravidian_verb_tables:
+    assessment: Expert-evaluated. SOV-to-SVO transfer is the single most pervasive syntactic error for Tamil learners of English.
+      It affects every sentence they produce and is highly persistent because word order is processed automatically.
+    notes: Tamil is rigidly SOV with case markers. English relies on word order for grammatical roles. This is the foundational
+      interference pattern from which many others derive.
+  article_usage:
     interference_patterns:
-    - Tamil uses SOV word order which does not exist in English, causing transfer
-      errors related to 'dravidian verb tables'.
-    why_it_happens: Tamil handles 'dravidian verb tables' differently from English.
-      Tamil L1 speakers transfer native structural patterns to English, leading to
-      systematic errors. The error is persistent because the Tamil structure is deeply
-      automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Tamil and English for 'dravidian
-        verb tables'. Show the Tamil structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Tamil handles
-        'dravidian verb tables' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Tamil sentences, students translate to English, focusing
-          on correct 'dravidian verb tables' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Tamil-style 'dravidian verb tables'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'dravidian
-          verb tables' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'dravidian verb
-          tables' errors.
-        duration: 15
+    - pattern: Indefinite article 'a/an' omitted before singular countable nouns -> English requires an article
+      example_tamil: avan maanavan (அவன் மாணவன்)
+      example_gloss: He student
+      example_wrong: He is teacher.
+      example_correct: He is a teacher.
+      explanation: Tamil has no article system. Definiteness is inferred from context, demonstratives (anda 'that'), or word
+        order. English requires 'a/an' before singular countable nouns. Tamil speakers systematically omit articles, producing
+        'I bought book' or 'She is doctor.'
+    - pattern: Definite article 'the' omitted when specificity is clear from context -> English still requires 'the'
+      example_tamil: puththagam mesayil irukkiradhu (புத்தகம் மேசையில் இருக்கிறது)
+      example_gloss: Book table-on is
+      example_wrong: Book is on table.
+      example_correct: The book is on the table.
+      explanation: When Tamil speakers know which specific book and table they are referring to, they use no article because
+        Tamil lacks them entirely. English requires 'the' for specific, known referents. This leads to bare noun phrases that
+        sound telegraphic.
+    - pattern: Article 'the' overused with proper nouns and abstract nouns -> English does not use 'the' with most proper
+        nouns
+      example_tamil: Thiruvalluvar koorinaar (திருவள்ளுவர் கூறினார்)
+      example_gloss: Thiruvalluvar said
+      example_wrong: The Thiruvalluvar said that the patience is the greatest virtue.
+      example_correct: Thiruvalluvar said that patience is the greatest virtue.
+      explanation: Because Tamil speakers learn that English uses 'the' for specificity, they may overgeneralize it to proper
+        nouns (the Gandhi, the India) and abstract nouns (the patience, the happiness) where English uses zero article.
+    - pattern: Generic reference without article -> English requires 'the' or plural for generic reference
+      example_tamil: puli azhagaaana vilangu (புலி அழகான விலங்கு)
+      example_gloss: Tiger beautiful animal
+      example_wrong: Tiger is beautiful animal.
+      example_correct: The tiger is a beautiful animal. / Tigers are beautiful animals.
+      explanation: Tamil uses bare nouns for generic reference. English requires either 'the + singular' or 'plural without
+        article' for generic statements. Tamil speakers produce bare noun generics that sound incomplete in English.
     examples:
-    - 'Wrong: Applying Tamil ''dravidian verb tables'' structure to English. Correct:
-      Use the English structure for ''dravidian verb tables''.'
-    - 'Wrong: Direct translation of Tamil ''dravidian verb tables'' pattern. Correct:
-      Follow English ''dravidian verb tables'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''dravidian verb tables'' patterns.'
+    - 'Wrong: ''I want to become engineer.'' Correct: ''I want to become an engineer.'''
+    - 'Wrong: ''Please close door.'' Correct: ''Please close the door.'''
+    - 'Wrong: ''The gold is expensive metal.'' Correct: ''Gold is an expensive metal.'''
+    - 'Wrong: ''She gave me advice.'' Correct: ''She gave me some advice.'''
+    why_it_happens: 'Tamil has no article system whatsoever -- no definite article, no indefinite article, no partitive article.
+      This is a fundamental typological gap. In Tamil, definiteness and specificity are conveyed through demonstratives (inda
+      ''this'', anda ''that''), numeral ''one'' (oru for indefinite), or simply through context and shared knowledge. English,
+      by contrast, has a complex article system that distinguishes between specific/definite (the), specific/indefinite (a/an),
+      generic (the plus singular or bare plural), and mass/non-count (zero article). Tamil speakers face a triple challenge:
+      they must learn that articles exist as a grammatical category, they must learn the complex rules governing when to use
+      a versus an versus the versus zero, and they must develop the habit of inserting articles automatically, which requires
+      years of practice. The error is highly persistent because article omission does not typically cause communication failure
+      -- listeners can usually understand the meaning from context, so the error is rarely corrected naturally.'
+    teacher_tips:
+      how_to_explain: 'Say: ''In Tamil, you can say just book -- no extra word needed. In English, every singular countable
+        noun needs a companion word -- either a or the. Think of it like this: a means ANY one (not specific), the means THIS
+        one (specific, we both know which).'' Write on board: ''___ book is on ___ table.'' Ask: ''Which book? Which table?''
+        If specific then use the. If any book/table then use a. Use a bag of objects: hold up ''a pencil'' (any pencil) versus
+        ''the pencil'' (this specific one).'
+      where_to_start: 'Start with the indefinite article ''a/an'' using classroom objects. Hold up objects: ''This is a pen.
+        This is a book.'' Then introduce ''the'' by pointing: ''The door is open. The board is clean.'' Establish the ANY
+        versus THAT distinction before moving to abstract uses.'
+      sequencing: 'Week 1: Indefinite article a/an with singular countable nouns. Week 2: Definite article ''the'' with specific/known
+        referents. Week 3: Zero article with plurals and uncountables. Week 4: Generic reference (the tiger / tigers). Week
+        5: Fixed expressions and exceptions (go to school, at home, by bus).'
+      exercises:
+      - name: 'Article Audit: Classroom Edition'
+        type: fill-in-the-blank
+        description: 'Students walk around the classroom and write 10 sentences about objects they see, using correct articles.
+          Example: ''There is ___ whiteboard at the front. ___ whiteboard is new.'' Partners check each other''s articles.
+          Teacher circulates and provides feedback.'
+        duration: 15
+      - name: A versus The Sorting Game
+        type: matching
+        description: Prepare 30 sentence strips with blanks where articles should go. Students work in pairs to place each
+          sentence in the 'a/an' pile or 'the' pile and fill in the correct article. Sentences progress from concrete/visible
+          to abstract. Pairs compare answers and discuss disagreements.
+        duration: 15
+      - name: Article-Free to Article-Full
+        type: transformation
+        description: Provide 12 Tamil-style bare-noun sentences (e.g., 'I bought book from store near house'). Students must
+          add all necessary articles and rewrite the sentences correctly. Then they compare with a partner and explain their
+          article choices.
+        duration: 15
+      - name: Spot the Article Error
+        type: error-correction
+        description: Give students a 150-word essay written by a fictional Tamil learner. The essay has 15 article errors
+          (omissions and overuses). Students must find each error, correct it, and explain why the article was wrong. Class
+          discusses the most common patterns found.
+        duration: 15
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Sarma, V. (2005). Tamil learners and English article acquisition. Indian Journal
-      of Applied Linguistics, 31(1), 45-60.
-    source_count: 2
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference and Other Problems (2nd ed.). Cambridge
+      University Press.'
+    - 'Master, P. (1997). The English article system: Acquisition, function, and pedagogy. System, 25(2), 215-232.'
+    - Robertson, D. (2000). Variability in the use of the English article system by Chinese learners of English. Second Language
+      Research, 16(2), 135-172.
+    - 'Celce-Murcia, M. & Larsen-Freeman, D. (1999). The Grammar Book: An ESL/EFL Teacher''s Course (2nd ed.). Heinle & Heinle.'
+    source_count: 4
+    source_type: literature
+    frequency: 5
+    persistence: 5
+    communicative_impact: 2
     flagged: false
     tier: 1
     individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Tamil
-    notes: Verb tables are essential but structurally alien to English learners.
-  tamil_negation:
+    assessment: Expert-evaluated. Article omission is the most frequent and persistent error for Tamil learners. It rarely
+      blocks communication but is a major marker of non-nativeness.
+    notes: Tamil has zero articles. The closest equivalent is oru (one) for indefinite reference and demonstratives for definite
+      reference.
+  negation:
     interference_patterns:
-    - Tamil uses SOV word order which does not exist in English, causing transfer
-      errors related to 'negation'.
-    why_it_happens: Tamil handles 'negation' differently from English. Tamil L1 speakers
-      transfer native structural patterns to English, leading to systematic errors.
-      The error is persistent because the Tamil structure is deeply automatized from
-      childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Tamil and English for 'negation'.
-        Show the Tamil structure side-by-side with English. Highlight the specific
-        error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Tamil handles
-        'negation' differently from English. Use visual aids or color-coding to highlight
-        the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Tamil sentences, students translate to English, focusing
-          on correct 'negation' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Tamil-style 'negation' errors. Students
-          identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'negation'
-          structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'negation' errors.
-        duration: 15
+    - pattern: Tamil suffix -illai attached to verb for negation -> English requires do-support + not
+      example_tamil: naan pookavillai (நான் போகவில்லை)
+      example_gloss: I go-not
+      example_wrong: I not go.
+      example_correct: I do not go. / I do not go.
+      explanation: Tamil negates verbs by adding the suffix -illai directly to the verb stem. There is no equivalent of English
+        'do-support.' Tamil speakers transfer this pattern by placing 'not' directly after the subject or after the verb,
+        producing 'I not like' or 'I like not.'
+    - pattern: Double negation retained from Tamil -> English uses single negation with any/no
+      example_tamil: yaarum varavillai (யாரும் வரவில்லை)
+      example_gloss: Anyone came-not
+      example_wrong: Nobody did not come.
+      example_correct: Nobody came. / No one came.
+      explanation: Tamil uses negative concord (yaarum 'anyone' plus illai 'not' = 'nobody'), which is grammatically correct
+        in Tamil. English does not use negative concord -- 'Nobody came' is correct, but 'Nobody did not come' is a double
+        negative. Tamil speakers may produce double negatives by transferring the Tamil pattern.
+    - pattern: Negation of existential 'there is' -> English requires 'there is no' or 'there is not any'
+      example_tamil: panam illai (பணம் இல்லை)
+      example_gloss: Money is-not
+      example_wrong: Money is not.
+      example_correct: There is no money. / There is not any money.
+      explanation: Tamil expresses existence and possession with the same construction (X-kku X illai = 'to-X X not-is' =
+        'X does not have X'). English distinguishes 'there is no' for existence from 'does not have' for possession. Tamil
+        speakers may produce 'Money is not' instead of 'There is no money.'
+    - pattern: Negative adverb placement -> English requires specific positions for never, hardly, seldom
+      example_tamil: naan orupoadhum podadhillai (நான் ஒருபோதும் போனதில்லை)
+      example_gloss: I ever went-not
+      example_wrong: I did not never go.
+      example_correct: I never went. / I have never gone.
+      explanation: Tamil places negative adverbs before the negated verb. English places 'never' before the main verb but
+        after the auxiliary. Tamil speakers may produce 'I did not never go' by transferring the Tamil negative concord pattern.
     examples:
     - 'Wrong: ''I not like coffee.'' Correct: ''I do not like coffee.'''
-    - 'Wrong: ''He not came.'' Correct: ''He did not come.'''
-    - 'Wrong: ''I eat never.'' Correct: ''I never eat.'''
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Sarma, V. (2005). Tamil learners and English article acquisition. Indian Journal
-      of Applied Linguistics, 31(1), 45-60.
-    source_count: 2
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Tamil
-    notes: Suffix-based negation is very different from English do-support.
-  dravidian_noun_cases:
-    interference_patterns:
-    - Tamil uses SOV word order which does not exist in English, causing transfer
-      errors related to 'dravidian noun cases'.
-    why_it_happens: Tamil handles 'dravidian noun cases' differently from English.
-      Tamil L1 speakers transfer native structural patterns to English, leading to
-      systematic errors. The error is persistent because the Tamil structure is deeply
-      automatized from childhood acquisition.
+    - 'Wrong: ''He not came to class.'' Correct: ''He did not come to class.'''
+    - 'Wrong: ''She can not swim.'' Correct: ''She cannot swim.'''
+    - 'Wrong: ''I did not see nobody.'' Correct: ''I did not see anybody.'' / ''I saw nobody.'''
+    why_it_happens: 'Tamil negation is achieved through suffixation -- the negative marker -illai is attached directly to
+      the verb stem, creating a single word (e.g., pookavillai ''go-not'' = ''did not go''). This is fundamentally different
+      from English, which requires an auxiliary verb (''do'') plus a separate negation word (''not'') placed between the auxiliary
+      and the main verb. Tamil speakers must learn three things simultaneously: that English requires a separate word ''not''
+      rather than a suffix, that ''do'' must be inserted as a carrier for negation (do-support), and that the main verb returns
+      to its base form after ''do.'' Additionally, Tamil uses negative concord (multiple negative elements in one sentence),
+      which is grammatical in Tamil but produces double negatives in English. The error is persistent because Tamil negation
+      is a single morphological operation, while English negation is a multi-word syntactic construction.'
     teacher_tips:
-      how_to_explain: Explain the difference between Tamil and English for 'dravidian
-        noun cases'. Show the Tamil structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Tamil handles
-        'dravidian noun cases' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
+      how_to_explain: 'Write on board: Tamil = VERB plus not-suffix (one word). English = DO plus not plus VERB (three words).
+        Say: ''In Tamil, you stick not onto the verb like glue. In English, you need a helper word -- do -- to carry the not.
+        The helper changes: I don''t, he doesn''t, she didn''t. The main verb stays in its simple form.'' Use a helper metaphor:
+        ''do'' is like a truck that carries ''not'' to the verb.'
+      where_to_start: 'Begin with present simple negative: ''I like'' becomes ''I do not like'' becomes ''I don''t like.''
+        Use the contraction early -- it is what students will hear most. Drill with high-frequency verbs: like, want, have,
+        go, eat. Then move to past simple: ''He came'' becomes ''He did not come.'''
+      sequencing: 'Week 1: Present simple negative with don''t/doesn''t. Week 2: Past simple negative with didn''t. Week 3:
+        Negative with modals (can''t, won''t, shouldn''t). Week 4: Negative concord versus single negation (nobody versus
+        not...anybody). Week 5: Negative adverbs (never, hardly, seldom) and inversion.'
       exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Tamil sentences, students translate to English, focusing
-          on correct 'dravidian noun cases' structure.
+      - name: Do-Support Drill
+        type: oral-drill
+        description: 'Teacher says affirmative sentences. Students must produce the negative form as quickly as possible.
+          Start with present simple (Teacher: ''She likes tea.'' Student: ''She doesn''t like tea.''), then past simple, then
+          modals. Use a ball-toss format: teacher tosses ball while saying the affirmative, student catches and produces the
+          negative. 20 sentences per round.'
         duration: 15
-      - name: Error correction
+      - name: Negative Sentence Rewrite
+        type: transformation
+        description: Provide 15 Tamil-style negative sentences (e.g., 'I not want go.' 'She not can swim.'). Students rewrite
+          each one with correct English do-support and negation. After writing, they identify which auxiliary (do/does/did/can/will)
+          was needed and why.
+        duration: 15
+      - name: Double Negative Detective
         type: error-correction
-        description: Provide 15 sentences with Tamil-style 'dravidian noun cases'
-          errors. Students identify and fix.
+        description: Give students 12 sentences, half with double negatives from Tamil transfer and half correct. Students
+          identify which are wrong, explain why, and correct them. Include tricky cases.
+        duration: 10
+      - name: Negation Translation Challenge
+        type: translation
+        description: Provide 10 Tamil sentences with illai negation. Students translate each into correct English, paying
+          attention to do-support, tense, and negative concord. Sentences progress from simple present to complex past perfect
+          negative.
         duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'dravidian
-          noun cases' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'dravidian noun
-          cases' errors.
-        duration: 15
-    examples:
-    - 'Wrong: ''I help he.'' Correct: ''I help him.'''
-    - 'Wrong: ''Give it to she.'' Correct: ''Give it to her.'''
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Sarma, V. (2005). Tamil learners and English article acquisition. Indian Journal
-      of Applied Linguistics, 31(1), 45-60.
-    source_count: 2
-    source_type: peer-reviewed
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference and Other Problems (2nd ed.). Cambridge
+      University Press.'
+    - Annamalai, E. (2000). Negation in Tamil. In The Syntax of Negation and the Licensing of Negative Polymorphic Items,
+      Lincom Europa.
+    - Huddleston, R. & Pullum, G.K. (2002). The Cambridge Grammar of the English Language. Cambridge University Press.
+    - 'Celce-Murcia, M. & Larsen-Freeman, D. (1999). The Grammar Book: An ESL/EFL Teacher''s Course (2nd ed.). Heinle & Heinle.'
+    source_count: 4
+    source_type: literature
     frequency: 4
-    persistence: 3
+    persistence: 4
     communicative_impact: 3
     flagged: false
     tier: 1
     individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Tamil
-    notes: Case system is fundamentally different from English.
-  tamil_postpositions:
+    assessment: Expert-evaluated. Negation errors are frequent and persistent due to the fundamental morphological versus
+      syntactic difference between Tamil suffixation and English do-support.
+    notes: Tamil -illai is a suffix, not a separate word. This is the root cause of do-support errors.
+  noun_cases:
     interference_patterns:
-    - Tamil uses SOV word order which does not exist in English, causing transfer
-      errors related to 'postpositions'.
-    why_it_happens: Tamil handles 'postpositions' differently from English. Tamil
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Tamil structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Tamil and English for 'postpositions'.
-        Show the Tamil structure side-by-side with English. Highlight the specific
-        error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Tamil handles
-        'postpositions' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Tamil sentences, students translate to English, focusing
-          on correct 'postpositions' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Tamil-style 'postpositions' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'postpositions'
-          structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'postpositions'
-          errors.
-        duration: 15
+    - pattern: Tamil dative case -kku transferred as 'to' but overgeneralized -> English uses word order and prepositions
+        differently
+      example_tamil: naan avanukku puththagam kodutthen (நான் அவனுக்கு புத்தகம் கொடுத்தேன்)
+      example_gloss: I him-to book gave
+      example_wrong: I gave the book to him.
+      example_correct: I gave him the book. / I gave the book to him.
+      explanation: Tamil uses the dative case marker -kku to mark the recipient, and the word order is typically Subject plus
+        Dative plus Object plus Verb. English can use either double-object construction ('I gave him the book') or prepositional
+        ('I gave the book to him'). Tamil speakers may overuse the 'to' construction because it maps more directly from the
+        dative case.
+    - pattern: Tamil accusative case -ai omitted in English -> English uses word order, not case markers
+      example_tamil: naan puththagaththai vaanginen (நான் புத்தகத்தை வாங்கினேன்)
+      example_gloss: I book-accusative bought
+      example_wrong: I bought book.
+      example_correct: I bought the book.
+      explanation: Tamil marks the direct object with the accusative suffix -ai. Since English has no case markers on common
+        nouns, Tamil speakers may feel that the object is 'unmarked' and omit articles as well. The accusative case in Tamil
+        also signals definiteness, which maps to English 'the.'
+    - pattern: Locative case -il transferred as 'in/on/at' with errors -> English preposition choice depends on spatial relationship
+      example_tamil: puththagam mesayil irukkiradhu (புத்தகம் மேசையில் இருக்கிறது)
+      example_gloss: Book table-on is
+      example_wrong: Book is in table.
+      example_correct: The book is on the table.
+      explanation: Tamil uses the locative suffix -il for all surface contact (on, in, at). English distinguishes 'on' (surface),
+        'in' (enclosed), and 'at' (point location). Tamil speakers may use 'in' for all locative meanings because -il covers
+        all of them.
+    - pattern: Pronoun case forms confused -> English pronouns retain case distinctions (I/me, he/him, she/her)
+      example_tamil: enai avan paarththaan (என்னை அவன் பார்த்தான்)
+      example_gloss: Me he saw
+      example_wrong: Me saw him.
+      example_correct: He saw me.
+      explanation: 'Tamil pronouns also change form for case (naan ''I'' -> ennai ''me''), but the mapping is not 1:1 with
+        English. Tamil speakers may use the wrong English pronoun form, especially in coordinated structures: ''Me and him
+        went'' instead of ''He and I went.'''
     examples:
-    - 'Wrong: Applying Tamil ''postpositions'' structure to English. Correct: Use
-      the English structure for ''postpositions''.'
-    - 'Wrong: Direct translation of Tamil ''postpositions'' pattern. Correct: Follow
-      English ''postpositions'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''postpositions'' patterns.'
+    - 'Wrong: ''I gave the book to him.'' (overuse of ''to'' where double-object is natural) Correct: ''I gave him the book.'''
+    - 'Wrong: ''She is in bus.'' Correct: ''She is on the bus.'''
+    - 'Wrong: ''Me and him went to store.'' Correct: ''He and I went to the store.'''
+    - 'Wrong: ''I bought book from shop.'' Correct: ''I bought the book from the shop.'''
+    why_it_happens: 'Tamil is an agglutinative language with 8 grammatical cases marked by suffixes: nominative (unmarked),
+      accusative (-ai), dative (-kku), instrumental (-aal), locative (-il), genitive (-udaiya/oda), vocative (-e), and ablative
+      (-irundhu). Each suffix is added to the noun stem, and multiple suffixes can stack. English, by contrast, has almost
+      no case marking on nouns (only possessive ''s and pronoun forms like I/me/him). English relies on word order and prepositions
+      to express the same relationships that Tamil expresses through case suffixes. Tamil speakers must learn to translate
+      case suffixes into prepositions, but the mapping is imperfect: one Tamil case may correspond to multiple English prepositions
+      depending on context. The locative -il alone can mean ''in,'' ''on,'' ''at,'' or ''upon'' in English. This many-to-many
+      mapping causes persistent preposition errors.'
+    teacher_tips:
+      how_to_explain: 'Draw a diagram on the board showing Tamil noun plus case suffix on one side and English noun plus preposition
+        on the other. Say: ''In Tamil, you add a small piece to the END of the noun to show its job in the sentence. In English,
+        you put a SMALL WORD BEFORE the noun instead.'' Show: mesai plus il = table plus on = ''on the table.'' Use physical
+        objects: put a book ON a table, IN a box, AT a desk -- each time showing the Tamil suffix and the English preposition.'
+      where_to_start: Begin with the locative case (-il) and the three English prepositions 'in,' 'on,' 'at.' Use real objects
+        in the classroom. Then move to the dative (-kku) and 'to/for.' Finally, cover the accusative (-ai) and its relationship
+        to English articles and word order.
+      sequencing: 'Week 1: Locative case -- in/on/at with physical objects. Week 2: Dative case -- to/for with verbs of giving
+        and telling. Week 3: Accusative case -- word order and article usage. Week 4: Instrumental and ablative cases -- with/from/by.
+        Week 5: Pronoun case forms (I/me, he/him, she/her, we/us, they/them).'
+      exercises:
+      - name: Case-to-Preposition Mapping
+        type: matching
+        description: Create cards with Tamil case suffixes on one set (8 cards) and English prepositions on another set (15+
+          cards). Students match each Tamil case to its possible English preposition equivalents. Discuss cases where one
+          Tamil case maps to multiple English prepositions. Then students write 3 example sentences for each mapping.
+        duration: 20
+      - name: Preposition Picture Dictation
+        type: oral-drill
+        description: 'Teacher describes scenes using Tamil locative constructions. Students draw what they hear, then write
+          the correct English prepositional phrase. Example: ''The cat is -il the table'' becomes students draw and write
+          ''The cat is on the table.'' 10 scenes total, progressing from simple to complex spatial relationships.'
+        duration: 15
+      - name: Pronoun Case Correction
+        type: error-correction
+        description: Give students a worksheet with 15 sentences containing pronoun case errors typical of Tamil speakers
+          (e.g., 'Me and him went,' 'Between you and I,' 'She gave it to he'). Students correct each sentence and identify
+          the grammatical role (subject, object, object of preposition) of each pronoun.
+        duration: 10
+      - name: Tamil Case Translation
+        type: translation
+        description: Provide 10 Tamil sentences with case-marked nouns. Students must identify each case suffix, determine
+          the correct English preposition (or word order), and translate the sentence. Include at least one sentence where
+          the Tamil case maps to multiple possible English prepositions, requiring context to choose.
+        duration: 15
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Sarma, V. (2005). Tamil learners and English article acquisition. Indian Journal
-      of Applied Linguistics, 31(1), 45-60.
-    source_count: 2
-    source_type: peer-reviewed
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference and Other Problems (2nd ed.). Cambridge
+      University Press.'
+    - Lehmann, T. (1993). A Grammar of Modern Tamil. Pondicherry Institute of Linguistics and Culture.
+    - Asher, R.E. (1982). Tamil. Lingua Descriptive Studies, North-Holland.
+    - Murphy, R. (2019). English Grammar in Use (5th ed.). Cambridge University Press.
+    source_count: 4
+    source_type: literature
     frequency: 4
-    persistence: 3
+    persistence: 4
     communicative_impact: 3
     flagged: false
     tier: 1
     individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Tamil
-    notes: Word order reversal affects sentence construction.
-  sandi_rules:
+    assessment: Expert-evaluated. Case-to-preposition mapping is a major source of errors. The many-to-many mapping between
+      Tamil cases and English prepositions makes this highly persistent.
+    notes: Tamil has 8 cases. The locative -il is particularly problematic as it maps to in/on/at.
+  postpositions:
     interference_patterns:
-    - Tamil uses SOV word order which does not exist in English, causing transfer
-      errors related to 'sandi rules'.
-    why_it_happens: Tamil handles 'sandi rules' differently from English. Tamil L1
-      speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Tamil structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Tamil and English for 'sandi
-        rules'. Show the Tamil structure side-by-side with English. Highlight the
-        specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Tamil handles
-        'sandi rules' differently from English. Use visual aids or color-coding to
-        highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Tamil sentences, students translate to English, focusing
-          on correct 'sandi rules' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Tamil-style 'sandi rules' errors. Students
-          identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'sandi
-          rules' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'sandi rules'
-          errors.
-        duration: 15
+    - pattern: Tamil postposition placed after noun -> English preposition must be placed before noun
+      example_tamil: mesakkum meel (மேசைக்கு மேல்)
+      example_gloss: Table-to above
+      example_wrong: Table above is the book.
+      example_correct: The book is above the table.
+      explanation: Tamil uses postpositions -- relational words that come AFTER the noun. English uses prepositions -- relational
+        words that come BEFORE the noun. Tamil speakers may place the relational word after the noun in English, producing
+        'table above' instead of 'above the table.'
+    - pattern: Compound postpositions transferred word-by-word -> English uses single prepositions
+      example_tamil: vittukku pinnal (வீட்டுக்கு பின்னால்)
+      example_gloss: House-to behind
+      example_wrong: House behind.
+      example_correct: Behind the house.
+      explanation: Tamil compound postpositions combine a case-marked noun with a relational word (e.g., -kku pinnal 'to-behind'
+        = 'behind'). English uses a single preposition. Tamil speakers may produce two-word preposition-like structures or
+        place the relational word in the wrong position.
+    - pattern: Postposition kkul (inside) transferred -> English 'in/inside' placement
+      example_tamil: pettikkuL (பெட்டிக்குள்)
+      example_gloss: Box-to inside
+      example_wrong: Box inside the pen is.
+      example_correct: The pen is inside the box.
+      explanation: Tamil postposition kkul means 'into/inside' and follows the noun with a dative case marker. English 'inside'
+        precedes the noun as a preposition. Tamil speakers may produce postpositional word order in English.
     examples:
-    - 'Wrong: Applying Tamil ''sandi rules'' structure to English. Correct: Use the
-      English structure for ''sandi rules''.'
-    - 'Wrong: Direct translation of Tamil ''sandi rules'' pattern. Correct: Follow
-      English ''sandi rules'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''sandi rules'' patterns.'
+    - 'Wrong: ''The cat is table under.'' Correct: ''The cat is under the table.'''
+    - 'Wrong: ''She stood the door behind.'' Correct: ''She stood behind the door.'''
+    - 'Wrong: ''He put the keys the bag inside.'' Correct: ''He put the keys inside the bag.'''
+    - 'Wrong: ''The picture is the wall on.'' Correct: ''The picture is on the wall.'''
+    why_it_happens: 'Tamil is a head-final language, which means that relational words (postpositions) come AFTER the noun
+      they modify, just as verbs come after objects. English is largely head-initial: prepositions come BEFORE the noun. This
+      is a systematic typological difference -- Tamil speakers must learn to reverse the order of noun plus relational word
+      to relational word plus noun. The challenge is compounded because Tamil postpositions are often compound forms that
+      include a case marker (e.g., -kku meel ''to-above'' = ''above''), making them two-word units that do not map cleanly
+      onto single English prepositions. Additionally, some Tamil postpositions have aspectual or directional meanings (e.g.,
+      -kkul ''into'' versus -il ''in'') that require Tamil speakers to learn new semantic distinctions in English prepositions.'
+    teacher_tips:
+      how_to_explain: 'Hold up a book and place it on a table. Say: ''In Tamil, you say TABLE -- ON (noun first, position
+        word second). In English, you say ON -- THE TABLE (position word first, noun second).'' Write the pattern: Tamil =
+        NOUN plus POSTPOSITION. English = PREPOSITION plus NOUN. Use hand gestures: left hand = noun, right hand = position
+        word. Show that Tamil puts the left hand first, English puts the right hand first.'
+      where_to_start: 'Begin with spatial prepositions/postpositions: above/below, in front of/behind, inside/outside, on/under.
+        Use real objects in the classroom. Students physically place objects and describe their positions in English. Then
+        move to temporal prepositions (before/after, during) and abstract uses.'
+      sequencing: 'Week 1: Spatial prepositions (in, on, at, under, above, behind, in front of). Week 2: Directional prepositions
+        (into, out of, toward, through). Week 3: Temporal prepositions (before, after, during, since, until). Week 4: Abstract
+        prepositions (about, for, with, without, despite). Week 5: Prepositional phrases and collocations.'
+      exercises:
+      - name: Position Word Swap
+        type: transformation
+        description: Provide 15 Tamil-style postpositional phrases (e.g., 'table under,' 'house behind,' 'box inside'). Students
+          must rewrite each as a correct English prepositional phrase (e.g., 'under the table,' 'behind the house,' 'inside
+          the box'). Then use each phrase in a complete sentence.
+        duration: 15
+      - name: Classroom Treasure Hunt
+        type: oral-drill
+        description: Hide 10 objects around the classroom. Give students clues using Tamil-style postpositional word order
+          (e.g., 'The key is desk under'). Students must first convert the clue to correct English ('The key is under the
+          desk') and then find the object. First team to find all 10 wins.
+        duration: 20
+      - name: Preposition or Postposition
+        type: matching
+        description: 'Give students 20 sentence pairs: one with Tamil postpositional order and one with correct English prepositional
+          order. Students identify which is correct English and explain why. Include tricky cases where the postposition and
+          preposition have different meanings.'
+        duration: 10
+      - name: Draw the Preposition
+        type: composition
+        description: Students write a 6-sentence description of their bedroom or a room they know well, using at least 8 different
+          prepositions correctly. Then they draw the room based on their description. Partners read each other's descriptions
+          and try to draw the room without seeing the original. Compare drawings to check preposition accuracy.
+        duration: 20
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Sarma, V. (2005). Tamil learners and English article acquisition. Indian Journal
-      of Applied Linguistics, 31(1), 45-60.
-    source_count: 2
-    source_type: peer-reviewed
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference and Other Problems (2nd ed.). Cambridge
+      University Press.'
+    - Annamalai, E. & Steever, S.B. (1998). Modern Tamil. In The Dravidian Languages, Routledge.
+    - Lindstromberg, S. (2010). English Prepositions Explained (revised ed.). John Benjamins.
+    - Murphy, R. (2019). English Grammar in Use (5th ed.). Cambridge University Press.
+    source_count: 4
+    source_type: literature
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
     individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Tamil
-    notes: Affects listening comprehension significantly.
-  formal_informal:
+    assessment: Expert-evaluated. Postposition-to-preposition transfer is a systematic word order error that affects all spatial
+      and temporal expressions.
+    notes: Tamil postpositions are often compound forms with case markers (e.g., -kku meel 'to-above'). This makes the transfer
+      more complex than simple word order reversal.
+  phonology:
     interference_patterns:
-    - Tamil uses SOV word order which does not exist in English, causing transfer
-      errors related to 'formal informal'.
-    why_it_happens: Tamil handles 'formal informal' differently from English. Tamil
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Tamil structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Tamil and English for 'formal
-        informal'. Show the Tamil structure side-by-side with English. Highlight the
-        specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Tamil handles
-        'formal informal' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Tamil sentences, students translate to English, focusing
-          on correct 'formal informal' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Tamil-style 'formal informal' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'formal
-          informal' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'formal informal'
-          errors.
-        duration: 15
+    - pattern: Tamil retroflex consonants substituted for English alveolar consonants -> perceived as heavy accent
+      example_tamil: Tee (டீ) for 'tea'
+      example_gloss: tea (with retroflex /ʈ/ instead of alveolar /t/)
+      example_wrong: Pronouncing 'tea' with a retroflex /ʈ/ -- tongue curled back against the palate
+      example_correct: Pronouncing 'tea' with an alveolar /t/ -- tongue tip against the ridge behind upper teeth
+      explanation: 'Tamil has a four-way distinction in stops: labial (p), dental (t), retroflex (T), and velar (k). English
+        has a two-way distinction: voiceless (t) versus voiced (d). Tamil speakers use their retroflex T for English ''t''
+        and ''d,'' producing a characteristically Indian English sound. The dental Tamil th is closer to English /t/ but still
+        different because English /t/ is alveolar, not dental.'
+    - pattern: Tamil lacks fricatives /f/, /theta/, /z/ -> substituted with native sounds
+      example_tamil: phee (ஃபீ) for 'fee', thinku for 'think'
+      example_gloss: fee (with aspirated stop /pʰ/ instead of fricative /f/)
+      example_wrong: Pronouncing 'think' as 'tink'
+      example_correct: Pronouncing 'think' with dental fricative /theta/
+      explanation: Tamil has no labiodental fricative /f/ -- it is replaced by the aspirated bilabial stop /pʰ/. English 'fee'
+        becomes 'phee.' Similarly, /theta/ (think) is replaced by dental /t/, and /z/ (zoo) by /s/ or /dz/. The 'th' sounds
+        are particularly challenging because Tamil has no dental fricatives at all.
+    - pattern: Tamil vowel length distinction replaces English tense/lax distinction -> vowel quality errors
+      example_tamil: peetter (பீட்டர்) for 'better'
+      example_gloss: better (with long vowels where English has short/lax vowels)
+      example_wrong: Pronouncing 'ship' and 'sheep' identically with a long /i/
+      example_correct: ship = /ɪ/ (short, lax) versus sheep = /iː/ (long, tense)
+      explanation: Tamil distinguishes vowels by length (short versus long) but not by quality (tense versus lax). English
+        distinguishes 'ship/sheep' by both length AND tongue position. Tamil speakers may use the same vowel quality for both,
+        relying only on length, which can cause confusion between minimal pairs like ship/sheep, pull/pool, and full/fool.
+    - pattern: Tamil consonant clusters simplified -> English clusters broken up with epenthetic vowels
+      example_tamil: ischool or sakool for 'school'
+      example_gloss: school (with epenthetic /ɪ/ before the cluster)
+      example_wrong: Pronouncing 'street' as 'istreet' or 'isrit'
+      example_correct: Pronouncing 'street' as /striːt/ -- three consonants in a row without extra vowels
+      explanation: 'Tamil syllables typically follow a (C)V(C) pattern -- consonant clusters at the beginning of words are
+        rare. English allows complex clusters like /str/ (street), /spl/ (splash). Tamil speakers often insert a short vowel
+        (usually /ɪ/) before or within clusters to make them pronounceable in Tamil phonotactics: ''school'' becomes /ɪskuːl/,
+        ''street'' becomes /ɪsriːt/.'
     examples:
-    - 'Wrong: Applying Tamil ''formal informal'' structure to English. Correct: Use
-      the English structure for ''formal informal''.'
-    - 'Wrong: Direct translation of Tamil ''formal informal'' pattern. Correct: Follow
-      English ''formal informal'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''formal informal'' patterns.'
+    - 'Wrong: Pronouncing ''very'' as ''wery'' (/v/ -> /w/). Correct: ''very'' with labiodental fricative /v/.'
+    - 'Wrong: Pronouncing ''think'' as ''tink''. Correct: ''think'' with dental fricative /theta/.'
+    - 'Wrong: Pronouncing ''zebra'' as ''sebra''. Correct: ''zebra'' with voiced fricative /z/.'
+    - 'Wrong: Pronouncing ''school'' as ''ischool''. Correct: ''school'' with initial /sk/ cluster.'
+    why_it_happens: 'Tamil has a phonological system that is significantly different from English in three key areas: consonant
+      inventory -- Tamil has retroflex, dental, and alveolar stops that do not map onto English alveolar stops; it lacks fricatives
+      like /f/, /v/, /theta/, /z/; vowel system -- Tamil has 10 vowels distinguished primarily by length, while English has
+      12+ vowels distinguished by both length and quality (tense versus lax); and phonotactics -- Tamil strictly limits consonant
+      clusters, allowing at most one consonant in the onset and one in the coda, while English allows complex clusters of
+      3+ consonants. When Tamil speakers learn English, they apply Tamil phonological rules to English words -- a process
+      called phonological transfer. This is particularly persistent because pronunciation habits are deeply motoric and automatic,
+      formed through years of Tamil speech production. Unlike grammar errors, pronunciation errors are rarely corrected in
+      casual conversation because the meaning is usually understood.'
+    teacher_tips:
+      how_to_explain: 'Say: ''Your mouth has learned to make sounds one way for Tamil. Now we need to teach it some new tricks.''
+        Use a mouth diagram showing tongue position for dental versus alveolar versus retroflex. For /f/: ''Bite your lower
+        lip gently and blow air -- this sound does not exist in Tamil.'' For /theta/: ''Put your tongue between your teeth
+        and blow -- like you are going to say t but with air flowing.'' For clusters: ''Say s then k then ool -- faster and
+        faster until they blend: s-k-ool becomes skool becomes school.'''
+      where_to_start: 'Begin with the sounds that do not exist in Tamil: /f/, /v/, /theta/. Use minimal pairs: fan/van, think/tink,
+        zoo/sue. Then move to vowel quality: ship/sheep, pull/pool. Finally, address consonant clusters: school, street, spring.'
+      sequencing: 'Week 1: New consonants -- /f/, /v/, /theta/ with minimal pair drills. Week 2: /z/ -- zoo/soap, vision/mission.
+        Week 3: Vowel quality -- ship/sheep, pull/pool, full/fool. Week 4: Consonant clusters -- initial clusters (school,
+        street, spring). Week 5: Final clusters (texts, asked). Week 6: Connected speech -- linking, weak forms, stress patterns.'
+      exercises:
+      - name: Minimal Pair Bingo
+        type: oral-drill
+        description: 'Create bingo cards with minimal pairs that contrast Tamil-problematic sounds: fan/van, think/tink, ship/sheep,
+          zoo/sue, full/fool. Teacher calls out a word. Students mark the correct square. First to get 5 in a row wins. After
+          the game, students practice saying both words in each pair.'
+        duration: 20
+      - name: Tongue Twister Challenge
+        type: oral-drill
+        description: 'Provide 5 tongue twisters targeting Tamil-problematic sounds. Example for /theta/: ''The thirty-three
+          thieves thought that they thrilled the throne throughout Thursday.'' Students practice individually, then in pairs,
+          then perform for the class. Record themselves and compare with a native speaker model.'
+        duration: 15
+      - name: Sound Substitution Detective
+        type: error-correction
+        description: Play audio clips of Tamil speakers pronouncing English words. Students identify which sounds were substituted
+          (e.g., retroflex /ʈ/ for alveolar /t/) and practice the correct pronunciation. Use 10 audio clips of increasing
+          difficulty. Students write the phonetic transcription of both the error and the correct form.
+        duration: 15
+      - name: Cluster Blending Drill
+        type: oral-drill
+        description: 'Give students 20 English words with initial consonant clusters. Students first pronounce each consonant
+          separately (s...k...ool), then gradually blend them faster (sk...ool, skool, school). Use a metronome app to gradually
+          increase speed. Words: school, street, spring, splash, scratch, square, split, scream.'
+        duration: 15
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Sarma, V. (2005). Tamil learners and English article acquisition. Indian Journal
-      of Applied Linguistics, 31(1), 45-60.
-    source_count: 2
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference and Other Problems (2nd ed.). Cambridge
+      University Press.'
+    - Sailaja, P. (2009). Indian English. Edinburgh University Press.
+    - Wells, J.C. (2008). Longman Pronunciation Dictionary (3rd ed.). Pearson Longman.
+    - 'Khan, L. (2008). The Phonology of Bangladeshi English. In Varieties of English: South Asia, Mouton de Gruyter.'
+    source_count: 4
+    source_type: literature
+    frequency: 5
+    persistence: 5
+    communicative_impact: 2
     flagged: false
     tier: 1
     individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Tamil
-    notes: Important in social and professional contexts.
-  tamil_phonology:
+    assessment: Expert-evaluated. Phonological transfer is the most persistent error type because pronunciation habits are
+      motoric and automatic. It rarely blocks communication but is the primary marker of accent.
+    notes: 'Tamil has 12 vowels and 16 consonants. Key gaps: no /f/, /v/, /theta/, /z/. Retroflex series is a major accent
+      marker.'
+  formal_informal_register:
     interference_patterns:
-    - Tamil uses SOV word order which does not exist in English, causing transfer
-      errors related to 'phonology'.
-    why_it_happens: Tamil handles 'phonology' differently from English. Tamil L1 speakers
-      transfer native structural patterns to English, leading to systematic errors.
-      The error is persistent because the Tamil structure is deeply automatized from
-      childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Tamil and English for 'phonology'.
-        Show the Tamil structure side-by-side with English. Highlight the specific
-        error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Tamil handles
-        'phonology' differently from English. Use visual aids or color-coding to highlight
-        the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Tamil sentences, students translate to English, focusing
-          on correct 'phonology' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Tamil-style 'phonology' errors. Students
-          identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'phonology'
-          structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'phonology' errors.
-        duration: 15
+    - pattern: Tamil formal 'neer' versus informal 'nee' distinction transferred to English -> English uses the same 'you'
+        for all registers
+      example_tamil: neer engge poogireergal? (நீர் எங்கே போகிறீர்கள்?)
+      example_gloss: You-formal where are-going?
+      example_wrong: Where are you going, sir? (overuse of sir/ma'am to mark respect)
+      example_correct: Where are you going? (context determines formality in English)
+      explanation: 'Tamil has a T-V distinction in pronouns: nee for informal/familiar and neer for formal/respectful address.
+        English uses ''you'' for all registers and marks formality through other means (word choice, sentence structure, titles).
+        Tamil speakers may overuse ''sir/ma''am'' or produce overly formal language when trying to express the neer register.'
+    - pattern: Tamil honorific verb suffix -gireegal transferred -> English lacks verb-based honorifics
+      example_tamil: avargal varugiraargal (அவர்கள் வருகிறார்கள்)
+      example_gloss: They (honorific) are-coming (honorific)
+      example_wrong: They are coming, sir. (adding sir to verb to mark honorific)
+      example_correct: They are coming. (English marks respect through word choice, not verb forms)
+      explanation: 'Tamil verbs have honorific forms: -giraan for masculine, -giraal for feminine, -giraargal for honorific/plural.
+        English has no verb-based honorific system. Tamil speakers may try to add honorific markers to English verbs or overcompensate
+        with sir/ma''am.'
+    - pattern: Tamil formal request patterns transferred -> English uses different politeness strategies
+      example_tamil: dayavu seythu kodikkavum (தயவுசெய்து கொடுக்கவும்)
+      example_gloss: Having-done-kindness please-give
+      example_wrong: Please kindly give me the book. (overuse of kindly -- direct translation of Tamil formal request)
+      example_correct: Could you please give me the book?
+      explanation: Tamil formal requests use specific lexical items like dayavu seythu ('having done kindness') and kodikkavum
+        ('please give'). English uses modal verbs (could, would, might) and indirect questions for politeness. Tamil speakers
+        may produce 'Please kindly...' which sounds unnatural in English.
     examples:
-    - 'Wrong: Pronouncing ''phonology'' with Tamil phonology. Correct: English pronunciation.'
+    - 'Wrong: ''Please kindly give me water, sir.'' Correct: ''Could I have some water, please?'''
+    - 'Wrong: ''Respected sir, I am writing this letter to inform you...'' Correct: ''Dear Mr. Smith, I am writing to let
+      you know...'''
+    - 'Wrong: ''You are kindly requested to come here.'' Correct: ''Could you please come here?'''
+    - 'Wrong: ''Good morning, sir. How are you, sir?'' Correct: ''Good morning. How are you?'''
+    why_it_happens: 'Tamil has an elaborate system of linguistic politeness that operates through multiple grammatical channels:
+      pronoun choice (nee versus neer versus avargal), verb suffixes (honorific -giraargal versus non-honorific -giraan),
+      and specific lexical items for formal requests (dayavu seythu). English, by contrast, has largely lost its T-V pronoun
+      distinction (thou/you) and marks formality through lexical choice, modal verbs, and indirectness rather than grammatical
+      morphology. Tamil speakers face the challenge of expressing the same social relationships through completely different
+      linguistic means. The error is particularly visible in written English, where Tamil speakers may produce overly formal
+      or stilted language by directly translating Tamil politeness markers. The communicative impact is moderate -- the message
+      is understood, but the register may sound inappropriate (too formal in casual contexts, or not formal enough in professional
+      contexts).'
+    teacher_tips:
+      how_to_explain: 'Say: ''In Tamil, you change the PRONOUN and the VERB to show respect. In English, we use the same you
+        for everyone. Instead, we change the WORDS AROUND you. To be polite in English, we use Could you...? instead of Give
+        me... and Would you mind...? instead of Do this.'' Write on board: Direct becomes Polite: ''Give me water'' becomes
+        ''Could I have some water?'' becomes ''Would you mind if I had some water?'' Show the spectrum from casual to formal.'
+      where_to_start: 'Begin with requests: the difference between imperative (''Sit down''), polite request (''Please sit
+        down''), and very formal request (''Would you mind sitting down?''). Use role-play: student is a waiter, teacher is
+        a customer. Practice the same request at three formality levels.'
+      sequencing: 'Week 1: Requests -- from direct to polite to very formal. Week 2: Apologies and excuses. Week 3: Formal
+        versus informal vocabulary (kids/children, dad/father, help/assist). Week 4: Written register -- formal letters versus
+        informal emails. Week 5: Professional contexts -- job interviews, business emails, academic writing.'
+      exercises:
+      - name: Formality Thermometer
+        type: transformation
+        description: 'Give students 10 direct/imperative sentences (e.g., ''Give me the report,'' ''Sit down,'' ''Tell me
+          the answer''). Students rewrite each sentence at three formality levels: casual (to a friend), neutral (to a colleague),
+          and formal (to a boss/stranger). Discuss which level is appropriate for different situations.'
+        duration: 15
+      - name: Register Role-Play
+        type: oral-drill
+        description: 'Set up scenarios: (1) asking a friend for a pen, (2) asking a teacher for an extension, (3) asking a
+          CEO for a job interview. Students practice the same request in all three scenarios, adjusting their language. Partners
+          give feedback on whether the register was appropriate.'
+        duration: 20
+      - name: Formal Letter Makeover
+        type: composition
+        description: Provide a formal letter written by a Tamil learner with register errors (overuse of 'kindly,' 'respected
+          sir,' overly direct requests). Students rewrite the letter with appropriate English register. Compare versions and
+          discuss what changed and why.
+        duration: 15
+      - name: Politeness Strategy Match
+        type: matching
+        description: 'Give students 15 situations (e.g., ''You need your boss to sign a form,'' ''You want your roommate to
+          wash dishes''). Students match each situation with the appropriate politeness strategy from a list: direct imperative,
+          ''please plus imperative,'' ''Can you...?'', ''Could you...?'', ''Would you mind...?'', ''I was wondering if...'''
+        duration: 10
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Sarma, V. (2005). Tamil learners and English article acquisition. Indian Journal
-      of Applied Linguistics, 31(1), 45-60.
-    source_count: 2
-    source_type: peer-reviewed
-    frequency: 4
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference and Other Problems (2nd ed.). Cambridge
+      University Press.'
+    - 'Brown, P. & Levinson, S.C. (1987). Politeness: Some Universals in Language Usage. Cambridge University Press.'
+    - Sailaja, P. (2009). Indian English. Edinburgh University Press.
+    - 'Celce-Murcia, M. & Larsen-Freeman, D. (1999). The Grammar Book: An ESL/EFL Teacher''s Course (2nd ed.). Heinle & Heinle.'
+    source_count: 4
+    source_type: literature
+    frequency: 3
     persistence: 3
+    communicative_impact: 2
+    flagged: false
+    tier: 1
+    individually_assessed: true
+    assessment: Expert-evaluated. Register errors are moderate in frequency but can cause social awkwardness. Tamil's elaborate
+      honorific system has no direct English equivalent.
+    notes: 'Tamil T-V distinction: nee (informal) versus neer (formal) versus avargal (honorific). English uses ''you'' for
+      all.'
+  relative_clauses:
+    interference_patterns:
+    - pattern: Tamil participial relative clause (no relative pronoun) -> English requires relative pronoun who/which/that
+      example_tamil: neeththu vandha maanavan (நேத்து வந்த மாணவன்)
+      example_gloss: Yesterday came student
+      example_wrong: Yesterday came student is my brother.
+      example_correct: The student who came yesterday is my brother.
+      explanation: Tamil forms relative clauses by using a participial form of the verb directly before the noun, with no
+        relative pronoun. The verb 'vandha' (came) becomes an adjective meaning 'who came.' English requires a relative pronoun
+        (who/which/that) to connect the relative clause to the noun. Tamil speakers may produce head-final relative clauses
+        without pronouns.
+    - pattern: Relative clause placed before noun (prenominal) -> English places relative clause after noun (postnominal)
+      example_tamil: naan vaangiya puththagam (நான் வாங்கிய புத்தகம்)
+      example_gloss: I bought book
+      example_wrong: I bought book is on the table.
+      example_correct: The book that I bought is on the table.
+      explanation: Tamil relative clauses are always prenominal -- they come BEFORE the noun they modify. English relative
+        clauses are always postnominal -- they come AFTER the noun. This is a fundamental word order difference. Tamil speakers
+        may produce 'I bought book' as a noun phrase, missing both the relative pronoun and the correct position.
+    - pattern: Resumptive pronoun retained in relative clause -> English does not use resumptive pronouns
+      example_tamil: naan paarththa penn aval en nanbi (நான் பார்த்த பெண் அவள் என் நண்பி)
+      example_gloss: I saw girl she my friend
+      example_wrong: The girl who I saw her is my friend.
+      example_correct: The girl who I saw is my friend.
+      explanation: Tamil relative clauses can include a resumptive pronoun (aval 'she') referring back to the head noun. English
+        relative clauses never use resumptive pronouns -- the relative pronoun (who/which/that) does the connecting work.
+        Tamil speakers may add 'her/him/they' after the relative clause.
+    - pattern: Multiple relative clauses stacked before noun -> English uses postnominal relative clauses
+      example_tamil: neeththu sinimaavukku poana en nanban vaangiya puththagam (நேத்து சினிமாவுக்கு போன என் நண்பன் வாங்கிய
+        புத்தகம்)
+      example_gloss: Yesterday cinema-to went my friend bought book
+      example_wrong: Yesterday cinema went my friend bought book is interesting.
+      example_correct: The book that my friend who went to the cinema yesterday bought is interesting.
+      explanation: Tamil can stack multiple prenominal relative clauses before a noun. English places all relative clauses
+        after the noun, which can create complex but grammatical structures. Tamil speakers may try to stack clauses before
+        the noun, producing incomprehensible English.
+    examples:
+    - 'Wrong: ''The man who I saw him yesterday is my teacher.'' Correct: ''The man who I saw yesterday is my teacher.'''
+    - 'Wrong: ''I read book was very interesting.'' Correct: ''The book that I read was very interesting.'''
+    - 'Wrong: ''She came yesterday girl is my sister.'' Correct: ''The girl who came yesterday is my sister.'''
+    - 'Wrong: ''The food which I cooked it was delicious.'' Correct: ''The food which I cooked was delicious.'''
+    why_it_happens: 'Tamil relative clauses are fundamentally different from English relative clauses in three ways: position
+      -- Tamil relative clauses are prenominal (before the noun), English are postnominal (after the noun); structure -- Tamil
+      uses participial verb forms directly as adjectives with no relative pronoun, English requires relative pronouns (who/which/that);
+      and resumptive pronouns -- Tamil allows a pronoun inside the relative clause that refers back to the head noun, English
+      does not. These three differences combine to make relative clauses one of the most challenging grammar points for Tamil
+      learners. The prenominal position is particularly difficult because it requires Tamil speakers to plan the entire relative
+      clause before saying the noun, whereas in Tamil, the noun comes last and the relative clause is built up to it. The
+      absence of relative pronouns in Tamil means learners must learn both the concept of relative pronouns and the rules
+      for choosing who versus which versus that.'
+    teacher_tips:
+      how_to_explain: 'Write on board: Tamil = VERB-ed plus NOUN (relative clause BEFORE noun, no connecting word). English
+        = NOUN plus who/which/that plus VERB (relative clause AFTER noun, with connecting word). Use a simple example: ''The
+        man who came yesterday'' -- show that English puts the description AFTER the noun, and needs a bridge word (who/which/that)
+        to connect them. Say: ''In Tamil, you describe the person FIRST, then say who they are. In English, you say who they
+        are FIRST, then describe them.'''
+      where_to_start: 'Begin with subject relative clauses using ''who'' for people: ''The man who came yesterday.'' Use two
+        simple sentences and show how to combine them: ''The man came yesterday. He is my brother.'' becomes ''The man who
+        came yesterday is my brother.'' Use color-coding: noun in blue, relative pronoun in red, verb in green.'
+      sequencing: 'Week 1: Subject relative clauses with ''who'' (people) and ''which'' (things). Week 2: Object relative
+        clauses (The man who I saw). Week 3: Relative clauses with prepositions (The man who I talked to). Week 4: Reducing
+        relative clauses (The man sitting there = The man who is sitting there). Week 5: Multiple relative clauses and embedded
+        structures.'
+      exercises:
+      - name: Sentence Combination Workshop
+        type: transformation
+        description: 'Give students 15 pairs of simple sentences. Students combine each pair into one sentence using a relative
+          clause. Example: ''The woman is my teacher. She is wearing a blue dress.'' becomes ''The woman who is wearing a
+          blue dress is my teacher.'' Start with subject relatives, then move to object relatives.'
+        duration: 20
+      - name: Remove the Resumptive Pronoun
+        type: error-correction
+        description: 'Provide 12 relative clauses with resumptive pronouns (Tamil style). Students must remove the extra pronoun
+          and produce a correct English relative clause. Example: ''The book which I read it was interesting.'' becomes ''The
+          book which I read was interesting.'' Discuss why the pronoun is unnecessary in English.'
+        duration: 10
+      - name: Relative Clause Position Swap
+        type: transformation
+        description: Give students 10 Tamil-style prenominal relative clause descriptions (e.g., '[yesterday came] man,' '[I
+          read] book'). Students must rewrite each as a correct English postnominal relative clause with the correct relative
+          pronoun. Then use each in a complete sentence.
+        duration: 15
+      - name: Who versus Which versus That Sort
+        type: matching
+        description: Give students 20 noun phrases with blanks for relative pronouns. Students choose the correct pronoun
+          (who/which/that) for each and explain their choice. Include cases where multiple answers are possible and discuss
+          the differences.
+        duration: 10
+    sources:
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference and Other Problems (2nd ed.). Cambridge
+      University Press.'
+    - Annamalai, E. & Steever, S.B. (1998). Modern Tamil. In The Dravidian Languages, Routledge.
+    - 'Celce-Murcia, M. & Larsen-Freeman, D. (1999). The Grammar Book: An ESL/EFL Teacher''s Course (2nd ed.). Heinle & Heinle.'
+    - Yule, G. (2010). The Study of Language (4th ed.). Cambridge University Press.
+    source_count: 4
+    source_type: literature
+    frequency: 4
+    persistence: 4
     communicative_impact: 3
     flagged: false
     tier: 1
     individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Tamil
-    notes: Causes accent in English but generally maintained intelligibility.
+    assessment: Expert-evaluated. Relative clause restructuring is a major syntactic challenge involving word order, pronoun
+      insertion, and resumptive pronoun deletion simultaneously.
+    notes: 'Tamil relative clauses are prenominal and participial. English relative clauses are postnominal and require relative
+      pronouns. This is a triple challenge: position, pronoun, and resumptive deletion.'
