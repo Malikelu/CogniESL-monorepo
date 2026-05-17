@@ -3,7 +3,7 @@ FROM python:3.12-slim
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
     PLAYWRIGHT_BROWSERS_PATH=/ms-playwright \
-    COGNIESL_DATA_DIR=/app/data
+    COGNIESL_DATA_DIR=/app/openswarm/data
 
 ENV PATH=/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
@@ -23,16 +23,16 @@ RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy and install Python requirements
-COPY requirements.txt .
+COPY openswarm/requirements.txt .
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
 # Copy package files for npm
-COPY package.json package-lock.json* ./
-COPY patches/ patches/
+COPY openswarm/package.json openswarm/package-lock.json* ./
+COPY openswarm/patches/ patches/
 RUN npm ci || npm install
 
-# Copy everything else (including data/)
+# Copy everything else (including openswarm/ with data/)
 COPY . .
 
 # Create output directories
@@ -44,4 +44,5 @@ RUN python -m playwright install chromium
 
 EXPOSE 8080
 
+WORKDIR /app/openswarm
 CMD ["python", "-u", "server.py"]
