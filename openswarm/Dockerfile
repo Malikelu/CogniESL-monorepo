@@ -1,29 +1,18 @@
-FROM python:3.13-slim
+FROM python:3.12-slim
 
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
     PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
 
-
-# Keep a deterministic PATH (avoid `${PATH}` evaluation issues in some BuildKit setups).
 ENV PATH=/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 WORKDIR /app
 
-# Install system dependencies for:
-# - Node.js (for html2pptx)
-# - LibreOffice (for thumbnail/PDF conversion)
-# - Poppler (for pdftoppm)
-# - Playwright browser dependencies
+# Install system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
-    # Node.js
     curl \
-    # LibreOffice for PDF conversion
-    libreoffice-impress \
-    # Poppler for pdftoppm
     poppler-utils \
-    # Playwright Chromium dependencies
     libnss3 \
     libnspr4 \
     libatk1.0-0 \
@@ -38,32 +27,37 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libgbm1 \
     libasound2 \
     libpango-1.0-0 \
-    libpangoft2-1.0-0 \
     libcairo2 \
-    # Clean up
     && rm -rf /var/lib/apt/lists/*
 
-# Install Node.js 20 LTS
+# Install Node.js 20 LTS (needed for html2pptx)
 RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
     && apt-get install -y nodejs \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy Python requirements first for layer caching
+# Copy requirements first for layer caching
 COPY requirements.txt .
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
-# Copy Node.js package files and patches before install so patch-package can apply them
+# Copy package files for npm
 COPY package.json package-lock.json* ./
 COPY patches/ patches/
 RUN npm ci || npm install
 
-# Create output directories
-RUN mkdir -p /app/activity-logs \
-    /app/mnt && \
-    chmod -R a+rwx /app/activity-logs /app/mnt
+# Copy data files
+COPY data/ ./data/
 
 # Copy the rest of the application
 COPY . .
 
-CMD python -u server.py
+# Create output directories
+RUN mkdir -p /app/activity-logs /app/mnt /app/uploads && \
+    chmod -R a+rwx /app/activity-logs /app/mnt /app/uploads
+
+# Install playwright browsers
+RUN python -m playwright install chromium
+
+EXPOSE 8080
+
+CMD ["python", "-u", "server.py"]
