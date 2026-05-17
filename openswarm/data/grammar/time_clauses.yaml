@@ -1,0 +1,86 @@
+grammar_point: time_clauses
+title: "Time Clauses (when, before, after, while)"
+description: "Clauses that show when something happens."
+level: A2
+
+meaning:
+  core_meaning: "A time clause tells us WHEN the main action happens. The key rule is: NEVER use will in a time clause. Use present simple even for future meaning."
+  timeline: "Time clause uses present tense. Main clause uses future or present."
+  contrast: "Wrong: When I will arrive. Correct: When I arrive."
+  ccqs:
+    - question: "Can we use will in a time clause"
+      answer: "No. Never use will. Use present simple."
+    - question: "Which clause uses future tense"
+      answer: "The main clause uses future. The time clause uses present simple."
+  example_generator:
+    contexts:
+      - daily routines
+      - future plans
+    cultural_notes:
+      - "This is one of the most important rules at A2 level"
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Conjunction + subject + present, subject + will + verb"
+    example_generator:
+      - "When I arrive, I will call you."
+      - "Before she leaves, she will lock the door."
+    min_examples: 4
+  negative:
+    structure: "Conjunction + subject + don't/doesn't + verb"
+    example_generator:
+      - "When I don't understand, I ask."
+    min_examples: 3
+  questions:
+    structure: "What will happen when + subject + present"
+    example_generator:
+      - "What will you do when you arrive"
+    min_examples: 3
+
+sub_rules:
+  - rule: "Never use will in a time clause"
+    type: grammatical
+    examples:
+      - "When I arrive, I will call"
+  - rule: "Use a comma when the time clause comes first"
+    type: punctuation
+    examples:
+      - "When I arrive, I will call you"
+  - rule: "For habits both clauses use present simple"
+    type: grammatical
+    examples:
+      - "When I wake up, I brush my teeth"
+  - rule: "While describes simultaneous actions"
+    type: grammatical
+    examples:
+      - "While I was cooking, she was setting the table"
+
+use:
+  - context: "Future time clauses"
+    examples:
+      - "When I arrive, I will call you"
+      - "We will leave before it rains"
+  - context: "Habits and routines"
+    examples:
+      - "When I wake up, I brush my teeth"
+      - "After dinner, we watch TV"
+
+phonetics:
+  - note: "Time conjunctions are usually unstressed"
+    example_generator:
+      - "when as /wen/"
+    l1_issue: "Portuguese and Spanish speakers often use future tense in time clauses"
+
+teaching:
+  methodology: "PPP with timeline visualization"
+  tips:
+    - "Teach the golden rule: NO WILL after WHEN, BEFORE, AFTER, WHILE"
+    - "Use a timeline to show event order"
+  recommended_activities:
+    - name: "Time Clause Chain"
+      duration: 15
+      adaptation_notes: "Students build chains about their daily routine"
+    - name: "Correct the Error"
+      duration: 10
+      adaptation_notes: "Students correct sentences with will in time clauses"

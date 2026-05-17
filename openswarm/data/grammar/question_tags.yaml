@@ -1,0 +1,110 @@
+grammar_point: question_tags
+title: "Question Tags (Tag Questions)"
+description: "Short questions added to the end of statements to confirm information, check understanding, or invite agreement."
+level: A2
+
+meaning:
+  core_meaning: "Question tags turn statements into interactive questions. They are added to the end of a statement to confirm information the speaker thinks is true, or to ask a genuine question when the speaker is unsure. The tag uses the same auxiliary as the main statement, but with opposite polarity (positive statement → negative tag, negative statement → positive tag)."
+  timeline: "N/A — tags match the tense/modality of the main statement. Present tense statement uses present tense tag, past uses past, etc."
+  contrast: "'Statement' = 'You like coffee.' (declarative) vs 'Tag (confirmation)' = 'You like coffee, don't you?' (falling intonation — expecting agreement) vs 'Tag (genuine question)' = 'You like coffee, do you?' (rising intonation — surprised/unsure)"
+  ccqs:
+    - question: "Is the speaker confirming information or asking a genuine question?"
+      answer: "Confirmation = falling intonation (speaker expects agreement). Genuine question = rising intonation (speaker is unsure)."
+    - question: "If the statement is positive, is the tag positive or negative?"
+      answer: "Negative. Positive statement = negative tag. 'You like coffee, don't you?'"
+    - question: "What auxiliary is used in the tag?"
+      answer: "The same auxiliary as the main statement. 'You like coffee' → 'don't you?' (do). 'She is here' → 'isn't she?' (is)."
+  example_generator:
+    contexts:
+      - everyday conversations
+      - confirming information
+      - social interaction
+    cultural_notes:
+      - "Question tags are very common in British English, less so in American English"
+      - "They are used to build rapport and encourage conversation"
+      - "Keep examples natural and conversational"
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Positive statement + negative tag (auxiliary + subject pronoun)"
+    example_generator:
+      - "You like coffee, don't you?"
+      - "She works here, doesn't she?"
+      - "They can swim, can't they?"
+      - "He is coming, isn't he?"
+    min_examples: 4
+  negative:
+    structure: "Negative statement + positive tag (auxiliary + subject pronoun)"
+    example_generator:
+      - "You don't like coffee, do you?"
+      - "She doesn't work here, does she?"
+      - "They can't swim, can they?"
+      - "He isn't coming, is he?"
+    min_examples: 4
+  questions:
+    structure: "Tags always follow the statement. No separate question structure. Intonation: rising for genuine questions, falling for confirmation."
+    example_generator:
+      - "You live in Brazil, don't you? (falling — confirmation)"
+      - "You don't know the answer, do you? (rising — genuine question)"
+    min_examples: 4
+
+sub_rules:
+  - rule: "Opposite polarity: positive statement = negative tag, negative statement = positive tag"
+    type: grammatical
+    examples: ["You like coffee, don't you? (positive → negative)", "You don't like coffee, do you? (negative → positive)", "She is here, isn't she? (positive → negative)", "She isn't here, is she? (negative → positive)"]
+  - rule: "The tag uses the same auxiliary as the main statement"
+    type: grammatical
+    examples: ["You like coffee, don't you? (do)", "She is here, isn't she? (is)", "They can swim, can't they? (can)", "He has finished, hasn't he? (has)"]
+  - rule: "Subject in the tag is always a pronoun (not a noun)"
+    type: grammatical
+    examples: ["Maria is here, isn't she? (NOT isn't Maria)", "The students are ready, aren't they? (NOT aren't the students)"]
+  - rule: "Special cases: 'I am' → 'aren't I?' / 'Let's' → 'shall we?' / 'There is' → 'isn't there?'"
+    type: grammatical
+    examples: ["I am right, aren't I?", "Let's go, shall we?", "There is a problem, isn't there?"]
+
+use:
+  - context: "Confirmation"
+    description: "Confirming information the speaker already thinks is true"
+    examples: ["You live in Brazil, don't you?", "She's a teacher, isn't she?", "They can speak French, can't they?", "He has finished, hasn't he?"]
+  - context: "Genuine question"
+    description: "Asking for information the speaker is unsure about"
+    examples: ["You don't know the answer, do you?", "He isn't here, is he?", "She can't drive, can they?", "They haven't arrived yet, have they?"]
+  - context: "Inviting agreement"
+    description: "Encouraging the listener to agree (social function)"
+    examples: ["Nice day, isn't it?", "This is hard, isn't it?", "You've been to Paris, haven't she?", "We should leave soon, shouldn't we?"]
+
+phonetics:
+  - note: "Intonation is crucial: falling intonation (↘) = confirmation (speaker expects agreement). Rising intonation (↗) = genuine question (speaker is unsure). 'You like coffee, don't you? ↘' vs 'You like coffee, don't you? ↗'"
+    example_generator:
+      - "Falling: You like coffee, don't you? ↘ (confirmation)"
+      - "Rising: You like coffee, don't you? ↗ (genuine question)"
+    l1_issue: "Portuguese and Spanish speakers often use the same intonation for both. Teach the difference explicitly — it changes the meaning."
+  - note: "Contractions are always used in tags: 'don't you' NOT 'do not you', 'isn't she' NOT 'is not she'."
+    example_generator:
+      - "don't /dəʊnt/"
+      - "isn't /ɪznt/"
+      - "can't /kɑːnt/"
+    l1_issue: "Many L1 speakers avoid contractions in tags. Teach that contractions are mandatory in natural speech."
+
+teaching:
+  methodology: "PPP with intonation practice"
+  tips:
+    - "Start with positive statements + negative tags using do/does/did. Master these before introducing other auxiliaries."
+    - "Teach the opposite polarity rule explicitly: positive → negative, negative → positive."
+    - "Practice intonation extensively: falling for confirmation, rising for genuine questions. This is essential for correct meaning."
+    - "Use pair work: Student A makes a statement, Student B adds the correct tag with appropriate intonation."
+    - "Teach the special cases: 'I am' → 'aren't I?', 'Let's' → 'shall we?', 'There is' → 'isn't there?'"
+  recommended_activities:
+    - name: "Tag Matching"
+      duration: 10
+      adaptation_notes: "Give students statements and separate tags. They match them correctly: 'You like coffee' + 'don't you?' Practices the opposite polarity rule."
+    - name: "Intonation Practice"
+      duration: 10
+      adaptation_notes: "Teacher says a statement with a tag. Students identify if it is confirmation (falling) or genuine question (rising). Then students practice both."
+    - name: "Tag Interview"
+      duration: 15
+      adaptation_notes: "Students interview a partner using question tags: 'You like coffee, don't you?' 'You don't eat meat, do you?' Practices all tag forms in conversation."
+    - name: "Falling or Rising?"
+      duration: 10
+      adaptation_notes: "Teacher says tag questions with different intonation. Students identify: confirmation (falling) or genuine question (rising). Practices listening for intonation."

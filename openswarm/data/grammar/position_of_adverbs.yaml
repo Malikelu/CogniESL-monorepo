@@ -1,0 +1,118 @@
+grammar_point: position_of_adverbs
+title: Position of Adverbs (initial, mid, end)
+description: Rules for where to place adverbs in sentences. Essential for natural-sounding
+  English word order.
+level: A2
+meaning:
+  core_meaning: Adverb position affects emphasis and sentence rhythm, not core meaning.
+  timeline: N/A (Position is about syntax, not time.)
+  contrast: 'Initial position = emphasis, sets scene
+
+    Mid position = neutral, most common
+
+    End position = afterthought, less emphasis
+
+    Position with ''be'' vs other verbs differs
+
+    '
+  ccqs:
+  - question: Where do frequency adverbs go
+    answer: Before the main verb but after be.
+  example_generator:
+    contexts:
+    - everyday situations
+    cultural_notes: []
+    min_examples: 5
+form:
+  affirmative:
+    structure: 'Initial: Adverb + comma + sentence: "Suddenly, it rained."
+
+      Mid: Subject + adverb + verb: "She quickly left."
+
+      Mid (be): Subject + be + adverb: "She is quickly becoming tired."
+
+      End: Verb + adverb: "She left quickly."
+
+      End (time): Sentence + adverb: "She left yesterday."
+
+      '
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+  negative:
+    structure: 'Adverb before main verb in negatives: ''I don''t usually go.'''
+    example_generator:
+      contexts:
+      - travel and places
+      min_examples: 4
+  questions:
+    structure: 'Adverb after auxiliary: ''Do you usually go?'' ''Have you already
+      finished?'''
+    example_generator:
+      contexts:
+      - social interactions
+      min_examples: 4
+sub_rules:
+- rule: Frequency adverbs (always, usually, often, sometimes, rarely, never) go before
+    the main verb but after be
+  type: word_order
+  examples:
+  - I always eat breakfast (before main verb)
+  - She is never late (after be)
+  - They often go out (before main verb)
+- rule: Manner adverbs (quickly, carefully, fluently) go after the verb or at the
+    end of the sentence
+  type: word_order
+  examples:
+  - She speaks English fluently (after verb)
+  - He drove carefully (after verb)
+  - They worked hard (after verb)
+- rule: Time adverbs (yesterday, last week, today) go at the beginning or end of the
+    sentence
+  type: word_order
+  examples:
+  - Yesterday I went to the store (beginning)
+  - I went to the store yesterday (end)
+use:
+- name: Frequency Adverbs (mid position)
+  description: Usually, always, often, never go in mid position.
+  examples:
+  - I always go.
+  - She is always late.
+  key_point: Before main verb, after 'be', after first auxiliary.
+- name: Time Adverbs (end position)
+  description: Yesterday, today, tomorrow, soon go at end.
+  examples:
+  - I went yesterday.
+  - We'll leave soon.
+  key_point: Time adverbs typically at sentence end.
+- name: Manner Adverbs (end position)
+  description: Quickly, slowly, carefully go at end.
+  examples:
+  - She drove carefully.
+  - He spoke loudly.
+  key_point: Manner adverbs answer 'how' - go at end.
+phonetics:
+- note: 'Adverbs in mid-position are usually unstressed: ''I always eat'' → /aɪ ˈɔːlweɪz
+    iːt/. Adverbs at the end may be stressed: ''She speaks English FLUENTLY.'''
+  example_generator:
+    contexts:
+    - adverb stress
+  l1_issue: Portuguese and Spanish speakers often place adverbs in different positions.
+    Teach the standard English positions explicitly.
+teaching:
+  methodology: PPP
+  tips:
+  - 'Teach formula: Subject + (adverb) + verb + (adverb) + object.'
+  - 'Use color coding: blue for subject, red for adverb, green for verb.'
+  - 'Practice with ''be'' separately: ''I am always...'' vs ''I always...''.'
+  recommended_activities:
+  - name: Adverb Placement
+    duration: 10
+    adaptation_notes: 'Students put adverbs in the correct position: ''I go always
+      to school'' → ''I always go to school.'''
+  - name: Front Mid or End
+    duration: 10
+    adaptation_notes: 'Students categorize adverbs by their correct position: front
+      (never, rarely), mid (always, usually), end (yesterday, carefully).'

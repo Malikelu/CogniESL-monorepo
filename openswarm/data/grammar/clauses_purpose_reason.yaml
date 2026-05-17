@@ -1,0 +1,93 @@
+grammar_point: clauses_purpose_reason
+title: "Clauses of Purpose and Reason"
+description: "Structures to explain WHY: because, since, as (reason) vs so that, in order to, to (purpose)."
+level: B1
+
+meaning:
+  core_meaning: "Reason clauses explain WHY something happened (because, since, as). Purpose clauses explain the GOAL (so that, in order to, to)."
+  timeline: "Reason = past/present cause. Purpose = future goal."
+  contrast: "Reason = I stayed home because I was sick. (why?) vs Purpose = I stayed home in order to rest. (goal)"
+  ccqs:
+    - question: Are we explaining why something happened or the goal?
+      answer: Why = reason, Goal = purpose.
+    - question: Is this about the past or the future?
+      answer: Past/present = reason, Future = purpose.
+  example_generator:
+    contexts:
+      - explaining reasons
+      - stating goals
+      - giving excuses
+      - planning actions
+    cultural_notes:
+      - Some languages do not distinguish reason and purpose as clearly as English
+      - For is often confused with because by L1 speakers
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Reason: Because/Since/As + clause / Purpose: Subject + verb + to/in order to/so that + verb"
+    example_generator:
+      contexts:
+        - reason clauses
+        - purpose clauses
+      min_examples: 4
+  negative:
+    structure: "Reason: I did not go because I was tired. / Purpose: I stayed home in order not to get others sick."
+    example_generator:
+      contexts:
+        - negative reason
+        - negative purpose
+      min_examples: 3
+  questions:
+    structure: "Why + auxiliary + subject?: Why did you stay home?"
+    example_generator:
+      contexts:
+        - asking about reason
+      min_examples: 3
+
+sub_rules:
+  - rule: "Because = strongest reason, Since/As = weaker/more formal"
+    type: pragmatic
+    examples:
+      - I stayed home because I was sick. (strong)
+      - Since you are here, let us start. (formal)
+  - rule: "To/In order to + base verb (same subject)"
+    type: grammatical
+    examples:
+      - I went to the store to buy milk.
+      - She studies hard in order to pass the exam.
+  - rule: "So that + subject + can/will/would (different subject possible)"
+    type: grammatical
+    examples:
+      - I spoke slowly so that everyone could understand.
+      - She left early so that she would not be late.
+
+use:
+  - context: "Explaining reasons"
+    description: "Saying why something happened"
+    examples:
+      - I was late because there was heavy traffic.
+      - Since it was Sunday, the shops were closed.
+  - context: "Stating goals"
+    description: "Explaining the purpose of an action"
+    examples:
+      - I am learning English to get a better job.
+      - She exercises every day so that she stays healthy.
+
+phonetics:
+  - note: "Stress on the reason/purpose clause"
+    example_generator:
+      contexts:
+        - information stress
+    l1_issue: "Some L1 speakers use because for both reason and purpose"
+
+teaching:
+  methodology: "PPP"
+  tips:
+    - Use Why? questions to practice reason
+    - Use What for? questions to practice purpose
+    - Contrast because (reason) vs to/so that (purpose)
+  recommended_activities:
+    - name: "Why or What For?"
+      duration: 10
+      adaptation_notes: "Students practice asking and answering reason vs purpose questions."

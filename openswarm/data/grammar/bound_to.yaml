@@ -1,0 +1,110 @@
+grammar_point: bound_to
+title: "Bound to (certainty, inevitability)"
+description: "Phrase used to express that something is certain to happen or inevitable, often based on current circumstances."
+level: B2
+
+meaning:
+  core_meaning: "Expresses near-certainty (95%+ chance) that something will happen, based on logic or current evidence. Slightly weaker than will but stronger than likely."
+  timeline: "Refers to future events based on present evidence."
+  contrast: "Bound to = near-certainty (95%+). Likely = high probability (70-90%). Will = certainty (100%)."
+  ccqs:
+    - question: "He is bound to pass the exam. Is it 100% certain, or almost certain?"
+      answer: "Almost certain. Bound to means very high probability, but not absolute."
+    - question: "She studied for 10 hours. Is she bound to pass?"
+      answer: "Very likely, yes. The evidence strongly suggests she will pass."
+  example_generator:
+    contexts:
+      - everyday situations
+    cultural_notes:
+      - "Bound to is more common in written English and formal speech"
+      - "In casual speech, going to or will are more frequent"
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Subject + be + bound to + base verb"
+    example_generator:
+      - "He is bound to win."
+      - "You are bound to improve with practice."
+      - "The economy is bound to recover."
+    min_examples: 4
+  negative:
+    structure: "Subject + be + not bound to + base verb (rare — use unlikely to instead)"
+    example_generator:
+      - "He is not bound to agree (grammatical but uncommon)"
+      - "More natural: He is unlikely to agree"
+    min_examples: 3
+  questions:
+    structure: "Be + subject + bound to + base verb?"
+    example_generator:
+      - "Are they bound to succeed?"
+      - "Is she bound to find out?"
+    min_examples: 3
+
+sub_rules:
+  - rule: "Bound to expresses very high probability but not absolute certainty — slightly weaker than will"
+    type: semantic
+    examples:
+      - "He is bound to win (very confident prediction)"
+      - "He will win (absolute certainty)"
+  - rule: "Use bound to when there is clear evidence or logical reasoning supporting the prediction"
+    type: usage
+    examples:
+      - "You have practised every day — you are bound to improve"
+      - "She studied for 10 hours — she is bound to pass"
+  - rule: "The negative form not bound to is uncommon — speakers prefer unlikely to or probably will not"
+    type: usage
+    examples:
+      - "He is unlikely to come (more natural)"
+      - "He is not bound to come (grammatical but rare)"
+  - rule: "Bound to can express that something is unavoidable or inevitable, often with a tone of resignation"
+    type: semantic
+    examples:
+      - "All good things are bound to end eventually"
+      - "Mistakes are bound to occur with new software"
+  - rule: "Bound to is more common in written English and formal speech than in casual conversation"
+    type: register
+    examples:
+      - "The economy is bound to recover (news article)"
+      - "It will probably get better (casual speech)"
+
+use:
+  - context: "Logical certainty"
+    examples:
+      - "If you eat too much, you are bound to get sick"
+      - "He is bound to be tired after working 12 hours"
+  - context: "Inevitability"
+    examples:
+      - "Change is bound to happen in every company"
+      - "Mistakes are bound to occur with new software"
+  - context: "Confident predictions"
+    examples:
+      - "She is bound to be famous one day"
+      - "The team is bound to win with their new player"
+
+phonetics:
+  - note: "In connected speech, bound to links smoothly. The /d/ at the end of bound connects directly to the /t/ of to, often producing a single /d/ sound or a flapped /t/ in American English."
+    example_generator:
+      - "bound to → /baʊnd tə/ or /baʊn tə/"
+    l1_issue: "Learners may insert a small vowel between bound and to, breaking the natural flow. Japanese speakers may struggle with the final /d/ sound."
+  - note: "Primary stress falls on bound. To is unstressed and reduced to /tə/."
+    example_generator:
+      - "bound to → /ˈbaʊnd tə/"
+    l1_issue: "Speakers of languages with more even stress distribution (French, Spanish) may give equal weight to both words."
+
+teaching:
+  methodology: "PPP"
+  tips:
+    - "Use cause-effect scenarios: 'If you run in the rain, you are bound to get wet.'"
+    - "Contrast with likely and certain using probability scales."
+    - "Practice with confident predictions about classmates."
+  recommended_activities:
+    - name: "Probability Line"
+      duration: 15
+      adaptation_notes: "Draw a line from 0% to 100%. Students place expressions (might, likely, bound to, will, definitely) on the line and make sentences."
+    - name: "Crystal Ball Predictions"
+      duration: 15
+      adaptation_notes: "Students take turns being a fortune teller making predictions about classmates using bound to."
+    - name: "News Predictions"
+      duration: 20
+      adaptation_notes: "Give students current news headlines. They make predictions about what will happen next using bound to."

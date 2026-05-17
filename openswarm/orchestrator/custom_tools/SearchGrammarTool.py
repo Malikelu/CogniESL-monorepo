@@ -5,6 +5,15 @@ from agency_swarm.tools import BaseTool
 from pydantic import Field
 
 
+def _get_data_dir() -> Path:
+    """Get the data directory path. Supports env var override for Docker deployments."""
+    env_path = os.getenv("COGNIESL_DATA_DIR")
+    if env_path:
+        return Path(env_path)
+    # Default: 3 levels up from this file (works in local dev)
+    return Path(__file__).resolve().parents[3] / "data"
+
+
 class SearchGrammarTool(BaseTool):
     """
     Search the CogniESL grammar database by topic name.
@@ -18,7 +27,7 @@ class SearchGrammarTool(BaseTool):
     )
 
     def run(self):
-        data_dir = Path(__file__).resolve().parents[3] / "data" / "grammar"
+        data_dir = _get_data_dir() / "grammar"
         if not data_dir.exists():
             return f"Error: Grammar data directory not found at {data_dir}"
 
@@ -35,7 +44,7 @@ class SearchGrammarTool(BaseTool):
             if f.stem.lower() == topic_normalized:
                 return self._load_yaml(f)
 
-        # Strategy 3: Title match (search inside files)
+        # Strategy 3: Title match
         for f in data_dir.glob("*.yaml"):
             try:
                 data = yaml.safe_load(f.read_text(encoding="utf-8"))
@@ -44,7 +53,7 @@ class SearchGrammarTool(BaseTool):
             except Exception:
                 continue
 
-        # Strategy 4: Fuzzy match - check if topic words appear in filename or title
+        # Strategy 4: Fuzzy match
         topic_words = set(topic_lower.split())
         best_match = None
         best_score = 0
@@ -54,17 +63,12 @@ class SearchGrammarTool(BaseTool):
                 data = yaml.safe_load(f.read_text(encoding="utf-8"))
                 if not data:
                     continue
-
-                # Score by filename word overlap
                 stem_words = set(f.stem.lower().replace("_", " ").replace("-", " ").split())
                 score = len(topic_words & stem_words)
-
-                # Score by title word overlap
                 title = data.get("title", "")
                 if title:
                     title_words = set(title.lower().split())
                     score = max(score, len(topic_words & title_words))
-
                 if score > best_score:
                     best_score = score
                     best_match = data
@@ -74,7 +78,7 @@ class SearchGrammarTool(BaseTool):
         if best_match and best_score >= 1:
             return best_match
 
-        # Strategy 5: Partial match - topic appears anywhere in title
+        # Strategy 5: Partial match
         for f in data_dir.glob("*.yaml"):
             try:
                 data = yaml.safe_load(f.read_text(encoding="utf-8"))
@@ -84,7 +88,7 @@ class SearchGrammarTool(BaseTool):
                 continue
 
         available = sorted([f.stem for f in data_dir.glob("*.yaml")])
-        return f"Error: No grammar point found for '{self.topic}'. Available grammar points: {', '.join(available[:20])}..."
+        return f"Error: No grammar point found for '{self.topic}'. Available: {', '.join(available[:20])}..."
 
     def _load_yaml(self, path: Path):
         try:

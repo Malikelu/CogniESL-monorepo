@@ -1,0 +1,91 @@
+grammar_point: present_perfect_baseline
+title: "Present Perfect Baseline (Core Uses)"
+description: "Simplified Present Perfect for A2 learners focusing on three core uses: life experience, unfinished time, and recent results. Builds a foundation before introducing more complex uses."
+level: A2
+
+meaning:
+  core_meaning: "A past action that is connected to the present moment. No specific past time is mentioned. Three core uses at this level: (1) life experience — ever/never, (2) unfinished time — for/since, (3) recent result — just/already/yet."
+  timeline: "Past action → present connection. The action happened at some unspecified time before now, and it matters now."
+  contrast: "'I have eaten.' (Present Perfect — no specific time, connected to now: I am not hungry.) vs 'I ate yesterday.' (Past Simple — specific finished time, no present connection.)"
+  ccqs:
+    - question: "Do we know exactly when this happened?"
+      answer: "No — the time is not specified."
+    - question: "Is this connected to now in some way?"
+      answer: "Yes — it is about experience, duration up to now, or a recent result."
+    - question: "Can I say 'yesterday' with this tense?"
+      answer: "No — specific past time words (yesterday, last week, in 2010) are not used with Present Perfect."
+  example_generator:
+    contexts: ["life experiences", "travel", "work history", "daily routines", "recent events"]
+    cultural_notes: ["British English uses Present Perfect more than American English (e.g., 'I have just eaten' vs 'I just ate')", "This is one of the most challenging tenses for ESL learners across all L1 backgrounds", "The for/since distinction is a persistent error area even at higher levels"]
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Subject + have/has + past participle (V3): 'I have eaten.' / 'She has gone.' / 'They have lived here for years.'"
+    example_generator:
+      contexts: ["experience", "duration", "recent events"]
+      min_examples: 4
+  negative:
+    structure: "Subject + have not (haven't) / has not (hasn't) + past participle: 'I haven't eaten.' / 'She hasn't been to Paris.' / 'They haven't finished yet.'"
+    example_generator:
+      contexts: ["things not experienced", "unfinished actions", "expectations not met"]
+      min_examples: 3
+  questions:
+    structure: "Have/Has + subject + past participle: 'Have you ever been to London?' / 'Has she finished?' / 'Have they lived here long?'"
+    example_generator:
+      contexts: ["asking about experience", "checking completion", "enquiring about duration"]
+      min_examples: 3
+
+sub_rules:
+  - rule: "Use with 'ever' and 'never' for life experience"
+    type: "grammatical"
+    examples: ["Have you ever tried sushi?", "I have never flown in a plane.", "She has never been to Scotland.", "Have they ever met the Queen?"]
+  - rule: "Use with 'for' (duration) and 'since' (starting point) for unfinished time"
+    type: "grammatical"
+    examples: ["I have lived here for five years.", "She has worked here since 2019.", "They have known each other for a long time.", "He has been ill since Monday."]
+  - rule: "Use with 'just' (very recently), 'already' (sooner than expected), and 'yet' (up to now — questions and negatives)"
+    type: "grammatical"
+    examples: ["I have just eaten — I am not hungry.", "She has already finished her homework.", "Have you finished yet? / I haven't finished yet.", "They have just arrived."]
+  - rule: "Signal words: ever, never, just, already, yet, for, since, recently, so far, up to now"
+    type: "lexical"
+    examples: ["I have recently started learning guitar.", "So far, I have visited three countries.", "Up to now, everything has been fine."]
+
+use:
+  - context: "Talking about life experience"
+    description: "Describing things you have or have not done in your life up to now."
+    examples: ["I have visited 15 countries.", "She has never eaten octopus.", "Have you ever ridden a horse?"]
+  - context: "Describing how long something has continued"
+    description: "Talking about actions or states that started in the past and continue to the present."
+    examples: ["I have studied English for three years.", "She has lived in this city since 2015.", "They have been married for ten years."]
+  - context: "Describing recent events with present results"
+    description: "Talking about things that just happened and have a visible result now."
+    examples: ["I have just washed the car — it is clean now.", "She has lost her keys — she cannot open the door.", "I have already eaten dinner — I am full."]
+
+phonetics:
+  - note: "'Have' and 'has' are weakly pronounced in connected speech: 'I have eaten' → /aɪv iːtn/, 'She has gone' → /ʃiːz gɒn/."
+    example_generator:
+      contexts: ["connected speech", "weak forms"]
+    l1_issue: "Learners may over-pronounce 'have' as /hæv/ instead of /əv/ or /v/, making speech sound unnatural."
+  - note: "Contractions are standard in speech: 'I've', 'she's', 'they've', 'he's'. In negatives: 'haven't' /hævnt/, 'hasn't' /hæznt/."
+    example_generator:
+      contexts: ["contractions"]
+    l1_issue: "Learners may write 'I've' but say 'I have' in full, creating a mismatch between written and spoken fluency."
+
+teaching:
+  methodology: "PPP"
+  tips:
+    - "Teach only the three core uses at A2: experience (ever/never), duration (for/since), recent result (just/already/yet)."
+    - "Use a visual timeline: draw a line from past to now, showing the connection."
+    - "Drill the signal words: ever, never, for, since, just, already, yet."
+    - "Contrast with Past Simple using time phrases: 'I have eaten (no time) vs I ate yesterday (specific time)'."
+    - "Avoid introducing more complex uses (e.g., Present Perfect with 'this week', 'today') until B1."
+  recommended_activities:
+    - name: "Experience Bingo"
+      duration: 15
+      adaptation_notes: "Students receive a bingo card with experiences ('been to another country', 'tried unusual food', etc.). They ask classmates 'Have you ever...?' and mark squares. First to complete a line wins."
+    - name: "For or Since?"
+      duration: 10
+      adaptation_notes: "Students complete sentences choosing between 'for' and 'since'. Then they create their own sentences about their lives."
+    - name: "Just, Already, Yet Race"
+      duration: 10
+      adaptation_notes: "Teacher describes situations ('Maria is not hungry'). Students race to produce the correct sentence ('She has just eaten'). Points for speed and accuracy."

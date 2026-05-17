@@ -1,0 +1,109 @@
+grammar_point: interrogative_word_order
+title: "Interrogative Word Order (Wh-Questions & Embedded Questions)"
+description: "The word order rules for forming direct and indirect (embedded) questions in English, including subject questions, object questions, and the critical difference between main-clause and subordinate-clause question structure."
+level: A2
+
+meaning:
+  core_meaning: "Questions seek information. In English, the word order changes depending on whether the question word is the subject or object of the sentence, and whether the question is direct or embedded."
+  timeline: "Questions can refer to past, present, or future — the tense is determined by context, not by the question structure itself."
+  contrast: "Subject questions (who/what + verb) do NOT use do/does/did. Object questions (wh- + auxiliary + subject + main verb) DO require inversion. Embedded questions use statement word order, not question word order."
+  ccqs:
+    - question: "In 'Who ate the cake?', do we need 'did'?"
+      answer: "No — 'who' is the subject, so no auxiliary is needed"
+    - question: "In 'What did you buy?', is the word order the same as a statement?"
+      answer: "No — the auxiliary 'did' comes before the subject 'you'"
+    - question: "In 'I wonder where she is', is it 'where is she' or 'where she is'?"
+      answer: "'Where she is' — embedded questions use statement order"
+    - question: "Can we say 'Do you know where is the station?'"
+      answer: "No — it should be 'Do you know where the station is?'"
+  example_generator:
+    contexts: ["asking for directions", "making enquiries", "interviews", "customer service", "classroom interaction"]
+    cultural_notes: ["Embedded questions are essential for polite enquiries. Direct questions can sound abrupt in some cultures. English requires strict word order in questions — there is no equivalent of rising intonation alone to form questions (unlike some languages)."]
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Subject question: Wh-word (subject) + verb + object/complement. Object question: Wh-word (object) + auxiliary (do/does/did/is/are/have/can...) + subject + main verb. Embedded question: Main clause + wh-word + subject + verb (statement order)."
+    example_generator:
+      contexts: ["everyday conversation", "information gathering", "polite requests"]
+      min_examples: 4
+  negative:
+    structure: "Wh-word + auxiliary + not + subject + main verb / Wh-word + auxiliary + subject + not + main verb (contracted forms more common: didn't, isn't, can't...)"
+    example_generator:
+      contexts: ["expressing surprise", "confirming absence", "negative enquiries"]
+      min_examples: 3
+  questions:
+    structure: "Choice questions: Wh-word + auxiliary + subject + verb + or + alternative. Negative questions: Wh-word + auxiliary + n't + subject + verb."
+    example_generator:
+      contexts: ["offering choices", "expressing disbelief", "tag-like confirmation"]
+    min_examples: 3
+
+sub_rules:
+  - rule: "Subject questions (who/what as subject) do NOT use do-support — the word order is the same as a statement"
+    type: "grammatical"
+    examples: ["Who lives here? (NOT 'Who does live here?')", "What happened? (NOT 'What did happen?')"]
+  - rule: "Object questions require subject-auxiliary inversion with the appropriate auxiliary verb"
+    type: "grammatical"
+    examples: ["Where do you work?", "What have they done?", "When will she arrive?"]
+  - rule: "If there is already an auxiliary/modal in the statement, use that auxiliary for the question (no do-support)"
+    type: "grammatical"
+    examples: ["Who can help us? (NOT 'Who does can help?')", "What is happening? (NOT 'What does happen?')"]
+  - rule: "Embedded (indirect) questions use statement word order — no inversion, no do-support"
+    type: "grammatical"
+    examples: ["I don't know where he is (NOT 'where is he')", "She asked what time the train leaves (NOT 'what time does the train leave')"]
+  - rule: "Prepositions can appear at the end of questions in informal English, or at the beginning in formal English"
+    type: "stylistic"
+    examples: ["Who did you speak to? (informal)", "To whom did you speak? (formal)"]
+  - rule: "Negative questions with 'why' are common for suggestions and complaints"
+    type: "pragmatic"
+    examples: ["Why don't we go out?", "Why didn't you tell me?"]
+
+use:
+  - context: "Everyday conversation"
+    description: "Asking for information, making plans, showing interest"
+    examples: ["What time does the shop close?", "Who's coming to the party?", "How long have you lived here?"]
+  - context: "Polite and indirect enquiries"
+    description: "Using embedded questions to sound less direct and more polite"
+    examples: ["Could you tell me where the bank is?", "I'd like to know how much it costs", "Do you know whether she's coming?"]
+  - context: "Interviews and formal settings"
+    description: "Structured questioning in professional contexts"
+    examples: ["What qualifications do you have?", "Why did you choose this career?", "How would you handle that situation?"]
+  - context: "Classroom and learning"
+    description: "Teachers and students asking questions to check understanding"
+    examples: ["What does this word mean?", "Can anyone tell me why the answer is B?"]
+
+phonetics:
+  - note: "Wh-questions typically have falling intonation at the end (not rising)"
+    example_generator:
+      contexts: ["standard questions"]
+    l1_issue: "Speakers of languages that use rising intonation for all questions (e.g., some varieties of Spanish, Japanese) may apply rising intonation to wh-questions, sounding uncertain or surprised"
+  - note: "The auxiliary verbs 'do', 'does', 'did' in questions are usually unstressed and reduced"
+    example_generator:
+      contexts: ["rapid speech"]
+    l1_issue: "Learners may over-pronounce auxiliaries, making questions sound stilted or emphatic"
+  - note: "In embedded questions, the wh-word receives the primary stress, not the auxiliary"
+    example_generator:
+      contexts: ["indirect questions"]
+    l1_issue: "Learners may apply direct-question intonation to embedded questions"
+
+teaching:
+  methodology: "PPP"
+  tips: [
+    "Teach subject questions separately from object questions — they are structurally different and mixing them causes confusion",
+    "Use visual diagrams to show word order: Wh- + Aux + S + V for object questions vs. Wh- + V + O for subject questions",
+    "Drill embedded questions as a separate lesson — the statement word order is a major error source",
+    "Use information-gap activities where students must ask each other questions to complete a task"
+  ]
+  recommended_activities:
+    - name: "Question formation race"
+      duration: 15
+      adaptation_notes: "Give answers, students race to form correct questions. Include both subject and object questions."
+    - name: "Embedded question transformation"
+      duration: 20
+      adaptation_notes: "Students convert direct questions to embedded questions after reporting verbs. Pair work."
+    - name: "Information gap: Find someone who..."
+      duration: 20
+      adaptation_notes: "Classic activity — students circulate asking questions to find classmates matching descriptions."
+    - name: "Mystery interview"
+      duration: 25
+      adaptation_notes: "One student is a 'celebrity' — others ask questions to guess who. Encourages varied question forms."

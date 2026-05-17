@@ -1,0 +1,127 @@
+grammar_point: complex_noun_phrases
+title: "Complex Noun Phrases"
+description: "Noun phrases with multiple pre-modifiers and post-modifiers that create detailed, specific references."
+level: B2
+
+meaning:
+  core_meaning: "Complex noun phrases combine multiple modifiers — both before and after the head noun — to pack detailed information into a single phrase. They allow speakers to be precise and economical."
+  timeline: "Timeless — noun phrases describe states or identities, not actions."
+  contrast: "Simple NP = the dog. Complex NP = the large, elderly, brown-and-white rescue dog that lives next door."
+  ccqs:
+    - question: Does this noun phrase contain more than one modifier?
+      answer: Yes, it has multiple pre- and/or post-modifiers.
+    - question: Can the post-modifier be replaced by a relative clause?
+      answer: Often yes — 'the man talking to John' = 'the man who is talking to John.'
+  example_generator:
+    contexts:
+      - academic writing
+      - news reporting
+      - descriptive prose
+      - professional communication
+    cultural_notes:
+      - English relies heavily on noun phrase complexity rather than verb-heavy constructions
+      - Overuse can make text dense and hard to follow
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "(determiner) + pre-modifiers + head noun + post-modifier(s)"
+    example_generator:
+      contexts:
+        - academic descriptions
+        - news headlines
+        - everyday descriptions
+      min_examples: 4
+  negative:
+    structure: "Same structure with negation in the clause or with negative determiners: no such thing as a perfect solution to the problem"
+    example_generator:
+      contexts:
+        - expressing absence
+        - negated descriptions
+      min_examples: 3
+  questions:
+    structure: "Wh-determiner + complex NP: Which tall man in the grey suit did you mean?"
+    example_generator:
+      contexts:
+        - asking for identification
+        - clarifying descriptions
+      min_examples: 3
+
+sub_rules:
+  - rule: "Pre-modifier order follows OSASCOMP: determiner, opinion, size, age, shape, colour, origin, material, purpose, head noun"
+    type: grammatical
+    examples:
+      - a beautiful large old round red Italian leather travelling bag
+      - a charming small new rectangular blue Japanese ceramic flower vase
+  - rule: "Post-modifiers include relative clauses, prepositional phrases, participle clauses, infinitives, and appositives"
+    type: grammatical
+    examples:
+      - the woman who lives next door
+      - the book on the shelf behind you
+      - the man talking to the teacher
+      - the letter written by Churchill
+      - the best time to plant a tree
+  - rule: "Multiple post-modifiers can stack within a single noun phrase"
+    type: grammatical
+    examples:
+      - the report published last week that changed government policy
+      - the student sitting in the front row who always asks questions
+  - rule: "Noun-plus-noun compounds function as pre-modifiers before the head noun"
+    type: lexical
+    examples:
+      - a hospital emergency department waiting room
+      - an online language learning platform
+
+use:
+  - context: "Academic and formal writing"
+    description: "Complex NPs are essential in academic English for precise, compact expression of ideas."
+    examples:
+      - The longitudinal study conducted over fifteen years revealed significant trends.
+      - A comprehensive review of the existing literature on climate change mitigation strategies is needed.
+  - context: "News and journalism"
+    description: "Journalists use complex NPs to convey maximum information in headlines and leads."
+    examples:
+      - The 45-year-old former Olympic gold medallist turned climate activist spoke at the summit.
+      - A controversial new government policy on immigration has sparked widespread debate.
+  - context: "Everyday description"
+    description: "Speakers use complex NPs to identify specific people, things, or places."
+    examples:
+      - Could you pass me the small blue bottle on the top shelf?
+      - I am looking for the woman with the red hat who was standing by the entrance.
+  - context: "Professional and technical communication"
+    description: "Technical fields rely on complex NPs for precise reference to tools, processes, and concepts."
+    examples:
+      - The high-speed digital data transmission cable needs replacing.
+      - We need to update the customer relationship management software used by the sales team.
+
+phonetics:
+  - note: "Complex NPs are typically produced as a single intonation unit with stress on the head noun and any contrastive modifiers."
+    example_generator:
+      contexts:
+        - spoken descriptions
+        - presentations
+    l1_issue: "Speakers from languages with post-nominal adjectives (e.g. Spanish, French) may place modifiers after the noun incorrectly."
+  - note: "In spoken English, speakers often pause before heavy post-modifiers to plan the rest of the phrase."
+    example_generator:
+      contexts:
+        - spontaneous speech
+        - oral presentations
+    l1_issue: "Long pre-modifier strings are challenging for speakers whose L1 uses fewer pre-modifiers."
+
+teaching:
+  methodology: "Guided discovery"
+  tips:
+    - "Start with simple NPs and add modifiers one at a time: the dog, the large dog, the large brown dog, the large brown dog in the garden."
+    - "Use the OSASCOMP mnemonic for adjective order: Opinion, Size, Age, Shape, Colour, Origin, Material, Purpose."
+    - "Have students expand newspaper headlines into full complex NPs."
+    - "Practice reducing relative clauses to participle clauses for more concise NPs."
+  recommended_activities:
+    - name: "NP Expansion Game"
+      duration: 15
+      adaptation_notes: "Students start with a bare noun and take turns adding modifiers. The group judges whether the order is correct."
+    - name: "Headline Decoder"
+      duration: 20
+      adaptation_notes: "Students unpack dense newspaper headlines into full sentences, identifying each modifier's function."
+    - name: "Describe the Picture"
+      duration: 10
+      adaptation_notes: "Students describe a detailed image using complex NPs. Encourage both pre- and post-modification."

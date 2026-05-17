@@ -1,0 +1,98 @@
+grammar_point: cohesion_advanced
+title: "Advanced Cohesion"
+description: "Advanced cohesive devices: discourse markers, lexical cohesion, substitution, ellipsis, and reference."
+level: C1
+
+meaning:
+  core_meaning: "Advanced cohesion refers to the linguistic devices that connect ideas across sentences and paragraphs. This includes discourse markers (however, moreover), lexical cohesion (repetition, synonyms), substitution (do so, so does he), ellipsis (omission of understood words), and reference (this, that, the former)."
+  timeline: "Timeless — applies to all texts regardless of tense."
+  contrast: "Basic cohesion = and, but, so vs Advanced cohesion = nevertheless, furthermore, in contrast, as a result"
+  ccqs:
+    - question: Does this text use sophisticated connecting devices?
+      answer: Yes, that is advanced cohesion.
+    - question: Can you identify the cohesive devices?
+      answer: Look for discourse markers, reference words, substitution, and ellipsis.
+  example_generator:
+    contexts:
+      - academic writing
+      - formal essays
+      - professional communication
+      - extended discourse
+    cultural_notes:
+      - Cohesion patterns vary across languages
+      - English academic writing values explicit cohesive devices
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Discourse markers: However, the results were inconclusive. / Reference: This suggests that... / Substitution: I asked him to leave, and he did so."
+    example_generator:
+      contexts:
+        - academic writing
+        - formal essays
+        - professional communication
+      min_examples: 4
+  negative:
+    structure: "Nevertheless, the project continued. / This does not mean that..."
+    example_generator:
+      contexts:
+        - negative cohesion
+      min_examples: 3
+  questions:
+    structure: "Can appear in questions: Does this mean that...?"
+    example_generator:
+      contexts:
+        - question formation
+      min_examples: 3
+
+sub_rules:
+  - rule: "Discourse markers for contrast: however, nevertheless, on the other hand, conversely"
+    type: discourse
+    examples:
+      - The results were promising. However, more research is needed.
+      - On the other hand, there are significant drawbacks.
+  - rule: "Discourse markers for addition: furthermore, moreover, in addition, besides"
+    type: discourse
+    examples:
+      - The plan is expensive. Furthermore, it is risky.
+  - rule: "Reference words: this, that, these, those, the former, the latter"
+    type: reference
+    examples:
+      - The results were inconclusive. This suggests that more research is needed.
+      - Both methods have advantages. The former is cheaper; the latter is faster.
+  - rule: "Substitution: do so, so does/did + subject"
+    type: substitution
+    examples:
+      - She asked him to leave, and he did so.
+      - I enjoy reading, and so does my sister.
+
+use:
+  - context: "Academic writing"
+    description: "Connecting ideas in essays and reports"
+    examples:
+      - The data suggests a correlation. However, causation cannot be inferred.
+      - Furthermore, the sample size was small. This limits the generalizability of the findings.
+  - context: "Professional communication"
+    description: "Formal emails and reports"
+    examples:
+      - I have reviewed the proposal. While it has merit, I have several concerns.
+      - The deadline is approaching. As such, we need to accelerate our efforts.
+
+phonetics:
+  - note: "Discourse markers are typically followed by a pause (comma) in speech"
+    example_generator:
+      contexts:
+        - pausing
+        - reading aloud
+    l1_issue: "Many L1 speakers underuse cohesive devices, making writing sound choppy"
+
+teaching:
+  methodology: "Guided discovery"
+  tips:
+    - Use authentic academic texts as examples
+    - Have students identify cohesive devices in texts
+    - Practice adding cohesion to student writing
+  recommended_activities:
+    - name: "Cohesion Analysis"
+      duration: 15
+      adaptation_notes: "Students identify and categorize cohesive devices in academic texts."

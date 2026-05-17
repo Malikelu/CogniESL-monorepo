@@ -1,0 +1,95 @@
+grammar_point: countable_uncountable
+title: "Countable & Uncountable Nouns"
+description: "Nouns that can be counted individually (countable: book, apple) vs nouns that cannot be counted (uncountable: water, information), with specific quantifiers for each."
+level: A1
+
+meaning:
+  core_meaning: "Countable nouns are individual items that can be counted with numbers; Uncountable nouns are substances, concepts, or mass nouns that cannot be counted individually."
+  timeline: "N/A (Applies to all tenses; noun form does not change with tense)."
+  contrast: "\"Countable\" = Can be plural: \"book → books\"\n\n\"Uncountable\" = Always singular: \"water (never waters)\"\n\n\"Quantifiers\" = Many/few for countable; Much/little for uncountable.\n"
+  ccqs:
+    - question: "Can we count this noun? Can we say 'one book, two books'?"
+      answer: "Yes = countable. No = uncountable."
+    - question: "Can we use 'a' or 'an' before this noun?"
+      answer: "Yes = countable (a book). No = uncountable (not 'a water')."
+    - question: "Do we use 'many' or 'much' with this noun?"
+      answer: "'Many' = countable (many books). 'Much' = uncountable (much water)."
+    - question: "Can this noun have a plural -s?"
+      answer: "Yes = countable (books, apples). No = uncountable (not 'informations', 'advices')."
+  example_generator:
+    contexts: ["everyday situations", "food and drink", "shopping", "home"]
+    cultural_notes: ["Some nouns that are countable in other languages are uncountable in English (e.g., 'information', 'advice', 'furniture', 'luggage')", "This is one of the most common sources of errors for beginner learners"]
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Countable: Singular (a/an + noun), plural (noun + s/es): \"a book\", \"two books\"\nUncountable: Singular only, no a/an: \"water\", \"information\"\nQuantifiers: Countable (many, few, a few, number of); Uncountable (much, little, a little, amount of)\n"
+    example_generator:
+      contexts: ["entertainment and media", "food and drink", "shopping"]
+      min_examples: 4
+  negative:
+    structure: "Countable: 'I don't have any books.' Uncountable: 'I don't have any water.'"
+    example_generator:
+      contexts: ["everyday situations", "shopping"]
+      min_examples: 4
+  questions:
+    structure: "Countable: 'Are there any books?' Uncountable: 'Is there any water?'"
+    example_generator:
+      contexts: ["entertainment and media", "food and drink"]
+      min_examples: 4
+
+sub_rules:
+  - rule: "Common uncountable nouns: advice, information, furniture, luggage, news, weather, traffic, homework, research, knowledge"
+    type: lexical
+    examples: ["She gave me good advice.", "The furniture is new.", "I have too much homework."]
+  - rule: "Uncountable nouns can be made countable with a unit of measurement: a piece of advice, a glass of water, an item of furniture"
+    type: grammatical
+    examples: ["a piece of advice", "a glass of water", "a slice of bread", "a item of news", "a piece of furniture"]
+  - rule: "Some nouns can be both countable and uncountable with different meanings: 'glass' (material) vs 'a glass' (container)"
+    type: lexical
+    examples: ["Glass is made from sand. (uncountable material)", "I drank a glass of water. (countable container)", "I need some paper. (material)", "I need a paper. (newspaper)"]
+  - rule: "'Some' and 'any' work with both countable and uncountable nouns"
+    type: grammatical
+    examples: ["I have some books. (countable)", "I have some water. (uncountable)", "Do you have any apples? (countable)", "Do you have any milk? (uncountable)"]
+  - rule: "'A few' = some (positive); 'few' = almost none (negative). 'A little' = some (positive); 'little' = almost none (negative)"
+    type: grammatical
+    examples: ["I have a few friends. (some — positive)", "I have few friends. (almost none — negative)", "I have a little time. (some — positive)", "I have little time. (almost none — negative)"]
+
+use:
+  - context: "Countable Nouns (Objects, People, Animals)"
+    description: "Physical items that can be counted: books, cars, students, dogs."
+    examples: ["I bought two cars.", "There are five students in the class.", "She has three cats."]
+  - context: "Uncountable Nouns (Substances, Concepts, Abstract Nouns)"
+    description: "Mass nouns: water, rice, money, information, advice, weather."
+    examples: ["I need some rice.", "She gave me good advice.", "The weather is beautiful today."]
+  - context: "Quantifiers for Countable"
+    description: "'Many' (a lot of), 'few' (almost none), 'a few' (some): 'many books', 'few friends'."
+    examples: ["I have many books.", "There are few tickets left.", "I have a few questions."]
+  - context: "Quantifiers for Uncountable"
+    description: "'Much' (a lot of), 'little' (almost none), 'a little' (some): 'much water', 'little time'."
+    examples: ["I don't have much time.", "There is a little milk left.", "How much sugar do you want?"]
+
+phonetics:
+  - note: "No phonetic difference, but learners may add plural -s to uncountable nouns: *'informations', *'advices', *'furnitures'"
+    example_generator:
+      contexts: ["common errors"]
+    l1_issue: "Many languages treat these nouns as countable, leading to overgeneralisation of plural -s"
+  - note: "'Much' is often reduced to /mətʃ/ in connected speech"
+    example_generator:
+      contexts: ["connected speech"]
+    l1_issue: "Learners may not recognise 'much' in natural speech due to reduction"
+
+teaching:
+  methodology: "PPP with realia"
+  tips:
+    - "Week 1: Countable nouns (singular/plural, a/an)."
+    - "Week 2: Uncountable nouns (common examples, no a/an/-s)."
+    - "Week 3: Quantifiers (many/much, few/little)."
+    - "Use real objects: Count books (countable), pour water (uncountable)."
+  recommended_activities:
+    - name: "Sort the Nouns"
+      duration: 10
+      adaptation_notes: "Students sort a list of 20 nouns into countable and uncountable columns. Discuss any that can be both."
+    - name: "Shopping List"
+      duration: 15
+      adaptation_notes: "Students write a shopping list using correct quantifiers (many apples, much rice, a few eggs, a little milk)."

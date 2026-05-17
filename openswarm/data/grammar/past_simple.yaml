@@ -1,0 +1,124 @@
+grammar_point: past_simple
+title: "Past Simple (V2/ed)"
+description: "Describes completed actions at a specific past time, past habits, or sequence of past events. The most common past tense."
+level: A1
+
+meaning:
+  core_meaning: "Describes an action that started and finished at a specific time in the past. The action is complete — it has no connection to the present moment. Can also describe past habits or a sequence of past events."
+  timeline: "Specific past time: yesterday, last week, in 2020 → action completed. The time period is finished."
+  contrast: "'Past Simple' = 'I worked yesterday.' (completed, specific time) vs 'Present Perfect' = 'I have worked.' (no specific time, connection to present)"
+  ccqs:
+    - question: "Is this action completed? Is it finished?"
+      answer: "Yes — it started and finished in the past."
+    - question: "Do we know exactly when this happened?"
+      answer: "Yes — there is a specific past time (yesterday, last week, in 2020)."
+    - question: "Is there a connection to the present moment?"
+      answer: "No — the action is completely in the past."
+  example_generator:
+    contexts:
+      - completed past actions
+      - past habits and routines
+      - sequences of events
+      - biographies and life stories
+    cultural_notes:
+      - "Use diverse names and cultural contexts"
+      - "Avoid sensitive topics (war, death, trauma)"
+      - "Keep examples age-appropriate"
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Subject + past tense verb (V2). Regular verbs: V1 + ed. Irregular verbs: must be memorized (go → went, buy → bought)."
+    example_generator:
+      - "I walked to school yesterday."
+      - "She went to the store."
+      - "They bought a new car."
+      - "He ate lunch at noon."
+    min_examples: 4
+  negative:
+    structure: "Subject + did not (didn't) + base verb (V1). The past tense is carried by 'did', so the main verb stays in base form."
+    example_generator:
+      - "I didn't walk to school."
+      - "She didn't go to the store."
+      - "They didn't buy a new car."
+      - "He didn't eat lunch."
+    min_examples: 4
+  questions:
+    structure: "Did + subject + base verb (V1)?"
+    example_generator:
+      - "Did you walk to school?"
+      - "Did she go to the store?"
+      - "Did they buy a new car?"
+      - "Did he eat lunch?"
+    min_examples: 4
+
+sub_rules:
+  - rule: "Regular verbs: add -ed to the base form"
+    type: spelling
+    examples: ["walk → walked", "play → played", "cook → cooked", "clean → cleaned"]
+  - rule: "Verbs ending in -e: just add -d"
+    type: spelling
+    examples: ["live → lived", "love → loved", "dance → danced", "hope → hoped"]
+  - rule: "Verbs ending in consonant + y: change y to i, add -ed"
+    type: spelling
+    examples: ["study → studied", "carry → carried", "try → tried", "cry → cried"]
+  - rule: "Verbs ending in vowel + y: just add -ed"
+    type: spelling
+    examples: ["play → played", "enjoy → enjoyed", "stay → stayed"]
+  - rule: "Short verbs ending in consonant-vowel-consonant: double the final consonant, add -ed"
+    type: spelling
+    examples: ["stop → stopped", "plan → planned", "drop → dropped"]
+  - rule: "Irregular verbs must be memorized. There is no rule for these."
+    type: irregular
+    examples: ["go → went", "buy → bought", "eat → ate", "see → saw", "have → had"]
+  - rule: "Common time expressions: yesterday, last night, last week, last month, last year, in 2020, two days ago, when I was young"
+    type: lexical
+    examples: ["I went to the cinema yesterday.", "She visited London last year.", "They moved here two years ago."]
+
+use:
+  - context: "Completed past action at a specific time"
+    description: "An action that started and finished at a named past time"
+    examples: ["I graduated in 2018.", "She called me last night.", "We visited Paris in 2019.", "He arrived at 3pm."]
+  - context: "Past habits"
+    description: "Regular actions in the past that are now finished"
+    examples: ["I played football every weekend when I was a child.", "She walked to school every day.", "They always ate dinner at 7pm."]
+  - context: "Sequence of events"
+    description: "A list of past actions in chronological order"
+    examples: ["I woke up, brushed my teeth, and went to work.", "She came home, cooked dinner, and watched TV.", "We arrived at the hotel, checked in, and went to the pool."]
+  - context: "Biographies and life stories"
+    description: "Talking about someone's life in the past"
+    examples: ["She was born in 1990.", "He studied medicine at university.", "They lived in Japan for five years."]
+
+phonetics:
+  - note: "-ed pronunciation: /t/ after voiceless sounds (walked, stopped, cooked), /d/ after voiced sounds (played, lived, cleaned), /ɪd/ after /t/ or /d/ sounds (wanted, needed, decided)"
+    example_generator:
+      - "walked /wɔːkt/ (voiceless /k/ → /t/)"
+      - "played /pleɪd/ (voiced /eɪ/ → /d/)"
+      - "wanted /wɒntɪd/ (/t/ → /ɪd/)"
+    l1_issue: "Portuguese and Spanish speakers often pronounce -ed as a full syllable /ed/ in all cases. Drill the three pronunciations explicitly."
+  - note: "Irregular verbs: the past tense form is the same for all persons (I went, you went, he went, she went, we went, they went). There is no -s in the third person."
+    example_generator:
+      - "I went / she went / they went (NOT she goes for past)"
+    l1_issue: "Some L1 speakers add -s to third person in the past tense (she goed, he wented). This is a common overgeneralization error."
+
+teaching:
+  methodology: "PPP (Present-Practice-Produce)"
+  tips:
+    - "Start with regular verbs and the -ed endings. Master these before introducing irregular verbs."
+    - "Teach the most common irregular verbs early: go/went, have/had, buy/bought, eat/ate, see/saw, come/came, take/took, make/made, get/got, know/knew."
+    - "Drill time expressions: yesterday, last week, in 2020, two days ago. These signal Past Simple."
+    - "Use story sequencing: 'First I..., then I..., finally I...' This practices the narrative function of Past Simple."
+    - "Contrast with Present Perfect: 'I went to Paris (last year, finished) vs I have been to Paris (experience, no specific time).'"
+  recommended_activities:
+    - name: "Yesterday I..."
+      duration: 10
+      adaptation_notes: "Students tell the class what they did yesterday using Past Simple. Teacher writes key verbs on the board, highlighting regular and irregular forms."
+    - name: "Irregular Verb Bingo"
+      duration: 15
+      adaptation_notes: "Students fill a bingo grid with irregular past tense forms. Teacher calls out base forms; students mark the past tense. First to complete a line wins."
+    - name: "Story Chain"
+      duration: 15
+      adaptation_notes: "Teacher starts a story: 'Yesterday I went to the park.' Each student adds a sentence using Past Simple. Practices narrative sequencing and irregular verbs."
+    - name: "Past Simple Diary"
+      duration: 15
+      adaptation_notes: "Students write 5-8 sentences about what they did last weekend. Teacher checks for correct use of regular and irregular past tense forms."

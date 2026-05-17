@@ -1,0 +1,95 @@
+grammar_point: however
+title: "However (Contrast Adverb)"
+description: "Adverb that shows strong contrast between two sentences or ideas. Essential for formal writing."
+level: B2
+
+meaning:
+  core_meaning: "Shows strong contrast between two independent ideas, stronger than 'but'."
+  timeline: "N/A (However is about contrast, not time.)"
+  contrast: "'However' = formal contrast between sentences\n\n'But' = informal contrast within sentence\n\n'However' = more emphatic than 'though'\n\n'Nevertheless' = synonym (very formal)\n\n"
+  ccqs:
+    - question: "Does 'however' connect two clauses within one sentence like 'but'?"
+      answer: "No, it connects two separate sentences or is placed after a semicolon."
+    - question: "Is 'however' more formal or informal?"
+      answer: "More formal — used in writing, not casual speech."
+    - question: "Can 'however' go at the beginning, middle, or end of a sentence?"
+      answer: "Yes, all three positions are possible with appropriate punctuation."
+  example_generator:
+    contexts: ["formal writing", "academic essays", "business correspondence"]
+    cultural_notes: ["In spoken English, 'but' is preferred; 'however' sounds overly formal in conversation", "Common in IELTS and Cambridge writing tasks for coherence marks"]
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Sentence. However, + sentence: \"I like tea. However, I don't drink it often.\"\n\nSentence; however, + sentence: \"I like tea; however, I don't drink it often.\"\n\nHowever + adjective/adverb: \"However hard I try...\"\n\n"
+    example_generator:
+      contexts: ["work and professional life", "food and daily routines", "weather and nature"]
+      min_examples: 4
+  negative:
+    structure: "However position unchanged in negatives."
+    example_generator:
+      contexts: ["everyday situations", "negation"]
+      min_examples: 4
+  questions:
+    structure: "However not used in questions directly."
+    example_generator:
+      contexts: ["everyday situations"]
+      min_examples: 4
+
+sub_rules:
+  - rule: "However as a contrast adverb requires a full stop or semicolon before it"
+    type: punctuation
+    examples: ["I wanted to go. However, I was too tired. (correct)", "I wanted to go, however, I was too tired. (incorrect — comma splice)"]
+  - rule: "However can appear at the beginning, middle, or end of the second sentence"
+    type: grammatical
+    examples: ["It was raining. However, we went out. (beginning)", "It was raining. We, however, went out. (middle)", "It was raining. We went out, however. (end)"]
+  - rule: "However + adjective/adverb means 'no matter how'"
+    type: grammatical
+    examples: ["However hard I try, I can't solve this problem.", "However fast she runs, she always comes last."]
+  - rule: "However must not be confused with 'how ever' (two words) which means 'in what way'"
+    type: lexical
+    examples: ["However did you manage? (in what way)", "I'll help however I can. (no matter how)"]
+
+use:
+  - name: Sentence Contrast
+    description: "Connect two contrasting sentences (formal writing)."
+    examples:
+      - "The price is high. However, the quality is excellent."
+      - "It's difficult; however, it's worth it."
+    key_point: "However connects TWO sentences (unlike 'but' which connects clauses)."
+  - name: Emphatic Modifier
+    description: "Means 'no matter how' with adjectives/adverbs."
+    examples:
+      - "However hard I try..."
+      - "However fast he runs..."
+    key_point: "However + adjective/adverb = 'no matter how much/hard'."
+  - name: Formal Academic Writing
+    description: "Common in essays and reports."
+    examples:
+      - "The data is limited. However, trends are clear."
+    key_point: "Avoid in spoken English — use 'but' instead."
+
+phonetics:
+  - note: "Stress on the first syllable: HOW-ever. In mid-sentence position, it is often unstressed."
+    example_generator:
+      contexts: ["formal speech", "sentence stress"]
+    l1_issue: "Some L1 speakers place 'however' inside a single sentence with commas, creating comma splices."
+  - note: "When used sentence-initially, 'however' carries a falling-rising intonation pattern"
+    example_generator:
+      contexts: ["intonation"]
+    l1_issue: "Learners may use flat intonation, making the contrast less clear to listeners."
+
+teaching:
+  methodology: "Guided discovery with contrastive analysis"
+  tips:
+    - "Teach as 'sentences only' rule: However connects full sentences, not clauses."
+    - "Practice essay writing: 'Some say X. However, others argue Y.'"
+    - "Show register difference: 'But' (speaking) vs 'However' (writing)."
+    - "Use punctuation drills: full stop + However vs semicolon + however."
+  recommended_activities:
+    - name: "Essay Connector Practice"
+      duration: 15
+      adaptation_notes: "Students rewrite informal paragraphs replacing 'but' with 'however' and correcting punctuation."
+    - name: "Position Swap"
+      duration: 10
+      adaptation_notes: "Given a sentence with 'however' at the beginning, students rewrite it with 'however' in mid and end positions."

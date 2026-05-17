@@ -1,0 +1,156 @@
+grammar_point: pseudo_clefts
+title: Pseudo-Clefts and It-Clefts
+description: Cleft sentences are used to focus attention on a particular part of a sentence by splitting it into two clauses. Pseudo-clefts (wh-clefts) and it-clefts are essential tools for emphasis, contrast, and information management in English.
+level: C1
+
+meaning:
+  core_meaning: Cleft sentences divide a single idea into two clauses to highlight (focus) one element. This allows speakers to emphasise what is new, important, or contrastive, and to manage the flow of information in discourse.
+  timeline: "Clefts are used across all tenses. The tense is carried by the verb in the 'it + be' or 'wh-' clause, and the focused element adjusts accordingly.\n\nIt-cleft: It + be + FOCUS + who/that + rest of sentence.\nPseudo-cleft: What-clause + be + FOCUS (or reverse)."
+  contrast: "It-cleft: 'It was JOHN who broke the vase.' (Focus on John — not someone else.)\n\nPseudo-cleft: 'What I need is a holiday.' (Focus on a holiday — that's what I need.)\n\nReversed pseudo-cleft: 'A holiday is what I need.' (Same focus, different order.)\n\nBasic sentence: 'John broke the vase.' (Neutral, no special focus.)\n\nClefts are used when the neutral word order doesn't convey the right emphasis or when correcting/contrasting information."
+  ccqs:
+    - question: "If I say 'It was the blue car that hit me,' what am I emphasising?"
+      answer: "You are emphasising that it was the blue car (not the red one, not a truck). The focus is on identifying which vehicle."
+    - question: "What is the difference between 'What she wants is a new laptop' and 'She wants a new laptop'?"
+      answer: "The pseudo-cleft version emphasises 'a new laptop' as the key information. It might be answering the question 'What does she want?' or contrasting with what she doesn't want."
+    - question: "Can we say 'What I did was I went home'?"
+      answer: "This is grammatically possible but awkward. Better: 'What I did was go home' (bare infinitive) or 'What I did was to go home' (to-infinitive). After 'What I did was...', use the bare infinitive."
+  example_generator:
+    contexts:
+      - correcting misinformation
+      - emphasising key information
+      - formal writing and presentations
+      - spoken emphasis and contrast
+    cultural_notes:
+      - "Clefts are extremely common in spoken English for emphasis and correction — far more than learners typically realise."
+      - "In academic writing, pseudo-clefts are used to structure arguments: 'What remains unclear is whether...'"
+    min_examples: 6
+
+form:
+  affirmative:
+    structure: "IT-CLEFTS:\n  It + be + FOCUS + who/that/which + clause\n\n  It + be + person → who/that:\n    'It was Sarah who called.' / 'It was Sarah that called.'\n\n  It + be + thing → that/which:\n    'It was the noise that woke me up.' / 'It is the economy that matters most.'\n\n  It + be + time expression → that/when:\n    'It was last summer that we met.' / 'It was at midnight when the power went out.'\n\n  It + be + place → that/where:\n    'It was in Paris that he proposed.' / 'It was at the office where I left my keys.'\n\n  It + be + reason → that:\n    'It was because of the rain that we cancelled.'\n\nPSEUDO-CLEFTS (Wh-clefts):\n  What-clause + be + FOCUS\n\n  What + subject + verb + be + noun phrase:\n    'What I need is a good night's sleep.'\n    'What she enjoys most is swimming.'\n\n  What + subject + verb + be + infinitive (bare or to):\n    'What I did was (to) call the police.'\n    'What we should do is (to) wait and see.'\n\n  What + happened + be + clause:\n    'What happened was (that) the car broke down.'\n    'What occurred was that the system crashed.'\n\nREVERSED PSEUDO-CLEFTS:\n  FOCUS + be + what-clause\n\n  'A good holiday is what I need.'\n  'Swimming is what she enjoys most.'\n  'The truth is what we need to hear.'\n\nALL-CLEFTS (with 'all' = 'the only thing'):\n  All (that) + subject + verb + be + ...\n  'All I want is a cup of tea.' (= The only thing I want...)\n  'All she did was laugh.' (= The only thing she did...)"
+    example_generator:
+      contexts:
+        - correcting someone
+        - emphasising a point in a presentation
+        - formal writing
+        - everyday conversation
+      min_examples: 5
+  negative:
+    structure: "Negation can appear in various positions in cleft sentences:\n\nNegate the focused element:\n  'It wasn't John who broke the vase — it was Mary.'\n  'What I don't understand is why she left.'\n\nNegate the relative clause:\n  'It was John who didn't want to go.'\n  'What she didn't say was more important than what she did say.'\n\nNegate the main 'be' verb:\n  'It isn't the price that bothers me — it's the quality.'\n  'What we need isn't more time; it's more money.'\n\nReversed pseudo-cleft with negation:\n  'A quiet life is not what she wants.'\n  'The truth is not always what people want to hear.'"
+    example_generator:
+      contexts:
+        - correcting a misunderstanding
+        - contrasting two ideas
+        - denying an accusation
+      min_examples: 4
+  questions:
+    structure: "Cleft questions are used to seek specific information:\n\nIt-cleft questions:\n  'Was it John who called?'\n  'Is it the blue one that you want?'\n  'Was it in 2010 that you moved here?'\n\nPseudo-cleft questions:\n  'What is it that you want?'\n  'What was it that she said?'\n  'Where is it that you live?'\n\nReversed pseudo-cleft questions:\n  'A holiday is what you need?'\n\nNote: Cleft questions often carry an implication of surprise or seeking confirmation."
+    example_generator:
+      contexts:
+        - seeking confirmation
+        - expressing surprise
+        - clarifying information
+      min_examples: 4
+
+sub_rules:
+  - rule: "It-clefts: 'who' for people, 'that' for things, times, places, reasons (most versatile)"
+    type: "grammatical"
+    examples:
+      - "It was my teacher who encouraged me. (person — who)"
+      - "It was the rain that ruined the picnic. (thing — that)"
+      - "It was in 2020 that the pandemic began. (time — that)"
+      - "It was because he was tired that he made the mistake. (reason — that)"
+  - rule: "Pseudo-clefts always begin with a wh-word (usually 'what') and the focused element comes after 'be'"
+    type: "grammatical"
+    examples:
+      - "What I like about this city is the food. (focus: the food)"
+      - "What matters most is your health. (focus: your health)"
+      - "What surprised me was his honesty. (focus: his honesty)"
+  - rule: "After 'What I did was...' and similar do-sentences, use the bare infinitive (not to-infinitive)"
+    type: "grammatical"
+    examples:
+      - "What I did was call the doctor. (NOT: What I did was to call the doctor.)"
+      - "All she did was complain. (NOT: All she did was to complain.)"
+      - "What he tried to do was help. (to-infinitive is acceptable when the main verb is not 'do')"
+  - rule: "Reversed pseudo-clefts place the focus first for dramatic or rhetorical effect"
+    type: "stylistic"
+    examples:
+      - "This is what I'm talking about!"
+      - "A chance like this is what we've been waiting for."
+      - "The truth is what we need, not comfortable lies."
+  - rule: "All-clefts with 'all (that)' mean 'the only thing' — they emphasise exclusivity"
+    type: "grammatical"
+    examples:
+      - "All I want is to be left alone. (= The only thing I want...)"
+      - "All she needs is a bit of encouragement."
+      - "All that matters is that you tried your best."
+  - rule: "Pseudo-clefts can be used with 'where', 'when', 'why', 'how' — not just 'what'"
+    type: "grammatical"
+    examples:
+      - "Where I live is near the station."
+      - "When I feel happiest is when I'm with my family."
+      - "Why she left is still a mystery."
+      - "How we solve this is by working together."
+
+use:
+  - context: "Correcting misinformation"
+    description: "It-clefts are frequently used to correct someone by emphasising the right information."
+    examples:
+      - "Actually, it was Shakespeare who wrote Hamlet, not Marlowe."
+      - "It wasn't the manager who decided — it was the board."
+      - "It's the second turning on the left, not the first."
+  - context: "Emphasising key information in presentations and writing"
+    description: "Pseudo-clefts structure information clearly, making them ideal for academic and professional communication."
+    examples:
+      - "What this study demonstrates is a clear link between diet and health."
+      - "What remains to be seen is whether the policy will be effective."
+      - "What I'd like to focus on today is the impact of technology on education."
+  - context: "Expressing personal feelings and priorities"
+    description: "Clefts allow speakers to foreground what matters most to them."
+    examples:
+      - "What I appreciate most about you is your honesty."
+      - "It's the little things that make life worth living."
+      - "What I really need right now is some peace and quiet."
+  - context: "Contrastive focus"
+    description: "Clefts are used to contrast one element with another, often to resolve ambiguity or disagreement."
+    examples:
+      - "It's not the cost that worries me — it's the risk."
+      - "What I object to is the principle, not the details."
+      - "It was the music that I loved, not the lyrics."
+  - context: "Narrative and storytelling"
+    description: "Clefts add drama and focus to spoken narratives."
+    examples:
+      - "It was at that moment that everything changed."
+      - "What happened next was completely unexpected."
+      - "It was a dark and stormy night when the stranger arrived."
+
+phonetics:
+  - note: "The focused element in a cleft sentence carries the primary stress and highest pitch. The relative clause (who/that...) is typically de-emphasised — lower pitch, faster delivery. This contrast in prominence is essential for the cleft to achieve its focusing effect."
+    example_generator:
+      - "It was JOHN who called. (stress on JOHN, reduced 'who called')"
+      - "What I NEED is a HOLIDAY. (stress on need and holiday)"
+      - "It's the QUALITY that matters. (stress on quality)"
+    l1_issue: "Many languages use word order or particles for focus rather than cleft structures. Learners may underuse clefts or place stress incorrectly, making their emphasis unclear. Speakers of topic-prominent languages (e.g., Japanese, Korean) may find the it-cleft structure particularly unfamiliar."
+
+teaching:
+  methodology: "Guided discovery — present pairs of neutral and cleft sentences, guide students to identify what is being emphasised and why."
+  tips:
+    - "Start with correction scenarios: 'No, it wasn't Peter — it was PAUL who did it.' This makes the purpose of clefts immediately clear."
+    - "Use intonation to show focus: the focused element gets the main stress. Exaggerate at first."
+    - "Contrast neutral vs cleft: 'John broke the vase' vs 'It was John who broke the vase.' Ask: 'When would we use the second one?'"
+    - "Teach pseudo-clefts as a tool for structuring presentations: 'What I want to discuss today is...'"
+    - "Practise the bare infinitive rule after 'What I did was...' — this is a common error."
+    - "Use information gap activities: one student has information, the other asks cleft questions to get it."
+  recommended_activities:
+    - name: "Correction relay"
+      duration: 15
+      adaptation_notes: "Read out incorrect statements; students must correct them using it-clefts. 'Shakespeare was born in London.' → 'Actually, it was in Stratford-upon-Avon that Shakespeare was born.' Competitive and fun."
+    - name: "Focus shift practice"
+      duration: 15
+      adaptation_notes: "Give a neutral sentence and have students create different cleft versions focusing on different elements. 'Maria gave John a book yesterday.' → 'It was Maria who...' / 'It was John that...' / 'It was a book that...' / 'It was yesterday that...'"
+    - name: "Presentation opener"
+      duration: 20
+      adaptation_notes: "Students prepare a short presentation using pseudo-clefts to structure their introduction: 'What I'd like to talk about today is...' 'What I've discovered is...' B2+."
+    - name: "Dialogue emphasis"
+      duration: 15
+      adaptation_notes: "Students write and perform short dialogues where characters correct or emphasise information using clefts. Good for practising spoken intonation patterns."

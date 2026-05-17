@@ -1,0 +1,98 @@
+grammar_point: conditionals_overview
+title: "Conditionals Overview (Zero, First, Second, Third, Mixed)"
+description: "Structures used to talk about real and hypothetical situations and their consequences, ranging from factual (zero) to impossible past (third)."
+level: B1
+
+meaning:
+  core_meaning: "Express the relationship between a condition (if-clause) and its result, with varying degrees of probability (real to impossible)."
+  timeline: "Zero: General facts (no time). First: Future real. Second: Present/future hypothetical. Third: Past hypothetical. Mixed: Past cause, present result."
+  contrast: "\"Zero\" = Fact: \"If ice melts, it turns to water\" (always true)\n\n\"First\" = Real future: \"If I study, I will pass\" (possible)\n\n\"Second\" = Hypothetical: \"If I studied, I would pass\" (unlikely)\n\n\"Third\" = Hypothetical past: \"If I had studied, I would have passed\" (too late)\n"
+  ccqs:
+    - question: "Is this situation real/possible or imaginary/unreal?"
+      answer: "Real = zero or first conditional. Imaginary = second or third conditional."
+    - question: "Are we talking about the present/future or the past?"
+      answer: "Present/future = zero, first, or second. Past = third conditional."
+    - question: "Can this situation still happen, or is it too late?"
+      answer: "Still possible = first conditional. Too late = third conditional."
+    - question: "Do we use 'will' or 'would' in the main clause?"
+      answer: "Will = real/possible (first). Would = hypothetical/unreal (second)."
+  example_generator:
+    contexts: ["everyday situations", "hypothetical scenarios", "regrets", "scientific facts"]
+    cultural_notes: ["Conditionals are one of the most challenging areas for ESL learners across all L1 backgrounds", "The past tense in second/third conditionals does NOT refer to past time — it signals unreality"]
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Zero Conditional: If + present simple, present simple (fact): \"If you heat ice, it melts.\"\nFirst Conditional: If + present simple, will + base verb (real future): \"If it rains, I will stay home.\"\nSecond Conditional: If + past simple, would + base verb (hypothetical present/future): \"If I won the lottery, I would travel.\"\nThird Conditional: If + past perfect, would have + past participle (hypothetical past): \"If I had studied, I would have passed.\"\nMixed Conditional: If + past perfect, would + base verb (past cause, present result): \"If I had studied, I would be a doctor now.\"\n"
+    example_generator:
+      contexts: ["shopping and commerce", "social interactions", "regrets"]
+      min_examples: 4
+  negative:
+    structure: "Add 'not' to the verb in each clause: 'If you don't heat ice, it doesn't melt.' 'If I hadn't studied, I wouldn't have passed.'"
+    example_generator:
+      contexts: ["weather and nature", "regrets"]
+      min_examples: 4
+  questions:
+    structure: "Invert auxiliary verb in main clause: 'If it rains, will you stay home?' 'If you had studied, would you have passed?'"
+    example_generator:
+      contexts: ["social interactions", "hypothetical questions"]
+      min_examples: 4
+
+sub_rules:
+  - rule: "Use 'were' for all persons in formal second conditional (If I were, if he were)"
+    type: grammatical
+    examples: ["If I were you, I would accept the offer.", "If she were here, she would help us."]
+  - rule: "'Was' is acceptable in informal speech for first/third person singular (If I was, if he was)"
+    type: register
+    examples: ["If I was rude, I apologise. (informal)", "If he was there, he didn't see me. (informal)"]
+  - rule: "Unless = if not (Unless you study = If you don't study)"
+    type: lexical
+    examples: ["Unless you hurry, you'll be late.", "I wouldn't go unless I had to."]
+  - rule: "We can use 'should', 'were to', or 'happen to' in the if-clause of first conditional for extra uncertainty"
+    type: grammatical
+    examples: ["If you should see him, tell him to call me.", "If I were to win the lottery, I would travel the world."]
+  - rule: "Mixed conditional: past condition + present result (If + past perfect, would + base verb)"
+    type: grammatical
+    examples: ["If I had taken that job, I would be living in London now.", "If she had studied harder, she would be at university."]
+
+use:
+  - context: "Factual Conditions (Zero)"
+    description: "General truths, scientific facts, habits."
+    examples: ["If you mix blue and yellow, you get green.", "If I drink coffee, I can't sleep.", "If you heat water to 100°C, it boils."]
+  - context: "Real Future Conditions (First)"
+    description: "Possible future situations and their likely results."
+    examples: ["If I save money, I will buy a car.", "If she calls, tell her I'm out.", "If it doesn't rain, we'll have a picnic."]
+  - context: "Hypothetical Present/Future (Second)"
+    description: "Unlikely or imaginary situations in present/future."
+    examples: ["If I lived in Paris, I would speak French.", "If I were rich, I would buy a yacht.", "If I had more time, I would learn guitar."]
+  - context: "Hypothetical Past (Third)"
+    description: "Impossible past situations (can't change the past)."
+    examples: ["If I had taken the bus, I wouldn't have been late.", "If you had told me, I would have helped.", "If she had studied, she would have passed."]
+  - context: "Mixed Conditionals"
+    description: "Past condition with present result, or present condition with past result."
+    examples: ["If I had eaten breakfast, I wouldn't be hungry now.", "If I spoke better English, I would have gotten that job."]
+
+phonetics:
+  - note: "Weak form of 'would' /wʊd/ → /əd/ in connected speech: 'I'd' /aɪd/, 'he'd' /hiːd/"
+    example_generator:
+      contexts: ["connected speech"]
+    l1_issue: "Many L1 speakers pronounce 'would' fully, which sounds unnatural in fast speech"
+  - note: "Contractions are very common in spoken conditionals: If I'd known, I would've helped"
+    example_generator:
+      contexts: ["spoken English"]
+    l1_issue: "Learners often avoid contractions, making their speech sound overly formal"
+
+teaching:
+  methodology: "PPP with timeline visuals"
+  tips:
+    - "Week 1: Zero and First Conditionals (real situations)."
+    - "Week 2: Second Conditional (hypothetical present/future)."
+    - "Week 3: Third and Mixed Conditionals (hypothetical past)."
+    - "Use timeline visuals to show time frames for each conditional."
+  recommended_activities:
+    - name: "Conditional Chain Story"
+      duration: 15
+      adaptation_notes: "Students build a story together using conditionals. Student A starts with an if-clause, Student B completes it and adds a new if-clause."
+    - name: "Regret Role-Play"
+      duration: 15
+      adaptation_notes: "Students discuss past regrets using third conditional. Provide scenario cards (missed job opportunity, wrong decision, etc.)."

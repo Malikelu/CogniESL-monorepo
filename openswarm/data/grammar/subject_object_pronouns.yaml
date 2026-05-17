@@ -1,0 +1,111 @@
+grammar_point: subject_object_pronouns
+title: "Subject and Object Pronouns"
+description: "Pronouns that replace nouns to avoid repetition: subject pronouns (I, you, he, she, it, we, they) act as sentence subjects; object pronouns (me, you, him, her, it, us, them) act as verb/preposition objects."
+level: A1
+
+meaning:
+  core_meaning: "Pronouns replace nouns to avoid repetition. Subject pronouns (I, you, he, she, it, we, they) are the DOER of the action — they come BEFORE the verb. Object pronouns (me, you, him, her, it, us, them) are the RECEIVER of the action — they come AFTER the verb or preposition."
+  timeline: "N/A — pronouns are not tense-based. They refer to nouns regardless of time."
+  contrast: "'Subject pronouns' = doer of action ('She writes' — she is the one writing) vs 'Object pronouns' = receiver of action ('Write to her' — her is the one receiving). Never swap: 'Me go' (wrong) vs 'I go' (right)."
+  ccqs:
+    - question: "Is this pronoun the doer or the receiver of the action?"
+      answer: "Doer = subject pronoun (before verb). Receiver = object pronoun (after verb/preposition)."
+    - question: "Do we say 'Me and John' or 'John and I'?"
+      answer: "'John and I' — when the pronoun is the subject. Always put yourself last."
+    - question: "What pronoun replaces 'the book'?"
+      answer: "'It' — 'The book is good. I like it.' Not 'I like he' or 'I like she'."
+  example_generator:
+    contexts:
+      - everyday situations
+      - classroom language
+      - social interactions
+    cultural_notes:
+      - "Use diverse names and contexts"
+      - "Avoid gender stereotypes in examples"
+      - "Keep examples simple and concrete"
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Subject pronoun + verb (subject before verb) / Verb/preposition + object pronoun (object after verb)"
+    example_generator:
+      - "I work. / She runs. / They study."
+      - "He likes me. / Give it to her. / Listen to them."
+    min_examples: 4
+  negative:
+    structure: "Subject pronoun + auxiliary + not + verb / Auxiliary + subject pronoun + not + verb (questions)"
+    example_generator:
+      - "I don't like him."
+      - "She doesn't know us."
+      - "They can't help you."
+    min_examples: 4
+  questions:
+    structure: "Auxiliary + subject pronoun + verb + object pronoun?"
+    example_generator:
+      - "Do you know her?"
+      - "Is he coming?"
+      - "Can they help us?"
+    min_examples: 4
+
+sub_rules:
+  - rule: "Complete list of subject pronouns: I, you, he, she, it, we, they"
+    type: lexical
+    examples: ["I work.", "You study.", "He runs.", "She reads.", "It works.", "We learn.", "They play."]
+  - rule: "Complete list of object pronouns: me, you, him, her, it, us, them"
+    type: lexical
+    examples: ["He likes me.", "I know you.", "She called him.", "He saw her.", "I want it.", "She helped us.", "They invited them."]
+  - rule: "Subject pronouns come BEFORE the verb; object pronouns come AFTER the verb or preposition"
+    type: grammatical
+    examples: ["I like her. (I = subject, before verb)", "She likes me. (me = object, after verb)", "Listen to them. (them = object, after preposition)"]
+  - rule: "After prepositions (to, for, with, from, by), always use object pronouns"
+    type: grammatical
+    examples: ["Give it to me. (NOT to I)", "This is for her. (NOT for she)", "Come with us. (NOT with we)"]
+  - rule: "When listing people, put yourself last: 'John and I' (NOT 'I and John')"
+    type: pragmatic
+    examples: ["John and I went to the store.", "She gave it to Maria and me.", "He invited Pedro and me."]
+
+use:
+  - context: "Avoiding repetition"
+    description: "Replacing repeated nouns to make speech more natural"
+    examples: ["The book is good. I like it.", "Lisa and I went out. We had fun.", "I saw Maria. She was happy. I waved to her.", "The children are playing. They are having fun."]
+  - context: "Clarifying sentence roles"
+    description: "Making it clear who is doing the action and who is receiving it"
+    examples: ["He hit me. (NOT I hit he)", "I thanked her. (NOT She thanked I)", "They invited us to the party.", "She gave it to him."]
+
+phonetics:
+  - note: "Subject pronouns are usually stressed when contrasting: 'I like HER, not HIM.' In normal speech, they are often weak: 'I like her' → /aɪ laɪk ə/."
+    example_generator:
+      - "I /aɪ/"
+      - "he /hiː/"
+      - "she /ʃiː/"
+      - "they /ðeɪ/"
+    l1_issue: "Portuguese and Spanish speakers often omit subject pronouns because their languages use verb endings to show the subject. English ALWAYS needs a subject pronoun."
+  - note: "Object pronouns are usually unstressed: 'He likes me' → /hiː laɪk miː/. 'Give it to her' → /ɡɪv ɪt tə hɜː/."
+    example_generator:
+      - "me /miː/"
+      - "him /hɪm/"
+      - "her /hɜː/"
+      - "them /ðəm/"
+    l1_issue: "Many L1 speakers over-pronounce object pronouns. Teach the weak forms for natural speech."
+
+teaching:
+  methodology: "PPP with substitution drills"
+  tips:
+    - "Start with subject pronouns: drill 'I/you/he/she/it/we/they' + simple verbs. Master these before introducing object pronouns."
+    - "Use sentence substitution: 'Marcos runs' → 'He runs'. 'I like Marcos' → 'I like him.' Makes the concept concrete."
+    - "Teach the preposition rule explicitly: after prepositions, always use object pronouns. 'Give it to me' NOT 'Give it to I'."
+    - "Practice the 'John and I' rule: always put yourself last. This is a common social error."
+    - "Use classroom objects: 'I give the pen to her. She gives it to him.' Physical demonstration helps."
+  recommended_activities:
+    - name: "Pronoun Substitution"
+      duration: 10
+      adaptation_notes: "Teacher says a sentence with a noun. Students replace the noun with the correct pronoun: 'Maria runs.' → 'She runs.' 'I like the book.' → 'I like it.'"
+    - name: "Subject or Object?"
+      duration: 10
+      adaptation_notes: "Teacher says a sentence. Students identify if the pronoun is subject or object: 'He likes me.' (He = subject, me = object). Practices identifying the role."
+    - name: "John and I"
+      duration: 10
+      adaptation_notes: "Students practice listing people with 'I' last: 'John and I went to the store.' 'She gave it to Maria and me.' Practices the politeness rule."
+    - name: "Pronoun Chain"
+      duration: 15
+      adaptation_notes: "Students describe their day using pronouns: 'I woke up. I had breakfast. I went to school. I met Maria. I waved to her.' Practices using pronouns to avoid repetition."

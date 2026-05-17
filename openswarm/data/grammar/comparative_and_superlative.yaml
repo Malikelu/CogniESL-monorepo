@@ -1,0 +1,92 @@
+grammar_point: comparative_and_superlative
+title: "Comparative and Superlative Adjectives"
+description: "Forms used to compare two or more things: comparative (comparing two) and superlative (comparing three or more, showing the most/least). Essential for making comparisons."
+level: A2
+
+meaning:
+  core_meaning: "Comparative = comparing two things (higher degree). Superlative = comparing three or more (highest degree among group)."
+  timeline: "N/A (Not tense-based; these are adjective forms showing degree of comparison.)"
+  contrast: "\"COMPARATIVE\" = Two items: \"John is taller than Paul.\" (John vs Paul)\n\n\"SUPERLATIVE\" = Three+ items: \"John is the tallest in the class.\" (John vs everyone)\n\n\"EQUALITY\" = Same level: \"John is as tall as Paul.\" (same height)\n"
+  ccqs:
+    - question: "Are we comparing two things or more than two?"
+      answer: "Two = comparative (-er / more). Three or more = superlative (-est / most)."
+    - question: "Do we use 'than' after the adjective?"
+      answer: "Yes, if it is a comparative (taller than, more interesting than)."
+    - question: "Do we use 'the' before the adjective?"
+      answer: "Yes, if it is a superlative (the tallest, the most interesting)."
+    - question: "Is the adjective short (one syllable) or long (two or more syllables)?"
+      answer: "Short = add -er/-est. Long = use more/most."
+  example_generator:
+    contexts: ["everyday situations", "shopping", "describing people", "travel comparisons"]
+    cultural_notes: ["Some languages do not change the adjective form for comparison — they use a separate word like 'more'", "Irregular forms (good/better/best) must be memorised"]
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Short adjectives (1 syllable, some 2): Comparative = -er, Superlative = -est\n\"tall → taller → tallest\", \"big → bigger → biggest\" (double final consonant)\nLong adjectives (2+ syllables): Comparative = more + adj, Superlative = most + adj\n\"careful → more careful → most careful\", \"interesting → more interesting → most interesting\"\nIrregular: \"good → better → best\", \"bad → worse → worst\", \"far → farther/further → farthest/furthest\"\n"
+    example_generator:
+      contexts: ["entertainment and media", "sports", "food"]
+      min_examples: 4
+  negative:
+    structure: "Comparative: \"less + adj\" or \"not as + adj + as\"\nSuperlative: \"least + adj\" or \"not the most + adj\"\n"
+    example_generator:
+      contexts: ["family and relationships", "opinions"]
+      min_examples: 4
+  questions:
+    structure: "Comparative: \"Is X more/er than Y?\" \"Which is more/er?\"\nSuperlative: \"What's the most/est?\" \"Who is the most/est?\"\n"
+    example_generator:
+      contexts: ["everyday situations", "quizzes"]
+      min_examples: 4
+
+sub_rules:
+  - rule: "Spelling: double final consonant after short vowel (big → bigger, hot → hotter)"
+    type: grammatical
+    examples: ["big → bigger → biggest", "hot → hotter → hottest", "thin → thinner → thinnest"]
+  - rule: "Spelling: change y to i after consonant (happy → happier, easy → easier)"
+    type: grammatical
+    examples: ["happy → happier → happiest", "easy → easier → easiest", "heavy → heavier → heaviest"]
+  - rule: "Spelling: add -r/-st to adjectives ending in -e (large → larger, nice → nicer)"
+    type: grammatical
+    examples: ["large → larger → largest", "nice → nicer → nicest", "safe → safer → safest"]
+  - rule: "Irregular forms must be memorised: good/better/bad, bad/worse/worst, far/further/furthest"
+    type: lexical
+    examples: ["good → better → best", "bad → worse → worst", "far → farther → farthest"]
+  - rule: "Superlative requires 'the' (the tallest, the most beautiful) — except with possessives (my best friend)"
+    type: grammatical
+    examples: ["She is the tallest in the class.", "This is the most expensive restaurant.", "He is my best friend."]
+
+use:
+  - context: "Comparing Two Items (Comparative)"
+    description: "Show difference in degree between exactly two things."
+    examples: ["My car is faster than yours.", "This test is easier than the last.", "She is more experienced than him."]
+  - context: "Finding the Extreme in a Group (Superlative)"
+    description: "Show the highest or lowest degree among three or more."
+    examples: ["She is the smartest student.", "This is the most delicious cake.", "He is the least experienced candidate."]
+  - context: "Showing Equality"
+    description: "Show two things are the same in some quality."
+    examples: ["He is as old as me.", "This weighs as much as that.", "She is as tall as her mother."]
+
+phonetics:
+  - note: "Stress on the adjective: She is TALLER than him. She is the TALLest."
+    example_generator:
+      contexts: ["sentence stress"]
+    l1_issue: "Some L1 speakers stress 'than' instead of the adjective"
+  - note: "Weak form of 'than' /ðæn/ → /ðən/ in connected speech"
+    example_generator:
+      contexts: ["connected speech"]
+    l1_issue: "Speakers of languages without dental fricatives may substitute /d/ or /z/ for 'th' in 'than'"
+
+teaching:
+  methodology: "PPP"
+  tips:
+    - "Use student heights for comparatives: 'Maria is taller than Juan.' Then superlative: 'Carlos is the tallest.'"
+    - "Teach spelling rules: big → bigger (double g), happy → happier (y→i), large → larger (no change)."
+    - "Practice with prices: 'This costs $5, that costs $10' → 'That is more expensive.'"
+    - "Create a class survey: 'Who is the most hardworking?' to practice superlatives."
+  recommended_activities:
+    - name: "Class Comparison Survey"
+      duration: 15
+      adaptation_notes: "Students survey classmates about height, age, hobbies and write comparative/superlative sentences with results."
+    - name: "Shopping Comparisons"
+      duration: 10
+      adaptation_notes: "Students compare products (price, size, quality) using comparative and superlative forms in a role-play."

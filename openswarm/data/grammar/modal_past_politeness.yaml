@@ -1,0 +1,162 @@
+grammar_point: modal_past_politeness
+title: "Modal Past for Politeness (could/would/might)"
+description: "The use of past-tense modal forms (could, would, might) to make requests,
+  suggestions, and statements more polite, tentative, or indirect."
+level: B1
+
+meaning:
+  core_meaning: "Past-tense modal forms (could, would, might) are used not to refer to
+    the past, but to create distance from the present request or statement. This distance
+    makes the utterance sound less direct, more tentative, and therefore more polite.
+    The speaker appears to give the listener more freedom to refuse."
+  timeline: "Present or future reference. Despite the past-tense form, the meaning is
+    about now or the future. The past form is a politeness strategy, not a time reference."
+  contrast: "Direct: Can you help me? (neutral)
+    Polite: Could you help me? (more polite, less direct)
+    Direct: Will you open the window? (neutral)
+    Polite: Would you open the window? (more polite)
+    Direct: May I sit here? (neutral)
+    Polite: Might I sit here? (very polite, formal)
+    Direct: I want to ask you something. (blunt)
+    Polite: I wanted to ask you something. (softer, more tentative)"
+  ccqs:
+    - question: "In Could you help me?, is the speaker talking about the past?"
+      answer: "No. The speaker is making a present request. The past form makes it more polite."
+    - question: "Is would you more polite than will you?"
+      answer: "Yes. Would creates more distance and sounds less demanding."
+    - question: "Can might replace may for permission?"
+      answer: "Yes, but might is very formal and quite rare in modern spoken English. It sounds extremely polite or old-fashioned."
+    - question: "Is I wanted to ask you about the past or present?"
+      answer: "Present. The speaker wants to ask now. The past form makes the request softer and less imposing."
+  example_generator:
+    contexts:
+      - polite requests
+      - formal enquiries
+      - professional emails
+      - customer service
+    cultural_notes:
+      - English relies heavily on modal politeness strategies
+      - Overusing past forms can sound excessively tentative or sarcastic
+      - Different cultures have different norms for directness in requests
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Requests: Could/Would + subject + base verb...?
+      Offers: Would you like + noun/to-infinitive?
+      Permission: Could/Might + subject + base verb?
+      Statements: I was wondering if... / I thought I would... / I hoped to..."
+    example_generator:
+      contexts:
+        - polite requests
+        - formal offers
+        - asking permission
+      min_examples: 4
+  negative:
+    structure: "Negative requests: Could/Would + subject + not + base verb?
+      Negative statements: I was not sure if... / I did not want to bother you, but..."
+    example_generator:
+      contexts:
+        - negative politeness
+        - softening bad news
+      min_examples: 3
+  questions:
+    structure: "Could/Would + subject + base verb? Might + subject + base verb?
+      Was/Were + subject + wondering/thinking + if/whether...?"
+    example_generator:
+      contexts:
+        - polite enquiries
+        - tentative questions
+      min_examples: 3
+
+sub_rules:
+  - rule: "Could for polite requests. More polite than can"
+    type: pragmatic
+    examples:
+      - Could you pass me the salt?
+      - Could I borrow your pen for a moment?
+      - Could you possibly send me the report by Friday?
+  - rule: "Would for polite requests and offers. More polite than will"
+    type: pragmatic
+    examples:
+      - Would you mind closing the door?
+      - Would you like some tea?
+      - Would it be possible to reschedule the meeting?
+  - rule: "Might for very formal permission. More polite than may"
+    type: pragmatic
+    examples:
+      - Might I make a suggestion?
+      - Might we discuss this matter further?
+  - rule: "Past continuous (was wondering, was hoping) for very polite, indirect requests"
+    type: pragmatic
+    examples:
+      - I was wondering if you could help me.
+      - I was hoping we could discuss this.
+      - I was thinking that we might postpone the meeting.
+  - rule: "Past simple (wanted, thought, hoped) for softening statements"
+    type: pragmatic
+    examples:
+      - I wanted to ask you about something.
+      - I thought I would let you know.
+      - I hoped you might be able to assist.
+  - rule: "Would for hypothetical politeness in conditional structures"
+    type: grammatical
+    examples:
+      - If you could send me the details, I would be grateful.
+      - I would appreciate it if you would consider my request.
+
+use:
+  - name: Polite requests in everyday situations
+    description: "Making requests sound less demanding and more respectful"
+    examples:
+      - Could you possibly move your car?
+      - Would you mind waiting for a moment?
+    key_point: Essential for polite interaction in English-speaking cultures.
+  - name: Professional and business communication
+    description: "Softening requests and instructions in the workplace"
+    examples:
+      - I was wondering if you could review this document.
+      - Would it be possible to extend the deadline?
+    key_point: Maintains professional relationships by avoiding direct commands.
+  - name: Customer service and service encounters
+    description: "Making offers and requests in shops, restaurants, and hotels"
+    examples:
+      - Would you like anything else?
+      - Could I possibly have the bill, please?
+    key_point: Standard politeness formulae in service contexts.
+  - name: Asking for permission
+    description: "Requesting permission in a way that respects the other person's authority"
+    examples:
+      - Could I leave early today?
+      - Might I use your phone?
+    key_point: More polite than can I or may I.
+
+phonetics:
+  - note: "In polite requests, the modal verb is typically unstressed and the main verb carries the stress: Could you HELP me?"
+    example_generator:
+      contexts:
+        - polite speech
+    l1_issue: "Learners may stress the modal too heavily, making the request sound unnatural"
+  - note: "Polite requests often use rising intonation, making them sound like questions even when they are functionally requests"
+    example_generator:
+      contexts:
+        - intonation patterns
+    l1_issue: "Flat intonation can make polite requests sound like commands"
+
+teaching:
+  methodology: PPP
+  tips:
+    - "Teach the politeness scale: can (neutral) becomes could (polite) becomes could you possibly (very polite)"
+    - "Use role-plays: same request at different politeness levels"
+    - "Contrast direct and polite forms: Help me! vs I was wondering if you could possibly help me"
+    - "Discuss cultural differences: what is polite in English may seem indirect in other cultures"
+  recommended_activities:
+    - name: "Politeness ladder"
+      duration: 10
+      adaptation_notes: "Students rank requests from most direct to most polite. Discuss when each level is appropriate."
+    - name: "Role-play: workplace requests"
+      duration: 20
+      adaptation_notes: "Students practise making requests in workplace scenarios (asking a boss for time off, asking a colleague for help). Focus on modal past forms."
+    - name: "Email rewrite"
+      duration: 15
+      adaptation_notes: "Students rewrite blunt emails using modal past politeness strategies. Compare before and after versions."

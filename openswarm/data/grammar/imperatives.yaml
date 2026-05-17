@@ -1,0 +1,79 @@
+grammar_point: imperatives
+title: "Imperatives"
+description: "Commands, requests, and instructions. The base form of the verb without a subject."
+level: A1
+
+meaning:
+  core_meaning: "Direct commands, instructions, requests, or warnings. The subject 'you' is implied but not stated."
+  timeline: "Immediate — the action should happen now or soon."
+  contrast: |
+    'Imperative' = "Sit down." (direct command)
+    'Present Simple' = "You sit down." (statement of fact)
+  ccqs:
+    - question: "Is the speaker telling someone to do something?"
+      answer: "Yes, it's a command or instruction."
+    - question: "Is the subject 'you' stated?"
+      answer: "No, it's implied."
+  example_generator:
+    contexts: ["classroom instructions", "recipes and cooking", "directions and navigation", "rules and warnings", "advice and suggestions"]
+    cultural_notes: ["Use 'please' for polite requests", "Avoid overly direct commands in conservative cultures"]
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: "Base verb (no subject): 'Sit down.' 'Listen carefully.'"
+    example_generator:
+      contexts: ["classroom", "kitchen", "street directions"]
+      min_examples: 4
+  negative:
+    structure: "Don't + base verb: 'Don't run.' 'Don't touch that.'"
+    example_generator:
+      contexts: ["warnings", "prohibitions", "safety rules"]
+      min_examples: 4
+  questions:
+    structure: "Imperatives don't have question forms. Use 'Can you...?' or 'Could you...?' for polite requests."
+    example_generator:
+      contexts: ["polite requests", "offering help"]
+      min_examples: 3
+
+sub_rules:
+  - rule: "Polite imperatives with 'please'"
+    type: "pragmatic"
+    examples: ["Please sit down.", "Please don't make noise."]
+  - rule: "Let's for suggestions including the speaker"
+    type: "pragmatic"
+    examples: ["Let's go.", "Let's have a break."]
+
+use:
+  - context: "Classroom instructions"
+    description: "Teachers use imperatives to give instructions"
+    examples: ["Open your books.", "Listen to the audio.", "Work in pairs."]
+  - context: "Recipes and cooking"
+    description: "Step-by-step instructions"
+    examples: ["Mix the ingredients.", "Bake for 30 minutes.", "Add salt to taste."]
+  - context: "Directions"
+    description: "Giving or asking for directions"
+    examples: ["Turn left at the traffic lights.", "Go straight ahead.", "Take the second exit."]
+  - context: "Rules and warnings"
+    description: "Prohibitions and safety instructions"
+    examples: ["Don't smoke.", "Keep off the grass.", "Watch your step."]
+
+phonetics:
+  - note: "Stress on the verb in short imperatives"
+    example_generator:
+      contexts: ["commands", "instructions"]
+    l1_issue: "Some L1 speakers may add an unnecessary subject pronoun"
+
+teaching:
+  methodology: "PPP (Present-Practice-Produce)"
+  tips:
+    - "Use physical actions (TPR) for teaching imperatives to beginners"
+    - "Contrast with 'please' for politeness"
+    - "Use real classroom instructions as practice"
+  recommended_activities:
+    - name: "Simon Says"
+      duration: 10
+      adaptation_notes: "Great for kids. For adults, use workplace instructions."
+    - name: "Recipe Instructions"
+      duration: 15
+      adaptation_notes: "Students write or follow a simple recipe using imperatives."

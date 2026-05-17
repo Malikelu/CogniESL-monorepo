@@ -1,0 +1,86 @@
+grammar_point: count_noncount
+title: "Count and Non-count Nouns"
+description: "The distinction between nouns that can be counted (count nouns) and nouns that cannot (non-count/uncountable nouns). Affects determiners, quantifiers, and verb agreement."
+level: A1
+
+meaning:
+  core_meaning: "Count nouns = things you can count individually (one apple, two apples). Non-count nouns = things you can't count individually (water, information, advice)."
+  timeline: "Timeless — a property of the noun, not related to time."
+  contrast: |
+    'Count noun' = "three apples" (can count)
+    'Non-count noun' = "some water" (can't count individually)
+  ccqs:
+    - question: "Can you count this noun individually?"
+      answer: "If yes, it's count. If no, it's non-count."
+    - question: "Can you put a number directly before it?"
+      answer: "If yes (three books), it's count. If no (three waters ❌), it's non-count."
+  example_generator:
+    contexts: ["food and drink", "classroom objects", "abstract concepts", "materials and substances"]
+    cultural_notes: ["Some nouns are count in English but non-count in other languages (e.g., 'information', 'advice', 'furniture')"]
+    min_examples: 5
+
+form:
+  affirmative:
+    structure: |
+      Count singular: a/an + noun (a book, an apple)
+      Count plural: number + noun + -s (three books, many apples)
+      Non-count: some/much/a lot of + noun (some water, much information)
+    example_generator:
+      contexts: ["food", "classroom", "abstract concepts"]
+      min_examples: 5
+  negative:
+    structure: |
+      Count: "not any" or "no" + noun (I don't have any books. / I have no books.)
+      Non-count: "not any" or "no" + noun (I don't have any water. / I have no water.)
+    example_generator:
+      contexts: ["negation", "lack of something"]
+      min_examples: 4
+  questions:
+    structure: |
+      Count: "How many + plural noun?" (How many books do you have?)
+      Non-count: "How much + noun?" (How much water do you have?)
+    example_generator:
+      contexts: ["asking about quantity"]
+      min_examples: 4
+
+sub_rules:
+  - rule: "Non-count nouns don't have a plural form"
+    type: "grammatical"
+    examples: ["information ✅ / informations ❌", "advice ✅ / advices ❌", "furniture ✅ / furnitures ❌"]
+  - rule: "Use 'a piece of' for singular non-count nouns"
+    type: "grammatical"
+    examples: ["a piece of advice", "a piece of information", "a piece of furniture"]
+  - rule: "Some nouns can be both count and non-count with different meanings"
+    type: "semantic"
+    examples: ["a glass (container) / glass (material)", "a chicken (animal) / chicken (food)", "a paper (newspaper) / paper (material)"]
+
+use:
+  - context: "Shopping and food"
+    description: "Buying and selling items"
+    examples: ["I'd like some rice.", "How many eggs do we need?", "Can I have some advice?"]
+  - context: "Describing quantities"
+    description: "Talking about how much/many"
+    examples: ["There are many people in the room.", "We need more time.", "I have a little money."]
+  - context: "Abstract concepts"
+    description: "Non-count nouns for ideas and feelings"
+    examples: ["I need some advice.", "She gave me good information.", "We need more knowledge."]
+
+phonetics:
+  - note: "No specific phonetic pattern — focus on correct determiner usage"
+    example_generator:
+      contexts: ["determiner practice"]
+    l1_issue: "Many L1 speakers use 'much' with count nouns or omit articles with non-count nouns"
+
+teaching:
+  methodology: "PPP (Present-Practice-Produce)"
+  tips:
+    - "Use real objects to demonstrate count vs non-count"
+    - "Highlight common non-count nouns that are count in other languages"
+    - "Use 'container' expressions (a piece of, a cup of, a bottle of)"
+  recommended_activities:
+    - name: "Shopping List"
+      duration: 10
+      adaptation_notes: "Students create shopping lists using correct quantifiers."
+    - name: "Count or Non-count?"
+      duration: 10
+      adaptation_notes: "Quick-fire game where students classify nouns."
