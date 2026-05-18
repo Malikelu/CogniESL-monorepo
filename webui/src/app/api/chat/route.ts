@@ -2,6 +2,16 @@ import { NextRequest, NextResponse } from "next/server";
 
 export const dynamic = "force-dynamic";
 
+function cleanResponse(text: string): string {
+  // Remove memory context blocks that leak from the agent framework
+  text = text.replace(/<memory-context>[\s\S]*?<\/memory-context>/gi, "");
+  // Remove any system prompt leaks
+  text = text.replace(/\[System note:[\s\S]*?\]/gi, "");
+  // Clean up extra whitespace
+  text = text.replace(/\n{3,}/g, "\n\n").trim();
+  return text;
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
@@ -18,7 +28,7 @@ export async function POST(request: NextRequest) {
       process.env.OPENSWARM_URL || "http://localhost:8080";
 
     const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 120000); // 2 min timeout
+    const timeout = setTimeout(() => controller.abort(), 120000);
 
     try {
       const response = await fetch(`${openswarmUrl}/cogniesl/get_response`, {
@@ -43,7 +53,8 @@ export async function POST(request: NextRequest) {
       }
 
       const data = await response.json();
-      return NextResponse.json({ response: data.response });
+      const cleaned = cleanResponse(data.response || "");
+      return NextResponse.json({ response: cleaned });
     } catch (fetchError) {
       clearTimeout(timeout);
       if (fetchError instanceof Error && fetchError.name === "AbortError") {
