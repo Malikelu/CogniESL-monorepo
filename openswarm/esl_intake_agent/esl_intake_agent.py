@@ -16,7 +16,7 @@ def create_esl_intake_agent() -> Agent:
             "Routes to the Orchestrator with a structured Requirement Spec."
         ),
         instructions="./instructions.md",
-        model="gpt-4o-mini",
+        model="gpt-4o",  # Use gpt-4o for reliable instruction following
         model_settings=ModelSettings(
             reasoning=None,
         ),

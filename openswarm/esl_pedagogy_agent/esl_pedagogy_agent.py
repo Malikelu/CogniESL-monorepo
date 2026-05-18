@@ -18,7 +18,7 @@ def create_esl_pedagogy_agent() -> Agent:
         ),
         instructions="./instructions.md",
         tools=[SearchGrammarTool, SearchActivitiesTool, GetL1InterferenceTool],
-        model="gpt-4o-mini",
+        model="gpt-4o",  # Use gpt-4o for reliable instruction following
         model_settings=ModelSettings(
             reasoning=None,
         ),

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Space+Grotesk:wght@500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./_theme.css" />
+    <style>
+      * { box-sizing: border-box; }
+      html, body {
+        width: 1280px;
+        height: 720px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: #0f0f0f;
+      }
+      body { position: relative; }
+
+      .slide-wrapper {
+        width: 1280px;
+        height: 720px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        background: #151517;
+        color: #ffffff;
+      }
+
+      .bg-grid { position: relative; }
+
+      .grid-overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        pointer-events: none;
+      }
+      .grid-v, .grid-h {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.055);
+      }
+      .grid-v { width: 1px; top: 0; bottom: 0; }
+      .grid-h { height: 1px; left: 0; right: 0; }
+
+      .orb {
+        position: absolute;
+        border-radius: 999px;
+        filter: blur(88px);
+        opacity: 0.14;
+        z-index: 0;
+      }
+      .orb-a {
+        width: 240px;
+        height: 240px;
+        background: #2563eb;
+        left: 32px;
+        top: 24px;
+      }
+      .orb-b {
+        width: 250px;
+        height: 250px;
+        background: #ef4444;
+        right: 26px;
+        top: 278px;
+      }
+
+      .slide {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        position: relative;
+        z-index: 3;
+      }
+
+      .content-safe-area {
+        width: 100%;
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 18px 12px 10px 12px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 8px;
+      }
+
+      .mono { font-family: 'Roboto Mono', monospace; }
+      .title-font { font-family: 'Space Grotesk', sans-serif; }
+      .body-font { font-family: 'Merriweather', serif; }
+
+      .kicker {
+        display: inline-flex;
+        align-self: flex-start;
+        border: 1px solid rgba(226, 232, 240, 0.35);
+        border-radius: 999px;
+        padding: 3px 10px;
+      }
+      .kicker p {
+        margin: 0;
+        font-size: 11px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #cbd5e1;
+        font-family: 'Roboto Mono', monospace;
+      }
+
+      .header h1 {
+        margin: 5px 0 2px 0;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 36px;
+        line-height: 1.05;
+        letter-spacing: -0.3px;
+      }
+      .header p {
+        margin: 0;
+        max-width: 1060px;
+        color: #d1d5db;
+        font-size: 14.5px;
+        line-height: 1.32;
+      }
+
+      .card {
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.04);
+        position: relative;
+      }
+      .top-stripe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 4px;
+        border-radius: 14px 14px 0 0;
+      }
+
+      .baseline-card {
+        padding: 11px 13px 10px 13px;
+        min-height: 88px;
+      }
+      .baseline-card .top-stripe { background: #3b82f6; }
+      .baseline-grid {
+        display: grid;
+        grid-template-columns: 1.55fr 1fr;
+        gap: 10px;
+        align-items: start;
+      }
+      .baseline-card h3 {
+        margin: 3px 0 4px 0;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 19px;
+        line-height: 1.15;
+      }
+      .baseline-card p {
+        margin: 0 0 4px 0;
+        font-size: 12.6px;
+        line-height: 1.3;
+        color: #e5e7eb;
+      }
+      .baseline-card p:last-child { margin-bottom: 0; }
+
+      .selector-row {
+        display: flex;
+        gap: 10px;
+        margin-top: 7px;
+      }
+      .selector {
+        flex: 1;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        border-radius: 10px;
+        padding: 7px 8px;
+      }
+      .selector p {
+        margin: 0;
+        font-size: 11px;
+        line-height: 1.25;
+        font-family: 'Roboto Mono', monospace;
+        color: #f1f5f9;
+      }
+      .selector.do { background: rgba(59, 130, 246, 0.12); }
+      .selector.does { background: rgba(16, 185, 129, 0.13); }
+
+      .split-wrap {
+        min-height: 218px;
+        display: flex;
+        align-items: stretch;
+        position: relative;
+      }
+
+      .panel {
+        flex: 1;
+        padding: 11px 13px 10px 13px;
+        min-height: 218px;
+      }
+      .panel h3 {
+        margin: 5px 0 5px 0;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 21px;
+        line-height: 1.1;
+      }
+      .panel p {
+        margin: 0 0 5px 0;
+        font-size: 12.5px;
+        line-height: 1.3;
+        color: #e5e7eb;
+      }
+      .panel .mini-kicker {
+        margin: 0;
+        font-size: 10px;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        color: #dbeafe;
+        font-family: 'Roboto Mono', monospace;
+      }
+
+      .formula {
+        margin-top: 6px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 9px;
+        padding: 6px 9px;
+      }
+      .formula p {
+        margin: 0 0 3px 0;
+        font-size: 11.5px;
+        line-height: 1.25;
+        font-family: 'Roboto Mono', monospace;
+        color: #f8fafc;
+      }
+      .formula p:last-child { margin-bottom: 0; }
+
+      .example-lines {
+        margin-top: 5px;
+      }
+      .example-lines p {
+        margin: 0 0 3px 0;
+        font-size: 12px;
+        color: #f3f4f6;
+      }
+      .example-lines p:last-child { margin-bottom: 0; }
+
+      .negative-panel .top-stripe { background: #ef4444; }
+      .question-panel .top-stripe { background: #10b981; }
+
+      .divider {
+        width: 50px;
+        position: relative;
+        flex: 0 0 50px;
+      }
+      .divider .line {
+        position: absolute;
+        top: 6px;
+        bottom: 6px;
+        left: 50%;
+        width: 1px;
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateX(-50%);
+      }
+      .divider .icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .contrast-card {
+        padding: 10px 13px 9px 13px;
+        min-height: 116px;
+      }
+      .contrast-card .top-stripe { background: #8b5cf6; }
+      .contrast-card h4 {
+        margin: 3px 0 3px 0;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 18px;
+        line-height: 1.15;
+      }
+      .contrast-card p {
+        margin: 0 0 4px 0;
+        color: #e5e7eb;
+        font-size: 12.3px;
+        line-height: 1.28;
+      }
+
+      .contrast-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .contrast-table th, .contrast-table td {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 4px 7px;
+        vertical-align: top;
+      }
+      .contrast-table th {
+        background: rgba(255, 255, 255, 0.08);
+      }
+      .contrast-table th p {
+        margin: 0;
+        font-size: 10.5px;
+        letter-spacing: 0.7px;
+        text-transform: uppercase;
+        font-family: 'Roboto Mono', monospace;
+      }
+      .contrast-table td p {
+        margin: 0;
+        font-size: 11.6px;
+        line-height: 1.26;
+      }
+
+      .footer {
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1px;
+      }
+      .footer p {
+        margin: 0;
+        color: #9ca3af;
+        font-size: 11px;
+        letter-spacing: 0.7px;
+        font-family: 'Roboto Mono', monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-wrapper bg-grid">
+      <div class="orb orb-a"></div>
+      <div class="orb orb-b"></div>
+
+      <div class="grid-overlay">
+        <div class="grid-v" style="left: 160px;"></div>
+        <div class="grid-v" style="left: 320px;"></div>
+        <div class="grid-v" style="left: 640px;"></div>
+        <div class="grid-v" style="left: 960px;"></div>
+        <div class="grid-v" style="left: 1120px;"></div>
+        <div class="grid-h" style="top: 112px;"></div>
+        <div class="grid-h" style="top: 250px;"></div>
+        <div class="grid-h" style="top: 410px;"></div>
+        <div class="grid-h" style="top: 572px;"></div>
+      </div>
+
+      <div class="slide">
+        <div class="content-safe-area">
+          <div class="header">
+            <div class="kicker"><p>Grammar Focus // Present Simple</p></div>
+            <h1>Negative and Question Forms</h1>
+            <p class="body-font">Affirmative present simple uses the main verb directly, but negatives and questions need the auxiliary <span class="mono">do/does</span>. The helper carries agreement, so the main verb returns to base form in both structures.</p>
+          </div>
+
+          <article class="card baseline-card">
+            <div class="top-stripe"></div>
+            <div class="baseline-grid">
+              <div>
+                <h3>Affirmative Baseline Before Transformation</h3>
+                <p class="body-font">Start from this pattern: <span class="mono">I/You/We/They + base verb</span> and <span class="mono">He/She/It + verb-s</span>. When you add <span class="mono">do</span> or <span class="mono">does</span>, the main verb drops any third-person <span class="mono">-s</span>.</p>
+                <p class="body-font"><span class="mono">She likes coffee.</span> becomes <span class="mono">She does not like coffee.</span> and <span class="mono">Does she like coffee?</span></p>
+              </div>
+              <div>
+                <div class="selector-row">
+                  <div class="selector do">
+                    <p>DO → I / You / We / They</p>
+                  </div>
+                  <div class="selector does">
+                    <p>DOES → He / She / It</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <section class="split-wrap">
+            <article class="card panel negative-panel">
+              <div class="top-stripe"></div>
+              <p class="mini-kicker">Negative Form</p>
+              <h3>Subject + Do/Does + Not + Base Verb</h3>
+              <p class="body-font">Use <span class="mono">do not</span> or <span class="mono">does not</span> before the verb to show a habit or fact that is not true. In conversation, <span class="mono">don’t</span> and <span class="mono">doesn’t</span> are common and equally grammatical.</p>
+              <p class="body-font">With <span class="mono">he/she/it</span>, choose <span class="mono">does not</span> and keep the main verb plain, not <span class="mono">-s</span> form. This avoids errors such as <span class="mono">doesn’t likes</span>.</p>
+              <div class="formula">
+                <p>I do not like coffee.</p>
+                <p>She does not like coffee.</p>
+              </div>
+              <div class="example-lines">
+                <p>They do not work on Sundays.</p>
+                <p>He doesn’t play tennis after class.</p>
+              </div>
+            </article>
+
+            <div class="divider">
+              <div class="line"></div>
+              <div class="icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 8H18M18 8L14.5 4.5M18 8L14.5 11.5" stroke="#cbd5e1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M18 16H6M6 16L9.5 12.5M6 16L9.5 19.5" stroke="#cbd5e1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </div>
+
+            <article class="card panel question-panel">
+              <div class="top-stripe"></div>
+              <p class="mini-kicker">Question Form</p>
+              <h3>Do/Does + Subject + Base Verb?</h3>
+              <p class="body-font">For yes/no questions, place <span class="mono">Do</span> or <span class="mono">Does</span> before the subject and then use the base verb. This inversion is the clearest contrast with affirmative order.</p>
+              <p class="body-font">Short answers repeat the same auxiliary, so form stays consistent across question and response. Example: <span class="mono">Does she like coffee?</span> → <span class="mono">Yes, she does.</span> / <span class="mono">No, she doesn’t.</span></p>
+              <div class="formula">
+                <p>Do you like coffee?</p>
+                <p>Does he like coffee?</p>
+              </div>
+              <div class="example-lines">
+                <p>Do they live near the station?</p>
+                <p>Does it open at nine?</p>
+              </div>
+            </article>
+          </section>
+
+          <article class="card contrast-card">
+            <div class="top-stripe"></div>
+            <h4>One Meaning, Three Structures</h4>
+            <p class="body-font">Compare rows horizontally to track the position of <span class="mono">do/does</span> and the base verb. Reusing this frame with new verbs builds automatic accuracy in writing and speaking.</p>
+            <table class="contrast-table">
+              <thead>
+                <tr>
+                  <th><p>Affirmative</p></th>
+                  <th><p>Negative</p></th>
+                  <th><p>Question</p></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><p>She likes coffee.</p></td>
+                  <td><p>She does not like coffee.</p></td>
+                  <td><p>Does she like coffee?</p></td>
+                </tr>
+                <tr>
+                  <td><p>They work on Fridays.</p></td>
+                  <td><p>They do not work on Fridays.</p></td>
+                  <td><p>Do they work on Fridays?</p></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+
+          <div class="footer">
+            <p>04 // PRESENT_SIMPLE_FORMS</p>
+            <p>ENGLISH GRAMMAR TRAINING</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Space+Grotesk:wght@500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./_theme.css" />
+    <style>
+      * { box-sizing: border-box; }
+      html, body {
+        width: 1280px;
+        height: 720px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: #0f1116;
+      }
+      body { position: relative; font-family: 'Merriweather', serif; }
+
+      .slide-wrapper {
+        width: 1280px;
+        height: 720px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        background: #12141b;
+        color: #ffffff;
+      }
+      .bg-grid { position: relative; }
+      .grid-layer {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+      }
+      .grid-v, .grid-h {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.05);
+      }
+      .grid-v { width: 1px; top: 0; bottom: 0; }
+      .grid-h { height: 1px; left: 0; right: 0; }
+
+      .orb {
+        position: absolute;
+        border-radius: 9999px;
+        filter: blur(88px);
+        opacity: 0.14;
+        z-index: 2;
+      }
+      .orb-a {
+        width: 260px;
+        height: 260px;
+        left: 70px;
+        top: 38px;
+        background: #2b8bcf;
+      }
+      .orb-b {
+        width: 240px;
+        height: 240px;
+        right: 90px;
+        bottom: 78px;
+        background: #7758f7;
+      }
+
+      .slide {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+      .content-safe-area {
+        width: 100%;
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 22px 0 12px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+      }
+      .title-font { font-family: 'Space Grotesk', sans-serif; }
+
+      .top-intro {
+        display: flex;
+        gap: 16px;
+        align-items: stretch;
+      }
+      .intro-left { flex: 1.6; }
+      .kicker {
+        margin: 0 0 5px 0;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 12px;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+        color: #a8b2c9;
+      }
+      .main-title {
+        margin: 0;
+        font-size: 44px;
+        line-height: 1.02;
+        letter-spacing: -0.6px;
+      }
+      .subtitle {
+        margin: 8px 0 0 0;
+        font-size: 16px;
+        line-height: 1.35;
+        color: #d8def0;
+        max-width: 700px;
+      }
+
+      .formula-box {
+        flex: 1;
+        padding: 10px 14px;
+        border-color: rgba(93, 190, 242, 0.42);
+        position: relative;
+      }
+      .formula-box::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: #5dbef2;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+      }
+      .formula-label {
+        margin: 0 0 5px 0;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 11px;
+        letter-spacing: 1.1px;
+        text-transform: uppercase;
+        color: #a7d2e9;
+      }
+      .formula-line {
+        margin: 0 0 5px 0;
+        font-size: 13.5px;
+        line-height: 1.35;
+        color: #eaf4ff;
+      }
+      .formula-line:last-child { margin-bottom: 0; }
+
+      .split-layout {
+        position: relative;
+        display: flex;
+        gap: 20px;
+        flex: 1;
+        min-height: 0;
+      }
+      .split-divider-line {
+        position: absolute;
+        left: 50%;
+        top: 8px;
+        bottom: 8px;
+        width: 1px;
+        background: rgba(255, 255, 255, 0.22);
+        transform: translateX(-0.5px);
+        z-index: 8;
+      }
+      .divider-icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 34px;
+        height: 34px;
+        transform: translate(-50%, -50%);
+        border-radius: 9999px;
+        background: #151926;
+        border: 1px solid rgba(255, 255, 255, 0.26);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9;
+      }
+
+      .panel {
+        flex: 1;
+        padding: 11px 12px 10px;
+        position: relative;
+        min-height: 0;
+      }
+      .panel-left { border-color: rgba(75, 209, 255, 0.35); }
+      .panel-right { border-color: rgba(164, 137, 255, 0.35); }
+
+      .panel-stripe {
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 4px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+      }
+      .panel-left .panel-stripe { background: #3ac7ff; }
+      .panel-right .panel-stripe { background: #a489ff; }
+
+      .panel-title {
+        margin: 8px 0 8px 0;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 21px;
+        line-height: 1.1;
+      }
+      .panel-title.left { color: #c7efff; }
+      .panel-title.right { color: #e6dbff; }
+
+      .rule-stack {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: stretch;
+      }
+      .rule-card {
+        border-radius: 12px;
+        padding: 9px 11px;
+        border: 1px solid rgba(255, 255, 255, 0.13);
+        background: rgba(255, 255, 255, 0.03);
+      }
+      .left-a { border-left: 3px solid #35c8ff; }
+      .left-b { border-left: 3px solid #36d39d; }
+      .right-a { border-left: 3px solid #a489ff; }
+      .right-b { border-left: 3px solid #ff88bc; }
+
+      .rule-title {
+        margin: 0 0 4px 0;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 16px;
+        line-height: 1.2;
+      }
+      .rule-text {
+        margin: 0 0 4px 0;
+        font-size: 12.8px;
+        line-height: 1.34;
+        color: #d9e0f0;
+      }
+      .rule-text:last-child { margin-bottom: 0; }
+
+      .bottom-band {
+        padding: 9px 14px;
+        border-color: rgba(255, 255, 255, 0.14);
+        position: relative;
+      }
+      .bottom-band::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, #35c8ff, #a489ff);
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+      }
+      .band-title {
+        margin: 2px 0 4px 0;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 17px;
+        line-height: 1.15;
+      }
+      .band-text {
+        margin: 0 0 4px 0;
+        font-size: 12.8px;
+        line-height: 1.34;
+        color: #d8e0f2;
+      }
+      .band-text:last-child { margin-bottom: 0; }
+
+      .footer-note {
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .footer-text {
+        margin: 0;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 11px;
+        letter-spacing: 0.9px;
+        color: #7f8aa5;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-wrapper bg-grid">
+      <div class="grid-layer">
+        <div class="grid-v" style="left: 12%;"></div>
+        <div class="grid-v" style="left: 28%;"></div>
+        <div class="grid-v" style="left: 44%;"></div>
+        <div class="grid-v" style="left: 60%;"></div>
+        <div class="grid-v" style="left: 76%;"></div>
+        <div class="grid-v" style="left: 92%;"></div>
+        <div class="grid-h" style="top: 18%;"></div>
+        <div class="grid-h" style="top: 36%;"></div>
+        <div class="grid-h" style="top: 54%;"></div>
+        <div class="grid-h" style="top: 72%;"></div>
+        <div class="grid-h" style="top: 90%;"></div>
+      </div>
+
+      <div class="orb orb-a"></div>
+      <div class="orb orb-b"></div>
+
+      <div class="slide">
+        <div class="content-safe-area">
+          <div class="top-intro">
+            <div class="intro-left">
+              <p class="kicker">03 // Present Simple</p>
+              <h1 class="title-font main-title">Affirmative Form</h1>
+              <p class="subtitle">Present simple affirmative sentences follow a clear subject + verb structure. The verb form changes with the subject, so agreement is the key grammar decision in every sentence.</p>
+            </div>
+            <div class="formula-box glass-panel">
+              <p class="formula-label">Core Pattern</p>
+              <p class="formula-line"><strong>General form:</strong> Subject + verb + object/complement.</p>
+              <p class="formula-line"><strong>Third-person singular:</strong> He/She/It + verb with <strong>-s</strong> or <strong>-es</strong> + object/complement.</p>
+              <p class="formula-line"><strong>Purpose:</strong> Use this form for routines, habits, and facts.</p>
+            </div>
+          </div>
+
+          <div class="split-layout">
+            <div class="split-divider-line"></div>
+            <div class="divider-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M4 8H16" stroke="#D5DDF2" stroke-width="1.7" stroke-linecap="round"></path>
+                <path d="M12.5 4.5L16 8L12.5 11.5" stroke="#D5DDF2" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M20 16H8" stroke="#D5DDF2" stroke-width="1.7" stroke-linecap="round"></path>
+                <path d="M11.5 12.5L8 16L11.5 19.5" stroke="#D5DDF2" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+
+            <section class="panel panel-left glass-panel">
+              <div class="panel-stripe"></div>
+              <h2 class="panel-title left">I / You / We / They</h2>
+              <div class="rule-stack">
+                <article class="rule-card left-a">
+                  <h3 class="rule-title">Base Verb Stays Unchanged</h3>
+                  <p class="rule-text">With these subjects, the verb remains in its base form in affirmative present simple sentences. This pattern keeps statements direct and easy to build.</p>
+                  <p class="rule-text">Examples include “I work early” and “They study at the library,” where no extra ending is added to the verb.</p>
+                </article>
+                <article class="rule-card left-b">
+                  <h3 class="rule-title">Common Everyday Verbs</h3>
+                  <p class="rule-text">High-frequency verbs like work, live, read, play, cook, and study are often used with these subjects to describe daily routines. They are ideal for speaking and writing practice.</p>
+                  <p class="rule-text">You can create useful patterns such as “We read every morning” and “You cook dinner at home” to reinforce fluency.</p>
+                </article>
+              </div>
+            </section>
+
+            <section class="panel panel-right glass-panel">
+              <div class="panel-stripe"></div>
+              <h2 class="panel-title right">He / She / It</h2>
+              <div class="rule-stack">
+                <article class="rule-card right-a">
+                  <h3 class="rule-title">Add -s in Most Cases</h3>
+                  <p class="rule-text">When the subject is he, she, or it, most affirmative verbs take an -s ending to show correct agreement. This is the default third-person singular rule.</p>
+                  <p class="rule-text">For example, “He walks to work” and “She reads before bed” both follow the standard -s pattern.</p>
+                </article>
+                <article class="rule-card right-b">
+                  <h3 class="rule-title">Add -es After Specific Endings</h3>
+                  <p class="rule-text">Verbs ending in s, sh, ch, x, or o usually add -es in third-person singular forms. This spelling rule supports natural pronunciation in connected speech.</p>
+                  <p class="rule-text">A clear model is “She watches TV,” and another common form is “He goes to school” in daily conversation.</p>
+                </article>
+              </div>
+            </section>
+          </div>
+
+          <div class="bottom-band glass-panel">
+            <h3 class="band-title">Quick Conversion Practice</h3>
+            <p class="band-text">Take one base-form sentence and switch the subject to third-person singular, then update the verb ending. This contrast helps learners spot agreement changes quickly and accurately.</p>
+            <p class="band-text">Example pair: “They walk to work” becomes “He walks to work,” and “They watch TV” becomes “She watches TV.”</p>
+          </div>
+
+          <div class="footer-note">
+            <p class="footer-text">03 // AFFIRMATIVE FORM</p>
+            <p class="footer-text">PRESENT SIMPLE GRAMMAR</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

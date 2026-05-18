@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Space+Grotesk:wght@500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./_theme.css" />
+    <style>
+      * { box-sizing: border-box; }
+      html, body {
+        width: 1280px;
+        height: 720px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #0f0f0f;
+      }
+      body { position: relative; }
+
+      .slide-wrapper {
+        width: 1280px;
+        height: 720px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        background: #11131a;
+        color: #f8fafc;
+      }
+
+      .bg-grid { position: relative; }
+
+      .grid-lines {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        pointer-events: none;
+      }
+      .vline, .hline {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.06);
+      }
+      .vline { width: 1px; top: 0; bottom: 0; }
+      .hline { height: 1px; left: 0; right: 0; }
+
+      .orb {
+        position: absolute;
+        border-radius: 999px;
+        filter: blur(80px);
+        opacity: 0.16;
+        z-index: 1;
+        pointer-events: none;
+      }
+      .orb-a {
+        width: 260px;
+        height: 260px;
+        background: #2563eb;
+        top: 28px;
+        left: 34px;
+      }
+      .orb-b {
+        width: 260px;
+        height: 260px;
+        background: #7c3aed;
+        bottom: 24px;
+        right: 40px;
+      }
+
+      .slide {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+
+      .content-safe-area {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 26px 30px 12px 30px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .kicker {
+        margin: 0 0 6px 0;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 12px;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        color: #93c5fd;
+      }
+      .title {
+        margin: 0;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 44px;
+        line-height: 1.05;
+        font-weight: 700;
+        color: #ffffff;
+      }
+      .subtitle {
+        margin: 10px 0 14px 0;
+        max-width: 1100px;
+        font-family: 'Merriweather', serif;
+        font-size: 15.5px;
+        line-height: 1.45;
+        color: #d1d5db;
+      }
+
+      .use-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        align-items: start;
+      }
+
+      .use-card {
+        position: relative;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        background: rgba(255, 255, 255, 0.04);
+        padding: 13px 14px 11px 14px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card-stripe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        border-radius: 16px 16px 0 0;
+      }
+
+      .card-head {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        margin-bottom: 6px;
+      }
+
+      .icon-wrap {
+        width: 30px;
+        height: 30px;
+        border-radius: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      .icon-wrap svg {
+        width: 17px;
+        height: 17px;
+        stroke: currentColor;
+        stroke-width: 1.9;
+        fill: none;
+      }
+
+      .card-title {
+        margin: 0;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 21px;
+        line-height: 1.2;
+        font-weight: 700;
+      }
+
+      .card-body {
+        margin: 0 0 5px 0;
+        font-family: 'Merriweather', serif;
+        font-size: 13.2px;
+        line-height: 1.38;
+        color: #e5e7eb;
+      }
+
+      .example {
+        margin: 1px 0 0 0;
+        font-family: 'Merriweather', serif;
+        font-size: 13.2px;
+        line-height: 1.35;
+        color: #f8fafc;
+      }
+      .example-label {
+        font-weight: 700;
+        color: #cbd5e1;
+      }
+
+      .habit .card-stripe { background: #38bdf8; }
+      .habit .icon-wrap { background: rgba(56, 189, 248, 0.20); color: #7dd3fc; }
+      .habit .card-title { color: #bae6fd; }
+
+      .routine .card-stripe { background: #34d399; }
+      .routine .icon-wrap { background: rgba(52, 211, 153, 0.20); color: #6ee7b7; }
+      .routine .card-title { color: #bbf7d0; }
+
+      .truth .card-stripe { background: #f59e0b; }
+      .truth .icon-wrap { background: rgba(245, 158, 11, 0.20); color: #fbbf24; }
+      .truth .card-title { color: #fde68a; }
+
+      .state .card-stripe { background: #a78bfa; }
+      .state .icon-wrap { background: rgba(167, 139, 250, 0.20); color: #c4b5fd; }
+      .state .card-title { color: #e9d5ff; }
+
+      .rule-strip {
+        margin-top: 12px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .rule-card {
+        border-radius: 12px;
+        border: 1px solid rgba(147, 197, 253, 0.35);
+        background: rgba(30, 41, 59, 0.55);
+        padding: 10px 12px;
+      }
+
+      .rule-title {
+        margin: 0 0 4px 0;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #bfdbfe;
+      }
+
+      .rule-text {
+        margin: 0;
+        font-family: 'Merriweather', serif;
+        font-size: 12.8px;
+        line-height: 1.4;
+        color: #dbeafe;
+      }
+
+      .meta {
+        margin-top: 8px;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .meta p {
+        margin: 0;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 11.5px;
+        letter-spacing: 1px;
+        color: #9ca3af;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-wrapper bg-grid">
+      <div class="grid-lines">
+        <div class="vline" style="left: 160px;"></div>
+        <div class="vline" style="left: 320px;"></div>
+        <div class="vline" style="left: 480px;"></div>
+        <div class="vline" style="left: 640px;"></div>
+        <div class="vline" style="left: 800px;"></div>
+        <div class="vline" style="left: 960px;"></div>
+        <div class="vline" style="left: 1120px;"></div>
+        <div class="hline" style="top: 120px;"></div>
+        <div class="hline" style="top: 240px;"></div>
+        <div class="hline" style="top: 360px;"></div>
+        <div class="hline" style="top: 480px;"></div>
+        <div class="hline" style="top: 600px;"></div>
+      </div>
+
+      <div class="orb orb-a"></div>
+      <div class="orb orb-b"></div>
+
+      <div class="slide">
+        <div class="content-safe-area">
+          <div>
+            <p class="kicker">Grammar Focus // Present Simple</p>
+            <h1 class="title">Core Uses of Present Simple</h1>
+            <p class="subtitle">Use the present simple when a statement describes a regular pattern, a fixed routine, a fact, or a stable condition. These four functions cover most everyday uses in speaking and writing.</p>
+          </div>
+
+          <div class="use-grid">
+            <article class="use-card habit">
+              <div class="card-stripe"></div>
+              <div class="card-head">
+                <div class="icon-wrap">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20 12a8 8 0 1 1-2.2-5.5"></path>
+                    <path d="M20 4v6h-6"></path>
+                  </svg>
+                </div>
+                <h3 class="card-title">Habitual Actions</h3>
+              </div>
+              <p class="card-body">Use this form for actions someone repeats as part of personal behavior. The sentence highlights a pattern, not an action happening now.</p>
+              <p class="card-body">Frequency expressions such as usually, often, and every day make the habit clear. This use appears often in health, study, and work contexts.</p>
+              <p class="example"><span class="example-label">Example:</span> “She goes to the gym every day.”</p>
+            </article>
+
+            <article class="use-card routine">
+              <div class="card-stripe"></div>
+              <div class="card-head">
+                <div class="icon-wrap">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3.5" y="5.5" width="17" height="15" rx="2"></rect>
+                    <path d="M3.5 9.5h17"></path>
+                    <path d="M8 3.5v4"></path>
+                    <path d="M16 3.5v4"></path>
+                  </svg>
+                </div>
+                <h3 class="card-title">Routines & Timetables</h3>
+              </div>
+              <p class="card-body">The present simple also describes fixed schedules because the timing is already set. Transport, classes, and office routines are common examples.</p>
+              <p class="card-body">Even if an event is later today, speakers still use this tense when it follows a timetable. This keeps planning language clear and practical.</p>
+              <p class="example"><span class="example-label">Example:</span> “The train leaves at 7:30 every morning.”</p>
+            </article>
+
+            <article class="use-card truth">
+              <div class="card-stripe"></div>
+              <div class="card-head">
+                <div class="icon-wrap">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="8.5"></circle>
+                    <path d="M3.5 12h17"></path>
+                    <path d="M12 3.5c2.4 2.2 3.8 5.3 3.8 8.5S14.4 18.8 12 21c-2.4-2.2-3.8-5.3-3.8-8.5S9.6 5.7 12 3.5z"></path>
+                  </svg>
+                </div>
+                <h3 class="card-title">General Truths</h3>
+              </div>
+              <p class="card-body">Use this tense for facts that remain true regardless of time, place, or speaker. Scientific rules and geographic facts are normally stated this way.</p>
+              <p class="card-body">The tone becomes direct and objective, which is why textbooks rely on it. It helps learners separate verifiable fact from opinion.</p>
+              <p class="example"><span class="example-label">Example:</span> “Water boils at 100 degrees Celsius.”</p>
+            </article>
+
+            <article class="use-card state">
+              <div class="card-stripe"></div>
+              <div class="card-head">
+                <div class="icon-wrap">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3.5 11.5L12 4l8.5 7.5"></path>
+                    <path d="M6 10.8V20h12v-9.2"></path>
+                    <path d="M10 20v-5h4v5"></path>
+                  </svg>
+                </div>
+                <h3 class="card-title">Permanent States</h3>
+              </div>
+              <p class="card-body">Present simple is used with long-term states such as identity, location, ownership, and preference. Stative verbs like be, have, know, and like often appear here.</p>
+              <p class="card-body">These sentences provide stable background information rather than temporary activity. They describe what is generally true in a person’s life.</p>
+              <p class="example"><span class="example-label">Example:</span> “He lives in Cairo and has two sisters.”</p>
+            </article>
+          </div>
+
+          <div class="rule-strip">
+            <div class="rule-card">
+              <h4 class="rule-title">Form Reminder: Third-Person Singular</h4>
+              <p class="rule-text">In affirmative sentences, add <span>-s</span> or <span>-es</span> with he, she, and it. This agreement rule is essential for accurate writing and formal speaking.</p>
+            </div>
+            <div class="rule-card">
+              <h4 class="rule-title">Form Reminder: Negatives & Questions</h4>
+              <p class="rule-text">Use <span>do</span> or <span>does</span> to form questions and negatives in the present simple. This structure keeps grammar consistent across all four core uses.</p>
+            </div>
+          </div>
+
+          <div class="meta">
+            <p>02 // CORE USES OF PRESENT SIMPLE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
