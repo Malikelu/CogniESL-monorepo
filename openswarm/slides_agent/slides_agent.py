@@ -8,6 +8,13 @@ from shared_tools.CopyFile import CopyFile
 
 from config import get_default_model, is_openai_provider
 
+
+def _is_reasoning_model() -> bool:
+    import os
+    model = os.getenv("DEFAULT_MODEL", "gpt-4o-mini")
+    return model.startswith("o1") or model.startswith("o3") or model.startswith("o4")
+
+
 # Import slide tools
 from .tools import (
     InsertNewSlides,
@@ -90,7 +97,7 @@ def create_slides_agent() -> Agent:
         ],
         model=get_default_model(),
         model_settings=ModelSettings(
-            reasoning=Reasoning(effort="high", summary="auto") if is_openai_provider() else None,
+            reasoning=Reasoning(effort="high", summary="auto") if is_openai_provider() and _is_reasoning_model() else None,
             verbosity="medium" if is_openai_provider() else None,
             response_include=["web_search_call.action.sources"] if is_openai_provider() else None,
         ),
