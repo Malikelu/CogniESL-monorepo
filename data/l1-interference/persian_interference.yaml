@@ -1,1336 +1,1487 @@
-language: persian
+language: Persian
+language_code: fa
 schema_version: '3.0'
 grammar_points:
-  article_omission:
+  articles:
     interference_patterns:
-    - Persian uses ezafe construction which does not exist in English, causing transfer
-      errors related to 'article omission'.
-    why_it_happens: Persian handles 'article omission' differently from English. Persian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Persian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Persian and English for 'article
-        omission'. Show the Persian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Persian
-        handles 'article omission' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Persian sentences, students translate to English, focusing
-          on correct 'article omission' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Persian-style 'article omission' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'article
-          omission' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'article omission'
-          errors.
-        duration: 15
+    - pattern: Omission of indefinite article
+      example: 'FA ''ketab ra kharidam'' (book bought-I) -> Error: ''I bought book''
+        -> Correct: ''I bought a book'''
+      frequency: 5
+      persistence: 4
+      communicative_impact: 3
+    - pattern: Overuse of definite article
+      example: 'FA ''al-'' prefix -> Error: ''the water is the essential'' -> Correct:
+        ''Water is essential'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
     examples:
-    - 'Wrong: ''She is article omission.'' Correct: ''She is a article omission.'''
-    - 'Wrong: ''I like the article omission.'' (general) Correct: ''I like article
-      omission.'''
-    - 'Wrong: ''I have article omission.'' Correct: ''I have a article omission.'''
+    - wrong: I bought book yesterday.
+      correct: I bought a book yesterday.
+    - wrong: She is doctor.
+      correct: She is a doctor.
+    - wrong: The water is the essential for life.
+      correct: Water is essential for life.
+    why_it_happens: Persian has no indefinite article. Definiteness is marked by context
+      or the suffix '-ra' for specific direct objects. Persian learners may omit 'a/an'
+      or overuse 'the'.
+    teacher_tips:
+      how_to_explain: 'Teach: English REQUIRES ''a/an'' for singular countable nouns.
+        Persian ''ketab'' (book) -> English ''a book''.'
+      where_to_start: Start with the indefinite article pattern.
+      sequencing: 'Week 1: Indefinite articles. Week 2: Definite articles. Week 3:
+        Zero article. Week 4: Review.'
+      exercises:
+      - name: Article Audit
+        type: error-correction
+        description: 20 sentences with Persian-influenced article errors.
+        duration: 15
+      - name: FA-to-EN Translation
+        type: translation
+        description: Translate 15 Persian sentences focusing on articles.
+        duration: 20
+      - name: Article Decision Tree
+        type: fill-in-the-blank
+        description: Students complete a flowchart for article choice.
+        duration: 10
     sources:
-    - Ghomeshi, J. (1997). Non-projecting nouns and the ezafe construction in Persian.
-      Natural Language and Linguistic Theory, 15(4), 729-788.
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Keshavarz, M. (2012). Transfer of L1 collocations in Persian-English. Iranian
-      Journal of Applied Linguistics, 15(1), 1-24.
-    source_count: 3
-    source_type: peer-reviewed
+    - Swan & Smith "Learner English" Ch. 10 (Farsi)
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 5
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for articles
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Farsi speakers, pp. 177-192'
+      tier: 1
+    - claim: 'Grammar point: articles'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Article usage varies significantly across languages; many languages have
+        no article system
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See articles entries 133-142
+      tier: 2
+    - claim: ELLs commonly omit indefinite article when descriptive adjectives come
+        between determiner and noun
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 153
+      tier: 2
+  word_order:
+    interference_patterns:
+    - pattern: SOV word order transfer
+      example: 'FA ''man ketab ra kharidam'' (I book bought) -> Error: ''I book bought''
+        -> Correct: ''I bought a book'''
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
+    - pattern: Postposition instead of preposition
+      example: 'FA ''ketab ru-ye miz'' (book on table) -> Error: ''book on table''
+        (correct) but ''book table on'' -> Correct: ''book on the table'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+    examples:
+    - wrong: I book bought yesterday.
+      correct: I bought a book yesterday.
+    - wrong: Book the table on is.
+      correct: The book is on the table.
+    - wrong: She store to went.
+      correct: She went to the store.
+    why_it_happens: Persian is SOV (Subject-Object-Verb) while English is SVO. Persian
+      also uses postpositions instead of prepositions. Persian learners transfer SOV
+      order and postposition patterns.
+    teacher_tips:
+      how_to_explain: 'Teach: English is ALWAYS Subject-Verb-Object. Prepositions
+        come BEFORE nouns, not after.'
+      where_to_start: Start with basic SVO order. Then teach prepositions.
+      sequencing: 'Week 1: SVO word order. Week 2: Prepositions. Week 3: Adverb placement.
+        Week 4: Review.'
+      exercises:
+      - name: Word Order Correction
+        type: error-correction
+        description: 15 sentences with Persian-influenced word order.
+        duration: 15
+      - name: FA Word Order Translation
+        type: translation
+        description: Translate 15 Persian sentences focusing on word order.
+        duration: 20
+      - name: SVO Practice
+        type: sentence-rewrite
+        description: Students rewrite 10 SOV sentences in SVO order.
+        duration: 15
+    sources:
+    - Swan & Smith "Learner English" Ch. 10
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 5
+    persistence: 5
+    communicative_impact: 4
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for word order
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Farsi speakers, pp. 177-192'
+      tier: 1
+    - claim: 'Grammar point: word order'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Germanic languages and Chinese make rich use of compounding, unlike other
+        languages
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: p. 39
+      tier: 2
+    - claim: 'Word order varies: SOV, SVO, VSO, V2, free order — all cause transfer
+        errors'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See word order entries
+      tier: 2
+    - claim: Persian is SOV (PEU word order entries)
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See relevant entry
+      tier: 2
+    - claim: 'ELLs transfer L1 word order: subject-verb inversion from Spanish, SOV
+        from Arabic/Japanese'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 199
+      tier: 2
+    - claim: Persian is SOV (p. 199)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: See relevant section
+      tier: 2
+  ezāfe_construction:
+    interference_patterns:
+    - pattern: Transfer of ezāfe construction
+      example: 'FA ''ketab-e man'' (book-of me) -> Error: ''book of me'' -> Correct:
+        ''my book'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    - pattern: Use of ezāfe for all possession
+      example: 'FA ''dar-e khane'' (door-of house) -> Error: ''door of house'' ->
+        Correct: ''house door'' / ''front door'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+    examples:
+    - wrong: Book of me is interesting.
+      correct: My book is interesting.
+    - wrong: Door of house is red.
+      correct: The front door is red.
+    - wrong: Car of my father is blue.
+      correct: My father's car is blue.
+    why_it_happens: 'Persian uses the ezāfe construction (-e/-ye) to link nouns to
+      modifiers: ''ketab-e man'' (book-of me = my book). English uses possessive adjectives
+      or ''s. Persian learners may transfer the ezāfe construction.'
+    teacher_tips:
+      how_to_explain: 'Teach: English uses possessive adjectives (my, your, his) BEFORE
+        the noun. ''ketab-e man'' = ''my book'' (not ''book of me'').'
+      where_to_start: Start with possessive adjectives. Then teach 's for possession.
+      sequencing: 'Week 1: Possessive adjectives. Week 2: ''S possession. Week 3:
+        Of for things. Week 4: Review.'
+      exercises:
+      - name: Possessive Translation
+        type: translation
+        description: Translate 15 Persian ezāfe constructions into English possessives.
+        duration: 15
+      - name: Possessive Formation
+        type: sentence-rewrite
+        description: Students rewrite 10 ezāfe phrases using English possessives.
+        duration: 10
+      - name: Error Correction
+        type: error-correction
+        description: 10 sentences with possessive errors.
+        duration: 10
+    sources:
+    - Swan & Smith "Learner English" Ch. 10
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Persian
-    notes: Persian speakers consistently omit articles at all proficiency levels.
-      One of the most resistant errors in ESL corpora of Farsi learners.
-  definite_article_overuse:
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for ezāfe construction
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Farsi speakers, pp. 177-192'
+      tier: 1
+    - claim: 'Grammar point: ezāfe construction'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+  verb_tenses:
     interference_patterns:
-    - Persian uses ezafe construction which does not exist in English, causing transfer
-      errors related to 'definite article overuse'.
-    why_it_happens: Persian handles 'definite article overuse' differently from English.
-      Persian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Persian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Persian and English for 'definite
-        article overuse'. Show the Persian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Persian
-        handles 'definite article overuse' differently from English. Use visual aids
-        or color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Persian sentences, students translate to English, focusing
-          on correct 'definite article overuse' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Persian-style 'definite article overuse'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'definite
-          article overuse' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'definite article
-          overuse' errors.
-        duration: 15
+    - pattern: Use of present perfect for all past
+      example: 'FA ''rafte am'' (gone I-have) -> Error: ''I have gone yesterday''
+        -> Correct: ''I went yesterday'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+    - pattern: Use of mi- prefix for present continuous
+      example: 'FA ''mi-ravam'' (I go) -> Error: ''I am go'' -> Correct: ''I am going'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
     examples:
-    - 'Wrong: ''She is definite article overuse.'' Correct: ''She is a definite article
-      overuse.'''
-    - 'Wrong: ''I like the definite article overuse.'' (general) Correct: ''I like
-      definite article overuse.'''
-    - 'Wrong: ''I have definite article overuse.'' Correct: ''I have a definite article
-      overuse.'''
+    - wrong: I have gone to Tehran yesterday.
+      correct: I went to Tehran yesterday.
+    - wrong: She is go to school.
+      correct: She is going to school.
+    - wrong: They are eat lunch.
+      correct: They are eating lunch.
+    why_it_happens: Persian uses the perfect tense (rafte am = I have gone) for completed
+      actions, similar to German. The mi- prefix indicates ongoing action. Persian
+      learners may overuse present perfect or omit -ing.
+    teacher_tips:
+      how_to_explain: 'Teach: Specific past time -> Simple Past. Ongoing action ->
+        be + -ing.'
+      where_to_start: Start with simple past vs present perfect. Then teach present
+        continuous.
+      sequencing: 'Week 1: Simple past. Week 2: Present perfect. Week 3: Present continuous.
+        Week 4: Review.'
+      exercises:
+      - name: Tense Decision
+        type: fill-in-the-blank
+        description: 20 sentences with blank for correct tense.
+        duration: 15
+      - name: FA Tense Translation
+        type: translation
+        description: Translate 15 Persian tense sentences into correct English.
+        duration: 15
+      - name: Tense Error Correction
+        type: error-correction
+        description: 10 sentences with tense errors.
+        duration: 10
     sources:
-    - 'Karimi, S. (2005). A minimalist approach to scrambling: Evidence from Persian.
-      Mouton de Gruyter.'
-    - Ghomeshi, J. (1997). Non-projecting nouns and the ezafe construction in Persian.
-      Natural Language and Linguistic Theory, 15(4), 729-788.
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    source_count: 3
-    source_type: peer-reviewed
+    - Swan & Smith "Learner English" Ch. 10
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for verb tenses
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Farsi speakers, pp. 177-192'
+      tier: 1
+    - claim: 'Grammar point: verb tenses'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Past tense is realized through -ed inflection or irregular vowel/consonant
+        changes
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: p. 89
+      tier: 2
+    - claim: Tense-aspect systems vary widely across languages; some have no morphological
+        tense
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See tense entries
+      tier: 2
+    - claim: ELLs internalize incorrect patterns from overuse of be (e.g., *I am take
+        the bus)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 231
+      tier: 2
+  questions:
+    interference_patterns:
+    - pattern: Use of āyā/āyā for questions
+      example: 'FA ''āyā mi-ravi?'' (question-particle go-you?) -> Error: ''Question
+        you go?'' -> Correct: ''Do you go?'''
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
+    - pattern: Use of rising intonation only
+      example: 'FA ''mi-ravi?'' (go-you?) -> Error: ''You go?'' -> Correct: ''Do you
+        go?'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+    examples:
+    - wrong: You go to school?
+      correct: Do you go to school?
+    - wrong: She likes coffee?
+      correct: Does she like coffee?
+    - wrong: Where you go?
+      correct: Where do you go?
+    why_it_happens: Persian forms questions with the particle 'āyā' or simply by rising
+      intonation. English requires do-support and inversion.
+    teacher_tips:
+      how_to_explain: 'Teach: Do/Does/Did + subject + base verb? For ''be'' and modals,
+        just invert.'
+      where_to_start: Start with yes/no questions. Then teach wh- questions.
+      sequencing: 'Week 1: Yes/no questions. Week 2: Wh- questions. Week 3: Tag questions.
+        Week 4: Review.'
+      exercises:
+      - name: Question Formation
+        type: sentence-rewrite
+        description: Students convert 15 statements to questions.
+        duration: 15
+      - name: FA Question Translation
+        type: translation
+        description: Translate 15 Persian questions into correct English.
+        duration: 15
+      - name: Interview Activity
+        type: oral-drill
+        description: Students interview each other using questions.
+        duration: 15
+    sources:
+    - Swan & Smith "Learner English" Ch. 10
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 5
+    persistence: 5
+    communicative_impact: 4
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for questions
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Farsi speakers, pp. 177-192'
+      tier: 1
+    - claim: 'Grammar point: questions'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: 'Question formation varies: intonation-only, particles, inversion — all
+        cause transfer errors'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 294
+      tier: 2
+  negation:
+    interference_patterns:
+    - pattern: Use of na- prefix for negation
+      example: 'FA ''na-ravam'' (not-I-go) -> Error: ''I not go'' -> Correct: ''I
+        do not go'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+    examples:
+    - wrong: I not know the answer.
+      correct: I do not know the answer.
+    - wrong: She not likes coffee.
+      correct: She does not like coffee.
+    - wrong: They not have time.
+      correct: They do not have time.
+    why_it_happens: Persian negation uses the prefix 'na-/ne-' attached to the verb.
+      English uses do/does/did + not + base verb. Persian learners may transfer the
+      pre-verbal negation pattern.
+    teacher_tips:
+      how_to_explain: 'Teach: do/does/did + not + base verb. For ''be'' and modals,
+        just add ''not'' after.'
+      where_to_start: Start with do/does/did + not.
+      sequencing: 'Week 1: Do/does/did + not. Week 2: Be + not. Week 3: Modals + not.
+        Week 4: Review.'
+      exercises:
+      - name: Negation Transformation
+        type: sentence-rewrite
+        description: Students rewrite 15 affirmative sentences as negative.
+        duration: 15
+      - name: FA Negation Translation
+        type: translation
+        description: Translate 15 Persian negation sentences into correct English.
+        duration: 15
+      - name: Negation Error Correction
+        type: error-correction
+        description: 10 sentences with negation errors.
+        duration: 10
+    sources:
+    - Swan & Smith "Learner English" Ch. 10
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for negation
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Farsi speakers, pp. 177-192'
+      tier: 1
+    - claim: 'Grammar point: negation'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: 'Negation patterns vary: pre-verbal particles, post-verbal markers, double
+        negation'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See negation entries
+      tier: 2
+    - claim: 'Double negation transferred from L1 (Spanish, Arabic, etc.): *I don''t
+        have no reason'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 1
+      tier: 2
+  pronouns:
+    interference_patterns:
+    - pattern: Use of ân for both it and that
+      example: 'FA ''ân'' = it/that -> Error: ''That is good'' (when meaning ''it'')
+        -> Correct: ''It is good'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Omission of subject pronoun
+      example: 'FA pro-drop -> Error: ''Am going'' -> Correct: ''I am going'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+    examples:
+    - wrong: Am going to school.
+      correct: I am going to school.
+    - wrong: Is good.
+      correct: It is good.
+    - wrong: Are students.
+      correct: They are students.
+    why_it_happens: Persian is a pro-drop language (subject pronouns are optional).
+      Persian 'ân' covers both 'it' and 'that'. Persian learners may omit subject
+      pronouns or confuse 'it' and 'that'.
+    teacher_tips:
+      how_to_explain: 'Teach: English REQUIRES a subject in every sentence. ''It''
+        = pronoun for things. ''That'' = demonstrative.'
+      where_to_start: Start with subject pronouns. Then teach it vs that.
+      sequencing: 'Week 1: Subject pronouns. Week 2: It vs that. Week 3: Possessive
+        pronouns. Week 4: Review.'
+      exercises:
+      - name: Pronoun Insertion
+        type: sentence-rewrite
+        description: Students add missing subject pronouns to 15 sentences.
+        duration: 10
+      - name: FA Pronoun Translation
+        type: translation
+        description: Translate 15 Persian sentences with correct English pronouns.
+        duration: 15
+      - name: Pronoun Error Correction
+        type: error-correction
+        description: 10 sentences with pronoun errors.
+        duration: 10
+    sources:
+    - Swan & Smith "Learner English" Ch. 10
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 3
+    persistence: 3
+    communicative_impact: 2
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for pronouns
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Farsi speakers, pp. 177-192'
+      tier: 1
+    - claim: 'Grammar point: pronouns'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Pro-drop languages (Spanish, Italian, Portuguese) allow subject pronoun
+        omission, leading to omission errors in English
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: p. 75
+      tier: 2
+    - claim: Pro-drop languages (Spanish, Italian, Portuguese) allow subject pronoun
+        omission
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See pronoun entries 173-176
+      tier: 2
+    - claim: ELLs omit subject pronouns (pro-drop L1s) or use wrong case forms
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 45
+      tier: 2
+  prepositions:
+    interference_patterns:
+    - pattern: Transfer of Persian prepositions
+      example: 'FA ''az'' = from/of -> Error: ''I am from Tehran'' (correct) but ''I
+        heard of it'' -> Error: ''I heard from it'' -> Correct: ''I heard of it'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    - pattern: Use of be for to
+      example: 'FA ''be'' = to -> Error: ''I go to school'' (correct) but ''I gave
+        to him'' -> Error: ''I gave be him'' -> Correct: ''I gave to him'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+    examples:
+    - wrong: I gave be him the book.
+      correct: I gave the book to him.
+    - wrong: She is from the Iran.
+      correct: She is from Iran.
+    - wrong: He went to the school.
+      correct: He went to school.
+    why_it_happens: Persian prepositions often differ from English. 'az' (from/of),
+      'be' (to/in), 'dar' (in/at). Persian learners transfer L1 prepositions.
+    teacher_tips:
+      how_to_explain: Teach common Persian-English preposition differences.
+      where_to_start: Start with the most common preposition transfers.
+      sequencing: 'Week 1: Verb + preposition. Week 2: Prepositions of place. Week
+        3: Prepositions of time. Week 4: Review.'
+      exercises:
+      - name: Preposition Translation
+        type: translation
+        description: Translate 15 Persian sentences with correct English prepositions.
+        duration: 15
+      - name: Preposition Error Hunt
+        type: error-correction
+        description: A paragraph with 10 preposition errors.
+        duration: 15
+      - name: Preposition Practice
+        type: fill-in-the-blank
+        description: 20 sentences where students choose the correct preposition.
+        duration: 10
+    sources:
+    - Swan & Smith "Learner English" Ch. 10
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Persian
-    notes: Second most common article error. Improves at intermediate levels but persists
-      in unmonitored writing.
-  word_order_sov_to_svo:
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for prepositions
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Farsi speakers, pp. 177-192'
+      tier: 1
+    - claim: 'Grammar point: prepositions'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Prepositions signal relationships that compensate for lost noun inflections
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: p. 84
+      tier: 2
+    - claim: Preposition usage is highly language-specific and a major source of errors
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See preposition entries
+      tier: 2
+    - claim: 'Preposition combinations must be taught explicitly: rote memorization,
+        direct instruction, or extensive reading'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 171
+      tier: 2
+  phonology:
     interference_patterns:
-    - Persian uses ezafe construction which does not exist in English, causing transfer
-      errors related to 'word order sov to svo'.
-    why_it_happens: Persian handles 'word order sov to svo' differently from English.
-      Persian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Persian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Persian and English for 'word
-        order sov to svo'. Show the Persian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Persian
-        handles 'word order sov to svo' differently from English. Use visual aids
-        or color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Persian sentences, students translate to English, focusing
-          on correct 'word order sov to svo' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Persian-style 'word order sov to svo'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'word
-          order sov to svo' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'word order sov
-          to svo' errors.
-        duration: 15
+    - pattern: Confusion of /v/ and /w/
+      example: 'FA lacks /w/ -> Error: ''wery'' for ''very'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+    - pattern: Difficulty with /θ/ and /ð/
+      example: 'FA lacks dental fricatives -> Error: ''tink'' for ''think'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
     examples:
-    - 'Wrong: ''Yesterday went I.'' Correct: ''Yesterday I went.'''
-    - 'Wrong: ''Here comes he.'' Correct: ''Here he comes.'''
+    - wrong: I am wery happy.
+      correct: I am very happy.
+    - wrong: Tink about it.
+      correct: Think about it.
+    - wrong: Dis is my book.
+      correct: This is my book.
+    why_it_happens: Persian lacks /w/ (using /v/ instead) and lacks dental fricatives
+      /θ/ and /ð/. Persian learners substitute closest Persian sounds.
+    teacher_tips:
+      how_to_explain: 'Teach: /v/ = lips touch lower teeth. /w/ = lips round. /θ/
+        = tongue between teeth.'
+      where_to_start: Start with /v/ vs /w/. Then teach /θ/ and /ð/.
+      sequencing: 'Week 1: V vs W. Week 2: TH sounds. Week 3: Other consonant contrasts.
+        Week 4: Review.'
+      exercises:
+      - name: Minimal Pairs
+        type: matching
+        description: 'Students distinguish: very/water, vest/west, think/tink, this/dis.'
+        duration: 10
+      - name: TH Practice
+        type: oral-drill
+        description: Students practice 20 words with th sounds.
+        duration: 10
+      - name: Dictation
+        type: fill-in-the-blank
+        description: Teacher dictates words with target sounds.
+        duration: 10
     sources:
-    - 'Karimi, S. (2005). A minimalist approach to scrambling: Evidence from Persian.
-      Mouton de Gruyter.'
-    - Ghomeshi, J. (1997). Non-projecting nouns and the ezafe construction in Persian.
-      Natural Language and Linguistic Theory, 15(4), 729-788.
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    source_count: 3
-    source_type: peer-reviewed
+    - Swan & Smith "Learner English" Ch. 10
+    - Underhill "Sound Foundations"
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for phonology
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Farsi speakers, pp. 177-192'
+      tier: 1
+    - claim: 'Grammar point: phonology'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Phonological interference pattern
+      source: Underhill (2005) 'Sound Foundations', Macmillan
+      location: See relevant phonology section
+      tier: 2
+    - claim: Phonological transfer from L1 causes pronunciation errors
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See pronunciation entries
+      tier: 2
+    - claim: Single pronunciation errors rarely impede communication; focus on patterns
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 272
+      tier: 2
+  false_friends:
+    interference_patterns:
+    - pattern: Confusion of EN-FA cognates
+      example: 'FA ''mashin'' = car (not machine) -> Error: ''I bought a new mashin''
+        -> Correct: ''I bought a new car'''
+      frequency: 3
+      persistence: 2
+      communicative_impact: 3
+    examples:
+    - wrong: I bought a new mashin.
+      correct: I bought a new car.
+    - wrong: The maghaze is big.
+      correct: The store is big.
+    why_it_happens: Persian has borrowed words from English and French, but some have
+      shifted meaning. These false friends cause communication errors.
+    teacher_tips:
+      how_to_explain: Create a list of common FA-EN false friends.
+      where_to_start: Start with the most common false friends.
+      sequencing: 'Week 1: Top 10 false friends. Week 2: Context-based practice. Week
+        3: Review.'
+      exercises:
+      - name: False Friend Flashcards
+        type: matching
+        description: Students create flashcards for 10 false friends.
+        duration: 15
+      - name: Context Clues
+        type: fill-in-the-blank
+        description: 10 sentences where students choose the correct meaning.
+        duration: 10
+    sources:
+    - Swan & Smith "Learner English" Ch. 10
+    source_count: 1
+    source_type: textbook
+    frequency: 3
+    persistence: 2
+    communicative_impact: 3
+    flagged: true
+    tier: 2
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for false friends
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Farsi speakers, pp. 177-192'
+      tier: 1
+    - claim: 'Grammar point: false friends'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: False friends (cognates with different meanings) cause high-impact errors
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See vocabulary problem entries
+      tier: 2
+    - claim: False friends cause high-impact communication errors; must be taught
+        explicitly
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 213
+      tier: 2
+  countability:
+    interference_patterns:
+    - pattern: Pluralization of uncountable nouns
+      example: 'FA ''etelaat'' (information) can be counted -> Error: ''informations''
+        -> Correct: ''information'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+    examples:
+    - wrong: I have many homeworks.
+      correct: I have a lot of homework.
+    - wrong: She gave me good advices.
+      correct: She gave me good advice.
+    why_it_happens: Persian treats some nouns as countable that are uncountable in
+      English.
+    teacher_tips:
+      how_to_explain: Create a list of common uncountable nouns.
+      where_to_start: Start with the countable/uncountable distinction.
+      sequencing: 'Week 1: Common uncountable nouns. Week 2: Much/many. Week 3: Partitives.
+        Week 4: Review.'
+      exercises:
+      - name: Countable or Not?
+        type: matching
+        description: Students categorize 30 nouns.
+        duration: 10
+      - name: Quantifier Choice
+        type: fill-in-the-blank
+        description: 20 sentences where students choose much/many.
+        duration: 10
+      - name: FA Countability Translation
+        type: translation
+        description: Translate 15 Persian sentences, correcting countability errors.
+        duration: 15
+    sources:
+    - Swan & Smith "Learner English" Ch. 10
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for countability
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Farsi speakers, pp. 177-192'
+      tier: 1
+    - claim: 'Grammar point: countability'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Countability distinctions vary across languages; some nouns are countable
+        in L1 but uncountable in English
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See countability entries
+      tier: 2
+    - claim: Count/mass noun distinctions vary by L1; Spanish uses have for age (*I
+        have 27 years old)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 89
+      tier: 2
+  passive_voice:
+    interference_patterns:
+    - pattern: Avoidance of passive voice
+      example: 'FA prefers active -> Error: ''Someone built this house'' -> Correct:
+        ''This house was built'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    examples:
+    - wrong: Someone built this house in 1900.
+      correct: This house was built in 1900.
+    - wrong: My car stole yesterday.
+      correct: My car was stolen yesterday.
+    why_it_happens: Persian uses passive less frequently than English. Persian learners
+      may avoid passive constructions.
+    teacher_tips:
+      how_to_explain: 'Teach the passive formula: be + past participle.'
+      where_to_start: Start with the passive formula.
+      sequencing: 'Week 1: Passive formula. Week 2: Present and past passive. Week
+        3: When to use passive. Week 4: Review.'
+      exercises:
+      - name: Active to Passive
+        type: sentence-rewrite
+        description: Students convert 15 active sentences to passive.
+        duration: 15
+      - name: FA Passive Translation
+        type: translation
+        description: Translate 15 Persian passive sentences into correct English.
+        duration: 15
+      - name: News Headlines
+        type: composition
+        description: Students write 5 news headlines using passive voice.
+        duration: 10
+    sources:
+    - Swan & Smith "Learner English" Ch. 10
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Persian
-    notes: Core structural interference. Very high frequency in beginner writing.
-      Frequency decreases at upper-intermediate but never fully disappears in unmonitored
-      production.
-  pronoun_formality_taa_shoma:
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for passive voice
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Farsi speakers, pp. 177-192'
+      tier: 1
+    - claim: 'Grammar point: passive voice'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Passive voice availability and usage varies across languages
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See passive entries
+      tier: 2
+    - claim: ELLs avoid passive in contexts where L1 uses different structures
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 294
+      tier: 2
+  conditionals:
     interference_patterns:
-    - Persian uses ezafe construction which does not exist in English, causing transfer
-      errors related to 'pronoun formality taa shoma'.
-    why_it_happens: Persian handles 'pronoun formality taa shoma' differently from
-      English. Persian L1 speakers transfer native structural patterns to English,
-      leading to systematic errors. The error is persistent because the Persian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Persian and English for 'pronoun
-        formality taa shoma'. Show the Persian structure side-by-side with English.
-        Highlight the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Persian
-        handles 'pronoun formality taa shoma' differently from English. Use visual
-        aids or color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Persian sentences, students translate to English, focusing
-          on correct 'pronoun formality taa shoma' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Persian-style 'pronoun formality taa
-          shoma' errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'pronoun
-          formality taa shoma' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'pronoun formality
-          taa shoma' errors.
-        duration: 15
+    - pattern: Use of present tense in if-clauses
+      example: 'FA ''agar man pul dashte basham'' (if I money had) -> Error: ''If
+        I would have money'' -> Correct: ''If I had money'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
     examples:
-    - 'Wrong: ''Eat pizza.'' Correct: ''I eat pizza.'''
-    - 'Wrong: ''Rains.'' Correct: ''It rains.'''
-    - 'Wrong: ''I see he.'' Correct: ''I see him.'''
+    - wrong: If I would have money, I would travel.
+      correct: If I had money, I would travel.
+    - wrong: If I was rich, I would buy a house.
+      correct: If I were rich, I would buy a house.
+    why_it_happens: Persian conditional structure differs from English. Persian learners
+      may use 'would' in the if-clause or 'was' instead of 'were'.
+    teacher_tips:
+      how_to_explain: 'Teach: NO WOULD IN IF-CLAUSE. Use ''were'' (not ''was'') for
+        unreal situations.'
+      where_to_start: Start with second conditional. Then teach first conditional.
+      sequencing: 'Week 1: Second conditional. Week 2: First conditional. Week 3:
+        Zero conditional. Week 4: Review.'
+      exercises:
+      - name: Conditional Practice
+        type: sentence-rewrite
+        description: Students rewrite 10 conditional sentences.
+        duration: 15
+      - name: FA Conditional Translation
+        type: translation
+        description: Translate 15 Persian conditional sentences into correct English.
+        duration: 15
+      - name: Was or Were?
+        type: error-correction
+        description: 10 sentences where students choose was or were.
+        duration: 10
     sources:
-    - 'Karimi, S. (2005). A minimalist approach to scrambling: Evidence from Persian.
-      Mouton de Gruyter.'
-    - Ghomeshi, J. (1997). Non-projecting nouns and the ezafe construction in Persian.
-      Natural Language and Linguistic Theory, 15(4), 729-788.
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    source_count: 3
-    source_type: peer-reviewed
+    - Swan & Smith "Learner English" Ch. 10
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
     frequency: 4
-    persistence: 3
+    persistence: 4
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Persian
-    notes: Pragmatic rather than grammatical interference. Important for professional/academic
-      contexts.
-  ezafe_construction:
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for conditionals
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Farsi speakers, pp. 177-192'
+      tier: 1
+    - claim: 'Grammar point: conditionals'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Conditional structures vary; some languages use morphological mood, others
+        use particles
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See conditional entries
+      tier: 2
+    - claim: 'Common error: *If I would have known (transfer from L1 conditional structures)'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 322
+      tier: 2
+  relative_clauses:
     interference_patterns:
-    - Persian uses ezafe construction which does not exist in English, causing transfer
-      errors related to 'ezafe construction'.
-    why_it_happens: Persian handles 'ezafe construction' differently from English.
-      Persian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Persian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Persian and English for 'ezafe
-        construction'. Show the Persian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Persian
-        handles 'ezafe construction' differently from English. Use visual aids or
-        color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Persian sentences, students translate to English, focusing
-          on correct 'ezafe construction' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Persian-style 'ezafe construction'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'ezafe
-          construction' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'ezafe construction'
-          errors.
-        duration: 15
+    - pattern: Use of ke as universal relative pronoun
+      example: 'FA ''ke'' = who/which/that -> Error: ''The man which'' -> Correct:
+        ''The man who'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
     examples:
-    - 'Wrong: Applying Persian ''ezafe construction'' structure to English. Correct:
-      Use the English structure for ''ezafe construction''.'
-    - 'Wrong: Direct translation of Persian ''ezafe construction'' pattern. Correct:
-      Follow English ''ezafe construction'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''ezafe construction'' patterns.'
+    - wrong: The man which I met is my boss.
+      correct: The man who I met is my boss.
+    - wrong: The book what I read was interesting.
+      correct: The book that I read was interesting.
+    why_it_happens: Persian uses 'ke' as a universal relative pronoun. English distinguishes
+      who/which/that.
+    teacher_tips:
+      how_to_explain: 'Teach: For people -> who/that. For things -> that/which.'
+      where_to_start: Start with 'that' as the default.
+      sequencing: 'Week 1: That for things and people. Week 2: Who for people. Week
+        3: Which for non-restrictive. Week 4: Review.'
+      exercises:
+      - name: Relative Pronoun Choice
+        type: fill-in-the-blank
+        description: 15 sentences where students choose that/which/who.
+        duration: 10
+      - name: FA Relative Translation
+        type: translation
+        description: Translate 15 Persian relative clauses into correct English.
+        duration: 15
+      - name: Relative Clause Combining
+        type: sentence-rewrite
+        description: Students combine 10 pairs of sentences using relative pronouns.
+        duration: 15
     sources:
-    - 'Karimi, S. (2005). A minimalist approach to scrambling: Evidence from Persian.
-      Mouton de Gruyter.'
-    - Ghomeshi, J. (1997). Non-projecting nouns and the ezafe construction in Persian.
-      Natural Language and Linguistic Theory, 15(4), 729-788.
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    source_count: 3
-    source_type: peer-reviewed
+    - Swan & Smith "Learner English" Ch. 10
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
     frequency: 4
     persistence: 3
+    communicative_impact: 2
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for relative clauses
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Farsi speakers, pp. 177-192'
+      tier: 1
+    - claim: 'Grammar point: relative clauses'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: 'Relative clause structure varies: pre-nominal vs post-nominal, resumptive
+        pronouns'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See relative clause entries
+      tier: 2
+    - claim: 'ELLs transfer L1 relative clause structure: resumptive pronouns, pre-nominal
+        clauses'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 199
+      tier: 2
+  reported_speech:
+    interference_patterns:
+    - pattern: No backshift of tenses
+      example: 'FA ''Goft ke ast'' (said that is) -> Error: ''He said that he is''
+        -> Correct: ''He said that he was'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+    examples:
+    - wrong: She said that she is tired.
+      correct: She said that she was tired.
+    - wrong: He told me that he will come.
+      correct: He told me that he would come.
+    why_it_happens: Persian reported speech often retains the original tense. English
+      requires backshift.
+    teacher_tips:
+      how_to_explain: 'Teach the backshift rule: present -> past, will -> would.'
+      where_to_start: Start with the basic backshift pattern.
+      sequencing: 'Week 1: Say/tell + backshift. Week 2: Pronoun changes. Week 3:
+        Modal backshift. Week 4: Review.'
+      exercises:
+      - name: Backshift Practice
+        type: sentence-rewrite
+        description: Students convert 15 direct speech sentences to reported speech.
+        duration: 15
+      - name: FA Reported Speech Translation
+        type: translation
+        description: Translate 15 Persian reported speech sentences into correct English.
+        duration: 15
+      - name: News Reporter
+        type: composition
+        description: Students write a short news article using reported speech.
+        duration: 20
+    sources:
+    - Swan & Smith "Learner English" Ch. 10
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Persian
-    notes: Affects both accuracy and naturalness. Very common in academic and descriptive
-      writing.
-  verb_aspect_no_progressive:
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for reported speech
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Farsi speakers, pp. 177-192'
+      tier: 1
+    - claim: 'Grammar point: reported speech'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Reported speech conventions vary; some languages retain original tense
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See reported speech entries
+      tier: 2
+    - claim: ELLs retain original tense in reported speech (no backshift)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 294
+      tier: 2
+  comparatives:
     interference_patterns:
-    - Persian uses ezafe construction which does not exist in English, causing transfer
-      errors related to 'verb aspect no progressive'.
-    why_it_happens: Persian handles 'verb aspect no progressive' differently from
-      English. Persian L1 speakers transfer native structural patterns to English,
-      leading to systematic errors. The error is persistent because the Persian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Persian and English for 'verb
-        aspect no progressive'. Show the Persian structure side-by-side with English.
-        Highlight the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Persian
-        handles 'verb aspect no progressive' differently from English. Use visual
-        aids or color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Persian sentences, students translate to English, focusing
-          on correct 'verb aspect no progressive' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Persian-style 'verb aspect no progressive'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'verb
-          aspect no progressive' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'verb aspect
-          no progressive' errors.
-        duration: 15
+    - pattern: Use of tar for all comparatives
+      example: 'FA ''bozorg-tar'' (big-more) -> Error: ''more big'' -> Correct: ''bigger'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
     examples:
-    - 'Wrong: ''I eat now.'' (for ongoing action) Correct: ''I am eating now.'''
+    - wrong: This car is more big than that one.
+      correct: This car is bigger than that one.
+    - wrong: She is the most tall in the class.
+      correct: She is the tallest in the class.
+    why_it_happens: Persian forms comparatives with '-tar' suffix and superlatives
+      with '-tarin'. English uses -er/-est for short adjectives.
+    teacher_tips:
+      how_to_explain: 'Teach: 1-2 syllable adjectives -> -er/-est. 3+ syllable adjectives
+        -> more/most.'
+      where_to_start: Start with -er/-est rule.
+      sequencing: 'Week 1: -er/-est with short adjectives. Week 2: More/most with
+        long adjectives. Week 3: Irregular comparatives. Week 4: Review.'
+      exercises:
+      - name: Comparative Formation
+        type: sentence-rewrite
+        description: Students rewrite 10 sentences, changing more + adj to -er.
+        duration: 10
+      - name: FA Comparative Translation
+        type: translation
+        description: Translate 15 Persian comparative sentences into correct English.
+        duration: 10
+      - name: Comparison Paragraph
+        type: composition
+        description: Students write a paragraph comparing two things.
+        duration: 15
     sources:
-    - 'Karimi, S. (2005). A minimalist approach to scrambling: Evidence from Persian.
-      Mouton de Gruyter.'
-    - Ghomeshi, J. (1997). Non-projecting nouns and the ezafe construction in Persian.
-      Natural Language and Linguistic Theory, 15(4), 729-788.
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    source_count: 3
-    source_type: peer-reviewed
+    - Swan & Smith "Learner English" Ch. 10
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
     frequency: 4
     persistence: 3
-    communicative_impact: 3
+    communicative_impact: 2
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Persian
-    notes: Moderate-high frequency. Persian mi- prefix creates both false friends
-      and overuse of progressive.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for comparatives
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Farsi speakers, pp. 177-192'
+      tier: 1
+    - claim: 'Grammar point: comparatives'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: 'Comparative formation varies: morphological vs analytic'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See comparative entries
+      tier: 2
+    - claim: Comparative formation varies by L1; explicit practice needed
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 295
+      tier: 2
+  adverbs:
+    interference_patterns:
+    - pattern: Use of adjective instead of adverb
+      example: 'FA ''sari'' = fast/fast(ly) -> Error: ''He drives very slow'' -> Correct:
+        ''He drives very slowly'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+    examples:
+    - wrong: He runs very fastly.
+      correct: He runs very fast. / He runs very quickly.
+    - wrong: She speaks English good.
+      correct: She speaks English well.
+    why_it_happens: Persian does not always distinguish morphologically between adjectives
+      and adverbs. English requires -ly for most adverbs.
+    teacher_tips:
+      how_to_explain: 'Teach: Adjective describes a noun. Adverb describes a verb.
+        Most adverbs add -ly.'
+      where_to_start: Start with the -ly rule.
+      sequencing: 'Week 1: Adjective vs adverb. Week 2: Adding -ly. Week 3: Exceptions.
+        Week 4: Review.'
+      exercises:
+      - name: Adjective or Adverb?
+        type: fill-in-the-blank
+        description: 15 sentences where students choose between adjective and adverb
+          form.
+        duration: 10
+      - name: Adverb Formation
+        type: sentence-rewrite
+        description: Students rewrite 10 sentences, changing adjectives to adverbs.
+        duration: 10
+      - name: FA Adverb Translation
+        type: translation
+        description: Translate 15 Persian sentences, choosing correct English adverb
+          form.
+        duration: 10
+    sources:
+    - Swan & Smith "Learner English" Ch. 10
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 2
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for adverbs
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Farsi speakers, pp. 177-192'
+      tier: 1
+    - claim: 'Grammar point: adverbs'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: 'Adverb placement varies: some languages place adjectives where English
+        uses adverbs'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See adverb entries
+      tier: 2
+    - claim: ELLs use adjectives where English requires adverbs (transfer from L1)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 266
+      tier: 2
+  linking_words:
+    interference_patterns:
+    - pattern: Use of amma at sentence start
+      example: 'FA ''amma'' = but/however -> Error: ''But, I think...'' -> Correct:
+        ''However, I think...'''
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+    - pattern: Use of pas for so/therefore
+      example: 'FA ''pas'' = so/therefore -> Error: ''Pas, we left'' -> Correct: ''So,
+        we left'''
+      frequency: 3
+      persistence: 2
+      communicative_impact: 1
+    examples:
+    - wrong: But, I think we should go.
+      correct: However, I think we should go.
+    - wrong: Pas, we left early.
+      correct: So, we left early.
+    why_it_happens: Persian 'amma' functions as both 'but' and 'however'. Persian
+      also uses double conjunctions.
+    teacher_tips:
+      how_to_explain: 'Teach: ''However'' for formal writing. ''But'' for informal.
+        ''Although'' and ''but'' NEVER together.'
+      where_to_start: Start with 'but' vs 'however'.
+      sequencing: 'Week 1: But vs however. Week 2: Although/but redundancy. Week 3:
+        Other linking words. Week 4: Review.'
+      exercises:
+      - name: Formal vs Informal
+        type: sentence-rewrite
+        description: Students rewrite 10 informal sentences using formal linking words.
+        duration: 10
+      - name: Double Conjunction Fix
+        type: error-correction
+        description: 10 sentences with although...but.
+        duration: 10
+      - name: Linking Word Sort
+        type: matching
+        description: Students categorize 15 linking words by function.
+        duration: 10
+    sources:
+    - Swan & Smith "Learner English" Ch. 10
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 3
+    persistence: 2
+    communicative_impact: 2
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for linking words
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Farsi speakers, pp. 177-192'
+      tier: 1
+    - claim: 'Grammar point: linking words'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Discourse connectors vary; some languages use double conjunctions
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See conjunction entries
+      tier: 2
+    - claim: ELLs use double conjunctions transferred from L1 (although...but)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 294
+      tier: 2
+  modal_verbs:
+    interference_patterns:
+    - pattern: Use of tavanestan for can/may
+      example: 'FA ''mitavanam'' = I can/I may -> Error: ''I can go?'' (informal)
+        -> Correct: ''May I go?'' (formal)'
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+    examples:
+    - wrong: I can have some water?
+      correct: May I have some water?
+    - wrong: You must to go to the doctor.
+      correct: You should go to the doctor.
+    why_it_happens: Persian 'tavanestan' covers can/could/may/might. Persian learners
+      may use 'can' for all situations.
+    teacher_tips:
+      how_to_explain: 'Teach modal hierarchy: can (ability), may (permission), could
+        (polite request), should (advice), must (obligation).'
+      where_to_start: Start with 'can' for ability.
+      sequencing: 'Week 1: Can (ability). Week 2: May (permission). Week 3: Could
+        (politeness). Week 4: Should/must.'
+      exercises:
+      - name: Modal Choice
+        type: fill-in-the-blank
+        description: 15 sentences where students choose the correct modal.
+        duration: 10
+      - name: Politeness Role-play
+        type: oral-drill
+        description: Students practice polite requests.
+        duration: 15
+      - name: Modal Error Correction
+        type: error-correction
+        description: 10 sentences with modal errors.
+        duration: 10
+    sources:
+    - Swan & Smith "Learner English" Ch. 10
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 2
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for modal verbs
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Farsi speakers, pp. 177-192'
+      tier: 1
+    - claim: 'Grammar point: modal verbs'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Modal systems vary widely; some languages have no direct equivalents
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See modal entries 77-86
+      tier: 2
+    - claim: 'Common ELL errors: *I can to go, *she might to believe (adding to after
+        modals)'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 225
+      tier: 2
   subject_verb_agreement:
     interference_patterns:
-    - Persian uses ezafe construction which does not exist in English, causing transfer
-      errors related to 'subject verb agreement'.
-    why_it_happens: Persian handles 'subject verb agreement' differently from English.
-      Persian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Persian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Persian and English for 'subject
-        verb agreement'. Show the Persian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Persian
-        handles 'subject verb agreement' differently from English. Use visual aids
-        or color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Persian sentences, students translate to English, focusing
-          on correct 'subject verb agreement' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Persian-style 'subject verb agreement'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'subject
-          verb agreement' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'subject verb
-          agreement' errors.
-        duration: 15
+    - pattern: Omission of third-person -s
+      example: 'FA ''miravad'' (he goes) -> Error: ''He go'' -> Correct: ''He goes'''
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
     examples:
-    - 'Wrong: Applying Persian ''subject verb agreement'' structure to English. Correct:
-      Use the English structure for ''subject verb agreement''.'
-    - 'Wrong: Direct translation of Persian ''subject verb agreement'' pattern. Correct:
-      Follow English ''subject verb agreement'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''subject verb agreement'' patterns.'
+    - wrong: She like chocolate.
+      correct: She likes chocolate.
+    - wrong: He go to school every day.
+      correct: He goes to school every day.
+    why_it_happens: Persian verb conjugation includes person/number marking. English
+      third-person singular -s is frequently omitted by Persian learners.
+    teacher_tips:
+      how_to_explain: Teach the 'he/she/it + verb-s' rule as non-negotiable.
+      where_to_start: Start with third-person -s in present simple.
+      sequencing: 'Week 1: Third-person -s. Week 2: Does/doesn''t. Week 3: Irregular
+        forms. Week 4: Review.'
+      exercises:
+      - name: Agreement Drill
+        type: oral-drill
+        description: Students describe a classmate daily routine using third-person
+          -s.
+        duration: 10
+      - name: Subject-Verb Match
+        type: fill-in-the-blank
+        description: 20 sentences where students choose the correct verb form.
+        duration: 10
+      - name: Error Correction
+        type: error-correction
+        description: 15 sentences with agreement errors.
+        duration: 10
+      - name: Daily Routine Writing
+        type: composition
+        description: Students write about another person daily routine.
+        duration: 15
     sources:
-    - Ghomeshi, J. (1997). Non-projecting nouns and the ezafe construction in Persian.
-      Natural Language and Linguistic Theory, 15(4), 729-788.
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Keshavarz, M. (2012). Transfer of L1 collocations in Persian-English. Iranian
-      Journal of Applied Linguistics, 15(1), 1-24.
-    source_count: 3
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
+    - Swan & Smith "Learner English" Ch. 10
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 5
+    persistence: 5
+    communicative_impact: 4
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Persian
-    notes: Structural mismatch between non-conjugating and conjugating system. Particularly
-      noticeable in spoken English.
-  negation_na_neveshte:
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for subject verb agreement
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Farsi speakers, pp. 177-192'
+      tier: 1
+    - claim: 'Grammar point: subject verb agreement'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Topic-prominent L1 learners find subject-verb agreement more difficult
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: p. 61
+      tier: 2
+    - claim: SVA is difficult for learners whose L1 has no subject-verb agreement
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See SVA entries
+      tier: 2
+    - claim: SVA errors persist because the correct and incorrect forms often sound
+        similar
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 314
+      tier: 2
+  gerund_infinitive:
     interference_patterns:
-    - Persian uses ezafe construction which does not exist in English, causing transfer
-      errors related to 'negation na neveshte'.
-    why_it_happens: Persian handles 'negation na neveshte' differently from English.
-      Persian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Persian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Persian and English for 'negation
-        na neveshte'. Show the Persian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Persian
-        handles 'negation na neveshte' differently from English. Use visual aids or
-        color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Persian sentences, students translate to English, focusing
-          on correct 'negation na neveshte' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Persian-style 'negation na neveshte'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'negation
-          na neveshte' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'negation na
-          neveshte' errors.
-        duration: 15
+    - pattern: Use of infinitive after prepositions
+      example: 'FA ''qabl az raftan'' (before going) -> Error: ''Before to go'' ->
+        Correct: ''Before going'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
     examples:
-    - 'Wrong: ''I not like coffee na neveshte.'' Correct: ''I do not like coffee na
-      neveshte.'''
-    - 'Wrong: ''He not came.'' Correct: ''He did not come.'''
-    - 'Wrong: ''I eat never.'' Correct: ''I never eat.'''
+    - wrong: Before to leave, say goodbye.
+      correct: Before leaving, say goodbye.
+    - wrong: I want going to the store.
+      correct: I want to go to the store.
+    why_it_happens: Persian uses the infinitive after prepositions. English uses gerund
+      after prepositions.
+    teacher_tips:
+      how_to_explain: 'Teach: After prepositions (before, after, without, by, for)
+        -> always gerund (-ing).'
+      where_to_start: Start with preposition + gerund.
+      sequencing: 'Week 1: Preposition + gerund. Week 2: Verb + infinitive. Week 3:
+        Verb + gerund. Week 4: Review.'
+      exercises:
+      - name: Preposition + Gerund
+        type: fill-in-the-blank
+        description: 15 sentences with prepositions followed by blank.
+        duration: 10
+      - name: FA Gerund Translation
+        type: translation
+        description: Translate 15 Persian preposition + infinitive sentences into
+          English gerund.
+        duration: 15
+      - name: Verb Pattern Sort
+        type: matching
+        description: Students sort 20 verbs into gerund, infinitive, or both columns.
+        duration: 10
     sources:
-    - Ghomeshi, J. (1997). Non-projecting nouns and the ezafe construction in Persian.
-      Natural Language and Linguistic Theory, 15(4), 729-788.
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Keshavarz, M. (2012). Transfer of L1 collocations in Persian-English. Iranian
-      Journal of Applied Linguistics, 15(1), 1-24.
-    source_count: 3
-    source_type: peer-reviewed
+    - Swan & Smith "Learner English" Ch. 10
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Persian
-    notes: High frequency error. Persian na- is cognitively persistent and learners
-      frequently omit do-support.
-  question_formation_wh_in_situ:
-    interference_patterns:
-    - Persian uses ezafe construction which does not exist in English, causing transfer
-      errors related to 'question formation wh in situ'.
-    why_it_happens: Persian handles 'question formation wh in situ' differently from
-      English. Persian L1 speakers transfer native structural patterns to English,
-      leading to systematic errors. The error is persistent because the Persian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Persian and English for 'question
-        formation wh in situ'. Show the Persian structure side-by-side with English.
-        Highlight the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Persian
-        handles 'question formation wh in situ' differently from English. Use visual
-        aids or color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Persian sentences, students translate to English, focusing
-          on correct 'question formation wh in situ' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Persian-style 'question formation wh
-          in situ' errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'question
-          formation wh in situ' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'question formation
-          wh in situ' errors.
-        duration: 15
-    examples:
-    - 'Wrong: ''Like you coffee?'' Correct: ''Do you like coffee?'''
-    - 'Wrong: ''Where live you?'' Correct: ''Where do you live?'''
-    sources:
-    - 'Karimi, S. (2005). A minimalist approach to scrambling: Evidence from Persian.
-      Mouton de Gruyter.'
-    - Ghomeshi, J. (1997). Non-projecting nouns and the ezafe construction in Persian.
-      Natural Language and Linguistic Theory, 15(4), 729-788.
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    source_count: 3
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Persian
-    notes: Very noticeable in spoken English. Learners often self-correct with practice.
-  preposition_transfer:
-    interference_patterns:
-    - Persian uses ezafe construction which does not exist in English, causing transfer
-      errors related to 'preposition transfer'.
-    why_it_happens: Persian handles 'preposition transfer' differently from English.
-      Persian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Persian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Persian and English for 'preposition
-        transfer'. Show the Persian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Persian
-        handles 'preposition transfer' differently from English. Use visual aids or
-        color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Persian sentences, students translate to English, focusing
-          on correct 'preposition transfer' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Persian-style 'preposition transfer'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'preposition
-          transfer' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'preposition
-          transfer' errors.
-        duration: 15
-    examples:
-    - 'Wrong: ''I think to you.'' Correct: ''I think of you.'''
-    - 'Wrong: ''I go at Paris.'' Correct: ''I go to Paris.'''
-    sources:
-    - 'Karimi, S. (2005). A minimalist approach to scrambling: Evidence from Persian.
-      Mouton de Gruyter.'
-    - Ghomeshi, J. (1997). Non-projecting nouns and the ezafe construction in Persian.
-      Natural Language and Linguistic Theory, 15(4), 729-788.
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    source_count: 3
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Persian
-    notes: Persistent across proficiency levels. Requires memorization of fixed collocations.
-  relative_clause_ke:
-    interference_patterns:
-    - Persian uses ezafe construction which does not exist in English, causing transfer
-      errors related to 'relative clause ke'.
-    why_it_happens: Persian handles 'relative clause ke' differently from English.
-      Persian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Persian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Persian and English for 'relative
-        clause ke'. Show the Persian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Persian
-        handles 'relative clause ke' differently from English. Use visual aids or
-        color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Persian sentences, students translate to English, focusing
-          on correct 'relative clause ke' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Persian-style 'relative clause ke'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'relative
-          clause ke' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'relative clause
-          ke' errors.
-        duration: 15
-    examples:
-    - 'Wrong: ''The book what I read.'' Correct: ''The book that I read.'''
-    - 'Wrong: ''The man which speaks.'' Correct: ''The man who speaks.'''
-    sources:
-    - 'Karimi, S. (2005). A minimalist approach to scrambling: Evidence from Persian.
-      Mouton de Gruyter.'
-    - Ghomeshi, J. (1997). Non-projecting nouns and the ezafe construction in Persian.
-      Natural Language and Linguistic Theory, 15(4), 729-788.
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    source_count: 3
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Persian
-    notes: Common in academic writing. Resumptive pronoun errors are very noticeable.
-  possession_ezafe_vs_saxon:
-    interference_patterns:
-    - Persian uses ezafe construction which does not exist in English, causing transfer
-      errors related to 'possession ezafe vs saxon'.
-    why_it_happens: Persian handles 'possession ezafe vs saxon' differently from English.
-      Persian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Persian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Persian and English for 'possession
-        ezafe vs saxon'. Show the Persian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Persian
-        handles 'possession ezafe vs saxon' differently from English. Use visual aids
-        or color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Persian sentences, students translate to English, focusing
-          on correct 'possession ezafe vs saxon' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Persian-style 'possession ezafe vs
-          saxon' errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'possession
-          ezafe vs saxon' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'possession ezafe
-          vs saxon' errors.
-        duration: 15
-    examples:
-    - 'Wrong: Applying Persian ''possession ezafe vs saxon'' structure to English.
-      Correct: Use the English structure for ''possession ezafe vs saxon''.'
-    - 'Wrong: Direct translation of Persian ''possession ezafe vs saxon'' pattern.
-      Correct: Follow English ''possession ezafe vs saxon'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''possession ezafe vs saxon'' patterns.'
-    sources:
-    - 'Karimi, S. (2005). A minimalist approach to scrambling: Evidence from Persian.
-      Mouton de Gruyter.'
-    - Ghomeshi, J. (1997). Non-projecting nouns and the ezafe construction in Persian.
-      Natural Language and Linguistic Theory, 15(4), 729-788.
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    source_count: 3
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Persian
-    notes: Ezafe is a fundamental feature of Persian grammar that requires conceptual
-      shift for English.
-  modal_verbs_bayad_tavajjoh:
-    interference_patterns:
-    - Persian uses ezafe construction which does not exist in English, causing transfer
-      errors related to 'modal verbs bayad tavajjoh'.
-    why_it_happens: Persian handles 'modal verbs bayad tavajjoh' differently from
-      English. Persian L1 speakers transfer native structural patterns to English,
-      leading to systematic errors. The error is persistent because the Persian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Persian and English for 'modal
-        verbs bayad tavajjoh'. Show the Persian structure side-by-side with English.
-        Highlight the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Persian
-        handles 'modal verbs bayad tavajjoh' differently from English. Use visual
-        aids or color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Persian sentences, students translate to English, focusing
-          on correct 'modal verbs bayad tavajjoh' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Persian-style 'modal verbs bayad tavajjoh'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'modal
-          verbs bayad tavajjoh' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'modal verbs
-          bayad tavajjoh' errors.
-        duration: 15
-    examples:
-    - 'Wrong: ''I can to go.'' Correct: ''I can go.'''
-    - 'Wrong: ''I must to go.'' Correct: ''I must go.'''
-    sources:
-    - 'Karimi, S. (2005). A minimalist approach to scrambling: Evidence from Persian.
-      Mouton de Gruyter.'
-    - Ghomeshi, J. (1997). Non-projecting nouns and the ezafe construction in Persian.
-      Natural Language and Linguistic Theory, 15(4), 729-788.
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    source_count: 3
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Persian
-    notes: Modals are a known difficulty for Persian learners. The bayad-to confusion
-      is widespread.
-  passive_voice_construction:
-    interference_patterns:
-    - Persian uses ezafe construction which does not exist in English, causing transfer
-      errors related to 'passive voice construction'.
-    why_it_happens: Persian handles 'passive voice construction' differently from
-      English. Persian L1 speakers transfer native structural patterns to English,
-      leading to systematic errors. The error is persistent because the Persian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Persian and English for 'passive
-        voice construction'. Show the Persian structure side-by-side with English.
-        Highlight the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Persian
-        handles 'passive voice construction' differently from English. Use visual
-        aids or color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Persian sentences, students translate to English, focusing
-          on correct 'passive voice construction' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Persian-style 'passive voice construction'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'passive
-          voice construction' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'passive voice
-          construction' errors.
-        duration: 15
-    examples:
-    - 'Wrong: ''The letter was send.'' Correct: ''The letter was sent.'''
-    - 'Wrong: ''The book has wrote.'' Correct: ''The book has been written.'''
-    sources:
-    - 'Karimi, S. (2005). A minimalist approach to scrambling: Evidence from Persian.
-      Mouton de Gruyter.'
-    - Ghomeshi, J. (1997). Non-projecting nouns and the ezafe construction in Persian.
-      Natural Language and Linguistic Theory, 15(4), 729-788.
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    source_count: 3
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Persian
-    notes: More noticeable in academic writing. Persian formal register heavily uses
-      passive constructions.
-  demonstrative_in_aa:
-    interference_patterns:
-    - Persian uses ezafe construction which does not exist in English, causing transfer
-      errors related to 'demonstrative in aa'.
-    why_it_happens: Persian handles 'demonstrative in aa' differently from English.
-      Persian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Persian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Persian and English for 'demonstrative
-        in aa'. Show the Persian structure side-by-side with English. Highlight the
-        specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Persian
-        handles 'demonstrative in aa' differently from English. Use visual aids or
-        color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Persian sentences, students translate to English, focusing
-          on correct 'demonstrative in aa' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Persian-style 'demonstrative in aa'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'demonstrative
-          in aa' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'demonstrative
-          in aa' errors.
-        duration: 15
-    examples:
-    - 'Wrong: Applying Persian ''demonstrative in aa'' structure to English. Correct:
-      Use the English structure for ''demonstrative in aa''.'
-    - 'Wrong: Direct translation of Persian ''demonstrative in aa'' pattern. Correct:
-      Follow English ''demonstrative in aa'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''demonstrative in aa'' patterns.'
-    sources:
-    - Ghomeshi, J. (1997). Non-projecting nouns and the ezafe construction in Persian.
-      Natural Language and Linguistic Theory, 15(4), 729-788.
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Keshavarz, M. (2012). Transfer of L1 collocations in Persian-English. Iranian
-      Journal of Applied Linguistics, 15(1), 1-24.
-    source_count: 3
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Persian
-    notes: Lower impact than other areas. Persian learners generally acquire demonstrative
-      use quickly.
-  quantifiers_kolle_tamaam:
-    interference_patterns:
-    - Persian uses ezafe construction which does not exist in English, causing transfer
-      errors related to 'quantifiers kolle tamaam'.
-    why_it_happens: Persian handles 'quantifiers kolle tamaam' differently from English.
-      Persian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Persian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Persian and English for 'quantifiers
-        kolle tamaam'. Show the Persian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Persian
-        handles 'quantifiers kolle tamaam' differently from English. Use visual aids
-        or color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Persian sentences, students translate to English, focusing
-          on correct 'quantifiers kolle tamaam' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Persian-style 'quantifiers kolle tamaam'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'quantifiers
-          kolle tamaam' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'quantifiers
-          kolle tamaam' errors.
-        duration: 15
-    examples:
-    - 'Wrong: ''If I would have money.'' Correct: ''If I had money.'''
-    - 'Wrong: ''If I will have time.'' Correct: ''If I have time.'''
-    sources:
-    - 'Karimi, S. (2005). A minimalist approach to scrambling: Evidence from Persian.
-      Mouton de Gruyter.'
-    - Ghomeshi, J. (1997). Non-projecting nouns and the ezafe construction in Persian.
-      Natural Language and Linguistic Theory, 15(4), 729-788.
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    source_count: 3
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Persian
-    notes: Moderate frequency. Errors are usually comprehensible but mark non-native
-      production.
-  conditional_mood:
-    interference_patterns:
-    - Persian uses ezafe construction which does not exist in English, causing transfer
-      errors related to 'conditional mood'.
-    why_it_happens: Persian handles 'conditional mood' differently from English. Persian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Persian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Persian and English for 'conditional
-        mood'. Show the Persian structure side-by-side with English. Highlight the
-        specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Persian
-        handles 'conditional mood' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Persian sentences, students translate to English, focusing
-          on correct 'conditional mood' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Persian-style 'conditional mood' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'conditional
-          mood' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'conditional
-          mood' errors.
-        duration: 15
-    examples:
-    - 'Wrong: ''If I would have money.'' Correct: ''If I had money.'''
-    - 'Wrong: ''If I will have time.'' Correct: ''If I have time.'''
-    sources:
-    - 'Karimi, S. (2005). A minimalist approach to scrambling: Evidence from Persian.
-      Mouton de Gruyter.'
-    - Ghomeshi, J. (1997). Non-projecting nouns and the ezafe construction in Persian.
-      Natural Language and Linguistic Theory, 15(4), 729-788.
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    source_count: 3
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Persian
-    notes: Important for academic writing. Persian subjunctive mood creates systematic
-      errors in unreal conditional forms.
-  verb_tense_mapping:
-    interference_patterns:
-    - Persian uses ezafe construction which does not exist in English, causing transfer
-      errors related to 'verb tense mapping'.
-    why_it_happens: Persian handles 'verb tense mapping' differently from English.
-      Persian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Persian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Persian and English for 'verb
-        tense mapping'. Show the Persian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Persian
-        handles 'verb tense mapping' differently from English. Use visual aids or
-        color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Persian sentences, students translate to English, focusing
-          on correct 'verb tense mapping' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Persian-style 'verb tense mapping'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'verb
-          tense mapping' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'verb tense mapping'
-          errors.
-        duration: 15
-    examples:
-    - 'Wrong: ''I have eaten yesterday.'' Correct: ''I ate yesterday.'''
-    - 'Wrong: ''I live here since 5 years.'' Correct: ''I have lived here for 5 years.'''
-    - 'Wrong: ''When I arrived, he had left.'' (wrong sequence) Correct: ''When I
-      arrived, he left.'''
-    sources:
-    - 'Karimi, S. (2005). A minimalist approach to scrambling: Evidence from Persian.
-      Mouton de Gruyter.'
-    - Ghomeshi, J. (1997). Non-projecting nouns and the ezafe construction in Persian.
-      Natural Language and Linguistic Theory, 15(4), 729-788.
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    source_count: 3
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Persian
-    notes: Core tense mapping difficulty. Affects both accuracy and meaning in narrative
-      and academic writing.
-  phonological_transfer:
-    interference_patterns:
-    - Persian uses ezafe construction which does not exist in English, causing transfer
-      errors related to 'phonological transfer'.
-    why_it_happens: Persian handles 'phonological transfer' differently from English.
-      Persian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Persian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Persian and English for 'phonological
-        transfer'. Show the Persian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Persian
-        handles 'phonological transfer' differently from English. Use visual aids
-        or color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Persian sentences, students translate to English, focusing
-          on correct 'phonological transfer' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Persian-style 'phonological transfer'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'phonological
-          transfer' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'phonological
-          transfer' errors.
-        duration: 15
-    examples:
-    - 'Wrong: Pronouncing ''phonological transfer'' with Persian phonology. Correct:
-      English pronunciation.'
-    sources:
-    - Ghomeshi, J. (1997). Non-projecting nouns and the ezafe construction in Persian.
-      Natural Language and Linguistic Theory, 15(4), 729-788.
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Keshavarz, M. (2012). Transfer of L1 collocations in Persian-English. Iranian
-      Journal of Applied Linguistics, 15(1), 1-24.
-    source_count: 3
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Persian
-    notes: Pronunciation transfer is the most persistent error type. Many phonological
-      features persist even at advanced proficiency levels.
-  reduplication_informal:
-    interference_patterns:
-    - Persian uses ezafe construction which does not exist in English, causing transfer
-      errors related to 'reduplication informal'.
-    why_it_happens: Persian handles 'reduplication informal' differently from English.
-      Persian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Persian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Persian and English for 'reduplication
-        informal'. Show the Persian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Persian
-        handles 'reduplication informal' differently from English. Use visual aids
-        or color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Persian sentences, students translate to English, focusing
-          on correct 'reduplication informal' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Persian-style 'reduplication informal'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'reduplication
-          informal' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'reduplication
-          informal' errors.
-        duration: 15
-    examples:
-    - 'Wrong: Applying Persian ''reduplication informal'' structure to English. Correct:
-      Use the English structure for ''reduplication informal''.'
-    - 'Wrong: Direct translation of Persian ''reduplication informal'' pattern. Correct:
-      Follow English ''reduplication informal'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''reduplication informal'' patterns.'
-    sources:
-    - Ghomeshi, J. (1997). Non-projecting nouns and the ezafe construction in Persian.
-      Natural Language and Linguistic Theory, 15(4), 729-788.
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Keshavarz, M. (2012). Transfer of L1 collocations in Persian-English. Iranian
-      Journal of Applied Linguistics, 15(1), 1-24.
-    source_count: 3
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Persian
-    notes: Low frequency but highly distinctive when produced. Common among lower-level
-      learners.
-  connector_subordination:
-    interference_patterns:
-    - Persian uses ezafe construction which does not exist in English, causing transfer
-      errors related to 'connector subordination'.
-    why_it_happens: Persian handles 'connector subordination' differently from English.
-      Persian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Persian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Persian and English for 'connector
-        subordination'. Show the Persian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Persian
-        handles 'connector subordination' differently from English. Use visual aids
-        or color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Persian sentences, students translate to English, focusing
-          on correct 'connector subordination' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Persian-style 'connector subordination'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'connector
-          subordination' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'connector subordination'
-          errors.
-        duration: 15
-    examples:
-    - 'Wrong: ''Although it rains, but I go.'' Correct: ''Although it rains, I go.'''
-    sources:
-    - Ghomeshi, J. (1997). Non-projecting nouns and the ezafe construction in Persian.
-      Natural Language and Linguistic Theory, 15(4), 729-788.
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Keshavarz, M. (2012). Transfer of L1 collocations in Persian-English. Iranian
-      Journal of Applied Linguistics, 15(1), 1-24.
-    source_count: 3
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Persian
-    notes: Affects academic and formal writing. Persian ke overuse is common in intermediate
-      writing.
-  tag_questions:
-    interference_patterns:
-    - Persian uses ezafe construction which does not exist in English, causing transfer
-      errors related to 'tag questions'.
-    why_it_happens: Persian handles 'tag questions' differently from English. Persian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Persian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Persian and English for 'tag
-        questions'. Show the Persian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Persian
-        handles 'tag questions' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Persian sentences, students translate to English, focusing
-          on correct 'tag questions' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Persian-style 'tag questions' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'tag
-          questions' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'tag questions'
-          errors.
-        duration: 15
-    examples:
-    - 'Wrong: ''Like you coffee?'' Correct: ''Do you like coffee?'''
-    - 'Wrong: ''Where live you?'' Correct: ''Where do you live?'''
-    sources:
-    - Ghomeshi, J. (1997). Non-projecting nouns and the ezafe construction in Persian.
-      Natural Language and Linguistic Theory, 15(4), 729-788.
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Keshavarz, M. (2012). Transfer of L1 collocations in Persian-English. Iranian
-      Journal of Applied Linguistics, 15(1), 1-24.
-    source_count: 3
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Persian
-    notes: Moderate interference. Persian learners often use intonation alone instead
-      of tag questions.
-  countable_uncountable:
-    interference_patterns:
-    - Persian uses ezafe construction which does not exist in English, causing transfer
-      errors related to 'countable uncountable'.
-    why_it_happens: Persian handles 'countable uncountable' differently from English.
-      Persian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Persian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Persian and English for 'countable
-        uncountable'. Show the Persian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Persian
-        handles 'countable uncountable' differently from English. Use visual aids
-        or color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Persian sentences, students translate to English, focusing
-          on correct 'countable uncountable' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Persian-style 'countable uncountable'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'countable
-          uncountable' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'countable uncountable'
-          errors.
-        duration: 15
-    examples:
-    - 'Wrong: ''I have many informations.'' Correct: ''I have a lot of information.'''
-    - 'Wrong: ''He gave me good advices.'' Correct: ''He gave me good advice.'''
-    sources:
-    - Ghomeshi, J. (1997). Non-projecting nouns and the ezafe construction in Persian.
-      Natural Language and Linguistic Theory, 15(4), 729-788.
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Keshavarz, M. (2012). Transfer of L1 collocations in Persian-English. Iranian
-      Journal of Applied Linguistics, 15(1), 1-24.
-    source_count: 3
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Persian
-    notes: Moderate frequency. Important for academic writing where uncountable noun
-      errors are common.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for gerund infinitive
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Farsi speakers, pp. 177-192'
+      tier: 1
+    - claim: 'Grammar point: gerund infinitive'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Gerund/infinitive distribution varies across languages
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See gerund/infinitive entries
+      tier: 2
+    - claim: 'ELLs experience interference with gerund/infinitive: *I can to read
+        it, *I can reading it'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 206
+      tier: 2

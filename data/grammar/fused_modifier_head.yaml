@@ -1,139 +1,194 @@
 grammar_point: fused_modifier_head
-title: "Fused Modifier-Head Constructions (the rich, the poor, the accused)"
-description: "Noun phrases where a modifier (typically an adjective) fuses with an implied head noun, functioning as a noun phrase without an explicit noun."
+title: Fused Modifier-Head Constructions (the rich, the poor, the accused)
+description: Noun phrases where a modifier (typically an adjective) fuses with an
+  implied head noun, functioning as a noun phrase without an explicit noun.
 level: C2
-
 meaning:
-  core_meaning: "In English, certain adjectives can function as noun phrases without an explicit head noun when preceded by 'the'. The adjective 'fuses' with the implied head (usually 'people' or 'thing/person'), creating a fused modifier-head construction. This is distinct from nominalised adjectives (e.g., 'the beautiful' = beauty as an abstract concept) — fused modifier-head constructions refer to groups of people or specific individuals."
-  timeline: "Timeless or context-dependent; these constructions do not carry tense themselves."
-  contrast: "Full noun phrase: 'The rich people in this city...' / Fused modifier-head: 'The rich in this city...' — The fused form is more concise and formal."
+  core_meaning: In English, certain adjectives can function as noun phrases without
+    an explicit head noun when preceded by 'the'. The adjective 'fuses' with the implied
+    head (usually 'people' or 'thing/person'), creating a fused modifier-head construction.
+    This is distinct from nominalised adjectives (e.g., 'the beautiful' = beauty as
+    an abstract concept) — fused modifier-head constructions refer to groups of people
+    or specific individuals.
+  timeline: Timeless or context-dependent; these constructions do not carry tense
+    themselves.
+  contrast: 'Full noun phrase: ''The rich people in this city...'' / Fused modifier-head:
+    ''The rich in this city...'' — The fused form is more concise and formal.'
   ccqs:
-    - question: "Does 'the poor' refer to poor people in general?"
-      answer: "Yes — 'the' + adjective can function as a plural noun phrase meaning 'people who are [adjective]'."
-    - question: "Can any adjective be used this way?"
-      answer: "No — mainly adjectives describing social groups, nationalities, or conditions: the rich, the poor, the elderly, the unemployed, the French, the accused."
-    - question: "Is 'the accused' singular or plural?"
-      answer: "It can be either — 'The accused was...' (one person) or 'The accused were...' (multiple people)."
+  - question: Does 'the poor' refer to poor people in general?
+    answer: Yes — 'the' + adjective can function as a plural noun phrase meaning 'people
+      who are [adjective]'.
+  - question: Can any adjective be used this way?
+    answer: 'No — mainly adjectives describing social groups, nationalities, or conditions:
+      the rich, the poor, the elderly, the unemployed, the French, the accused.'
+  - question: Is 'the accused' singular or plural?
+    answer: It can be either — 'The accused was...' (one person) or 'The accused were...'
+      (multiple people).
   example_generator:
-    contexts: ["legal language", "social commentary", "news reporting", "academic writing", "political discourse"]
-    cultural_notes: ["Fused modifier-head constructions are common in formal English, especially in legal, political, and sociological discourse. They can sound dehumanising if applied carelessly (e.g., 'the disabled' vs 'disabled people')."]
+    contexts:
+    - legal language
+    - social commentary
+    - news reporting
+    - academic writing
+    - political discourse
+    cultural_notes:
+    - Fused modifier-head constructions are common in formal English, especially in
+      legal, political, and sociological discourse. They can sound dehumanising if
+      applied carelessly (e.g., 'the disabled' vs 'disabled people').
     min_examples: 5
-
 form:
   affirmative:
-    structure: "the + adjective (functioning as a plural or collective noun phrase) / the + past participle (functioning as a singular or plural noun phrase)"
+    structure: the + adjective (functioning as a plural or collective noun phrase)
+      / the + past participle (functioning as a singular or plural noun phrase)
     example_generator:
-      contexts: ["social commentary", "legal language", "news reporting", "political discourse"]
+      contexts:
+      - social commentary
+      - legal language
+      - news reporting
+      - political discourse
       min_examples: 4
   negative:
-    structure: "not all + the + adjective / the + adjective + are not + complement"
+    structure: not all + the + adjective / the + adjective + are not + complement
     example_generator:
-      contexts: ["nuanced argumentation", "qualifying generalisations"]
+      contexts:
+      - nuanced argumentation
+      - qualifying generalisations
       min_examples: 3
   questions:
-    structure: "Do/Does + the + adjective + verb...? / Are + the + adjective + complement?"
+    structure: Do/Does + the + adjective + verb...? / Are + the + adjective + complement?
     example_generator:
-      contexts: ["survey questions", "sociological inquiry", "journalistic investigation"]
+      contexts:
+      - survey questions
+      - sociological inquiry
+      - journalistic investigation
       min_examples: 3
-
 sub_rules:
-  - rule: "Adjectives describing social/economic groups"
-    type: "grammatical"
-    examples:
-      - "The rich have always had more political influence than the poor."
-      - "The elderly often struggle with new technology."
-      - "The unemployed are finding it increasingly difficult to get work."
-      - "The homeless need more than just shelter — they need support."
-      - "The disabled have fought for equal rights for decades."
-  - rule: "Adjectives describing conditions or states"
-    type: "grammatical"
-    examples:
-      - "The injured were taken to the nearest hospital."
-      - "The deceased was survived by his wife and two children."
-      - "The living must remember the dead."
-      - "The wounded outnumbered the dead three to one."
-  - rule: "Nationality adjectives (ending in -ch, -sh, -ss, -ese)"
-    type: "grammatical"
-    examples:
-      - "The French are known for their love of cuisine."
-      - "The Japanese have a long tradition of craftsmanship."
-      - "The English are often reserved with strangers."
-      - "The Chinese represent the largest diaspora in the world."
-  - rule: "Legal and formal uses (the accused, the undersigned, the aforementioned)"
-    type: "grammatical"
-    examples:
-      - "The accused pleaded not guilty to all charges."
-      - "The undersigned hereby agrees to the terms set out below."
-      - "The aforementioned points will be addressed in the next meeting."
-      - "The convicted were sentenced to varying terms of imprisonment."
-  - rule: "Abstract nominalisation (different from fused modifier-head)"
-    type: "semantic"
-    examples:
-      - "The beautiful and the sublime are central to aesthetic theory. (abstract concept)"
-      - "She was drawn to the mysterious and the unknown. (abstract quality)"
-      - "The difference between the good and the evil is not always clear. (abstract)"
-
+- rule: Adjectives describing social/economic groups
+  type: grammatical
+  examples:
+  - The rich have always had more political influence than the poor.
+  - The elderly often struggle with new technology.
+  - The unemployed are finding it increasingly difficult to get work.
+  - The homeless need more than just shelter — they need support.
+  - The disabled have fought for equal rights for decades.
+- rule: Adjectives describing conditions or states
+  type: grammatical
+  examples:
+  - The injured were taken to the nearest hospital.
+  - The deceased was survived by his wife and two children.
+  - The living must remember the dead.
+  - The wounded outnumbered the dead three to one.
+- rule: Nationality adjectives (ending in -ch, -sh, -ss, -ese)
+  type: grammatical
+  examples:
+  - The French are known for their love of cuisine.
+  - The Japanese have a long tradition of craftsmanship.
+  - The English are often reserved with strangers.
+  - The Chinese represent the largest diaspora in the world.
+- rule: Legal and formal uses (the accused, the undersigned, the aforementioned)
+  type: grammatical
+  examples:
+  - The accused pleaded not guilty to all charges.
+  - The undersigned hereby agrees to the terms set out below.
+  - The aforementioned points will be addressed in the next meeting.
+  - The convicted were sentenced to varying terms of imprisonment.
+- rule: Abstract nominalisation (different from fused modifier-head)
+  type: semantic
+  examples:
+  - The beautiful and the sublime are central to aesthetic theory. (abstract concept)
+  - She was drawn to the mysterious and the unknown. (abstract quality)
+  - The difference between the good and the evil is not always clear. (abstract)
 use:
-  - context: "Social and political commentary"
-    description: "Fused modifier-head constructions are widely used in discussions of social inequality, policy, and justice."
-    examples:
-      - "The gap between the rich and the poor continues to widen."
-      - "The government has a duty to protect the vulnerable."
-      - "The marginalised deserve a voice in the political process."
-  - context: "Legal language"
-    description: "Legal discourse relies heavily on fused constructions for precision and formality."
-    examples:
-      - "The accused has the right to remain silent."
-      - "The plaintiff must prove the case beyond reasonable doubt."
-      - "The deceased's will was contested by the family."
-  - context: "News reporting"
-    description: "Journalists use these constructions for concise reference to groups affected by events."
-    examples:
-      - "The missing have been found alive and well."
-      - "The evacuated were housed in temporary shelters."
-      - "The rescued described their ordeal to reporters."
-  - context: "Academic writing"
-    description: "Sociology, economics, and political science use these constructions for analytical precision."
-    examples:
-      - "The data suggest that the affluent are becoming more politically active."
-      - "The disadvantaged face systemic barriers to education."
-      - "The employed and the self-employed were surveyed separately."
-  - context: "Literary and philosophical writing"
-    description: "Writers use fused constructions for elevated, universal statements."
-    examples:
-      - "The proud shall be humbled, and the meek shall inherit the earth."
-      - "Only the brave deserve the fair."
-      - "The wise learn from the mistakes of others."
-
+- context: Social and political commentary
+  description: Fused modifier-head constructions are widely used in discussions of
+    social inequality, policy, and justice.
+  examples:
+  - The gap between the rich and the poor continues to widen.
+  - The government has a duty to protect the vulnerable.
+  - The marginalised deserve a voice in the political process.
+- context: Legal language
+  description: Legal discourse relies heavily on fused constructions for precision
+    and formality.
+  examples:
+  - The accused has the right to remain silent.
+  - The plaintiff must prove the case beyond reasonable doubt.
+  - The deceased's will was contested by the family.
+- context: News reporting
+  description: Journalists use these constructions for concise reference to groups
+    affected by events.
+  examples:
+  - The missing have been found alive and well.
+  - The evacuated were housed in temporary shelters.
+  - The rescued described their ordeal to reporters.
+- context: Academic writing
+  description: Sociology, economics, and political science use these constructions
+    for analytical precision.
+  examples:
+  - The data suggest that the affluent are becoming more politically active.
+  - The disadvantaged face systemic barriers to education.
+  - The employed and the self-employed were surveyed separately.
+- context: Literary and philosophical writing
+  description: Writers use fused constructions for elevated, universal statements.
+  examples:
+  - The proud shall be humbled, and the meek shall inherit the earth.
+  - Only the brave deserve the fair.
+  - The wise learn from the mistakes of others.
 phonetics:
-  - note: "The definite article 'the' in fused constructions is always fully pronounced (not reduced to /ðə/) because it carries emphasis."
-    example_generator:
-      - contexts: ["pronunciation of 'the' in fused constructions"]
-    l1_issue: "Speakers whose L1 lacks articles (e.g., Russian, Japanese, Korean) may omit 'the' entirely, producing '*Rich have more...' instead of 'The rich have more...'."
-  - note: "Plural fused constructions take plural verb agreement: 'The rich ARE...', 'The French HAVE...' — but singular legal terms take singular agreement: 'The accused WAS...'"
-    example_generator:
-      - contexts: ["subject-verb agreement with fused constructions"]
-    l1_issue: "Learners may overgeneralise singular agreement, especially with 'the accused' and 'the deceased'."
-
+- note: The definite article 'the' in fused constructions is always fully pronounced
+    (not reduced to /ðə/) because it carries emphasis.
+  example_generator:
+  - contexts:
+    - pronunciation of 'the' in fused constructions
+  l1_issue: Speakers whose L1 lacks articles (e.g., Russian, Japanese, Korean) may
+    omit 'the' entirely, producing '*Rich have more...' instead of 'The rich have
+    more...'.
+- note: 'Plural fused constructions take plural verb agreement: ''The rich ARE...'',
+    ''The French HAVE...'' — but singular legal terms take singular agreement: ''The
+    accused WAS...'''
+  example_generator:
+  - contexts:
+    - subject-verb agreement with fused constructions
+  l1_issue: Learners may overgeneralise singular agreement, especially with 'the accused'
+    and 'the deceased'.
 teaching:
-  methodology: "Guided discovery"
+  methodology: Guided discovery
   tips:
-    - "Start with the most common examples: the rich, the poor, the elderly, the unemployed."
-    - "Contrast fused modifier-head with full noun phrases: 'the rich' vs 'rich people'."
-    - "Highlight the social sensitivity of these terms — some prefer 'disabled people' over 'the disabled'."
-    - "Teach nationality adjectives separately, as they follow a different pattern (the French, the Japanese)."
-    - "Introduce legal uses (the accused, the undersigned) at higher levels, as they are register-specific."
-    - "Use authentic texts (news articles, legal documents, sociological studies) to show these constructions in context."
+  - 'Start with the most common examples: the rich, the poor, the elderly, the unemployed.'
+  - 'Contrast fused modifier-head with full noun phrases: ''the rich'' vs ''rich people''.'
+  - Highlight the social sensitivity of these terms — some prefer 'disabled people'
+    over 'the disabled'.
+  - Teach nationality adjectives separately, as they follow a different pattern (the
+    French, the Japanese).
+  - Introduce legal uses (the accused, the undersigned) at higher levels, as they
+    are register-specific.
+  - Use authentic texts (news articles, legal documents, sociological studies) to
+    show these constructions in context.
   recommended_activities:
-    - name: "Fused or Full?"
-      duration: 15
-      adaptation_notes: "Give students 15 sentences with gaps. They must decide whether a fused modifier-head or a full noun phrase is more appropriate for the context."
-    - name: "Social Commentary Writing"
-      duration: 25
-      adaptation_notes: "Students write a short opinion piece on a social issue (inequality, healthcare, education) using at least five fused modifier-head constructions."
-    - name: "Legal Language Analysis"
-      duration: 20
-      adaptation_notes: "Students read a short legal text and identify all fused modifier-head constructions. They explain the referent of each (who does 'the accused' refer to?)."
-    - name: "Nationality Adjective Sort"
-      duration: 10
-      adaptation_notes: "Students sort nationality adjectives into those that can be used as fused constructions (the French, the Japanese) and those that cannot (*the Germans — requires 'Germans' without 'the')."
+  - name: Fused or Full?
+    duration: 15
+    adaptation_notes: Give students 15 sentences with gaps. They must decide whether
+      a fused modifier-head or a full noun phrase is more appropriate for the context.
+  - name: Social Commentary Writing
+    duration: 25
+    adaptation_notes: Students write a short opinion piece on a social issue (inequality,
+      healthcare, education) using at least five fused modifier-head constructions.
+  - name: Legal Language Analysis
+    duration: 20
+    adaptation_notes: Students read a short legal text and identify all fused modifier-head
+      constructions. They explain the referent of each (who does 'the accused' refer
+      to?).
+  - name: Nationality Adjective Sort
+    duration: 10
+    adaptation_notes: Students sort nationality adjectives into those that can be
+      used as fused constructions (the French, the Japanese) and those that cannot
+      (*the Germans — requires 'Germans' without 'the').
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

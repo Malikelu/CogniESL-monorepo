@@ -8,114 +8,84 @@ meaning:
     action in progress; Past Perfect = action completed before another past action.
   timeline: 'Past timeline: Past Perfect (earlier) → Past Simple (main event) → Past
     Continuous (background during main event).'
-  contrast: '''Past Simple'' = "I ate breakfast (completed)."
-
-    ''Past Continuous'' = "I was eating when the phone rang (in progress during another
-    action)."
-
-    ''Past Perfect'' = "I had eaten before the phone rang (completed before another
-    past action)."
-
-    '
+  contrast: '''Past Simple'' = ''I ate breakfast (completed).'' ''Past Continuous''
+    = ''I was eating when the phone rang (in progress during another action).'' ''Past
+    Perfect'' = ''I had eaten before the phone rang (completed before another past
+    action).'''
   ccqs:
-  - question: Which tense moves a story forward
+  - question: Which tense moves a story forward?
     answer: Past simple is the main narrative tense.
-  - question: Which tense sets the scene in a story
+  - question: Which tense sets the scene in a story?
     answer: Past continuous describes background actions.
   example_generator:
     contexts:
     - everyday situations
-    cultural_notes: []
+    cultural_notes:
+    - These three tenses work together in most English narratives
     min_examples: 5
 form:
   affirmative:
-    structure: 'Past Simple: Subject + V2/ed: "I walked."
-
-      Past Continuous: Subject + was/were + V-ing: "I was walking."
-
-      Past Perfect: Subject + had + V3: "I had walked."
-
-      '
+    structure: 'Past Simple: Subject + V2/ed / Past Continuous: Subject + was/were
+      + V-ing / Past Perfect: Subject + had + V3'
     example_generator:
-      contexts:
-      - entertainment and media
-      - social interactions
-      min_examples: 4
+    - I walked. / I was walking. / I had walked.
+    min_examples: 4
   negative:
-    structure: 'Past Simple: Subject + didn''t + V1: "I didn''t walk."
-
-      Past Continuous: Subject + wasn''t/weren''t + V-ing: "I wasn''t walking."
-
-      Past Perfect: Subject + hadn''t + V3: "I hadn''t walked."
-
-      '
+    structure: 'Past Simple: Subject + didn''t + V1 / Past Continuous: Subject + wasn''t/weren''t
+      + V-ing / Past Perfect: Subject + hadn''t + V3'
     example_generator:
-      contexts:
-      - entertainment and media
-      - shopping and commerce
-      min_examples: 4
+    - I didn't walk. / I wasn't walking. / I hadn't walked.
+    min_examples: 4
   questions:
-    structure: 'Past Simple: Did + subject + V1: "Did you walk?"
-
-      Past Continuous: Was/were + subject + V-ing: "Were you walking?"
-
-      Past Perfect: Had + subject + V3: "Had you walked?"
-
-      '
+    structure: 'Past Simple: Did + subject + V1? / Past Continuous: Was/were + subject
+      + V-ing? / Past Perfect: Had + subject + V3?'
     example_generator:
-      contexts:
-      - entertainment and media
-      - shopping and commerce
-      min_examples: 4
+    - Did you walk? / Were you walking? / Had you walked?
+    min_examples: 4
 sub_rules:
 - rule: Past simple is the main narrative tense — it moves the story forward
   type: discourse
   examples:
   - She opened the door and saw a stranger
   - He picked up the phone and called the police
-  - They ran out of the building
 - rule: Past continuous sets the scene — it describes what was happening as background
   type: discourse
   examples:
   - The sun was shining and birds were singing
   - People were walking in the street
-  - Music was playing in the background
 - rule: Past perfect provides background information — it describes events that happened
     before the main story
   type: discourse
   examples:
-  - She had never seen him before (background before the story)
-  - He had already left when she arrived (earlier event)
-  - They had been waiting for hours (duration before the main event)
+  - She had never seen him before
+  - He had already left when she arrived
+- rule: 'Time clauses with ''when'': Past Perfect emphasizes completion before the
+    past moment; Past Simple presents actions as a sequence'
+  type: discourse
+  examples:
+  - '''When I arrived, they had eaten'' (eating was completed before arrival)'
+  - '''When I arrived, they ate'' (eating happened after arrival)'
 - rule: Past continuous + past simple describes interrupted actions
   type: discourse
   examples:
   - I was cooking when the phone rang
   - She was walking home when it started to rain
-  - They were sleeping when the alarm went off
 use:
-- name: Sequence of Events (Past Simple)
-  description: Main events in a story, in order.
+- context: Sequence of Events (Past Simple)
   examples:
   - I woke up, brushed my teeth, and went to work.
-  key_point: Past Simple is the 'story driver' tense.
-- name: Background Description (Past Continuous)
-  description: Set the scene or describe ongoing actions during main events.
+- context: Background Description (Past Continuous)
   examples:
   - The sun was shining, and birds were singing when I left.
-  key_point: Often used with time clauses (when, while).
-- name: Earlier Completed Action (Past Perfect)
-  description: Action finished before another past action.
+- context: Earlier Completed Action (Past Perfect)
   examples:
   - By the time I arrived, the movie had started.
-  key_point: Use with 'before', 'after', 'by the time'.
 phonetics:
 - note: 'In narrative, the past simple verbs carry the main stress: ''She OPENED the
     door. She SAW a stranger.'' Background information in past continuous is less
     stressed.'
   example_generator:
-    contexts:
-    - narrative stress patterns
+  - narrative stress patterns
   l1_issue: 'Learners may use the same tense for all narrative events. Teach the distinction:
     past simple for main events, past continuous for background.'
 teaching:
@@ -123,8 +93,7 @@ teaching:
   tips:
   - 'Use timeline drawings to show sequence: Past Perfect (left) → Past Simple (middle)
     → Past Continuous (background).'
-  - 'Practice with personal stories: ''Tell me about your last vacation'' using all
-    three tenses.'
+  - Practice with personal stories using all three tenses.
   - 'Drill time clauses: ''When I arrived, they had eaten'' (Past Perfect) vs ''When
     I arrived, they ate'' (Past Simple).'
   recommended_activities:
@@ -136,3 +105,13 @@ teaching:
     duration: 10
     adaptation_notes: Show a short story. Students identify which tense is used for
       each sentence and why.
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

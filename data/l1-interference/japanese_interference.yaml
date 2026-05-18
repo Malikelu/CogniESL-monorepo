@@ -1,851 +1,1302 @@
-language: japanese
+language: Japanese
+language_code: ja
 schema_version: '3.0'
 grammar_points:
-  topic_marker_wa:
+  articles:
     interference_patterns:
-    - Japanese uses no articles which does not exist in English, causing transfer
-      errors related to 'topic marker wa'.
-    why_it_happens: Japanese handles 'topic marker wa' differently from English. Japanese
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Japanese structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Japanese and English for 'topic
-        marker wa'. Show the Japanese structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Japanese
-        handles 'topic marker wa' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Japanese sentences, students translate to English, focusing
-          on correct 'topic marker wa' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Japanese-style 'topic marker wa' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'topic
-          marker wa' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'topic marker
-          wa' errors.
-        duration: 15
+    - pattern: Omission of all articles (Japanese has no articles)
+      example: Omission of all articles (Japanese has no articles)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
     examples:
-    - 'Wrong: ''topic marker wa I saw.'' (topic-comment) Correct: ''I saw topic marker
-      wa.'' (SVO)'
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Liu, J. & Gleason, J. (2002). Acquiring the English article system by Chinese
-      speakers. Second Language Research, 18(1), 1-26.
-    - Robertson, J. S. (2000). Transfer in Chinese English article use. Studies in
-      Second Language Acquisition, 22(3), 379-406.
-    source_count: 3
-    source_type: peer-reviewed
+    - wrong: Watashi wa sensei desu.
+      correct: I am a teacher.
+    why_it_happens: Japanese has no article system. Definiteness is inferred from
+      context or particles rather than grammatical markers. Japanese learners often
+      omit articles entirely in English, producing sentences like 'I bought book yesterday'
+      instead of 'I bought a book.' This occurs because Japanese does not require
+      speakers to mark definiteness grammatically, so the concept of 'a' vs 'the'
+      vs zero article is entirely foreign.
+    teacher_tips:
+      how_to_explain: 'Teach: English REQUIRES articles. ''A/an'' for first mention,
+        ''the'' for specific.'
+      where_to_start: Start with the articles pattern.
+      sequencing: 'Week 1: articles. Week 2: Practice. Week 3: Review. Week 4: Mixed.'
+      exercises:
+      - name: articles Audit
+        type: error-correction
+        description: 20 sentences with articles errors.
+        duration: 15
+      - name: articles Translation
+        type: translation
+        description: Translate 15 sentences focusing on articles.
+        duration: 15
+      - name: articles Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing articles.
+        duration: 10
+      - name: articles Error Hunt
+        type: error-correction
+        description: A paragraph with 10 articles errors.
+        duration: 15
+    sources: &id001
+    - Swan & Smith "Learner English" (Japanese)
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Japanese
-    notes: Fundamental Japanese sentence structure. English speakers constantly force
-      SVO pattern.
-  particle_system:
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for articles
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Japanese speakers, pp. 295-307'
+      tier: 1
+    - claim: 'Grammar point: articles'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Article usage varies significantly across languages; many languages have
+        no article system
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See articles entries 133-142
+      tier: 2
+    - claim: Japanese has no article system (PEU articles entries)
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See relevant entry
+      tier: 2
+    - claim: ELLs commonly omit indefinite article when descriptive adjectives come
+        between determiner and noun
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 153
+      tier: 2
+    - claim: Japanese has no article system (p. 153)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: See relevant section
+      tier: 2
+  word_order:
     interference_patterns:
-    - Japanese uses no articles which does not exist in English, causing transfer
-      errors related to 'particle system'.
-    why_it_happens: Japanese handles 'particle system' differently from English. Japanese
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Japanese structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Japanese and English for 'particle
-        system'. Show the Japanese structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Japanese
-        handles 'particle system' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Japanese sentences, students translate to English, focusing
-          on correct 'particle system' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Japanese-style 'particle system' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'particle
-          system' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'particle system'
-          errors.
-        duration: 15
+    - pattern: SOV word order transfer (Japanese is SOV)
+      example: SOV word order transfer (Japanese is SOV)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
     examples:
-    - 'Wrong: ''She is particle system.'' Correct: ''She is a particle system.'''
-    - 'Wrong: ''I like the particle system.'' (general) Correct: ''I like particle
-      system.'''
-    - 'Wrong: ''I have particle system.'' Correct: ''I have a particle system.'''
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Liu, J. & Gleason, J. (2002). Acquiring the English article system by Chinese
-      speakers. Second Language Research, 18(1), 1-26.
-    - Robertson, J. S. (2000). Transfer in Chinese English article use. Studies in
-      Second Language Acquisition, 22(3), 379-406.
-    source_count: 3
-    source_type: peer-reviewed
+    - wrong: Watashi wa hon o kaimashita.
+      correct: I bought a book.
+    why_it_happens: Japanese is strictly SOV (Subject-Object-Verb) while English is
+      SVO. In Japanese, the verb always comes at the end of the sentence. Japanese
+      learners may transfer this pattern to English, producing sentences like 'I the
+      book bought' instead of 'I bought the book.' This transfer occurs because word
+      order is deeply automatized from L1 acquisition.
+    teacher_tips:
+      how_to_explain: 'Teach: English is ALWAYS Subject-Verb-Object.'
+      where_to_start: Start with the word order pattern.
+      sequencing: 'Week 1: word order. Week 2: Practice. Week 3: Review. Week 4: Mixed.'
+      exercises:
+      - name: word_order Audit
+        type: error-correction
+        description: 20 sentences with word order errors.
+        duration: 15
+      - name: word_order Translation
+        type: translation
+        description: Translate 15 sentences focusing on word order.
+        duration: 15
+      - name: word_order Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing word order.
+        duration: 10
+      - name: word_order Error Hunt
+        type: error-correction
+        description: A paragraph with 10 word order errors.
+        duration: 15
+    sources: *id001
+    source_count: 2
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Japanese
-    notes: Most cited difficulty for English speakers. No English equivalent.
-  verb_always_final:
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for word order
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Japanese speakers, pp. 295-307'
+      tier: 1
+    - claim: 'Grammar point: word order'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Germanic languages and Chinese make rich use of compounding, unlike other
+        languages
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: p. 39
+      tier: 2
+    - claim: Japanese is topic-prominent, making subject-verb agreement difficult
+        (p. 61)
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: See relevant section
+      tier: 2
+    - claim: 'Word order varies: SOV, SVO, VSO, V2, free order — all cause transfer
+        errors'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See word order entries
+      tier: 2
+    - claim: Japanese is topic-prominent and SOV (PEU word order entries)
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See relevant entry
+      tier: 2
+    - claim: 'ELLs transfer L1 word order: subject-verb inversion from Spanish, SOV
+        from Arabic/Japanese'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 199
+      tier: 2
+    - claim: Japanese is SOV, causing word order transfer errors (p. 199)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: See relevant section
+      tier: 2
+    - claim: Japanese is SOV with flexible word order (scrambling); English is rigid
+        SVO. Learners transfer SOV patterns
+      source: Miyagawa & Saito (eds.) (2008) 'The Oxford Handbook of Japanese Linguistics',
+        Oxford University Press
+      location: 'Chapter 5: On Verb Raising (Kishimoto)'
+      tier: 1
+  questions:
     interference_patterns:
-    - Japanese uses no articles which does not exist in English, causing transfer
-      errors related to 'verb always final'.
-    why_it_happens: Japanese handles 'verb always final' differently from English.
-      Japanese L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Japanese structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Japanese and English for 'verb
-        always final'. Show the Japanese structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Japanese
-        handles 'verb always final' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Japanese sentences, students translate to English, focusing
-          on correct 'verb always final' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Japanese-style 'verb always final'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'verb
-          always final' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'verb always
-          final' errors.
-        duration: 15
+    - pattern: Use of ka question particle
+      example: Use of ka question particle
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
     examples:
-    - 'Wrong: Applying Japanese ''verb always final'' structure to English. Correct:
-      Use the English structure for ''verb always final''.'
-    - 'Wrong: Direct translation of Japanese ''verb always final'' pattern. Correct:
-      Follow English ''verb always final'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''verb always final'' patterns.'
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Liu, J. & Gleason, J. (2002). Acquiring the English article system by Chinese
-      speakers. Second Language Research, 18(1), 1-26.
-    - Robertson, J. S. (2000). Transfer in Chinese English article use. Studies in
-      Second Language Acquisition, 22(3), 379-406.
-    source_count: 3
-    source_type: peer-reviewed
+    - wrong: Ikimasu ka?
+      correct: Do you go?
+    why_it_happens: Japanese forms questions with particles or intonation. English
+      requires do-support.
+    teacher_tips:
+      how_to_explain: 'Teach: Do/Does/Did + subject + base verb?'
+      where_to_start: Start with the questions pattern.
+      sequencing: 'Week 1: questions. Week 2: Practice. Week 3: Review. Week 4: Mixed.'
+      exercises:
+      - name: questions Audit
+        type: error-correction
+        description: 20 sentences with questions errors.
+        duration: 15
+      - name: questions Translation
+        type: translation
+        description: Translate 15 sentences focusing on questions.
+        duration: 15
+      - name: questions Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing questions.
+        duration: 10
+      - name: questions Error Hunt
+        type: error-correction
+        description: A paragraph with 10 questions errors.
+        duration: 15
+    sources: *id001
+    source_count: 2
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Japanese
-    notes: Fundamental typological difference from English SVO.
-  honorific_system:
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for questions
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Japanese speakers, pp. 295-307'
+      tier: 1
+    - claim: 'Grammar point: questions'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: 'Question formation varies: intonation-only, particles, inversion — all
+        cause transfer errors'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 294
+      tier: 2
+  negation:
     interference_patterns:
-    - Japanese uses no articles which does not exist in English, causing transfer
-      errors related to 'honorific system'.
-    why_it_happens: Japanese handles 'honorific system' differently from English.
-      Japanese L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Japanese structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Japanese and English for 'honorific
-        system'. Show the Japanese structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Japanese
-        handles 'honorific system' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Japanese sentences, students translate to English, focusing
-          on correct 'honorific system' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Japanese-style 'honorific system' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'honorific
-          system' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'honorific system'
-          errors.
-        duration: 15
+    - pattern: Use of -nai negation suffix
+      example: Use of -nai negation suffix
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
     examples:
-    - 'Wrong: ''If I would have money.'' Correct: ''If I had money.'''
-    - 'Wrong: ''If I will have time.'' Correct: ''If I have time.'''
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Liu, J. & Gleason, J. (2002). Acquiring the English article system by Chinese
-      speakers. Second Language Research, 18(1), 1-26.
-    - Robertson, J. S. (2000). Transfer in Chinese English article use. Studies in
-      Second Language Acquisition, 22(3), 379-406.
-    source_count: 3
-    source_type: peer-reviewed
+    - wrong: Ikimasen.
+      correct: I do not go.
+    why_it_happens: Japanese negation uses pre-verbal particle. English uses do-support.
+    teacher_tips:
+      how_to_explain: 'Teach: do/does/did + not + base verb.'
+      where_to_start: Start with the negation pattern.
+      sequencing: 'Week 1: negation. Week 2: Practice. Week 3: Review. Week 4: Mixed.'
+      exercises:
+      - name: negation Audit
+        type: error-correction
+        description: 20 sentences with negation errors.
+        duration: 15
+      - name: negation Translation
+        type: translation
+        description: Translate 15 sentences focusing on negation.
+        duration: 15
+      - name: negation Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing negation.
+        duration: 10
+      - name: negation Error Hunt
+        type: error-correction
+        description: A paragraph with 10 negation errors.
+        duration: 15
+    sources: *id001
+    source_count: 2
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Japanese
-    notes: Social competence requirement, not just grammar.
-  tense_aspect_jp:
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for negation
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Japanese speakers, pp. 295-307'
+      tier: 1
+    - claim: 'Grammar point: negation'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: 'Negation patterns vary: pre-verbal particles, post-verbal markers, double
+        negation'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See negation entries
+      tier: 2
+    - claim: 'Double negation transferred from L1 (Spanish, Arabic, etc.): *I don''t
+        have no reason'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 1
+      tier: 2
+    - claim: Japanese negation uses post-verbal particles, not pre-verbal do-support;
+        learners transfer negation patterns to English
+      source: Miyagawa & Saito (eds.) (2008) 'The Oxford Handbook of Japanese Linguistics',
+        Oxford University Press
+      location: 'Chapter 10: The Acquisition of Japanese Syntax (Murasugi & Sugisaki)'
+      tier: 1
+  phonology:
     interference_patterns:
-    - Japanese uses no articles which does not exist in English, causing transfer
-      errors related to 'tense aspect jp'.
-    why_it_happens: Japanese handles 'tense aspect jp' differently from English. Japanese
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Japanese structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Japanese and English for 'tense
-        aspect jp'. Show the Japanese structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Japanese
-        handles 'tense aspect jp' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Japanese sentences, students translate to English, focusing
-          on correct 'tense aspect jp' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Japanese-style 'tense aspect jp' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'tense
-          aspect jp' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'tense aspect
-          jp' errors.
-        duration: 15
+    - pattern: Confusion of /l/ and /r/ (Japanese lacks distinction)
+      example: Confusion of /l/ and /r/ (Japanese lacks distinction)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
     examples:
-    - 'Wrong: ''I have eaten yesterday.'' Correct: ''I ate yesterday.'''
-    - 'Wrong: ''I live here since 5 years.'' Correct: ''I have lived here for 5 years.'''
-    - 'Wrong: ''When I arrived, he had left.'' (wrong sequence) Correct: ''When I
-      arrived, he left.'''
+    - wrong: I have a rice of bread.
+      correct: I have a loaf of bread.
+    why_it_happens: Japanese phonology does not distinguish /l/ and /r/ as separate
+      phonemes. Japanese has a single sound that falls between English /l/ and /r/.
+      Japanese learners may confuse these sounds in English, producing 'fright' for
+      'flight' or 'lice' for 'rice.' This error persists because the L1 phonological
+      system does not mark this distinction.
+    teacher_tips:
+      how_to_explain: 'Teach: /v/ vs /w/, /θ/ vs /t/.'
+      where_to_start: Start with the phonology pattern.
+      sequencing: 'Week 1: phonology. Week 2: Practice. Week 3: Review. Week 4: Mixed.'
+      exercises:
+      - name: phonology Audit
+        type: error-correction
+        description: 20 sentences with phonology errors.
+        duration: 15
+      - name: phonology Translation
+        type: translation
+        description: Translate 15 sentences focusing on phonology.
+        duration: 15
+      - name: phonology Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing phonology.
+        duration: 10
+      - name: phonology Error Hunt
+        type: error-correction
+        description: A paragraph with 10 phonology errors.
+        duration: 15
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Liu, J. & Gleason, J. (2002). Acquiring the English article system by Chinese
-      speakers. Second Language Research, 18(1), 1-26.
-    - Robertson, J. S. (2000). Transfer in Chinese English article use. Studies in
-      Second Language Acquisition, 22(3), 379-406.
-    source_count: 3
-    source_type: peer-reviewed
+    - Swan & Smith "Learner English" (Japanese)
+    - Underhill "Sound Foundations"
+    source_count: 2
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Japanese
-    notes: Students often overuse past tense or confuse aspect and tense.
-  pronoun_drop_jp:
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for phonology
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Japanese speakers, pp. 295-307'
+      tier: 1
+    - claim: 'Grammar point: phonology'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Phonological interference pattern
+      source: Underhill (2005) 'Sound Foundations', Macmillan
+      location: See relevant phonology section
+      tier: 2
+    - claim: Phonological transfer from L1 causes pronunciation errors
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See pronunciation entries
+      tier: 2
+    - claim: Single pronunciation errors rarely impede communication; focus on patterns
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 272
+      tier: 2
+    - claim: Japanese phonology has fewer consonant clusters and different vowel system;
+        learners struggle with English consonant clusters and vowel distinctions
+      source: Miyagawa & Saito (eds.) (2008) 'The Oxford Handbook of Japanese Linguistics',
+        Oxford University Press
+      location: 'Chapter 4: Lexical Classes in Phonology (Ito & Mester)'
+      tier: 1
+  countability:
     interference_patterns:
-    - Japanese uses no articles which does not exist in English, causing transfer
-      errors related to 'pronoun drop jp'.
-    why_it_happens: Japanese handles 'pronoun drop jp' differently from English. Japanese
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Japanese structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Japanese and English for 'pronoun
-        drop jp'. Show the Japanese structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Japanese
-        handles 'pronoun drop jp' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Japanese sentences, students translate to English, focusing
-          on correct 'pronoun drop jp' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Japanese-style 'pronoun drop jp' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'pronoun
-          drop jp' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'pronoun drop
-          jp' errors.
-        duration: 15
+    - pattern: Pluralization of uncountable nouns (japanese)
+      example: Pluralization of uncountable nouns (japanese)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
     examples:
-    - 'Wrong: ''Eat pizza.'' Correct: ''I eat pizza.'''
-    - 'Wrong: ''Rains.'' Correct: ''It rains.'''
-    - 'Wrong: ''I see he.'' Correct: ''I see him.'''
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Liu, J. & Gleason, J. (2002). Acquiring the English article system by Chinese
-      speakers. Second Language Research, 18(1), 1-26.
-    - Robertson, J. S. (2000). Transfer in Chinese English article use. Studies in
-      Second Language Acquisition, 22(3), 379-406.
-    source_count: 3
-    source_type: peer-reviewed
+    - wrong: I have many homeworks.
+      correct: I have a lot of homework.
+    why_it_happens: Japanese treats some nouns as countable that are uncountable in
+      English.
+    teacher_tips:
+      how_to_explain: Create a list of common uncountable nouns.
+      where_to_start: Start with the countability pattern.
+      sequencing: 'Week 1: countability. Week 2: Practice. Week 3: Review. Week 4:
+        Mixed.'
+      exercises:
+      - name: countability Audit
+        type: error-correction
+        description: 20 sentences with countability errors.
+        duration: 15
+      - name: countability Translation
+        type: translation
+        description: Translate 15 sentences focusing on countability.
+        duration: 15
+      - name: countability Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing countability.
+        duration: 10
+      - name: countability Error Hunt
+        type: error-correction
+        description: A paragraph with 10 countability errors.
+        duration: 15
+    sources: *id001
+    source_count: 2
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Japanese
-    notes: Pro-drop transfer causes incomplete English sentences.
-  counters_suu:
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for countability
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Japanese speakers, pp. 295-307'
+      tier: 1
+    - claim: 'Grammar point: countability'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Countability distinctions vary across languages; some nouns are countable
+        in L1 but uncountable in English
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See countability entries
+      tier: 2
+    - claim: Count/mass noun distinctions vary by L1; Spanish uses have for age (*I
+        have 27 years old)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 89
+      tier: 2
+    - claim: Japanese does not distinguish count/mass nouns morphologically; learners
+        struggle with a/an vs some vs zero article
+      source: Miyagawa & Saito (eds.) (2008) 'The Oxford Handbook of Japanese Linguistics',
+        Oxford University Press
+      location: 'Chapter 18: The Structure of DP (Watanabe)'
+      tier: 1
+  subject_verb_agreement:
     interference_patterns:
-    - Japanese uses no articles which does not exist in English, causing transfer
-      errors related to 'counters suu'.
-    why_it_happens: Japanese handles 'counters suu' differently from English. Japanese
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Japanese structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Japanese and English for 'counters
-        suu'. Show the Japanese structure side-by-side with English. Highlight the
-        specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Japanese
-        handles 'counters suu' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Japanese sentences, students translate to English, focusing
-          on correct 'counters suu' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Japanese-style 'counters suu' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'counters
-          suu' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'counters suu'
-          errors.
-        duration: 15
+    - pattern: Omission of third-person -s (japanese)
+      example: Omission of third-person -s (japanese)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
     examples:
-    - 'Wrong: ''I have many informations.'' Correct: ''I have a lot of information.'''
-    - 'Wrong: ''He gave me good advices.'' Correct: ''He gave me good advice.'''
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Liu, J. & Gleason, J. (2002). Acquiring the English article system by Chinese
-      speakers. Second Language Research, 18(1), 1-26.
-    - Robertson, J. S. (2000). Transfer in Chinese English article use. Studies in
-      Second Language Acquisition, 22(3), 379-406.
-    source_count: 3
-    source_type: peer-reviewed
+    - wrong: She like chocolate.
+      correct: She likes chocolate.
+    why_it_happens: Japanese verb conjugation differs from English. Third-person -s
+      is frequently omitted.
+    teacher_tips:
+      how_to_explain: Teach the 'he/she/it + verb-s' rule as non-negotiable.
+      where_to_start: Start with the subject verb agreement pattern.
+      sequencing: 'Week 1: subject verb agreement. Week 2: Practice. Week 3: Review.
+        Week 4: Mixed.'
+      exercises:
+      - name: subject_verb_agreement Audit
+        type: error-correction
+        description: 20 sentences with subject verb agreement errors.
+        duration: 15
+      - name: subject_verb_agreement Translation
+        type: translation
+        description: Translate 15 sentences focusing on subject verb agreement.
+        duration: 15
+      - name: subject_verb_agreement Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing subject verb agreement.
+        duration: 10
+      - name: subject_verb_agreement Error Hunt
+        type: error-correction
+        description: A paragraph with 10 subject verb agreement errors.
+        duration: 15
+    sources: *id001
+    source_count: 2
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Japanese
-    notes: Unique to East Asian. English speakers find this alien.
-  topic_vs_subject:
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for subject verb agreement
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Japanese speakers, pp. 295-307'
+      tier: 1
+    - claim: 'Grammar point: subject verb agreement'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Topic-prominent L1 learners find subject-verb agreement more difficult
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: p. 61
+      tier: 2
+    - claim: SVA is difficult for learners whose L1 has no subject-verb agreement
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See SVA entries
+      tier: 2
+    - claim: SVA errors persist because the correct and incorrect forms often sound
+        similar
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 314
+      tier: 2
+    - claim: Japanese verbs do not inflect for person/number; learners omit third
+        person -s in English
+      source: Miyagawa & Saito (eds.) (2008) 'The Oxford Handbook of Japanese Linguistics',
+        Oxford University Press
+      location: General
+      tier: 1
+  prepositions:
     interference_patterns:
-    - Japanese uses no articles which does not exist in English, causing transfer
-      errors related to 'topic vs subject'.
-    why_it_happens: Japanese handles 'topic vs subject' differently from English.
-      Japanese L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Japanese structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Japanese and English for 'topic
-        vs subject'. Show the Japanese structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Japanese
-        handles 'topic vs subject' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Japanese sentences, students translate to English, focusing
-          on correct 'topic vs subject' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Japanese-style 'topic vs subject' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'topic
-          vs subject' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'topic vs subject'
-          errors.
-        duration: 15
+    - pattern: Transfer of japanese prepositions
+      example: Transfer of japanese prepositions
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
     examples:
-    - 'Wrong: ''topic vs subject I saw.'' (topic-comment) Correct: ''I saw topic vs
-      subject.'' (SVO)'
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Liu, J. & Gleason, J. (2002). Acquiring the English article system by Chinese
-      speakers. Second Language Research, 18(1), 1-26.
-    - Robertson, J. S. (2000). Transfer in Chinese English article use. Studies in
-      Second Language Acquisition, 22(3), 379-406.
-    source_count: 3
-    source_type: peer-reviewed
+    - wrong: I am on home.
+      correct: I am at home.
+    why_it_happens: Japanese uses postpositions rather than prepositions, and the
+      system differs significantly from English. Japanese learners may omit prepositions
+      or use wrong ones, producing sentences like 'I go school' instead of 'I go to
+      school.' This occurs because Japanese spatial relationships are expressed with
+      postpositions attached to nouns.
+    teacher_tips:
+      how_to_explain: Teach common japanese-English preposition differences.
+      where_to_start: Start with the prepositions pattern.
+      sequencing: 'Week 1: prepositions. Week 2: Practice. Week 3: Review. Week 4:
+        Mixed.'
+      exercises:
+      - name: prepositions Audit
+        type: error-correction
+        description: 20 sentences with prepositions errors.
+        duration: 15
+      - name: prepositions Translation
+        type: translation
+        description: Translate 15 sentences focusing on prepositions.
+        duration: 15
+      - name: prepositions Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing prepositions.
+        duration: 10
+      - name: prepositions Error Hunt
+        type: error-correction
+        description: A paragraph with 10 prepositions errors.
+        duration: 15
+    sources: *id001
+    source_count: 2
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Japanese
-    notes: Subtle distinction even for intermediate learners.
-  adjective_system:
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for prepositions
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Japanese speakers, pp. 295-307'
+      tier: 1
+    - claim: 'Grammar point: prepositions'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Prepositions signal relationships that compensate for lost noun inflections
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: p. 84
+      tier: 2
+    - claim: Preposition usage is highly language-specific and a major source of errors
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See preposition entries
+      tier: 2
+    - claim: 'Preposition combinations must be taught explicitly: rote memorization,
+        direct instruction, or extensive reading'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 171
+      tier: 2
+    - claim: Japanese uses postpositions, not prepositions; learners transfer this
+        pattern to English
+      source: Miyagawa & Saito (eds.) (2008) 'The Oxford Handbook of Japanese Linguistics',
+        Oxford University Press
+      location: General
+      tier: 1
+  passive_voice:
     interference_patterns:
-    - Japanese uses no articles which does not exist in English, causing transfer
-      errors related to 'adjective system'.
-    why_it_happens: Japanese handles 'adjective system' differently from English.
-      Japanese L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Japanese structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Japanese and English for 'adjective
-        system'. Show the Japanese structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Japanese
-        handles 'adjective system' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Japanese sentences, students translate to English, focusing
-          on correct 'adjective system' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Japanese-style 'adjective system' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'adjective
-          system' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'adjective system'
-          errors.
-        duration: 15
+    - pattern: Avoidance of passive voice (japanese)
+      example: Avoidance of passive voice (japanese)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
     examples:
-    - 'Wrong: ''a house white big.'' Correct: ''a big white house.'''
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Liu, J. & Gleason, J. (2002). Acquiring the English article system by Chinese
-      speakers. Second Language Research, 18(1), 1-26.
-    - Robertson, J. S. (2000). Transfer in Chinese English article use. Studies in
-      Second Language Acquisition, 22(3), 379-406.
-    source_count: 3
-    source_type: peer-reviewed
+    - wrong: Someone built this house in 1900.
+      correct: This house was built in 1900.
+    why_it_happens: Japanese uses passive less frequently than English.
+    teacher_tips:
+      how_to_explain: 'Teach the passive formula: be + past participle.'
+      where_to_start: Start with the passive voice pattern.
+      sequencing: 'Week 1: passive voice. Week 2: Practice. Week 3: Review. Week 4:
+        Mixed.'
+      exercises:
+      - name: passive_voice Audit
+        type: error-correction
+        description: 20 sentences with passive voice errors.
+        duration: 15
+      - name: passive_voice Translation
+        type: translation
+        description: Translate 15 sentences focusing on passive voice.
+        duration: 15
+      - name: passive_voice Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing passive voice.
+        duration: 10
+      - name: passive_voice Error Hunt
+        type: error-correction
+        description: A paragraph with 10 passive voice errors.
+        duration: 15
+    sources: *id001
+    source_count: 2
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Japanese
-    notes: Two adjective systems have no English parallel.
-  relative_clauses_jp:
-    interference_patterns:
-    - Japanese uses no articles which does not exist in English, causing transfer
-      errors related to 'relative clauses jp'.
-    why_it_happens: Japanese handles 'relative clauses jp' differently from English.
-      Japanese L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Japanese structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Japanese and English for 'relative
-        clauses jp'. Show the Japanese structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Japanese
-        handles 'relative clauses jp' differently from English. Use visual aids or
-        color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Japanese sentences, students translate to English, focusing
-          on correct 'relative clauses jp' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Japanese-style 'relative clauses jp'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'relative
-          clauses jp' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'relative clauses
-          jp' errors.
-        duration: 15
-    examples:
-    - 'Wrong: ''The book what I read.'' Correct: ''The book that I read.'''
-    - 'Wrong: ''The man which speaks.'' Correct: ''The man who speaks.'''
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Liu, J. & Gleason, J. (2002). Acquiring the English article system by Chinese
-      speakers. Second Language Research, 18(1), 1-26.
-    - Robertson, J. S. (2000). Transfer in Chinese English article use. Studies in
-      Second Language Acquisition, 22(3), 379-406.
-    source_count: 3
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Japanese
-    notes: Japanese relative clauses are compact. No relative pronouns.
-  passive_jp:
-    interference_patterns:
-    - Japanese uses no articles which does not exist in English, causing transfer
-      errors related to 'passive jp'.
-    why_it_happens: Japanese handles 'passive jp' differently from English. Japanese
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Japanese structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Japanese and English for 'passive
-        jp'. Show the Japanese structure side-by-side with English. Highlight the
-        specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Japanese
-        handles 'passive jp' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Japanese sentences, students translate to English, focusing
-          on correct 'passive jp' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Japanese-style 'passive jp' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'passive
-          jp' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'passive jp'
-          errors.
-        duration: 15
-    examples:
-    - 'Wrong: ''The letter was send.'' Correct: ''The letter was sent.'''
-    - 'Wrong: ''The book has wrote.'' Correct: ''The book has been written.'''
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Liu, J. & Gleason, J. (2002). Acquiring the English article system by Chinese
-      speakers. Second Language Research, 18(1), 1-26.
-    - Robertson, J. S. (2000). Transfer in Chinese English article use. Studies in
-      Second Language Acquisition, 22(3), 379-406.
-    source_count: 3
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Japanese
-    notes: Used less than English passive. Has connotation of adversity.
-  causative:
-    interference_patterns:
-    - Japanese uses no articles which does not exist in English, causing transfer
-      errors related to 'causative'.
-    why_it_happens: Japanese handles 'causative' differently from English. Japanese
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Japanese structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Japanese and English for 'causative'.
-        Show the Japanese structure side-by-side with English. Highlight the specific
-        error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Japanese
-        handles 'causative' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Japanese sentences, students translate to English, focusing
-          on correct 'causative' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Japanese-style 'causative' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'causative'
-          structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'causative' errors.
-        duration: 15
-    examples:
-    - 'Wrong: Applying Japanese ''causative'' structure to English. Correct: Use the
-      English structure for ''causative''.'
-    - 'Wrong: Direct translation of Japanese ''causative'' pattern. Correct: Follow
-      English ''causative'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''causative'' patterns.'
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Liu, J. & Gleason, J. (2002). Acquiring the English article system by Chinese
-      speakers. Second Language Research, 18(1), 1-26.
-    - Robertson, J. S. (2000). Transfer in Chinese English article use. Studies in
-      Second Language Acquisition, 22(3), 379-406.
-    source_count: 3
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Japanese
-    notes: Intermediate grammar point. Important for expressing intentions.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for passive voice
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Japanese speakers, pp. 295-307'
+      tier: 1
+    - claim: 'Grammar point: passive voice'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Passive voice availability and usage varies across languages
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See passive entries
+      tier: 2
+    - claim: ELLs avoid passive in contexts where L1 uses different structures
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 294
+      tier: 2
+    - claim: Japanese passive has direct and indirect types; indirect passive (-rare)
+        has no English equivalent and is acquired later
+      source: Miyagawa & Saito (eds.) (2008) 'The Oxford Handbook of Japanese Linguistics',
+        Oxford University Press
+      location: 'Chapter 2: On the Causative Construction (Harley)'
+      tier: 1
   conditionals:
     interference_patterns:
-    - Japanese uses no articles which does not exist in English, causing transfer
-      errors related to 'conditionals'.
-    why_it_happens: Japanese handles 'conditionals' differently from English. Japanese
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Japanese structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Japanese and English for 'conditionals'.
-        Show the Japanese structure side-by-side with English. Highlight the specific
-        error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Japanese
-        handles 'conditionals' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Japanese sentences, students translate to English, focusing
-          on correct 'conditionals' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Japanese-style 'conditionals' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'conditionals'
-          structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'conditionals'
-          errors.
-        duration: 15
+    - pattern: Conditional structure (japanese)
+      example: Conditional structure (japanese)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
     examples:
-    - 'Wrong: ''If I would have money.'' Correct: ''If I had money.'''
-    - 'Wrong: ''If I will have time.'' Correct: ''If I have time.'''
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Liu, J. & Gleason, J. (2002). Acquiring the English article system by Chinese
-      speakers. Second Language Research, 18(1), 1-26.
-    - Robertson, J. S. (2000). Transfer in Chinese English article use. Studies in
-      Second Language Acquisition, 22(3), 379-406.
-    source_count: 3
-    source_type: peer-reviewed
+    - wrong: If I would have money, I would travel.
+      correct: If I had money, I would travel.
+    why_it_happens: Japanese conditional structure differs from English.
+    teacher_tips:
+      how_to_explain: 'Teach: NO WOULD IN IF-CLAUSE. Use ''were'' for unreal situations.'
+      where_to_start: Start with the conditionals pattern.
+      sequencing: 'Week 1: conditionals. Week 2: Practice. Week 3: Review. Week 4:
+        Mixed.'
+      exercises:
+      - name: conditionals Audit
+        type: error-correction
+        description: 20 sentences with conditionals errors.
+        duration: 15
+      - name: conditionals Translation
+        type: translation
+        description: Translate 15 sentences focusing on conditionals.
+        duration: 15
+      - name: conditionals Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing conditionals.
+        duration: 10
+      - name: conditionals Error Hunt
+        type: error-correction
+        description: A paragraph with 10 conditionals errors.
+        duration: 15
+    sources: *id001
+    source_count: 2
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Japanese
-    notes: Multiple forms with subtle differences challenge English speakers.
-  writing_systems_kanji:
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for conditionals
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Japanese speakers, pp. 295-307'
+      tier: 1
+    - claim: 'Grammar point: conditionals'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Conditional structures vary; some languages use morphological mood, others
+        use particles
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See conditional entries
+      tier: 2
+    - claim: 'Common error: *If I would have known (transfer from L1 conditional structures)'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 322
+      tier: 2
+    - claim: Japanese conditional structure uses different verb tense sequencing than
+        English
+      source: Miyagawa & Saito (eds.) (2008) 'The Oxford Handbook of Japanese Linguistics',
+        Oxford University Press
+      location: General
+      tier: 1
+  relative_clauses:
     interference_patterns:
-    - Japanese uses no articles which does not exist in English, causing transfer
-      errors related to 'writing systems kanji'.
-    why_it_happens: Japanese handles 'writing systems kanji' differently from English.
-      Japanese L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Japanese structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Japanese and English for 'writing
-        systems kanji'. Show the Japanese structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Japanese
-        handles 'writing systems kanji' differently from English. Use visual aids
-        or color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Japanese sentences, students translate to English, focusing
-          on correct 'writing systems kanji' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Japanese-style 'writing systems kanji'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: composition
-        description: Students create 5 original sentences using correct English 'writing
-          systems kanji' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'writing systems
-          kanji' errors.
-        duration: 15
+    - pattern: Relative pronoun (japanese)
+      example: Relative pronoun (japanese)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
     examples:
-    - 'Wrong: Spelling based on Japanese script conventions. Correct: English spelling.'
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Liu, J. & Gleason, J. (2002). Acquiring the English article system by Chinese
-      speakers. Second Language Research, 18(1), 1-26.
-    - Robertson, J. S. (2000). Transfer in Chinese English article use. Studies in
-      Second Language Acquisition, 22(3), 379-406.
-    source_count: 3
-    source_type: peer-reviewed
+    - wrong: The man which I met is my boss.
+      correct: The man who I met is my boss.
+    why_it_happens: Japanese uses a universal relative pronoun. English distinguishes
+      who/which/that.
+    teacher_tips:
+      how_to_explain: 'Teach: For people -> who/that. For things -> that/which.'
+      where_to_start: Start with the relative clauses pattern.
+      sequencing: 'Week 1: relative clauses. Week 2: Practice. Week 3: Review. Week
+        4: Mixed.'
+      exercises:
+      - name: relative_clauses Audit
+        type: error-correction
+        description: 20 sentences with relative clauses errors.
+        duration: 15
+      - name: relative_clauses Translation
+        type: translation
+        description: Translate 15 sentences focusing on relative clauses.
+        duration: 15
+      - name: relative_clauses Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing relative clauses.
+        duration: 10
+      - name: relative_clauses Error Hunt
+        type: error-correction
+        description: A paragraph with 10 relative clauses errors.
+        duration: 15
+    sources: *id001
+    source_count: 2
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Japanese
-    notes: Major literacy barrier. Spoken interference more relevant for ESL.
-  copula_da:
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for relative clauses
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Japanese speakers, pp. 295-307'
+      tier: 1
+    - claim: 'Grammar point: relative clauses'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: 'Relative clause structure varies: pre-nominal vs post-nominal, resumptive
+        pronouns'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See relative clause entries
+      tier: 2
+    - claim: 'ELLs transfer L1 relative clause structure: resumptive pronouns, pre-nominal
+        clauses'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 199
+      tier: 2
+    - claim: Japanese relative clauses are prenominal (before the noun), English are
+        postnominal; learners may place clauses incorrectly
+      source: Miyagawa & Saito (eds.) (2008) 'The Oxford Handbook of Japanese Linguistics',
+        Oxford University Press
+      location: 'Chapter 10: The Acquisition of Japanese Syntax (Murasugi & Sugisaki)'
+      tier: 1
+  reported_speech:
     interference_patterns:
-    - Japanese uses no articles which does not exist in English, causing transfer
-      errors related to 'copula da'.
-    why_it_happens: Japanese handles 'copula da' differently from English. Japanese
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Japanese structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Japanese and English for 'copula
-        da'. Show the Japanese structure side-by-side with English. Highlight the
-        specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Japanese
-        handles 'copula da' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Japanese sentences, students translate to English, focusing
-          on correct 'copula da' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Japanese-style 'copula da' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'copula
-          da' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'copula da' errors.
-        duration: 15
+    - pattern: No backshift of tenses (japanese)
+      example: No backshift of tenses (japanese)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
     examples:
-    - 'Wrong: ''He teacher.'' Correct: ''He is a teacher.'''
-    - 'Wrong: ''I tired.'' Correct: ''I am tired.'''
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Liu, J. & Gleason, J. (2002). Acquiring the English article system by Chinese
-      speakers. Second Language Research, 18(1), 1-26.
-    - Robertson, J. S. (2000). Transfer in Chinese English article use. Studies in
-      Second Language Acquisition, 22(3), 379-406.
-    source_count: 3
-    source_type: peer-reviewed
+    - wrong: She said that she is tired.
+      correct: She said that she was tired.
+    why_it_happens: Japanese reported speech retains original tense. English requires
+      backshift.
+    teacher_tips:
+      how_to_explain: 'Teach the backshift rule: present -> past, will -> would.'
+      where_to_start: Start with the reported speech pattern.
+      sequencing: 'Week 1: reported speech. Week 2: Practice. Week 3: Review. Week
+        4: Mixed.'
+      exercises:
+      - name: reported_speech Audit
+        type: error-correction
+        description: 20 sentences with reported speech errors.
+        duration: 15
+      - name: reported_speech Translation
+        type: translation
+        description: Translate 15 sentences focusing on reported speech.
+        duration: 15
+      - name: reported_speech Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing reported speech.
+        duration: 10
+      - name: reported_speech Error Hunt
+        type: error-correction
+        description: A paragraph with 10 reported speech errors.
+        duration: 15
+    sources: *id001
+    source_count: 2
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Japanese
-    notes: Different copula system from English.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for reported speech
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Japanese speakers, pp. 295-307'
+      tier: 1
+    - claim: 'Grammar point: reported speech'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Reported speech conventions vary; some languages retain original tense
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See reported speech entries
+      tier: 2
+    - claim: ELLs retain original tense in reported speech (no backshift)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 294
+      tier: 2
+    - claim: Japanese reported speech retains original tense; learners may not backshift
+        in English
+      source: Miyagawa & Saito (eds.) (2008) 'The Oxford Handbook of Japanese Linguistics',
+        Oxford University Press
+      location: General
+      tier: 1
+  comparatives:
+    interference_patterns:
+    - pattern: Comparative formation (japanese)
+      example: Comparative formation (japanese)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    examples:
+    - wrong: This car is more big than that one.
+      correct: This car is bigger than that one.
+    why_it_happens: Japanese forms comparatives differently. English uses -er/-est
+      for short adjectives.
+    teacher_tips:
+      how_to_explain: 'Teach: 1-2 syllable adjectives -> -er/-est. 3+ syllable adjectives
+        -> more/most.'
+      where_to_start: Start with the comparatives pattern.
+      sequencing: 'Week 1: comparatives. Week 2: Practice. Week 3: Review. Week 4:
+        Mixed.'
+      exercises:
+      - name: comparatives Audit
+        type: error-correction
+        description: 20 sentences with comparatives errors.
+        duration: 15
+      - name: comparatives Translation
+        type: translation
+        description: Translate 15 sentences focusing on comparatives.
+        duration: 15
+      - name: comparatives Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing comparatives.
+        duration: 10
+      - name: comparatives Error Hunt
+        type: error-correction
+        description: A paragraph with 10 comparatives errors.
+        duration: 15
+    sources: *id001
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for comparatives
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Japanese speakers, pp. 295-307'
+      tier: 1
+    - claim: 'Grammar point: comparatives'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: 'Comparative formation varies: morphological vs analytic'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See comparative entries
+      tier: 2
+    - claim: Comparative formation varies by L1; explicit practice needed
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 295
+      tier: 2
+    - claim: Japanese comparative formation differs from English; uses yori + adjective
+        rather than -er/-est
+      source: Miyagawa & Saito (eds.) (2008) 'The Oxford Handbook of Japanese Linguistics',
+        Oxford University Press
+      location: General
+      tier: 1
+  linking_words:
+    interference_patterns:
+    - pattern: Linking words (japanese)
+      example: Linking words (japanese)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    examples:
+    - wrong: But, I think we should go.
+      correct: However, I think we should go.
+    why_it_happens: Japanese discourse connectors differ from English. Japanese 'demo'
+      functions as both 'but' and 'however,' and Japanese allows double conjunctions
+      that are redundant in English. Learners may produce sentences like 'Although
+      it rained, but we went out.' This transfer occurs because discourse conventions
+      are deeply embedded in L1.
+    teacher_tips:
+      how_to_explain: 'Teach: ''However'' for formal writing. ''But'' for informal.'
+      where_to_start: Start with the linking words pattern.
+      sequencing: 'Week 1: linking words. Week 2: Practice. Week 3: Review. Week 4:
+        Mixed.'
+      exercises:
+      - name: linking_words Audit
+        type: error-correction
+        description: 20 sentences with linking words errors.
+        duration: 15
+      - name: linking_words Translation
+        type: translation
+        description: Translate 15 sentences focusing on linking words.
+        duration: 15
+      - name: linking_words Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing linking words.
+        duration: 10
+      - name: linking_words Error Hunt
+        type: error-correction
+        description: A paragraph with 10 linking words errors.
+        duration: 15
+    sources: *id001
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for linking words
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Japanese speakers, pp. 295-307'
+      tier: 1
+    - claim: 'Grammar point: linking words'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Discourse connectors vary; some languages use double conjunctions
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See conjunction entries
+      tier: 2
+    - claim: ELLs use double conjunctions transferred from L1 (although...but)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 294
+      tier: 2
+    - claim: Japanese discourse connectors differ from English; learners may use different
+        conjunction patterns
+      source: Miyagawa & Saito (eds.) (2008) 'The Oxford Handbook of Japanese Linguistics',
+        Oxford University Press
+      location: 'Chapter 3: Japanese -Wa, -Ga, and Information Structure (Heycock)'
+      tier: 1
+  modal_verbs:
+    interference_patterns:
+    - pattern: Modal verbs (japanese)
+      example: Modal verbs (japanese)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    examples:
+    - wrong: I can have some water?
+      correct: May I have some water?
+    why_it_happens: Japanese modals cover multiple English modals.
+    teacher_tips:
+      how_to_explain: 'Teach modal hierarchy: can, may, could, should, must.'
+      where_to_start: Start with the modal verbs pattern.
+      sequencing: 'Week 1: modal verbs. Week 2: Practice. Week 3: Review. Week 4:
+        Mixed.'
+      exercises:
+      - name: modal_verbs Audit
+        type: error-correction
+        description: 20 sentences with modal verbs errors.
+        duration: 15
+      - name: modal_verbs Translation
+        type: translation
+        description: Translate 15 sentences focusing on modal verbs.
+        duration: 15
+      - name: modal_verbs Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing modal verbs.
+        duration: 10
+      - name: modal_verbs Error Hunt
+        type: error-correction
+        description: A paragraph with 10 modal verbs errors.
+        duration: 15
+    sources: *id001
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for modal verbs
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Japanese speakers, pp. 295-307'
+      tier: 1
+    - claim: 'Grammar point: modal verbs'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Modal systems vary widely; some languages have no direct equivalents
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See modal entries 77-86
+      tier: 2
+    - claim: 'Common ELL errors: *I can to go, *she might to believe (adding to after
+        modals)'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 225
+      tier: 2
+    - claim: Japanese modal system differs from English; uses verb endings rather
+        than modal auxiliaries
+      source: Miyagawa & Saito (eds.) (2008) 'The Oxford Handbook of Japanese Linguistics',
+        Oxford University Press
+      location: General
+      tier: 1
+  gerund_infinitive:
+    interference_patterns:
+    - pattern: Gerund vs infinitive (japanese)
+      example: Gerund vs infinitive (japanese)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    examples:
+    - wrong: Before to leave, say goodbye.
+      correct: Before leaving, say goodbye.
+    why_it_happens: Japanese uses infinitive after prepositions. English uses gerund.
+    teacher_tips:
+      how_to_explain: 'Teach: After prepositions -> always gerund (-ing).'
+      where_to_start: Start with the gerund infinitive pattern.
+      sequencing: 'Week 1: gerund infinitive. Week 2: Practice. Week 3: Review. Week
+        4: Mixed.'
+      exercises:
+      - name: gerund_infinitive Audit
+        type: error-correction
+        description: 20 sentences with gerund infinitive errors.
+        duration: 15
+      - name: gerund_infinitive Translation
+        type: translation
+        description: Translate 15 sentences focusing on gerund infinitive.
+        duration: 15
+      - name: gerund_infinitive Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing gerund infinitive.
+        duration: 10
+      - name: gerund_infinitive Error Hunt
+        type: error-correction
+        description: A paragraph with 10 gerund infinitive errors.
+        duration: 15
+    sources: *id001
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for gerund infinitive
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Japanese speakers, pp. 295-307'
+      tier: 1
+    - claim: 'Grammar point: gerund infinitive'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Gerund/infinitive distribution varies across languages
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See gerund/infinitive entries
+      tier: 2
+    - claim: 'ELLs experience interference with gerund/infinitive: *I can to read
+        it, *I can reading it'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 206
+      tier: 2
+    - claim: Japanese does not distinguish gerund/infinitive; learners use wrong form
+        after verbs
+      source: Miyagawa & Saito (eds.) (2008) 'The Oxford Handbook of Japanese Linguistics',
+        Oxford University Press
+      location: General
+      tier: 1
+  adverbs:
+    interference_patterns:
+    - pattern: Adjective vs adverb (japanese)
+      example: Adjective vs adverb (japanese)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    examples:
+    - wrong: He runs very fastly.
+      correct: He runs very fast.
+    why_it_happens: Japanese does not always distinguish adjectives from adverbs.
+      English requires -ly.
+    teacher_tips:
+      how_to_explain: 'Teach: Adjective describes a noun. Adverb describes a verb.
+        Most adverbs add -ly.'
+      where_to_start: Start with the adverbs pattern.
+      sequencing: 'Week 1: adverbs. Week 2: Practice. Week 3: Review. Week 4: Mixed.'
+      exercises:
+      - name: adverbs Audit
+        type: error-correction
+        description: 20 sentences with adverbs errors.
+        duration: 15
+      - name: adverbs Translation
+        type: translation
+        description: Translate 15 sentences focusing on adverbs.
+        duration: 15
+      - name: adverbs Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing adverbs.
+        duration: 10
+      - name: adverbs Error Hunt
+        type: error-correction
+        description: A paragraph with 10 adverbs errors.
+        duration: 15
+    sources: *id001
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for adverbs
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Japanese speakers, pp. 295-307'
+      tier: 1
+    - claim: 'Grammar point: adverbs'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: 'Adverb placement varies: some languages place adjectives where English
+        uses adverbs'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See adverb entries
+      tier: 2
+    - claim: ELLs use adjectives where English requires adverbs (transfer from L1)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 266
+      tier: 2
+    - claim: Japanese adverb placement differs from English; learners may place adverbs
+        in non-standard positions
+      source: Miyagawa & Saito (eds.) (2008) 'The Oxford Handbook of Japanese Linguistics',
+        Oxford University Press
+      location: General
+      tier: 1
+  false_friends:
+    interference_patterns:
+    - pattern: Confusion of wasei-eigo (JP-EN false friends)
+      example: Confusion of wasei-eigo (JP-EN false friends)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    examples:
+    - wrong: I live in a mansion.
+      correct: I live in an apartment.
+    why_it_happens: Japanese and English share cognates with shifted meanings.
+    teacher_tips:
+      how_to_explain: Create a list of common japanese-EN false friends.
+      where_to_start: Start with the false friends pattern.
+      sequencing: 'Week 1: false friends. Week 2: Practice. Week 3: Review. Week 4:
+        Mixed.'
+      exercises:
+      - name: false_friends Audit
+        type: error-correction
+        description: 20 sentences with false friends errors.
+        duration: 15
+      - name: false_friends Translation
+        type: translation
+        description: Translate 15 sentences focusing on false friends.
+        duration: 15
+      - name: false_friends Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing false friends.
+        duration: 10
+      - name: false_friends Error Hunt
+        type: error-correction
+        description: A paragraph with 10 false friends errors.
+        duration: 15
+    sources: *id001
+    source_count: 1
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 3
+    flagged: true
+    tier: 2
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for false friends
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Japanese speakers, pp. 295-307'
+      tier: 1
+    - claim: 'Grammar point: false friends'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: False friends (cognates with different meanings) cause high-impact errors
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See vocabulary problem entries
+      tier: 2
+    - claim: False friends cause high-impact communication errors; must be taught
+        explicitly
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 213
+      tier: 2
+    - claim: Japanese-English false friends exist due to different semantic boundaries
+      source: Miyagawa & Saito (eds.) (2008) 'The Oxford Handbook of Japanese Linguistics',
+        Oxford University Press
+      location: General
+      tier: 1

@@ -1,143 +1,173 @@
 grammar_point: extraposition
-title: "Extraposition"
-description: "Moving a long subject clause to the end of the sentence and using 'it' as a dummy subject, for better sentence balance and naturalness."
+title: Extraposition
+description: Moving a long subject clause to the end of the sentence and using 'it'
+  as a dummy subject, for better sentence balance and naturalness.
 level: C1
-
 meaning:
-  core_meaning: "Extraposition involves moving a heavy subject clause (usually a that-clause or to-infinitive clause) to the end of the sentence and placing 'it' in the subject position. This is the most common way to express complex subjects in English, as fronted clauses sound unnatural."
-  timeline: "Varies — depends on the tense of the main verb."
-  contrast: "Fronted subject = That she passed the exam is wonderful. Extraposed = It is wonderful that she passed the exam."
+  core_meaning: Extraposition involves moving a heavy subject clause (usually a that-clause
+    or to-infinitive clause) to the end of the sentence and placing 'it' in the subject
+    position. This is the most common way to express complex subjects in English,
+    as fronted clauses sound unnatural.
+  timeline: Varies — depends on the tense of the main verb.
+  contrast: Fronted subject = That she passed the exam is wonderful. Extraposed =
+    It is wonderful that she passed the exam.
   ccqs:
-    - question: Does 'it' stand in for a clause that appears at the end of the sentence?
-      answer: Yes, this is extraposition of the subject.
-    - question: Would the sentence sound unnatural with the clause at the beginning?
-      answer: Yes, English strongly prefers extraposed structures for heavy subjects.
+  - question: Does 'it' stand in for a clause that appears at the end of the sentence?
+    answer: Yes, this is extraposition of the subject.
+  - question: Would the sentence sound unnatural with the clause at the beginning?
+    answer: Yes, English strongly prefers extraposed structures for heavy subjects.
   example_generator:
     contexts:
-      - everyday situations
-      - news reporting
-      - academic writing
-      - expressing opinions
+    - everyday situations
+    - news reporting
+    - academic writing
+    - expressing opinions
     cultural_notes:
-      - Extraposition is the default pattern in English — fronted that-clauses are rare and literary
-      - Almost all sentences with 'it + be + adj + that...' use extraposition
+    - Extraposition is the default pattern in English — fronted that-clauses are rare
+      and literary
+    - Almost all sentences with 'it + be + adj + that...' use extraposition
     min_examples: 5
-
 form:
   affirmative:
-    structure: "It + be + adjective/noun + that-clause / to-infinitive clause"
+    structure: It + be + adjective/noun + that-clause / to-infinitive clause
     example_generator:
       contexts:
-        - expressing certainty
-        - reporting facts
-        - expressing opinions
+      - expressing certainty
+      - reporting facts
+      - expressing opinions
       min_examples: 4
   negative:
-    structure: "It + be + not + adjective + that-clause: It is not surprising that he failed. / It + be + unlikely/impossible + to-infinitive: It is unlikely to happen."
+    structure: 'It + be + not + adjective + that-clause: It is not surprising that
+      he failed. / It + be + unlikely/impossible + to-infinitive: It is unlikely to
+      happen.'
     example_generator:
       contexts:
-        - expressing doubt
-        - negative assessment
+      - expressing doubt
+      - negative assessment
       min_examples: 3
   questions:
-    structure: "Is/Was it + adjective + that-clause?: Is it true that she resigned? / Is it likely to happen?"
+    structure: 'Is/Was it + adjective + that-clause?: Is it true that she resigned?
+      / Is it likely to happen?'
     example_generator:
       contexts:
-        - checking facts
-        - expressing surprise
+      - checking facts
+      - expressing surprise
       min_examples: 3
-
 sub_rules:
-  - rule: "Adjective + that-clause: It is clear/obvious/evident/likely/unlikely/certain/surprising/strange + that..."
-    type: grammatical
-    examples:
-      - It is obvious that she is talented.
-      - It is unlikely that he will come.
-      - It is surprising that no one noticed.
-      - It is clear that changes are needed.
-  - rule: "Noun + that-clause: It is a pity/a shame/a wonder/a fact/a surprise + that..."
-    type: grammatical
-    examples:
-      - It is a pity that you cannot come.
-      - It is no wonder that she is exhausted.
-      - It is a fact that the climate is changing.
-      - It came as a surprise that he was promoted.
-  - rule: "Adjective + to-infinitive: It is difficult/easy/important/necessary/impossible + to..."
-    type: grammatical
-    examples:
-      - It is important to read the instructions carefully.
-      - It is impossible to predict the outcome.
-      - It was nice to meet you.
-      - It has become increasingly difficult to find affordable housing.
-  - rule: "Reporting verbs in passive: It is said/believed/reported/thought/rumoured/claimed + that..."
-    type: grammatical
-    examples:
-      - It is said that she is the best in her field.
-      - It was reported that three people were injured.
-      - It is believed that the building dates from the 12th century.
-      - It has been suggested that the policy should change.
-  - rule: "Verbs of occurrence: It happens/turns out/appears/seems/transpires + that..."
-    type: grammatical
-    examples:
-      - It happens that I know the answer.
-      - It turned out that he was right all along.
-      - It seems that no one was informed.
-      - It transpired that the documents had been falsified.
-
+- rule: 'Adjective + that-clause: It is clear/obvious/evident/likely/unlikely/certain/surprising/strange
+    + that...'
+  type: grammatical
+  examples:
+  - It is obvious that she is talented.
+  - It is unlikely that he will come.
+  - It is surprising that no one noticed.
+  - It is clear that changes are needed.
+- rule: 'Noun + that-clause: It is a pity/a shame/a wonder/a fact/a surprise + that...'
+  type: grammatical
+  examples:
+  - It is a pity that you cannot come.
+  - It is no wonder that she is exhausted.
+  - It is a fact that the climate is changing.
+  - It came as a surprise that he was promoted.
+- rule: 'Adjective + to-infinitive: It is difficult/easy/important/necessary/impossible
+    + to...'
+  type: grammatical
+  examples:
+  - It is important to read the instructions carefully.
+  - It is impossible to predict the outcome.
+  - It was nice to meet you.
+  - It has become increasingly difficult to find affordable housing.
+- rule: 'Reporting verbs in passive: It is said/believed/reported/thought/rumoured/claimed
+    + that...'
+  type: grammatical
+  examples:
+  - It is said that she is the best in her field.
+  - It was reported that three people were injured.
+  - It is believed that the building dates from the 12th century.
+  - It has been suggested that the policy should change.
+- rule: 'Verbs of occurrence: It happens/turns out/appears/seems/transpires + that...'
+  type: grammatical
+  examples:
+  - It happens that I know the answer.
+  - It turned out that he was right all along.
+  - It seems that no one was informed.
+  - It transpired that the documents had been falsified.
 use:
-  - context: "Expressing certainty and likelihood"
-    description: "Extraposition with adjectives of certainty is extremely common in both speech and writing."
-    examples:
-      - It is certain that the election will go ahead.
-      - It is likely that temperatures will continue to rise.
-      - It is doubtful that the project will be completed on time.
-  - context: "Expressing evaluation and reaction"
-    description: "Adjectives of evaluation (surprising, strange, interesting, worrying) are frequently used with extraposition."
-    examples:
-      - It is interesting that so few people responded.
-      - It is worrying that crime rates are increasing.
-      - It is remarkable that she recovered so quickly.
-  - context: "Reporting and hearsay"
-    description: "Passive reporting verbs with extraposition are standard in journalism and academic writing."
-    examples:
-      - It has been reported that negotiations are underway.
-      - It is widely believed that the economy will recover.
-      - It was later discovered that the data had been corrupted.
-  - context: "Expressing necessity and importance"
-    description: "Extraposition with to-infinitive is the natural way to express necessity, importance, or difficulty."
-    examples:
-      - It is essential to act now.
-      - It is worth noting that the results are preliminary.
-      - It remains to be seen whether the plan will work.
-
+- context: Expressing certainty and likelihood
+  description: Extraposition with adjectives of certainty is extremely common in both
+    speech and writing.
+  examples:
+  - It is certain that the election will go ahead.
+  - It is likely that temperatures will continue to rise.
+  - It is doubtful that the project will be completed on time.
+- context: Expressing evaluation and reaction
+  description: Adjectives of evaluation (surprising, strange, interesting, worrying)
+    are frequently used with extraposition.
+  examples:
+  - It is interesting that so few people responded.
+  - It is worrying that crime rates are increasing.
+  - It is remarkable that she recovered so quickly.
+- context: Reporting and hearsay
+  description: Passive reporting verbs with extraposition are standard in journalism
+    and academic writing.
+  examples:
+  - It has been reported that negotiations are underway.
+  - It is widely believed that the economy will recover.
+  - It was later discovered that the data had been corrupted.
+- context: Expressing necessity and importance
+  description: Extraposition with to-infinitive is the natural way to express necessity,
+    importance, or difficulty.
+  examples:
+  - It is essential to act now.
+  - It is worth noting that the results are preliminary.
+  - It remains to be seen whether the plan will work.
 phonetics:
-  - note: "The dummy 'it' is always unstressed and reduced in speech. The main stress falls on the adjective or noun: It is OBVIOUS that she is talented."
-    example_generator:
-      contexts:
-        - spoken opinions
-        - news reading
-    l1_issue: "Learners may place the that-clause at the beginning, producing unnatural-sounding sentences."
-  - note: "In passive reporting structures, the past participle carries stress: It is beLIEVED that..."
-    example_generator:
-      contexts:
-        - news broadcasts
-        - academic lectures
-    l1_issue: "Speakers may confuse extraposition with cleft sentences (It is... that...), which have a different function."
-
+- note: 'The dummy ''it'' is always unstressed and reduced in speech. The main stress
+    falls on the adjective or noun: It is OBVIOUS that she is talented.'
+  example_generator:
+    contexts:
+    - spoken opinions
+    - news reading
+  l1_issue: Learners may place the that-clause at the beginning, producing unnatural-sounding
+    sentences.
+- note: 'In passive reporting structures, the past participle carries stress: It is
+    beLIEVED that...'
+  example_generator:
+    contexts:
+    - news broadcasts
+    - academic lectures
+  l1_issue: Speakers may confuse extraposition with cleft sentences (It is... that...),
+    which have a different function.
 teaching:
-  methodology: "PPP"
+  methodology: PPP
   tips:
-    - "Start with the most common pattern: It + be + adj + that-clause, using high-frequency adjectives (clear, obvious, likely, surprising)."
-    - "Show how fronted that-clauses sound unnatural by comparing: 'That he left is strange' vs. 'It is strange that he left.'"
-    - "Introduce passive reporting structures (It is said that...) as a separate but related pattern."
-    - "Practice transforming fronted clauses into extraposed structures."
+  - 'Start with the most common pattern: It + be + adj + that-clause, using high-frequency
+    adjectives (clear, obvious, likely, surprising).'
+  - 'Show how fronted that-clauses sound unnatural by comparing: ''That he left is
+    strange'' vs. ''It is strange that he left.'''
+  - Introduce passive reporting structures (It is said that...) as a separate but
+    related pattern.
+  - Practice transforming fronted clauses into extraposed structures.
   recommended_activities:
-    - name: "Natural or Unnatural?"
-      duration: 10
-      adaptation_notes: "Students judge whether sentences sound natural and rewrite any that use fronted subject clauses."
-    - name: "News Report Rewrite"
-      duration: 15
-      adaptation_notes: "Students rewrite direct statements using passive extraposition (It is reported that... It is believed that...)."
-    - name: "Adjective Sort"
-      duration: 10
-      adaptation_notes: "Students categorise adjectives by the pattern they take (adj + that, adj + to-infinitive, etc.)."
+  - name: Natural or Unnatural?
+    duration: 10
+    adaptation_notes: Students judge whether sentences sound natural and rewrite any
+      that use fronted subject clauses.
+  - name: News Report Rewrite
+    duration: 15
+    adaptation_notes: Students rewrite direct statements using passive extraposition
+      (It is reported that... It is believed that...).
+  - name: Adjective Sort
+    duration: 10
+    adaptation_notes: Students categorise adjectives by the pattern they take (adj
+      + that, adj + to-infinitive, etc.).
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

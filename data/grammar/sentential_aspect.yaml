@@ -1,90 +1,101 @@
 grammar_point: sentential_aspect
-title: "Sentential Aspect"
-description: "The relationship between action and time: perfective (completed) vs progressive (ongoing) vs habitual (repeated)."
+title: Sentential Aspect
+description: 'The relationship between action and time: perfective (completed) vs
+  progressive (ongoing) vs habitual (repeated).'
 level: C1
-
 meaning:
-  core_meaning: "Sentential aspect describes how an action relates to time. Perfective = completed action. Progressive = ongoing action. Habitual = repeated action."
-  timeline: "Varies by aspect — perfective = completed, progressive = ongoing, habitual = repeated."
-  contrast: "Perfective = I wrote a letter. (completed) vs Progressive = I was writing a letter. (ongoing)"
+  core_meaning: Sentential aspect describes how an action relates to time. Perfective
+    = completed action. Progressive = ongoing action. Habitual = repeated action.
+  timeline: Varies by aspect — perfective = completed, progressive = ongoing, habitual
+    = repeated.
+  contrast: Perfective = I wrote a letter. (completed) vs Progressive = I was writing
+    a letter. (ongoing)
   ccqs:
-    - question: Is the action completed or ongoing?
-      answer: Completed = perfective, ongoing = progressive
-    - question: Does this happen regularly?
-      answer: Yes = habitual aspect.
+  - question: Is the action completed or ongoing?
+    answer: Completed = perfective, ongoing = progressive
+  - question: Does this happen regularly?
+    answer: Yes = habitual aspect.
   example_generator:
     contexts:
+    - academic writing
+    - linguistic analysis
+    - advanced grammar
+    - formal descriptions
+    cultural_notes: []
+    min_examples: 5
+form:
+  affirmative:
+    structure: 'Perfective: Subject + past simple: I wrote a letter. / Progressive:
+      Subject + be + verb-ing: I was writing a letter.'
+    example_generator:
+      contexts:
       - academic writing
       - linguistic analysis
       - advanced grammar
-      - formal descriptions
-    cultural_notes: []
-    min_examples: 5
-
-form:
-  affirmative:
-    structure: "Perfective: Subject + past simple: I wrote a letter. / Progressive: Subject + be + verb-ing: I was writing a letter."
-    example_generator:
-      contexts:
-        - academic writing
-        - linguistic analysis
-        - advanced grammar
       min_examples: 4
   negative:
-    structure: "Same patterns with negation: I did not write a letter. / I was not writing a letter."
+    structure: 'Same patterns with negation: I did not write a letter. / I was not
+      writing a letter.'
     example_generator:
       contexts:
-        - academic writing
-        - linguistic analysis
-        - advanced grammar
+      - academic writing
+      - linguistic analysis
+      - advanced grammar
       min_examples: 4
   questions:
-    structure: "Did + subject + verb?: Did you write a letter?"
+    structure: 'Did + subject + verb?: Did you write a letter?'
     example_generator:
       contexts:
-        - academic writing
-        - linguistic analysis
-        - advanced grammar
+      - academic writing
+      - linguistic analysis
+      - advanced grammar
       min_examples: 4
-
 sub_rules:
-  - rule: Perfective aspect — completed actions
-    type: grammatical
-    examples:
-      - I wrote a letter.
-      - She finished the project.
-  - rule: Progressive aspect — ongoing actions
-    type: grammatical
-    examples:
-      - I was writing a letter.
-      - She was working on the project.
-  - rule: Habitual aspect — repeated actions
-    type: grammatical
-    examples:
-      - I write letters every day.
-      - She always arrives early.
-
+- rule: Perfective aspect — completed actions
+  type: grammatical
+  examples:
+  - I wrote a letter.
+  - She finished the project.
+- rule: Progressive aspect — ongoing actions
+  type: grammatical
+  examples:
+  - I was writing a letter.
+  - She was working on the project.
+- rule: Habitual aspect — repeated actions
+  type: grammatical
+  examples:
+  - I write letters every day.
+  - She always arrives early.
 use:
-  - context: Academic analysis
-    description: Describing how actions relate to time
-    examples:
-      - The perfective aspect presents the action as completed.
-      - The progressive aspect focuses on the internal structure of the event.
-
+- context: Academic analysis
+  description: Describing how actions relate to time
+  examples:
+  - The perfective aspect presents the action as completed.
+  - The progressive aspect focuses on the internal structure of the event.
 phonetics:
-  - note: No specific phonetic pattern
-    example_generator:
-      contexts:
-        - written English
-    l1_issue: This is a metalinguistic concept — most L1 speakers do not analyze aspect explicitly.
-
+- note: No specific phonetic pattern
+  example_generator:
+    contexts:
+    - written English
+  l1_issue: This is a metalinguistic concept — most L1 speakers do not analyze aspect
+    explicitly.
 teaching:
   methodology: Guided discovery
   tips:
-    - Use timelines to visualize aspects
-    - Contrast perfective vs progressive explicitly
-    - Use authentic texts for analysis
+  - Use timelines to visualize aspects
+  - Contrast perfective vs progressive explicitly
+  - Use authentic texts for analysis
   recommended_activities:
-    - name: Aspect Identification
-      duration: 15
-      adaptation_notes: Students identify and classify aspect in authentic texts.
+  - name: Aspect Identification
+    duration: 15
+    adaptation_notes: Students identify and classify aspect in authentic texts.
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

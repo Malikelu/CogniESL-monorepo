@@ -1,111 +1,199 @@
 grammar_point: time_connectors
-title: "Time Connectors"
-description: "Using time connectors (before, after, when, while, until, as soon as, by the time, etc.) to show the relationship between events in time."
+title: Time Connectors
+description: Using time connectors (before, after, when, while, until, as soon as,
+  by the time, etc.) to show the relationship between events in time.
 level: A2
-
 meaning:
-  core_meaning: "Time connectors (also called temporal conjunctions and adverbials) link clauses and show when events happen in relation to each other — whether one event comes before, after, or at the same time as another."
-  timeline: "Time connectors establish chronological order, simultaneity, or duration between events. They can refer to past, present, or future."
-  contrast: "Compare with sequence connectors (first, then, next, finally) which list steps in order. Time connectors specifically show the temporal relationship between two clauses: 'After I ate, I left' vs. 'First I ate, then I left.'"
+  core_meaning: Time connectors (also called temporal conjunctions and adverbials)
+    link clauses and show when events happen in relation to each other — whether one
+    event comes before, after, or at the same time as another.
+  timeline: Time connectors establish chronological order, simultaneity, or duration
+    between events. They can refer to past, present, or future.
+  contrast: 'Compare with sequence connectors (first, then, next, finally) which list
+    steps in order. Time connectors specifically show the temporal relationship between
+    two clauses: ''After I ate, I left'' vs. ''First I ate, then I left.'''
   ccqs:
-    - question: "Does 'before' mean the event happened earlier or later?"
-      answer: "Earlier — 'before' introduces the later event."
-    - question: "Can 'while' be used with short, sudden actions?"
-      answer: "No — 'while' is used with continuous or ongoing actions, not momentary ones."
-    - question: "Do we use a future tense after 'when' in time clauses?"
-      answer: "No — we use the present simple after 'when' to refer to the future: 'When I arrive, I'll call you.'"
+  - question: Does 'before' mean the event happened earlier or later?
+    answer: Earlier — 'before' introduces the later event.
+  - question: Can 'while' be used with short, sudden actions?
+    answer: No — 'while' is used with continuous or ongoing actions, not momentary
+      ones.
+  - question: Do we use a future tense after 'when' in time clauses?
+    answer: 'No — we use the present simple after ''when'' to refer to the future:
+      ''When I arrive, I''ll call you.'''
   example_generator:
-    contexts: ["daily routines", "telling stories", "giving instructions", "describing processes", "making plans"]
-    cultural_notes: ["Time connectors are essential for clear communication in both spoken and written English. Mastery is expected at A2 level."]
+    contexts:
+    - daily routines
+    - telling stories
+    - giving instructions
+    - describing processes
+    - making plans
+    cultural_notes:
+    - Time connectors are essential for clear communication in both spoken and written
+      English. Mastery is expected at A2 level.
     min_examples: 5
-
 form:
   affirmative:
-    structure: "Time connector + subject + verb (present/past), + main clause / Main clause + time connector + subject + verb"
+    structure: Time connector + subject + verb (present/past), + main clause / Main
+      clause + time connector + subject + verb
     example_generator:
-      contexts: ["narratives", "instructions", "descriptions"]
+      contexts:
+      - narratives
+      - instructions
+      - descriptions
       min_examples: 4
   negative:
-    structure: "Time connector + subject + auxiliary + not + verb / not + time connector + clause"
+    structure: Time connector + subject + auxiliary + not + verb / not + time connector
+      + clause
     example_generator:
-      contexts: ["negative sequences", "things that didn't happen"]
+      contexts:
+      - negative sequences
+      - things that didn't happen
       min_examples: 3
   questions:
-    structure: "Question word + time connector...? / Did + subject + verb + time connector + clause?"
+    structure: Question word + time connector...? / Did + subject + verb + time connector
+      + clause?
     example_generator:
-      contexts: ["asking about timing", "clarifying sequences"]
+      contexts:
+      - asking about timing
+      - clarifying sequences
       min_examples: 3
-
 sub_rules:
-  - rule: "'Before' — the event in the main clause happens first: 'Before I left, I locked the door.'"
-    type: "grammatical"
-    examples: ["Before you go, turn off the lights.", "She had finished her homework before dinner.", "Before we start, let me explain the rules."]
-  - rule: "'After' — the event in the time clause happened first: 'After I arrived, I called a taxi.'"
-    type: "grammatical"
-    examples: ["After the film ended, we went home.", "After she graduated, she found a job.", "I felt much better after I had rested."]
-  - rule: "'When' — at the time that something happens: 'When I arrived, the meeting had started.'"
-    type: "grammatical"
-    examples: ["When it rains, I stay inside.", "When she called, I was cooking.", "When I was young, we lived in the countryside."]
-  - rule: "'While' — during the time that something is happening (used with continuous actions): 'While I was reading, the phone rang.'"
-    type: "grammatical"
-    examples: ["While she was cooking, he was setting the table.", "I fell asleep while I was watching TV.", "While they were playing, it started to rain."]
-  - rule: "'As soon as' — immediately after: 'As soon as I heard the news, I called her.'"
-    type: "grammatical"
-    examples: ["As soon as the bell rings, leave the classroom.", "I'll phone you as soon as I arrive.", "As soon as she saw me, she smiled."]
-  - rule: "'Until' — up to the time that: 'I waited until the bus came.'"
-    type: "grammatical"
-    examples: ["Stay here until I come back.", "She didn't know until I told him.", "We lived there until I was ten."]
-  - rule: "'By the time' — before or at the moment that: 'By the time we arrived, the film had started.'"
-    type: "grammatical"
-    examples: ["By the time I got home, everyone had left.", "By the time she finishes, it will be dark.", "By the time we understood the problem, it was too late."]
-  - rule: "No future tense after time connectors: use present simple for future meaning: 'When I arrive (not: will arrive), I'll call you.'"
-    type: "grammatical"
-    examples: ["After I finish, I'll help you.", "Before she arrives, we should clean up.", "I'll wait here until you come back."]
-
+- rule: '''Before'' — the event in the main clause happens first: ''Before I left,
+    I locked the door.'''
+  type: grammatical
+  examples:
+  - Before you go, turn off the lights.
+  - She had finished her homework before dinner.
+  - Before we start, let me explain the rules.
+- rule: '''After'' — the event in the time clause happened first: ''After I arrived,
+    I called a taxi.'''
+  type: grammatical
+  examples:
+  - After the film ended, we went home.
+  - After she graduated, she found a job.
+  - I felt much better after I had rested.
+- rule: '''When'' — at the time that something happens: ''When I arrived, the meeting
+    had started.'''
+  type: grammatical
+  examples:
+  - When it rains, I stay inside.
+  - When she called, I was cooking.
+  - When I was young, we lived in the countryside.
+- rule: '''While'' — during the time that something is happening (used with continuous
+    actions): ''While I was reading, the phone rang.'''
+  type: grammatical
+  examples:
+  - While she was cooking, he was setting the table.
+  - I fell asleep while I was watching TV.
+  - While they were playing, it started to rain.
+- rule: '''As soon as'' — immediately after: ''As soon as I heard the news, I called
+    her.'''
+  type: grammatical
+  examples:
+  - As soon as the bell rings, leave the classroom.
+  - I'll phone you as soon as I arrive.
+  - As soon as she saw me, she smiled.
+- rule: '''Until'' — up to the time that: ''I waited until the bus came.'''
+  type: grammatical
+  examples:
+  - Stay here until I come back.
+  - She didn't know until I told him.
+  - We lived there until I was ten.
+- rule: '''By the time'' — before or at the moment that: ''By the time we arrived,
+    the film had started.'''
+  type: grammatical
+  examples:
+  - By the time I got home, everyone had left.
+  - By the time she finishes, it will be dark.
+  - By the time we understood the problem, it was too late.
+- rule: 'No future tense after time connectors: use present simple for future meaning:
+    ''When I arrive (not: will arrive), I''ll call you.'''
+  type: grammatical
+  examples:
+  - After I finish, I'll help you.
+  - Before she arrives, we should clean up.
+  - I'll wait here until you come back.
 use:
-  - context: "Daily routines"
-    description: "Describing habitual sequences of events."
-    examples: ["After I wake up, I brush my teeth.", "Before I go to work, I have breakfast.", "While I'm on the bus, I listen to music."]
-  - context: "Narrating past events"
-    description: "Telling stories and recounting what happened."
-    examples: ["When I arrived at the station, the train had already left.", "While we were walking, we saw a fox.", "After the storm passed, we went outside to check the damage."]
-  - context: "Giving instructions"
-    description: "Explaining the correct order of steps."
-    examples: ["Before you turn on the machine, check the water level.", "Wait until the light goes green.", "As soon as the timer rings, take the cake out of the oven."]
-  - context: "Making plans"
-    description: "Talking about future arrangements and sequences."
-    examples: ["I'll call you when I get there.", "After the meeting, we'll go for lunch.", "As soon as the tickets go on sale, I'll buy them."]
-
+- context: Daily routines
+  description: Describing habitual sequences of events.
+  examples:
+  - After I wake up, I brush my teeth.
+  - Before I go to work, I have breakfast.
+  - While I'm on the bus, I listen to music.
+- context: Narrating past events
+  description: Telling stories and recounting what happened.
+  examples:
+  - When I arrived at the station, the train had already left.
+  - While we were walking, we saw a fox.
+  - After the storm passed, we went outside to check the damage.
+- context: Giving instructions
+  description: Explaining the correct order of steps.
+  examples:
+  - Before you turn on the machine, check the water level.
+  - Wait until the light goes green.
+  - As soon as the timer rings, take the cake out of the oven.
+- context: Making plans
+  description: Talking about future arrangements and sequences.
+  examples:
+  - I'll call you when I get there.
+  - After the meeting, we'll go for lunch.
+  - As soon as the tickets go on sale, I'll buy them.
 phonetics:
-  - note: "Time connectors are typically unstressed in connected speech. The stress falls on the content words in each clause."
-    example_generator:
-      contexts: ["fluency practice", "connected speech drills"]
-    l1_issue: "Speakers of languages that use future tense after time connectors (e.g., French 'quand je viendrai') may incorrectly say 'When I will arrive' instead of 'When I arrive'."
-  - note: "'Until' is often reduced to /ənˈtɪl/ or even /tɪl/ in informal speech: 'Wait 'til I get back.'"
-    example_generator:
-      contexts: ["informal speech", "listening comprehension"]
-    l1_issue: "Learners may confuse 'until' and 'by' — 'until' means 'up to that time', while 'by' means 'no later than'."
-
+- note: Time connectors are typically unstressed in connected speech. The stress falls
+    on the content words in each clause.
+  example_generator:
+    contexts:
+    - fluency practice
+    - connected speech drills
+  l1_issue: Speakers of languages that use future tense after time connectors (e.g.,
+    French 'quand je viendrai') may incorrectly say 'When I will arrive' instead of
+    'When I arrive'.
+- note: '''Until'' is often reduced to /ənˈtɪl/ or even /tɪl/ in informal speech:
+    ''Wait ''til I get back.'''
+  example_generator:
+    contexts:
+    - informal speech
+    - listening comprehension
+  l1_issue: Learners may confuse 'until' and 'by' — 'until' means 'up to that time',
+    while 'by' means 'no later than'.
 teaching:
-  methodology: "PPP"
-  tips: [
-    "Start with 'before' and 'after' as they are the most intuitive time connectors.",
-    "Use timelines drawn on the board to visually show the sequence of events.",
-    "Teach the 'no future after time connectors' rule early to prevent fossilisation of errors.",
-    "Use students' own daily routines to practise: 'Before I come to school, I...'",
-    "Introduce 'while' with continuous tenses only — contrast with 'when' for single events.",
-    "Practise with matching activities: students match sentence halves with the correct time connector."
-  ]
+  methodology: PPP
+  tips:
+  - Start with 'before' and 'after' as they are the most intuitive time connectors.
+  - Use timelines drawn on the board to visually show the sequence of events.
+  - Teach the 'no future after time connectors' rule early to prevent fossilisation
+    of errors.
+  - 'Use students'' own daily routines to practise: ''Before I come to school, I...'''
+  - Introduce 'while' with continuous tenses only — contrast with 'when' for single
+    events.
+  - 'Practise with matching activities: students match sentence halves with the correct
+    time connector.'
   recommended_activities:
-    - name: "Timeline ordering"
-      duration: 10
-      adaptation_notes: "Give students jumbled sentences. They arrange them in chronological order and join them with time connectors."
-    - name: "Daily routine chain"
-      duration: 10
-      adaptation_notes: "Students sit in a circle. Each adds a sentence about their routine using a time connector: 'After I wake up, I...' 'After I brush my teeth, I...'"
-    - name: "Story building"
-      duration: 15
-      adaptation_notes: "The teacher starts a story. Each student adds a sentence beginning with a time connector to continue the narrative."
-    - name: "Instruction sequencing"
-      duration: 10
-      adaptation_notes: "Students write instructions for a simple task (making tea, getting to school) using at least 4 different time connectors."
+  - name: Timeline ordering
+    duration: 10
+    adaptation_notes: Give students jumbled sentences. They arrange them in chronological
+      order and join them with time connectors.
+  - name: Daily routine chain
+    duration: 10
+    adaptation_notes: 'Students sit in a circle. Each adds a sentence about their
+      routine using a time connector: ''After I wake up, I...'' ''After I brush my
+      teeth, I...'''
+  - name: Story building
+    duration: 15
+    adaptation_notes: The teacher starts a story. Each student adds a sentence beginning
+      with a time connector to continue the narrative.
+  - name: Instruction sequencing
+    duration: 10
+    adaptation_notes: Students write instructions for a simple task (making tea, getting
+      to school) using at least 4 different time connectors.
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

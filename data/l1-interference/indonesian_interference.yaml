@@ -1,442 +1,1188 @@
-language: indonesian
+language: Indonesian
+language_code: id
 schema_version: '3.0'
 grammar_points:
-  no_verb_conjugation:
+  articles:
     interference_patterns:
-    - Indonesian uses no articles which does not exist in English, causing transfer
-      errors related to 'no verb conjugation'.
-    why_it_happens: Indonesian handles 'no verb conjugation' differently from English.
-      Indonesian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Indonesian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Indonesian and English for 'no
-        verb conjugation'. Show the Indonesian structure side-by-side with English.
-        Highlight the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Indonesian
-        handles 'no verb conjugation' differently from English. Use visual aids or
-        color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Indonesian sentences, students translate to English,
-          focusing on correct 'no verb conjugation' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Indonesian-style 'no verb conjugation'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'no
-          verb conjugation' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'no verb conjugation'
-          errors.
-        duration: 15
+    - pattern: Omission of all articles (Indonesian has no articles)
+      example: Omission of all articles (Indonesian has no articles)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
     examples:
-    - 'Wrong: Applying Indonesian ''no verb conjugation'' structure to English. Correct:
-      Use the English structure for ''no verb conjugation''.'
-    - 'Wrong: Direct translation of Indonesian ''no verb conjugation'' pattern. Correct:
-      Follow English ''no verb conjugation'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''no verb conjugation'' patterns.'
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Siregar, F. (2005). Indonesian learners and English article acquisition. TEFLIN
-      Journal, 16(1), 45-60.
+    - wrong: Saya guru.
+      correct: I am a teacher.
+    why_it_happens: Indonesian has no article system. Definiteness is inferred from
+      context or word order rather than grammatical markers. Indonesian learners often
+      omit articles entirely in English, producing sentences like 'I bought book yesterday'
+      instead of 'I bought a book.' This occurs because Indonesian does not require
+      speakers to mark definiteness grammatically.
+    teacher_tips:
+      how_to_explain: 'Teach: English REQUIRES articles. ''A/an'' for first mention,
+        ''the'' for specific.'
+      where_to_start: Start with the articles pattern.
+      sequencing: 'Week 1: articles. Week 2: Practice. Week 3: Review. Week 4: Mixed.'
+      exercises:
+      - name: articles Audit
+        type: error-correction
+        description: 20 sentences with articles errors.
+        duration: 15
+      - name: articles Translation
+        type: translation
+        description: Translate 15 sentences focusing on articles.
+        duration: 15
+      - name: articles Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing articles.
+        duration: 10
+      - name: articles Error Hunt
+        type: error-correction
+        description: A paragraph with 10 articles errors.
+        duration: 15
+    sources: &id001
+    - Swan & Smith "Learner English" (Indonesian)
+    - Parrott "Grammar for English Language Teachers"
     source_count: 2
-    source_type: peer-reviewed
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Indonesian
-    notes: Most impactful single difference. Students omit third-person -s constantly.
-  tense_aspect_particles:
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for articles
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Indonesian speakers, pp. 277-294'
+      tier: 1
+    - claim: 'Grammar point: articles'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Article usage varies significantly across languages; many languages have
+        no article system
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See articles entries 133-142
+      tier: 2
+    - claim: Indonesian has no article system (PEU articles entries)
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See relevant entry
+      tier: 2
+    - claim: ELLs commonly omit indefinite article when descriptive adjectives come
+        between determiner and noun
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 153
+      tier: 2
+    - claim: Indonesian has no article system (p. 153)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: See relevant section
+      tier: 2
+  word_order:
     interference_patterns:
-    - Indonesian uses no articles which does not exist in English, causing transfer
-      errors related to 'tense aspect particles'.
-    why_it_happens: Indonesian handles 'tense aspect particles' differently from English.
-      Indonesian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Indonesian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Indonesian and English for 'tense
-        aspect particles'. Show the Indonesian structure side-by-side with English.
-        Highlight the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Indonesian
-        handles 'tense aspect particles' differently from English. Use visual aids
-        or color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Indonesian sentences, students translate to English,
-          focusing on correct 'tense aspect particles' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Indonesian-style 'tense aspect particles'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'tense
-          aspect particles' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'tense aspect
-          particles' errors.
-        duration: 15
+    - pattern: SVO but flexible
+      example: SVO but flexible
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
     examples:
-    - 'Wrong: ''She is tense aspect pteacher.'' Correct: ''She is a tense aspect pteacher.'''
-    - 'Wrong: ''I like the tense aspect pmusic.'' (general) Correct: ''I like tense
-      aspect pmusic.'''
-    - 'Wrong: ''I have tense aspect pbook.'' Correct: ''I have a tense aspect pbook.'''
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Siregar, F. (2005). Indonesian learners and English article acquisition. TEFLIN
-      Journal, 16(1), 45-60.
+    - wrong: I book bought yesterday.
+      correct: I bought a book yesterday.
+    why_it_happens: Indonesian word order is flexible. English is strictly SVO.
+    teacher_tips:
+      how_to_explain: 'Teach: English is ALWAYS Subject-Verb-Object.'
+      where_to_start: Start with the word order pattern.
+      sequencing: 'Week 1: word order. Week 2: Practice. Week 3: Review. Week 4: Mixed.'
+      exercises:
+      - name: word_order Audit
+        type: error-correction
+        description: 20 sentences with word order errors.
+        duration: 15
+      - name: word_order Translation
+        type: translation
+        description: Translate 15 sentences focusing on word order.
+        duration: 15
+      - name: word_order Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing word order.
+        duration: 10
+      - name: word_order Error Hunt
+        type: error-correction
+        description: A paragraph with 10 word order errors.
+        duration: 15
+    sources: *id001
     source_count: 2
-    source_type: peer-reviewed
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Indonesian
-    notes: Students struggle with English inflection after relying on particles.
-  article_absence_id:
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for word order
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Indonesian speakers, pp. 277-294'
+      tier: 1
+    - claim: 'Grammar point: word order'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Germanic languages and Chinese make rich use of compounding, unlike other
+        languages
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: p. 39
+      tier: 2
+    - claim: Indonesian is SVO (p. 59)
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: See relevant section
+      tier: 2
+    - claim: 'Word order varies: SOV, SVO, VSO, V2, free order — all cause transfer
+        errors'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See word order entries
+      tier: 2
+    - claim: 'ELLs transfer L1 word order: subject-verb inversion from Spanish, SOV
+        from Arabic/Japanese'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 199
+      tier: 2
+  questions:
     interference_patterns:
-    - Indonesian uses no articles which does not exist in English, causing transfer
-      errors related to 'article absence id'.
-    why_it_happens: Indonesian handles 'article absence id' differently from English.
-      Indonesian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Indonesian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Indonesian and English for 'article
-        absence id'. Show the Indonesian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Indonesian
-        handles 'article absence id' differently from English. Use visual aids or
-        color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Indonesian sentences, students translate to English,
-          focusing on correct 'article absence id' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Indonesian-style 'article absence id'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'article
-          absence id' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'article absence
-          id' errors.
-        duration: 15
+    - pattern: Use of -kah question particle
+      example: Use of -kah question particle
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
     examples:
-    - 'Wrong: ''She is article absence id.'' Correct: ''She is a article absence id.'''
-    - 'Wrong: ''I like the article absence id.'' (general) Correct: ''I like article
-      absence id.'''
-    - 'Wrong: ''I have article absence id.'' Correct: ''I have a article absence id.'''
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Siregar, F. (2005). Indonesian learners and English article acquisition. TEFLIN
-      Journal, 16(1), 45-60.
+    - wrong: You go to school?
+      correct: Do you go to school?
+    why_it_happens: Indonesian forms questions with particles or intonation. English
+      requires do-support.
+    teacher_tips:
+      how_to_explain: 'Teach: Do/Does/Did + subject + base verb?'
+      where_to_start: Start with the questions pattern.
+      sequencing: 'Week 1: questions. Week 2: Practice. Week 3: Review. Week 4: Mixed.'
+      exercises:
+      - name: questions Audit
+        type: error-correction
+        description: 20 sentences with questions errors.
+        duration: 15
+      - name: questions Translation
+        type: translation
+        description: Translate 15 sentences focusing on questions.
+        duration: 15
+      - name: questions Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing questions.
+        duration: 10
+      - name: questions Error Hunt
+        type: error-correction
+        description: A paragraph with 10 questions errors.
+        duration: 15
+    sources: *id001
     source_count: 2
-    source_type: peer-reviewed
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Indonesian
-    notes: Complete L1 gap. Among the hardest English features for all learners.
-  plural_reduplication:
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for questions
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Indonesian speakers, pp. 277-294'
+      tier: 1
+    - claim: 'Grammar point: questions'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: 'Question formation varies: intonation-only, particles, inversion — all
+        cause transfer errors'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 294
+      tier: 2
+  negation:
     interference_patterns:
-    - Indonesian uses no articles which does not exist in English, causing transfer
-      errors related to 'plural reduplication'.
-    why_it_happens: Indonesian handles 'plural reduplication' differently from English.
-      Indonesian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Indonesian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Indonesian and English for 'plural
-        reduplication'. Show the Indonesian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Indonesian
-        handles 'plural reduplication' differently from English. Use visual aids or
-        color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Indonesian sentences, students translate to English,
-          focusing on correct 'plural reduplication' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Indonesian-style 'plural reduplication'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'plural
-          reduplication' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'plural reduplication'
-          errors.
-        duration: 15
+    - pattern: Use of tidak before the verb
+      example: Use of tidak before the verb
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
     examples:
-    - 'Wrong: ''I have many informations.'' Correct: ''I have a lot of information.'''
-    - 'Wrong: ''He gave me good advices.'' Correct: ''He gave me good advice.'''
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Siregar, F. (2005). Indonesian learners and English article acquisition. TEFLIN
-      Journal, 16(1), 45-60.
+    - wrong: I not know the answer.
+      correct: I do not know the answer.
+    why_it_happens: Indonesian negation uses pre-verbal particle. English uses do-support.
+    teacher_tips:
+      how_to_explain: 'Teach: do/does/did + not + base verb.'
+      where_to_start: Start with the negation pattern.
+      sequencing: 'Week 1: negation. Week 2: Practice. Week 3: Review. Week 4: Mixed.'
+      exercises:
+      - name: negation Audit
+        type: error-correction
+        description: 20 sentences with negation errors.
+        duration: 15
+      - name: negation Translation
+        type: translation
+        description: Translate 15 sentences focusing on negation.
+        duration: 15
+      - name: negation Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing negation.
+        duration: 10
+      - name: negation Error Hunt
+        type: error-correction
+        description: A paragraph with 10 negation errors.
+        duration: 15
+    sources: *id001
     source_count: 2
-    source_type: peer-reviewed
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Indonesian
-    notes: Lower English transfer impact. More affects written production.
-  topic_comment_structure:
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for negation
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Indonesian speakers, pp. 277-294'
+      tier: 1
+    - claim: 'Grammar point: negation'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: 'Negation patterns vary: pre-verbal particles, post-verbal markers, double
+        negation'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See negation entries
+      tier: 2
+    - claim: 'Double negation transferred from L1 (Spanish, Arabic, etc.): *I don''t
+        have no reason'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 1
+      tier: 2
+  phonology:
     interference_patterns:
-    - Indonesian uses no articles which does not exist in English, causing transfer
-      errors related to 'topic comment structure'.
-    why_it_happens: Indonesian handles 'topic comment structure' differently from
-      English. Indonesian L1 speakers transfer native structural patterns to English,
-      leading to systematic errors. The error is persistent because the Indonesian
-      structure is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Indonesian and English for 'topic
-        comment structure'. Show the Indonesian structure side-by-side with English.
-        Highlight the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Indonesian
-        handles 'topic comment structure' differently from English. Use visual aids
-        or color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Indonesian sentences, students translate to English,
-          focusing on correct 'topic comment structure' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Indonesian-style 'topic comment structure'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'topic
-          comment structure' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'topic comment
-          structure' errors.
-        duration: 15
+    - pattern: Confusion of /v/ and /w/
+      example: Confusion of /v/ and /w/
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
     examples:
-    - 'Wrong: ''topic comment structure I saw.'' (topic-comment) Correct: ''I saw
-      topic comment structure.'' (SVO)'
+    - wrong: I am wery happy.
+      correct: I am very happy.
+    why_it_happens: Indonesian phonology differs from English. Indonesian lacks the
+      dental fricatives /θ/ and /ð/, and has a different vowel system. Indonesian
+      learners may substitute closest Indonesian sounds. These errors persist because
+      the L1 phonological system filters out non-native sound distinctions.
+    teacher_tips:
+      how_to_explain: 'Teach: /v/ vs /w/, /θ/ vs /t/.'
+      where_to_start: Start with the phonology pattern.
+      sequencing: 'Week 1: phonology. Week 2: Practice. Week 3: Review. Week 4: Mixed.'
+      exercises:
+      - name: phonology Audit
+        type: error-correction
+        description: 20 sentences with phonology errors.
+        duration: 15
+      - name: phonology Translation
+        type: translation
+        description: Translate 15 sentences focusing on phonology.
+        duration: 15
+      - name: phonology Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing phonology.
+        duration: 10
+      - name: phonology Error Hunt
+        type: error-correction
+        description: A paragraph with 10 phonology errors.
+        duration: 15
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Siregar, F. (2005). Indonesian learners and English article acquisition. TEFLIN
-      Journal, 16(1), 45-60.
+    - Swan & Smith "Learner English" (Indonesian)
+    - Underhill "Sound Foundations"
     source_count: 2
-    source_type: peer-reviewed
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Indonesian
-    notes: Affects writing more than spoken English.
-  bahasa_pronoun_registers:
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for phonology
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Indonesian speakers, pp. 277-294'
+      tier: 1
+    - claim: 'Grammar point: phonology'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Phonological interference pattern
+      source: Underhill (2005) 'Sound Foundations', Macmillan
+      location: See relevant phonology section
+      tier: 2
+    - claim: Phonological transfer from L1 causes pronunciation errors
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See pronunciation entries
+      tier: 2
+    - claim: Single pronunciation errors rarely impede communication; focus on patterns
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 272
+      tier: 2
+  countability:
     interference_patterns:
-    - Indonesian uses no articles which does not exist in English, causing transfer
-      errors related to 'bahasa pronoun registers'.
-    why_it_happens: Indonesian handles 'bahasa pronoun registers' differently from
-      English. Indonesian L1 speakers transfer native structural patterns to English,
-      leading to systematic errors. The error is persistent because the Indonesian
-      structure is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Indonesian and English for 'bahasa
-        pronoun registers'. Show the Indonesian structure side-by-side with English.
-        Highlight the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Indonesian
-        handles 'bahasa pronoun registers' differently from English. Use visual aids
-        or color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Indonesian sentences, students translate to English,
-          focusing on correct 'bahasa pronoun registers' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Indonesian-style 'bahasa pronoun registers'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'bahasa
-          pronoun registers' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'bahasa pronoun
-          registers' errors.
-        duration: 15
+    - pattern: Pluralization of uncountable nouns (indonesian)
+      example: Pluralization of uncountable nouns (indonesian)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
     examples:
-    - 'Wrong: ''Eat pizza.'' Correct: ''I eat pizza.'''
-    - 'Wrong: ''Rains.'' Correct: ''It rains.'''
-    - 'Wrong: ''I see he.'' Correct: ''I see him.'''
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Siregar, F. (2005). Indonesian learners and English article acquisition. TEFLIN
-      Journal, 16(1), 45-60.
+    - wrong: I have many homeworks.
+      correct: I have a lot of homework.
+    why_it_happens: Indonesian treats some nouns as countable that are uncountable
+      in English.
+    teacher_tips:
+      how_to_explain: Create a list of common uncountable nouns.
+      where_to_start: Start with the countability pattern.
+      sequencing: 'Week 1: countability. Week 2: Practice. Week 3: Review. Week 4:
+        Mixed.'
+      exercises:
+      - name: countability Audit
+        type: error-correction
+        description: 20 sentences with countability errors.
+        duration: 15
+      - name: countability Translation
+        type: translation
+        description: Translate 15 sentences focusing on countability.
+        duration: 15
+      - name: countability Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing countability.
+        duration: 10
+      - name: countability Error Hunt
+        type: error-correction
+        description: A paragraph with 10 countability errors.
+        duration: 15
+    sources: *id001
     source_count: 2
-    source_type: peer-reviewed
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Indonesian
-    notes: Less relevant for English production.
-  passive_voice_id:
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for countability
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Indonesian speakers, pp. 277-294'
+      tier: 1
+    - claim: 'Grammar point: countability'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Countability distinctions vary across languages; some nouns are countable
+        in L1 but uncountable in English
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See countability entries
+      tier: 2
+    - claim: Count/mass noun distinctions vary by L1; Spanish uses have for age (*I
+        have 27 years old)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 89
+      tier: 2
+  subject_verb_agreement:
     interference_patterns:
-    - Indonesian uses no articles which does not exist in English, causing transfer
-      errors related to 'passive voice id'.
-    why_it_happens: Indonesian handles 'passive voice id' differently from English.
-      Indonesian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Indonesian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Indonesian and English for 'passive
-        voice id'. Show the Indonesian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Indonesian
-        handles 'passive voice id' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Indonesian sentences, students translate to English,
-          focusing on correct 'passive voice id' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Indonesian-style 'passive voice id'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'passive
-          voice id' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'passive voice
-          id' errors.
-        duration: 15
+    - pattern: Omission of third-person -s (indonesian)
+      example: Omission of third-person -s (indonesian)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
     examples:
-    - 'Wrong: ''The letter was send.'' Correct: ''The letter was sent.'''
-    - 'Wrong: ''The book has wrote.'' Correct: ''The book has been written.'''
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Siregar, F. (2005). Indonesian learners and English article acquisition. TEFLIN
-      Journal, 16(1), 45-60.
+    - wrong: She like chocolate.
+      correct: She likes chocolate.
+    why_it_happens: Indonesian verb conjugation differs from English. Third-person
+      -s is frequently omitted.
+    teacher_tips:
+      how_to_explain: Teach the 'he/she/it + verb-s' rule as non-negotiable.
+      where_to_start: Start with the subject verb agreement pattern.
+      sequencing: 'Week 1: subject verb agreement. Week 2: Practice. Week 3: Review.
+        Week 4: Mixed.'
+      exercises:
+      - name: subject_verb_agreement Audit
+        type: error-correction
+        description: 20 sentences with subject verb agreement errors.
+        duration: 15
+      - name: subject_verb_agreement Translation
+        type: translation
+        description: Translate 15 sentences focusing on subject verb agreement.
+        duration: 15
+      - name: subject_verb_agreement Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing subject verb agreement.
+        duration: 10
+      - name: subject_verb_agreement Error Hunt
+        type: error-correction
+        description: A paragraph with 10 subject verb agreement errors.
+        duration: 15
+    sources: *id001
     source_count: 2
-    source_type: peer-reviewed
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Indonesian
-    notes: Passive is common in formal Indonesian but less in speech.
-  adjective_position_id:
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for subject verb agreement
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Indonesian speakers, pp. 277-294'
+      tier: 1
+    - claim: 'Grammar point: subject verb agreement'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Topic-prominent L1 learners find subject-verb agreement more difficult
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: p. 61
+      tier: 2
+    - claim: SVA is difficult for learners whose L1 has no subject-verb agreement
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See SVA entries
+      tier: 2
+    - claim: SVA errors persist because the correct and incorrect forms often sound
+        similar
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 314
+      tier: 2
+  prepositions:
     interference_patterns:
-    - Indonesian uses no articles which does not exist in English, causing transfer
-      errors related to 'adjective position id'.
-    why_it_happens: Indonesian handles 'adjective position id' differently from English.
-      Indonesian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Indonesian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Indonesian and English for 'adjective
-        position id'. Show the Indonesian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Indonesian
-        handles 'adjective position id' differently from English. Use visual aids
-        or color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Indonesian sentences, students translate to English,
-          focusing on correct 'adjective position id' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Indonesian-style 'adjective position
-          id' errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'adjective
-          position id' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'adjective position
-          id' errors.
-        duration: 15
+    - pattern: Transfer of indonesian prepositions
+      example: Transfer of indonesian prepositions
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
     examples:
-    - 'Wrong: ''a house white big.'' Correct: ''a big white house.'''
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Siregar, F. (2005). Indonesian learners and English article acquisition. TEFLIN
-      Journal, 16(1), 45-60.
+    - wrong: I am on home.
+      correct: I am at home.
+    why_it_happens: Indonesian prepositions differ from English. Indonesian uses fewer
+      prepositions and relies more on context. Indonesian learners may omit prepositions
+      or use wrong ones in English. This occurs because the L1 preposition system
+      is simpler and maps differently onto English.
+    teacher_tips:
+      how_to_explain: Teach common indonesian-English preposition differences.
+      where_to_start: Start with the prepositions pattern.
+      sequencing: 'Week 1: prepositions. Week 2: Practice. Week 3: Review. Week 4:
+        Mixed.'
+      exercises:
+      - name: prepositions Audit
+        type: error-correction
+        description: 20 sentences with prepositions errors.
+        duration: 15
+      - name: prepositions Translation
+        type: translation
+        description: Translate 15 sentences focusing on prepositions.
+        duration: 15
+      - name: prepositions Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing prepositions.
+        duration: 10
+      - name: prepositions Error Hunt
+        type: error-correction
+        description: A paragraph with 10 prepositions errors.
+        duration: 15
+    sources: *id001
     source_count: 2
-    source_type: peer-reviewed
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Indonesian
-    notes: Frequent interference in writing tasks.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for prepositions
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Indonesian speakers, pp. 277-294'
+      tier: 1
+    - claim: 'Grammar point: prepositions'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Prepositions signal relationships that compensate for lost noun inflections
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: p. 84
+      tier: 2
+    - claim: Preposition usage is highly language-specific and a major source of errors
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See preposition entries
+      tier: 2
+    - claim: 'Preposition combinations must be taught explicitly: rote memorization,
+        direct instruction, or extensive reading'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 171
+      tier: 2
+  passive_voice:
+    interference_patterns:
+    - pattern: Avoidance of passive voice (indonesian)
+      example: Avoidance of passive voice (indonesian)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    examples:
+    - wrong: Someone built this house in 1900.
+      correct: This house was built in 1900.
+    why_it_happens: Indonesian uses passive less frequently than English.
+    teacher_tips:
+      how_to_explain: 'Teach the passive formula: be + past participle.'
+      where_to_start: Start with the passive voice pattern.
+      sequencing: 'Week 1: passive voice. Week 2: Practice. Week 3: Review. Week 4:
+        Mixed.'
+      exercises:
+      - name: passive_voice Audit
+        type: error-correction
+        description: 20 sentences with passive voice errors.
+        duration: 15
+      - name: passive_voice Translation
+        type: translation
+        description: Translate 15 sentences focusing on passive voice.
+        duration: 15
+      - name: passive_voice Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing passive voice.
+        duration: 10
+      - name: passive_voice Error Hunt
+        type: error-correction
+        description: A paragraph with 10 passive voice errors.
+        duration: 15
+    sources: *id001
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for passive voice
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Indonesian speakers, pp. 277-294'
+      tier: 1
+    - claim: 'Grammar point: passive voice'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Passive voice availability and usage varies across languages
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See passive entries
+      tier: 2
+    - claim: ELLs avoid passive in contexts where L1 uses different structures
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 294
+      tier: 2
+  conditionals:
+    interference_patterns:
+    - pattern: Conditional structure (indonesian)
+      example: Conditional structure (indonesian)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    examples:
+    - wrong: If I would have money, I would travel.
+      correct: If I had money, I would travel.
+    why_it_happens: Indonesian conditional structure differs from English.
+    teacher_tips:
+      how_to_explain: 'Teach: NO WOULD IN IF-CLAUSE. Use ''were'' for unreal situations.'
+      where_to_start: Start with the conditionals pattern.
+      sequencing: 'Week 1: conditionals. Week 2: Practice. Week 3: Review. Week 4:
+        Mixed.'
+      exercises:
+      - name: conditionals Audit
+        type: error-correction
+        description: 20 sentences with conditionals errors.
+        duration: 15
+      - name: conditionals Translation
+        type: translation
+        description: Translate 15 sentences focusing on conditionals.
+        duration: 15
+      - name: conditionals Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing conditionals.
+        duration: 10
+      - name: conditionals Error Hunt
+        type: error-correction
+        description: A paragraph with 10 conditionals errors.
+        duration: 15
+    sources: *id001
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for conditionals
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Indonesian speakers, pp. 277-294'
+      tier: 1
+    - claim: 'Grammar point: conditionals'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Conditional structures vary; some languages use morphological mood, others
+        use particles
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See conditional entries
+      tier: 2
+    - claim: 'Common error: *If I would have known (transfer from L1 conditional structures)'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 322
+      tier: 2
+  relative_clauses:
+    interference_patterns:
+    - pattern: Relative pronoun (indonesian)
+      example: Relative pronoun (indonesian)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    examples:
+    - wrong: The man which I met is my boss.
+      correct: The man who I met is my boss.
+    why_it_happens: Indonesian uses a universal relative pronoun. English distinguishes
+      who/which/that.
+    teacher_tips:
+      how_to_explain: 'Teach: For people -> who/that. For things -> that/which.'
+      where_to_start: Start with the relative clauses pattern.
+      sequencing: 'Week 1: relative clauses. Week 2: Practice. Week 3: Review. Week
+        4: Mixed.'
+      exercises:
+      - name: relative_clauses Audit
+        type: error-correction
+        description: 20 sentences with relative clauses errors.
+        duration: 15
+      - name: relative_clauses Translation
+        type: translation
+        description: Translate 15 sentences focusing on relative clauses.
+        duration: 15
+      - name: relative_clauses Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing relative clauses.
+        duration: 10
+      - name: relative_clauses Error Hunt
+        type: error-correction
+        description: A paragraph with 10 relative clauses errors.
+        duration: 15
+    sources: *id001
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for relative clauses
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Indonesian speakers, pp. 277-294'
+      tier: 1
+    - claim: 'Grammar point: relative clauses'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: 'Relative clause structure varies: pre-nominal vs post-nominal, resumptive
+        pronouns'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See relative clause entries
+      tier: 2
+    - claim: 'ELLs transfer L1 relative clause structure: resumptive pronouns, pre-nominal
+        clauses'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 199
+      tier: 2
+  reported_speech:
+    interference_patterns:
+    - pattern: No backshift of tenses (indonesian)
+      example: No backshift of tenses (indonesian)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    examples:
+    - wrong: She said that she is tired.
+      correct: She said that she was tired.
+    why_it_happens: Indonesian reported speech retains original tense. English requires
+      backshift.
+    teacher_tips:
+      how_to_explain: 'Teach the backshift rule: present -> past, will -> would.'
+      where_to_start: Start with the reported speech pattern.
+      sequencing: 'Week 1: reported speech. Week 2: Practice. Week 3: Review. Week
+        4: Mixed.'
+      exercises:
+      - name: reported_speech Audit
+        type: error-correction
+        description: 20 sentences with reported speech errors.
+        duration: 15
+      - name: reported_speech Translation
+        type: translation
+        description: Translate 15 sentences focusing on reported speech.
+        duration: 15
+      - name: reported_speech Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing reported speech.
+        duration: 10
+      - name: reported_speech Error Hunt
+        type: error-correction
+        description: A paragraph with 10 reported speech errors.
+        duration: 15
+    sources: *id001
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for reported speech
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Indonesian speakers, pp. 277-294'
+      tier: 1
+    - claim: 'Grammar point: reported speech'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Reported speech conventions vary; some languages retain original tense
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See reported speech entries
+      tier: 2
+    - claim: ELLs retain original tense in reported speech (no backshift)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 294
+      tier: 2
+  comparatives:
+    interference_patterns:
+    - pattern: Comparative formation (indonesian)
+      example: Comparative formation (indonesian)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    examples:
+    - wrong: This car is more big than that one.
+      correct: This car is bigger than that one.
+    why_it_happens: Indonesian forms comparatives differently. English uses -er/-est
+      for short adjectives.
+    teacher_tips:
+      how_to_explain: 'Teach: 1-2 syllable adjectives -> -er/-est. 3+ syllable adjectives
+        -> more/most.'
+      where_to_start: Start with the comparatives pattern.
+      sequencing: 'Week 1: comparatives. Week 2: Practice. Week 3: Review. Week 4:
+        Mixed.'
+      exercises:
+      - name: comparatives Audit
+        type: error-correction
+        description: 20 sentences with comparatives errors.
+        duration: 15
+      - name: comparatives Translation
+        type: translation
+        description: Translate 15 sentences focusing on comparatives.
+        duration: 15
+      - name: comparatives Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing comparatives.
+        duration: 10
+      - name: comparatives Error Hunt
+        type: error-correction
+        description: A paragraph with 10 comparatives errors.
+        duration: 15
+    sources: *id001
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for comparatives
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Indonesian speakers, pp. 277-294'
+      tier: 1
+    - claim: 'Grammar point: comparatives'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: 'Comparative formation varies: morphological vs analytic'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See comparative entries
+      tier: 2
+    - claim: Comparative formation varies by L1; explicit practice needed
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 295
+      tier: 2
+  linking_words:
+    interference_patterns:
+    - pattern: Linking words (indonesian)
+      example: Linking words (indonesian)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    examples:
+    - wrong: But, I think we should go.
+      correct: However, I think we should go.
+    why_it_happens: Indonesian discourse connectors differ from English. Indonesian
+      'tetapi' functions as both 'but' and 'however.' Learners may produce non-standard
+      English sentences because the L1 discourse conventions transfer directly.
+    teacher_tips:
+      how_to_explain: 'Teach: ''However'' for formal writing. ''But'' for informal.'
+      where_to_start: Start with the linking words pattern.
+      sequencing: 'Week 1: linking words. Week 2: Practice. Week 3: Review. Week 4:
+        Mixed.'
+      exercises:
+      - name: linking_words Audit
+        type: error-correction
+        description: 20 sentences with linking words errors.
+        duration: 15
+      - name: linking_words Translation
+        type: translation
+        description: Translate 15 sentences focusing on linking words.
+        duration: 15
+      - name: linking_words Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing linking words.
+        duration: 10
+      - name: linking_words Error Hunt
+        type: error-correction
+        description: A paragraph with 10 linking words errors.
+        duration: 15
+    sources: *id001
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for linking words
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Indonesian speakers, pp. 277-294'
+      tier: 1
+    - claim: 'Grammar point: linking words'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Discourse connectors vary; some languages use double conjunctions
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See conjunction entries
+      tier: 2
+    - claim: ELLs use double conjunctions transferred from L1 (although...but)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 294
+      tier: 2
+  modal_verbs:
+    interference_patterns:
+    - pattern: Modal verbs (indonesian)
+      example: Modal verbs (indonesian)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    examples:
+    - wrong: I can have some water?
+      correct: May I have some water?
+    why_it_happens: Indonesian modals cover multiple English modals.
+    teacher_tips:
+      how_to_explain: 'Teach modal hierarchy: can, may, could, should, must.'
+      where_to_start: Start with the modal verbs pattern.
+      sequencing: 'Week 1: modal verbs. Week 2: Practice. Week 3: Review. Week 4:
+        Mixed.'
+      exercises:
+      - name: modal_verbs Audit
+        type: error-correction
+        description: 20 sentences with modal verbs errors.
+        duration: 15
+      - name: modal_verbs Translation
+        type: translation
+        description: Translate 15 sentences focusing on modal verbs.
+        duration: 15
+      - name: modal_verbs Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing modal verbs.
+        duration: 10
+      - name: modal_verbs Error Hunt
+        type: error-correction
+        description: A paragraph with 10 modal verbs errors.
+        duration: 15
+    sources: *id001
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for modal verbs
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Indonesian speakers, pp. 277-294'
+      tier: 1
+    - claim: 'Grammar point: modal verbs'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Modal systems vary widely; some languages have no direct equivalents
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See modal entries 77-86
+      tier: 2
+    - claim: 'Common ELL errors: *I can to go, *she might to believe (adding to after
+        modals)'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 225
+      tier: 2
+  gerund_infinitive:
+    interference_patterns:
+    - pattern: Gerund vs infinitive (indonesian)
+      example: Gerund vs infinitive (indonesian)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    examples:
+    - wrong: Before to leave, say goodbye.
+      correct: Before leaving, say goodbye.
+    why_it_happens: Indonesian uses infinitive after prepositions. English uses gerund.
+    teacher_tips:
+      how_to_explain: 'Teach: After prepositions -> always gerund (-ing).'
+      where_to_start: Start with the gerund infinitive pattern.
+      sequencing: 'Week 1: gerund infinitive. Week 2: Practice. Week 3: Review. Week
+        4: Mixed.'
+      exercises:
+      - name: gerund_infinitive Audit
+        type: error-correction
+        description: 20 sentences with gerund infinitive errors.
+        duration: 15
+      - name: gerund_infinitive Translation
+        type: translation
+        description: Translate 15 sentences focusing on gerund infinitive.
+        duration: 15
+      - name: gerund_infinitive Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing gerund infinitive.
+        duration: 10
+      - name: gerund_infinitive Error Hunt
+        type: error-correction
+        description: A paragraph with 10 gerund infinitive errors.
+        duration: 15
+    sources: *id001
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for gerund infinitive
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Indonesian speakers, pp. 277-294'
+      tier: 1
+    - claim: 'Grammar point: gerund infinitive'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Gerund/infinitive distribution varies across languages
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See gerund/infinitive entries
+      tier: 2
+    - claim: 'ELLs experience interference with gerund/infinitive: *I can to read
+        it, *I can reading it'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 206
+      tier: 2
+  adverbs:
+    interference_patterns:
+    - pattern: Adjective vs adverb (indonesian)
+      example: Adjective vs adverb (indonesian)
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    examples:
+    - wrong: He runs very fastly.
+      correct: He runs very fast.
+    why_it_happens: Indonesian does not always distinguish adjectives from adverbs.
+      English requires -ly.
+    teacher_tips:
+      how_to_explain: 'Teach: Adjective describes a noun. Adverb describes a verb.
+        Most adverbs add -ly.'
+      where_to_start: Start with the adverbs pattern.
+      sequencing: 'Week 1: adverbs. Week 2: Practice. Week 3: Review. Week 4: Mixed.'
+      exercises:
+      - name: adverbs Audit
+        type: error-correction
+        description: 20 sentences with adverbs errors.
+        duration: 15
+      - name: adverbs Translation
+        type: translation
+        description: Translate 15 sentences focusing on adverbs.
+        duration: 15
+      - name: adverbs Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing adverbs.
+        duration: 10
+      - name: adverbs Error Hunt
+        type: error-correction
+        description: A paragraph with 10 adverbs errors.
+        duration: 15
+    sources: *id001
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for adverbs
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Indonesian speakers, pp. 277-294'
+      tier: 1
+    - claim: 'Grammar point: adverbs'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: 'Adverb placement varies: some languages place adjectives where English
+        uses adverbs'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See adverb entries
+      tier: 2
+    - claim: ELLs use adjectives where English requires adverbs (transfer from L1)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 266
+      tier: 2
+  false_friends:
+    interference_patterns:
+    - pattern: Confusion of ID-EN cognates
+      example: Confusion of ID-EN cognates
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    examples:
+    - wrong: Actually, I work in a bank.
+      correct: Currently, I work in a bank.
+    why_it_happens: Indonesian and English share cognates with shifted meanings.
+    teacher_tips:
+      how_to_explain: Create a list of common indonesian-EN false friends.
+      where_to_start: Start with the false friends pattern.
+      sequencing: 'Week 1: false friends. Week 2: Practice. Week 3: Review. Week 4:
+        Mixed.'
+      exercises:
+      - name: false_friends Audit
+        type: error-correction
+        description: 20 sentences with false friends errors.
+        duration: 15
+      - name: false_friends Translation
+        type: translation
+        description: Translate 15 sentences focusing on false friends.
+        duration: 15
+      - name: false_friends Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing false friends.
+        duration: 10
+      - name: false_friends Error Hunt
+        type: error-correction
+        description: A paragraph with 10 false friends errors.
+        duration: 15
+    sources: *id001
+    source_count: 1
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 3
+    flagged: true
+    tier: 2
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for false friends
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Indonesian speakers, pp. 277-294'
+      tier: 1
+    - claim: 'Grammar point: false friends'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: False friends (cognates with different meanings) cause high-impact errors
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See vocabulary problem entries
+      tier: 2
+    - claim: False friends cause high-impact communication errors; must be taught
+        explicitly
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 213
+      tier: 2

@@ -1,127 +1,293 @@
 grammar_point: present_perfect
-title: "Present Perfect (have/has + past participle)"
-description: "Connects past actions to the present. No specific past time given. Shows experience, change, or unfinished time. One of the most important A2 grammar points."
+title: Present Perfect (have/has + past participle)
+description: Connects past actions to the present. No specific past time given. Shows
+  experience, change, or unfinished time. One of the most important A2 grammar points.
 level: A2
-
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+    (Entries 455-461)
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
 meaning:
-  core_meaning: "Describes a past action that has a connection to the present moment. The exact time is not important — what matters is the result or experience NOW. Contrast with Past Simple where the specific time IS important."
-  timeline: "Past action → present result. The time period extends from some point in the past up to NOW. The action may be finished or may continue."
-  contrast: "'Present Perfect' = 'I have eaten.' (no specific time, connection to now) vs 'Past Simple' = 'I ate yesterday.' (specific time, finished)"
+  core_meaning: Describes a past action that has a connection to the present moment.
+    The exact time is not important — what matters is the result or experience NOW.
+    Contrast with Past Simple where the specific time IS important.
+  timeline: Past action → present result. The time period extends from some point
+    in the past up to NOW. The action may be finished or may continue.
+  contrast: '''Present Perfect'' = ''I have eaten.'' (no specific time, connection
+    to now) vs ''Past Simple'' = ''I ate yesterday.'' (specific time, finished)'
   ccqs:
-    - question: "Do we know exactly when this happened?"
-      answer: "No — the exact time is not important. What matters is the result or experience now."
-    - question: "Is there a connection to the present moment?"
-      answer: "Yes — the past action affects the present in some way (experience, result, or unfinished time)."
-    - question: "Can we use 'yesterday' or 'last week' with this tense?"
-      answer: "No — specific past time expressions (yesterday, last week, in 2020) go with Past Simple, not Present Perfect."
+  - question: Do we know exactly when this happened?
+    answer: No — the exact time is not important. What matters is the result or experience
+      now.
+  - question: Is there a connection to the present moment?
+    answer: Yes — the past action affects the present in some way (experience, result,
+      or unfinished time).
+  - question: Can we use 'yesterday' or 'last week' with this tense?
+    answer: No — specific past time expressions (yesterday, last week, in 2020) go
+      with Past Simple, not Present Perfect.
   example_generator:
     contexts:
-      - life experiences
-      - travel and places
-      - work and career
-      - recent events
-      - unfinished time periods
+    - life experiences
+    - travel and places
+    - work and career
+    - recent events
+    - unfinished time periods
     cultural_notes:
-      - "Use diverse travel destinations and cultural contexts"
-      - "Avoid examples that assume specific cultural knowledge"
-      - "Include both positive and negative experiences"
+    - Use diverse travel destinations and cultural contexts
+    - Avoid examples that assume specific cultural knowledge
+    - Include both positive and negative experiences
     min_examples: 5
-
 form:
   affirmative:
-    structure: "Subject + have/has + past participle (V3)"
+    structure: Subject + have/has + past participle (V3)
     example_generator:
-      - "I have eaten lunch."
-      - "She has gone to Paris."
-      - "They have finished the project."
-      - "He has lost his keys."
+    - I have eaten lunch.
+    - She has gone to Paris.
+    - They have finished the project.
+    - He has lost his keys.
     min_examples: 4
   negative:
-    structure: "Subject + have not (haven't) / has not (hasn't) + past participle (V3)"
+    structure: Subject + have not (haven't) / has not (hasn't) + past participle (V3)
     example_generator:
-      - "I haven't eaten lunch."
-      - "She hasn't gone to Paris."
-      - "They haven't finished the project."
-      - "He hasn't lost his keys."
+    - I haven't eaten lunch.
+    - She hasn't gone to Paris.
+    - They haven't finished the project.
+    - He hasn't lost his keys.
     min_examples: 4
   questions:
-    structure: "Have/Has + subject + past participle (V3)?"
+    structure: Have/Has + subject + past participle (V3)?
     example_generator:
-      - "Have you eaten lunch?"
-      - "Has she gone to Paris?"
-      - "Have they finished the project?"
-      - "Has he lost his keys?"
+    - Have you eaten lunch?
+    - Has she gone to Paris?
+    - Have they finished the project?
+    - Has he lost his keys?
     min_examples: 4
-
 sub_rules:
-  - rule: "Use 'ever' in questions about life experience"
-    type: lexical
-    examples: ["Have you ever been to Japan?", "Has she ever tried sushi?", "Have they ever seen snow?"]
-  - rule: "Use 'never' for negative life experience"
-    type: lexical
-    examples: ["I have never flown.", "She has never eaten raw fish.", "They have never been abroad."]
-  - rule: "Use 'for' with a period of time, 'since' with a point in time"
-    type: grammatical
-    examples: ["I have lived here for 10 years. (period)", "I have lived here since 2015. (point)", "She has worked here for 3 months.", "He has studied English since January."]
-  - rule: "Use 'just' for very recent actions"
-    type: lexical
-    examples: ["I have just arrived.", "She has just finished lunch.", "They have just left."]
-  - rule: "Use 'already' for actions completed before now (often earlier than expected)"
-    type: lexical
-    examples: ["I have already finished my homework.", "She has already left.", "They have already eaten."]
-  - rule: "Use 'yet' in questions and negatives for actions expected to happen"
-    type: lexical
-    examples: ["Have you finished yet?", "I haven't finished yet.", "Has she arrived yet?", "They haven't called yet."]
-  - rule: "Common irregular past participles: go → gone, eat → eaten, see → seen, do → done, write → written, speak → spoken, take → taken, give → given, make → made"
-    type: irregular
-    examples: ["I have gone to Paris.", "She has eaten sushi.", "They have seen that movie."]
-
+- rule: Use 'ever' in questions about life experience
+  type: lexical
+  examples:
+  - Have you ever been to Japan?
+  - Has she ever tried sushi?
+  - Have they ever seen snow?
+- rule: Use 'never' for negative life experience
+  type: lexical
+  examples:
+  - I have never flown.
+  - She has never eaten raw fish.
+  - They have never been abroad.
+- rule: Use 'for' with a period of time, 'since' with a point in time
+  type: grammatical
+  examples:
+  - I have lived here for 10 years. (period)
+  - I have lived here since 2015. (point)
+  - She has worked here for 3 months.
+  - He has studied English since January.
+- rule: Use 'just' for very recent actions
+  type: lexical
+  examples:
+  - I have just arrived.
+  - She has just finished lunch.
+  - They have just left.
+- rule: Use 'already' for actions completed before now (often earlier than expected)
+  type: lexical
+  examples:
+  - I have already finished my homework.
+  - She has already left.
+  - They have already eaten.
+- rule: Use 'yet' in questions and negatives for actions expected to happen
+  type: lexical
+  examples:
+  - Have you finished yet?
+  - I haven't finished yet.
+  - Has she arrived yet?
+  - They haven't called yet.
+- rule: 'Common irregular past participles: go → gone, eat → eaten, see → seen, do
+    → done, write → written, speak → spoken, take → taken, give → given, make → made'
+  type: irregular
+  examples:
+  - I have gone to Paris.
+  - She has eaten sushi.
+  - They have seen that movie.
 use:
-  - context: "Life experience (ever/never)"
-    description: "Talking about things you have or have not done in your life up to now"
-    examples: ["I have never flown.", "Have you ever been to Japan?", "She has visited 20 countries.", "They have never tried Indian food."]
-  - context: "Unfinished time (for/since)"
-    description: "Actions that started in the past and continue to the present"
-    examples: ["I have lived here for 10 years.", "She has worked at this company since 2020.", "They have known each other for 5 years.", "He has studied English since he was a child."]
-  - context: "Recent actions with present result (just)"
-    description: "Actions that have just finished, with a visible result now"
-    examples: ["I have just arrived. (I am here now)", "She has just finished the report. (it is done now)", "They have just left. (they are not here now)"]
-  - context: "Actions completed before now (already/yet)"
-    description: "Actions that are completed or expected to be completed"
-    examples: ["I have already done my homework. (it is finished)", "Have you done your homework yet? (expecting an answer)", "She hasn't arrived yet. (we are waiting)"]
-
+- context: Life experience (ever/never)
+  description: Talking about things you have or have not done in your life up to now
+  examples:
+  - I have never flown.
+  - Have you ever been to Japan?
+  - She has visited 20 countries.
+  - They have never tried Indian food.
+- context: Unfinished time (for/since)
+  description: Actions that started in the past and continue to the present
+  examples:
+  - I have lived here for 10 years.
+  - She has worked at this company since 2020.
+  - They have known each other for 5 years.
+  - He has studied English since he was a child.
+- context: Recent actions with present result (just)
+  description: Actions that have just finished, with a visible result now
+  examples:
+  - I have just arrived. (I am here now)
+  - She has just finished the report. (it is done now)
+  - They have just left. (they are not here now)
+- context: Actions completed before now (already/yet)
+  description: Actions that are completed or expected to be completed
+  examples:
+  - I have already done my homework. (it is finished)
+  - Have you done your homework yet? (expecting an answer)
+  - She hasn't arrived yet. (we are waiting)
 phonetics:
-  - note: "Contractions are essential: I have → I've, she has → she's, they have → they've. Full forms sound overly formal in spoken English."
-    example_generator:
-      - "I have → I've /aɪv/"
-      - "She has → she's /ʃiːz/"
-      - "They have → they've /ðeɪv/"
-    l1_issue: "Portuguese and Spanish speakers often omit 'have/has' in speech because their languages do not use an auxiliary for this tense. Drill 'I have eaten' NOT 'I eaten'."
-  - note: "Weak form of 'have' in connected speech: /həv/ or /əv/. 'I have eaten' sounds like /aɪv ɪtən/ or /aɪ həv ɪtən/."
-    example_generator:
-      - "have /həv/ or /əv/"
-      - "has /həz/ or /əz/"
-    l1_issue: "Many L1 speakers over-pronounce 'have' as /hæv/. Teach the weak form for natural speech."
-
+- note: 'Contractions are essential: I have → I''ve, she has → she''s, they have →
+    they''ve. Full forms sound overly formal in spoken English.'
+  example_generator:
+  - I have → I've /aɪv/
+  - She has → she's /ʃiːz/
+  - They have → they've /ðeɪv/
+  l1_issue: Portuguese and Spanish speakers often omit 'have/has' in speech because
+    their languages do not use an auxiliary for this tense. Drill 'I have eaten' NOT
+    'I eaten'.
+- note: 'Weak form of ''have'' in connected speech: /həv/ or /əv/. ''I have eaten''
+    sounds like /aɪv ɪtən/ or /aɪ həv ɪtən/.'
+  example_generator:
+  - have /həv/ or /əv/
+  - has /həz/ or /əz/
+  l1_issue: Many L1 speakers over-pronounce 'have' as /hæv/. Teach the weak form for
+    natural speech.
+common_errors:
+- error: 'Using present perfect with specific past time: *''I have eaten lunch yesterday.'''
+  correction: I ate lunch yesterday.
+  explanation: Present perfect cannot be used with specific past time expressions
+    (yesterday, last week, in 2020). Use past simple for specific times. This is one
+    of the most common errors at A2 level.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+- error: 'Omitting the auxiliary ''have/has'': *''I eaten lunch.'''
+  correction: I have eaten lunch.
+  explanation: English requires the auxiliary 'have/has' in present perfect. Many
+    L1s (Portuguese, Spanish, Chinese) do not use an auxiliary for this tense.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Japanese
+  - Korean
+- error: 'Using past simple when present perfect is needed: *''I already ate lunch.'''
+  correction: I have already eaten lunch.
+  explanation: With 'already', 'just', 'yet', 'ever', 'never', English typically uses
+    present perfect, not past simple. AmE sometimes uses past simple here, but BrE
+    and standard teaching materials use present perfect.
+  l1_groups:
+  - Portuguese
+  - Spanish
+- error: 'Confusing ''for'' and ''since'': *''I have lived here since 10 years.'''
+  correction: I have lived here for 10 years.
+  explanation: '''For'' is used with a period of time (10 years, 3 months, 2 hours).
+    ''Since'' is used with a point in time (2015, January, last Monday). This is a
+    very common error across all L1 groups.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  - Arabic
+- error: 'Using present perfect for completed past actions with no present connection:
+    *''Shakespeare has written many plays.'''
+  correction: Shakespeare wrote many plays.
+  explanation: Present perfect requires a connection to the present. For historical
+    figures who are dead, use past simple. Present perfect is only used when the time
+    period extends to the present or the result is relevant now.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+register_notes:
+- note: 'Present perfect is more common in BrE than AmE. AmE often uses past simple
+    where BrE uses present perfect: BrE ''I''ve just arrived'' vs AmE ''I just arrived.'''
+- note: 'In news reporting, present perfect is used for recent events: ''The Prime
+    Minister has announced a new policy.'' (headline or lead sentence)'
+- note: 'In academic writing, present perfect is used for reviewing previous research:
+    ''Several studies have found that...'' (connecting past research to present discussion)'
+- note: 'In formal writing, contractions (I''ve, she''s) are typically avoided: ''I
+    have completed the report'' rather than ''I''ve completed the report.'''
+dialectal_variation:
+- note: 'BrE/AmE difference: BrE strongly prefers present perfect with ''just'', ''already'',
+    ''yet'': ''I''ve just arrived.'' AmE often uses past simple: ''I just arrived.''
+    Both are correct in their respective dialects.'
+- note: 'BrE/AmE difference: BrE uses present perfect for recent news: ''The Prime
+    Minister has resigned.'' AmE may use past simple: ''The Prime Minister resigned.'''
+- note: In some Irish and Scottish dialects, present perfect is used more broadly
+    than in standard BrE.
+- note: 'In African American Vernacular English, present perfect may be formed differently:
+    ''I done finished'' (completive aspect).'
+discourse_notes:
+- note: 'Present perfect is used to introduce a topic that is then developed with
+    past simple: ''I have visited Paris three times. The first time was in 2015...''
+    (present perfect opens the topic, past simple gives details)'
+- note: 'In conversation, present perfect is used for ''hot news'': ''I''ve passed
+    my exam!'' (recent, relevant to now)'
+- note: 'Present perfect creates cohesion in narratives by connecting past events
+    to the present moment of telling: ''I have never felt so scared.'' (the feeling
+    is still relevant)'
+- note: 'In academic writing, present perfect is used for the literature review section,
+    while past simple is used for describing specific studies: ''Smith (2020) found
+    that...'' vs ''Several studies have shown that...'''
 teaching:
-  methodology: "Guided discovery with contrastive analysis"
+  methodology: Guided discovery with contrastive analysis
   tips:
-    - "Start with the contrast: Present Perfect (no specific time) vs Past Simple (specific time). Use a timeline on the board to visualize the difference."
-    - "Use real-life questions: 'Have you ever been to Paris?' 'Have you ever eaten sushi?' This makes the grammar personal and meaningful."
-    - "Drill for/since explicitly. This is one of the most common errors at A2 level. Use a calendar to visualize the difference."
-    - "Teach just/already/yet as a set. They all relate to the present moment and are very common in everyday English."
-    - "Practice irregular past participles systematically. Students need to memorize these — there is no rule."
-    - "Use the 'life experience' context first (ever/never). This is the most intuitive use of Present Perfect for A2 students."
+  - 'Start with the contrast: Present Perfect (no specific time) vs Past Simple (specific
+    time). Use a timeline on the board to visualize the difference.'
+  - 'Use real-life questions: ''Have you ever been to Paris?'' ''Have you ever eaten
+    sushi?'' This makes the grammar personal and meaningful.'
+  - Drill for/since explicitly. This is one of the most common errors at A2 level.
+    Use a calendar to visualize the difference.
+  - Teach just/already/yet as a set. They all relate to the present moment and are
+    very common in everyday English.
+  - Practice irregular past participles systematically. Students need to memorize
+    these — there is no rule.
+  - Use the 'life experience' context first (ever/never). This is the most intuitive
+    use of Present Perfect for A2 students.
+  - 'Teach the BrE/AmE difference early: ''I''ve just arrived'' (BrE) vs ''I just
+    arrived'' (AmE). This prevents confusion when students encounter both forms.'
+  - 'Use the ''news report'' context to practice present perfect for recent events:
+    ''Scientists have discovered a new species.'''
   recommended_activities:
-    - name: "Find Someone Who"
-      duration: 15
-      adaptation_notes: "Students ask classmates 'Have you ever...?' questions to find people who match. Great for practicing questions and short answers: 'Yes, I have.' 'No, I haven't.'"
-    - name: "For or Since?"
-      duration: 10
-      adaptation_notes: "Teacher says a time expression. Students decide: 'for' or 'since'? '10 years' (for), '2015' (since), '3 months' (for), 'January' (since). Then students make full sentences: 'I have lived here for 10 years.'"
-    - name: "Life Experience Survey"
-      duration: 15
-      adaptation_notes: "Students survey classmates about life experiences: 'Have you ever been to another country?' 'Have you ever tried an extreme sport?' Then report: 'Pedro has been to Argentina. Maria has never tried bungee jumping.'"
-    - name: "Just, Already, or Yet?"
-      duration: 10
-      adaptation_notes: "Teacher describes a situation. Students choose the correct word: 'I am at the door. I have ___ arrived.' (just) 'The homework is finished. I have ___ done it.' (already) 'The bus has not come. It has ___ come.' (yet)"
+  - name: Find Someone Who
+    duration: 15
+    adaptation_notes: 'Students ask classmates ''Have you ever...?'' questions to
+      find people who match. Great for practicing questions and short answers: ''Yes,
+      I have.'' ''No, I haven''t.'''
+  - name: For or Since?
+    duration: 10
+    adaptation_notes: 'Teacher says a time expression. Students decide: ''for'' or
+      ''since''? ''10 years'' (for), ''2015'' (since), ''3 months'' (for), ''January''
+      (since). Then students make full sentences: ''I have lived here for 10 years.'''
+  - name: Life Experience Survey
+    duration: 15
+    adaptation_notes: 'Students survey classmates about life experiences: ''Have you
+      ever been to another country?'' ''Have you ever tried an extreme sport?'' Then
+      report: ''Pedro has been to Argentina. Maria has never tried bungee jumping.'''
+  - name: Just, Already, or Yet?
+    duration: 10
+    adaptation_notes: 'Teacher describes a situation. Students choose the correct
+      word: ''I am at the door. I have ___ arrived.'' (just) ''The homework is finished.
+      I have ___ done it.'' (already) ''The bus has not come. It has ___ come.'' (yet)'
+  - name: News Report
+    duration: 15
+    adaptation_notes: 'Students write a news report using present perfect for the
+      headline and lead: ''Scientists have discovered a new species of frog in the
+      Amazon.'' Then they switch to past simple for details: ''The team found the
+      frog during an expedition in March.'''
+  - name: Present Perfect or Past Simple?
+    duration: 15
+    adaptation_notes: 'Give students pairs of sentences. They choose the correct tense
+      and explain why: ''I (have visited/visited) Paris last year.'' (visited — specific
+      time) ''I (have visited/visited) Paris three times.'' (have visited — life experience)'

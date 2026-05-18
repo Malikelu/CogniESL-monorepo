@@ -1,19 +1,29 @@
 grammar_point: non_canonical_clauses
 title: Non-Canonical Clause Structures
-description: Sentence structures that deviate from standard SVO word order for emphasis, style, or discourse management, including inversion, cleft sentences, and correlative comparisons.
+description: Sentence structures that deviate from standard SVO word order for emphasis,
+  style, or discourse management, including inversion, cleft sentences, and correlative
+  comparisons.
 level: C2
-
 meaning:
-  core_meaning: Structures that break standard Subject-Verb-Object word order to achieve specific effects — emphasis, formality, dramatic effect, or discourse management.
-  timeline: Timeless — non-canonical structures are stylistic choices, not tied to any tense. They can be used with any tense or time reference.
-  contrast: "Canonical (standard) order: 'I have never seen such a beautiful place.' Non-canonical (inversion): 'Never have I seen such a beautiful place.' Same meaning, different emphasis and register."
+  core_meaning: Structures that break standard Subject-Verb-Object word order to achieve
+    specific effects — emphasis, formality, dramatic effect, or discourse management.
+  timeline: Timeless — non-canonical structures are stylistic choices, not tied to
+    any tense. They can be used with any tense or time reference.
+  contrast: 'Canonical (standard) order: ''I have never seen such a beautiful place.''
+    Non-canonical (inversion): ''Never have I seen such a beautiful place.'' Same
+    meaning, different emphasis and register.'
   ccqs:
-    - question: "Is 'Never have I seen...' more or less formal than 'I have never seen...'?"
-      answer: "More formal. Inversion after negative adverbials is a feature of formal and literary English."
-    - question: "What is the difference between 'John broke the window' and 'It was John who broke the window'?"
-      answer: "The second sentence (cleft) emphasises that it was John, not someone else, who broke the window."
-    - question: "Can we say 'The more you practice, the better you get' in standard SVO order?"
-      answer: "Not with the same meaning. The 'the more... the more...' structure is a fixed correlative pattern."
+  - question: Is 'Never have I seen...' more or less formal than 'I have never seen...'?
+    answer: More formal. Inversion after negative adverbials is a feature of formal
+      and literary English.
+  - question: What is the difference between 'John broke the window' and 'It was John
+      who broke the window'?
+    answer: The second sentence (cleft) emphasises that it was John, not someone else,
+      who broke the window.
+  - question: Can we say 'The more you practice, the better you get' in standard SVO
+      order?
+    answer: Not with the same meaning. The 'the more... the more...' structure is
+      a fixed correlative pattern.
   example_generator:
     contexts:
     - formal writing
@@ -21,13 +31,18 @@ meaning:
     - academic essays
     - speeches and presentations
     cultural_notes:
-    - "Inversion after negative adverbials is a hallmark of formal British English, especially in writing and speeches"
-    - "Cleft sentences are extremely common in English for emphasis — far more so than in many other languages"
+    - Inversion after negative adverbials is a hallmark of formal British English,
+      especially in writing and speeches
+    - Cleft sentences are extremely common in English for emphasis — far more so than
+      in many other languages
     min_examples: 5
-
 form:
   affirmative:
-    structure: "Inversion: Negative adverbial + auxiliary + subject + main verb: 'Never have I seen...' / Cleft: It + be + focus + who/that: 'It was John who...' / Pseudo-cleft: What + subject + verb + be + focus: 'What I need is...' / Correlative: The + comparative + subject + verb, the + comparative + subject + verb: 'The more you practice, the better you get.'"
+    structure: 'Inversion: Negative adverbial + auxiliary + subject + main verb: ''Never
+      have I seen...'' / Cleft: It + be + focus + who/that: ''It was John who...''
+      / Pseudo-cleft: What + subject + verb + be + focus: ''What I need is...'' /
+      Correlative: The + comparative + subject + verb, the + comparative + subject
+      + verb: ''The more you practice, the better you get.'''
     example_generator:
       contexts:
       - formal writing
@@ -36,7 +51,9 @@ form:
       - speeches
       min_examples: 4
   negative:
-    structure: "Inversion with negative: 'Not only did he fail, but he also gave up.' / Cleft with negative: 'It wasn't me who broke it.' / 'The more you worry, the less you sleep.'"
+    structure: 'Inversion with negative: ''Not only did he fail, but he also gave
+      up.'' / Cleft with negative: ''It wasn''t me who broke it.'' / ''The more you
+      worry, the less you sleep.'''
     example_generator:
       contexts:
       - formal writing
@@ -44,91 +61,140 @@ form:
       - literary analysis
       min_examples: 4
   questions:
-    structure: "Cleft questions: 'Was it John who called?' / 'What is it that you want?' / Inversion in questions is standard: 'Never have you seen such a thing?' (rhetorical)"
+    structure: 'Cleft questions: ''Was it John who called?'' / ''What is it that you
+      want?'' / Inversion in questions is standard: ''Never have you seen such a thing?''
+      (rhetorical)'
     example_generator:
       contexts:
       - formal discussion
       - literary analysis
       min_examples: 3
-
 sub_rules:
-  - rule: "Inversion is triggered when a negative or restrictive adverbial is fronted to the beginning of a sentence. The auxiliary verb comes before the subject."
-    type: "grammatical"
-    examples: ["Never have I seen such beauty. (Never → inversion)", "Seldom does she complain. (Seldom → inversion)", "Hardly had I arrived when... (Hardly → inversion)", "Not only did he fail, but... (Not only → inversion)", "Under no circumstances should you... (Under no circumstances → inversion)"]
-  - rule: "Cleft sentences (it-clefts) divide a sentence into two parts: the focused element and the background information. Structure: It + be + focus + who/that + rest."
-    type: "grammatical"
-    examples: ["It was John who broke the window. (focus: John)", "It is the economy that matters most. (focus: the economy)", "It was in 1969 that they landed on the moon. (focus: 1969)"]
-  - rule: "Pseudo-cleft sentences (wh-clefts) use a wh-clause as the subject. Structure: What + subject + verb + be + focus."
-    type: "grammatical"
-    examples: ["What I need is a good night's sleep. (focus: a good night's sleep)", "What she said was very upsetting. (focus: very upsetting)", "What matters most is your health. (focus: your health)"]
-  - rule: "Correlative comparative (the more... the more...) shows that two things change together. Both clauses use the comparative form."
-    type: "grammatical"
-    examples: ["The more you practice, the better you get.", "The harder you work, the more you achieve.", "The sooner we leave, the earlier we arrive.", "The more expensive the hotel, the better the service."]
-
+- rule: Inversion is triggered when a negative or restrictive adverbial is fronted
+    to the beginning of a sentence. The auxiliary verb comes before the subject.
+  type: grammatical
+  examples:
+  - Never have I seen such beauty. (Never → inversion)
+  - Seldom does she complain. (Seldom → inversion)
+  - Hardly had I arrived when... (Hardly → inversion)
+  - Not only did he fail, but... (Not only → inversion)
+  - Under no circumstances should you... (Under no circumstances → inversion)
+- rule: 'Cleft sentences (it-clefts) divide a sentence into two parts: the focused
+    element and the background information. Structure: It + be + focus + who/that
+    + rest.'
+  type: grammatical
+  examples:
+  - 'It was John who broke the window. (focus: John)'
+  - 'It is the economy that matters most. (focus: the economy)'
+  - 'It was in 1969 that they landed on the moon. (focus: 1969)'
+- rule: 'Pseudo-cleft sentences (wh-clefts) use a wh-clause as the subject. Structure:
+    What + subject + verb + be + focus.'
+  type: grammatical
+  examples:
+  - 'What I need is a good night''s sleep. (focus: a good night''s sleep)'
+  - 'What she said was very upsetting. (focus: very upsetting)'
+  - 'What matters most is your health. (focus: your health)'
+- rule: Correlative comparative (the more... the more...) shows that two things change
+    together. Both clauses use the comparative form.
+  type: grammatical
+  examples:
+  - The more you practice, the better you get.
+  - The harder you work, the more you achieve.
+  - The sooner we leave, the earlier we arrive.
+  - The more expensive the hotel, the better the service.
 use:
-  - name: Inversion for emphasis and formality
-    description: Fronting negative or restrictive adverbials to create dramatic, formal, or literary emphasis.
-    examples:
-    - "Never have I seen such a spectacular performance."
-    - "Seldom does one encounter such generosity."
-    - "Hardly had she left the room when the phone rang."
-    - "Not only did he win the race, but he also broke the record."
-    - "Under no circumstances should you share this password."
-    key_point: "Inversion after fronted negative adverbials creates a formal, emphatic effect. Common in writing and formal speech."
-  - name: Cleft sentences for focus and contrast
-    description: Using it-clefts to highlight a specific element of the sentence, often for contrast or correction.
-    examples:
-    - "It was John who broke the window, not Mary."
-    - "It is the quality of teaching that makes the difference, not the facilities."
-    - "It was in 2015 that the company first turned a profit."
-    - "It's the small things that matter most in a relationship."
-    key_point: "Cleft sentences allow the speaker to focus attention on a specific element. Very common in both spoken and written English."
-  - name: Pseudo-cleft sentences for topic management
-    description: Using wh-clefts to organise information, often to summarise or introduce a topic.
-    examples:
-    - "What I'm trying to say is that we need to change our approach."
-    - "What surprised me most was her honesty."
-    - "What we need now is a clear plan of action."
-    - "What distinguishes this product is its simplicity."
-    key_point: "Pseudo-clefts are useful for managing information flow and introducing topics in both speech and writing."
-  - name: Correlative comparatives for showing correlation
-    description: Using 'the more... the more...' to show that two things increase or decrease together.
-    examples:
-    - "The more you study, the more you learn."
-    - "The harder the exam, the more students worry."
-    - "The earlier you book, the cheaper the tickets."
-    - "The more you travel, the more open-minded you become."
-    key_point: "Correlative comparatives show a proportional relationship between two things. Both clauses use comparative forms."
-
+- name: Inversion for emphasis and formality
+  description: Fronting negative or restrictive adverbials to create dramatic, formal,
+    or literary emphasis.
+  examples:
+  - Never have I seen such a spectacular performance.
+  - Seldom does one encounter such generosity.
+  - Hardly had she left the room when the phone rang.
+  - Not only did he win the race, but he also broke the record.
+  - Under no circumstances should you share this password.
+  key_point: Inversion after fronted negative adverbials creates a formal, emphatic
+    effect. Common in writing and formal speech.
+- name: Cleft sentences for focus and contrast
+  description: Using it-clefts to highlight a specific element of the sentence, often
+    for contrast or correction.
+  examples:
+  - It was John who broke the window, not Mary.
+  - It is the quality of teaching that makes the difference, not the facilities.
+  - It was in 2015 that the company first turned a profit.
+  - It's the small things that matter most in a relationship.
+  key_point: Cleft sentences allow the speaker to focus attention on a specific element.
+    Very common in both spoken and written English.
+- name: Pseudo-cleft sentences for topic management
+  description: Using wh-clefts to organise information, often to summarise or introduce
+    a topic.
+  examples:
+  - What I'm trying to say is that we need to change our approach.
+  - What surprised me most was her honesty.
+  - What we need now is a clear plan of action.
+  - What distinguishes this product is its simplicity.
+  key_point: Pseudo-clefts are useful for managing information flow and introducing
+    topics in both speech and writing.
+- name: Correlative comparatives for showing correlation
+  description: Using 'the more... the more...' to show that two things increase or
+    decrease together.
+  examples:
+  - The more you study, the more you learn.
+  - The harder the exam, the more students worry.
+  - The earlier you book, the cheaper the tickets.
+  - The more you travel, the more open-minded you become.
+  key_point: Correlative comparatives show a proportional relationship between two
+    things. Both clauses use comparative forms.
 phonetics:
-  - note: "In inversion structures, the fronted adverbial receives strong stress, followed by a slight pause before the inverted clause: 'NEVER have I seen...'"
-    example_generator:
-      contexts:
-      - formal speeches
-      - literary readings
-    l1_issue: "L1 speakers may not use the correct stress pattern for inversion, making it sound flat or unnatural."
-  - note: "In cleft sentences, the focused element receives the main stress: 'It was JOHN who broke the window.'"
-    example_generator:
-      contexts:
-      - spoken English
-      - emphasis and contrast
-    l1_issue: "L1 speakers may place equal stress throughout the cleft sentence, losing the focusing effect."
-
+- note: 'In inversion structures, the fronted adverbial receives strong stress, followed
+    by a slight pause before the inverted clause: ''NEVER have I seen...'''
+  example_generator:
+    contexts:
+    - formal speeches
+    - literary readings
+  l1_issue: L1 speakers may not use the correct stress pattern for inversion, making
+    it sound flat or unnatural.
+- note: 'In cleft sentences, the focused element receives the main stress: ''It was
+    JOHN who broke the window.'''
+  example_generator:
+    contexts:
+    - spoken English
+    - emphasis and contrast
+  l1_issue: L1 speakers may place equal stress throughout the cleft sentence, losing
+    the focusing effect.
 teaching:
-  methodology: "Guided discovery"
+  methodology: Guided discovery
   tips:
-  - "Present canonical and non-canonical versions of the same sentence side by side and discuss the difference in effect"
-  - "Use authentic texts (speeches, literature, academic writing) to show non-canonical structures in context"
-  - "Practice inversion with a trigger list: never, seldom, hardly, not only, under no circumstances, etc."
-  - "Have students rewrite standard sentences as cleft sentences to practise focusing different elements"
-  - "Use the correlative comparative structure with real-world examples: 'The more you save, the more you can spend later'"
+  - Present canonical and non-canonical versions of the same sentence side by side
+    and discuss the difference in effect
+  - Use authentic texts (speeches, literature, academic writing) to show non-canonical
+    structures in context
+  - 'Practice inversion with a trigger list: never, seldom, hardly, not only, under
+    no circumstances, etc.'
+  - Have students rewrite standard sentences as cleft sentences to practise focusing
+    different elements
+  - 'Use the correlative comparative structure with real-world examples: ''The more
+    you save, the more you can spend later'''
   recommended_activities:
-    - name: "Sentence Transformation"
-      duration: 15
-      adaptation_notes: "Students transform standard sentences into inverted, cleft, and pseudo-cleft versions. Discuss when each version would be appropriate."
-    - name: "Literary Analysis Hunt"
-      duration: 20
-      adaptation_notes: "Students find examples of non-canonical structures in a literary text and analyse why the author chose each structure."
-    - name: "Debate with Cleft Sentences"
-      duration: 25
-      adaptation_notes: "Students debate a topic, required to use cleft sentences for emphasis and contrast: 'It is the government's responsibility, not the individual's, to...'"
+  - name: Sentence Transformation
+    duration: 15
+    adaptation_notes: Students transform standard sentences into inverted, cleft,
+      and pseudo-cleft versions. Discuss when each version would be appropriate.
+  - name: Literary Analysis Hunt
+    duration: 20
+    adaptation_notes: Students find examples of non-canonical structures in a literary
+      text and analyse why the author chose each structure.
+  - name: Debate with Cleft Sentences
+    duration: 25
+    adaptation_notes: 'Students debate a topic, required to use cleft sentences for
+      emphasis and contrast: ''It is the government''s responsibility, not the individual''s,
+      to...'''
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

@@ -1,97 +1,154 @@
 grammar_point: singular_plural
-title: "Singular and Plural Nouns"
-description: "The distinction between one (singular) and more than one (plural) noun, including regular and irregular forms."
+title: Singular and Plural Nouns
+description: The distinction between one (singular) and more than one (plural) noun,
+  including regular and irregular forms.
 level: A1
-
 meaning:
-  core_meaning: "Singular = one item. Plural = more than one item. The form of the noun changes to show quantity."
-  timeline: "Timeless — applies to all tenses."
-  contrast: |
-    'Singular' = "one book" (just one)
-    'Plural' = "two books" (more than one)
-  ccqs:
-    - question: "Is there one or more than one?"
-      answer: "Depends on the noun form."
-    - question: "Does the noun end in -s?"
-      answer: "Usually, but not always (e.g., children, men)."
-  example_generator:
-    contexts: ["classroom objects", "family members", "animals", "food items", "everyday objects"]
-    cultural_notes: ["Some languages don't distinguish singular/plural — be explicit about the concept"]
-    min_examples: 5
+  core_meaning: Singular = one item. Plural = more than one item. The form of the
+    noun changes to show quantity.
+  timeline: Timeless — applies to all tenses.
+  contrast: '''Singular'' = "one book" (just one)
 
+    ''Plural'' = "two books" (more than one)
+
+    '
+  ccqs:
+  - question: Is there one or more than one?
+    answer: Depends on the noun form.
+  - question: Does the noun end in -s?
+    answer: Usually, but not always (e.g., children, men).
+  example_generator:
+    contexts:
+    - classroom objects
+    - family members
+    - animals
+    - food items
+    - everyday objects
+    cultural_notes:
+    - Some languages don't distinguish singular/plural — be explicit about the concept
+    min_examples: 5
 form:
   affirmative:
-    structure: |
-      Singular: base noun (a book, an apple)
+    structure: 'Singular: base noun (a book, an apple)
+
       Plural regular: noun + -s (books, apples)
+
       Plural -es: noun ending in s/sh/ch/x + -es (boxes, watches)
+
       Plural -ies: consonant + y → -ies (city → cities, baby → babies)
+
       Plural -ves: f/fe → -ves (knife → knives, leaf → leaves)
+
       Irregular: (man → men, child → children, person → people)
+
+      '
     example_generator:
-      contexts: ["classroom", "home", "food", "animals"]
+      contexts:
+      - classroom
+      - home
+      - food
+      - animals
       min_examples: 5
   negative:
-    structure: "Not applicable — singular/plural is a noun property, not a verb form."
+    structure: Not applicable — singular/plural is a noun property, not a verb form.
     example_generator:
       contexts: []
       min_examples: 0
   questions:
-    structure: "Is it singular or plural? How do you know?"
+    structure: Is it singular or plural? How do you know?
     example_generator:
-      contexts: ["identification exercises"]
+      contexts:
+      - identification exercises
       min_examples: 3
-
 sub_rules:
-  - rule: "Regular plural: add -s"
-    type: "spelling"
-    examples: ["book → books", "table → tables", "pen → pens"]
-  - rule: "Add -es after s, sh, ch, x, z"
-    type: "spelling"
-    examples: ["box → boxes", "watch → watches", "bus → buses"]
-  - rule: "Consonant + y → -ies"
-    type: "spelling"
-    examples: ["city → cities", "baby → babies", "story → stories"]
-  - rule: "Vowel + y → -ys (not -ies)"
-    type: "spelling"
-    examples: ["boy → boys", "key → keys", "day → days"]
-  - rule: "f/fe → -ves"
-    type: "spelling"
-    examples: ["knife → knives", "leaf → leaves", "wife → wives"]
-  - rule: "Irregular plurals"
-    type: "irregular"
-    examples: ["man → men", "woman → women", "child → children", "foot → feet", "tooth → teeth", "mouse → mice"]
-  - rule: "Same singular and plural"
-    type: "irregular"
-    examples: ["sheep → sheep", "fish → fish", "deer → deer"]
-
+- rule: 'Regular plural: add -s'
+  type: spelling
+  examples:
+  - book → books
+  - table → tables
+  - pen → pens
+- rule: Add -es after s, sh, ch, x, z
+  type: spelling
+  examples:
+  - box → boxes
+  - watch → watches
+  - bus → buses
+- rule: Consonant + y → -ies
+  type: spelling
+  examples:
+  - city → cities
+  - baby → babies
+  - story → stories
+- rule: Vowel + y → -ys (not -ies)
+  type: spelling
+  examples:
+  - boy → boys
+  - key → keys
+  - day → days
+- rule: f/fe → -ves
+  type: spelling
+  examples:
+  - knife → knives
+  - leaf → leaves
+  - wife → wives
+- rule: Irregular plurals
+  type: irregular
+  examples:
+  - man → men
+  - woman → women
+  - child → children
+  - foot → feet
+  - tooth → teeth
+  - mouse → mice
+- rule: Same singular and plural
+  type: irregular
+  examples:
+  - sheep → sheep
+  - fish → fish
+  - deer → deer
 use:
-  - context: "Counting and quantifying"
-    description: "Using numbers and quantifiers with nouns"
-    examples: ["I have two cats.", "There are many people in the room."]
-  - context: "Describing people and things"
-    description: "Using adjectives with singular and plural nouns"
-    examples: ["A big house.", "Three small children."]
-  - context: "Shopping and commerce"
-    description: "Buying and selling items"
-    examples: ["I'd like three apples, please.", "How much are these shoes?"]
-
+- context: Counting and quantifying
+  description: Using numbers and quantifiers with nouns
+  examples:
+  - I have two cats.
+  - There are many people in the room.
+- context: Describing people and things
+  description: Using adjectives with singular and plural nouns
+  examples:
+  - A big house.
+  - Three small children.
+- context: Shopping and commerce
+  description: Buying and selling items
+  examples:
+  - I'd like three apples, please.
+  - How much are these shoes?
 phonetics:
-  - note: "Plural -s pronunciation: /s/, /z/, or /ɪz/"
-    example_generator:
-      contexts: ["pronunciation drills"]
-    l1_issue: "Many L1 speakers struggle with /ɪz/ after sibilants (boxes, watches)"
-
+- note: 'Plural -s pronunciation: /s/, /z/, or /ɪz/'
+  example_generator:
+    contexts:
+    - pronunciation drills
+  l1_issue: Many L1 speakers struggle with /ɪz/ after sibilants (boxes, watches)
 teaching:
-  methodology: "PPP (Present-Practice-Produce)"
+  methodology: PPP (Present-Practice-Produce)
   tips:
-    - "Use real objects (realia) for concrete examples"
-    - "Highlight irregular plurals explicitly — they must be memorized"
-    - "Use picture dictation for practice"
+  - Use real objects (realia) for concrete examples
+  - Highlight irregular plurals explicitly — they must be memorized
+  - Use picture dictation for practice
   recommended_activities:
-    - name: "Picture Dictation"
-      duration: 10
-      adaptation_notes: "Teacher describes a scene, students draw and label with correct plural forms."
-    - name: "Shopping Role Play"
-      duration: 15
-      adaptation_notes: "Students practice buying items using singular and plural forms."
+  - name: Picture Dictation
+    duration: 10
+    adaptation_notes: Teacher describes a scene, students draw and label with correct
+      plural forms.
+  - name: Shopping Role Play
+    duration: 15
+    adaptation_notes: Students practice buying items using singular and plural forms.
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

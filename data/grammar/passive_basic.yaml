@@ -1,114 +1,222 @@
 grammar_point: passive_basic
-title: 'Basic Passive Voice (is done / was done / has been done)'
-description: 'Forming and using the passive voice in present, past, and perfect tenses to focus on the action or the object rather than the agent.'
+title: Basic Passive Voice (is done / was done / has been done)
+description: Forming and using the passive voice in present, past, and perfect tenses
+  to focus on the action or the object rather than the agent.
 level: A2
-
 meaning:
-  core_meaning: "The passive voice is used when the focus is on the action or the object of the action, rather than on who or what performed the action. The object of an active sentence becomes the subject of a passive sentence. The passive is formed with the verb 'to be' + past participle. The agent (the doer) is often omitted when it is unknown, unimportant, or obvious."
-  timeline: "Present simple passive: am/is/are + past participle — 'The letters are delivered every morning.' / Past simple passive: was/were + past participle — 'The bridge was built in 1920.' / Present perfect passive: has/have been + past participle — 'The report has been completed.'"
-  contrast: |
-    Active (focus on agent): "The chef cooked the meal."
-    Passive (focus on action/object): "The meal was cooked by the chef."
-    Active (agent unknown): "Someone stole my bike."
-    Passive (agent omitted): "My bike was stolen." (We don't know who stole it.)
-    Active (general truth): "People speak English worldwide."
-    Passive (less common for general truths): "English is spoken worldwide."
-  ccqs:
-    - question: "In 'The window was broken,' do we know who broke the window?"
-      answer: "No. The agent is not mentioned. This is one of the main uses of the passive — when the agent is unknown or unimportant."
-    - question: "In 'The book was written by J.K. Rowling,' who wrote the book?"
-      answer: "J.K. Rowling. The agent is mentioned using 'by' because it is important information."
-    - question: "When do we use the passive instead of the active?"
-      answer: "When the action or the object is more important than the agent, when the agent is unknown, or when the agent is obvious and does not need to be stated."
-    - question: "Can all verbs be used in the passive?"
-      answer: "No. Only transitive verbs (verbs that take a direct object) can be made passive. Intransitive verbs like 'happen,' 'sleep,' or 'arrive' cannot be passive."
-  example_generator:
-    contexts: ["everyday situations", "news reports", "process descriptions", "historical facts", "instructions"]
-    cultural_notes: ["The passive voice is very common in news reporting, scientific writing, and formal English. Learners from languages that use the passive less frequently may underuse it, while learners from languages with extensive passive systems may overuse it.", "In everyday spoken English, 'get' is sometimes used instead of 'be' in passive constructions: 'He got fired' / 'She got promoted.' This is informal but very common."]
-    min_examples: 5
+  core_meaning: The passive voice is used when the focus is on the action or the object
+    of the action, rather than on who or what performed the action. The object of
+    an active sentence becomes the subject of a passive sentence. The passive is formed
+    with the verb 'to be' + past participle. The agent (the doer) is often omitted
+    when it is unknown, unimportant, or obvious.
+  timeline: 'Present simple passive: am/is/are + past participle — ''The letters are
+    delivered every morning.'' / Past simple passive: was/were + past participle —
+    ''The bridge was built in 1920.'' / Present perfect passive: has/have been + past
+    participle — ''The report has been completed.'''
+  contrast: 'Active (focus on agent): "The chef cooked the meal."
 
+    Passive (focus on action/object): "The meal was cooked by the chef."
+
+    Active (agent unknown): "Someone stole my bike."
+
+    Passive (agent omitted): "My bike was stolen." (We don''t know who stole it.)
+
+    Active (general truth): "People speak English worldwide."
+
+    Passive (less common for general truths): "English is spoken worldwide."
+
+    '
+  ccqs:
+  - question: In 'The window was broken,' do we know who broke the window?
+    answer: No. The agent is not mentioned. This is one of the main uses of the passive
+      — when the agent is unknown or unimportant.
+  - question: In 'The book was written by J.K. Rowling,' who wrote the book?
+    answer: J.K. Rowling. The agent is mentioned using 'by' because it is important
+      information.
+  - question: When do we use the passive instead of the active?
+    answer: When the action or the object is more important than the agent, when the
+      agent is unknown, or when the agent is obvious and does not need to be stated.
+  - question: Can all verbs be used in the passive?
+    answer: No. Only transitive verbs (verbs that take a direct object) can be made
+      passive. Intransitive verbs like 'happen,' 'sleep,' or 'arrive' cannot be passive.
+  example_generator:
+    contexts:
+    - everyday situations
+    - news reports
+    - process descriptions
+    - historical facts
+    - instructions
+    cultural_notes:
+    - The passive voice is very common in news reporting, scientific writing, and
+      formal English. Learners from languages that use the passive less frequently
+      may underuse it, while learners from languages with extensive passive systems
+      may overuse it.
+    - 'In everyday spoken English, ''get'' is sometimes used instead of ''be'' in
+      passive constructions: ''He got fired'' / ''She got promoted.'' This is informal
+      but very common.'
+    min_examples: 5
 form:
   affirmative:
-    structure: "Subject + be (conjugated) + past participle (+ by + agent). Present: am/is/are + past participle — 'English is spoken here.' / Past: was/were + past participle — 'The house was built in 1990.' / Present perfect: has/have been + past participle — 'The work has been finished.' / Future: will be + past participle — 'The results will be announced tomorrow.'"
+    structure: 'Subject + be (conjugated) + past participle (+ by + agent). Present:
+      am/is/are + past participle — ''English is spoken here.'' / Past: was/were +
+      past participle — ''The house was built in 1990.'' / Present perfect: has/have
+      been + past participle — ''The work has been finished.'' / Future: will be +
+      past participle — ''The results will be announced tomorrow.'''
     example_generator:
-      contexts: ["present passive", "past passive", "perfect passive", "future passive"]
+      contexts:
+      - present passive
+      - past passive
+      - perfect passive
+      - future passive
       min_examples: 4
   negative:
-    structure: "Subject + be + not + past participle. Present: 'The letters are not delivered on Sundays.' / Past: 'The building was not damaged in the fire.' / Present perfect: 'The report has not been submitted yet.' / Future: 'The decision will not be made until next week.'"
+    structure: 'Subject + be + not + past participle. Present: ''The letters are not
+      delivered on Sundays.'' / Past: ''The building was not damaged in the fire.''
+      / Present perfect: ''The report has not been submitted yet.'' / Future: ''The
+      decision will not be made until next week.'''
     example_generator:
-      contexts: ["negative passive", "denial", "absence of action"]
+      contexts:
+      - negative passive
+      - denial
+      - absence of action
       min_examples: 3
   questions:
-    structure: "Be + subject + past participle? Present: 'Is English spoken here?' / Past: 'Was the bridge built in 1920?' / Present perfect: 'Has the report been completed?' / Future: 'Will the results be announced today?'"
+    structure: 'Be + subject + past participle? Present: ''Is English spoken here?''
+      / Past: ''Was the bridge built in 1920?'' / Present perfect: ''Has the report
+      been completed?'' / Future: ''Will the results be announced today?'''
     example_generator:
-      contexts: ["asking about processes", "checking facts", "confirming actions"]
+      contexts:
+      - asking about processes
+      - checking facts
+      - confirming actions
       min_examples: 3
-
 sub_rules:
-  - rule: "Present simple passive — am/is/are + past participle"
-    type: "grammatical"
-    examples: ["The office is cleaned every evening.", "Thousands of cars are produced here every year.", "English is spoken in over 50 countries."]
-  - rule: "Past simple passive — was/were + past participle"
-    type: "grammatical"
-    examples: ["The Eiffel Tower was completed in 1889.", "The children were given presents.", "My wallet was stolen on the bus."]
-  - rule: "Present perfect passive — has/have been + past participle"
-    type: "grammatical"
-    examples: ["The road has been closed due to flooding.", "All the tickets have been sold.", "The new bridge has finally been opened."]
-  - rule: "Future passive — will be + past participle"
-    type: "grammatical"
-    examples: ["The new hospital will be opened next month.", "You will be contacted by our team.", "The winner will be announced on Friday."]
-  - rule: "Modal passive — modal + be + past participle"
-    type: "grammatical"
-    examples: ["The work must be finished by Friday.", "This medicine should be taken with food.", "The problem can be solved easily."]
-  - rule: "Agent with 'by' — used when the doer is important or new information"
-    type: "grammatical"
-    examples: ["The Mona Lisa was painted by Leonardo da Vinci.", "The suspect was arrested by police.", "The cake was made by my grandmother."]
-  - rule: "Omitting the agent — when the doer is unknown, obvious, or unimportant"
-    type: "pragmatic"
-    examples: ["My car was repaired. (By a mechanic — obvious.)", "English is taught in schools worldwide. (By teachers — obvious.)", "The bank was robbed yesterday. (By someone — unknown.)"]
-
+- rule: Present simple passive — am/is/are + past participle
+  type: grammatical
+  examples:
+  - The office is cleaned every evening.
+  - Thousands of cars are produced here every year.
+  - English is spoken in over 50 countries.
+- rule: Past simple passive — was/were + past participle
+  type: grammatical
+  examples:
+  - The Eiffel Tower was completed in 1889.
+  - The children were given presents.
+  - My wallet was stolen on the bus.
+- rule: Present perfect passive — has/have been + past participle
+  type: grammatical
+  examples:
+  - The road has been closed due to flooding.
+  - All the tickets have been sold.
+  - The new bridge has finally been opened.
+- rule: Future passive — will be + past participle
+  type: grammatical
+  examples:
+  - The new hospital will be opened next month.
+  - You will be contacted by our team.
+  - The winner will be announced on Friday.
+- rule: Modal passive — modal + be + past participle
+  type: grammatical
+  examples:
+  - The work must be finished by Friday.
+  - This medicine should be taken with food.
+  - The problem can be solved easily.
+- rule: Agent with 'by' — used when the doer is important or new information
+  type: grammatical
+  examples:
+  - The Mona Lisa was painted by Leonardo da Vinci.
+  - The suspect was arrested by police.
+  - The cake was made by my grandmother.
+- rule: Omitting the agent — when the doer is unknown, obvious, or unimportant
+  type: pragmatic
+  examples:
+  - My car was repaired. (By a mechanic — obvious.)
+  - English is taught in schools worldwide. (By teachers — obvious.)
+  - The bank was robbed yesterday. (By someone — unknown.)
 use:
-  - context: "News reporting"
-    description: "The passive is widely used in news to focus on events and victims rather than perpetrators."
-    examples: ["A new hospital has been opened in the city centre.", "Three people were injured in the accident.", "The suspect was arrested last night."]
-  - context: "Process descriptions"
-    description: "Used to describe how something is made, done, or processed."
-    examples: ["The grapes are harvested in autumn.", "The wine is stored in oak barrels for two years.", "The bottles are then labelled and shipped worldwide."]
-  - context: "Historical and factual statements"
-    description: "Used to state facts about when, where, or how things were done."
-    examples: ["The first iPhone was released in 2007.", "The United Nations was founded in 1945.", "The Great Wall of China was built over many centuries."]
-  - context: "Formal and official language"
-    description: "The passive creates an impersonal, formal tone suitable for official documents and announcements."
-    examples: ["Passengers are requested to fasten their seatbelts.", "Applications must be submitted by 30 April.", "Smoking is prohibited in all areas."]
-
+- context: News reporting
+  description: The passive is widely used in news to focus on events and victims rather
+    than perpetrators.
+  examples:
+  - A new hospital has been opened in the city centre.
+  - Three people were injured in the accident.
+  - The suspect was arrested last night.
+- context: Process descriptions
+  description: Used to describe how something is made, done, or processed.
+  examples:
+  - The grapes are harvested in autumn.
+  - The wine is stored in oak barrels for two years.
+  - The bottles are then labelled and shipped worldwide.
+- context: Historical and factual statements
+  description: Used to state facts about when, where, or how things were done.
+  examples:
+  - The first iPhone was released in 2007.
+  - The United Nations was founded in 1945.
+  - The Great Wall of China was built over many centuries.
+- context: Formal and official language
+  description: The passive creates an impersonal, formal tone suitable for official
+    documents and announcements.
+  examples:
+  - Passengers are requested to fasten their seatbelts.
+  - Applications must be submitted by 30 April.
+  - Smoking is prohibited in all areas.
 phonetics:
-  - note: "In passive constructions, the auxiliary 'be' is usually unstressed in connected speech: 'The letter was sent' /ðə ˈletə wəz sent/. The past participle carries the main stress."
-    example_generator:
-      contexts: ["connected speech", "stress patterns"]
-    l1_issue: "Learners may stress the auxiliary 'be' too strongly, making speech sound unnatural. Drill the weak form /wəz/ and /wə/ in passive sentences."
-  - note: "The past participle ending -ed has three pronunciations: /t/ (walked), /d/ (played), /ɪd/ (wanted). This rule applies to passive constructions as well."
-    example_generator:
-      contexts: ["pronunciation of -ed"]
-    l1_issue: "Learners may pronounce all -ed endings as /ɪd/. Teach the three-way distinction with clear examples."
-
+- note: 'In passive constructions, the auxiliary ''be'' is usually unstressed in connected
+    speech: ''The letter was sent'' /ðə ˈletə wəz sent/. The past participle carries
+    the main stress.'
+  example_generator:
+    contexts:
+    - connected speech
+    - stress patterns
+  l1_issue: Learners may stress the auxiliary 'be' too strongly, making speech sound
+    unnatural. Drill the weak form /wəz/ and /wə/ in passive sentences.
+- note: 'The past participle ending -ed has three pronunciations: /t/ (walked), /d/
+    (played), /ɪd/ (wanted). This rule applies to passive constructions as well.'
+  example_generator:
+    contexts:
+    - pronunciation of -ed
+  l1_issue: Learners may pronounce all -ed endings as /ɪd/. Teach the three-way distinction
+    with clear examples.
 teaching:
-  methodology: "PPP"
+  methodology: PPP
   tips:
-    - "Start with a context: show a picture of a famous building and ask 'Who built it?' Then introduce: 'It was built by...' This makes the purpose of the passive clear from the start."
-    - "Use a simple transformation exercise: give active sentences and have students convert them to passive. Highlight the movement of the object to the subject position."
-    - "Emphasise when to use the passive (unknown agent, unimportant agent, focus on action) rather than just how to form it. This helps learners understand the purpose."
-    - "Introduce the 'by + agent' phrase separately. Start with agentless passives, then add the agent when it is relevant."
-    - "Use real-world examples from news headlines, product labels, and historical facts to show the passive in authentic use."
+  - 'Start with a context: show a picture of a famous building and ask ''Who built
+    it?'' Then introduce: ''It was built by...'' This makes the purpose of the passive
+    clear from the start.'
+  - 'Use a simple transformation exercise: give active sentences and have students
+    convert them to passive. Highlight the movement of the object to the subject position.'
+  - Emphasise when to use the passive (unknown agent, unimportant agent, focus on
+    action) rather than just how to form it. This helps learners understand the purpose.
+  - Introduce the 'by + agent' phrase separately. Start with agentless passives, then
+    add the agent when it is relevant.
+  - Use real-world examples from news headlines, product labels, and historical facts
+    to show the passive in authentic use.
   recommended_activities:
-    - name: "Active to passive transformation"
-      duration: 15
-      adaptation_notes: "Give students 10 active sentences. They convert each to passive: 'The chef cooked the meal.' → 'The meal was cooked (by the chef).' Discuss when to include or omit the agent."
-    - name: "News headline analysis"
-      duration: 15
-      adaptation_notes: "Provide 8-10 news headlines using the passive. Students identify the tense and rewrite in active voice. Discuss why the journalist chose the passive."
-    - name: "Process description"
-      duration: 20
-      adaptation_notes: "Students describe a process (how chocolate is made, how a letter is delivered) using at least 6 passive sentences. Present to the class."
-    - name: "Error correction"
-      duration: 15
-      adaptation_notes: "Provide sentences with common passive errors (wrong auxiliary, missing past participle, wrong agent). Students identify and correct each error."
+  - name: Active to passive transformation
+    duration: 15
+    adaptation_notes: 'Give students 10 active sentences. They convert each to passive:
+      ''The chef cooked the meal.'' → ''The meal was cooked (by the chef).'' Discuss
+      when to include or omit the agent.'
+  - name: News headline analysis
+    duration: 15
+    adaptation_notes: Provide 8-10 news headlines using the passive. Students identify
+      the tense and rewrite in active voice. Discuss why the journalist chose the
+      passive.
+  - name: Process description
+    duration: 20
+    adaptation_notes: Students describe a process (how chocolate is made, how a letter
+      is delivered) using at least 6 passive sentences. Present to the class.
+  - name: Error correction
+    duration: 15
+    adaptation_notes: Provide sentences with common passive errors (wrong auxiliary,
+      missing past participle, wrong agent). Students identify and correct each error.
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

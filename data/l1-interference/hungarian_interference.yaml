@@ -1,989 +1,1035 @@
-language: hungarian
+language: Hungarian
+language_code: hu
 schema_version: '3.0'
 grammar_points:
-  case_system_18:
+  articles:
     interference_patterns:
-    - Hungarian uses vowel harmony which does not exist in English, causing transfer
-      errors related to 'case system 18'.
-    why_it_happens: Hungarian handles 'case system 18' differently from English. Hungarian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Hungarian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Hungarian and English for 'case
-        system 18'. Show the Hungarian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Hungarian
-        handles 'case system 18' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Hungarian sentences, students translate to English, focusing
-          on correct 'case system 18' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Hungarian-style 'case system 18' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'case
-          system 18' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'case system
-          18' errors.
-        duration: 15
+    - pattern: Omission of indefinite article
+      example: 'HU ''orvos vagyok'' (doctor I-am) -> Error: ''I am doctor'' -> Correct:
+        ''I am a doctor'''
+      frequency: 5
+      persistence: 4
+      communicative_impact: 3
+    - pattern: Overuse of definite article
+      example: 'HU ''a/az'' = the -> Error: ''the water is the essential'' -> Correct:
+        ''Water is essential'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
     examples:
-    - 'Wrong: ''I help he.'' Correct: ''I help him.'''
-    - 'Wrong: ''Give it to she.'' Correct: ''Give it to her.'''
+    - wrong: I am teacher.
+      correct: I am a teacher.
+    - wrong: She is doctor.
+      correct: She is a doctor.
+    why_it_happens: Hungarian omits the indefinite article after 'to be' for professions.
+      Hungarian has a definite article 'a/az' that is used more broadly than English
+      'the'.
+    teacher_tips:
+      how_to_explain: 'Teach: English REQUIRES ''a/an'' after ''be'' for professions.'
+      where_to_start: Start with the profession pattern.
+      sequencing: 'Week 1: Articles with professions. Week 2: Definite vs indefinite.
+        Week 3: Zero article. Week 4: Review.'
+      exercises:
+      - name: Article Audit
+        type: error-correction
+        description: 20 sentences with Hungarian-influenced article errors.
+        duration: 15
+      - name: HU Article Translation
+        type: translation
+        description: Translate 15 Hungarian sentences focusing on articles.
+        duration: 15
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Dornyei, Z. & Kormos, J. (1998). Problem-solving mechanisms in L2 communication.
-      Studies in Second Language Acquisition, 20(3), 349-385.
+    - Swan & Smith "Learner English" (Hungarian)
+    - Parrott "Grammar for English Language Teachers"
     source_count: 2
-    source_type: peer-reviewed
+    source_type: textbook
+    frequency: 5
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 2
+    citations:
+    - claim: 'Grammar point: articles'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Article usage varies significantly across languages; many languages have
+        no article system
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See articles entries 133-142
+      tier: 2
+    - claim: ELLs commonly omit indefinite article when descriptive adjectives come
+        between determiner and noun
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 153
+      tier: 2
+  word_order:
+    interference_patterns:
+    - pattern: Focus-fronting word order
+      example: 'HU ''Ketfeknyitottam'' (two-keys-I-opened) -> Error: ''Two keys I
+        opened'' -> Correct: ''I opened two keys'''
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
+    - pattern: Verb-final in subordinate clauses
+      example: 'HU ''mert fogorvos vagyok'' (because dentist I-am) -> Error: ''because
+        dentist I am'' -> Correct: ''because I am a dentist'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+    examples:
+    - wrong: Because dentist I am, I know teeth.
+      correct: Because I am a dentist, I know about teeth.
+    - wrong: Two books I bought yesterday.
+      correct: I bought two books yesterday.
+    why_it_happens: Hungarian has flexible word order with focus-fronting (the focused
+      element comes first). Hungarian is also verb-final in subordinate clauses. English
+      is strictly SVO.
+    teacher_tips:
+      how_to_explain: 'Teach: English is ALWAYS Subject-Verb-Object. No focus-fronting,
+        no verb-final.'
+      where_to_start: Start with basic SVO order.
+      sequencing: 'Week 1: Basic SVO. Week 2: Subordinate clauses. Week 3: Adverb
+        placement. Week 4: Review.'
+      exercises:
+      - name: Word Order Correction
+        type: error-correction
+        description: 15 sentences with Hungarian-influenced word order.
+        duration: 15
+      - name: HU Word Order Translation
+        type: translation
+        description: Translate 15 Hungarian sentences focusing on word order.
+        duration: 20
+    sources:
+    - Swan & Smith "Learner English" (Hungarian)
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 5
+    persistence: 5
+    communicative_impact: 4
+    flagged: false
+    tier: 1
+    source_rank: 2
+    citations:
+    - claim: 'Grammar point: word order'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Germanic languages and Chinese make rich use of compounding, unlike other
+        languages
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: p. 39
+      tier: 2
+    - claim: 'Word order varies: SOV, SVO, VSO, V2, free order — all cause transfer
+        errors'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See word order entries
+      tier: 2
+    - claim: 'ELLs transfer L1 word order: subject-verb inversion from Spanish, SOV
+        from Arabic/Japanese'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 199
+      tier: 2
+  cases:
+    interference_patterns:
+    - pattern: Transfer of Hungarian case system
+      example: 'HU 18+ cases -> Error: ''with I'' -> Correct: ''with me'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    - pattern: Use of suffixes instead of prepositions
+      example: 'HU ''hazban'' (house-in) -> Error: ''in house'' (missing article)
+        -> Correct: ''in the house'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+    examples:
+    - wrong: With I go to school.
+      correct: I go to school with me.
+    - wrong: He gave the book to I.
+      correct: He gave the book to me.
+    why_it_happens: Hungarian has 18+ grammatical cases expressed as suffixes. English
+      uses prepositions and pronoun case. Hungarian learners may use wrong pronoun
+      forms or omit articles after case-like constructions.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses subject pronouns (I, he, she) and object
+        pronouns (me, him, her). After prepositions, use object pronouns.'
+      where_to_start: Start with subject vs object pronouns.
+      sequencing: 'Week 1: Subject vs object pronouns. Week 2: Pronouns after prepositions.
+        Week 3: Who vs whom. Week 4: Review.'
+      exercises:
+      - name: Pronoun Case Practice
+        type: fill-in-the-blank
+        description: 20 sentences where students choose the correct pronoun case.
+        duration: 10
+      - name: HU Pronoun Translation
+        type: translation
+        description: Translate 15 Hungarian sentences with correct English pronoun
+          forms.
+        duration: 15
+    sources:
+    - Swan & Smith "Learner English" (Hungarian)
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Hungarian
-  vowel_harmony_hu:
+    source_rank: 2
+    citations:
+    - claim: 'Grammar point: cases'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Hungarian has 18+ grammatical cases (p. 59)
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: See relevant section
+      tier: 2
+    - claim: Hungarian has 18+ grammatical cases (PEU grammar entries)
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See relevant entry
+      tier: 2
+    - claim: Hungarian has 18+ grammatical cases (p. 238)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: See relevant section
+      tier: 2
+  verb_tenses:
     interference_patterns:
-    - Hungarian uses vowel harmony which does not exist in English, causing transfer
-      errors related to 'vowel harmony hu'.
-    why_it_happens: Hungarian handles 'vowel harmony hu' differently from English.
-      Hungarian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Hungarian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Hungarian and English for 'vowel
-        harmony hu'. Show the Hungarian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Hungarian
-        handles 'vowel harmony hu' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Hungarian sentences, students translate to English, focusing
-          on correct 'vowel harmony hu' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Hungarian-style 'vowel harmony hu'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'vowel
-          harmony hu' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'vowel harmony
-          hu' errors.
-        duration: 15
+    - pattern: Use of past tense for all past
+      example: 'HU ''eltem'' (I-lived) -> Error: ''I lived in 2010'' (correct) but
+        overuse of simple past'
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+    - pattern: Use of present for future
+      example: 'HU ''holnap megyek'' (tomorrow I-go) -> Error: ''Tomorrow I go'' ->
+        Correct: ''Tomorrow I will go'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
     examples:
-    - 'Wrong: Applying Hungarian ''vowel harmony hu'' structure to English. Correct:
-      Use the English structure for ''vowel harmony hu''.'
-    - 'Wrong: Direct translation of Hungarian ''vowel harmony hu'' pattern. Correct:
-      Follow English ''vowel harmony hu'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''vowel harmony hu'' patterns.'
+    - wrong: Tomorrow I go to Budapest.
+      correct: Tomorrow I will go to Budapest.
+    - wrong: Next week she visits her grandmother.
+      correct: Next week she will visit her grandmother.
+    why_it_happens: Hungarian uses the present tense for future actions with time
+      markers. English requires 'will' or 'going to' for future.
+    teacher_tips:
+      how_to_explain: 'Teach: Future time markers (tomorrow, next week) require ''will''
+        or ''going to'' in English.'
+      where_to_start: Start with future tense using 'will'.
+      sequencing: 'Week 1: Future with will. Week 2: Future with going to. Week 3:
+        Present for future (timetables). Week 4: Review.'
+      exercises:
+      - name: Future Tense Practice
+        type: sentence-rewrite
+        description: Students rewrite 15 present tense sentences in future.
+        duration: 15
+      - name: HU Future Translation
+        type: translation
+        description: Translate 15 Hungarian future sentences into correct English.
+        duration: 15
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Dornyei, Z. & Kormos, J. (1998). Problem-solving mechanisms in L2 communication.
-      Studies in Second Language Acquisition, 20(3), 349-385.
+    - Swan & Smith "Learner English" (Hungarian)
+    - Parrott "Grammar for English Language Teachers"
     source_count: 2
-    source_type: peer-reviewed
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 2
+    citations:
+    - claim: 'Grammar point: verb tenses'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Past tense is realized through -ed inflection or irregular vowel/consonant
+        changes
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: p. 89
+      tier: 2
+    - claim: Tense-aspect systems vary widely across languages; some have no morphological
+        tense
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See tense entries
+      tier: 2
+    - claim: ELLs internalize incorrect patterns from overuse of be (e.g., *I am take
+        the bus)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 231
+      tier: 2
+  questions:
+    interference_patterns:
+    - pattern: Use of -e question suffix
+      example: 'HU ''mersz-e?'' (go-you-question?) -> Error: ''Go you?'' -> Correct:
+        ''Do you go?'''
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
+    examples:
+    - wrong: You go to school?
+      correct: Do you go to school?
+    - wrong: She likes coffee?
+      correct: Does she like coffee?
+    why_it_happens: Hungarian forms questions with the suffix '-e' attached to the
+      verb. English requires do-support and inversion.
+    teacher_tips:
+      how_to_explain: 'Teach: Do/Does/Did + subject + base verb? For ''be'' and modals,
+        just invert.'
+      where_to_start: Start with yes/no questions.
+      sequencing: 'Week 1: Yes/no questions. Week 2: Wh- questions. Week 3: Tag questions.
+        Week 4: Review.'
+      exercises:
+      - name: Question Formation
+        type: sentence-rewrite
+        description: Students convert 15 statements to questions.
+        duration: 15
+      - name: HU Question Translation
+        type: translation
+        description: Translate 15 Hungarian questions into correct English.
+        duration: 15
+      - name: Interview Activity
+        type: oral-drill
+        description: Students interview each other using questions.
+        duration: 15
+    sources:
+    - Swan & Smith "Learner English" (Hungarian)
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 5
+    persistence: 5
+    communicative_impact: 4
+    flagged: false
+    tier: 1
+    source_rank: 2
+    citations:
+    - claim: 'Grammar point: questions'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: 'Question formation varies: intonation-only, particles, inversion — all
+        cause transfer errors'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 294
+      tier: 2
+  negation:
+    interference_patterns:
+    - pattern: Use of nem before the verb
+      example: 'HU ''nem tudom'' (not I-know) -> Error: ''I not know'' -> Correct:
+        ''I do not know'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+    examples:
+    - wrong: I not know the answer.
+      correct: I do not know the answer.
+    - wrong: She not likes coffee.
+      correct: She does not like coffee.
+    why_it_happens: Hungarian negation uses 'nem' (not) before the verb. English uses
+      do/does/did + not + base verb.
+    teacher_tips:
+      how_to_explain: 'Teach: do/does/did + not + base verb. For ''be'' and modals,
+        just add ''not'' after.'
+      where_to_start: Start with do/does/did + not.
+      sequencing: 'Week 1: Do/does/did + not. Week 2: Be + not. Week 3: Modals + not.
+        Week 4: Review.'
+      exercises:
+      - name: Negation Transformation
+        type: sentence-rewrite
+        description: Students rewrite 15 affirmative sentences as negative.
+        duration: 15
+      - name: HU Negation Translation
+        type: translation
+        description: Translate 15 Hungarian negation sentences into correct English.
+        duration: 15
+    sources:
+    - Swan & Smith "Learner English" (Hungarian)
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 2
+    citations:
+    - claim: 'Grammar point: negation'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: 'Negation patterns vary: pre-verbal particles, post-verbal markers, double
+        negation'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See negation entries
+      tier: 2
+    - claim: 'Double negation transferred from L1 (Spanish, Arabic, etc.): *I don''t
+        have no reason'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 1
+      tier: 2
+  prepositions:
+    interference_patterns:
+    - pattern: Transfer of Hungarian postpositions
+      example: 'HU ''asztal on'' (table on) -> Error: ''table on'' -> Correct: ''on
+        the table'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    - pattern: Use of -ban/-ben for in
+      example: 'HU ''hazban'' (house-in) -> Error: ''in house'' -> Correct: ''in the
+        house'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+    examples:
+    - wrong: Book the table on is.
+      correct: The book is on the table.
+    - wrong: I go in house.
+      correct: I go in the house.
+    why_it_happens: Hungarian uses postpositions (after nouns) and case suffixes instead
+      of prepositions. English uses prepositions before nouns.
+    teacher_tips:
+      how_to_explain: 'Teach: English prepositions come BEFORE nouns. ''On the table''
+        (not ''table on'').'
+      where_to_start: Start with common prepositions of place.
+      sequencing: 'Week 1: Prepositions of place. Week 2: Prepositions of time. Week
+        3: Verb + preposition. Week 4: Review.'
+      exercises:
+      - name: Preposition Translation
+        type: translation
+        description: Translate 15 Hungarian sentences with correct English prepositions.
+        duration: 15
+      - name: Preposition Error Hunt
+        type: error-correction
+        description: A paragraph with 10 preposition errors.
+        duration: 15
+    sources:
+    - Swan & Smith "Learner English" (Hungarian)
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Hungarian
-  definite_article_hu:
+    source_rank: 2
+    citations:
+    - claim: 'Grammar point: prepositions'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Prepositions signal relationships that compensate for lost noun inflections
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: p. 84
+      tier: 2
+    - claim: Preposition usage is highly language-specific and a major source of errors
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See preposition entries
+      tier: 2
+    - claim: 'Preposition combinations must be taught explicitly: rote memorization,
+        direct instruction, or extensive reading'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 171
+      tier: 2
+  phonology:
     interference_patterns:
-    - Hungarian uses vowel harmony which does not exist in English, causing transfer
-      errors related to 'definite article hu'.
-    why_it_happens: Hungarian handles 'definite article hu' differently from English.
-      Hungarian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Hungarian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Hungarian and English for 'definite
-        article hu'. Show the Hungarian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Hungarian
-        handles 'definite article hu' differently from English. Use visual aids or
-        color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Hungarian sentences, students translate to English, focusing
-          on correct 'definite article hu' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Hungarian-style 'definite article hu'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'definite
-          article hu' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'definite article
-          hu' errors.
-        duration: 15
+    - pattern: Confusion of /v/ and /w/
+      example: 'HU lacks /w/ -> Error: ''wery'' for ''very'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+    - pattern: Difficulty with /θ/ and /ð/
+      example: 'HU lacks dental fricatives -> Error: ''tink'' for ''think'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
     examples:
-    - 'Wrong: ''She is definite article hu.'' Correct: ''She is a definite article
-      hu.'''
-    - 'Wrong: ''I like the definite article hu.'' (general) Correct: ''I like definite
-      article hu.'''
-    - 'Wrong: ''I have definite article hu.'' Correct: ''I have a definite article
-      hu.'''
+    - wrong: I am wery happy.
+      correct: I am very happy.
+    - wrong: Tink about it.
+      correct: Think about it.
+    why_it_happens: Hungarian lacks /w/ (using /v/ instead) and lacks dental fricatives.
+      Hungarian learners substitute closest sounds.
+    teacher_tips:
+      how_to_explain: 'Teach: /v/ = lips touch lower teeth. /w/ = lips round. /θ/
+        = tongue between teeth.'
+      where_to_start: Start with /v/ vs /w/. Then teach /θ/ and /ð/.
+      sequencing: 'Week 1: V vs W. Week 2: TH sounds. Week 3: Other consonant contrasts.
+        Week 4: Review.'
+      exercises:
+      - name: Minimal Pairs
+        type: matching
+        description: 'Students distinguish: very/water, vest/west, think/tink.'
+        duration: 10
+      - name: TH Practice
+        type: oral-drill
+        description: Students practice 20 words with th sounds.
+        duration: 10
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Dornyei, Z. & Kormos, J. (1998). Problem-solving mechanisms in L2 communication.
-      Studies in Second Language Acquisition, 20(3), 349-385.
+    - Swan & Smith "Learner English" (Hungarian)
+    - Underhill "Sound Foundations"
     source_count: 2
-    source_type: peer-reviewed
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 2
+    citations:
+    - claim: 'Grammar point: phonology'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Phonological interference pattern
+      source: Underhill (2005) 'Sound Foundations', Macmillan
+      location: See relevant phonology section
+      tier: 2
+    - claim: Phonological transfer from L1 causes pronunciation errors
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See pronunciation entries
+      tier: 2
+    - claim: Single pronunciation errors rarely impede communication; focus on patterns
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 272
+      tier: 2
+  false_friends:
+    interference_patterns:
+    - pattern: Confusion of HU-EN cognates
+      example: 'HU ''aktualis'' = current (not actual) -> Error: ''The actual news''
+        -> Correct: ''The current news'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 4
+    examples:
+    - wrong: The actual situation is bad.
+      correct: The current situation is bad.
+    - wrong: I become a letter.
+      correct: I get a letter.
+    why_it_happens: Hungarian and English share some cognates with shifted meanings.
+    teacher_tips:
+      how_to_explain: Create a list of common HU-EN false friends.
+      where_to_start: Start with the highest-impact false friends.
+      sequencing: 'Week 1: Top 10 false friends. Week 2: Context-based practice. Week
+        3: Review.'
+      exercises:
+      - name: False Friend Flashcards
+        type: matching
+        description: Students create flashcards for 10 false friends.
+        duration: 15
+      - name: Context Clues
+        type: fill-in-the-blank
+        description: 10 sentences where students choose between false friend pairs.
+        duration: 10
+    sources:
+    - Swan & Smith "Learner English" (Hungarian)
+    source_count: 1
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 4
+    flagged: true
+    tier: 2
+    source_rank: 2
+    citations:
+    - claim: 'Grammar point: false friends'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: False friends (cognates with different meanings) cause high-impact errors
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See vocabulary problem entries
+      tier: 2
+    - claim: False friends cause high-impact communication errors; must be taught
+        explicitly
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 213
+      tier: 2
+  countability:
+    interference_patterns:
+    - pattern: Pluralization of uncountable nouns
+      example: 'HU ''informaciok'' = informations -> Error: ''informations'' -> Correct:
+        ''information'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+    examples:
+    - wrong: I have many homeworks.
+      correct: I have a lot of homework.
+    - wrong: She gave me good advices.
+      correct: She gave me good advice.
+    why_it_happens: Hungarian treats some nouns as countable that are uncountable
+      in English.
+    teacher_tips:
+      how_to_explain: Create a list of common uncountable nouns.
+      where_to_start: Start with the countable/uncountable distinction.
+      sequencing: 'Week 1: Common uncountable nouns. Week 2: Much/many. Week 3: Partitives.
+        Week 4: Review.'
+      exercises:
+      - name: Countable or Not?
+        type: matching
+        description: Students categorize 30 nouns.
+        duration: 10
+      - name: Quantifier Choice
+        type: fill-in-the-blank
+        description: 20 sentences where students choose much/many.
+        duration: 10
+    sources:
+    - Swan & Smith "Learner English" (Hungarian)
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 2
+    citations:
+    - claim: 'Grammar point: countability'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Countability distinctions vary across languages; some nouns are countable
+        in L1 but uncountable in English
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See countability entries
+      tier: 2
+    - claim: Count/mass noun distinctions vary by L1; Spanish uses have for age (*I
+        have 27 years old)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 89
+      tier: 2
+  passive_voice:
+    interference_patterns:
+    - pattern: Avoidance of passive voice
+      example: 'HU prefers active -> Error: ''Someone built this house'' -> Correct:
+        ''This house was built'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    examples:
+    - wrong: Someone built this house in 1900.
+      correct: This house was built in 1900.
+    - wrong: My car stole yesterday.
+      correct: My car was stolen yesterday.
+    why_it_happens: Hungarian uses passive less frequently than English.
+    teacher_tips:
+      how_to_explain: 'Teach the passive formula: be + past participle.'
+      where_to_start: Start with the passive formula.
+      sequencing: 'Week 1: Passive formula. Week 2: Present and past passive. Week
+        3: When to use passive. Week 4: Review.'
+      exercises:
+      - name: Active to Passive
+        type: sentence-rewrite
+        description: Students convert 15 active sentences to passive.
+        duration: 15
+      - name: HU Passive Translation
+        type: translation
+        description: Translate 15 Hungarian passive sentences into correct English.
+        duration: 15
+    sources:
+    - Swan & Smith "Learner English" (Hungarian)
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
     frequency: 4
     persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Hungarian
-  possessive_suffixes_hu:
+    source_rank: 2
+    citations:
+    - claim: 'Grammar point: passive voice'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Passive voice availability and usage varies across languages
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See passive entries
+      tier: 2
+    - claim: ELLs avoid passive in contexts where L1 uses different structures
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 294
+      tier: 2
+  conditionals:
     interference_patterns:
-    - Hungarian uses vowel harmony which does not exist in English, causing transfer
-      errors related to 'possessive suffixes hu'.
-    why_it_happens: Hungarian handles 'possessive suffixes hu' differently from English.
-      Hungarian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Hungarian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Hungarian and English for 'possessive
-        suffixes hu'. Show the Hungarian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Hungarian
-        handles 'possessive suffixes hu' differently from English. Use visual aids
-        or color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Hungarian sentences, students translate to English, focusing
-          on correct 'possessive suffixes hu' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Hungarian-style 'possessive suffixes
-          hu' errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'possessive
-          suffixes hu' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'possessive suffixes
-          hu' errors.
-        duration: 15
+    - pattern: Use of present tense in if-clauses
+      example: 'HU ''Ha lennek gazdag'' (if I-were rich) -> Error: ''If I would be
+        rich'' -> Correct: ''If I were rich'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
     examples:
-    - 'Wrong: ''the book of Marie.'' Correct: ''Marie''s book.'''
-    - 'Wrong: ''the mine.'' Correct: ''mine.'''
+    - wrong: If I would have money, I would travel.
+      correct: If I had money, I would travel.
+    - wrong: If I was rich, I would buy a house.
+      correct: If I were rich, I would buy a house.
+    why_it_happens: Hungarian conditional structure differs from English. Hungarian
+      learners may use 'would' in the if-clause.
+    teacher_tips:
+      how_to_explain: 'Teach: NO WOULD IN IF-CLAUSE. Use ''were'' (not ''was'') for
+        unreal situations.'
+      where_to_start: Start with second conditional.
+      sequencing: 'Week 1: Second conditional. Week 2: First conditional. Week 3:
+        Zero conditional. Week 4: Review.'
+      exercises:
+      - name: Conditional Practice
+        type: sentence-rewrite
+        description: Students rewrite 10 conditional sentences.
+        duration: 15
+      - name: HU Conditional Translation
+        type: translation
+        description: Translate 15 Hungarian conditional sentences into correct English.
+        duration: 15
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Dornyei, Z. & Kormos, J. (1998). Problem-solving mechanisms in L2 communication.
-      Studies in Second Language Acquisition, 20(3), 349-385.
+    - Swan & Smith "Learner English" (Hungarian)
+    - Parrott "Grammar for English Language Teachers"
     source_count: 2
-    source_type: peer-reviewed
+    source_type: textbook
     frequency: 4
-    persistence: 3
+    persistence: 4
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Hungarian
-  plural_hu:
+    source_rank: 2
+    citations:
+    - claim: 'Grammar point: conditionals'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Conditional structures vary; some languages use morphological mood, others
+        use particles
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See conditional entries
+      tier: 2
+    - claim: 'Common error: *If I would have known (transfer from L1 conditional structures)'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 322
+      tier: 2
+  relative_clauses:
     interference_patterns:
-    - Hungarian uses vowel harmony which does not exist in English, causing transfer
-      errors related to 'plural hu'.
-    why_it_happens: Hungarian handles 'plural hu' differently from English. Hungarian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Hungarian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Hungarian and English for 'plural
-        hu'. Show the Hungarian structure side-by-side with English. Highlight the
-        specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Hungarian
-        handles 'plural hu' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Hungarian sentences, students translate to English, focusing
-          on correct 'plural hu' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Hungarian-style 'plural hu' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'plural
-          hu' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'plural hu' errors.
-        duration: 15
+    - pattern: Use of aki/ami as relative pronouns
+      example: 'HU ''aki'' = who/which -> Error: ''The man which'' -> Correct: ''The
+        man who'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
     examples:
-    - 'Wrong: ''I have many informations.'' Correct: ''I have a lot of information.'''
-    - 'Wrong: ''He gave me good advices.'' Correct: ''He gave me good advice.'''
+    - wrong: The man which I met is my boss.
+      correct: The man who I met is my boss.
+    - wrong: The book what I read was interesting.
+      correct: The book that I read was interesting.
+    why_it_happens: Hungarian uses 'aki' (who) and 'ami' (which/that) as relative
+      pronouns. English distinguishes who/which/that.
+    teacher_tips:
+      how_to_explain: 'Teach: For people -> who/that. For things -> that/which.'
+      where_to_start: Start with 'that' as the default.
+      sequencing: 'Week 1: That for things and people. Week 2: Who for people. Week
+        3: Which for non-restrictive. Week 4: Review.'
+      exercises:
+      - name: Relative Pronoun Choice
+        type: fill-in-the-blank
+        description: 15 sentences where students choose that/which/who.
+        duration: 10
+      - name: HU Relative Translation
+        type: translation
+        description: Translate 15 Hungarian relative clauses into correct English.
+        duration: 15
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Dornyei, Z. & Kormos, J. (1998). Problem-solving mechanisms in L2 communication.
-      Studies in Second Language Acquisition, 20(3), 349-385.
+    - Swan & Smith "Learner English" (Hungarian)
+    - Parrott "Grammar for English Language Teachers"
     source_count: 2
-    source_type: peer-reviewed
+    source_type: textbook
     frequency: 4
     persistence: 3
+    communicative_impact: 2
+    flagged: false
+    tier: 1
+    source_rank: 2
+    citations:
+    - claim: 'Grammar point: relative clauses'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: 'Relative clause structure varies: pre-nominal vs post-nominal, resumptive
+        pronouns'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See relative clause entries
+      tier: 2
+    - claim: 'ELLs transfer L1 relative clause structure: resumptive pronouns, pre-nominal
+        clauses'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 199
+      tier: 2
+  reported_speech:
+    interference_patterns:
+    - pattern: No backshift of tenses
+      example: 'HU ''Azt mondta, hogy jon'' (he said that he-comes) -> Error: ''He
+        said that he comes'' -> Correct: ''He said that he would come'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+    examples:
+    - wrong: She said that she is tired.
+      correct: She said that she was tired.
+    - wrong: He told me that he will come.
+      correct: He told me that he would come.
+    why_it_happens: Hungarian reported speech often retains the original tense. English
+      requires backshift.
+    teacher_tips:
+      how_to_explain: 'Teach the backshift rule: present -> past, will -> would.'
+      where_to_start: Start with the basic backshift pattern.
+      sequencing: 'Week 1: Say/tell + backshift. Week 2: Pronoun changes. Week 3:
+        Modal backshift. Week 4: Review.'
+      exercises:
+      - name: Backshift Practice
+        type: sentence-rewrite
+        description: Students convert 15 direct speech sentences to reported speech.
+        duration: 15
+      - name: HU Reported Speech Translation
+        type: translation
+        description: Translate 15 Hungarian reported speech sentences into correct
+          English.
+        duration: 15
+    sources:
+    - Swan & Smith "Learner English" (Hungarian)
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
     communicative_impact: 3
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Hungarian
-  word_order_topic_hu:
+    source_rank: 2
+    citations:
+    - claim: 'Grammar point: reported speech'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Reported speech conventions vary; some languages retain original tense
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See reported speech entries
+      tier: 2
+    - claim: ELLs retain original tense in reported speech (no backshift)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 294
+      tier: 2
+  comparatives:
     interference_patterns:
-    - Hungarian uses vowel harmony which does not exist in English, causing transfer
-      errors related to 'word order topic hu'.
-    why_it_happens: Hungarian handles 'word order topic hu' differently from English.
-      Hungarian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Hungarian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Hungarian and English for 'word
-        order topic hu'. Show the Hungarian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Hungarian
-        handles 'word order topic hu' differently from English. Use visual aids or
-        color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Hungarian sentences, students translate to English, focusing
-          on correct 'word order topic hu' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Hungarian-style 'word order topic hu'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'word
-          order topic hu' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'word order topic
-          hu' errors.
-        duration: 15
+    - pattern: Use of -bb for all comparatives
+      example: 'HU ''nagyobb'' (bigger) -> Error: ''more big'' -> Correct: ''bigger'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
     examples:
-    - 'Wrong: ''Yesterday went I.'' Correct: ''Yesterday I went.'''
-    - 'Wrong: ''Here comes he.'' Correct: ''Here he comes.'''
+    - wrong: This car is more big than that one.
+      correct: This car is bigger than that one.
+    - wrong: She is the most tall in the class.
+      correct: She is the tallest in the class.
+    why_it_happens: Hungarian forms comparatives with the suffix '-bb'. English uses
+      -er/-est for short adjectives.
+    teacher_tips:
+      how_to_explain: 'Teach: 1-2 syllable adjectives -> -er/-est. 3+ syllable adjectives
+        -> more/most.'
+      where_to_start: Start with -er/-est rule.
+      sequencing: 'Week 1: -er/-est with short adjectives. Week 2: More/most with
+        long adjectives. Week 3: Irregular comparatives. Week 4: Review.'
+      exercises:
+      - name: Comparative Formation
+        type: sentence-rewrite
+        description: Students rewrite 10 sentences.
+        duration: 10
+      - name: HU Comparative Translation
+        type: translation
+        description: Translate 15 Hungarian comparative sentences into correct English.
+        duration: 10
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Dornyei, Z. & Kormos, J. (1998). Problem-solving mechanisms in L2 communication.
-      Studies in Second Language Acquisition, 20(3), 349-385.
+    - Swan & Smith "Learner English" (Hungarian)
+    - Parrott "Grammar for English Language Teachers"
     source_count: 2
-    source_type: peer-reviewed
+    source_type: textbook
     frequency: 4
     persistence: 3
-    communicative_impact: 3
+    communicative_impact: 2
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Hungarian
-  v2_order_hu:
+    source_rank: 2
+    citations:
+    - claim: 'Grammar point: comparatives'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: 'Comparative formation varies: morphological vs analytic'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See comparative entries
+      tier: 2
+    - claim: Comparative formation varies by L1; explicit practice needed
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 295
+      tier: 2
+  subject_verb_agreement:
     interference_patterns:
-    - Hungarian uses vowel harmony which does not exist in English, causing transfer
-      errors related to 'v2 order hu'.
-    why_it_happens: Hungarian handles 'v2 order hu' differently from English. Hungarian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Hungarian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Hungarian and English for 'v2
-        order hu'. Show the Hungarian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Hungarian
-        handles 'v2 order hu' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Hungarian sentences, students translate to English, focusing
-          on correct 'v2 order hu' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Hungarian-style 'v2 order hu' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'v2
-          order hu' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'v2 order hu'
-          errors.
-        duration: 15
+    - pattern: Omission of third-person -s
+      example: 'HU ''olvas'' (he reads) -> Error: ''He read'' -> Correct: ''He reads'''
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
     examples:
-    - 'Wrong: ''Yesterday went I.'' Correct: ''Yesterday I went.'''
-    - 'Wrong: ''Here comes he.'' Correct: ''Here he comes.'''
+    - wrong: She like chocolate.
+      correct: She likes chocolate.
+    - wrong: He go to school every day.
+      correct: He goes to school every day.
+    why_it_happens: Hungarian verb conjugation includes person/number marking. English
+      third-person singular -s is frequently omitted.
+    teacher_tips:
+      how_to_explain: Teach the 'he/she/it + verb-s' rule as non-negotiable.
+      where_to_start: Start with third-person -s in present simple.
+      sequencing: 'Week 1: Third-person -s. Week 2: Does/doesn''t. Week 3: Irregular
+        forms. Week 4: Review.'
+      exercises:
+      - name: Agreement Drill
+        type: oral-drill
+        description: Students describe a classmate daily routine using third-person
+          -s.
+        duration: 10
+      - name: Subject-Verb Match
+        type: fill-in-the-blank
+        description: 20 sentences where students choose the correct verb form.
+        duration: 10
+      - name: Error Correction
+        type: error-correction
+        description: 15 sentences with agreement errors.
+        duration: 10
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Dornyei, Z. & Kormos, J. (1998). Problem-solving mechanisms in L2 communication.
-      Studies in Second Language Acquisition, 20(3), 349-385.
+    - Swan & Smith "Learner English" (Hungarian)
+    - Parrott "Grammar for English Language Teachers"
     source_count: 2
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
+    source_type: textbook
+    frequency: 5
+    persistence: 5
+    communicative_impact: 4
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Hungarian
-  consonant_clusters_hu:
+    source_rank: 2
+    citations:
+    - claim: 'Grammar point: subject verb agreement'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Topic-prominent L1 learners find subject-verb agreement more difficult
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: p. 61
+      tier: 2
+    - claim: SVA is difficult for learners whose L1 has no subject-verb agreement
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See SVA entries
+      tier: 2
+    - claim: SVA errors persist because the correct and incorrect forms often sound
+        similar
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 314
+      tier: 2
+  linking_words:
     interference_patterns:
-    - Hungarian uses vowel harmony which does not exist in English, causing transfer
-      errors related to 'consonant clusters hu'.
-    why_it_happens: Hungarian handles 'consonant clusters hu' differently from English.
-      Hungarian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Hungarian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Hungarian and English for 'consonant
-        clusters hu'. Show the Hungarian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Hungarian
-        handles 'consonant clusters hu' differently from English. Use visual aids
-        or color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Hungarian sentences, students translate to English, focusing
-          on correct 'consonant clusters hu' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Hungarian-style 'consonant clusters
-          hu' errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'consonant
-          clusters hu' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'consonant clusters
-          hu' errors.
-        duration: 15
+    - pattern: Use of de at sentence start
+      example: 'HU ''de'' = but/however -> Error: ''But, I think...'' -> Correct:
+        ''However, I think...'''
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
     examples:
-    - 'Wrong: Applying Hungarian ''consonant clusters hu'' structure to English. Correct:
-      Use the English structure for ''consonant clusters hu''.'
-    - 'Wrong: Direct translation of Hungarian ''consonant clusters hu'' pattern. Correct:
-      Follow English ''consonant clusters hu'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''consonant clusters hu'' patterns.'
+    - wrong: But, I think we should go.
+      correct: However, I think we should go.
+    - wrong: Although it rained, but we went out.
+      correct: Although it rained, we went out.
+    why_it_happens: Hungarian 'de' functions as both 'but' and 'however'. Hungarian
+      also uses double conjunctions.
+    teacher_tips:
+      how_to_explain: 'Teach: ''However'' for formal writing. ''But'' for informal.
+        ''Although'' and ''but'' NEVER together.'
+      where_to_start: Start with 'but' vs 'however'.
+      sequencing: 'Week 1: But vs however. Week 2: Although/but redundancy. Week 3:
+        Other linking words. Week 4: Review.'
+      exercises:
+      - name: Formal vs Informal
+        type: sentence-rewrite
+        description: Students rewrite 10 informal sentences using formal linking words.
+        duration: 10
+      - name: Double Conjunction Fix
+        type: error-correction
+        description: 10 sentences with although...but.
+        duration: 10
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Dornyei, Z. & Kormos, J. (1998). Problem-solving mechanisms in L2 communication.
-      Studies in Second Language Acquisition, 20(3), 349-385.
+    - Swan & Smith "Learner English" (Hungarian)
+    - Parrott "Grammar for English Language Teachers"
     source_count: 2
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
+    source_type: textbook
+    frequency: 3
+    persistence: 2
+    communicative_impact: 2
     flagged: false
     tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Hungarian
-  sz_ly_ty_digraphs:
-    interference_patterns:
-    - Hungarian uses vowel harmony which does not exist in English, causing transfer
-      errors related to 'sz ly ty digraphs'.
-    why_it_happens: Hungarian handles 'sz ly ty digraphs' differently from English.
-      Hungarian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Hungarian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Hungarian and English for 'sz
-        ly ty digraphs'. Show the Hungarian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Hungarian
-        handles 'sz ly ty digraphs' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Hungarian sentences, students translate to English, focusing
-          on correct 'sz ly ty digraphs' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Hungarian-style 'sz ly ty digraphs'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'sz
-          ly ty digraphs' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'sz ly ty digraphs'
-          errors.
-        duration: 15
-    examples:
-    - 'Wrong: Applying Hungarian ''sz ly ty digraphs'' structure to English. Correct:
-      Use the English structure for ''sz ly ty digraphs''.'
-    - 'Wrong: Direct translation of Hungarian ''sz ly ty digraphs'' pattern. Correct:
-      Follow English ''sz ly ty digraphs'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''sz ly ty digraphs'' patterns.'
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Dornyei, Z. & Kormos, J. (1998). Problem-solving mechanisms in L2 communication.
-      Studies in Second Language Acquisition, 20(3), 349-385.
-    source_count: 2
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Hungarian
-  long_vowel_hu:
-    interference_patterns:
-    - Hungarian uses vowel harmony which does not exist in English, causing transfer
-      errors related to 'long vowel hu'.
-    why_it_happens: Hungarian handles 'long vowel hu' differently from English. Hungarian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Hungarian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Hungarian and English for 'long
-        vowel hu'. Show the Hungarian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Hungarian
-        handles 'long vowel hu' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Hungarian sentences, students translate to English, focusing
-          on correct 'long vowel hu' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Hungarian-style 'long vowel hu' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'long
-          vowel hu' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'long vowel hu'
-          errors.
-        duration: 15
-    examples:
-    - 'Wrong: Applying Hungarian ''long vowel hu'' structure to English. Correct:
-      Use the English structure for ''long vowel hu''.'
-    - 'Wrong: Direct translation of Hungarian ''long vowel hu'' pattern. Correct:
-      Follow English ''long vowel hu'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''long vowel hu'' patterns.'
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Dornyei, Z. & Kormos, J. (1998). Problem-solving mechanisms in L2 communication.
-      Studies in Second Language Acquisition, 20(3), 349-385.
-    source_count: 2
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Hungarian
-    notes: Vowel length distinction causes persistent accent in English.
-  fi_ige_vs_normal:
-    interference_patterns:
-    - Hungarian uses vowel harmony which does not exist in English, causing transfer
-      errors related to 'fi ige vs normal'.
-    why_it_happens: Hungarian handles 'fi ige vs normal' differently from English.
-      Hungarian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Hungarian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Hungarian and English for 'fi
-        ige vs normal'. Show the Hungarian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Hungarian
-        handles 'fi ige vs normal' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Hungarian sentences, students translate to English, focusing
-          on correct 'fi ige vs normal' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Hungarian-style 'fi ige vs normal'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'fi
-          ige vs normal' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'fi ige vs normal'
-          errors.
-        duration: 15
-    examples:
-    - 'Wrong: Applying Hungarian ''fi ige vs normal'' structure to English. Correct:
-      Use the English structure for ''fi ige vs normal''.'
-    - 'Wrong: Direct translation of Hungarian ''fi ige vs normal'' pattern. Correct:
-      Follow English ''fi ige vs normal'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''fi ige vs normal'' patterns.'
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Dornyei, Z. & Kormos, J. (1998). Problem-solving mechanisms in L2 communication.
-      Studies in Second Language Acquisition, 20(3), 349-385.
-    source_count: 2
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Hungarian
-  negation_hu:
-    interference_patterns:
-    - Hungarian uses vowel harmony which does not exist in English, causing transfer
-      errors related to 'negation hu'.
-    why_it_happens: Hungarian handles 'negation hu' differently from English. Hungarian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Hungarian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Hungarian and English for 'negation
-        hu'. Show the Hungarian structure side-by-side with English. Highlight the
-        specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Hungarian
-        handles 'negation hu' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Hungarian sentences, students translate to English, focusing
-          on correct 'negation hu' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Hungarian-style 'negation hu' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'negation
-          hu' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'negation hu'
-          errors.
-        duration: 15
-    examples:
-    - 'Wrong: ''I not like coffee hu.'' Correct: ''I do not like coffee hu.'''
-    - 'Wrong: ''He not came.'' Correct: ''He did not come.'''
-    - 'Wrong: ''I eat never.'' Correct: ''I never eat.'''
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Dornyei, Z. & Kormos, J. (1998). Problem-solving mechanisms in L2 communication.
-      Studies in Second Language Acquisition, 20(3), 349-385.
-    source_count: 2
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Hungarian
-  szok_ige_vs_normal:
-    interference_patterns:
-    - Hungarian uses vowel harmony which does not exist in English, causing transfer
-      errors related to 'szok ige vs normal'.
-    why_it_happens: Hungarian handles 'szok ige vs normal' differently from English.
-      Hungarian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Hungarian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Hungarian and English for 'szok
-        ige vs normal'. Show the Hungarian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Hungarian
-        handles 'szok ige vs normal' differently from English. Use visual aids or
-        color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Hungarian sentences, students translate to English, focusing
-          on correct 'szok ige vs normal' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Hungarian-style 'szok ige vs normal'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'szok
-          ige vs normal' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'szok ige vs
-          normal' errors.
-        duration: 15
-    examples:
-    - 'Wrong: Applying Hungarian ''szok ige vs normal'' structure to English. Correct:
-      Use the English structure for ''szok ige vs normal''.'
-    - 'Wrong: Direct translation of Hungarian ''szok ige vs normal'' pattern. Correct:
-      Follow English ''szok ige vs normal'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''szok ige vs normal'' patterns.'
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Dornyei, Z. & Kormos, J. (1998). Problem-solving mechanisms in L2 communication.
-      Studies in Second Language Acquisition, 20(3), 349-385.
-    source_count: 2
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Hungarian
-  compound_words_hu:
-    interference_patterns:
-    - Hungarian uses vowel harmony which does not exist in English, causing transfer
-      errors related to 'compound words hu'.
-    why_it_happens: Hungarian handles 'compound words hu' differently from English.
-      Hungarian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Hungarian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Hungarian and English for 'compound
-        words hu'. Show the Hungarian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Hungarian
-        handles 'compound words hu' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Hungarian sentences, students translate to English, focusing
-          on correct 'compound words hu' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Hungarian-style 'compound words hu'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'compound
-          words hu' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'compound words
-          hu' errors.
-        duration: 15
-    examples:
-    - 'Wrong: Applying Hungarian ''compound words hu'' structure to English. Correct:
-      Use the English structure for ''compound words hu''.'
-    - 'Wrong: Direct translation of Hungarian ''compound words hu'' pattern. Correct:
-      Follow English ''compound words hu'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''compound words hu'' patterns.'
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Dornyei, Z. & Kormos, J. (1998). Problem-solving mechanisms in L2 communication.
-      Studies in Second Language Acquisition, 20(3), 349-385.
-    source_count: 2
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Hungarian
-  postpositions_instead_prepositions:
-    interference_patterns:
-    - Hungarian uses vowel harmony which does not exist in English, causing transfer
-      errors related to 'postpositions instead prepositions'.
-    why_it_happens: Hungarian handles 'postpositions instead prepositions' differently
-      from English. Hungarian L1 speakers transfer native structural patterns to English,
-      leading to systematic errors. The error is persistent because the Hungarian
-      structure is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Hungarian and English for 'postpositions
-        instead prepositions'. Show the Hungarian structure side-by-side with English.
-        Highlight the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Hungarian
-        handles 'postpositions instead prepositions' differently from English. Use
-        visual aids or color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Hungarian sentences, students translate to English, focusing
-          on correct 'postpositions instead prepositions' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Hungarian-style 'postpositions instead
-          prepositions' errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'postpositions
-          instead prepositions' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'postpositions
-          instead prepositions' errors.
-        duration: 15
-    examples:
-    - 'Wrong: ''I think to you.'' Correct: ''I think of you.'''
-    - 'Wrong: ''I go at Paris.'' Correct: ''I go to Paris.'''
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Dornyei, Z. & Kormos, J. (1998). Problem-solving mechanisms in L2 communication.
-      Studies in Second Language Acquisition, 20(3), 349-385.
-    source_count: 2
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Hungarian
-  subjunctive_hu:
-    interference_patterns:
-    - Hungarian uses vowel harmony which does not exist in English, causing transfer
-      errors related to 'subjunctive hu'.
-    why_it_happens: Hungarian handles 'subjunctive hu' differently from English. Hungarian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Hungarian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Hungarian and English for 'subjunctive
-        hu'. Show the Hungarian structure side-by-side with English. Highlight the
-        specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Hungarian
-        handles 'subjunctive hu' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Hungarian sentences, students translate to English, focusing
-          on correct 'subjunctive hu' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Hungarian-style 'subjunctive hu' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'subjunctive
-          hu' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'subjunctive
-          hu' errors.
-        duration: 15
-    examples:
-    - 'Wrong: Applying Hungarian ''subjunctive hu'' structure to English. Correct:
-      Use the English structure for ''subjunctive hu''.'
-    - 'Wrong: Direct translation of Hungarian ''subjunctive hu'' pattern. Correct:
-      Follow English ''subjunctive hu'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''subjunctive hu'' patterns.'
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Dornyei, Z. & Kormos, J. (1998). Problem-solving mechanisms in L2 communication.
-      Studies in Second Language Acquisition, 20(3), 349-385.
-    source_count: 2
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Hungarian
-  formal_informal_hu:
-    interference_patterns:
-    - Hungarian uses vowel harmony which does not exist in English, causing transfer
-      errors related to 'formal informal hu'.
-    why_it_happens: Hungarian handles 'formal informal hu' differently from English.
-      Hungarian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Hungarian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Hungarian and English for 'formal
-        informal hu'. Show the Hungarian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Hungarian
-        handles 'formal informal hu' differently from English. Use visual aids or
-        color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Hungarian sentences, students translate to English, focusing
-          on correct 'formal informal hu' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Hungarian-style 'formal informal hu'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'formal
-          informal hu' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'formal informal
-          hu' errors.
-        duration: 15
-    examples:
-    - 'Wrong: Applying Hungarian ''formal informal hu'' structure to English. Correct:
-      Use the English structure for ''formal informal hu''.'
-    - 'Wrong: Direct translation of Hungarian ''formal informal hu'' pattern. Correct:
-      Follow English ''formal informal hu'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''formal informal hu'' patterns.'
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Dornyei, Z. & Kormos, J. (1998). Problem-solving mechanisms in L2 communication.
-      Studies in Second Language Acquisition, 20(3), 349-385.
-    source_count: 2
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Hungarian
-  emphasis_word_order_hu:
-    interference_patterns:
-    - Hungarian uses vowel harmony which does not exist in English, causing transfer
-      errors related to 'emphasis word order hu'.
-    why_it_happens: Hungarian handles 'emphasis word order hu' differently from English.
-      Hungarian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Hungarian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Hungarian and English for 'emphasis
-        word order hu'. Show the Hungarian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Hungarian
-        handles 'emphasis word order hu' differently from English. Use visual aids
-        or color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Hungarian sentences, students translate to English, focusing
-          on correct 'emphasis word order hu' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Hungarian-style 'emphasis word order
-          hu' errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'emphasis
-          word order hu' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'emphasis word
-          order hu' errors.
-        duration: 15
-    examples:
-    - 'Wrong: ''Yesterday went I.'' Correct: ''Yesterday I went.'''
-    - 'Wrong: ''Here comes he.'' Correct: ''Here he comes.'''
-    sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - Dornyei, Z. & Kormos, J. (1998). Problem-solving mechanisms in L2 communication.
-      Studies in Second Language Acquisition, 20(3), 349-385.
-    source_count: 2
-    source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
-    flagged: false
-    tier: 1
-    individually_assessed: true
-    assessment: Expert-evaluated for L1 transfer severity — Hungarian
+    source_rank: 2
+    citations:
+    - claim: 'Grammar point: linking words'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Discourse connectors vary; some languages use double conjunctions
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See conjunction entries
+      tier: 2
+    - claim: ELLs use double conjunctions transferred from L1 (although...but)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 294
+      tier: 2

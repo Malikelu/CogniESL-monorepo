@@ -1,112 +1,183 @@
 grammar_point: question_forms
-title: "Question Forms (Yes/No, Wh-, Subject, Object)"
-description: "Structures used to ask for information, confirmation, or clarification in English, including yes/no questions, wh- questions, subject questions, and object questions."
+title: Question Forms (Yes/No, Wh-, Subject, Object)
+description: Structures used to ask for information, confirmation, or clarification
+  in English, including yes/no questions, wh- questions, subject questions, and object
+  questions.
 level: A1
-
 meaning:
-  core_meaning: "Question forms reverse standard statement word order to request information. The type of question depends on what information is needed: yes/no questions for confirmation, wh- questions for specific information, subject questions about who/what did the action, and object questions about who/what received the action."
-  timeline: "N/A — question forms are not tense-based, but use the same tense as the statement they derive from."
-  contrast: "'Statements' = Subject + Verb ('You like tea.') vs 'Yes/No Questions' = Auxiliary + Subject + Verb ('Do you like tea?') vs 'Wh- Questions' = Wh- word + Auxiliary + Subject + Verb ('What do you like?')"
+  core_meaning: 'Question forms reverse standard statement word order to request information.
+    The type of question depends on what information is needed: yes/no questions for
+    confirmation, wh- questions for specific information, subject questions about
+    who/what did the action, and object questions about who/what received the action.'
+  timeline: N/A — question forms are not tense-based, but use the same tense as the
+    statement they derive from.
+  contrast: '''Statements'' = Subject + Verb (''You like tea.'') vs ''Yes/No Questions''
+    = Auxiliary + Subject + Verb (''Do you like tea?'') vs ''Wh- Questions'' = Wh-
+    word + Auxiliary + Subject + Verb (''What do you like?'')'
   ccqs:
-    - question: "Is this a yes/no question or a wh- question?"
-      answer: "Yes/no questions start with an auxiliary (do, can, are). Wh- questions start with a wh- word (what, where, when)."
-    - question: "Do we need an auxiliary verb in subject questions?"
-      answer: "No — subject questions do not use an auxiliary. 'Who likes tea?' NOT 'Who does like tea?'"
-    - question: "Where does the pronoun go in a separable question?"
-      answer: "Between the auxiliary and the main verb: 'Who did you call?' NOT 'Who you did call?'"
+  - question: Is this a yes/no question or a wh- question?
+    answer: Yes/no questions start with an auxiliary (do, can, are). Wh- questions
+      start with a wh- word (what, where, when).
+  - question: Do we need an auxiliary verb in subject questions?
+    answer: No — subject questions do not use an auxiliary. 'Who likes tea?' NOT 'Who
+      does like tea?'
+  - question: Where does the pronoun go in a separable question?
+    answer: 'Between the auxiliary and the main verb: ''Who did you call?'' NOT ''Who
+      you did call?'''
   example_generator:
     contexts:
-      - everyday conversations
-      - asking for information
-      - interviews
+    - everyday conversations
+    - asking for information
+    - interviews
     cultural_notes:
-      - "Use diverse scenarios and contexts"
-      - "Avoid assuming specific cultural knowledge"
-      - "Keep examples simple and concrete for A1 level"
+    - Use diverse scenarios and contexts
+    - Avoid assuming specific cultural knowledge
+    - Keep examples simple and concrete for A1 level
     min_examples: 5
-
 form:
   affirmative:
-    structure: "Yes/No: Auxiliary + Subject + Main Verb / Wh-: Wh- word + Auxiliary + Subject + Main Verb / Subject: Wh- word + Verb (no auxiliary)"
+    structure: 'Yes/No: Auxiliary + Subject + Main Verb / Wh-: Wh- word + Auxiliary
+      + Subject + Main Verb / Subject: Wh- word + Verb (no auxiliary)'
     example_generator:
-      - "Do you like coffee? (yes/no)"
-      - "Where do you live? (wh-)"
-      - "Who likes coffee? (subject)"
-      - "What do you like? (object)"
+    - Do you like coffee? (yes/no)
+    - Where do you live? (wh-)
+    - Who likes coffee? (subject)
+    - What do you like? (object)
     min_examples: 4
   negative:
-    structure: "Subject + Auxiliary + not + Main Verb (statements) / Auxiliary + Subject + not + Main Verb (questions — less common)"
+    structure: Subject + Auxiliary + not + Main Verb (statements) / Auxiliary + Subject
+      + not + Main Verb (questions — less common)
     example_generator:
-      - "You don't like coffee. (statement)"
-      - "Don't you like coffee? (negative question — expressing surprise)"
+    - You don't like coffee. (statement)
+    - Don't you like coffee? (negative question — expressing surprise)
     min_examples: 4
   questions:
-    structure: "This IS the question form — see above."
+    structure: This IS the question form — see above.
     example_generator:
-      - "Do you like coffee?"
-      - "Where do you live?"
-      - "Who called you?"
+    - Do you like coffee?
+    - Where do you live?
+    - Who called you?
     min_examples: 4
-
 sub_rules:
-  - rule: "Yes/no questions: start with an auxiliary (do/does/did) or modal (can/will/should)"
-    type: grammatical
-    examples: ["Do you like tea?", "Can you swim?", "Will she come?", "Are they ready?"]
-  - rule: "Wh- questions: start with a wh- word (what, where, when, why, how, who, whose, which)"
-    type: grammatical
-    examples: ["Where do you live?", "What do you want?", "When did she arrive?", "Why are you late?", "How do you spell it?", "Who called you?"]
-  - rule: "Subject questions: no auxiliary verb — the wh- word IS the subject"
-    type: grammatical
-    examples: ["Who likes tea? (NOT Who does like tea?)", "What happened? (NOT What did happen?)", "Who called you? (NOT Who did call you?)"]
-  - rule: "Object questions: use auxiliary verb — the wh- word is the object"
-    type: grammatical
-    examples: ["Who did you call? (object = who)", "What do you want? (object = what)", "Where did she go? (object = where)"]
-  - rule: "Prepositions can go at the end of wh- questions (informal) or before the wh- word (formal)"
-    type: grammatical
-    examples: ["Who did you talk to? (informal)", "To whom did you talk? (formal)", "What are you looking at? (informal)", "At what are you looking? (formal)"]
-
+- rule: 'Yes/no questions: start with an auxiliary (do/does/did) or modal (can/will/should)'
+  type: grammatical
+  examples:
+  - Do you like tea?
+  - Can you swim?
+  - Will she come?
+  - Are they ready?
+- rule: 'Wh- questions: start with a wh- word (what, where, when, why, how, who, whose,
+    which)'
+  type: grammatical
+  examples:
+  - Where do you live?
+  - What do you want?
+  - When did she arrive?
+  - Why are you late?
+  - How do you spell it?
+  - Who called you?
+- rule: 'Subject questions: no auxiliary verb — the wh- word IS the subject'
+  type: grammatical
+  examples:
+  - Who likes tea? (NOT Who does like tea?)
+  - What happened? (NOT What did happen?)
+  - Who called you? (NOT Who did call you?)
+- rule: 'Object questions: use auxiliary verb — the wh- word is the object'
+  type: grammatical
+  examples:
+  - Who did you call? (object = who)
+  - What do you want? (object = what)
+  - Where did she go? (object = where)
+- rule: Prepositions can go at the end of wh- questions (informal) or before the wh-
+    word (formal)
+  type: grammatical
+  examples:
+  - Who did you talk to? (informal)
+  - To whom did you talk? (formal)
+  - What are you looking at? (informal)
+  - At what are you looking? (formal)
 use:
-  - context: "Asking for information"
-    description: "Getting specific information from others"
-    examples: ["Where do you live?", "What do you do for work?", "When did you arrive?", "Why are you learning English?", "How do you spell your name?"]
-  - context: "Asking for confirmation"
-    description: "Confirming something you think is true"
-    examples: ["Do you like coffee?", "Can you swim?", "Are you a student?", "Did you finish your homework?", "Will you come to the party?"]
-  - context: "Interviews"
-    description: "Asking questions in a formal or semi-formal setting"
-    examples: ["What is your name?", "Where are you from?", "Why do you want this job?", "How long have you studied English?", "Who recommended you?"]
-
+- context: Asking for information
+  description: Getting specific information from others
+  examples:
+  - Where do you live?
+  - What do you do for work?
+  - When did you arrive?
+  - Why are you learning English?
+  - How do you spell your name?
+- context: Asking for confirmation
+  description: Confirming something you think is true
+  examples:
+  - Do you like coffee?
+  - Can you swim?
+  - Are you a student?
+  - Did you finish your homework?
+  - Will you come to the party?
+- context: Interviews
+  description: Asking questions in a formal or semi-formal setting
+  examples:
+  - What is your name?
+  - Where are you from?
+  - Why do you want this job?
+  - How long have you studied English?
+  - Who recommended you?
 phonetics:
-  - note: "Questions typically have rising intonation at the end: 'Do you like coffee? ↗' Yes/no questions rise. Wh- questions usually fall: 'Where do you live? ↘'"
-    example_generator:
-      - "Do you like coffee? ↗ (rising)"
-      - "Where do you live? ↘ (falling)"
-    l1_issue: "Portuguese and Spanish speakers often use falling intonation for all questions. Teach rising intonation for yes/no questions."
-  - note: "Weak forms in questions: 'do' → /də/, 'does' → /dəz/, 'did' → /dɪd/. 'Do you' → /də juː/."
-    example_generator:
-      - "do you → /də juː/"
-      - "does she → /dəz ʃiː/"
-      - "did they → /dɪd ðeɪ/"
-    l1_issue: "Many L1 speakers over-pronounce 'do', 'does', 'did' in questions. Teach weak forms for natural speech."
-
+- note: 'Questions typically have rising intonation at the end: ''Do you like coffee?
+    ↗'' Yes/no questions rise. Wh- questions usually fall: ''Where do you live? ↘'''
+  example_generator:
+  - Do you like coffee? ↗ (rising)
+  - Where do you live? ↘ (falling)
+  l1_issue: Portuguese and Spanish speakers often use falling intonation for all questions.
+    Teach rising intonation for yes/no questions.
+- note: 'Weak forms in questions: ''do'' → /də/, ''does'' → /dəz/, ''did'' → /dɪd/.
+    ''Do you'' → /də juː/.'
+  example_generator:
+  - do you → /də juː/
+  - does she → /dəz ʃiː/
+  - did they → /dɪd ðeɪ/
+  l1_issue: Many L1 speakers over-pronounce 'do', 'does', 'did' in questions. Teach
+    weak forms for natural speech.
 teaching:
-  methodology: "PPP with role-play and information gaps"
+  methodology: PPP with role-play and information gaps
   tips:
-    - "Start with yes/no questions using 'do/does/did'. Master these before introducing wh- questions."
-    - "Teach the difference between subject and object questions explicitly. This is one of the most common errors at A1-A2 level."
-    - "Use gesture: raise hand for questions, point to self for subject questions, point to others for object questions."
-    - "Practice with information gap activities: Student A has information, Student B asks questions to get it."
-    - "Drill intonation: rising for yes/no questions, falling for wh- questions. This is essential for natural-sounding English."
+  - Start with yes/no questions using 'do/does/did'. Master these before introducing
+    wh- questions.
+  - Teach the difference between subject and object questions explicitly. This is
+    one of the most common errors at A1-A2 level.
+  - 'Use gesture: raise hand for questions, point to self for subject questions, point
+    to others for object questions.'
+  - 'Practice with information gap activities: Student A has information, Student
+    B asks questions to get it.'
+  - 'Drill intonation: rising for yes/no questions, falling for wh- questions. This
+    is essential for natural-sounding English.'
   recommended_activities:
-    - name: "Question Interview"
-      duration: 15
-      adaptation_notes: "Students interview a partner using different question types: 'Do you like...?' (yes/no) 'Where do you...?' (wh-) 'Who...?' (subject). Then report to the class."
-    - name: "Subject or Object?"
-      duration: 10
-      adaptation_notes: "Teacher says a question. Students identify if it is a subject or object question: 'Who likes tea?' (subject) vs 'Who do you like?' (object). Practices the difference."
-    - name: "Question Formation Race"
-      duration: 10
-      adaptation_notes: "Teacher says a statement. Students race to form the correct question: 'You like coffee.' → 'Do you like coffee?' 'Someone called you.' → 'Who called you?'"
-    - name: "Information Gap"
-      duration: 15
-      adaptation_notes: "Student A has a profile card with information. Student B asks questions to fill in their blank card. Practices all question types in a communicative activity."
+  - name: Question Interview
+    duration: 15
+    adaptation_notes: 'Students interview a partner using different question types:
+      ''Do you like...?'' (yes/no) ''Where do you...?'' (wh-) ''Who...?'' (subject).
+      Then report to the class.'
+  - name: Subject or Object?
+    duration: 10
+    adaptation_notes: 'Teacher says a question. Students identify if it is a subject
+      or object question: ''Who likes tea?'' (subject) vs ''Who do you like?'' (object).
+      Practices the difference.'
+  - name: Question Formation Race
+    duration: 10
+    adaptation_notes: 'Teacher says a statement. Students race to form the correct
+      question: ''You like coffee.'' → ''Do you like coffee?'' ''Someone called you.''
+      → ''Who called you?'''
+  - name: Information Gap
+    duration: 15
+    adaptation_notes: Student A has a profile card with information. Student B asks
+      questions to fill in their blank card. Practices all question types in a communicative
+      activity.
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

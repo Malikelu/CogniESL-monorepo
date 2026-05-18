@@ -1,94 +1,150 @@
 grammar_point: substitution_advanced
-title: "Advanced Substitution (pro-forms)"
-description: "Using pro-forms (do so, so, not, one/ones, that/those) to avoid repetition and create cohesion in discourse."
+title: Advanced Substitution (pro-forms)
+description: Using pro-forms (do so, so, not, one/ones, that/those) to avoid repetition
+  and create cohesion in discourse.
 level: B2
-
 meaning:
-  core_meaning: "Substitution replaces previously mentioned words or clauses with shorter forms to avoid repetition and maintain fluency. Advanced substitution involves 'do so', 'so' with mental process verbs, and 'that/those' as clause substitutes."
-  timeline: "Applies across all tenses; the substitute form adapts to the tense of the original clause."
-  contrast: "Compare with ellipsis (omission): 'I like tea and she does too' (substitution with 'does') vs. 'I like tea and she ___ too' (ellipsis). Both avoid repetition but use different mechanisms."
+  core_meaning: Substitution replaces previously mentioned words or clauses with shorter
+    forms to avoid repetition and maintain fluency. Advanced substitution involves
+    'do so', 'so' with mental process verbs, and 'that/those' as clause substitutes.
+  timeline: Applies across all tenses; the substitute form adapts to the tense of
+    the original clause.
+  contrast: 'Compare with ellipsis (omission): ''I like tea and she does too'' (substitution
+    with ''does'') vs. ''I like tea and she ___ too'' (ellipsis). Both avoid repetition
+    but use different mechanisms.'
   ccqs:
-    - question: "Does 'do so' replace a single verb or a whole action/activity?"
-      answer: "A whole action or activity — it's a clause substitute."
-    - question: "Can we use 'so' after any verb?"
-      answer: "No — 'so' as a substitute works with certain verbs like 'think', 'believe', 'hope', 'expect', 'suppose'."
-    - question: "Is 'that' in 'That's true' replacing a noun or a clause?"
-      answer: "A whole clause — 'that' substitutes for the previous statement."
+  - question: Does 'do so' replace a single verb or a whole action/activity?
+    answer: A whole action or activity — it's a clause substitute.
+  - question: Can we use 'so' after any verb?
+    answer: No — 'so' as a substitute works with certain verbs like 'think', 'believe',
+      'hope', 'expect', 'suppose'.
+  - question: Is 'that' in 'That's true' replacing a noun or a clause?
+    answer: A whole clause — 'that' substitutes for the previous statement.
   example_generator:
-    contexts: ["academic discussion", "professional meetings", "casual conversation", "written discourse"]
-    cultural_notes: ["Mastery of substitution is a key indicator of advanced proficiency and natural-sounding English."]
+    contexts:
+    - academic discussion
+    - professional meetings
+    - casual conversation
+    - written discourse
+    cultural_notes:
+    - Mastery of substitution is a key indicator of advanced proficiency and natural-sounding
+      English.
     min_examples: 5
-
 form:
   affirmative:
-    structure: "do so (replaces verb phrase) / so (replaces that-clause after mental verbs) / one/ones (replaces countable noun) / that/those (replaces noun phrase or clause)"
+    structure: do so (replaces verb phrase) / so (replaces that-clause after mental
+      verbs) / one/ones (replaces countable noun) / that/those (replaces noun phrase
+      or clause)
     example_generator:
-      contexts: ["formal writing", "spoken discourse"]
+      contexts:
+      - formal writing
+      - spoken discourse
       min_examples: 4
   negative:
-    structure: "do not do so / think not / hope not / not + one/ones"
+    structure: do not do so / think not / hope not / not + one/ones
     example_generator:
-      contexts: ["negative responses", "denying assumptions"]
+      contexts:
+      - negative responses
+      - denying assumptions
       min_examples: 3
   questions:
-    structure: "Do you think so? / Is that so? / Will they do so? / Which one?"
+    structure: Do you think so? / Is that so? / Will they do so? / Which one?
     example_generator:
-      contexts: ["confirming information", "clarifying choices"]
+      contexts:
+      - confirming information
+      - clarifying choices
       min_examples: 3
-
 sub_rules:
-  - rule: "'Do so' replaces a verb phrase: 'She asked him to leave, and he did so immediately.'"
-    type: "grammatical"
-    examples: ["They promised to deliver on time, and they did so.", "I told her to revise the report, and she did so carefully."]
-  - rule: "'So' replaces a that-clause after verbs of thinking/believing: 'I think so', 'I hope so', 'I'm afraid so.'"
-    type: "grammatical"
-    examples: ["Will it rain? I think so.", "Is she coming? I believe so.", "Was it expensive? I'm afraid so."]
-  - rule: "'Not' replaces a negative that-clause: 'Will they come? I think not.' / 'I hope not.'"
-    type: "grammatical"
-    examples: ["Is it finished? I think not.", "Will there be trouble? I trust not."]
-  - rule: "'One/ones' replaces a countable noun: 'I'd like the blue one.' / 'These ones are better.'"
-    type: "grammatical"
-    examples: ["Which dress do you prefer? The red one.", "I don't like these shoes. Do you have any cheaper ones?"]
-  - rule: "'That/those' replaces a noun phrase with post-modification: 'The population of London is greater than that of Paris.'"
-    type: "grammatical"
-    examples: ["Her writing style is similar to that of Austen.", "The cost of living here is lower than that in London."]
-
+- rule: '''Do so'' replaces a verb phrase: ''She asked him to leave, and he did so
+    immediately.'''
+  type: grammatical
+  examples:
+  - They promised to deliver on time, and they did so.
+  - I told her to revise the report, and she did so carefully.
+- rule: '''So'' replaces a that-clause after verbs of thinking/believing: ''I think
+    so'', ''I hope so'', ''I''m afraid so.'''
+  type: grammatical
+  examples:
+  - Will it rain? I think so.
+  - Is she coming? I believe so.
+  - Was it expensive? I'm afraid so.
+- rule: '''Not'' replaces a negative that-clause: ''Will they come? I think not.''
+    / ''I hope not.'''
+  type: grammatical
+  examples:
+  - Is it finished? I think not.
+  - Will there be trouble? I trust not.
+- rule: '''One/ones'' replaces a countable noun: ''I''d like the blue one.'' / ''These
+    ones are better.'''
+  type: grammatical
+  examples:
+  - Which dress do you prefer? The red one.
+  - I don't like these shoes. Do you have any cheaper ones?
+- rule: '''That/those'' replaces a noun phrase with post-modification: ''The population
+    of London is greater than that of Paris.'''
+  type: grammatical
+  examples:
+  - Her writing style is similar to that of Austen.
+  - The cost of living here is lower than that in London.
 use:
-  - context: "Academic and formal writing"
-    description: "Creating cohesion and avoiding repetition in essays and reports."
-    examples: ["The results were significant, and they do so consistently across trials.", "The economy of Japan is stronger than that of Italy."]
-  - context: "Professional communication"
-    description: "Efficient and clear workplace discourse."
-    examples: ["Please complete the form and return it. If you have not done so, please do so by Friday.", "We expected resistance, and we were right to think so."]
-  - context: "Everyday conversation"
-    description: "Natural, fluent spoken English."
-    examples: ["Are you coming tonight? I think so.", "Which bag is yours? The leather one.", "I hope so. I really hope so."]
-  - context: "Comparative structures"
-    description: "Using 'that/those' to avoid repeating the head noun in comparisons."
-    examples: ["The climate here is milder than that of the north.", "Her test scores were higher than those of her classmates."]
-
+- context: Academic and formal writing
+  description: Creating cohesion and avoiding repetition in essays and reports.
+  examples:
+  - The results were significant, and they do so consistently across trials.
+  - The economy of Japan is stronger than that of Italy.
+- context: Professional communication
+  description: Efficient and clear workplace discourse.
+  examples:
+  - Please complete the form and return it. If you have not done so, please do so
+    by Friday.
+  - We expected resistance, and we were right to think so.
+- context: Everyday conversation
+  description: Natural, fluent spoken English.
+  examples:
+  - Are you coming tonight? I think so.
+  - Which bag is yours? The leather one.
+  - I hope so. I really hope so.
+- context: Comparative structures
+  description: Using 'that/those' to avoid repeating the head noun in comparisons.
+  examples:
+  - The climate here is milder than that of the north.
+  - Her test scores were higher than those of her classmates.
 phonetics:
-  - note: "'Do so' is often reduced in speech: /də soʊ/. 'So' in 'think so' is stressed for emphasis."
-    example_generator:
-      contexts: ["conversational fluency drills"]
-    l1_issue: "Speakers of languages that don't use pro-forms extensively (e.g., Japanese) may over-repeat nouns and verbs instead of substituting."
-
+- note: '''Do so'' is often reduced in speech: /də soʊ/. ''So'' in ''think so'' is
+    stressed for emphasis.'
+  example_generator:
+    contexts:
+    - conversational fluency drills
+  l1_issue: Speakers of languages that don't use pro-forms extensively (e.g., Japanese)
+    may over-repeat nouns and verbs instead of substituting.
 teaching:
-  methodology: "PPP"
-  tips: [
-    "Start with 'one/ones' as it is the most concrete and visual substitution type.",
-    "Move to 'so/not' with mental verbs, then 'do so' for verb phrase substitution.",
-    "Introduce 'that/those' in comparative structures last as it is the most abstract.",
-    "Use gap-fill exercises where students must choose the correct pro-form.",
-    "Encourage students to identify substitution in authentic texts."
-  ]
+  methodology: PPP
+  tips:
+  - Start with 'one/ones' as it is the most concrete and visual substitution type.
+  - Move to 'so/not' with mental verbs, then 'do so' for verb phrase substitution.
+  - Introduce 'that/those' in comparative structures last as it is the most abstract.
+  - Use gap-fill exercises where students must choose the correct pro-form.
+  - Encourage students to identify substitution in authentic texts.
   recommended_activities:
-    - name: "Substitution identification"
-      duration: 10
-      adaptation_notes: "Students read a text and underline all substitution devices, identifying what each replaces."
-    - name: "Gap-fill exercise"
-      duration: 10
-      adaptation_notes: "Students fill gaps with appropriate pro-forms (do so, so, one, that, etc.)."
-    - name: "Rewriting for cohesion"
-      duration: 15
-      adaptation_notes: "Students rewrite a repetitive text using substitution to improve flow."
+  - name: Substitution identification
+    duration: 10
+    adaptation_notes: Students read a text and underline all substitution devices,
+      identifying what each replaces.
+  - name: Gap-fill exercise
+    duration: 10
+    adaptation_notes: Students fill gaps with appropriate pro-forms (do so, so, one,
+      that, etc.).
+  - name: Rewriting for cohesion
+    duration: 15
+    adaptation_notes: Students rewrite a repetitive text using substitution to improve
+      flow.
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

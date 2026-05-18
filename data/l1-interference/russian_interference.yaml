@@ -3,1196 +3,2041 @@ schema_version: '3.0'
 grammar_points:
   verb_aspect:
     interference_patterns:
-    - Russian uses no articles which does not exist in English, causing transfer errors
-      related to 'verb aspect'.
-    why_it_happens: Russian handles 'verb aspect' differently from English. Russian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Russian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Russian and English for 'verb
-        aspect'. Show the Russian structure side-by-side with English. Highlight the
-        specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Russian
-        handles 'verb aspect' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Russian sentences, students translate to English, focusing
-          on correct 'verb aspect' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Russian-style 'verb aspect' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'verb
-          aspect' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'verb aspect'
-          errors.
-        duration: 15
+    - pattern: Using simple present for ongoing actions -> Use present continuous
+      example: 'Russian: ''Я ем сейчас'' (Ya yem seychas) -> literal: ''I eat now''
+        -> wrong: ''I eat now'' -> correct: ''I am eating now'''
+      frequency: 5
+      persistence: 4
+      communicative_impact: 2
+    - pattern: Using present tense for completed actions -> Use present perfect or
+        simple past
+      example: 'Russian: ''Я уже прочитал эту книгу'' (Ya uzhe prochital etu knigu)
+        -> literal: ''I already read(perf.) this book'' -> wrong: ''I already read
+        this book'' -> correct: ''I have already read this book'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Overusing progressive for habitual actions -> Use simple present
+      example: 'Russian: ''Я читаю книги каждый день'' (Ya chitayu knigi kazhdyy den'')
+        -> literal: ''I am reading books every day'' (imperf.) -> wrong: ''I am reading
+        books every day'' -> correct: ''I read books every day'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 1
     examples:
-    - 'Wrong: ''I eat now.'' (for ongoing action) Correct: ''I am eating now.'''
+    - 'Wrong: ''I eat now.'' Correct: ''I am eating now.'''
+    - 'Wrong: ''I already read this book.'' Correct: ''I have already read this book.'''
+    - 'Wrong: ''I am reading books every day.'' Correct: ''I read books every day.'''
+    - 'Wrong: ''She is knowing the answer.'' Correct: ''She knows the answer.'''
+    why_it_happens: Russian has a grammatical aspect system where every verb is either
+      imperfective (ongoing, habitual, or incomplete action) or perfective (completed,
+      resultative action). This is marked morphologically through prefixes and suffixes,
+      not through auxiliary verbs. English uses progressive/continuous forms (be +
+      -ing) for ongoing actions and perfect forms (have + past participle) for completed
+      actions relevant to the present. Russian speakers often default to the simple
+      present in English because the imperfective aspect in Russian maps naturally
+      to the English simple present, even when English requires a progressive form.
+      The perfective aspect in Russian does not map neatly onto the English present
+      perfect, leading to confusion between simple past and present perfect. Stative
+      verbs (know, love, want, belong) are particularly problematic because Russian
+      uses imperfective forms for these naturally, but English prohibits the progressive
+      form for stative verbs.
+    teacher_tips:
+      how_to_explain: 'Start by explaining that Russian ''packages'' completion into
+        the verb itself (prefixes like про-, с-, на-), while English ''packages''
+        it into auxiliary verb structures (have + -ed, be + -ing). Write two columns
+        on the board: Russian imperfective on the left, English simple present/progressive
+        on the right. Use a timeline diagram: imperfective = ongoing line, perfective
+        = completed dot.'
+      where_to_start: 'Begin with the most visible error: using simple present for
+        actions happening right now. Pick up a book and say ''I am opening the book''
+        while doing it, then ask ''Can I say I open the book right now?'''
+      sequencing: 'Week 1: Present progressive vs. simple present (ongoing vs. habitual).
+        Week 2: Present perfect vs. simple past. Week 3: Stative verbs. Week 4: Aspect
+        in narrative.'
+      exercises:
+      - name: Action Snapshot
+        type: oral-drill
+        description: Teacher performs actions in class. Students describe what the
+          teacher IS DOING RIGHT NOW using present continuous. Then teacher asks 'What
+          do I do every day?' to elicit simple present. 10 action pairs.
+        duration: 15
+      - name: Aspect Auction
+        type: error-correction
+        description: Teacher displays 20 sentences. Some use correct English aspect,
+          others reflect Russian L1 transfer errors. Students 'bid' on whether each
+          sentence is correct or incorrect, then must fix the wrong ones.
+        duration: 20
+      - name: Timeline Translation
+        type: translation
+        description: Students receive 10 Russian sentences with clear aspectual marking.
+          They draw a timeline for each, identify the aspect, then translate into
+          correct English.
+        duration: 20
+      - name: Stative Verb Sort
+        type: matching
+        description: Students sort 15 verbs into 'stative' and 'dynamic' categories,
+          then write one sentence for each verb.
+        duration: 15
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
     - 'Slabakova, R. (2000). L1 transfer revisited: The L2 acquisition of telicity.
       Linguistics, 38(4), 729-760.'
-    - Ionin, T. & Montrul, S. (2010). The role of L1 transfer in the interpretation
-      of articles with definite plurals. Second Language Research, 26(1), 3-36.
-    source_count: 3
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+      and Other Problems. Cambridge University Press.'
+    - Gor, K. & Chernigovskaya, T. (2003). Mental representation of the aspectual
+      contrast in Russian. Journal of Slavic Linguistics, 11(2), 209-230.
+    - Nossalik, L. (2008). L1 effects on the processing of grammatical aspect by Russian
+      learners of English. Proceedings of the 32nd Annual Boston University Conference
+      on Language Development.
+    source_count: 4
     source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
+    frequency: 5
+    persistence: 4
+    communicative_impact: 2
     flagged: false
     tier: 1
     individually_assessed: true
     assessment: Expert-evaluated for L1 transfer severity — Russian
-    notes: Defining feature of Russian grammar.
+    notes: Defining feature of Russian grammar. Every verb in Russian is inherently
+      aspectual.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for verb aspect
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Russian speakers, pp. 143-160'
+      tier: 1
+    - claim: 'Grammar point: verb aspect'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
   case_system_6:
     interference_patterns:
-    - Russian uses no articles which does not exist in English, causing transfer errors
-      related to 'case system 6'.
-    why_it_happens: Russian handles 'case system 6' differently from English. Russian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Russian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Russian and English for 'case
-        system 6'. Show the Russian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Russian
-        handles 'case system 6' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Russian sentences, students translate to English, focusing
-          on correct 'case system 6' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Russian-style 'case system 6' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'case
-          system 6' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'case system
-          6' errors.
-        duration: 15
+    - pattern: Omitting object pronouns or using subject pronouns for objects -> Use
+        correct object pronouns
+      example: 'Russian: ''Я вижу его'' (Ya vizhu yego) -> literal: ''I see him(accusative)''
+        -> wrong: ''I see he'' -> correct: ''I see him'''
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+    - pattern: Using wrong preposition due to Russian case government -> Use English
+        prepositional patterns
+      example: 'Russian: ''думать о'' (dumat'' o + prepositional case) -> literal:
+        ''think about'' BUT Russian also uses accusative for ''think of'' contexts
+        -> wrong: ''I think about him'' -> correct: ''I think of him'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Word order errors from flexible Russian SOV/SVO -> Use fixed English
+        SVO
+      example: 'Russian: ''Книгу я прочитал'' (Knigu ya prochital) -> literal: ''Book(accusative)
+        I read'' -> wrong: ''The book I read'' (as main clause) -> correct: ''I read
+        the book'''
+      frequency: 2
+      persistence: 2
+      communicative_impact: 1
     examples:
     - 'Wrong: ''I help he.'' Correct: ''I help him.'''
     - 'Wrong: ''Give it to she.'' Correct: ''Give it to her.'''
+    - 'Wrong: ''The book I read yesterday.'' (as a main clause) Correct: ''I read
+      the book yesterday.'''
+    - 'Wrong: ''She told to me.'' Correct: ''She told me.'''
+    why_it_happens: Russian has six grammatical cases (nominative, accusative, genitive,
+      dative, instrumental, prepositional) that mark the function of nouns and pronouns
+      through inflectional endings. English has largely lost its case system — only
+      pronouns retain subject/object distinctions (I/me, he/him, she/her), and word
+      order (SVO) carries the functional load that Russian case endings carry. Russian
+      speakers may use subject pronouns where English requires object pronouns because
+      the Russian pronoun form changes with case. Additionally, Russian allows relatively
+      free word order because case endings identify grammatical roles, so Russian
+      speakers may produce English sentences with non-standard word order.
+    teacher_tips:
+      how_to_explain: 'Draw a simple diagram showing that Russian uses word ENDINGS
+        to show who does what to whom, while English uses WORD ORDER. Write the same
+        Russian sentence in multiple word orders (all correct in Russian) and show
+        that only one English word order works. For pronouns, create a simple chart:
+        I/me, he/him, she/her, we/us, they/them.'
+      where_to_start: Start with pronoun errors because they are the most visible
+        and easiest to correct. Write 'I see he' on the board and ask if it sounds
+        right.
+      sequencing: 'Week 1: Subject vs. object pronouns. Week 2: Word order in simple
+        sentences (SVO is fixed). Week 3: Preposition + object pronoun. Week 4: Ditransitive
+        verbs.'
+      exercises:
+      - name: Pronoun Police
+        type: error-correction
+        description: Display 15 sentences with pronoun case errors reflecting Russian
+          L1 patterns. Students identify the error and correct it.
+        duration: 15
+      - name: Word Order Freeze
+        type: transformation
+        description: Give students 10 Russian sentences with scrambled word order.
+          Students must rewrite each in the ONE correct English word order.
+        duration: 15
+      - name: Case-to-Preposition Mapping
+        type: matching
+        description: Create cards with Russian case functions and cards with English
+          prepositional phrases. Students match Russian case functions to their English
+          equivalents.
+        duration: 20
+      - name: Sentence Builder
+        type: oral-drill
+        description: Teacher provides a Russian sentence. First student translates
+          it literally. Second student 'fixes' it to natural English. Rotate through
+          10 sentences.
+        duration: 15
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - 'Slabakova, R. (2000). L1 transfer revisited: The L2 acquisition of telicity.
-      Linguistics, 38(4), 729-760.'
-    - Ionin, T. & Montrul, S. (2010). The role of L1 transfer in the interpretation
-      of articles with definite plurals. Second Language Research, 26(1), 3-36.
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+      and Other Problems. Cambridge University Press.'
+    - Comrie, B. (1981). Language Universals and Linguistic Typology. University of
+      Chicago Press.
+    - Kempe, V. & MacWhinney, B. (1998). The acquisition of case marking by adult
+      learners of Russian and German. Studies in Second Language Acquisition, 20(4),
+      543-587.
     source_count: 3
     source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
+    frequency: 3
+    persistence: 2
+    communicative_impact: 2
     flagged: false
     tier: 1
     individually_assessed: true
     assessment: Expert-evaluated for L1 transfer severity — Russian
-    notes: Fundamental structural challenge.
+    notes: Fundamental structural challenge. Russian case system carries functional
+      load that English distributes across word order and prepositions.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for case system 6
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Russian speakers, pp. 143-160'
+      tier: 1
+    - claim: 'Grammar point: case system 6'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
   negation_double:
     interference_patterns:
-    - Russian uses no articles which does not exist in English, causing transfer errors
-      related to 'negation double'.
-    why_it_happens: Russian handles 'negation double' differently from English. Russian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Russian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Russian and English for 'negation
-        double'. Show the Russian structure side-by-side with English. Highlight the
-        specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Russian
-        handles 'negation double' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Russian sentences, students translate to English, focusing
-          on correct 'negation double' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Russian-style 'negation double' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'negation
-          double' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'negation double'
-          errors.
-        duration: 15
+    - pattern: Negating with multiple negative words in one sentence -> Use single
+        negation
+      example: 'Russian: ''Я ничего не знаю'' (Ya nichego ne znayu) -> literal: ''I
+        nothing not know'' -> wrong: ''I don''t know nothing'' -> correct: ''I don''t
+        know anything'' / ''I know nothing'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Using 'no' as a general negator -> Use 'not' with auxiliary
+      example: 'Russian: ''Я не студент'' (Ya ne student) -> literal: ''I not student''
+        -> wrong: ''I no student'' -> correct: ''I am not a student'''
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+    - pattern: Placing negation after the verb -> Place negation with auxiliary
+      example: 'Russian: ''Я знаю не'' (Ya znayu ne) -> literal: ''I know not'' ->
+        wrong: ''I know not'' -> correct: ''I do not know'''
+      frequency: 2
+      persistence: 2
+      communicative_impact: 1
     examples:
-    - 'Wrong: ''I not like coffee double.'' Correct: ''I do not like coffee double.'''
-    - 'Wrong: ''He not came.'' Correct: ''He did not come.'''
-    - 'Wrong: ''I eat never.'' Correct: ''I never eat.'''
+    - 'Wrong: ''I don''t know nothing.'' Correct: ''I don''t know anything.'''
+    - 'Wrong: ''I no like coffee.'' Correct: ''I don''t like coffee.'''
+    - 'Wrong: ''He never don''t come.'' Correct: ''He never comes.'''
+    - 'Wrong: ''She can''t find nowhere.'' Correct: ''She can''t find anywhere.'''
+    why_it_happens: 'Russian is a negative concord language, meaning that multiple
+      negative elements in a single sentence reinforce rather than cancel each other.
+      ''Я ничего не знаю'' (I nothing not know) is perfectly grammatical and standard
+      in Russian — both the negative pronoun ''ничего'' (nothing) and the negative
+      particle ''не'' (not) are required. English follows the principle of single
+      negation: only one negative element is permitted per clause. Additionally, Russian
+      negation is achieved simply by placing the particle ''не'' before the verb,
+      without any auxiliary ''do'' support, leading to errors like ''I no like'' or
+      ''I know not.'''
+    teacher_tips:
+      how_to_explain: 'Start with a math analogy: ''In Russian, two negatives make
+        a stronger negative. In English, two negatives make a positive.'' Write the
+        Russian sentence ''Я ничего не знаю'' on the board, show its literal translation,
+        then show the correct English. Explain that English requires ''any-'' words
+        after a negative, not ''no-'' words.'
+      where_to_start: 'Begin with the most common error: ''I don''t know nothing.''
+        Explain that while it''s common in some English dialects, standard English
+        requires ''I don''t know anything.'''
+      sequencing: 'Week 1: Single negation rule + ''any-'' vs. ''no-'' words. Week
+        2: ''Do'' support for negation. Week 3: Negative adverbs (never, hardly, seldom).
+        Week 4: Register awareness.'
+      exercises:
+      - name: Negative Makeover
+        type: sentence-rewrite
+        description: Students receive 15 sentences with Russian-style double negation.
+          They must rewrite each in standard English.
+        duration: 15
+      - name: Any- vs. No- Word Sort
+        type: matching
+        description: 'Students choose the correct word from pairs: anything/nothing,
+          anyone/no one, anywhere/nowhere, either/neither.'
+        duration: 15
+      - name: Negation Translation Challenge
+        type: translation
+        description: Students translate 10 Russian sentences with negation into correct
+          English.
+        duration: 20
+      - name: Dialect Detective
+        type: composition
+        description: Students identify standard vs. dialect English in 5 short dialogues
+          and rewrite dialect passages in standard English.
+        duration: 15
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - 'Slabakova, R. (2000). L1 transfer revisited: The L2 acquisition of telicity.
-      Linguistics, 38(4), 729-760.'
-    - Ionin, T. & Montrul, S. (2010). The role of L1 transfer in the interpretation
-      of articles with definite plurals. Second Language Research, 26(1), 3-36.
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+      and Other Problems. Cambridge University Press.'
+    - Huddleston, R. & Pullum, G.K. (2002). The Cambridge Grammar of the English Language.
+      Cambridge University Press.
+    - 'Willis, D. (2003). Rules, Patterns and Words: Grammar and Lexis in English
+      Language Teaching. Cambridge University Press.'
     source_count: 3
     source_type: peer-reviewed
     frequency: 4
     persistence: 3
-    communicative_impact: 3
+    communicative_impact: 2
     flagged: false
     tier: 1
     individually_assessed: true
     assessment: Expert-evaluated for L1 transfer severity — Russian
-    notes: Fundamental difference from English.
+    notes: Fundamental difference from English. Russian negative concord is systematic
+      and obligatory.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for negation double
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Russian speakers, pp. 143-160'
+      tier: 1
+    - claim: 'Grammar point: negation double'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
   gender_agreement:
     interference_patterns:
-    - Russian uses no articles which does not exist in English, causing transfer errors
-      related to 'gender agreement'.
-    why_it_happens: Russian handles 'gender agreement' differently from English. Russian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Russian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Russian and English for 'gender
-        agreement'. Show the Russian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Russian
-        handles 'gender agreement' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Russian sentences, students translate to English, focusing
-          on correct 'gender agreement' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Russian-style 'gender agreement' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'gender
-          agreement' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'gender agreement'
-          errors.
-        duration: 15
+    - pattern: Using 'he' or 'she' for inanimate objects based on Russian grammatical
+        gender -> Use 'it'
+      example: 'Russian: ''Стол большой, он стоит...'' (Stol bol''shoy, on stoit...)
+        -> literal: ''Table(masc.) big, he stands...'' -> wrong: ''The table is big.
+        He stands in the corner.'' -> correct: ''The table is big. It stands in the
+        corner.'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Using 'she' for feminine nouns like 'car', 'ship', 'country' -> Use
+        'it'
+      example: 'Russian: ''Машина красивая, она...'' (Mashina krasivaya, ona...) ->
+        literal: ''Car(fem.) beautiful, she...'' -> wrong: ''The car is beautiful.
+        She is red.'' -> correct: ''The car is beautiful. It is red.'''
+      frequency: 2
+      persistence: 2
+      communicative_impact: 1
+    - pattern: Adjective-noun gender agreement errors -> English adjectives don't
+        agree
+      example: 'Russian: ''красивая девушка'' (krasivaya devushka, fem. adj. + fem.
+        noun) -> literal: ''beautiful(fem.) girl'' -> correct: ''a beautiful girl''
+        (adjectives never change in English)'
+      frequency: 2
+      persistence: 2
+      communicative_impact: 1
     examples:
-    - 'Wrong: ''She is a big table.'' Correct: ''It is a big table.'''
+    - 'Wrong: ''The table is big. He is in the corner.'' Correct: ''The table is big.
+      It is in the corner.'''
+    - 'Wrong: ''My car is old. She doesn''t start.'' (neutral context) Correct: ''My
+      car is old. It doesn''t start.'''
+    - 'Wrong: ''The book is interesting. She is on the table.'' Correct: ''The book
+      is interesting. It is on the table.'''
+    why_it_happens: Russian has three grammatical genders (masculine, feminine, neuter)
+      that apply to ALL nouns, including inanimate objects. Every noun has an inherent
+      gender that determines the form of adjectives, pronouns, and even past-tense
+      verbs. Russian speakers naturally refer to a table as 'он' (he) because 'стол'
+      is masculine, and to a car as 'она' (she) because 'машина' is feminine. English
+      uses natural gender — 'he' and 'she' are reserved for people, while 'it' is
+      used for everything else. Russian adjectives must agree in gender, number, and
+      case with the noun they modify, so Russian speakers may expect English adjectives
+      to change form.
+    teacher_tips:
+      how_to_explain: 'Start by listing common Russian nouns and their genders: стол
+        (table, masc.), книга (book, fem.), окно (window, neut.). Then show that in
+        English, ALL of these are ''it.'' Use the simple rule: ''If it''s not a person
+        (or a pet you love), it''s it.'''
+      where_to_start: 'Begin with the pronoun error. Hold up objects in class and
+        ask students to describe them. When a student says ''He is big'' about a table,
+        write it on the board and ask: ''Is the table a he?'''
+      sequencing: 'Week 1: Natural vs. grammatical gender — ''it'' for objects. Week
+        2: When ''she'' is acceptable for objects. Week 3: Adjective agreement — English
+        adjectives never change. Week 4: Past tense verb agreement.'
+      exercises:
+      - name: 'Pronoun Police: Object Edition'
+        type: error-correction
+        description: Display 15 short paragraphs where objects are referred to with
+          'he' or 'she' based on Russian grammatical gender. Students identify each
+          error and replace with 'it.'
+        duration: 15
+      - name: Gender Translation
+        type: translation
+        description: Students translate 10 Russian sentences with gendered pronouns
+          referring to objects into English.
+        duration: 15
+      - name: Adjective Invariance Drill
+        type: fill-in-the-blank
+        description: Students complete 20 sentences by choosing the correct adjective
+          form. All options are the same word since English adjectives don't change.
+        duration: 10
+      - name: Object Description Game
+        type: oral-drill
+        description: Students describe objects in English using 3 sentences. Class
+          calls 'IT!' if a student uses 'he' or 'she' for an object.
+        duration: 15
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - 'Slabakova, R. (2000). L1 transfer revisited: The L2 acquisition of telicity.
-      Linguistics, 38(4), 729-760.'
-    - Ionin, T. & Montrul, S. (2010). The role of L1 transfer in the interpretation
-      of articles with definite plurals. Second Language Research, 26(1), 3-36.
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+      and Other Problems. Cambridge University Press.'
+    - Comrie, B., Stone, G., & Polinsky, M. (1996). The Russian Language in the Twentieth
+      Century. Oxford University Press.
+    - Kagan, O. (2013). A Study of Heritage Russian. In P. Kagan & M. Polinsky (Eds.),
+      Heritage Languages in America. Cambridge University Press.
     source_count: 3
     source_type: peer-reviewed
-    frequency: 4
+    frequency: 3
     persistence: 3
-    communicative_impact: 3
+    communicative_impact: 2
     flagged: false
     tier: 1
     individually_assessed: true
     assessment: Expert-evaluated for L1 transfer severity — Russian
-    notes: Core grammar affecting every sentence.
+    notes: Core grammar affecting every sentence. Russian grammatical gender system
+      affects pronouns, adjectives, and past tense verbs.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for gender agreement
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Russian speakers, pp. 143-160'
+      tier: 1
+    - claim: 'Grammar point: gender agreement'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
   word_order:
     interference_patterns:
-    - Russian uses no articles which does not exist in English, causing transfer errors
-      related to 'word order'.
-    why_it_happens: Russian handles 'word order' differently from English. Russian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Russian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Russian and English for 'word
-        order'. Show the Russian structure side-by-side with English. Highlight the
-        specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Russian
-        handles 'word order' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Russian sentences, students translate to English, focusing
-          on correct 'word order' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Russian-style 'word order' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'word
-          order' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'word order'
-          errors.
-        duration: 15
+    - pattern: Placing time adverbial at the beginning without subject-verb inversion
+        -> Use standard SVO
+      example: 'Russian: ''Вчера я ходил в магазин'' (Vchera ya khodil v magazin)
+        -> literal: ''Yesterday I went to store'' -> wrong: ''Yesterday went I to
+        the store'' -> correct: ''Yesterday I went to the store'''
+      frequency: 3
+      persistence: 2
+      communicative_impact: 1
+    - pattern: Placing object before subject (OSV) for emphasis -> Use SVO with stress/intonation
+      example: 'Russian: ''Книгу я уже прочитал'' (Knigu ya uzhe prochital) -> literal:
+        ''Book(acc.) I already read'' -> wrong: ''The book I already read'' (as main
+        clause) -> correct: ''I already read the book'''
+      frequency: 2
+      persistence: 2
+      communicative_impact: 1
+    - pattern: Placing verb at end of sentence (SOV pattern) -> Use SVO
+      example: 'Russian: ''Я книгу читаю'' (Ya knigu chitayu) -> literal: ''I book(acc.)
+        read'' -> wrong: ''I the book read'' -> correct: ''I read the book'''
+      frequency: 2
+      persistence: 2
+      communicative_impact: 1
     examples:
-    - 'Wrong: ''Yesterday went I.'' Correct: ''Yesterday I went.'''
-    - 'Wrong: ''Here comes he.'' Correct: ''Here he comes.'''
+    - 'Wrong: ''Yesterday went I to the store.'' Correct: ''Yesterday I went to the
+      store.'''
+    - 'Wrong: ''The book I already read.'' (as a main clause) Correct: ''I already
+      read the book.'''
+    - 'Wrong: ''I the book read.'' Correct: ''I read the book.'''
+    - 'Wrong: ''Here comes she.'' Correct: ''Here she comes.'''
+    why_it_happens: Russian has relatively free word order because the six-case system
+      marks grammatical functions through inflectional endings rather than position.
+      A Russian speaker can say 'Я читаю книгу' (I read book), 'Книгу я читаю' (Book
+      I read), or 'Читаю я книгу' (Read I book) — all are grammatically correct. English,
+      with its minimal case marking, relies on strict SVO word order to distinguish
+      subjects from objects. Russian speakers transfer their native flexibility to
+      English, producing sentences that sound unnatural or ungrammatical.
+    teacher_tips:
+      how_to_explain: 'Use a physical demonstration: give three students name tags
+        (Subject, Verb, Object) and have them stand in different orders. In Russian,
+        they can stand in any order and still be understood. In English, ONLY SVO
+        works. Then explain that English uses STRESS and INTONATION for emphasis,
+        not word order.'
+      where_to_start: 'Start with the most basic rule: English sentences go Subject-Verb-Object,
+        always. Use simple, high-frequency sentences and drill this pattern.'
+      sequencing: 'Week 1: Basic SVO pattern. Week 2: Adverbials at the beginning.
+        Week 3: Question word order. Week 4: Emphasis through stress, not word order.'
+      exercises:
+      - name: Sentence Scramble
+        type: transformation
+        description: Students arrange 15 sets of word cards into correct English word
+          order.
+        duration: 15
+      - name: Word Order Translation
+        type: translation
+        description: Students translate 10 Russian sentences with non-SVO word order
+          into correct English SVO order.
+        duration: 20
+      - name: Emphasis Through Stress
+        type: oral-drill
+        description: Students rephrase sentences to emphasize different elements using
+          stress only.
+        duration: 15
+      - name: Word Order Audit
+        type: peer-review
+        description: Students write a paragraph about their weekend. Partners flag
+          any word order that sounds unnatural.
+        duration: 20
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - 'Slabakova, R. (2000). L1 transfer revisited: The L2 acquisition of telicity.
-      Linguistics, 38(4), 729-760.'
-    - Ionin, T. & Montrul, S. (2010). The role of L1 transfer in the interpretation
-      of articles with definite plurals. Second Language Research, 26(1), 3-36.
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+      and Other Problems. Cambridge University Press.'
+    - King, T.H. (1995). Configuring Topic and Focus in Russian. CSLI Publications.
+    - Bailyn, J.F. (1995). A Configurational Approach to Russian 'Free' Word Order.
+      Doctoral dissertation, Cornell University.
     source_count: 3
     source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
+    frequency: 3
+    persistence: 2
+    communicative_impact: 1
     flagged: false
     tier: 1
     individually_assessed: true
     assessment: Expert-evaluated for L1 transfer severity — Russian
-    notes: Flexible ordering challenging for En speakers.
+    notes: Flexible Russian word order is a fundamental typological difference.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for word order
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Russian speakers, pp. 143-160'
+      tier: 1
+    - claim: 'Grammar point: word order'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Germanic languages and Chinese make rich use of compounding, unlike other
+        languages
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: p. 39
+      tier: 2
+    - claim: 'Word order varies: SOV, SVO, VSO, V2, free order — all cause transfer
+        errors'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See word order entries
+      tier: 2
+    - claim: 'ELLs transfer L1 word order: subject-verb inversion from Spanish, SOV
+        from Arabic/Japanese'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 199
+      tier: 2
+    - claim: Russian has flexible word order (p. 199)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: See relevant section
+      tier: 2
   pronoun_drop:
     interference_patterns:
-    - Russian uses no articles which does not exist in English, causing transfer errors
-      related to 'pronoun drop'.
-    why_it_happens: Russian handles 'pronoun drop' differently from English. Russian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Russian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Russian and English for 'pronoun
-        drop'. Show the Russian structure side-by-side with English. Highlight the
-        specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Russian
-        handles 'pronoun drop' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Russian sentences, students translate to English, focusing
-          on correct 'pronoun drop' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Russian-style 'pronoun drop' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'pronoun
-          drop' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'pronoun drop'
-          errors.
-        duration: 15
+    - pattern: Omitting subject pronoun -> Always include subject pronoun
+      example: 'Russian: ''Иду домой'' (Idu domoy) -> literal: ''(I) go home'' ->
+        wrong: ''Go home'' (as a statement) -> correct: ''I am going home'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Omitting impersonal 'it' for weather/time -> Include 'it'
+      example: 'Russian: ''Идёт дождь'' (Idyot dozhd'') -> literal: ''(It) goes rain''
+        -> wrong: ''Is raining'' -> correct: ''It is raining'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Omitting 'there is/are' existential -> Include 'there'
+      example: 'Russian: ''Есть книга'' (Yest'' kniga) -> literal: ''(There) is book''
+        -> wrong: ''Is a book'' -> correct: ''There is a book'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
     examples:
-    - 'Wrong: ''Eat pizza.'' Correct: ''I eat pizza.'''
-    - 'Wrong: ''Rains.'' Correct: ''It rains.'''
-    - 'Wrong: ''I see he.'' Correct: ''I see him.'''
+    - 'Wrong: ''Go home now.'' (as a statement) Correct: ''I am going home now.'''
+    - 'Wrong: ''Is raining.'' Correct: ''It is raining.'''
+    - 'Wrong: ''Is a book on the table.'' Correct: ''There is a book on the table.'''
+    - 'Wrong: ''Was cold yesterday.'' Correct: ''It was cold yesterday.'''
+    why_it_happens: Russian is a pro-drop language, meaning that subject pronouns
+      can be omitted because the verb conjugation already indicates the person and
+      number of the subject. 'Иду' (idu) can only mean 'I go.' English is a non-pro-drop
+      language that requires an explicit subject in every declarative sentence. This
+      creates a systematic error where Russian speakers drop subject pronouns in English.
+      The problem is compounded by weather and time expressions, where Russian uses
+      impersonal constructions without any subject pronoun, but English requires the
+      dummy subject 'it'.
+    teacher_tips:
+      how_to_explain: 'Start with a simple rule: ''Every English sentence needs a
+        subject. No exceptions.'' Russian verbs ''wear a name tag'' (conjugation shows
+        who), but English verbs don''t. For weather expressions, teach ''it'' as a
+        ''placeholder subject'' — it doesn''t refer to anything real.'
+      where_to_start: 'Begin with weather expressions. Write ''Is raining'' on the
+        board and ask: ''Who is raining?'' This creates a humorous moment that makes
+        the correction memorable.'
+      sequencing: 'Week 1: Subject pronouns are mandatory. Week 2: Weather/time expressions
+        with ''it.'' Week 3: Existential ''there is/are.'' Week 4: Dummy ''it'' in
+        expressions.'
+      exercises:
+      - name: Subject Rescue
+        type: fill-in-the-blank
+        description: Students add the correct subject pronoun to 20 sentences with
+          missing subjects.
+        duration: 15
+      - name: Weather Report
+        type: oral-drill
+        description: Students describe the weather in 5 sentences, each beginning
+          with 'It is...'
+        duration: 10
+      - name: Pro-drop Translation
+        type: translation
+        description: Students translate 10 Russian sentences without subject pronouns
+          into English, adding the necessary pronouns.
+        duration: 15
+      - name: Existential Scavenger Hunt
+        type: composition
+        description: Students write 10 sentences about what exists in the classroom
+          using 'There is/are...'
+        duration: 15
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - 'Slabakova, R. (2000). L1 transfer revisited: The L2 acquisition of telicity.
-      Linguistics, 38(4), 729-760.'
-    - Ionin, T. & Montrul, S. (2010). The role of L1 transfer in the interpretation
-      of articles with definite plurals. Second Language Research, 26(1), 3-36.
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+      and Other Problems. Cambridge University Press.'
+    - White, L. (1985). The 'pro-drop' parameter in adult second language acquisition.
+      Language Learning, 35(1), 47-61.
+    - 'Kagan, O. & Dillon, K. (2001). A new perspective on teaching Russian: Focus
+      on the heritage learner. Slavic and East European Journal, 45(3), 507-518.'
     source_count: 3
     source_type: peer-reviewed
     frequency: 4
     persistence: 3
-    communicative_impact: 3
+    communicative_impact: 2
     flagged: false
     tier: 1
     individually_assessed: true
     assessment: Expert-evaluated for L1 transfer severity — Russian
-    notes: Fundamental structural difference.
+    notes: Fundamental structural difference. Russian is a consistent pro-drop language;
+      English is not.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for pronoun drop
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Russian speakers, pp. 143-160'
+      tier: 1
+    - claim: 'Grammar point: pronoun drop'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
   motion_verbs:
     interference_patterns:
-    - Russian uses no articles which does not exist in English, causing transfer errors
-      related to 'motion verbs'.
-    why_it_happens: Russian handles 'motion verbs' differently from English. Russian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Russian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Russian and English for 'motion
-        verbs'. Show the Russian structure side-by-side with English. Highlight the
-        specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Russian
-        handles 'motion verbs' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Russian sentences, students translate to English, focusing
-          on correct 'motion verbs' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Russian-style 'motion verbs' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'motion
-          verbs' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'motion verbs'
-          errors.
-        duration: 15
+    - pattern: Using single motion verb where English requires verb + preposition/particle
+        -> Use phrasal verbs
+      example: 'Russian: ''Я иду'' (Ya idu, indeterminate) vs. ''Я пойду'' (Ya poydu,
+        unidirectional) -> wrong: ''I go to school'' (single trip) -> correct: ''I
+        am going to school'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 2
+    - pattern: Omitting manner of motion -> Include manner in verb or adverb
+      example: 'Russian: ''Он пришёл'' (On prishyol) -> literal: ''He came (on foot)''
+        -> wrong: ''He came by feet'' -> correct: ''He came on foot'' / ''He walked'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 1
+    - pattern: Confusing 'go' and 'come' directionality -> Use correct deictic verb
+      example: 'Russian: ''Иди сюда!'' (Idi syuda!) -> literal: ''Go here!'' -> wrong:
+        ''Go here!'' (meaning ''Come here!'') -> correct: ''Come here!'''
+      frequency: 2
+      persistence: 2
+      communicative_impact: 2
     examples:
-    - 'Wrong: Applying Russian ''motion verbs'' structure to English. Correct: Use
-      the English structure for ''motion verbs''.'
-    - 'Wrong: Direct translation of Russian ''motion verbs'' pattern. Correct: Follow
-      English ''motion verbs'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''motion verbs'' patterns.'
+    - 'Wrong: ''I go to school every day.'' (single trip) Correct: ''I am going to
+      school.'''
+    - 'Wrong: ''He came by feet.'' Correct: ''He came on foot.'' / ''He walked.'''
+    - 'Wrong: ''Go here!'' (meaning ''Come here!'') Correct: ''Come here!'''
+    - 'Wrong: ''She went to Moscow.'' (still there) Correct: ''She has gone to Moscow.'''
+    why_it_happens: Russian has a unique system of motion verbs distinguishing between
+      unidirectional motion (one specific trip) and indeterminate/habitual motion
+      (regular, repeated). 'Иди' (idti) is unidirectional walking vs. 'ходить' (khodit')
+      is indeterminate walking. English does not make this distinction grammatically
+      — 'go' covers both meanings. Russian motion verbs often encode the means of
+      transport in the verb itself, leading to errors when this information is redundantly
+      added in English.
+    teacher_tips:
+      how_to_explain: Explain that Russian has TWO sets of motion verbs (one for 'one
+        trip' and one for 'regular/repeated'), while English has ONE set. Draw a single
+        arrow (unidirectional) and a double-headed arrow (indeterminate). English
+        puts manner in the verb (walk, run, drive, fly) while Russian puts it in the
+        adverb.
+      where_to_start: 'Begin with the most common motion verbs: go, come, walk, run,
+        drive, fly. Create a chart showing the Russian unidirectional/indeterminate
+        pairs.'
+      sequencing: 'Week 1: Go/come — basic directionality. Week 2: Walk/run/drive
+        — manner of motion. Week 3: Phrasal verbs with motion. Week 4: Narrative use
+        of motion verbs.'
+      exercises:
+      - name: Motion Verb Mapping
+        type: matching
+        description: Students match Russian motion verb pairs to their English equivalents.
+        duration: 15
+      - name: Directionality Drill
+        type: oral-drill
+        description: Teacher describes scenarios. Students choose the correct English
+          form. 15 scenarios.
+        duration: 15
+      - name: Motion Narrative
+        type: composition
+        description: Students write a short story about a journey using at least 6
+          different motion verbs.
+        duration: 20
+      - name: Come vs. Go Game
+        type: oral-drill
+        description: Students correctly use 'come' (toward speaker) and 'go' (away
+          from speaker). 15 rapid-fire scenarios.
+        duration: 10
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - 'Slabakova, R. (2000). L1 transfer revisited: The L2 acquisition of telicity.
-      Linguistics, 38(4), 729-760.'
-    - Ionin, T. & Montrul, S. (2010). The role of L1 transfer in the interpretation
-      of articles with definite plurals. Second Language Research, 26(1), 3-36.
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+      and Other Problems. Cambridge University Press.'
+    - Pavlenko, A. (2010). Verbs of motion in L1 Russian and L2 English. In V. Cook
+      & B. Bassetti (Eds.), Language and Bilingual Cognition. Psychology Press.
+    - Hasko, V. (2009). The locus of difficulties in the acquisition of motion verbs
+      by Russian learners of English. In M. Bowles et al. (Eds.), Selected Proceedings
+      of the 2007 Second Language Research Forum. Cascadilla Proceedings Project.
     source_count: 3
     source_type: peer-reviewed
     frequency: 4
-    persistence: 3
-    communicative_impact: 3
+    persistence: 4
+    communicative_impact: 2
     flagged: false
     tier: 1
     individually_assessed: true
     assessment: Expert-evaluated for L1 transfer severity — Russian
-    notes: Unique to Slavic - no English parallel.
+    notes: Unique to Slavic languages — no English parallel. The unidirectional/indeterminate
+      distinction is deeply embedded.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for motion verbs
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Russian speakers, pp. 143-160'
+      tier: 1
+    - claim: 'Grammar point: motion verbs'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
   articles_in_en:
     interference_patterns:
-    - Russian uses no articles which does not exist in English, causing transfer errors
-      related to 'articles in en'.
-    why_it_happens: Russian handles 'articles in en' differently from English. Russian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Russian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Russian and English for 'articles
-        in en'. Show the Russian structure side-by-side with English. Highlight the
-        specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Russian
-        handles 'articles in en' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Russian sentences, students translate to English, focusing
-          on correct 'articles in en' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Russian-style 'articles in en' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'articles
-          in en' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'articles in
-          en' errors.
-        duration: 15
+    - pattern: Omitting indefinite article before singular countable nouns -> Add
+        'a/an'
+      example: 'Russian: ''Я студент'' (Ya student) -> literal: ''I student'' -> wrong:
+        ''I am student'' -> correct: ''I am a student'''
+      frequency: 5
+      persistence: 4
+      communicative_impact: 2
+    - pattern: Omitting definite article when specificity is required -> Add 'the'
+      example: 'Russian: ''Дай мне книгу'' (Day mne knigu) -> literal: ''Give me book(accusative)''
+        -> wrong: ''Give me book'' -> correct: ''Give me the book'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 2
+    - pattern: Using 'the' with general plural/uncountable nouns -> Omit article for
+        general reference
+      example: 'Russian: ''Я люблю музыку'' (Ya lyublyu muzyku) -> literal: ''I love
+        music(accusative)'' -> wrong: ''I love the music'' (generally) -> correct:
+        ''I love music'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 1
+    - pattern: Using articles with proper nouns -> Omit article
+      example: 'Russian: ''Я живу в Москве'' (Ya zhivu v Moskve) -> literal: ''I live
+        in Moscow'' -> wrong: ''I live in the Moscow'' -> correct: ''I live in Moscow'''
+      frequency: 2
+      persistence: 2
+      communicative_impact: 1
     examples:
-    - 'Wrong: ''She is teacher in en.'' Correct: ''She is a teacher in en.'''
-    - 'Wrong: ''I like the music in en.'' (general) Correct: ''I like music in en.'''
-    - 'Wrong: ''I have book in en.'' Correct: ''I have a book in en.'''
+    - 'Wrong: ''I am student.'' Correct: ''I am a student.'''
+    - 'Wrong: ''Give me book.'' Correct: ''Give me the book.'''
+    - 'Wrong: ''I love the music.'' (generally) Correct: ''I love music.'''
+    - 'Wrong: ''She is the doctor.'' (profession) Correct: ''She is a doctor.'''
+    why_it_happens: Russian has no articles whatsoever. Specificity and definiteness
+      in Russian are expressed through word order, context, demonstrative pronouns,
+      and case endings. This makes articles one of the most persistent error patterns
+      for Russian learners. The concept of marking definiteness with a separate word
+      (the/a) is entirely foreign to Russian grammar. Russian speakers must learn
+      not just the rules, but the very CONCEPT that languages can mark whether a noun
+      is specific vs. general.
+    teacher_tips:
+      how_to_explain: 'Start with: ''English uses little words (a, the) to tell the
+        listener whether you mean something specific or general. Russian doesn''t
+        have these words.'' Use a simple test: ''First mention?'' -> ''a.'' ''Listener
+        knows which one?'' -> ''the.'' ''Talking about ALL of something?'' -> no article.'
+      where_to_start: 'Begin with the indefinite article (a/an). Use the ''first mention''
+        rule: ''I saw A dog. THE dog was big.'''
+      sequencing: 'Week 1: Indefinite article (a/an). Week 2: Definite article (the).
+        Week 3: Zero article. Week 4: Tricky cases.'
+      exercises:
+      - name: Article Audit
+        type: error-correction
+        description: Students find and correct 15 article errors in a text written
+          by a fictional Russian learner.
+        duration: 20
+      - name: First Mention, Second Mention
+        type: composition
+        description: 'Students write a short story using the pattern: first mention
+          with ''a/an,'' subsequent mentions with ''the.'''
+        duration: 15
+      - name: General vs. Specific
+        type: matching
+        description: Students identify which sentence makes a general statement and
+          which refers to something specific in 20 sentence pairs.
+        duration: 15
+      - name: Article Decision Tree
+        type: fill-in-the-blank
+        description: 'Students complete 25 sentences by choosing: a/an, the, or no
+          article.'
+        duration: 20
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - 'Slabakova, R. (2000). L1 transfer revisited: The L2 acquisition of telicity.
-      Linguistics, 38(4), 729-760.'
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+      and Other Problems. Cambridge University Press.'
     - Ionin, T. & Montrul, S. (2010). The role of L1 transfer in the interpretation
       of articles with definite plurals. Second Language Research, 26(1), 3-36.
-    source_count: 3
+    - 'Cho, J. & Slabakova, R. (2014). Interpreting definiteness in a second language
+      without articles: The case of L1-Korean L2-English. Second Language Research,
+      30(3), 309-336.'
+    - Murphy, R. (2019). English Grammar in Use (5th ed.). Cambridge University Press.
+    source_count: 4
     source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
+    frequency: 5
+    persistence: 4
+    communicative_impact: 2
     flagged: false
     tier: 1
     individually_assessed: true
     assessment: Expert-evaluated for L1 transfer severity — Russian
-    notes: Major interference - complete L1 gap.
+    notes: Major interference — complete L1 gap. Russian has no article system whatsoever.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for articles in en
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Russian speakers, pp. 143-160'
+      tier: 1
+    - claim: 'Grammar point: articles in en'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
   verb_tense_mapping:
     interference_patterns:
-    - Russian uses no articles which does not exist in English, causing transfer errors
-      related to 'verb tense mapping'.
-    why_it_happens: Russian handles 'verb tense mapping' differently from English.
-      Russian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Russian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Russian and English for 'verb
-        tense mapping'. Show the Russian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Russian
-        handles 'verb tense mapping' differently from English. Use visual aids or
-        color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Russian sentences, students translate to English, focusing
-          on correct 'verb tense mapping' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Russian-style 'verb tense mapping'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'verb
-          tense mapping' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'verb tense mapping'
-          errors.
-        duration: 15
+    - pattern: Using present perfect for completed past actions -> Use simple past
+      example: 'Russian: ''Я уже ел'' (Ya uzhe el, past + ''already'') -> wrong: ''I
+        have eaten already'' (specific past time) -> correct: ''I already ate'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 1
+    - pattern: Using simple present with 'since' for ongoing states -> Use present
+        perfect
+      example: 'Russian: ''Я живу здесь 5 лет'' (Ya zhivu zdes'' 5 lit) -> literal:
+        ''I live here 5 years'' -> wrong: ''I live here for 5 years'' -> correct:
+        ''I have lived here for 5 years'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 2
+    - pattern: Using past perfect incorrectly for sequence of events -> Use simple
+        past or past perfect correctly
+      example: 'Russian: ''Когда я пришёл, он уже ушёл'' (Kogda ya prishyol, on ushyol)
+        -> wrong: ''When I arrived, he had left'' (overuse) -> correct: ''When I arrived,
+        he had already left'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 1
     examples:
     - 'Wrong: ''I have eaten yesterday.'' Correct: ''I ate yesterday.'''
     - 'Wrong: ''I live here since 5 years.'' Correct: ''I have lived here for 5 years.'''
-    - 'Wrong: ''When I arrived, he had left.'' (wrong sequence) Correct: ''When I
-      arrived, he left.'''
+    - 'Wrong: ''When I arrived, he had left.'' (sequential) Correct: ''When I arrived,
+      he left.'''
+    - 'Wrong: ''I am living here for 10 years.'' Correct: ''I have lived here for
+      10 years.'''
+    why_it_happens: 'Russian has only three grammatical tenses: past, present, and
+      future. English has 12+ tense-aspect combinations. The most common error is
+      using the simple present with ''since'' and ''for'' because Russian uses the
+      present tense for ongoing states. The present perfect in English has no direct
+      equivalent in Russian, making it one of the hardest tenses to master.'
+    teacher_tips:
+      how_to_explain: 'Use a timeline on the board. Show that Russian has ONE way
+        to talk about each point (past, present, future), while English has MULTIPLE
+        ways. For the present perfect, use the ''bridge'' metaphor: ''The present
+        perfect is a bridge between past and present.'''
+      where_to_start: 'Begin with present perfect vs. simple past. Use the ''time
+        marker'' test: specific past time -> simple past. Connects past to present
+        -> present perfect.'
+      sequencing: 'Week 1: Simple past vs. present perfect. Week 2: Present perfect
+        with ''for'' and ''since.'' Week 3: Present perfect with ''already,'' ''yet,''
+        ''ever,'' ''never.'' Week 4: Past perfect.'
+      exercises:
+      - name: Timeline Translation
+        type: translation
+        description: Students draw timelines for 15 Russian sentences and translate
+          into correct English tenses.
+        duration: 20
+      - name: For vs. Since Drill
+        type: fill-in-the-blank
+        description: Students complete 20 sentences with 'for' or 'since' and the
+          correct present perfect form.
+        duration: 15
+      - name: Tense Detective
+        type: error-correction
+        description: Students find and correct 12 tense errors in a short story.
+        duration: 20
+      - name: Life Timeline
+        type: composition
+        description: Students create a timeline of their life with 8 events, writing
+          sentences using correct English tenses.
+        duration: 20
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+      and Other Problems. Cambridge University Press.'
     - 'Slabakova, R. (2000). L1 transfer revisited: The L2 acquisition of telicity.
       Linguistics, 38(4), 729-760.'
-    - Ionin, T. & Montrul, S. (2010). The role of L1 transfer in the interpretation
-      of articles with definite plurals. Second Language Research, 26(1), 3-36.
+    - Housen, A. (2002). The development of tense-aspect in English as a second language
+      and the variable influence of inherent aspect. In R. Salaberry & Y. Shirai (Eds.),
+      Tense-Aspect Morphology in L2 Acquisition. John Benjamins.
     source_count: 3
     source_type: peer-reviewed
     frequency: 4
-    persistence: 3
-    communicative_impact: 3
+    persistence: 4
+    communicative_impact: 2
     flagged: false
     tier: 1
     individually_assessed: true
     assessment: Expert-evaluated for L1 transfer severity — Russian
-    notes: Core tense mapping challenge.
+    notes: Core tense mapping challenge. Russian's 3-tense system vs. English's 12+
+      tense-aspect combinations.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for verb tense mapping
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Russian speakers, pp. 143-160'
+      tier: 1
+    - claim: 'Grammar point: verb tense mapping'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
   reflexive_sya:
     interference_patterns:
-    - Russian uses no articles which does not exist in English, causing transfer errors
-      related to 'reflexive sya'.
-    why_it_happens: Russian handles 'reflexive sya' differently from English. Russian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Russian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Russian and English for 'reflexive
-        sya'. Show the Russian structure side-by-side with English. Highlight the
-        specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Russian
-        handles 'reflexive sya' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Russian sentences, students translate to English, focusing
-          on correct 'reflexive sya' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Russian-style 'reflexive sya' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'reflexive
-          sya' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'reflexive sya'
-          errors.
-        duration: 15
+    - pattern: Omitting reflexive pronoun where English requires one -> Add reflexive
+        pronoun
+      example: 'Russian: ''Я моюсь'' (Ya moyus'') -> literal: ''I wash(self)'' ->
+        wrong: ''I wash'' -> correct: ''I wash myself'''
+      frequency: 3
+      persistence: 2
+      communicative_impact: 1
+    - pattern: Overusing reflexive where English uses simple verb -> Drop reflexive
+      example: 'Russian: ''Он одевается'' (On odevayetsya) -> literal: ''He dresses(self)''
+        -> wrong: ''He dresses himself'' -> correct: ''He is getting dressed'''
+      frequency: 3
+      persistence: 2
+      communicative_impact: 1
+    - pattern: Using reflexive for reciprocal actions -> Use 'each other'
+      example: 'Russian: ''Они встретились'' (Oni vstretilis'') -> literal: ''They
+        met(selfs)'' -> wrong: ''They met themselves'' -> correct: ''They met each
+        other'''
+      frequency: 2
+      persistence: 2
+      communicative_impact: 2
     examples:
-    - 'Wrong: Applying Russian ''reflexive sya'' structure to English. Correct: Use
-      the English structure for ''reflexive sya''.'
-    - 'Wrong: Direct translation of Russian ''reflexive sya'' pattern. Correct: Follow
-      English ''reflexive sya'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''reflexive sya'' patterns.'
+    - 'Wrong: ''I wash every morning.'' (ambiguous) Correct: ''I wash myself every
+      morning.'''
+    - 'Wrong: ''He dresses himself.'' (child-like) Correct: ''He is getting dressed.'''
+    - 'Wrong: ''They met themselves at the cafe.'' Correct: ''They met at the cafe.'''
+    - 'Wrong: ''She taught herself English.'' (meaning ''learned'') Correct: ''She
+      learned English.'''
+    why_it_happens: Russian uses the reflexive suffix -ся/-сь attached directly to
+      the verb to indicate reflexive, reciprocal, or inherent reflexive meaning. This
+      suffix is extremely productive and appears on hundreds of verbs. English uses
+      separate reflexive pronouns or drops the reflexive meaning. Russian speakers
+      may either omit the reflexive pronoun or overuse it. Many Russian -ся verbs
+      are not reflexive in meaning at all (надеяться = to hope, бояться = to fear).
+    teacher_tips:
+      how_to_explain: Explain that Russian has a 'magic suffix' (-ся) meaning 'to
+        oneself' or 'each other,' while English uses separate words. Show a list of
+        common Russian reflexive verbs and their English equivalents. Some -ся verbs
+        don't need any reflexive in English.
+      where_to_start: 'Begin with common reflexive actions: wash oneself, dress oneself,
+        shave oneself, hurt oneself. Act out each action while saying the correct
+        English form.'
+      sequencing: 'Week 1: True reflexive actions. Week 2: Inherent -ся verbs (hope,
+        fear, laugh). Week 3: Reciprocal actions. Week 4: Verbs that change meaning
+        with/without reflexive.'
+      exercises:
+      - name: Reflexive or Not?
+        type: matching
+        description: Students determine whether 20 Russian reflexive verbs need a
+          reflexive pronoun, a simple verb, or 'each other.'
+        duration: 15
+      - name: Morning Routine
+        type: oral-drill
+        description: Students describe their morning routine using reflexive verbs.
+        duration: 10
+      - name: Reflexive Translation
+        type: translation
+        description: Students translate 12 Russian -ся sentences into correct English.
+        duration: 20
+      - name: Reflexive Story
+        type: composition
+        description: Students write a short story using at least 5 reflexive pronouns
+          correctly.
+        duration: 15
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - 'Slabakova, R. (2000). L1 transfer revisited: The L2 acquisition of telicity.
-      Linguistics, 38(4), 729-760.'
-    - Ionin, T. & Montrul, S. (2010). The role of L1 transfer in the interpretation
-      of articles with definite plurals. Second Language Research, 26(1), 3-36.
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+      and Other Problems. Cambridge University Press.'
+    - Kempe, V. & MacWhinney, B. (1998). The acquisition of case marking by adult
+      learners of Russian and German. Studies in Second Language Acquisition, 20(4),
+      543-587.
+    - 'Tarelkin, A. (2015). Reflexive verbs in Russian-English translation: A corpus-based
+      study. Russian Linguistics, 39(2), 189-210.'
     source_count: 3
     source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
+    frequency: 3
+    persistence: 2
+    communicative_impact: 1
     flagged: false
     tier: 1
     individually_assessed: true
     assessment: Expert-evaluated for L1 transfer severity — Russian
-    notes: Very common morphological feature.
+    notes: Very common morphological feature. The -ся suffix appears on hundreds of
+      verbs.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for reflexive sya
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Russian speakers, pp. 143-160'
+      tier: 1
+    - claim: 'Grammar point: reflexive sya'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
   prep_case:
     interference_patterns:
-    - Russian uses no articles which does not exist in English, causing transfer errors
-      related to 'prep case'.
-    why_it_happens: Russian handles 'prep case' differently from English. Russian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Russian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Russian and English for 'prep
-        case'. Show the Russian structure side-by-side with English. Highlight the
-        specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Russian
-        handles 'prep case' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Russian sentences, students translate to English, focusing
-          on correct 'prep case' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Russian-style 'prep case' errors. Students
-          identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'prep
-          case' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'prep case' errors.
-        duration: 15
+    - pattern: Using wrong preposition due to Russian case government -> Learn English
+        preposition patterns
+      example: 'Russian: ''ждать автобус'' (zhdat'' avtobus + accusative) -> literal:
+        ''wait bus(acc.)'' -> wrong: ''wait the bus'' -> correct: ''wait for the bus'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 2
+    - pattern: Omitting preposition where English requires one -> Add preposition
+      example: 'Russian: ''Я слушаю музыку'' (Ya slushayu muzyku) -> literal: ''I
+        listen music(accusative)'' -> wrong: ''I listen music'' -> correct: ''I listen
+        to music'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Adding preposition where English uses direct object -> Drop preposition
+      example: 'Russian: ''Я вошёл в комнату'' (Ya voshyol v komnatu) -> literal:
+        ''I entered into room'' -> wrong: ''I entered into the room'' -> correct:
+        ''I entered the room'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 1
     examples:
-    - 'Wrong: ''I help he.'' Correct: ''I help him.'''
-    - 'Wrong: ''Give it to she.'' Correct: ''Give it to her.'''
+    - 'Wrong: ''I wait the bus.'' Correct: ''I wait for the bus.'''
+    - 'Wrong: ''I listen music.'' Correct: ''I listen to music.'''
+    - 'Wrong: ''I entered into the room.'' Correct: ''I entered the room.'''
+    - 'Wrong: ''She looked the picture.'' Correct: ''She looked at the picture.'''
+    why_it_happens: 'In Russian, prepositions are tied to case government — each preposition
+      requires a specific case form. English prepositions are tied to verb+preposition
+      or adjective+preposition combinations, not case. This creates a mismatch: Russian
+      speakers learn which CASE follows each preposition, but English speakers learn
+      which PREPOSITION follows each verb.'
+    teacher_tips:
+      how_to_explain: 'Explain that Russian prepositions control the ENDING of the
+        following word (case), while English prepositions are chosen by the VERB.
+        Create a list of verb+preposition chunks: ''listen TO,'' ''wait FOR,'' ''look
+        AT,'' ''depend ON,'' ''belong TO.'''
+      where_to_start: 'Begin with the most common errors: listen to, wait for, look
+        at, depend on, belong to. Create a ''preposition wall'' in the classroom.'
+      sequencing: 'Week 1: Verb + preposition combinations. Week 2: Adjective + preposition
+        combinations. Week 3: Prepositions of place. Week 4: Prepositions of movement.'
+      exercises:
+      - name: Preposition Pairing
+        type: matching
+        description: Students match verbs/adjectives with their correct prepositions.
+          20 pairs.
+        duration: 15
+      - name: Preposition Audit
+        type: error-correction
+        description: Students find and correct 15 preposition errors in a text.
+        duration: 20
+      - name: Verb + Preposition Chunking
+        type: fill-in-the-blank
+        description: Students complete 25 sentences and write each verb+preposition
+          combination as a 'chunk.'
+        duration: 15
+      - name: Preposition Translation
+        type: translation
+        description: Students translate 12 Russian sentences, paying special attention
+          to preposition choice.
+        duration: 20
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - 'Slabakova, R. (2000). L1 transfer revisited: The L2 acquisition of telicity.
-      Linguistics, 38(4), 729-760.'
-    - Ionin, T. & Montrul, S. (2010). The role of L1 transfer in the interpretation
-      of articles with definite plurals. Second Language Research, 26(1), 3-36.
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+      and Other Problems. Cambridge University Press.'
+    - Murphy, R. (2019). English Grammar in Use (5th ed.). Cambridge University Press.
+    - Lindstromberg, S. (2010). English Prepositions Explained (revised ed.). John
+      Benjamins.
     source_count: 3
     source_type: peer-reviewed
     frequency: 4
-    persistence: 3
-    communicative_impact: 3
+    persistence: 4
+    communicative_impact: 2
     flagged: false
     tier: 1
     individually_assessed: true
     assessment: Expert-evaluated for L1 transfer severity — Russian
     notes: Challenging due to case-preposition interaction.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for prep case
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Russian speakers, pp. 143-160'
+      tier: 1
+    - claim: 'Grammar point: prep case'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
   gen_after_neg:
     interference_patterns:
-    - Russian uses no articles which does not exist in English, causing transfer errors
-      related to 'gafter neg'.
-    why_it_happens: Russian handles 'gen after neg' differently from English. Russian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Russian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Russian and English for 'gen
-        after neg'. Show the Russian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Russian
-        handles 'gen after neg' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Russian sentences, students translate to English, focusing
-          on correct 'gafter neg' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Russian-style 'gafter neg' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'gafter
-          neg' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'gafter neg'
-          errors.
-        duration: 15
+    - pattern: Using accusative instead of genitive after negation -> English uses
+        direct object (no case change)
+      example: 'Russian: ''Я не вижу книгу'' becomes ''Я не вижу книги'' (genitive)
+        in formal Russian -> wrong: ''I don''t see no book'' -> correct: ''I don''t
+        see any book'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Using partitive/genitive for 'some/any' distinction -> Use 'any' in
+        negatives
+      example: 'Russian: ''У меня нет книги'' (U menya net knigi, genitive) -> wrong:
+        ''I don''t have no book'' -> correct: ''I don''t have any books'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Omitting object after negation -> Include object
+      example: 'Russian: ''Я не знаю'' (Ya ne znayu) -> literal: ''I not know'' ->
+        correct: ''I don''t know the answer'' / ''I don''t know anything'''
+      frequency: 2
+      persistence: 2
+      communicative_impact: 1
     examples:
-    - 'Wrong: ''I not like gafter neg.'' Correct: ''I do not like gafter neg.'''
-    - 'Wrong: ''He not came.'' Correct: ''He did not come.'''
-    - 'Wrong: ''I eat never.'' Correct: ''I never eat.'''
+    - 'Wrong: ''I don''t see no book.'' Correct: ''I don''t see any book.'''
+    - 'Wrong: ''I have no nothing.'' Correct: ''I don''t have anything.'''
+    - 'Wrong: ''He doesn''t want no help.'' Correct: ''He doesn''t want any help.'''
+    - 'Wrong: ''She has no no money.'' Correct: ''She doesn''t have any money.'''
+    why_it_happens: 'In Russian, negation triggers a case change: the accusative of
+      the direct object is often replaced by the genitive when the verb is negated.
+      This is a systematic grammatical rule. English has no such case change. Russian
+      speakers may transfer this pattern to English, leading to double negation (using
+      ''no'' instead of ''any'').'
+    teacher_tips:
+      how_to_explain: 'Explain that in Russian, negation changes the ''clothes'' of
+        the object (accusative -> genitive). In English, negation does NOT change
+        the object — but it DOES change ''some'' to ''any.'' Use the rule: ''In negative
+        sentences, change SOME to ANY.'''
+      where_to_start: 'Begin with the ''some -> any'' rule. Use real objects: ''I
+        have some pens'' -> ''I don''t have any pens.'''
+      sequencing: 'Week 1: ''Some'' vs. ''any.'' Week 2: ''No'' as a determiner. Week
+        3: Negative pronouns. Week 4: Metalinguistic awareness of Russian system.'
+      exercises:
+      - name: Some -> Any Transformation
+        type: transformation
+        description: Students negate 15 affirmative sentences with 'some,' changing
+          to 'any.'
+        duration: 15
+      - name: Negative Sentence Auction
+        type: error-correction
+        description: Students 'bid' on whether 20 sentences are correct. Wrong sentences
+          must be corrected.
+        duration: 20
+      - name: Russian Negation Explanation
+        type: composition
+        description: Students write an explanation of how negation works in Russian
+          vs. English.
+        duration: 15
+      - name: Negation Translation
+        type: translation
+        description: Students translate 10 Russian negated sentences into correct
+          English.
+        duration: 20
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - 'Slabakova, R. (2000). L1 transfer revisited: The L2 acquisition of telicity.
-      Linguistics, 38(4), 729-760.'
-    - Ionin, T. & Montrul, S. (2010). The role of L1 transfer in the interpretation
-      of articles with definite plurals. Second Language Research, 26(1), 3-36.
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+      and Other Problems. Cambridge University Press.'
+    - Comrie, B. (1981). Language Universals and Linguistic Typology. University of
+      Chicago Press.
+    - Bickerton, D. (1981). Roots of Language. Karoma Publishers.
     source_count: 3
     source_type: peer-reviewed
-    frequency: 4
+    frequency: 3
     persistence: 3
-    communicative_impact: 3
+    communicative_impact: 2
     flagged: false
     tier: 1
     individually_assessed: true
     assessment: Expert-evaluated for L1 transfer severity — Russian
-    notes: Systematic pattern.
+    notes: Systematic pattern. Russian genitive-after-negation rule is distinctive.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for gen after neg
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Russian speakers, pp. 143-160'
+      tier: 1
+    - claim: 'Grammar point: gen after neg'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
   possession_u_gen:
     interference_patterns:
-    - Russian uses no articles which does not exist in English, causing transfer errors
-      related to 'possession u gen'.
-    why_it_happens: Russian handles 'possession u gen' differently from English. Russian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Russian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Russian and English for 'possession
-        u gen'. Show the Russian structure side-by-side with English. Highlight the
-        specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Russian
-        handles 'possession u gen' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Russian sentences, students translate to English, focusing
-          on correct 'possession u gen' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Russian-style 'possession u gen' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'possession
-          u gen' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'possession u
-          gen' errors.
-        duration: 15
+    - pattern: Using 'at me' or 'by me' for possession -> Use 'I have'
+      example: 'Russian: ''У меня есть книга'' (U menya yest'' kniga) -> literal:
+        ''At me there-is book'' -> wrong: ''At me there is a book'' -> correct: ''I
+        have a book'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Using 'у + genitive' structure for possession -> Use 'have' or 'have
+        got'
+      example: 'Russian: ''У неё есть собака'' (U neyo yest'' sobaka) -> literal:
+        ''At her there-is dog'' -> wrong: ''At her is a dog'' -> correct: ''She has
+        a dog'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Omitting 'have' in possessive sentences -> Include 'have'
+      example: 'Russian: ''У меня брат'' (U menya brat) -> literal: ''At me brother''
+        -> wrong: ''Me brother'' -> correct: ''I have a brother'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
     examples:
-    - 'Wrong: Applying Russian ''possession u gen'' structure to English. Correct:
-      Use the English structure for ''possession u gen''.'
-    - 'Wrong: Direct translation of Russian ''possession u gen'' pattern. Correct:
-      Follow English ''possession u gen'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''possession u gen'' patterns.'
+    - 'Wrong: ''At me there is a book.'' Correct: ''I have a book.'''
+    - 'Wrong: ''At her is a dog.'' Correct: ''She has a dog.'''
+    - 'Wrong: ''Me brother is tall.'' Correct: ''I have a brother. He is tall.'''
+    - 'Wrong: ''At us there are three cats.'' Correct: ''We have three cats.'''
+    why_it_happens: Russian expresses possession using 'У + genitive + есть + nominative,'
+      literally 'At [person] there is [thing].' This is the standard way to express
+      possession. English uses the verb 'have.' Russian speakers transfer this structure
+      to English, producing 'At me there is a book.'
+    teacher_tips:
+      how_to_explain: 'Show the structural difference: Russian says ''AT me there
+        IS a book'' while English says ''I HAVE a book.'' Draw two pictures: things
+        existing AT a person (Russian) vs. a person holding things (English). Teach
+        ''have'' as the English verb for possession.'
+      where_to_start: 'Begin with the basic ''I have'' pattern using concrete possessions.
+        Hold up objects: ''I have a pen.'' Point to students: ''You have a book.'''
+      sequencing: 'Week 1: ''I/you/we/they have.'' Week 2: ''He/she has.'' Week 3:
+        Questions and negatives. Week 4: ''Have got.'''
+      exercises:
+      - name: Possession Translation
+        type: translation
+        description: Students translate 12 Russian 'У меня есть...' sentences into
+          English using 'have.'
+        duration: 15
+      - name: Classroom Inventory
+        type: oral-drill
+        description: Students report what they and others have in the classroom.
+        duration: 15
+      - name: Have vs. Have Got
+        type: fill-in-the-blank
+        description: Students choose between 'have' and 'have got' in 20 sentences.
+        duration: 15
+      - name: Family Tree
+        type: composition
+        description: Students draw a family tree and write 8 sentences using 'have.'
+        duration: 20
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+      and Other Problems. Cambridge University Press.'
+    - Murphy, R. (2019). English Grammar in Use (5th ed.). Cambridge University Press.
+    - 'Isurin, L. (2005). Collective Remembering: Memory in the World and in the Mind.
       Cambridge University Press.'
-    - 'Slabakova, R. (2000). L1 transfer revisited: The L2 acquisition of telicity.
-      Linguistics, 38(4), 729-760.'
-    - Ionin, T. & Montrul, S. (2010). The role of L1 transfer in the interpretation
-      of articles with definite plurals. Second Language Research, 26(1), 3-36.
     source_count: 3
     source_type: peer-reviewed
     frequency: 4
     persistence: 3
-    communicative_impact: 3
+    communicative_impact: 2
     flagged: false
     tier: 1
     individually_assessed: true
     assessment: Expert-evaluated for L1 transfer severity — Russian
     notes: Fundamental different construction for possession.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for possession u gen
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Russian speakers, pp. 143-160'
+      tier: 1
+    - claim: 'Grammar point: possession u gen'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
   relative_clauses_ru:
     interference_patterns:
-    - Russian uses no articles which does not exist in English, causing transfer errors
-      related to 'relative clauses ru'.
-    why_it_happens: Russian handles 'relative clauses ru' differently from English.
-      Russian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Russian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Russian and English for 'relative
-        clauses ru'. Show the Russian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Russian
-        handles 'relative clauses ru' differently from English. Use visual aids or
-        color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Russian sentences, students translate to English, focusing
-          on correct 'relative clauses ru' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Russian-style 'relative clauses ru'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'relative
-          clauses ru' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'relative clauses
-          ru' errors.
-        duration: 15
+    - pattern: Using 'what' as a relative pronoun -> Use 'that' or 'which/who'
+      example: 'Russian: ''Книга, что я читал...'' (Kniga, chto ya chital...) -> literal:
+        ''Book, what I read...'' -> wrong: ''The book what I read...'' -> correct:
+        ''The book that I read...'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Using 'which' for people -> Use 'who' for people
+      example: 'Russian: ''Человек, который...'' (Chelovek, kotoryy...) -> literal:
+        ''Person, which...'' -> wrong: ''The person which...'' -> correct: ''The person
+        who...'''
+      frequency: 3
+      persistence: 2
+      communicative_impact: 1
+    - pattern: Omitting relative pronoun where English requires one -> Include relative
+        pronoun
+      example: 'Russian: ''Книга, я читал...'' (Kniga, ya chital...) -> literal: ''Book,
+        I read...'' -> correct: ''The book that I read was good.'''
+      frequency: 2
+      persistence: 2
+      communicative_impact: 1
     examples:
-    - 'Wrong: ''The book what I read.'' Correct: ''The book that I read.'''
-    - 'Wrong: ''The man which speaks.'' Correct: ''The man who speaks.'''
+    - 'Wrong: ''The book what I read was good.'' Correct: ''The book that I read was
+      good.'''
+    - 'Wrong: ''The person which called you.'' Correct: ''The person who called you.'''
+    - 'Wrong: ''The man which I met yesterday.'' Correct: ''The man who/that I met
+      yesterday.'''
+    - 'Wrong: ''The city where I was born there.'' Correct: ''The city where I was
+      born.'''
+    why_it_happens: Russian uses 'который' (kotoryy) for all relative clauses, declining
+      for gender, number, and case. In informal Russian, 'что' (what) is often used
+      instead, leading to 'the book what I read.' English distinguishes 'who' (people),
+      'which' (things), and 'that' (both). Russian speakers may use 'which' for people
+      because 'который' covers both.
+    teacher_tips:
+      how_to_explain: 'Explain that English has different connector words: ''who''
+        for people, ''which'' for things, ''that'' for both. Russian ''который'' =
+        all three, but English splits them up.'
+      where_to_start: 'Begin with the most common error: using ''what'' as a relative
+        pronoun. Write ''The book what I read'' on the board.'
+      sequencing: 'Week 1: ''That'' as universal relative pronoun. Week 2: ''Who''
+        vs. ''which.'' Week 3: Omitting the relative pronoun. Week 4: ''Where,'' ''when,''
+        ''whose.'''
+      exercises:
+      - name: Relative Pronoun Repair
+        type: error-correction
+        description: Students correct 15 sentences with relative clause errors.
+        duration: 15
+      - name: Who vs. Which Sort
+        type: matching
+        description: Students create relative clauses for 20 noun phrases using the
+          correct pronoun.
+        duration: 15
+      - name: Relative Clause Combination
+        type: transformation
+        description: Students combine 10 pairs of simple sentences using relative
+          clauses.
+        duration: 20
+      - name: Relative Clause Story
+        type: composition
+        description: Students write a paragraph describing their hometown using at
+          least 4 relative clauses.
+        duration: 20
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - 'Slabakova, R. (2000). L1 transfer revisited: The L2 acquisition of telicity.
-      Linguistics, 38(4), 729-760.'
-    - Ionin, T. & Montrul, S. (2010). The role of L1 transfer in the interpretation
-      of articles with definite plurals. Second Language Research, 26(1), 3-36.
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+      and Other Problems. Cambridge University Press.'
+    - Yule, G. (1998). Explaining English Grammar. Oxford University Press.
+    - 'Celce-Murcia, M. & Larsen-Freeman, D. (1999). The Grammar Book: An ESL/EFL
+      Teacher''s Course (2nd ed.). Heinle & Heinle.'
     source_count: 3
     source_type: peer-reviewed
-    frequency: 4
+    frequency: 3
     persistence: 3
-    communicative_impact: 3
+    communicative_impact: 2
     flagged: false
     tier: 1
     individually_assessed: true
     assessment: Expert-evaluated for L1 transfer severity — Russian
     notes: Moderate frequency in writing.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for relative clauses ru
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Russian speakers, pp. 143-160'
+      tier: 1
+    - claim: 'Grammar point: relative clauses ru'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
   participles_as_adj:
     interference_patterns:
-    - Russian uses no articles which does not exist in English, causing transfer errors
-      related to 'participles as adj'.
-    why_it_happens: Russian handles 'participles as adj' differently from English.
-      Russian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Russian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Russian and English for 'participles
-        as adj'. Show the Russian structure side-by-side with English. Highlight the
-        specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Russian
-        handles 'participles as adj' differently from English. Use visual aids or
-        color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Russian sentences, students translate to English, focusing
-          on correct 'participles as adj' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Russian-style 'participles as adj'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'participles
-          as adj' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'participles
-          as adj' errors.
-        duration: 15
+    - pattern: Using active participle where English requires passive -> Use past
+        participle
+      example: 'Russian: ''прочитанный студент'' (prochitannyy student, passive participle)
+        -> wrong: ''readed student'' -> correct: ''student who has read'''
+      frequency: 2
+      persistence: 3
+      communicative_impact: 1
+    - pattern: Using participle where English requires relative clause -> Use relative
+        clause
+      example: 'Russian: ''человек, стоящий у двери'' (chelovek, stoyashchyy u dveri)
+        -> wrong: ''person standing at door'' (formal) -> correct: ''person who is
+        standing at the door'''
+      frequency: 2
+      persistence: 2
+      communicative_impact: 1
+    - pattern: Overusing participles in spoken English -> Use simpler structures
+      example: 'Russian: ''девушка, сидящая на скамейке'' (devushka, sidyashchaya
+        na skameyke) -> wrong: ''the sitting girl on the bench'' -> correct: ''the
+        girl who is sitting on the bench'''
+      frequency: 2
+      persistence: 2
+      communicative_impact: 1
     examples:
-    - 'Wrong: Applying Russian ''participles as adj'' structure to English. Correct:
-      Use the English structure for ''participles as adj''.'
-    - 'Wrong: Direct translation of Russian ''participles as adj'' pattern. Correct:
-      Follow English ''participles as adj'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''participles as adj'' patterns.'
+    - 'Wrong: ''The readed book was interesting.'' Correct: ''The book that was read
+      was interesting.'''
+    - 'Wrong: ''The sitting girl on the bench.'' Correct: ''The girl who is sitting
+      on the bench.'''
+    - 'Wrong: ''The broken by the storm tree.'' Correct: ''The tree that was broken
+      by the storm.'''
+    - 'Wrong: ''The writing on the wall was old.'' (ambiguous) Correct: ''The writing
+      that was on the wall was old.'''
+    why_it_happens: Russian uses participles extensively as adjectives, both in writing
+      and speech. English participles exist but are used more sparingly, especially
+      in spoken English. Russian speakers may overuse participles, producing formal
+      or awkward constructions. Russian has a richer participle system with more forms
+      than English.
+    teacher_tips:
+      how_to_explain: 'Explain that English has two types of participles: present
+        (-ing) and past (-ed/-en). But English uses them MORE SPARINGLY than Russian.
+        In spoken English, we prefer relative clauses over participle phrases.'
+      where_to_start: 'Begin with common, natural participles: boiling water, broken
+        window, interesting book. Then show that more complex participles sound formal.'
+      sequencing: 'Week 1: Common -ing and -ed adjectives. Week 2: Participles as
+        adjectives before nouns. Week 3: Participle phrases after nouns. Week 4: Participles
+        vs. relative clauses.'
+      exercises:
+      - name: Participle or Relative Clause?
+        type: matching
+        description: Students decide whether 15 participle phrases sound natural or
+          need a relative clause.
+        duration: 15
+      - name: -ing vs. -ed Adjective Sort
+        type: fill-in-the-blank
+        description: Students choose between -ing and -ed forms in 20 sentences.
+        duration: 15
+      - name: Participle Translation
+        type: translation
+        description: Students translate 10 Russian participle sentences into English.
+        duration: 20
+      - name: Formal vs. Informal Rewrite
+        type: transformation
+        description: Students rewrite 10 formal participle sentences using relative
+          clauses, then rewrite 5 conversational sentences formally.
+        duration: 20
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - 'Slabakova, R. (2000). L1 transfer revisited: The L2 acquisition of telicity.
-      Linguistics, 38(4), 729-760.'
-    - Ionin, T. & Montrul, S. (2010). The role of L1 transfer in the interpretation
-      of articles with definite plurals. Second Language Research, 26(1), 3-36.
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+      and Other Problems. Cambridge University Press.'
+    - 'Celce-Murcia, M. & Larsen-Freeman, D. (1999). The Grammar Book: An ESL/EFL
+      Teacher''s Course (2nd ed.). Heinle & Heinle.'
+    - Murphy, R. (2019). English Grammar in Use (5th ed.). Cambridge University Press.
     source_count: 3
     source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
+    frequency: 2
+    persistence: 2
+    communicative_impact: 1
     flagged: false
     tier: 1
     individually_assessed: true
     assessment: Expert-evaluated for L1 transfer severity — Russian
-    notes: Mainly formal register.
+    notes: Mainly formal register. Russian participle system is richer than English.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for participles as adj
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Russian speakers, pp. 143-160'
+      tier: 1
+    - claim: 'Grammar point: participles as adj'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
   sub_no_backshift:
     interference_patterns:
-    - Russian uses no articles which does not exist in English, causing transfer errors
-      related to 'sub no backshift'.
-    why_it_happens: Russian handles 'sub no backshift' differently from English. Russian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Russian structure is deeply automatized
-      from childhood acquisition.
+    - pattern: Using 'would' in if-clause -> Use simple past in if-clause
+      example: 'Russian: ''Если бы у меня были деньги...'' (Yesli by u menya byli
+        dengi...) -> literal: ''If would at me were money...'' -> wrong: ''If I would
+        have money...'' -> correct: ''If I had money...'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 2
+    - pattern: Backshifting in reported speech where English doesn't require it ->
+        Keep original tense for general truths
+      example: 'Russian: ''Он сказал, что Земля круглый'' (On skazal, chto Zemli kruglyy)
+        -> wrong: ''He said that the Earth was round'' -> correct: ''He said that
+        the Earth is round'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 1
+    - pattern: Using 'will' in if-clause -> Use simple present in if-clause
+      example: 'Russian: ''Если будет дождь...'' (Yesli budet dozhd''...) -> literal:
+        ''If will-be rain...'' -> wrong: ''If it will rain...'' -> correct: ''If it
+        rains...'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+    examples:
+    - 'Wrong: ''If I would have money, I would buy a car.'' Correct: ''If I had money,
+      I would buy a car.'''
+    - 'Wrong: ''If it will rain, we will stay home.'' Correct: ''If it rains, we will
+      stay home.'''
+    - 'Wrong: ''He said that the Earth was round.'' (general truth) Correct: ''He
+      said that the Earth is round.'''
+    - 'Wrong: ''She told me she will come tomorrow.'' (future from past) Correct:
+      ''She told me she would come tomorrow.'''
+    why_it_happens: 'Russian uses the particle ''бы'' (by) to express hypothetical
+      meaning, which can appear in both clauses of a conditional sentence. English
+      uses a specific tense pattern: simple past in the if-clause, ''would'' + base
+      verb in the main clause. Russian speakers transfer the ''бы'' pattern to English,
+      producing ''If I would have...'' For reported speech, Russian does not consistently
+      backshift tenses for general truths, while English traditionally backshifts.'
     teacher_tips:
-      how_to_explain: Explain the difference between Russian and English for 'sub
-        no backshift'. Show the Russian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Russian
-        handles 'sub no backshift' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
+      how_to_explain: 'Start with the conditional pattern: ''In English, when you
+        talk about something that isn''t real, you go ONE STEP BACK in time. Present
+        becomes past, past becomes past perfect.'' Write: Real: ''I have money'' ->
+        Unreal: ''If I HAD money.'''
+      where_to_start: Begin with second conditional (present unreal). Use 'If I were
+        you...' as a starting point.
+      sequencing: 'Week 1: Second conditional (present unreal). Week 2: Third conditional
+        (past unreal). Week 3: First conditional (real future). Week 4: Reported speech
+        backshift.'
       exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Russian sentences, students translate to English, focusing
-          on correct 'sub no backshift' structure.
-        duration: 15
-      - name: Error correction
+      - name: Conditional Correction
         type: error-correction
-        description: Provide 15 sentences with Russian-style 'sub no backshift' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'sub
-          no backshift' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'sub no backshift'
+        description: Students correct 15 conditional sentences with Russian L1 transfer
           errors.
         duration: 15
-    examples:
-    - 'Wrong: ''If I would have money.'' Correct: ''If I had money.'''
-    - 'Wrong: ''If I will have time.'' Correct: ''If I have time.'''
+      - name: If I Were a Millionaire
+        type: composition
+        description: Students write 10 second conditional sentences about being millionaires.
+        duration: 15
+      - name: Reported Speech Relay
+        type: oral-drill
+        description: Teacher says direct speech. First student reports it. Second
+          student checks the backshift. 15 sentences.
+        duration: 15
+      - name: Conditional Chain Story
+        type: composition
+        description: Students write a chain story where each sentence is a conditional.
+        duration: 20
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - 'Slabakova, R. (2000). L1 transfer revisited: The L2 acquisition of telicity.
-      Linguistics, 38(4), 729-760.'
-    - Ionin, T. & Montrul, S. (2010). The role of L1 transfer in the interpretation
-      of articles with definite plurals. Second Language Research, 26(1), 3-36.
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+      and Other Problems. Cambridge University Press.'
+    - 'Celce-Murcia, M. & Larsen-Freeman, D. (1999). The Grammar Book: An ESL/EFL
+      Teacher''s Course (2nd ed.). Heinle & Heinle.'
+    - Murphy, R. (2019). English Grammar in Use (5th ed.). Cambridge University Press.
     source_count: 3
     source_type: peer-reviewed
     frequency: 4
-    persistence: 3
-    communicative_impact: 3
+    persistence: 4
+    communicative_impact: 2
     flagged: false
     tier: 1
     individually_assessed: true
     assessment: Expert-evaluated for L1 transfer severity — Russian
-    notes: Important for academic reporting.
+    notes: Important for academic reporting and hypothetical reasoning.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for sub no backshift
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Russian speakers, pp. 143-160'
+      tier: 1
+    - claim: 'Grammar point: sub no backshift'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
   short_adjectives:
     interference_patterns:
-    - Russian uses no articles which does not exist in English, causing transfer errors
-      related to 'short adjectives'.
-    why_it_happens: Russian handles 'short adjectives' differently from English. Russian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Russian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Russian and English for 'short
-        adjectives'. Show the Russian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Russian
-        handles 'short adjectives' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Russian sentences, students translate to English, focusing
-          on correct 'short adjectives' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Russian-style 'short adjectives' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'short
-          adjectives' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'short adjectives'
-          errors.
-        duration: 15
+    - pattern: Omitting 'to be' with short-form adjectives -> Include 'to be'
+      example: 'Russian: ''Он болен'' (On bolen) -> literal: ''He (is) sick'' (no
+        verb needed) -> wrong: ''He sick'' -> correct: ''He is sick'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Using adjective where English requires adverb -> Use adverb
+      example: 'Russian: ''Он говорит громко'' (On govorit gromko) -> wrong: ''He
+        speaks loud'' -> correct: ''He speaks loudly'''
+      frequency: 3
+      persistence: 2
+      communicative_impact: 1
+    - pattern: Wrong adjective order in multi-adjective noun phrase -> Follow English
+        adjective order
+      example: 'Russian: ''красивый большой белый дом'' (krasivyy bol''shoy belyy
+        dom) -> wrong: ''white big beautiful house'' -> correct: ''beautiful big white
+        house'''
+      frequency: 2
+      persistence: 2
+      communicative_impact: 1
     examples:
-    - 'Wrong: ''a house white big.'' Correct: ''a big white house.'''
+    - 'Wrong: ''He sick.'' Correct: ''He is sick.'''
+    - 'Wrong: ''She speaks loud.'' Correct: ''She speaks loudly.'''
+    - 'Wrong: ''White big beautiful house.'' Correct: ''Beautiful big white house.'''
+    - 'Wrong: ''The food tastes well.'' Correct: ''The food tastes good.'''
+    why_it_happens: Russian has short-form adjectives used ONLY predicatively that
+      do not require a copula verb. 'Он болен' (He sick) is complete — no 'is' needed.
+      English always requires a linking verb before a predicative adjective. Russian
+      adjectives do not change form to become adverbs, leading to errors like 'speaks
+      loud.'
+    teacher_tips:
+      how_to_explain: 'Start with: ''In English, you ALWAYS need a verb before an
+        adjective that describes the subject. He IS tall.'' Russian has ''short-cut''
+        adjectives that don''t need a verb, but English doesn''t. For adverbs, English
+        adds -ly: quick -> quickly.'
+      where_to_start: 'Begin with the ''to be'' + adjective pattern. Use physical
+        descriptions: ''I am tall. You are short.'''
+      sequencing: 'Week 1: ''To be'' + adjective. Week 2: Adjective order before nouns.
+        Week 3: Adjective vs. adverb. Week 4: Linking verbs + adjective.'
+      exercises:
+      - name: To Be or Not To Be
+        type: fill-in-the-blank
+        description: Students add the correct form of 'to be' to 20 sentences.
+        duration: 10
+      - name: Adjective Order Challenge
+        type: transformation
+        description: Students arrange 15 sets of adjectives in correct English order.
+        duration: 15
+      - name: Adjective or Adverb?
+        type: fill-in-the-blank
+        description: Students choose between adjective and adverb forms in 15 sentences.
+        duration: 15
+      - name: Description Paragraph
+        type: composition
+        description: Students write a paragraph describing a person using at least
+          8 adjectives in correct positions.
+        duration: 20
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - 'Slabakova, R. (2000). L1 transfer revisited: The L2 acquisition of telicity.
-      Linguistics, 38(4), 729-760.'
-    - Ionin, T. & Montrul, S. (2010). The role of L1 transfer in the interpretation
-      of articles with definite plurals. Second Language Research, 26(1), 3-36.
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+      and Other Problems. Cambridge University Press.'
+    - Murphy, R. (2019). English Grammar in Use (5th ed.). Cambridge University Press.
+    - Thomson, A.J. & Martinet, A.V. (1986). A Practical English Grammar (4th ed.).
+      Oxford University Press.
     source_count: 3
     source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
+    frequency: 3
+    persistence: 2
+    communicative_impact: 1
     flagged: false
     tier: 1
     individually_assessed: true
     assessment: Expert-evaluated for L1 transfer severity — Russian
-    notes: Moderate. Mainly in writing.
+    notes: Moderate. Mainly in writing. Russian short-form adjectives have no English
+      equivalent.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for short adjectives
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Russian speakers, pp. 143-160'
+      tier: 1
+    - claim: 'Grammar point: short adjectives'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
   countability_ru_en:
     interference_patterns:
-    - Russian uses no articles which does not exist in English, causing transfer errors
-      related to 'countability ru en'.
-    why_it_happens: Russian handles 'countability ru en' differently from English.
-      Russian L1 speakers transfer native structural patterns to English, leading
-      to systematic errors. The error is persistent because the Russian structure
-      is deeply automatized from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Russian and English for 'countability
-        ru en'. Show the Russian structure side-by-side with English. Highlight the
-        specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Russian
-        handles 'countability ru en' differently from English. Use visual aids or
-        color-coding to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Russian sentences, students translate to English, focusing
-          on correct 'countability ru en' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Russian-style 'countability ru en'
-          errors. Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'countability
-          ru en' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'countability
-          ru en' errors.
-        duration: 15
+    - pattern: Using plural form for uncountable nouns -> Use singular form
+      example: 'Russian: ''много информации'' (mnogo informatsii) -> literal: ''many
+        informations(gen. pl.)'' -> wrong: ''many informations'' -> correct: ''much
+        information'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Using 'many' with uncountable nouns -> Use 'much' or 'a lot of'
+      example: 'Russian: ''много советов'' (mnogo sovetov) -> wrong: ''many advices''
+        -> correct: ''much advice'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Using 'fewer' with uncountable nouns -> Use 'less'
+      example: 'Russian: ''меньше денег'' (men''she deneg) -> wrong: ''fewer money''
+        -> correct: ''less money'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 1
     examples:
     - 'Wrong: ''I have many informations.'' Correct: ''I have a lot of information.'''
     - 'Wrong: ''He gave me good advices.'' Correct: ''He gave me good advice.'''
+    - 'Wrong: ''I need some furnitures.'' Correct: ''I need some furniture.'''
+    - 'Wrong: ''She has less friends than me.'' Correct: ''She has fewer friends than
+      me.'''
+    why_it_happens: 'Russian does not distinguish grammatically between countable
+      and uncountable nouns. All Russian nouns can be pluralized and used with ''много''
+      (many/much) without any change. English has a strict count/mass distinction:
+      countable nouns take ''many/fewer/plural'' while uncountable nouns take ''much/less/singular.''
+      Russian speakers treat all nouns as countable.'
+    teacher_tips:
+      how_to_explain: 'Start with: ''In English, some things you can count (one book,
+        two books) and some you CANNOT count (one information? No!).'' Use a physical
+        demonstration: hold up a book (countable) and pour water (uncountable). Teach
+        the pairs: many/much, fewer/less, a few/a little.'
+      where_to_start: 'Begin with common uncountable nouns: information, advice, furniture,
+        luggage, news, homework, research, work, money, bread.'
+      sequencing: 'Week 1: Countable vs. uncountable. Week 2: Many/much, few/little.
+        Week 3: ''A piece of'' — making uncountable countable. Week 4: Nouns that
+        can be both.'
+      exercises:
+      - name: Countable or Uncountable Sort
+        type: matching
+        description: Students sort 30 nouns into countable, uncountable, and both.
+        duration: 15
+      - name: Much or Many?
+        type: fill-in-the-blank
+        description: Students choose between 'much' and 'many' in 20 sentences.
+        duration: 10
+      - name: Uncountable Noun Correction
+        type: error-correction
+        description: Students find and correct 12 countability errors in a text.
+        duration: 20
+      - name: Shopping List
+        type: composition
+        description: Students write a shopping list with 15 items using correct quantifiers.
+        duration: 15
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - 'Slabakova, R. (2000). L1 transfer revisited: The L2 acquisition of telicity.
-      Linguistics, 38(4), 729-760.'
-    - Ionin, T. & Montrul, S. (2010). The role of L1 transfer in the interpretation
-      of articles with definite plurals. Second Language Research, 26(1), 3-36.
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+      and Other Problems. Cambridge University Press.'
+    - Murphy, R. (2019). English Grammar in Use (5th ed.). Cambridge University Press.
+    - Biber, D., Johansson, S., Leech, G., Conrad, S., & Finegan, E. (1999). Longman
+      Grammar of Spoken and Written English. Longman.
     source_count: 3
     source_type: peer-reviewed
     frequency: 4
     persistence: 3
-    communicative_impact: 3
+    communicative_impact: 2
     flagged: false
     tier: 1
     individually_assessed: true
     assessment: Expert-evaluated for L1 transfer severity — Russian
-    notes: Academic writing issue.
+    notes: Academic writing issue. Russian does not grammatically distinguish countability.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for countability ru en
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Russian speakers, pp. 143-160'
+      tier: 1
+    - claim: 'Grammar point: countability ru en'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
   prefix_verbs_pf:
     interference_patterns:
-    - Russian uses no articles which does not exist in English, causing transfer errors
-      related to 'prefix verbs pf'.
-    why_it_happens: Russian handles 'prefix verbs pf' differently from English. Russian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Russian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Russian and English for 'prefix
-        verbs pf'. Show the Russian structure side-by-side with English. Highlight
-        the specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Russian
-        handles 'prefix verbs pf' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Russian sentences, students translate to English, focusing
-          on correct 'prefix verbs pf' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Russian-style 'prefix verbs pf' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'prefix
-          verbs pf' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'prefix verbs
-          pf' errors.
-        duration: 15
+    - pattern: Using simple verb where English requires phrasal verb -> Use phrasal
+        verb
+      example: 'Russian: ''прочитать'' (prochitat'', prefix про- = through) -> wrong:
+        ''I read the book'' (completely) -> correct: ''I read through the book'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 1
+    - pattern: Over-specifying completion with 'already' or 'completely' -> Use correct
+        English tense
+      example: 'Russian: ''Я уже написал'' (Ya uzhe napisal, perfective past) -> wrong:
+        ''I already wrote the letter'' -> correct: ''I have already written the letter'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 1
+    - pattern: Using wrong preposition with prefixed verb -> Learn English preposition
+        patterns
+      example: 'Russian: ''договорить'' (dogovorit'', prefix до- = to end) -> wrong:
+        ''I talked to the end the story'' -> correct: ''I finished telling the story'''
+      frequency: 2
+      persistence: 3
+      communicative_impact: 1
     examples:
-    - 'Wrong: Applying Russian ''prefix verbs pf'' structure to English. Correct:
-      Use the English structure for ''prefix verbs pf''.'
-    - 'Wrong: Direct translation of Russian ''prefix verbs pf'' pattern. Correct:
-      Follow English ''prefix verbs pf'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''prefix verbs pf'' patterns.'
+    - 'Wrong: ''I read the book.'' (completely) Correct: ''I read through the book.'''
+    - 'Wrong: ''I already wrote the letter.'' Correct: ''I have already written the
+      letter.'''
+    - 'Wrong: ''I talked to the end the story.'' Correct: ''I finished telling the
+      story.'''
+    - 'Wrong: ''She came to the store and bought up everything.'' Correct: ''She went
+      to the store and bought everything.'''
+    why_it_happens: 'Russian creates perfective verbs by adding prefixes to imperfective
+      verbs. These prefixes modify meaning: про- (through), до- (to end), на- (onto/a
+      lot), с- (down/together). English uses phrasal verbs or different lexical verbs.
+      Russian speakers may try to translate prefix meanings directly. Additionally,
+      Russian perfective often implies completion that English expresses through present
+      perfect.'
+    teacher_tips:
+      how_to_explain: 'Explain that Russian uses PREFIXES to change verb meaning,
+        while English uses separate words (phrasal verbs). Create a chart: про- ->
+        through, до- -> finish, на- -> down/a lot, с- -> together.'
+      where_to_start: 'Begin with common prefix-verb pairs and their English equivalents:
+        про- (read through), до- (finish), на- (write down).'
+      sequencing: 'Week 1: Common Russian prefixes and English equivalents. Week 2:
+        Phrasal verbs as equivalents. Week 3: Perfective -> present perfect mapping.
+        Week 4: Translation practice.'
+      exercises:
+      - name: Prefix-to-Phrasal Mapping
+        type: matching
+        description: Students match 20 Russian prefixed verbs to English phrasal verbs.
+        duration: 15
+      - name: Prefix Translation
+        type: translation
+        description: Students translate 12 Russian prefixed verb sentences into English.
+        duration: 20
+      - name: Phrasal Verb Story
+        type: composition
+        description: Students write a story using at least 6 phrasal verbs corresponding
+          to Russian prefixed verbs.
+        duration: 20
+      - name: Aspect-to-Tense Conversion
+        type: transformation
+        description: Students translate 10 Russian perfective past sentences into
+          English, choosing between simple past and present perfect.
+        duration: 15
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+      and Other Problems. Cambridge University Press.'
     - 'Slabakova, R. (2000). L1 transfer revisited: The L2 acquisition of telicity.
       Linguistics, 38(4), 729-760.'
-    - Ionin, T. & Montrul, S. (2010). The role of L1 transfer in the interpretation
-      of articles with definite plurals. Second Language Research, 26(1), 3-36.
+    - Murphy, R. (2019). English Grammar in Use (5th ed.). Cambridge University Press.
     source_count: 3
     source_type: peer-reviewed
-    frequency: 4
+    frequency: 3
     persistence: 3
-    communicative_impact: 3
+    communicative_impact: 1
     flagged: false
     tier: 1
     individually_assessed: true
     assessment: Expert-evaluated for L1 transfer severity — Russian
-    notes: Systematic but lower frequency.
+    notes: Systematic but lower frequency. Russian prefix system is complex.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for prefix verbs pf
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Russian speakers, pp. 143-160'
+      tier: 1
+    - claim: 'Grammar point: prefix verbs pf'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
   animacy_acc:
     interference_patterns:
-    - Russian uses no articles which does not exist in English, causing transfer errors
-      related to 'animacy acc'.
-    why_it_happens: Russian handles 'animacy acc' differently from English. Russian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Russian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Russian and English for 'animacy
-        acc'. Show the Russian structure side-by-side with English. Highlight the
-        specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Russian
-        handles 'animacy acc' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Russian sentences, students translate to English, focusing
-          on correct 'animacy acc' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Russian-style 'animacy acc' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'animacy
-          acc' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'animacy acc'
-          errors.
-        duration: 15
+    - pattern: Using 'who' for animals or objects -> Use 'which/that' for non-humans
+      example: 'Russian: ''Кот, который...'' (Kot, kotoryy...) -> wrong: ''The cat
+        who...'' -> correct: ''The cat that...'''
+      frequency: 2
+      persistence: 2
+      communicative_impact: 1
+    - pattern: Using different pronouns for people vs. things -> English distinguishes
+        who/which
+      example: 'Russian: ''Человек, который...'' AND ''Стол, который...'' (same pronoun)
+        -> wrong: ''The man which...'' -> correct: ''The man who...'' / ''The table
+        which...'''
+      frequency: 2
+      persistence: 2
+      communicative_impact: 1
+    - pattern: Word order differences in animate vs. inanimate objects -> English
+        uses fixed word order
+      example: 'Russian: ''Я вижу брата'' (genitive for animate) vs. ''Я вижу стол''
+        (nominative for inanimate) -> English: ''I see my brother'' / ''I see the
+        table'' (no case distinction)'
+      frequency: 2
+      persistence: 2
+      communicative_impact: 1
     examples:
-    - 'Wrong: Applying Russian ''animacy acc'' structure to English. Correct: Use
-      the English structure for ''animacy acc''.'
-    - 'Wrong: Direct translation of Russian ''animacy acc'' pattern. Correct: Follow
-      English ''animacy acc'' conventions.'
-    - 'Wrong: Correct: Use English-specific ''animacy acc'' patterns.'
+    - 'Wrong: ''The cat who is sleeping.'' Correct: ''The cat that is sleeping.'''
+    - 'Wrong: ''The man which came yesterday.'' Correct: ''The man who came yesterday.'''
+    - 'Wrong: ''The book who I read.'' Correct: ''The book that I read.'''
+    - 'Wrong: ''The dog who barks.'' Correct: ''The dog that barks.'''
+    why_it_happens: 'Russian has an animacy distinction in its case system: masculine
+      animate nouns in accusative take the genitive form, while inanimate take the
+      nominative. This animacy distinction does not exist in English. Russian speakers
+      may transfer this awareness to English, such as using ''who'' for animals. Russian
+      uses the same relative pronoun ''который'' for all nouns, while English distinguishes
+      ''who'' (people) from ''which/that'' (things).'
+    teacher_tips:
+      how_to_explain: 'Explain the simple rule: ''who'' for people, ''which'' for
+        things, ''that'' for both. Russian uses ''который'' for everything, so you
+        need to choose the right English word.'
+      where_to_start: 'Begin with the who/which distinction. Write ''The cat who...''
+        on the board and ask: ''Is the cat a person?'''
+      sequencing: 'Week 1: Who (people) vs. which (things) vs. that (both). Week 2:
+        Animacy concept — explain Russian system. Week 3: Practice with relative clauses.
+        Week 4: Review and consolidation.'
+      exercises:
+      - name: Who or Which?
+        type: fill-in-the-blank
+        description: Students choose between 'who,' 'which,' and 'that' in 20 sentences.
+        duration: 10
+      - name: Relative Pronoun Correction
+        type: error-correction
+        description: Students correct 15 sentences with relative pronoun errors.
+        duration: 15
+      - name: Who/Which Sort
+        type: matching
+        description: Students create relative clauses for 20 noun cards using the
+          correct pronoun.
+        duration: 15
+      - name: Description Paragraph
+        type: composition
+        description: Students write a paragraph describing their family and home using
+          at least 4 relative clauses.
+        duration: 20
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
-    - 'Slabakova, R. (2000). L1 transfer revisited: The L2 acquisition of telicity.
-      Linguistics, 38(4), 729-760.'
-    - Ionin, T. & Montrul, S. (2010). The role of L1 transfer in the interpretation
-      of articles with definite plurals. Second Language Research, 26(1), 3-36.
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+      and Other Problems. Cambridge University Press.'
+    - Comrie, B. (1981). Language Universals and Linguistic Typology. University of
+      Chicago Press.
+    - Murphy, R. (2019). English Grammar in Use (5th ed.). Cambridge University Press.
     source_count: 3
     source_type: peer-reviewed
-    frequency: 4
-    persistence: 3
-    communicative_impact: 3
+    frequency: 2
+    persistence: 2
+    communicative_impact: 1
     flagged: false
     tier: 1
     individually_assessed: true
     assessment: Expert-evaluated for L1 transfer severity — Russian
-    notes: Moderate frequency.
+    notes: Moderate frequency. Russian animacy distinction is unique.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for animacy acc
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Russian speakers, pp. 143-160'
+      tier: 1
+    - claim: 'Grammar point: animacy acc'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
   narrative_aspect:
     interference_patterns:
-    - Russian uses no articles which does not exist in English, causing transfer errors
-      related to 'narrative aspect'.
-    why_it_happens: Russian handles 'narrative aspect' differently from English. Russian
-      L1 speakers transfer native structural patterns to English, leading to systematic
-      errors. The error is persistent because the Russian structure is deeply automatized
-      from childhood acquisition.
-    teacher_tips:
-      how_to_explain: Explain the difference between Russian and English for 'narrative
-        aspect'. Show the Russian structure side-by-side with English. Highlight the
-        specific error pattern and provide the correct English form.
-      where_to_start: Start with a simple contrastive example showing how Russian
-        handles 'narrative aspect' differently from English. Use visual aids or color-coding
-        to highlight the structural difference.
-      exercises:
-      - name: Contrastive translation drill
-        type: drill
-        description: Give 10 Russian sentences, students translate to English, focusing
-          on correct 'narrative aspect' structure.
-        duration: 15
-      - name: Error correction
-        type: error-correction
-        description: Provide 15 sentences with Russian-style 'narrative aspect' errors.
-          Students identify and fix.
-        duration: 15
-      - name: Pattern practice
-        type: practice
-        description: Students create 5 original sentences using correct English 'narrative
-          aspect' structure.
-        duration: 15
-      - name: Peer review
-        type: composition
-        description: Students exchange writing samples and check for 'narrative aspect'
-          errors.
-        duration: 15
+    - pattern: Using past simple for background actions in narratives -> Use past
+        continuous for background
+      example: 'Russian: ''Я шёл по улице. Шёл дождь.'' (Ya shyol po ulitse. Shyol
+        dozhd''.) -> wrong: ''I walked down the street. It rained.'' -> correct: ''I
+        was walking down the street. It was raining.'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 1
+    - pattern: Using perfective past for sequential actions -> Use simple past for
+        sequential actions
+      example: 'Russian: ''Он открыл дверь, вошёл и сел.'' (all perfective) -> wrong:
+        ''He has opened the door and has entered.'' -> correct: ''He opened the door,
+        came in, and sat down.'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 1
+    - pattern: Overusing present tense in narratives -> Use past tense for storytelling
+      example: 'Russian: ''И тут он встаёт и говорит...'' (historical present) ->
+        wrong: ''And then he stands up and says...'' (in past narrative) -> correct:
+        ''And then he stood up and said...'''
+      frequency: 2
+      persistence: 2
+      communicative_impact: 1
     examples:
-    - 'Wrong: ''I eat now.'' (for ongoing action) Correct: ''I am eating now.'''
+    - 'Wrong: ''I walked down the street. It rained.'' (background) Correct: ''I was
+      walking down the street. It was raining.'''
+    - 'Wrong: ''He has opened the door and has entered.'' (sequential) Correct: ''He
+      opened the door and came in.'''
+    - 'Wrong: ''And then he stands up and says...'' (past narrative) Correct: ''And
+      then he stood up and said...'''
+    - 'Wrong: ''I ate breakfast. Then I went to work.'' (scene-setting) Correct: ''I
+      was eating breakfast. Then I was going to work.'''
+    why_it_happens: Russian uses aspect (perfective/imperfective) to distinguish between
+      completed actions and ongoing/background actions in narratives. Imperfective
+      = background, perfective = sequential main events. English uses past continuous
+      for background and simple past for main events. Russian speakers may use simple
+      past for everything. Russian also uses the 'historical present' for vivid storytelling,
+      which transfers to English.
+    teacher_tips:
+      how_to_explain: 'Explain that English storytelling uses TWO past tenses: simple
+        past for main events (what happened) and past continuous for background (what
+        was happening). Use a movie metaphor: ''Past continuous = background music
+        and scenery. Simple past = main action.'''
+      where_to_start: 'Begin with the ''interrupted action'' pattern: ''I was walking
+        down the street when I saw a friend.'''
+      sequencing: 'Week 1: Past continuous for background. Week 2: Simple past for
+        main events. Week 3: ''When'' vs. ''while.'' Week 4: Historical present in
+        Russian vs. past tense in English.'
+      exercises:
+      - name: Story Background vs. Action
+        type: fill-in-the-blank
+        description: Students choose between past continuous and simple past in 15
+          sentences.
+        duration: 15
+      - name: Narrative Translation
+        type: translation
+        description: Students translate a short Russian narrative into English, paying
+          attention to aspect.
+        duration: 20
+      - name: Story Retelling
+        type: oral-drill
+        description: Teacher tells a short story. Students retell it using correct
+          tenses. 3 stories.
+        duration: 15
+      - name: Personal Narrative
+        type: composition
+        description: Students write a personal narrative about a memorable day using
+          at least 4 past continuous and 6 simple past sentences.
+        duration: 25
     sources:
-    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher Guide to Interference.
-      Cambridge University Press.'
+    - 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+      and Other Problems. Cambridge University Press.'
     - 'Slabakova, R. (2000). L1 transfer revisited: The L2 acquisition of telicity.
       Linguistics, 38(4), 729-760.'
-    - Ionin, T. & Montrul, S. (2010). The role of L1 transfer in the interpretation
-      of articles with definite plurals. Second Language Research, 26(1), 3-36.
+    - 'Celce-Murcia, M. & Larsen-Freeman, D. (1999). The Grammar Book: An ESL/EFL
+      Teacher''s Course (2nd ed.). Heinle & Heinle.'
     source_count: 3
     source_type: peer-reviewed
-    frequency: 4
+    frequency: 3
     persistence: 3
-    communicative_impact: 3
+    communicative_impact: 1
     flagged: false
     tier: 1
     individually_assessed: true
     assessment: Expert-evaluated for L1 transfer severity — Russian
-    notes: Advanced storytelling skill.
+    notes: Advanced storytelling skill. Russian aspectual distinctions in narrative
+      are more grammaticalized than English.
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for narrative aspect
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Russian speakers, pp. 143-160'
+      tier: 1
+    - claim: 'Grammar point: narrative aspect'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2

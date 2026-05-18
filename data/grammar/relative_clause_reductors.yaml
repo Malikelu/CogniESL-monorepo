@@ -1,101 +1,175 @@
 grammar_point: relative_clause_reductors
 title: Relative Clause Reductors
-description: The process of reducing relative clauses to participial phrases, prepositional phrases, or appositives by omitting the relative pronoun and auxiliary verb.
+description: The process of reducing relative clauses to participial phrases, prepositional
+  phrases, or appositives by omitting the relative pronoun and auxiliary verb.
 level: C1
-
 meaning:
-  core_meaning: "Relative clause reduction is the process of shortening a relative clause by removing the relative pronoun (who, which, that) and any auxiliary verb, leaving a participial phrase or other reduced form. This creates more concise, formal-sounding sentences. The reduction is only possible when the relative pronoun is the subject of the relative clause."
-  timeline: "Timeless — reduction can be applied to relative clauses in any tense."
-  contrast: |
-    Full relative clause: "The man who is standing by the door is my uncle."
-    Reduced: "The man standing by the door is my uncle."
-    Full: "The book that was published last year became a bestseller."
-    Reduced: "The book published last year became a bestseller."
-  ccqs:
-    - question: "Can the relative pronoun and auxiliary be removed without changing the meaning?"
-      answer: "Yes — if the relative pronoun is the subject and the clause is active (for present participle) or passive (for past participle)."
-    - question: "Is the reduced form more formal or less formal than the full relative clause?"
-      answer: "The reduced form is typically more formal and concise."
-  example_generator:
-    contexts: ["academic writing", "formal reports", "news articles", "legal documents", "literary prose"]
-    cultural_notes: ["Relative clause reduction is a hallmark of formal written English", "Overuse can make text dense and difficult to read — balance is important"]
-    min_examples: 5
+  core_meaning: Relative clause reduction is the process of shortening a relative
+    clause by removing the relative pronoun (who, which, that) and any auxiliary verb,
+    leaving a participial phrase or other reduced form. This creates more concise,
+    formal-sounding sentences. The reduction is only possible when the relative pronoun
+    is the subject of the relative clause.
+  timeline: Timeless — reduction can be applied to relative clauses in any tense.
+  contrast: 'Full relative clause: "The man who is standing by the door is my uncle."
 
+    Reduced: "The man standing by the door is my uncle."
+
+    Full: "The book that was published last year became a bestseller."
+
+    Reduced: "The book published last year became a bestseller."
+
+    '
+  ccqs:
+  - question: Can the relative pronoun and auxiliary be removed without changing the
+      meaning?
+    answer: Yes — if the relative pronoun is the subject and the clause is active
+      (for present participle) or passive (for past participle).
+  - question: Is the reduced form more formal or less formal than the full relative
+      clause?
+    answer: The reduced form is typically more formal and concise.
+  example_generator:
+    contexts:
+    - academic writing
+    - formal reports
+    - news articles
+    - legal documents
+    - literary prose
+    cultural_notes:
+    - Relative clause reduction is a hallmark of formal written English
+    - Overuse can make text dense and difficult to read — balance is important
+    min_examples: 5
 form:
   affirmative:
-    structure: "Active reduction: omit relative pronoun + be, keep present participle: 'The woman who lives next door' → 'The woman living next door'. Passive reduction: omit relative pronoun + be, keep past participle: 'The letter that was sent yesterday' → 'The letter sent yesterday'."
+    structure: 'Active reduction: omit relative pronoun + be, keep present participle:
+      ''The woman who lives next door'' → ''The woman living next door''. Passive
+      reduction: omit relative pronoun + be, keep past participle: ''The letter that
+      was sent yesterday'' → ''The letter sent yesterday''.'
     example_generator:
-      contexts: ["describing people", "describing objects", "academic writing"]
+      contexts:
+      - describing people
+      - describing objects
+      - academic writing
       min_examples: 4
   negative:
-    structure: "Negative reduction: 'The people who do not have tickets' → 'The people not having tickets.' / 'The items that were not included' → 'The items not included.'"
+    structure: 'Negative reduction: ''The people who do not have tickets'' → ''The
+      people not having tickets.'' / ''The items that were not included'' → ''The
+      items not included.'''
     example_generator:
-      contexts: ["exclusions", "negative descriptions", "formal writing"]
+      contexts:
+      - exclusions
+      - negative descriptions
+      - formal writing
       min_examples: 4
   questions:
-    structure: "Relative clause reduction is not used in questions. The full relative clause form is retained: 'Is the man who is standing there your brother?' (not reduced in questions)."
+    structure: 'Relative clause reduction is not used in questions. The full relative
+      clause form is retained: ''Is the man who is standing there your brother?''
+      (not reduced in questions).'
     example_generator:
       contexts: []
       min_examples: 0
-
 sub_rules:
-  - rule: "Present participle reduction — active relative clauses with progressive aspect"
-    type: "grammatical"
-    examples: ["The man who is talking to John → The man talking to John", "The students who are studying in the library → The students studying in the library", "Anyone who is wishing to participate should register → Anyone wishing to participate should register"]
-  - rule: "Past participle reduction — passive relative clauses"
-    type: "grammatical"
-    examples: ["The letter that was written by Shakespeare → The letter written by Shakespeare", "The money that was stolen from the bank → The money stolen from the bank", "The people who were affected by the flood → The people affected by the flood"]
-  - rule: "Reduction of relative clauses with 'be' + adjective/prepositional phrase"
-    type: "grammatical"
-    examples: ["The man who is responsible for the project → The man responsible for the project", "The house which is opposite the park → The house opposite the park", "The woman who is in charge → The woman in charge"]
-  - rule: "Cannot reduce when the relative pronoun is the object"
-    type: "grammatical"
-    examples: ["The man who I saw yesterday → (cannot reduce — 'who' is object)", "The book that I read → The book I read (pronoun can be omitted, but no participle reduction)"]
-  - rule: "Cannot reduce when the relative clause has a modal or simple tense (without auxiliary 'be')"
-    type: "grammatical"
-    examples: ["The man who lives next door → (cannot reduce — no auxiliary 'be')", "The woman who can speak French → (cannot reduce — modal 'can')"]
-
+- rule: Present participle reduction — active relative clauses with progressive aspect
+  type: grammatical
+  examples:
+  - The man who is talking to John → The man talking to John
+  - The students who are studying in the library → The students studying in the library
+  - Anyone who is wishing to participate should register → Anyone wishing to participate
+    should register
+- rule: Past participle reduction — passive relative clauses
+  type: grammatical
+  examples:
+  - The letter that was written by Shakespeare → The letter written by Shakespeare
+  - The money that was stolen from the bank → The money stolen from the bank
+  - The people who were affected by the flood → The people affected by the flood
+- rule: Reduction of relative clauses with 'be' + adjective/prepositional phrase
+  type: grammatical
+  examples:
+  - The man who is responsible for the project → The man responsible for the project
+  - The house which is opposite the park → The house opposite the park
+  - The woman who is in charge → The woman in charge
+- rule: Cannot reduce when the relative pronoun is the object
+  type: grammatical
+  examples:
+  - The man who I saw yesterday → (cannot reduce — 'who' is object)
+  - The book that I read → The book I read (pronoun can be omitted, but no participle
+    reduction)
+- rule: Cannot reduce when the relative clause has a modal or simple tense (without
+    auxiliary 'be')
+  type: grammatical
+  examples:
+  - The man who lives next door → (cannot reduce — no auxiliary 'be')
+  - The woman who can speak French → (cannot reduce — modal 'can')
 use:
-  - name: "Academic and formal writing"
-    description: "Relative clause reduction is widely used in academic writing to create concise, information-dense sentences."
-    examples: ["The participants recruited for the study were all over 18.", "The data collected during the experiment support the hypothesis.", "The theory proposed by Einstein revolutionised physics."]
-    key_point: "Creates a formal, concise style expected in academic prose."
-  - name: "News headlines and articles"
-    description: "Journalists use reduced relative clauses to save space and create impact."
-    examples: ["Three people killed in motorway accident.", "Man arrested in connection with robbery.", "New policy announced by the government."]
-    key_point: "Headline style often uses reduced forms for brevity."
-  - name: "Legal and official documents"
-    description: "Legal writing uses reduced relative clauses for precision and formality."
-    examples: ["The property described in Schedule A...", "The defendant charged with theft...", "All persons residing in the premises..."]
-    key_point: "Standard in legal and bureaucratic language."
-  - name: "Literary description"
-    description: "Writers use reduced relative clauses for vivid, economical description."
-    examples: ["The woman standing at the gate was his mother.", "A letter written in haste revealed the truth.", "The children playing in the garden laughed loudly."]
-    key_point: "Creates a flowing, descriptive narrative style."
-
+- name: Academic and formal writing
+  description: Relative clause reduction is widely used in academic writing to create
+    concise, information-dense sentences.
+  examples:
+  - The participants recruited for the study were all over 18.
+  - The data collected during the experiment support the hypothesis.
+  - The theory proposed by Einstein revolutionised physics.
+  key_point: Creates a formal, concise style expected in academic prose.
+- name: News headlines and articles
+  description: Journalists use reduced relative clauses to save space and create impact.
+  examples:
+  - Three people killed in motorway accident.
+  - Man arrested in connection with robbery.
+  - New policy announced by the government.
+  key_point: Headline style often uses reduced forms for brevity.
+- name: Legal and official documents
+  description: Legal writing uses reduced relative clauses for precision and formality.
+  examples:
+  - The property described in Schedule A...
+  - The defendant charged with theft...
+  - All persons residing in the premises...
+  key_point: Standard in legal and bureaucratic language.
+- name: Literary description
+  description: Writers use reduced relative clauses for vivid, economical description.
+  examples:
+  - The woman standing at the gate was his mother.
+  - A letter written in haste revealed the truth.
+  - The children playing in the garden laughed loudly.
+  key_point: Creates a flowing, descriptive narrative style.
 phonetics:
-  - note: "Reduced relative clauses are spoken without a pause where the relative pronoun would have been: 'The man standing by the door' flows as one phrase. The participle takes its normal stress pattern."
-    example_generator:
-      contexts: ["reading aloud", "formal speech"]
-    l1_issue: "Learners may not recognise reduced relative clauses in reading, parsing them as main verbs instead of modifiers."
-
+- note: 'Reduced relative clauses are spoken without a pause where the relative pronoun
+    would have been: ''The man standing by the door'' flows as one phrase. The participle
+    takes its normal stress pattern.'
+  example_generator:
+    contexts:
+    - reading aloud
+    - formal speech
+  l1_issue: Learners may not recognise reduced relative clauses in reading, parsing
+    them as main verbs instead of modifiers.
 teaching:
-  methodology: "Guided discovery with text transformation"
+  methodology: Guided discovery with text transformation
   tips:
-    - "Start with full relative clauses and show how to reduce them step by step."
-    - "Provide clear rules about when reduction is and is not possible."
-    - "Use authentic academic texts to show reduction in context."
-    - "Practise both expanding (reduced → full) and reducing (full → reduced) exercises."
+  - Start with full relative clauses and show how to reduce them step by step.
+  - Provide clear rules about when reduction is and is not possible.
+  - Use authentic academic texts to show reduction in context.
+  - Practise both expanding (reduced → full) and reducing (full → reduced) exercises.
   recommended_activities:
-    - name: "Reduction transformation"
-      duration: 15
-      adaptation_notes: "Give students full relative clauses and have them create reduced forms. Start with active progressive, then passive."
-    - name: "Expansion exercise"
-      duration: 15
-      adaptation_notes: "Give students reduced relative clauses and have them write out the full form. This helps with recognition."
-    - name: "Text editing"
-      duration: 20
-      adaptation_notes: "Students edit a text to make it more concise by reducing relative clauses where possible."
-    - name: "Error identification"
-      duration: 10
-      adaptation_notes: "Provide sentences with incorrect reductions and have students identify and correct them."
+  - name: Reduction transformation
+    duration: 15
+    adaptation_notes: Give students full relative clauses and have them create reduced
+      forms. Start with active progressive, then passive.
+  - name: Expansion exercise
+    duration: 15
+    adaptation_notes: Give students reduced relative clauses and have them write out
+      the full form. This helps with recognition.
+  - name: Text editing
+    duration: 20
+    adaptation_notes: Students edit a text to make it more concise by reducing relative
+      clauses where possible.
+  - name: Error identification
+    duration: 10
+    adaptation_notes: Provide sentences with incorrect reductions and have students
+      identify and correct them.
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

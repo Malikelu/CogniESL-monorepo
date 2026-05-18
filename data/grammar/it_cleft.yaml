@@ -1,86 +1,95 @@
 grammar_point: it_cleft
-title: "It-Cleft Sentences"
-description: "Using it + be + focused element + who/that for emphasis: It was John who broke the window."
+title: It-Cleft Sentences
+description: 'Using it + be + focused element + who/that for emphasis: It was John
+  who broke the window.'
 level: B2
-
 meaning:
-  core_meaning: "It-cleft sentences divide a single clause into two parts for emphasis. The focused element comes after it was/who/that."
-  timeline: "Depends on the tense used."
-  contrast: "Simple = John broke the window. vs It-cleft = It was John who broke the window."
+  core_meaning: It-cleft sentences divide a single clause into two parts for emphasis.
+    The focused element comes after it was/who/that.
+  timeline: Depends on the tense used.
+  contrast: Simple = John broke the window. vs It-cleft = It was John who broke the
+    window.
   ccqs:
-    - question: Is this sentence dividing information into two parts?
-      answer: Yes, it is an it-cleft.
-    - question: What element is being emphasized?
-      answer: The element after it was.
+  - question: Is this sentence dividing information into two parts?
+    answer: Yes, it is an it-cleft.
+  - question: What element is being emphasized?
+    answer: The element after it was.
   example_generator:
     contexts:
+    - emphasis
+    - contrast
+    - correcting misunderstandings
+    - formal writing
+    cultural_notes: []
+    min_examples: 5
+form:
+  affirmative:
+    structure: 'It + be + focused element + who/that + clause: It was John who broke
+      the window. / It was yesterday that she arrived.'
+    example_generator:
+      contexts:
       - emphasis
       - contrast
       - correcting misunderstandings
-      - formal writing
-    cultural_notes: []
-    min_examples: 5
-
-form:
-  affirmative:
-    structure: "It + be + focused element + who/that + clause: It was John who broke the window. / It was yesterday that she arrived."
-    example_generator:
-      contexts:
-        - emphasis
-        - contrast
-        - correcting misunderstandings
       min_examples: 4
   negative:
-    structure: "It + be + not + focused element: It was not John who broke the window."
+    structure: 'It + be + not + focused element: It was not John who broke the window.'
     example_generator:
       contexts:
-        - emphasis
-        - contrast
-        - correcting misunderstandings
+      - emphasis
+      - contrast
+      - correcting misunderstandings
       min_examples: 4
   questions:
-    structure: "Was/Were + it + focused element?: Was it John who broke the window?"
+    structure: 'Was/Were + it + focused element?: Was it John who broke the window?'
     example_generator:
       contexts:
-        - emphasis
-        - contrast
-        - correcting misunderstandings
+      - emphasis
+      - contrast
+      - correcting misunderstandings
       min_examples: 4
-
 sub_rules:
-  - rule: It-cleft emphasizes one element of the sentence
-    type: grammatical
-    examples:
-      - It was Mary who called. (not John)
-      - It was yesterday that she arrived. (not today)
-      - It is the price that matters most. (not the quality)
-
+- rule: It-cleft emphasizes one element of the sentence
+  type: grammatical
+  examples:
+  - It was Mary who called. (not John)
+  - It was yesterday that she arrived. (not today)
+  - It is the price that matters most. (not the quality)
 use:
-  - context: Emphasis
-    description: Highlighting specific information
-    examples:
-      - It was the teacher who explained it best.
-      - It was yesterday that she arrived.
-  - context: Correcting misunderstandings
-    description: Clarifying what actually happened
-    examples:
-      - It was not me who broke the window — it was John.
-      - It was an accident, not intentional.
-
+- context: Emphasis
+  description: Highlighting specific information
+  examples:
+  - It was the teacher who explained it best.
+  - It was yesterday that she arrived.
+- context: Correcting misunderstandings
+  description: Clarifying what actually happened
+  examples:
+  - It was not me who broke the window — it was John.
+  - It was an accident, not intentional.
 phonetics:
-  - note: Stress on the focused element
-    example_generator:
-      contexts:
-        - emphasis
-    l1_issue: Many L1 speakers do not use cleft sentences, missing opportunities for natural emphasis.
-
+- note: Stress on the focused element
+  example_generator:
+    contexts:
+    - emphasis
+  l1_issue: Many L1 speakers do not use cleft sentences, missing opportunities for
+    natural emphasis.
 teaching:
   methodology: Guided discovery
   tips:
-    - Use contrastive contexts (I thought it was X, but it was actually Y)
-    - Practice identifying the focused element
-    - Contrast with simple sentences
+  - Use contrastive contexts (I thought it was X, but it was actually Y)
+  - Practice identifying the focused element
+  - Contrast with simple sentences
   recommended_activities:
-    - name: Emphasis Practice
-      duration: 15
-      adaptation_notes: Students rewrite simple sentences using it-cleft for emphasis.
+  - name: Emphasis Practice
+    duration: 15
+    adaptation_notes: Students rewrite simple sentences using it-cleft for emphasis.
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

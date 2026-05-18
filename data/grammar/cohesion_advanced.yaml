@@ -1,98 +1,118 @@
 grammar_point: cohesion_advanced
-title: "Advanced Cohesion"
-description: "Advanced cohesive devices: discourse markers, lexical cohesion, substitution, ellipsis, and reference."
+title: Advanced Cohesion
+description: 'Advanced cohesive devices: discourse markers, lexical cohesion, substitution,
+  ellipsis, and reference.'
 level: C1
-
 meaning:
-  core_meaning: "Advanced cohesion refers to the linguistic devices that connect ideas across sentences and paragraphs. This includes discourse markers (however, moreover), lexical cohesion (repetition, synonyms), substitution (do so, so does he), ellipsis (omission of understood words), and reference (this, that, the former)."
-  timeline: "Timeless — applies to all texts regardless of tense."
-  contrast: "Basic cohesion = and, but, so vs Advanced cohesion = nevertheless, furthermore, in contrast, as a result"
+  core_meaning: Advanced cohesion refers to the linguistic devices that connect ideas
+    across sentences and paragraphs. This includes discourse markers (however, moreover),
+    lexical cohesion (repetition, synonyms), substitution (do so, so does he), ellipsis
+    (omission of understood words), and reference (this, that, the former).
+  timeline: Timeless — applies to all texts regardless of tense.
+  contrast: Basic cohesion = and, but, so vs Advanced cohesion = nevertheless, furthermore,
+    in contrast, as a result
   ccqs:
-    - question: Does this text use sophisticated connecting devices?
-      answer: Yes, that is advanced cohesion.
-    - question: Can you identify the cohesive devices?
-      answer: Look for discourse markers, reference words, substitution, and ellipsis.
+  - question: '''However'' and ''but'' both show contrast. Which is more formal and
+      suitable for academic writing?'
+    answer: '''However'' is more formal and is preferred in academic writing. ''But''
+      is more common in speech and informal writing.'
+  - question: In the sentence 'The study found significant results. These were published
+      in a journal,' what does 'These' refer to?
+    answer: '''These'' refers to ''significant results.'' This is an example of reference
+      as a cohesive device — using a pronoun to refer back to something already mentioned.'
+  - question: What is the difference between 'so' and 'as a result'?
+    answer: Both show result, but 'as a result' is more formal and is preferred in
+      academic writing. 'So' is more common in speech.
   example_generator:
     contexts:
+    - academic writing
+    - formal essays
+    - professional communication
+    - extended discourse
+    cultural_notes:
+    - Cohesion patterns vary across languages
+    - English academic writing values explicit cohesive devices
+    min_examples: 5
+form:
+  affirmative:
+    structure: 'Discourse markers: However, the results were inconclusive. / Reference:
+      This suggests that... / Substitution: I asked him to leave, and he did so.'
+    example_generator:
+      contexts:
       - academic writing
       - formal essays
       - professional communication
-      - extended discourse
-    cultural_notes:
-      - Cohesion patterns vary across languages
-      - English academic writing values explicit cohesive devices
-    min_examples: 5
-
-form:
-  affirmative:
-    structure: "Discourse markers: However, the results were inconclusive. / Reference: This suggests that... / Substitution: I asked him to leave, and he did so."
-    example_generator:
-      contexts:
-        - academic writing
-        - formal essays
-        - professional communication
       min_examples: 4
   negative:
-    structure: "Nevertheless, the project continued. / This does not mean that..."
+    structure: Nevertheless, the project continued. / This does not mean that...
     example_generator:
       contexts:
-        - negative cohesion
+      - negative cohesion
       min_examples: 3
   questions:
-    structure: "Can appear in questions: Does this mean that...?"
+    structure: 'Can appear in questions: Does this mean that...?'
     example_generator:
       contexts:
-        - question formation
+      - question formation
       min_examples: 3
-
 sub_rules:
-  - rule: "Discourse markers for contrast: however, nevertheless, on the other hand, conversely"
-    type: discourse
-    examples:
-      - The results were promising. However, more research is needed.
-      - On the other hand, there are significant drawbacks.
-  - rule: "Discourse markers for addition: furthermore, moreover, in addition, besides"
-    type: discourse
-    examples:
-      - The plan is expensive. Furthermore, it is risky.
-  - rule: "Reference words: this, that, these, those, the former, the latter"
-    type: reference
-    examples:
-      - The results were inconclusive. This suggests that more research is needed.
-      - Both methods have advantages. The former is cheaper; the latter is faster.
-  - rule: "Substitution: do so, so does/did + subject"
-    type: substitution
-    examples:
-      - She asked him to leave, and he did so.
-      - I enjoy reading, and so does my sister.
-
+- rule: 'Discourse markers for contrast: however, nevertheless, on the other hand,
+    conversely'
+  type: discourse
+  examples:
+  - The results were promising. However, more research is needed.
+  - On the other hand, there are significant drawbacks.
+- rule: 'Discourse markers for addition: furthermore, moreover, in addition, besides'
+  type: discourse
+  examples:
+  - The plan is expensive. Furthermore, it is risky.
+- rule: 'Reference words: this, that, these, those, the former, the latter'
+  type: reference
+  examples:
+  - The results were inconclusive. This suggests that more research is needed.
+  - Both methods have advantages. The former is cheaper; the latter is faster.
+- rule: 'Substitution: do so, so does/did + subject'
+  type: substitution
+  examples:
+  - She asked him to leave, and he did so.
+  - I enjoy reading, and so does my sister.
 use:
-  - context: "Academic writing"
-    description: "Connecting ideas in essays and reports"
-    examples:
-      - The data suggests a correlation. However, causation cannot be inferred.
-      - Furthermore, the sample size was small. This limits the generalizability of the findings.
-  - context: "Professional communication"
-    description: "Formal emails and reports"
-    examples:
-      - I have reviewed the proposal. While it has merit, I have several concerns.
-      - The deadline is approaching. As such, we need to accelerate our efforts.
-
+- context: Academic writing
+  description: Connecting ideas in essays and reports
+  examples:
+  - The data suggests a correlation. However, causation cannot be inferred.
+  - Furthermore, the sample size was small. This limits the generalizability of the
+    findings.
+- context: Professional communication
+  description: Formal emails and reports
+  examples:
+  - I have reviewed the proposal. While it has merit, I have several concerns.
+  - The deadline is approaching. As such, we need to accelerate our efforts.
 phonetics:
-  - note: "Discourse markers are typically followed by a pause (comma) in speech"
-    example_generator:
-      contexts:
-        - pausing
-        - reading aloud
-    l1_issue: "Many L1 speakers underuse cohesive devices, making writing sound choppy"
-
+- note: Discourse markers are typically followed by a pause (comma) in speech
+  example_generator:
+    contexts:
+    - pausing
+    - reading aloud
+  l1_issue: Many L1 speakers underuse cohesive devices, making writing sound choppy
 teaching:
-  methodology: "Guided discovery"
+  methodology: Guided discovery
   tips:
-    - Use authentic academic texts as examples
-    - Have students identify cohesive devices in texts
-    - Practice adding cohesion to student writing
+  - Use authentic academic texts as examples
+  - Have students identify cohesive devices in texts
+  - Practice adding cohesion to student writing
   recommended_activities:
-    - name: "Cohesion Analysis"
-      duration: 15
-      adaptation_notes: "Students identify and categorize cohesive devices in academic texts."
+  - name: Cohesion Analysis
+    duration: 15
+    adaptation_notes: Students identify and categorize cohesive devices in academic
+      texts.
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

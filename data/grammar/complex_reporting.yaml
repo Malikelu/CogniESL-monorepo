@@ -1,95 +1,104 @@
 grammar_point: complex_reporting
-title: "Complex Reporting Structures"
-description: "Advanced reporting structures: passive reporting verbs, reporting with that-clauses, and reporting questions."
+title: Complex Reporting Structures
+description: 'Advanced reporting structures: passive reporting verbs, reporting with
+  that-clauses, and reporting questions.'
 level: C1
-
 meaning:
-  core_meaning: "Reporting what others said or thought using complex structures. Includes passive reporting (It is said that...), reporting verbs with that-clauses, and reported questions."
-  timeline: "Depends on the tense of the reporting verb."
-  contrast: "Simple reporting = He said that he was tired. vs Passive reporting = It is said that he is rich."
+  core_meaning: Reporting what others said or thought using complex structures. Includes
+    passive reporting (It is said that...), reporting verbs with that-clauses, and
+    reported questions.
+  timeline: Depends on the tense of the reporting verb.
+  contrast: Simple reporting = He said that he was tired. vs Passive reporting = It
+    is said that he is rich.
   ccqs:
-    - question: "Is the speaker reporting their own words or someone else's?"
-      answer: "Someone else's — that is reporting."
-    - question: "Is the reporting verb active or passive?"
-      answer: "Passive = impersonal, Active = attributed."
+  - question: Is the speaker reporting their own words or someone else's?
+    answer: Someone else's — that is reporting.
+  - question: Is the reporting verb active or passive?
+    answer: Passive = impersonal, Active = attributed.
   example_generator:
     contexts:
+    - news reporting
+    - academic writing
+    - formal communication
+    - indirect speech
+    cultural_notes: []
+    min_examples: 5
+form:
+  affirmative:
+    structure: 'Passive: It is said/reported/believed + that + clause / Active: Subject
+      + reporting verb + that + clause'
+    example_generator:
+      contexts:
       - news reporting
       - academic writing
       - formal communication
-      - indirect speech
-    cultural_notes: []
-    min_examples: 5
-
-form:
-  affirmative:
-    structure: "Passive: It is said/reported/believed + that + clause / Active: Subject + reporting verb + that + clause"
-    example_generator:
-      contexts:
-        - news reporting
-        - academic writing
-        - formal communication
       min_examples: 4
   negative:
-    structure: "It is not believed that... / Experts deny that..."
+    structure: It is not believed that... / Experts deny that...
     example_generator:
       contexts:
-        - news reporting
-        - academic writing
-        - formal communication
+      - news reporting
+      - academic writing
+      - formal communication
       min_examples: 4
   questions:
-    structure: "Not typically used in questions."
+    structure: Not typically used in questions.
     example_generator:
       contexts:
-        - news reporting
-        - academic writing
-        - formal communication
+      - news reporting
+      - academic writing
+      - formal communication
       min_examples: 4
-
 sub_rules:
-  - rule: "Passive reporting verbs with it + passive + that"
-    type: grammatical
-    examples:
-      - It is believed that the economy will improve.
-      - It is known that smoking causes cancer.
-  - rule: "Active reporting verbs"
-    type: grammatical
-    examples:
-      - Scientists claim that the study is flawed.
-      - The government denied that there was a problem.
-  - rule: "Reported questions use whether or if, not question word order"
-    type: grammatical
-    examples:
-      - She asked whether I was coming.
-      - They wanted to know if I had finished.
-
+- rule: Passive reporting verbs with it + passive + that
+  type: grammatical
+  examples:
+  - It is believed that the economy will improve.
+  - It is known that smoking causes cancer.
+- rule: Active reporting verbs
+  type: grammatical
+  examples:
+  - Scientists claim that the study is flawed.
+  - The government denied that there was a problem.
+- rule: Reported questions use whether or if, not question word order
+  type: grammatical
+  examples:
+  - She asked whether I was coming.
+  - They wanted to know if I had finished.
 use:
-  - context: "News reporting"
-    description: "Reporting information from sources"
-    examples:
-      - It is reported that the president will resign.
-      - Sources claim that negotiations are ongoing.
-  - context: "Academic writing"
-    description: "Reporting research findings"
-    examples:
-      - Studies suggest that exercise improves mental health.
-      - It has been argued that technology is harmful.
-
+- context: News reporting
+  description: Reporting information from sources
+  examples:
+  - It is reported that the president will resign.
+  - Sources claim that negotiations are ongoing.
+- context: Academic writing
+  description: Reporting research findings
+  examples:
+  - Studies suggest that exercise improves mental health.
+  - It has been argued that technology is harmful.
 phonetics:
-  - note: "Stress on the reporting verb in passive structures"
-    example_generator:
-      contexts:
-        - emphasis
-    l1_issue: "Word order in reported questions — some L1 speakers keep question order."
-
+- note: Stress on the reporting verb in passive structures
+  example_generator:
+    contexts:
+    - emphasis
+  l1_issue: Word order in reported questions — some L1 speakers keep question order.
 teaching:
-  methodology: "Guided discovery"
+  methodology: Guided discovery
   tips:
-    - Use real news headlines as examples
-    - Practice transforming direct speech to reported speech
-    - Contrast active and passive reporting
+  - Use real news headlines as examples
+  - Practice transforming direct speech to reported speech
+  - Contrast active and passive reporting
   recommended_activities:
-    - name: "News Reporter"
-      duration: 15
-      adaptation_notes: "Students rewrite news headlines using passive reporting structures."
+  - name: News Reporter
+    duration: 15
+    adaptation_notes: Students rewrite news headlines using passive reporting structures.
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

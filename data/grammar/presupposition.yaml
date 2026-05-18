@@ -1,152 +1,228 @@
 grammar_point: presupposition
 title: Presupposition and Implicature
-description: Meanings that are implied rather than directly stated. Understanding what speakers take for granted and what utterances implicitly convey.
+description: Meanings that are implied rather than directly stated. Understanding
+  what speakers take for granted and what utterances implicitly convey.
 level: C1
-
 meaning:
-  core_meaning: Information that is taken for granted or assumed to be true by the speaker, rather than explicitly stated. Presuppositions survive negation — they remain true even when the sentence is negated.
-  timeline: Presuppositions are timeless background assumptions; they do not change with tense or aspect of the main clause.
-  contrast: "Presupposition = what the speaker assumes is already known (background).\n\nEntailment = what logically must be true if the sentence is true.\n\nImplicature = what is suggested or implied beyond the literal meaning.\n\nAssertion = what is directly stated (foreground)."
+  core_meaning: Information that is taken for granted or assumed to be true by the
+    speaker, rather than explicitly stated. Presuppositions survive negation — they
+    remain true even when the sentence is negated.
+  timeline: Presuppositions are timeless background assumptions; they do not change
+    with tense or aspect of the main clause.
+  contrast: 'Presupposition = what the speaker assumes is already known (background).
+
+
+    Entailment = what logically must be true if the sentence is true.
+
+
+    Implicature = what is suggested or implied beyond the literal meaning.
+
+
+    Assertion = what is directly stated (foreground).'
   ccqs:
-    - question: "If I say 'She regrets leaving,' do we know whether she left?"
-      answer: "Yes — 'She regrets leaving' presupposes that she left. Even 'She doesn't regret leaving' still presupposes she left."
-    - question: "If I say 'Have you stopped smoking?' what am I assuming?"
-      answer: "I am assuming you used to smoke. This is a loaded question because it traps you — both 'yes' and 'no' confirm you smoked."
-    - question: "Is 'It was Mary who broke the vase' the same as 'Mary broke the vase'?"
-      answer: "They share the entailment that Mary broke the vase, but the cleft version additionally presupposes that someone broke the vase."
+  - question: If I say 'She regrets leaving,' do we know whether she left?
+    answer: Yes — 'She regrets leaving' presupposes that she left. Even 'She doesn't
+      regret leaving' still presupposes she left.
+  - question: If I say 'Have you stopped smoking?' what am I assuming?
+    answer: I am assuming you used to smoke. This is a loaded question because it
+      traps you — both 'yes' and 'no' confirm you smoked.
+  - question: Is 'It was Mary who broke the vase' the same as 'Mary broke the vase'?
+    answer: They share the entailment that Mary broke the vase, but the cleft version
+      additionally presupposes that someone broke the vase.
   example_generator:
     contexts:
-      - everyday conversation
-      - legal and political discourse
-      - advertising and persuasion
-      - news reporting
+    - everyday conversation
+    - legal and political discourse
+    - advertising and persuasion
+    - news reporting
     cultural_notes:
-      - "Presuppositions are heavily used in political rhetoric and advertising to smuggle in assumptions — e.g., 'When did you stop cheating on your taxes?'"
-      - "Different cultures have different presuppositions about politeness, directness, and social hierarchy."
+    - Presuppositions are heavily used in political rhetoric and advertising to smuggle
+      in assumptions — e.g., 'When did you stop cheating on your taxes?'
+    - Different cultures have different presuppositions about politeness, directness,
+      and social hierarchy.
     min_examples: 6
-
 form:
   affirmative:
-    structure: "Presuppositions are triggered by specific words and structures:\n\nFactive verbs: know, realise, regret, discover → presuppose the truth of their complement.\n  'She knows (that) he left' → He left.\n\nChange-of-state verbs: stop, start, continue, finish → presuppose a prior state.\n  'He stopped running' → He was running before.\n\nImplicative verbs: manage, forget, happen → presuppose attempt or expectation.\n  'She managed to open it' → She tried to open it.\n\nDefinite descriptions: 'the', possessives → presuppose existence and uniqueness.\n  'The King of France' → There is a King of France.\n\nCleft sentences: 'It was X who...' → Someone did the action.\n  'It was John who called' → Someone called.\n\nWh-questions with 'why/how come': presuppose the embedded clause.\n  'Why did she leave?' → She left.\n\nIteratives: again, another, return, repeat → presuppose prior occurrence.\n  'She called again' → She called before."
+    structure: "Presuppositions are triggered by specific words and structures:\n\n\
+      Factive verbs: know, realise, regret, discover → presuppose the truth of their\
+      \ complement.\n  'She knows (that) he left' → He left.\n\nChange-of-state verbs:\
+      \ stop, start, continue, finish → presuppose a prior state.\n  'He stopped running'\
+      \ → He was running before.\n\nImplicative verbs: manage, forget, happen → presuppose\
+      \ attempt or expectation.\n  'She managed to open it' → She tried to open it.\n\
+      \nDefinite descriptions: 'the', possessives → presuppose existence and uniqueness.\n\
+      \  'The King of France' → There is a King of France.\n\nCleft sentences: 'It\
+      \ was X who...' → Someone did the action.\n  'It was John who called' → Someone\
+      \ called.\n\nWh-questions with 'why/how come': presuppose the embedded clause.\n\
+      \  'Why did she leave?' → She left.\n\nIteratives: again, another, return, repeat\
+      \ → presuppose prior occurrence.\n  'She called again' → She called before."
     example_generator:
       contexts:
-        - everyday conversation
-        - news and media
-        - academic writing
+      - everyday conversation
+      - news and media
+      - academic writing
       min_examples: 5
   negative:
-    structure: "Presuppositions typically survive negation. The presupposition remains even when the main clause is negated:\n\n'She doesn't regret leaving' → She left (presupposed).\n'He hasn't stopped smoking' → He was smoking (presupposed).\n'It wasn't Mary who broke the vase' → Someone broke the vase (presupposed).\n'I don't know that he came' → He may or may not have come (factive presupposition cancelled with 'don't know').\n\nNote: Some factive presuppositions can be cancelled with certain matrix predicates like 'don't know' or 'it's not the case that'."
+    structure: 'Presuppositions typically survive negation. The presupposition remains
+      even when the main clause is negated:
+
+
+      ''She doesn''t regret leaving'' → She left (presupposed).
+
+      ''He hasn''t stopped smoking'' → He was smoking (presupposed).
+
+      ''It wasn''t Mary who broke the vase'' → Someone broke the vase (presupposed).
+
+      ''I don''t know that he came'' → He may or may not have come (factive presupposition
+      cancelled with ''don''t know'').
+
+
+      Note: Some factive presuppositions can be cancelled with certain matrix predicates
+      like ''don''t know'' or ''it''s not the case that''.'
     example_generator:
       contexts:
-        - argumentation and debate
-        - legal cross-examination
-        - everyday denial
+      - argumentation and debate
+      - legal cross-examination
+      - everyday denial
       min_examples: 4
   questions:
-    structure: "Questions can carry presuppositions that the respondent may wish to challenge:\n\n'Have you stopped cheating?' → Presupposes you were cheating.\n'Who told you that?' → Presupposes someone told you.\n'Why are you late?' → Presupposes you are late.\n'When did you arrive?' → Presupposes you arrived.\n\nResponding to the presupposition: 'I never cheated in the first place!' challenges the loaded assumption."
+    structure: 'Questions can carry presuppositions that the respondent may wish to
+      challenge:
+
+
+      ''Have you stopped cheating?'' → Presupposes you were cheating.
+
+      ''Who told you that?'' → Presupposes someone told you.
+
+      ''Why are you late?'' → Presupposes you are late.
+
+      ''When did you arrive?'' → Presupposes you arrived.
+
+
+      Responding to the presupposition: ''I never cheated in the first place!'' challenges
+      the loaded assumption.'
     example_generator:
       contexts:
-        - legal questioning
-        - job interviews
-        - casual conversation
+      - legal questioning
+      - job interviews
+      - casual conversation
       min_examples: 4
-
 sub_rules:
-  - rule: "Factive presuppositions (verbs like know, realise, regret, discover, be aware)"
-    type: "grammatical"
-    examples:
-      - "She regrets saying it. → She said it."
-      - "I realised I was wrong. → I was wrong."
-      - "He discovered the truth. → The truth existed."
-  - rule: "Change-of-state presuppositions (stop, start, continue, finish, begin)"
-    type: "grammatical"
-    examples:
-      - "She stopped crying. → She was crying."
-      - "He started learning Japanese. → He wasn't learning Japanese before."
-      - "They continued working. → They were working before."
-  - rule: "Implicative presuppositions (manage, forget, happen, avoid)"
-    type: "grammatical"
-    examples:
-      - "She managed to escape. → She tried to escape."
-      - "I forgot to lock the door. → I was supposed to lock the door."
-      - "He happened to be there. → His being there was not planned."
-  - rule: "Definite description presuppositions (the, possessives, proper names)"
-    type: "grammatical"
-    examples:
-      - "The President of France visited. → There is a President of France."
-      - "My brother is a doctor. → I have a brother."
-      - "John's car broke down. → John has a car."
-  - rule: "Cleft sentence presuppositions (it-clefts, wh-clefts)"
-    type: "grammatical"
-    examples:
-      - "It was Sarah who won. → Someone won."
-      - "What I need is a holiday. → I need something."
-  - rule: "Iterative presuppositions (again, another, return, repeat, back)"
-    type: "grammatical"
-    examples:
-      - "She called again. → She called before."
-      - "Let's have another drink. → We've had at least one drink."
-      - "He returned to Paris. → He had been to Paris before."
-  - rule: "Scalar implicature (some implies not all, or implies and possibly all)"
-    type: "pragmatic"
-    examples:
-      - "Some students passed. → Not all students passed (implicature)."
-      - "It's possible she'll come. → It's not certain (implicature)."
-      - "I like some of his films. → Not all of them (implicature)."
-
+- rule: Factive presuppositions (verbs like know, realise, regret, discover, be aware)
+  type: grammatical
+  examples:
+  - She regrets saying it. → She said it.
+  - I realised I was wrong. → I was wrong.
+  - He discovered the truth. → The truth existed.
+- rule: Change-of-state presuppositions (stop, start, continue, finish, begin)
+  type: grammatical
+  examples:
+  - She stopped crying. → She was crying.
+  - He started learning Japanese. → He wasn't learning Japanese before.
+  - They continued working. → They were working before.
+- rule: Implicative presuppositions (manage, forget, happen, avoid)
+  type: grammatical
+  examples:
+  - She managed to escape. → She tried to escape.
+  - I forgot to lock the door. → I was supposed to lock the door.
+  - He happened to be there. → His being there was not planned.
+- rule: Definite description presuppositions (the, possessives, proper names)
+  type: grammatical
+  examples:
+  - The President of France visited. → There is a President of France.
+  - My brother is a doctor. → I have a brother.
+  - John's car broke down. → John has a car.
+- rule: Cleft sentence presuppositions (it-clefts, wh-clefts)
+  type: grammatical
+  examples:
+  - It was Sarah who won. → Someone won.
+  - What I need is a holiday. → I need something.
+- rule: Iterative presuppositions (again, another, return, repeat, back)
+  type: grammatical
+  examples:
+  - She called again. → She called before.
+  - Let's have another drink. → We've had at least one drink.
+  - He returned to Paris. → He had been to Paris before.
+- rule: Scalar implicature (some implies not all, or implies and possibly all)
+  type: pragmatic
+  examples:
+  - Some students passed. → Not all students passed (implicature).
+  - It's possible she'll come. → It's not certain (implicature).
+  - I like some of his films. → Not all of them (implicature).
 use:
-  - context: "Loaded questions and political rhetoric"
-    description: "Speakers use presuppositions to smuggle in assumptions that the listener may not agree with. Recognising these is critical for critical thinking."
-    examples:
-      - "When did you stop wasting money? → Presupposes you wasted money."
-      - "Why do you always lie? → Presupposes you always lie."
-      - "Have you no shame? → Presupposes you should feel shame."
-  - context: "Advertising and persuasion"
-    description: "Advertisers use presuppositions to assume the customer already wants or needs the product."
-    examples:
-      - "Our new formula cleans even better. → The old formula cleaned well."
-      - "When will you switch to our brand? → Assumes you will switch."
-      - "Tired of slow internet? → Assumes your internet is slow."
-  - context: "Legal and courtroom discourse"
-    description: "Lawyers use presuppositions to trap witnesses. Understanding them is essential for legal literacy."
-    examples:
-      - "Where were you hiding the money? → Presupposes money was hidden."
-      - "How fast were you going when you ran the red light? → Presupposes you ran it."
-  - context: "Everyday conversation and politeness"
-    description: "Presuppositions are used naturally in daily speech, often to show shared knowledge or build rapport."
-    examples:
-      - "Did you enjoy the film? → Presupposes you saw the film."
-      - "Can you close the window? → Presupposes you are able to."
-      - "I'm glad we had this chat. → Presupposes we had a chat."
-  - context: "Academic and scientific writing"
-    description: "Scholars use presuppositions to frame arguments and establish shared assumptions with readers."
-    examples:
-      - "As we have seen, the results confirm... → Presupposes prior discussion."
-      - "It is well known that... → Presupposes common knowledge."
-      - "The fact that X causes Y is established. → Presupposes X causes Y."
-
+- context: Loaded questions and political rhetoric
+  description: Speakers use presuppositions to smuggle in assumptions that the listener
+    may not agree with. Recognising these is critical for critical thinking.
+  examples:
+  - When did you stop wasting money? → Presupposes you wasted money.
+  - Why do you always lie? → Presupposes you always lie.
+  - Have you no shame? → Presupposes you should feel shame.
+- context: Advertising and persuasion
+  description: Advertisers use presuppositions to assume the customer already wants
+    or needs the product.
+  examples:
+  - Our new formula cleans even better. → The old formula cleaned well.
+  - When will you switch to our brand? → Assumes you will switch.
+  - Tired of slow internet? → Assumes your internet is slow.
+- context: Legal and courtroom discourse
+  description: Lawyers use presuppositions to trap witnesses. Understanding them is
+    essential for legal literacy.
+  examples:
+  - Where were you hiding the money? → Presupposes money was hidden.
+  - How fast were you going when you ran the red light? → Presupposes you ran it.
+- context: Everyday conversation and politeness
+  description: Presuppositions are used naturally in daily speech, often to show shared
+    knowledge or build rapport.
+  examples:
+  - Did you enjoy the film? → Presupposes you saw the film.
+  - Can you close the window? → Presupposes you are able to.
+  - I'm glad we had this chat. → Presupposes we had a chat.
+- context: Academic and scientific writing
+  description: Scholars use presuppositions to frame arguments and establish shared
+    assumptions with readers.
+  examples:
+  - As we have seen, the results confirm... → Presupposes prior discussion.
+  - It is well known that... → Presupposes common knowledge.
+  - The fact that X causes Y is established. → Presupposes X causes Y.
 phonetics:
-  - note: "Presupposed information is typically de-emphasised in speech — lower pitch, reduced stress, faster delivery. New information carries the main stress."
-    example_generator:
-      - "It was JOHN who called (not Mary) — stress on new info."
-      - "She REGRETS leaving (not that she left) — stress on the factive verb."
-    l1_issue: "Speakers from languages without factive verb distinctions (e.g., Mandarin, Japanese) may struggle to identify what is presupposed vs asserted."
-
+- note: Presupposed information is typically de-emphasised in speech — lower pitch,
+    reduced stress, faster delivery. New information carries the main stress.
+  example_generator:
+  - It was JOHN who called (not Mary) — stress on new info.
+  - She REGRETS leaving (not that she left) — stress on the factive verb.
+  l1_issue: Speakers from languages without factive verb distinctions (e.g., Mandarin,
+    Japanese) may struggle to identify what is presupposed vs asserted.
 teaching:
-  methodology: "Guided discovery — present examples and guide students to identify what is assumed vs stated."
+  methodology: Guided discovery — present examples and guide students to identify
+    what is assumed vs stated.
   tips:
-    - "Start with loaded questions: 'Have you stopped cheating?' Why is this question unfair?"
-    - "Use the negation test: negate the sentence and see what survives — that's the presupposition."
-    - "Compare factive vs non-factive: 'She knows he left' vs 'She thinks he left' — only the first presupposes he left."
-    - "Use real political speeches and advertisements to find hidden presuppositions."
-    - "Role-play: one student asks loaded questions, the other challenges the presupposition."
+  - 'Start with loaded questions: ''Have you stopped cheating?'' Why is this question
+    unfair?'
+  - 'Use the negation test: negate the sentence and see what survives — that''s the
+    presupposition.'
+  - 'Compare factive vs non-factive: ''She knows he left'' vs ''She thinks he left''
+    — only the first presupposes he left.'
+  - Use real political speeches and advertisements to find hidden presuppositions.
+  - 'Role-play: one student asks loaded questions, the other challenges the presupposition.'
   recommended_activities:
-    - name: "Presupposition detective"
-      duration: 20
-      adaptation_notes: "Give students a text (news article, political speech, ad) and have them highlight all presuppositions. Works well at B2+."
-    - name: "Loaded question challenge"
-      duration: 15
-      adaptation_notes: "Students ask each other loaded questions and practise challenging the presupposition rather than answering directly."
-    - name: "Negation survival test"
-      duration: 15
-      adaptation_notes: "Students negate sentences and identify which parts remain true. Good for reinforcing the concept."
+  - name: Presupposition detective
+    duration: 20
+    adaptation_notes: Give students a text (news article, political speech, ad) and
+      have them highlight all presuppositions. Works well at B2+.
+  - name: Loaded question challenge
+    duration: 15
+    adaptation_notes: Students ask each other loaded questions and practise challenging
+      the presupposition rather than answering directly.
+  - name: Negation survival test
+    duration: 15
+    adaptation_notes: Students negate sentences and identify which parts remain true.
+      Good for reinforcing the concept.
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

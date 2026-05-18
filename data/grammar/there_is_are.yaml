@@ -1,111 +1,190 @@
 grammar_point: there_is_are
-title: "There is / There are (Existential)"
-description: "Using 'there is' and 'there are' to state the existence or presence of something, and to introduce new information into discourse."
+title: There is / There are (Existential)
+description: Using 'there is' and 'there are' to state the existence or presence of
+  something, and to introduce new information into discourse.
 level: A1
-
 meaning:
-  core_meaning: "'There is / There are' introduces the existence or presence of something. It tells us that something exists, is present, or happens. The subject comes after the verb."
-  timeline: "Can be used in any tense: there is/are (present), there was/were (past), there will be (future), there has been / there have been (present perfect)."
-  contrast: "Compare with 'it is': 'There is a book on the table' (existence of a book) vs. 'It is on the table' (location of a known thing). 'There' introduces something new; 'it' refers to something already known."
+  core_meaning: '''There is / There are'' introduces the existence or presence of
+    something. It tells us that something exists, is present, or happens. The subject
+    comes after the verb.'
+  timeline: 'Can be used in any tense: there is/are (present), there was/were (past),
+    there will be (future), there has been / there have been (present perfect).'
+  contrast: 'Compare with ''it is'': ''There is a book on the table'' (existence of
+    a book) vs. ''It is on the table'' (location of a known thing). ''There'' introduces
+    something new; ''it'' refers to something already known.'
   ccqs:
-    - question: "Are we talking about something that exists or something we already know about?"
-      answer: "Something that exists or is present — we're introducing it."
-    - question: "Do we use 'there is' or 'there are' with plural nouns?"
-      answer: "'There are' with plural nouns."
-    - question: "Is 'there' the subject of the sentence?"
-      answer: "No — the real subject comes after the verb. 'There' is a dummy subject."
+  - question: Are we talking about something that exists or something we already know
+      about?
+    answer: Something that exists or is present — we're introducing it.
+  - question: Do we use 'there is' or 'there are' with plural nouns?
+    answer: '''There are'' with plural nouns.'
+  - question: Is 'there' the subject of the sentence?
+    answer: No — the real subject comes after the verb. 'There' is a dummy subject.
   example_generator:
-    contexts: ["describing rooms", "talking about places", "stating facts", "giving directions", "describing events"]
-    cultural_notes: ["This is one of the first structures taught in English and is essential for everyday communication."]
+    contexts:
+    - describing rooms
+    - talking about places
+    - stating facts
+    - giving directions
+    - describing events
+    cultural_notes:
+    - This is one of the first structures taught in English and is essential for everyday
+      communication.
     min_examples: 5
-
 form:
   affirmative:
-    structure: "There is + singular/uncountable noun / There are + plural noun"
+    structure: There is + singular/uncountable noun / There are + plural noun
     example_generator:
-      contexts: ["describing", "stating existence", "introducing"]
+      contexts:
+      - describing
+      - stating existence
+      - introducing
       min_examples: 4
   negative:
-    structure: "There is not (isn't) + singular/uncountable noun / There are not (aren't) + plural noun / There is no + noun / There are no + noun"
+    structure: There is not (isn't) + singular/uncountable noun / There are not (aren't)
+      + plural noun / There is no + noun / There are no + noun
     example_generator:
-      contexts: ["stating absence", "denying existence"]
+      contexts:
+      - stating absence
+      - denying existence
       min_examples: 3
   questions:
-    structure: "Is there + singular/uncountable noun? / Are there + plural noun?"
+    structure: Is there + singular/uncountable noun? / Are there + plural noun?
     example_generator:
-      contexts: ["asking about existence", "checking availability"]
+      contexts:
+      - asking about existence
+      - checking availability
       min_examples: 3
-
 sub_rules:
-  - rule: "'There is' with singular nouns: 'There is a cat in the garden.'"
-    type: "grammatical"
-    examples: ["There is a problem with the computer.", "There is an apple on the table.", "There is a good film on tonight."]
-  - rule: "'There are' with plural nouns: 'There are three cats in the garden.'"
-    type: "grammatical"
-    examples: ["There are many people at the party.", "There are some books on the shelf.", "There are no buses on Sundays."]
-  - rule: "'There is' with uncountable nouns: 'There is some milk in the fridge.'"
-    type: "grammatical"
-    examples: ["There is no time to waste.", "There is some information missing.", "There is too much noise."]
-  - rule: "Contractions in speech: 'there's' is commonly used even with plurals in informal speech, though 'there are' is grammatically correct."
-    type: "grammatical"
-    examples: ["There's a good restaurant nearby.", "There's two ways to do this. (informal)", "There are two ways to do this. (formal)"]
-  - rule: "Past tense: 'There was' (singular) / 'There were' (plural)"
-    type: "grammatical"
-    examples: ["There was a storm last night.", "There were many guests at the wedding.", "There was no one at home."]
-  - rule: "Future: 'There will be' (all nouns)"
-    type: "grammatical"
-    examples: ["There will be a meeting tomorrow.", "There will be no school on Friday.", "There will be opportunities ahead."]
-  - rule: "Present perfect: 'There has been' (singular/uncountable) / 'There have been' (plural)"
-    type: "grammatical"
-    examples: ["There has been an accident on the motorway.", "There have been several complaints.", "There has been no response yet."]
-  - rule: "With modals: 'There might be', 'There could be', 'There should be', 'There must be'"
-    type: "grammatical"
-    examples: ["There might be a delay.", "There could be a better solution.", "There must be a mistake."]
-
+- rule: '''There is'' with singular nouns: ''There is a cat in the garden.'''
+  type: grammatical
+  examples:
+  - There is a problem with the computer.
+  - There is an apple on the table.
+  - There is a good film on tonight.
+- rule: '''There are'' with plural nouns: ''There are three cats in the garden.'''
+  type: grammatical
+  examples:
+  - There are many people at the party.
+  - There are some books on the shelf.
+  - There are no buses on Sundays.
+- rule: '''There is'' with uncountable nouns: ''There is some milk in the fridge.'''
+  type: grammatical
+  examples:
+  - There is no time to waste.
+  - There is some information missing.
+  - There is too much noise.
+- rule: 'Contractions in speech: ''there''s'' is commonly used even with plurals in
+    informal speech, though ''there are'' is grammatically correct.'
+  type: grammatical
+  examples:
+  - There's a good restaurant nearby.
+  - There's two ways to do this. (informal)
+  - There are two ways to do this. (formal)
+- rule: 'Past tense: ''There was'' (singular) / ''There were'' (plural)'
+  type: grammatical
+  examples:
+  - There was a storm last night.
+  - There were many guests at the wedding.
+  - There was no one at home.
+- rule: 'Future: ''There will be'' (all nouns)'
+  type: grammatical
+  examples:
+  - There will be a meeting tomorrow.
+  - There will be no school on Friday.
+  - There will be opportunities ahead.
+- rule: 'Present perfect: ''There has been'' (singular/uncountable) / ''There have
+    been'' (plural)'
+  type: grammatical
+  examples:
+  - There has been an accident on the motorway.
+  - There have been several complaints.
+  - There has been no response yet.
+- rule: 'With modals: ''There might be'', ''There could be'', ''There should be'',
+    ''There must be'''
+  type: grammatical
+  examples:
+  - There might be a delay.
+  - There could be a better solution.
+  - There must be a mistake.
 use:
-  - context: "Describing places and rooms"
-    description: "Stating what exists in a location."
-    examples: ["There is a sofa and two armchairs in the living room.", "There are three bedrooms upstairs.", "There is a beautiful view from the window."]
-  - context: "Talking about events"
-    description: "Announcing or describing events that exist or will happen."
-    examples: ["There is a concert in the park this weekend.", "There was a fire at the factory yesterday.", "There will be a celebration after the exam."]
-  - context: "Giving information and warnings"
-    description: "Informing someone about something present or upcoming."
-    examples: ["There is a problem with your order.", "There are roadworks on the high street.", "There will be a test next week."]
-  - context: "Introducing new topics in conversation"
-    description: "Bringing a new subject into the discussion."
-    examples: ["There is something I need to tell you.", "There are a few things we should discuss.", "There was an interesting article in the paper today."]
-
+- context: Describing places and rooms
+  description: Stating what exists in a location.
+  examples:
+  - There is a sofa and two armchairs in the living room.
+  - There are three bedrooms upstairs.
+  - There is a beautiful view from the window.
+- context: Talking about events
+  description: Announcing or describing events that exist or will happen.
+  examples:
+  - There is a concert in the park this weekend.
+  - There was a fire at the factory yesterday.
+  - There will be a celebration after the exam.
+- context: Giving information and warnings
+  description: Informing someone about something present or upcoming.
+  examples:
+  - There is a problem with your order.
+  - There are roadworks on the high street.
+  - There will be a test next week.
+- context: Introducing new topics in conversation
+  description: Bringing a new subject into the discussion.
+  examples:
+  - There is something I need to tell you.
+  - There are a few things we should discuss.
+  - There was an interesting article in the paper today.
 phonetics:
-  - note: "'There is' is often contracted to /ðeərɪz/ or even /ðəz/ in rapid speech. 'There are' is /ðeərɑː/."
-    example_generator:
-      contexts: ["listening practice", "pronunciation drills"]
-    l1_issue: "Speakers of languages that don't use an existential construction (e.g., Spanish 'Hay', Japanese 'あります') may try to translate directly and omit 'there' or use 'it is' instead."
-  - note: "'There was' is pronounced /ðeə wɒz/ and 'There were' is /ðeə wɜː/. The 'were' is often reduced in connected speech."
-    example_generator:
-      contexts: ["past tense narration", "storytelling"]
-    l1_issue: "Learners may confuse 'there', 'their', and 'they're' in writing, though they sound the same."
-
+- note: '''There is'' is often contracted to /ðeərɪz/ or even /ðəz/ in rapid speech.
+    ''There are'' is /ðeərɑː/.'
+  example_generator:
+    contexts:
+    - listening practice
+    - pronunciation drills
+  l1_issue: Speakers of languages that don't use an existential construction (e.g.,
+    Spanish 'Hay', Japanese 'あります') may try to translate directly and omit 'there'
+    or use 'it is' instead.
+- note: '''There was'' is pronounced /ðeə wɒz/ and ''There were'' is /ðeə wɜː/. The
+    ''were'' is often reduced in connected speech.'
+  example_generator:
+    contexts:
+    - past tense narration
+    - storytelling
+  l1_issue: Learners may confuse 'there', 'their', and 'they're' in writing, though
+    they sound the same.
 teaching:
-  methodology: "PPP"
-  tips: [
-    "Start with 'there is' and concrete, visible objects in the classroom.",
-    "Use realia and pictures to make the concept of existence tangible.",
-    "Introduce 'there are' only after students are comfortable with 'there is'.",
-    "Practice the difference between 'there is' (singular) and 'there are' (plural) extensively.",
-    "Use the structure for classroom routines: 'There is homework today. There are no classes tomorrow.'",
-    "Introduce negatives and questions in the same lesson to give a complete picture."
-  ]
+  methodology: PPP
+  tips:
+  - Start with 'there is' and concrete, visible objects in the classroom.
+  - Use realia and pictures to make the concept of existence tangible.
+  - Introduce 'there are' only after students are comfortable with 'there is'.
+  - Practice the difference between 'there is' (singular) and 'there are' (plural)
+    extensively.
+  - 'Use the structure for classroom routines: ''There is homework today. There are
+    no classes tomorrow.'''
+  - Introduce negatives and questions in the same lesson to give a complete picture.
   recommended_activities:
-    - name: "Classroom treasure hunt"
-      duration: 10
-      adaptation_notes: "Hide objects around the room. Students describe what they find: 'There is a pen under the chair.'"
-    - name: "Picture description"
-      duration: 10
-      adaptation_notes: "Students describe a busy picture using 'there is/are': 'There are five people in the park.'"
-    - name: "True or false"
-      duration: 10
-      adaptation_notes: "Students make statements about the classroom or school. Others say if they are true or false."
-    - name: "Question practice"
-      duration: 10
-      adaptation_notes: "Students ask each other 'Is there...?' and 'Are there...?' questions about their town, school, or home."
+  - name: Classroom treasure hunt
+    duration: 10
+    adaptation_notes: 'Hide objects around the room. Students describe what they find:
+      ''There is a pen under the chair.'''
+  - name: Picture description
+    duration: 10
+    adaptation_notes: 'Students describe a busy picture using ''there is/are'': ''There
+      are five people in the park.'''
+  - name: True or false
+    duration: 10
+    adaptation_notes: Students make statements about the classroom or school. Others
+      say if they are true or false.
+  - name: Question practice
+    duration: 10
+    adaptation_notes: Students ask each other 'Is there...?' and 'Are there...?' questions
+      about their town, school, or home.
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

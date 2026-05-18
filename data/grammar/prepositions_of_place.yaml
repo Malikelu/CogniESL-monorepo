@@ -1,110 +1,181 @@
 grammar_point: prepositions_of_place
-title: "Prepositions of Place (in, on, at)"
-description: "Words that show the position or location of a noun relative to another object or place. Critical for describing location."
+title: Prepositions of Place (in, on, at)
+description: Words that show the position or location of a noun relative to another
+  object or place. Critical for describing location.
 level: A1
-
 meaning:
-  core_meaning: "Prepositions of place answer the question 'Where?' They show the position of something relative to another object or place. The correct preposition depends on the type of space: 'in' for enclosed spaces, 'on' for surfaces, 'at' for specific points."
-  timeline: "N/A — not tense-based. Describes location regardless of time."
-  contrast: "'In' = enclosed space (in the box, in the room, in Brazil) vs 'On' = surface (on the table, on the wall, on Main Street) vs 'At' = specific point (at the bus stop, at home, at the door)"
+  core_meaning: 'Prepositions of place answer the question ''Where?'' They show the
+    position of something relative to another object or place. The correct preposition
+    depends on the type of space: ''in'' for enclosed spaces, ''on'' for surfaces,
+    ''at'' for specific points.'
+  timeline: N/A — not tense-based. Describes location regardless of time.
+  contrast: '''In'' = enclosed space (in the box, in the room, in Brazil) vs ''On''
+    = surface (on the table, on the wall, on Main Street) vs ''At'' = specific point
+    (at the bus stop, at home, at the door)'
   ccqs:
-    - question: "Is this about an enclosed space, a surface, or a specific point?"
-      answer: "Enclosed space = in. Surface = on. Specific point = at."
-    - question: "Do we say 'in the table' or 'on the table'?"
-      answer: "'On the table' — a table is a surface, so we use 'on'."
-    - question: "What preposition do we use with countries and cities?"
-      answer: "'In' — in Brazil, in London, in Tokyo. These are large enclosed areas."
+  - question: Is this about an enclosed space, a surface, or a specific point?
+    answer: Enclosed space = in. Surface = on. Specific point = at.
+  - question: Do we say 'in the table' or 'on the table'?
+    answer: '''On the table'' — a table is a surface, so we use ''on''.'
+  - question: What preposition do we use with countries and cities?
+    answer: '''In'' — in Brazil, in London, in Tokyo. These are large enclosed areas.'
   example_generator:
     contexts:
-      - describing rooms and places
-      - classroom objects
-      - cities and countries
+    - describing rooms and places
+    - classroom objects
+    - cities and countries
     cultural_notes:
-      - "Use diverse locations and contexts"
-      - "Avoid assuming specific cultural knowledge"
-      - "Keep examples concrete and visual"
+    - Use diverse locations and contexts
+    - Avoid assuming specific cultural knowledge
+    - Keep examples concrete and visual
     min_examples: 5
-
 form:
   affirmative:
-    structure: "Subject + be + preposition + location"
+    structure: Subject + be + preposition + location
     example_generator:
-      - "The book is on the table."
-      - "She is in the room."
-      - "I am at the bus stop."
-      - "The picture is on the wall."
+    - The book is on the table.
+    - She is in the room.
+    - I am at the bus stop.
+    - The picture is on the wall.
     min_examples: 4
   negative:
-    structure: "Subject + be + not + preposition + location"
+    structure: Subject + be + not + preposition + location
     example_generator:
-      - "The book isn't on the table."
-      - "She isn't in the room."
-      - "I'm not at the bus stop."
+    - The book isn't on the table.
+    - She isn't in the room.
+    - I'm not at the bus stop.
     min_examples: 4
   questions:
-    structure: "Be + subject + preposition + location?"
+    structure: Be + subject + preposition + location?
     example_generator:
-      - "Is the book on the table?"
-      - "Is she in the room?"
-      - "Are you at the bus stop?"
+    - Is the book on the table?
+    - Is she in the room?
+    - Are you at the bus stop?
     min_examples: 4
-
 sub_rules:
-  - rule: "In: enclosed spaces (in the box, in the room, in the car, in Brazil, in London)"
-    type: grammatical
-    examples: ["in the box", "in the room", "in the car", "in the kitchen", "in Brazil", "in London", "in the city", "in the country"]
-  - rule: "On: surfaces (on the table, on the wall, on the floor, on the page, on Main Street)"
-    type: grammatical
-    examples: ["on the table", "on the wall", "on the floor", "on the page", "on the ceiling", "on Main Street", "on the 2nd floor", "on the bus"]
-  - rule: "At: specific points (at the bus stop, at home, at school, at the door, at the airport)"
-    type: grammatical
-    examples: ["at the bus stop", "at home", "at school", "at work", "at the door", "at the airport", "at the station", "at 123 Main Street"]
-  - rule: "In vs at for buildings: 'in' = inside the building, 'at' = at the location (could be inside or outside)"
-    type: grammatical
-    examples: ["I'm in the hospital. (inside the building as a patient)", "I'm at the hospital. (at the location — could be visiting)", "She's in the school. (inside)", "She's at school. (at the location)"]
-
+- rule: 'In: enclosed spaces (in the box, in the room, in the car, in Brazil, in London)'
+  type: grammatical
+  examples:
+  - in the box
+  - in the room
+  - in the car
+  - in the kitchen
+  - in Brazil
+  - in London
+  - in the city
+  - in the country
+- rule: 'On: surfaces (on the table, on the wall, on the floor, on the page, on Main
+    Street)'
+  type: grammatical
+  examples:
+  - on the table
+  - on the wall
+  - on the floor
+  - on the page
+  - on the ceiling
+  - on Main Street
+  - on the 2nd floor
+  - on the bus
+- rule: 'At: specific points (at the bus stop, at home, at school, at the door, at
+    the airport)'
+  type: grammatical
+  examples:
+  - at the bus stop
+  - at home
+  - at school
+  - at work
+  - at the door
+  - at the airport
+  - at the station
+  - at 123 Main Street
+- rule: 'In vs at for buildings: ''in'' = inside the building, ''at'' = at the location
+    (could be inside or outside)'
+  type: grammatical
+  examples:
+  - I'm in the hospital. (inside the building as a patient)
+  - I'm at the hospital. (at the location — could be visiting)
+  - She's in the school. (inside)
+  - She's at school. (at the location)
 use:
-  - context: "Describing rooms and places"
-    description: "Saying where things are in a room or building"
-    examples: ["The book is on the table.", "The cat is under the chair.", "The picture is on the wall.", "The shoes are in the box.", "She is in the kitchen."]
-  - context: "Describing cities and countries"
-    description: "Saying where places are located"
-    examples: ["I live in Brazil.", "She works in London.", "The Eiffel Tower is in Paris.", "We are in the city center.", "They live in a small town."]
-  - context: "Giving directions"
-    description: "Describing locations for navigation"
-    examples: ["The bank is on Main Street.", "The hospital is at the end of the road.", "Turn left at the traffic lights.", "The restaurant is next to the bank.", "The school is between the park and the library."]
-
+- context: Describing rooms and places
+  description: Saying where things are in a room or building
+  examples:
+  - The book is on the table.
+  - The cat is under the chair.
+  - The picture is on the wall.
+  - The shoes are in the box.
+  - She is in the kitchen.
+- context: Describing cities and countries
+  description: Saying where places are located
+  examples:
+  - I live in Brazil.
+  - She works in London.
+  - The Eiffel Tower is in Paris.
+  - We are in the city center.
+  - They live in a small town.
+- context: Giving directions
+  description: Describing locations for navigation
+  examples:
+  - The bank is on Main Street.
+  - The hospital is at the end of the road.
+  - Turn left at the traffic lights.
+  - The restaurant is next to the bank.
+  - The school is between the park and the library.
 phonetics:
-  - note: "Prepositions of place are usually unstressed: 'in' → /ɪn/, 'on' → /ɒn/, 'at' → /ət/. 'The book is on the table' sounds like /ðə bʊk ɪz ɒn ðə teɪbl/."
-    example_generator:
-      - "in /ɪn/"
-      - "on /ɒn/"
-      - "at /ət/"
-    l1_issue: "Portuguese and Spanish speakers often over-pronounce prepositions. Teach the weak forms for natural speech."
-  - note: "Contractions are natural: 'It's on the table' /ɪts ɒn ðə teɪbl/, 'She's in the room' /ʃiːz ɪn ðə ruːm/."
-    example_generator:
-      - "it's /ɪts/"
-      - "she's /ʃiːz/"
-    l1_issue: "Many L1 speakers avoid contractions. Teach them for natural-sounding speech."
-
+- note: 'Prepositions of place are usually unstressed: ''in'' → /ɪn/, ''on'' → /ɒn/,
+    ''at'' → /ət/. ''The book is on the table'' sounds like /ðə bʊk ɪz ɒn ðə teɪbl/.'
+  example_generator:
+  - in /ɪn/
+  - on /ɒn/
+  - at /ət/
+  l1_issue: Portuguese and Spanish speakers often over-pronounce prepositions. Teach
+    the weak forms for natural speech.
+- note: 'Contractions are natural: ''It''s on the table'' /ɪts ɒn ðə teɪbl/, ''She''s
+    in the room'' /ʃiːz ɪn ðə ruːm/.'
+  example_generator:
+  - it's /ɪts/
+  - she's /ʃiːz/
+  l1_issue: Many L1 speakers avoid contractions. Teach them for natural-sounding speech.
 teaching:
-  methodology: "PPP with real objects and pictures"
+  methodology: PPP with real objects and pictures
   tips:
-    - "Use real objects: put a book in a box, on a table, under a chair. This makes the meaning immediately clear."
-    - "Drill with flashcards: show a picture and ask 'Where is the ball?' Students answer: 'It's on the table.'"
-    - "Practice with maps: 'The bank is on Main Street, in London.' Uses prepositions in a real context."
-    - "Teach the in/at distinction for buildings: 'in the hospital' (inside) vs 'at the hospital' (at the location)."
-    - "Use classroom objects: 'Where is the pen? It's in my bag. It's on the desk. It's at the front of the room.'"
+  - 'Use real objects: put a book in a box, on a table, under a chair. This makes
+    the meaning immediately clear.'
+  - 'Drill with flashcards: show a picture and ask ''Where is the ball?'' Students
+    answer: ''It''s on the table.'''
+  - 'Practice with maps: ''The bank is on Main Street, in London.'' Uses prepositions
+    in a real context.'
+  - 'Teach the in/at distinction for buildings: ''in the hospital'' (inside) vs ''at
+    the hospital'' (at the location).'
+  - 'Use classroom objects: ''Where is the pen? It''s in my bag. It''s on the desk.
+    It''s at the front of the room.'''
   recommended_activities:
-    - name: "Where Is It?"
-      duration: 10
-      adaptation_notes: "Hide objects around the room. Students ask: 'Where is the pen?' Others answer: 'It's under the chair.' Practices prepositions of place with real objects."
-    - name: "Picture Description"
-      duration: 15
-      adaptation_notes: "Show a picture of a room. Students describe where things are: 'The cat is on the table. The book is in the box.' Practices prepositions in context."
-    - name: "In, On, or At?"
-      duration: 10
-      adaptation_notes: "Teacher says a location. Students choose the correct preposition: '___ the table' (on), '___ Brazil' (in), '___ the bus stop' (at)."
-    - name: "Map Directions"
-      duration: 15
-      adaptation_notes: "Students give directions using prepositions of place: 'The bank is on Main Street. It's next to the hospital.' Practices prepositions with maps."
+  - name: Where Is It?
+    duration: 10
+    adaptation_notes: 'Hide objects around the room. Students ask: ''Where is the
+      pen?'' Others answer: ''It''s under the chair.'' Practices prepositions of place
+      with real objects.'
+  - name: Picture Description
+    duration: 15
+    adaptation_notes: 'Show a picture of a room. Students describe where things are:
+      ''The cat is on the table. The book is in the box.'' Practices prepositions
+      in context.'
+  - name: In, On, or At?
+    duration: 10
+    adaptation_notes: 'Teacher says a location. Students choose the correct preposition:
+      ''___ the table'' (on), ''___ Brazil'' (in), ''___ the bus stop'' (at).'
+  - name: Map Directions
+    duration: 15
+    adaptation_notes: 'Students give directions using prepositions of place: ''The
+      bank is on Main Street. It''s next to the hospital.'' Practices prepositions
+      with maps.'
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

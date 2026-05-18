@@ -1,89 +1,98 @@
 grammar_point: present_perfect_recent
-title: "Present Perfect of Recent Past"
-description: "Using present perfect with just to talk about actions that have just been completed."
+title: Present Perfect of Recent Past
+description: Using present perfect with just to talk about actions that have just
+  been completed.
 level: B1
-
 meaning:
-  core_meaning: "Actions that have just finished — very recent past with present relevance. Usually with just."
-  timeline: "Just now — moments before speaking."
-  contrast: "Recent past = I have just arrived. (moments ago) vs Past simple = I arrived an hour ago. (specific time)"
+  core_meaning: Actions that have just finished — very recent past with present relevance.
+    Usually with just.
+  timeline: Just now — moments before speaking.
+  contrast: Recent past = I have just arrived. (moments ago) vs Past simple = I arrived
+    an hour ago. (specific time)
   ccqs:
-    - question: Did this happen moments ago?
-      answer: Yes, it is very recent.
-    - question: "Is just used?"
-      answer: "Yes — just is commonly used with the present perfect to emphasize that something happened very recently."
+  - question: Did this happen moments ago?
+    answer: Yes, it is very recent.
+  - question: Is just used?
+    answer: Yes — just is commonly used with the present perfect to emphasize that
+      something happened very recently.
   example_generator:
     contexts:
+    - arrivals and departures
+    - completed actions
+    - news and announcements
+    cultural_notes: []
+    min_examples: 5
+form:
+  affirmative:
+    structure: 'Subject + have/has + just + past participle: I have just arrived.
+      / She has just finished.'
+    example_generator:
+      contexts:
       - arrivals and departures
       - completed actions
       - news and announcements
-    cultural_notes: []
-    min_examples: 5
-
-form:
-  affirmative:
-    structure: "Subject + have/has + just + past participle: I have just arrived. / She has just finished."
-    example_generator:
-      contexts:
-        - arrivals and departures
-        - completed actions
-        - news and announcements
       min_examples: 4
   negative:
-    structure: "Subject + have/has + not + yet: I have not finished yet."
+    structure: 'Subject + have/has + not + yet: I have not finished yet.'
     example_generator:
       contexts:
-        - arrivals and departures
-        - completed actions
-        - news and announcements
+      - arrivals and departures
+      - completed actions
+      - news and announcements
       min_examples: 4
   questions:
-    structure: "Have/Has + subject + just + past participle?: Have you just arrived?"
+    structure: 'Have/Has + subject + just + past participle?: Have you just arrived?'
     example_generator:
       contexts:
-        - arrivals and departures
-        - completed actions
-        - news and announcements
+      - arrivals and departures
+      - completed actions
+      - news and announcements
       min_examples: 4
-
 sub_rules:
-  - rule: Just goes between have/has and the past participle
-    type: word_order
-    examples:
-      - I have just eaten.
-      - She has just left.
-  - rule: Also used with already and yet
-    type: grammatical
-    examples:
-      - I have already done it.
-      - Have you finished yet?
-
+- rule: Just goes between have/has and the past participle
+  type: word_order
+  examples:
+  - I have just eaten.
+  - She has just left.
+- rule: Also used with already and yet
+  type: grammatical
+  examples:
+  - I have already done it.
+  - Have you finished yet?
 use:
-  - context: Arrivals and departures
-    description: Talking about very recent events
-    examples:
-      - I have just arrived at the airport.
-      - She has just left the office.
-  - context: Completed actions
-    description: Reporting something that just finished
-    examples:
-      - I have just finished my homework.
-      - We have just heard the news.
-
+- context: Arrivals and departures
+  description: Talking about very recent events
+  examples:
+  - I have just arrived at the airport.
+  - She has just left the office.
+- context: Completed actions
+  description: Reporting something that just finished
+  examples:
+  - I have just finished my homework.
+  - We have just heard the news.
 phonetics:
-  - note: Stress on just for emphasis
-    example_generator:
-      contexts:
-        - emphasis
-    l1_issue: Many L1 speakers use present simple when present perfect is needed.
-
+- note: Stress on just for emphasis
+  example_generator:
+    contexts:
+    - emphasis
+  l1_issue: Many L1 speakers use present simple when present perfect is needed.
 teaching:
   methodology: PPP
   tips:
-    - Use real classroom events
-    - Practice with just, already, yet
-    - Contrast with past simple using timelines
+  - Use real classroom events
+  - Practice with just, already, yet
+  - Contrast with past simple using timelines
   recommended_activities:
-    - name: News Reporter
-      duration: 10
-      adaptation_notes: Students report recent events using have just.
+  - name: News Reporter
+    duration: 10
+    adaptation_notes: Students report recent events using have just.
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

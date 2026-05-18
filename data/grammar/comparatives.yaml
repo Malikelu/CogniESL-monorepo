@@ -1,106 +1,193 @@
 grammar_point: comparatives
 title: Comparatives
-description: Structures used to compare two things, people, or situations, showing that one has more or less of a quality than the other.
+description: Structures used to compare two things, people, or situations, showing
+  that one has more or less of a quality than the other.
 level: A2
-
 meaning:
-  core_meaning: "Comparatives are used to compare two things and show the difference between them. They indicate that one thing has more, less, or a greater degree of a quality than the other. Comparatives are formed by adding '-er' to short adjectives or using 'more/less' before longer adjectives."
-  timeline: "Timeless — comparatives can be used in any tense."
-  contrast: |
-    Positive (no comparison): "This book is interesting."
-    Comparative: "This book is more interesting than that one."
-    Superlative: "This is the most interesting book I have ever read."
-  ccqs:
-    - question: "Are we comparing two things?"
-      answer: "Yes — the comparative is used to show the difference between two items."
-    - question: "Is one thing more/less than the other?"
-      answer: "Yes — the comparative shows which has more or less of a quality."
-  example_generator:
-    contexts: ["shopping and prices", "describing people", "comparing places", "sports and competitions", "opinions and preferences"]
-    cultural_notes: ["Direct comparisons can be considered impolite in some cultures — soften with 'a bit' or 'slightly'", "In some languages, comparison is expressed differently (e.g., 'more big' instead of 'bigger')"]
-    min_examples: 5
+  core_meaning: Comparatives are used to compare two things and show the difference
+    between them. They indicate that one thing has more, less, or a greater degree
+    of a quality than the other. Comparatives are formed by adding '-er' to short
+    adjectives or using 'more/less' before longer adjectives.
+  timeline: Timeless — comparatives can be used in any tense.
+  contrast: 'Positive (no comparison): "This book is interesting."
 
+    Comparative: "This book is more interesting than that one."
+
+    Superlative: "This is the most interesting book I have ever read."
+
+    '
+  ccqs:
+  - question: Are we comparing two things?
+    answer: Yes — the comparative is used to show the difference between two items.
+  - question: Is one thing more/less than the other?
+    answer: Yes — the comparative shows which has more or less of a quality.
+  example_generator:
+    contexts:
+    - shopping and prices
+    - describing people
+    - comparing places
+    - sports and competitions
+    - opinions and preferences
+    cultural_notes:
+    - Direct comparisons can be considered impolite in some cultures — soften with
+      'a bit' or 'slightly'
+    - In some languages, comparison is expressed differently (e.g., 'more big' instead
+      of 'bigger')
+    min_examples: 5
 form:
   affirmative:
-    structure: "Short adjectives (1 syllable): adjective + -er + than: 'taller than', 'faster than', 'bigger than'. Long adjectives (2+ syllables): more/less + adjective + than: 'more interesting than', 'less expensive than'."
+    structure: 'Short adjectives (1 syllable): adjective + -er + than: ''taller than'',
+      ''faster than'', ''bigger than''. Long adjectives (2+ syllables): more/less
+      + adjective + than: ''more interesting than'', ''less expensive than''.'
     example_generator:
-      contexts: ["comparing people", "comparing objects", "comparing places"]
+      contexts:
+      - comparing people
+      - comparing objects
+      - comparing places
       min_examples: 4
   negative:
-    structure: "not as + adjective + as: 'not as tall as', 'not as expensive as'. This expresses that one thing has less of a quality."
+    structure: 'not as + adjective + as: ''not as tall as'', ''not as expensive as''.
+      This expresses that one thing has less of a quality.'
     example_generator:
-      contexts: ["saying something is less", "softening comparisons", "expressing equality"]
+      contexts:
+      - saying something is less
+      - softening comparisons
+      - expressing equality
       min_examples: 4
   questions:
-    structure: "Which + be + comparative?: 'Which is bigger?' / Be + subject + comparative + than...?: 'Is London bigger than Paris?' / How + adjective + be + subject?: 'How tall is he?'"
+    structure: 'Which + be + comparative?: ''Which is bigger?'' / Be + subject + comparative
+      + than...?: ''Is London bigger than Paris?'' / How + adjective + be + subject?:
+      ''How tall is he?'''
     example_generator:
-      contexts: ["asking for comparisons", "quizzes", "finding information"]
+      contexts:
+      - asking for comparisons
+      - quizzes
+      - finding information
       min_examples: 4
-
 sub_rules:
-  - rule: "One-syllable adjectives: add -er"
-    type: "spelling"
-    examples: ["tall → taller", "fast → faster", "cheap → cheaper", "old → older", "young → younger"]
-  - rule: "One-syllable adjectives ending in -e: add -r"
-    type: "spelling"
-    examples: ["nice → nicer", "safe → safer", "large → larger", "late → later"]
-  - rule: "One-syllable adjectives ending in consonant-vowel-consonant: double the consonant and add -er"
-    type: "spelling"
-    examples: ["big → bigger", "hot → hotter", "thin → thinner", "fat → fatter"]
-  - rule: "Two-syllable adjectives ending in -y: change y to i and add -er"
-    type: "spelling"
-    examples: ["happy → happier", "easy → easier", "busy → busier", "early → earlier"]
-  - rule: "Adjectives with 2+ syllables (not ending in -y): use more/less"
-    type: "grammatical"
-    examples: ["beautiful → more beautiful", "expensive → more expensive", "interesting → more interesting", "comfortable → more comfortable"]
-  - rule: "Irregular comparatives"
-    type: "irregular"
-    examples: ["good → better", "bad → worse", "far → further/farther", "little → less", "much/many → more"]
-  - rule: "Modifiers with comparatives: much, a lot, a bit, slightly, far"
-    type: "grammatical"
-    examples: ["much taller (a big difference)", "a bit taller (a small difference)", "slightly more expensive", "far more interesting"]
-
+- rule: 'One-syllable adjectives: add -er'
+  type: spelling
+  examples:
+  - tall → taller
+  - fast → faster
+  - cheap → cheaper
+  - old → older
+  - young → younger
+- rule: 'One-syllable adjectives ending in -e: add -r'
+  type: spelling
+  examples:
+  - nice → nicer
+  - safe → safer
+  - large → larger
+  - late → later
+- rule: 'One-syllable adjectives ending in consonant-vowel-consonant: double the consonant
+    and add -er'
+  type: spelling
+  examples:
+  - big → bigger
+  - hot → hotter
+  - thin → thinner
+  - fat → fatter
+- rule: 'Two-syllable adjectives ending in -y: change y to i and add -er'
+  type: spelling
+  examples:
+  - happy → happier
+  - easy → easier
+  - busy → busier
+  - early → earlier
+- rule: 'Adjectives with 2+ syllables (not ending in -y): use more/less'
+  type: grammatical
+  examples:
+  - beautiful → more beautiful
+  - expensive → more expensive
+  - interesting → more interesting
+  - comfortable → more comfortable
+- rule: Irregular comparatives
+  type: irregular
+  examples:
+  - good → better
+  - bad → worse
+  - far → further/farther
+  - little → less
+  - much/many → more
+- rule: 'Modifiers with comparatives: much, a lot, a bit, slightly, far'
+  type: grammatical
+  examples:
+  - much taller (a big difference)
+  - a bit taller (a small difference)
+  - slightly more expensive
+  - far more interesting
 use:
-  - name: "Comparing people"
-    description: "Used to compare physical appearance, abilities, or personality."
-    examples: ["My brother is taller than me.", "She is more outgoing than her sister.", "He is a better swimmer than I am."]
-    key_point: "Very common in everyday conversation."
-  - name: "Comparing things and products"
-    description: "Used when shopping or choosing between options."
-    examples: ["This phone is cheaper than that one.", "The red dress is more beautiful than the blue one.", "This car is less expensive to run."]
-    key_point: "Essential for shopping and making decisions."
-  - name: "Comparing places"
-    description: "Used to compare cities, countries, or locations."
-    examples: ["London is bigger than Edinburgh.", "Spain is warmer than England.", "The countryside is more peaceful than the city."]
-    key_point: "Common in travel discussions and geography."
-  - name: "Expressing opinions and preferences"
-    description: "Used to give opinions about which thing is better or worse."
-    examples: ["I think this film is better than the last one.", "Coffee is more popular than tea in my country.", "Winter is less enjoyable than summer."]
-    key_point: "Softens opinions by framing them as comparisons."
-
+- name: Comparing people
+  description: Used to compare physical appearance, abilities, or personality.
+  examples:
+  - My brother is taller than me.
+  - She is more outgoing than her sister.
+  - He is a better swimmer than I am.
+  key_point: Very common in everyday conversation.
+- name: Comparing things and products
+  description: Used when shopping or choosing between options.
+  examples:
+  - This phone is cheaper than that one.
+  - The red dress is more beautiful than the blue one.
+  - This car is less expensive to run.
+  key_point: Essential for shopping and making decisions.
+- name: Comparing places
+  description: Used to compare cities, countries, or locations.
+  examples:
+  - London is bigger than Edinburgh.
+  - Spain is warmer than England.
+  - The countryside is more peaceful than the city.
+  key_point: Common in travel discussions and geography.
+- name: Expressing opinions and preferences
+  description: Used to give opinions about which thing is better or worse.
+  examples:
+  - I think this film is better than the last one.
+  - Coffee is more popular than tea in my country.
+  - Winter is less enjoyable than summer.
+  key_point: Softens opinions by framing them as comparisons.
 phonetics:
-  - note: "The '-er' ending is pronounced as a schwa /ə/ in connected speech: 'taller' /tɔːlə/. 'Than' is pronounced with a weak form /ðən/. Stress falls on the adjective, not the ending: 'more ex'PENsive'."
-    example_generator:
-      contexts: ["natural conversation", "shopping"]
-    l1_issue: "Speakers whose L1 uses 'more + adjective' for all comparisons (e.g., Spanish 'mas grande') may say 'more big' instead of 'bigger'."
-
+- note: 'The ''-er'' ending is pronounced as a schwa /ə/ in connected speech: ''taller''
+    /tɔːlə/. ''Than'' is pronounced with a weak form /ðən/. Stress falls on the adjective,
+    not the ending: ''more ex''PENsive''.'
+  example_generator:
+    contexts:
+    - natural conversation
+    - shopping
+  l1_issue: Speakers whose L1 uses 'more + adjective' for all comparisons (e.g., Spanish
+    'mas grande') may say 'more big' instead of 'bigger'.
 teaching:
-  methodology: "PPP with visual comparison"
+  methodology: PPP with visual comparison
   tips:
-    - "Use real objects, pictures, or people in the classroom to make comparisons tangible."
-    - "Teach the spelling rules explicitly — provide a clear chart of -er vs. more."
-    - "Practice irregular comparatives (good/better, bad/worse) early as they are very common."
-    - "Use 'much/a bit/slightly + comparative' to teach degrees of difference."
+  - Use real objects, pictures, or people in the classroom to make comparisons tangible.
+  - Teach the spelling rules explicitly — provide a clear chart of -er vs. more.
+  - Practice irregular comparatives (good/better, bad/worse) early as they are very
+    common.
+  - Use 'much/a bit/slightly + comparative' to teach degrees of difference.
   recommended_activities:
-    - name: "Classroom comparisons"
-      duration: 10
-      adaptation_notes: "Students compare people in the class: 'Maria is taller than Ahmed.' Use real students for engagement."
-    - name: "Shopping comparison"
-      duration: 15
-      adaptation_notes: "Show pictures of products with prices. Students compare: 'The blue shirt is cheaper than the red one.'"
-    - name: "Comparative spelling race"
-      duration: 10
-      adaptation_notes: "Give students base adjectives and have them write the comparative form as quickly as possible. Include spelling changes."
-    - name: "City/Country comparison"
-      duration: 15
-      adaptation_notes: "Students compare two cities or countries using a table of information (population, size, temperature, etc.)."
+  - name: Classroom comparisons
+    duration: 10
+    adaptation_notes: 'Students compare people in the class: ''Maria is taller than
+      Ahmed.'' Use real students for engagement.'
+  - name: Shopping comparison
+    duration: 15
+    adaptation_notes: 'Show pictures of products with prices. Students compare: ''The
+      blue shirt is cheaper than the red one.'''
+  - name: Comparative spelling race
+    duration: 10
+    adaptation_notes: Give students base adjectives and have them write the comparative
+      form as quickly as possible. Include spelling changes.
+  - name: City/Country comparison
+    duration: 15
+    adaptation_notes: Students compare two cities or countries using a table of information
+      (population, size, temperature, etc.).
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

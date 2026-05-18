@@ -1,92 +1,170 @@
 grammar_point: countable_vs_uncountable
-title: "Countable and Uncountable Nouns"
-description: "Nouns that can be counted individually (countable) vs nouns that cannot be counted and are treated as singular (uncountable)."
+title: Countable and Uncountable Nouns
+description: Nouns that can be counted individually (countable) vs nouns that cannot
+  be counted and are treated as singular (uncountable).
 level: A1
-
 meaning:
-  core_meaning: "Countable nouns refer to things that can be counted individually (1 book, 2 books). Uncountable nouns refer to things that cannot be counted as separate units (water, air, advice)."
-  timeline: "N/A (Noun type, not tense-based)."
-  contrast: "Countable: 'a book' (singular), 'books' (plural), use 'many'\n\nUncountable: 'water' (always singular), use 'much', no 'a/an'\n\nExceptions: Some nouns can be both (e.g., 'hair' = uncountable, 'hairs' = individual strands)\n"
-  ccqs:
-    - question: "Can I put a number directly before this noun? (one ___, two ___)"
-      answer: "Yes = countable. No = uncountable."
-    - question: "Can I use 'a' or 'an' with this noun?"
-      answer: "Yes = countable (a book). No = uncountable (not 'a water')."
-    - question: "Does this noun have a plural form with -s?"
-      answer: "Yes = countable (books, cars). No = uncountable (not 'informations')."
-    - question: "Do I use 'how many' or 'how much' to ask about quantity?"
-      answer: "'How many' = countable. 'How much' = uncountable."
-  example_generator:
-    contexts: ["everyday situations", "food and drink", "shopping", "classroom"]
-    cultural_notes: ["This distinction does not exist in all languages — some L1 speakers (e.g., Japanese, Chinese) find it particularly challenging", "Common errors like *'an information' or *'two advices' persist even at intermediate levels"]
-    min_examples: 5
+  core_meaning: Countable nouns refer to things that can be counted individually (1
+    book, 2 books). Uncountable nouns refer to things that cannot be counted as separate
+    units (water, air, advice).
+  timeline: N/A (Noun type, not tense-based).
+  contrast: 'Countable: ''a book'' (singular), ''books'' (plural), use ''many''
 
+
+    Uncountable: ''water'' (always singular), use ''much'', no ''a/an''
+
+
+    Exceptions: Some nouns can be both (e.g., ''hair'' = uncountable, ''hairs'' =
+    individual strands)
+
+    '
+  ccqs:
+  - question: Can I put a number directly before this noun? (one ___, two ___)
+    answer: Yes = countable. No = uncountable.
+  - question: Can I use 'a' or 'an' with this noun?
+    answer: Yes = countable (a book). No = uncountable (not 'a water').
+  - question: Does this noun have a plural form with -s?
+    answer: Yes = countable (books, cars). No = uncountable (not 'informations').
+  - question: Do I use 'how many' or 'how much' to ask about quantity?
+    answer: '''How many'' = countable. ''How much'' = uncountable.'
+  example_generator:
+    contexts:
+    - everyday situations
+    - food and drink
+    - shopping
+    - classroom
+    cultural_notes:
+    - This distinction does not exist in all languages — some L1 speakers (e.g., Japanese,
+      Chinese) find it particularly challenging
+    - Common errors like *'an information' or *'two advices' persist even at intermediate
+      levels
+    min_examples: 5
 form:
   affirmative:
-    structure: "Countable: Singular (a/an + noun) or plural (noun + s/es), can use numbers\nUncountable: Always singular, no a/an, use some/any/much/little\n"
+    structure: 'Countable: Singular (a/an + noun) or plural (noun + s/es), can use
+      numbers
+
+      Uncountable: Always singular, no a/an, use some/any/much/little
+
+      '
     example_generator:
-      contexts: ["entertainment and media", "food and drink", "classroom"]
+      contexts:
+      - entertainment and media
+      - food and drink
+      - classroom
       min_examples: 4
   negative:
-    structure: "Countable: no + plural / Uncountable: no + singular"
+    structure: 'Countable: no + plural / Uncountable: no + singular'
     example_generator:
-      contexts: ["entertainment and media", "shopping"]
+      contexts:
+      - entertainment and media
+      - shopping
       min_examples: 4
   questions:
-    structure: "Countable: How many + plural? / Uncountable: How much + singular?"
+    structure: 'Countable: How many + plural? / Uncountable: How much + singular?'
     example_generator:
-      contexts: ["entertainment and media", "food and drink"]
+      contexts:
+      - entertainment and media
+      - food and drink
       min_examples: 4
-
 sub_rules:
-  - rule: "Common uncountable nouns that are often countable in other languages: advice, information, news, furniture, luggage, baggage, homework, research, work"
-    type: lexical
-    examples: ["She gave me good advice. (not *an advice)", "The news is good. (not *a news)", "I have too much homework. (not *homeworks)"]
-  - rule: "Use a unit of measurement to count uncountable nouns: a piece of, a glass of, a slice of, a bottle of"
-    type: grammatical
-    examples: ["a piece of advice", "a glass of water", "a slice of cake", "a bottle of milk", "a piece of furniture"]
-  - rule: "Some nouns can be both countable and uncountable with a change in meaning"
-    type: lexical
-    examples: ["I love chocolate. (uncountable — the substance)", "I bought a chocolate. (countable — a sweet)", "Glass is fragile. (uncountable — the material)", "I broke a glass. (countable — the object)"]
-  - rule: "'Some' and 'any' work with both types: some books / some water / any apples / any milk"
-    type: grammatical
-    examples: ["I have some books.", "I have some water.", "Do you have any apples?", "Do you have any milk?"]
-  - rule: "'Few' vs 'a few' and 'little' vs 'a little' — the 'a' changes the meaning from negative to positive"
-    type: grammatical
-    examples: ["Few people came. (almost no one — negative)", "A few people came. (some people — positive)", "Little is known. (almost nothing — negative)", "A little is known. (some things — positive)"]
-
+- rule: 'Common uncountable nouns that are often countable in other languages: advice,
+    information, news, furniture, luggage, baggage, homework, research, work'
+  type: lexical
+  examples:
+  - She gave me good advice. (not *an advice)
+  - The news is good. (not *a news)
+  - I have too much homework. (not *homeworks)
+- rule: 'Use a unit of measurement to count uncountable nouns: a piece of, a glass
+    of, a slice of, a bottle of'
+  type: grammatical
+  examples:
+  - a piece of advice
+  - a glass of water
+  - a slice of cake
+  - a bottle of milk
+  - a piece of furniture
+- rule: Some nouns can be both countable and uncountable with a change in meaning
+  type: lexical
+  examples:
+  - I love chocolate. (uncountable — the substance)
+  - I bought a chocolate. (countable — a sweet)
+  - Glass is fragile. (uncountable — the material)
+  - I broke a glass. (countable — the object)
+- rule: '''Some'' and ''any'' work with both types: some books / some water / any
+    apples / any milk'
+  type: grammatical
+  examples:
+  - I have some books.
+  - I have some water.
+  - Do you have any apples?
+  - Do you have any milk?
+- rule: '''Few'' vs ''a few'' and ''little'' vs ''a little'' — the ''a'' changes the
+    meaning from negative to positive'
+  type: grammatical
+  examples:
+  - Few people came. (almost no one — negative)
+  - A few people came. (some people — positive)
+  - Little is known. (almost nothing — negative)
+  - A little is known. (some things — positive)
 use:
-  - context: "Countable Nouns"
-    description: "Things that can be counted one by one: objects, people, animals."
-    examples: ["a car, three cars", "an apple, many apples", "a student, twenty students"]
-  - context: "Uncountable Nouns"
-    description: "Things that are a mass or concept: liquids, gases, abstract ideas."
-    examples: ["water, air, advice, happiness, information, money"]
-  - context: "Quantifiers"
-    description: "Use 'many'/'few' for countable, 'much'/'little' for uncountable."
-    examples: ["many books", "much water", "few cars", "little time", "a few friends", "a little sugar"]
-
+- context: Countable Nouns
+  description: 'Things that can be counted one by one: objects, people, animals.'
+  examples:
+  - a car, three cars
+  - an apple, many apples
+  - a student, twenty students
+- context: Uncountable Nouns
+  description: 'Things that are a mass or concept: liquids, gases, abstract ideas.'
+  examples:
+  - water, air, advice, happiness, information, money
+- context: Quantifiers
+  description: Use 'many'/'few' for countable, 'much'/'little' for uncountable.
+  examples:
+  - many books
+  - much water
+  - few cars
+  - little time
+  - a few friends
+  - a little sugar
 phonetics:
-  - note: "No phonetic difference between countable and uncountable forms, but errors like *'informations' add an extra syllable"
-    example_generator:
-      contexts: ["common errors", "pronunciation"]
-    l1_issue: "L1 speakers whose languages treat these nouns as countable may add plural -s, creating non-existent forms"
-  - note: "'Much' is often reduced in connected speech: 'How much?' → /haʊ mətʃ/"
-    example_generator:
-      contexts: ["connected speech"]
-    l1_issue: "Learners may not recognise reduced forms in natural speech"
-
+- note: No phonetic difference between countable and uncountable forms, but errors
+    like *'informations' add an extra syllable
+  example_generator:
+    contexts:
+    - common errors
+    - pronunciation
+  l1_issue: L1 speakers whose languages treat these nouns as countable may add plural
+    -s, creating non-existent forms
+- note: '''Much'' is often reduced in connected speech: ''How much?'' → /haʊ mətʃ/'
+  example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Learners may not recognise reduced forms in natural speech
 teaching:
-  methodology: "PPP with realia and sorting activities"
+  methodology: PPP with realia and sorting activities
   tips:
-    - "Start with real objects: 1 pen (countable), water in a cup (uncountable)."
-    - "Sort noun lists into countable and uncountable as a group activity."
-    - "Teach common uncountable nouns early: water, air, advice, information, happiness."
-    - "Highlight nouns that are uncountable in English but countable in the students' L1."
+  - 'Start with real objects: 1 pen (countable), water in a cup (uncountable).'
+  - Sort noun lists into countable and uncountable as a group activity.
+  - 'Teach common uncountable nouns early: water, air, advice, information, happiness.'
+  - Highlight nouns that are uncountable in English but countable in the students'
+    L1.
   recommended_activities:
-    - name: "Count or Not?"
-      duration: 10
-      adaptation_notes: "Teacher says a noun; students hold up 'C' or 'U' cards. Discuss tricky cases."
-    - name: "Picture Dictionary"
-      duration: 15
-      adaptation_notes: "Students create a two-column picture dictionary (countable vs uncountable) with example sentences."
+  - name: Count or Not?
+    duration: 10
+    adaptation_notes: Teacher says a noun; students hold up 'C' or 'U' cards. Discuss
+      tricky cases.
+  - name: Picture Dictionary
+    duration: 15
+    adaptation_notes: Students create a two-column picture dictionary (countable vs
+      uncountable) with example sentences.
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

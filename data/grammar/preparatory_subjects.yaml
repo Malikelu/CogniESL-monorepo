@@ -1,158 +1,206 @@
 grammar_point: preparatory_subjects
-title: "Preparatory Subjects (There and It as Dummy Subjects)"
-description: "The use of 'there' and 'it' as dummy or preparatory subjects when the real subject is postponed to later in the sentence, either for structural or information-focus reasons."
+title: Preparatory Subjects (There and It as Dummy Subjects)
+description: The use of 'there' and 'it' as dummy or preparatory subjects when the
+  real subject is postponed to later in the sentence, either for structural or information-focus
+  reasons.
 level: B2
-
 meaning:
-  core_meaning: "Preparatory subjects ('there' and 'it') occupy the subject position when the logical subject is moved to the end of the sentence. 'There' introduces the existence or presence of something; 'it' stands in for a clause, infinitive, or other element that is more naturally placed later."
-  timeline: "Timeless — preparatory subjects work with all tenses."
-  contrast: "'There are three books on the table' (existential) vs 'Three books are on the table' (locative). 'It is important to study' (preparatory 'it') vs 'To study is important' (infinitive as subject — grammatically correct but less natural in English)."
+  core_meaning: Preparatory subjects ('there' and 'it') occupy the subject position
+    when the logical subject is moved to the end of the sentence. 'There' introduces
+    the existence or presence of something; 'it' stands in for a clause, infinitive,
+    or other element that is more naturally placed later.
+  timeline: Timeless — preparatory subjects work with all tenses.
+  contrast: '''There are three books on the table'' (existential) vs ''Three books
+    are on the table'' (locative). ''It is important to study'' (preparatory ''it'')
+    vs ''To study is important'' (infinitive as subject — grammatically correct but
+    less natural in English).'
   ccqs:
-    - question: "In 'There is a problem,' what is the real subject?"
-      answer: "'A problem' — 'there' is just a dummy subject filling the grammatical subject slot."
-    - question: "Can we say 'Is important to arrive on time' without 'it'?"
-      answer: "No — English requires a subject in every clause, so 'it' must fill that position: 'It is important to arrive on time.'"
-    - question: "What is the difference between 'It is raining' and 'There is rain'?"
-      answer: "'It is raining' uses 'it' as a dummy subject for weather expressions. 'There is rain' uses existential 'there' to state that rain exists. Both are correct but used in different contexts."
+  - question: In 'There is a problem,' what is the real subject?
+    answer: '''A problem'' — ''there'' is just a dummy subject filling the grammatical
+      subject slot.'
+  - question: Can we say 'Is important to arrive on time' without 'it'?
+    answer: 'No — English requires a subject in every clause, so ''it'' must fill
+      that position: ''It is important to arrive on time.'''
+  - question: What is the difference between 'It is raining' and 'There is rain'?
+    answer: '''It is raining'' uses ''it'' as a dummy subject for weather expressions.
+      ''There is rain'' uses existential ''there'' to state that rain exists. Both
+      are correct but used in different contexts.'
   example_generator:
     contexts:
+    - everyday conversation
+    - academic writing
+    - news reporting
+    - formal presentations
+    - weather reports
+    cultural_notes:
+    - Existential 'there' is one of the most common structures in English, yet many
+      languages lack an equivalent, leading to errors like '*Is a problem' or '*Has
+      many people.'
+    - 'In formal writing, preparatory ''it'' is preferred over starting with a long
+      infinitive clause: ''It is essential to...'' rather than ''To... is essential.'''
+    min_examples: 5
+form:
+  affirmative:
+    structure: 'There + be + NP (existential: ''There is a book on the desk''). It
+      + be + adjective/noun + to-infinitive/that-clause (preparatory: ''It is difficult
+      to understand,'' ''It is a fact that he left''). It + be + adjective + for/of
+      + NP + to-infinitive: ''It was kind of you to help.'''
+    example_generator:
+      contexts:
       - everyday conversation
       - academic writing
       - news reporting
-      - formal presentations
-      - weather reports
-    cultural_notes:
-      - "Existential 'there' is one of the most common structures in English, yet many languages lack an equivalent, leading to errors like '*Is a problem' or '*Has many people.'"
-      - "In formal writing, preparatory 'it' is preferred over starting with a long infinitive clause: 'It is essential to...' rather than 'To... is essential.'"
-    min_examples: 5
-
-form:
-  affirmative:
-    structure: "There + be + NP (existential: 'There is a book on the desk'). It + be + adjective/noun + to-infinitive/that-clause (preparatory: 'It is difficult to understand,' 'It is a fact that he left'). It + be + adjective + for/of + NP + to-infinitive: 'It was kind of you to help.'"
-    example_generator:
-      contexts:
-        - everyday conversation
-        - academic writing
-        - news reporting
       min_examples: 4
   negative:
-    structure: "There + be + not/no + NP: 'There is no time,' 'There are not enough seats.' It + be + not + adjective + to-infinitive: 'It is not easy to learn a language.' Contractions are common in speech: 'There isn't any milk,' 'It doesn't seem right.'"
+    structure: 'There + be + not/no + NP: ''There is no time,'' ''There are not enough
+      seats.'' It + be + not + adjective + to-infinitive: ''It is not easy to learn
+      a language.'' Contractions are common in speech: ''There isn''t any milk,''
+      ''It doesn''t seem right.'''
     example_generator:
       contexts:
-        - expressing absence
-        - negative evaluation
-        - denying existence
+      - expressing absence
+      - negative evaluation
+      - denying existence
       min_examples: 3
   questions:
-    structure: "Inversion of 'be' and 'there': 'Is there a bank nearby?' 'Are there any questions?' With preparatory 'it': 'Is it true that she resigned?' 'Does it matter what I think?'"
+    structure: 'Inversion of ''be'' and ''there'': ''Is there a bank nearby?'' ''Are
+      there any questions?'' With preparatory ''it'': ''Is it true that she resigned?''
+      ''Does it matter what I think?'''
     example_generator:
       contexts:
-        - asking about existence
-        - checking facts
-        - seeking confirmation
+      - asking about existence
+      - checking facts
+      - seeking confirmation
       min_examples: 3
-
 sub_rules:
-  - rule: "Existential 'there' — introducing new information"
-    type: "grammatical"
-    examples:
-      - "There is a new restaurant on High Street."
-      - "There were several people waiting outside."
-      - "There has been a change of plan."
-      - "There will be an announcement this afternoon."
-  - rule: "Preparatory 'it' with to-infinitive clauses"
-    type: "grammatical"
-    examples:
-      - "It takes time to learn a language."
-      - "It is impossible to predict the outcome."
-      - "It feels wonderful to be home."
-      - "It cost a fortune to repair the car."
-  - rule: "Preparatory 'it' with that-clauses"
-    type: "grammatical"
-    examples:
-      - "It is clear that something has gone wrong."
-      - "It seems that nobody was informed."
-      - "It turned out that the information was incorrect."
-      - "It was reported that several people were injured."
-  - rule: "Preparatory 'it' for weather, time, and distance"
-    type: "grammatical"
-    examples:
-      - "It is raining heavily."
-      - "It is half past three."
-      - "It is five miles to the nearest station."
-      - "It was getting dark when we arrived."
-  - rule: "Preparatory 'it' in cleft-like structures (It is... who/that)"
-    type: "grammatical"
-    examples:
-      - "It was John who broke the window."
-      - "It is the economy that matters most to voters."
-      - "It was in 1969 that they first met."
-
+- rule: Existential 'there' — introducing new information
+  type: grammatical
+  examples:
+  - There is a new restaurant on High Street.
+  - There were several people waiting outside.
+  - There has been a change of plan.
+  - There will be an announcement this afternoon.
+- rule: Preparatory 'it' with to-infinitive clauses
+  type: grammatical
+  examples:
+  - It takes time to learn a language.
+  - It is impossible to predict the outcome.
+  - It feels wonderful to be home.
+  - It cost a fortune to repair the car.
+- rule: Preparatory 'it' with that-clauses
+  type: grammatical
+  examples:
+  - It is clear that something has gone wrong.
+  - It seems that nobody was informed.
+  - It turned out that the information was incorrect.
+  - It was reported that several people were injured.
+- rule: Preparatory 'it' for weather, time, and distance
+  type: grammatical
+  examples:
+  - It is raining heavily.
+  - It is half past three.
+  - It is five miles to the nearest station.
+  - It was getting dark when we arrived.
+- rule: Preparatory 'it' in cleft-like structures (It is... who/that)
+  type: grammatical
+  examples:
+  - It was John who broke the window.
+  - It is the economy that matters most to voters.
+  - It was in 1969 that they first met.
 use:
-  - context: "Introducing new information or entities"
-    description: "Existential 'there' is the standard way to introduce something into the discourse for the first time."
-    examples:
-      - "There is a new student in our class."
-      - "There were no seats available at the restaurant."
-      - "There has been an accident on the motorway."
-  - context: "Expressing evaluation or judgement"
-    description: "Preparatory 'it' allows speakers to evaluate actions, situations, or propositions."
-    examples:
-      - "It was a mistake to trust him."
-      - "It is essential that everyone attends the meeting."
-      - "It seems unlikely that the project will be finished on time."
-  - context: "Describing weather, time, and distance"
-    description: "English requires a subject for impersonal expressions about the environment."
-    examples:
-      - "It is freezing outside."
-      - "It was nearly midnight when the phone rang."
-      - "It is a long way from here to the coast."
-  - context: "Academic and formal writing"
-    description: "Preparatory 'it' is heavily used in academic English to introduce arguments, findings, and evaluations."
-    examples:
-      - "It can be concluded that the hypothesis was supported."
-      - "It is worth noting that these results are preliminary."
-      - "It has been demonstrated that regular exercise improves cognition."
-  - context: "Emphasising a particular element (cleft sentences)"
-    description: "It-clefts allow speakers to focus attention on a specific element of the sentence."
-    examples:
-      - "It was the manager who approved the budget."
-      - "It is this very point that I want to address."
-      - "It was only after the war that the truth emerged."
-
+- context: Introducing new information or entities
+  description: Existential 'there' is the standard way to introduce something into
+    the discourse for the first time.
+  examples:
+  - There is a new student in our class.
+  - There were no seats available at the restaurant.
+  - There has been an accident on the motorway.
+- context: Expressing evaluation or judgement
+  description: Preparatory 'it' allows speakers to evaluate actions, situations, or
+    propositions.
+  examples:
+  - It was a mistake to trust him.
+  - It is essential that everyone attends the meeting.
+  - It seems unlikely that the project will be finished on time.
+- context: Describing weather, time, and distance
+  description: English requires a subject for impersonal expressions about the environment.
+  examples:
+  - It is freezing outside.
+  - It was nearly midnight when the phone rang.
+  - It is a long way from here to the coast.
+- context: Academic and formal writing
+  description: Preparatory 'it' is heavily used in academic English to introduce arguments,
+    findings, and evaluations.
+  examples:
+  - It can be concluded that the hypothesis was supported.
+  - It is worth noting that these results are preliminary.
+  - It has been demonstrated that regular exercise improves cognition.
+- context: Emphasising a particular element (cleft sentences)
+  description: It-clefts allow speakers to focus attention on a specific element of
+    the sentence.
+  examples:
+  - It was the manager who approved the budget.
+  - It is this very point that I want to address.
+  - It was only after the war that the truth emerged.
 phonetics:
-  - note: "Existential 'there' is typically pronounced as a weak form /ðər/ in connected speech, with the stress falling on the noun phrase: 'There's a PROBLEM.'"
-    example_generator:
-      contexts:
-        - spoken English
-        - casual conversation
-    l1_issue: "Learners whose languages do not have an equivalent of 'there is/are' may omit the subject entirely, producing '*Is a problem' or '*Are many people.'"
-  - note: "Preparatory 'it' is always unstressed /ɪt/ and often contracted: 'It's important,' 'It'll be difficult.'"
-    example_generator:
-      contexts:
-        - spoken English
-        - presentations
-    l1_issue: "Learners may stress 'it' in 'It is important to...' making it sound like a referential pronoun rather than a dummy subject."
-
+- note: 'Existential ''there'' is typically pronounced as a weak form /ðər/ in connected
+    speech, with the stress falling on the noun phrase: ''There''s a PROBLEM.'''
+  example_generator:
+    contexts:
+    - spoken English
+    - casual conversation
+  l1_issue: Learners whose languages do not have an equivalent of 'there is/are' may
+    omit the subject entirely, producing '*Is a problem' or '*Are many people.'
+- note: 'Preparatory ''it'' is always unstressed /ɪt/ and often contracted: ''It''s
+    important,'' ''It''ll be difficult.'''
+  example_generator:
+    contexts:
+    - spoken English
+    - presentations
+  l1_issue: Learners may stress 'it' in 'It is important to...' making it sound like
+    a referential pronoun rather than a dummy subject.
 teaching:
-  methodology: "Guided discovery — present pairs of sentences (with and without preparatory subjects) and have learners work out why English uses 'there' and 'it' in these positions."
+  methodology: Guided discovery — present pairs of sentences (with and without preparatory
+    subjects) and have learners work out why English uses 'there' and 'it' in these
+    positions.
   tips:
-    - "Teach existential 'there' first — it is more concrete and easier to grasp."
-    - "Use the concept of 'English needs a subject in every sentence' to explain why 'it' and 'there' exist."
-    - "Contrast 'There is a man at the door' (new information) with 'A man is at the door' (specific, known man) to show the information-structure difference."
-    - "Introduce preparatory 'it' with weather and time expressions early: 'It is raining,' 'It is 3 o'clock.'"
-    - "Move to preparatory 'it' with to-infinitives and that-clauses at B2 level."
-    - "Use error correction drills for common L1 errors: '*Is important to study' -> 'It is important to study.'"
+  - Teach existential 'there' first — it is more concrete and easier to grasp.
+  - Use the concept of 'English needs a subject in every sentence' to explain why
+    'it' and 'there' exist.
+  - Contrast 'There is a man at the door' (new information) with 'A man is at the
+    door' (specific, known man) to show the information-structure difference.
+  - 'Introduce preparatory ''it'' with weather and time expressions early: ''It is
+    raining,'' ''It is 3 o''clock.'''
+  - Move to preparatory 'it' with to-infinitives and that-clauses at B2 level.
+  - 'Use error correction drills for common L1 errors: ''*Is important to study''
+    -> ''It is important to study.'''
   recommended_activities:
-    - name: "There Is/Are Scavenger Hunt"
-      duration: 15
-      adaptation_notes: "Learners look around the classroom (or at a picture) and make as many 'There is/are...' sentences as possible. Focus on correct agreement with the real subject."
-    - name: "It Is... Transformation"
-      duration: 15
-      adaptation_notes: "Give learners sentences starting with infinitives or that-clauses (e.g., 'To learn English is useful'). They must rewrite them with preparatory 'it': 'It is useful to learn English.'"
-    - name: "Weather and Time Drill"
-      duration: 10
-      adaptation_notes: "Show pictures of different weather conditions and clocks. Learners produce sentences: 'It is snowing,' 'It is quarter to four.'"
-    - name: "Error Correction Relay"
-      duration: 15
-      adaptation_notes: "Display sentences with missing preparatory subjects ('Is raining,' 'Is important to arrive on time,' 'Has been a problem'). Teams race to correct them."
+  - name: There Is/Are Scavenger Hunt
+    duration: 15
+    adaptation_notes: Learners look around the classroom (or at a picture) and make
+      as many 'There is/are...' sentences as possible. Focus on correct agreement
+      with the real subject.
+  - name: It Is... Transformation
+    duration: 15
+    adaptation_notes: 'Give learners sentences starting with infinitives or that-clauses
+      (e.g., ''To learn English is useful''). They must rewrite them with preparatory
+      ''it'': ''It is useful to learn English.'''
+  - name: Weather and Time Drill
+    duration: 10
+    adaptation_notes: 'Show pictures of different weather conditions and clocks. Learners
+      produce sentences: ''It is snowing,'' ''It is quarter to four.'''
+  - name: Error Correction Relay
+    duration: 15
+    adaptation_notes: Display sentences with missing preparatory subjects ('Is raining,'
+      'Is important to arrive on time,' 'Has been a problem'). Teams race to correct
+      them.
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

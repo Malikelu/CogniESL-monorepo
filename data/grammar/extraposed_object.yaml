@@ -1,135 +1,163 @@
 grammar_point: extraposed_object
-title: "Extraposed Object"
-description: "Moving a long or heavy object clause to the end of the sentence and using 'it' as a placeholder object, for better sentence balance."
+title: Extraposed Object
+description: Moving a long or heavy object clause to the end of the sentence and using
+  'it' as a placeholder object, for better sentence balance.
 level: C1
-
 meaning:
-  core_meaning: "Extraposition of the object involves moving a long object clause (usually a that-clause or to-infinitive clause) to the end of the sentence and placing 'it' in the original object position. This improves sentence flow by avoiding a heavy object between the verb and its complement."
-  timeline: "Varies — depends on the tense of the main verb."
-  contrast: "Normal order = I find that he is honest difficult. Extraposed = I find it difficult that he is honest. / I find it difficult to believe."
+  core_meaning: Extraposition of the object involves moving a long object clause (usually
+    a that-clause or to-infinitive clause) to the end of the sentence and placing
+    'it' in the original object position. This improves sentence flow by avoiding
+    a heavy object between the verb and its complement.
+  timeline: Varies — depends on the tense of the main verb.
+  contrast: Normal order = I find that he is honest difficult. Extraposed = I find
+    it difficult that he is honest. / I find it difficult to believe.
   ccqs:
-    - question: Does 'it' stand in for a clause that appears later in the sentence?
-      answer: Yes, this is extraposition of the object.
-    - question: Would the sentence sound awkward without extraposition?
-      answer: Yes, heavy objects are typically extraposed for naturalness.
+  - question: Does 'it' stand in for a clause that appears later in the sentence?
+    answer: Yes, this is extraposition of the object.
+  - question: Would the sentence sound awkward without extraposition?
+    answer: Yes, heavy objects are typically extraposed for naturalness.
   example_generator:
     contexts:
-      - expressing opinions
-      - reporting beliefs
-      - formal writing
-      - academic discussion
+    - expressing opinions
+    - reporting beliefs
+    - formal writing
+    - academic discussion
     cultural_notes:
-      - Extraposed objects are very common in English and sound more natural than the non-extraposed version
-      - Some verbs almost always take extraposed objects (e.g. find it difficult to, make it clear that)
+    - Extraposed objects are very common in English and sound more natural than the
+      non-extraposed version
+    - Some verbs almost always take extraposed objects (e.g. find it difficult to,
+      make it clear that)
     min_examples: 5
-
 form:
   affirmative:
-    structure: "Subject + verb + it + complement + that-clause / to-infinitive clause"
+    structure: Subject + verb + it + complement + that-clause / to-infinitive clause
     example_generator:
       contexts:
-        - expressing difficulty
-        - making points clear
-        - reporting opinions
+      - expressing difficulty
+      - making points clear
+      - reporting opinions
       min_examples: 4
   negative:
-    structure: "Subject + verb + it + negative complement + that-clause: I do not consider it likely that he will come."
+    structure: 'Subject + verb + it + negative complement + that-clause: I do not
+      consider it likely that he will come.'
     example_generator:
       contexts:
-        - expressing doubt
-        - negative opinions
+      - expressing doubt
+      - negative opinions
       min_examples: 3
   questions:
-    structure: "Do/Does + subject + verb + it + complement + that-clause?: Do you find it strange that she left?"
+    structure: 'Do/Does + subject + verb + it + complement + that-clause?: Do you
+      find it strange that she left?'
     example_generator:
       contexts:
-        - asking about opinions
-        - checking understanding
+      - asking about opinions
+      - checking understanding
       min_examples: 3
-
 sub_rules:
-  - rule: "Verbs of opinion and perception: find, consider, believe, think, feel, imagine + it + adj + to-infinitive / that-clause"
-    type: grammatical
-    examples:
-      - I find it hard to believe that he resigned.
-      - She considers it important to arrive on time.
-      - They thought it strange that no one was there.
-      - I believe it necessary that we act now.
-  - rule: "Verbs of making and rendering: make, render, leave + it + adj + to-infinitive / that-clause"
-    type: grammatical
-    examples:
-      - The evidence made it clear that he was guilty.
-      - His absence made it impossible to reach a decision.
-      - The storm rendered it necessary to cancel the event.
-  - rule: "Verbs of liking and preference: appreciate, enjoy, hate, like, love, prefer + it + when/if/that"
-    type: grammatical
-    examples:
-      - I appreciate it when people are honest.
-      - She hates it when people are late.
-      - We would prefer it if you arrived before noon.
-      - I love it when the sun is shining.
-  - rule: "Fixed expressions with extraposed objects: take it for granted, take it that, owe it to someone"
-    type: lexical
-    examples:
-      - I took it for granted that he would be there.
-      - We take it that you agree with the proposal.
-      - I owe it to my parents that I succeeded.
-      - You can count on it that I will help.
-
+- rule: 'Verbs of opinion and perception: find, consider, believe, think, feel, imagine
+    + it + adj + to-infinitive / that-clause'
+  type: grammatical
+  examples:
+  - I find it hard to believe that he resigned.
+  - She considers it important to arrive on time.
+  - They thought it strange that no one was there.
+  - I believe it necessary that we act now.
+- rule: 'Verbs of making and rendering: make, render, leave + it + adj + to-infinitive
+    / that-clause'
+  type: grammatical
+  examples:
+  - The evidence made it clear that he was guilty.
+  - His absence made it impossible to reach a decision.
+  - The storm rendered it necessary to cancel the event.
+- rule: 'Verbs of liking and preference: appreciate, enjoy, hate, like, love, prefer
+    + it + when/if/that'
+  type: grammatical
+  examples:
+  - I appreciate it when people are honest.
+  - She hates it when people are late.
+  - We would prefer it if you arrived before noon.
+  - I love it when the sun is shining.
+- rule: 'Fixed expressions with extraposed objects: take it for granted, take it that,
+    owe it to someone'
+  type: lexical
+  examples:
+  - I took it for granted that he would be there.
+  - We take it that you agree with the proposal.
+  - I owe it to my parents that I succeeded.
+  - You can count on it that I will help.
 use:
-  - context: "Expressing difficulty or ease"
-    description: "Find it + adj + to-infinitive is a very common pattern for expressing how easy or hard something is."
-    examples:
-      - I find it difficult to concentrate in noisy environments.
-      - She finds it easy to make new friends.
-      - They found it impossible to reach an agreement.
-  - context: "Making opinions and expectations clear"
-    description: "Make it clear/obvious/known that... is used to state opinions or expectations explicitly."
-    examples:
-      - Let me make it clear that this is non-negotiable.
-      - The report made it obvious that changes were needed.
-      - He made it known that he was unhappy with the arrangement.
-  - context: "Reporting beliefs and assumptions"
-    description: "Consider, believe, and think with extraposed objects are common in formal and academic English."
-    examples:
-      - The committee considers it essential that all members attend.
-      - I believe it fair to say that progress has been made.
-      - Scientists think it unlikely that the species will recover.
-  - context: "Expressing preferences and reactions"
-    description: "Like, hate, prefer, appreciate with it and a when/if/that-clause express reactions to situations."
-    examples:
-      - I would appreciate it if you could reply by Friday.
-      - She does not like it when people interrupt her.
-      - We would prefer it if the meeting were held in the morning.
-
+- context: Expressing difficulty or ease
+  description: Find it + adj + to-infinitive is a very common pattern for expressing
+    how easy or hard something is.
+  examples:
+  - I find it difficult to concentrate in noisy environments.
+  - She finds it easy to make new friends.
+  - They found it impossible to reach an agreement.
+- context: Making opinions and expectations clear
+  description: Make it clear/obvious/known that... is used to state opinions or expectations
+    explicitly.
+  examples:
+  - Let me make it clear that this is non-negotiable.
+  - The report made it obvious that changes were needed.
+  - He made it known that he was unhappy with the arrangement.
+- context: Reporting beliefs and assumptions
+  description: Consider, believe, and think with extraposed objects are common in
+    formal and academic English.
+  examples:
+  - The committee considers it essential that all members attend.
+  - I believe it fair to say that progress has been made.
+  - Scientists think it unlikely that the species will recover.
+- context: Expressing preferences and reactions
+  description: Like, hate, prefer, appreciate with it and a when/if/that-clause express
+    reactions to situations.
+  examples:
+  - I would appreciate it if you could reply by Friday.
+  - She does not like it when people interrupt her.
+  - We would prefer it if the meeting were held in the morning.
 phonetics:
-  - note: "The word 'it' in extraposed object structures is always unstressed and reduced in speech."
-    example_generator:
-      contexts:
-        - formal speech
-        - everyday conversation
-    l1_issue: "Learners may place stress on 'it', making the sentence sound unnatural."
-  - note: "The complement (adjective or noun) after 'it' carries the main stress: I find it DIFFICULT to believe."
-    example_generator:
-      contexts:
-        - spoken opinions
-        - presentations
-    l1_issue: "Speakers may struggle with the word order, placing the clause before the complement."
-
+- note: The word 'it' in extraposed object structures is always unstressed and reduced
+    in speech.
+  example_generator:
+    contexts:
+    - formal speech
+    - everyday conversation
+  l1_issue: Learners may place stress on 'it', making the sentence sound unnatural.
+- note: 'The complement (adjective or noun) after ''it'' carries the main stress:
+    I find it DIFFICULT to believe.'
+  example_generator:
+    contexts:
+    - spoken opinions
+    - presentations
+  l1_issue: Speakers may struggle with the word order, placing the clause before the
+    complement.
 teaching:
-  methodology: "Guided discovery"
+  methodology: Guided discovery
   tips:
-    - "Start with the most common pattern: find it + adj + to-infinitive."
-    - "Show how extraposition improves sentence flow by comparing awkward and natural versions."
-    - "Group verbs by function (opinion, making, preference) to help students learn collocations."
-    - "Practice transforming non-extraposed sentences into extraposed ones."
+  - 'Start with the most common pattern: find it + adj + to-infinitive.'
+  - Show how extraposition improves sentence flow by comparing awkward and natural
+    versions.
+  - Group verbs by function (opinion, making, preference) to help students learn collocations.
+  - Practice transforming non-extraposed sentences into extraposed ones.
   recommended_activities:
-    - name: "Sentence Reordering"
-      duration: 10
-      adaptation_notes: "Students rewrite awkward sentences using extraposed objects for better flow."
-    - name: "Verb Sort"
-      duration: 10
-      adaptation_notes: "Students categorise verbs by the type of extraposed object they take (opinion, preference, etc.)."
-    - name: "Opinion Exchange"
-      duration: 15
-      adaptation_notes: "Students share opinions using find it + adj + to-infinitive and consider it + adj + that patterns."
+  - name: Sentence Reordering
+    duration: 10
+    adaptation_notes: Students rewrite awkward sentences using extraposed objects
+      for better flow.
+  - name: Verb Sort
+    duration: 10
+    adaptation_notes: Students categorise verbs by the type of extraposed object they
+      take (opinion, preference, etc.).
+  - name: Opinion Exchange
+    duration: 15
+    adaptation_notes: Students share opinions using find it + adj + to-infinitive
+      and consider it + adj + that patterns.
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

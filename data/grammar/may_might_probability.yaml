@@ -1,85 +1,93 @@
 grammar_point: may_might_probability
-title: "May and Might (Probability)"
-description: "Modal verbs used to express possibility or probability."
+title: May and Might (Probability)
+description: Modal verbs used to express possibility or probability.
 level: B1
-
 meaning:
-  core_meaning: "Express probability or possibility. May suggests higher likelihood than might."
-  timeline: "Present and future possibilities."
-  contrast: "May = more likely. Might = less likely. Could = general possibility."
+  core_meaning: Express probability or possibility. May suggests higher likelihood
+    than might.
+  timeline: Present and future possibilities.
+  contrast: May = more likely. Might = less likely. Could = general possibility.
   ccqs:
-    - question: "Is may stronger or weaker than might"
-      answer: "May is stronger"
+  - question: Is may stronger or weaker than might
+    answer: May is stronger
   example_generator:
     contexts:
-      - weather predictions
-      - future plans
+    - weather predictions
+    - future plans
     cultural_notes:
-      - "May is more common in British English for requests"
+    - May is more common in British English for requests
     min_examples: 5
-
 form:
   affirmative:
-    structure: "Subject + may + base verb / Subject + might + base verb / Subject + could + base verb"
+    structure: Subject + may + base verb / Subject + might + base verb / Subject +
+      could + base verb
     example_generator:
-      - "It may rain tomorrow."
-      - "She might get the job."
+    - It may rain tomorrow.
+    - She might get the job.
     min_examples: 4
   negative:
-    structure: "Subject + may not + base verb / Subject + might not + base verb"
+    structure: Subject + may not + base verb / Subject + might not + base verb
     example_generator:
-      - "It may not rain today."
-      - "She might not come."
+    - It may not rain today.
+    - She might not come.
     min_examples: 4
   questions:
-    structure: "Do you think it may rain"
+    structure: Do you think it may rain
     example_generator:
-      - "Do you think it may rain"
+    - Do you think it may rain
     min_examples: 3
-
 sub_rules:
-  - rule: "May and might: same structure, different probability"
-    type: semantic
-    examples:
-      - "It may rain (50 percent plus)"
-      - "It might rain (under 50 percent)"
-  - rule: "Could expresses general probability"
-    type: semantic
-    examples:
-      - "It could rain"
-  - rule: "May for formal permission"
-    type: pragmatic
-    examples:
-      - "May I use your phone"
-
+- rule: 'May and might: same structure, different probability'
+  type: semantic
+  examples:
+  - It may rain (50 percent plus)
+  - It might rain (under 50 percent)
+- rule: Could expresses general probability
+  type: semantic
+  examples:
+  - It could rain
+- rule: May for formal permission
+  type: pragmatic
+  examples:
+  - May I use your phone
 use:
-  - context: "Future probability"
-    examples:
-      - "I may travel next year"
-      - "She might get the job"
-  - context: "Present probability"
-    examples:
-      - "He may be at home"
-  - context: "Polite requests"
-    examples:
-      - "May I use your phone"
-
+- context: Future probability
+  examples:
+  - I may travel next year
+  - She might get the job
+- context: Present probability
+  examples:
+  - He may be at home
+- context: Polite requests
+  examples:
+  - May I use your phone
 phonetics:
-  note: "May is /meɪ/. Might is /maɪt/."
+  note: May is /meɪ/. Might is /maɪt/.
   example_generator:
-    contexts: ["modal pronunciation"]
-  l1_issue: "Portuguese and Spanish speakers often use maybe where English requires may or might."
-
+    contexts:
+    - modal pronunciation
+  l1_issue: Portuguese and Spanish speakers often use maybe where English requires
+    may or might.
 teaching:
-  methodology: "PPP with probability scales"
+  methodology: PPP with probability scales
   tips:
-    - "Week 1: May and might for future probability."
-    - "Week 2: Present probability."
-    - "Week 3: May for formal requests."
+  - 'Week 1: May and might for future probability.'
+  - 'Week 2: Present probability.'
+  - 'Week 3: May for formal requests.'
   recommended_activities:
-    - name: "Probability Scale"
-      duration: 10
-      adaptation_notes: "Students place modals on a scale."
-    - name: "Weather Predictions"
-      duration: 15
-      adaptation_notes: "Students make predictions using may and might."
+  - name: Probability Scale
+    duration: 10
+    adaptation_notes: Students place modals on a scale.
+  - name: Weather Predictions
+    duration: 15
+    adaptation_notes: Students make predictions using may and might.
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

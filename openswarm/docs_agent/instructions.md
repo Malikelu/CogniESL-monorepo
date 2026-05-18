@@ -578,16 +578,30 @@ grammar = yaml.safe_load(Path("[GRAMMAR_PATH]").read_text())
 # Read L1 data (if specified)
 if "[L1_PATH]" != "None":
     l1_data = yaml.safe_load(Path("[L1_PATH]").read_text())
+    # Navigate to the specific grammar point
+    l1_patterns = l1_data.get("grammar_points", {}).get("[TOPIC_SLUG]", {})
 
 # Read activity data
 for activity_id in [ACTIVITIES]:
     activity = yaml.safe_load(Path(f"data/activities/{activity_id}.yaml").read_text())
 ```
 
-Extract:
-- Formation rules, examples, sub-rules from grammar data
-- Interference patterns, wrong→correct examples, teacher tips from L1 data
-- Activity instructions, scripts, differentiation from activity data
+Key fields to extract from grammar YAML:
+- `form.affirmative/negative/questions.structure` — Formation rules
+- `form.*.example_generator` — Example sentences
+- `sub_rules` — Spelling rules, irregulars (each gets its own exercise section)
+- `common_errors` — Specific errors with corrections, explanations, and L1 groups
+- `phonetics` — Pronunciation notes
+- `teaching.tips` — Teacher guidance
+- `teaching.recommended_activities` — Activities with duration and adaptation notes
+
+Key fields to extract from L1 YAML:
+- `interference_patterns` — Each pattern with frequency, persistence, communicative_impact ratings
+- `examples` — Wrong→correct example pairs
+- `why_it_happens` — Explanation of the linguistic transfer
+- `teacher_tips.how_to_explain` — Pedagogical guidance
+- `teacher_tips.exercises` — Specific exercise suggestions
+- `teacher_tips.sequencing` — When to teach this
 
 ## Step 2: Generate the Document
 
@@ -600,21 +614,22 @@ Create a professional ESL worksheet following the Lesson Script's pedagogical ou
 - Level: [Level] | L1: [Language or None] | Age: [Age Group]
 
 **Section A: Controlled Practice**
-- Gap-fill exercises targeting formation rules
-- Multiple choice for meaning comprehension
-- Sentence transformation (affirmative → negative → questions)
-- Use examples from grammar data, customized for age group
+- Gap-fill exercises targeting formation rules [use form.*.example_generator]
+- Multiple choice for meaning comprehension [use meaning.ccqs]
+- Sentence transformation [use form examples]
+- Use age-appropriate examples from grammar data
 
 **Section B: Semi-Controlled Practice**
-- Error correction exercises (include L1-specific errors if L1 data exists)
-- Sentence completion with context
+- Error correction exercises [use common_errors from grammar YAML]
+- Sentence completion with context [use use.contexts]
 - Guided writing tasks
 
 **Section C: L1 Oracle (if L1 data exists)**
 - Highlighted box: "Common [L1] Errors"
-- Wrong → Correct examples from L1 interference data
-- Brief explanation of WHY the error occurs
+- Wrong → Correct examples from L1 interference_patterns
+- Brief explanation from L1 why_it_happens
 - 3-5 error correction exercises targeting these specific patterns
+- Use L1 teacher_tips.exercises suggestions
 
 **Section D: Practice Activities**
 - Include 1-2 activities from the activity data
@@ -659,9 +674,9 @@ Adapt all content for the target age group:
 
 When L1 data exists in the Lesson Script:
 1. ALWAYS include an L1 Oracle section with specific wrong→correct patterns
-2. Create error correction exercises targeting those specific patterns
+2. Prioritize patterns with high frequency and persistence ratings
 3. Include the "why it happens" explanation from the L1 data
-4. Use the specific exercise suggestions from the L1 teacher_tips
+4. Use the specific exercise suggestions from L1 teacher_tips.exercises
 
 This is CogniESL's core differentiator. DO NOT SKIP L1 CONTENT.
 
@@ -703,7 +718,6 @@ This is CogniESL's core differentiator. DO NOT SKIP L1 CONTENT.
 
 If YAML files cannot be read:
 - Inform the teacher: "I'm having trouble accessing the database for [topic]."
-- List available topics using SearchGrammarTool
 - Ask if they'd like to try a different topic
 
 If CreateDocument or ConvertDocument fails:

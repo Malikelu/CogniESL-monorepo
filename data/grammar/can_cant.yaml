@@ -1,120 +1,138 @@
 grammar_point: can_cant
-title: "Can / Can't (ability, permission, requests)"
-description: "Modal verbs used to talk about ability, ask for permission, make requests, and give permission in informal contexts."
+title: Can / Can't (ability, permission, requests)
+description: Modal verbs used to talk about ability, ask for permission, make requests,
+  and give permission in informal contexts.
 level: A1
-
 meaning:
-  core_meaning: "Expresses ability (skill or possibility), permission (informal), and polite requests."
-  timeline: "Refers to present or general ability. Can also refer to future ability: 'I can help you tomorrow.'"
-  contrast: "Can = informal permission or ability. May = formal permission. Could = more polite requests."
+  core_meaning: Expresses ability (skill or possibility), permission (informal), and
+    polite requests.
+  timeline: 'Refers to present or general ability. Can also refer to future ability:
+    ''I can help you tomorrow.'''
+  contrast: Can = informal permission or ability. May = formal permission. Could =
+    more polite requests.
   ccqs:
-    - question: "She can swim. Does she know how to swim?"
-      answer: "Yes. Can here means she has the ability."
-    - question: "Can I borrow your pen? Is this asking for ability or permission?"
-      answer: "Permission. The speaker is asking to use the pen."
-    - question: "Can you help me? Is this a question about ability or a request?"
-      answer: "A request. The speaker is asking someone to do something."
+  - question: She can swim. Does she know how to swim?
+    answer: Yes. Can here means she has the ability.
+  - question: Can I borrow your pen? Is this asking for ability or permission?
+    answer: Permission. The speaker is asking to use the pen.
+  - question: Can you help me? Is this a question about ability or a request?
+    answer: A request. The speaker is asking someone to do something.
   example_generator:
     contexts:
-      - everyday situations
+    - everyday situations
     cultural_notes:
-      - "Can is one of the first modals learners encounter"
-      - "The weak form /kən/ is essential for natural-sounding speech"
+    - Can is one of the first modals learners encounter
+    - The weak form /kən/ is essential for natural-sounding speech
     min_examples: 5
-
 form:
   affirmative:
-    structure: "Subject + can + base verb"
+    structure: Subject + can + base verb
     example_generator:
-      - "I can swim."
-      - "She can speak three languages."
-      - "They can play the guitar."
+    - I can swim.
+    - She can speak three languages.
+    - They can play the guitar.
     min_examples: 4
   negative:
-    structure: "Subject + cannot (can't) + base verb"
+    structure: Subject + cannot (can't) + base verb
     example_generator:
-      - "I cannot swim."
-      - "She can't drive."
-      - "They can't come to the party."
+    - I cannot swim.
+    - She can't drive.
+    - They can't come to the party.
     min_examples: 4
   questions:
-    structure: "Can + subject + base verb?"
+    structure: Can + subject + base verb?
     example_generator:
-      - "Can you swim?"
-      - "Can she help us?"
-      - "Can they come tomorrow?"
+    - Can you swim?
+    - Can she help us?
+    - Can they come tomorrow?
     min_examples: 4
-
 sub_rules:
-  - rule: "Can does not change form for third person singular — it never takes an s"
-    type: grammatical
-    examples:
-      - "He can swim (correct)"
-      - "He cans swim (WRONG)"
-  - rule: "Always use the base form of the verb after can — never use to before the verb"
-    type: grammatical
-    examples:
-      - "I can speak English (correct)"
-      - "I can to speak English (WRONG)"
-  - rule: "The past form of can is could for general ability. For specific past achievements, use was able to or managed to"
-    type: grammatical
-    examples:
-      - "I could swim when I was five (general past ability)"
-      - "I was able to escape the fire (specific achievement)"
-      - "She managed to finish on time (specific achievement)"
-  - rule: "Can also expresses general possibility, meaning it is possible"
-    type: semantic
-    examples:
-      - "It can get very cold in winter"
-      - "Driving can be dangerous"
-  - rule: "Can is used for informal permission. In formal contexts, may is preferred"
-    type: register
-    examples:
-      - "Can I sit here? (to a friend)"
-      - "May I sit here? (to a boss or official)"
-
+- rule: Can does not change form for third person singular — it never takes an s
+  type: grammatical
+  examples:
+  - He can swim (correct)
+  - He cans swim (WRONG)
+- rule: Always use the base form of the verb after can — never use to before the verb
+  type: grammatical
+  examples:
+  - I can speak English (correct)
+  - I can to speak English (WRONG)
+- rule: The past form of can is could for general ability. For specific past achievements,
+    use was able to or managed to
+  type: grammatical
+  examples:
+  - I could swim when I was five (general past ability)
+  - I was able to escape the fire (specific achievement)
+  - She managed to finish on time (specific achievement)
+- rule: Can also expresses general possibility, meaning it is possible
+  type: semantic
+  examples:
+  - It can get very cold in winter
+  - Driving can be dangerous
+- rule: Can is used for informal permission. In formal contexts, may is preferred
+  type: register
+  examples:
+  - Can I sit here? (to a friend)
+  - May I sit here? (to a boss or official)
 use:
-  - context: "Ability (skill or possibility)"
-    examples:
-      - "I can ride a bike."
-      - "You can buy coffee here."
-      - "She can speak French."
-  - context: "Informal permission"
-    examples:
-      - "Can I leave early today?"
-      - "You can use my laptop."
-      - "Can we sit here?"
-  - context: "Polite requests"
-    examples:
-      - "Can you pass the salt?"
-      - "Can you repeat that?"
-      - "Can you help me with this?"
-
+- context: Ability (skill or possibility)
+  examples:
+  - I can ride a bike.
+  - You can buy coffee here.
+  - She can speak French.
+- context: Informal permission
+  examples:
+  - Can I leave early today?
+  - You can use my laptop.
+  - Can we sit here?
+- context: Polite requests
+  examples:
+  - Can you pass the salt?
+  - Can you repeat that?
+  - Can you help me with this?
 phonetics:
-  - note: "In connected speech, can is usually pronounced as /kən/ (schwa) when it is an auxiliary verb. It only receives full stress /kæn/ when emphasised or at the end of a sentence."
-    example_generator:
-      - "I can go → /aɪ kən ɡəʊ/"
-      - "Yes, I can → /jes aɪ kæn/ (stressed at end)"
-    l1_issue: "Learners often over-pronounce can as /kæn/ in all positions, which sounds unnatural. Spanish and Arabic speakers may need practice with the reduced schwa."
-  - note: "Can't is always strong and pronounced /kɑːnt/ in British English and /kænt/ in American English. It is never reduced."
-    example_generator:
-      - "can't → /kɑːnt/ (British) or /kænt/ (American)"
-    l1_issue: "Some learners confuse can and can't in listening because the final /t/ can be subtle. The vowel difference (schwa vs. full vowel) is the main clue."
-
+- note: In connected speech, can is usually pronounced as /kən/ (schwa) when it is
+    an auxiliary verb. It only receives full stress /kæn/ when emphasised or at the
+    end of a sentence.
+  example_generator:
+  - I can go → /aɪ kən ɡəʊ/
+  - Yes, I can → /jes aɪ kæn/ (stressed at end)
+  l1_issue: Learners often over-pronounce can as /kæn/ in all positions, which sounds
+    unnatural. Spanish and Arabic speakers may need practice with the reduced schwa.
+- note: Can't is always strong and pronounced /kɑːnt/ in British English and /kænt/
+    in American English. It is never reduced.
+  example_generator:
+  - can't → /kɑːnt/ (British) or /kænt/ (American)
+  l1_issue: Some learners confuse can and can't in listening because the final /t/
+    can be subtle. The vowel difference (schwa vs. full vowel) is the main clue.
 teaching:
-  methodology: "PPP"
+  methodology: PPP
   tips:
-    - "Use real class skills: 'I can write English' (student ability)."
-    - "Role-play: Student A asks for informal permission, Student B uses can to agree."
-    - "Contrast with may using scenarios: asking a teacher vs asking a friend."
-    - "Practice with action verbs: swim, run, cook, speak."
+  - 'Use real class skills: ''I can write English'' (student ability).'
+  - 'Role-play: Student A asks for informal permission, Student B uses can to agree.'
+  - 'Contrast with may using scenarios: asking a teacher vs asking a friend.'
+  - 'Practice with action verbs: swim, run, cook, speak.'
   recommended_activities:
-    - name: "Talent Show"
-      duration: 20
-      adaptation_notes: "Each student writes three things they can do and one thing they can't do (one is a lie). The class guesses the lie."
-    - name: "Permission Role-Play"
-      duration: 15
-      adaptation_notes: "Set up scenarios: asking a friend to borrow a pen, asking a boss for time off, asking a waiter for the bill. Students practise using can and may appropriately."
-    - name: "Can You Survey"
-      duration: 15
-      adaptation_notes: "Students create a survey with 'Can you...?' questions and interview classmates. They report back: 'Three people can play a musical instrument.'"
+  - name: Talent Show
+    duration: 20
+    adaptation_notes: Each student writes three things they can do and one thing they
+      can't do (one is a lie). The class guesses the lie.
+  - name: Permission Role-Play
+    duration: 15
+    adaptation_notes: 'Set up scenarios: asking a friend to borrow a pen, asking a
+      boss for time off, asking a waiter for the bill. Students practise using can
+      and may appropriately.'
+  - name: Can You Survey
+    duration: 15
+    adaptation_notes: 'Students create a survey with ''Can you...?'' questions and
+      interview classmates. They report back: ''Three people can play a musical instrument.'''
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

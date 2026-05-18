@@ -1,123 +1,229 @@
 grammar_point: present_simple
-title: "Present Simple"
-description: "Used for habits, routines, general truths, permanent situations, and scheduled events. The most fundamental English tense."
+title: Present Simple
+description: Used for habits, routines, general truths, permanent situations, and
+  scheduled events. The most fundamental English tense.
 level: A1
-
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
 meaning:
-  core_meaning: "Describes actions that happen regularly (habits), things that are always true (facts), and situations that are not temporary (permanent). Does NOT describe actions happening right now."
-  timeline: "Present time, but not 'right now'. Think of it as a repeated or permanent state."
-  contrast: "'Present Simple' = 'I eat breakfast every morning.' (habit) vs 'Present Continuous' = 'I am eating breakfast.' (right now)"
+  core_meaning: Describes actions that happen regularly (habits), things that are
+    always true (facts), and situations that are not temporary (permanent). Does NOT
+    describe actions happening right now.
+  timeline: Present time, but not 'right now'. Think of it as a repeated or permanent
+    state.
+  contrast: '''Present Simple'' = ''I eat breakfast every morning.'' (habit) vs ''Present
+    Continuous'' = ''I am eating breakfast.'' (right now)'
   ccqs:
-    - question: "Is this happening right now, at this exact moment?"
-      answer: "No — it happens regularly or is always true."
-    - question: "Is this a temporary situation?"
-      answer: "No — it is permanent or habitual."
-    - question: "Can we use words like 'always', 'usually', 'every day' with this?"
-      answer: "Yes — these time expressions go with the Present Simple."
+  - question: Is this happening right now, at this exact moment?
+    answer: No — it happens regularly or is always true.
+  - question: Is this a temporary situation?
+    answer: No — it is permanent or habitual.
+  - question: Can we use words like 'always', 'usually', 'every day' with this?
+    answer: Yes — these time expressions go with the Present Simple.
   example_generator:
     contexts:
-      - daily routines
-      - jobs and professions
-      - hobbies and free time
-      - general facts about the world
-      - schedules and timetables
+    - daily routines
+    - jobs and professions
+    - hobbies and free time
+    - general facts about the world
+    - schedules and timetables
     cultural_notes:
-      - "Avoid references to alcohol, politics, or religion in examples"
-      - "Use diverse names and cultural contexts"
-      - "Keep examples neutral and appropriate for all ages"
+    - Avoid references to alcohol, politics, or religion in examples
+    - Use diverse names and cultural contexts
+    - Keep examples neutral and appropriate for all ages
     min_examples: 5
-
 form:
   affirmative:
-    structure: "I/you/we/they + base verb (V1) / He/she/it + base verb + s/es"
+    structure: I/you/we/they + base verb (V1) / He/she/it + base verb + s/es
     example_generator:
-      - "I walk to school."
-      - "She walks to school."
-      - "They work in an office."
-      - "He works in an office."
+    - I walk to school.
+    - She walks to school.
+    - They work in an office.
+    - He works in an office.
     min_examples: 4
   negative:
-    structure: "Subject + do not (don't) / does not (doesn't) + base verb"
+    structure: Subject + do not (don't) / does not (doesn't) + base verb
     example_generator:
-      - "I don't like coffee."
-      - "She doesn't like coffee."
-      - "They don't live here."
-      - "He doesn't live here."
+    - I don't like coffee.
+    - She doesn't like coffee.
+    - They don't live here.
+    - He doesn't live here.
     min_examples: 4
   questions:
-    structure: "Do/Does + subject + base verb?"
+    structure: Do/Does + subject + base verb?
     example_generator:
-      - "Do you speak English?"
-      - "Does she speak English?"
-      - "Do they work here?"
-      - "Does he work here?"
+    - Do you speak English?
+    - Does she speak English?
+    - Do they work here?
+    - Does he work here?
     min_examples: 4
-
 sub_rules:
-  - rule: "Third person singular spelling: add -s"
-    type: spelling
-    examples: ["work → works", "play → plays", "read → reads"]
-  - rule: "Verbs ending in -s, -sh, -ch, -x, -o: add -es"
-    type: spelling
-    examples: ["watch → watches", "wash → washes", "go → goes", "fix → fixes"]
-  - rule: "Verbs ending in consonant + y: change y to i, add -es"
-    type: spelling
-    examples: ["study → studies", "carry → carries", "fly → flies"]
-  - rule: "Verbs ending in vowel + y: just add -s"
-    type: spelling
-    examples: ["play → plays", "enjoy → enjoys", "buy → buys"]
-  - rule: "Have becomes has in third person singular"
-    type: irregular
-    examples: ["I have → He has", "They have → She has"]
-  - rule: "Common time expressions: always, usually, often, sometimes, rarely, never, every day/week/month"
-    type: lexical
-    examples: ["I always wake up at 7.", "She never eats meat.", "They play football every Sunday."]
-
+- rule: 'Third person singular spelling: add -s'
+  type: spelling
+  examples:
+  - work → works
+  - play → plays
+  - read → reads
+- rule: 'Verbs ending in -s, -sh, -ch, -x, -o: add -es'
+  type: spelling
+  examples:
+  - watch → watches
+  - wash → washes
+  - go → goes
+  - fix → fixes
+- rule: 'Verbs ending in consonant + y: change y to i, add -es'
+  type: spelling
+  examples:
+  - study → studies
+  - carry → carries
+  - fly → flies
+- rule: 'Verbs ending in vowel + y: just add -s'
+  type: spelling
+  examples:
+  - play → plays
+  - enjoy → enjoys
+  - buy → buys
+- rule: Have becomes has in third person singular
+  type: irregular
+  examples:
+  - I have → He has
+  - They have → She has
+- rule: 'Common time expressions: always, usually, often, sometimes, rarely, never,
+    every day/week/month'
+  type: lexical
+  examples:
+  - I always wake up at 7.
+  - She never eats meat.
+  - They play football every Sunday.
 use:
-  - context: "Habits and routines"
-    description: "Actions that happen regularly"
-    examples: ["I wake up at 7 every morning.", "She brushes her teeth twice a day.", "They go to the gym on Mondays."]
-  - context: "General truths and facts"
-    description: "Things that are always true"
-    examples: ["The sun rises in the east.", "Water boils at 100°C.", "Dogs bark."]
-  - context: "Permanent situations"
-    description: "Things that are not temporary"
-    examples: ["I live in São Paulo.", "She works at a bank.", "They study at university."]
-  - context: "Scheduled events"
-    description: "Timetables and fixed schedules"
-    examples: ["The train leaves at 6pm.", "The class starts at 9am.", "The shop closes at 10pm."]
-
+- context: Habits and routines
+  description: Actions that happen regularly
+  examples:
+  - I wake up at 7 every morning.
+  - She brushes her teeth twice a day.
+  - They go to the gym on Mondays.
+- context: General truths and facts
+  description: Things that are always true
+  examples:
+  - The sun rises in the east.
+  - Water boils at 100°C.
+  - Dogs bark.
+- context: Permanent situations
+  description: Things that are not temporary
+  examples:
+  - I live in São Paulo.
+  - She works at a bank.
+  - They study at university.
+- context: Scheduled events
+  description: Timetables and fixed schedules
+  examples:
+  - The train leaves at 6pm.
+  - The class starts at 9am.
+  - The shop closes at 10pm.
 phonetics:
-  - note: "Third person -s pronunciation: /s/ after voiceless sounds (works, stops), /z/ after voiced sounds (plays, reads), /ɪz/ after sibilant sounds (watches, washes)"
-    example_generator:
-      - "works /wɜːks/ (voiceless /k/ → /s/)"
-      - "plays /pleɪz/ (voiced /eɪ/ → /z/)"
-      - "watches /wɒtʃɪz/ (sibilant /tʃ/ → /ɪz/)"
-    l1_issue: "Portuguese and Spanish speakers often omit the third person -s because their languages do not add -s for he/she/it in the same way. Drill this explicitly."
-  - note: "Weak form of 'do' in questions: /də/ not /duː/. 'Does' pronounced /dʌz/ not /duːz/."
-    example_generator:
-      - "Do you...? /də juː/"
-      - "Does she...? /dʌz ʃiː/"
-    l1_issue: "Many L1 speakers over-pronounce 'do' and 'does' as /duː/ and /duːz/. Teach the weak forms early."
-
+- note: 'Third person -s pronunciation: /s/ after voiceless sounds (works, stops),
+    /z/ after voiced sounds (plays, reads), /ɪz/ after sibilant sounds (watches, washes)'
+  example_generator:
+  - works /wɜːks/ (voiceless /k/ → /s/)
+  - plays /pleɪz/ (voiced /eɪ/ → /z/)
+  - watches /wɒtʃɪz/ (sibilant /tʃ/ → /ɪz/)
+  l1_issue: Portuguese and Spanish speakers often omit the third person -s because
+    their languages do not add -s for he/she/it in the same way. Drill this explicitly.
+- note: 'Weak form of ''do'' in questions: /də/ not /duː/. ''Does'' pronounced /dʌz/
+    not /duːz/.'
+  example_generator:
+  - Do you...? /də juː/
+  - Does she...? /dʌz ʃiː/
+  l1_issue: Many L1 speakers over-pronounce 'do' and 'does' as /duː/ and /duːz/. Teach
+    the weak forms early.
+common_errors:
+- error: 'Omitting third person -s: *''She walk to school.'''
+  correction: She walks to school.
+  explanation: In English, third person singular (he/she/it) always takes -s in present
+    simple. This is the most common error at A1 level. Many L1s (Portuguese, Spanish,
+    Chinese) do not mark person on verbs in the same way.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Japanese
+  - Korean
+- error: 'Using present simple for actions happening now: *''I eat lunch now.'''
+  correction: I am eating lunch now.
+  explanation: Present simple is for habits and general truths, not for actions happening
+    at the moment of speaking. Use present continuous for 'right now'.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+- error: 'Adding -s to all persons: *''I walks to school.'''
+  correction: I walk to school.
+  explanation: Only third person singular (he/she/it) takes -s. All other persons
+    use the base form.
+  l1_groups:
+  - Arabic
+  - Hindi
+- error: 'Using ''do'' in affirmative sentences: *''I do walk to school every day.'''
+  correction: I walk to school every day.
+  explanation: '''Do/does'' is only used in negatives and questions in present simple.
+    In affirmative sentences, the verb stands alone (with -s for third person).'
+  l1_groups:
+  - Portuguese
+  - Spanish
+discourse_notes:
+- note: 'Present simple is used in instructions and recipes: ''First, you chop the
+    onions. Then you heat the oil.'''
+- note: 'Present simple is used in sports commentary for dramatic effect: ''He shoots!
+    He scores!'''
+- note: 'Present simple is used in plot summaries and reviews: ''The main character
+    travels to London and meets a mysterious stranger.'''
+- note: 'In academic writing, present simple creates cohesion when discussing established
+    knowledge: ''Smith (2020) argues that... This suggests that...'''
 teaching:
-  methodology: "PPP (Present-Practice-Produce)"
+  methodology: PPP (Present-Practice-Produce)
   tips:
-    - "Start with students' own routines: 'What time do you wake up?' This makes the grammar personal and meaningful."
-    - "Use a daily routine timeline on the board to visualize the concept of repeated actions."
-    - "Drill the third person -s explicitly. This is the most common error at A1 level."
-    - "Contrast with Present Continuous early: 'I walk to school (every day) vs I am walking to school (right now).'"
-    - "Use frequency adverbs (always, usually, sometimes, never) to reinforce the habitual meaning."
+  - 'Start with students'' own routines: ''What time do you wake up?'' This makes
+    the grammar personal and meaningful.'
+  - Use a daily routine timeline on the board to visualize the concept of repeated
+    actions.
+  - Drill the third person -s explicitly. This is the most common error at A1 level.
+  - 'Contrast with Present Continuous early: ''I walk to school (every day) vs I am
+    walking to school (right now).'''
+  - Use frequency adverbs (always, usually, sometimes, never) to reinforce the habitual
+    meaning.
+  - Teach the weak forms of 'do' (/də/) and 'does' (/dʌz/) from the beginning — this
+    is essential for natural-sounding speech.
+  - 'Use realia: show timetables, schedules, and routines to demonstrate the ''scheduled
+    events'' use.'
   recommended_activities:
-    - name: "Find Someone Who"
-      duration: 15
-      adaptation_notes: "Students ask classmates 'Do you...?' questions to find people who match. Great for practicing questions and third person -s when reporting back."
-    - name: "Daily Routine Interview"
-      duration: 10
-      adaptation_notes: "Students interview a partner about their daily routine, then report to the class: 'She wakes up at 7. She has breakfast at 7:30.' Practices third person -s."
-    - name: "Error Correction Race"
-      duration: 10
-      adaptation_notes: "Show sentences with missing third person -s. Students race to identify and correct the errors. Good for drilling the most common mistake."
-    - name: "My Perfect Day"
-      duration: 15
-      adaptation_notes: "Students write about their ideal daily routine using Present Simple. Encourages creative use of the target structure with frequency adverbs."
+  - name: Find Someone Who
+    duration: 15
+    adaptation_notes: Students ask classmates 'Do you...?' questions to find people
+      who match. Great for practicing questions and third person -s when reporting
+      back.
+  - name: Daily Routine Interview
+    duration: 10
+    adaptation_notes: 'Students interview a partner about their daily routine, then
+      report to the class: ''She wakes up at 7. She has breakfast at 7:30.'' Practices
+      third person -s.'
+  - name: Error Correction Race
+    duration: 10
+    adaptation_notes: Show sentences with missing third person -s. Students race to
+      identify and correct the errors. Good for drilling the most common mistake.
+  - name: My Perfect Day
+    duration: 15
+    adaptation_notes: Students write about their ideal daily routine using Present
+      Simple. Encourages creative use of the target structure with frequency adverbs.
+  - name: Timetable Reading
+    duration: 10
+    adaptation_notes: 'Show a real train/bus timetable. Students make sentences: ''The
+      train leaves at 6pm. It arrives at 8pm.'' Practices the ''scheduled events''
+      use.'

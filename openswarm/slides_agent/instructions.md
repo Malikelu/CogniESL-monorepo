@@ -353,9 +353,23 @@ for activity_id in [ACTIVITIES]:
 ```
 
 Extract:
-- Formation rules, examples, sub-rules from grammar data
-- Interference patterns, wrong→correct examples, teacher tips from L1 data
-- Activity instructions, scripts, differentiation from activity data
+- `form.affirmative/negative/questions.structure` — Formation rules
+- `form.*.example_generator` — Example sentences
+- `sub_rules` — Spelling rules, irregulars (each gets its own slide)
+- `common_errors` — Specific errors with corrections, explanations, and L1 groups
+- `phonetics` — Pronunciation notes and L1 issues
+- `discourse_notes` — Real-world usage contexts
+- `teaching.methodology` — PPP or other framework
+- `teaching.tips` — Teacher guidance for speaker notes
+- `teaching.recommended_activities` — Activities with duration and adaptation notes
+
+Key fields to extract from L1 YAML:
+- `interference_patterns` — Each pattern with frequency, persistence, communicative_impact ratings
+- `examples` — Wrong→correct example pairs
+- `why_it_happens` — Explanation of the linguistic transfer
+- `teacher_tips.how_to_explain` — Pedagogical guidance for speaker notes
+- `teacher_tips.exercises` — Specific exercise suggestions
+- `teacher_tips.sequencing` — When to teach this
 
 ## Step 2: Plan the Presentation
 
@@ -377,8 +391,11 @@ Based on the Lesson Script and YAML data, plan the slide structure following the
 
 ### Section 4: The L1 Oracle (1-2 slides) — CRITICAL
 - **"Ghost Error" Shield** — Dedicated slide(s) highlighting L1-specific mistakes
-- Format: WRONG sentence → CORRECT sentence → brief explanation of WHY
+- Use `interference_patterns` from L1 YAML — each pattern has structured wrong→correct examples
+- Format: WRONG sentence → CORRECT sentence → brief explanation of WHY (from `why_it_happens`)
+- Prioritize patterns with high `frequency` and `persistence` ratings
 - Include 2-3 specific L1 error patterns with wrong→correct examples
+- Add speaker notes with `teacher_tips.how_to_explain` guidance
 - This section is what makes CogniESL unique. DO NOT SKIP when L1 data exists.
 
 ### Section 5: Scaffolded Practice (3-6 slides)

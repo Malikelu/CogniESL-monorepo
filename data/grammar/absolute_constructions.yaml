@@ -1,87 +1,95 @@
 grammar_point: absolute_constructions
-title: "Absolute Constructions"
-description: "Noun + participle constructions that modify the whole sentence: Weather permitting, we will go."
+title: Absolute Constructions
+description: 'Noun + participle constructions that modify the whole sentence: Weather
+  permitting, we will go.'
 level: C2
-
 meaning:
-  core_meaning: "An absolute construction consists of a noun phrase followed by a participle, adjective, or prepositional phrase. It modifies the entire main clause rather than a single word, providing background information or conditions."
-  timeline: "Timeless — can be used with any tense."
-  contrast: "Absolute = Weather permitting, we will go. vs Adverbial clause = If the weather permits, we will go."
+  core_meaning: An absolute construction consists of a noun phrase followed by a participle,
+    adjective, or prepositional phrase. It modifies the entire main clause rather
+    than a single word, providing background information or conditions.
+  timeline: Timeless — can be used with any tense.
+  contrast: Absolute = Weather permitting, we will go. vs Adverbial clause = If the
+    weather permits, we will go.
   ccqs:
-    - question: Does this construction modify the whole sentence?
-      answer: Yes, it is an absolute construction.
-    - question: Is there a finite verb in the absolute phrase?
-      answer: No, it uses a participle, not a finite verb.
+  - question: Does this construction modify the whole sentence?
+    answer: Yes, it is an absolute construction.
+  - question: Is there a finite verb in the absolute phrase?
+    answer: No, it uses a participle, not a finite verb.
   example_generator:
     contexts:
-      - formal writing
-      - literary English
-      - academic prose
-      - legal documents
+    - formal writing
+    - literary English
+    - academic prose
+    - legal documents
     cultural_notes:
-      - Very formal — rarely used in spoken English
-      - More common in American English
+    - Very formal — rarely used in spoken English
+    - More common in American English
     min_examples: 4
-
 form:
   affirmative:
-    structure: "Noun phrase + participle/adjective/prepositional phrase, + main clause"
+    structure: Noun phrase + participle/adjective/prepositional phrase, + main clause
     example_generator:
       contexts:
-        - formal writing
-        - literary English
+      - formal writing
+      - literary English
       min_examples: 4
   negative:
-    structure: "Noun phrase + not + participle: Time not permitting, we will postpone."
+    structure: 'Noun phrase + not + participle: Time not permitting, we will postpone.'
     example_generator:
       contexts:
-        - negative conditions
+      - negative conditions
       min_examples: 3
   questions:
-    structure: "Not typically used in questions."
+    structure: Not typically used in questions.
     example_generator:
       contexts: []
     min_examples: 0
-
 sub_rules:
-  - rule: "Present participle for active meaning"
-    type: grammatical
-    examples:
-      - The sun having set, we went home.
-      - His voice trembling, he spoke.
-  - rule: "Past participle for passive meaning"
-    type: grammatical
-    examples:
-      - The work completed, she relaxed.
-      - All things considered, it was a success.
-  - rule: "Adjective or prepositional phrase (no participle)"
-    type: grammatical
-    examples:
-      - He sat quietly, his eyes closed.
-      - She walked in, a book in her hand.
-
+- rule: Present participle for active meaning
+  type: grammatical
+  examples:
+  - The sun having set, we went home.
+  - His voice trembling, he spoke.
+- rule: Past participle for passive meaning
+  type: grammatical
+  examples:
+  - The work completed, she relaxed.
+  - All things considered, it was a success.
+- rule: Adjective or prepositional phrase (no participle)
+  type: grammatical
+  examples:
+  - He sat quietly, his eyes closed.
+  - She walked in, a book in her hand.
 use:
-  - context: "Formal writing"
-    description: "Academic and literary prose"
-    examples:
-      - All things considered, the plan was successful.
-      - The data having been analyzed, we drew our conclusions.
-
+- context: Formal writing
+  description: Academic and literary prose
+  examples:
+  - All things considered, the plan was successful.
+  - The data having been analyzed, we drew our conclusions.
 phonetics:
-  - note: "Pause (comma) between the absolute phrase and the main clause"
-    example_generator:
-      contexts:
-        - punctuation
-        - reading aloud
-    l1_issue: "Very advanced structure — most L1 speakers will not use this naturally"
-
+- note: Pause (comma) between the absolute phrase and the main clause
+  example_generator:
+    contexts:
+    - punctuation
+    - reading aloud
+  l1_issue: Very advanced structure — most L1 speakers will not use this naturally
 teaching:
-  methodology: "Guided discovery"
+  methodology: Guided discovery
   tips:
-    - Use authentic literary examples
-    - Contrast with adverbial clauses
-    - Explain that this is advanced, formal English
+  - Use authentic literary examples
+  - Contrast with adverbial clauses
+  - Explain that this is advanced, formal English
   recommended_activities:
-    - name: "Literary Analysis"
-      duration: 15
-      adaptation_notes: "Students identify absolute constructions in literary texts."
+  - name: Literary Analysis
+    duration: 15
+    adaptation_notes: Students identify absolute constructions in literary texts.
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

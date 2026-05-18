@@ -1,68 +1,105 @@
 grammar_point: pseudo_cleft
-title: "Pseudo-Cleft Sentences (Wh-Clefts)"
-description: "Using what-clauses for emphasis: What I need is a good night's sleep. / A good night's sleep is what I need."
+title: Pseudo-Cleft Sentences (Wh-Clefts)
+description: 'Using what-clauses for emphasis: What I need is a good night''s sleep.
+  / A good night''s sleep is what I need.'
 level: B2
-
 meaning:
-  core_meaning: "Pseudo-cleft (wh-cleft) sentences divide a single clause into two parts for emphasis using a what-clause. The focused element can go at the end (standard) or beginning (reversed)."
-  timeline: "Depends on the tense used."
-  contrast: "Simple = I need a good night's sleep. vs Pseudo-cleft = What I need is a good night's sleep."
+  core_meaning: Pseudo-cleft (wh-cleft) sentences divide a single clause into two
+    parts for emphasis using a what-clause. The focused element can go at the end
+    (standard) or beginning (reversed).
+  timeline: Depends on the tense used.
+  contrast: Simple = I need a good night's sleep. vs Pseudo-cleft = What I need is
+    a good night's sleep.
   ccqs:
-    - question: "Does this sentence use a what-clause for emphasis?"
-      answer: "Yes, it is a pseudo-cleft."
-    - question: "What element is being emphasized?"
-      answer: "The element after 'is/was' (standard) or before the what-clause (reversed)."
+  - question: Does this sentence use a what-clause for emphasis?
+    answer: Yes, it is a pseudo-cleft.
+  - question: What element is being emphasized?
+    answer: The element after 'is/was' (standard) or before the what-clause (reversed).
   example_generator:
-    contexts: ["emphasis", "contrast", "formal writing", "academic English"]
-    cultural_notes: ["Pseudo-clefts are common in spoken and written English", "They are more natural than it-clefts in many contexts"]
+    contexts:
+    - emphasis
+    - contrast
+    - formal writing
+    - academic English
+    cultural_notes:
+    - Pseudo-clefts are common in spoken and written English
+    - They are more natural than it-clefts in many contexts
     min_examples: 5
-
 form:
   affirmative:
-    structure: "Standard: What + subject + verb + be + focused element / Reversed: Focused element + be + what + subject + verb"
+    structure: 'Standard: What + subject + verb + be + focused element / Reversed:
+      Focused element + be + what + subject + verb'
     example_generator:
-      contexts: ["standard pseudo-cleft", "reversed pseudo-cleft"]
+      contexts:
+      - standard pseudo-cleft
+      - reversed pseudo-cleft
       min_examples: 4
   negative:
-    structure: "Same patterns: What I do not need is more stress. / More stress is what I do not need."
+    structure: 'Same patterns: What I do not need is more stress. / More stress is
+      what I do not need.'
     example_generator:
-      contexts: ["negative pseudo-cleft"]
+      contexts:
+      - negative pseudo-cleft
       min_examples: 3
   questions:
-    structure: "Can appear in questions: What do you need?"
+    structure: 'Can appear in questions: What do you need?'
     example_generator:
-      contexts: ["question formation"]
+      contexts:
+      - question formation
     min_examples: 3
-
 sub_rules:
-  - rule: "Standard pseudo-cleft puts focus at the end"
-    type: grammatical
-    examples: ["What I need is a good night's sleep.", "What she did was incredible.", "What matters most is your health."]
-  - rule: "Reversed pseudo-cleft puts focus at the beginning"
-    type: grammatical
-    examples: ["A good night's sleep is what I need.", "Incredible is what she did.", "Your health is what matters most."]
-  - rule: "The what-clause functions as the subject"
-    type: grammatical
-    examples: ["What I said was true. (what I said = subject)", "What happened is unclear. (what happened = subject)"]
-
+- rule: Standard pseudo-cleft puts focus at the end
+  type: grammatical
+  examples:
+  - What I need is a good night's sleep.
+  - What she did was incredible.
+  - What matters most is your health.
+- rule: Reversed pseudo-cleft puts focus at the beginning
+  type: grammatical
+  examples:
+  - A good night's sleep is what I need.
+  - Incredible is what she did.
+  - Your health is what matters most.
+- rule: The what-clause functions as the subject
+  type: grammatical
+  examples:
+  - What I said was true. (what I said = subject)
+  - What happened is unclear. (what happened = subject)
 use:
-  - context: "Emphasis"
-    description: "Highlighting specific information"
-    examples: ["What I appreciate most is your honesty.", "What we need now is a solution."]
-  - context: "Contrast"
-    description: "Correcting or clarifying information"
-    examples: ["What I said was not a criticism — it was a suggestion.", "What happened was an accident, not intentional."]
-
+- context: Emphasis
+  description: Highlighting specific information
+  examples:
+  - What I appreciate most is your honesty.
+  - What we need now is a solution.
+- context: Contrast
+  description: Correcting or clarifying information
+  examples:
+  - What I said was not a criticism — it was a suggestion.
+  - What happened was an accident, not intentional.
 phonetics:
-  - note: "Stress on the focused element"
-    example_generator:
-      contexts: ["emphasis"]
-    l1_issue: "Many L1 speakers do not use pseudo-clefts, missing opportunities for natural emphasis"
-
+- note: Stress on the focused element
+  example_generator:
+    contexts:
+    - emphasis
+  l1_issue: Many L1 speakers do not use pseudo-clefts, missing opportunities for natural
+    emphasis
 teaching:
-  methodology: "Guided discovery"
-  tips: ["Use contrastive contexts", "Practice both standard and reversed forms", "Contrast with simple sentences"]
+  methodology: Guided discovery
+  tips:
+  - Use contrastive contexts
+  - Practice both standard and reversed forms
+  - Contrast with simple sentences
   recommended_activities:
-    - name: "Emphasis Practice"
-      duration: 15
-      adaptation_notes: "Students rewrite simple sentences using pseudo-cleft for emphasis."
+  - name: Emphasis Practice
+    duration: 15
+    adaptation_notes: Students rewrite simple sentences using pseudo-cleft for emphasis.
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.

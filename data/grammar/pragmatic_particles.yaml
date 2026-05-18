@@ -1,157 +1,202 @@
 grammar_point: pragmatic_particles
-title: "Pragmatic Particles (just, really, quite, simply, actually, basically)"
-description: "Words and short expressions that convey speaker attitude, emphasis, hedging, or pragmatic nuance rather than core lexical meaning. They subtly shape how a message is received."
+title: Pragmatic Particles (just, really, quite, simply, actually, basically)
+description: Words and short expressions that convey speaker attitude, emphasis, hedging,
+  or pragmatic nuance rather than core lexical meaning. They subtly shape how a message
+  is received.
 level: C1
-
 meaning:
-  core_meaning: "Pragmatic particles are words inserted into utterances to signal the speaker's stance — such as emphasis, surprise, hedging, solidarity, or impatience — without changing the factual content of the sentence."
-  timeline: "Timeless — pragmatic particles can be used with any tense."
-  contrast: "Unlike adverbs of manner (e.g., 'quickly', 'carefully'), pragmatic particles do not describe how an action is performed; they comment on the speaker's attitude toward the proposition. Removing a pragmatic particle does not change the truth conditions of the sentence."
+  core_meaning: Pragmatic particles are words inserted into utterances to signal the
+    speaker's stance — such as emphasis, surprise, hedging, solidarity, or impatience
+    — without changing the factual content of the sentence.
+  timeline: Timeless — pragmatic particles can be used with any tense.
+  contrast: Unlike adverbs of manner (e.g., 'quickly', 'carefully'), pragmatic particles
+    do not describe how an action is performed; they comment on the speaker's attitude
+    toward the proposition. Removing a pragmatic particle does not change the truth
+    conditions of the sentence.
   ccqs:
-    - question: "If I remove 'just' from 'I was just wondering,' does the core meaning change?"
-      answer: "No — 'I was wondering' has the same factual content. 'Just' softens the request, making it less imposing."
-    - question: "In 'That's really incredible,' does 'really' add new information?"
-      answer: "No — it intensifies the speaker's emotional reaction but does not change the proposition."
-    - question: "Can pragmatic particles be removed without making the sentence ungrammatical?"
-      answer: "Yes — they are pragmatically optional, not grammatically required."
+  - question: If I remove 'just' from 'I was just wondering,' does the core meaning
+      change?
+    answer: No — 'I was wondering' has the same factual content. 'Just' softens the
+      request, making it less imposing.
+  - question: In 'That's really incredible,' does 'really' add new information?
+    answer: No — it intensifies the speaker's emotional reaction but does not change
+      the proposition.
+  - question: Can pragmatic particles be removed without making the sentence ungrammatical?
+    answer: Yes — they are pragmatically optional, not grammatically required.
   example_generator:
     contexts:
+    - casual conversation
+    - professional emails
+    - academic discussion
+    - customer service interactions
+    - social media
+    cultural_notes:
+    - British English uses 'quite' as a downtoner (quite good = moderately good),
+      whereas American English often uses it as an intensifier (quite good = very
+      good).
+    - '''Just'' is one of the most overused pragmatic particles in English and can
+      sound dismissive if overused.'
+    min_examples: 5
+form:
+  affirmative:
+    structure: 'Particle inserted before or after the element it modifies. Common
+      positions: before adjectives/adverbs (really good), before verbs (just wanted),
+      after ''be'' (It''s actually quite nice), or at the end of a clause for discourse
+      markers (basically,).'
+    example_generator:
+      contexts:
       - casual conversation
       - professional emails
       - academic discussion
-      - customer service interactions
-      - social media
-    cultural_notes:
-      - "British English uses 'quite' as a downtoner (quite good = moderately good), whereas American English often uses it as an intensifier (quite good = very good)."
-      - "'Just' is one of the most overused pragmatic particles in English and can sound dismissive if overused."
-    min_examples: 5
-
-form:
-  affirmative:
-    structure: "Particle inserted before or after the element it modifies. Common positions: before adjectives/adverbs (really good), before verbs (just wanted), after 'be' (It's actually quite nice), or at the end of a clause for discourse markers (basically,)."
-    example_generator:
-      contexts:
-        - casual conversation
-        - professional emails
-        - academic discussion
       min_examples: 4
   negative:
-    structure: "Particles can appear in negative sentences, typically before the negated element or after the auxiliary: 'It's not really a problem,' 'I just don't understand,' 'She simply wouldn't listen.'"
+    structure: 'Particles can appear in negative sentences, typically before the negated
+      element or after the auxiliary: ''It''s not really a problem,'' ''I just don''t
+      understand,'' ''She simply wouldn''t listen.'''
     example_generator:
       contexts:
-        - expressing disagreement
-        - softening criticism
-        - hedging in negative statements
+      - expressing disagreement
+      - softening criticism
+      - hedging in negative statements
       min_examples: 3
   questions:
-    structure: "Particles in questions often soften or add nuance: 'Are you really sure?' (surprise/doubt), 'Could you just help me?' (politeness), 'Do you actually mean that?' (seeking confirmation)."
+    structure: 'Particles in questions often soften or add nuance: ''Are you really
+      sure?'' (surprise/doubt), ''Could you just help me?'' (politeness), ''Do you
+      actually mean that?'' (seeking confirmation).'
     example_generator:
       contexts:
-        - checking understanding
-        - polite requests
-        - expressing surprise
+      - checking understanding
+      - polite requests
+      - expressing surprise
       min_examples: 3
-
 sub_rules:
-  - rule: "Emphasising particles (really, absolutely, simply, just)"
-    type: "pragmatic"
-    examples:
-      - "That's absolutely brilliant!"
-      - "I simply can't believe what happened."
-      - "She really outdid herself this time."
-      - "It was just perfect."
-  - rule: "Downtoning/hedging particles (just, quite, rather, a bit)"
-    type: "pragmatic"
-    examples:
-      - "I was just wondering if you had a moment."
-      - "It's quite cold today, actually."
-      - "I'm a bit tired, actually."
-      - "It's rather expensive, isn't it?"
-  - rule: "Discourse-organising particles (basically, actually, anyway, obviously)"
-    type: "discourse"
-    examples:
-      - "Basically, we need to start over."
-      - "Actually, I think you're right."
-      - "Anyway, let's move on to the next point."
-      - "Obviously, that wasn't the plan."
-  - rule: "Solidarity and rapport particles (you know, I mean, sort of, kind of)"
-    type: "interactional"
-    examples:
-      - "It was, you know, one of those days."
-      - "I mean, I understand where she's coming from."
-      - "It's sort of hard to explain."
-      - "I was kind of hoping you'd be there."
-
+- rule: Emphasising particles (really, absolutely, simply, just)
+  type: pragmatic
+  examples:
+  - That's absolutely brilliant!
+  - I simply can't believe what happened.
+  - She really outdid herself this time.
+  - It was just perfect.
+- rule: Downtoning/hedging particles (just, quite, rather, a bit)
+  type: pragmatic
+  examples:
+  - I was just wondering if you had a moment.
+  - It's quite cold today, actually.
+  - I'm a bit tired, actually.
+  - It's rather expensive, isn't it?
+- rule: Discourse-organising particles (basically, actually, anyway, obviously)
+  type: discourse
+  examples:
+  - Basically, we need to start over.
+  - Actually, I think you're right.
+  - Anyway, let's move on to the next point.
+  - Obviously, that wasn't the plan.
+- rule: Solidarity and rapport particles (you know, I mean, sort of, kind of)
+  type: interactional
+  examples:
+  - It was, you know, one of those days.
+  - I mean, I understand where she's coming from.
+  - It's sort of hard to explain.
+  - I was kind of hoping you'd be there.
 use:
-  - context: "Softening requests and suggestions"
-    description: "Particles like 'just' and 'a bit' make requests sound less demanding and more polite."
-    examples:
-      - "Could you just send me the file when you get a chance?"
-      - "I was just thinking we might try a different approach."
-      - "Would you mind waiting a bit longer?"
-  - context: "Expressing emphasis or strong emotion"
-    description: "Particles like 'really,' 'absolutely,' and 'simply' intensify the speaker's emotional response."
-    examples:
-      - "That was really impressive."
-      - "I absolutely loved the presentation."
-      - "She simply refused to give up."
-  - context: "Hedging and showing uncertainty"
-    description: "Particles like 'sort of,' 'kind of,' and 'quite' allow speakers to avoid committing fully to a statement."
-    examples:
-      - "I sort of agree with you, but I have some reservations."
-      - "It's kind of a difficult situation."
-      - "The results are quite promising, actually."
-  - context: "Managing conversation flow"
-    description: "Discourse particles like 'basically,' 'actually,' and 'anyway' help organise and steer conversation."
-    examples:
-      - "Basically, the whole system needs an overhaul."
-      - "Actually, I wanted to ask you something."
-      - "Anyway, that's enough about me. How are you?"
-  - context: "Expressing surprise or disbelief"
-    description: "Particles like 'really' and 'actually' signal that the speaker is surprised or seeking confirmation."
-    examples:
-      - "Are you really moving to Japan?"
-      - "He actually said that to your face?"
-      - "You're quite serious, aren't you?"
-
+- context: Softening requests and suggestions
+  description: Particles like 'just' and 'a bit' make requests sound less demanding
+    and more polite.
+  examples:
+  - Could you just send me the file when you get a chance?
+  - I was just thinking we might try a different approach.
+  - Would you mind waiting a bit longer?
+- context: Expressing emphasis or strong emotion
+  description: Particles like 'really,' 'absolutely,' and 'simply' intensify the speaker's
+    emotional response.
+  examples:
+  - That was really impressive.
+  - I absolutely loved the presentation.
+  - She simply refused to give up.
+- context: Hedging and showing uncertainty
+  description: Particles like 'sort of,' 'kind of,' and 'quite' allow speakers to
+    avoid committing fully to a statement.
+  examples:
+  - I sort of agree with you, but I have some reservations.
+  - It's kind of a difficult situation.
+  - The results are quite promising, actually.
+- context: Managing conversation flow
+  description: Discourse particles like 'basically,' 'actually,' and 'anyway' help
+    organise and steer conversation.
+  examples:
+  - Basically, the whole system needs an overhaul.
+  - Actually, I wanted to ask you something.
+  - Anyway, that's enough about me. How are you?
+- context: Expressing surprise or disbelief
+  description: Particles like 'really' and 'actually' signal that the speaker is surprised
+    or seeking confirmation.
+  examples:
+  - Are you really moving to Japan?
+  - He actually said that to your face?
+  - You're quite serious, aren't you?
 phonetics:
-  - note: "Emphasising particles (really, absolutely, simply) carry strong stress and often a higher pitch: 'That's ABsolutely FANtastic.'"
-    example_generator:
-      contexts:
-        - spoken emphasis
-        - presentations
-    l1_issue: "Speakers of languages with less prosodic variation (e.g., French, Japanese) may under-stress emphasising particles, losing the intended effect."
-  - note: "Downtoning particles (just, a bit, sort of) are typically unstressed and spoken quickly, almost blending into surrounding words: 'I was just wondering' reduces to something like /dʒəsˈwʌndərɪŋ/."
-    example_generator:
-      contexts:
-        - casual speech
-        - polite requests
-    l1_issue: "Learners may over-pronounce downtoning particles, making requests sound more emphatic than intended."
-  - note: "Discourse markers (basically, anyway) are often preceded by a brief pause and spoken with falling intonation, signalling a topic shift."
-    example_generator:
-      contexts:
-        - conversation management
-        - presentations
-    l1_issue: "Learners may not use pauses before discourse markers, making topic shifts feel abrupt."
-
+- note: 'Emphasising particles (really, absolutely, simply) carry strong stress and
+    often a higher pitch: ''That''s ABsolutely FANtastic.'''
+  example_generator:
+    contexts:
+    - spoken emphasis
+    - presentations
+  l1_issue: Speakers of languages with less prosodic variation (e.g., French, Japanese)
+    may under-stress emphasising particles, losing the intended effect.
+- note: 'Downtoning particles (just, a bit, sort of) are typically unstressed and
+    spoken quickly, almost blending into surrounding words: ''I was just wondering''
+    reduces to something like /dʒəsˈwʌndərɪŋ/.'
+  example_generator:
+    contexts:
+    - casual speech
+    - polite requests
+  l1_issue: Learners may over-pronounce downtoning particles, making requests sound
+    more emphatic than intended.
+- note: Discourse markers (basically, anyway) are often preceded by a brief pause
+    and spoken with falling intonation, signalling a topic shift.
+  example_generator:
+    contexts:
+    - conversation management
+    - presentations
+  l1_issue: Learners may not use pauses before discourse markers, making topic shifts
+    feel abrupt.
 teaching:
-  methodology: "Guided discovery — present authentic dialogues and have learners identify particles, then discuss what would change if each particle were removed."
+  methodology: Guided discovery — present authentic dialogues and have learners identify
+    particles, then discuss what would change if each particle were removed.
   tips:
-    - "Start with the most common particles: just, really, quite, actually, basically."
-    - "Use minimal pairs: 'I like it' vs 'I really like it' vs 'I just like it' to show how particles change tone."
-    - "Teach the British/American difference for 'quite' explicitly to avoid confusion."
-    - "Record learners in conversation and have them notice their own particle use."
-    - "Warn learners that overusing 'just' can sound dismissive or apologetic."
+  - 'Start with the most common particles: just, really, quite, actually, basically.'
+  - 'Use minimal pairs: ''I like it'' vs ''I really like it'' vs ''I just like it''
+    to show how particles change tone.'
+  - Teach the British/American difference for 'quite' explicitly to avoid confusion.
+  - Record learners in conversation and have them notice their own particle use.
+  - Warn learners that overusing 'just' can sound dismissive or apologetic.
   recommended_activities:
-    - name: "Particle Removal"
-      duration: 15
-      adaptation_notes: "Give learners a dialogue rich in pragmatic particles. They remove all particles and compare the tone of the original vs. the stripped version. Discuss how the tone changes."
-    - name: "Tone Shifting"
-      duration: 20
-      adaptation_notes: "Give learners a neutral sentence (e.g., 'I want to ask a question'). They must add different particles to make it sound: polite, enthusiastic, uncertain, and dismissive."
-    - name: "Listening for Particles"
-      duration: 15
-      adaptation_notes: "Play a short podcast clip or dialogue. Learners tally each pragmatic particle they hear and discuss its function in context."
-    - name: "British vs American Quite"
-      duration: 10
-      adaptation_notes: "Present sentences with 'quite' in both British and American contexts. Learners identify whether the speaker means 'very' or 'moderately' and discuss potential misunderstandings."
+  - name: Particle Removal
+    duration: 15
+    adaptation_notes: Give learners a dialogue rich in pragmatic particles. They remove
+      all particles and compare the tone of the original vs. the stripped version.
+      Discuss how the tone changes.
+  - name: Tone Shifting
+    duration: 20
+    adaptation_notes: 'Give learners a neutral sentence (e.g., ''I want to ask a question'').
+      They must add different particles to make it sound: polite, enthusiastic, uncertain,
+      and dismissive.'
+  - name: Listening for Particles
+    duration: 15
+    adaptation_notes: Play a short podcast clip or dialogue. Learners tally each pragmatic
+      particle they hear and discuss its function in context.
+  - name: British vs American Quite
+    duration: 10
+    adaptation_notes: Present sentences with 'quite' in both British and American
+      contexts. Learners identify whether the speaker means 'very' or 'moderately'
+      and discuss potential misunderstandings.
+sources:
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
