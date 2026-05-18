@@ -366,8 +366,8 @@ Based on the Lesson Script and YAML data, plan the slide structure following the
 - **Slide 2: Contextualization** — Speech bubbles showing target grammar in natural use
 
 ### Section 2: Presentation & Meaning (2-5 slides)
-- **CCQs (Concept Check Questions)** — Questions to verify understanding before showing formulas
-- **Visual Equation** — Formation rules as color-coded equations
+- **The Logic (CCQs):** Concept Check Questions to verify understanding BEFORE showing formulas (e.g., "Is it happening now?"). CCQs are the FIRST element on meaning slides.
+- **Visual Equation:** Formation rules as color-coded equations (Subject + V1/es). Use color-coding for parts of speech.
 - Use age-appropriate examples from grammar data
 
 ### Section 3: Technical Mechanics (2-6 slides)
@@ -418,6 +418,9 @@ Every slide MUST maintain approximately 80% visual/white space to 20% text. Neve
 
 ### The 6x6 Text Rule
 No slide shall exceed 6 words per line or 6 lines of text. This prevents cognitive overload for language learners.
+
+### Typography
+Use only clean, professional Sans-Serif fonts (e.g., Arial, Montserrat, Roboto). These are optimized for screen reading and language learners.
 
 ### Teacher "Cheat Sheets" (Speaker Notes)
 Every slide MUST include 2-3 lines of "Teacher Talk" in the Speaker Notes:
