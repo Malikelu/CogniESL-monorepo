@@ -7,6 +7,8 @@ function cleanResponse(text: string): string {
   text = text.replace(/<memory-context>[\s\S]*?<\/memory-context>/gi, "");
   // Remove any system prompt leaks
   text = text.replace(/\[System note:[\s\S]*?\]/gi, "");
+  // Remove memory context without closing tag (truncated)
+  text = text.replace(/<memory-context>[\s\S]*/gi, "");
   // Clean up extra whitespace
   text = text.replace(/\n{3,}/g, "\n\n").trim();
   return text;

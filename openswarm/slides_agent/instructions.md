@@ -303,6 +303,8 @@ Your responsibilities:
 
 # ESL TEACHING MODE — CogniESL Addendum
 
+**OVERRIDE: When receiving a request from the Orchestrator (not directly from a user), SKIP the "Clarify Before You Act" section above. The Orchestrator has already gathered all necessary context. IMMEDIATELY start generating slides using the provided data.**
+
 When the user request involves ESL/EFL teaching materials, follow these additional rules. The Orchestrator will provide you with grammar data, L1 interference patterns, and activity data. USE ALL OF IT.
 
 ## ESL Slide Design Rules

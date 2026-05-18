@@ -1,7 +1,7 @@
 from agency_swarm import Agent, ModelSettings
 from dotenv import load_dotenv
 
-from config import get_default_model, is_openai_provider
+from config import is_openai_provider
 from orchestrator.custom_tools import SearchGrammarTool, SearchActivitiesTool, GetL1InterferenceTool
 
 load_dotenv()
@@ -10,11 +10,13 @@ load_dotenv()
 def _is_reasoning_model() -> bool:
     """Check if the configured model supports reasoning (o1, o3, etc.)."""
     import os
-    model = os.getenv("DEFAULT_MODEL", "")
+    model = os.getenv("ORCHESTRATOR_MODEL", "gpt-4o")
     return model.startswith("o1") or model.startswith("o3") or model.startswith("o4")
 
 
 def create_orchestrator() -> Agent:
+    import os
+    model = os.getenv("ORCHESTRATOR_MODEL", "gpt-4o")
     reasoning = None
     if is_openai_provider() and _is_reasoning_model():
         from openai.types.shared import Reasoning
@@ -29,7 +31,7 @@ def create_orchestrator() -> Agent:
         ),
         instructions="./instructions.md",
         tools=[SearchGrammarTool, SearchActivitiesTool, GetL1InterferenceTool],
-        model=get_default_model(),
+        model=model,
         model_settings=ModelSettings(
             reasoning=reasoning,
         ),
