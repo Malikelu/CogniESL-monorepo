@@ -40,32 +40,37 @@ def create_agency(load_threads_callback=None):
     slides_agent = create_slides_agent()
     docs_agent = create_docs_agent()
 
-    all_agents = [
-        orchestrator,
-        esl_intake_agent,
-        esl_pedagogy_agent,
-        slides_agent,
-        docs_agent,
-    ]
-
-    # SendMessage: Orchestrator can message any specialist in parallel
-    send_message_flows = [
-        (orchestrator, specialist, SendMessage)
-        for specialist in all_agents
-        if specialist is not orchestrator
-    ]
-
-    # Handoff: Any agent can transfer to any other agent
+    # Handoff flows: Linear pipeline + cross-agent transfers
     handoff_flows = [
-        (a > b, Handoff)
-        for a in all_agents
-        for b in all_agents
-        if a is not b
+        # Phase 1: Orchestrator -> ESL Intake Agent -> Orchestrator
+        (orchestrator, esl_intake_agent, Handoff),
+        (esl_intake_agent, orchestrator, Handoff),
+        # Phase 2: Orchestrator -> ESL Pedagogy Agent -> Orchestrator
+        (orchestrator, esl_pedagogy_agent, Handoff),
+        (esl_pedagogy_agent, orchestrator, Handoff),
+        # Production returns
+        (slides_agent, orchestrator, Handoff),
+        (docs_agent, orchestrator, Handoff),
+        # Cross-agent transfers
+        (esl_intake_agent, esl_pedagogy_agent, Handoff),
+        (esl_pedagogy_agent, esl_intake_agent, Handoff),
+        (slides_agent, docs_agent, Handoff),
+        (docs_agent, slides_agent, Handoff),
+        (esl_intake_agent, slides_agent, Handoff),
+        (esl_intake_agent, docs_agent, Handoff),
+        (esl_pedagogy_agent, slides_agent, Handoff),
+        (esl_pedagogy_agent, docs_agent, Handoff),
+    ]
+
+    # SendMessage: Parallel production from Orchestrator
+    send_message_flows = [
+        (orchestrator, slides_agent, SendMessage),
+        (orchestrator, docs_agent, SendMessage),
     ]
 
     agency = Agency(
-        *all_agents,
-        communication_flows=send_message_flows + handoff_flows,
+        orchestrator, esl_intake_agent, esl_pedagogy_agent, slides_agent, docs_agent,
+        communication_flows=handoff_flows + send_message_flows,
         name="CogniESL",
         shared_instructions="shared_instructions.md",
         load_threads_callback=load_threads_callback,
