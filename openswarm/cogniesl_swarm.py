@@ -1,6 +1,6 @@
 """
-CogniESL Agency — minimal swarm with only the agents we need.
-Orchestrator + Slides Agent + Docs Agent.
+CogniESL Agency — Hub-and-Spoke model with 5 agents:
+Orchestrator (pure router) + ESL Intake Agent + ESL Pedagogy Agent + Slides Agent + Docs Agent.
 """
 import os
 from dotenv import load_dotenv
@@ -29,25 +29,33 @@ def create_agency(load_threads_callback=None):
     from agency_swarm.tools import Handoff, SendMessage
 
     from orchestrator import create_orchestrator
+    from esl_intake_agent.esl_intake_agent import create_esl_intake_agent
+    from esl_pedagogy_agent.esl_pedagogy_agent import create_esl_pedagogy_agent
     from slides_agent import create_slides_agent
     from docs_agent import create_docs_agent
 
     orchestrator = create_orchestrator()
+    esl_intake_agent = create_esl_intake_agent()
+    esl_pedagogy_agent = create_esl_pedagogy_agent()
     slides_agent = create_slides_agent()
     docs_agent = create_docs_agent()
 
     all_agents = [
         orchestrator,
+        esl_intake_agent,
+        esl_pedagogy_agent,
         slides_agent,
         docs_agent,
     ]
 
+    # SendMessage: Orchestrator can message any specialist in parallel
     send_message_flows = [
         (orchestrator, specialist, SendMessage)
         for specialist in all_agents
         if specialist is not orchestrator
     ]
 
+    # Handoff: Any agent can transfer to any other agent
     handoff_flows = [
         (a > b, Handoff)
         for a in all_agents

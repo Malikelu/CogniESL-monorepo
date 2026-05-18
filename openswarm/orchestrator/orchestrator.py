@@ -2,7 +2,6 @@ from agency_swarm import Agent, ModelSettings
 from dotenv import load_dotenv
 
 from config import is_openai_provider
-from orchestrator.custom_tools import SearchGrammarTool, SearchActivitiesTool, GetL1InterferenceTool
 
 load_dotenv()
 
@@ -25,12 +24,13 @@ def create_orchestrator() -> Agent:
     return Agent(
         name="Orchestrator",
         description=(
-            "Primary coordinator for CogniESL — an AI-powered ESL teaching material generator. "
-            "Interprets teacher requests, searches the grammar/activities/L1 database, "
-            "and routes to specialist agents (Slides Agent or Docs Agent) with full context."
+            "CogniESL Orchestrator — pure router that coordinates the ESL material generation pipeline. "
+            "Routes teacher requests to the ESL Intake Agent, then to the ESL Pedagogy Agent, "
+            "and finally to production specialists (Slides Agent, Docs Agent). "
+            "Never gathers data or generates content itself."
         ),
         instructions="./instructions.md",
-        tools=[SearchGrammarTool, SearchActivitiesTool, GetL1InterferenceTool],
+        tools=[],  # Pure router — no custom tools
         model=model,
         model_settings=ModelSettings(
             reasoning=reasoning,
@@ -42,8 +42,3 @@ def create_orchestrator() -> Agent:
             "Generate an activity for present continuous for Arabic adults.",
         ],
     )
-
-
-if __name__ == "__main__":
-    from agency_swarm import Agency
-    Agency(create_orchestrator()).terminal_demo()
