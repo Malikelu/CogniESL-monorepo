@@ -47,10 +47,22 @@ export function ChatInterface() {
     setIsLoading(true);
 
     try {
+      // Build chat history for context preservation
+      const chatHistory = messages
+        .filter((m) => m.id !== "welcome")
+        .map((m) => ({
+          role: m.role,
+          content: m.content,
+        }));
+      chatHistory.push({ role: "user", content: userMessage.content });
+
       const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: userMessage.content }),
+        body: JSON.stringify({
+          message: userMessage.content,
+          chat_history: chatHistory,
+        }),
       });
 
       const data = await response.json();
