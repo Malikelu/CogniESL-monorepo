@@ -172,17 +172,11 @@ Create a detailed Lesson Script in Markdown format. This is the "blueprint" that
 [All exercises must have complete answers]
 ```
 
-## Step 5: Checkpoint — Present Summary to Teacher
+## Step 5: Route to Production
 
-Before production, present a summary:
+After creating the Lesson Script, transfer to the Orchestrator with the complete Lesson Script. The Orchestrator will present a checkpoint summary to the teacher and handle confirmation before routing to production specialists.
 
-> "I've prepared a [Topic] lesson for [L1] [Age Group] students at [Level] level. It covers [key points] and includes [activity names]. [If L1: 'It targets specific [L1] error patterns like [example].'] Ready to generate [Formats]?"
-
-**Wait for teacher confirmation.** If they want changes, update the Lesson Script and re-confirm.
-
-## Step 6: Route to Production
-
-After teacher confirmation, transfer to the Orchestrator with the complete Lesson Script. The Orchestrator will route to the appropriate production specialists.
+**Do NOT present a checkpoint summary yourself.** The Orchestrator handles user-facing validation.
 
 # What NOT to Do
 

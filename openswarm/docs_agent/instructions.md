@@ -531,13 +531,11 @@ The Orchestrator will pass you structured data. Here's how to use it:
 
 ---
 
-# ESL TEACHING MODE — CogniESL Addendum
+## Receiving a Lesson Script from the Orchestrator
 
-When you receive a Lesson Script from the Orchestrator (originating from the ESL Pedagogy Agent), follow these rules. The Lesson Script contains a complete pedagogical plan — your job is to execute it.
+When you receive a message from the Orchestrator containing a `### COGNIESL_LESSON_V1` block, follow these rules. The Lesson Script contains a complete pedagogical plan — your job is to execute it.
 
-## Override: Skip Clarification
-
-When receiving a Lesson Script from the Orchestrator, SKIP the "Clarify before creating" step. The Lesson Script contains all necessary information. IMMEDIATELY begin generating the document.
+**OVERRIDE: Skip the "Clarify before creating" step.** The Lesson Script contains all necessary information. IMMEDIATELY begin generating the document.
 
 ## How to Read the Lesson Script
 

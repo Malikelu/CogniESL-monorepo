@@ -1,12 +1,22 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 
 interface Message {
   id: string;
   role: "user" | "assistant";
   content: string;
   timestamp: Date;
+}
+
+function getOrCreateSessionId(): string {
+  if (typeof window === "undefined") return "server";
+  let id = localStorage.getItem("cogniesl_session_id");
+  if (!id) {
+    id = `sess_${Date.now()}_${Math.random().toString(36).slice(2, 10)}`;
+    localStorage.setItem("cogniesl_session_id", id);
+  }
+  return id;
 }
 
 export function ChatInterface() {
@@ -47,21 +57,14 @@ export function ChatInterface() {
     setIsLoading(true);
 
     try {
-      // Build chat history for context preservation
-      const chatHistory = messages
-        .filter((m) => m.id !== "welcome")
-        .map((m) => ({
-          role: m.role,
-          content: m.content,
-        }));
-      chatHistory.push({ role: "user", content: userMessage.content });
-
       const response = await fetch("/api/chat", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "X-Session-ID": getOrCreateSessionId(),
+        },
         body: JSON.stringify({
           message: userMessage.content,
-          chat_history: chatHistory,
         }),
       });
 

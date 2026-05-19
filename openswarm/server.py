@@ -71,16 +71,11 @@ async def get_response(request: Request):
     agency = get_agency(session_id)
 
     try:
-        # Build chat history if provided
-        chat_history = body.get("chat_history")
-
-        if chat_history:
-            response = agency.get_response_sync(
-                message=message,
-                chat_history=chat_history,
-            )
-        else:
-            response = agency.get_response_sync(message=message)
+        # Send only the new message — the agency maintains internal state
+        # (current agent, handoff context, tool results) via the session.
+        # Passing chat_history causes the Orchestrator to re-process old
+        # messages and re-trigger transfers, breaking the multi-turn flow.
+        response = agency.get_response_sync(message=message)
 
         # Extract the response text
         response_text = str(response)

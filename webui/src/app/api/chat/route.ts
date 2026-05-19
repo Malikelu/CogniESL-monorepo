@@ -13,7 +13,7 @@ function cleanResponse(text: string): string {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { message, chat_history } = body;
+    const { message } = body;
 
     if (!message) {
       return NextResponse.json(
@@ -29,16 +29,14 @@ export async function POST(request: NextRequest) {
     const timeout = setTimeout(() => controller.abort(), 120000);
 
     try {
-      // Build the request body for OpenSwarm
-      const openswarmBody: Record<string, unknown> = { message };
-      if (chat_history && Array.isArray(chat_history)) {
-        openswarmBody.chat_history = chat_history;
-      }
-
+      const sessionId = request.headers.get("X-Session-ID") || `webui_${Date.now()}`;
       const response = await fetch(`${openswarmUrl}/cogniesl/get_response`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(openswarmBody),
+        headers: {
+          "Content-Type": "application/json",
+          "X-Session-ID": sessionId,
+        },
+        body: JSON.stringify({ message }),
         signal: controller.signal,
       });
 
