@@ -2,7 +2,7 @@
 import os
 
 
-def get_default_model(fallback: str = "gpt-4o-mini"):
+def get_default_model(fallback: str = "gpt-4o"):
     """Return the configured default model for standard agents."""
     model = os.getenv("DEFAULT_MODEL", fallback)
     return _resolve(model)

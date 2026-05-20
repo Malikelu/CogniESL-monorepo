@@ -75,8 +75,8 @@ Read the full grammar data and extract:
 - `register_notes` — Formal/informal usage (if present)
 - `dialectal_variation` — BrE/AmE differences (if present)
 
-### Step 2: Get L1 Interference Data
-If the teacher specified an L1 language, use **GetL1InterferenceTool** with the grammar point slug and language name.
+### Step 2: Get L1 Interference Data (ALL specified L1s)
+If the teacher specified one or more L1 languages, use **GetL1InterferenceTool** for EACH language mentioned. For example, if the class has Spanish and Chinese speakers, call GetL1InterferenceTool for "present_continuous" + "spanish" AND "present_continuous" + "chinese".
 
 Extract:
 - `interference_patterns` — Specific errors with frequency/persistence/impact ratings
@@ -116,8 +116,9 @@ Follow this structure:
 - Dedicated slide for each sub-rule (spelling, irregulars)
 - Phonetic guide for contractions and pronunciation
 
-**Section 4: L1 Oracle (1-2 slides) — CRITICAL when L1 data exists**
+**Section 4: L1 Oracle (1-2 slides per L1) — CRITICAL when L1 data exists**
 - "Ghost Error" slide highlighting L1-specific mistakes
+- **If the teacher specified MULTIPLE L1s (e.g., "Chinese and Spanish speakers"), create L1 Oracle content for EACH language.** Include at least 2-3 specific errors per L1, each with Wrong → Correct examples and a brief explanation of WHY the error happens.
 - Wrong → Correct examples from L1 data
 - Brief explanation of WHY the error happens
 - Prioritize patterns with high frequency and persistence ratings
@@ -134,6 +135,9 @@ Follow this structure:
 - 80/20 visual rule (80% visual, 20% text)
 - 6x6 text rule (max 6 words per line, 6 lines per slide)
 - Sans-serif fonts only
+- **Every slide MUST include 2-3 lines of Speaker Notes** (what to say, CCQs to ask, errors to watch for). Speaker notes are stored inside the HTML using HTML5 `data-speaker-notes` attribute on the slide wrapper: `<div class="slide-wrapper" data-speaker-notes="Ask students: ...">`
+- **CCQs (Concept Check Questions) must appear BEFORE formulas** in Section 2. Show the meaning first, then the structure.
+- **Section 1 Hook MUST include a visual lead-in** — a high-impact image or puzzle that creates curiosity about the topic before explaining it.
 - Teacher "Cheat Sheets" in Speaker Notes (what to say, CCQs to ask, errors to watch for)
 - Dynamic length: 8-12 slides for simple topics, 15-25 for complex, 20+ for foundational
 
@@ -194,11 +198,66 @@ Structure:
 
 ---
 
+### Generation Protocol (CRITICAL — Follow This Order Strictly)
+
+Once the teacher confirms the requirements, execute the entire generation pipeline in this exact order. **Do NOT respond to the teacher until ALL steps below are complete.**
+
+**Step 1: Search the database**
+- SearchGrammarTool → GetL1InterferenceTool (for EACH L1) → SearchActivitiesTool
+- Read the full grammar data and extract all relevant fields
+
+**Step 2: Insert blank slides**
+- Call InsertNewSlides with a comprehensive task_brief covering ALL sections (Hook, Presentation, Mechanics, L1 Oracle, Practice, Production)
+- The output will include a plan with slide titles and task_briefs for each slide
+- **Read the plan output carefully** — it tells you exactly what belongs on each slide
+
+**Step 3: Populate EVERY slide**
+- Call ModifySlide for EVERY single slide in order. The plan from InsertNewSlides gives you the task_brief.
+- **Do NOT skip slides.** Start at slide_01 and work through to the last slide.
+- Slide 01 = Title slide (already populated)
+- Slides 02-xx = Content slides (you must populate each one)
+- Use the plan's task_brief to guide each ModifySlide call
+
+**Step 4: Build the PPTX**
+- After ALL slides have content, call BuildPptxFromHtmlSlides
+- Include ALL slide names (slide_01 through slide_NN) in the slide_names list
+
+**Step 5: Create worksheet (MANDATORY)**
+- If the teacher asked for a worksheet (or both slides and worksheet), call CreateDocument with the full worksheet HTML
+- The worksheet MUST include: Sections A-E + Answer Key with L1-specific explanations
+
+**Step 6: Create activity guide (if requested)**
+- If the teacher asked for activities, call CreateDocument with the activity guide
+
+**Step 7: Respond to the teacher**
+- Only now respond with a complete summary of everything created
+- Include all file paths
+- Ask if they want any changes
+
+### Validation Checklist (Run This Before Responding)
+
+Before responding to the teacher, verify:
+- [ ] All slides have content (not empty shells)
+- [ ] L1 Oracle section exists for EACH language the teacher mentioned
+- [ ] Speaker notes on every slide
+- [ ] CCQs are present in Section 2
+- [ ] PPTX was built successfully
+- [ ] Worksheet has an answer key
+- [ ] Activities are age-appropriate
+
+---
+
 ## Part 4: File Delivery
 
-After generating materials:
+After ALL materials are generated:
+
+**Verify files exist before reporting them.** Check the actual file paths on disk:
+- Slides: `./mnt/{project_name}/presentations/{project_name}.pptx`
+- Worksheet: `./mnt/{project_name}/documents/{worksheet_name}.docx` and/or `.pdf`
+- Activity guide: `./mnt/{project_name}/documents/{activity_name}.docx`
+
 1. Include all file paths in your response
-2. Briefly summarize what was created
+2. Briefly summarize what was created, mentioning which specific L1s were targeted
 3. Ask if the teacher wants any changes or additional materials
 
 Example:
@@ -217,6 +276,9 @@ Example:
 - **No L1 data for the language:** Proceed without L1-specific content; inform the teacher
 - **File generation fails:** Try again with simplified content; if it fails again, provide the HTML/source directly
 - **YAML files can't be read:** Report the error and ask the teacher to try a different topic
+- **ModifySlide fails for a slide:** Skip that slide and continue with the next one. Note which slide failed and try it again at the end.
+- **Pipeline interrupted by user message:** Acknowledge briefly ("Working on it!") and continue the generation pipeline from where you left off. Do NOT restart from scratch.
+- **Multiple tools called in parallel:** Do NOT call ModifySlide for different slides at the same time. Call them one at a time in order, waiting for each to complete before starting the next.
 
 ---
 
