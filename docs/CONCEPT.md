@@ -106,8 +106,10 @@ The materials are packaged and ready to download. The teacher can use them immed
 CogniESL's quality comes from its data:
 
 - **300 grammar points** — Comprehensive coverage of English grammar from beginner to advanced
-- **31 L1 languages** — Interference patterns for the most common languages ESL students speak
+- **34 L1 languages** — Interference patterns for the most common languages ESL students speak
 - **218 classroom activities** — Proven activities with full instructions and scripts
+
+See [DATA_FORMAT.md](./DATA_FORMAT.md) for the complete data specification.
 
 This data was built through months of research into ESL pedagogy, linguistics, and classroom practice. It's not generic AI knowledge — it's curated, structured, and specifically designed for material generation.
 

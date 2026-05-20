@@ -4,42 +4,112 @@ schema_version: '3.0'
 grammar_points:
   articles:
     interference_patterns:
-    - pattern: Omission of indefinite article after at vaere (to be)
-      example: Omission of indefinite article after at vaere (to be)
+    - pattern: Omission of indefinite article after at vaere (to be) for professions
+      example: 'Danish: ''Jeg er laerer'' (I am teacher). Learner says ''I am teacher''
+        instead of ''I am a teacher.'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Confusion of definite article placement (postposed vs. preposed)
+      example: 'Danish attaches the definite article as a suffix: ''bilen'' (car+the
+        = the car), ''huset'' (house+the = the house). Learners may say ''car the''
+        or omit ''the'' entirely, producing ''I bought car.'''
       frequency: 4
       persistence: 3
       communicative_impact: 3
+    - pattern: Overuse of definite article with generic/general nouns
+      example: Danish uses the definite form for generic reference more freely than
+        English. Learner says 'The cats are cute animals' (meaning cats in general)
+        instead of 'Cats are cute animals.'
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
     examples:
     - wrong: Jeg er laerer.
       correct: I am a teacher.
-    why_it_happens: Danish omits the indefinite article after at vaere (to be) for
-      professions.
+      da_original: Jeg er laerer.
+      gloss: I am teacher.
+      explanation: 'Danish omits the indefinite article after ''at vaere'' (to be)
+        when stating professions. English requires ''a/an'': ''I am a teacher.'''
+    - wrong: Bilen er roed.
+      correct: The car is red.
+      da_original: Bilen er roed.
+      gloss: Car+the is red.
+      explanation: Danish 'bilen' = 'bil' (car) + '-en' (definite suffix). The article
+        is attached to the end of the noun, not placed before it. English places 'the'
+        before the noun.
+    - wrong: I bought car yesterday.
+      correct: I bought the car yesterday.
+      da_original: Jeg koebte bilen i går.
+      gloss: I bought car+the yesterday.
+      explanation: Danish 'bilen' has the definite suffix '-en.' Learners may not
+        realize this suffix corresponds to English 'the' and omit it.
+    - wrong: Cats are the best pets.
+      correct: Cats are the best pets.
+      da_original: Katte er de bedste kaeledyr.
+      gloss: Cats are the-best pets.
+      explanation: Danish uses the definite form 'de bedste' for superlatives. This
+        example shows correct transfer, but Danish also uses definite forms for generic
+        statements where English uses zero article.
+    why_it_happens: 'Danish has a two-part article system that differs from English
+      in two fundamental ways. First, Danish has preposed indefinite articles (''en''
+      for common gender, ''et'' for neuter gender — ''en bil'' = a car, ''et hus''
+      = a house) but the definite article is attached as a SUFFIX to the noun (''bilen''
+      = the car, ''huset'' = the house). This means Danish learners must learn to
+      move the definite marker from the end of the noun to the beginning — a significant
+      structural shift. Second, Danish omits the indefinite article after ''at vaere''
+      (to be) when stating professions and nationalities: ''Jeg er laerer'' (I am
+      teacher), ''Han er dansk'' (He is Danish). English requires ''a/an'' in these
+      contexts: ''I am a teacher,'' ''He is a Dane.'' Third, Danish uses the definite
+      form more freely for generic reference than English does. These three differences
+      create systematic, predictable error patterns.'
     teacher_tips:
-      how_to_explain: 'Teach: English REQUIRES articles. ''A/an'' for first mention,
-        ''the'' for specific.'
-      where_to_start: Start with the articles pattern.
-      sequencing: 'Week 1: articles. Week 2: Practice. Week 3: Review. Week 4: Mixed.'
+      how_to_explain: 'Explain that Danish and English both have ''a'' and ''the,''
+        but they work differently. (1) Indefinite: Danish ''en/et'' = English ''a/an''
+        — same position (before the noun), but Danish drops it after ''to be'' for
+        professions. English NEVER drops it. (2) Definite: Danish adds ''-en/-et/-en''
+        to the END of the noun. English puts ''the'' at the BEGINNING. Use a visual:
+        write ''bil-en'' on the left and ''the car'' on the right, draw arrows showing
+        the article moving from end to beginning. (3) For generic nouns, English often
+        uses zero article where Danish uses the definite form.'
+      where_to_start: 'Start with the profession pattern since it''s the most frequent
+        error: drill ''I am a + profession,'' ''She is a + profession'' until automatic.
+        Then teach the suffix-to-prefix shift for ''the.'' Finally, address generic/plural
+        zero article.'
+      sequencing: 'Week 1: Indefinite article a/an — focus on professions and after
+        ''to be.'' Week 2: Definite article the — teach the Danish suffix-to-English
+        prefix shift. Week 3: Contrast a/an vs the; introduce zero article with plurals
+        and generics. Week 4: Mixed practice — reading and writing tasks requiring
+        all article choices.'
       exercises:
-      - name: articles Audit
-        type: error-correction
-        description: 20 sentences with articles errors.
-        duration: 15
-      - name: articles Translation
-        type: translation
-        description: Translate 15 sentences focusing on articles.
-        duration: 15
-      - name: articles Practice
+      - name: Profession Drill
         type: fill-in-the-blank
-        description: 20 sentences practicing articles.
+        description: '15 sentences: ''He is ___ doctor. She is ___ engineer. They
+          are ___ students.'' Focus on always including a/an after ''to be'' with
+          professions.'
         duration: 10
-      - name: articles Error Hunt
-        type: error-correction
-        description: A paragraph with 10 articles errors.
+      - name: Suffix to Prefix
+        type: translation
+        description: 10 Danish sentences with postposed definite articles (e.g., 'Huset
+          er stort') that learners translate to English, consciously moving the article
+          from suffix to preposed position.
         duration: 15
-    sources: &id001
-    - Swan & Smith "Learner English" (Danish)
+      - name: Article Choice
+        type: fill-in-the-blank
+        description: 20 sentences requiring a/an, the, or zero article. Include generic/plural
+          nouns where Danish would use the definite form but English uses zero article.
+        duration: 15
+      - name: Proofread a Letter
+        type: error-correction
+        description: A short letter written by a fictional Danish learner with 10
+          article errors (omissions after 'to be,' missing 'the,' overuse of 'the'
+          with generics).
+        duration: 15
+    sources:
+    - Swan & Smith "Learner English" (Scandinavian)
     - Parrott "Grammar for English Language Teachers"
-    source_count: 2
+    - Celce-Murcia & Larsen-Freeman "The Grammar Book"
+    source_count: 3
     source_type: textbook
     frequency: 4
     persistence: 3
@@ -48,26 +118,35 @@ grammar_points:
     tier: 1
     source_rank: 1
     citations:
-    - claim: Interference pattern for articles
+    - claim: Danish has postposed definite articles (suffixes) and preposed indefinite
+        articles; this causes word order transfer errors
       source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
         and Other Problems'', 2nd ed., Cambridge University Press'
       location: 'Chapter: Scandinavian speakers, pp. 20-35'
       tier: 1
-    - claim: 'Grammar point: articles'
+    - claim: Danish omits the indefinite article after 'at vaere' (to be) for professions
+        and nationalities
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Scandinavian speakers, pp. 20-35'
+      tier: 1
+    - claim: The Danish definite suffix -en/-et/-en corresponds to English 'the' but
+        differs in position
+      source: 'Allan, R., Holmes, P. & Lundskær-Nielsen, T. (1995) ''Danish: A Comprehensive
+        Grammar'', Routledge'
+      location: 'Chapter 4: Nouns and articles'
+      tier: 1
+    - claim: Article systems vary significantly across languages; Scandinavian suffix
+        articles are particularly challenging for English learners
       source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
         Press
-      location: See relevant grammar point section
+      location: 'Chapter: Determiners and articles'
       tier: 2
-    - claim: Article usage varies significantly across languages; many languages have
-        no article system
-      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
-      location: See articles entries 133-142
-      tier: 2
-    - claim: ELLs commonly omit indefinite article when descriptive adjectives come
-        between determiner and noun
-      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
-        A Practical Handbook'', University of Michigan Press'
-      location: p. 153
+    - claim: Generic reference uses different article strategies across languages;
+        Scandinavian languages use definite forms more freely
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: pp. 309-315
       tier: 2
   word_order:
     interference_patterns:
@@ -101,7 +180,9 @@ grammar_points:
         type: error-correction
         description: A paragraph with 10 word order errors.
         duration: 15
-    sources: *id001
+    sources: &id001
+    - Swan & Smith "Learner English" (Danish)
+    - Parrott "Grammar for English Language Teachers"
     source_count: 2
     source_type: textbook
     frequency: 4

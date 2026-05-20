@@ -4,84 +4,157 @@ schema_version: '3.0'
 grammar_points:
   articles:
     interference_patterns:
-    - pattern: Omission of all articles (Japanese has no articles)
-      example: Omission of all articles (Japanese has no articles)
-      frequency: 4
-      persistence: 3
+    - pattern: Omission of all articles (Japanese has no article system)
+      example: Japanese has no words for 'a/an' or 'the.' 'Hon' can mean 'a book,'
+        'the book,' or 'books.' Learners say 'I bought book' instead of 'I bought
+        a book.'
+      frequency: 5
+      persistence: 5
       communicative_impact: 3
+    - pattern: Overuse of demonstratives (kono/sono/ano) as article substitutes
+      example: Japanese uses 'kono' (this), 'sono' (that), and 'ano' (that over there)
+        for specificity. Learners may say 'this book is good' when they mean 'a book
+        is good' or 'the book is good.'
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Confusion between topic marker (wa) and definite article (the)
+      example: Japanese 'wa' (は) marks the topic of a sentence, not definiteness.
+        'Hon wa omoshiroi' = 'As for books, (they're) interesting.' Learners may think
+        'wa' = 'the' and overuse 'the' in English.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
     examples:
     - wrong: Watashi wa sensei desu.
       correct: I am a teacher.
-    why_it_happens: Japanese has no article system. Definiteness is inferred from
-      context or particles rather than grammatical markers. Japanese learners often
-      omit articles entirely in English, producing sentences like 'I bought book yesterday'
-      instead of 'I bought a book.' This occurs because Japanese does not require
-      speakers to mark definiteness grammatically, so the concept of 'a' vs 'the'
-      vs zero article is entirely foreign.
+      ja_original: Watashi wa sensei desu. (私は先生です)
+      gloss: I TOP teacher COP.
+      explanation: 'Japanese has no article. ''Sensei'' (teacher) stands alone. English
+        requires ''a'': ''I am a teacher.'' Note: ''wa'' is a topic marker, not an
+        article.'
+    - wrong: Hon o kaimashita.
+      correct: I bought a book.
+      ja_original: Hon o kaimashita. (本を買いました)
+      gloss: Book ACC bought.
+      explanation: Japanese 'hon' (book) has no article. English requires 'a' for
+        first mention of a singular countable noun.
+    - wrong: Neko ga suki desu.
+      correct: I like cats.
+      ja_original: Neko ga suki desu. (猫が好きです)
+      gloss: Cat NOM liking COP.
+      explanation: 'Japanese ''neko'' (cat/cats) has no article and no plural marker.
+        English uses zero article for generic plural: ''I like cats.'''
+    - wrong: This water is cold.
+      correct: The water is cold.
+      ja_original: Kono mizu wa tsumetai. (この水は冷たい)
+      gloss: This water TOP cold.
+      explanation: Japanese 'kono' (this) is used for specificity. In English, with
+        uncountable nouns like 'water,' we use 'the' for specific reference, not 'this.'
+    why_it_happens: 'Japanese has no article system whatsoever. There are no words
+      equivalent to ''a/an'' or ''the'' in Japanese grammar. Definiteness and specificity
+      are expressed through other means: (1) context — Japanese relies heavily on
+      shared context to determine definiteness, (2) demonstratives ''kono'' (this),
+      ''sono'' (that), and ''ano'' (that over there), (3) the topic marker ''wa''
+      (は) and subject marker ''ga'' (が), which indicate discourse roles but NOT definiteness,
+      and (4) word order. Because Japanese speakers never need to choose between ''a,''
+      ''the,'' or zero article, the entire concept of grammatical definiteness marking
+      is foreign. This is one of the most persistent and frequent errors for Japanese
+      learners at all levels — even advanced speakers may omit articles in spontaneous
+      speech. Japanese is a topic-prominent language (not subject-prominent like English),
+      which further complicates the acquisition of English article usage.'
     teacher_tips:
-      how_to_explain: 'Teach: English REQUIRES articles. ''A/an'' for first mention,
-        ''the'' for specific.'
-      where_to_start: Start with the articles pattern.
-      sequencing: 'Week 1: articles. Week 2: Practice. Week 3: Review. Week 4: Mixed.'
+      how_to_explain: 'Start by explaining that English REQUIRES a ''determiner''
+        before most singular countable nouns — this is a grammatical rule, not optional.
+        Use a simple three-way system: (1) ''a/an'' = one thing, first time mentioning
+        it, ''I need a pen'' (any pen). (2) ''the'' = specific thing, both people
+        know which one, ''Pass me the pen'' (that specific pen). (3) zero article
+        = general statements with plurals or uncountables, ''I like books'' or ''Water
+        is important.'' Contrast with Japanese: show that Japanese uses nothing, or
+        uses ''kono/sono/ano'' (this/that) for specificity. Emphasize that ''wa''
+        is NOT ''the'' — it''s a topic marker. The concept of ''a/an'' is completely
+        new and must be drilled extensively.'
+      where_to_start: 'Begin with the most basic rule: singular countable nouns MUST
+        have a determiner. Drill ''I am a + profession,'' ''I have a + object,'' ''I
+        want a + thing.'' Use physical objects and pictures. Then introduce ''the''
+        for specific reference. Save zero article for later. Address the wa vs. the
+        confusion explicitly.'
+      sequencing: 'Week 1: Introduce a/an with singular countable nouns. Heavy drilling
+        with real objects and pictures. Week 2: Introduce the for specific/known reference.
+        Contrast a vs. the. Week 3: Zero article with plurals and uncountables. Address
+        wa vs. the confusion. Week 4: Mixed practice in context (paragraphs, dialogues,
+        picture descriptions).'
       exercises:
-      - name: articles Audit
-        type: error-correction
-        description: 20 sentences with articles errors.
-        duration: 15
-      - name: articles Translation
-        type: translation
-        description: Translate 15 sentences focusing on articles.
-        duration: 15
-      - name: articles Practice
+      - name: Article Insertion
         type: fill-in-the-blank
-        description: 20 sentences practicing articles.
-        duration: 10
-      - name: articles Error Hunt
-        type: error-correction
-        description: A paragraph with 10 articles errors.
+        description: 20 sentences with singular countable nouns. Learners must add
+          a/an or the. Include Japanese glosses to highlight the structural difference.
         duration: 15
-    sources: &id001
+      - name: Translate from Japanese
+        type: translation
+        description: 15 Japanese sentences without articles. Learners translate to
+          English, adding the correct article.
+        duration: 20
+      - name: Wa is not The
+        type: error-correction
+        description: 10 sentences where 'the' is incorrectly used because of wa-transfer.
+          E.g., 'The life is hard' (from 'Jinsei wa muzukashii') should be 'Life is
+          hard.'
+        duration: 10
+      - name: Picture Description — First and Second Mention
+        type: speaking
+        description: 'Show a picture. Learners describe it: ''I can see a cat. The
+          cat is sitting on a mat. The mat is red.'' Practice the a -> the shift.'
+        duration: 15
+    sources:
     - Swan & Smith "Learner English" (Japanese)
     - Parrott "Grammar for English Language Teachers"
-    source_count: 2
+    - Celce-Murcia & Larsen-Freeman "The Grammar Book"
+    source_count: 3
     source_type: textbook
-    frequency: 4
-    persistence: 3
+    frequency: 5
+    persistence: 5
     communicative_impact: 3
     flagged: false
     tier: 1
     source_rank: 1
     citations:
-    - claim: Interference pattern for articles
+    - claim: Japanese has no article system; definiteness is inferred from context,
+        demonstratives, and discourse markers
       source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
         and Other Problems'', 2nd ed., Cambridge University Press'
       location: 'Chapter: Japanese speakers, pp. 295-307'
       tier: 1
-    - claim: 'Grammar point: articles'
+    - claim: Japanese is a topic-prominent language; the topic marker wa does not
+        correspond to English the
+      source: Shibatani, M. (1990) 'The Languages of Japan', Cambridge University
+        Press
+      location: 'Chapter 8: Topic and comment'
+      tier: 1
+    - claim: Article omission is the most persistent error for Japanese learners of
+        English, continuing into advanced proficiency
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Japanese speakers, pp. 295-307'
+      tier: 1
+    - claim: Singular countable nouns in English require a determiner; this rule does
+        not exist in Japanese
       source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
         Press
-      location: See relevant grammar point section
+      location: 'Chapter: Determiners and articles'
       tier: 2
-    - claim: Article usage varies significantly across languages; many languages have
-        no article system
-      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
-      location: See articles entries 133-142
+    - claim: Articles are among the most difficult grammar points for learners whose
+        L1 lacks them; Japanese learners are a prime example
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: pp. 309-315
       tier: 2
-    - claim: Japanese has no article system (PEU articles entries)
-      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
-      location: See relevant entry
-      tier: 2
-    - claim: ELLs commonly omit indefinite article when descriptive adjectives come
-        between determiner and noun
-      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
-        A Practical Handbook'', University of Michigan Press'
-      location: p. 153
-      tier: 2
-    - claim: Japanese has no article system (p. 153)
-      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
-        A Practical Handbook'', University of Michigan Press'
-      location: See relevant section
-      tier: 2
+    - claim: Japanese demonstratives (kono/sono/ano) are used for specificity but
+        do not map directly to English articles
+      source: Miyagawa, S. & Saito, M. (eds.) (2008) 'The Oxford Handbook of Japanese
+        Linguistics', Oxford University Press
+      location: 'Chapter 18: The structure of DP (Watanabe)'
+      tier: 1
   word_order:
     interference_patterns:
     - pattern: SOV word order transfer (Japanese is SOV)
@@ -118,7 +191,9 @@ grammar_points:
         type: error-correction
         description: A paragraph with 10 word order errors.
         duration: 15
-    sources: *id001
+    sources: &id001
+    - Swan & Smith "Learner English" (Japanese)
+    - Parrott "Grammar for English Language Teachers"
     source_count: 2
     source_type: textbook
     frequency: 4

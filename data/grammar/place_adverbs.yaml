@@ -1,99 +1,442 @@
 grammar_point: place_adverbs
-title: Common Place Adverbs
-description: 'Words that tell us where: here, there, everywhere, somewhere, nowhere,
-  upstairs, downstairs, inside, outside.'
+title: Place Adverbs and Locative Expressions
+description: >-
+  Adverbs and adverbial expressions that indicate location or direction,
+  including deictic adverbs (here, there), indefinite place adverbs (somewhere,
+  anywhere, nowhere, everywhere), and compound adverbs (upstairs, downstairs,
+  inside, outside, abroad, overseas, nearby).
 level: A1
 meaning:
-  core_meaning: Place adverbs tell us WHERE something happens or where something/someone
-    is.
-  timeline: Timeless — describes location, not time.
-  contrast: '''Here'' = near the speaker vs ''There'' = far from the speaker'
+  core_meaning: >-
+    Place adverbs specify the location of an action or the location of an entity.
+    They can be deictic (anchored to the speaker's position: here vs there),
+    indefinite (non-specific location: somewhere, anywhere), negative (nowhere),
+    or universal (everywhere). Some place adverbs also encode direction
+    (upstairs, downstairs, inside, outside) and can function as both static
+    location and movement toward a location.
+  timeline: >-
+    Timeless — place adverbs describe spatial relationships, not temporal ones.
+    They can be used with any tense.
+  contrast: >-
+    "Here" = near the speaker's current location (proximal deictic). "There" =
+    away from the speaker's current location (distal deictic). "Somewhere" =
+    an unspecified location (existential). "Anywhere" = any location, typically
+    in questions and negatives. "Nowhere" = no location (negative). "Everywhere"
+    = all locations (universal). The choice depends on whether the speaker
+    knows, cares about, or wants to specify the exact location.
   ccqs:
-  - question: Does this word tell us WHERE?
-    answer: Yes — it's a place adverb.
-  - question: Is it near or far from the speaker?
-    answer: Here = near, There = far
+    - question: >-
+        If I say "Come here," where do I want the person to go — toward me or
+        away from me?
+      answer: >-
+        Toward me. "Here" is a deictic place adverb anchored to the speaker's
+        current location. "Come here" means "come to the place where I am." This
+        contrasts with "Go there," which means "go to a place away from me." The
+        deictic centre is always the speaker's position at the moment of
+        speaking.
+      purpose: >-
+        Tests whether the learner understands the deictic (speaker-anchored)
+        nature of "here" vs "there."
+    - question: >-
+        Is there a difference between "I looked everywhere" and "I looked
+        somewhere"?
+      answer: >-
+        Yes, a significant one. "I looked everywhere" means I searched all
+        possible places — it implies a thorough, exhaustive search. "I looked
+        somewhere" means I searched in one unspecified place — it implies a
+        single, non-specific location. "Everywhere" is universal (all places);
+        "somewhere" is existential (at least one place, but I'm not saying
+        which).
+      purpose: >-
+        Tests the semantic distinction between universal and existential
+        indefinite place adverbs.
+    - question: >-
+        Can "nowhere" start a sentence? What happens to the word order?
+      answer: >-
+        Yes. "Nowhere" can begin a sentence for emphasis, but when it does, it
+        triggers subject-auxiliary inversion (like other negative fronted
+        adverbs): "Nowhere could I find my keys" or "Nowhere else will you find
+        such good coffee." This is a formal/literary structure. In everyday
+        speech, speakers usually say "I couldn't find my keys anywhere."
+      purpose: >-
+        Tests awareness of the syntactic behaviour of negative place adverbs,
+        including inversion.
+    - question: >-
+        "She lives nearby." Is "nearby" a place adverb or a preposition here?
+      answer: >-
+        It is a place adverb here because it has no complement. "Nearby" can
+        function as an adverb ("She lives nearby") or as a preposition ("She
+        lives nearby the school"), though the prepositional use is less common
+        and some grammarians consider it informal. As an adverb, "nearby" means
+        "close to here" or "close to the reference point."
+      purpose: >-
+        Tests whether the learner can distinguish adverbial vs prepositional
+        uses of locative words.
   example_generator:
     contexts:
-    - giving directions
-    - describing locations
-    - talking about where things are
-    - daily routines
-    cultural_notes: []
-    min_examples: 5
+      - giving directions
+      - describing locations
+      - talking about where things are
+      - daily routines
+    cultural_notes:
+      - >-
+        In some cultures, spatial reference is absolute (based on cardinal
+        directions) rather than relative (based on speaker position). Learners
+        from such backgrounds may find the deictic here/there distinction
+        challenging because their languages use different spatial reference
+        systems.
+    min_examples: 6
 form:
   affirmative:
-    structure: 'Subject + verb + place adverb: ''I live here.'', ''She is upstairs.'''
+    structure: >-
+      Subject + verb + place adverb: "I live here." / "She is upstairs." / "They
+      went outside." Place adverbs typically appear after the main verb or after
+      the complement.
     example_generator:
       contexts:
       - giving directions
       - describing locations
       - talking about where things are
-      min_examples: 4
+      min_examples: 6
   negative:
-    structure: 'Subject + verb + no-/nowhere: ''I found it nowhere.'' / ''There''s
-      nothing here.'''
+    structure: >-
+      Subject + verb + nowhere / not...anywhere: "I found it nowhere." / "I
+      couldn't find it anywhere." / "There's nowhere to sit." / "Nowhere was
+      safe."
     example_generator:
       contexts:
-      - giving directions
-      - describing locations
-      - talking about where things are
+      - absence of location
+      - negative existence
       min_examples: 4
   questions:
-    structure: 'Where + be/auxiliary + subject?: ''Where is the bathroom?'', ''Where
-      do you live?'''
+    structure: >-
+      Where + auxiliary + subject + verb?: "Where is the bathroom?" / "Where do
+      you live?" / "Where have you been?" Indefinite forms: "Is there anywhere
+      to park?" / "Did you go anywhere nice?"
     example_generator:
       contexts:
-      - giving directions
-      - describing locations
-      - talking about where things are
+      - asking about location
+      - asking about destinations
       min_examples: 4
 sub_rules:
-- rule: Here = near speaker, There = far from speaker
-  type: semantic
-  examples:
-  - Come here. (near me)
-  - Put it there. (over there)
-- rule: No- words for negative meaning
-  type: grammatical
-  examples:
-  - nowhere = not anywhere
-  - nothing = not anything
+  - type: semantic
+    rule: >-
+      Deictic place adverbs "here" and "there" are anchored to the speaker's
+      position. "Here" = the area surrounding the speaker. "There" = an area
+      away from the speaker. In reported speech or thought, the deictic centre
+      can shift: "He said to come here" (the speaker's location) vs "He said to
+      go there" (away from both speaker and listener).
+    examples:
+      - Come here. (toward the speaker)
+      - Put it there. (on the table, away from the speaker)
+      - Over here! (emphatic, drawing attention)
+      - Over there. (pointing to a distant location)
+      - Here is your coffee. (presentational)
+      - There is the bus. (drawing attention to something at a distance)
+    explanation: >-
+      The deictic system is fundamental to spatial reference in English. "Here"
+      and "there" are not fixed locations — they shift depending on where the
+      speaker is. A teacher in a classroom says "Come here" meaning "come to my
+      desk," but the same teacher at home says "Come here" meaning "come to
+      where I am in the house." Learners must understand that these are
+      relative, not absolute, spatial terms.
+  - type: semantic
+    rule: >-
+      Indefinite place adverbs follow the same pattern as indefinite pronouns:
+      "some-" forms for affirmatives (somewhere, someone, something), "any-"
+      forms for questions and negatives (anywhere, anyone, anything), "no-" forms
+      for negatives (nowhere, nobody, nothing), "every-" forms for universals
+      (everywhere, everyone, everything).
+    examples:
+      - "I want to go somewhere warm. (affirmative, unspecified)"
+      - "Is there anywhere to sit? (question)"
+      - "There isn't anywhere to park. (negative)"
+      - "Nowhere feels safe anymore. (negative, emphatic)"
+      - "We've looked everywhere. (universal, exhaustive)"
+    explanation: >-
+      The some/any/no/every pattern is one of the most systematic paradigms in
+      English. Learners who master the pattern for place adverbs can transfer it
+      to other indefinite forms. The key teaching point: "some-" forms for
+      affirmatives, "any-" forms for questions and negatives, "no-" forms for
+      negative statements, "every-" forms for "all" meanings.
+  - type: grammatical
+    rule: >-
+      Compound place adverbs (upstairs, downstairs, inside, outside, overhead,
+      underground, abroad, overseas, nearby) are single words — no hyphen, no
+      space. They function as adverbs (no complement) or occasionally as
+      prepositions (with a complement, though this is less common).
+    examples:
+      - "She went upstairs. (adverb — no complement)"
+      - "He lives downstairs. (adverb)"
+      - "They stayed inside. (adverb)"
+      - "Let's eat outside. (adverb)"
+      - "She went abroad. (adverb)"
+      - "He traveled overseas. (adverb)"
+    explanation: >-
+      These compound adverbs are often confused with prepositional phrases by
+      learners who expect "up stairs" (two words) or "in side." In modern
+      English, the single-word forms are standard. "Upstairs" and "downstairs"
+      can also be adjectives ("the upstairs bathroom") or nouns ("the upstairs
+      of the house").
+  - type: grammatical
+    rule: >-
+      "Here" and "there" can function as discourse markers to introduce or draw
+      attention to something, not just to indicate physical location: "Here's the
+      problem..." / "There you go" (giving something to someone) / "There we are"
+      (task completed).
+    examples:
+      - "Here's what I think. (introducing a topic)"
+      - "There you are! (finding someone or completing a task)"
+      - "Here we go. (something is starting)"
+      - "There it is. (pointing something out)"
+    explanation: >-
+      These discourse-marking uses of "here" and "there" are extremely common in
+      spoken English and are essential for pragmatic competence. They do not
+      refer to physical location but serve interactional functions: introducing
+      topics, expressing completion, drawing attention, or handing something
+      over.
+  - type: grammatical
+    rule: >-
+      Negative place adverbs at the beginning of a sentence trigger
+      subject-auxiliary inversion in formal English: "Nowhere else can you find
+      such variety." / "Nowhere had she felt so alone." This is a literary or
+      formal register feature.
+    examples:
+      - "Nowhere in the world will you find better pasta."
+      - "Nowhere could they find shelter."
+      - "Nowhere else is this tradition still practiced."
+    explanation: >-
+      Fronting negative adverbs for emphasis is a feature of formal and literary
+      English. The inversion rule is the same as with "never," "seldom,"
+      "rarely," and "not only." Learners at A1-A2 will not produce this
+      structure but may encounter it in reading, so receptive awareness is
+      valuable.
 use:
-- context: Giving directions
-  description: Telling someone where to go
-  examples:
-  - Turn left here.
-  - The bathroom is upstairs.
-- context: Describing where things are
-  description: Talking about location
-  examples:
-  - My keys are here somewhere.
-  - She lives nearby.
+  - context: Giving directions
+    description: >-
+      Place adverbs are essential for giving and understanding directions.
+    examples:
+      - "The bathroom is upstairs, second door on the left."
+      - "Turn left here, then go straight."
+      - "It's just over there, next to the bank."
+  - context: Describing where things are
+    description: >-
+      Place adverbs help locate objects and people in space.
+    examples:
+      - "My keys are here somewhere."
+      - "The cat is outside."
+      - "She lives nearby."
+  - context: Talking about travel and destinations
+    description: >-
+      "Abroad" and "overseas" are used for international travel.
+    examples:
+      - "She went abroad for university."
+      - "He works overseas."
+      - "Have you ever lived abroad?"
 phonetics:
-- note: Stress on 'here' and 'there' for emphasis
-  contexts:
-  - emphasis
-  l1_issue: Some L1 speakers confuse 'here' and 'there'
-  example_generator:
+  - note: >-
+      "Here" /hɪər/ and "there" /ðɛər/ are among the first words learners
+      acquire. In connected speech, "here is" often contracts to /hɪərz/ and
+      "there is" to /ðɛərz/. The weak form of "here" in "Come here" may reduce
+      to /hɪə/ or even /jɪə/.
     contexts:
-    - connected speech
+      - connected speech
+      - contractions
+    l1_issue: >-
+      Speakers of languages with a three-way deictic system (e.g., Spanish:
+      aquí/acá — ahí/allí — allá) may over-distinguish in English, where only
+      two degrees (here/there) are standard. Japanese speakers (koko — soko —
+      asoko) face a similar challenge.
 teaching:
-  methodology: PPP
+  methodology: PPP with heavy use of gesture and realia
   tips:
-  - Use classroom locations to demonstrate
-  - Use gestures to reinforce here/there
+    - >-
+      Use physical movement and pointing to teach here/there. Stand in different
+      parts of the classroom and say "I am here" / "The door is there."
+    - >-
+      Use the "some/any/no/every" paradigm as a systematic framework. Create a
+      table and have learners fill in the place adverb column alongside the
+      pronoun columns.
+    - >-
+      Use hide-and-seek activities: hide objects and have students describe
+      where they are using place adverbs.
+    - >-
+      Teach discourse-marking uses ("Here's...", "There you go") as separate
+      lexical items with specific functions, not as literal spatial references.
   recommended_activities:
-  - name: Hide and Seek
-    duration: 10
-    adaptation_notes: Hide objects, students describe where they are using place adverbs.
+    - name: Classroom Treasure Hunt
+      duration: 15
+      adaptation_notes: >-
+        Hide objects around the classroom. Students search and describe locations
+        using place adverbs: "It's upstairs" (on a high shelf), "It's inside
+        the drawer," "It's outside the window."
+    - name: Direction Role-Play
+      duration: 10
+      adaptation_notes: >-
+        One student is a tourist asking for directions; the other is a local.
+        Practice: "Where is the bank?" — "It's over there, next to the post
+        office."
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
+  primary: >-
+    Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage. Chapter on adverbs and adverbials, sections
+    on spatial adverbials.
+  secondary: >-
+    Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press. Chapter 7: Adverbs and adverbials, sections on
+    locative and directional expressions.
+  validation: >-
+    Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+    Entries on "here and there," "somewhere/anywhere/nowhere," "upstairs/downstairs,"
+    "abroad/overseas."
+  pedagogical: >-
+    Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press. Chapter on adverbs, section on place and direction
+    adverbials.
+  teaching_practice: >-
+    Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press. Activities for teaching spatial language and
+    prepositions of place.
+common_errors:
+  - error: "*I am going to home.*"
+    correction: "I am going home."
+    explanation: >-
+      "Home" functions as a place adverb in English, not a noun, when used with
+      verbs of motion (go, come, run, walk, drive). No preposition is needed: "go
+      home," "come home," "run home." The preposition "to" is only used when
+      "home" is modified: "I'm going to my home" or "I'm going to the home of a
+      friend." This error is extremely common because most languages require a
+      preposition before the word for "home" (Spanish "ir a casa," French "aller
+      à la maison," German "nach Hause gehen").
+    l1_groups:
+      - Portuguese
+      - Spanish
+      - French
+      - German
+      - Italian
+      - Russian
+      - Arabic
+      - Korean
+      - Japanese
+  - error: "*She lives in nearby.*"
+    correction: "She lives nearby."
+    explanation: >-
+      "Nearby" is an adverb and does not take a preposition. Adding "in" is
+      ungrammatical. If the learner wants to use a prepositional phrase, they
+      should say "She lives near here" or "She lives in the nearby area." The
+      confusion arises because "near" can be a preposition ("near the school"),
+      but "nearby" is an adverb and stands alone.
+    l1_groups:
+      - Portuguese
+      - Spanish
+      - French
+      - Turkish
+  - error: "*I didn't find my keys nowhere.*"
+    correction: "I didn't find my keys anywhere. / I found my keys nowhere."
+    explanation: >-
+      Standard English does not allow double negation. "Didn't" (auxiliary
+      negation) must be paired with "anywhere" (non-assertive form), not
+      "nowhere" (negative form). The sentence "I didn't find my keys nowhere"
+      contains two negative elements, which is non-standard. In standard English,
+      use either: "I didn't find my keys anywhere" (auxiliary negation +
+      non-assertive) or "I found my keys nowhere" (negative adverb, no auxiliary
+      negation). Note: double negation is grammatical in many dialects and
+      languages (Spanish, Portuguese, many African American English varieties)
+      but is not standard in formal English.
+    l1_groups:
+      - Portuguese
+      - Spanish
+      - French
+      - Russian
+      - Arabic
+  - error: "*Here is come the bus.*"
+    correction: "Here comes the bus."
+    explanation: >-
+      When "here" or "there" begins a sentence with a noun subject, English uses
+      inversion: "Here comes the bus" (verb before subject). However, if the
+      subject is a pronoun, there is no inversion: "Here it comes" (not *"Here
+      comes it"). The structure is: Here/There + verb + noun subject. This is a
+      presentational structure used to draw attention to something arriving or
+      appearing.
+    l1_groups:
+      - Portuguese
+      - Spanish
+      - German
+      - Korean
+      - Japanese
+  - error: "*I want to travel to abroad.*"
+    correction: "I want to travel abroad."
+    explanation: >-
+      "Abroad" is an adverb, not a noun. It does not take a preposition. Say "go
+      abroad," "live abroad," "travel abroad," "study abroad." The same applies
+      to "overseas." Learners who treat these as nouns (perhaps by analogy with
+      "go to France" or "go to London") incorrectly add "to." This error is
+      common across many L1 backgrounds.
+    l1_groups:
+      - Portuguese
+      - Spanish
+      - French
+      - German
+      - Mandarin
+      - Korean
+      - Japanese
+register_notes:
+  - note: >-
+      In casual spoken English, "here" and "there" are frequently used as
+      discourse markers with no spatial meaning: "Here's the thing..." (filler
+      before making a point), "There you go" (handing something over or
+      expressing agreement), "Here we go again" (expressing exasperation at a
+      recurring situation). These are essential for natural-sounding speech.
+  - note: >-
+      In formal writing, "abroad" and "overseas" are preferred over vague
+      expressions like "in foreign countries" or "over there" when referring to
+      international contexts. "Abroad" is more common in BrE; "overseas" is
+      more common in AmE, though both are understood in both varieties.
+  - note: >-
+      The fronting of negative place adverbs with inversion ("Nowhere is this
+      more apparent than...") is a feature of academic and literary prose. It is
+      used for rhetorical emphasis and is inappropriate in casual conversation.
+  - note: >-
+      In informal speech, "around here" and "over there" are more common than
+      bare "here" and "there" when describing general areas: "Is there a
+      pharmacy around here?" / "I left it over there somewhere."
+dialectal_variation:
+  - note: >-
+      In Scottish English and some Northern English dialects, "away" is used as
+      a place adverb meaning "to a place": "Away you go" = "Go away" or "Off
+      you go." This is not standard in General American or Southern BrE.
+  - note: >-
+      In Irish English, "here" is used as an attention-getting interjection:
+      "Here, did you hear about...?" This discourse-marking use is more
+      prominent than in other varieties.
+  - note: >-
+      In AmE, "around" is often used where BrE might use "round" as a place
+      adverb: AmE "around here" vs BrE "round here." Both are informal.
+  - note: >-
+      In some Southern American English dialects, "over yonder" is used as a
+      distal place adverb meaning "over there (at a considerable distance)."
+      This is a three-way deictic system: here / there / yonder.
+discourse_notes:
+  - note: >-
+      Place adverbs create spatial cohesion in narratives. When a storyteller
+      establishes a setting with "here" and "there," listeners can track
+      characters' movements through space: "She walked to the window. Here, she
+      paused. There, in the garden, she saw him." The deictic adverbs map the
+      narrative space.
+  - note: >-
+      In conversation, "here" and "there" often function as turn-taking and
+      attention-management devices. "Here" introduces new information or a new
+      topic ("Here's what I think..."), while "there" signals completion or
+      agreement ("There we are" = done; "There you go" = I agree / that's
+      right).
+  - note: >-
+      Indefinite place adverbs (somewhere, anywhere, nowhere, everywhere) carry
+      important pragmatic weight. "Somewhere" in "Let's go somewhere nice"
+      implies the speaker has a positive expectation. "Anywhere" in "I don't
+      want to go anywhere" expresses reluctance or depression. "Nowhere" in
+      "This is going nowhere" is metaphorical, meaning "making no progress."
+  - note: >-
+      In procedural discourse (instructions, recipes, directions), place adverbs
+      create a spatial framework that guides the listener through a sequence of
+      actions: "First, go upstairs. Then, turn left there. The room is just
+      inside, on the right."

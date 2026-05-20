@@ -1,0 +1,114 @@
+import os
+import yaml
+from pathlib import Path
+from agency_swarm.tools import BaseTool
+from pydantic import Field
+
+
+def _get_data_dir() -> Path:
+    """Get the data directory path. Supports env var override for Docker deployments."""
+    env_path = os.getenv("COGNIESL_DATA_DIR")
+    if env_path:
+        return Path(env_path)
+    return Path(__file__).resolve().parents[2] / "data"
+
+
+class SearchActivitiesTool(BaseTool):
+    """
+    Search the CogniESL activities database by topic, level, age group, or L1 language.
+    Returns matching activities with full details (instructions, scripts, materials, duration).
+    """
+
+    topic: str = Field(
+        default="",
+        description="Grammar topic or keyword to search for (e.g., 'present simple', 'articles')."
+    )
+    level: str = Field(
+        default="",
+        description="Level to filter by (e.g., 'beginner', 'intermediate', 'advanced'). Empty means all levels."
+    )
+    age_group: str = Field(
+        default="",
+        description="Age group to filter by (e.g., 'kids', 'teens', 'adults'). Empty means all ages."
+    )
+    l1_language: str = Field(
+        default="",
+        description="L1 language to filter by (e.g., 'Portuguese', 'Spanish'). Empty means all languages."
+    )
+    max_results: int = Field(
+        default=5,
+        description="Maximum number of activities to return. Default is 5."
+    )
+
+    def run(self):
+        data_dir = _get_data_dir() / "activities"
+        if not data_dir.exists():
+            return f"Error: Activities data directory not found at {data_dir}"
+
+        results = []
+        topic_lower = self.topic.lower().strip() if self.topic else ""
+        level_upper = self.level.upper().strip() if self.level else ""
+        age_lower = self.age_group.lower().strip() if self.age_group else ""
+        l1_lower = self.l1_language.lower().strip() if self.l1_language else ""
+
+        for f in sorted(data_dir.glob("*.yaml")):
+            try:
+                data = yaml.safe_load(f.read_text(encoding="utf-8"))
+                if not data:
+                    continue
+
+                match = True
+
+                if topic_lower:
+                    searchable = " ".join([
+                        data.get("name", ""),
+                        data.get("description", ""),
+                        " ".join(data.get("targetStructures", [])),
+                        " ".join(data.get("keywords", [])),
+                    ]).lower()
+                    if topic_lower not in searchable:
+                        match = False
+
+                if level_upper and match:
+                    levels = [l.upper() for l in data.get("bestForLevels", [])]
+                    if level_upper not in levels:
+                        match = False
+
+                if age_lower and match:
+                    group_size = data.get("groupSize", "").lower()
+                    desc = data.get("description", "").lower()
+                    age_indicators = {
+                        "kids": ["kids", "children", "young learners", "elementary"],
+                        "teens": ["teens", "teenagers", "adolescents", "middle school", "high school"],
+                        "adults": ["adults", "adult", "business", "professional"],
+                    }
+                    if age_lower in age_indicators:
+                        indicators = age_indicators[age_lower]
+                        if not any(ind in desc or ind in group_size for ind in indicators):
+                            other_ages = [a for a in age_indicators if a != age_lower]
+                            for other in other_ages:
+                                if any(ind in desc for ind in age_indicators[other]):
+                                    match = False
+                                    break
+
+                if l1_lower and match:
+                    l1_enhanced = data.get("l1Enhanced", False)
+                    keywords = " ".join(data.get("keywords", [])).lower()
+                    if not l1_enhanced and l1_lower not in keywords:
+                        match = False
+
+                if match:
+                    results.append(data)
+                    if len(results) >= self.max_results:
+                        break
+
+            except Exception:
+                continue
+
+        if not results:
+            return f"No activities found for topic='{self.topic}', level='{self.level}', age='{self.age_group}', L1='{self.l1_language}'."
+
+        if len(results) == 1:
+            return results[0]
+
+        return {"count": len(results), "activities": results}

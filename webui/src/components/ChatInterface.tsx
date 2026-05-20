@@ -19,6 +19,14 @@ function getOrCreateSessionId(): string {
   return id;
 }
 
+function cleanResponse(text: string): string {
+  text = text.replace(/<memory-context>[\s\S]*?<\/memory-context>/gi, "");
+  text = text.replace(/\[System note:[\s\S]*?\]/gi, "");
+  text = text.replace(/<memory-context>[\s\S]*/gi, "");
+  text = text.replace(/\n{3,}/g, "\n\n").trim();
+  return text;
+}
+
 export function ChatInterface() {
   const [messages, setMessages] = useState<Message[]>([
     {
@@ -57,7 +65,11 @@ export function ChatInterface() {
     setIsLoading(true);
 
     try {
-      const response = await fetch("/api/chat", {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 120000);
+
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || "/cogniesl/get_response";
+      const response = await fetch(apiUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -66,25 +78,38 @@ export function ChatInterface() {
         body: JSON.stringify({
           message: userMessage.content,
         }),
+        signal: controller.signal,
       });
 
+      clearTimeout(timeout);
+
+      if (!response.ok) {
+        throw new Error(`Server responded with ${response.status}`);
+      }
+
       const data = await response.json();
+      const cleaned = cleanResponse(data.response || "");
 
       const assistantMessage: Message = {
         id: (Date.now() + 1).toString(),
         role: "assistant",
-        content: data.response || "Sorry, I couldn't process that request.",
+        content: cleaned || "Sorry, I couldn't process that request.",
         timestamp: new Date(),
       };
 
       setMessages((prev) => [...prev, assistantMessage]);
-    } catch {
+    } catch (err) {
+      const errorMsg =
+        err instanceof Error && err.name === "AbortError"
+          ? "The request took too long. Please try again with a shorter request."
+          : "Sorry, there was an error connecting to the server. Please try again.";
+
       setMessages((prev) => [
         ...prev,
         {
           id: (Date.now() + 1).toString(),
           role: "assistant",
-          content: "Sorry, there was an error connecting to the server.",
+          content: errorMsg,
           timestamp: new Date(),
         },
       ]);

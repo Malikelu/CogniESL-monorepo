@@ -4,82 +4,145 @@ schema_version: '3.0'
 grammar_points:
   articles:
     interference_patterns:
-    - pattern: Omission of all articles (Indonesian has no articles)
-      example: Omission of all articles (Indonesian has no articles)
-      frequency: 4
-      persistence: 3
+    - pattern: Omission of all articles (Indonesian has no article system)
+      example: Indonesian has no words for 'a/an' or 'the.' 'Buku' can mean 'a book,'
+        'the book,' or 'books.' Learners say 'I want book' instead of 'I want a book.'
+      frequency: 5
+      persistence: 4
       communicative_impact: 3
+    - pattern: Use of demonstratives (ini/itu) as article substitutes
+      example: Indonesian uses 'ini' (this) and 'itu' (that) for specificity instead
+        of articles. Learners may overuse 'this/that' in English where 'a' or 'the'
+        would be correct.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Use of 'sebuah' (one) or 'seorang' (one person) as indefinite article
+        substitutes
+      example: 'Indonesian has numeral classifiers like ''sebuah'' (one, for objects)
+        and ''seorang'' (one, for people). Learners may overuse ''one'' in English:
+        ''I saw one man on the street'' instead of ''I saw a man on the street.'''
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
     examples:
     - wrong: Saya guru.
       correct: I am a teacher.
-    why_it_happens: Indonesian has no article system. Definiteness is inferred from
-      context or word order rather than grammatical markers. Indonesian learners often
-      omit articles entirely in English, producing sentences like 'I bought book yesterday'
-      instead of 'I bought a book.' This occurs because Indonesian does not require
-      speakers to mark definiteness grammatically.
+      id_original: Saya guru.
+      gloss: I teacher.
+      explanation: 'Indonesian has no article. ''Saya guru'' literally means ''I teacher.''
+        English requires ''a'': ''I am a teacher.'''
+    - wrong: Saya mau buku.
+      correct: I want a book.
+      id_original: Saya mau buku.
+      gloss: I want book.
+      explanation: Indonesian 'buku' (book) has no article. English requires 'a' for
+        first mention of a singular countable noun.
+    - wrong: Dia beli buku kemarin.
+      correct: He bought a book yesterday.
+      id_original: Dia beli buku kemarin.
+      gloss: He buy book yesterday.
+      explanation: Indonesian sentence has no article before 'buku.' English requires
+        'a' for first mention.
+    - wrong: I saw one man on the street.
+      correct: I saw a man on the street.
+      id_original: Saya melihat seorang pria di jalan.
+      gloss: I see one-person man on street.
+      explanation: Indonesian 'seorang' is a numeral classifier meaning 'one person.'
+        Learners may translate this as 'one man' instead of 'a man.'
+    why_it_happens: 'Indonesian has no article system whatsoever. There are no words
+      equivalent to ''a/an'' or ''the'' in Indonesian grammar. Definiteness and specificity
+      are expressed through other means: (1) word order — definite nouns often come
+      after the verb or are fronted, (2) demonstratives ''ini'' (this) and ''itu''
+      (that), (3) numeral classifiers like ''sebuah'' (one, for objects) and ''seorang''
+      (one, for people), and (4) context. Because Indonesian speakers never need to
+      choose between ''a,'' ''the,'' or zero article, the entire concept of grammatical
+      definiteness marking is foreign. This is one of the most persistent and frequent
+      errors for Indonesian learners at all levels. The absence of articles in L1
+      means learners have no mental framework for understanding why English requires
+      them.'
     teacher_tips:
-      how_to_explain: 'Teach: English REQUIRES articles. ''A/an'' for first mention,
-        ''the'' for specific.'
-      where_to_start: Start with the articles pattern.
-      sequencing: 'Week 1: articles. Week 2: Practice. Week 3: Review. Week 4: Mixed.'
+      how_to_explain: 'Start by explaining that English REQUIRES a ''determiner''
+        before most singular countable nouns — this is a grammatical rule, not optional.
+        Use a simple three-way system: (1) ''a/an'' = one thing, first time mentioning
+        it, ''I need a pen'' (any pen). (2) ''the'' = specific thing, both people
+        know which one, ''Pass me the pen'' (that specific pen). (3) zero article
+        = general statements with plurals or uncountables, ''I like books'' or ''Water
+        is important.'' Contrast with Indonesian: show that Indonesian uses ''ini/itu''
+        (this/that) or nothing at all. Emphasize that ''a/an'' is the default for
+        singular countable nouns — when in doubt, use ''a.'''
+      where_to_start: 'Begin with the most basic rule: singular countable nouns MUST
+        have a determiner. Drill ''I am a + profession,'' ''I have a + object,'' ''I
+        want a + thing.'' Then introduce ''the'' for specific reference. Save zero
+        article for later.'
+      sequencing: 'Week 1: Introduce a/an with singular countable nouns (professions,
+        objects, daily vocabulary). Week 2: Introduce the for specific/known reference.
+        Week 3: Contrast a vs the; introduce zero article with plurals and uncountables.
+        Week 4: Mixed practice in context (paragraphs, dialogues, picture descriptions).'
       exercises:
-      - name: articles Audit
-        type: error-correction
-        description: 20 sentences with articles errors.
-        duration: 15
-      - name: articles Translation
-        type: translation
-        description: Translate 15 sentences focusing on articles.
-        duration: 15
-      - name: articles Practice
+      - name: Add the Missing Word
         type: fill-in-the-blank
-        description: 20 sentences practicing articles.
-        duration: 10
-      - name: articles Error Hunt
-        type: error-correction
-        description: A paragraph with 10 articles errors.
+        description: 20 sentences with singular countable nouns. Learners must add
+          a/an or the. Include Indonesian glosses to highlight the structural difference.
         duration: 15
-    sources: &id001
+      - name: Translate from Indonesian
+        type: translation
+        description: 15 Indonesian sentences without articles. Learners translate
+          to English, adding the correct article.
+        duration: 20
+      - name: One or A?
+        type: error-correction
+        description: 10 sentences where 'one' is incorrectly used instead of 'a/an.'
+          Learners correct them. Addresses the 'sebuah/seorang' transfer issue.
+        duration: 10
+      - name: Picture Story
+        type: speaking
+        description: Show a sequence of pictures. Learners tell the story, practicing
+          'a' for first mention and 'the' for subsequent mention. E.g., 'A man walked
+          into a shop. The man bought a book.'
+        duration: 15
+    sources:
     - Swan & Smith "Learner English" (Indonesian)
     - Parrott "Grammar for English Language Teachers"
-    source_count: 2
+    - Celce-Murcia & Larsen-Freeman "The Grammar Book"
+    source_count: 3
     source_type: textbook
-    frequency: 4
-    persistence: 3
+    frequency: 5
+    persistence: 4
     communicative_impact: 3
     flagged: false
     tier: 1
     source_rank: 1
     citations:
-    - claim: Interference pattern for articles
+    - claim: Indonesian has no article system; definiteness is expressed through word
+        order, demonstratives, and context
       source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
         and Other Problems'', 2nd ed., Cambridge University Press'
-      location: 'Chapter: Indonesian speakers, pp. 277-294'
+      location: 'Chapter: Indonesian/Malay speakers, pp. 277-294'
       tier: 1
-    - claim: 'Grammar point: articles'
+    - claim: Indonesian uses numeral classifiers (sebuah, seorang) where English uses
+        indefinite articles
+      source: 'Sneddon, J.N. et al. (2010) ''Indonesian: A Comprehensive Grammar'',
+        2nd ed., Routledge'
+      location: 'Chapter 2: Nouns and noun phrases'
+      tier: 1
+    - claim: Article omission is the most frequent grammatical error for Indonesian
+        learners of English
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Indonesian/Malay speakers, pp. 277-294'
+      tier: 1
+    - claim: Singular countable nouns in English require a determiner; this rule does
+        not exist in Indonesian
       source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
         Press
-      location: See relevant grammar point section
+      location: 'Chapter: Determiners and articles'
       tier: 2
-    - claim: Article usage varies significantly across languages; many languages have
-        no article system
-      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
-      location: See articles entries 133-142
-      tier: 2
-    - claim: Indonesian has no article system (PEU articles entries)
-      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
-      location: See relevant entry
-      tier: 2
-    - claim: ELLs commonly omit indefinite article when descriptive adjectives come
-        between determiner and noun
-      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
-        A Practical Handbook'', University of Michigan Press'
-      location: p. 153
-      tier: 2
-    - claim: Indonesian has no article system (p. 153)
-      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
-        A Practical Handbook'', University of Michigan Press'
-      location: See relevant section
+    - claim: Articles are among the most difficult grammar points for learners whose
+        L1 lacks them
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: pp. 309-315
       tier: 2
   word_order:
     interference_patterns:
@@ -113,7 +176,9 @@ grammar_points:
         type: error-correction
         description: A paragraph with 10 word order errors.
         duration: 15
-    sources: *id001
+    sources: &id001
+    - Swan & Smith "Learner English" (Indonesian)
+    - Parrott "Grammar for English Language Teachers"
     source_count: 2
     source_type: textbook
     frequency: 4

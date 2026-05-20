@@ -4,65 +4,147 @@ schema_version: '3.0'
 grammar_points:
   articles:
     interference_patterns:
-    - pattern: Overuse of definite article (ha-)
-      example: Overuse of definite article (ha-)
+    - pattern: Overuse of definite article (the) due to Hebrew ha- prefix
+      example: 'Hebrew prefixes ha- to nouns for definiteness: ''sefer'' (a book)
+        vs. ''ha-sefer'' (the book). Because ha- is attached to the noun, learners
+        may overuse ''the'' in English, especially with generic or first-mention nouns.'
       frequency: 4
       persistence: 3
+      communicative_impact: 2
+    - pattern: Omission of indefinite article (a/an) — Hebrew has no indefinite article
+      example: Hebrew has no word for 'a/an.' 'Sefer' can mean 'a book' or 'book.'
+        Learners say 'I want book' instead of 'I want a book.'
+      frequency: 5
+      persistence: 4
       communicative_impact: 3
+    - pattern: Overuse of definite article with proper nouns and unique entities
+      example: Hebrew uses ha- with some proper nouns and unique entities. Learner
+        says 'the Mount Everest' or 'the Golda Meir' by analogy with Hebrew ha- usage.
+      frequency: 2
+      persistence: 2
+      communicative_impact: 1
     examples:
     - wrong: Hu more.
       correct: He is a teacher.
-    why_it_happens: Hebrew has a definite article ha- but no indefinite article. Hebrew
-      learners may overuse the and omit a/an.
+      he_original: Hu more. (הוּא מוֹרֶה)
+      gloss: He teacher.
+      explanation: 'Hebrew has no indefinite article. ''Hu more'' literally means
+        ''He teacher.'' English requires ''a'': ''He is a teacher.'''
+    - wrong: Katafti sefer.
+      correct: I bought a book.
+      he_original: Katafti sefer. (קָנִיתִי סֵפֶר)
+      gloss: I-bought book.
+      explanation: Hebrew 'sefer' (book) has no article — it could be 'a book' or
+        'the book' depending on context. English requires 'a' for first mention of
+        a singular countable noun.
+    - wrong: The cats are cute animals.
+      correct: Cats are cute animals.
+      he_original: Ha-chatalufim haytafim nisim. (הַחֲתּלוּפִים חֲתַלּוּפִים נִחְמָדִים)
+      gloss: The-cats cats cute.
+      explanation: 'Hebrew uses ha- for generic plural reference (''the cats'' = cats
+        in general). English uses zero article for generic statements: ''Cats are
+        cute animals.'''
+    - wrong: I need the pen.
+      correct: I need a pen.
+      he_original: Ani tzarich et ha-et. (אֲנִי צָרִיךְ אֶת הָעֵט)
+      gloss: I need ACC the-pen.
+      explanation: Hebrew uses ha- (the) more broadly than English. In this context,
+        the speaker means 'a pen' (any pen), but Hebrew may use the definite form.
+        English requires 'a' for non-specific reference.
+    why_it_happens: 'Hebrew has a definite article (ha-, prefixed to nouns) but NO
+      indefinite article. This creates a fundamental asymmetry with English. For definite
+      nouns, Hebrew attaches ha- directly to the noun: ''sefer'' (book) becomes ''ha-sefer''
+      (the book). This is structurally similar to Scandinavian suffix articles, not
+      English preposed ''the.'' For indefinite nouns, Hebrew simply uses the bare
+      noun with no article: ''sefer'' can mean ''a book'' or ''book.'' There is no
+      word for ''a/an'' in Hebrew. This means Hebrew learners face two challenges:
+      (1) they must learn to add ''a/an'' where Hebrew has nothing — a completely
+      new grammatical concept, and (2) they must learn that ha- corresponds to English
+      ''the'' but is used more broadly in Hebrew (with generics, proper nouns, and
+      in contexts where English uses zero article). The absence of an indefinite article
+      is the more serious and persistent problem.'
     teacher_tips:
-      how_to_explain: 'Teach: English REQUIRES articles. ''A/an'' for first mention,
-        ''the'' for specific.'
-      where_to_start: Start with the articles pattern.
-      sequencing: 'Week 1: articles. Week 2: Practice. Week 3: Review. Week 4: Mixed.'
+      how_to_explain: 'Explain that Hebrew has ''the'' (ha-) but no ''a.'' English
+        has BOTH. The concept of ''a/an'' does not exist in Hebrew — this is new for
+        learners. Use a simple rule: ''If it''s one thing and you''re mentioning it
+        for the first time, use a/an.'' For ''the,'' explain that Hebrew ha- is used
+        more freely than English ''the.'' English only uses ''the'' when both speaker
+        and listener know which specific thing is meant. For generic statements (cats
+        in general, love in general), English often uses NO article.'
+      where_to_start: 'Start with the indefinite article since it''s the bigger gap.
+        Drill ''a/an + singular countable noun'' as a mandatory pattern. Use physical
+        objects: pick up a pen and say ''This is a pen,'' put it down, say ''I need
+        a pen.'' Then introduce ''the'' for specific reference. Finally, address overuse
+        of ''the'' with generics.'
+      sequencing: 'Week 1: Introduce a/an — the concept that English needs a word
+        before singular countable nouns. Week 2: Contrast a/an (first mention) vs.
+        the (specific/known). Week 3: Zero article with generics and abstract nouns
+        — where Hebrew uses ha- but English uses nothing. Week 4: Mixed practice in
+        writing and speaking.'
       exercises:
-      - name: articles Audit
-        type: error-correction
-        description: 20 sentences with articles errors.
-        duration: 15
-      - name: articles Translation
-        type: translation
-        description: Translate 15 sentences focusing on articles.
-        duration: 15
-      - name: articles Practice
+      - name: A or Nothing?
         type: fill-in-the-blank
-        description: 20 sentences practicing articles.
+        description: 20 sentences where learners must add a/an where Hebrew would
+          have nothing. E.g., 'I am ___ student. She has ___ cat. He wants ___ apple.'
         duration: 10
-      - name: articles Error Hunt
-        type: error-correction
-        description: A paragraph with 10 articles errors.
+      - name: Translate from Hebrew
+        type: translation
+        description: 15 Hebrew sentences without indefinite articles. Learners translate
+          to English, adding a/an where needed.
+        duration: 20
+      - name: Generic or Specific?
+        type: fill-in-the-blank
+        description: 15 sentences requiring learners to choose the or zero article
+          with generic nouns. E.g., '___ dogs are loyal animals' (zero) vs. '___ dogs
+          in my neighborhood are friendly' (the).
         duration: 15
-    sources: &id001
+      - name: Edit the Hebrew Speaker's Paragraph
+        type: error-correction
+        description: 'A paragraph with 10 article errors: missing a/an, overuse of
+          the with generics and abstract nouns.'
+        duration: 15
+    sources:
     - Swan & Smith "Learner English" (Hebrew)
     - Parrott "Grammar for English Language Teachers"
-    source_count: 2
+    - Glinert "The Grammar of Modern Hebrew"
+    source_count: 3
     source_type: textbook
-    frequency: 4
-    persistence: 3
+    frequency: 5
+    persistence: 4
     communicative_impact: 3
     flagged: false
     tier: 1
     source_rank: 2
     citations:
-    - claim: 'Grammar point: articles'
+    - claim: Hebrew has a definite article (ha-) but no indefinite article; this causes
+        systematic omission of a/an in English
+      source: Glinert, L. (1989) 'The Grammar of Modern Hebrew', Cambridge University
+        Press
+      location: 'Chapter 8: The noun phrase — definiteness and the article'
+      tier: 1
+    - claim: Hebrew ha- is prefixed to the noun and is used more broadly than English
+        the, including with generics
+      source: Berman, R.A. (1985) 'The Acquisition of Hebrew', in D.I. Slobin (ed.),
+        'The Crosslinguistic Study of Language Acquisition, Vol. 1', Lawrence Erlbaum
+      location: pp. 255-371
+      tier: 1
+    - claim: Hebrew learners of English frequently omit the indefinite article and
+        overuse the definite article
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Hebrew/Arabic speakers'
+      tier: 1
+    - claim: The absence of an indefinite article in L1 is a major source of article
+        errors in English
       source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
         Press
-      location: See relevant grammar point section
+      location: 'Chapter: Determiners and articles'
       tier: 2
-    - claim: Article usage varies significantly across languages; many languages have
-        no article system
-      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
-      location: See articles entries 133-142
-      tier: 2
-    - claim: ELLs commonly omit indefinite article when descriptive adjectives come
-        between determiner and noun
-      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
-        A Practical Handbook'', University of Michigan Press'
-      location: p. 153
+    - claim: Generic reference uses different article strategies across languages;
+        Hebrew uses the definite article for generics
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: pp. 309-315
       tier: 2
   word_order:
     interference_patterns:
@@ -97,7 +179,9 @@ grammar_points:
         type: error-correction
         description: A paragraph with 10 word order errors.
         duration: 15
-    sources: *id001
+    sources: &id001
+    - Swan & Smith "Learner English" (Hebrew)
+    - Parrott "Grammar for English Language Teachers"
     source_count: 2
     source_type: textbook
     frequency: 4

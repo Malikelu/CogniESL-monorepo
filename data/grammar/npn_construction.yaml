@@ -1,98 +1,449 @@
 grammar_point: npn_construction
-title: N-P-N Construction
-description: 'Noun + Preposition + Noun constructions: a glass of water, a piece of
-  advice, a cup of tea.'
+title: N-P-N (Noun–Preposition–Noun) Constructions
+description: >-
+  Quantifying and partitive constructions of the form Noun + Preposition + Noun
+  used to individuate, portion, or classify uncountable or mass nouns (e.g. a
+  glass of water, a piece of advice, a slice of pizza) and to express
+  collective/group quantities (e.g. a bunch of keys, a flock of birds).
 level: B1
 meaning:
-  core_meaning: N-P-N constructions use a noun + preposition + noun to quantify or
-    describe non-count nouns. The first noun is a unit or quantity, the preposition
-    is usually 'of'.
-  timeline: Timeless — describes quantities, not time.
-  contrast: Direct = some water vs N-P-N = a glass of water (specific quantity)
+  core_meaning: >-
+    N-P-N constructions package a mass noun or abstract noun into a countable
+    unit. The first noun names the unit, container, portion, or group; the
+    preposition (most commonly "of") links it to the substance or entity being
+    quantified. The whole phrase functions as a single noun phrase and can be
+    pluralised (two glasses of water, three pieces of advice).
+  timeline: >-
+    Timeless — the construction describes quantity or portion, not a temporal
+    event. It can appear in any tense because it is a noun phrase, not a verb
+    form.
+  contrast: >-
+    Bare mass noun = "I need water" (unspecified amount) vs N-P-N = "I need a
+    glass of water" (specific, individuated quantity). Some N-P-N pairings are
+    collocationally fixed and non-compositional: we say "a piece of advice" not
+    *"a bit of advice" in formal writing, and "a loaf of bread" not *"a piece of
+    bread" when referring to a whole unit.
   ccqs:
-  - question: Is this a specific quantity of something?
-    answer: Yes, it is an N-P-N construction.
-  - question: What is the unit of measurement?
-    answer: The first noun (glass, piece, cup, etc.).
+    - question: >-
+        If I say "a piece of information," can I also say "an information" with
+        the same meaning?
+      answer: >-
+        No. "Information" is an uncountable noun in English and cannot take the
+        indefinite article directly. The N-P-N construction with "piece" creates
+        a countable unit: "a piece of information" = one item of information.
+        Saying *"an information" treats the noun as countable, which is
+        ungrammatical in standard English.
+      purpose: >-
+        Tests whether the learner understands that N-P-N constructions are
+        required to individuate uncountable nouns, not optional stylistic
+        variants.
+    - question: >-
+        Is there any difference in meaning between "a slice of cake" and "a
+        piece of cake"?
+      answer: >-
+        Yes. "A slice of cake" implies a neat, cut portion — typically a
+        triangular wedge from a whole cake. "A piece of cake" is more general
+        and could be any portion, including a crumbled or irregular bit. The
+        choice of unit noun (slice vs piece) carries information about shape and
+        how the portion was obtained.
+      purpose: >-
+        Tests whether the learner understands that the first noun in the N-P-N
+        is not interchangeable — each unit noun has specific semantic
+        constraints.
+    - question: >-
+        Can I say "a water" to mean "a glass of water" in casual speech?
+      answer: >-
+        In very casual spoken English, especially in restaurant contexts, some
+        speakers do say "I'll have a water" as shorthand for "a glass of water."
+        However, this is an informal ellipsis, not a true N-P-N construction. In
+        standard grammar, "water" remains uncountable and requires a quantifier
+        or unit noun: "a glass of water," "a bottle of water."
+      purpose: >-
+        Tests awareness of the boundary between informal ellipsis and the
+        standard N-P-N pattern.
+    - question: >-
+        Why do we say "a pair of scissors" but not "a scissors"?
+      answer: >-
+        "Scissors" is a pluralia tantum — a noun that only exists in plural form.
+        English uses the N-P-N construction with "pair" to create a countable
+        singular: "a pair of scissors" = one item. The same pattern applies to
+        "a pair of trousers," "a pair of glasses," "a pair of pliers." The unit
+        noun "pair" is required because the article "a" cannot modify a plural
+        noun.
+      purpose: >-
+        Tests understanding of how N-P-N constructions solve the grammatical
+        problem of counting inherently plural nouns.
   example_generator:
     contexts:
-    - food and drink
-    - measurements
-    - quantities
-    - everyday objects
+      - food and drink ordering
+      - cooking and recipes
+      - academic writing (quantifying abstract nouns)
+      - shopping and commerce
     cultural_notes:
-    - Different languages use different units — a piece of advice not a bit of advice
-    - Some N-P-N are fixed expressions that must be memorized
-    min_examples: 5
+      - >-
+        Many N-P-N collocations do not translate directly across languages. For
+        example, Spanish "un consejo" (a piece of advice) uses no equivalent of
+        "piece" or "of," so Spanish-speaking learners often omit the unit noun
+        and say *"an advice."
+      - >-
+        Container nouns in English are culture-specific: "a cup of tea" assumes
+        a cup-sized serving, whereas in some cultures tea is served in glasses
+        or small pots, which may cause confusion about which unit noun to use.
+    min_examples: 6
 form:
   affirmative:
-    structure: 'Unit noun + of + noun: a glass of water, a piece of advice, a cup
-      of tea'
+    structure: >-
+      [Determiner] + Unit/Container/Portion Noun + of + [Determiner] + Mass/Abstract/Plural Noun
     example_generator:
       contexts:
       - food
       - drink
-      - measurements
-      min_examples: 4
+      - abstract quantities
+      - collective groups
+      min_examples: 6
   negative:
-    structure: 'No/not any + noun: no water / not any advice'
+    structure: >-
+      No + N-P-N / Not any + mass noun: "There is no bread left." / "I don't
+      have any advice for you." / "There wasn't a single piece of evidence."
     example_generator:
       contexts:
-      - negation
-      min_examples: 3
+      - absence of something
+      - zero quantity
+      min_examples: 4
   questions:
-    structure: 'How much/many + noun?: How much water do you want?'
+    structure: >-
+      How much + mass noun? / How many + pluralised unit noun?: "How much water
+      do you want?" / "How many cups of coffee did you have?"
     example_generator:
       contexts:
       - asking about quantity
-      min_examples: 3
+      - ordering in a cafe
+      min_examples: 4
 sub_rules:
-- rule: Common N-P-N with 'of'
-  type: lexical
-  examples:
-  - a glass of water
-  - a piece of advice
-  - a cup of tea
-  - a slice of bread
-  - a bottle of milk
-- rule: Other prepositions in N-P-N
-  type: lexical
-  examples:
-  - a bag of rice
-  - a box of chocolates
-  - a jar of jam
-  - a can of soda
+  - type: lexical
+    rule: >-
+      The unit noun determines the shape, size, or type of portion. Common
+      portion nouns include: piece, slice, chunk, lump, pinch, dash, heap,
+      pile, spoonful, mouthful. Each has specific collocational preferences.
+    examples:
+      - a piece of paper / advice / furniture / information
+      - a slice of bread / pizza / cake / meat
+      - a chunk of cheese / rock / text
+      - a lump of sugar / coal / clay
+      - a pinch of salt
+      - a dash of lemon juice
+    explanation: >-
+      These unit nouns are not freely interchangeable. "A piece of cake" and "a
+      slice of cake" both refer to portions of cake, but "slice" implies a flat,
+      cut portion while "piece" is more general. "A lump of sugar" refers to a
+      cube or irregular mass, while "a pinch of sugar" refers to a small amount
+      held between fingers. Learners must acquire these collocational
+      restrictions lexically.
+  - type: lexical
+    rule: >-
+      Container nouns name the vessel or holder: cup, glass, bottle, can, mug,
+      bowl, plate, jar, box, bag, packet, carton, tube, tin, barrel, crate,
+      basket.
+    examples:
+      - a cup of tea / coffee
+      - a glass of water / wine / juice
+      - a bottle of milk / beer / ketchup
+      - a can of soda / beans / tuna
+      - a bowl of soup / cereal / rice
+      - a jar of jam / pickles / peanut butter
+      - a box of chocolates / cereal
+      - a bag of chips / flour / rice
+      - a tube of toothpaste
+    explanation: >-
+      Container nouns are among the most productive in the N-P-N pattern. The
+      choice of container often implies a standard serving size: "a cup of
+      coffee" suggests a standard cup (about 240ml), while "a mug of coffee"
+      suggests a larger, more informal serving. Some containers are specific to
+      certain contents: we say "a tin of sardines" (BrE) or "a can of sardines"
+      (AmE), but not *"a bottle of sardines."
+  - type: lexical
+    rule: >-
+      Collective/group nouns form N-P-N constructions for animals, people, and
+      objects: a flock of birds, a herd of cattle, a swarm of bees, a bunch of
+      grapes/flowers/keys, a pack of cards/wolves/cigarettes, a set of tools, a
+      fleet of ships.
+    examples:
+      - a flock of birds / sheep
+      - a herd of cattle / elephants / deer
+      - a swarm of bees / flies / locusts
+      - a bunch of grapes / bananas / flowers / keys
+      - a pack of cards / wolves / lies / cigarettes
+      - a set of rules / tools / teeth / dishes
+      - a fleet of ships / trucks
+    explanation: >-
+      Collective N-P-N constructions are largely fixed collocations. Many have
+      origins in medieval hunting terminology (e.g., "a pride of lions," "a
+      murder of crows," "a parliament of owls"). Learners at B1 level need only
+      the most common ones (flock, herd, bunch, pack, set), but awareness of the
+      pattern helps with reading comprehension in literary or journalistic texts.
+  - type: grammatical
+    rule: >-
+      The entire N-P-N phrase is a noun phrase and can be pluralised by
+      pluralising the unit noun: two glasses of water, three pieces of advice,
+      several slices of pizza, dozens of boxes of cereal.
+    examples:
+      - two cups of sugar
+      - three pieces of luggage
+      - several drops of rain
+      - dozens of heads of lettuce
+    explanation: >-
+      Learners sometimes incorrectly try to pluralise the mass noun instead of
+      the unit noun (*"two waters" in standard English, though "two waters" is
+      acceptable in restaurant shorthand meaning "two glasses of water"). The
+      grammatical rule is: only the unit noun takes plural morphology.
+  - type: grammatical
+    rule: >-
+      Not all N-P-N constructions use "of." Some use other prepositions or no
+      preposition at all: "a day's work," "a week's holiday," "a ten-minute
+      walk," "a five-mile drive." These are compound modifiers rather than true
+      N-P-N constructions but serve a similar quantifying function.
+    examples:
+      - a day's work
+      - a week's notice
+      - a ten-minute walk
+      - a five-pound bag
+      - a two-year contract
+    explanation: >-
+      These compound expressions are structurally distinct from N-P-N
+      constructions but serve a parallel function: they quantify or measure.
+      The possessive form ("a day's work") and the hyphenated compound
+      adjective ("a ten-minute walk") are alternative strategies for packaging
+      quantity in English noun phrases.
 use:
-- context: Food and drink
-  description: Ordering or describing quantities
-  examples:
-  - Can I have a glass of water?
-  - She gave me a piece of advice.
-  - I would like a cup of tea.
+  - context: Ordering food and drink
+    description: >-
+      N-P-N constructions are essential in restaurants, cafes, and shops. The
+      unit noun specifies the serving size.
+    examples:
+      - "Can I have a cup of coffee and a slice of cake?"
+      - "We'd like two glasses of red wine, please."
+      - "A bottle of sparkling water and a bowl of soup."
+  - context: Recipes and cooking
+    description: >-
+      Recipes rely heavily on N-P-N constructions for precise measurements.
+    examples:
+      - "Add two tablespoons of olive oil."
+      - "Mix in a cup of flour and a pinch of salt."
+      - "Stir in a dash of vanilla extract."
+  - context: Academic and professional writing
+    description: >-
+      Abstract N-P-N constructions allow writers to quantify intangible concepts.
+    examples:
+      - "The study provides new evidence of climate change."
+      - "She offered a piece of advice that changed my career."
+      - "There is a growing body of research on this topic."
 phonetics:
-- note: 'Stress on the unit noun: a GLASS of water'
-  example_generator:
-    contexts:
-    - sentence stress
-  l1_issue: Some L1 speakers use direct translation (a water instead of a glass of
-    water)
+  - note: >-
+      Primary stress falls on the unit noun, not on "of" or the mass noun: "a
+      GLASS of waTER," "a PIECE of ADvice." The preposition "of" is typically
+      reduced to /əv/ or even /ə/ in connected speech.
+    example_generator:
+      contexts:
+      - sentence stress
+      - connected speech
+    l1_issue: >-
+      Speakers of languages that lack articles (e.g., Russian, Japanese,
+      Mandarin) often omit the article before the unit noun (*"glass of water"
+      instead of "a glass of water"). Romance language speakers may use the
+      wrong article or omit the unit noun entirely (*"a advice").
 teaching:
-  methodology: PPP
+  methodology: PPP with strong lexical focus
   tips:
-  - Teach as fixed expressions
-  - Use real objects for demonstration
-  - Practice with food and drink contexts
+    - >-
+      Teach N-P-N constructions as chunks/collocations, not as a grammar rule to
+      be applied productively. The pairings are largely arbitrary and must be
+      memorised.
+    - >-
+      Use realia — actual glasses, cups, bottles, slices of bread — to make the
+      unit nouns tangible.
+    - >-
+      Create sorting activities: give learners cards with unit nouns and mass
+      nouns and have them match the correct pairs.
+    - >-
+      Contrast with L1: show learners how their language handles the same
+      concept (e.g., Spanish "un vaso de agua" maps directly, but "un consejo"
+      does not use a unit noun).
   recommended_activities:
-  - name: Shopping List
-    duration: 10
-    adaptation_notes: Students create shopping lists using N-P-N constructions.
+    - name: Shopping List Challenge
+      duration: 15
+      adaptation_notes: >-
+        Students write a shopping list for a dinner party using only N-P-N
+        constructions. They must specify exact quantities: "two bottles of wine,"
+        "a loaf of bread," "a jar of olives."
+    - name: Recipe Dictation
+      duration: 10
+      adaptation_notes: >-
+        Teacher reads a recipe aloud; students write down the quantities using
+        correct N-P-N constructions. Focus on measure words: tablespoon, teaspoon,
+        cup, pinch, dash.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
+  primary: >-
+    Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning/Cengage. Chapter 12: Nouns and Noun Phrases, sections
+    on quantifiers and partitives.
+  secondary: >-
+    Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press. Chapter 5: Nouns and noun phrases, §17 on
+    partitive and measure constructions.
+  validation: >-
+    Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+    Entries on "countable and uncountable nouns," "a piece of," "a bit of,"
+    and individual measure-word entries.
+  pedagogical: >-
+    Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press. Chapter on nouns and noun phrases, section on
+    quantifying expressions.
+  teaching_practice: >-
+    Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press. Activities for teaching countable/uncountable
+    noun distinctions and quantifier expressions.
+common_errors:
+  - error: '*I need an advice about my career.*'
+    correction: "I need a piece of advice about my career. / I need some advice about my career."
+    explanation: >-
+      "Advice" is an uncountable noun in English. It cannot take the indefinite
+      article "an" directly. To express a single item, use the N-P-N
+      construction "a piece of advice." Alternatively, use "some advice" for an
+      unspecified quantity. This error is extremely common among speakers of
+      Romance languages (French "un conseil," Spanish "un consejo," Italian "un
+      consiglio") where the equivalent noun is countable.
+    l1_groups:
+      - Portuguese
+      - Spanish
+      - French
+      - Italian
+      - Romanian
+  - error: '*Can I have two waters, please?* (in formal/written English)'
+    correction: "Can I have two glasses of water, please? / Can I have two bottles of water, please?"
+    explanation: >-
+      While "two waters" is widely understood in casual restaurant speech (as
+      shorthand for "two glasses/bottles of water"), it is technically an
+      ellipsis, not a standard N-P-N construction. In formal writing and in
+      teaching contexts, learners should use the full construction with a
+      container noun. The bare plural "waters" is only standard when referring
+      to types of water ("mineral waters") or bodies of water ("the waters of
+      the Atlantic").
+    l1_groups:
+      - Portuguese
+      - Spanish
+      - German
+      - Mandarin
+  - error: '*She gave me many good informations.*'
+    correction: "She gave me a lot of good information. / She gave me several pieces of good information."
+    explanation: >-
+      "Information" is uncountable and has no plural form. Learners cannot say
+      *"informations" or use "many" with it. To quantify, use "a lot of
+      information" (unspecified) or "a piece/bit of information" (singular) /
+      "pieces of information" (plural). This error is pervasive across almost
+      all L1 backgrounds because many languages treat the equivalent noun as
+      countable (French "des informations," Spanish "informaciones,"
+      German "Informationen").
+    l1_groups:
+      - Portuguese
+      - Spanish
+      - French
+      - German
+      - Italian
+      - Russian
+      - Arabic
+  - error: '*I bought a new furniture for my living room.*'
+    correction: "I bought a new piece of furniture for my living room. / I bought new furniture for my living room."
+    explanation: >-
+      "Furniture" is an uncountable collective noun in English. It cannot take
+      "a" directly or be pluralised. To refer to a single item, use "a piece of
+      furniture." Other uncountable nouns that cause similar errors include:
+      "luggage" (*"a luggage"), "equipment" (*"an equipment"), "homework"
+      (*"a homework"), and "research" (*"a research"). These are all countable
+      in many other languages.
+    l1_groups:
+      - Portuguese
+      - Spanish
+      - French
+      - Korean
+      - Japanese
+      - Arabic
+  - error: '*He drank two cups of coffees.*'
+    correction: 'He drank two cups of coffee.'
+    explanation: >-
+      In N-P-N constructions, the second noun (the substance) remains in its
+      base uncountable form. Only the unit noun is pluralised. Learners who
+      pluralise both nouns (*"cups of coffees") are overgeneralising the plural
+      marker. The mass noun "coffee" does not change regardless of how many
+      units are involved: "one cup of coffee," "five cups of coffee."
+    l1_groups:
+      - Portuguese
+      - Spanish
+      - French
+      - Turkish
+register_notes:
+  - note: >-
+      In casual spoken English, especially in food service contexts, container
+      nouns are frequently dropped: "I'll have a coffee" (not "a cup of
+      coffee"), "Two beers, please" (not "two bottles/glasses of beer"). This
+      ellipsis is standard in informal registers and is not considered an error
+      in conversational English.
+  - note: >-
+      In academic and formal writing, N-P-N constructions with abstract nouns
+      are preferred for precision: "a body of evidence," "a piece of research,"
+      "an item of data." Using bare mass nouns ("the evidence shows...") is
+      also acceptable, but the N-P-N form allows the writer to specify quantity
+      and individuation.
+  - note: >-
+      Collective N-P-N constructions with literary or archaic flavour (e.g., "a
+      murder of crows," "a parliament of owls," "a gaggle of geese") are
+      primarily used in creative writing, journalism, and humour. They are
+      inappropriate in academic or technical prose, where neutral terms like "a
+      group of" or "a number of" are preferred.
+  - note: >-
+      In recipes and technical instructions, N-P-N constructions with precise
+      measure nouns (tablespoon, teaspoon, millilitre, gram) are the norm.
+      Vague unit nouns like "piece" or "bit" are avoided in favour of exact
+      quantities: "250 millilitres of milk" rather than "a glass of milk."
+dialectal_variation:
+  - note: >-
+      BrE uses "a tin of" where AmE often uses "a can of": BrE "a tin of beans"
+      vs AmE "a can of beans." Both varieties use "can" for beverages ("a can
+      of soda"), but BrE retains "tin" for food items more frequently.
+  - note: >-
+      BrE "a packet of crisps" corresponds to AmE "a bag of chips." Similarly,
+      BrE "a packet of biscuits" = AmE "a package/pack of cookies." The unit
+      noun "packet" is common in BrE for small packaged goods; AmE prefers
+      "bag," "box," or "pack."
+  - note: >-
+      In AmE, "a soda" or "a Coke" (without "can/bottle of") is standard casual
+      speech. In BrE, "a fizzy drink" or "a can of pop" (regional) serves a
+      similar function. The ellipsis of the container noun is more
+      conventionalised in AmE for beverages.
+  - note: >-
+      Some N-P-N collocations differ: BrE "a bar of chocolate" is also used in
+      AmE, but AmE additionally uses "a candy bar" for sweet chocolate bars,
+      while BrE uses "a bar of chocolate" or "a chocolate bar." BrE "a tin of
+      biscuits" has no direct AmE equivalent; AmE would say "a package of
+      cookies" or "a box of cookies."
+discourse_notes:
+  - note: >-
+      N-P-N constructions create cohesion in procedural and instructional texts
+      by maintaining consistent reference to quantities. In a recipe, the
+      repeated pattern ("add a cup of... stir in a tablespoon of...") creates a
+      rhythmic, predictable structure that aids comprehension.
+  - note: >-
+      In narrative discourse, N-P-N constructions can carry evaluative meaning.
+      "A crumb of bread" vs "a loaf of bread" conveys scarcity vs abundance.
+      "A shred of evidence" implies the evidence is minimal or insufficient.
+      The choice of unit noun communicates the speaker's attitude toward the
+      quantity.
+  - note: >-
+      In conversation, N-P-N constructions often serve as offers and requests:
+      "Would you like a cup of tea?" / "Can I get a slice of pizza?" The
+      unit noun makes the offer specific and polite, implying a reasonable
+      portion rather than an open-ended quantity.
+  - note: >-
+      In academic discourse, N-P-N constructions with abstract nouns ("a body of
+      work," "a piece of analysis," "an area of research") function to
+      delineate and bound intellectual contributions, helping writers organise
+      complex arguments into discrete, manageable units.

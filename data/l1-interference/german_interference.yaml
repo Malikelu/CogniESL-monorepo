@@ -4,69 +4,149 @@ schema_version: '3.0'
 grammar_points:
   articles:
     interference_patterns:
-    - pattern: Omission of indefinite article after sein (to be)
-      example: Omission of indefinite article after sein (to be)
+    - pattern: Omission of indefinite article after sein (to be) for professions
+      example: 'German: ''Ich bin Lehrer'' (I am teacher). Learner says ''I am teacher''
+        instead of ''I am a teacher.'''
       frequency: 4
       persistence: 3
-      communicative_impact: 3
+      communicative_impact: 2
+    - pattern: Gender-based article transfer (der/die/das vs. the)
+      example: 'German has three gendered definite articles: der (masc.), die (fem./pl.),
+        das (neut.). All map to English ''the.'' Learners may over-differentiate or
+        use ''the'' incorrectly based on German gender assignments, e.g., saying ''the
+        sun'' correctly but being confused when German ''die Sonne'' (feminine) becomes
+        English ''the sun'' (no gender).'
+      frequency: 3
+      persistence: 2
+      communicative_impact: 1
+    - pattern: Overuse of definite article with abstract nouns and general statements
+      example: 'German uses the definite article with abstract nouns more freely:
+        ''Die Liebe ist schoen'' (The love is beautiful). Learner says ''The love
+        is beautiful'' instead of ''Love is beautiful.'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
     examples:
     - wrong: Ich bin Lehrer.
       correct: I am a teacher.
-    why_it_happens: German omits the indefinite article after sein (to be) for professions.
+      de_original: Ich bin Lehrer.
+      gloss: I am teacher.
+      explanation: 'German omits the indefinite article after ''sein'' (to be) when
+        stating professions. English requires ''a/an'': ''I am a teacher.'''
+    - wrong: Er ist Arzt.
+      correct: He is a doctor.
+      de_original: Er ist Arzt.
+      gloss: He is doctor.
+      explanation: 'Same pattern: German ''sein'' + profession drops the article.
+        English never does this.'
+    - wrong: The love is beautiful.
+      correct: Love is beautiful.
+      de_original: Die Liebe ist schoen.
+      gloss: The love is beautiful.
+      explanation: 'German uses ''die'' (definite article) with abstract nouns for
+        general statements. English uses zero article for abstract/general statements:
+        ''Love is beautiful,'' not ''The love is beautiful.'''
+    - wrong: I go to the school every day.
+      correct: I go to school every day.
+      de_original: Ich gehe zur Schule.
+      gloss: I go to+the school.
+      explanation: 'German ''zu + der'' (to + the) = ''zur.'' German uses the definite
+        article with institutions. English uses zero article for activities: ''go
+        to school,'' ''go to church,'' ''go to bed.'''
+    why_it_happens: 'German and English both have article systems, but they differ
+      in three key ways. First, German omits the indefinite article after ''sein''
+      (to be) when stating professions, nationalities, and religions: ''Ich bin Lehrer''
+      (I am teacher), ''Sie ist Amerikanerin'' (She is American). English always requires
+      ''a/an'' in these contexts. Second, German has a three-gender article system
+      (der/die/das for ''the,'' ein/eine for ''a'') where the article form changes
+      based on the grammatical gender of the noun. English has only one form: ''the.''
+      This means German learners must ''unlearn'' gender-based article selection.
+      Third, German uses the definite article more freely than English with abstract
+      nouns (''die Liebe'' = love), institutions (''zur Schule'' = to school), and
+      general statements. English uses zero article in these contexts. These differences
+      are systematic and predictable.'
     teacher_tips:
-      how_to_explain: 'Teach: English REQUIRES articles. ''A/an'' for first mention,
-        ''the'' for specific.'
-      where_to_start: Start with the articles pattern.
-      sequencing: 'Week 1: articles. Week 2: Practice. Week 3: Review. Week 4: Mixed.'
+      how_to_explain: 'Frame this as ''German and English both have articles, but
+        the rules are different.'' (1) After ''to be'' + profession: English ALWAYS
+        needs ''a/an.'' German drops it. Drill this as a non-negotiable rule. (2)
+        German has three forms of ''the'' (der/die/das) but English has only one.
+        Tell learners: ''Forget the German gender — in English, everything is just
+        the.'' (3) Abstract nouns and institutions: English often uses zero article
+        where German uses ''the.'' Teach common patterns: ''go to school/church/bed''
+        (no article), ''love/freedom/happiness is...'' (no article).'
+      where_to_start: Start with the profession pattern — it's the most frequent and
+        easiest to fix. Drill 'I am a + profession' relentlessly. Then address abstract
+        nouns and institutions. The gender issue is lower priority since using 'the'
+        for all genders is actually correct in English.
+      sequencing: 'Week 1: Indefinite article a/an after ''to be'' + profession/nationality.
+        Week 2: Definite article the — simplify from three German forms to one English
+        form. Week 3: Zero article with abstract nouns, institutions, and general
+        statements. Week 4: Mixed practice with all article choices in extended writing.'
       exercises:
-      - name: articles Audit
-        type: error-correction
-        description: 20 sentences with articles errors.
-        duration: 15
-      - name: articles Translation
-        type: translation
-        description: Translate 15 sentences focusing on articles.
-        duration: 15
-      - name: articles Practice
+      - name: Profession Flashcards
         type: fill-in-the-blank
-        description: 20 sentences practicing articles.
+        description: '20 sentence frames: ''She is ___ engineer. He is ___ student.
+          They are ___ nurses.'' Learners must always supply a/an.'
         duration: 10
-      - name: articles Error Hunt
-        type: error-correction
-        description: A paragraph with 10 articles errors.
+      - name: German to English Article Shift
+        type: translation
+        description: '15 German sentences. Learners translate, paying special attention
+          to article changes: professions (add a/an), abstract nouns (remove the),
+          institutions (remove the).'
+        duration: 20
+      - name: Abstract or Specific?
+        type: fill-in-the-blank
+        description: '15 sentences with abstract nouns and general statements. Learners
+          decide: the or zero article? E.g., ''___ freedom is important'' (zero) vs.
+          ''___ freedom we enjoy is hard-won'' (the).'
         duration: 15
-    sources: &id001
+      - name: Edit the German Speaker's Essay
+        type: error-correction
+        description: 'A paragraph written by a fictional German learner with 10 article
+          errors: missing a/an after sein, overuse of the with abstract nouns and
+          institutions.'
+        duration: 15
+    sources:
     - Swan & Smith "Learner English" (German)
     - Parrott "Grammar for English Language Teachers"
-    source_count: 2
+    - Celce-Murcia & Larsen-Freeman "The Grammar Book"
+    source_count: 3
     source_type: textbook
     frequency: 4
     persistence: 3
-    communicative_impact: 3
+    communicative_impact: 2
     flagged: false
     tier: 1
     source_rank: 1
     citations:
-    - claim: Interference pattern for articles
+    - claim: German omits the indefinite article after 'sein' (to be) for professions,
+        nationalities, and religions
       source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
         and Other Problems'', 2nd ed., Cambridge University Press'
       location: 'Chapter: German speakers, pp. 36-50'
       tier: 1
-    - claim: 'Grammar point: articles'
+    - claim: German has a three-gender article system (der/die/das) that does not
+        map onto English
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: German speakers, pp. 36-50'
+      tier: 1
+    - claim: German uses the definite article with abstract nouns and institutions
+        more freely than English
+      source: Durrell, M. (2011) 'Hammer's German Grammar and Usage', 5th ed., Routledge
+      location: 'Chapter 4: The article'
+      tier: 1
+    - claim: Article usage with abstract nouns and institutions varies significantly
+        across languages
       source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
         Press
-      location: See relevant grammar point section
+      location: 'Chapter: Determiners and articles'
       tier: 2
-    - claim: Article usage varies significantly across languages; many languages have
-        no article system
-      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
-      location: See articles entries 133-142
-      tier: 2
-    - claim: ELLs commonly omit indefinite article when descriptive adjectives come
-        between determiner and noun
-      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
-        A Practical Handbook'', University of Michigan Press'
-      location: p. 153
+    - claim: Generic and abstract reference uses different article strategies across
+        languages
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: pp. 309-315
       tier: 2
   word_order:
     interference_patterns:
@@ -101,7 +181,9 @@ grammar_points:
         type: error-correction
         description: A paragraph with 10 word order errors.
         duration: 15
-    sources: *id001
+    sources: &id001
+    - Swan & Smith "Learner English" (German)
+    - Parrott "Grammar for English Language Teachers"
     source_count: 2
     source_type: textbook
     frequency: 4

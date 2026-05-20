@@ -4,75 +4,146 @@ schema_version: '3.0'
 grammar_points:
   articles:
     interference_patterns:
-    - pattern: Omission of all articles (Bengali has no articles)
-      example: Omission of all articles (Bengali has no articles)
-      frequency: 4
-      persistence: 3
+    - pattern: Omission of indefinite article (a/an)
+      example: Bengali has no indefinite article. Learners say 'I want pen' instead
+        of 'I want a pen.'
+      frequency: 5
+      persistence: 4
       communicative_impact: 3
+    - pattern: Omission of definite article (the)
+      example: Bengali marks definiteness with word order or demonstratives (e.g.,
+        'ei boi' = 'this book'), not a separate article. Learners say 'Book is on
+        table' instead of 'The book is on the table.'
+      frequency: 5
+      persistence: 4
+      communicative_impact: 3
+    - pattern: Overuse of demonstratives as article substitutes
+      example: Bengali uses 'ei' (this) and 'o/ she' (that) where English might use
+        'the.' Learners may say 'This book is good' when referring to a previously
+        mentioned book, overusing demonstratives.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
     examples:
     - wrong: Ami teacher.
       correct: I am a teacher.
-    why_it_happens: Bengali has no article system. Definiteness is inferred from context
-      or word order rather than grammatical markers. Bengali learners often omit articles
-      entirely in English, producing sentences like 'I bought book yesterday' instead
-      of 'I bought a book.' This occurs because Bengali does not require speakers
-      to mark definiteness grammatically, so the concept of 'a' vs 'the' vs zero article
-      is entirely foreign.
+      bn_original: Ami teacher. (আমি টিচার।)
+      gloss: I teacher.
+      explanation: Bengali has no article before the noun. English requires 'a' before
+        a singular countable noun in a profession statement.
+    - wrong: Boi ta kothay?
+      correct: Where is the book?
+      bn_original: Boi ta kothay? (বইটা কোথায়?)
+      gloss: Book [DEF] where?
+      explanation: Bengali uses the suffix '-ta' as a definite marker (like 'the'),
+        but it is attached to the noun, not a separate word. Learners omit 'the' in
+        English.
+    - wrong: I bought book yesterday.
+      correct: I bought a book yesterday.
+      bn_original: Ami kal boi kinlam. (আমি কাল বই কিনলাম।)
+      gloss: I yesterday book bought.
+      explanation: Bengali sentence has no article before 'boi' (book). English requires
+        'a' for first mention of a singular countable noun.
+    - wrong: She is doctor.
+      correct: She is a doctor.
+      bn_original: She doctor. (সে ডাক্তার।)
+      gloss: She doctor.
+      explanation: Bengali omits the indefinite article after copula for professions.
+        English requires 'a/an'.
+    why_it_happens: 'Bengali has no article system whatsoever. There is no equivalent
+      of ''a/an'' or ''the'' in Bengali grammar. Definiteness is expressed through
+      other means: (1) word order — definite nouns often come before indefinite ones,
+      (2) demonstratives like ''ei'' (this) and ''o/she'' (that), (3) the definite
+      suffix ''-ta/-ti'' attached directly to nouns (e.g., ''boita'' = ''the book''),
+      and (4) context. Because Bengali speakers never need to choose between ''a,''
+      ''the,'' or zero article, the entire concept of grammatical definiteness marking
+      is foreign. This is one of the most persistent and frequent errors for Bengali
+      learners at all levels, from beginner to advanced. Even highly proficient speakers
+      may omit articles in spontaneous speech because the habit is so deeply ingrained.'
     teacher_tips:
-      how_to_explain: 'Teach: English REQUIRES articles. ''A/an'' for first mention,
-        ''the'' for specific.'
-      where_to_start: Start with the articles pattern.
-      sequencing: 'Week 1: articles. Week 2: Practice. Week 3: Review. Week 4: Mixed.'
+      how_to_explain: 'Start by explaining that English REQUIRES a ''determiner''
+        (article, possessive, or demonstrative) before most singular countable nouns
+        — this is a grammatical rule, not optional. Use a three-way contrast: (1)
+        ''a/an'' = first mention, one of many, ''I need a pen'' (any pen). (2) ''the''
+        = specific, both speaker and listener know which one, ''Pass me the pen''
+        (that specific pen). (3) zero article = plural or uncountable nouns in general
+        statements, ''I like books'' or ''Water is essential.'' Contrast with Bengali:
+        show that Bengali uses ''-ta'' suffix or word order instead. Use visual aids
+        — draw a circle labeled ''a'' (new information) and a circle labeled ''the''
+        (shared knowledge).'
+      where_to_start: 'Begin with the most basic rule: singular countable nouns in
+        English MUST have a determiner. Drill ''I am a + profession'' and ''I have
+        a + object'' patterns first. Then introduce ''the'' for specific reference.
+        Save zero article (plurals, uncountables) for later.'
+      sequencing: 'Week 1: Introduce a/an with singular countable nouns (professions,
+        objects). Week 2: Introduce the for specific/known reference. Week 3: Contrast
+        a vs the; introduce zero article with plurals and uncountables. Week 4: Mixed
+        practice with all three choices in context (paragraphs, dialogues).'
       exercises:
-      - name: articles Audit
-        type: error-correction
-        description: 20 sentences with articles errors.
-        duration: 15
-      - name: articles Translation
-        type: translation
-        description: Translate 15 sentences focusing on articles.
-        duration: 15
-      - name: articles Practice
+      - name: Article Detective
         type: fill-in-the-blank
-        description: 20 sentences practicing articles.
-        duration: 10
-      - name: articles Error Hunt
-        type: error-correction
-        description: A paragraph with 10 articles errors.
+        description: 20 sentences where learners choose a/an, the, or zero article.
+          Include Bengali glosses alongside to highlight the structural difference.
         duration: 15
-    sources: &id001
+      - name: Translate from Bengali
+        type: translation
+        description: 15 Bengali sentences without articles that learners must translate
+          into grammatically correct English. Focus on adding the missing article.
+        duration: 20
+      - name: Error Correction — Article Hunt
+        type: error-correction
+        description: A short paragraph written by a fictional Bengali learner with
+          12 article errors (omissions and overuse). Learners identify and correct
+          each error.
+        duration: 15
+      - name: Picture Description
+        type: speaking
+        description: Show a picture with multiple objects. Learners describe it, practicing
+          'a' for first mention and 'the' for subsequent mention. E.g., 'I can see
+          a cat. The cat is sitting on a chair.'
+        duration: 10
+    sources:
     - Swan & Smith "Learner English" (Bengali)
     - Parrott "Grammar for English Language Teachers"
-    source_count: 2
+    - Celce-Murcia & Larsen-Freeman "The Grammar Book"
+    source_count: 3
     source_type: textbook
-    frequency: 4
-    persistence: 3
+    frequency: 5
+    persistence: 4
     communicative_impact: 3
     flagged: false
     tier: 1
     source_rank: 1
     citations:
-    - claim: Interference pattern for articles
+    - claim: Bengali has no article system; definiteness is marked by word order,
+        demonstratives, and the suffix -ta/-ti
       source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
         and Other Problems'', 2nd ed., Cambridge University Press'
       location: 'Chapter: Bengali speakers, pp. 231-242'
       tier: 1
-    - claim: 'Grammar point: articles'
+    - claim: Article omission is the most frequent and persistent error for Bengali
+        learners of English
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: Bengali speakers, pp. 231-242'
+      tier: 1
+    - claim: Singular countable nouns in English require a determiner; this rule does
+        not exist in Bengali
       source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
         Press
-      location: See relevant grammar point section
+      location: 'Chapter: Determiners and articles'
       tier: 2
-    - claim: Article usage varies significantly across languages; many languages have
-        no article system
-      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
-      location: See articles entries 133-142
+    - claim: Articles are among the most difficult grammar points for learners whose
+        L1 lacks them
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: pp. 309-315
       tier: 2
-    - claim: ELLs commonly omit indefinite article when descriptive adjectives come
-        between determiner and noun
-      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
-        A Practical Handbook'', University of Michigan Press'
-      location: p. 153
-      tier: 2
+    - claim: Bengali uses demonstratives and the definite suffix -ta rather than separate
+        article words
+      source: David, A. (2015) 'Descriptive Grammar of Bangla', De Gruyter Mouton
+      location: 'Chapter 6: Determiners and demonstratives'
+      tier: 1
   word_order:
     interference_patterns:
     - pattern: SOV word order transfer
@@ -109,7 +180,9 @@ grammar_points:
         type: error-correction
         description: A paragraph with 10 word order errors.
         duration: 15
-    sources: *id001
+    sources: &id001
+    - Swan & Smith "Learner English" (Bengali)
+    - Parrott "Grammar for English Language Teachers"
     source_count: 2
     source_type: textbook
     frequency: 4
