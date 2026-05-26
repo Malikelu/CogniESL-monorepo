@@ -10,10 +10,21 @@ meaning:
   contrast: '''Subject pronoun'' = ''She reads.'' (replaces a name) vs ''Noun'' =
     ''Maria reads.'' (specific name)'
   ccqs:
-  - question: Is the pronoun doing the action?
-    answer: Yes — it's a subject pronoun.
-  - question: Can you replace it with a name?
-    answer: Yes — then it's a subject pronoun.
+  - question: Does the subject pronoun perform the action in this sentence?
+    answer: Yes — the subject pronoun is the doer of the action.
+    purpose: Tests whether the learner can identify the subject of a sentence and
+      choose the correct subject pronoun (I, you, he, she, it, we, they). This tests
+      grammatical role recognition, not just meaning.
+  - question: Is the pronoun singular or plural?
+    answer: It depends on the referent — singular (I, you, he, she, it) or plural
+      (we, they).
+    purpose: Tests whether the learner understands that subject pronouns must agree
+      in number with their referent, which affects verb agreement in the sentence.
+  - question: Can we omit the subject pronoun in English?
+    answer: No — English requires an explicit subject pronoun in all finite clauses.
+    purpose: Tests whether the learner understands that English is not a pro-drop
+      language. This is critical for speakers of Spanish, Arabic, Japanese, and other
+      pro-drop L1s who may produce '*Am happy' instead of 'I am happy'.
   example_generator:
     contexts:
     - introductions
@@ -87,15 +98,16 @@ teaching:
     duration: 10
     adaptation_notes: Replace nouns with pronouns in simple sentences.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, 12.14-12.15'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 5: Nouns and Noun Phrases, 5.8 (pronouns)'
+  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 81-100 (pronouns:
+    personal, possessive, reflexive)'
+  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
+    11: Pronouns, 11.1-11.3'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 6: Pronouns'
 common_errors:
 - error: 'Using object pronouns as subjects: *''Me and John went.'''
   correction: John and I went.
@@ -110,10 +122,17 @@ common_errors:
   - Portuguese
   - Spanish
 register_notes:
-- note: Pronoun usage is consistent across registers.
-- note: In formal writing, 'John and I' is preferred over 'I and John'.
+- note: Subject pronouns are used in all registers, from casual conversation to academic writing, with formality marked by contraction use rather than pronoun choice.
+- note: 'In formal writing, avoid contractions with subject pronouns: ''I am'' (not
+    ''I''m''), ''they are'' (not ''they''re'').'
+- note: In conversation, subject pronouns are among the most frequent words in English.
 dialectal_variation:
 - note: 'In informal speech, ''me'' is sometimes used as subject: ''Me and him went.''
     (non-standard)'
 discourse_notes:
-- note: 'Subject pronouns create cohesion: ''John arrived. He was tired.'''
+- note: In conversation, subject pronouns are often omitted in pro-drop languages
+    (Spanish, Arabic, Japanese) but are required in English.
+- note: In academic writing, subject pronouns create cohesion by referring back to
+    previously mentioned nouns.
+- note: 'In informal speech, ''you'' is used generically: ''You never know what might
+    happen.'' (meaning ''people in general'').'

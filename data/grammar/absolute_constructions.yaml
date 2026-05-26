@@ -13,8 +13,18 @@ meaning:
   ccqs:
   - question: Does this construction modify the whole sentence?
     answer: Yes, it is an absolute construction.
+    purpose: Tests whether the learner understands the key concept of absolute constructions.
+      This is important because mastering this distinction is essential for accurate
+      and natural English at C2 level.
   - question: Is there a finite verb in the absolute phrase?
     answer: No, it uses a participle, not a finite verb.
+    purpose: Tests whether the learner can distinguish between existential 'there'
+      (indicating existence) and dummy 'it' (used for weather, time, distance). Confusing
+      these is a very common beginner error.
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      absolute constructions and explain why they are incorrect.
   example_generator:
     contexts:
     - formal writing
@@ -84,8 +94,8 @@ teaching:
     duration: 15
     adaptation_notes: Students identify absolute constructions in literary texts.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
+    Modals, §9.1-9.6'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -94,15 +104,23 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for absolute_constructions.
-  correction: Correct form.
-  explanation: This is a common error for absolute_constructions.
+- error: '*Happily the children played.*'
+  correction: Happily, the children played.
+  explanation: Absolute constructions require a comma.
   l1_groups:
   - Portuguese
   - Spanish
+  - Chinese
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, this structure is standard and expected. Register variation
+    is marked by vocabulary and style rather than grammatical form.
+- note: In formal writing, avoid contractions and use full forms.
+- note: In conversation, contractions and reduced forms are common.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used in everyday communication.
+- note: In academic writing, this structure appears in formal contexts and is a marker
+    of proficient English.
+- note: In professional contexts, correct use of this structure is expected in formal
+    writing.

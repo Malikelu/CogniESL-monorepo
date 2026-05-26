@@ -1,29 +1,50 @@
 language: russian
-schema_version: '3.0'
+schema_version: '4.0'
 grammar_points:
   verb_aspect:
     interference_patterns:
     - pattern: Using simple present for ongoing actions -> Use present continuous
-      example: 'Russian: ''Я ем сейчас'' (Ya yem seychas) -> literal: ''I eat now''
-        -> wrong: ''I eat now'' -> correct: ''I am eating now'''
       frequency: 5
       persistence: 4
       communicative_impact: 2
+      example_l1: 'Russian: ''Я ем сейчас'''
+      example_gloss: Ya yem seychas
+      example_wrong: 'literal: ''I eat now'
+      example_correct: 'wrong: ''I eat now'' -> correct: ''I am eating now'
+      explanation: 'Transfer from L1: Using simple present for ongoing actions ->
+        Use present continuous.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Using present tense for completed actions -> Use present perfect or
         simple past
-      example: 'Russian: ''Я уже прочитал эту книгу'' (Ya uzhe prochital etu knigu)
-        -> literal: ''I already read(perf.) this book'' -> wrong: ''I already read
-        this book'' -> correct: ''I have already read this book'''
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: 'Russian: ''Я уже прочитал эту книгу'''
+      example_gloss: Ya uzhe prochital etu knigu
+      example_wrong: 'literal: ''I already read(perf.) this book'
+      example_correct: 'wrong: ''I already read this book'' -> correct: ''I have already
+        read this book'
+      explanation: 'Transfer from L1: Using present tense for completed actions ->
+        Use present perfect or simple past.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Overusing progressive for habitual actions -> Use simple present
-      example: 'Russian: ''Я читаю книги каждый день'' (Ya chitayu knigi kazhdyy den'')
-        -> literal: ''I am reading books every day'' (imperf.) -> wrong: ''I am reading
-        books every day'' -> correct: ''I read books every day'''
       frequency: 3
       persistence: 3
       communicative_impact: 1
+      example_l1: 'Russian: ''Я читаю книги каждый день'''
+      example_gloss: Ya chitayu knigi kazhdyy den'
+      example_wrong: 'literal: ''I am reading books every day'' (imperf.)'
+      example_correct: 'wrong: ''I am reading books every day'' -> correct: ''I read
+        books every day'
+      explanation: 'Transfer from L1: Overusing progressive for habitual actions ->
+        Use simple present.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - 'Wrong: ''I eat now.'' Correct: ''I am eating now.'''
     - 'Wrong: ''I already read this book.'' Correct: ''I have already read this book.'''
@@ -116,27 +137,48 @@ grammar_points:
     interference_patterns:
     - pattern: Omitting object pronouns or using subject pronouns for objects -> Use
         correct object pronouns
-      example: 'Russian: ''Я вижу его'' (Ya vizhu yego) -> literal: ''I see him(accusative)''
-        -> wrong: ''I see he'' -> correct: ''I see him'''
       frequency: 3
       persistence: 2
       communicative_impact: 2
+      example_l1: 'Russian: ''Я вижу его'''
+      example_gloss: Ya vizhu yego
+      example_wrong: 'literal: ''I see him(accusative)'
+      example_correct: 'wrong: ''I see he'' -> correct: ''I see him'
+      explanation: 'Transfer from L1: Omitting object pronouns or using subject pronouns
+        for objects -> Use correct object pronouns.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Using wrong preposition due to Russian case government -> Use English
         prepositional patterns
-      example: 'Russian: ''думать о'' (dumat'' o + prepositional case) -> literal:
-        ''think about'' BUT Russian also uses accusative for ''think of'' contexts
-        -> wrong: ''I think about him'' -> correct: ''I think of him'''
       frequency: 3
       persistence: 3
       communicative_impact: 2
+      example_l1: 'Russian: ''думать о'''
+      example_gloss: dumat' o + prepositional case
+      example_wrong: 'literal: ''think about'' BUT Russian also uses accusative for
+        ''think of'' contexts'
+      example_correct: 'wrong: ''I think about him'' -> correct: ''I think of him'
+      explanation: 'Transfer from L1: Using wrong preposition due to Russian case
+        government -> Use English prepositional patterns.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Word order errors from flexible Russian SOV/SVO -> Use fixed English
         SVO
-      example: 'Russian: ''Книгу я прочитал'' (Knigu ya prochital) -> literal: ''Book(accusative)
-        I read'' -> wrong: ''The book I read'' (as main clause) -> correct: ''I read
-        the book'''
       frequency: 2
       persistence: 2
       communicative_impact: 1
+      example_l1: 'Russian: ''Книгу я прочитал'''
+      example_gloss: Knigu ya prochital
+      example_wrong: 'literal: ''Book(accusative) I read'
+      example_correct: 'wrong: ''The book I read'' (as main clause) -> correct: ''I
+        read the book'
+      explanation: 'Transfer from L1: Word order errors from flexible Russian SOV/SVO
+        -> Use fixed English SVO.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - 'Wrong: ''I help he.'' Correct: ''I help him.'''
     - 'Wrong: ''Give it to she.'' Correct: ''Give it to her.'''
@@ -222,24 +264,45 @@ grammar_points:
     interference_patterns:
     - pattern: Negating with multiple negative words in one sentence -> Use single
         negation
-      example: 'Russian: ''Я ничего не знаю'' (Ya nichego ne znayu) -> literal: ''I
-        nothing not know'' -> wrong: ''I don''t know nothing'' -> correct: ''I don''t
-        know anything'' / ''I know nothing'''
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: 'Russian: ''Я ничего не знаю'''
+      example_gloss: Ya nichego ne znayu
+      example_wrong: 'literal: ''I nothing not know'
+      example_correct: 'wrong: ''I don''t know nothing'' -> correct: ''I don''t know
+        anything'' / ''I know nothing'
+      explanation: 'Transfer from L1: Negating with multiple negative words in one
+        sentence -> Use single negation.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Using 'no' as a general negator -> Use 'not' with auxiliary
-      example: 'Russian: ''Я не студент'' (Ya ne student) -> literal: ''I not student''
-        -> wrong: ''I no student'' -> correct: ''I am not a student'''
       frequency: 3
       persistence: 2
       communicative_impact: 2
+      example_l1: 'Russian: ''Я не студент'''
+      example_gloss: Ya ne student
+      example_wrong: 'literal: ''I not student'
+      example_correct: 'wrong: ''I no student'' -> correct: ''I am not a student'
+      explanation: 'Transfer from L1: Using ''no'' as a general negator -> Use ''not''
+        with auxiliary.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Placing negation after the verb -> Place negation with auxiliary
-      example: 'Russian: ''Я знаю не'' (Ya znayu ne) -> literal: ''I know not'' ->
-        wrong: ''I know not'' -> correct: ''I do not know'''
       frequency: 2
       persistence: 2
       communicative_impact: 1
+      example_l1: 'Russian: ''Я знаю не'''
+      example_gloss: Ya znayu ne
+      example_wrong: 'literal: ''I know not'
+      example_correct: 'wrong: ''I know not'' -> correct: ''I do not know'
+      explanation: 'Transfer from L1: Placing negation after the verb -> Place negation
+        with auxiliary.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - 'Wrong: ''I don''t know nothing.'' Correct: ''I don''t know anything.'''
     - 'Wrong: ''I no like coffee.'' Correct: ''I don''t like coffee.'''
@@ -321,29 +384,49 @@ grammar_points:
     interference_patterns:
     - pattern: Using 'he' or 'she' for inanimate objects based on Russian grammatical
         gender -> Use 'it'
-      example: 'Russian: ''Стол большой, он стоит...'' (Stol bol''shoy, on stoit...)
-        -> literal: ''Table(masc.) big, he stands...'' -> wrong: ''The table is big.
-        He stands in the corner.'' -> correct: ''The table is big. It stands in the
-        corner.'''
       frequency: 3
       persistence: 3
       communicative_impact: 2
+      example_l1: 'Russian: ''Стол большой, он стоит...'''
+      example_gloss: Stol bol'shoy, on stoit...
+      example_wrong: 'literal: ''Table(masc.) big, he stands...'
+      example_correct: 'wrong: ''The table is big. He stands in the corner.'' -> correct:
+        ''The table is big. It stands in the corner.'
+      explanation: 'Transfer from L1: Using ''he'' or ''she'' for inanimate objects
+        based on Russian grammatical gender -> Use ''it''.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Using 'she' for feminine nouns like 'car', 'ship', 'country' -> Use
         'it'
-      example: 'Russian: ''Машина красивая, она...'' (Mashina krasivaya, ona...) ->
-        literal: ''Car(fem.) beautiful, she...'' -> wrong: ''The car is beautiful.
-        She is red.'' -> correct: ''The car is beautiful. It is red.'''
       frequency: 2
       persistence: 2
       communicative_impact: 1
+      example_l1: 'Russian: ''Машина красивая, она...'''
+      example_gloss: Mashina krasivaya, ona...
+      example_wrong: 'literal: ''Car(fem.) beautiful, she...'
+      example_correct: 'wrong: ''The car is beautiful. She is red.'' -> correct: ''The
+        car is beautiful. It is red.'
+      explanation: 'Transfer from L1: Using ''she'' for feminine nouns like ''car'',
+        ''ship'', ''country'' -> Use ''it''.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Adjective-noun gender agreement errors -> English adjectives don't
         agree
-      example: 'Russian: ''красивая девушка'' (krasivaya devushka, fem. adj. + fem.
-        noun) -> literal: ''beautiful(fem.) girl'' -> correct: ''a beautiful girl''
-        (adjectives never change in English)'
       frequency: 2
       persistence: 2
       communicative_impact: 1
+      example_l1: 'Russian: ''красивая девушка'''
+      example_gloss: krasivaya devushka, fem. adj. + fem. noun
+      example_wrong: 'literal: ''beautiful(fem.) girl'
+      example_correct: 'correct: ''a beautiful girl'' (adjectives never change in
+        English)'
+      explanation: 'Transfer from L1: Adjective-noun gender agreement errors -> English
+        adjectives don''t agree.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - 'Wrong: ''The table is big. He is in the corner.'' Correct: ''The table is big.
       It is in the corner.'''
@@ -427,25 +510,46 @@ grammar_points:
     interference_patterns:
     - pattern: Placing time adverbial at the beginning without subject-verb inversion
         -> Use standard SVO
-      example: 'Russian: ''Вчера я ходил в магазин'' (Vchera ya khodil v magazin)
-        -> literal: ''Yesterday I went to store'' -> wrong: ''Yesterday went I to
-        the store'' -> correct: ''Yesterday I went to the store'''
       frequency: 3
       persistence: 2
       communicative_impact: 1
+      example_l1: 'Russian: ''Вчера я ходил в магазин'''
+      example_gloss: Vchera ya khodil v magazin
+      example_wrong: 'literal: ''Yesterday I went to store'
+      example_correct: 'wrong: ''Yesterday went I to the store'' -> correct: ''Yesterday
+        I went to the store'
+      explanation: 'Transfer from L1: Placing time adverbial at the beginning without
+        subject-verb inversion -> Use standard SVO.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Placing object before subject (OSV) for emphasis -> Use SVO with stress/intonation
-      example: 'Russian: ''Книгу я уже прочитал'' (Knigu ya uzhe prochital) -> literal:
-        ''Book(acc.) I already read'' -> wrong: ''The book I already read'' (as main
-        clause) -> correct: ''I already read the book'''
       frequency: 2
       persistence: 2
       communicative_impact: 1
+      example_l1: 'Russian: ''Книгу я уже прочитал'''
+      example_gloss: Knigu ya uzhe prochital
+      example_wrong: 'literal: ''Book(acc.) I already read'
+      example_correct: 'wrong: ''The book I already read'' (as main clause) -> correct:
+        ''I already read the book'
+      explanation: 'Transfer from L1: Placing object before subject (OSV) for emphasis
+        -> Use SVO with stress/intonation.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Placing verb at end of sentence (SOV pattern) -> Use SVO
-      example: 'Russian: ''Я книгу читаю'' (Ya knigu chitayu) -> literal: ''I book(acc.)
-        read'' -> wrong: ''I the book read'' -> correct: ''I read the book'''
       frequency: 2
       persistence: 2
       communicative_impact: 1
+      example_l1: 'Russian: ''Я книгу читаю'''
+      example_gloss: Ya knigu chitayu
+      example_wrong: 'literal: ''I book(acc.) read'
+      example_correct: 'wrong: ''I the book read'' -> correct: ''I read the book'
+      explanation: 'Transfer from L1: Placing verb at end of sentence (SOV pattern)
+        -> Use SVO.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - 'Wrong: ''Yesterday went I to the store.'' Correct: ''Yesterday I went to the
       store.'''
@@ -544,23 +648,45 @@ grammar_points:
   pronoun_drop:
     interference_patterns:
     - pattern: Omitting subject pronoun -> Always include subject pronoun
-      example: 'Russian: ''Иду домой'' (Idu domoy) -> literal: ''(I) go home'' ->
-        wrong: ''Go home'' (as a statement) -> correct: ''I am going home'''
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: 'Russian: ''Иду домой'''
+      example_gloss: Idu domoy
+      example_wrong: 'literal: ''(I) go home'
+      example_correct: 'wrong: ''Go home'' (as a statement) -> correct: ''I am going
+        home'
+      explanation: 'Transfer from L1: Omitting subject pronoun -> Always include subject
+        pronoun.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Omitting impersonal 'it' for weather/time -> Include 'it'
-      example: 'Russian: ''Идёт дождь'' (Idyot dozhd'') -> literal: ''(It) goes rain''
-        -> wrong: ''Is raining'' -> correct: ''It is raining'''
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: 'Russian: ''Идёт дождь'''
+      example_gloss: Idyot dozhd'
+      example_wrong: 'literal: ''(It) goes rain'
+      example_correct: 'wrong: ''Is raining'' -> correct: ''It is raining'
+      explanation: 'Transfer from L1: Omitting impersonal ''it'' for weather/time
+        -> Include ''it''.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Omitting 'there is/are' existential -> Include 'there'
-      example: 'Russian: ''Есть книга'' (Yest'' kniga) -> literal: ''(There) is book''
-        -> wrong: ''Is a book'' -> correct: ''There is a book'''
       frequency: 3
       persistence: 3
       communicative_impact: 2
+      example_l1: 'Russian: ''Есть книга'''
+      example_gloss: Yest' kniga
+      example_wrong: 'literal: ''(There) is book'
+      example_correct: 'wrong: ''Is a book'' -> correct: ''There is a book'
+      explanation: 'Transfer from L1: Omitting ''there is/are'' existential -> Include
+        ''there''.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - 'Wrong: ''Go home now.'' (as a statement) Correct: ''I am going home now.'''
     - 'Wrong: ''Is raining.'' Correct: ''It is raining.'''
@@ -640,24 +766,46 @@ grammar_points:
     interference_patterns:
     - pattern: Using single motion verb where English requires verb + preposition/particle
         -> Use phrasal verbs
-      example: 'Russian: ''Я иду'' (Ya idu, indeterminate) vs. ''Я пойду'' (Ya poydu,
-        unidirectional) -> wrong: ''I go to school'' (single trip) -> correct: ''I
-        am going to school'''
       frequency: 4
       persistence: 4
       communicative_impact: 2
+      example_l1: 'Russian: ''Я иду'''
+      example_gloss: Ya idu, indeterminate) vs. 'Я пойду' (Ya poydu, unidirectional
+      example_wrong: 'wrong: ''I go to school'' (single trip)'
+      example_correct: 'correct: ''I am going to school'
+      explanation: 'Transfer from L1: Using single motion verb where English requires
+        verb + preposition/particle -> Use phrasal verbs.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Omitting manner of motion -> Include manner in verb or adverb
-      example: 'Russian: ''Он пришёл'' (On prishyol) -> literal: ''He came (on foot)''
-        -> wrong: ''He came by feet'' -> correct: ''He came on foot'' / ''He walked'''
       frequency: 3
       persistence: 3
       communicative_impact: 1
+      example_l1: 'Russian: ''Он пришёл'''
+      example_gloss: On prishyol
+      example_wrong: 'literal: ''He came (on foot)'
+      example_correct: 'wrong: ''He came by feet'' -> correct: ''He came on foot''
+        / ''He walked'
+      explanation: 'Transfer from L1: Omitting manner of motion -> Include manner
+        in verb or adverb.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Confusing 'go' and 'come' directionality -> Use correct deictic verb
-      example: 'Russian: ''Иди сюда!'' (Idi syuda!) -> literal: ''Go here!'' -> wrong:
-        ''Go here!'' (meaning ''Come here!'') -> correct: ''Come here!'''
       frequency: 2
       persistence: 2
       communicative_impact: 2
+      example_l1: 'Russian: ''Иди сюда!'''
+      example_gloss: Idi syuda!
+      example_wrong: 'literal: ''Go here!'
+      example_correct: 'wrong: ''Go here!'' (meaning ''Come here!'') -> correct: ''Come
+        here!'
+      explanation: 'Transfer from L1: Confusing ''go'' and ''come'' directionality
+        -> Use correct deictic verb.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - 'Wrong: ''I go to school every day.'' (single trip) Correct: ''I am going to
       school.'''
@@ -738,31 +886,58 @@ grammar_points:
     interference_patterns:
     - pattern: Omitting indefinite article before singular countable nouns -> Add
         'a/an'
-      example: 'Russian: ''Я студент'' (Ya student) -> literal: ''I student'' -> wrong:
-        ''I am student'' -> correct: ''I am a student'''
       frequency: 5
       persistence: 4
       communicative_impact: 2
+      example_l1: 'Russian: ''Я студент'''
+      example_gloss: Ya student
+      example_wrong: 'literal: ''I student'
+      example_correct: 'wrong: ''I am student'' -> correct: ''I am a student'
+      explanation: 'Transfer from L1: Omitting indefinite article before singular
+        countable nouns -> Add ''a/an''.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Omitting definite article when specificity is required -> Add 'the'
-      example: 'Russian: ''Дай мне книгу'' (Day mne knigu) -> literal: ''Give me book(accusative)''
-        -> wrong: ''Give me book'' -> correct: ''Give me the book'''
       frequency: 4
       persistence: 4
       communicative_impact: 2
+      example_l1: 'Russian: ''Дай мне книгу'''
+      example_gloss: Day mne knigu
+      example_wrong: 'literal: ''Give me book(accusative)'
+      example_correct: 'wrong: ''Give me book'' -> correct: ''Give me the book'
+      explanation: 'Transfer from L1: Omitting definite article when specificity is
+        required -> Add ''the''.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Using 'the' with general plural/uncountable nouns -> Omit article for
         general reference
-      example: 'Russian: ''Я люблю музыку'' (Ya lyublyu muzyku) -> literal: ''I love
-        music(accusative)'' -> wrong: ''I love the music'' (generally) -> correct:
-        ''I love music'''
       frequency: 3
       persistence: 3
       communicative_impact: 1
+      example_l1: 'Russian: ''Я люблю музыку'''
+      example_gloss: Ya lyublyu muzyku
+      example_wrong: 'literal: ''I love music(accusative)'
+      example_correct: 'wrong: ''I love the music'' (generally) -> correct: ''I love
+        music'
+      explanation: 'Transfer from L1: Using ''the'' with general plural/uncountable
+        nouns -> Omit article for general reference.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Using articles with proper nouns -> Omit article
-      example: 'Russian: ''Я живу в Москве'' (Ya zhivu v Moskve) -> literal: ''I live
-        in Moscow'' -> wrong: ''I live in the Moscow'' -> correct: ''I live in Moscow'''
       frequency: 2
       persistence: 2
       communicative_impact: 1
+      example_l1: 'Russian: ''Я живу в Москве'''
+      example_gloss: Ya zhivu v Moskve
+      example_wrong: 'literal: ''I live in Moscow'
+      example_correct: 'wrong: ''I live in the Moscow'' -> correct: ''I live in Moscow'
+      explanation: 'Transfer from L1: Using articles with proper nouns -> Omit article.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - 'Wrong: ''I am student.'' Correct: ''I am a student.'''
     - 'Wrong: ''Give me book.'' Correct: ''Give me the book.'''
@@ -839,27 +1014,47 @@ grammar_points:
   verb_tense_mapping:
     interference_patterns:
     - pattern: Using present perfect for completed past actions -> Use simple past
-      example: 'Russian: ''Я уже ел'' (Ya uzhe el, past + ''already'') -> wrong: ''I
-        have eaten already'' (specific past time) -> correct: ''I already ate'''
       frequency: 4
       persistence: 3
       communicative_impact: 1
+      example_l1: 'Russian: ''Я уже ел'''
+      example_gloss: Ya uzhe el, past + 'already'
+      example_wrong: 'wrong: ''I have eaten already'' (specific past time)'
+      example_correct: 'correct: ''I already ate'
+      explanation: 'Transfer from L1: Using present perfect for completed past actions
+        -> Use simple past.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Using simple present with 'since' for ongoing states -> Use present
         perfect
-      example: 'Russian: ''Я живу здесь 5 лет'' (Ya zhivu zdes'' 5 lit) -> literal:
-        ''I live here 5 years'' -> wrong: ''I live here for 5 years'' -> correct:
-        ''I have lived here for 5 years'''
       frequency: 4
       persistence: 4
       communicative_impact: 2
+      example_l1: 'Russian: ''Я живу здесь 5 лет'''
+      example_gloss: Ya zhivu zdes' 5 lit
+      example_wrong: 'literal: ''I live here 5 years'
+      example_correct: 'wrong: ''I live here for 5 years'' -> correct: ''I have lived
+        here for 5 years'
+      explanation: 'Transfer from L1: Using simple present with ''since'' for ongoing
+        states -> Use present perfect.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Using past perfect incorrectly for sequence of events -> Use simple
         past or past perfect correctly
-      example: 'Russian: ''Когда я пришёл, он уже ушёл'' (Kogda ya prishyol, on ushyol)
-        -> wrong: ''When I arrived, he had left'' (overuse) -> correct: ''When I arrived,
-        he had already left'''
       frequency: 3
       persistence: 3
       communicative_impact: 1
+      example_l1: 'Russian: ''Когда я пришёл, он уже ушёл'''
+      example_gloss: Kogda ya prishyol, on ushyol
+      example_wrong: 'wrong: ''When I arrived, he had left'' (overuse)'
+      example_correct: 'correct: ''When I arrived, he had already left'
+      explanation: 'Transfer from L1: Using past perfect incorrectly for sequence
+        of events -> Use simple past or past perfect correctly.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - 'Wrong: ''I have eaten yesterday.'' Correct: ''I ate yesterday.'''
     - 'Wrong: ''I live here since 5 years.'' Correct: ''I have lived here for 5 years.'''
@@ -938,24 +1133,46 @@ grammar_points:
     interference_patterns:
     - pattern: Omitting reflexive pronoun where English requires one -> Add reflexive
         pronoun
-      example: 'Russian: ''Я моюсь'' (Ya moyus'') -> literal: ''I wash(self)'' ->
-        wrong: ''I wash'' -> correct: ''I wash myself'''
       frequency: 3
       persistence: 2
       communicative_impact: 1
+      example_l1: 'Russian: ''Я моюсь'''
+      example_gloss: Ya moyus'
+      example_wrong: 'literal: ''I wash(self)'
+      example_correct: 'wrong: ''I wash'' -> correct: ''I wash myself'
+      explanation: 'Transfer from L1: Omitting reflexive pronoun where English requires
+        one -> Add reflexive pronoun.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Overusing reflexive where English uses simple verb -> Drop reflexive
-      example: 'Russian: ''Он одевается'' (On odevayetsya) -> literal: ''He dresses(self)''
-        -> wrong: ''He dresses himself'' -> correct: ''He is getting dressed'''
       frequency: 3
       persistence: 2
       communicative_impact: 1
+      example_l1: 'Russian: ''Он одевается'''
+      example_gloss: On odevayetsya
+      example_wrong: 'literal: ''He dresses(self)'
+      example_correct: 'wrong: ''He dresses himself'' -> correct: ''He is getting
+        dressed'
+      explanation: 'Transfer from L1: Overusing reflexive where English uses simple
+        verb -> Drop reflexive.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Using reflexive for reciprocal actions -> Use 'each other'
-      example: 'Russian: ''Они встретились'' (Oni vstretilis'') -> literal: ''They
-        met(selfs)'' -> wrong: ''They met themselves'' -> correct: ''They met each
-        other'''
       frequency: 2
       persistence: 2
       communicative_impact: 2
+      example_l1: 'Russian: ''Они встретились'''
+      example_gloss: Oni vstretilis'
+      example_wrong: 'literal: ''They met(selfs)'
+      example_correct: 'wrong: ''They met themselves'' -> correct: ''They met each
+        other'
+      explanation: 'Transfer from L1: Using reflexive for reciprocal actions -> Use
+        ''each other''.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - 'Wrong: ''I wash every morning.'' (ambiguous) Correct: ''I wash myself every
       morning.'''
@@ -1034,25 +1251,45 @@ grammar_points:
     interference_patterns:
     - pattern: Using wrong preposition due to Russian case government -> Learn English
         preposition patterns
-      example: 'Russian: ''ждать автобус'' (zhdat'' avtobus + accusative) -> literal:
-        ''wait bus(acc.)'' -> wrong: ''wait the bus'' -> correct: ''wait for the bus'''
       frequency: 4
       persistence: 4
       communicative_impact: 2
+      example_l1: 'Russian: ''ждать автобус'''
+      example_gloss: zhdat' avtobus + accusative
+      example_wrong: 'literal: ''wait bus(acc.)'
+      example_correct: 'wrong: ''wait the bus'' -> correct: ''wait for the bus'
+      explanation: 'Transfer from L1: Using wrong preposition due to Russian case
+        government -> Learn English preposition patterns.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Omitting preposition where English requires one -> Add preposition
-      example: 'Russian: ''Я слушаю музыку'' (Ya slushayu muzyku) -> literal: ''I
-        listen music(accusative)'' -> wrong: ''I listen music'' -> correct: ''I listen
-        to music'''
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: 'Russian: ''Я слушаю музыку'''
+      example_gloss: Ya slushayu muzyku
+      example_wrong: 'literal: ''I listen music(accusative)'
+      example_correct: 'wrong: ''I listen music'' -> correct: ''I listen to music'
+      explanation: 'Transfer from L1: Omitting preposition where English requires
+        one -> Add preposition.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Adding preposition where English uses direct object -> Drop preposition
-      example: 'Russian: ''Я вошёл в комнату'' (Ya voshyol v komnatu) -> literal:
-        ''I entered into room'' -> wrong: ''I entered into the room'' -> correct:
-        ''I entered the room'''
       frequency: 3
       persistence: 3
       communicative_impact: 1
+      example_l1: 'Russian: ''Я вошёл в комнату'''
+      example_gloss: Ya voshyol v komnatu
+      example_wrong: 'literal: ''I entered into room'
+      example_correct: 'wrong: ''I entered into the room'' -> correct: ''I entered
+        the room'
+      explanation: 'Transfer from L1: Adding preposition where English uses direct
+        object -> Drop preposition.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - 'Wrong: ''I wait the bus.'' Correct: ''I wait for the bus.'''
     - 'Wrong: ''I listen music.'' Correct: ''I listen to music.'''
@@ -1130,19 +1367,41 @@ grammar_points:
       frequency: 3
       persistence: 3
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Using accusative instead of genitive after negation
+        -> English uses direct object (no case change).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Using partitive/genitive for 'some/any' distinction -> Use 'any' in
         negatives
-      example: 'Russian: ''У меня нет книги'' (U menya net knigi, genitive) -> wrong:
-        ''I don''t have no book'' -> correct: ''I don''t have any books'''
       frequency: 3
       persistence: 3
       communicative_impact: 2
+      example_l1: 'Russian: ''У меня нет книги'''
+      example_gloss: U menya net knigi, genitive
+      example_wrong: 'wrong: ''I don''t have no book'
+      example_correct: 'correct: ''I don''t have any books'
+      explanation: 'Transfer from L1: Using partitive/genitive for ''some/any'' distinction
+        -> Use ''any'' in negatives.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Omitting object after negation -> Include object
-      example: 'Russian: ''Я не знаю'' (Ya ne znayu) -> literal: ''I not know'' ->
-        correct: ''I don''t know the answer'' / ''I don''t know anything'''
       frequency: 2
       persistence: 2
       communicative_impact: 1
+      example_l1: 'Russian: ''Я не знаю'''
+      example_gloss: Ya ne znayu
+      example_wrong: 'literal: ''I not know'
+      example_correct: 'correct: ''I don''t know the answer'' / ''I don''t know anything'
+      explanation: 'Transfer from L1: Omitting object after negation -> Include object.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - 'Wrong: ''I don''t see no book.'' Correct: ''I don''t see any book.'''
     - 'Wrong: ''I have no nothing.'' Correct: ''I don''t have anything.'''
@@ -1214,26 +1473,45 @@ grammar_points:
   possession_u_gen:
     interference_patterns:
     - pattern: Using 'at me' or 'by me' for possession -> Use 'I have'
-      example: 'Russian: ''У меня есть книга'' (U menya yest'' kniga) -> literal:
-        ''At me there-is book'' -> wrong: ''At me there is a book'' -> correct: ''I
-        have a book'''
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: 'Russian: ''У меня есть книга'''
+      example_gloss: U menya yest' kniga
+      example_wrong: 'literal: ''At me there-is book'
+      example_correct: 'wrong: ''At me there is a book'' -> correct: ''I have a book'
+      explanation: 'Transfer from L1: Using ''at me'' or ''by me'' for possession
+        -> Use ''I have''.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Using 'у + genitive' structure for possession -> Use 'have' or 'have
         got'
-      example: 'Russian: ''У неё есть собака'' (U neyo yest'' sobaka) -> literal:
-        ''At her there-is dog'' -> wrong: ''At her is a dog'' -> correct: ''She has
-        a dog'''
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: 'Russian: ''У неё есть собака'''
+      example_gloss: U neyo yest' sobaka
+      example_wrong: 'literal: ''At her there-is dog'
+      example_correct: 'wrong: ''At her is a dog'' -> correct: ''She has a dog'
+      explanation: 'Transfer from L1: Using ''у + genitive'' structure for possession
+        -> Use ''have'' or ''have got''.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Omitting 'have' in possessive sentences -> Include 'have'
-      example: 'Russian: ''У меня брат'' (U menya brat) -> literal: ''At me brother''
-        -> wrong: ''Me brother'' -> correct: ''I have a brother'''
       frequency: 3
       persistence: 3
       communicative_impact: 2
+      example_l1: 'Russian: ''У меня брат'''
+      example_gloss: U menya brat
+      example_wrong: 'literal: ''At me brother'
+      example_correct: 'wrong: ''Me brother'' -> correct: ''I have a brother'
+      explanation: 'Transfer from L1: Omitting ''have'' in possessive sentences ->
+        Include ''have''.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - 'Wrong: ''At me there is a book.'' Correct: ''I have a book.'''
     - 'Wrong: ''At her is a dog.'' Correct: ''She has a dog.'''
@@ -1301,26 +1579,46 @@ grammar_points:
   relative_clauses_ru:
     interference_patterns:
     - pattern: Using 'what' as a relative pronoun -> Use 'that' or 'which/who'
-      example: 'Russian: ''Книга, что я читал...'' (Kniga, chto ya chital...) -> literal:
-        ''Book, what I read...'' -> wrong: ''The book what I read...'' -> correct:
-        ''The book that I read...'''
       frequency: 3
       persistence: 3
       communicative_impact: 2
+      example_l1: 'Russian: ''Книга, что я читал...'''
+      example_gloss: Kniga, chto ya chital...
+      example_wrong: 'literal: ''Book, what I read...'
+      example_correct: 'wrong: ''The book what I read...'' -> correct: ''The book
+        that I read...'
+      explanation: 'Transfer from L1: Using ''what'' as a relative pronoun -> Use
+        ''that'' or ''which/who''.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Using 'which' for people -> Use 'who' for people
-      example: 'Russian: ''Человек, который...'' (Chelovek, kotoryy...) -> literal:
-        ''Person, which...'' -> wrong: ''The person which...'' -> correct: ''The person
-        who...'''
       frequency: 3
       persistence: 2
       communicative_impact: 1
+      example_l1: 'Russian: ''Человек, который...'''
+      example_gloss: Chelovek, kotoryy...
+      example_wrong: 'literal: ''Person, which...'
+      example_correct: 'wrong: ''The person which...'' -> correct: ''The person who...'
+      explanation: 'Transfer from L1: Using ''which'' for people -> Use ''who'' for
+        people.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Omitting relative pronoun where English requires one -> Include relative
         pronoun
-      example: 'Russian: ''Книга, я читал...'' (Kniga, ya chital...) -> literal: ''Book,
-        I read...'' -> correct: ''The book that I read was good.'''
       frequency: 2
       persistence: 2
       communicative_impact: 1
+      example_l1: 'Russian: ''Книга, я читал...'''
+      example_gloss: Kniga, ya chital...
+      example_wrong: 'literal: ''Book, I read...'
+      example_correct: 'correct: ''The book that I read was good.'
+      explanation: 'Transfer from L1: Omitting relative pronoun where English requires
+        one -> Include relative pronoun.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - 'Wrong: ''The book what I read was good.'' Correct: ''The book that I read was
       good.'''
@@ -1395,26 +1693,45 @@ grammar_points:
     interference_patterns:
     - pattern: Using active participle where English requires passive -> Use past
         participle
-      example: 'Russian: ''прочитанный студент'' (prochitannyy student, passive participle)
-        -> wrong: ''readed student'' -> correct: ''student who has read'''
       frequency: 2
       persistence: 3
       communicative_impact: 1
+      example_l1: 'Russian: ''прочитанный студент'''
+      example_gloss: prochitannyy student, passive participle
+      example_wrong: 'wrong: ''readed student'
+      example_correct: 'correct: ''student who has read'
+      explanation: 'Transfer from L1: Using active participle where English requires
+        passive -> Use past participle.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Using participle where English requires relative clause -> Use relative
         clause
-      example: 'Russian: ''человек, стоящий у двери'' (chelovek, stoyashchyy u dveri)
-        -> wrong: ''person standing at door'' (formal) -> correct: ''person who is
-        standing at the door'''
       frequency: 2
       persistence: 2
       communicative_impact: 1
+      example_l1: 'Russian: ''человек, стоящий у двери'''
+      example_gloss: chelovek, stoyashchyy u dveri
+      example_wrong: 'wrong: ''person standing at door'' (formal)'
+      example_correct: 'correct: ''person who is standing at the door'
+      explanation: 'Transfer from L1: Using participle where English requires relative
+        clause -> Use relative clause.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Overusing participles in spoken English -> Use simpler structures
-      example: 'Russian: ''девушка, сидящая на скамейке'' (devushka, sidyashchaya
-        na skameyke) -> wrong: ''the sitting girl on the bench'' -> correct: ''the
-        girl who is sitting on the bench'''
       frequency: 2
       persistence: 2
       communicative_impact: 1
+      example_l1: 'Russian: ''девушка, сидящая на скамейке'''
+      example_gloss: devushka, sidyashchaya na skameyke
+      example_wrong: 'wrong: ''the sitting girl on the bench'
+      example_correct: 'correct: ''the girl who is sitting on the bench'
+      explanation: 'Transfer from L1: Overusing participles in spoken English -> Use
+        simpler structures.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - 'Wrong: ''The readed book was interesting.'' Correct: ''The book that was read
       was interesting.'''
@@ -1488,27 +1805,46 @@ grammar_points:
   sub_no_backshift:
     interference_patterns:
     - pattern: Using 'would' in if-clause -> Use simple past in if-clause
-      example: 'Russian: ''Если бы у меня были деньги...'' (Yesli by u menya byli
-        dengi...) -> literal: ''If would at me were money...'' -> wrong: ''If I would
-        have money...'' -> correct: ''If I had money...'''
       frequency: 4
       persistence: 4
       communicative_impact: 2
+      example_l1: 'Russian: ''Если бы у меня были деньги...'''
+      example_gloss: Yesli by u menya byli dengi...
+      example_wrong: 'literal: ''If would at me were money...'
+      example_correct: 'wrong: ''If I would have money...'' -> correct: ''If I had
+        money...'
+      explanation: 'Transfer from L1: Using ''would'' in if-clause -> Use simple past
+        in if-clause.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Backshifting in reported speech where English doesn't require it ->
         Keep original tense for general truths
-      example: 'Russian: ''Он сказал, что Земля круглый'' (On skazal, chto Zemli kruglyy)
-        -> wrong: ''He said that the Earth was round'' -> correct: ''He said that
-        the Earth is round'''
       frequency: 3
       persistence: 3
       communicative_impact: 1
+      example_l1: 'Russian: ''Он сказал, что Земля круглый'''
+      example_gloss: On skazal, chto Zemli kruglyy
+      example_wrong: 'wrong: ''He said that the Earth was round'
+      example_correct: 'correct: ''He said that the Earth is round'
+      explanation: 'Transfer from L1: Backshifting in reported speech where English
+        doesn''t require it -> Keep original tense for general truths.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Using 'will' in if-clause -> Use simple present in if-clause
-      example: 'Russian: ''Если будет дождь...'' (Yesli budet dozhd''...) -> literal:
-        ''If will-be rain...'' -> wrong: ''If it will rain...'' -> correct: ''If it
-        rains...'''
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: 'Russian: ''Если будет дождь...'''
+      example_gloss: Yesli budet dozhd'...
+      example_wrong: 'literal: ''If will-be rain...'
+      example_correct: 'wrong: ''If it will rain...'' -> correct: ''If it rains...'
+      explanation: 'Transfer from L1: Using ''will'' in if-clause -> Use simple present
+        in if-clause.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - 'Wrong: ''If I would have money, I would buy a car.'' Correct: ''If I had money,
       I would buy a car.'''
@@ -1584,25 +1920,45 @@ grammar_points:
   short_adjectives:
     interference_patterns:
     - pattern: Omitting 'to be' with short-form adjectives -> Include 'to be'
-      example: 'Russian: ''Он болен'' (On bolen) -> literal: ''He (is) sick'' (no
-        verb needed) -> wrong: ''He sick'' -> correct: ''He is sick'''
       frequency: 3
       persistence: 3
       communicative_impact: 2
+      example_l1: 'Russian: ''Он болен'''
+      example_gloss: On bolen
+      example_wrong: 'literal: ''He (is) sick'' (no verb needed)'
+      example_correct: 'wrong: ''He sick'' -> correct: ''He is sick'
+      explanation: 'Transfer from L1: Omitting ''to be'' with short-form adjectives
+        -> Include ''to be''.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Using adjective where English requires adverb -> Use adverb
-      example: 'Russian: ''Он говорит громко'' (On govorit gromko) -> wrong: ''He
-        speaks loud'' -> correct: ''He speaks loudly'''
       frequency: 3
       persistence: 2
       communicative_impact: 1
+      example_l1: 'Russian: ''Он говорит громко'''
+      example_gloss: On govorit gromko
+      example_wrong: 'wrong: ''He speaks loud'
+      example_correct: 'correct: ''He speaks loudly'
+      explanation: 'Transfer from L1: Using adjective where English requires adverb
+        -> Use adverb.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Wrong adjective order in multi-adjective noun phrase -> Follow English
         adjective order
-      example: 'Russian: ''красивый большой белый дом'' (krasivyy bol''shoy belyy
-        dom) -> wrong: ''white big beautiful house'' -> correct: ''beautiful big white
-        house'''
       frequency: 2
       persistence: 2
       communicative_impact: 1
+      example_l1: 'Russian: ''красивый большой белый дом'''
+      example_gloss: krasivyy bol'shoy belyy dom
+      example_wrong: 'wrong: ''white big beautiful house'
+      example_correct: 'correct: ''beautiful big white house'
+      explanation: 'Transfer from L1: Wrong adjective order in multi-adjective noun
+        phrase -> Follow English adjective order.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - 'Wrong: ''He sick.'' Correct: ''He is sick.'''
     - 'Wrong: ''She speaks loud.'' Correct: ''She speaks loudly.'''
@@ -1672,24 +2028,44 @@ grammar_points:
   countability_ru_en:
     interference_patterns:
     - pattern: Using plural form for uncountable nouns -> Use singular form
-      example: 'Russian: ''много информации'' (mnogo informatsii) -> literal: ''many
-        informations(gen. pl.)'' -> wrong: ''many informations'' -> correct: ''much
-        information'''
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: 'Russian: ''много информации'''
+      example_gloss: mnogo informatsii
+      example_wrong: 'literal: ''many informations(gen. pl.)'
+      example_correct: 'wrong: ''many informations'' -> correct: ''much information'
+      explanation: 'Transfer from L1: Using plural form for uncountable nouns -> Use
+        singular form.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Using 'many' with uncountable nouns -> Use 'much' or 'a lot of'
-      example: 'Russian: ''много советов'' (mnogo sovetov) -> wrong: ''many advices''
-        -> correct: ''much advice'''
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: 'Russian: ''много советов'''
+      example_gloss: mnogo sovetov
+      example_wrong: 'wrong: ''many advices'
+      example_correct: 'correct: ''much advice'
+      explanation: 'Transfer from L1: Using ''many'' with uncountable nouns -> Use
+        ''much'' or ''a lot of''.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Using 'fewer' with uncountable nouns -> Use 'less'
-      example: 'Russian: ''меньше денег'' (men''she deneg) -> wrong: ''fewer money''
-        -> correct: ''less money'''
       frequency: 3
       persistence: 3
       communicative_impact: 1
+      example_l1: 'Russian: ''меньше денег'''
+      example_gloss: men'she deneg
+      example_wrong: 'wrong: ''fewer money'
+      example_correct: 'correct: ''less money'
+      explanation: 'Transfer from L1: Using ''fewer'' with uncountable nouns -> Use
+        ''less''.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - 'Wrong: ''I have many informations.'' Correct: ''I have a lot of information.'''
     - 'Wrong: ''He gave me good advices.'' Correct: ''He gave me good advice.'''
@@ -1760,25 +2136,46 @@ grammar_points:
     interference_patterns:
     - pattern: Using simple verb where English requires phrasal verb -> Use phrasal
         verb
-      example: 'Russian: ''прочитать'' (prochitat'', prefix про- = through) -> wrong:
-        ''I read the book'' (completely) -> correct: ''I read through the book'''
       frequency: 3
       persistence: 3
       communicative_impact: 1
+      example_l1: 'Russian: ''прочитать'''
+      example_gloss: prochitat', prefix про- = through
+      example_wrong: 'wrong: ''I read the book'' (completely)'
+      example_correct: 'correct: ''I read through the book'
+      explanation: 'Transfer from L1: Using simple verb where English requires phrasal
+        verb -> Use phrasal verb.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Over-specifying completion with 'already' or 'completely' -> Use correct
         English tense
-      example: 'Russian: ''Я уже написал'' (Ya uzhe napisal, perfective past) -> wrong:
-        ''I already wrote the letter'' -> correct: ''I have already written the letter'''
       frequency: 3
       persistence: 3
       communicative_impact: 1
+      example_l1: 'Russian: ''Я уже написал'''
+      example_gloss: Ya uzhe napisal, perfective past
+      example_wrong: 'wrong: ''I already wrote the letter'
+      example_correct: 'correct: ''I have already written the letter'
+      explanation: 'Transfer from L1: Over-specifying completion with ''already''
+        or ''completely'' -> Use correct English tense.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Using wrong preposition with prefixed verb -> Learn English preposition
         patterns
-      example: 'Russian: ''договорить'' (dogovorit'', prefix до- = to end) -> wrong:
-        ''I talked to the end the story'' -> correct: ''I finished telling the story'''
       frequency: 2
       persistence: 3
       communicative_impact: 1
+      example_l1: 'Russian: ''договорить'''
+      example_gloss: dogovorit', prefix до- = to end
+      example_wrong: 'wrong: ''I talked to the end the story'
+      example_correct: 'correct: ''I finished telling the story'
+      explanation: 'Transfer from L1: Using wrong preposition with prefixed verb ->
+        Learn English preposition patterns.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - 'Wrong: ''I read the book.'' (completely) Correct: ''I read through the book.'''
     - 'Wrong: ''I already wrote the letter.'' Correct: ''I have already written the
@@ -1852,27 +2249,46 @@ grammar_points:
   animacy_acc:
     interference_patterns:
     - pattern: Using 'who' for animals or objects -> Use 'which/that' for non-humans
-      example: 'Russian: ''Кот, который...'' (Kot, kotoryy...) -> wrong: ''The cat
-        who...'' -> correct: ''The cat that...'''
       frequency: 2
       persistence: 2
       communicative_impact: 1
+      example_l1: 'Russian: ''Кот, который...'''
+      example_gloss: Kot, kotoryy...
+      example_wrong: 'wrong: ''The cat who...'
+      example_correct: 'correct: ''The cat that...'
+      explanation: 'Transfer from L1: Using ''who'' for animals or objects -> Use
+        ''which/that'' for non-humans.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Using different pronouns for people vs. things -> English distinguishes
         who/which
-      example: 'Russian: ''Человек, который...'' AND ''Стол, который...'' (same pronoun)
-        -> wrong: ''The man which...'' -> correct: ''The man who...'' / ''The table
-        which...'''
       frequency: 2
       persistence: 2
       communicative_impact: 1
+      example_l1: 'Russian: ''Человек, который...'' AND ''Стол, который...'''
+      example_gloss: same pronoun
+      example_wrong: 'wrong: ''The man which...'
+      example_correct: 'correct: ''The man who...'' / ''The table which...'
+      explanation: 'Transfer from L1: Using different pronouns for people vs. things
+        -> English distinguishes who/which.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Word order differences in animate vs. inanimate objects -> English
         uses fixed word order
-      example: 'Russian: ''Я вижу брата'' (genitive for animate) vs. ''Я вижу стол''
-        (nominative for inanimate) -> English: ''I see my brother'' / ''I see the
-        table'' (no case distinction)'
       frequency: 2
       persistence: 2
       communicative_impact: 1
+      example_l1: 'Russian: ''Я вижу брата'''
+      example_gloss: genitive for animate) vs. 'Я вижу стол' (nominative for inanimate
+      example_wrong: 'English: ''I see my brother'
+      example_correct: I see the table' (no case distinction)
+      explanation: 'Transfer from L1: Word order differences in animate vs. inanimate
+        objects -> English uses fixed word order.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - 'Wrong: ''The cat who is sleeping.'' Correct: ''The cat that is sleeping.'''
     - 'Wrong: ''The man which came yesterday.'' Correct: ''The man who came yesterday.'''
@@ -1944,27 +2360,45 @@ grammar_points:
     interference_patterns:
     - pattern: Using past simple for background actions in narratives -> Use past
         continuous for background
-      example: 'Russian: ''Я шёл по улице. Шёл дождь.'' (Ya shyol po ulitse. Shyol
-        dozhd''.) -> wrong: ''I walked down the street. It rained.'' -> correct: ''I
-        was walking down the street. It was raining.'''
       frequency: 3
       persistence: 3
       communicative_impact: 1
+      example_l1: 'Russian: ''Я шёл по улице. Шёл дождь.'''
+      example_gloss: Ya shyol po ulitse. Shyol dozhd'.
+      example_wrong: 'wrong: ''I walked down the street. It rained.'
+      example_correct: 'correct: ''I was walking down the street. It was raining.'
+      explanation: 'Transfer from L1: Using past simple for background actions in
+        narratives -> Use past continuous for background.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Using perfective past for sequential actions -> Use simple past for
         sequential actions
-      example: 'Russian: ''Он открыл дверь, вошёл и сел.'' (all perfective) -> wrong:
-        ''He has opened the door and has entered.'' -> correct: ''He opened the door,
-        came in, and sat down.'''
       frequency: 3
       persistence: 3
       communicative_impact: 1
+      example_l1: 'Russian: ''Он открыл дверь, вошёл и сел.'''
+      example_gloss: all perfective
+      example_wrong: 'wrong: ''He has opened the door and has entered.'
+      example_correct: 'correct: ''He opened the door, came in, and sat down.'
+      explanation: 'Transfer from L1: Using perfective past for sequential actions
+        -> Use simple past for sequential actions.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Overusing present tense in narratives -> Use past tense for storytelling
-      example: 'Russian: ''И тут он встаёт и говорит...'' (historical present) ->
-        wrong: ''And then he stands up and says...'' (in past narrative) -> correct:
-        ''And then he stood up and said...'''
       frequency: 2
       persistence: 2
       communicative_impact: 1
+      example_l1: 'Russian: ''И тут он встаёт и говорит...'''
+      example_gloss: historical present
+      example_wrong: 'wrong: ''And then he stands up and says...'' (in past narrative)'
+      example_correct: 'correct: ''And then he stood up and said...'
+      explanation: 'Transfer from L1: Overusing present tense in narratives -> Use
+        past tense for storytelling.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - 'Wrong: ''I walked down the street. It rained.'' (background) Correct: ''I was
       walking down the street. It was raining.'''
@@ -2041,3 +2475,977 @@ grammar_points:
         Press
       location: See relevant grammar point section
       tier: 2
+  articles_advanced:
+    interference_patterns:
+    - pattern: Definite article overgeneralization
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: I went to the school.
+      example_correct: I went to school.
+      explanation: Russian uses definite articles in contexts where English omits
+        them (school, church, bed).
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Article omission with abstract nouns
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: Patience is important.
+      example_correct: Patience is important.
+      explanation: Russian may use articles with abstract nouns where English omits
+        them.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian article usage differs from English in several contexts,
+      leading to overgeneralization or omission errors.
+    teacher_tips:
+      how_to_explain: 'Teach: English omits articles before school, church, bed, work,
+        home (when used in their primary sense).'
+      where_to_start: Start with the most common article errors.
+      sequencing: 'Week 1: Articles with institutions. Week 2: Articles with abstract
+        nouns. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Article Choice
+      type: fill-in-the-blank
+      description: 20 sentences choosing correct article usage.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  word_order_advanced:
+    interference_patterns:
+    - pattern: Adverb placement differences
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: I always am happy.
+      example_correct: I am always happy.
+      explanation: Russian places adverbs differently from English, often before the
+        verb or at the end of the sentence.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian adverb placement rules differ from English. English places
+      adverbs after 'be' and before other verbs.
+    teacher_tips:
+      how_to_explain: 'Teach: Adverbs go after ''be'' (I am always) and before other
+        verbs (I always go).'
+      where_to_start: Start with adverbs of frequency. Then teach other adverb types.
+      sequencing: 'Week 1: Frequency adverbs. Week 2: Manner adverbs. Week 3: Time
+        adverbs. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Adverb Placement
+      type: sentence-rewrite
+      description: Rewrite 10 sentences with correct adverb placement.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  prepositions_advanced:
+    interference_patterns:
+    - pattern: Preposition transfer in verb phrases
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: I listen music.
+      example_correct: I listen to music.
+      explanation: Russian uses different prepositions than English, or omits prepositions
+        where English requires them.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Preposition usage is highly language-specific. Russian prepositions
+      often don't map 1:1 to English.
+    teacher_tips:
+      how_to_explain: 'Teach: Prepositions must be learned with each verb. Listen
+        to (not listen music). Depend on (not depend of).'
+      where_to_start: Start with the most common preposition errors.
+      sequencing: 'Week 1: Verb + preposition. Week 2: Prepositions of place. Week
+        3: Prepositions of time. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Preposition Fill
+      type: fill-in-the-blank
+      description: 20 sentences with preposition blanks.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  tense_aspect_advanced:
+    interference_patterns:
+    - pattern: Present perfect vs simple past confusion
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: I have seen him yesterday.
+      example_correct: I saw him yesterday.
+      explanation: Russian may use a single past tense form where English distinguishes
+        simple past and present perfect.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian tense-aspect system differs from English. Specific past
+      time markers require simple past in English.
+    teacher_tips:
+      how_to_explain: 'Teach: yesterday/last week/in 2010 -> Simple Past. ever/never/already/yet
+        -> Present Perfect.'
+      where_to_start: Start with simple past. Then teach present perfect. Then contrast.
+      sequencing: 'Week 1: Simple past. Week 2: Present perfect. Week 3: Contrast.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Tense Choice
+      type: fill-in-the-blank
+      description: 20 sentences choosing simple past or present perfect.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  conditionals_advanced:
+    interference_patterns:
+    - pattern: Use of would in if-clause
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: If I would have time, I would go.
+      example_correct: If I had time, I would go.
+      explanation: Russian may use conditional forms in both clauses. English never
+        uses 'would' in the if-clause.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian conditional structures may allow conditional forms in
+      both clauses. English strictly avoids 'would' in if-clauses.
+    teacher_tips:
+      how_to_explain: 'Teach: NO WOULD IN IF-CLAUSE. If + past, would + base. If +
+        present, will + base.'
+      where_to_start: Start with second conditional. Then teach first conditional.
+        Then third.
+      sequencing: 'Week 1: Second conditional. Week 2: First conditional. Week 3:
+        Third conditional. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Conditional Formation
+      type: sentence-rewrite
+      description: Rewrite 10 conditional sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  relative_clauses_advanced:
+    interference_patterns:
+    - pattern: Use of 'what' as relative pronoun
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: The book what I read was good.
+      example_correct: The book that I read was good.
+      explanation: Russian may use a universal relative pronoun that maps to English
+        'what', but English 'what' is not a relative pronoun.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian relative clause structure differs from English. English
+      uses that/which/who, never 'what' as a relative pronoun.
+    teacher_tips:
+      how_to_explain: 'Teach: Use ''that'' or ''which'' for things, ''who'' for people.
+        Never use ''what'' as a relative pronoun.'
+      where_to_start: Start with that/which/who. Then teach restrictive vs non-restrictive.
+      sequencing: 'Week 1: That/which/who. Week 2: Restrictive vs non-restrictive.
+        Week 3: Omitting relative pronouns. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Relative Pronoun Choice
+      type: fill-in-the-blank
+      description: 15 sentences choosing correct relative pronoun.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  passive_voice_advanced:
+    interference_patterns:
+    - pattern: Avoidance of passive voice
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: They built this house in 1900.
+      example_correct: This house was built in 1900.
+      explanation: Russian may use active constructions where English prefers passive
+        voice, especially in formal writing.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian may use active voice in contexts where English prefers
+      passive, especially in academic and formal writing.
+    teacher_tips:
+      how_to_explain: 'Teach: Use passive when the action is more important than the
+        agent. The house was built (not they built the house).'
+      where_to_start: Start with passive formula. Then teach when to use passive.
+      sequencing: 'Week 1: Passive formula (be + past participle). Week 2: When to
+        use passive. Week 3: Passive in writing. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Active to Passive
+      type: sentence-rewrite
+      description: Convert 10 active sentences to passive.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  reported_speech_advanced:
+    interference_patterns:
+    - pattern: No backshift in reported speech
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: She said that she is tired.
+      example_correct: She said that she was tired.
+      explanation: Russian may not backshift tenses in reported speech. English requires
+        backshift (present -> past).
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian reported speech conventions may not include tense backshift.
+      English requires systematic backshift.
+    teacher_tips:
+      how_to_explain: 'Teach: Backshift rule: present -> past, will -> would, can
+        -> could. She said she was tired.'
+      where_to_start: Start with say/tell + backshift. Then teach pronoun changes.
+      sequencing: 'Week 1: Backshift with say/tell. Week 2: Pronoun changes. Week
+        3: Modal backshift. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Reported Speech
+      type: sentence-rewrite
+      description: Convert 15 direct speech sentences to reported speech.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  countability_advanced:
+    interference_patterns:
+    - pattern: Pluralization of uncountable nouns
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: I have many homeworks.
+      example_correct: I have a lot of homework.
+      explanation: Russian may treat as countable some nouns that are uncountable
+        in English (homework, advice, information).
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian countability distinctions differ from English. Nouns countable
+      in Russian may be uncountable in English.
+    teacher_tips:
+      how_to_explain: 'Teach: Common uncountables: homework, advice, information,
+        furniture, luggage, research. Use ''a piece of'' or ''some''.'
+      where_to_start: Start with common uncountable nouns. Then teach quantifiers.
+      sequencing: 'Week 1: Uncountable nouns list. Week 2: Much/many. Week 3: Partitives.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Countable or Not
+      type: matching
+      description: Categorize 30 nouns as countable or uncountable.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  false_friends_advanced:
+    interference_patterns:
+    - pattern: 'False friend: library (not bookstore)'
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: I bought this at the library.
+      example_correct: I bought this at the bookstore.
+      explanation: Russian and English share cognates with different meanings (false
+        friends). These cause high-impact errors.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 4
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian and English share many Latin/Germanic cognates, but some
+      have shifted meaning. These 'false friends' cause serious communication errors.
+    teacher_tips:
+      how_to_explain: 'Teach: Create a false friends list. Learn the top 20 false
+        friends for {language} speakers.'
+      where_to_start: Start with the highest-impact false friends.
+      sequencing: 'Week 1: Top 10 false friends. Week 2: Next 10. Week 3: Context
+        practice. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: False Friend Match
+      type: matching
+      description: Match 20 false friends to their correct meanings.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  subject_verb_agreement_advanced:
+    interference_patterns:
+    - pattern: Third-person -s omission
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: She like chocolate.
+      example_correct: She likes chocolate.
+      explanation: Russian may not mark third-person singular on verbs. English requires
+        -s for he/she/it in present simple.
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian verb conjugation may not include a third-person singular
+      marker. English -s is unique and frequently omitted.
+    teacher_tips:
+      how_to_explain: 'Teach: he/she/it + verb-s. Drill: I like, you like, he likes,
+        she likes, it likes.'
+      where_to_start: Start with third-person -s. Then teach does/doesn't.
+      sequencing: 'Week 1: Third-person -s. Week 2: Does/doesn''t. Week 3: Irregular
+        forms. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: SVA Drill
+      type: fill-in-the-blank
+      description: 20 sentences with correct verb form.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  gerund_infinitive_advanced:
+    interference_patterns:
+    - pattern: Infinitive after preposition
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: Before to leave, say goodbye.
+      example_correct: Before leaving, say goodbye.
+      explanation: Russian may use infinitive after prepositions. English always uses
+        gerund (-ing) after prepositions.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian may use infinitive forms after prepositions. English strictly
+      requires gerund (-ing) after all prepositions.
+    teacher_tips:
+      how_to_explain: 'Teach: After prepositions -> always -ing. Before leaving (not
+        before to leave). Without saying (not without to say).'
+      where_to_start: Start with common preposition + gerund combinations.
+      sequencing: 'Week 1: Preposition + gerund. Week 2: Verb + infinitive vs verb
+        + gerund. Week 3: Review. Week 4: Test.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Gerund After Preposition
+      type: fill-in-the-blank
+      description: 15 sentences with preposition + gerund.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  modal_verbs_advanced:
+    interference_patterns:
+    - pattern: Modal verb confusion
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: I can to swim.
+      example_correct: I can swim.
+      explanation: Russian modal verbs may differ from English. English modals are
+        followed by bare infinitive (no 'to').
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian modal verb system differs from English. English modals
+      (can, should, must) are followed by bare infinitive.
+    teacher_tips:
+      how_to_explain: 'Teach: Modal + base verb (no ''to''). I can swim (not I can
+        to swim). She should go (not she should to go).'
+      where_to_start: Start with can/could. Then teach should/must/would.
+      sequencing: 'Week 1: Can/could. Week 2: Should/must. Week 3: Would/might. Week
+        4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Modal Choice
+      type: fill-in-the-blank
+      description: 15 sentences choosing correct modal.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  comparatives_advanced:
+    interference_patterns:
+    - pattern: Comparative formation error
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: This is more better.
+      example_correct: This is better.
+      explanation: Russian may form comparatives differently. English uses -er for
+        short adjectives and more for long ones, never both.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian comparative formation may differ from English. English
+      never uses both -er and more together.
+    teacher_tips:
+      how_to_explain: 'Teach: Short adjectives -> -er (bigger). Long adjectives ->
+        more (more beautiful). Never both (not more better).'
+      where_to_start: Start with -er rule. Then teach more/most. Then teach irregulars.
+      sequencing: 'Week 1: -er comparatives. Week 2: More/most. Week 3: Irregulars.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Comparative Formation
+      type: sentence-rewrite
+      description: Rewrite 10 comparative sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  linking_words_advanced:
+    interference_patterns:
+    - pattern: Double conjunction error
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: Although it rained, but we went out.
+      example_correct: Although it rained, we went out.
+      explanation: Russian may use double conjunctions (although...but, because...so).
+        English uses only one conjunction per clause.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian may allow double conjunctions. English strictly uses one
+      conjunction per clause.
+    teacher_tips:
+      how_to_explain: 'Teach: although OR but (not both). because OR so (not both).
+        Pick one.'
+      where_to_start: Start with although/but. Then teach because/so.
+      sequencing: 'Week 1: Although/but. Week 2: Because/so. Week 3: Other conjunctions.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Conjunction Fix
+      type: error-correction
+      description: Fix 10 double conjunction sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  possessives_advanced:
+    interference_patterns:
+    - pattern: Possessive formation error
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: The book of John is interesting.
+      example_correct: John's book is interesting.
+      explanation: Russian may use 'of' for possession where English uses 's for people.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian may express possession differently from English. English
+      uses 's for people and of for things.
+    teacher_tips:
+      how_to_explain: 'Teach: Use ''s for people (John''s book). Use of for things
+        (the leg of the table).'
+      where_to_start: Start with 's for people. Then teach of for things.
+      sequencing: 'Week 1: ''S for people. Week 2: Of for things. Week 3: Double possessive.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Possessive Formation
+      type: sentence-rewrite
+      description: Rewrite 10 possessive sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  phonology_advanced:
+    interference_patterns:
+    - pattern: Consonant cluster difficulty
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: I am wery happy.
+      example_correct: I am very happy.
+      explanation: Russian phonology differs from English, causing pronunciation errors
+        that affect spelling.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian phonological system differs from English, causing pronunciation
+      and spelling errors.
+    teacher_tips:
+      how_to_explain: 'Teach: Focus on sounds that don''t exist in {language}. Practice
+        minimal pairs.'
+      where_to_start: Start with the most problematic sounds.
+      sequencing: 'Week 1: Problem sounds. Week 2: Minimal pairs. Week 3: Connected
+        speech. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Pronunciation Practice
+      type: oral-drill
+      description: Practice 20 minimal pairs.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  adverbs_advanced:
+    interference_patterns:
+    - pattern: Adjective used as adverb
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: He speaks English good.
+      example_correct: He speaks English well.
+      explanation: Russian may not distinguish morphologically between adjectives
+        and adverbs. English requires -ly for most adverbs.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian may use the same form for adjectives and adverbs. English
+      requires -ly for most adverbs.
+    teacher_tips:
+      how_to_explain: 'Teach: Adjective describes a noun. Adverb describes a verb.
+        Most adverbs add -ly. Good -> well (irregular).'
+      where_to_start: Start with the -ly rule. Then teach exceptions.
+      sequencing: 'Week 1: -ly adverbs. Week 2: Exceptions (fast, hard, late). Week
+        3: Good vs well. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Adjective or Adverb
+      type: fill-in-the-blank
+      description: 15 sentences choosing correct form.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  discourse_pragmatics:
+    interference_patterns:
+    - pattern: Directness in requests
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: Give me the book.
+      example_correct: Could you give me the book, please?
+      explanation: Russian may use more direct requests than English. English uses
+        indirect questions and modals for politeness.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian pragmatic norms for requests, refusals, and apologies
+      may differ from English. Directness levels vary culturally.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses indirect requests for politeness. Could
+        you...? Would you mind...? Please + imperative.'
+      where_to_start: Start with requests. Then teach refusals and apologies.
+      sequencing: 'Week 1: Polite requests. Week 2: Refusals. Week 3: Apologies. Week
+        4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Politeness Practice
+      type: sentence-rewrite
+      description: Rewrite 10 direct sentences as polite requests.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  collocations:
+    interference_patterns:
+    - pattern: L1 collocation transfer
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: I make my homework.
+      example_correct: I do my homework.
+      explanation: Russian collocations (verb + noun combinations) often don't map
+        to English. English has fixed collocations.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian collocations differ from English. Verb + noun combinations
+      are often fixed and must be learned as chunks.
+    teacher_tips:
+      how_to_explain: 'Teach: English collocations: do homework (not make), take a
+        photo (not make), catch a cold (not have).'
+      where_to_start: Start with the most common collocation errors.
+      sequencing: 'Week 1: Verb + noun collocations. Week 2: Adjective + noun. Week
+        3: Preposition + noun. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Collocation Match
+      type: matching
+      description: Match 20 verbs to their correct noun partners.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  existential_there:
+    interference_patterns:
+    - pattern: Use of 'it is' for 'there is'
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: It is many people here.
+      example_correct: There are many people here.
+      explanation: Russian may use 'it' or other constructions for existential meaning.
+        English uses 'there is/are'.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian may not have an existential construction equivalent to
+      English 'there is/are'. Learners may use 'it is' instead.
+    teacher_tips:
+      how_to_explain: 'Teach: Use ''there is'' for existence. There is a book on the
+        table. There are many people.'
+      where_to_start: Start with there is/are. Then teach there was/were.
+      sequencing: 'Week 1: There is/are. Week 2: There was/were. Week 3: There will
+        be. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: There Is or It Is
+      type: fill-in-the-blank
+      description: 15 sentences choosing there is/it is.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  determiners:
+    interference_patterns:
+    - pattern: Use of 'much' with countable nouns
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: I have much friends.
+      example_correct: I have many friends.
+      explanation: Russian may not distinguish between countable and uncountable quantifiers.
+        English uses many for countable, much for uncountable.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian quantifier system may differ from English. English distinguishes
+      many (countable) vs much (uncountable).
+    teacher_tips:
+      how_to_explain: 'Teach: Many + countable (many books). Much + uncountable (much
+        water). A lot of + both.'
+      where_to_start: Start with many/much. Then teach few/little. Then teach a lot
+        of.
+      sequencing: 'Week 1: Many/much. Week 2: Few/little. Week 3: A lot of/plenty
+        of. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Quantifier Choice
+      type: fill-in-the-blank
+      description: 20 sentences choosing correct quantifier.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  question_formation_advanced:
+    interference_patterns:
+    - pattern: Omission of do-support in questions
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: You like coffee?
+      example_correct: Do you like coffee?
+      explanation: Russian may form questions by intonation alone or with question
+        particles. English requires do-support.
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian question formation differs from English. English requires
+      do/does/did for most questions (except with 'be' and modals).
+    teacher_tips:
+      how_to_explain: 'Teach: Do/Does/Did + subject + base verb? Do you like coffee?
+        (not You like coffee?)'
+      where_to_start: Start with yes/no questions. Then teach wh- questions.
+      sequencing: 'Week 1: Do/does questions. Week 2: Wh- questions. Week 3: Tag questions.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Question Formation
+      type: sentence-rewrite
+      description: Convert 15 statements to questions.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  negation_advanced:
+    interference_patterns:
+    - pattern: Double negation
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: I don't have no money.
+      example_correct: I don't have any money. / I have no money.
+      explanation: Russian may allow double negation. Standard English uses only one
+        negative per clause.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian may allow or require double negation. Standard English
+      uses single negation (not...any, no, never).
+    teacher_tips:
+      how_to_explain: 'Teach: One negative per clause. I don''t have any (not I don''t
+        have no). I have no money (correct single negation).'
+      where_to_start: Start with not...any. Then teach no/never/nobody.
+      sequencing: 'Week 1: Not...any. Week 2: No/never/nobody. Week 3: Double negation
+        errors. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Negation Fix
+      type: error-correction
+      description: Fix 10 double negation sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  conjunctions_advanced:
+    interference_patterns:
+    - pattern: Use of 'also' at sentence start
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: Also, I think we should go.
+      example_correct: I also think we should go.
+      explanation: Russian may place 'also' at sentence start. English prefers mid-sentence
+        position or 'furthermore'.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian conjunction and connector usage differs from English.
+      Word order and formality levels vary.
+    teacher_tips:
+      how_to_explain: 'Teach: ''Also'' goes mid-sentence (I also think). ''Furthermore''
+        or ''moreover'' for formal writing.'
+      where_to_start: Start with also/too/either. Then teach formal connectors.
+      sequencing: 'Week 1: Also/too. Week 2: Furthermore/moreover. Week 3: However/nevertheless.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Connector Placement
+      type: sentence-rewrite
+      description: Rewrite 10 sentences with correct connector placement.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  idiomatic_expressions_advanced:
+    interference_patterns:
+    - pattern: Literal translation of idioms
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: It rains ropes.
+      example_correct: It's raining cats and dogs.
+      explanation: Russian idioms don't translate literally. Learners may translate
+        word-for-word.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Every language has unique idioms. Russian idioms often have different
+      English equivalents.
+    teacher_tips:
+      how_to_explain: 'Teach: Idioms don''t translate literally. Learn the English
+        equivalent as a whole phrase.'
+      where_to_start: Start with the most common idiom categories.
+      sequencing: 'Week 1: Weather idioms. Week 2: Body idioms. Week 3: Animal idioms.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Idiom Match
+      type: matching
+      description: Match 15 idioms to their English equivalents.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  register_formality:
+    interference_patterns:
+    - pattern: Informal register in formal contexts
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: I wanna go.
+      example_correct: I would like to go.
+      explanation: Russian may not distinguish formality through verb forms. English
+        uses modal verbs and full forms for formality.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian may express formality differently from English. English
+      uses modal verbs, full forms, and specific vocabulary for formal contexts.
+    teacher_tips:
+      how_to_explain: 'Teach: Formal = would like (not wanna), could you (not can
+        you), I am (not I''m).'
+      where_to_start: Start with contractions. Then teach modal formality.
+      sequencing: 'Week 1: Contractions. Week 2: Modal formality. Week 3: Formal vocabulary.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Formal or Informal
+      type: sentence-rewrite
+      description: Rewrite 10 informal sentences in formal register.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  numbers_dates:
+    interference_patterns:
+    - pattern: Number format differences
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: The price is 1.000,50.
+      example_correct: The price is 1,000.50.
+      explanation: Russian may use different number formatting (comma vs period for
+        decimals/thousands).
+      frequency: 2
+      persistence: 1
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian number and date formatting conventions differ from English.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses period for decimals, comma for thousands.
+        Dates: month/day/year (US).'
+      where_to_start: Start with number formatting. Then teach dates.
+      sequencing: 'Week 1: Number format. Week 2: Date format. Week 3: Saying numbers
+        aloud. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Number Conversion
+      type: sentence-rewrite
+      description: Convert 10 numbers/dates to English format.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  punctuation_conventions:
+    interference_patterns:
+    - pattern: Punctuation spacing differences
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: Hello ! How are you ?
+      example_correct: Hello! How are you?
+      explanation: Russian may use different spacing conventions before punctuation
+        marks.
+      frequency: 2
+      persistence: 1
+      communicative_impact: 1
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian punctuation conventions differ from English in spacing
+      and usage.
+    teacher_tips:
+      how_to_explain: 'Teach: English has no space before punctuation. Write: Hello!
+        (not Hello !).'
+      where_to_start: Start with spacing. Then teach quotation marks.
+      sequencing: 'Week 1: Spacing. Week 2: Quotation marks. Week 3: Other conventions.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Punctuation Fix
+      type: error-correction
+      description: Fix 10 punctuation errors.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  writing_conventions:
+    interference_patterns:
+    - pattern: Paragraph structure differences
+      example_l1: '[ru] example'
+      example_gloss: gloss
+      example_wrong: A paragraph without a clear topic sentence.
+      example_correct: A paragraph with a clear topic sentence followed by supporting
+        details.
+      explanation: Russian writing conventions may differ from English. English academic
+        writing values explicit topic sentences and linear argumentation.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Russian rhetorical conventions differ from English. English values
+      directness, linear structure, and explicit topic sentences.
+    teacher_tips:
+      how_to_explain: 'Teach: English paragraphs start with a topic sentence. Each
+        paragraph has one main idea. Use transitions.'
+      where_to_start: Start with topic sentences. Then teach paragraph structure.
+      sequencing: 'Week 1: Topic sentences. Week 2: Paragraph structure. Week 3: Transitions.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Paragraph Analysis
+      type: error-correction
+      description: Identify and fix structural problems in 5 paragraphs.
+      duration: 15
+    sources:
+    - Swan & Smith (2001) Learner English

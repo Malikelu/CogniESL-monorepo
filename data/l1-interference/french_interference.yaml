@@ -1,21 +1,33 @@
 language: French
 language_code: fr
-schema_version: '3.0'
+schema_version: '4.0'
 grammar_points:
   articles:
     interference_patterns:
     - pattern: Omission of article before professions
-      example: 'FR ''Elle est medecin'' (she is doctor) -> Error: ''She is doctor''
-        -> Correct: ''She is a doctor'''
       frequency: 5
       persistence: 4
       communicative_impact: 3
+      example_l1: FR 'Elle est medecin'
+      example_gloss: she is doctor
+      example_wrong: She is doctor
+      example_correct: She is a doctor
+      explanation: 'Transfer from L1: Omission of article before professions.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Partitive article confusion
-      example: 'FR ''Je veux du pain'' (I want of-the bread) -> Error: ''I want of
-        bread'' -> Correct: ''I want bread'' / ''I want some bread'''
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: FR 'Je veux du pain'
+      example_gloss: I want of-the bread
+      example_wrong: I want of bread
+      example_correct: I want bread' / 'I want some bread
+      explanation: 'Transfer from L1: Partitive article confusion.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: She is doctor.
       correct: She is a doctor.
@@ -100,17 +112,31 @@ grammar_points:
   negation:
     interference_patterns:
     - pattern: Omission of do-support in negation
-      example: 'FR ''Je ne sais pas'' (I not know not) -> Error: ''I not know'' ->
-        Correct: ''I do not know'''
       frequency: 5
       persistence: 5
       communicative_impact: 4
+      example_l1: FR 'Je ne sais pas'
+      example_gloss: I not know not
+      example_wrong: I not know
+      example_correct: I do not know
+      explanation: 'Transfer from L1: Omission of do-support in negation.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Post-verbal negation
       example: 'FR ''Je sais not'' -> Error: ''I know not'' -> Correct: ''I do not
         know'''
       frequency: 3
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Post-verbal negation.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I not know the answer.
       correct: I do not know the answer.
@@ -196,17 +222,29 @@ grammar_points:
   question_formation:
     interference_patterns:
     - pattern: Est-ce que without inversion
-      example: 'FR ''Est-ce que tu aimes?'' (is-it that you like?) -> Error: ''Is
-        it that you like?'' -> Correct: ''Do you like?'''
       frequency: 5
       persistence: 5
       communicative_impact: 4
+      example_l1: FR 'Est-ce que tu aimes?'
+      example_gloss: is-it that you like?
+      example_wrong: Is it that you like?
+      example_correct: Do you like?
+      explanation: 'Transfer from L1: Est-ce que without inversion.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Use of rising intonation only
-      example: 'FR ''Tu aimes le cafe?'' (you like the coffee?) -> Error: ''You like
-        coffee?'' -> Correct: ''Do you like coffee?'''
       frequency: 4
       persistence: 4
       communicative_impact: 3
+      example_l1: FR 'Tu aimes le cafe?'
+      example_gloss: you like the coffee?
+      example_wrong: You like coffee?
+      example_correct: Do you like coffee?
+      explanation: 'Transfer from L1: Use of rising intonation only.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: You like coffee?
       correct: Do you like coffee?
@@ -274,16 +312,30 @@ grammar_points:
   adjective_placement:
     interference_patterns:
     - pattern: Post-nominal adjective placement
-      example: 'FR ''une maison blanche'' (a house white) -> Error: ''a house white''
-        -> Correct: ''a white house'''
       frequency: 4
       persistence: 4
       communicative_impact: 2
+      example_l1: FR 'une maison blanche'
+      example_gloss: a house white
+      example_wrong: a house white
+      example_correct: a white house
+      explanation: 'Transfer from L1: Post-nominal adjective placement.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Adjectives that change meaning by position
       example: FR 'un grand homme' (a great man) vs 'un homme grand' (a tall man)
       frequency: 3
       persistence: 3
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Adjectives that change meaning by position.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: She bought a car red.
       correct: She bought a red car.
@@ -347,17 +399,29 @@ grammar_points:
   verb_tenses:
     interference_patterns:
     - pattern: Use of present perfect for recent past
-      example: 'FR ''J''ai mange'' (I have eaten) -> Error: ''I have eaten lunch''
-        (when meaning simple past) -> Correct: ''I ate lunch'''
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: FR 'J'ai mange'
+      example_gloss: I have eaten
+      example_wrong: I have eaten lunch' (when meaning simple past)
+      example_correct: I ate lunch
+      explanation: 'Transfer from L1: Use of present perfect for recent past.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Use of passe compose for all past
-      example: 'FR ''Je suis alle'' (I am gone) -> Error: ''I am gone to the store''
-        -> Correct: ''I went to the store'''
       frequency: 4
       persistence: 4
       communicative_impact: 3
+      example_l1: FR 'Je suis alle'
+      example_gloss: I am gone
+      example_wrong: I am gone to the store
+      example_correct: I went to the store
+      explanation: 'Transfer from L1: Use of passe compose for all past.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I have gone to the store yesterday.
       correct: I went to the store yesterday.
@@ -444,12 +508,28 @@ grammar_points:
       frequency: 3
       persistence: 3
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Use of indicative where subjunctive is needed.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Overuse of should for subjunctive
       example: 'FR ''Je veux que tu viennes'' -> Error: ''I want that you should come''
         -> Correct: ''I want you to come'''
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Overuse of should for subjunctive.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I want that you should come.
       correct: I want you to come.
@@ -512,18 +592,29 @@ grammar_points:
   pronouns:
     interference_patterns:
     - pattern: Use of on as impersonal pronoun
-      example: 'FR ''On mange'' (one eats) -> Error: ''One eats here'' (too formal)
-        -> Correct: ''People eat here'' / ''We eat here'''
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: FR 'On mange'
+      example_gloss: one eats
+      example_wrong: One eats here' (too formal)
+      example_correct: People eat here' / 'We eat here
+      explanation: 'Transfer from L1: Use of on as impersonal pronoun.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Use of y and en pronouns
-      example: 'FR ''J''y vais'' (I there go) -> Error: ''I go there'' (correct) but
-        ''J''en veux'' (I of-it want) -> Error: ''I want of it'' -> Correct: ''I want
-        some'''
       frequency: 3
       persistence: 3
       communicative_impact: 3
+      example_l1: FR 'J'y vais'
+      example_gloss: I there go
+      example_wrong: I go there' (correct) but 'J'en veux' (I of-it want)
+      example_correct: 'Error: ''I want of it'' -> Correct: ''I want some'
+      explanation: 'Transfer from L1: Use of y and en pronouns.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: One eats here every day.
       correct: People eat here every day.
@@ -600,17 +691,29 @@ grammar_points:
   prepositions:
     interference_patterns:
     - pattern: Transfer of French prepositions
-      example: 'FR ''Je pense a'' (I think to) -> Error: ''I think to you'' -> Correct:
-        ''I think of you'''
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: FR 'Je pense a'
+      example_gloss: I think to
+      example_wrong: I think to you
+      example_correct: I think of you
+      explanation: 'Transfer from L1: Transfer of French prepositions.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Use of de/du for possession
-      example: 'FR ''Le livre de Jean'' (the book of Jean) -> Error: ''The book of
-        Jean'' -> Correct: ''Jean''s book'''
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: FR 'Le livre de Jean'
+      example_gloss: the book of Jean
+      example_wrong: The book of Jean
+      example_correct: Jean's book
+      explanation: 'Transfer from L1: Use of de/du for possession.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I think to you often.
       correct: I think of you often.
@@ -691,12 +794,28 @@ grammar_points:
       frequency: 5
       persistence: 4
       communicative_impact: 4
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Confusion of actuellement (currently) with actually.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Confusion of assister (attend) with assist
       example: 'FR ''assister a'' = to attend -> Error: ''I will assist the meeting''
         -> Correct: ''I will attend the meeting'''
       frequency: 4
       persistence: 4
       communicative_impact: 4
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Confusion of assister (attend) with assist.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Actually, I work in a bank.
       correct: Currently, I work in a bank.
@@ -784,12 +903,26 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Avoidance of passive voice.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Use of on instead of passive
-      example: 'FR ''On parle francais'' (one speaks French) -> Error: ''One speaks
-        French here'' -> Correct: ''French is spoken here'''
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: FR 'On parle francais'
+      example_gloss: one speaks French
+      example_wrong: One speaks French here
+      example_correct: French is spoken here
+      explanation: 'Transfer from L1: Use of on instead of passive.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: One sells books in this store.
       correct: Books are sold in this store.
@@ -859,17 +992,31 @@ grammar_points:
   conditionals:
     interference_patterns:
     - pattern: Use of present tense in if-clauses
-      example: 'FR ''Si j''ai le temps'' (if I have the time) -> Error: ''If I will
-        have time'' -> Correct: ''If I have time'''
       frequency: 4
       persistence: 4
       communicative_impact: 3
+      example_l1: FR 'Si j'ai le temps'
+      example_gloss: if I have the time
+      example_wrong: If I will have time
+      example_correct: If I have time
+      explanation: 'Transfer from L1: Use of present tense in if-clauses.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Use of conditionnel for hypothetical
       example: 'FR ''Si j''avais le temps, je ferais'' -> Error: ''If I would have
         time, I would do'' -> Correct: ''If I had time, I would do'''
       frequency: 4
       persistence: 4
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Use of conditionnel for hypothetical.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: If I will see him, I will tell him.
       correct: If I see him, I will tell him.
@@ -941,17 +1088,29 @@ grammar_points:
   gerund_infinitive:
     interference_patterns:
     - pattern: Use of infinitive after prepositions
-      example: 'FR ''avant de manger'' (before to-eat) -> Error: ''Before to eat''
-        -> Correct: ''Before eating'''
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: FR 'avant de manger'
+      example_gloss: before to-eat
+      example_wrong: Before to eat
+      example_correct: Before eating
+      explanation: 'Transfer from L1: Use of infinitive after prepositions.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Use of apres + past infinitive
-      example: 'FR ''apres avoir mange'' (after having eaten) -> Error: ''After having
-        eaten'' (correct but formal) -> Correct: ''After eating'''
       frequency: 3
       persistence: 2
       communicative_impact: 1
+      example_l1: FR 'apres avoir mange'
+      example_gloss: after having eaten
+      example_wrong: After having eaten' (correct but formal)
+      example_correct: After eating
+      explanation: 'Transfer from L1: Use of apres + past infinitive.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Before to leave, say goodbye.
       correct: Before leaving, say goodbye.
@@ -1026,18 +1185,31 @@ grammar_points:
   relative_clauses:
     interference_patterns:
     - pattern: Use of dont for whose/of which
-      example: 'FR ''le livre dont je parle'' (the book of-which I speak) -> Error:
-        ''The book of which I speak'' (correct but formal) -> Correct: ''The book
-        I''m talking about'''
       frequency: 3
       persistence: 2
       communicative_impact: 1
+      example_l1: FR 'le livre dont je parle'
+      example_gloss: the book of-which I speak
+      example_wrong: The book of which I speak' (correct but formal)
+      example_correct: The book I'm talking about
+      explanation: 'Transfer from L1: Use of dont for whose/of which.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Use of que for both that and which
       example: 'FR ''que'' = that/which -> Error: ''The book which I read'' (correct)
         but overuse of which'
       frequency: 3
       persistence: 2
       communicative_impact: 1
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Use of que for both that and which.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: The man which I met is my boss.
       correct: The man that I met is my boss.
@@ -1113,12 +1285,28 @@ grammar_points:
       frequency: 3
       persistence: 3
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Silent consonant pronunciation.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Confusion of /h/ and silent h
       example: 'FR silent h -> Error: ''I have a horse'' (pronouncing h) vs ''I have
         an hour'' (omitting h)'
       frequency: 4
       persistence: 4
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Confusion of /h/ and silent h.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I am wery happy.
       correct: I am very happy.
@@ -1193,17 +1381,31 @@ grammar_points:
   countability:
     interference_patterns:
     - pattern: Pluralization of uncountable nouns
-      example: 'FR ''des informations'' (some informations) -> Error: ''informations''
-        -> Correct: ''information'''
       frequency: 4
       persistence: 4
       communicative_impact: 3
+      example_l1: FR 'des informations'
+      example_gloss: some informations
+      example_wrong: informations
+      example_correct: information
+      explanation: 'Transfer from L1: Pluralization of uncountable nouns.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Use of des for some
       example: 'FR ''des'' = some -> Error: ''I have some informations'' -> Correct:
         ''I have some information'''
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Use of des for some.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I have many homeworks.
       correct: I have a lot of homework.
@@ -1280,12 +1482,28 @@ grammar_points:
       frequency: 4
       persistence: 4
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: No backshift of tenses.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Use of que for that
       example: 'FR ''Il dit que'' (he says that) -> Error: ''He says that he is tired''
         (correct) but no backshift'
       frequency: 3
       persistence: 3
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Use of que for that.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: She said that she is tired.
       correct: She said that she was tired.
@@ -1354,17 +1572,31 @@ grammar_points:
   possessives:
     interference_patterns:
     - pattern: Use of a + possessive
-      example: 'FR ''a moi'' (to me) -> Error: ''The book is to me'' -> Correct: ''The
-        book is mine'''
       frequency: 3
       persistence: 3
       communicative_impact: 2
+      example_l1: FR 'a moi'
+      example_gloss: to me
+      example_wrong: The book is to me
+      example_correct: The book is mine
+      explanation: 'Transfer from L1: Use of a + possessive.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Use of de for possession
       example: 'FR ''le livre de Jean'' -> Error: ''The book of Jean'' -> Correct:
         ''Jean''s book'''
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Use of de for possession.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: The book is to me.
       correct: The book is mine.
@@ -1439,12 +1671,28 @@ grammar_points:
       frequency: 3
       persistence: 2
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Use of mais at sentence start.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Use of donc for so/therefore
       example: 'FR ''donc'' = so/therefore -> Error: ''Donc, we left'' -> Correct:
         ''So, we left'' / ''Therefore, we left'''
       frequency: 3
       persistence: 2
       communicative_impact: 1
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Use of donc for so/therefore.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: But, I think we should go.
       correct: However, I think we should go.
@@ -1514,16 +1762,29 @@ grammar_points:
   comparatives:
     interference_patterns:
     - pattern: Use of plus for all comparatives
-      example: 'FR ''plus grand'' (more big) -> Error: ''more big'' -> Correct: ''bigger'''
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: FR 'plus grand'
+      example_gloss: more big
+      example_wrong: more big
+      example_correct: bigger
+      explanation: 'Transfer from L1: Use of plus for all comparatives.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Use of le plus for all superlatives
-      example: 'FR ''le plus grand'' (the most big) -> Error: ''the most big'' ->
-        Correct: ''the biggest'''
       frequency: 3
       persistence: 2
       communicative_impact: 2
+      example_l1: FR 'le plus grand'
+      example_gloss: the most big
+      example_wrong: the most big
+      example_correct: the biggest
+      explanation: 'Transfer from L1: Use of le plus for all superlatives.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: This car is more big than that one.
       correct: This car is bigger than that one.
@@ -1598,6 +1859,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Use of adjective instead of adverb.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: He runs very fastly.
       correct: He runs very fast. / He runs very quickly.
@@ -1674,12 +1943,28 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Use of pouvoir for can/may.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Use of devoir for must/should
       example: 'FR ''je dois'' = I must/I should -> Error: ''I must go'' (too strong)
         -> Correct: ''I should go'''
       frequency: 3
       persistence: 3
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Use of devoir for must/should.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I can have some water?
       correct: May I have some water?
@@ -1749,10 +2034,17 @@ grammar_points:
   subject_verb_agreement:
     interference_patterns:
     - pattern: Omission of third-person -s
-      example: 'FR ''il aime'' (he likes) -> Error: ''He like'' -> Correct: ''He likes'''
       frequency: 5
       persistence: 5
       communicative_impact: 4
+      example_l1: FR 'il aime'
+      example_gloss: he likes
+      example_wrong: He like
+      example_correct: He likes
+      explanation: 'Transfer from L1: Omission of third-person -s.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: She like chocolate.
       correct: She likes chocolate.
@@ -1825,3 +2117,938 @@ grammar_points:
         A Practical Handbook'', University of Michigan Press'
       location: p. 314
       tier: 2
+  word_order:
+    interference_patterns:
+    - pattern: SOV influence in complex sentences
+      example_l1: Je le livre donne
+      example_gloss: I the book give
+      example_wrong: I the book give to him.
+      example_correct: I give the book to him.
+      explanation: French places the direct object pronoun before the verb, leading
+        to SOV word order errors in English.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French uses SOV word order with pronoun objects (je le donne =
+      I it give). English uses SVO consistently.
+    teacher_tips:
+      how_to_explain: 'Teach: English word order is SVO. Pronouns go after the verb:
+        give it to me (not give me it in standard English).'
+      where_to_start: Start with simple SVO sentences. Then teach pronoun placement.
+      sequencing: 'Week 1: SVO basics. Week 2: Pronoun placement. Week 3: Ditransitive
+        verbs. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Word Order Fix
+      type: sentence-rewrite
+      description: Rewrite 10 French-influenced SVO sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  conjunctions:
+    interference_patterns:
+    - pattern: Use of 'also' at sentence start
+      example_l1: Aussi, je pense que...
+      example_gloss: Also, I think that...
+      example_wrong: Also, I think that...
+      example_correct: I also think that... / Furthermore, I think that...
+      explanation: French 'aussi' at sentence start maps to English 'also' but English
+        prefers mid-sentence position or 'furthermore'.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Double conjunctions (bien que...mais)
+      example_l1: Bien qu'il pleut, mais on sort
+      example_gloss: Although it rains, but we go out
+      example_wrong: Although it rains, but we go out.
+      example_correct: Although it rains, we go out. / It's raining, but we're going
+        out.
+      explanation: French allows double conjunctions (bien que...mais). English never
+        uses although...but together.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French uses double conjunctions for emphasis. English strictly
+      avoids redundancy in conjunctions.
+    teacher_tips:
+      how_to_explain: 'Teach: although/but, because/so — pick ONE. Never use both
+        together.'
+      where_to_start: Start with although/but. Then teach because/so.
+      sequencing: 'Week 1: Although vs but. Week 2: Because vs so. Week 3: Other double
+        conjunctions. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Conjunction Reduction
+      type: error-correction
+      description: Fix 10 double conjunction sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  cleft_sentences:
+    interference_patterns:
+    - pattern: Overuse of c'est...que structure
+      example_l1: C'est moi qui ai fait ça
+      example_gloss: It is me who did that
+      example_wrong: It is me who did that.
+      example_correct: I did that. / I'm the one who did that.
+      explanation: French uses cleft sentences (c'est...que/qui) frequently for emphasis.
+        English uses them sparingly.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French uses cleft constructions (c'est...que/qui) as a default
+      emphasis strategy. English reserves cleft sentences for specific contrastive
+      focus.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses cleft sentences (It is...who/that) only
+        for strong emphasis. Most sentences don''t need them.'
+      where_to_start: Start with when cleft sentences are appropriate. Then teach
+        simpler alternatives.
+      sequencing: 'Week 1: Cleft sentence structure. Week 2: When to use cleft. Week
+        3: Alternatives to cleft. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Cleft or Not?
+      type: sentence-rewrite
+      description: Rewrite 10 cleft sentences in simpler form.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  existential_constructions:
+    interference_patterns:
+    - pattern: Use of il y a for there is/are
+      example_l1: Il y a beaucoup de gens
+      example_gloss: There has many people
+      example_wrong: There has many people.
+      example_correct: There are many people.
+      explanation: French 'il y a' (there has) maps to English 'there is/are'. French
+        learners may use 'there has' for all forms.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French 'il y a' is invariable (always singular). English 'there
+      is/are' agrees with the noun that follows.
+    teacher_tips:
+      how_to_explain: 'Teach: There is + singular. There are + plural. Drill: There
+        is a book / There are books.'
+      where_to_start: Start with there is/are agreement. Then teach there was/were.
+      sequencing: 'Week 1: There is/are. Week 2: There was/were. Week 3: There will
+        be. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: There Is or There Are
+      type: fill-in-the-blank
+      description: 20 sentences choosing there is or there are.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  reflexive_verbs:
+    interference_patterns:
+    - pattern: Overuse of reflexive where English uses simple verb
+      example_l1: Je me souviens
+      example_gloss: I myself remember
+      example_wrong: I remember myself the answer.
+      example_correct: I remember the answer.
+      explanation: French uses reflexive verbs (se souvenir, se rappeler) where English
+        uses simple verbs. French learners may add unnecessary reflexive pronouns.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French has many reflexive verbs that are non-reflexive in English
+      (se souvenir = remember, se rappeler = recall).
+    teacher_tips:
+      how_to_explain: 'Teach: English ''remember'' doesn''t need a reflexive pronoun.
+        I remember (not I remember myself).'
+      where_to_start: Start with common French reflexive verbs and their English equivalents.
+      sequencing: 'Week 1: Se souvenir = remember. Week 2: Se rappeler = recall. Week
+        3: Other reflexive pairs. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Reflexive or Not?
+      type: sentence-rewrite
+      description: Rewrite 10 French reflexive sentences in English.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  register:
+    interference_patterns:
+    - pattern: Use of tu in formal contexts
+      example_l1: Tu peux m'aider?
+      example_gloss: You can help me?
+      example_wrong: Tu can help me? (in a formal email)
+      example_correct: Could you help me? / Would you be able to help me?
+      explanation: French uses 'tu' (informal you) and 'vous' (formal you) but learners
+        may not map this to English register differences.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French has tu/vous distinction for formality. English uses the
+      same pronoun 'you' but expresses formality through modal verbs and phrasing.
+    teacher_tips:
+      how_to_explain: 'Teach: English shows formality through word choice, not pronouns.
+        Could you...? (formal) vs Can you...? (informal).'
+      where_to_start: Start with modal verb formality (can/could, will/would). Then
+        teach formal vocabulary.
+      sequencing: 'Week 1: Modal formality. Week 2: Formal vocabulary. Week 3: Email
+        register. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Formal or Informal
+      type: sentence-rewrite
+      description: Rewrite 10 informal sentences in formal register.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  discourse_markers:
+    interference_patterns:
+    - pattern: Use of 'alors' as a filler
+      example_l1: Alors, je pense que...
+      example_gloss: So, I think that...
+      example_wrong: So, so, so... I think that...
+      example_correct: Well, I think that... / I think that...
+      explanation: French uses 'alors' as a discourse filler. English uses 'well',
+        'so', or simply starts the sentence.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 1
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French discourse markers (alors, bon, eh bien) don't map directly
+      to English. French learners may overuse 'so' as a filler.
+    teacher_tips:
+      how_to_explain: 'Teach: English fillers include ''well'', ''so'', ''you know''.
+        Use them sparingly.'
+      where_to_start: Start with common English discourse markers. Then teach when
+        to omit them.
+      sequencing: 'Week 1: Common discourse markers. Week 2: When to use them. Week
+        3: When to omit. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Filler Audit
+      type: error-correction
+      description: Remove unnecessary fillers from 10 sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  idiomatic_expressions:
+    interference_patterns:
+    - pattern: Literal translation of idioms
+      example_l1: Il pleut des cordes
+      example_gloss: It rains ropes
+      example_wrong: It rains ropes.
+      example_correct: It's raining cats and dogs.
+      explanation: French idioms often don't translate literally. French learners
+        may translate idioms word-for-word.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Every language has unique idioms. French idioms (il pleut des
+      cordes, avoir le cafard) don't map to English equivalents.
+    teacher_tips:
+      how_to_explain: 'Teach: Idioms don''t translate literally. Learn the English
+        equivalent as a whole phrase.'
+      where_to_start: Start with the most common French-English idiom pairs.
+      sequencing: 'Week 1: Weather idioms. Week 2: Body idioms. Week 3: Animal idioms.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Idiom Match
+      type: matching
+      description: Match 15 French idioms to English equivalents.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  connectors_logical:
+    interference_patterns:
+    - pattern: Use of 'en effet' for emphasis
+      example_l1: En effet, c'est vrai
+      example_gloss: In effect, it's true
+      example_wrong: In effect, this is true.
+      example_correct: Indeed, this is true. / In fact, this is true.
+      explanation: French 'en effet' maps to English 'indeed' or 'in fact', not the
+        literal 'in effect'.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French logical connectors (en effet, par contre, d'ailleurs) have
+      specific English equivalents that differ from literal translations.
+    teacher_tips:
+      how_to_explain: 'Teach: en effet = indeed/in fact. par contre = on the other
+        hand. d''ailleurs = moreover/by the way.'
+      where_to_start: Start with the most common French-English connector pairs.
+      sequencing: 'Week 1: En effet = indeed. Week 2: Par contre = on the other hand.
+        Week 3: D''ailleurs = moreover. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Connector Translation
+      type: translation
+      description: Translate 15 French connector sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  tense_aspect:
+    interference_patterns:
+    - pattern: Use of imparfait for past habit
+      example_l1: Quand j'étais petit, je jouais
+      example_gloss: When I was small, I played (imperfective)
+      example_wrong: When I was small, I was playing every day.
+      example_correct: When I was small, I used to play every day. / I would play
+        every day.
+      explanation: French imparfait covers both past progressive and habitual past.
+        English distinguishes 'used to' and 'would' for habits.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French imparfait covers a broad range of past meanings. English
+      has more specific forms for habitual past (used to, would).
+    teacher_tips:
+      how_to_explain: 'Teach: used to + verb for past habits. Would + verb for repeated
+        past actions. Simple past for completed actions.'
+      where_to_start: Start with 'used to'. Then teach 'would' for habits. Then contrast
+        with simple past.
+      sequencing: 'Week 1: Used to. Week 2: Would for habits. Week 3: Simple past
+        vs used to. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Habitual Past
+      type: sentence-rewrite
+      description: Rewrite 10 sentences using used to/would.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  partitive_article:
+    interference_patterns:
+    - pattern: Omission of some/any with partitives
+      example_l1: Je veux du pain
+      example_gloss: I want of-the bread
+      example_wrong: I want bread.
+      example_correct: I want some bread.
+      explanation: French partitive articles (du, de la, des) often translate to English
+        'some' or nothing. French learners may omit 'some' where it's needed.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French partitive articles (du, de la, des) indicate an unspecified
+      quantity. English uses 'some' or no article.
+    teacher_tips:
+      how_to_explain: 'Teach: du/de la/des = some (or nothing in general statements).
+        I want some bread. I like bread (general).'
+      where_to_start: Start with partitive = some. Then teach when to omit.
+      sequencing: 'Week 1: Partitive = some. Week 2: When to omit. Week 3: Countable
+        vs uncountable. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Some or Nothing
+      type: fill-in-the-blank
+      description: 20 sentences choosing some or no article.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  demonstratives:
+    interference_patterns:
+    - pattern: Use of -ci/-là suffixes
+      example_l1: Ce livre-ci
+      example_gloss: This book-here
+      example_wrong: This here book.
+      example_correct: This book.
+      explanation: French uses -ci (this) and -là (that) suffixes on demonstratives.
+        English uses 'this' and 'that' alone.
+      frequency: 2
+      persistence: 1
+      communicative_impact: 1
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French demonstratives have proximity markers (-ci = near, -là
+      = far). English uses separate words (this/that).
+    teacher_tips:
+      how_to_explain: 'Teach: English uses ''this'' (near) and ''that'' (far). No
+        suffix needed.'
+      where_to_start: Start with this/that distinction.
+      sequencing: 'Week 1: This vs that. Week 2: These vs those. Week 3: Demonstrative
+        pronouns. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: This or That
+      type: fill-in-the-blank
+      description: 15 sentences choosing this/that/these/those.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  numbers:
+    interference_patterns:
+    - pattern: Use of comma for decimal separator
+      example_l1: 3,14
+      example_gloss: 3 comma 14
+      example_wrong: The value is 3,14.
+      example_correct: The value is 3.14.
+      explanation: French uses comma for decimals and period for thousands. English
+        reverses this convention.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French number formatting (1.000,50) is the reverse of English
+      (1,000.50). French learners may transfer the French convention.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses period for decimals, comma for thousands.
+        Drill: 3.14 (three point one four).'
+      where_to_start: Start with decimal numbers. Then teach thousands separators.
+      sequencing: 'Week 1: Decimal numbers. Week 2: Thousands. Week 3: Saying numbers
+        aloud. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Number Format
+      type: sentence-rewrite
+      description: Rewrite 10 French-formatted numbers in English format.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  punctuation_conventions:
+    interference_patterns:
+    - pattern: Space before punctuation marks
+      example_l1: Bonjour ! Comment allez-vous ?
+      example_gloss: Hello! How are you?
+      example_wrong: Hello ! How are you ?
+      example_correct: Hello! How are you?
+      explanation: French puts a space before exclamation and question marks. English
+        does not.
+      frequency: 2
+      persistence: 1
+      communicative_impact: 1
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: 'French punctuation conventions include spaces before !, ?, :
+      and ;. English puts no space before these marks.'
+    teacher_tips:
+      how_to_explain: 'Teach: English punctuation has NO space before it. Write: Hello!
+        (not Hello !).'
+      where_to_start: Start with exclamation and question marks. Then teach colons
+        and semicolons.
+      sequencing: 'Week 1: ! and ? spacing. Week 2: : and ; spacing. Week 3: Quotation
+        marks. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Punctuation Cleanup
+      type: error-correction
+      description: Fix spacing in 10 French-punctuated sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  date_format:
+    interference_patterns:
+    - pattern: Day-month-year date format
+      example_l1: 15/03/2024
+      example_gloss: 15/03/2024
+      example_wrong: The meeting is on 15/03/2024.
+      example_correct: The meeting is on March 15, 2024. / 03/15/2024.
+      explanation: French uses day-month-year format. English uses month-day-year
+        (US) or day-month-year (UK).
+      frequency: 2
+      persistence: 1
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French dates are written day/month/year. US English uses month/day/year.
+      This can cause confusion (03/04 = March 4 in US, April 3 in FR).
+    teacher_tips:
+      how_to_explain: 'Teach: US format is month/day/year. Write out the month to
+        avoid confusion: March 4, 2024.'
+      where_to_start: Start with US date format. Then teach writing dates with month
+        names.
+      sequencing: 'Week 1: Month/day/year. Week 2: Writing out dates. Week 3: Abbreviated
+        dates. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Date Conversion
+      type: sentence-rewrite
+      description: Convert 10 French dates to US English format.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  agreement_gender:
+    interference_patterns:
+    - pattern: Gender agreement in adjectives
+      example_l1: Elle est très contente
+      example_gloss: She is very happy (feminine)
+      example_wrong: She is very happy (using feminine form).
+      example_correct: She is very happy.
+      explanation: French adjectives agree in gender with the noun. English adjectives
+        have no gender agreement.
+      frequency: 2
+      persistence: 1
+      communicative_impact: 1
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French adjectives change form based on the gender of the noun
+      (content/contente). English adjectives are invariable.
+    teacher_tips:
+      how_to_explain: 'Teach: English adjectives never change form. Happy is always
+        happy, regardless of gender.'
+      where_to_start: Start with the concept that English adjectives don't change.
+      sequencing: 'Week 1: Adjective invariance. Week 2: Spelling patterns. Week 3:
+        Practice. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Adjective Form
+      type: fill-in-the-blank
+      description: 15 sentences using correct adjective form.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  inversion_questions:
+    interference_patterns:
+    - pattern: Subject-verb inversion in questions
+      example_l1: Aimes-tu le café?
+      example_gloss: Like-you the coffee?
+      example_wrong: Like you coffee?
+      example_correct: Do you like coffee?
+      explanation: French forms yes/no questions by inverting subject and verb. English
+        uses do-support.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French forms questions by inverting the subject and verb (aimes-tu
+      = like you). English uses do/does/did + subject + base verb.
+    teacher_tips:
+      how_to_explain: 'Teach: English questions need do/does/did (except with ''be''
+        and modals). Do you like? (not Like you?).'
+      where_to_start: Start with do/does questions. Then teach did for past.
+      sequencing: 'Week 1: Do/does questions. Week 2: Did questions. Week 3: Questions
+        with be. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Question Formation
+      type: sentence-rewrite
+      description: Convert 15 statements to questions.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  ne_explétif:
+    interference_patterns:
+    - pattern: Omission of ne explétif
+      example_l1: J'ai peur qu'il ne pleuve
+      example_gloss: I fear that it not rain
+      example_wrong: I'm afraid that it not rain.
+      example_correct: I'm afraid it might rain.
+      explanation: French uses 'ne explétif' (a non-negative 'ne') after certain expressions.
+        English has no equivalent.
+      frequency: 2
+      persistence: 1
+      communicative_impact: 1
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French 'ne explétif' appears after expressions of fear, doubt,
+      and prevention. It doesn't negate — it's a grammatical marker. English has no
+      equivalent.
+    teacher_tips:
+      how_to_explain: 'Teach: Ignore the French ''ne explétif''. It doesn''t mean
+        ''not'' — it''s just a French grammar rule.'
+      where_to_start: Start with common expressions that use ne explétif.
+      sequencing: 'Week 1: Ne explétif expressions. Week 2: Translation practice.
+        Week 3: Review. Week 4: Test.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Ne Explétif Translation
+      type: translation
+      description: Translate 10 French ne explétif sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  disjunctive_pronouns:
+    interference_patterns:
+    - pattern: Use of disjunctive pronouns after prepositions
+      example_l1: Je pense à lui
+      example_gloss: I think to him
+      example_wrong: I think to him.
+      example_correct: I think about him.
+      explanation: French uses disjunctive (stressed) pronouns (moi, toi, lui) after
+        prepositions. English uses object pronouns.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French has disjunctive pronouns (moi, toi, lui, elle, nous, vous,
+      eux, elles) used after prepositions and for emphasis. English uses the same
+      object pronouns throughout.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses him/her/them after prepositions. About
+        him (not to him for ''think about'').'
+      where_to_start: Start with common preposition + pronoun combinations.
+      sequencing: 'Week 1: Preposition + pronoun. Week 2: Think about/of. Week 3:
+        Other verb + preposition. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Pronoun After Preposition
+      type: fill-in-the-blank
+      description: 15 sentences with correct pronoun form.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  sequence_of_tenses:
+    interference_patterns:
+    - pattern: Use of subjunctive after past tense
+      example_l1: Je voulais qu'il vienne
+      example_gloss: I wanted that he come (subjunctive)
+      example_wrong: I wanted that he come.
+      example_correct: I wanted him to come.
+      explanation: French uses the subjunctive mood after expressions of desire, doubt,
+        and emotion. English uses infinitive constructions.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French requires subjunctive after expressions of desire, doubt,
+      and emotion. English uses infinitive (want someone to do) or indicative.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses ''want + person + to + verb''. I want him
+        to come (not I want that he come).'
+      where_to_start: Start with want/wish + person + to. Then teach suggest/recommend
+        + that + base form.
+      sequencing: 'Week 1: Want/wish + to. Week 2: Suggest/recommend + that. Week
+        3: Other subjunctive triggers. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Subjunctive to Infinitive
+      type: sentence-rewrite
+      description: Rewrite 10 French subjunctive sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  compound_nouns:
+    interference_patterns:
+    - pattern: Reversed noun order in compounds
+      example_l1: Un mouchoir de poche
+      example_gloss: A handkerchief of pocket
+      example_wrong: A pocket of handkerchief.
+      example_correct: A pocket handkerchief.
+      explanation: French compound nouns often reverse the English order (noun + de
+        + noun vs noun + noun).
+      frequency: 2
+      persistence: 1
+      communicative_impact: 1
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French compound nouns use 'de' between elements (mouchoir de poche).
+      English compounds put nouns side by side (pocket handkerchief).
+    teacher_tips:
+      how_to_explain: 'Teach: English compounds: noun + noun. Pocket handkerchief,
+        bus stop, coffee cup.'
+      where_to_start: Start with common compound nouns. Then teach the pattern.
+      sequencing: 'Week 1: Common compounds. Week 2: Noun + noun pattern. Week 3:
+        Hyphenated compounds. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Compound Formation
+      type: matching
+      description: Match 15 French compound nouns to English equivalents.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  expletive_ne:
+    interference_patterns:
+    - pattern: Use of ne in comparative
+      example_l1: Il est plus grand que moi
+      example_gloss: He is more tall than me
+      example_wrong: He is more tall than me not.
+      example_correct: He is taller than me.
+      explanation: French uses 'ne' in comparative constructions (plus...ne, moins...ne).
+        English has no equivalent.
+      frequency: 2
+      persistence: 1
+      communicative_impact: 1
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French comparatives sometimes include a non-negative 'ne' (il
+      est plus grand qu'il ne le pense). English has no equivalent.
+    teacher_tips:
+      how_to_explain: 'Teach: English comparatives don''t have a ''ne'' equivalent.
+        Just use more/less + adjective + than.'
+      where_to_start: Start with basic comparatives. Then teach the French ne explétif
+        in comparisons.
+      sequencing: 'Week 1: Basic comparatives. Week 2: More/less + adjective + than.
+        Week 3: As...as. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Comparative Formation
+      type: sentence-rewrite
+      description: Rewrite 10 French comparative sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  formal_register:
+    interference_patterns:
+    - pattern: Use of nous instead of on
+      example_l1: Nous allons au cinéma
+      example_gloss: We go to the cinema
+      example_wrong: We go to the cinema (using formal nous).
+      example_correct: We're going to the movies.
+      explanation: French uses 'on' for informal 'we' and 'nous' for formal. English
+        uses 'we' for all registers.
+      frequency: 2
+      persistence: 1
+      communicative_impact: 1
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: 'French has two forms for ''we'': ''on'' (informal) and ''nous''
+      (formal). English uses ''we'' for all contexts.'
+    teacher_tips:
+      how_to_explain: 'Teach: English ''we'' works in all registers. No need to choose
+        between formal and informal forms.'
+      where_to_start: Start with the concept that English pronouns don't change for
+        register.
+      sequencing: 'Week 1: We in all registers. Week 2: You (tu/vous) in English.
+        Week 3: Formal vs informal vocabulary. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Register Practice
+      type: sentence-rewrite
+      description: Rewrite 10 formal French sentences in English.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  clitic_pronouns:
+    interference_patterns:
+    - pattern: Pre-verbal pronoun placement
+      example_l1: Je le lui donne
+      example_gloss: I it to-him give
+      example_wrong: I it give to him.
+      example_correct: I give it to him.
+      explanation: French places object pronouns before the verb. English places them
+        after the verb.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French clitic pronouns (me, te, le, la, les, lui, leur) go before
+      the verb. English object pronouns go after the verb.
+    teacher_tips:
+      how_to_explain: 'Teach: English pronouns go AFTER the verb. Give it to me (not
+        give me it in standard English).'
+      where_to_start: Start with simple pronoun placement. Then teach double object
+        pronouns.
+      sequencing: 'Week 1: Pronoun after verb. Week 2: Double objects. Week 3: Pronoun
+        order. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Pronoun Placement
+      type: sentence-rewrite
+      description: Rewrite 10 French pronoun sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  negation_complex:
+    interference_patterns:
+    - pattern: Use of ne...jamais for never
+      example_l1: Je ne mange jamais de viande
+      example_gloss: I not eat never of meat
+      example_wrong: I eat never meat.
+      example_correct: I never eat meat.
+      explanation: French negation wraps the verb (ne...jamais, ne...rien, ne...plus).
+        English places 'never', 'nothing', 'no longer' after the auxiliary.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French negation uses two-part structures (ne...jamais, ne...rien,
+      ne...plus, ne...personne). English uses single words (never, nothing, no longer,
+      nobody).
+    teacher_tips:
+      how_to_explain: 'Teach: never = ne...jamais. nothing = ne...rien. nobody = ne...personne.
+        One word in English, two in French.'
+      where_to_start: Start with never/nothing/nobody. Then teach no longer/no more.
+      sequencing: 'Week 1: Never and nothing. Week 2: Nobody and nowhere. Week 3:
+        No longer/no more. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Negation Translation
+      type: translation
+      description: Translate 15 French negation sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  article_omission:
+    interference_patterns:
+    - pattern: Omission of article with languages
+      example_l1: Je parle français
+      example_gloss: I speak French
+      example_wrong: I speak the French.
+      example_correct: I speak French.
+      explanation: French omits articles before language names. English also omits
+        them, but learners may add them by analogy with other nouns.
+      frequency: 2
+      persistence: 1
+      communicative_impact: 1
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Omission of article with seasons
+      example_l1: En été, il fait chaud
+      example_gloss: In summer, it is hot
+      example_wrong: In the summer, it is hot.
+      example_correct: In summer, it is hot. / In the summer, it is hot.
+      explanation: French omits articles before seasons (en été). English can use
+        or omit 'the' before seasons.
+      frequency: 2
+      persistence: 1
+      communicative_impact: 1
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French and English both omit articles before language names and
+      seasons, but the rules differ in subtle ways.
+    teacher_tips:
+      how_to_explain: 'Teach: I speak French (no article). In summer / In the summer
+        (both OK in English).'
+      where_to_start: Start with language names. Then teach seasons.
+      sequencing: 'Week 1: Languages (no article). Week 2: Seasons. Week 3: Other
+        article omissions. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Article or Not
+      type: fill-in-the-blank
+      description: 15 sentences choosing correct article usage.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English Ch. 6
+  left_displacement:
+    interference_patterns:
+    - pattern: Left dislocation for emphasis
+      example_l1: Le livre, je l'ai lu
+      example_gloss: the book, I it-have read
+      example_wrong: The book, I read it.
+      example_correct: I read the book. / As for the book, I read it.
+      explanation: French uses left dislocation (Le livre, je l'ai lu) for emphasis.
+        English uses topicalization or cleft sentences.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French uses left dislocation frequently for topicalization (Le
+      livre, je l'ai lu). English uses different topicalization strategies.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses stress or cleft sentences for emphasis.
+        I read the book (stress on book) or It was the book that I read.'
+      where_to_start: Start with stress for emphasis. Then teach cleft sentences.
+      sequencing: 'Week 1: Stress. Week 2: Cleft sentences. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Emphasis Practice
+      type: sentence-rewrite
+      description: Rewrite 10 French left-dislocation sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  y_en_pronouns:
+    interference_patterns:
+    - pattern: Use of y and en pronouns
+      example_l1: J'y vais / J'en veux
+      example_gloss: I there-go / I of-it-want
+      example_wrong: I go there / I want of it.
+      example_correct: I go there / I want some.
+      explanation: French has unique pronouns y (there/it) and en (of it/some) that
+        have no direct English equivalents.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: French pronouns y and en replace prepositional phrases. English
+      uses full phrases.
+    teacher_tips:
+      how_to_explain: 'Teach: y = there. en = some/of it. I go there (not I y go).'
+      where_to_start: Start with y = there. Then teach en = some.
+      sequencing: 'Week 1: Y pronoun. Week 2: En pronoun. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Pronoun Translation
+      type: translation
+      description: Translate 15 French y/en sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English

@@ -14,8 +14,18 @@ meaning:
   ccqs:
   - question: Is the action ongoing or completed?
     answer: Ongoing = continuous, completed = perfect
+    purpose: Tests whether the learner understands that '-ed' adjectives describe
+      how someone feels (experiencer) while '-ing' adjectives describe what causes
+      the feeling (stimulus).
   - question: Does the infinitive show aspect?
     answer: Yes — continuous or perfect infinitive.
+    purpose: Tests whether the learner can distinguish between existential 'there'
+      (indicating existence) and dummy 'it' (used for weather, time, distance). Confusing
+      these is a very common beginner error.
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      continuous perfect infinitive and explain why they are incorrect.
   example_generator:
     contexts:
     - after certain verbs
@@ -94,8 +104,8 @@ teaching:
     adaptation_notes: Students transform simple infinitives into continuous/perfect
       forms.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17:
+    Complementation, §17.1-17.4'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -104,15 +114,53 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for continuous_perfect_infinitive.
-  correction: Correct form.
-  explanation: This is a common error for continuous_perfect_infinitive.
+- error: '*He seems to works very hard.*'
+  correction: He seems to work very hard.
+  explanation: After infinitive 'to', always use the base form of the verb (without
+    -s). Adding third-person -s to an infinitive verb is a common agreement error.
   l1_groups:
   - Portuguese
   - Spanish
+  - Chinese
+  - Arabic
+- error: '*I would like to have been travel the world.*'
+  correction: I would like to have travelled the world.
+  explanation: After 'to have', use the past participle (not base verb). Perfect infinitive
+    = to have + past participle. Using the base form shows incomplete acquisition
+    of the perfect infinitive structure.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Chinese
+- error: '*She is said being the best doctor.*'
+  correction: She is said to be the best doctor.
+  explanation: After passive reporting verbs, use 'to + infinitive', not '-ing'. The
+    structure is 'be said to be' or 'be said to do'. Learners who overgeneralize progressive
+    forms might use '-ing' here.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Chinese
+- error: '*He seems to has finished the project.*'
+  correction: He seems to have finished the project.
+  explanation: After infinitive 'to', use the base form 'have' (not 'has'). Third-person
+    singular -s is never added to infinitive verbs.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Arabic
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, this structure is standard and expected. Register variation
+    is marked by vocabulary and style rather than grammatical form.
+- note: In formal writing, avoid contractions and use full forms.
+- note: In conversation, contractions and reduced forms are common.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used in everyday communication.
+- note: In academic writing, this structure appears in formal contexts and is a marker
+    of proficient English.
+- note: In professional contexts, correct use of this structure is expected in formal
+    writing.

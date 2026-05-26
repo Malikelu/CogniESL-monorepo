@@ -22,6 +22,16 @@ cairosvg
 weasyprint
 html2text
 
+# Email delivery (Phase 5)
+resend>=0.7.0
+
+# Auth (Phase 6)
+bcrypt>=4.0.0
+python-jose[cryptography]>=3.3.0
+
+# Billing (Phase B)
+stripe>=7.0.0
+
 # Image generation
 fal-client
 httpx

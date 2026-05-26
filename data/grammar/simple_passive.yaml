@@ -12,18 +12,28 @@ meaning:
   ccqs:
   - question: Is the focus on the action or the doer?
     answer: Action/receiver = passive.
+    purpose: Tests whether the learner understands the fundamental purpose of the
+      passive voice -- to shift focus from the agent (doer) to the action and its
+      recipient, which is the core reason for choosing passive over active.
   - question: Do we know who did it?
     answer: No or it is not important = passive.
-  example_generator:
-    contexts:
-    - news reports
-    - process descriptions
-    - formal writing
-    - when doer is unknown
-    cultural_notes:
-    - Passive is very common in news, science, and formal writing
-    - Some languages use passive much less frequently
-    min_examples: 5
+    purpose: Tests whether the learner can identify the most common pragmatic triggers
+      for using the passive -- when the agent is unknown, irrelevant, or obvious --
+      which guides them in choosing active vs passive voice.
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      simple passive and explain why they are incorrect.
+example_generator:
+  contexts:
+  - news reports
+  - process descriptions
+  - formal writing
+  - when doer is unknown
+  cultural_notes:
+  - Passive is very common in news, science, and formal writing
+  - Some languages use passive much less frequently
+  min_examples: 5
 form:
   affirmative:
     structure: 'Present: am/is/are + past participle / Past: was/were + past participle'
@@ -50,7 +60,7 @@ sub_rules:
   type: grammatical
   examples:
   - The book was written by Shakespeare. (important)
-  - My bike was stolen. (unknown doer — no by)
+  - My bike was stolen. (unknown doer -- no by)
 - rule: Passive is common in news, science, and formal writing
   type: register
   examples:
@@ -90,8 +100,8 @@ teaching:
     duration: 15
     adaptation_notes: Students rewrite news headlines in passive voice.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8:
+    Passive Voice, §8.1-8.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -100,15 +110,38 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for simple_passive.
-  correction: Correct form.
-  explanation: This is a common error for simple_passive.
+- error: 'Using passive with intransitive verbs: *''The accident was happened.'''
+  correction: The accident happened.
+  explanation: Intransitive verbs (happen, arrive, sleep, die) cannot be made passive
+    because they have no direct object to become the subject of a passive sentence.
+    Only transitive verbs take the passive voice.
   l1_groups:
   - Portuguese
   - Spanish
+  - Chinese
+- error: 'Including unnecessary ''by'' agent: *''My bike was stolen by someone.'''
+  correction: My bike was stolen.
+  explanation: When the agent is unknown or unimportant, there is no need to include
+    it. Adding 'by someone' sounds unnatural because it adds information that is already
+    obvious or irrelevant.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Japanese
+- error: 'Forming passive with base participle: *''The letter was send.'''
+  correction: The letter was sent.
+  explanation: The passive voice requires a past participle, not the base form of
+    the verb. Regular verbs like 'send' have an irregular past participle (sent).
+    This is a common formation error at B1 level.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Korean
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: The passive voice is standard in news, science, academic writing, and formal
+    contexts. Overuse in casual speech can sound unnatural.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: Extremely common in news headlines, scientific writing (methods sections),
+    and formal reports. In everyday speech, used less frequently.

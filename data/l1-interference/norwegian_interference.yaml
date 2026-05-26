@@ -1,116 +1,54 @@
 language: Norwegian
 language_code: 'no'
-schema_version: '3.0'
+schema_version: '4.0'
 grammar_points:
   articles:
     interference_patterns:
-    - pattern: Omission of indefinite article after aa vaere (to be) for professions
-      example: 'Norwegian: ''Jeg er laerer'' (I am teacher). Learner says ''I am teacher''
-        instead of ''I am a teacher.'''
-      frequency: 4
-      persistence: 3
-      communicative_impact: 2
-    - pattern: Confusion of definite article placement (postposed suffix vs. preposed)
-      example: 'Norwegian attaches the definite article as a suffix: ''bilen'' (car+the
-        = the car), ''huset'' (house+the = the house). Learners may say ''car the''
-        or omit ''the'' entirely.'
+    - pattern: Omission of indefinite article after a vaere (to be)
+      example: Omission of indefinite article after a vaere (to be)
       frequency: 4
       persistence: 3
       communicative_impact: 3
-    - pattern: Overuse of definite article with generic/general nouns
-      example: Norwegian uses the definite form for generic reference more freely
-        than English. Learner says 'The cats are cute animals' instead of 'Cats are
-        cute animals.'
-      frequency: 3
-      persistence: 2
-      communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Omission of indefinite article after a vaere
+        (to be).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Jeg er laerer.
       correct: I am a teacher.
-      no_original: Jeg er laerer.
-      gloss: I am teacher.
-      explanation: 'Norwegian omits the indefinite article after ''aa vaere'' (to
-        be) when stating professions. English requires ''a/an'': ''I am a teacher.'''
-    - wrong: Bilen er roed.
-      correct: The car is red.
-      no_original: Bilen er roed.
-      gloss: Car+the is red.
-      explanation: Norwegian 'bilen' = 'bil' (car) + '-en' (definite suffix). The
-        article is attached to the end of the noun. English places 'the' before the
-        noun.
-    - wrong: I bought car yesterday.
-      correct: I bought the car yesterday.
-      no_original: Jeg kjoepte bilen i går.
-      gloss: I bought car+the yesterday.
-      explanation: Norwegian 'bilen' has the definite suffix '-en.' Learners may not
-        realize this suffix corresponds to English 'the' and omit it.
-    - wrong: The dogs are loyal animals.
-      correct: Dogs are loyal animals.
-      no_original: Hunder er lojale dyr.
-      gloss: Dogs are loyal animals.
-      explanation: 'Norwegian can use the definite form ''hundene'' (the dogs) for
-        generic reference. English uses zero article for generic plural statements:
-        ''Dogs are loyal animals.'''
-    why_it_happens: 'Norwegian has a two-part article system that differs from English
-      in two fundamental ways. First, Norwegian has preposed indefinite articles (''en''
-      for masculine, ''ei'' for feminine, ''et'' for neuter — ''en bil'' = a car,
-      ''et hus'' = a house) but the definite article is attached as a SUFFIX to the
-      noun (''bilen'' = the car, ''huset'' = the house). This means Norwegian learners
-      must learn to move the definite marker from the end of the noun to the beginning
-      — a significant structural shift. Second, Norwegian omits the indefinite article
-      after ''aa vaere'' (to be) when stating professions and nationalities: ''Jeg
-      er laerer'' (I am teacher), ''Han er nordmann'' (He is Norwegian). English requires
-      ''a/an'' in these contexts. Third, Norwegian uses the definite form more freely
-      for generic reference than English does. These three differences create systematic,
-      predictable error patterns that are very similar to Danish interference patterns.'
+    why_it_happens: Norwegian omits the indefinite article after a vaere (to be) for
+      professions.
     teacher_tips:
-      how_to_explain: 'Explain that Norwegian and English both have ''a'' and ''the,''
-        but they work differently. (1) Indefinite: Norwegian ''en/ei/et'' = English
-        ''a/an'' — same position (before the noun), but Norwegian drops it after ''to
-        be'' for professions. English NEVER drops it. (2) Definite: Norwegian adds
-        ''-en/-et/-a'' to the END of the noun. English puts ''the'' at the BEGINNING.
-        Use a visual: write ''bil-en'' on the left and ''the car'' on the right, draw
-        arrows showing the article moving from end to beginning. (3) For generic nouns,
-        English often uses zero article where Norwegian uses the definite form.'
-      where_to_start: 'Start with the profession pattern since it''s the most frequent
-        error: drill ''I am a + profession,'' ''She is a + profession'' until automatic.
-        Then teach the suffix-to-prefix shift for ''the.'' Finally, address generic/plural
-        zero article.'
-      sequencing: 'Week 1: Indefinite article a/an — focus on professions and after
-        ''to be.'' Week 2: Definite article the — teach the Norwegian suffix-to-English
-        prefix shift. Week 3: Contrast a/an vs the; introduce zero article with plurals
-        and generics. Week 4: Mixed practice — reading and writing tasks requiring
-        all article choices.'
+      how_to_explain: 'Teach: English REQUIRES articles. ''A/an'' for first mention,
+        ''the'' for specific.'
+      where_to_start: Start with the articles pattern.
+      sequencing: 'Week 1: articles. Week 2: Practice. Week 3: Review. Week 4: Mixed.'
       exercises:
-      - name: Profession Drill
-        type: fill-in-the-blank
-        description: '15 sentences: ''He is ___ doctor. She is ___ engineer. They
-          are ___ students.'' Focus on always including a/an after ''to be'' with
-          professions.'
-        duration: 10
-      - name: Suffix to Prefix
-        type: translation
-        description: 10 Norwegian sentences with postposed definite articles (e.g.,
-          'Huset er stort') that learners translate to English, consciously moving
-          the article from suffix to preposed position.
-        duration: 15
-      - name: Article Choice
-        type: fill-in-the-blank
-        description: 20 sentences requiring a/an, the, or zero article. Include generic/plural
-          nouns where Norwegian would use the definite form but English uses zero
-          article.
-        duration: 15
-      - name: Proofread a Letter
+      - name: articles Audit
         type: error-correction
-        description: A short letter written by a fictional Norwegian learner with
-          10 article errors (omissions after 'to be,' missing 'the,' overuse of 'the'
-          with generics).
+        description: 20 sentences with articles errors.
         duration: 15
-    sources:
-    - Swan & Smith "Learner English" (Scandinavian)
+      - name: articles Translation
+        type: translation
+        description: Translate 15 sentences focusing on articles.
+        duration: 15
+      - name: articles Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing articles.
+        duration: 10
+      - name: articles Error Hunt
+        type: error-correction
+        description: A paragraph with 10 articles errors.
+        duration: 15
+    sources: &id001
+    - Swan & Smith "Learner English" (Norwegian)
     - Parrott "Grammar for English Language Teachers"
-    - Celce-Murcia & Larsen-Freeman "The Grammar Book"
-    source_count: 3
+    source_count: 2
     source_type: textbook
     frequency: 4
     persistence: 3
@@ -119,35 +57,26 @@ grammar_points:
     tier: 1
     source_rank: 1
     citations:
-    - claim: Norwegian has postposed definite articles (suffixes) and preposed indefinite
-        articles; this causes word order transfer errors
+    - claim: Interference pattern for articles
       source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
         and Other Problems'', 2nd ed., Cambridge University Press'
       location: 'Chapter: Scandinavian speakers, pp. 20-35'
       tier: 1
-    - claim: Norwegian omits the indefinite article after 'aa vaere' (to be) for professions
-        and nationalities
-      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
-        and Other Problems'', 2nd ed., Cambridge University Press'
-      location: 'Chapter: Scandinavian speakers, pp. 20-35'
-      tier: 1
-    - claim: The Norwegian definite suffix -en/-et/-a corresponds to English 'the'
-        but differs in position
-      source: Faarlund, J.T., Lie, S. & Vannebo, K.I. (1997) 'Norsk referansegrammatikk',
-        Universitetsforlaget
-      location: 'Chapter 4: Substantivfrasen'
-      tier: 1
-    - claim: Article systems vary significantly across languages; Scandinavian suffix
-        articles are particularly challenging
+    - claim: 'Grammar point: articles'
       source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
         Press
-      location: 'Chapter: Determiners and articles'
+      location: See relevant grammar point section
       tier: 2
-    - claim: Generic reference uses different article strategies across languages;
-        Scandinavian languages use definite forms more freely
-      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
-        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
-      location: pp. 309-315
+    - claim: Article usage varies significantly across languages; many languages have
+        no article system
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See articles entries 133-142
+      tier: 2
+    - claim: ELLs commonly omit indefinite article when descriptive adjectives come
+        between determiner and noun
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 153
       tier: 2
   word_order:
     interference_patterns:
@@ -156,6 +85,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: V2 word order transfer.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Yesterday went I to school.
       correct: Yesterday I went to school.
@@ -181,9 +118,7 @@ grammar_points:
         type: error-correction
         description: A paragraph with 10 word order errors.
         duration: 15
-    sources: &id001
-    - Swan & Smith "Learner English" (Norwegian)
-    - Parrott "Grammar for English Language Teachers"
+    sources: *id001
     source_count: 2
     source_type: textbook
     frequency: 4
@@ -241,6 +176,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Subject-verb inversion without do-support.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Go you to school?
       correct: Do you go to school?
@@ -300,6 +243,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Use of ikke after the verb.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I know not the answer.
       correct: I do not know the answer.
@@ -363,6 +314,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Confusion of /v/ and /w/.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I am wery happy.
       correct: I am very happy.
@@ -434,6 +393,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Pluralization of uncountable nouns (norwegian).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I have many homeworks.
       correct: I have a lot of homework.
@@ -499,6 +466,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Omission of third-person -s (norwegian).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: She like chocolate.
       correct: She likes chocolate.
@@ -568,6 +543,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Transfer of norwegian prepositions.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I am on home.
       correct: I am at home.
@@ -639,6 +622,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Avoidance of passive voice (norwegian).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Someone built this house in 1900.
       correct: This house was built in 1900.
@@ -701,6 +692,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Conditional structure (norwegian).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: If I would have money, I would travel.
       correct: If I had money, I would travel.
@@ -764,6 +763,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Relative pronoun (norwegian).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: The man which I met is my boss.
       correct: The man who I met is my boss.
@@ -829,6 +836,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: No backshift of tenses (norwegian).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: She said that she is tired.
       correct: She said that she was tired.
@@ -892,6 +907,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Comparative formation (norwegian).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: This car is more big than that one.
       correct: This car is bigger than that one.
@@ -956,6 +979,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Linking words (norwegian).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: But, I think we should go.
       correct: However, I think we should go.
@@ -1020,6 +1051,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Modal verbs (norwegian).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I can have some water?
       correct: May I have some water?
@@ -1083,6 +1122,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Gerund vs infinitive (norwegian).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Before to leave, say goodbye.
       correct: Before leaving, say goodbye.
@@ -1146,6 +1193,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Adjective vs adverb (norwegian).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: He runs very fastly.
       correct: He runs very fast.
@@ -1210,6 +1265,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Confusion of NO-EN cognates.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Actually, I work in a bank.
       correct: Currently, I work in a bank.
@@ -1266,3 +1329,1071 @@ grammar_points:
         A Practical Handbook'', University of Michigan Press'
       location: p. 213
       tier: 2
+  articles_advanced:
+    interference_patterns:
+    - pattern: Definite article overgeneralization
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: I went to the school.
+      example_correct: I went to school.
+      explanation: Norwegian uses definite articles in contexts where English omits
+        them (school, church, bed).
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Article omission with abstract nouns
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: Patience is important.
+      example_correct: Patience is important.
+      explanation: Norwegian may use articles with abstract nouns where English omits
+        them.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian article usage differs from English in several contexts,
+      leading to overgeneralization or omission errors.
+    teacher_tips:
+      how_to_explain: 'Teach: English omits articles before school, church, bed, work,
+        home (when used in their primary sense).'
+      where_to_start: Start with the most common article errors.
+      sequencing: 'Week 1: Articles with institutions. Week 2: Articles with abstract
+        nouns. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Article Choice
+      type: fill-in-the-blank
+      description: 20 sentences choosing correct article usage.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  word_order_advanced:
+    interference_patterns:
+    - pattern: Adverb placement differences
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: I always am happy.
+      example_correct: I am always happy.
+      explanation: Norwegian places adverbs differently from English, often before
+        the verb or at the end of the sentence.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian adverb placement rules differ from English. English
+      places adverbs after 'be' and before other verbs.
+    teacher_tips:
+      how_to_explain: 'Teach: Adverbs go after ''be'' (I am always) and before other
+        verbs (I always go).'
+      where_to_start: Start with adverbs of frequency. Then teach other adverb types.
+      sequencing: 'Week 1: Frequency adverbs. Week 2: Manner adverbs. Week 3: Time
+        adverbs. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Adverb Placement
+      type: sentence-rewrite
+      description: Rewrite 10 sentences with correct adverb placement.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  prepositions_advanced:
+    interference_patterns:
+    - pattern: Preposition transfer in verb phrases
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: I listen music.
+      example_correct: I listen to music.
+      explanation: Norwegian uses different prepositions than English, or omits prepositions
+        where English requires them.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Preposition usage is highly language-specific. Norwegian prepositions
+      often don't map 1:1 to English.
+    teacher_tips:
+      how_to_explain: 'Teach: Prepositions must be learned with each verb. Listen
+        to (not listen music). Depend on (not depend of).'
+      where_to_start: Start with the most common preposition errors.
+      sequencing: 'Week 1: Verb + preposition. Week 2: Prepositions of place. Week
+        3: Prepositions of time. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Preposition Fill
+      type: fill-in-the-blank
+      description: 20 sentences with preposition blanks.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  tense_aspect_advanced:
+    interference_patterns:
+    - pattern: Present perfect vs simple past confusion
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: I have seen him yesterday.
+      example_correct: I saw him yesterday.
+      explanation: Norwegian may use a single past tense form where English distinguishes
+        simple past and present perfect.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian tense-aspect system differs from English. Specific past
+      time markers require simple past in English.
+    teacher_tips:
+      how_to_explain: 'Teach: yesterday/last week/in 2010 -> Simple Past. ever/never/already/yet
+        -> Present Perfect.'
+      where_to_start: Start with simple past. Then teach present perfect. Then contrast.
+      sequencing: 'Week 1: Simple past. Week 2: Present perfect. Week 3: Contrast.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Tense Choice
+      type: fill-in-the-blank
+      description: 20 sentences choosing simple past or present perfect.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  conditionals_advanced:
+    interference_patterns:
+    - pattern: Use of would in if-clause
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: If I would have time, I would go.
+      example_correct: If I had time, I would go.
+      explanation: Norwegian may use conditional forms in both clauses. English never
+        uses 'would' in the if-clause.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian conditional structures may allow conditional forms in
+      both clauses. English strictly avoids 'would' in if-clauses.
+    teacher_tips:
+      how_to_explain: 'Teach: NO WOULD IN IF-CLAUSE. If + past, would + base. If +
+        present, will + base.'
+      where_to_start: Start with second conditional. Then teach first conditional.
+        Then third.
+      sequencing: 'Week 1: Second conditional. Week 2: First conditional. Week 3:
+        Third conditional. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Conditional Formation
+      type: sentence-rewrite
+      description: Rewrite 10 conditional sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  relative_clauses_advanced:
+    interference_patterns:
+    - pattern: Use of 'what' as relative pronoun
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: The book what I read was good.
+      example_correct: The book that I read was good.
+      explanation: Norwegian may use a universal relative pronoun that maps to English
+        'what', but English 'what' is not a relative pronoun.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian relative clause structure differs from English. English
+      uses that/which/who, never 'what' as a relative pronoun.
+    teacher_tips:
+      how_to_explain: 'Teach: Use ''that'' or ''which'' for things, ''who'' for people.
+        Never use ''what'' as a relative pronoun.'
+      where_to_start: Start with that/which/who. Then teach restrictive vs non-restrictive.
+      sequencing: 'Week 1: That/which/who. Week 2: Restrictive vs non-restrictive.
+        Week 3: Omitting relative pronouns. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Relative Pronoun Choice
+      type: fill-in-the-blank
+      description: 15 sentences choosing correct relative pronoun.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  passive_voice_advanced:
+    interference_patterns:
+    - pattern: Avoidance of passive voice
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: They built this house in 1900.
+      example_correct: This house was built in 1900.
+      explanation: Norwegian may use active constructions where English prefers passive
+        voice, especially in formal writing.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian may use active voice in contexts where English prefers
+      passive, especially in academic and formal writing.
+    teacher_tips:
+      how_to_explain: 'Teach: Use passive when the action is more important than the
+        agent. The house was built (not they built the house).'
+      where_to_start: Start with passive formula. Then teach when to use passive.
+      sequencing: 'Week 1: Passive formula (be + past participle). Week 2: When to
+        use passive. Week 3: Passive in writing. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Active to Passive
+      type: sentence-rewrite
+      description: Convert 10 active sentences to passive.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  reported_speech_advanced:
+    interference_patterns:
+    - pattern: No backshift in reported speech
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: She said that she is tired.
+      example_correct: She said that she was tired.
+      explanation: Norwegian may not backshift tenses in reported speech. English
+        requires backshift (present -> past).
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian reported speech conventions may not include tense backshift.
+      English requires systematic backshift.
+    teacher_tips:
+      how_to_explain: 'Teach: Backshift rule: present -> past, will -> would, can
+        -> could. She said she was tired.'
+      where_to_start: Start with say/tell + backshift. Then teach pronoun changes.
+      sequencing: 'Week 1: Backshift with say/tell. Week 2: Pronoun changes. Week
+        3: Modal backshift. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Reported Speech
+      type: sentence-rewrite
+      description: Convert 15 direct speech sentences to reported speech.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  countability_advanced:
+    interference_patterns:
+    - pattern: Pluralization of uncountable nouns
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: I have many homeworks.
+      example_correct: I have a lot of homework.
+      explanation: Norwegian may treat as countable some nouns that are uncountable
+        in English (homework, advice, information).
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian countability distinctions differ from English. Nouns
+      countable in Norwegian may be uncountable in English.
+    teacher_tips:
+      how_to_explain: 'Teach: Common uncountables: homework, advice, information,
+        furniture, luggage, research. Use ''a piece of'' or ''some''.'
+      where_to_start: Start with common uncountable nouns. Then teach quantifiers.
+      sequencing: 'Week 1: Uncountable nouns list. Week 2: Much/many. Week 3: Partitives.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Countable or Not
+      type: matching
+      description: Categorize 30 nouns as countable or uncountable.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  false_friends_advanced:
+    interference_patterns:
+    - pattern: 'False friend: library (not bookstore)'
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: I bought this at the library.
+      example_correct: I bought this at the bookstore.
+      explanation: Norwegian and English share cognates with different meanings (false
+        friends). These cause high-impact errors.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 4
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian and English share many Latin/Germanic cognates, but
+      some have shifted meaning. These 'false friends' cause serious communication
+      errors.
+    teacher_tips:
+      how_to_explain: 'Teach: Create a false friends list. Learn the top 20 false
+        friends for {language} speakers.'
+      where_to_start: Start with the highest-impact false friends.
+      sequencing: 'Week 1: Top 10 false friends. Week 2: Next 10. Week 3: Context
+        practice. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: False Friend Match
+      type: matching
+      description: Match 20 false friends to their correct meanings.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  subject_verb_agreement_advanced:
+    interference_patterns:
+    - pattern: Third-person -s omission
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: She like chocolate.
+      example_correct: She likes chocolate.
+      explanation: Norwegian may not mark third-person singular on verbs. English
+        requires -s for he/she/it in present simple.
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian verb conjugation may not include a third-person singular
+      marker. English -s is unique and frequently omitted.
+    teacher_tips:
+      how_to_explain: 'Teach: he/she/it + verb-s. Drill: I like, you like, he likes,
+        she likes, it likes.'
+      where_to_start: Start with third-person -s. Then teach does/doesn't.
+      sequencing: 'Week 1: Third-person -s. Week 2: Does/doesn''t. Week 3: Irregular
+        forms. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: SVA Drill
+      type: fill-in-the-blank
+      description: 20 sentences with correct verb form.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  gerund_infinitive_advanced:
+    interference_patterns:
+    - pattern: Infinitive after preposition
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: Before to leave, say goodbye.
+      example_correct: Before leaving, say goodbye.
+      explanation: Norwegian may use infinitive after prepositions. English always
+        uses gerund (-ing) after prepositions.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian may use infinitive forms after prepositions. English
+      strictly requires gerund (-ing) after all prepositions.
+    teacher_tips:
+      how_to_explain: 'Teach: After prepositions -> always -ing. Before leaving (not
+        before to leave). Without saying (not without to say).'
+      where_to_start: Start with common preposition + gerund combinations.
+      sequencing: 'Week 1: Preposition + gerund. Week 2: Verb + infinitive vs verb
+        + gerund. Week 3: Review. Week 4: Test.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Gerund After Preposition
+      type: fill-in-the-blank
+      description: 15 sentences with preposition + gerund.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  modal_verbs_advanced:
+    interference_patterns:
+    - pattern: Modal verb confusion
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: I can to swim.
+      example_correct: I can swim.
+      explanation: Norwegian modal verbs may differ from English. English modals are
+        followed by bare infinitive (no 'to').
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian modal verb system differs from English. English modals
+      (can, should, must) are followed by bare infinitive.
+    teacher_tips:
+      how_to_explain: 'Teach: Modal + base verb (no ''to''). I can swim (not I can
+        to swim). She should go (not she should to go).'
+      where_to_start: Start with can/could. Then teach should/must/would.
+      sequencing: 'Week 1: Can/could. Week 2: Should/must. Week 3: Would/might. Week
+        4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Modal Choice
+      type: fill-in-the-blank
+      description: 15 sentences choosing correct modal.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  comparatives_advanced:
+    interference_patterns:
+    - pattern: Comparative formation error
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: This is more better.
+      example_correct: This is better.
+      explanation: Norwegian may form comparatives differently. English uses -er for
+        short adjectives and more for long ones, never both.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian comparative formation may differ from English. English
+      never uses both -er and more together.
+    teacher_tips:
+      how_to_explain: 'Teach: Short adjectives -> -er (bigger). Long adjectives ->
+        more (more beautiful). Never both (not more better).'
+      where_to_start: Start with -er rule. Then teach more/most. Then teach irregulars.
+      sequencing: 'Week 1: -er comparatives. Week 2: More/most. Week 3: Irregulars.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Comparative Formation
+      type: sentence-rewrite
+      description: Rewrite 10 comparative sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  linking_words_advanced:
+    interference_patterns:
+    - pattern: Double conjunction error
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: Although it rained, but we went out.
+      example_correct: Although it rained, we went out.
+      explanation: Norwegian may use double conjunctions (although...but, because...so).
+        English uses only one conjunction per clause.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian may allow double conjunctions. English strictly uses
+      one conjunction per clause.
+    teacher_tips:
+      how_to_explain: 'Teach: although OR but (not both). because OR so (not both).
+        Pick one.'
+      where_to_start: Start with although/but. Then teach because/so.
+      sequencing: 'Week 1: Although/but. Week 2: Because/so. Week 3: Other conjunctions.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Conjunction Fix
+      type: error-correction
+      description: Fix 10 double conjunction sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  possessives_advanced:
+    interference_patterns:
+    - pattern: Possessive formation error
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: The book of John is interesting.
+      example_correct: John's book is interesting.
+      explanation: Norwegian may use 'of' for possession where English uses 's for
+        people.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian may express possession differently from English. English
+      uses 's for people and of for things.
+    teacher_tips:
+      how_to_explain: 'Teach: Use ''s for people (John''s book). Use of for things
+        (the leg of the table).'
+      where_to_start: Start with 's for people. Then teach of for things.
+      sequencing: 'Week 1: ''S for people. Week 2: Of for things. Week 3: Double possessive.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Possessive Formation
+      type: sentence-rewrite
+      description: Rewrite 10 possessive sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  phonology_advanced:
+    interference_patterns:
+    - pattern: Consonant cluster difficulty
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: I am wery happy.
+      example_correct: I am very happy.
+      explanation: Norwegian phonology differs from English, causing pronunciation
+        errors that affect spelling.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian phonological system differs from English, causing pronunciation
+      and spelling errors.
+    teacher_tips:
+      how_to_explain: 'Teach: Focus on sounds that don''t exist in {language}. Practice
+        minimal pairs.'
+      where_to_start: Start with the most problematic sounds.
+      sequencing: 'Week 1: Problem sounds. Week 2: Minimal pairs. Week 3: Connected
+        speech. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Pronunciation Practice
+      type: oral-drill
+      description: Practice 20 minimal pairs.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  adverbs_advanced:
+    interference_patterns:
+    - pattern: Adjective used as adverb
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: He speaks English good.
+      example_correct: He speaks English well.
+      explanation: Norwegian may not distinguish morphologically between adjectives
+        and adverbs. English requires -ly for most adverbs.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian may use the same form for adjectives and adverbs. English
+      requires -ly for most adverbs.
+    teacher_tips:
+      how_to_explain: 'Teach: Adjective describes a noun. Adverb describes a verb.
+        Most adverbs add -ly. Good -> well (irregular).'
+      where_to_start: Start with the -ly rule. Then teach exceptions.
+      sequencing: 'Week 1: -ly adverbs. Week 2: Exceptions (fast, hard, late). Week
+        3: Good vs well. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Adjective or Adverb
+      type: fill-in-the-blank
+      description: 15 sentences choosing correct form.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  discourse_pragmatics:
+    interference_patterns:
+    - pattern: Directness in requests
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: Give me the book.
+      example_correct: Could you give me the book, please?
+      explanation: Norwegian may use more direct requests than English. English uses
+        indirect questions and modals for politeness.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian pragmatic norms for requests, refusals, and apologies
+      may differ from English. Directness levels vary culturally.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses indirect requests for politeness. Could
+        you...? Would you mind...? Please + imperative.'
+      where_to_start: Start with requests. Then teach refusals and apologies.
+      sequencing: 'Week 1: Polite requests. Week 2: Refusals. Week 3: Apologies. Week
+        4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Politeness Practice
+      type: sentence-rewrite
+      description: Rewrite 10 direct sentences as polite requests.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  collocations:
+    interference_patterns:
+    - pattern: L1 collocation transfer
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: I make my homework.
+      example_correct: I do my homework.
+      explanation: Norwegian collocations (verb + noun combinations) often don't map
+        to English. English has fixed collocations.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian collocations differ from English. Verb + noun combinations
+      are often fixed and must be learned as chunks.
+    teacher_tips:
+      how_to_explain: 'Teach: English collocations: do homework (not make), take a
+        photo (not make), catch a cold (not have).'
+      where_to_start: Start with the most common collocation errors.
+      sequencing: 'Week 1: Verb + noun collocations. Week 2: Adjective + noun. Week
+        3: Preposition + noun. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Collocation Match
+      type: matching
+      description: Match 20 verbs to their correct noun partners.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  existential_there:
+    interference_patterns:
+    - pattern: Use of 'it is' for 'there is'
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: It is many people here.
+      example_correct: There are many people here.
+      explanation: Norwegian may use 'it' or other constructions for existential meaning.
+        English uses 'there is/are'.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian may not have an existential construction equivalent
+      to English 'there is/are'. Learners may use 'it is' instead.
+    teacher_tips:
+      how_to_explain: 'Teach: Use ''there is'' for existence. There is a book on the
+        table. There are many people.'
+      where_to_start: Start with there is/are. Then teach there was/were.
+      sequencing: 'Week 1: There is/are. Week 2: There was/were. Week 3: There will
+        be. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: There Is or It Is
+      type: fill-in-the-blank
+      description: 15 sentences choosing there is/it is.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  determiners:
+    interference_patterns:
+    - pattern: Use of 'much' with countable nouns
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: I have much friends.
+      example_correct: I have many friends.
+      explanation: Norwegian may not distinguish between countable and uncountable
+        quantifiers. English uses many for countable, much for uncountable.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian quantifier system may differ from English. English distinguishes
+      many (countable) vs much (uncountable).
+    teacher_tips:
+      how_to_explain: 'Teach: Many + countable (many books). Much + uncountable (much
+        water). A lot of + both.'
+      where_to_start: Start with many/much. Then teach few/little. Then teach a lot
+        of.
+      sequencing: 'Week 1: Many/much. Week 2: Few/little. Week 3: A lot of/plenty
+        of. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Quantifier Choice
+      type: fill-in-the-blank
+      description: 20 sentences choosing correct quantifier.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  question_formation_advanced:
+    interference_patterns:
+    - pattern: Omission of do-support in questions
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: You like coffee?
+      example_correct: Do you like coffee?
+      explanation: Norwegian may form questions by intonation alone or with question
+        particles. English requires do-support.
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian question formation differs from English. English requires
+      do/does/did for most questions (except with 'be' and modals).
+    teacher_tips:
+      how_to_explain: 'Teach: Do/Does/Did + subject + base verb? Do you like coffee?
+        (not You like coffee?)'
+      where_to_start: Start with yes/no questions. Then teach wh- questions.
+      sequencing: 'Week 1: Do/does questions. Week 2: Wh- questions. Week 3: Tag questions.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Question Formation
+      type: sentence-rewrite
+      description: Convert 15 statements to questions.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  negation_advanced:
+    interference_patterns:
+    - pattern: Double negation
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: I don't have no money.
+      example_correct: I don't have any money. / I have no money.
+      explanation: Norwegian may allow double negation. Standard English uses only
+        one negative per clause.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian may allow or require double negation. Standard English
+      uses single negation (not...any, no, never).
+    teacher_tips:
+      how_to_explain: 'Teach: One negative per clause. I don''t have any (not I don''t
+        have no). I have no money (correct single negation).'
+      where_to_start: Start with not...any. Then teach no/never/nobody.
+      sequencing: 'Week 1: Not...any. Week 2: No/never/nobody. Week 3: Double negation
+        errors. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Negation Fix
+      type: error-correction
+      description: Fix 10 double negation sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  conjunctions_advanced:
+    interference_patterns:
+    - pattern: Use of 'also' at sentence start
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: Also, I think we should go.
+      example_correct: I also think we should go.
+      explanation: Norwegian may place 'also' at sentence start. English prefers mid-sentence
+        position or 'furthermore'.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian conjunction and connector usage differs from English.
+      Word order and formality levels vary.
+    teacher_tips:
+      how_to_explain: 'Teach: ''Also'' goes mid-sentence (I also think). ''Furthermore''
+        or ''moreover'' for formal writing.'
+      where_to_start: Start with also/too/either. Then teach formal connectors.
+      sequencing: 'Week 1: Also/too. Week 2: Furthermore/moreover. Week 3: However/nevertheless.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Connector Placement
+      type: sentence-rewrite
+      description: Rewrite 10 sentences with correct connector placement.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  idiomatic_expressions_advanced:
+    interference_patterns:
+    - pattern: Literal translation of idioms
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: It rains ropes.
+      example_correct: It's raining cats and dogs.
+      explanation: Norwegian idioms don't translate literally. Learners may translate
+        word-for-word.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Every language has unique idioms. Norwegian idioms often have
+      different English equivalents.
+    teacher_tips:
+      how_to_explain: 'Teach: Idioms don''t translate literally. Learn the English
+        equivalent as a whole phrase.'
+      where_to_start: Start with the most common idiom categories.
+      sequencing: 'Week 1: Weather idioms. Week 2: Body idioms. Week 3: Animal idioms.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Idiom Match
+      type: matching
+      description: Match 15 idioms to their English equivalents.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  register_formality:
+    interference_patterns:
+    - pattern: Informal register in formal contexts
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: I wanna go.
+      example_correct: I would like to go.
+      explanation: Norwegian may not distinguish formality through verb forms. English
+        uses modal verbs and full forms for formality.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian may express formality differently from English. English
+      uses modal verbs, full forms, and specific vocabulary for formal contexts.
+    teacher_tips:
+      how_to_explain: 'Teach: Formal = would like (not wanna), could you (not can
+        you), I am (not I''m).'
+      where_to_start: Start with contractions. Then teach modal formality.
+      sequencing: 'Week 1: Contractions. Week 2: Modal formality. Week 3: Formal vocabulary.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Formal or Informal
+      type: sentence-rewrite
+      description: Rewrite 10 informal sentences in formal register.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  numbers_dates:
+    interference_patterns:
+    - pattern: Number format differences
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: The price is 1.000,50.
+      example_correct: The price is 1,000.50.
+      explanation: Norwegian may use different number formatting (comma vs period
+        for decimals/thousands).
+      frequency: 2
+      persistence: 1
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian number and date formatting conventions differ from English.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses period for decimals, comma for thousands.
+        Dates: month/day/year (US).'
+      where_to_start: Start with number formatting. Then teach dates.
+      sequencing: 'Week 1: Number format. Week 2: Date format. Week 3: Saying numbers
+        aloud. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Number Conversion
+      type: sentence-rewrite
+      description: Convert 10 numbers/dates to English format.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  punctuation_conventions:
+    interference_patterns:
+    - pattern: Punctuation spacing differences
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: Hello ! How are you ?
+      example_correct: Hello! How are you?
+      explanation: Norwegian may use different spacing conventions before punctuation
+        marks.
+      frequency: 2
+      persistence: 1
+      communicative_impact: 1
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian punctuation conventions differ from English in spacing
+      and usage.
+    teacher_tips:
+      how_to_explain: 'Teach: English has no space before punctuation. Write: Hello!
+        (not Hello !).'
+      where_to_start: Start with spacing. Then teach quotation marks.
+      sequencing: 'Week 1: Spacing. Week 2: Quotation marks. Week 3: Other conventions.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Punctuation Fix
+      type: error-correction
+      description: Fix 10 punctuation errors.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  writing_conventions:
+    interference_patterns:
+    - pattern: Paragraph structure differences
+      example_l1: '[no] example'
+      example_gloss: gloss
+      example_wrong: A paragraph without a clear topic sentence.
+      example_correct: A paragraph with a clear topic sentence followed by supporting
+        details.
+      explanation: Norwegian writing conventions may differ from English. English
+        academic writing values explicit topic sentences and linear argumentation.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian rhetorical conventions differ from English. English
+      values directness, linear structure, and explicit topic sentences.
+    teacher_tips:
+      how_to_explain: 'Teach: English paragraphs start with a topic sentence. Each
+        paragraph has one main idea. Use transitions.'
+      where_to_start: Start with topic sentences. Then teach paragraph structure.
+      sequencing: 'Week 1: Topic sentences. Week 2: Paragraph structure. Week 3: Transitions.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Paragraph Analysis
+      type: error-correction
+      description: Identify and fix structural problems in 5 paragraphs.
+      duration: 15
+    sources:
+    - Swan & Smith (2001) Learner English
+  tonal_accent:
+    interference_patterns:
+    - pattern: Tonal accent (pitch) interference
+      example_l1: bønder (farmers) vs. bønner (beans)
+      example_gloss: farmers vs. beans (tone 1 vs tone 2)
+      example_wrong: I bought beans (with wrong tone).
+      example_correct: I bought beans.
+      explanation: Norwegian has two tonal accents (tone 1 and tone 2) that distinguish
+        words. English uses stress, not tone.
+      frequency: 2
+      persistence: 1
+      communicative_impact: 1
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian uses tonal accents (pitch patterns) to distinguish words.
+      English uses stress patterns instead.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses stress, not tone. Practice English stress
+        patterns.'
+      where_to_start: Start with word stress. Then teach sentence stress.
+      sequencing: 'Week 1: Word stress. Week 2: Sentence stress. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Stress Practice
+      type: oral-drill
+      description: Practice 20 words with correct stress.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  double_definite:
+    interference_patterns:
+    - pattern: Double definite construction
+      example_l1: den store mannen
+      example_gloss: the big man-the
+      example_wrong: I saw the big man-the.
+      example_correct: I saw the big man.
+      explanation: Norwegian uses double definiteness (den + adjective + noun + definite
+        suffix). English uses only one 'the'.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian requires both a pre-nominal article (den/det/de) and
+      a suffix on the noun for definiteness. English uses only 'the'.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses ONE ''the''. The big man (not the big man-the).'
+      where_to_start: Start with the single 'the' rule.
+      sequencing: 'Week 1: Single ''the''. Week 2: Definite vs indefinite. Week 3:
+        Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Article Practice
+      type: sentence-rewrite
+      description: Rewrite 10 Norwegian sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  gender_system:
+    interference_patterns:
+    - pattern: Three-gender system transfer
+      example_l1: en bok (common) vs. ei bok (feminine)
+      example_gloss: a book (masc) vs. a book (fem)
+      example_wrong: I read a book (with gender).
+      example_correct: I read a book.
+      explanation: Norwegian has three genders (masculine, feminine, neuter). English
+        has no grammatical gender.
+      frequency: 2
+      persistence: 1
+      communicative_impact: 1
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Norwegian has three grammatical genders. English has no grammatical
+      gender (only natural gender for pronouns).
+    teacher_tips:
+      how_to_explain: 'Teach: English nouns have no gender. The book (not en/ei bok).'
+      where_to_start: Start with the concept of no grammatical gender.
+      sequencing: 'Week 1: No gender on nouns. Week 2: He/she/it. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Gender Removal
+      type: sentence-rewrite
+      description: Rewrite 10 Norwegian sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English

@@ -13,8 +13,18 @@ meaning:
   ccqs:
   - question: Did the subject do the action themselves?
     answer: No, someone else did it (causative).
+    purpose: Tests whether the learner understands the causative structure (have/get
+      something done) for arranging services, and the difference between 'have' (neutral/formal)
+      and 'get' (informal).
   - question: Is this about arranging or forcing?
     answer: Arrange = have/get, Force/Allow = make/let/have.
+    purpose: Tests whether the learner understands that '-ed' adjectives describe
+      how someone feels (experiencer) while '-ing' adjectives describe what causes
+      the feeling (stimulus).
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      causative and explain why they are incorrect.
   example_generator:
     contexts:
     - services and arrangements
@@ -109,25 +119,63 @@ teaching:
     adaptation_notes: Students practice arranging services using have/get something
       done.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8:
+    Passive Voice, §8.6 (causative constructions)'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 16: Information Packaging, §16.3'
+  validation: Swan (2016) Practical English Usage, 4th ed. Entries 95-100 (causative
+    have/get)
+  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
+    8: Causative structures'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 4: Causative'
 common_errors:
-- error: Common error for causative.
-  correction: Correct form.
-  explanation: This is a common error for causative.
+- error: '*I did my hair cut yesterday.* (arranged for someone)'
+  correction: I had my hair cut yesterday.
+  explanation: The causative uses 'have/get + object + past participle' to express
+    arranging a service. Using 'do' changes the meaning to performing the action yourself.
+    'Do' is not used as a causative verb for services.
   l1_groups:
   - Portuguese
   - Spanish
+- error: '*I made him to apologize.*'
+  correction: I made him apologize.
+  explanation: After 'make' (causative meaning 'force'), use the bare infinitive (without
+    'to'). 'Make + person + base verb' is a fixed structure. Adding 'to' before the
+    verb is influenced by other causative patterns like 'ask him to apologize'.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Chinese
+- error: '*She let me to borrow her car.*'
+  correction: She let me borrow her car.
+  explanation: After 'let', use the bare infinitive (without 'to'). 'Let + person
+    + base verb' is the fixed pattern. Adding 'to' occurs because most other causatives
+    ('ask', 'tell', 'want') do take 'to'.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+- error: '*I had repaired my car by the mechanic.*'
+  correction: I had my car repaired by the mechanic.
+  explanation: In causative 'have', the object (what is done) comes immediately after
+    'have', not at the end. 'Had my car repaired' (not 'had repaired my car'). The
+    past participle modifies the object.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, this structure is standard and expected. Register variation
+    is marked by vocabulary and style rather than grammatical form.
+- note: In formal writing, avoid contractions and use full forms.
+- note: In conversation, contractions and reduced forms are common.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used in everyday communication.
+- note: In academic writing, this structure appears in formal contexts and is a marker
+    of proficient English.
+- note: In professional contexts, correct use of this structure is expected in formal
+    writing.

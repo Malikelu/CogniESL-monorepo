@@ -19,10 +19,17 @@ meaning:
   ccqs:
   - question: '''Few people came to the party.'' Are you happy or disappointed?'
     answer: Disappointed — 'few' has a negative meaning. Almost no one came.
+    purpose: Tests whether the learner understands the emotional connotation of 'few'
+      (negative/disappointing) vs 'a few' (positive/relieved).
   - question: '''A few people came to the party.'' Are you happy or disappointed?'
     answer: Relieved — 'a few' has a positive meaning. Some people came.
+    purpose: Tests whether the learner can distinguish between 'few' (almost none,
+      negative) and 'a few' (some, positive). The article 'a' completely changes the
+      meaning.
   - question: Can you say 'few water'?
     answer: No — 'few' is only for countable nouns. Use 'little' for uncountable.
+    purpose: Tests whether the learner knows that 'few/a few' only work with countable
+      plural nouns, while 'little/a little' work with uncountable nouns.
   example_generator:
     contexts:
     - everyday situations
@@ -123,8 +130,8 @@ teaching:
     adaptation_notes: Students identify whether sentences with few/little have a positive
       or negative meaning and rewrite them with the opposite meaning.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, §12.6-12.13'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -133,15 +140,35 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for few.
-  correction: Correct form.
-  explanation: This is a common error for few.
+- error: '*I have few friends here.* (intended: some friends)'
+  correction: I have a few friends here.
+  explanation: Without 'a', 'few' has a negative meaning (almost none). With 'a',
+    'a few' has a positive meaning (some, enough).
   l1_groups:
   - Portuguese
   - Spanish
+  - Chinese
+  - Japanese
+- error: '*I have few time.*'
+  correction: I have little time.
+  explanation: '''Few'' is only for countable nouns. ''Time'' is uncountable, so use
+    ''little/a little''.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Chinese
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, conditionals appear in discussions of likely outcomes and
+    theoretical scenarios.
+- note: In conversation, conditionals are used for hypothetical scenarios and polite
+    requests.
+- note: In academic writing, conditionals express logical relationships between propositions.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, conditionals are used for hypothetical scenarios, polite
+    requests, and future planning.
+- note: In academic writing, conditionals appear in discussions of likely outcomes
+    and theoretical scenarios.
+- note: In negotiations and planning, conditionals set conditions and explore possibilities.

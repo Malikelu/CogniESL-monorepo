@@ -21,8 +21,18 @@ meaning:
   ccqs:
   - question: When do we use much and when do we use many
     answer: Much with uncountable nouns. Many with countable plural nouns.
+    purpose: Tests whether the learner can distinguish between much (uncountable)
+      and many (countable). This is one of the most fundamental quantifier rules at
+      A2 level.
   - question: Can we use much and many in affirmative sentences
     answer: Yes, but a lot of is more common in informal speech.
+    purpose: Tests whether the learner knows that much/many are mainly used in questions
+      and negatives, while a lot of is preferred in affirmative sentences. This affects
+      natural-sounding speech.
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      much many and explain why they are incorrect.
   example_generator:
     contexts:
     - everyday situations
@@ -118,8 +128,8 @@ teaching:
     adaptation_notes: Students sort nouns into countable and uncountable, then create
       sentences with much, many, and a lot of.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, §12.6-12.13'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -128,15 +138,38 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for much_many.
-  correction: Correct form.
-  explanation: This is a common error for much_many.
+- error: '*I have many time.*'
+  correction: I have much time.
+  explanation: Many is for countable nouns. Time is uncountable, so use much.
   l1_groups:
   - Portuguese
   - Spanish
+  - French
+- error: '*Do you have much books?*'
+  correction: Do you have many books?
+  explanation: Much is for uncountable nouns. Books are countable, so use many.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+- error: '*I have much friends here.*'
+  correction: I have many friends here.
+  explanation: Much is for uncountable nouns. Friends are countable, so use many.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Japanese
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, conditionals appear in discussions of likely outcomes and
+    theoretical scenarios.
+- note: In conversation, conditionals are used for hypothetical scenarios and polite
+    requests.
+- note: In academic writing, conditionals express logical relationships between propositions.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, conditionals are used for hypothetical scenarios, polite
+    requests, and future planning.
+- note: In academic writing, conditionals appear in discussions of likely outcomes
+    and theoretical scenarios.
+- note: In negotiations and planning, conditionals set conditions and explore possibilities.

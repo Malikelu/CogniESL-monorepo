@@ -1,5 +1,5 @@
 language: greek
-schema_version: '3.0'
+schema_version: '4.0'
 grammar_points:
   greek_verb_system:
     interference_patterns:
@@ -11,27 +11,57 @@ grammar_points:
       frequency: 4
       persistence: 4
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek aspectual distinction (perfective/imperfective)
+        mapped onto English progressive/simple.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek lacks auxiliary "do" in questions/negations
-      example: 'Greek: "Ti theleis?" (What you want?) -> literal: "What you want?"
-        -> erroneous English: "What you want?" instead of "What do you want?"'
       frequency: 5
       persistence: 4
       communicative_impact: 4
+      example_l1: 'Greek: ''Ti theleis?'''
+      example_gloss: What you want?
+      example_wrong: 'literal: "What you want?'
+      example_correct: 'erroneous English: "What you want?" instead of "What do you
+        want?'
+      explanation: 'Transfer from L1: Greek lacks auxiliary "do" in questions/negations.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek synthetic verb forms encode person/number -> subject pronoun
         omission
-      example: 'Greek: "Pao spiti" (Go home) -> literal: "Go home" (subject "I" encoded
-        in verb ending -o) -> erroneous English: "Go home" instead of "I go home"'
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: 'Greek: ''Pao spiti'''
+      example_gloss: Go home
+      example_wrong: 'literal: "Go home" (subject "I" encoded in verb ending -o)'
+      example_correct: 'erroneous English: "Go home" instead of "I go home'
+      explanation: 'Transfer from L1: Greek synthetic verb forms encode person/number
+        -> subject pronoun omission.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek deponent/passive morphology for active meanings -> passive voice
         confusion
-      example: 'Greek: "Koimamai" (I sleep, middle/passive form used actively) ->
-        Greek learners may overuse passive: "The bed is slept by me" or confuse active/passive
-        constructions'
       frequency: 2
       persistence: 3
       communicative_impact: 2
+      example_l1: 'Greek: ''Koimamai'''
+      example_gloss: I sleep, middle/passive form used actively
+      example_wrong: 'Greek learners may overuse passive: "The bed is slept by me"
+        or confuse active'
+      example_correct: passive constructions
+      explanation: 'Transfer from L1: Greek deponent/passive morphology for active
+        meanings -> passive voice confusion.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: What you want to eat?
       correct: What do you want to eat?
@@ -148,18 +178,34 @@ grammar_points:
     interference_patterns:
     - pattern: Greek 4-case system -> English pronoun case errors after verbs and
         prepositions
-      example: 'Greek: "Ton ida" (Him I-saw, accusative case marked on article) ->
-        Greek learners may say "I saw he" because the case distinction is marked on
-        the article (o/ton) rather than the pronoun itself.'
       frequency: 3
       persistence: 3
       communicative_impact: 2
+      example_l1: 'Greek: ''Ton ida'''
+      example_gloss: Him I-saw, accusative case marked on article
+      example_wrong: Greek learners may say "I saw he" because the case distinction
+        is marked on the article (o
+      example_correct: ton) rather than the pronoun itself.
+      explanation: 'Transfer from L1: Greek 4-case system -> English pronoun case
+        errors after verbs and prepositions.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek genitive case for possession -> word order and of/for confusion
       example: 'Greek: "To spiti tou Giorgou" (The house the-of George) -> erroneous
         English: "The house of the George" instead of "George''s house"'
       frequency: 3
       persistence: 2
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek genitive case for possession -> word order
+        and of/for confusion.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek accusative prepositional government -> wrong preposition after
         prepositions
       example: 'Greek: "Pao sto spiti" (I-go to-the house, preposition se + accusative)
@@ -168,12 +214,30 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek accusative prepositional government ->
+        wrong preposition after prepositions.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek clitic pronouns in accusative -> double object pronoun errors
       example: 'Greek: "Tou to edosa" (To-him it I-gave, two clitic pronouns before
         verb) -> erroneous English: "I gave to him it" or "Him it I gave"'
       frequency: 2
       persistence: 3
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek clitic pronouns in accusative -> double
+        object pronoun errors.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I help he with the homework.
       correct: I help him with the homework.
@@ -295,6 +359,15 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek uses definite article with proper nouns
+        -> overuse of "the" with names.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek uses definite article with abstract nouns and generics -> overuse
         in English generic statements
       example: 'Greek: "I agapi ine oreia" (The love is beautiful, definite article
@@ -303,6 +376,15 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek uses definite article with abstract nouns
+        and generics -> overuse in English generic statements.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek uses definite article with possessive contexts -> double determination
         errors
       example: 'Greek: "To spiti mou" (The house my, article + noun + possessive)
@@ -310,12 +392,30 @@ grammar_points:
       frequency: 3
       persistence: 4
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek uses definite article with possessive
+        contexts -> double determination errors.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek lacks indefinite article before professions -> article omission
       example: 'Greek: "Ime daskalos" (I-am teacher, no article before professions)
         -> erroneous English: "I am teacher" instead of "I am a teacher"'
       frequency: 5
       persistence: 4
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek lacks indefinite article before professions
+        -> article omission.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: The Maria is my best friend.
       correct: Maria is my best friend.
@@ -432,11 +532,19 @@ grammar_points:
     interference_patterns:
     - pattern: Greek negation particle "den" attaches directly to verb without auxiliary
         -> do-support omission
-      example: 'Greek: "Den troo kreas" (Not I-eat meat) -> literal: "Not I-eat meat"
-        -> erroneous English: "I not eat meat" instead of "I do not eat meat"'
       frequency: 5
       persistence: 4
       communicative_impact: 4
+      example_l1: 'Greek: ''Den troo kreas'''
+      example_gloss: Not I-eat meat
+      example_wrong: 'literal: "Not I-eat meat'
+      example_correct: 'erroneous English: "I not eat meat" instead of "I do not eat
+        meat'
+      explanation: 'Transfer from L1: Greek negation particle "den" attaches directly
+        to verb without auxiliary -> do-support omission.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek double negation is grammatical -> transfer to English double
         negation
       example: 'Greek: "Den ida kanenan" (Not I-saw nobody, double negation is standard
@@ -445,6 +553,15 @@ grammar_points:
       frequency: 4
       persistence: 4
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek double negation is grammatical -> transfer
+        to English double negation.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek negation with "pote/pouthen/tipota" (never/nothing/nowhere) requires
         "den" -> negative adverb placement errors
       example: 'Greek: "Pote den pao ekei" (Never not I-go there, reinforced negation)
@@ -452,6 +569,15 @@ grammar_points:
       frequency: 3
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek negation with "pote/pouthen/tipota" (never/nothing/nowhere)
+        requires "den" -> negative adverb placement errors.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek "den" + subjunctive for prohibitions -> imperative negation errors
       example: 'Greek: "Min trovs" (Not you-eat, negated subjunctive for prohibition
         using "min" not "den") -> erroneous English: "Not eat that!" instead of "Don''t
@@ -459,6 +585,15 @@ grammar_points:
       frequency: 3
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek "den" + subjunctive for prohibitions ->
+        imperative negation errors.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I not like coffee.
       correct: I do not like coffee.
@@ -581,6 +716,15 @@ grammar_points:
       frequency: 5
       persistence: 4
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek "se" (in/at/to) maps to multiple English
+        prepositions -> overuse of "in" or "to".'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek prepositions govern different cases than English -> wrong preposition
         after verbs/adjectives
       example: 'Greek: "Noiazome gia sena" (I-care about-you) uses gia (for/about).
@@ -589,6 +733,15 @@ grammar_points:
       frequency: 4
       persistence: 4
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek prepositions govern different cases than
+        English -> wrong preposition after verbs/adjectives.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek "me" (with) for instrumental/accusative -> "with" vs. "by" confusion
       example: 'Greek: "Egrapsa me to stylo" (I-wrote with the pen, me = with/instrument).
         But Greek also uses me for accompaniment: "Pao me ti Maria" (I go with Maria).
@@ -596,6 +749,15 @@ grammar_points:
       frequency: 3
       persistence: 3
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek "me" (with) for instrumental/accusative
+        -> "with" vs. "by" confusion.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek prepositional phrases where English uses phrasal verbs -> missing
         particle
       example: 'Greek: "Vgazo exo" (I-take out) -> "I take it out" - Greek learners
@@ -604,6 +766,15 @@ grammar_points:
       frequency: 3
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek prepositional phrases where English uses
+        phrasal verbs -> missing particle.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I am in home right now.
       correct: I am at home right now.
@@ -719,11 +890,18 @@ grammar_points:
     interference_patterns:
     - pattern: Greek is pro-drop (subject encoded in verb) -> subject omission in
         English
-      example: 'Greek: "Pao spiti" (Go home) -> literal: "Go home" (subject "I" encoded
-        in verb ending -o) -> erroneous English: "Go home" instead of "I go home"'
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: 'Greek: ''Pao spiti'''
+      example_gloss: Go home
+      example_wrong: 'literal: "Go home" (subject "I" encoded in verb ending -o)'
+      example_correct: 'erroneous English: "Go home" instead of "I go home'
+      explanation: 'Transfer from L1: Greek is pro-drop (subject encoded in verb)
+        -> subject omission in English.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek has relatively free word order (SVO/VSO/VOS) -> adverb placement
         errors
       example: 'Greek: "Xthes piga sto super" (Yesterday I-went to-the supermarket)
@@ -733,6 +911,15 @@ grammar_points:
       frequency: 3
       persistence: 3
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek has relatively free word order (SVO/VSO/VOS)
+        -> adverb placement errors.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek clitic pronouns precede the verb -> object pronoun placement
         errors
       example: 'Greek: "Ton ida" (Him I-saw, clitic pronoun before verb) -> erroneous
@@ -740,13 +927,29 @@ grammar_points:
       frequency: 3
       persistence: 3
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek clitic pronouns precede the verb -> object
+        pronoun placement errors.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek topicalization through fronting -> overuse of cleft/fronted structures
-      example: 'Greek: "To vivlio to ida xthes" (The book it I-saw yesterday, topicalized
-        object with resumptive clitic) -> erroneous English: "The book, I saw it yesterday"
-        (marked/awkward) instead of "I saw the book yesterday"'
       frequency: 2
       persistence: 2
       communicative_impact: 1
+      example_l1: 'Greek: ''To vivlio to ida xthes'''
+      example_gloss: The book it I-saw yesterday, topicalized object with resumptive
+        clitic
+      example_wrong: 'erroneous English: "The book, I saw it yesterday" (marked'
+      example_correct: awkward) instead of "I saw the book yesterday
+      explanation: 'Transfer from L1: Greek topicalization through fronting -> overuse
+        of cleft/fronted structures.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Is raining outside.
       correct: It is raining outside.
@@ -867,6 +1070,15 @@ grammar_points:
       frequency: 4
       persistence: 4
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek has a productive subjunctive mood (na
+        + subjunctive) -> overuse of "should" or "would" in English.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek subjunctive after verbs of suggestion/necessity -> wrong structure
         in English
       example: 'Greek: "Prepeis na figeis" (Must that you-leave, na + subjunctive
@@ -875,6 +1087,15 @@ grammar_points:
       frequency: 3
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek subjunctive after verbs of suggestion/necessity
+        -> wrong structure in English.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek "na" as subjunctive marker -> "to" vs. "that" confusion in complement
         clauses
       example: 'Greek: "Sou zito na erthis" (You I-ask that you-come, na + subjunctive)
@@ -882,6 +1103,15 @@ grammar_points:
       frequency: 4
       persistence: 4
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek "na" as subjunctive marker -> "to" vs.
+        "that" confusion in complement clauses.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek subjunctive in conditional clauses -> wrong tense in English
         conditionals
       example: 'Greek: "An erthis, tha charo" (If you-come, will I-be-happy, subjunctive
@@ -890,6 +1120,15 @@ grammar_points:
       frequency: 3
       persistence: 4
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek subjunctive in conditional clauses ->
+        wrong tense in English conditionals.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I want that I go to the party.
       correct: I want to go to the party.
@@ -1011,6 +1250,15 @@ grammar_points:
       frequency: 3
       persistence: 4
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek is a pitch-accent language with stress
+        on one of last three syllables -> English stress placement errors.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek stress is phonemic -> stress-based meaning errors in English
       example: 'Greek: "pote" (when) vs. "pote" (ever/never) - stress and accent mark
         distinguish meaning. Greek learners may not perceive English stress contrasts:
@@ -1018,6 +1266,15 @@ grammar_points:
       frequency: 3
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek stress is phonemic -> stress-based meaning
+        errors in English.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek orthographic accent marks stress in writing -> difficulty predicting
         English stress
       example: 'Greek: Every stressed syllable is marked with an accent. English has
@@ -1026,6 +1283,15 @@ grammar_points:
       frequency: 3
       persistence: 3
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek orthographic accent marks stress in writing
+        -> difficulty predicting English stress.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek has no vowel reduction in unstressed syllables -> full vowel
         pronunciation in English unstressed syllables
       example: 'Greek: "kafes" (both vowels fully pronounced). Greek learners say
@@ -1034,6 +1300,15 @@ grammar_points:
       frequency: 4
       persistence: 5
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek has no vowel reduction in unstressed syllables
+        -> full vowel pronunciation in English unstressed syllables.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I live in the California hoTEL.
       correct: I live in the California hotel.
@@ -1155,6 +1430,15 @@ grammar_points:
       frequency: 2
       persistence: 2
       communicative_impact: 1
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek articles agree in gender/case/number with
+        nouns -> over-differentiation of English "the".'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek uses definite article with abstract/generic nouns -> overuse
         of "the" with English generics
       example: 'Greek: "I eleftheria ine simantiki" (The freedom is important, definite
@@ -1163,6 +1447,15 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek uses definite article with abstract/generic
+        nouns -> overuse of "the" with English generics.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek article-noun agreement in all cases -> article omission in complex
         noun phrases
       example: 'Greek: "Tu agoriou to palto" (The-of-boy the coat, genitive article
@@ -1171,6 +1464,15 @@ grammar_points:
       frequency: 3
       persistence: 3
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek article-noun agreement in all cases ->
+        article omission in complex noun phrases.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Greek uses definite article with proper nouns and institutions -> overuse
         of "the"
       example: 'Greek: "Pao sto scholio" (I-go to-the school, definite article with
@@ -1179,6 +1481,15 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Greek uses definite article with proper nouns
+        and institutions -> overuse of "the".'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: The love is the most important thing in the life.
       correct: Love is the most important thing in life.
@@ -1295,3 +1606,1318 @@ grammar_points:
         Press
       location: See relevant grammar point section
       tier: 2
+  articles_advanced:
+    interference_patterns:
+    - pattern: Definite article overgeneralization
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: I went to the school.
+      example_correct: I went to school.
+      explanation: Greek uses definite articles in contexts where English omits them
+        (school, church, bed).
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Article omission with abstract nouns
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: Patience is important.
+      example_correct: Patience is important.
+      explanation: Greek may use articles with abstract nouns where English omits
+        them.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek article usage differs from English in several contexts,
+      leading to overgeneralization or omission errors.
+    teacher_tips:
+      how_to_explain: 'Teach: English omits articles before school, church, bed, work,
+        home (when used in their primary sense).'
+      where_to_start: Start with the most common article errors.
+      sequencing: 'Week 1: Articles with institutions. Week 2: Articles with abstract
+        nouns. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Article Choice
+      type: fill-in-the-blank
+      description: 20 sentences choosing correct article usage.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  word_order_advanced:
+    interference_patterns:
+    - pattern: Adverb placement differences
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: I always am happy.
+      example_correct: I am always happy.
+      explanation: Greek places adverbs differently from English, often before the
+        verb or at the end of the sentence.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek adverb placement rules differ from English. English places
+      adverbs after 'be' and before other verbs.
+    teacher_tips:
+      how_to_explain: 'Teach: Adverbs go after ''be'' (I am always) and before other
+        verbs (I always go).'
+      where_to_start: Start with adverbs of frequency. Then teach other adverb types.
+      sequencing: 'Week 1: Frequency adverbs. Week 2: Manner adverbs. Week 3: Time
+        adverbs. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Adverb Placement
+      type: sentence-rewrite
+      description: Rewrite 10 sentences with correct adverb placement.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  prepositions_advanced:
+    interference_patterns:
+    - pattern: Preposition transfer in verb phrases
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: I listen music.
+      example_correct: I listen to music.
+      explanation: Greek uses different prepositions than English, or omits prepositions
+        where English requires them.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Preposition usage is highly language-specific. Greek prepositions
+      often don't map 1:1 to English.
+    teacher_tips:
+      how_to_explain: 'Teach: Prepositions must be learned with each verb. Listen
+        to (not listen music). Depend on (not depend of).'
+      where_to_start: Start with the most common preposition errors.
+      sequencing: 'Week 1: Verb + preposition. Week 2: Prepositions of place. Week
+        3: Prepositions of time. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Preposition Fill
+      type: fill-in-the-blank
+      description: 20 sentences with preposition blanks.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  tense_aspect_advanced:
+    interference_patterns:
+    - pattern: Present perfect vs simple past confusion
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: I have seen him yesterday.
+      example_correct: I saw him yesterday.
+      explanation: Greek may use a single past tense form where English distinguishes
+        simple past and present perfect.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek tense-aspect system differs from English. Specific past
+      time markers require simple past in English.
+    teacher_tips:
+      how_to_explain: 'Teach: yesterday/last week/in 2010 -> Simple Past. ever/never/already/yet
+        -> Present Perfect.'
+      where_to_start: Start with simple past. Then teach present perfect. Then contrast.
+      sequencing: 'Week 1: Simple past. Week 2: Present perfect. Week 3: Contrast.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Tense Choice
+      type: fill-in-the-blank
+      description: 20 sentences choosing simple past or present perfect.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  conditionals_advanced:
+    interference_patterns:
+    - pattern: Use of would in if-clause
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: If I would have time, I would go.
+      example_correct: If I had time, I would go.
+      explanation: Greek may use conditional forms in both clauses. English never
+        uses 'would' in the if-clause.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek conditional structures may allow conditional forms in both
+      clauses. English strictly avoids 'would' in if-clauses.
+    teacher_tips:
+      how_to_explain: 'Teach: NO WOULD IN IF-CLAUSE. If + past, would + base. If +
+        present, will + base.'
+      where_to_start: Start with second conditional. Then teach first conditional.
+        Then third.
+      sequencing: 'Week 1: Second conditional. Week 2: First conditional. Week 3:
+        Third conditional. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Conditional Formation
+      type: sentence-rewrite
+      description: Rewrite 10 conditional sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  relative_clauses_advanced:
+    interference_patterns:
+    - pattern: Use of 'what' as relative pronoun
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: The book what I read was good.
+      example_correct: The book that I read was good.
+      explanation: Greek may use a universal relative pronoun that maps to English
+        'what', but English 'what' is not a relative pronoun.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek relative clause structure differs from English. English
+      uses that/which/who, never 'what' as a relative pronoun.
+    teacher_tips:
+      how_to_explain: 'Teach: Use ''that'' or ''which'' for things, ''who'' for people.
+        Never use ''what'' as a relative pronoun.'
+      where_to_start: Start with that/which/who. Then teach restrictive vs non-restrictive.
+      sequencing: 'Week 1: That/which/who. Week 2: Restrictive vs non-restrictive.
+        Week 3: Omitting relative pronouns. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Relative Pronoun Choice
+      type: fill-in-the-blank
+      description: 15 sentences choosing correct relative pronoun.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  passive_voice_advanced:
+    interference_patterns:
+    - pattern: Avoidance of passive voice
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: They built this house in 1900.
+      example_correct: This house was built in 1900.
+      explanation: Greek may use active constructions where English prefers passive
+        voice, especially in formal writing.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek may use active voice in contexts where English prefers passive,
+      especially in academic and formal writing.
+    teacher_tips:
+      how_to_explain: 'Teach: Use passive when the action is more important than the
+        agent. The house was built (not they built the house).'
+      where_to_start: Start with passive formula. Then teach when to use passive.
+      sequencing: 'Week 1: Passive formula (be + past participle). Week 2: When to
+        use passive. Week 3: Passive in writing. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Active to Passive
+      type: sentence-rewrite
+      description: Convert 10 active sentences to passive.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  reported_speech_advanced:
+    interference_patterns:
+    - pattern: No backshift in reported speech
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: She said that she is tired.
+      example_correct: She said that she was tired.
+      explanation: Greek may not backshift tenses in reported speech. English requires
+        backshift (present -> past).
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek reported speech conventions may not include tense backshift.
+      English requires systematic backshift.
+    teacher_tips:
+      how_to_explain: 'Teach: Backshift rule: present -> past, will -> would, can
+        -> could. She said she was tired.'
+      where_to_start: Start with say/tell + backshift. Then teach pronoun changes.
+      sequencing: 'Week 1: Backshift with say/tell. Week 2: Pronoun changes. Week
+        3: Modal backshift. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Reported Speech
+      type: sentence-rewrite
+      description: Convert 15 direct speech sentences to reported speech.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  countability_advanced:
+    interference_patterns:
+    - pattern: Pluralization of uncountable nouns
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: I have many homeworks.
+      example_correct: I have a lot of homework.
+      explanation: Greek may treat as countable some nouns that are uncountable in
+        English (homework, advice, information).
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek countability distinctions differ from English. Nouns countable
+      in Greek may be uncountable in English.
+    teacher_tips:
+      how_to_explain: 'Teach: Common uncountables: homework, advice, information,
+        furniture, luggage, research. Use ''a piece of'' or ''some''.'
+      where_to_start: Start with common uncountable nouns. Then teach quantifiers.
+      sequencing: 'Week 1: Uncountable nouns list. Week 2: Much/many. Week 3: Partitives.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Countable or Not
+      type: matching
+      description: Categorize 30 nouns as countable or uncountable.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  false_friends_advanced:
+    interference_patterns:
+    - pattern: 'False friend: library (not bookstore)'
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: I bought this at the library.
+      example_correct: I bought this at the bookstore.
+      explanation: Greek and English share cognates with different meanings (false
+        friends). These cause high-impact errors.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 4
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek and English share many Latin/Germanic cognates, but some
+      have shifted meaning. These 'false friends' cause serious communication errors.
+    teacher_tips:
+      how_to_explain: 'Teach: Create a false friends list. Learn the top 20 false
+        friends for {language} speakers.'
+      where_to_start: Start with the highest-impact false friends.
+      sequencing: 'Week 1: Top 10 false friends. Week 2: Next 10. Week 3: Context
+        practice. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: False Friend Match
+      type: matching
+      description: Match 20 false friends to their correct meanings.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  subject_verb_agreement_advanced:
+    interference_patterns:
+    - pattern: Third-person -s omission
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: She like chocolate.
+      example_correct: She likes chocolate.
+      explanation: Greek may not mark third-person singular on verbs. English requires
+        -s for he/she/it in present simple.
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek verb conjugation may not include a third-person singular
+      marker. English -s is unique and frequently omitted.
+    teacher_tips:
+      how_to_explain: 'Teach: he/she/it + verb-s. Drill: I like, you like, he likes,
+        she likes, it likes.'
+      where_to_start: Start with third-person -s. Then teach does/doesn't.
+      sequencing: 'Week 1: Third-person -s. Week 2: Does/doesn''t. Week 3: Irregular
+        forms. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: SVA Drill
+      type: fill-in-the-blank
+      description: 20 sentences with correct verb form.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  gerund_infinitive_advanced:
+    interference_patterns:
+    - pattern: Infinitive after preposition
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: Before to leave, say goodbye.
+      example_correct: Before leaving, say goodbye.
+      explanation: Greek may use infinitive after prepositions. English always uses
+        gerund (-ing) after prepositions.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek may use infinitive forms after prepositions. English strictly
+      requires gerund (-ing) after all prepositions.
+    teacher_tips:
+      how_to_explain: 'Teach: After prepositions -> always -ing. Before leaving (not
+        before to leave). Without saying (not without to say).'
+      where_to_start: Start with common preposition + gerund combinations.
+      sequencing: 'Week 1: Preposition + gerund. Week 2: Verb + infinitive vs verb
+        + gerund. Week 3: Review. Week 4: Test.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Gerund After Preposition
+      type: fill-in-the-blank
+      description: 15 sentences with preposition + gerund.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  modal_verbs_advanced:
+    interference_patterns:
+    - pattern: Modal verb confusion
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: I can to swim.
+      example_correct: I can swim.
+      explanation: Greek modal verbs may differ from English. English modals are followed
+        by bare infinitive (no 'to').
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek modal verb system differs from English. English modals (can,
+      should, must) are followed by bare infinitive.
+    teacher_tips:
+      how_to_explain: 'Teach: Modal + base verb (no ''to''). I can swim (not I can
+        to swim). She should go (not she should to go).'
+      where_to_start: Start with can/could. Then teach should/must/would.
+      sequencing: 'Week 1: Can/could. Week 2: Should/must. Week 3: Would/might. Week
+        4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Modal Choice
+      type: fill-in-the-blank
+      description: 15 sentences choosing correct modal.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  comparatives_advanced:
+    interference_patterns:
+    - pattern: Comparative formation error
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: This is more better.
+      example_correct: This is better.
+      explanation: Greek may form comparatives differently. English uses -er for short
+        adjectives and more for long ones, never both.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek comparative formation may differ from English. English never
+      uses both -er and more together.
+    teacher_tips:
+      how_to_explain: 'Teach: Short adjectives -> -er (bigger). Long adjectives ->
+        more (more beautiful). Never both (not more better).'
+      where_to_start: Start with -er rule. Then teach more/most. Then teach irregulars.
+      sequencing: 'Week 1: -er comparatives. Week 2: More/most. Week 3: Irregulars.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Comparative Formation
+      type: sentence-rewrite
+      description: Rewrite 10 comparative sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  linking_words_advanced:
+    interference_patterns:
+    - pattern: Double conjunction error
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: Although it rained, but we went out.
+      example_correct: Although it rained, we went out.
+      explanation: Greek may use double conjunctions (although...but, because...so).
+        English uses only one conjunction per clause.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek may allow double conjunctions. English strictly uses one
+      conjunction per clause.
+    teacher_tips:
+      how_to_explain: 'Teach: although OR but (not both). because OR so (not both).
+        Pick one.'
+      where_to_start: Start with although/but. Then teach because/so.
+      sequencing: 'Week 1: Although/but. Week 2: Because/so. Week 3: Other conjunctions.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Conjunction Fix
+      type: error-correction
+      description: Fix 10 double conjunction sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  possessives_advanced:
+    interference_patterns:
+    - pattern: Possessive formation error
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: The book of John is interesting.
+      example_correct: John's book is interesting.
+      explanation: Greek may use 'of' for possession where English uses 's for people.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek may express possession differently from English. English
+      uses 's for people and of for things.
+    teacher_tips:
+      how_to_explain: 'Teach: Use ''s for people (John''s book). Use of for things
+        (the leg of the table).'
+      where_to_start: Start with 's for people. Then teach of for things.
+      sequencing: 'Week 1: ''S for people. Week 2: Of for things. Week 3: Double possessive.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Possessive Formation
+      type: sentence-rewrite
+      description: Rewrite 10 possessive sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  phonology_advanced:
+    interference_patterns:
+    - pattern: Consonant cluster difficulty
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: I am wery happy.
+      example_correct: I am very happy.
+      explanation: Greek phonology differs from English, causing pronunciation errors
+        that affect spelling.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek phonological system differs from English, causing pronunciation
+      and spelling errors.
+    teacher_tips:
+      how_to_explain: 'Teach: Focus on sounds that don''t exist in {language}. Practice
+        minimal pairs.'
+      where_to_start: Start with the most problematic sounds.
+      sequencing: 'Week 1: Problem sounds. Week 2: Minimal pairs. Week 3: Connected
+        speech. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Pronunciation Practice
+      type: oral-drill
+      description: Practice 20 minimal pairs.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  adverbs_advanced:
+    interference_patterns:
+    - pattern: Adjective used as adverb
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: He speaks English good.
+      example_correct: He speaks English well.
+      explanation: Greek may not distinguish morphologically between adjectives and
+        adverbs. English requires -ly for most adverbs.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek may use the same form for adjectives and adverbs. English
+      requires -ly for most adverbs.
+    teacher_tips:
+      how_to_explain: 'Teach: Adjective describes a noun. Adverb describes a verb.
+        Most adverbs add -ly. Good -> well (irregular).'
+      where_to_start: Start with the -ly rule. Then teach exceptions.
+      sequencing: 'Week 1: -ly adverbs. Week 2: Exceptions (fast, hard, late). Week
+        3: Good vs well. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Adjective or Adverb
+      type: fill-in-the-blank
+      description: 15 sentences choosing correct form.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  discourse_pragmatics:
+    interference_patterns:
+    - pattern: Directness in requests
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: Give me the book.
+      example_correct: Could you give me the book, please?
+      explanation: Greek may use more direct requests than English. English uses indirect
+        questions and modals for politeness.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek pragmatic norms for requests, refusals, and apologies may
+      differ from English. Directness levels vary culturally.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses indirect requests for politeness. Could
+        you...? Would you mind...? Please + imperative.'
+      where_to_start: Start with requests. Then teach refusals and apologies.
+      sequencing: 'Week 1: Polite requests. Week 2: Refusals. Week 3: Apologies. Week
+        4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Politeness Practice
+      type: sentence-rewrite
+      description: Rewrite 10 direct sentences as polite requests.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  collocations:
+    interference_patterns:
+    - pattern: L1 collocation transfer
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: I make my homework.
+      example_correct: I do my homework.
+      explanation: Greek collocations (verb + noun combinations) often don't map to
+        English. English has fixed collocations.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek collocations differ from English. Verb + noun combinations
+      are often fixed and must be learned as chunks.
+    teacher_tips:
+      how_to_explain: 'Teach: English collocations: do homework (not make), take a
+        photo (not make), catch a cold (not have).'
+      where_to_start: Start with the most common collocation errors.
+      sequencing: 'Week 1: Verb + noun collocations. Week 2: Adjective + noun. Week
+        3: Preposition + noun. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Collocation Match
+      type: matching
+      description: Match 20 verbs to their correct noun partners.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  existential_there:
+    interference_patterns:
+    - pattern: Use of 'it is' for 'there is'
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: It is many people here.
+      example_correct: There are many people here.
+      explanation: Greek may use 'it' or other constructions for existential meaning.
+        English uses 'there is/are'.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek may not have an existential construction equivalent to English
+      'there is/are'. Learners may use 'it is' instead.
+    teacher_tips:
+      how_to_explain: 'Teach: Use ''there is'' for existence. There is a book on the
+        table. There are many people.'
+      where_to_start: Start with there is/are. Then teach there was/were.
+      sequencing: 'Week 1: There is/are. Week 2: There was/were. Week 3: There will
+        be. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: There Is or It Is
+      type: fill-in-the-blank
+      description: 15 sentences choosing there is/it is.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  determiners:
+    interference_patterns:
+    - pattern: Use of 'much' with countable nouns
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: I have much friends.
+      example_correct: I have many friends.
+      explanation: Greek may not distinguish between countable and uncountable quantifiers.
+        English uses many for countable, much for uncountable.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek quantifier system may differ from English. English distinguishes
+      many (countable) vs much (uncountable).
+    teacher_tips:
+      how_to_explain: 'Teach: Many + countable (many books). Much + uncountable (much
+        water). A lot of + both.'
+      where_to_start: Start with many/much. Then teach few/little. Then teach a lot
+        of.
+      sequencing: 'Week 1: Many/much. Week 2: Few/little. Week 3: A lot of/plenty
+        of. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Quantifier Choice
+      type: fill-in-the-blank
+      description: 20 sentences choosing correct quantifier.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  question_formation_advanced:
+    interference_patterns:
+    - pattern: Omission of do-support in questions
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: You like coffee?
+      example_correct: Do you like coffee?
+      explanation: Greek may form questions by intonation alone or with question particles.
+        English requires do-support.
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek question formation differs from English. English requires
+      do/does/did for most questions (except with 'be' and modals).
+    teacher_tips:
+      how_to_explain: 'Teach: Do/Does/Did + subject + base verb? Do you like coffee?
+        (not You like coffee?)'
+      where_to_start: Start with yes/no questions. Then teach wh- questions.
+      sequencing: 'Week 1: Do/does questions. Week 2: Wh- questions. Week 3: Tag questions.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Question Formation
+      type: sentence-rewrite
+      description: Convert 15 statements to questions.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  negation_advanced:
+    interference_patterns:
+    - pattern: Double negation
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: I don't have no money.
+      example_correct: I don't have any money. / I have no money.
+      explanation: Greek may allow double negation. Standard English uses only one
+        negative per clause.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek may allow or require double negation. Standard English uses
+      single negation (not...any, no, never).
+    teacher_tips:
+      how_to_explain: 'Teach: One negative per clause. I don''t have any (not I don''t
+        have no). I have no money (correct single negation).'
+      where_to_start: Start with not...any. Then teach no/never/nobody.
+      sequencing: 'Week 1: Not...any. Week 2: No/never/nobody. Week 3: Double negation
+        errors. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Negation Fix
+      type: error-correction
+      description: Fix 10 double negation sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  conjunctions_advanced:
+    interference_patterns:
+    - pattern: Use of 'also' at sentence start
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: Also, I think we should go.
+      example_correct: I also think we should go.
+      explanation: Greek may place 'also' at sentence start. English prefers mid-sentence
+        position or 'furthermore'.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek conjunction and connector usage differs from English. Word
+      order and formality levels vary.
+    teacher_tips:
+      how_to_explain: 'Teach: ''Also'' goes mid-sentence (I also think). ''Furthermore''
+        or ''moreover'' for formal writing.'
+      where_to_start: Start with also/too/either. Then teach formal connectors.
+      sequencing: 'Week 1: Also/too. Week 2: Furthermore/moreover. Week 3: However/nevertheless.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Connector Placement
+      type: sentence-rewrite
+      description: Rewrite 10 sentences with correct connector placement.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  idiomatic_expressions_advanced:
+    interference_patterns:
+    - pattern: Literal translation of idioms
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: It rains ropes.
+      example_correct: It's raining cats and dogs.
+      explanation: Greek idioms don't translate literally. Learners may translate
+        word-for-word.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Every language has unique idioms. Greek idioms often have different
+      English equivalents.
+    teacher_tips:
+      how_to_explain: 'Teach: Idioms don''t translate literally. Learn the English
+        equivalent as a whole phrase.'
+      where_to_start: Start with the most common idiom categories.
+      sequencing: 'Week 1: Weather idioms. Week 2: Body idioms. Week 3: Animal idioms.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Idiom Match
+      type: matching
+      description: Match 15 idioms to their English equivalents.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  register_formality:
+    interference_patterns:
+    - pattern: Informal register in formal contexts
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: I wanna go.
+      example_correct: I would like to go.
+      explanation: Greek may not distinguish formality through verb forms. English
+        uses modal verbs and full forms for formality.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek may express formality differently from English. English
+      uses modal verbs, full forms, and specific vocabulary for formal contexts.
+    teacher_tips:
+      how_to_explain: 'Teach: Formal = would like (not wanna), could you (not can
+        you), I am (not I''m).'
+      where_to_start: Start with contractions. Then teach modal formality.
+      sequencing: 'Week 1: Contractions. Week 2: Modal formality. Week 3: Formal vocabulary.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Formal or Informal
+      type: sentence-rewrite
+      description: Rewrite 10 informal sentences in formal register.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  numbers_dates:
+    interference_patterns:
+    - pattern: Number format differences
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: The price is 1.000,50.
+      example_correct: The price is 1,000.50.
+      explanation: Greek may use different number formatting (comma vs period for
+        decimals/thousands).
+      frequency: 2
+      persistence: 1
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek number and date formatting conventions differ from English.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses period for decimals, comma for thousands.
+        Dates: month/day/year (US).'
+      where_to_start: Start with number formatting. Then teach dates.
+      sequencing: 'Week 1: Number format. Week 2: Date format. Week 3: Saying numbers
+        aloud. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Number Conversion
+      type: sentence-rewrite
+      description: Convert 10 numbers/dates to English format.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  punctuation_conventions:
+    interference_patterns:
+    - pattern: Punctuation spacing differences
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: Hello ! How are you ?
+      example_correct: Hello! How are you?
+      explanation: Greek may use different spacing conventions before punctuation
+        marks.
+      frequency: 2
+      persistence: 1
+      communicative_impact: 1
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek punctuation conventions differ from English in spacing and
+      usage.
+    teacher_tips:
+      how_to_explain: 'Teach: English has no space before punctuation. Write: Hello!
+        (not Hello !).'
+      where_to_start: Start with spacing. Then teach quotation marks.
+      sequencing: 'Week 1: Spacing. Week 2: Quotation marks. Week 3: Other conventions.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Punctuation Fix
+      type: error-correction
+      description: Fix 10 punctuation errors.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  writing_conventions:
+    interference_patterns:
+    - pattern: Paragraph structure differences
+      example_l1: '[el] example'
+      example_gloss: gloss
+      example_wrong: A paragraph without a clear topic sentence.
+      example_correct: A paragraph with a clear topic sentence followed by supporting
+        details.
+      explanation: Greek writing conventions may differ from English. English academic
+        writing values explicit topic sentences and linear argumentation.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek rhetorical conventions differ from English. English values
+      directness, linear structure, and explicit topic sentences.
+    teacher_tips:
+      how_to_explain: 'Teach: English paragraphs start with a topic sentence. Each
+        paragraph has one main idea. Use transitions.'
+      where_to_start: Start with topic sentences. Then teach paragraph structure.
+      sequencing: 'Week 1: Topic sentences. Week 2: Paragraph structure. Week 3: Transitions.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Paragraph Analysis
+      type: error-correction
+      description: Identify and fix structural problems in 5 paragraphs.
+      duration: 15
+    sources:
+    - Swan & Smith (2001) Learner English
+  article_system_el:
+    interference_patterns:
+    - pattern: Article system differences
+      example_l1: Ο άνθρωπος (the man)
+      example_gloss: the man
+      example_wrong: I saw the man (with Greek article system).
+      example_correct: I saw the man.
+      explanation: Greek has a complex article system (definite/indefinite, all genders/cases).
+        English has simpler article rules.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek articles change form for gender, number, and case. English
+      articles are simpler (a/an, the).
+    teacher_tips:
+      how_to_explain: 'Teach: English has a/an (indefinite) and the (definite). No
+        gender or case changes.'
+      where_to_start: Start with a/an vs the. Then teach article omission.
+      sequencing: 'Week 1: A/an vs the. Week 2: Article omission. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Article Practice
+      type: fill-in-the-blank
+      description: 15 sentences with correct article.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  verb_aspect_el:
+    interference_patterns:
+    - pattern: Perfective/imperfective aspect
+      example_l1: Γράφω (I write, imperfective) vs. Γράψω (I will write, perfective
+        aorist)
+      example_gloss: write (ongoing) vs. write (completed)
+      example_wrong: I write the letter (without aspect distinction).
+      example_correct: I am writing the letter. / I wrote the letter.
+      explanation: Greek verbs have perfective/imperfective aspect marked on the verb
+        stem. English uses progressive/perfect tenses.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek verb aspect is marked morphologically on the verb stem.
+      English uses auxiliary verbs and -ing.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses be + -ing for ongoing. I am writing (not
+        I write-imperfective).'
+      where_to_start: Start with progressive vs simple. Then teach perfect tenses.
+      sequencing: 'Week 1: Progressive. Week 2: Simple. Week 3: Perfect. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Aspect Translation
+      type: translation
+      description: Translate 15 Greek sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  subjunctive_el:
+    interference_patterns:
+    - pattern: Subjunctive with να
+      example_l1: Θέλω να πάω (I want that-SUBJ I-go)
+      example_gloss: I want that I-go
+      example_wrong: I want that I go.
+      example_correct: I want to go.
+      explanation: Greek uses να + subjunctive after verbs of desire. English uses
+        infinitive.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek uses να + subjunctive after verbs of desire, intention,
+      and possibility. English uses infinitive.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses infinitive after want. I want to go (not
+        I want that I go).'
+      where_to_start: Start with want + to. Then teach other subjunctive triggers.
+      sequencing: 'Week 1: Want + to. Week 2: Other να triggers. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Subjunctive to Infinitive
+      type: sentence-rewrite
+      description: Rewrite 15 Greek sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  case_system_el2:
+    interference_patterns:
+    - pattern: Case system transfer
+      example_l1: Τον άνθρωπο (the man-ACC)
+      example_gloss: the man-ACC
+      example_wrong: I saw the man-ACC.
+      example_correct: I saw the man.
+      explanation: Greek has 4 cases (nominative, genitive, accusative, vocative).
+        English uses word order.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek uses 4 grammatical cases. English uses word order and prepositions
+      instead.
+    teacher_tips:
+      how_to_explain: 'Teach: English word order shows who does what. I saw the man
+        (not I saw the man-ACC).'
+      where_to_start: Start with SVO word order. Then teach prepositions.
+      sequencing: 'Week 1: SVO. Week 2: Prepositions. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Word Order
+      type: sentence-rewrite
+      description: Rewrite 10 Greek sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  clitic_pronouns_el:
+    interference_patterns:
+    - pattern: Pre-verbal clitic pronouns
+      example_l1: Τον βλέπω (him I-see)
+      example_gloss: him I-see
+      example_wrong: Him I see.
+      example_correct: I see him.
+      explanation: Greek places object pronouns before the verb. English places them
+        after.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek clitic pronouns go before the verb (in most contexts). English
+      object pronouns go after.
+    teacher_tips:
+      how_to_explain: 'Teach: English pronouns go AFTER the verb. I see him (not him
+        I see).'
+      where_to_start: Start with simple pronoun placement.
+      sequencing: 'Week 1: Pronoun after verb. Week 2: Pronoun order. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Pronoun Placement
+      type: sentence-rewrite
+      description: Rewrite 15 Greek sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  double_negation_el:
+    interference_patterns:
+    - pattern: Double negation
+      example_l1: Δεν είδα τίποτα (not I-saw nothing)
+      example_gloss: not I-saw nothing
+      example_wrong: I didn't see nothing.
+      example_correct: I didn't see anything. / I saw nothing.
+      explanation: Greek uses double negation (δεν + negative word). Standard English
+        uses single negation.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek allows and often requires double negation. Standard English
+      uses single negation.
+    teacher_tips:
+      how_to_explain: 'Teach: One negative per clause. I didn''t see anything (not
+        I didn''t see nothing).'
+      where_to_start: Start with single negation. Then teach never/nothing/nobody.
+      sequencing: 'Week 1: Single negation. Week 2: Never/nothing. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Negation Fix
+      type: error-correction
+      description: Fix 10 double negation sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  article_omission_el:
+    interference_patterns:
+    - pattern: Article omission with proper nouns
+      example_l1: Ο Γιάννης (the John)
+      example_gloss: the John
+      example_wrong: The John is my friend.
+      example_correct: John is my friend.
+      explanation: Greek uses articles before proper names. English omits them.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek uses definite articles before proper names. English omits
+      articles before most proper names.
+    teacher_tips:
+      how_to_explain: 'Teach: English omits ''the'' before names. John is my friend
+        (not the John).'
+      where_to_start: Start with proper names. Then teach other article omissions.
+      sequencing: 'Week 1: No article before names. Week 2: Other omissions. Week
+        3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Article Removal
+      type: sentence-rewrite
+      description: Rewrite 10 Greek sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  genitive_possession_el:
+    interference_patterns:
+    - pattern: Genitive for possession
+      example_l1: Το βιβλίο του Γιάννη (the book the-GEN John)
+      example_gloss: the book the-GEN John
+      example_wrong: I read the book the-GEN John.
+      example_correct: I read John's book.
+      explanation: Greek uses genitive case for possession. English uses 's or of.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek uses the genitive case to show possession. English uses
+      's for people and of for things.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses ''s for people. John''s book (not the book
+        of John in most cases).'
+      where_to_start: Start with 's for people. Then teach of for things.
+      sequencing: 'Week 1: ''S for people. Week 2: Of for things. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Possessive Translation
+      type: translation
+      description: Translate 10 Greek sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  future_particle_el:
+    interference_patterns:
+    - pattern: Future particle θα
+      example_l1: Θα πάω αύριο (FUT I-go tomorrow)
+      example_gloss: FUT I-go tomorrow
+      example_wrong: I FUT go tomorrow.
+      example_correct: I will go tomorrow. / I am going to go tomorrow.
+      explanation: Greek uses the particle θα for future. English uses will or be
+        going to.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek uses θα + subjunctive for future. English uses will or be
+      going to.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses will or be going to for future. I will
+        go (not I FUT go).'
+      where_to_start: Start with will. Then teach be going to.
+      sequencing: 'Week 1: Will. Week 2: Be going to. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Future Translation
+      type: translation
+      description: Translate 10 Greek sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  passive_voice_el:
+    interference_patterns:
+    - pattern: Passive voice differences
+      example_l1: Γράφεται (it-is-written)
+      example_gloss: it-is-written
+      example_wrong: It is write.
+      example_correct: It is written.
+      explanation: Greek passive voice is marked on the verb. English uses be + past
+        participle.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek passive voice is marked morphologically on the verb. English
+      uses be + past participle.
+    teacher_tips:
+      how_to_explain: 'Teach: English passive = be + past participle. It is written
+        (not it is write).'
+      where_to_start: Start with passive formula. Then teach when to use passive.
+      sequencing: 'Week 1: Passive formula. Week 2: When to use. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Passive Practice
+      type: sentence-rewrite
+      description: Rewrite 10 Greek sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  conjunctions_el:
+    interference_patterns:
+    - pattern: Conjunction differences
+      example_l1: Αλλά vs. Μα (but vs. but)
+      example_gloss: but vs. but
+      example_wrong: I wanted to go, but I couldn't (using wrong conjunction).
+      example_correct: I wanted to go, but I couldn't.
+      explanation: Greek has multiple words for 'and' (και, μα, αλλά) with different
+        registers. English uses 'and' and 'but'.
+      frequency: 2
+      persistence: 1
+      communicative_impact: 1
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Greek conjunctions (και, μα, αλλά, όμως) have different registers
+      and uses. English has simpler conjunctions.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses ''and'' for addition, ''but'' for contrast.
+        Learn the basic conjunctions.'
+      where_to_start: Start with and/but. Then teach other conjunctions.
+      sequencing: 'Week 1: And/but. Week 2: Other conjunctions. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Conjunction Practice
+      type: sentence-rewrite
+      description: Rewrite 10 Greek sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English

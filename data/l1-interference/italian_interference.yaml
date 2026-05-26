@@ -1,21 +1,35 @@
 language: Italian
 language_code: it
-schema_version: '3.0'
+schema_version: '4.0'
 grammar_points:
   articles:
     interference_patterns:
     - pattern: Omission of indefinite article after essere
-      example: 'IT ''sono insegnante'' (I-am teacher) -> Error: ''I am teacher'' ->
-        Correct: ''I am a teacher'''
       frequency: 5
       persistence: 4
       communicative_impact: 3
+      example_l1: IT 'sono insegnante'
+      example_gloss: I-am teacher
+      example_wrong: I am teacher
+      example_correct: I am a teacher
+      explanation: 'Transfer from L1: Omission of indefinite article after essere.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Overuse of definite article
       example: 'IT ''il/la/lo/l'''' = the -> Error: ''the water is the essential''
         -> Correct: ''Water is essential'''
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Overuse of definite article.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I am teacher.
       correct: I am a teacher.
@@ -74,17 +88,29 @@ grammar_points:
   pronouns:
     interference_patterns:
     - pattern: Use of subject pronouns for emphasis
-      example: 'IT ''io vado'' (I go) -> Error: overuse of ''I'' -> Correct: ''I go''
-        (pronoun optional in Italian)'
       frequency: 3
       persistence: 2
       communicative_impact: 1
+      example_l1: IT 'io vado'
+      example_gloss: I go
+      example_wrong: overuse of 'I
+      example_correct: I go' (pronoun optional in Italian)
+      explanation: 'Transfer from L1: Use of subject pronouns for emphasis.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Use of indirect object pronouns
-      example: 'IT ''gli do'' (to-him I-give) -> Error: ''Him I give'' -> Correct:
-        ''I give to him'''
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: IT 'gli do'
+      example_gloss: to-him I-give
+      example_wrong: Him I give
+      example_correct: I give to him
+      explanation: 'Transfer from L1: Use of indirect object pronouns.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Him I give the book.
       correct: I give the book to him.
@@ -159,10 +185,17 @@ grammar_points:
   questions:
     interference_patterns:
     - pattern: Use of rising intonation only
-      example: 'IT ''Vai?'' (you-go?) -> Error: ''You go?'' -> Correct: ''Do you go?'''
       frequency: 5
       persistence: 5
       communicative_impact: 4
+      example_l1: IT 'Vai?'
+      example_gloss: you-go?
+      example_wrong: You go?
+      example_correct: Do you go?
+      explanation: 'Transfer from L1: Use of rising intonation only.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: You go to school?
       correct: Do you go to school?
@@ -208,11 +241,17 @@ grammar_points:
   negation:
     interference_patterns:
     - pattern: Use of non before the verb
-      example: 'IT ''non so'' (not I-know) -> Error: ''I not know'' -> Correct: ''I
-        do not know'''
       frequency: 4
       persistence: 4
       communicative_impact: 3
+      example_l1: IT 'non so'
+      example_gloss: not I-know
+      example_wrong: I not know
+      example_correct: I do not know
+      explanation: 'Transfer from L1: Use of non before the verb.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I not know the answer.
       correct: I do not know the answer.
@@ -268,11 +307,27 @@ grammar_points:
       frequency: 3
       persistence: 2
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Double consonant pronunciation.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Difficulty with /θ/ and /ð/
       example: 'IT lacks dental fricatives -> Error: ''tink'' for ''think'''
       frequency: 4
       persistence: 4
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Difficulty with /θ/ and /ð/.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Tink about it.
       correct: Think about it.
@@ -332,12 +387,28 @@ grammar_points:
       frequency: 5
       persistence: 4
       communicative_impact: 4
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Confusion of IT-EN cognates.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Confusion of parenti (relatives) with parents
       example: 'IT ''parenti'' = relatives -> Error: ''My parents are nice'' (when
         meaning relatives) -> Correct: ''My relatives are nice'''
       frequency: 4
       persistence: 4
       communicative_impact: 4
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Confusion of parenti (relatives) with parents.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Actually, I work in a bank.
       correct: Currently, I work in a bank.
@@ -399,6 +470,14 @@ grammar_points:
       frequency: 4
       persistence: 4
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Pluralization of uncountable nouns.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I have many homeworks.
       correct: I have a lot of homework.
@@ -449,11 +528,17 @@ grammar_points:
   subject_verb_agreement:
     interference_patterns:
     - pattern: Omission of third-person -s
-      example: 'IT ''lui legge'' (he reads) -> Error: ''He read'' -> Correct: ''He
-        reads'''
       frequency: 5
       persistence: 5
       communicative_impact: 4
+      example_l1: IT 'lui legge'
+      example_gloss: he reads
+      example_wrong: He read
+      example_correct: He reads
+      explanation: 'Transfer from L1: Omission of third-person -s.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: She like chocolate.
       correct: She likes chocolate.
@@ -514,11 +599,27 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Transfer of Italian prepositions.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     - pattern: Use of di for of
       example: 'IT ''di'' = of -> Error: ''The book of me'' -> Correct: ''My book'''
       frequency: 4
       persistence: 3
       communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Use of di for of.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I go to home.
       correct: I go home.
@@ -581,6 +682,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Avoidance of passive voice.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Someone built this house in 1900.
       correct: This house was built in 1900.
@@ -629,11 +738,17 @@ grammar_points:
   conditionals:
     interference_patterns:
     - pattern: Use of conditional mood
-      example: 'IT ''Se fossi ricco'' (if I-were rich) -> Error: ''If I would be rich''
-        -> Correct: ''If I were rich'''
       frequency: 4
       persistence: 4
       communicative_impact: 3
+      example_l1: IT 'Se fossi ricco'
+      example_gloss: if I-were rich
+      example_wrong: If I would be rich
+      example_correct: If I were rich
+      explanation: 'Transfer from L1: Use of conditional mood.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: If I would have money, I would travel.
       correct: If I had money, I would travel.
@@ -680,3 +795,1293 @@ grammar_points:
         A Practical Handbook'', University of Michigan Press'
       location: p. 322
       tier: 2
+  articles_advanced:
+    interference_patterns:
+    - pattern: Definite article overgeneralization
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: I went to the school.
+      example_correct: I went to school.
+      explanation: Italian uses definite articles in contexts where English omits
+        them (school, church, bed).
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Article omission with abstract nouns
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: Patience is important.
+      example_correct: Patience is important.
+      explanation: Italian may use articles with abstract nouns where English omits
+        them.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian article usage differs from English in several contexts,
+      leading to overgeneralization or omission errors.
+    teacher_tips:
+      how_to_explain: 'Teach: English omits articles before school, church, bed, work,
+        home (when used in their primary sense).'
+      where_to_start: Start with the most common article errors.
+      sequencing: 'Week 1: Articles with institutions. Week 2: Articles with abstract
+        nouns. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Article Choice
+      type: fill-in-the-blank
+      description: 20 sentences choosing correct article usage.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  word_order_advanced:
+    interference_patterns:
+    - pattern: Adverb placement differences
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: I always am happy.
+      example_correct: I am always happy.
+      explanation: Italian places adverbs differently from English, often before the
+        verb or at the end of the sentence.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian adverb placement rules differ from English. English places
+      adverbs after 'be' and before other verbs.
+    teacher_tips:
+      how_to_explain: 'Teach: Adverbs go after ''be'' (I am always) and before other
+        verbs (I always go).'
+      where_to_start: Start with adverbs of frequency. Then teach other adverb types.
+      sequencing: 'Week 1: Frequency adverbs. Week 2: Manner adverbs. Week 3: Time
+        adverbs. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Adverb Placement
+      type: sentence-rewrite
+      description: Rewrite 10 sentences with correct adverb placement.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  prepositions_advanced:
+    interference_patterns:
+    - pattern: Preposition transfer in verb phrases
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: I listen music.
+      example_correct: I listen to music.
+      explanation: Italian uses different prepositions than English, or omits prepositions
+        where English requires them.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Preposition usage is highly language-specific. Italian prepositions
+      often don't map 1:1 to English.
+    teacher_tips:
+      how_to_explain: 'Teach: Prepositions must be learned with each verb. Listen
+        to (not listen music). Depend on (not depend of).'
+      where_to_start: Start with the most common preposition errors.
+      sequencing: 'Week 1: Verb + preposition. Week 2: Prepositions of place. Week
+        3: Prepositions of time. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Preposition Fill
+      type: fill-in-the-blank
+      description: 20 sentences with preposition blanks.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  tense_aspect_advanced:
+    interference_patterns:
+    - pattern: Present perfect vs simple past confusion
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: I have seen him yesterday.
+      example_correct: I saw him yesterday.
+      explanation: Italian may use a single past tense form where English distinguishes
+        simple past and present perfect.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian tense-aspect system differs from English. Specific past
+      time markers require simple past in English.
+    teacher_tips:
+      how_to_explain: 'Teach: yesterday/last week/in 2010 -> Simple Past. ever/never/already/yet
+        -> Present Perfect.'
+      where_to_start: Start with simple past. Then teach present perfect. Then contrast.
+      sequencing: 'Week 1: Simple past. Week 2: Present perfect. Week 3: Contrast.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Tense Choice
+      type: fill-in-the-blank
+      description: 20 sentences choosing simple past or present perfect.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  conditionals_advanced:
+    interference_patterns:
+    - pattern: Use of would in if-clause
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: If I would have time, I would go.
+      example_correct: If I had time, I would go.
+      explanation: Italian may use conditional forms in both clauses. English never
+        uses 'would' in the if-clause.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian conditional structures may allow conditional forms in
+      both clauses. English strictly avoids 'would' in if-clauses.
+    teacher_tips:
+      how_to_explain: 'Teach: NO WOULD IN IF-CLAUSE. If + past, would + base. If +
+        present, will + base.'
+      where_to_start: Start with second conditional. Then teach first conditional.
+        Then third.
+      sequencing: 'Week 1: Second conditional. Week 2: First conditional. Week 3:
+        Third conditional. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Conditional Formation
+      type: sentence-rewrite
+      description: Rewrite 10 conditional sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  relative_clauses_advanced:
+    interference_patterns:
+    - pattern: Use of 'what' as relative pronoun
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: The book what I read was good.
+      example_correct: The book that I read was good.
+      explanation: Italian may use a universal relative pronoun that maps to English
+        'what', but English 'what' is not a relative pronoun.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian relative clause structure differs from English. English
+      uses that/which/who, never 'what' as a relative pronoun.
+    teacher_tips:
+      how_to_explain: 'Teach: Use ''that'' or ''which'' for things, ''who'' for people.
+        Never use ''what'' as a relative pronoun.'
+      where_to_start: Start with that/which/who. Then teach restrictive vs non-restrictive.
+      sequencing: 'Week 1: That/which/who. Week 2: Restrictive vs non-restrictive.
+        Week 3: Omitting relative pronouns. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Relative Pronoun Choice
+      type: fill-in-the-blank
+      description: 15 sentences choosing correct relative pronoun.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  passive_voice_advanced:
+    interference_patterns:
+    - pattern: Avoidance of passive voice
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: They built this house in 1900.
+      example_correct: This house was built in 1900.
+      explanation: Italian may use active constructions where English prefers passive
+        voice, especially in formal writing.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian may use active voice in contexts where English prefers
+      passive, especially in academic and formal writing.
+    teacher_tips:
+      how_to_explain: 'Teach: Use passive when the action is more important than the
+        agent. The house was built (not they built the house).'
+      where_to_start: Start with passive formula. Then teach when to use passive.
+      sequencing: 'Week 1: Passive formula (be + past participle). Week 2: When to
+        use passive. Week 3: Passive in writing. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Active to Passive
+      type: sentence-rewrite
+      description: Convert 10 active sentences to passive.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  reported_speech_advanced:
+    interference_patterns:
+    - pattern: No backshift in reported speech
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: She said that she is tired.
+      example_correct: She said that she was tired.
+      explanation: Italian may not backshift tenses in reported speech. English requires
+        backshift (present -> past).
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian reported speech conventions may not include tense backshift.
+      English requires systematic backshift.
+    teacher_tips:
+      how_to_explain: 'Teach: Backshift rule: present -> past, will -> would, can
+        -> could. She said she was tired.'
+      where_to_start: Start with say/tell + backshift. Then teach pronoun changes.
+      sequencing: 'Week 1: Backshift with say/tell. Week 2: Pronoun changes. Week
+        3: Modal backshift. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Reported Speech
+      type: sentence-rewrite
+      description: Convert 15 direct speech sentences to reported speech.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  countability_advanced:
+    interference_patterns:
+    - pattern: Pluralization of uncountable nouns
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: I have many homeworks.
+      example_correct: I have a lot of homework.
+      explanation: Italian may treat as countable some nouns that are uncountable
+        in English (homework, advice, information).
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian countability distinctions differ from English. Nouns countable
+      in Italian may be uncountable in English.
+    teacher_tips:
+      how_to_explain: 'Teach: Common uncountables: homework, advice, information,
+        furniture, luggage, research. Use ''a piece of'' or ''some''.'
+      where_to_start: Start with common uncountable nouns. Then teach quantifiers.
+      sequencing: 'Week 1: Uncountable nouns list. Week 2: Much/many. Week 3: Partitives.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Countable or Not
+      type: matching
+      description: Categorize 30 nouns as countable or uncountable.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  false_friends_advanced:
+    interference_patterns:
+    - pattern: 'False friend: library (not bookstore)'
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: I bought this at the library.
+      example_correct: I bought this at the bookstore.
+      explanation: Italian and English share cognates with different meanings (false
+        friends). These cause high-impact errors.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 4
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian and English share many Latin/Germanic cognates, but some
+      have shifted meaning. These 'false friends' cause serious communication errors.
+    teacher_tips:
+      how_to_explain: 'Teach: Create a false friends list. Learn the top 20 false
+        friends for {language} speakers.'
+      where_to_start: Start with the highest-impact false friends.
+      sequencing: 'Week 1: Top 10 false friends. Week 2: Next 10. Week 3: Context
+        practice. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: False Friend Match
+      type: matching
+      description: Match 20 false friends to their correct meanings.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  subject_verb_agreement_advanced:
+    interference_patterns:
+    - pattern: Third-person -s omission
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: She like chocolate.
+      example_correct: She likes chocolate.
+      explanation: Italian may not mark third-person singular on verbs. English requires
+        -s for he/she/it in present simple.
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian verb conjugation may not include a third-person singular
+      marker. English -s is unique and frequently omitted.
+    teacher_tips:
+      how_to_explain: 'Teach: he/she/it + verb-s. Drill: I like, you like, he likes,
+        she likes, it likes.'
+      where_to_start: Start with third-person -s. Then teach does/doesn't.
+      sequencing: 'Week 1: Third-person -s. Week 2: Does/doesn''t. Week 3: Irregular
+        forms. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: SVA Drill
+      type: fill-in-the-blank
+      description: 20 sentences with correct verb form.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  gerund_infinitive_advanced:
+    interference_patterns:
+    - pattern: Infinitive after preposition
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: Before to leave, say goodbye.
+      example_correct: Before leaving, say goodbye.
+      explanation: Italian may use infinitive after prepositions. English always uses
+        gerund (-ing) after prepositions.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian may use infinitive forms after prepositions. English strictly
+      requires gerund (-ing) after all prepositions.
+    teacher_tips:
+      how_to_explain: 'Teach: After prepositions -> always -ing. Before leaving (not
+        before to leave). Without saying (not without to say).'
+      where_to_start: Start with common preposition + gerund combinations.
+      sequencing: 'Week 1: Preposition + gerund. Week 2: Verb + infinitive vs verb
+        + gerund. Week 3: Review. Week 4: Test.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Gerund After Preposition
+      type: fill-in-the-blank
+      description: 15 sentences with preposition + gerund.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  modal_verbs_advanced:
+    interference_patterns:
+    - pattern: Modal verb confusion
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: I can to swim.
+      example_correct: I can swim.
+      explanation: Italian modal verbs may differ from English. English modals are
+        followed by bare infinitive (no 'to').
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian modal verb system differs from English. English modals
+      (can, should, must) are followed by bare infinitive.
+    teacher_tips:
+      how_to_explain: 'Teach: Modal + base verb (no ''to''). I can swim (not I can
+        to swim). She should go (not she should to go).'
+      where_to_start: Start with can/could. Then teach should/must/would.
+      sequencing: 'Week 1: Can/could. Week 2: Should/must. Week 3: Would/might. Week
+        4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Modal Choice
+      type: fill-in-the-blank
+      description: 15 sentences choosing correct modal.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  comparatives_advanced:
+    interference_patterns:
+    - pattern: Comparative formation error
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: This is more better.
+      example_correct: This is better.
+      explanation: Italian may form comparatives differently. English uses -er for
+        short adjectives and more for long ones, never both.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian comparative formation may differ from English. English
+      never uses both -er and more together.
+    teacher_tips:
+      how_to_explain: 'Teach: Short adjectives -> -er (bigger). Long adjectives ->
+        more (more beautiful). Never both (not more better).'
+      where_to_start: Start with -er rule. Then teach more/most. Then teach irregulars.
+      sequencing: 'Week 1: -er comparatives. Week 2: More/most. Week 3: Irregulars.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Comparative Formation
+      type: sentence-rewrite
+      description: Rewrite 10 comparative sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  linking_words_advanced:
+    interference_patterns:
+    - pattern: Double conjunction error
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: Although it rained, but we went out.
+      example_correct: Although it rained, we went out.
+      explanation: Italian may use double conjunctions (although...but, because...so).
+        English uses only one conjunction per clause.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian may allow double conjunctions. English strictly uses one
+      conjunction per clause.
+    teacher_tips:
+      how_to_explain: 'Teach: although OR but (not both). because OR so (not both).
+        Pick one.'
+      where_to_start: Start with although/but. Then teach because/so.
+      sequencing: 'Week 1: Although/but. Week 2: Because/so. Week 3: Other conjunctions.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Conjunction Fix
+      type: error-correction
+      description: Fix 10 double conjunction sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  possessives_advanced:
+    interference_patterns:
+    - pattern: Possessive formation error
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: The book of John is interesting.
+      example_correct: John's book is interesting.
+      explanation: Italian may use 'of' for possession where English uses 's for people.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian may express possession differently from English. English
+      uses 's for people and of for things.
+    teacher_tips:
+      how_to_explain: 'Teach: Use ''s for people (John''s book). Use of for things
+        (the leg of the table).'
+      where_to_start: Start with 's for people. Then teach of for things.
+      sequencing: 'Week 1: ''S for people. Week 2: Of for things. Week 3: Double possessive.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Possessive Formation
+      type: sentence-rewrite
+      description: Rewrite 10 possessive sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  phonology_advanced:
+    interference_patterns:
+    - pattern: Consonant cluster difficulty
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: I am wery happy.
+      example_correct: I am very happy.
+      explanation: Italian phonology differs from English, causing pronunciation errors
+        that affect spelling.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian phonological system differs from English, causing pronunciation
+      and spelling errors.
+    teacher_tips:
+      how_to_explain: 'Teach: Focus on sounds that don''t exist in {language}. Practice
+        minimal pairs.'
+      where_to_start: Start with the most problematic sounds.
+      sequencing: 'Week 1: Problem sounds. Week 2: Minimal pairs. Week 3: Connected
+        speech. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Pronunciation Practice
+      type: oral-drill
+      description: Practice 20 minimal pairs.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  adverbs_advanced:
+    interference_patterns:
+    - pattern: Adjective used as adverb
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: He speaks English good.
+      example_correct: He speaks English well.
+      explanation: Italian may not distinguish morphologically between adjectives
+        and adverbs. English requires -ly for most adverbs.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian may use the same form for adjectives and adverbs. English
+      requires -ly for most adverbs.
+    teacher_tips:
+      how_to_explain: 'Teach: Adjective describes a noun. Adverb describes a verb.
+        Most adverbs add -ly. Good -> well (irregular).'
+      where_to_start: Start with the -ly rule. Then teach exceptions.
+      sequencing: 'Week 1: -ly adverbs. Week 2: Exceptions (fast, hard, late). Week
+        3: Good vs well. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Adjective or Adverb
+      type: fill-in-the-blank
+      description: 15 sentences choosing correct form.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  discourse_pragmatics:
+    interference_patterns:
+    - pattern: Directness in requests
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: Give me the book.
+      example_correct: Could you give me the book, please?
+      explanation: Italian may use more direct requests than English. English uses
+        indirect questions and modals for politeness.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian pragmatic norms for requests, refusals, and apologies
+      may differ from English. Directness levels vary culturally.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses indirect requests for politeness. Could
+        you...? Would you mind...? Please + imperative.'
+      where_to_start: Start with requests. Then teach refusals and apologies.
+      sequencing: 'Week 1: Polite requests. Week 2: Refusals. Week 3: Apologies. Week
+        4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Politeness Practice
+      type: sentence-rewrite
+      description: Rewrite 10 direct sentences as polite requests.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  collocations:
+    interference_patterns:
+    - pattern: L1 collocation transfer
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: I make my homework.
+      example_correct: I do my homework.
+      explanation: Italian collocations (verb + noun combinations) often don't map
+        to English. English has fixed collocations.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian collocations differ from English. Verb + noun combinations
+      are often fixed and must be learned as chunks.
+    teacher_tips:
+      how_to_explain: 'Teach: English collocations: do homework (not make), take a
+        photo (not make), catch a cold (not have).'
+      where_to_start: Start with the most common collocation errors.
+      sequencing: 'Week 1: Verb + noun collocations. Week 2: Adjective + noun. Week
+        3: Preposition + noun. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Collocation Match
+      type: matching
+      description: Match 20 verbs to their correct noun partners.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  existential_there:
+    interference_patterns:
+    - pattern: Use of 'it is' for 'there is'
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: It is many people here.
+      example_correct: There are many people here.
+      explanation: Italian may use 'it' or other constructions for existential meaning.
+        English uses 'there is/are'.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian may not have an existential construction equivalent to
+      English 'there is/are'. Learners may use 'it is' instead.
+    teacher_tips:
+      how_to_explain: 'Teach: Use ''there is'' for existence. There is a book on the
+        table. There are many people.'
+      where_to_start: Start with there is/are. Then teach there was/were.
+      sequencing: 'Week 1: There is/are. Week 2: There was/were. Week 3: There will
+        be. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: There Is or It Is
+      type: fill-in-the-blank
+      description: 15 sentences choosing there is/it is.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  determiners:
+    interference_patterns:
+    - pattern: Use of 'much' with countable nouns
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: I have much friends.
+      example_correct: I have many friends.
+      explanation: Italian may not distinguish between countable and uncountable quantifiers.
+        English uses many for countable, much for uncountable.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian quantifier system may differ from English. English distinguishes
+      many (countable) vs much (uncountable).
+    teacher_tips:
+      how_to_explain: 'Teach: Many + countable (many books). Much + uncountable (much
+        water). A lot of + both.'
+      where_to_start: Start with many/much. Then teach few/little. Then teach a lot
+        of.
+      sequencing: 'Week 1: Many/much. Week 2: Few/little. Week 3: A lot of/plenty
+        of. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Quantifier Choice
+      type: fill-in-the-blank
+      description: 20 sentences choosing correct quantifier.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  question_formation_advanced:
+    interference_patterns:
+    - pattern: Omission of do-support in questions
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: You like coffee?
+      example_correct: Do you like coffee?
+      explanation: Italian may form questions by intonation alone or with question
+        particles. English requires do-support.
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian question formation differs from English. English requires
+      do/does/did for most questions (except with 'be' and modals).
+    teacher_tips:
+      how_to_explain: 'Teach: Do/Does/Did + subject + base verb? Do you like coffee?
+        (not You like coffee?)'
+      where_to_start: Start with yes/no questions. Then teach wh- questions.
+      sequencing: 'Week 1: Do/does questions. Week 2: Wh- questions. Week 3: Tag questions.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Question Formation
+      type: sentence-rewrite
+      description: Convert 15 statements to questions.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  negation_advanced:
+    interference_patterns:
+    - pattern: Double negation
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: I don't have no money.
+      example_correct: I don't have any money. / I have no money.
+      explanation: Italian may allow double negation. Standard English uses only one
+        negative per clause.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian may allow or require double negation. Standard English
+      uses single negation (not...any, no, never).
+    teacher_tips:
+      how_to_explain: 'Teach: One negative per clause. I don''t have any (not I don''t
+        have no). I have no money (correct single negation).'
+      where_to_start: Start with not...any. Then teach no/never/nobody.
+      sequencing: 'Week 1: Not...any. Week 2: No/never/nobody. Week 3: Double negation
+        errors. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Negation Fix
+      type: error-correction
+      description: Fix 10 double negation sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  conjunctions_advanced:
+    interference_patterns:
+    - pattern: Use of 'also' at sentence start
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: Also, I think we should go.
+      example_correct: I also think we should go.
+      explanation: Italian may place 'also' at sentence start. English prefers mid-sentence
+        position or 'furthermore'.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian conjunction and connector usage differs from English.
+      Word order and formality levels vary.
+    teacher_tips:
+      how_to_explain: 'Teach: ''Also'' goes mid-sentence (I also think). ''Furthermore''
+        or ''moreover'' for formal writing.'
+      where_to_start: Start with also/too/either. Then teach formal connectors.
+      sequencing: 'Week 1: Also/too. Week 2: Furthermore/moreover. Week 3: However/nevertheless.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Connector Placement
+      type: sentence-rewrite
+      description: Rewrite 10 sentences with correct connector placement.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  idiomatic_expressions_advanced:
+    interference_patterns:
+    - pattern: Literal translation of idioms
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: It rains ropes.
+      example_correct: It's raining cats and dogs.
+      explanation: Italian idioms don't translate literally. Learners may translate
+        word-for-word.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Every language has unique idioms. Italian idioms often have different
+      English equivalents.
+    teacher_tips:
+      how_to_explain: 'Teach: Idioms don''t translate literally. Learn the English
+        equivalent as a whole phrase.'
+      where_to_start: Start with the most common idiom categories.
+      sequencing: 'Week 1: Weather idioms. Week 2: Body idioms. Week 3: Animal idioms.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Idiom Match
+      type: matching
+      description: Match 15 idioms to their English equivalents.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  register_formality:
+    interference_patterns:
+    - pattern: Informal register in formal contexts
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: I wanna go.
+      example_correct: I would like to go.
+      explanation: Italian may not distinguish formality through verb forms. English
+        uses modal verbs and full forms for formality.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian may express formality differently from English. English
+      uses modal verbs, full forms, and specific vocabulary for formal contexts.
+    teacher_tips:
+      how_to_explain: 'Teach: Formal = would like (not wanna), could you (not can
+        you), I am (not I''m).'
+      where_to_start: Start with contractions. Then teach modal formality.
+      sequencing: 'Week 1: Contractions. Week 2: Modal formality. Week 3: Formal vocabulary.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Formal or Informal
+      type: sentence-rewrite
+      description: Rewrite 10 informal sentences in formal register.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  numbers_dates:
+    interference_patterns:
+    - pattern: Number format differences
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: The price is 1.000,50.
+      example_correct: The price is 1,000.50.
+      explanation: Italian may use different number formatting (comma vs period for
+        decimals/thousands).
+      frequency: 2
+      persistence: 1
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian number and date formatting conventions differ from English.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses period for decimals, comma for thousands.
+        Dates: month/day/year (US).'
+      where_to_start: Start with number formatting. Then teach dates.
+      sequencing: 'Week 1: Number format. Week 2: Date format. Week 3: Saying numbers
+        aloud. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Number Conversion
+      type: sentence-rewrite
+      description: Convert 10 numbers/dates to English format.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  punctuation_conventions:
+    interference_patterns:
+    - pattern: Punctuation spacing differences
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: Hello ! How are you ?
+      example_correct: Hello! How are you?
+      explanation: Italian may use different spacing conventions before punctuation
+        marks.
+      frequency: 2
+      persistence: 1
+      communicative_impact: 1
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian punctuation conventions differ from English in spacing
+      and usage.
+    teacher_tips:
+      how_to_explain: 'Teach: English has no space before punctuation. Write: Hello!
+        (not Hello !).'
+      where_to_start: Start with spacing. Then teach quotation marks.
+      sequencing: 'Week 1: Spacing. Week 2: Quotation marks. Week 3: Other conventions.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Punctuation Fix
+      type: error-correction
+      description: Fix 10 punctuation errors.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  writing_conventions:
+    interference_patterns:
+    - pattern: Paragraph structure differences
+      example_l1: '[it] example'
+      example_gloss: gloss
+      example_wrong: A paragraph without a clear topic sentence.
+      example_correct: A paragraph with a clear topic sentence followed by supporting
+        details.
+      explanation: Italian writing conventions may differ from English. English academic
+        writing values explicit topic sentences and linear argumentation.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian rhetorical conventions differ from English. English values
+      directness, linear structure, and explicit topic sentences.
+    teacher_tips:
+      how_to_explain: 'Teach: English paragraphs start with a topic sentence. Each
+        paragraph has one main idea. Use transitions.'
+      where_to_start: Start with topic sentences. Then teach paragraph structure.
+      sequencing: 'Week 1: Topic sentences. Week 2: Paragraph structure. Week 3: Transitions.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Paragraph Analysis
+      type: error-correction
+      description: Identify and fix structural problems in 5 paragraphs.
+      duration: 15
+    sources:
+    - Swan & Smith (2001) Learner English
+  pro_drop_it:
+    interference_patterns:
+    - pattern: Subject pronoun omission
+      example_l1: Parlo italiano
+      example_gloss: speak Italian
+      example_wrong: Speak Italian.
+      example_correct: I speak Italian.
+      explanation: Italian is a pro-drop language (subject pronouns can be omitted).
+        English requires explicit subjects.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian allows subject pronoun omission because verb conjugation
+      indicates the person. English requires explicit subjects.
+    teacher_tips:
+      how_to_explain: 'Teach: English ALWAYS needs a subject. I speak (not just speak).
+        It rains (not just rains — English uses ''it'' as dummy subject).'
+      where_to_start: 'Start with the basic rule: every sentence needs a subject.'
+      sequencing: 'Week 1: Explicit subjects. Week 2: Dummy subjects (it, there).
+        Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Subject Addition
+      type: sentence-rewrite
+      description: Add subjects to 15 Italian sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  auxiliary_selection:
+    interference_patterns:
+    - pattern: Essere vs avere auxiliary confusion
+      example_l1: Sono andato (I am gone) vs. Ho mangiato (I have eaten)
+      example_gloss: be gone vs have eaten
+      example_wrong: I am eaten lunch.
+      example_correct: I have eaten lunch.
+      explanation: Italian uses essere (be) or avere (have) as auxiliary for past
+        tenses. English uses have for all.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian past tenses use either essere or avere as auxiliary. English
+      uses have for all past participles.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses HAVE for all past participles. I have eaten
+        (not I am eaten).'
+      where_to_start: Start with have + past participle. Then teach irregular past
+        participles.
+      sequencing: 'Week 1: Have + past participle. Week 2: Irregulars. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Auxiliary Choice
+      type: fill-in-the-blank
+      description: 15 sentences choosing correct auxiliary.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  diminutives_it:
+    interference_patterns:
+    - pattern: Diminutive suffix overuse
+      example_l1: Casina (little house)
+      example_gloss: house-DIM
+      example_wrong: I live in a house-little.
+      example_correct: I live in a small house.
+      explanation: Italian uses diminutive suffixes (-ino, -etto, -uccio) productively.
+        English uses separate adjectives.
+      frequency: 2
+      persistence: 1
+      communicative_impact: 1
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian diminutive suffixes are highly productive. English uses
+      separate adjectives (small, little).
+    teacher_tips:
+      how_to_explain: 'Teach: English uses adjectives, not suffixes. A small house
+        (not a house-little).'
+      where_to_start: Start with common diminutive patterns.
+      sequencing: 'Week 1: Small/little. Week 2: Other diminutives. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Diminutive Translation
+      type: translation
+      description: Translate 10 Italian sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  subjunctive_it:
+    interference_patterns:
+    - pattern: Subjunctive overuse
+      example_l1: Penso che sia giusto
+      example_gloss: I think that it-is-SUBJ right
+      example_wrong: I think that it be right.
+      example_correct: I think that it is right.
+      explanation: Italian uses subjunctive after opinion verbs. English uses indicative.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian uses subjunctive mood after expressions of opinion, doubt,
+      and emotion. English uses indicative in most of these contexts.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses indicative after ''I think''. I think it
+        is right (not it be right).'
+      where_to_start: Start with think/believe + indicative. Then teach other subjunctive
+        triggers.
+      sequencing: 'Week 1: Think + indicative. Week 2: Suggest/recommend + subjunctive.
+        Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Subjunctive Practice
+      type: sentence-rewrite
+      description: Rewrite 10 Italian sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  clitic_pronouns_it:
+    interference_patterns:
+    - pattern: Pre-verbal clitic pronouns
+      example_l1: Lo vedo (it I-see)
+      example_gloss: it I-see
+      example_wrong: It I see.
+      example_correct: I see it.
+      explanation: Italian places object pronouns before the verb. English places
+        them after.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian clitic pronouns (lo, la, li, le, gli, le) go before the
+      verb. English object pronouns go after.
+    teacher_tips:
+      how_to_explain: 'Teach: English pronouns go AFTER the verb. I see it (not it
+        I see).'
+      where_to_start: Start with simple pronoun placement. Then teach double pronouns.
+      sequencing: 'Week 1: Pronoun after verb. Week 2: Double objects. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Pronoun Placement
+      type: sentence-rewrite
+      description: Rewrite 15 Italian sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  gerund_it:
+    interference_patterns:
+    - pattern: Gerund as progressive
+      example_l1: Sto mangiando (I-am eating)
+      example_gloss: I-am eating
+      example_wrong: I am eat.
+      example_correct: I am eating.
+      explanation: Italian uses stare + gerund for progressive. English uses be +
+        -ing.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian uses stare + gerund for progressive aspect. English uses
+      be + -ing.
+    teacher_tips:
+      how_to_explain: 'Teach: English progressive = be + -ing. I am eating (not I
+        am eat).'
+      where_to_start: Start with present progressive. Then teach past progressive.
+      sequencing: 'Week 1: Present progressive. Week 2: Past progressive. Week 3:
+        Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Progressive Practice
+      type: sentence-rewrite
+      description: Rewrite 10 Italian sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  partitive_it:
+    interference_patterns:
+    - pattern: Partitive article use
+      example_l1: Mangio della mela (I-eat of-the apple)
+      example_gloss: I-eat of-the apple
+      example_wrong: I eat of-the apple.
+      example_correct: I eat some apple. / I eat an apple.
+      explanation: Italian uses partitive articles (del, della, dei) where English
+        uses 'some' or no article.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian partitive articles (del, della) indicate an unspecified
+      quantity. English uses 'some' or no article.
+    teacher_tips:
+      how_to_explain: 'Teach: Italian del/della = some (or nothing). I eat some apple
+        / I eat an apple.'
+      where_to_start: Start with partitive = some. Then teach when to omit.
+      sequencing: 'Week 1: Partitive = some. Week 2: When to omit. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Partitive Translation
+      type: translation
+      description: Translate 10 Italian sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  double_negation_it:
+    interference_patterns:
+    - pattern: Double negation
+      example_l1: Non ho mai visto niente
+      example_gloss: I-not have never seen nothing
+      example_wrong: I don't have never seen nothing.
+      example_correct: I have never seen anything.
+      explanation: Italian uses double/triple negation (non...mai...niente). Standard
+        English uses single negation.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian allows multiple negation (non...mai...niente). Standard
+      English uses single negation.
+    teacher_tips:
+      how_to_explain: 'Teach: One negative per clause. I have never seen anything
+        (not I haven''t never seen nothing).'
+      where_to_start: Start with single negation. Then teach never/nothing/nobody.
+      sequencing: 'Week 1: Single negation. Week 2: Never/nothing. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Negation Fix
+      type: error-correction
+      description: Fix 10 double negation sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  congiuntivo:
+    interference_patterns:
+    - pattern: Congiuntivo after superlative
+      example_l1: È il miglior film che abbia mai visto
+      example_gloss: It is the best film that I-have-SUBJ ever seen
+      example_wrong: It is the best film that I have ever seen (without subjunctive).
+      example_correct: It is the best film (that) I have ever seen.
+      explanation: Italian uses subjunctive after superlatives. English uses indicative
+        or omits the relative clause.
+      frequency: 2
+      persistence: 1
+      communicative_impact: 1
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian uses subjunctive after superlatives and expressions of
+      opinion. English uses indicative.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses indicative after superlatives. The best
+        film I have ever seen.'
+      where_to_start: Start with superlative + indicative.
+      sequencing: 'Week 1: Superlative + indicative. Week 2: Other subjunctive triggers.
+        Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Subjunctive Removal
+      type: sentence-rewrite
+      description: Rewrite 10 Italian sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  reflexive_it:
+    interference_patterns:
+    - pattern: Reflexive verb overuse
+      example_l1: Mi chiamo (myself I-call)
+      example_gloss: myself I-call
+      example_wrong: Myself I call John.
+      example_correct: My name is John. / I am called John.
+      explanation: Italian uses reflexive verbs where English uses simple verbs or
+        passive constructions.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Italian uses reflexive verbs for many expressions that English
+      handles differently (chiamarsi = to be called, sentirsi = to feel).
+    teacher_tips:
+      how_to_explain: 'Teach: English doesn''t use reflexive for ''my name is''. My
+        name is John (not myself I call John).'
+      where_to_start: Start with common reflexive expressions.
+      sequencing: 'Week 1: Chiamarsi = my name is. Week 2: Sentirsi = feel. Week 3:
+        Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Reflexive Translation
+      type: translation
+      description: Translate 10 Italian sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English

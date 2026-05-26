@@ -25,10 +25,18 @@ meaning:
   ccqs:
   - question: Did the subject do the action themselves?
     answer: No, someone else did it for them.
+    purpose: Tests whether the learner understands the key concept of have get something
+      done. This is important because mastering this distinction is essential for
+      accurate and natural English at B2 level.
   - question: Is this about arranging a service or doing it yourself?
     answer: Arranging a service — causative.
+    purpose: Tests whether the learner can distinguish between existential 'there'
+      (indicating existence) and dummy 'it' (used for weather, time, distance). Confusing
+      these is a very common beginner error.
   - question: Is 'have' more formal or informal than 'get' in this structure?
     answer: '''Have'' is more formal; ''get'' is informal.'
+    purpose: Tests whether the learner understands when to use comparative vs. superlative
+      forms. This distinction depends on how many items are being compared.
   example_generator:
     contexts:
     - everyday situations
@@ -146,8 +154,8 @@ teaching:
     adaptation_notes: Show pairs of images (broken phone/repaired phone) and students
       describe using causative have/get.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, §12.1-12.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -156,15 +164,52 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for have_get_something_done.
-  correction: Correct form.
-  explanation: This is a common error for have_get_something_done.
+- error: '*She got her hair to be cut.*'
+  correction: She got her hair cut.
+  explanation: Causative 'get' uses 'get + object + past participle', not 'get + object
+    + to be + participle'. The 'to be' is redundant and ungrammatical in this structure.
   l1_groups:
   - Portuguese
   - Spanish
+  - French
+- error: '*I had fixed by the plumber the leak.*'
+  correction: I had the leak fixed by the plumber.
+  explanation: 'Word order in causative with agent: ''have + object + past participle
+    + by + agent''. The object (''the leak'') must come immediately after ''have'',
+    not after the past participle.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Chinese
+- error: '*We got our house painted it last month.*'
+  correction: We got our house painted last month.
+  explanation: The object ('house') appears once in the causative structure. Adding
+    'it' after the past participle creates a double object error. 'Our house' and
+    'it' refer to the same thing.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Arabic
+- error: '*Did you got your car serviced yesterday?*'
+  correction: Did you get your car serviced yesterday?
+  explanation: After the auxiliary 'did', use the base form 'get' (not 'got'). 'Did'
+    already carries the past tense. Common error in question formation with causative
+    structures.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, this structure is standard and expected. Register variation
+    is marked by vocabulary and style rather than grammatical form.
+- note: In formal writing, avoid contractions and use full forms.
+- note: In conversation, contractions and reduced forms are common.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used in everyday communication.
+- note: In academic writing, this structure appears in formal contexts and is a marker
+    of proficient English.
+- note: In professional contexts, correct use of this structure is expected in formal
+    writing.

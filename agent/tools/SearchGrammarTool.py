@@ -6,11 +6,13 @@ from pydantic import Field
 
 
 def _get_data_dir() -> Path:
-    """Get the data directory path. Supports env var override for Docker deployments."""
-    env_path = os.getenv("COGNIESL_DATA_DIR")
+    """Return the read-only static data directory (grammar/L1/activities).
+    Uses COGNIESL_STATIC_DIR on Railway (points to /app/static-data, outside the
+    Volume mount at /app/data). Falls back to source-relative path for local dev."""
+    env_path = os.getenv("COGNIESL_STATIC_DIR")
     if env_path:
         return Path(env_path)
-    # Default: 2 levels up from this file (agent/tools/ -> agent/ -> CogniESL/data/)
+    # Local dev fallback: 2 levels up from this file → CogniESL/data/
     return Path(__file__).resolve().parents[2] / "data"
 
 

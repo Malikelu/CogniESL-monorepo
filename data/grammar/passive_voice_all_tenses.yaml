@@ -16,8 +16,21 @@ meaning:
 
     '
   ccqs:
-  - question: Can we use passive in all tenses
-    answer: Yes. The tense of be changes to match the tense.
+  - question: Can we use passive in all tenses?
+    answer: Yes. The tense of 'be' changes to match the tense.
+    purpose: Tests whether the learner understands that passive voice is not limited
+      to one tense -- it can be formed in all tenses by changing the form of 'be'
+      (is/was/will be/has been/etc.). This is essential for academic and professional
+      writing.
+  - question: Can we use a different structure here with the same meaning?
+    answer: No — changing the structure would change the meaning or make the sentence
+      ungrammatical.
+    purpose: Tests whether the learner understands that passive voice all tenses is
+      the only appropriate structure for this meaning/context.
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      passive voice all tenses and explain why they are incorrect.
   example_generator:
     contexts:
     - everyday situations
@@ -143,8 +156,8 @@ teaching:
     adaptation_notes: Students write a short news report using passive voice in different
       tenses.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8:
+    Passive Voice, §8.1-8.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -153,15 +166,26 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for passive_voice_all_tenses.
-  correction: Correct form.
-  explanation: This is a common error for passive_voice_all_tenses.
+- error: '*The letter is send yesterday.*'
+  correction: The letter was sent yesterday.
+  explanation: Passive tense is determined by the form of 'be'. 'Yesterday' requires
+    past tense (was sent), not present (is sent).
   l1_groups:
   - Portuguese
   - Spanish
+  - French
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In academic writing, passive voice is standard in methodology and results
+    sections.
+- note: In formal writing, passive voice is used to depersonalize and focus on the
+    process.
+- note: In conversation, passive voice is less common; active voice is preferred.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used for everyday communication and is
+    among the most frequent patterns in spoken English.
+- note: In academic writing, this structure appears in discussions of established
+    knowledge, methodology, and findings.
+- note: In news reports, this structure is used for reporting events and attributing
+    statements.

@@ -32,17 +32,29 @@ meaning:
   - question: In 'He is said to be rich,' who says this?
     answer: We don't know exactly — it is a general belief or rumour. The passive
       reporting structure allows us to report what people say without naming the source.
+    purpose: Tests whether the learner understands passive reporting structures (is
+      said to, is believed to) and how they differ from active reporting (people say
+      that).
   - question: What is the difference between 'He is said to be rich' and 'He is said
       to have been rich'?
     answer: '"To be rich" means he is rich now. "To have been rich" means he was rich
       in the past (but may not be now).'
+    purpose: Tests whether the learner understands how cleft sentences (it-clefts
+      and wh-clefts) are used to emphasize specific information. The structure changes
+      the focus of the sentence.
   - question: In 'The building is expected to be completed by June,' how many passive
       structures are there?
     answer: Two. 'Is expected' (passive) + 'to be completed' (passive infinitive).
       This is called a double passive.
+    purpose: Tests whether the learner can distinguish between existential 'there'
+      (indicating existence) and dummy 'it' (used for weather, time, distance). Confusing
+      these is a very common beginner error.
   - question: Why do journalists use passive reporting instead of active?
     answer: To create distance and objectivity. It allows them to report claims without
       confirming them as facts and without naming (or having to name) the source.
+    purpose: Tests whether the learner can identify whether a sentence is active or
+      passive. Understanding voice is essential for choosing the correct verb form
+      and word order.
   example_generator:
     contexts:
     - news reporting
@@ -212,8 +224,8 @@ teaching:
       is moving to London.'' → ''Brad Pitt is said to be moving to London.'' Rotate
       roles.'
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
+    Modals, §9.1-9.6'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -222,15 +234,54 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for passive_voice_complex.
-  correction: Correct form.
-  explanation: This is a common error for passive_voice_complex.
+- error: '*He is said that he is the richest man.*'
+  correction: He is said to be the richest man.
+  explanation: 'Passive reporting verbs take ''to + infinitive'', not ''that + clause''.
+    Use either active: ''People say that he is rich'' or passive: ''He is said to
+    be rich'', but not a hybrid of both patterns.'
   l1_groups:
   - Portuguese
   - Spanish
+  - French
+- error: '*The building is expected that it will be completed soon.*'
+  correction: The building is expected to be completed soon.
+  explanation: 'Double subject in passive reporting: ''the building'' is already the
+    subject. Adding ''it'' creates a redundancy. The structure is ''subject + be +
+    past participle + to-infinitive''.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Arabic
+- error: '*The report is expected to will be published soon.*'
+  correction: The report is expected to be published soon.
+  explanation: After 'to' infinitive, use the base form only -- never add 'will'.
+    The passive infinitive 'to be published' already carries future meaning from 'is
+    expected'.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+- error: '*She made him to apologize for what he did.*'
+  correction: She made him apologize for what he did.
+  explanation: Causative 'make' takes the bare infinitive (without 'to'). Adding 'to'
+    after 'make + person' is a very common error caused by other causative verbs that
+    do take 'to' (ask, tell, want him to).
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Chinese
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In academic writing, passive voice is standard in methodology and results
+    sections.
+- note: In formal writing, passive voice is used to depersonalize and focus on the
+    process.
+- note: In conversation, passive voice is less common; active voice is preferred.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In academic writing, passive voice is standard in methodology and results
+    sections.
+- note: In news reports, passive voice is used when the agent is unknown or irrelevant.
+- note: In conversation, passive voice is less common; active voice is preferred.

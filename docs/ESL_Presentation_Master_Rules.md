@@ -8,17 +8,17 @@ This document defines the strict pedagogical and structural rules for an AI agen
 
 ## 2. Visual & Formatting Standards (The "Anti-Fatigue" Layer)
 
-### The 80/20 Visual Rule
+### The 80/20 Visual GUIDE
 
-Every slide MUST maintain a ratio of 80% visual/white space to 20% text. High-quality imagery is mandatory for contextualization.
+Every slide MUST try to maintain a ratio of 80% visual/white space to 20% text. High-quality imagery is mandatory for contextualization.
 
-### The 6x6 Text Rule
+### The Text Rule
 
-No slide shall exceed 6 words per line or 6 lines of text. This prevents cognitive overload for language learners.
+Beware to not overload the slide with text This prevents cognitive overload for language learners.
 
 ### Typography
 
-Use only clean, professional Sans-Serif fonts (e.g., Arial, Montserrat, Roboto).
+Use only clean, professional fonts.
 
 ### Teacher "Cheat Sheets"
 
@@ -30,11 +30,13 @@ Every slide MUST include 2-3 lines of "Teacher Talk" in the Speaker Notes to gui
 
 The presentation length MUST be dynamic based on the topic's complexity. The AI must never cram multiple rules onto one slide.
 
-| Presentation Type | Total Slides | Requirement |
-|-------------------|--------------|-------------|
-| **Standard Topic** (e.g., Pronouns) | 8–12 Slides | Single branch, minimal mechanic rules |
-| **Complex Topic** (e.g., Simple Present) | 15–25 Slides | Requires separate modules for "Be," "Action Verbs," and "Spelling" |
-| **Foundational Topic** (e.g., Parts of Speech) | 20+ Slides | A dedicated module for every category (Nouns, Verbs, etc.) |
+
+| Presentation Type                              | Total Slides | Requirement                                                        |
+| ---------------------------------------------- | ------------ | ------------------------------------------------------------------ |
+| **Standard Topic** (e.g., Pronouns)            | 8–12 Slides  | Single branch, minimal mechanic rules                              |
+| **Complex Topic** (e.g., Simple Present)       | 15–25 Slides | Requires separate modules for "Be," "Action Verbs," and "Spelling" |
+| **Foundational Topic** (e.g., Parts of Speech) | 20+ Slides   | A dedicated module for every category (Nouns, Verbs, etc.)         |
+
 
 ### The "Rule of One"
 

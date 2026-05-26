@@ -21,10 +21,19 @@ meaning:
   ccqs:
   - question: Do we use an it-cleft to emphasise one particular element?
     answer: Yes — 'It was the DOG that bit the postman' (not the cat).
+    purpose: Tests whether the learner understands how English packages information
+      -- given (known) information comes first, new information comes second. This
+      affects word order, article choice, and passive voice use.
   - question: Is the passive an information packaging device?
     answer: Yes — it moves the patient to subject position and the agent to end-focus.
+    purpose: Tests whether the learner can identify and apply the correct form/meaning
+      of this grammar point in context. The question 'Is the passive an information
+      packaging device?...' checks conceptual understanding, not just memorization.
   - question: When do we use existential 'there'?
     answer: 'To introduce a new entity into the discourse: ''There was a strange noise.'''
+    purpose: Tests whether the learner can identify and apply the correct form/meaning
+      of this grammar point in context. The question 'When do we use existential 'there'?...'
+      checks conceptual understanding, not just memorization.
   example_generator:
     contexts:
     - academic writing
@@ -200,8 +209,8 @@ teaching:
       at least four different information packaging structures. Compare versions for
       naturalness and effectiveness.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8:
+    Passive Voice, §8.1-8.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -210,15 +219,26 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for information_packaging.
-  correction: Correct form.
-  explanation: This is a common error for information_packaging.
+- error: '*The book is on table.* (first mention)'
+  correction: A book is on the table.
+  explanation: First mention uses 'a' (new information). 'The' is for known/specific
+    reference.
   l1_groups:
   - Portuguese
   - Spanish
+  - Chinese
+  - Japanese
+  - Korean
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In academic writing, passive voice is standard in methodology and results
+    sections.
+- note: In formal writing, passive voice is used to depersonalize and focus on the
+    process.
+- note: In conversation, passive voice is less common; active voice is preferred.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In academic writing, passive voice is standard in methodology and results
+    sections.
+- note: In news reports, passive voice is used when the agent is unknown or irrelevant.
+- note: In conversation, passive voice is less common; active voice is preferred.

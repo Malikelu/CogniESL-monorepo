@@ -23,9 +23,20 @@ meaning:
       does it just add extra information?
     answer: If essential for identification, no commas (restrictive). If extra information,
       use commas (non-restrictive).
+    purpose: Tests whether the learner understands the restrictive vs non-restrictive
+      distinction. Restrictive appositives identify which specific person/thing (no
+      commas). Non-restrictive appositives add extra information (require commas).
+      This is the core concept for correct punctuation.
   - question: Can you remove the appositive and the sentence still makes sense?
     answer: If yes, it is non-restrictive and needs commas. If removing it changes
       the meaning or makes it unclear, it is restrictive.
+    purpose: 'Tests whether the learner can apply the removability test: if the sentence
+      still makes sense without the appositive, it is non-restrictive and needs commas.
+      If removing it changes the meaning, it is restrictive and needs no commas.'
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      appositives and explain why they are incorrect.
   example_generator:
     contexts:
     - biographical writing
@@ -153,8 +164,8 @@ teaching:
   - Contrast restrictive and non-restrictive appositives side by side to highlight
     the difference.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
+    Modals, §9.1-9.6'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -163,15 +174,45 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for appositives.
-  correction: Correct form.
-  explanation: This is a common error for appositives.
+- error: '*My friend Sarah is a doctor.* (I have multiple friends named Sarah)'
+  correction: My friend Sarah is a doctor. (restrictive -- no commas, identifies which
+    Sarah)
+  explanation: Restrictive appositives identify which specific person/thing and do
+    NOT use commas. 'My friend Sarah' implies I have multiple friends and I mean Sarah
+    specifically.
   l1_groups:
   - Portuguese
   - Spanish
+  - Chinese
+- error: '*My brother, Tom, lives in London.* (I have multiple brothers)'
+  correction: My brother Tom lives in London. (restrictive -- no commas needed because
+    I have multiple brothers and need to specify which one)
+  explanation: When the listener does NOT know which person/thing is meant, the appositive
+    is restrictive and takes no commas. Using commas implies there is only one brother.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Arabic
+- error: '*London the capital of England is very diverse.*'
+  correction: London, the capital of England, is very diverse.
+  explanation: Non-restrictive appositives add extra information and MUST be set off
+    by commas. 'The capital of England' is extra information about London (there is
+    only one London in this context).
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Japanese
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, this structure is standard and expected. Register variation
+    is marked by vocabulary and style rather than grammatical form.
+- note: In formal writing, avoid contractions and use full forms.
+- note: In conversation, contractions and reduced forms are common.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used in everyday communication.
+- note: In academic writing, this structure appears in formal contexts and is a marker
+    of proficient English.
+- note: In professional contexts, correct use of this structure is expected in formal
+    writing.

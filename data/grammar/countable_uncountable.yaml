@@ -21,13 +21,25 @@ meaning:
   ccqs:
   - question: Can we count this noun? Can we say 'one book, two books'?
     answer: Yes = countable. No = uncountable.
+    purpose: Tests whether the learner can apply the 'can you count it?' test to determine
+      countability. This is the foundational skill for choosing correct quantifiers
+      (many/much, a few/a little, etc.).
   - question: Can we use 'a' or 'an' before this noun?
     answer: Yes = countable (a book). No = uncountable (not 'a water').
+    purpose: Tests whether the learner knows that indefinite articles can only be
+      used with singular countable nouns. This is a reliable test for countability
+      that works for most nouns.
   - question: Do we use 'many' or 'much' with this noun?
     answer: '''Many'' = countable (many books). ''Much'' = uncountable (much water).'
+    purpose: Tests whether the learner can choose the correct quantifier based on
+      countability. This is essential for natural-sounding English -- saying 'many
+      water' or 'much books' is a very common error.
   - question: Can this noun have a plural -s?
     answer: Yes = countable (books, apples). No = uncountable (not 'informations',
       'advices').
+    purpose: Tests whether the learner knows that uncountable nouns cannot take plural
+      -s. This is one of the most common errors across all L1 groups -- learners pluralize
+      uncountable nouns like 'information', 'advice', 'furniture', 'luggage'.
   example_generator:
     contexts:
     - everyday situations
@@ -168,25 +180,35 @@ teaching:
     adaptation_notes: Students write a shopping list using correct quantifiers (many
       apples, much rice, a few eggs, a little milk).
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, §12.6-12.8'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 5: Nouns and Noun Phrases, §5.3-5.4 (count/mass distinction)'
+  validation: Swan (2016) Practical English Usage, 4th ed. Entries 46-80 (countable
+    and uncountable nouns)
+  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
+    10: Determiners, §10.3-10.4'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 7: Countable and uncountable nouns'
 common_errors:
-- error: Common error for countable_uncountable.
-  correction: Correct form.
-  explanation: This is a common error for countable_uncountable.
+- error: '*I need an advice.*'
+  correction: I need some advice. / I need a piece of advice.
+  explanation: '''Advice'' is uncountable. Cannot use ''an''. Use ''some advice''
+    or ''a piece of advice''.'
   l1_groups:
   - Portuguese
   - Spanish
+  - French
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In academic writing, countability affects article use and quantifier selection.
+- note: 'In conversation, errors with countability are common: ''I need an information''
+    (incorrect)'
+- note: In formal writing, correct countability marking is a marker of proficient
+    English.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: 'In academic writing, countability affects article use and quantifier selection:
+    ''The research provides evidence (uncountable) for three studies (countable).'''
+- note: 'In conversation, errors with countability are common: ''I need an information''
+    (incorrect) vs ''I need some information.'' (correct)'

@@ -8,33 +8,35 @@ meaning:
     question without using its exact words or question structure.
   timeline: 'Same backshift rules as reported statements: tenses shift to past relative
     to the past reporting verb.'
-  contrast: 'Direct question: ''Where are you going?'' (inverted, question mark)
-
-    Reported question: He asked where I was going (no inversion, no question mark)
-
-    ''Say'' is used for statements; ''ask''/''inquire'' is used for questions.
-
-    '
+  contrast: 'Direct question: ''Where are you going?'' (inverted, question mark) Reported
+    question: He asked where I was going (no inversion, no question mark) ''Say''
+    is used for statements; ''ask''/''inquire'' is used for questions. '
   ccqs:
   - question: Do we use question word order in reported questions
     answer: No. Reported questions use statement word order.
-  example_generator:
-    contexts:
-    - everyday situations
-    cultural_notes: []
-    min_examples: 5
+    purpose: Tests whether the learner understands that reported questions lose subject-auxiliary
+      inversion and become statement-ordered clauses, which is the most critical structural
+      change from direct to reported questions.
+  - question: Can we use a different structure here with the same meaning?
+    answer: No — changing the structure would change the meaning or make the sentence
+      ungrammatical.
+    purpose: Tests whether the learner understands that reported questions is the
+      only appropriate structure for this meaning/context.
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      reported questions and explain why they are incorrect.
+example_generator:
+  contexts:
+  - everyday situations
+  cultural_notes: []
+  min_examples: 5
 form:
   affirmative:
     structure: 'Yes/No questions: Reporting verb (ask/inquire) + if/whether + subject
-      + backshifted verb
-
-      Wh-questions: Reporting verb + wh-word + subject + backshifted verb
-
-      Same backshift rules as reported statements apply
-
-      No question mark, no auxiliary verb inversion
-
-      '
+      + backshifted verb Wh-questions: Reporting verb + wh-word + subject + backshifted
+      verb Same backshift rules as reported statements apply No question mark, no
+      auxiliary verb inversion '
     example_generator:
       contexts:
       - everyday situations
@@ -114,8 +116,8 @@ teaching:
     adaptation_notes: 'Students identify and correct word order errors in reported
       questions: ''He asked where did I live'' → ''He asked where I lived.'''
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, §12.1-12.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -124,15 +126,43 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for reported_questions.
-  correction: Correct form.
-  explanation: This is a common error for reported_questions.
+- error: 'Keeping question word order in reported questions: *''He asked where did
+    I live.'''
+  correction: He asked where I lived.
+  explanation: Reported questions use statement word order (subject before verb),
+    not question word order. The auxiliary 'did' is removed and the verb takes the
+    appropriate past tense form.
   l1_groups:
   - Portuguese
   - Spanish
+  - French
+- error: 'Using ''that'' instead of ''if/whether'' for yes/no questions: *''He asked
+    that I was hungry.'''
+  correction: He asked if/whether I was hungry.
+  explanation: Yes/no questions in reported speech require 'if' or 'whether', not
+    'that'. 'That' is used for reported statements, not questions.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+- error: 'Forgetting tense backshift: *''He asked where I live.'''
+  correction: He asked where I lived.
+  explanation: When the reporting verb is in the past tense, the verb in the reported
+    clause must be backshifted. Present simple becomes past simple.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Japanese
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, this structure is standard and expected. Register variation
+    is marked by vocabulary and style rather than grammatical form.
+- note: In formal writing, avoid contractions and use full forms.
+- note: In conversation, contractions and reduced forms are common.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used in everyday communication.
+- note: In academic writing, this structure appears in formal contexts and is a marker
+    of proficient English.
+- note: In professional contexts, correct use of this structure is expected in formal
+    writing.

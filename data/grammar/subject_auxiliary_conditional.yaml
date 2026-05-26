@@ -15,25 +15,34 @@ meaning:
     formal.'
   ccqs:
   - question: Does removing 'if' change the meaning of the conditional?
-    answer: No, the meaning is exactly the same — only the formality and style change.
+    answer: No, the meaning is exactly the same -- only the formality and style change.
+    purpose: Tests whether the learner understands that inverted conditionals are
+      a stylistic variant of standard 'if' conditionals, not a different type of conditional
+      with different meaning.
   - question: Which auxiliaries can be used in this inversion?
     answer: Had (past perfect), Were (subjunctive), and Should (future condition).
       Could and might are possible but very rare.
+    purpose: Tests whether the learner knows the three main auxiliary patterns (Had/Were/Should)
+      that can trigger conditional inversion, which is essential for both recognition
+      and production.
   - question: Is this structure common in spoken English?
     answer: It is more common in formal writing and speeches, though 'Had I known'
       and 'Were I you' appear in educated spoken English.
-  example_generator:
-    contexts:
-    - formal writing
-    - legal language
-    - literary prose
-    - academic essays
-    - formal advice
-    cultural_notes:
-    - This structure is a marker of educated, formal English
-    - It is frequently used in legal and diplomatic language
-    - Overuse in IELTS or Cambridge exams can sound unnatural if not used accurately
-    min_examples: 5
+    purpose: Tests the learner's register awareness, helping them understand that
+      while this structure appears in educated speech, it is primarily a feature of
+      formal and literary writing.
+example_generator:
+  contexts:
+  - formal writing
+  - legal language
+  - literary prose
+  - academic essays
+  - formal advice
+  cultural_notes:
+  - This structure is a marker of educated, formal English
+  - It is frequently used in legal and diplomatic language
+  - Overuse in IELTS or Cambridge exams can sound unnatural if not used accurately
+  min_examples: 5
 form:
   affirmative:
     structure: 'Had + subject + past participle (third conditional). For example:
@@ -144,7 +153,7 @@ phonetics:
     - presentations
   l1_issue: Learners may struggle with the unusual word order and revert to 'if' constructions
     under pressure.
-- note: In 'Were I you', the contraction is not used — 'Were' must be fully pronounced,
+- note: In 'Were I you', the contraction is not used -- 'Were' must be fully pronounced,
     not reduced.
   example_generator:
     contexts:
@@ -178,8 +187,8 @@ teaching:
     adaptation_notes: Students identify and correct errors in inverted conditional
       sentences (e.g., 'Had I would have known' instead of 'Had I known').
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 10:
+    Conditionals, §10.1-10.6'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -188,15 +197,41 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for subject_auxiliary_conditional.
-  correction: Correct form.
-  explanation: This is a common error for subject_auxiliary_conditional.
+- error: 'Keeping ''if'' with inversion: *''If had I known, I would have helped.'''
+  correction: Had I known, I would have helped.
+  explanation: When using conditional inversion, 'if' must be removed entirely. The
+    inversion itself replaces 'if'. Keeping both 'if' and the inversion creates an
+    ungrammatical double marker.
   l1_groups:
   - Portuguese
   - Spanish
+  - Chinese
+- error: 'Using ''would'' in the inverted clause: *''Had I would have known, I would
+    have helped.'''
+  correction: Had I known, I would have helped.
+  explanation: The inverted conditional clause uses only the auxiliary + subject +
+    past participle (Had I known). 'Would' appears only in the main clause, not in
+    the conditional clause. This is a common error where learners transfer 'would'
+    into the wrong clause.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+- error: 'Using ''was'' instead of ''Were'': *''Was I you, I would accept.'''
+  correction: Were I you, I would accept.
+  explanation: In formal conditional inversion, 'were' is used for all persons (I/he/she/it),
+    not 'was'. This is the subjunctive form. Using 'was' is considered informal or
+    non-standard in this structure.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - German
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: This structure is exclusively formal. It is used in legal writing, academic
+    prose, literary fiction, and formal speeches.
 dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
+- note: No significant BrE/AmE differences; both varieties use this structure in formal
+    contexts.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: Found in formal written discourse and educated spoken English. Not used in
+    casual conversation.

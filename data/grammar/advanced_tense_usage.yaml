@@ -13,8 +13,18 @@ meaning:
   ccqs:
   - question: Does this sentence mix different time references?
     answer: Yes, that is advanced tense usage.
+    purpose: Tests whether the learner understands the time reference of the situation.
+      Correct temporal identification is essential for selecting the right grammatical
+      structure.
   - question: Is the condition in the past but the result in the present?
     answer: Yes, that is a mixed conditional.
+    purpose: Tests whether the learner understands the time reference of the situation.
+      Correct temporal identification is essential for selecting the right grammatical
+      structure.
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      advanced tense usage and explain why they are incorrect.
   example_generator:
     contexts:
     - academic writing
@@ -93,8 +103,8 @@ teaching:
     adaptation_notes: Students discuss how different past choices would affect their
       present using mixed conditionals.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 10:
+    Conditionals, §10.1-10.6'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -103,15 +113,59 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for advanced_tense_usage.
-  correction: Correct form.
-  explanation: This is a common error for advanced_tense_usage.
+- error: '*If I studied harder, I would pass the exam now.*'
+  correction: If I had studied harder, I would pass the exam now.
+  explanation: Mixed conditional (past condition + present result) requires past perfect
+    in the if-clause, not simple past. Using simple past makes it a second conditional
+    (hypothetical present) rather than a mixed conditional about the past affecting
+    the present.
   l1_groups:
   - Portuguese
   - Spanish
+  - Chinese
+  - French
+- error: '*She said she is tired yesterday.*'
+  correction: She said she was tired yesterday.
+  explanation: 'Tense harmony in reported speech: when the reporting verb is past
+    (''said''), the reported verb typically backshifts (''is'' to ''was''). Not backshifting
+    is increasingly accepted but still considered informal.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Korean
+- error: '*He told me he has finished the work last week.*'
+  correction: He told me he had finished the work last week.
+  explanation: Past reporting verb ('told') + completed action in the past requires
+    past perfect ('had finished') to show the action was completed before the reporting.
+    'Has finished' contradicts 'last week'.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Arabic
+- error: '*If I would have studied, I would have passed.*'
+  correction: If I had studied, I would have passed.
+  explanation: In third conditional, the if-clause takes past perfect (not 'would
+    have'). Using 'would have' in the if-clause is an extremely common error known
+    as the 'double would' error.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Chinese
+  - Arabic
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, this structure is standard and expected. Register variation
+    is marked by vocabulary and style rather than grammatical form.
+- note: In formal writing, avoid contractions and use full forms.
+- note: In conversation, contractions and reduced forms are common.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used for everyday communication and is
+    among the most frequent patterns in spoken English.
+- note: In academic writing, this structure appears in discussions of established
+    knowledge, methodology, and findings.
+- note: In news reports, this structure is used for reporting events and attributing
+    statements.

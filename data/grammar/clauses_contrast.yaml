@@ -12,8 +12,18 @@ meaning:
   ccqs:
   - question: Are these two ideas surprising together?
     answer: Yes, that is contrast.
+    purpose: Tests whether the learner understands that '-ed' adjectives describe
+      how someone feels (experiencer) while '-ing' adjectives describe what causes
+      the feeling (stimulus).
   - question: Is one idea a cause and the other a result?
     answer: No, that is cause, not contrast.
+    purpose: Tests whether the learner understands the key concept of clauses contrast.
+      This is important because mastering this distinction is essential for accurate
+      and natural English at B1 level.
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      clauses contrast and explain why they are incorrect.
   example_generator:
     contexts:
     - comparing and contrasting
@@ -93,25 +103,67 @@ teaching:
     duration: 10
     adaptation_notes: Students create sentences about surprising facts using although/despite.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
+    Coordination, §16.6 (contrastive clauses)'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 15: Coordination, §15.2'
+  validation: Swan (2016) Practical English Usage, 4th ed. Entries 315-320 (although,
+    though, while, whereas)
+  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
+    15: Linking words'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 12: Contrast'
 common_errors:
-- error: Common error for clauses_contrast.
-  correction: Correct form.
-  explanation: This is a common error for clauses_contrast.
+- error: '*Although he is rich, but he is unhappy.*'
+  correction: Although he is rich, he is unhappy.
+  explanation: Using 'although' and 'but' together is redundant -- both signal contrast.
+    Choose one. This is a transfer error from L1s where using both conjunctions is
+    required or acceptable (Chinese 虽然...但是, Portuguese 'mas/porém' stacking).
   l1_groups:
   - Portuguese
   - Spanish
+  - Chinese
+  - Korean
+- error: '*Despite he was tired, he kept working.*'
+  correction: Despite being tired, he kept working.
+  explanation: '''Despite'' must be followed by a noun or gerund, not a full clause
+    with subject + verb. Use ''despite the fact that + clause'' or ''despite + -ing''.
+    Confusion arises because ''although'' and ''despite'' have the same meaning but
+    different grammar.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Arabic
+- error: '*Although the rain, we went out.*'
+  correction: Although it was raining, we went out.
+  explanation: '''Although'' introduces a full clause (subject + verb), not just a
+    noun. ''The rain'' is a noun phrase; it needs a verb to form a clause. To express
+    this with a noun, use ''Despite the rain, we went out''.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+- error: '*I went out. Though it was raining.* (as two sentences)'
+  correction: I went out, though it was raining.
+  explanation: '''Though'' at the end of a sentence still connects to the previous
+    sentence as a dependent clause. Starting a new independent sentence with ''though''
+    creates a fragment in formal writing. Attach it with a comma.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Arabic
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, relative clauses are essential for precision and are a
+    marker of proficient writing.
+- note: In conversation, defining relative clauses are more common than non-defining.
+- note: In academic writing, both defining and non-defining relative clauses are used
+    extensively.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In academic writing, relative clauses are essential for precision and are
+    a marker of proficient writing.
+- note: In conversation, defining relative clauses are more common than non-defining.
+- note: In formal writing, 'whom' is used for object relative clauses.

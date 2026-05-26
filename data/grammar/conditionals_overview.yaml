@@ -23,12 +23,24 @@ meaning:
   ccqs:
   - question: Is this situation real/possible or imaginary/unreal?
     answer: Real = zero or first conditional. Imaginary = second or third conditional.
+    purpose: Tests whether the learner can distinguish between real/possible and imaginary/unreal
+      conditions. This distinction is fundamental to choosing the correct conditional
+      structure.
   - question: Are we talking about the present/future or the past?
     answer: Present/future = zero, first, or second. Past = third conditional.
+    purpose: Tests whether the learner understands the time reference of the situation.
+      Correct temporal identification is essential for selecting the right grammatical
+      structure.
   - question: Can this situation still happen, or is it too late?
     answer: Still possible = first conditional. Too late = third conditional.
+    purpose: Tests whether the learner understands the difference between present
+      ability (can) and past ability or polite possibility (could). This is important
+      for expressing ability and making requests.
   - question: Do we use 'will' or 'would' in the main clause?
     answer: Will = real/possible (first). Would = hypothetical/unreal (second).
+    purpose: Tests whether the learner knows which modal (will or would) correctly
+      expresses the degree of certainty. This distinction signals real vs. hypothetical
+      meaning.
   example_generator:
     contexts:
     - everyday situations
@@ -173,8 +185,8 @@ teaching:
     adaptation_notes: Students discuss past regrets using third conditional. Provide
       scenario cards (missed job opportunity, wrong decision, etc.).
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 10:
+    Conditionals, §10.1-10.6'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -183,15 +195,66 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for conditionals_overview.
-  correction: Correct form.
-  explanation: This is a common error for conditionals_overview.
+- error: '*If I will have time, I will go.*'
+  correction: If I have time, I will go.
+  explanation: In first conditional 'if' clauses, use present simple rather than 'will'.
+    The 'if' clause expresses a condition and does not take future tense. This is
+    one of the most frequent conditional errors across all L1 backgrounds.
   l1_groups:
   - Portuguese
   - Spanish
+  - French
+  - Arabic
+- error: '*If I would have time, I would go.*'
+  correction: If I had time, I would go.
+  explanation: In second conditional, the 'if' clause takes past simple (not 'would').
+    Using 'would' in the if-clause is extremely common because learners associate
+    hypothetical meaning with 'would'. Portuguese and Spanish speakers particularly
+    make this error as their L1 uses conditional forms in the protasis.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+- error: '*If I had money, I will buy a car.*'
+  correction: If I had money, I would buy a car.
+  explanation: 'Mixing conditional types: past tense in the if-clause (second conditional)
+    must pair with ''would'' in the main clause, not ''will''. This occurs when learners
+    memorize clause structures independently rather than as a system.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+- error: '*If he would have studied, he would pass the exam.*'
+  correction: If he had studied, he would have passed the exam.
+  explanation: In third conditional (hypothetical past), the if-clause requires past
+    perfect ('had studied') and the main clause requires 'would have + past participle'.
+    Using 'would have' in the if-clause is an intralingual error from overgeneralizing
+    'would'.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+- error: '*If I knew the answer, I will tell you.*'
+  correction: If I knew the answer, I would tell you.
+  explanation: Second conditional requires 'would' in the main clause. Using 'will'
+    instead of 'would' collapses the hypothetical meaning into a real conditional
+    (first conditional), fundamentally changing the meaning from imaginary to possible.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Arabic
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, conditionals appear in discussions of likely outcomes and
+    theoretical scenarios.
+- note: In conversation, conditionals are used for hypothetical scenarios and polite
+    requests.
+- note: In academic writing, conditionals express logical relationships between propositions.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, conditionals are used for hypothetical scenarios, polite
+    requests, and future planning.
+- note: In academic writing, conditionals appear in discussions of likely outcomes
+    and theoretical scenarios.
+- note: In negotiations and planning, conditionals set conditions and explore possibilities.

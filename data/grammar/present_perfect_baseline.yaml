@@ -16,12 +16,20 @@ meaning:
   ccqs:
   - question: Do we know exactly when this happened?
     answer: No — the time is not specified.
+    purpose: Tests whether the learner understands that present perfect is used for
+      past actions where the exact time is either unknown or intentionally omitted,
+      which distinguishes it from past simple.
   - question: Is this connected to now in some way?
     answer: Yes — it is about experience, duration up to now, or a recent result.
+    purpose: Tests whether the learner understands the ''present relevance'' criterion
+      of present perfect — that the past action has some connection to the current
+      moment, whether through life experience, ongoing duration, or visible result.
   - question: Can I say 'yesterday' with this tense?
     answer: No — specific past time words (yesterday, last week, in 2010) are not
       used with Present Perfect.
-  example_generator:
+    purpose: Tests whether the learner knows the restriction against definite past
+      time expressions with present perfect, which is one of the most important distributional
+      rules distinguishing it from past simple.
     contexts:
     - life experiences
     - travel
@@ -156,8 +164,8 @@ teaching:
       race to produce the correct sentence ('She has just eaten'). Points for speed
       and accuracy.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7:
+    Perfect Aspect, §7.1-7.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -166,15 +174,26 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for present_perfect_baseline.
-  correction: Correct form.
-  explanation: This is a common error for present_perfect_baseline.
+- error: '*I have seen that movie last week.*'
+  correction: I saw that movie last week. / I have seen that movie.
+  explanation: Present perfect cannot be used with specific past time expressions
+    (last week, yesterday, in 2020). Use past simple for specific times.
   l1_groups:
   - Portuguese
   - Spanish
+  - French
+  - German
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, this structure is standard and expected. Register variation
+    is marked by vocabulary and style rather than grammatical form.
+- note: In formal writing, avoid contractions and use full forms.
+- note: In conversation, contractions and reduced forms are common.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used for everyday communication and is
+    among the most frequent patterns in spoken English.
+- note: In academic writing, this structure appears in discussions of established
+    knowledge, methodology, and findings.
+- note: In news reports, this structure is used for reporting events and attributing
+    statements.

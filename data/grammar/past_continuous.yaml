@@ -14,11 +14,19 @@ meaning:
   ccqs:
   - question: Was this action in progress at a specific past time?
     answer: Yes — it was ongoing, not finished.
+    purpose: Tests whether the learner understands that past continuous describes
+      an action in progress at a specific past moment, not a completed action (which
+      requires past simple).
   - question: Did this action happen all at once, or was it ongoing?
     answer: Ongoing — it was in progress for a period of time.
+    purpose: Tests whether the learner can distinguish between 'long actions' (past
+      continuous) and 'short actions' (past simple). This distinction is essential
+      for narrative and storytelling.
   - question: Can we use 'when' and 'while' with this tense?
     answer: Yes — 'while' + past continuous (long action), 'when' + past simple (short
       interruption).
+    purpose: Tests whether the learner understands that past continuous sets the scene
+      in narratives while past simple advances the action.
   example_generator:
     contexts:
     - interrupted actions
@@ -163,25 +171,60 @@ teaching:
       ''I was cooking / the phone rang.'' (when) ''I was cooking / he was cleaning.''
       (while)'
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 6:
+    Past Tenses, §6.4-6.6'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 3: The Verb, §3.5 (past progressive)'
+  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 434-436 (past
+    progressive: interrupted actions)'
+  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
+    7: Past tenses, §7.4-7.6'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 4: Past progressive'
 common_errors:
-- error: Common error for past_continuous.
-  correction: Correct form.
-  explanation: This is a common error for past_continuous.
+- error: 'Using past simple instead of past continuous for interrupted actions: *''I
+    ate when the phone rang.'''
+  correction: I was eating when the phone rang.
+  explanation: When describing a long action interrupted by a short action, the long
+    action must be in past continuous and the interruption in past simple. Using past
+    simple for both loses the sense of an ongoing action being interrupted.
   l1_groups:
   - Portuguese
   - Spanish
+  - French
+- error: 'Omitting was/were in past continuous: *''I cooking when she arrived.'''
+  correction: I was cooking when she arrived.
+  explanation: The past continuous requires the auxiliary verb ''was'' or ''were''
+    before the -ing form. Omitting it produces an ungrammatical sentence. This error
+    is especially common among learners whose languages do not use auxiliary verbs
+    for aspect.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Japanese
+- error: 'Using past continuous for completed sequential actions: *''I was waking
+    up, then I was brushing my teeth, then I was eating breakfast.'''
+  correction: I woke up, then I brushed my teeth, then I ate breakfast.
+  explanation: Past continuous describes actions in progress, not a sequence of completed
+    events. When listing actions that happened one after another, use past simple
+    for each action.
+  l1_groups:
+  - Arabic
+  - Hindi
+  - Portuguese
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: Past continuous is more common in narrative and conversational contexts than
+    in formal writing.
+- note: In academic writing, past continuous is rare; it appears in narrative examples
+    and case studies.
+- note: In conversation, past continuous is used for interrupted actions and scene-setting.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: 'In narratives, past continuous sets the scene while past simple advances
+    the action: ''It was raining. Suddenly, a car pulled up.'''
+- note: 'In polite requests, past continuous softens the question: ''I was wondering
+    if you could help me.'' (tentative past)'
+- note: 'In conversation, past continuous describes interrupted actions: ''I was cooking
+    when the phone rang.'''

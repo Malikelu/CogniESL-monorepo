@@ -1,12 +1,16 @@
 # CogniESL — Master Plan
-**Last updated:** 2026-05-25 (evening)
+**Last updated:** 2026-05-25 (session 2)
 **Reference docs:** [IMPROVEMENT_IDEAS.md](IMPROVEMENT_IDEAS.md) · [docs/SELF_RUNNING_COGNIESL.md](docs/SELF_RUNNING_COGNIESL.md) · [docs/DASHBOARD_ARCHITECTURE.md](docs/DASHBOARD_ARCHITECTURE.md) · [docs/HERMES_AGENTS.md](docs/HERMES_AGENTS.md) · [forge plan](../forge/docs/DATA_DEEP_TREATMENT_PLAN.md)
 
 ---
 
 ## What's Built (code-complete)
 
-- Full generation pipeline: chat → Content Brief → HTML slides + PPTX + worksheet PDF + activity guide PDF
+- Full generation pipeline: chat → Content Brief → HTML slides (with watermark + closing brand slide) + **offline HTML bundle** (primary) + worksheet PDF (Sections A–F + Answer Key) + activity guide PDF + flashcard PDF + student progress tracker PDF. PPTX available on request only.
+- **HTML-first presentation**: `BuildOfflineBundle` packages all slides into a single self-contained `.html` file — Google Fonts + Font Awesome + images all inlined as base64. Works offline. Fullscreen (F), speaker notes (N), arrow key navigation. Featured in delivery email with "how to open" tip. See [docs/HTML_FIRST_STRATEGY.md](docs/HTML_FIRST_STRATEGY.md)
+- **CSS animations enabled**: `html_writer_instructions.md` PPTX constraints removed. Animations required on Hook, L1 Oracle, Wrap-up slides. Full Animation Guidelines section added with copy-paste patterns.
+- **Hook slide with real images (V1)**: `ImageSearch` + `DownloadImage` fetches a contextual photo before A1 slide generation. Photo inlined into offline bundle. CSS-gradient fallback if fetch fails. `HOOK_IMAGE` field in A1 task_brief.
+- **Decoupled PPTX planned**: future `BuildSimplePptx` generates PPTX from structured content (not from HTML). Spec in [docs/DECOUPLED_PPTX_SPEC.md](docs/DECOUPLED_PPTX_SPEC.md).
 - HTML presenter (`/present/[jobId]`): keyboard nav, speaker notes, fullscreen, bundle download. PPTX is secondary optional export.
 - L1 Oracle slides for all 36 native languages. CCQs before formulas. CSS freedom (PPTX constraints removed).
 - User accounts: register, login, JWT, My Materials library, Present button, download buttons
@@ -21,6 +25,7 @@
 - Auth DB persistence fix: `COGNIESL_DATA_DIR` env var — survives Railway deploys once Volume attached
 - Marketing website: L1-specific hero, slide mockup, founding progress bar, waitlist wired
 - **Brand identity** (`brand/`): logo finalized — C-arc integrated wordmark. 8 SVG files (wordmark + symbol, 4 variants each: light, dark, white, mono). Full brand guidelines in `brand/BRAND_GUIDELINES.md`.
+- **Brand consistency**: C-arc logo deployed everywhere — webui Navbar + logo.svg, email header (HTML text fallback), admin dashboard header, marketing website Navbar + favicon + PWA icons (192/512) + og-image.svg. Old `#0D7377` color replaced with `#0b7272` throughout all CSS/config files.
 
 **What's waiting to be deployed:** All of the above. Nothing has been deployed since the auth fixes. See Track 1.
 
@@ -82,52 +87,73 @@ Priority order from [IMPROVEMENT_IDEAS.md](IMPROVEMENT_IDEAS.md). All unblocked 
 Logo (Track 0) is a dependency for items marked ← NEEDS LOGO.
 
 ```
-[~] 5g  Daily digest email to Marcos — email function built, needs scheduler wiring
-        (Phase I-3). Daily digest API + CEO Digest dashboard tab done.
+[✅] 5g  Daily digest email to Marcos — scheduler wired in server.py using stdlib threading.
+        Fires at 07:00 daily: fetches /api/admin/daily-digest, calls send_daily_digest_email().
+        Only starts if FOUNDER_EMAIL + RESEND_API_KEY are set. No APScheduler needed.
 
-[ ] 3a  Lesson plan cover page — added to every generation. Structured: objective, duration,
-        stage-by-stage plan with slide numbers, CCQs, anticipated L1 difficulties, differentiation.
-        Data all comes from grammar + L1 YAML already loaded.
+[✅] 3a  Lesson plan cover page — first slide of every deck (Section 0). Structured:
+        objective (from YAML core_meaning), stage-by-stage plan with slide numbers + times,
+        CCQ preview (all CCQs verbatim), anticipated L1 errors (top patterns from L1 YAML),
+        differentiation tips. Implemented as slide type A0 in html_writer_instructions.md
+        + task_brief format in instructions.md. Teacher-only, not shown to students.
+        No watermark on this slide. Minimum deck size updated to 16 slides.
 
-[ ] V1  Hook/visual slide — between cover page and content slide 1. A full-bleed thematic
+[✅] V1  Hook/visual slide — between cover page and content slide 1. A full-bleed thematic
         image or animated visual tied to the grammar point and age group. Uses grammar YAML
         `use` field to determine real-world context. Adults: workplace/daily life.
         Teenagers: pop culture/sports/social. Children: cartoons/games. No text-heavy content.
-        Pre-generated as a static HTML slide template with dynamic background image/color scheme.
+        `ImageSearch` + `DownloadImage` fetches a contextual photo (Step A.5 in instructions.md).
+        Photo path passed as `HOOK_IMAGE` in A1 task_brief. Inlined into offline bundle by
+        BuildOfflineBundle. Graceful CSS-gradient fallback if image fetch fails.
 
-[✅] V2  Closing brand slide — last slide of every deck. Pre-generated HTML template:
-        logo centered, tagline, cogniesl.com. Inserted at position -1 in every deck.
+[✅] V2  Closing brand slide — last slide of every deck. Locked HTML template in
+        html_writer_instructions.md. Agent calls ModifySlide with SLIDE_TYPE: CLOSING_BRAND.
+        Logo centered, tagline "L1-aware teaching materials, made in minutes.", cogniesl.com.
+        Teal accent strip at bottom. Not AI-generated — verbatim template output.
 
-[✅] V3  Slide watermark — CogniESL symbol SVG embedded in slide base template.
-        Bottom-right corner. Free tier: 50% opacity. Pro/Founding: 25% opacity.
-        Implemented as inline SVG + CSS in html_writer_instructions.md base template.
+[✅] V3  Slide watermark — CogniESL symbol SVG on every content slide. Bottom-right corner.
+        Free tier: 65% opacity. Pro/Founding: 35% opacity. WATERMARK field in every task_brief
+        controls opacity. Geometry locked to brand symbol path. Added to html_writer_instructions.md
+        as Technical Rule #12 + Mandatory Watermark section.
 
-[ ] V4  Flashcard set as chat format option — add "🃏 Flashcard set" to the format buttons
-        shown at chat open (alongside Slides, Worksheet, Activity Guide). Keep "All of them."
-        Teachers who skip the button still learn the option exists. The flashcard generation
-        itself (3e) is built alongside this UI change.
+[✅] V4  Flashcard set as chat format option — "🃏 I need flashcards" button added to chat
+        quick-start chips alongside Slides, Worksheet, Activity Guide. "✨ I need everything"
+        covers all 4 formats. Welcome message updated with flashcard example. Download button
+        labels in ChatInterface now correctly detect flashcard PDFs by filename.
 
-[ ] 5d  Social share prompt — after clean delivery (no frustration signals): 4 pre-written
-        templates + platform buttons. All templates must include @cogniesl or #cogniesl.
-        Agent adds one line to completion message.
+[✅] 5d  Social share prompt — added to agent instructions.md (Part 5 post-delivery rules).
+        3 pre-written templates (Twitter/X, LinkedIn, Teacher WhatsApp group) with @CogniESL
+        and #ESLteacher tags. Appended after the Quick edits block on every delivery.
 
-[ ] 5f  Google review request — after teacher's 3rd successful generation. One-time only,
-        requires: no frustration detected, 7+ days since signup.
+  [✅] 5f  Google review request — added to agent instructions (after 3rd generation, 7+ days, no frustration)
 
-[ ] 3b  Homework section F in worksheet — 2–3 harder exercises using production context from
-        grammar YAML, designed for outside-class completion. Same pipeline, small addition.
+[✅] 3b  Homework section F in worksheet — added to agent instructions.md worksheet spec.
+        4 exercise types (writing prompt, real-world observation, self-correction, translation
+        trap). Dashed border, "HOMEWORK — Complete Before Next Class" header. Validation
+        checklist updated to require Sections A-F + Answer Key.
 
-[ ] 5e  Branded slide snapshot — Playwright screenshots slide 1 → 1080×1080 PNG → CogniESL
-        watermark → attached to delivery email. Strongest viral mechanic. ← NEEDS LOGO
+[✅] 5e  Branded slide snapshot — `SnapSlideForEmail` tool: Playwright screenshots hook slide
+        (slide 2) at 1280×720, crops center square 720×720, scales to 1080×1080, adds teal
+        cogniesl.com brand pill watermark. Saves to snapshots/email_preview.png. Embedded as
+        base64 inline image in delivery email via `_build_snapshot_html()`. Registered in
+        cogniesl_agent.py, called before MarkJobComplete per updated instructions.md.
 
-[ ] 3c  Pronunciation guidance slide — phonetics data already in grammar YAML (/s/ /z/ /ɪz/
-        groupings + L1-specific phoneme difficulties). One new slide per deck.
+[✅] 3c  Pronunciation guidance slide — added as slide type A5b in html_writer_instructions.md
+        and instructions.md. Soft cream background, 64px+ IPA symbols in teal, ≤3 sound
+        groups, amber L1 phoneme callout. Conditional on phonetics data present in YAML.
+        Inserted between formula slide (A5) and L1 Oracle (A6).
 
-[ ] 3e  Flashcard set PDF — 10–15 cards from common_errors + use context. Print-and-cut format.
-        No new data needed. ~$0.05 added to generation cost. Built together with V4 UI change.
+[✅] 3e  Flashcard set PDF — `GenerateFlashcardPdf` tool in `agent/slides_tools/`. Pulls
+        10–15 error/correction pairs from grammar `common_errors` + L1 `interference_patterns`.
+        Print-and-cut PDF: page 1 fronts (red error), page 2 backs (teal correction + why).
+        Registered in cogniesl_agent.py, wired into instructions.md generation flow.
+        MarkJobComplete extended with `flashcard_pdf_path` field.
 
-[ ] 3d  Student progress tracker — 1-page self-assessment: "After this lesson I can..." matching
-        the specific lesson objectives and L1 errors from the generation.
+[✅] 3d  Student progress tracker — `GenerateProgressTrackerPdf` tool: 1-page A4 PDF via
+        weasyprint. "After this lesson I can..." with 4-6 skill statements + 4-star rating
+        column + L1 error checklist (red strikethrough → teal correction) + example sentence
+        lines. Registered in cogniesl_agent.py, call format + data sourcing added to
+        instructions.md. MarkJobComplete extended with `progress_tracker_pdf_path`.
 
 [ ] 1c  L1→English comparison box in Oracle slides  ← BLOCKED on forge Track 2 Phase 2
         Needs L1 sample sentences in YAML. Top 5 languages (Spanish, Mandarin, French,
@@ -136,60 +162,74 @@ Logo (Track 0) is a dependency for items marked ← NEEDS LOGO.
 
 ---
 
-### Track 4 — Self-running system ← full vision in [docs/SELF_RUNNING_COGNIESL.md](docs/SELF_RUNNING_COGNIESL.md)
+### Track 4 — Self-running system ↔ full vision in [docs/SELF_RUNNING_COGNIESL.md](docs/SELF_RUNNING_COGNIESL.md)
 
-Build in phases. Each phase delivers standalone value.
+**Architecture:** Apex (your general assistant) → CogniESL Orchestrator (dedicated profile) → 4 Department Agents. One consolidated daily digest, not 6 separate reports.
+
+**Implementation plan:** [docs/SELF_RUNNING_IMPLEMENTATION.md](docs/SELF_RUNNING_IMPLEMENTATION.md) — detailed phases, DB schema, API specs.
 
 **Dashboard technical spec:** [docs/DASHBOARD_ARCHITECTURE.md](docs/DASHBOARD_ARCHITECTURE.md) — complete reference for all DB tables, API endpoints, dashboard UI, and debugging.
 
 ```
-PHASE I-1 ✅ DONE
+PHASE I-1 ✅ DONE — Feedback foundation
   [✅] Feedback widget on material cards (😍/👍/👎 + issue tags)
   [✅] feedback + events tables in DB, POST /api/feedback endpoint
   [✅] Frustration detection in agent instructions
 
-PHASE I-2 ✅ DONE — Marcos visibility
-  [✅] Feedback view in Founder Dashboard (Feedback Center with tags + rating + resolve)
-  [✅] Engagement Pulse cards (DAU/WAU/MAU, one-and-done)
-  [✅] User drill-down modal (click email → generations/materials/feedback/events tabs)
-  [✅] User detail API endpoint (GET /api/admin/users/{id})
-  [✅] Event timeline API endpoint (GET /api/admin/events)
-  [✅] Engagement stats API endpoint (GET /api/admin/engagement)
-  [✅] Agent infrastructure — agent_actions table + log/list/resolve functions + API endpoints
-  [✅] Agent Command Center tab (pending queue with approve/reject, activity feed)
-  [✅] report_writer.py stub (extension point for future agent reports)
-  [✅] Intelligence layer — churn risk scoring, engagement funnel, content quality heatmap
-  [✅] Daily digest API endpoint (GET /api/admin/daily-digest) — aggregates all metrics
-  [✅] CEO Digest tab (default view — at-a-glance + actions needed + system health)
-  [✅] 30-day trend sparklines
-  [✅] Tab navigation (Digest / Details / Agents / Intelligence)
-  [✅] Tab badges (action count, agent pending count)
-  [✅] Auto-refresh every 5 minutes
-  [✅] Daily digest email function (FOUNDER_EMAIL env var; not yet scheduled)
+PHASE I-2 ✅ DONE — Dashboard & agent infrastructure
+  [✅] All 4 dashboard tabs (Digest, Details, Agents, Intelligence)
+  [✅] 17 admin API endpoints
+  [✅] agent_actions table + approve/reject workflow
+  [✅] report_writer.py stub
+  [✅] CEO Digest auto-refresh
 
-PHASE I-3 — Quality self-monitoring (~2 sessions)
-  [ ] Wire daily digest email to scheduler (7am daily — needs FOUNDER_EMAIL env var on Railway)
-  [ ] Output sampler: randomly samples 1 in 10 generations, checks quality checklist, flags
-      degradation in Marcos digest
-  [ ] Feedback classifier: groups "issues" feedback by type weekly, adds summary to digest
-  [ ] Bug triage: reads Railway logs daily, classifies errors by severity
+PHASE I-3 — Orchestrator infrastructure (~8 hours)
+  [✅] New DB tables: orchestrator_runs, agent_health, agent_messages, agent_costs, critical_alerts
+  [✅] New DB functions: orchestrator/health/message/cost/alert operations (14 functions)
+  [✅] agent/orchestrator.py — collect, correlate, synthesize, propose
+  [✅] agent/monitor_agent.py — output sampler, error tracker, anomaly detector
+  [✅] Orchestrator API endpoints (status, run, pause, history, health, alerts, costs)
+  [✅] Orchestrator tab on dashboard (agent health matrix + quick actions)
+  [✅] Inter-agent routing rules implemented
+  [✅] One consolidated daily digest replaces individual agent reports
 
-PHASE I-4 — Growth engine (~2 sessions)
-  [ ] Social share prompt after delivery (same as Track 3 5d)
-  [ ] Google review solicitor after 3rd generation (same as Track 3 5f)
-  [ ] Branded snapshot in delivery email (same as Track 3 5e)
-  [ ] Reddit/TEFL monitor: detect mentions, flag to Marcos for response
+PHASE I-4 — Monitor Agent (~6 hours) — DONE
+  [✅] agent/monitor_agent.py: output sampler, error tracker, anomaly detector
+  [✅] Anomaly section in Intelligence tab
+  [✅] Critical alert logic (error rate > 10% for 2+ hours triggers email via orchestrator)
+  [✅] Wire to orchestrator (runs every 4 hours)
 
-PHASE I-5 — Content intelligence (~3 sessions)
-  [ ] Content QA agent: detects forge updates, proposes sync — never auto-applies, Marcos approves
-  [ ] Database curator: identifies which grammar+L1 combinations get poor feedback, prioritizes in forge
-  [ ] SEO content agent: drafts blog posts from grammar+L1 database, queues for Marcos approval
+PHASE I-5 — Intel Agent + Cost Tracking (~6 hours) — DONE
+  [✅] Intel logic in orchestrator (_run_intel): cost tracking, funnel analysis, suggestions
+  [✅] Cost breakdown in Digest tab (daily + weekly trend via /api/admin/costs/daily, /weekly)
+  [✅] Agent efficiency metrics in Intelligence tab (submitted vs. approved)
+  [✅] Wire to orchestrator (runs daily)
 
-PHASE I-6 — Email intelligence (later)
-  [ ] Email classifier: reads teacher replies, classifies bug/praise/feature/content error
-  [ ] Draft responder: drafts replies for common types, Marcos sends
-  [ ] Analytics reviewer: weekly Plausible digest — signup funnel, drop-off, top pages
+PHASE I-6 — Growth Agent + Mobile (~8 hours) — DONE
+  [✅] Growth logic in orchestrator (_run_growth): growth summary, churn risks, superfans, social drafts
+  [✅] Google review solicitor (added to agent instructions, after 3rd gen, 7+ days, no frustration)
+  [✅] Dashboard mobile optimization (responsive CSS, touch-friendly buttons, scrollable tabs)
+  [✅] Wire to orchestrator (runs daily)
+
+PHASE I-7 — Content intelligence (~6 hours) — DONE
+  [✅] Content QA: agent/content_qa.py — detects forge updates, proposes sync (never auto-applies, Marcos approves via dashboard)
+  [✅] Database curator: identifies grammar+L1 combos with poor feedback (>20% issue rate), flags for regeneration
+  [✅] SEO content agent: agent/seo_agent.py — drafts blog posts from grammar+L1 database, queues for Marcos approval
+  [✅] Content versioning: agent/content_versioning.py — Git commits for all YAML changes with audit trail
+
+PHASE I-8 — Critical alerts + polish (~4 hours)
+  [ ] Wire critical alert triggers into orchestrator (_run_monitor already detects anomalies)
+  [ ] Alert acknowledgment flow in dashboard — DONE (ack/resolve buttons in Orchestrator tab)
+  [ ] End-to-end testing of all alert types
+
+DEFERRED (need users/revenue first):
+  [ ] Secretary Agent (email classification) — needs meaningful email volume
+  [ ] Support Agent (teacher questions) — needs active user base
+  [ ] Reddit/TEFL monitor — needs brand mentions to exist
+  [ ] Autonomous code fix + deploy — too risky without production data
 ```
+
+**Total Track 4 effort: ~38 hours across 8 phases. Each phase delivers standalone value.**
 
 ---
 

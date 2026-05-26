@@ -13,12 +13,21 @@ meaning:
   ccqs:
   - question: Do 'all' and 'both' mean the same thing?
     answer: No — 'all' refers to three or more; 'both' refers to exactly two.
+    purpose: Tests whether the learner can distinguish between 'both' (two together),
+      'either' (one of two), and 'neither' (not one of two). These quantifiers have
+      distinct meanings and grammatical requirements.
   - question: Can we say 'neither of the three students'?
     answer: No, 'neither' is only for two items. For three or more, use 'none of the
       students'.
+    purpose: Tests whether the learner understands that 'neither' is exclusively binary
+      (two items only). For three or more, 'none' must be used. This is a common overgeneralization
+      error.
   - question: Is 'half' followed by a singular or plural verb?
     answer: It depends — 'half of the cake is gone' (singular noun) but 'half of the
       students are here' (plural noun).
+    purpose: Tests whether the learner understands that 'half' agrees with the noun
+      that follows 'of.' 'Half of the cake' → singular verb. 'Half of the students'
+      → plural verb. This agreement rule applies to all partitive quantifiers.
   example_generator:
     contexts:
     - education and school
@@ -189,8 +198,8 @@ teaching:
     adaptation_notes: Create dominoes with determiners on one side and noun phrases
       on the other. Students match correctly.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, §12.1-12.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -199,15 +208,23 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for determiners_advanced.
-  correction: Correct form.
-  explanation: This is a common error for determiners_advanced.
+- error: '*I need some informations.*'
+  correction: I need some information.
+  explanation: Information is uncountable.
   l1_groups:
   - Portuguese
   - Spanish
+  - Chinese
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, this structure is standard and expected. Register variation
+    is marked by vocabulary and style rather than grammatical form.
+- note: In formal writing, avoid contractions and use full forms.
+- note: In conversation, contractions and reduced forms are common.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used in everyday communication.
+- note: In academic writing, this structure appears in formal contexts and is a marker
+    of proficient English.
+- note: In professional contexts, correct use of this structure is expected in formal
+    writing.

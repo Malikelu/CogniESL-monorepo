@@ -12,8 +12,19 @@ meaning:
   ccqs:
   - question: Does this expression function as a single preposition?
     answer: Yes, the words together act as one prepositional unit.
+    purpose: Tests whether the learner understands that expanded prepositions (in
+      spite of, with regard to, in front of) function as single prepositional units
+      despite containing multiple words. They cannot be broken apart or translated
+      word-by-word.
   - question: Can you change any of the words in the middle without changing the meaning?
     answer: No, the expression is fixed.
+    purpose: Tests whether the learner understands that expanded prepositions are
+      fixed expressions. 'In spite of' cannot be changed to 'in despite of' or 'in
+      the spite of.' Each expanded preposition must be learned as an immutable chunk.
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      expanded prepositions and explain why they are incorrect.
   example_generator:
     contexts:
     - formal writing
@@ -90,8 +101,8 @@ teaching:
     adaptation_notes: Students rewrite informal sentences using expanded prepositions
       for a formal register.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 15:
+    Prepositions, §15.1-15.7'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -100,15 +111,23 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for expanded_prepositions.
-  correction: Correct form.
-  explanation: This is a common error for expanded_prepositions.
+- error: '*In spite the rain, we went out.*'
+  correction: In spite of the rain, we went out.
+  explanation: 'Expanded prepositions are fixed: in spite of.'
   l1_groups:
   - Portuguese
   - Spanish
+  - Chinese
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, this structure is standard and expected. Register variation
+    is marked by vocabulary and style rather than grammatical form.
+- note: In formal writing, avoid contractions and use full forms.
+- note: In conversation, contractions and reduced forms are common.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used in everyday communication.
+- note: In academic writing, this structure appears in formal contexts and is a marker
+    of proficient English.
+- note: In professional contexts, correct use of this structure is expected in formal
+    writing.

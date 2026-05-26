@@ -17,11 +17,22 @@ meaning:
   ccqs:
   - question: Which tense describes a completed past action
     answer: Past simple. Past continuous describes actions in progress.
-  example_generator:
+    purpose: Tests whether the learner can distinguish between the fundamental function
+      of past simple (completed actions) and past continuous (ongoing actions) in
+      a narrative context.
     contexts:
     - everyday situations
     cultural_notes: []
     min_examples: 5
+  - question: Can we use a different structure here with the same meaning?
+    answer: No — changing the structure would change the meaning or make the sentence
+      ungrammatical.
+    purpose: Tests whether the learner understands that past simple vs continuous
+      is the only appropriate structure for this meaning/context.
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      past simple vs continuous and explain why they are incorrect.
 form:
   affirmative:
     structure: 'Past Simple: Subject + V2 (ed): "I walked. She ate."
@@ -121,8 +132,8 @@ teaching:
     adaptation_notes: 'Students practice interrupted actions: ''I was ___ing when
       ___ happened.'''
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, §12.1-12.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -131,15 +142,26 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for past_simple_vs_continuous.
-  correction: Correct form.
-  explanation: This is a common error for past_simple_vs_continuous.
+- error: '*I was going to the store yesterday.* (single completed trip)'
+  correction: I went to the store yesterday.
+  explanation: Past simple is for completed actions. Past continuous is for actions
+    in progress at a specific past moment. 'Yesterday' with a single trip requires
+    past simple.
   l1_groups:
   - Portuguese
   - Spanish
+  - French
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, this structure is standard and expected. Register variation
+    is marked by vocabulary and style rather than grammatical form.
+- note: In formal writing, avoid contractions and use full forms.
+- note: In conversation, contractions and reduced forms are common.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used for everyday communication and is
+    among the most frequent patterns in spoken English.
+- note: In academic writing, this structure appears in discussions of established
+    knowledge, methodology, and findings.
+- note: In news reports, this structure is used for reporting events and attributing
+    statements.

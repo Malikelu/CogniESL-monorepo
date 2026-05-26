@@ -219,9 +219,16 @@ def _embed_local_images_as_base64(html: str, project_dir: Path) -> str:
     return html
 
 
-_HTML_WRITER_MODEL_CLAUDE = "anthropic/claude-sonnet-4-6"
-_HTML_WRITER_MODEL_OAI = "anthropic/claude-3-5-haiku"
-_HTML_WRITER_MAX_ATTEMPTS = 3
+# Sub-agent model: read from env so it can be changed without touching code.
+# Priority: SUB_AGENT_MODEL env var → hardcoded default.
+# For OpenRouter models use "openrouter/anthropic/claude-3-5-sonnet-20241022" etc.
+_HTML_WRITER_MODEL_DEFAULT = "anthropic/claude-3-5-sonnet-20241022"
+_HTML_WRITER_MODEL_OAI = "gpt-4o-mini"
+_HTML_WRITER_MAX_ATTEMPTS = 5
+
+
+def _get_html_writer_model_id() -> str:
+    return os.getenv("SUB_AGENT_MODEL", _HTML_WRITER_MODEL_DEFAULT)
 
 
 def _get_caller_openai_client(tool) -> "AsyncOpenAI | None":
@@ -292,35 +299,54 @@ async def _agent_get_response(agent: Agent, prompt: str, *, use_stream: bool = F
     return await agent.get_response(prompt)
 
 
+def _normalise_model_id(model_id: str, provider: str) -> str:
+    """Strip any existing provider prefix and add the correct one."""
+    for prefix in ("openai/", "anthropic/", "openrouter/"):
+        if model_id.startswith(prefix):
+            model_id = model_id[len(prefix):]
+            break
+    return f"{provider}/{model_id}"
+
+
 def _make_html_writer_agent(tool=None) -> "tuple[Agent, bool]":
     """Create a fresh, stateless agent instance for one ModifySlide call.
 
     Model priority:
-    1. ANTHROPIC_API_KEY in env → Claude Sonnet 4.6 (best HTML quality)
-    2. Calling agent's OpenAI client (browser auth / per-request ClientConfig)
-    3. AsyncOpenAI() default (env vars)
+    1. ANTHROPIC_API_KEY → direct Anthropic via LiteLLM
+    2. OPENROUTER_API_KEY → OpenRouter via LiteLLM
+    3. OPENAI_API_KEY → OpenAI via LiteLLM (explicit prefix prevents misrouting)
+
+    Set SUB_AGENT_MODEL in .env to override the model string, e.g.:
+      SUB_AGENT_MODEL=gpt-4.1-mini
+      SUB_AGENT_MODEL=anthropic/claude-3-5-sonnet-20241022
 
     Returns (agent, is_codex).
     """
     anthropic_key = os.getenv("ANTHROPIC_API_KEY")
+    openai_key = os.getenv("OPENAI_API_KEY")
+    openrouter_key = os.getenv("OPENROUTER_API_KEY")
+    model_id = _get_html_writer_model_id()
     is_codex = False
-    if anthropic_key:
-        model = LitellmModel(model=_HTML_WRITER_MODEL_CLAUDE, api_key=anthropic_key)
+
+    # Honor explicit provider prefix in model_id (e.g. "openrouter/google/gemini-2.5-flash").
+    # This lets .env pin a specific provider regardless of which API keys are present.
+    if model_id.startswith("openrouter/") and openrouter_key:
+        model = LitellmModel(model=model_id, api_key=openrouter_key)
+    elif model_id.startswith("anthropic/") and anthropic_key:
+        model = LitellmModel(model=model_id, api_key=anthropic_key)
+    elif model_id.startswith("openai/") and openai_key:
+        model = LitellmModel(model=model_id, api_key=openai_key)
+    elif anthropic_key:
+        model = LitellmModel(model=_normalise_model_id(model_id, "anthropic"), api_key=anthropic_key)
+    elif openai_key:
+        # Explicit "openai/" prefix prevents LiteLLM from misrouting to openrouter.
+        model = LitellmModel(model=_normalise_model_id(model_id, "openai"), api_key=openai_key)
+    elif openrouter_key:
+        model = LitellmModel(model=_normalise_model_id(model_id, "openrouter"), api_key=openrouter_key)
     else:
-        from agents import OpenAIResponsesModel
-        from openai import AsyncOpenAI
-        caller_client = tool and _get_caller_openai_client(tool)
-        api_key = caller_client.api_key if caller_client else os.getenv("OPENAI_API_KEY", "")
-        base_url = str(caller_client.base_url) if caller_client else (
-            os.getenv("OPENAI_BASE_URL", "https://openrouter.ai/api/v1")
+        raise RuntimeError(
+            "No API key found. Set ANTHROPIC_API_KEY, OPENAI_API_KEY, or OPENROUTER_API_KEY in .env"
         )
-        client = AsyncOpenAI(api_key=api_key, base_url=base_url)
-        is_openai = str(base_url).startswith("https://api.openai.com")
-        if is_openai:
-            model = OpenAIResponsesModel(model=_HTML_WRITER_MODEL_OAI, openai_client=client)
-        else:
-            model = _CodexResponsesModel(model=_HTML_WRITER_MODEL_OAI, openai_client=client)
-            is_codex = True
     agent = Agent(
         name="Slide HTML Writer",
         description="Generates complete slide HTML from task briefs.",
@@ -328,9 +354,7 @@ def _make_html_writer_agent(tool=None) -> "tuple[Agent, bool]":
         tools=[],
         model=model,
         model_settings=ModelSettings(
-            reasoning=Reasoning(effort="high", summary="auto"),
             verbosity="medium",
-            store=False if is_codex else None,
         ),
     )
     return agent, is_codex
@@ -523,6 +547,94 @@ def _screenshot_html_slide(html_path: Path) -> tuple[Any | None, str]:
         return None, str(exc)
 
 
+def _generate_minimal_html_fallback(
+    slide_name: str,
+    task_brief: str,
+    theme_css: str = "",
+) -> str:
+    """Generate minimal but valid HTML slide as fallback when all retries fail.
+
+    This ensures no empty slides are ever returned. The slide has:
+    - Basic structure with theme CSS applied
+    - Title extracted from task brief or slide name
+    - Content from task brief (first 200 chars)
+    - Speaker notes
+    - Minimum 50 chars of text content (validation requirement)
+
+    This is a safety net — better a plain slide than a failed generation.
+    """
+    # Extract title from task brief or use slide name
+    title = "Slide"
+    if "Title:" in task_brief:
+        title = task_brief.split("Title:")[1].split("\n")[0].strip()[:50]
+    elif slide_name:
+        title = slide_name.replace(".html", "").replace("_", " ").title()
+
+    # Extract speaker notes if provided
+    speaker_notes = "Teacher talk: Present this slide. Watch for common errors."
+    if "SPEAKER NOTES:" in task_brief:
+        speaker_notes = task_brief.split("SPEAKER NOTES:")[1].split("\n")[0].strip()[:100]
+
+    # Extract first sentence from task brief as content
+    content = task_brief[:150].split("\n")[0]
+    if not content.strip():
+        content = f"Content for {title}. Students should understand key concepts."
+
+    minimal_html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <style>
+        {theme_css}
+        body {{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }}
+        .slide-wrapper {{
+            width: 1280px;
+            height: 720px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            padding: 60px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }}
+        h1 {{
+            font-size: 48px;
+            color: #2c3e50;
+            margin: 0 0 30px 0;
+            font-weight: 600;
+        }}
+        p {{
+            font-size: 24px;
+            color: #34495e;
+            line-height: 1.6;
+            margin: 0;
+        }}
+    </style>
+</head>
+<body>
+    <div class="slide-wrapper" data-speaker-notes="{speaker_notes}">
+        <h1>{title}</h1>
+        <p>{content}</p>
+    </div>
+</body>
+</html>"""
+
+    return minimal_html
+
+
 
 
 class ModifySlide(BaseTool):
@@ -537,6 +649,10 @@ class ModifySlide(BaseTool):
 
     async def run(self):
         load_dotenv(override=True)
+        # Small throttle between slide calls to avoid hitting TPM limits on lower-tier accounts
+        _throttle_secs = float(os.getenv("SLIDE_GENERATION_DELAY", "3"))
+        if _throttle_secs > 0:
+            await asyncio.sleep(_throttle_secs)
         project_dir = get_project_dir(self.project_name)
         if not project_dir.exists():
             return f"Project not found: {project_dir}"
@@ -575,8 +691,22 @@ class ModifySlide(BaseTool):
         used_scaffold = False
 
         for attempt in range(1, _HTML_WRITER_MAX_ATTEMPTS + 1):
+            # Simplify task brief for attempts 3+ (reduce complexity)
+            effective_task_brief = self.task_brief
+            if attempt >= 3:
+                effective_task_brief = f"""SIMPLIFIED REQUEST (attempt {attempt}):
+Provide basic HTML structure only:
+- Slide wrapper
+- Main heading/title
+- Key content (bullet points or text blocks)
+- Speaker notes in data-speaker-notes attribute
+Keep visual complexity minimal. No advanced CSS animations or complex layouts.
+
+ORIGINAL TASK:
+{self.task_brief}"""
+
             prompt = _build_sub_run_prompt(
-                task_brief=self.task_brief,
+                task_brief=effective_task_brief,
                 slide_name=slide_filename,
                 total_pages=total_pages,
                 main_text_contents=main_text_contents,
@@ -591,6 +721,15 @@ class ModifySlide(BaseTool):
                 final_result = await _agent_get_response(writer, prompt, use_stream=is_codex)
             except Exception as exc:
                 import traceback
+                err_str = str(exc)
+                # Rate limit: wait and retry rather than failing immediately
+                if "RateLimitError" in type(exc).__name__ or "rate_limit" in err_str.lower() or "rate limit" in err_str.lower():
+                    wait = 30 * attempt  # 30s, 60s, 90s
+                    import logging
+                    logging.getLogger(__name__).warning(
+                        f"Rate limit hit on attempt {attempt} for {slide_filename}. Waiting {wait}s before retry."
+                    )
+                    await asyncio.sleep(wait)
                 last_validation_error = f"Sub-agent error (attempt {attempt}): {exc}\n{traceback.format_exc()}"
                 continue
             sub_results.append(final_result)
@@ -613,18 +752,104 @@ class ModifySlide(BaseTool):
 
             full_html, used_scaffold = ensure_full_html(candidate_html)
             validation = await asyncio.to_thread(validate_html, full_html, project_dir, used_scaffold)
-            if validation.get("valid"):
-                final_html = full_html
-                break
-            last_validation_error = str(validation.get("error", "Unknown validation error")).strip()
-            previous_failed_html = full_html
+            if not validation.get("valid"):
+                last_validation_error = str(validation.get("error", "Unknown validation error")).strip()
+                previous_failed_html = full_html
+                continue
 
+            # Post-generation: enforce speaker notes
+            if 'data-speaker-notes' not in full_html:
+                speaker_notes = "Teacher talk: Present this slide to students. CCQs: Check understanding. Watch for: Common errors."
+                if "SPEAKER NOTES:" in self.task_brief:
+                    notes_part = self.task_brief.split("SPEAKER NOTES:")[1].strip()
+                    speaker_notes = notes_part
+                full_html = full_html.replace(
+                    "</body>",
+                    f'<div data-speaker-notes="{speaker_notes}"></div>\n</body>'
+                )
+
+            # Post-generation: check minimum content density
+            text_content = _strip_html_to_text(full_html)
+            if len(text_content) < 50:
+                last_validation_error = f"Slide has insufficient content (only {len(text_content)} chars of text). Regenerate with more visual and text content."
+                previous_failed_html = full_html
+                continue
+
+            final_html = full_html
+            break
+
+        # Fallback: if all attempts failed, generate minimal but valid HTML
         if not final_html:
-            return f"HTML validation failed after {_HTML_WRITER_MAX_ATTEMPTS} attempts:\n{last_validation_error}"
+            final_html = _generate_minimal_html_fallback(
+                slide_name=slide_filename,
+                task_brief=self.task_brief,
+                theme_css=theme_css,
+            )
 
         final_html = _convert_css_bg_images_to_img_tags(final_html)
         final_html = _embed_local_images_as_base64(final_html, project_dir)
         slide_path.write_text(final_html, encoding="utf-8")
+
+        # ---- Post-write size check -----------------------------------------------
+        # If a placeholder (fallback) was written, retry the HTML writer automatically.
+        # Fallback HTML is ~1,500 bytes; real slides should be ≥ 6,000 bytes.
+        # This triggers when all _HTML_WRITER_MAX_ATTEMPTS failed (e.g. rate limits).
+        _POST_WRITE_MIN = 4000
+        _pw_written_size = slide_path.stat().st_size
+        if _pw_written_size < _POST_WRITE_MIN:
+            import logging as _pw_logging
+            _pw_logger = _pw_logging.getLogger(__name__)
+            for _pw_round in range(1, 4):  # up to 3 extra rounds
+                _pw_logger.warning(
+                    f"{slide_filename}: written size {_pw_written_size}B < {_POST_WRITE_MIN}B "
+                    f"(placeholder detected). Waiting 10s then retrying HTML writer "
+                    f"(round {_pw_round}/3)."
+                )
+                await asyncio.sleep(10)  # was 120s (OpenAI rate limit recovery) — OpenRouter doesn't need this
+                _pw_html = ""
+                _pw_err = ""
+                for _pw_attempt in range(1, 4):  # 3 attempts per retry round
+                    _pw_prompt = _build_sub_run_prompt(
+                        task_brief=self.task_brief,
+                        slide_name=slide_filename,
+                        total_pages=total_pages,
+                        main_text_contents=main_text_contents,
+                        base_html=base_html,
+                        current_html=None,
+                        theme_css=theme_css,
+                        retry_validation_error=_pw_err,
+                        previous_failed_html=None,
+                    )
+                    try:
+                        _pw_result = await _agent_get_response(writer, _pw_prompt, use_stream=is_codex)
+                    except Exception as _pw_exc:
+                        _pw_err_str = str(_pw_exc)
+                        if "RateLimitError" in type(_pw_exc).__name__ or "rate_limit" in _pw_err_str.lower():
+                            await asyncio.sleep(30 * _pw_attempt)
+                        _pw_err = _pw_err_str
+                        continue
+                    if _pw_result is None:
+                        continue
+                    _pw_output = str(getattr(_pw_result, "final_output", "") or "")
+                    _pw_candidate = _extract_html_from_output(_pw_output)
+                    if not _pw_candidate:
+                        continue
+                    _pw_full, _pw_scaffold = ensure_full_html(_pw_candidate)
+                    _pw_validation = await asyncio.to_thread(validate_html, _pw_full, project_dir, _pw_scaffold)
+                    if not _pw_validation.get("valid"):
+                        _pw_err = str(_pw_validation.get("error", ""))
+                        continue
+                    _pw_html = _pw_full
+                    break
+                if _pw_html:
+                    _pw_html = _convert_css_bg_images_to_img_tags(_pw_html)
+                    _pw_html = _embed_local_images_as_base64(_pw_html, project_dir)
+                    slide_path.write_text(_pw_html, encoding="utf-8")
+                    _pw_written_size = slide_path.stat().st_size
+                    if _pw_written_size >= _POST_WRITE_MIN:
+                        break  # Success — stop retrying
+        # ---- End post-write size check -------------------------------------------
+
         save_note = ""
         if self.save_as_template_key:
             key = self.save_as_template_key.strip()

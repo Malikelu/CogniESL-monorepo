@@ -13,8 +13,19 @@ meaning:
   ccqs:
   - question: Is this sentence dividing information into two parts for emphasis?
     answer: Yes, it is a cleft sentence.
+    purpose: 'Tests whether the learner understands that cleft sentences (it-cleft,
+      wh-cleft, reversed wh-cleft) divide information into two parts: the emphasized
+      element and the background information in a relative clause.'
   - question: What element is being emphasized?
     answer: The element after it was or at the end of a wh-cleft.
+    purpose: 'Tests whether the learner can identify the emphasized element in different
+      cleft types: it-cleft (It was X that...), wh-cleft (What X is...), and reversed
+      wh-cleft (X is what...). Recognizing the focus is essential for both production
+      and comprehension.'
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      cleft sentences advanced and explain why they are incorrect.
   example_generator:
     contexts:
     - emphasis
@@ -96,8 +107,8 @@ teaching:
     adaptation_notes: Students rewrite simple sentences using cleft structures for
       emphasis.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
+    Information Packaging, §16.1-16.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -106,15 +117,41 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for cleft_sentences_advanced.
-  correction: Correct form.
-  explanation: This is a common error for cleft_sentences_advanced.
+- error: '*It was John which broke the window.*'
+  correction: It was John who broke the window.
+  explanation: Use 'who' for people and 'that' for things in cleft sentences. 'Which'
+    is not standard in cleft sentences for people.
   l1_groups:
   - Portuguese
   - Spanish
+  - Chinese
+- error: '*What I need is a holiday I was desperate.* (missing relative clause)'
+  correction: What I need is a holiday that I have been desperate for.
+  explanation: Advanced wh-cleft sentences require a complete relative clause. The
+    relative pronoun (that/which/who) and any prepositions must be included.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+- error: '*It was in Paris where we met.* (less standard)'
+  correction: It was in Paris that we met.
+  explanation: In standard English, it-cleft sentences use 'that' (not 'where/when/how')
+    after the emphasized element, even when emphasizing place, time, or manner.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, this structure is standard and expected. Register variation
+    is marked by vocabulary and style rather than grammatical form.
+- note: In formal writing, avoid contractions and use full forms.
+- note: In conversation, contractions and reduced forms are common.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used in everyday communication.
+- note: In academic writing, this structure appears in formal contexts and is a marker
+    of proficient English.
+- note: In professional contexts, correct use of this structure is expected in formal
+    writing.

@@ -28,6 +28,7 @@ def create_cogniesl_agent():
     from agency_swarm.tools import IPythonInterpreter
 
     from tools import SearchGrammarTool, SearchActivitiesTool, GetL1InterferenceTool
+    from tools.ListMaterials import ListMaterials
     from slides_tools import (
         InsertNewSlides,
         ModifySlide,
@@ -45,6 +46,12 @@ def create_cogniesl_agent():
         ImageSearch,
         GenerateImage,
     )
+    from slides_tools.QueueGenerationJob import QueueGenerationJob
+    from slides_tools.MarkJobComplete import MarkJobComplete
+    from slides_tools.BuildOfflineBundle import BuildOfflineBundle
+    from slides_tools.GenerateFlashcardPdf import GenerateFlashcardPdf
+    from slides_tools.GenerateProgressTrackerPdf import GenerateProgressTrackerPdf
+    from slides_tools.SnapSlideForEmail import SnapSlideForEmail
     from docs_tools.CreateDocument import CreateDocument
     from docs_tools.ConvertDocument import ConvertDocument
     from docs_tools.ModifyDocument import ModifyDocument
@@ -53,6 +60,12 @@ def create_cogniesl_agent():
     from docs_tools.RestoreDocument import RestoreDocument
     from shared_tools.CopyFile import CopyFile
     from utility_tools.ReadFile import ReadFile
+    from validation_tools import (
+        ValidateSlideSet,
+        ValidateAndFixSlides,
+        ValidateL1Content,
+        ValidateRequirements,
+    )
 
     instructions_path = AGENT_DIR / "instructions.md"
 
@@ -69,6 +82,7 @@ def create_cogniesl_agent():
             SearchGrammarTool,
             SearchActivitiesTool,
             GetL1InterferenceTool,
+            ListMaterials,
             # Slides tools
             InsertNewSlides,
             ModifySlide,
@@ -96,6 +110,20 @@ def create_cogniesl_agent():
             IPythonInterpreter,
             ReadFile,
             CopyFile,
+            # Validation tools
+            ValidateSlideSet,
+            ValidateAndFixSlides,
+            ValidateL1Content,
+            ValidateRequirements,
+            # Job tracking (Phase 5 — async email delivery)
+            QueueGenerationJob,
+            MarkJobComplete,
+            # HTML-first: offline bundle (primary) + PPTX kept as opt-in
+            BuildOfflineBundle,
+            # Flashcard generator (3e) + Progress tracker (3d) + Email snapshot (5e)
+            GenerateFlashcardPdf,
+            GenerateProgressTrackerPdf,
+            SnapSlideForEmail,
         ],
         model=get_default_model(),
         model_settings=ModelSettings(

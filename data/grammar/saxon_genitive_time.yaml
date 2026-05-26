@@ -17,22 +17,31 @@ meaning:
   - question: Can we use the Saxon genitive with any time expression?
     answer: No, it works best with common time nouns like today, yesterday, tomorrow,
       tonight, and with expressions like last week, this month, next year.
+    purpose: Tests whether the learner understands that not all time expressions can
+      take the Saxon genitive, and that the pattern is most natural with specific,
+      short time expressions.
   - question: Is 'today's news' the same as 'the news today'?
     answer: They are very similar in meaning, but 'today's news' treats 'today' as
       a possessor, while 'the news today' uses 'today' as an adverb.
+    purpose: Tests whether the learner can distinguish between the genitive (possessive)
+      and adverbial (adverb) use of time expressions, which helps them choose the
+      appropriate structure for different contexts.
   - question: Do we use the Saxon genitive with plural time expressions?
     answer: Yes, for example 'two weeks' notice' or 'three days' holiday' — the apostrophe
       comes after the plural s.
-  example_generator:
-    contexts:
-    - daily conversation
-    - news and media
-    - workplace communication
-    - academic schedules
-    cultural_notes:
-    - This pattern is extremely common in British English journalism
-    - Headlines frequently use this structure for brevity
-    min_examples: 5
+    purpose: Tests whether the learner knows the rule for plural time genitives (apostrophe
+      after the -s), which differs from singular genitives and is a common source
+      of punctuation errors.
+example_generator:
+  contexts:
+  - daily conversation
+  - news and media
+  - workplace communication
+  - academic schedules
+  cultural_notes:
+  - This pattern is extremely common in British English journalism
+  - Headlines frequently use this structure for brevity
+  min_examples: 5
 form:
   affirmative:
     structure: 'Time expression + ''s + noun. For example: today''s newspaper / yesterday''s
@@ -100,7 +109,7 @@ sub_rules:
   - I missed yesterday's manager's announcement.
   - Did you attend last week's director's briefing?
 - rule: 'With ''of'' phrases, the genitive is usually not needed: the events of yesterday
-    (more formal) vs. yesterday''s events (more natural).'
+    (more formal) vs yesterday''s events (more natural).'
   type: grammatical
   examples:
   - Yesterday's events shocked the nation.
@@ -181,8 +190,8 @@ teaching:
     adaptation_notes: Students write a short news bulletin using at least five time
       genitive expressions.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, §12.1-12.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -191,15 +200,42 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for saxon_genitive_time.
-  correction: Correct form.
-  explanation: This is a common error for saxon_genitive_time.
+- error: 'Using ''of'' with short time expressions: *''the news of today'' instead
+    of ''today''s news'''
+  correction: today's news
+  explanation: While 'the news of today' is technically grammatical, the Saxon genitive
+    ('today's news') is far more natural and common in everyday English. Learners
+    whose L1 uses prepositional phrases for possession tend to overuse 'of' instead
+    of the genitive.
   l1_groups:
   - Portuguese
   - Spanish
+  - French
+- error: 'Adding ''s to plural time expressions: *''two weeks''s notice'''
+  correction: two weeks' notice
+  explanation: Plural time expressions that already end in 's' take only an apostrophe
+    after the existing 's', not an additional 's. This follows the standard plural
+    possessive rule in English.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+- error: 'Confusing time genitive with contracted ''is'': *''Yesterday''s sunny''
+    (meaning ''Yesterday is sunny'')'
+  correction: Yesterday was sunny. / Yesterday's weather was sunny.
+  explanation: The apostrophe-s in time genitives is possessive, not a contraction
+    of 'is'. 'Yesterday's sunny' reads as 'Yesterday is sunny' to a native ear, which
+    is ungrammatical. 'Yesterday's weather was sunny' is correct.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Arabic
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: The Saxon genitive with time is standard in both formal and informal contexts.
+    It is especially common in journalism.
 dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
+- note: This pattern is more common in British English journalism; American English
+    uses it as well but may occasionally prefer alternative constructions in headlines.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: This structure is extremely common in news headlines, workplace communication,
+    and everyday conversation.

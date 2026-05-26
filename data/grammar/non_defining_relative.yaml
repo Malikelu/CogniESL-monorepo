@@ -18,8 +18,16 @@ meaning:
   ccqs:
   - question: Can we remove a non-defining clause and the sentence still makes sense
     answer: Yes. That is how you know it is non-defining.
+    purpose: Tests whether the learner can distinguish between defining relative clauses
+      (essential information, no commas) and non-defining relative clauses (extra
+      information, with commas).
   - question: Can we use that in non-defining clauses
     answer: No. Only who or which.
+    purpose: Tests understanding of non_defining_relative.
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      non defining relative and explain why they are incorrect.
   example_generator:
     contexts:
     - everyday situations
@@ -117,8 +125,8 @@ teaching:
     adaptation_notes: 'Students add non-defining relative clauses to simple sentences:
       ''I visited Paris.'' → ''I visited Paris, which is the capital of France.'''
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
+    Relative Clauses, §11.1-11.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -127,15 +135,27 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for non_defining_relative.
-  correction: Correct form.
-  explanation: This is a common error for non_defining_relative.
+- error: '*My brother who lives in Paris is a doctor.* (I have multiple brothers)'
+  correction: 'My brother, who lives in Paris, is a doctor. (non-defining: I have
+    one brother) / My brother who lives in Paris is a doctor. (defining: I have multiple
+    brothers)'
+  explanation: Non-defining relative clauses use commas and add extra information.
+    Defining clauses identify which person/thing and have no commas.
   l1_groups:
   - Portuguese
   - Spanish
+  - French
+  - German
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, relative clauses are essential for precision and are a
+    marker of proficient writing.
+- note: In conversation, defining relative clauses are more common than non-defining.
+- note: In academic writing, both defining and non-defining relative clauses are used
+    extensively.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In academic writing, relative clauses are essential for precision and are
+    a marker of proficient writing.
+- note: In conversation, defining relative clauses are more common than non-defining.
+- note: In formal writing, 'whom' is used for object relative clauses.

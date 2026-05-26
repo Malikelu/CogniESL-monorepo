@@ -13,10 +13,16 @@ meaning:
   ccqs:
   - question: She can swim. Does she know how to swim?
     answer: Yes. Can here means she has the ability.
+    purpose: Tests whether the learner understands that 'can' expresses ability (I
+      can swim), permission (Can I go?), and possibility (It can rain).
   - question: Can I borrow your pen? Is this asking for ability or permission?
     answer: Permission. The speaker is asking to use the pen.
+    purpose: Tests whether the learner can distinguish 'can' (present ability/permission)
+      from 'could' (past ability, polite requests, possibility).
   - question: Can you help me? Is this a question about ability or a request?
     answer: A request. The speaker is asking someone to do something.
+    purpose: 'Tests whether the learner understands that ''can'' is invariable (no
+      -s in third person: ''He can swim'' not *''He cans swim'').'
   example_generator:
     contexts:
     - everyday situations
@@ -127,43 +133,67 @@ teaching:
     adaptation_notes: 'Students create a survey with ''Can you...?'' questions and
       interview classmates. They report back: ''Three people can play a musical instrument.'''
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
+    Modals, §9.2 (ability and possibility)'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 3: The Verb, §3.9 (root modality)'
+  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 121-135 (can/could:
+    ability, permission, possibility)'
+  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
+    9: Modals, §9.2-9.3'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 8: Can and could'
 common_errors:
-  - error: "Using 'to' after 'can': *'I can to swim.'"
-    correction: "I can swim."
-    explanation: "'Can' is a modal verb and is followed by the base verb without 'to'. This is one of the most common A1 errors. Portuguese and Spanish speakers often make this mistake because their languages use 'poder + infinitive'."
-    l1_groups: ["Portuguese", "Spanish", "French"]
-  - error: "Adding -s to 'can' in third person: *'He cans swim.'"
-    correction: "He can swim."
-    explanation: "'Can' never changes form. It does not take -s for third person singular. This is a very common overgeneralization error."
-    l1_groups: ["Portuguese", "Spanish"]
-  - error: "Using 'can' for past ability: *'I can swim when I was 5.'"
-    correction: "I could swim when I was 5."
-    explanation: "Use 'could' for general past ability, not 'can'. For specific past achievements, use 'was able to' or 'managed to'."
-    l1_groups: ["Portuguese", "Spanish", "Chinese"]
-  - error: "Using 'can' for formal permission: *'Can I leave the room?' (to a boss)"
-    correction: "May I leave the room?"
-    explanation: "'Can' is informal for permission. In formal contexts or with authority figures, use 'may'."
-    l1_groups: ["All L1 groups"]
+- error: 'Using ''to'' after ''can'': *''I can to swim.'''
+  correction: I can swim.
+  explanation: '''Can'' is a modal verb and is followed by the base verb without ''to''.
+    This is one of the most common A1 errors. Portuguese and Spanish speakers often
+    make this mistake because their languages use ''poder + infinitive''.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+- error: 'Adding -s to ''can'' in third person: *''He cans swim.'''
+  correction: He can swim.
+  explanation: '''Can'' never changes form. It does not take -s for third person singular.
+    This is a very common overgeneralization error.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+- error: 'Using ''can'' for past ability: *''I can swim when I was 5.'''
+  correction: I could swim when I was 5.
+  explanation: Use 'could' for general past ability, not 'can'. For specific past
+    achievements, use 'was able to' or 'managed to'.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+- error: 'Using ''can'' for formal permission: *''Can I leave the room?'' (to a boss)'
+  correction: May I leave the room?
+  explanation: '''Can'' is informal for permission. In formal contexts or with authority
+    figures, use ''may''.'
+  l1_groups:
+  - All L1 groups
 register_notes:
-  - note: "'Can' is neutral in register for ability: 'I can swim.' (both formal and informal)"
-  - note: "For permission, 'can' is informal and 'may' is formal: 'Can I sit here?' (to a friend) vs 'May I sit here?' (to a boss)."
-  - note: "For requests, 'could' is more polite than 'can': 'Could you help me?' (polite) vs 'Can you help me?' (informal)."
-  - note: "In academic writing, 'can' expresses possibility: 'This approach can be applied to...'"
+- note: '''Can'' is neutral in register for ability: ''I can swim.'' (both formal
+    and informal)'
+- note: 'For permission, ''can'' is informal and ''may'' is formal: ''Can I sit here?''
+    (to a friend) vs ''May I sit here?'' (to a boss).'
+- note: 'For requests, ''could'' is more polite than ''can'': ''Could you help me?''
+    (polite) vs ''Can you help me?'' (informal).'
+- note: 'In academic writing, ''can'' expresses possibility: ''This approach can be
+    applied to...'''
 dialectal_variation:
-  - note: "'Can't' is pronounced /kɑːnt/ in BrE and /kænt/ in AmE. The vowel difference is significant."
-  - note: "In some dialects, 'cannot' is used in formal writing while 'can't' is restricted to speech and informal writing."
-  - note: "In African American Vernacular English, 'ain't' can replace 'can't': 'I ain't got time.'"
+- note: '''Can''t'' is pronounced /kɑːnt/ in BrE and /kænt/ in AmE. The vowel difference
+    is significant.'
+- note: In some dialects, 'cannot' is used in formal writing while 'can't' is restricted
+    to speech and informal writing.
+- note: 'In African American Vernacular English, ''ain''t'' can replace ''can''t'':
+    ''I ain''t got time.'''
 discourse_notes:
-  - note: "'Can' introduces new topics in conversation: 'Can I ask you a question?' (discourse opener)"
-  - note: "'Can' is used for making offers: 'Can I help you?' (service encounters)"
-  - note: "In narratives, 'can' describes characters' abilities: 'She could speak three languages but couldn't read or write.'"
-  - note: "'Can't' expresses impossibility: 'That can't be true!' (disbelief)"
+- note: '''Can'' introduces new topics in conversation: ''Can I ask you a question?''
+    (discourse opener)'
+- note: '''Can'' is used for making offers: ''Can I help you?'' (service encounters)'
+- note: 'In narratives, ''can'' describes characters'' abilities: ''She could speak
+    three languages but couldn''t read or write.'''
+- note: '''Can''t'' expresses impossibility: ''That can''t be true!'' (disbelief)'

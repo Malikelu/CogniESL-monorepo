@@ -19,11 +19,20 @@ meaning:
   ccqs:
   - question: I had my hair cut. Did I cut my own hair?
     answer: No. Someone else cut it. You arranged for them to do it.
+    purpose: Tests whether the learner understands the key concept of causative have
+      get. This is important because mastering this distinction is essential for accurate
+      and natural English at B1 level.
   - question: She got her car repaired. Did she repair it herself?
     answer: No. She arranged for someone else to repair it.
+    purpose: Tests whether the learner can distinguish between existential 'there'
+      (indicating existence) and dummy 'it' (used for weather, time, distance). Confusing
+      these is a very common beginner error.
   - question: Is 'I had my house painted' the same as 'I painted my house'?
     answer: No. In the first sentence, someone else painted it. In the second, you
       did it yourself.
+    purpose: Tests whether the learner understands that '-ed' adjectives describe
+      how someone feels (experiencer) while '-ing' adjectives describe what causes
+      the feeling (stimulus).
   example_generator:
     contexts:
     - everyday situations
@@ -143,8 +152,8 @@ teaching:
     adaptation_notes: 'Students describe unfortunate events using the causative: ''I
       had my phone stolen. She had her bike taken.'''
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, §12.1-12.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -153,15 +162,51 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for causative_have_get.
-  correction: Correct form.
-  explanation: This is a common error for causative_have_get.
+- error: '*I did my house painted last week.*'
+  correction: I had my house painted last week.
+  explanation: The causative structure requires 'have/get + object + past participle'.
+    'Do' cannot be used as a causative verb for services. 'I had my house painted'
+    means someone else painted it for you.
   l1_groups:
   - Portuguese
   - Spanish
+- error: '*She got paint her nails.*'
+  correction: She got her nails painted.
+  explanation: Causative 'get' requires the pattern 'get + object + past participle'.
+    The object (nails) must come before the past participle (painted). Without the
+    object, the structure is incomplete.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+- error: '*I had the mechanic to check my car.*'
+  correction: I had the mechanic check my car.
+  explanation: 'When specifying the person who performed the action, use ''have +
+    person + base verb'' (no ''to''). Adding ''to'' is incorrect. Compare: ''I had
+    my car checked'' vs ''I had the mechanic check my car''.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+- error: '*I will get my hair cut tomorrow by.* (incomplete)'
+  correction: I will get my hair cut tomorrow.
+  explanation: The agent ('by someone') is typically omitted in causative sentences
+    because the focus is on the service, not who performed it. Adding 'by' without
+    the agent creates an incomplete phrase.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, this structure is standard and expected. Register variation
+    is marked by vocabulary and style rather than grammatical form.
+- note: In formal writing, avoid contractions and use full forms.
+- note: In conversation, contractions and reduced forms are common.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used in everyday communication.
+- note: In academic writing, this structure appears in formal contexts and is a marker
+    of proficient English.
+- note: In professional contexts, correct use of this structure is expected in formal
+    writing.

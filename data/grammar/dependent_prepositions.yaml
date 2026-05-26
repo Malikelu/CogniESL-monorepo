@@ -17,10 +17,19 @@ meaning:
   ccqs:
   - question: Is 'I listen music' correct?
     answer: No — you need 'to.' The correct form is 'I listen to music.'
+    purpose: Tests whether the learner understands that many English verbs require
+      specific prepositions (listen to, look at, wait for). These dependent prepositions
+      are arbitrary and must be memorized as part of the verb.
   - question: Is 'good in maths' the correct preposition?
     answer: No — the correct collocation is 'good at maths.'
+    purpose: Tests whether the learner knows that adjective + preposition combinations
+      are fixed in English. 'Good at' is the correct collocation for skills/subjects,
+      not 'good in.'
   - question: Can you say 'depend of' or 'depend from'?
     answer: No — the only correct form is 'depend on.'
+    purpose: Tests whether the learner understands that verb + preposition combinations
+      are arbitrary in English. 'Depend on' cannot be translated literally from L1.
+      The preposition must be memorized as part of the verb.
   example_generator:
     contexts:
     - everyday situations
@@ -136,8 +145,8 @@ teaching:
     adaptation_notes: Create cards with adjectives/verbs on one side and prepositions
       on the other. Students match them from memory.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
+    Modals, §9.1-9.6'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -146,15 +155,23 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for dependent_prepositions.
-  correction: Correct form.
-  explanation: This is a common error for dependent_prepositions.
+- error: '*I am interested for learning.*'
+  correction: I am interested in learning.
+  explanation: 'Dependent prepositions are fixed: interested in.'
   l1_groups:
   - Portuguese
   - Spanish
+  - Chinese
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, this structure is standard and expected. Register variation
+    is marked by vocabulary and style rather than grammatical form.
+- note: In formal writing, avoid contractions and use full forms.
+- note: In conversation, contractions and reduced forms are common.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used in everyday communication.
+- note: In academic writing, this structure appears in formal contexts and is a marker
+    of proficient English.
+- note: In professional contexts, correct use of this structure is expected in formal
+    writing.

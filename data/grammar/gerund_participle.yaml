@@ -17,8 +17,17 @@ meaning:
   ccqs:
   - question: Is the -ing word the subject or object of the sentence?
     answer: If yes, it's a gerund (noun).
+    purpose: Tests whether the learner understands that a gerund (-ing form) functions
+      as a noun in the sentence, even though it looks like a verb.
   - question: Is there a 'be' verb before the -ing?
     answer: If yes, it's a participle (continuous tense).
+    purpose: 'Tests whether the learner can distinguish between a present participle
+      (adjective: ''The movie is boring'') and a gerund (noun: ''Watching movies is
+      fun'').'
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      gerund participle and explain why they are incorrect.
   example_generator:
     contexts:
     - hobbies and interests
@@ -137,8 +146,8 @@ teaching:
     duration: 15
     adaptation_notes: Students ask classmates about hobbies using 'Do you enjoy...?'
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, §12.1-12.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -147,15 +156,36 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for gerund_participle.
-  correction: Correct form.
-  explanation: This is a common error for gerund_participle.
+- error: '*I enjoy to read.*'
+  correction: I enjoy reading.
+  explanation: '''Enjoy'' must be followed by a gerund (-ing), not an infinitive.
+    This is a common error because many verbs in other languages use infinitive after
+    ''enjoy''.'
   l1_groups:
   - Portuguese
   - Spanish
+  - French
+  - Italian
+- error: '*The movie was bored.*'
+  correction: The movie was boring.
+  explanation: Use '-ing' form to describe what something does (The movie bores viewers
+    → boring). Use '-ed' form to describe how someone feels (I was bored).
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Japanese
+  - Korean
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, this structure is standard and expected. Register variation
+    is marked by vocabulary and style rather than grammatical form.
+- note: In formal writing, avoid contractions and use full forms.
+- note: In conversation, contractions and reduced forms are common.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used in everyday communication.
+- note: In academic writing, this structure appears in formal contexts and is a marker
+    of proficient English.
+- note: In professional contexts, correct use of this structure is expected in formal
+    writing.

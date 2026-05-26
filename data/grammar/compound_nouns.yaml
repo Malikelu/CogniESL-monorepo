@@ -23,13 +23,25 @@ meaning:
   - question: Is this one word, two words, or hyphenated?
     answer: One word = closed (toothbrush). Two words = open (bus stop). Hyphenated
       = mother-in-law.
+    purpose: Tests whether the learner understands that '-ed' adjectives describe
+      how someone feels (experiencer) while '-ing' adjectives describe what causes
+      the feeling (stimulus).
   - question: Where is the stress in this compound noun?
     answer: 'Almost always on the first word: TOOTHbrush, BUS stop, MOTHER-in-law.'
+    purpose: Tests whether the learner understands the key concept of compound nouns.
+      This is important because mastering this distinction is essential for accurate
+      and natural English at A2 level.
   - question: What is the plural form — where does the -s go?
     answer: 'On the last word: toothbrushes, bus stops, mothers-in-law.'
+    purpose: Tests whether the learner understands how cleft sentences (it-clefts
+      and wh-clefts) are used to emphasize specific information. The structure changes
+      the focus of the sentence.
   - question: Can you guess the meaning from the two words?
     answer: Sometimes yes (bedroom = bed + room), sometimes no (butterfly ≠ butter
       + fly).
+    purpose: Tests whether the learner understands the difference between present
+      ability (can) and past ability or polite possibility (could). This is important
+      for expressing ability and making requests.
   example_generator:
     contexts:
     - everyday situations
@@ -164,8 +176,8 @@ teaching:
     adaptation_notes: Students combine two simple words to make compound nouns and
       illustrate them. Check if the meaning is transparent or opaque.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, §12.6-12.13'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -174,15 +186,53 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for compound_nouns.
-  correction: Correct form.
-  explanation: This is a common error for compound_nouns.
+- error: '*I need a brush of teeth.*'
+  correction: I need a toothbrush.
+  explanation: English uses noun-noun compounds (toothbrush), not noun + of + noun
+    for common objects. L1s that use 'of' constructions (Portuguese 'escova de dentes')
+    transfer this pattern incorrectly.
   l1_groups:
   - Portuguese
   - Spanish
+  - French
+  - Italian
+- error: '*I stop at the station to wait for the bus.* (confusing terms)'
+  correction: I wait at the bus stop for the bus.
+  explanation: 'Confusing similar compound nouns: ''bus stop'' (a place where buses
+    stop briefly, for passengers) vs ''bus station'' (a large terminus where buses
+    are stored and depart). Choosing the wrong compound changes the meaning.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+- error: '*Two teethbrush are in the bathroom.*'
+  correction: Two toothbrushes are in the bathroom.
+  explanation: 'Compound noun plurals are formed on the main noun (the last word):
+    toothbrush to toothbrushes. Some learners incorrectly pluralize the first element
+    (*teethbrush) following the compound''s internal logic.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+- error: '*My mother in law is visiting.*'
+  correction: My mother-in-law is visiting.
+  explanation: 'Compound nouns with family terms use hyphens: mother-in-law, father-in-law,
+    brother-in-law. Without hyphens, the words read as separate nouns rather than
+    a single compound. This is a spelling convention, not a grammar error.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Japanese
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, this structure is standard and expected. Register variation
+    is marked by vocabulary and style rather than grammatical form.
+- note: In formal writing, avoid contractions and use full forms.
+- note: In conversation, contractions and reduced forms are common.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used in everyday communication.
+- note: In academic writing, this structure appears in formal contexts and is a marker
+    of proficient English.
+- note: In professional contexts, correct use of this structure is expected in formal
+    writing.

@@ -14,14 +14,18 @@ meaning:
     (wh- + auxiliary + subject + main verb) DO require inversion. Embedded questions
     use statement word order, not question word order.
   ccqs:
-  - question: In 'Who ate the cake?', do we need 'did'?
-    answer: No — 'who' is the subject, so no auxiliary is needed
-  - question: In 'What did you buy?', is the word order the same as a statement?
-    answer: No — the auxiliary 'did' comes before the subject 'you'
-  - question: In 'I wonder where she is', is it 'where is she' or 'where she is'?
-    answer: '''Where she is'' — embedded questions use statement order'
-  - question: Can we say 'Do you know where is the station?'
-    answer: No — it should be 'Do you know where the station is?'
+  - question: Is this a yes/no question or a wh-question?
+    answer: Yes/no questions start with an auxiliary; wh-questions start with a wh-word.
+    purpose: Tests whether the learner can distinguish yes/no questions (Do you...?)
+      from wh-questions (What do you...?) and form each correctly.
+  - question: Where is the auxiliary verb?
+    answer: Before the subject — English questions require subject-auxiliary inversion.
+    purpose: 'Tests whether the learner understands that English questions require
+      inversion: auxiliary + subject + main verb.'
+  - question: Do we need DO-support here?
+    answer: Yes — when there is no auxiliary, we add do/does/did to form the question.
+    purpose: 'Tests whether the learner understands DO-support: adding do/does/did
+      when no auxiliary is present.'
   example_generator:
     contexts:
     - asking for directions
@@ -176,25 +180,38 @@ teaching:
     adaptation_notes: One student is a 'celebrity' — others ask questions to guess
       who. Encourages varied question forms.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 4:
+    Basic Structures, 4.6-4.8'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 4: Questions, 4.3 (wh-movement)'
+  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 462-469 (wh-questions:
+    word order, do-support)'
+  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
+    12: Questions, 12.2-12.3'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 9: Wh-questions'
 common_errors:
-- error: Common error for interrogative_word_order.
-  correction: Correct form.
-  explanation: This is a common error for interrogative_word_order.
+- error: '*You like what?* (direct translation)'
+  correction: What do you like?
+  explanation: English questions require subject-auxiliary inversion (do you like),
+    not the statement order used in many L1s.
   l1_groups:
   - Portuguese
   - Spanish
+  - Chinese
+  - Japanese
+  - Korean
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: Question formation is consistent across registers.
+- note: 'In formal writing, avoid contractions: ''Do you not think...?'' vs ''Don''t
+    you think...?'''
+- note: 'In conversation, intonation can turn a statement into a question: ''You''re
+    leaving?'''
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: 'In conversation, questions are the primary way to seek information: ''How
+    are you?'' ''What do you think?'''
+- note: 'In academic writing, rhetorical questions engage the reader: ''What are the
+    implications of these findings?'''
+- note: In interviews, question formation is critical for data collection.

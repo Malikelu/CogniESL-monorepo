@@ -13,8 +13,17 @@ meaning:
   ccqs:
   - question: Is this adjective made up of two or more words joined together?
     answer: Yes, it is a compound adjective.
+    purpose: Tests whether the learner understands when to use comparative vs. superlative
+      forms. This distinction depends on how many items are being compared.
   - question: Is it hyphenated when placed before the noun?
     answer: Yes, hyphenation before the noun is standard.
+    purpose: Tests whether the learner understands temporal relationships between
+      events. Correct use of time conjunctions is essential for clear communication
+      of sequence and duration.
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      compound adjectives general and explain why they are incorrect.
   example_generator:
     contexts:
     - product descriptions
@@ -154,8 +163,8 @@ teaching:
     adaptation_notes: Students find and correct missing or incorrect hyphens in a
       text.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, §12.6-12.13'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -164,15 +173,56 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for compound_adjectives_general.
-  correction: Correct form.
-  explanation: This is a common error for compound_adjectives_general.
+- error: '*She is a well known author.*'
+  correction: She is a well-known author.
+  explanation: 'Compound adjectives before a noun are hyphenated: ''well-known'',
+    ''short-lived'', ''ready-made''. The hyphen signals that the two words function
+    as a single modifier. Without hyphens, the meaning can be ambiguous or misleading.'
   l1_groups:
   - Portuguese
   - Spanish
+  - Chinese
+  - Japanese
+- error: '*He is a newly-built house designer.* (meaning: he designs newly built houses)'
+  correction: He designs newly-built houses.
+  explanation: 'Misplaced modifier: ''newly-built'' modifies ''houses'', not ''designer''.
+    The compound adjective must be adjacent to the noun it describes. Poor word order
+    changes the meaning entirely.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Arabic
+  - Chinese
+- error: '*This is a poorly-written essay by a badly prepared student.*'
+  correction: This is a poorly written essay by a badly prepared student.
+  explanation: Hyphens in compound adjectives are needed before a noun ('poorly-written
+    essay') but not after it ('the essay is poorly written'). The hyphen rule changes
+    based on the adjective's position in the sentence.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Chinese
+- error: '*A three-years-old child was crying.*'
+  correction: A three-year-old child was crying.
+  explanation: 'In compound adjectives with numbers, the measurement noun remains
+    singular: ''three-year-old'' (not ''three-years-old''). This is a spelling rule
+    that even advanced learners get wrong.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Arabic
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, this structure is standard and expected. Register variation
+    is marked by vocabulary and style rather than grammatical form.
+- note: In formal writing, avoid contractions and use full forms.
+- note: In conversation, contractions and reduced forms are common.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used in everyday communication.
+- note: In academic writing, this structure appears in formal contexts and is a marker
+    of proficient English.
+- note: In professional contexts, correct use of this structure is expected in formal
+    writing.

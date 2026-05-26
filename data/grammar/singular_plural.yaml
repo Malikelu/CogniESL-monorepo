@@ -15,8 +15,18 @@ meaning:
   ccqs:
   - question: Is there one or more than one?
     answer: Depends on the noun form.
+    purpose: Tests whether the learner can distinguish between singular (one) and
+      plural (more than one) nouns. This is a fundamental concept because English
+      requires explicit plural marking on nouns.
   - question: Does the noun end in -s?
     answer: Usually, but not always (e.g., children, men).
+    purpose: Tests whether the learner knows that most plural nouns end in -s, but
+      there are important exceptions (irregular plurals). This is important because
+      irregular plurals like "children" and "men" are very common and must be memorized.
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      singular plural and explain why they are incorrect.
   example_generator:
     contexts:
     - classroom objects
@@ -143,8 +153,8 @@ teaching:
     duration: 15
     adaptation_notes: Students practice buying items using singular and plural forms.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, §12.1-12.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.

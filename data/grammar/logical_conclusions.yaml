@@ -21,9 +21,19 @@ meaning:
   ccqs:
   - question: Is the speaker almost certain or just expecting something?
     answer: Expecting — 'should' expresses a logical expectation, not near certainty.
+    purpose: Tests whether the learner understands that 'should' expresses logical
+      expectation (based on what is reasonable), not near certainty. 'She should be
+      home' = it is reasonable to expect her to be home, but I am not certain.
   - question: Is the speaker basing this on evidence or common sense?
     answer: Yes — 'should' implies the conclusion is based on what is reasonable or
       expected.
+    purpose: Tests whether the learner understands that 'should' for logical conclusions
+      is based on reasoning, not direct evidence. 'She left an hour ago, so she should
+      be there by now' = reasoning about travel time, not certainty.
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      logical conclusions and explain why they are incorrect.
   example_generator:
     contexts:
     - making predictions
@@ -161,8 +171,8 @@ teaching:
     adaptation_notes: 'Students discuss plans and make predictions: ''The meeting
       starts at 2. It''s 1:30. We should be fine.'''
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
+    Modals, §9.1-9.6'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -171,15 +181,26 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for logical_conclusions.
-  correction: Correct form.
-  explanation: This is a common error for logical_conclusions.
+- error: '*He must be tired -- he worked all day.*'
+  correction: He must be tired -- he has been working all day.
+  explanation: Connect past evidence to present with present perfect.
   l1_groups:
   - Portuguese
   - Spanish
+  - Chinese
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: 'In formal writing, modals express hedging and caution: ''These results may
+    suggest...'''
+- note: 'In conversation, modals are essential for politeness: ''Could you pass the
+    salt?'''
+- note: 'In legal language, ''must'' expresses strong obligation: ''All passengers
+    must wear seatbelts.'''
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, modals are essential for politeness, expressing degrees of
+    certainty, and making requests.
+- note: 'In academic writing, modals express hedging and caution: ''These results
+    may suggest...'' ''It could be argued that...'''
+- note: 'In legal and regulatory language, modals express obligation and permission:
+    ''All passengers must wear seatbelts.'''

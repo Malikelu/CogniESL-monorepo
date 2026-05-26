@@ -4,6 +4,14 @@
 # Generated outputs
 mnt/
 
+# SQLite databases (runtime data — never commit)
+*.db
+
+# data/ has static YAML files (grammar, l1-interference, activities) that MUST be
+# committed so Railway's Docker build can COPY them into the image.
+# Only exclude runtime-generated subdirectories.
+data/writing/
+
 # Python
 __pycache__/
 *.pyc

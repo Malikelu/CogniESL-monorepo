@@ -18,6 +18,18 @@ meaning:
   ccqs:
   - question: What is the correct order of adjectives
     answer: Opinion, size, age, shape, color, origin, material, purpose. Use OSASCOMP.
+    purpose: 'Tests whether the learner knows the standard adjective order in English:
+      Opinion-Size-Age-Shape-Colour-Origin-Material-Purpose + Noun. This is a fixed
+      rule, not flexible.'
+  - question: Can we use a different structure here with the same meaning?
+    answer: No — changing the structure would change the meaning or make the sentence
+      ungrammatical.
+    purpose: Tests whether the learner understands that order of adjectives is the
+      only appropriate structure for this meaning/context.
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      order of adjectives and explain why they are incorrect.
   example_generator:
     contexts:
     - everyday situations
@@ -120,8 +132,8 @@ teaching:
     adaptation_notes: Students describe objects using multiple adjectives in the correct
       order.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
+    Relative Clauses, §11.1-11.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -130,15 +142,25 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for order_of_adjectives.
-  correction: Correct form.
-  explanation: This is a common error for order_of_adjectives.
+- error: '*a red big car*'
+  correction: a big red car
+  explanation: 'Size comes before colour in English adjective order. The standard
+    order is: Opinion-Size-Age-Shape-Colour-Origin-Material-Purpose.'
   l1_groups:
   - Portuguese
   - Spanish
+  - French
+  - Chinese
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, this structure is standard and expected. Register variation
+    is marked by vocabulary and style rather than grammatical form.
+- note: In formal writing, avoid contractions and use full forms.
+- note: In conversation, contractions and reduced forms are common.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used in everyday communication.
+- note: In academic writing, this structure appears in formal contexts and is a marker
+    of proficient English.
+- note: In professional contexts, correct use of this structure is expected in formal
+    writing.

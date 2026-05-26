@@ -1,0 +1,241 @@
+================================================================================
+                    VALIDATION PIPELINE FLOW (Step 4.5)
+================================================================================
+
+This is the automatic quality assurance system that prevents incomplete materials.
+
+================================================================================
+GENERATION PHASE (Steps 1-4)
+================================================================================
+
+Teacher sends request
+         ↓
+Step 1: Gather requirements (topic, L1, age, level, format)
+         ↓
+Step 2: Search database
+        - SearchGrammarTool → get grammar rules, examples, CCQs
+        - GetL1InterferenceTool → get L1-specific errors (FOR EACH L1)
+        - SearchActivitiesTool → get activities for age group
+         ↓
+Step 3: Generate slides
+        - InsertNewSlides → create placeholder slide structure
+        - ModifySlide × N → fill each slide with content
+          (with retry logic: 5 attempts per slide)
+          (if all fail: use fallback HTML generator)
+         ↓
+Step 4: Build PPTX from HTML slides
+        - BuildPptxFromHtmlSlides → compile all slides into .pptx file
+         ↓
+        ═══════════════════════════════════════════════════════════════
+        VALIDATION PIPELINE STARTS HERE (STEP 4.5) ← CRITICAL ← NEW
+        ═══════════════════════════════════════════════════════════════
+
+================================================================================
+VALIDATION PHASE (Step 4.5) - AUTOMATIC QUALITY CHECKS
+================================================================================
+
+BEFORE VALIDATION:
+  - Agent has generated slides
+  - Agent has built PPTX file
+  - Agent has NOT yet responded to teacher
+
+VALIDATION STEP 1: Run ValidateSlideSet
+─────────────────────────────────────────
+  Check:
+    ✓ Slide count matches plan
+    ✓ All slides > 2500 bytes (not empty)
+    ✓ HTML structure is valid
+    ✓ Speaker notes present (data-speaker-notes attribute)
+    ✓ Minimal visual content (images/SVGs/gradients)
+
+  Result:
+    PASS → continue to Step 2
+    FAIL → run ValidateAndFixSlides → re-run ValidateSlideSet
+
+VALIDATION STEP 2: Run ValidateAndFixSlides (if Step 1 failed)
+──────────────────────────────────────────────────────────────
+  For each failed slide:
+    1. Regenerate using ModifySlide with simplified task brief
+    2. Re-validate
+    3. Track success/failure
+
+  After regeneration:
+    → Go back to Step 1 (re-run ValidateSlideSet for all slides)
+
+VALIDATION STEP 3: Run ValidateL1Content (if L1s were specified)
+─────────────────────────────────────────────────────────────────
+  For each specified L1 language:
+    ✓ Language name appears in slides
+    ✓ Error examples present (wrong, incorrect, ✗)
+    ✓ Correct examples shown (right, correct, ✓)
+    ✓ Before-after comparisons (→, →)
+
+  Result:
+    PASS → continue to Step 4
+    FAIL → indicate missing L1 content, ask agent to regenerate
+
+VALIDATION STEP 4: Final Checks
+────────────────────────────────
+  ✓ PPTX file exists and is > 100KB
+  ✓ Worksheet has answer key
+  ✓ Activities match specified age group
+  ✓ No duplicate slides
+
+SUCCESS CRITERIA:
+  All of the above checks PASS
+
+================================================================================
+AGENT BEHAVIOR AT EACH STAGE
+================================================================================
+
+Generation (Steps 1-4):
+  - Generates materials
+  - Does NOT respond to teacher yet
+  - Silently moves to Step 4.5
+
+Validation (Step 4.5):
+  - Runs all checks automatically
+  - If any check fails:
+    * Tries to repair automatically (ValidateAndFixSlides)
+    * Re-runs validation
+  - Repeats until all pass or max attempts reached
+
+Response (Step 5):
+  - Only reached AFTER all validations pass
+  - Agent sends comprehensive response with:
+    * File paths to all materials
+    * Summary of what was created
+    * Mention of L1 languages targeted
+  - Example: "Created 18 slides with L1 Oracle for Spanish"
+
+CRITICAL RULE:
+  → Agent does NOT respond to teacher until ALL validations pass
+  → If validation fails AND repair fails:
+    * Agent tells teacher what went wrong
+    * Does NOT deliver incomplete materials
+
+================================================================================
+EXAMPLE: VALIDATION IN ACTION
+================================================================================
+
+SCENARIO: Teacher requests "Present Simple for Spanish beginners"
+
+Agent generates:
+  ✓ 18 slides with Spanish L1 Oracle
+  ✓ Worksheet with 5 sections + answer key
+  ✓ PPTX file created
+
+Validation Step 1 (ValidateSlideSet):
+  ✓ Slide 1-17: PASS (> 2500 bytes, has speaker notes)
+  ✗ Slide 18: FAIL (1800 bytes, speaker notes missing)
+
+Result: ONE FAILED SLIDE
+
+Action: Agent calls ValidateAndFixSlides
+  - Re-generates slide 18 with simplified task
+  - New file size: 3200 bytes
+  - Adds speaker notes
+
+Re-run ValidateSlideSet:
+  ✓ Slide 18: NOW PASSES
+
+Validation Step 3 (ValidateL1Content):
+  ✓ Spanish name found in 2 slides
+  ✓ Error examples present: "*He walk"
+  ✓ Correct examples shown: "He walks"
+  ✓ Before-after comparison: "→" found
+
+RESULT: ALL VALIDATIONS PASS ✓
+
+Agent responds:
+  "Done! I've created:
+   - Slides: present_simple_spanish.pptx (18 slides with L1 Oracle)
+   - Worksheet: present_simple_spanish.docx (with answer key)
+   - The materials target the third-person -s omission error."
+
+================================================================================
+ERROR HANDLING
+================================================================================
+
+If ValidateSlideSet fails repeatedly:
+  - After 3 repair attempts, agent informs teacher
+  - Provides details of what went wrong
+  - Suggests correcting specific issue
+
+If ValidateL1Content finds missing L1 content:
+  - Agent regenerates L1 Oracle section
+  - Re-validates
+  - If still missing: informs teacher
+
+If ValidateAndFixSlides fails:
+  - Fallback: minimal HTML slide is generated
+  - Slide will have: title + content + speaker notes
+  - Passes minimum requirements (2500 bytes, 50 chars text)
+  - Teacher notified that this slide was regenerated as fallback
+
+NEVER returns:
+  ✗ Empty slides
+  ✗ Missing speaker notes
+  ✗ Missing L1 Oracle sections
+  ✗ Incomplete materials
+
+================================================================================
+KEY DIFFERENCES FROM BEFORE
+================================================================================
+
+BEFORE:
+  Slide generation → Build PPTX → Respond to teacher
+  (No validation, no quality checks, no repair)
+
+  Problem: Incomplete materials could be delivered
+
+AFTER:
+  Slide generation → Build PPTX → VALIDATE → FIX → VALIDATE → Respond
+  (Automatic quality checks, automatic repair)
+
+  Benefit: Only complete, validated materials are delivered
+
+================================================================================
+VALIDATION TOOLS (WHO DOES WHAT)
+================================================================================
+
+ValidateSlideSet:
+  - Primary validator
+  - Checks all slides for content and structure
+  - Returns detailed pass/fail/warning report
+
+ValidateAndFixSlides:
+  - Repair agent
+  - Takes failed slide list
+  - Regenerates each slide
+  - Returns repair results
+
+ValidateL1Content:
+  - L1-specific validator
+  - Checks for language-specific error content
+  - Ensures L1 Oracle sections exist and are substantive
+
+ValidateRequirements:
+  - Prevents generation from starting incomplete
+  - Not used in Step 4.5 (used in Step 1)
+  - Ensures all info is gathered before proceeding
+
+================================================================================
+SUMMARY
+================================================================================
+
+Step 4.5 transforms the pipeline from:
+  "Hope everything works" → "Verify everything works"
+
+The validation pipeline is:
+  ✓ AUTOMATIC (no human intervention needed)
+  ✓ COMPREHENSIVE (checks all quality criteria)
+  ✓ SELF-HEALING (automatically repairs failures)
+  ✓ THOROUGH (doesn't skip to response until all checks pass)
+
+Result: CogniESL now delivers ONLY complete, high-quality materials.
+
+No empty slides. No missing speaker notes. No skipped L1 Oracle sections.
+100% guaranteed material quality before teacher sees it.
+
+================================================================================

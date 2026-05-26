@@ -1,160 +1,95 @@
 language: Japanese
 language_code: ja
-schema_version: '3.0'
+schema_version: '4.0'
 grammar_points:
   articles:
     interference_patterns:
-    - pattern: Omission of all articles (Japanese has no article system)
-      example: Japanese has no words for 'a/an' or 'the.' 'Hon' can mean 'a book,'
-        'the book,' or 'books.' Learners say 'I bought book' instead of 'I bought
-        a book.'
-      frequency: 5
-      persistence: 5
+    - pattern: Omission of all articles (Japanese has no articles)
+      example: Omission of all articles (Japanese has no articles)
+      frequency: 4
+      persistence: 3
       communicative_impact: 3
-    - pattern: Overuse of demonstratives (kono/sono/ano) as article substitutes
-      example: Japanese uses 'kono' (this), 'sono' (that), and 'ano' (that over there)
-        for specificity. Learners may say 'this book is good' when they mean 'a book
-        is good' or 'the book is good.'
-      frequency: 3
-      persistence: 3
-      communicative_impact: 2
-    - pattern: Confusion between topic marker (wa) and definite article (the)
-      example: Japanese 'wa' (は) marks the topic of a sentence, not definiteness.
-        'Hon wa omoshiroi' = 'As for books, (they're) interesting.' Learners may think
-        'wa' = 'the' and overuse 'the' in English.
-      frequency: 3
-      persistence: 3
-      communicative_impact: 2
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Omission of all articles (Japanese has no articles).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Watashi wa sensei desu.
       correct: I am a teacher.
-      ja_original: Watashi wa sensei desu. (私は先生です)
-      gloss: I TOP teacher COP.
-      explanation: 'Japanese has no article. ''Sensei'' (teacher) stands alone. English
-        requires ''a'': ''I am a teacher.'' Note: ''wa'' is a topic marker, not an
-        article.'
-    - wrong: Hon o kaimashita.
-      correct: I bought a book.
-      ja_original: Hon o kaimashita. (本を買いました)
-      gloss: Book ACC bought.
-      explanation: Japanese 'hon' (book) has no article. English requires 'a' for
-        first mention of a singular countable noun.
-    - wrong: Neko ga suki desu.
-      correct: I like cats.
-      ja_original: Neko ga suki desu. (猫が好きです)
-      gloss: Cat NOM liking COP.
-      explanation: 'Japanese ''neko'' (cat/cats) has no article and no plural marker.
-        English uses zero article for generic plural: ''I like cats.'''
-    - wrong: This water is cold.
-      correct: The water is cold.
-      ja_original: Kono mizu wa tsumetai. (この水は冷たい)
-      gloss: This water TOP cold.
-      explanation: Japanese 'kono' (this) is used for specificity. In English, with
-        uncountable nouns like 'water,' we use 'the' for specific reference, not 'this.'
-    why_it_happens: 'Japanese has no article system whatsoever. There are no words
-      equivalent to ''a/an'' or ''the'' in Japanese grammar. Definiteness and specificity
-      are expressed through other means: (1) context — Japanese relies heavily on
-      shared context to determine definiteness, (2) demonstratives ''kono'' (this),
-      ''sono'' (that), and ''ano'' (that over there), (3) the topic marker ''wa''
-      (は) and subject marker ''ga'' (が), which indicate discourse roles but NOT definiteness,
-      and (4) word order. Because Japanese speakers never need to choose between ''a,''
-      ''the,'' or zero article, the entire concept of grammatical definiteness marking
-      is foreign. This is one of the most persistent and frequent errors for Japanese
-      learners at all levels — even advanced speakers may omit articles in spontaneous
-      speech. Japanese is a topic-prominent language (not subject-prominent like English),
-      which further complicates the acquisition of English article usage.'
+    why_it_happens: Japanese has no article system. Definiteness is inferred from
+      context or particles rather than grammatical markers. Japanese learners often
+      omit articles entirely in English, producing sentences like 'I bought book yesterday'
+      instead of 'I bought a book.' This occurs because Japanese does not require
+      speakers to mark definiteness grammatically, so the concept of 'a' vs 'the'
+      vs zero article is entirely foreign.
     teacher_tips:
-      how_to_explain: 'Start by explaining that English REQUIRES a ''determiner''
-        before most singular countable nouns — this is a grammatical rule, not optional.
-        Use a simple three-way system: (1) ''a/an'' = one thing, first time mentioning
-        it, ''I need a pen'' (any pen). (2) ''the'' = specific thing, both people
-        know which one, ''Pass me the pen'' (that specific pen). (3) zero article
-        = general statements with plurals or uncountables, ''I like books'' or ''Water
-        is important.'' Contrast with Japanese: show that Japanese uses nothing, or
-        uses ''kono/sono/ano'' (this/that) for specificity. Emphasize that ''wa''
-        is NOT ''the'' — it''s a topic marker. The concept of ''a/an'' is completely
-        new and must be drilled extensively.'
-      where_to_start: 'Begin with the most basic rule: singular countable nouns MUST
-        have a determiner. Drill ''I am a + profession,'' ''I have a + object,'' ''I
-        want a + thing.'' Use physical objects and pictures. Then introduce ''the''
-        for specific reference. Save zero article for later. Address the wa vs. the
-        confusion explicitly.'
-      sequencing: 'Week 1: Introduce a/an with singular countable nouns. Heavy drilling
-        with real objects and pictures. Week 2: Introduce the for specific/known reference.
-        Contrast a vs. the. Week 3: Zero article with plurals and uncountables. Address
-        wa vs. the confusion. Week 4: Mixed practice in context (paragraphs, dialogues,
-        picture descriptions).'
+      how_to_explain: 'Teach: English REQUIRES articles. ''A/an'' for first mention,
+        ''the'' for specific.'
+      where_to_start: Start with the articles pattern.
+      sequencing: 'Week 1: articles. Week 2: Practice. Week 3: Review. Week 4: Mixed.'
       exercises:
-      - name: Article Insertion
-        type: fill-in-the-blank
-        description: 20 sentences with singular countable nouns. Learners must add
-          a/an or the. Include Japanese glosses to highlight the structural difference.
-        duration: 15
-      - name: Translate from Japanese
-        type: translation
-        description: 15 Japanese sentences without articles. Learners translate to
-          English, adding the correct article.
-        duration: 20
-      - name: Wa is not The
+      - name: articles Audit
         type: error-correction
-        description: 10 sentences where 'the' is incorrectly used because of wa-transfer.
-          E.g., 'The life is hard' (from 'Jinsei wa muzukashii') should be 'Life is
-          hard.'
-        duration: 10
-      - name: Picture Description — First and Second Mention
-        type: speaking
-        description: 'Show a picture. Learners describe it: ''I can see a cat. The
-          cat is sitting on a mat. The mat is red.'' Practice the a -> the shift.'
+        description: 20 sentences with articles errors.
         duration: 15
-    sources:
+      - name: articles Translation
+        type: translation
+        description: Translate 15 sentences focusing on articles.
+        duration: 15
+      - name: articles Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing articles.
+        duration: 10
+      - name: articles Error Hunt
+        type: error-correction
+        description: A paragraph with 10 articles errors.
+        duration: 15
+    sources: &id001
     - Swan & Smith "Learner English" (Japanese)
     - Parrott "Grammar for English Language Teachers"
-    - Celce-Murcia & Larsen-Freeman "The Grammar Book"
-    source_count: 3
+    source_count: 2
     source_type: textbook
-    frequency: 5
-    persistence: 5
+    frequency: 4
+    persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
     source_rank: 1
     citations:
-    - claim: Japanese has no article system; definiteness is inferred from context,
-        demonstratives, and discourse markers
+    - claim: Interference pattern for articles
       source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
         and Other Problems'', 2nd ed., Cambridge University Press'
       location: 'Chapter: Japanese speakers, pp. 295-307'
       tier: 1
-    - claim: Japanese is a topic-prominent language; the topic marker wa does not
-        correspond to English the
-      source: Shibatani, M. (1990) 'The Languages of Japan', Cambridge University
-        Press
-      location: 'Chapter 8: Topic and comment'
-      tier: 1
-    - claim: Article omission is the most persistent error for Japanese learners of
-        English, continuing into advanced proficiency
-      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
-        and Other Problems'', 2nd ed., Cambridge University Press'
-      location: 'Chapter: Japanese speakers, pp. 295-307'
-      tier: 1
-    - claim: Singular countable nouns in English require a determiner; this rule does
-        not exist in Japanese
+    - claim: 'Grammar point: articles'
       source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
         Press
-      location: 'Chapter: Determiners and articles'
+      location: See relevant grammar point section
       tier: 2
-    - claim: Articles are among the most difficult grammar points for learners whose
-        L1 lacks them; Japanese learners are a prime example
-      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
-        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
-      location: pp. 309-315
+    - claim: Article usage varies significantly across languages; many languages have
+        no article system
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See articles entries 133-142
       tier: 2
-    - claim: Japanese demonstratives (kono/sono/ano) are used for specificity but
-        do not map directly to English articles
-      source: Miyagawa, S. & Saito, M. (eds.) (2008) 'The Oxford Handbook of Japanese
-        Linguistics', Oxford University Press
-      location: 'Chapter 18: The structure of DP (Watanabe)'
-      tier: 1
+    - claim: Japanese has no article system (PEU articles entries)
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See relevant entry
+      tier: 2
+    - claim: ELLs commonly omit indefinite article when descriptive adjectives come
+        between determiner and noun
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 153
+      tier: 2
+    - claim: Japanese has no article system (p. 153)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: See relevant section
+      tier: 2
   word_order:
     interference_patterns:
     - pattern: SOV word order transfer (Japanese is SOV)
@@ -162,6 +97,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: SOV word order transfer (Japanese is SOV).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Watashi wa hon o kaimashita.
       correct: I bought a book.
@@ -191,9 +134,7 @@ grammar_points:
         type: error-correction
         description: A paragraph with 10 word order errors.
         duration: 15
-    sources: &id001
-    - Swan & Smith "Learner English" (Japanese)
-    - Parrott "Grammar for English Language Teachers"
+    sources: *id001
     source_count: 2
     source_type: textbook
     frequency: 4
@@ -258,6 +199,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Use of ka question particle.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Ikimasu ka?
       correct: Do you go?
@@ -317,6 +266,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Use of -nai negation suffix.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Ikimasen.
       correct: I do not go.
@@ -386,6 +343,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Confusion of /l/ and /r/ (Japanese lacks distinction).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I have a rice of bread.
       correct: I have a loaf of bread.
@@ -463,6 +428,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Pluralization of uncountable nouns (japanese).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I have many homeworks.
       correct: I have a lot of homework.
@@ -534,6 +507,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Omission of third-person -s (japanese).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: She like chocolate.
       correct: She likes chocolate.
@@ -609,6 +590,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Transfer of japanese prepositions.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I am on home.
       correct: I am at home.
@@ -687,6 +676,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Avoidance of passive voice (japanese).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Someone built this house in 1900.
       correct: This house was built in 1900.
@@ -755,6 +752,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Conditional structure (japanese).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: If I would have money, I would travel.
       correct: If I had money, I would travel.
@@ -824,6 +829,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Relative pronoun (japanese).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: The man which I met is my boss.
       correct: The man who I met is my boss.
@@ -895,6 +908,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: No backshift of tenses (japanese).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: She said that she is tired.
       correct: She said that she was tired.
@@ -964,6 +985,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Comparative formation (japanese).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: This car is more big than that one.
       correct: This car is bigger than that one.
@@ -1034,6 +1063,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Linking words (japanese).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: But, I think we should go.
       correct: However, I think we should go.
@@ -1106,6 +1143,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Modal verbs (japanese).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I can have some water?
       correct: May I have some water?
@@ -1175,6 +1220,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Gerund vs infinitive (japanese).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Before to leave, say goodbye.
       correct: Before leaving, say goodbye.
@@ -1244,6 +1297,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Adjective vs adverb (japanese).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: He runs very fastly.
       correct: He runs very fast.
@@ -1314,6 +1375,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Confusion of wasei-eigo (JP-EN false friends).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I live in a mansion.
       correct: I live in an apartment.
@@ -1375,3 +1444,1073 @@ grammar_points:
         Oxford University Press
       location: General
       tier: 1
+  articles_advanced:
+    interference_patterns:
+    - pattern: Definite article overgeneralization
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: I went to the school.
+      example_correct: I went to school.
+      explanation: Japanese uses definite articles in contexts where English omits
+        them (school, church, bed).
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Article omission with abstract nouns
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: Patience is important.
+      example_correct: Patience is important.
+      explanation: Japanese may use articles with abstract nouns where English omits
+        them.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese article usage differs from English in several contexts,
+      leading to overgeneralization or omission errors.
+    teacher_tips:
+      how_to_explain: 'Teach: English omits articles before school, church, bed, work,
+        home (when used in their primary sense).'
+      where_to_start: Start with the most common article errors.
+      sequencing: 'Week 1: Articles with institutions. Week 2: Articles with abstract
+        nouns. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Article Choice
+      type: fill-in-the-blank
+      description: 20 sentences choosing correct article usage.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  word_order_advanced:
+    interference_patterns:
+    - pattern: Adverb placement differences
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: I always am happy.
+      example_correct: I am always happy.
+      explanation: Japanese places adverbs differently from English, often before
+        the verb or at the end of the sentence.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese adverb placement rules differ from English. English places
+      adverbs after 'be' and before other verbs.
+    teacher_tips:
+      how_to_explain: 'Teach: Adverbs go after ''be'' (I am always) and before other
+        verbs (I always go).'
+      where_to_start: Start with adverbs of frequency. Then teach other adverb types.
+      sequencing: 'Week 1: Frequency adverbs. Week 2: Manner adverbs. Week 3: Time
+        adverbs. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Adverb Placement
+      type: sentence-rewrite
+      description: Rewrite 10 sentences with correct adverb placement.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  prepositions_advanced:
+    interference_patterns:
+    - pattern: Preposition transfer in verb phrases
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: I listen music.
+      example_correct: I listen to music.
+      explanation: Japanese uses different prepositions than English, or omits prepositions
+        where English requires them.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Preposition usage is highly language-specific. Japanese prepositions
+      often don't map 1:1 to English.
+    teacher_tips:
+      how_to_explain: 'Teach: Prepositions must be learned with each verb. Listen
+        to (not listen music). Depend on (not depend of).'
+      where_to_start: Start with the most common preposition errors.
+      sequencing: 'Week 1: Verb + preposition. Week 2: Prepositions of place. Week
+        3: Prepositions of time. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Preposition Fill
+      type: fill-in-the-blank
+      description: 20 sentences with preposition blanks.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  tense_aspect_advanced:
+    interference_patterns:
+    - pattern: Present perfect vs simple past confusion
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: I have seen him yesterday.
+      example_correct: I saw him yesterday.
+      explanation: Japanese may use a single past tense form where English distinguishes
+        simple past and present perfect.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese tense-aspect system differs from English. Specific past
+      time markers require simple past in English.
+    teacher_tips:
+      how_to_explain: 'Teach: yesterday/last week/in 2010 -> Simple Past. ever/never/already/yet
+        -> Present Perfect.'
+      where_to_start: Start with simple past. Then teach present perfect. Then contrast.
+      sequencing: 'Week 1: Simple past. Week 2: Present perfect. Week 3: Contrast.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Tense Choice
+      type: fill-in-the-blank
+      description: 20 sentences choosing simple past or present perfect.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  conditionals_advanced:
+    interference_patterns:
+    - pattern: Use of would in if-clause
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: If I would have time, I would go.
+      example_correct: If I had time, I would go.
+      explanation: Japanese may use conditional forms in both clauses. English never
+        uses 'would' in the if-clause.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese conditional structures may allow conditional forms in
+      both clauses. English strictly avoids 'would' in if-clauses.
+    teacher_tips:
+      how_to_explain: 'Teach: NO WOULD IN IF-CLAUSE. If + past, would + base. If +
+        present, will + base.'
+      where_to_start: Start with second conditional. Then teach first conditional.
+        Then third.
+      sequencing: 'Week 1: Second conditional. Week 2: First conditional. Week 3:
+        Third conditional. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Conditional Formation
+      type: sentence-rewrite
+      description: Rewrite 10 conditional sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  relative_clauses_advanced:
+    interference_patterns:
+    - pattern: Use of 'what' as relative pronoun
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: The book what I read was good.
+      example_correct: The book that I read was good.
+      explanation: Japanese may use a universal relative pronoun that maps to English
+        'what', but English 'what' is not a relative pronoun.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese relative clause structure differs from English. English
+      uses that/which/who, never 'what' as a relative pronoun.
+    teacher_tips:
+      how_to_explain: 'Teach: Use ''that'' or ''which'' for things, ''who'' for people.
+        Never use ''what'' as a relative pronoun.'
+      where_to_start: Start with that/which/who. Then teach restrictive vs non-restrictive.
+      sequencing: 'Week 1: That/which/who. Week 2: Restrictive vs non-restrictive.
+        Week 3: Omitting relative pronouns. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Relative Pronoun Choice
+      type: fill-in-the-blank
+      description: 15 sentences choosing correct relative pronoun.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  passive_voice_advanced:
+    interference_patterns:
+    - pattern: Avoidance of passive voice
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: They built this house in 1900.
+      example_correct: This house was built in 1900.
+      explanation: Japanese may use active constructions where English prefers passive
+        voice, especially in formal writing.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese may use active voice in contexts where English prefers
+      passive, especially in academic and formal writing.
+    teacher_tips:
+      how_to_explain: 'Teach: Use passive when the action is more important than the
+        agent. The house was built (not they built the house).'
+      where_to_start: Start with passive formula. Then teach when to use passive.
+      sequencing: 'Week 1: Passive formula (be + past participle). Week 2: When to
+        use passive. Week 3: Passive in writing. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Active to Passive
+      type: sentence-rewrite
+      description: Convert 10 active sentences to passive.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  reported_speech_advanced:
+    interference_patterns:
+    - pattern: No backshift in reported speech
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: She said that she is tired.
+      example_correct: She said that she was tired.
+      explanation: Japanese may not backshift tenses in reported speech. English requires
+        backshift (present -> past).
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese reported speech conventions may not include tense backshift.
+      English requires systematic backshift.
+    teacher_tips:
+      how_to_explain: 'Teach: Backshift rule: present -> past, will -> would, can
+        -> could. She said she was tired.'
+      where_to_start: Start with say/tell + backshift. Then teach pronoun changes.
+      sequencing: 'Week 1: Backshift with say/tell. Week 2: Pronoun changes. Week
+        3: Modal backshift. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Reported Speech
+      type: sentence-rewrite
+      description: Convert 15 direct speech sentences to reported speech.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  countability_advanced:
+    interference_patterns:
+    - pattern: Pluralization of uncountable nouns
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: I have many homeworks.
+      example_correct: I have a lot of homework.
+      explanation: Japanese may treat as countable some nouns that are uncountable
+        in English (homework, advice, information).
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese countability distinctions differ from English. Nouns
+      countable in Japanese may be uncountable in English.
+    teacher_tips:
+      how_to_explain: 'Teach: Common uncountables: homework, advice, information,
+        furniture, luggage, research. Use ''a piece of'' or ''some''.'
+      where_to_start: Start with common uncountable nouns. Then teach quantifiers.
+      sequencing: 'Week 1: Uncountable nouns list. Week 2: Much/many. Week 3: Partitives.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Countable or Not
+      type: matching
+      description: Categorize 30 nouns as countable or uncountable.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  false_friends_advanced:
+    interference_patterns:
+    - pattern: 'False friend: library (not bookstore)'
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: I bought this at the library.
+      example_correct: I bought this at the bookstore.
+      explanation: Japanese and English share cognates with different meanings (false
+        friends). These cause high-impact errors.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 4
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese and English share many Latin/Germanic cognates, but some
+      have shifted meaning. These 'false friends' cause serious communication errors.
+    teacher_tips:
+      how_to_explain: 'Teach: Create a false friends list. Learn the top 20 false
+        friends for {language} speakers.'
+      where_to_start: Start with the highest-impact false friends.
+      sequencing: 'Week 1: Top 10 false friends. Week 2: Next 10. Week 3: Context
+        practice. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: False Friend Match
+      type: matching
+      description: Match 20 false friends to their correct meanings.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  subject_verb_agreement_advanced:
+    interference_patterns:
+    - pattern: Third-person -s omission
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: She like chocolate.
+      example_correct: She likes chocolate.
+      explanation: Japanese may not mark third-person singular on verbs. English requires
+        -s for he/she/it in present simple.
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese verb conjugation may not include a third-person singular
+      marker. English -s is unique and frequently omitted.
+    teacher_tips:
+      how_to_explain: 'Teach: he/she/it + verb-s. Drill: I like, you like, he likes,
+        she likes, it likes.'
+      where_to_start: Start with third-person -s. Then teach does/doesn't.
+      sequencing: 'Week 1: Third-person -s. Week 2: Does/doesn''t. Week 3: Irregular
+        forms. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: SVA Drill
+      type: fill-in-the-blank
+      description: 20 sentences with correct verb form.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  gerund_infinitive_advanced:
+    interference_patterns:
+    - pattern: Infinitive after preposition
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: Before to leave, say goodbye.
+      example_correct: Before leaving, say goodbye.
+      explanation: Japanese may use infinitive after prepositions. English always
+        uses gerund (-ing) after prepositions.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese may use infinitive forms after prepositions. English
+      strictly requires gerund (-ing) after all prepositions.
+    teacher_tips:
+      how_to_explain: 'Teach: After prepositions -> always -ing. Before leaving (not
+        before to leave). Without saying (not without to say).'
+      where_to_start: Start with common preposition + gerund combinations.
+      sequencing: 'Week 1: Preposition + gerund. Week 2: Verb + infinitive vs verb
+        + gerund. Week 3: Review. Week 4: Test.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Gerund After Preposition
+      type: fill-in-the-blank
+      description: 15 sentences with preposition + gerund.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  modal_verbs_advanced:
+    interference_patterns:
+    - pattern: Modal verb confusion
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: I can to swim.
+      example_correct: I can swim.
+      explanation: Japanese modal verbs may differ from English. English modals are
+        followed by bare infinitive (no 'to').
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese modal verb system differs from English. English modals
+      (can, should, must) are followed by bare infinitive.
+    teacher_tips:
+      how_to_explain: 'Teach: Modal + base verb (no ''to''). I can swim (not I can
+        to swim). She should go (not she should to go).'
+      where_to_start: Start with can/could. Then teach should/must/would.
+      sequencing: 'Week 1: Can/could. Week 2: Should/must. Week 3: Would/might. Week
+        4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Modal Choice
+      type: fill-in-the-blank
+      description: 15 sentences choosing correct modal.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  comparatives_advanced:
+    interference_patterns:
+    - pattern: Comparative formation error
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: This is more better.
+      example_correct: This is better.
+      explanation: Japanese may form comparatives differently. English uses -er for
+        short adjectives and more for long ones, never both.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese comparative formation may differ from English. English
+      never uses both -er and more together.
+    teacher_tips:
+      how_to_explain: 'Teach: Short adjectives -> -er (bigger). Long adjectives ->
+        more (more beautiful). Never both (not more better).'
+      where_to_start: Start with -er rule. Then teach more/most. Then teach irregulars.
+      sequencing: 'Week 1: -er comparatives. Week 2: More/most. Week 3: Irregulars.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Comparative Formation
+      type: sentence-rewrite
+      description: Rewrite 10 comparative sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  linking_words_advanced:
+    interference_patterns:
+    - pattern: Double conjunction error
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: Although it rained, but we went out.
+      example_correct: Although it rained, we went out.
+      explanation: Japanese may use double conjunctions (although...but, because...so).
+        English uses only one conjunction per clause.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese may allow double conjunctions. English strictly uses
+      one conjunction per clause.
+    teacher_tips:
+      how_to_explain: 'Teach: although OR but (not both). because OR so (not both).
+        Pick one.'
+      where_to_start: Start with although/but. Then teach because/so.
+      sequencing: 'Week 1: Although/but. Week 2: Because/so. Week 3: Other conjunctions.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Conjunction Fix
+      type: error-correction
+      description: Fix 10 double conjunction sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  possessives_advanced:
+    interference_patterns:
+    - pattern: Possessive formation error
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: The book of John is interesting.
+      example_correct: John's book is interesting.
+      explanation: Japanese may use 'of' for possession where English uses 's for
+        people.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese may express possession differently from English. English
+      uses 's for people and of for things.
+    teacher_tips:
+      how_to_explain: 'Teach: Use ''s for people (John''s book). Use of for things
+        (the leg of the table).'
+      where_to_start: Start with 's for people. Then teach of for things.
+      sequencing: 'Week 1: ''S for people. Week 2: Of for things. Week 3: Double possessive.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Possessive Formation
+      type: sentence-rewrite
+      description: Rewrite 10 possessive sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  phonology_advanced:
+    interference_patterns:
+    - pattern: Consonant cluster difficulty
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: I am wery happy.
+      example_correct: I am very happy.
+      explanation: Japanese phonology differs from English, causing pronunciation
+        errors that affect spelling.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese phonological system differs from English, causing pronunciation
+      and spelling errors.
+    teacher_tips:
+      how_to_explain: 'Teach: Focus on sounds that don''t exist in {language}. Practice
+        minimal pairs.'
+      where_to_start: Start with the most problematic sounds.
+      sequencing: 'Week 1: Problem sounds. Week 2: Minimal pairs. Week 3: Connected
+        speech. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Pronunciation Practice
+      type: oral-drill
+      description: Practice 20 minimal pairs.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  adverbs_advanced:
+    interference_patterns:
+    - pattern: Adjective used as adverb
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: He speaks English good.
+      example_correct: He speaks English well.
+      explanation: Japanese may not distinguish morphologically between adjectives
+        and adverbs. English requires -ly for most adverbs.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese may use the same form for adjectives and adverbs. English
+      requires -ly for most adverbs.
+    teacher_tips:
+      how_to_explain: 'Teach: Adjective describes a noun. Adverb describes a verb.
+        Most adverbs add -ly. Good -> well (irregular).'
+      where_to_start: Start with the -ly rule. Then teach exceptions.
+      sequencing: 'Week 1: -ly adverbs. Week 2: Exceptions (fast, hard, late). Week
+        3: Good vs well. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Adjective or Adverb
+      type: fill-in-the-blank
+      description: 15 sentences choosing correct form.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  discourse_pragmatics:
+    interference_patterns:
+    - pattern: Directness in requests
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: Give me the book.
+      example_correct: Could you give me the book, please?
+      explanation: Japanese may use more direct requests than English. English uses
+        indirect questions and modals for politeness.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese pragmatic norms for requests, refusals, and apologies
+      may differ from English. Directness levels vary culturally.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses indirect requests for politeness. Could
+        you...? Would you mind...? Please + imperative.'
+      where_to_start: Start with requests. Then teach refusals and apologies.
+      sequencing: 'Week 1: Polite requests. Week 2: Refusals. Week 3: Apologies. Week
+        4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Politeness Practice
+      type: sentence-rewrite
+      description: Rewrite 10 direct sentences as polite requests.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  collocations:
+    interference_patterns:
+    - pattern: L1 collocation transfer
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: I make my homework.
+      example_correct: I do my homework.
+      explanation: Japanese collocations (verb + noun combinations) often don't map
+        to English. English has fixed collocations.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese collocations differ from English. Verb + noun combinations
+      are often fixed and must be learned as chunks.
+    teacher_tips:
+      how_to_explain: 'Teach: English collocations: do homework (not make), take a
+        photo (not make), catch a cold (not have).'
+      where_to_start: Start with the most common collocation errors.
+      sequencing: 'Week 1: Verb + noun collocations. Week 2: Adjective + noun. Week
+        3: Preposition + noun. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Collocation Match
+      type: matching
+      description: Match 20 verbs to their correct noun partners.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  existential_there:
+    interference_patterns:
+    - pattern: Use of 'it is' for 'there is'
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: It is many people here.
+      example_correct: There are many people here.
+      explanation: Japanese may use 'it' or other constructions for existential meaning.
+        English uses 'there is/are'.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese may not have an existential construction equivalent to
+      English 'there is/are'. Learners may use 'it is' instead.
+    teacher_tips:
+      how_to_explain: 'Teach: Use ''there is'' for existence. There is a book on the
+        table. There are many people.'
+      where_to_start: Start with there is/are. Then teach there was/were.
+      sequencing: 'Week 1: There is/are. Week 2: There was/were. Week 3: There will
+        be. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: There Is or It Is
+      type: fill-in-the-blank
+      description: 15 sentences choosing there is/it is.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  determiners:
+    interference_patterns:
+    - pattern: Use of 'much' with countable nouns
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: I have much friends.
+      example_correct: I have many friends.
+      explanation: Japanese may not distinguish between countable and uncountable
+        quantifiers. English uses many for countable, much for uncountable.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese quantifier system may differ from English. English distinguishes
+      many (countable) vs much (uncountable).
+    teacher_tips:
+      how_to_explain: 'Teach: Many + countable (many books). Much + uncountable (much
+        water). A lot of + both.'
+      where_to_start: Start with many/much. Then teach few/little. Then teach a lot
+        of.
+      sequencing: 'Week 1: Many/much. Week 2: Few/little. Week 3: A lot of/plenty
+        of. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Quantifier Choice
+      type: fill-in-the-blank
+      description: 20 sentences choosing correct quantifier.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  question_formation_advanced:
+    interference_patterns:
+    - pattern: Omission of do-support in questions
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: You like coffee?
+      example_correct: Do you like coffee?
+      explanation: Japanese may form questions by intonation alone or with question
+        particles. English requires do-support.
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese question formation differs from English. English requires
+      do/does/did for most questions (except with 'be' and modals).
+    teacher_tips:
+      how_to_explain: 'Teach: Do/Does/Did + subject + base verb? Do you like coffee?
+        (not You like coffee?)'
+      where_to_start: Start with yes/no questions. Then teach wh- questions.
+      sequencing: 'Week 1: Do/does questions. Week 2: Wh- questions. Week 3: Tag questions.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Question Formation
+      type: sentence-rewrite
+      description: Convert 15 statements to questions.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  negation_advanced:
+    interference_patterns:
+    - pattern: Double negation
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: I don't have no money.
+      example_correct: I don't have any money. / I have no money.
+      explanation: Japanese may allow double negation. Standard English uses only
+        one negative per clause.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese may allow or require double negation. Standard English
+      uses single negation (not...any, no, never).
+    teacher_tips:
+      how_to_explain: 'Teach: One negative per clause. I don''t have any (not I don''t
+        have no). I have no money (correct single negation).'
+      where_to_start: Start with not...any. Then teach no/never/nobody.
+      sequencing: 'Week 1: Not...any. Week 2: No/never/nobody. Week 3: Double negation
+        errors. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Negation Fix
+      type: error-correction
+      description: Fix 10 double negation sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  conjunctions_advanced:
+    interference_patterns:
+    - pattern: Use of 'also' at sentence start
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: Also, I think we should go.
+      example_correct: I also think we should go.
+      explanation: Japanese may place 'also' at sentence start. English prefers mid-sentence
+        position or 'furthermore'.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese conjunction and connector usage differs from English.
+      Word order and formality levels vary.
+    teacher_tips:
+      how_to_explain: 'Teach: ''Also'' goes mid-sentence (I also think). ''Furthermore''
+        or ''moreover'' for formal writing.'
+      where_to_start: Start with also/too/either. Then teach formal connectors.
+      sequencing: 'Week 1: Also/too. Week 2: Furthermore/moreover. Week 3: However/nevertheless.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Connector Placement
+      type: sentence-rewrite
+      description: Rewrite 10 sentences with correct connector placement.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  idiomatic_expressions_advanced:
+    interference_patterns:
+    - pattern: Literal translation of idioms
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: It rains ropes.
+      example_correct: It's raining cats and dogs.
+      explanation: Japanese idioms don't translate literally. Learners may translate
+        word-for-word.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Every language has unique idioms. Japanese idioms often have different
+      English equivalents.
+    teacher_tips:
+      how_to_explain: 'Teach: Idioms don''t translate literally. Learn the English
+        equivalent as a whole phrase.'
+      where_to_start: Start with the most common idiom categories.
+      sequencing: 'Week 1: Weather idioms. Week 2: Body idioms. Week 3: Animal idioms.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Idiom Match
+      type: matching
+      description: Match 15 idioms to their English equivalents.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  register_formality:
+    interference_patterns:
+    - pattern: Informal register in formal contexts
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: I wanna go.
+      example_correct: I would like to go.
+      explanation: Japanese may not distinguish formality through verb forms. English
+        uses modal verbs and full forms for formality.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese may express formality differently from English. English
+      uses modal verbs, full forms, and specific vocabulary for formal contexts.
+    teacher_tips:
+      how_to_explain: 'Teach: Formal = would like (not wanna), could you (not can
+        you), I am (not I''m).'
+      where_to_start: Start with contractions. Then teach modal formality.
+      sequencing: 'Week 1: Contractions. Week 2: Modal formality. Week 3: Formal vocabulary.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Formal or Informal
+      type: sentence-rewrite
+      description: Rewrite 10 informal sentences in formal register.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  numbers_dates:
+    interference_patterns:
+    - pattern: Number format differences
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: The price is 1.000,50.
+      example_correct: The price is 1,000.50.
+      explanation: Japanese may use different number formatting (comma vs period for
+        decimals/thousands).
+      frequency: 2
+      persistence: 1
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese number and date formatting conventions differ from English.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses period for decimals, comma for thousands.
+        Dates: month/day/year (US).'
+      where_to_start: Start with number formatting. Then teach dates.
+      sequencing: 'Week 1: Number format. Week 2: Date format. Week 3: Saying numbers
+        aloud. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Number Conversion
+      type: sentence-rewrite
+      description: Convert 10 numbers/dates to English format.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  punctuation_conventions:
+    interference_patterns:
+    - pattern: Punctuation spacing differences
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: Hello ! How are you ?
+      example_correct: Hello! How are you?
+      explanation: Japanese may use different spacing conventions before punctuation
+        marks.
+      frequency: 2
+      persistence: 1
+      communicative_impact: 1
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese punctuation conventions differ from English in spacing
+      and usage.
+    teacher_tips:
+      how_to_explain: 'Teach: English has no space before punctuation. Write: Hello!
+        (not Hello !).'
+      where_to_start: Start with spacing. Then teach quotation marks.
+      sequencing: 'Week 1: Spacing. Week 2: Quotation marks. Week 3: Other conventions.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Punctuation Fix
+      type: error-correction
+      description: Fix 10 punctuation errors.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  writing_conventions:
+    interference_patterns:
+    - pattern: Paragraph structure differences
+      example_l1: '[ja] example'
+      example_gloss: gloss
+      example_wrong: A paragraph without a clear topic sentence.
+      example_correct: A paragraph with a clear topic sentence followed by supporting
+        details.
+      explanation: Japanese writing conventions may differ from English. English academic
+        writing values explicit topic sentences and linear argumentation.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese rhetorical conventions differ from English. English values
+      directness, linear structure, and explicit topic sentences.
+    teacher_tips:
+      how_to_explain: 'Teach: English paragraphs start with a topic sentence. Each
+        paragraph has one main idea. Use transitions.'
+      where_to_start: Start with topic sentences. Then teach paragraph structure.
+      sequencing: 'Week 1: Topic sentences. Week 2: Paragraph structure. Week 3: Transitions.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Paragraph Analysis
+      type: error-correction
+      description: Identify and fix structural problems in 5 paragraphs.
+      duration: 15
+    sources:
+    - Swan & Smith (2001) Learner English
+  topic_marker:
+    interference_patterns:
+    - pattern: Topic marker は (wa) transfer
+      example_l1: 象は鼻が長い
+      example_gloss: elephant-TOPIC nose-SUBJECT long
+      example_wrong: Elephant, nose is long.
+      example_correct: Elephants have long noses.
+      explanation: Japanese uses は (wa) as a topic marker. English uses subject-verb-object
+        word order.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese marks the topic with は (wa), which doesn't map to English
+      grammar. English uses word order to show what the sentence is about.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses word order, not particles. Elephants have
+        long noses (not elephant-TOPIC nose is long).'
+      where_to_start: Start with basic SVO. Then teach topic-comment structure.
+      sequencing: 'Week 1: SVO basics. Week 2: Topic vs subject. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Topic to Subject
+      type: sentence-rewrite
+      description: Rewrite 15 Japanese sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  particles:
+    interference_patterns:
+    - pattern: Particle omission
+      example_l1: 本を読む
+      example_gloss: book-OBJECT read
+      example_wrong: I read (without object marker).
+      example_correct: I read the book.
+      explanation: Japanese uses particles (を, が, に, で) to mark grammatical roles.
+        English uses word order.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese particles (を=object, が=subject, に=direction, で=location)
+      mark grammatical roles. English uses word order.
+    teacher_tips:
+      how_to_explain: 'Teach: English word order shows grammatical roles. I read the
+        book (not I book read).'
+      where_to_start: Start with basic SVO. Then teach prepositions.
+      sequencing: 'Week 1: SVO. Week 2: Prepositions. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Word Order
+      type: sentence-rewrite
+      description: Rewrite 15 Japanese sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  honorifics_jp:
+    interference_patterns:
+    - pattern: Honorific language (keigo) transfer
+      example_l1: お読みになります
+      example_gloss: HON-read become
+      example_wrong: You HON-read the book.
+      example_correct: You read the book.
+      explanation: Japanese has a complex honorific system (keigo) with different
+        verb forms for different social levels. English uses the same verb forms.
+      frequency: 2
+      persistence: 1
+      communicative_impact: 1
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Japanese keigo (honorific language) has different verb forms for
+      different social relationships. English uses the same verb forms for all.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses the same verb for everyone. You read (not
+        you HON-read).'
+      where_to_start: Start with the concept that English verbs don't change for social
+        level.
+      sequencing: 'Week 1: Same verbs for all. Week 2: Formal vocabulary. Week 3:
+        Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Register Practice
+      type: sentence-rewrite
+      description: Rewrite 10 Japanese sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English

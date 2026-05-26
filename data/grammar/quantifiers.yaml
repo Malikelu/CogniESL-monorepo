@@ -14,11 +14,20 @@ meaning:
   - question: Is the noun countable (can we count individual items) or uncountable
       (a mass/substance)?
     answer: Countable = many, a few, few. Uncountable = much, a little, little.
+    purpose: Tests whether the learner can distinguish countable from uncountable
+      nouns, which determines quantifier choice. This is a fundamental skill because
+      using "much" with countable nouns or "many" with uncountables is one of the
+      most common A1 errors.
   - question: Is this an affirmative sentence, negative sentence, or question?
     answer: Affirmative = some. Negative/Question = any.
+    purpose: Tests whether the learner can use 'a lot of/lots of' with both countable
+      and uncountable nouns in informal contexts.
   - question: Does 'a few' mean the same as 'few'?
     answer: No — 'a few' = some (positive meaning). 'few' = almost none (negative
       meaning).
+    purpose: 'Tests whether the learner understands the difference between ''few/a
+      few'' (countable) and ''little/a little'' (uncountable): ''few'' = not many
+      (negative), ''a few'' = some (positive).'
   example_generator:
     contexts:
     - food and drink
@@ -178,46 +187,75 @@ teaching:
       one with few friends (sad). Students describe the pictures using ''a few'' and
       ''few''. Reinforces the meaning difference.'
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, §12.11-12.13'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 5: Nouns and Noun Phrases, §5.6 (quantification)'
+  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 526-540 (quantifiers:
+    much, many, a lot of, few, little, several)'
+  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
+    10: Determiners, §10.7-10.8'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 7: Quantifiers'
 common_errors:
-  - error: "Using 'much' with countable nouns: *'I have much friends.'"
-    correction: "I have many friends."
-    explanation: "Use 'many' with countable nouns (friends, books, cars), 'much' with uncountable nouns (money, water, time). This is one of the most common A1 errors."
-    l1_groups: ["Portuguese", "Spanish", "French"]
-  - error: "Using 'many' with uncountable nouns: *'I have many money.'"
-    correction: "I have much money."
-    explanation: "Use 'much' with uncountable nouns. 'Many' is only for countable nouns."
-    l1_groups: ["Portuguese", "Spanish"]
-  - error: "Confusing 'a few' and 'few': *'I have few friends.' (meaning some)"
-    correction: "I have a few friends."
-    explanation: "'A few' = some (positive connotation). 'Few' = almost none (negative connotation). 'I have a few friends' = I have some friends (positive). 'I have few friends' = I almost have no friends (negative)."
-    l1_groups: ["Portuguese", "Spanish", "Chinese"]
-  - error: "Confusing 'a little' and 'little': *'I have little time.' (meaning some)"
-    correction: "I have a little time."
-    explanation: "'A little' = some (positive). 'Little' = almost none (negative). Same distinction as 'a few/few' but for uncountable nouns."
-    l1_groups: ["Portuguese", "Spanish", "Chinese"]
-  - error: "Using 'a lot of' in formal writing: *'A lot of people attended the conference.'"
-    correction: "Many people attended the conference. / A large number of people attended the conference."
-    explanation: "'A lot of' is informal. In formal writing, use 'many', 'numerous', or 'a large number of'."
-    l1_groups: ["All L1 groups"]
+- error: 'Using ''much'' with countable nouns: *''I have much friends.'''
+  correction: I have many friends.
+  explanation: Use 'many' with countable nouns (friends, books, cars), 'much' with
+    uncountable nouns (money, water, time). This is one of the most common A1 errors.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+- error: 'Using ''many'' with uncountable nouns: *''I have many money.'''
+  correction: I have much money.
+  explanation: Use 'much' with uncountable nouns. 'Many' is only for countable nouns.
+  l1_groups:
+  - Portuguese
+  - Spanish
+- error: 'Confusing ''a few'' and ''few'': *''I have few friends.'' (meaning some)'
+  correction: I have a few friends.
+  explanation: '''A few'' = some (positive connotation). ''Few'' = almost none (negative
+    connotation). ''I have a few friends'' = I have some friends (positive). ''I have
+    few friends'' = I almost have no friends (negative).'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+- error: 'Confusing ''a little'' and ''little'': *''I have little time.'' (meaning
+    some)'
+  correction: I have a little time.
+  explanation: '''A little'' = some (positive). ''Little'' = almost none (negative).
+    Same distinction as ''a few/few'' but for uncountable nouns.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+- error: 'Using ''a lot of'' in formal writing: *''A lot of people attended the conference.'''
+  correction: Many people attended the conference. / A large number of people attended
+    the conference.
+  explanation: '''A lot of'' is informal. In formal writing, use ''many'', ''numerous'',
+    or ''a large number of''.'
+  l1_groups:
+  - All L1 groups
 register_notes:
-  - note: "Quantifiers are neutral in register for everyday use."
-  - note: "In academic writing, 'a number of' is more formal than 'many': 'A number of studies have found...'"
-  - note: "In formal writing, 'much' is preferred over 'a lot of' with uncountable nouns: 'Much research has been conducted.'"
-  - note: "'A few' and 'a little' are positive; 'few' and 'little' are negative. This distinction is important in all registers."
+- note: Quantifiers are neutral in register for everyday use.
+- note: 'In academic writing, ''a number of'' is more formal than ''many'': ''A number
+    of studies have found...'''
+- note: 'In formal writing, ''much'' is preferred over ''a lot of'' with uncountable
+    nouns: ''Much research has been conducted.'''
+- note: '''A few'' and ''a little'' are positive; ''few'' and ''little'' are negative.
+    This distinction is important in all registers.'
 dialectal_variation:
-  - note: "In AmE, 'a lot of' is increasingly accepted in formal writing. In BrE, 'many' or 'a great deal of' is still preferred in formal contexts."
-  - note: "In some dialects, 'lots of' replaces 'a lot of': 'Lots of people came.' (informal)"
+- note: In AmE, 'a lot of' is increasingly accepted in formal writing. In BrE, 'many'
+    or 'a great deal of' is still preferred in formal contexts.
+- note: 'In some dialects, ''lots of'' replaces ''a lot of'': ''Lots of people came.''
+    (informal)'
 discourse_notes:
-  - note: "Quantifiers establish quantity in discourse: 'Several people attended. Most were students. Few were teachers.'"
-  - note: "'A few' and 'few' create different discourse implications: 'A few people came' (some did, positive) vs 'Few people came' (almost none, negative)."
-  - note: "In academic writing, quantifiers express the scope of findings: 'Most participants agreed. A few disagreed. Few strongly opposed.'"
-  - note: "Quantifiers create cohesion by referring back: 'Many people attended. Most were satisfied. Few complained.'"
+- note: 'Quantifiers establish quantity in discourse: ''Several people attended. Most
+    were students. Few were teachers.'''
+- note: '''A few'' and ''few'' create different discourse implications: ''A few people
+    came'' (some did, positive) vs ''Few people came'' (almost none, negative).'
+- note: 'In academic writing, quantifiers express the scope of findings: ''Most participants
+    agreed. A few disagreed. Few strongly opposed.'''
+- note: 'Quantifiers create cohesion by referring back: ''Many people attended. Most
+    were satisfied. Few complained.'''

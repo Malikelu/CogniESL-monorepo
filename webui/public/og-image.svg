@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#f8fafb"/>
+
+  <!-- Teal accent bar left — brand teal -->
+  <rect x="0" y="0" width="8" height="630" fill="#0b7272"/>
+
+  <!-- Decorative circles — brand colors -->
+  <circle cx="1100" cy="80" r="180" fill="#0b7272" opacity="0.05"/>
+  <circle cx="1050" cy="560" r="130" fill="#1baa6e" opacity="0.05"/>
+  <circle cx="120" cy="520" r="90" fill="#0b7272" opacity="0.04"/>
+
+  <!-- C-arc brand symbol (scaled up ~5x from brand/logos viewBox 0 0 66 62) -->
+  <!-- Center at ~(175, 130), scaled 3.5x: arc radius 63, paths scaled accordingly -->
+  <g transform="translate(80, 55) scale(3.5)">
+    <path d="M 45,50 A 18,18 0 1,1 45,21" fill="none" stroke="#0b7272" stroke-width="9" stroke-linecap="round"/>
+    <line x1="45" y1="21" x2="57" y2="9" stroke="#1baa6e" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Wordmark — "ogni" in brand teal, "ESL" in accent green -->
+  <!-- Arc occupies x≈80 to x≈245 at 3.5x scale; text starts at x=250 -->
+  <text x="258" y="195" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="500" font-size="108" fill="#0b7272">ogni</text>
+  <text x="554" y="195" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="500" font-size="108" fill="#1baa6e" letter-spacing="6">ESL</text>
+
+  <!-- Tagline -->
+  <text x="80" y="258" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="400" font-size="26" fill="#6b7280">L1-aware teaching materials, made in minutes.</text>
+
+  <!-- Divider -->
+  <rect x="80" y="298" width="120" height="4" rx="2" fill="#0b7272"/>
+
+  <!-- Feature pills -->
+  <rect x="80" y="340" width="180" height="52" rx="26" fill="#0b7272" opacity="0.1"/>
+  <text x="170" y="372" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600" font-size="20" fill="#0b7272" text-anchor="middle">📊 Slides</text>
+
+  <rect x="276" y="340" width="220" height="52" rx="26" fill="#0b7272" opacity="0.1"/>
+  <text x="386" y="372" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600" font-size="20" fill="#0b7272" text-anchor="middle">📝 Worksheets</text>
+
+  <rect x="512" y="340" width="210" height="52" rx="26" fill="#0b7272" opacity="0.1"/>
+  <text x="617" y="372" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600" font-size="20" fill="#0b7272" text-anchor="middle">🎮 Activities</text>
+
+  <rect x="738" y="340" width="220" height="52" rx="26" fill="#1baa6e" opacity="0.12"/>
+  <text x="848" y="372" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600" font-size="20" fill="#1baa6e" text-anchor="middle">🌍 L1-Aware</text>
+
+  <!-- Bottom tagline -->
+  <text x="80" y="460" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="400" font-size="22" fill="#9ca3af">Tailored to your students' native language · Ready in minutes</text>
+
+  <!-- URL — brand teal -->
+  <text x="80" y="560" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600" font-size="20" fill="#0b7272">cogniesl.com</text>
+</svg>

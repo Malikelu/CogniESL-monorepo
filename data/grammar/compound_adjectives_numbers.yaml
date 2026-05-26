@@ -21,9 +21,19 @@ meaning:
   - question: Is the number-noun combination being used before a noun to describe
       it?
     answer: Yes — it is a compound adjective modifying the noun that follows.
+    purpose: Tests whether the learner understands temporal relationships between
+      events. Correct use of time conjunctions is essential for clear communication
+      of sequence and duration.
   - question: Is the noun in the compound singular or plural?
     answer: 'Always singular — even with numbers greater than one: ''a ten-minute
       walk'', not ''a ten-minutes walk''.'
+    purpose: Tests whether the learner understands that '-ed' adjectives describe
+      how someone feels (experiencer) while '-ing' adjectives describe what causes
+      the feeling (stimulus).
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      compound adjectives numbers and explain why they are incorrect.
   example_generator:
     contexts:
     - describing duration
@@ -163,8 +173,8 @@ teaching:
     adaptation_notes: Provide sentences with errors (e.g., 'a three-hours journey')
       and have students identify and correct them.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, §12.1-12.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -173,15 +183,56 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for compound_adjectives_numbers.
-  correction: Correct form.
-  explanation: This is a common error for compound_adjectives_numbers.
+- error: '*It was a three-hours journey.*'
+  correction: It was a three-hour journey.
+  explanation: 'In compound adjectives with numbers, the unit noun is always singular:
+    ''three-hour'', ''five-mile'', ''ten-year''. The number does not make the noun
+    plural within the compound adjective.'
   l1_groups:
   - Portuguese
   - Spanish
+  - French
+  - Chinese
+  - Arabic
+- error: '*She is a twenty years old woman.*'
+  correction: She is a twenty-year-old woman.
+  explanation: 'Before a noun, the compound adjective requires hyphens and singular
+    form: ''a twenty-year-old woman''. After the noun: ''She is twenty years old''
+    (no hyphens, plural possible). The two forms have different rules.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Chinese
+- error: '*We took a two-litres bottle of water.*'
+  correction: We took a two-litre bottle of water.
+  explanation: In number + noun compound adjectives, the noun is always singular before
+    another noun. 'Two-litre bottle' (not two-litres). The singular form applies even
+    with plural numbers.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+- error: '*It was a five-miles walk to the station.*'
+  correction: It was a five-mile walk to the station.
+  explanation: 'Compound adjectives with numbers use singular measurement nouns: ''five-mile'',
+    ''ten-kilometre'', ''two-hour''. This rule is consistent but frequently violated
+    by learners who apply regular pluralization.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Arabic
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, this structure is standard and expected. Register variation
+    is marked by vocabulary and style rather than grammatical form.
+- note: In formal writing, avoid contractions and use full forms.
+- note: In conversation, contractions and reduced forms are common.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used in everyday communication.
+- note: In academic writing, this structure appears in formal contexts and is a marker
+    of proficient English.
+- note: In professional contexts, correct use of this structure is expected in formal
+    writing.

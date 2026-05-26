@@ -13,8 +13,18 @@ meaning:
   ccqs:
   - question: Can the missing words be recovered from the previous clause?
     answer: Yes, this is ellipsis.
+    purpose: Tests whether the learner understands ellipsis as the omission of words
+      that are recoverable from context. 'She can play the piano and he can too' omits
+      'play the piano' because it is recoverable from the previous clause.
   - question: Does the sentence sound natural without the omitted words?
     answer: Yes, ellipsis is natural and expected in these contexts.
+    purpose: Tests whether the learner understands that advanced ellipsis (gapping,
+      sluicing, VP-ellipsis) produces natural-sounding sentences. Overusing full forms
+      sounds unnatural; omitting recoverable elements is expected in fluent English.
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      ellipsis advanced and explain why they are incorrect.
   example_generator:
     contexts:
     - academic writing
@@ -154,8 +164,8 @@ teaching:
     adaptation_notes: Students complete dialogues using appropriate ellipsis (sluicing,
       stripping, VP ellipsis).
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, §12.1-12.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -164,15 +174,23 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for ellipsis_advanced.
-  correction: Correct form.
-  explanation: This is a common error for ellipsis_advanced.
+- error: '*She can play piano and he can play piano too.*'
+  correction: She can play piano and he can too.
+  explanation: Ellipsis avoids repetition.
   l1_groups:
   - Portuguese
   - Spanish
+  - Chinese
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, this structure is standard and expected. Register variation
+    is marked by vocabulary and style rather than grammatical form.
+- note: In formal writing, avoid contractions and use full forms.
+- note: In conversation, contractions and reduced forms are common.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used in everyday communication.
+- note: In academic writing, this structure appears in formal contexts and is a marker
+    of proficient English.
+- note: In professional contexts, correct use of this structure is expected in formal
+    writing.

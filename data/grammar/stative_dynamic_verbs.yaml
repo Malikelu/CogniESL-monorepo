@@ -16,18 +16,28 @@ meaning:
     answer: 'Action = dynamic (can use continuous). State = stative (usually no continuous).
       BUT some verbs can be both: ''I think it''s great'' (stative/opinion) vs ''I''m
       thinking about it'' (dynamic/process).'
+    purpose: Tests whether the learner can classify verbs as stative or dynamic, which
+      is essential for choosing the correct tense (simple vs continuous) and avoiding
+      the most common verb tense error at B1 level.
   - question: Can we say 'I am knowing the answer'?
-    answer: 'No — ''know'' is always stative. But some stative verbs CAN be continuous
+    answer: 'No -- ''know'' is always stative. But some stative verbs CAN be continuous
       with a different meaning: ''I have a car'' (stative) vs ''I am having lunch''
       (dynamic).'
-  example_generator:
-    contexts:
-    - describing feelings and opinions
-    - talking about possession
-    - mental states
-    - senses
-    cultural_notes: []
-    min_examples: 5
+    purpose: Tests whether the learner understands that while some verbs are exclusively
+      stative, others can shift between stative and dynamic uses with a change in
+      meaning, which is a key nuance at B1-B2 level.
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      stative dynamic verbs and explain why they are incorrect.
+example_generator:
+  contexts:
+  - describing feelings and opinions
+  - talking about possession
+  - mental states
+  - senses
+  cultural_notes: []
+  min_examples: 5
 form:
   affirmative:
     structure: 'Stative: Subject + stative verb: ''I know her.'', ''She loves chocolate.''
@@ -86,7 +96,7 @@ use:
   - I am reading a book.
   - She is cooking dinner.
 phonetics:
-- note: No specific phonetic pattern — focus on correct tense usage
+- note: No specific phonetic pattern -- focus on correct tense usage
   contexts:
   - tense usage
   l1_issue: Many L1 speakers overuse continuous tenses with stative verbs
@@ -97,14 +107,14 @@ teaching:
   methodology: PPP
   tips:
   - Create a list of common stative verbs
-  - Use the 'Can I see someone doing this?' test (if no, it's stative)
+  - Use the "Can I see someone doing this?" test (if no, it's stative)
   recommended_activities:
   - name: Stative or Dynamic?
     duration: 10
     adaptation_notes: Students classify verbs and create sentences.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, §12.1-12.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -113,15 +123,39 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for stative_dynamic_verbs.
-  correction: Correct form.
-  explanation: This is a common error for stative_dynamic_verbs.
+- error: 'Using continuous with stative verbs: *''I am knowing the answer.'''
+  correction: I know the answer.
+  explanation: Stative verbs (know, believe, love, want) describe states, not actions.
+    They are not normally used in continuous tenses. This is one of the most common
+    errors at B1 level.
   l1_groups:
   - Portuguese
   - Spanish
+  - Chinese
+- error: 'Using stative form for dynamic meaning: *''I think about it now'' (meaning
+    the process of considering)'
+  correction: I am thinking about it now.
+  explanation: Some verbs like 'think', 'have', and 'see' can be both stative and
+    dynamic. When they describe an active process rather than a state, the continuous
+    form is correct. 'I think about it' (stative) vs 'I am thinking about it' (dynamic
+    process).
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Japanese
+- error: 'Using continuous with sense verbs: *''This food is tasting delicious.'''
+  correction: This food tastes delicious.
+  explanation: Sense verbs (taste, smell, feel, see, hear) are typically stative when
+    they describe a perception or quality. Using the continuous form with these verbs
+    is non-standard in most contexts.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Korean
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: This distinction applies across all registers. Using continuous with stative
+    verbs is considered an error in both formal and informal English.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: This distinction is relevant in all forms of spoken and written discourse.

@@ -23,9 +23,14 @@ meaning:
   - question: Is the speaker talking about a life experience without saying exactly
       when?
     answer: Yes — the focus is on whether it has happened at all, not when.
+    purpose: Tests whether the learner understands the experiential use of present
+      perfect — that it describes actions that have occurred at some unspecified point
+      in a person's life up to now, where the exact time is irrelevant.
   - question: Can we say exactly when it happened (e.g., in 2019, last Tuesday)?
     answer: No — with the experiential present perfect, we do not specify the time.
-  example_generator:
+    purpose: Tests whether the learner knows that specifying a definite past time
+      is incompatible with the experiential present perfect, because doing so shifts
+      the focus from life experience to a completed past event (requiring past simple).
     contexts:
     - travel experiences
     - life achievements
@@ -38,6 +43,10 @@ meaning:
     - In American English, the past simple is sometimes used for experiences ('Did
       you ever go to Japan?'), which differs from British English norms
     min_examples: 5
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      present perfect experiential and explain why they are incorrect.
 form:
   affirmative:
     structure: 'Subject + have/has + past participle: ''I have visited Paris.'' ''She
@@ -168,8 +177,8 @@ teaching:
     adaptation_notes: Give students sentences and have them classify as experiential
       present perfect or past simple. Discuss the difference.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, §12.1-12.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -178,15 +187,25 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for present_perfect_experiential.
-  correction: Correct form.
-  explanation: This is a common error for present_perfect_experiential.
+- error: '*Did you ever been to Paris?*'
+  correction: Have you ever been to Paris?
+  explanation: Use present perfect (not past simple) with 'ever' and 'never' to ask
+    about life experiences. 'Have you ever...' not 'Did you ever...'.
   l1_groups:
   - Portuguese
   - Spanish
+  - French
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, this structure is standard and expected. Register variation
+    is marked by vocabulary and style rather than grammatical form.
+- note: In formal writing, avoid contractions and use full forms.
+- note: In conversation, contractions and reduced forms are common.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used for everyday communication and is
+    among the most frequent patterns in spoken English.
+- note: In academic writing, this structure appears in discussions of established
+    knowledge, methodology, and findings.
+- note: In news reports, this structure is used for reporting events and attributing
+    statements.

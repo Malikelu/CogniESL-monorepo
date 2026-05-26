@@ -7,8 +7,6 @@ import html2text
 from agency_swarm.tools import BaseTool, ToolOutputText, tool_output_file_from_path
 from bs4 import BeautifulSoup
 from pydantic import Field
-from weasyprint import HTML
-
 from .CreateDocument import CreateDocument
 from .utils.html_docx_core import html_to_docx
 from .utils.html_docx_images import embed_local_images
@@ -169,6 +167,7 @@ Path: {output_path}"""
     
     def _convert_to_pdf(self, html_content: str, output_path: Path):
         """Convert HTML to PDF using weasyprint."""
+        from weasyprint import HTML
         HTML(string=_normalize_unicode(html_content)).write_pdf(output_path)
 
     def _convert_to_docx(self, html_content: str, output_path: Path):

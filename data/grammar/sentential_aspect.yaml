@@ -13,16 +13,26 @@ meaning:
   ccqs:
   - question: Is the action completed or ongoing?
     answer: Completed = perfective, ongoing = progressive
+    purpose: Tests whether the learner can distinguish between the two primary sentential
+      aspects (perfective and progressive), which is fundamental to understanding
+      how English conveys the internal structure of events.
   - question: Does this happen regularly?
     answer: Yes = habitual aspect.
-  example_generator:
-    contexts:
-    - academic writing
-    - linguistic analysis
-    - advanced grammar
-    - formal descriptions
-    cultural_notes: []
-    min_examples: 5
+    purpose: Tests whether the learner can identify the habitual aspect as a distinct
+      category from perfective and progressive, which helps them understand how English
+      encodes repeated or customary actions.
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      sentential aspect and explain why they are incorrect.
+example_generator:
+  contexts:
+  - academic writing
+  - linguistic analysis
+  - advanced grammar
+  - formal descriptions
+  cultural_notes: []
+  min_examples: 5
 form:
   affirmative:
     structure: 'Perfective: Subject + past simple: I wrote a letter. / Progressive:
@@ -90,8 +100,8 @@ teaching:
     duration: 15
     adaptation_notes: Students identify and classify aspect in authentic texts.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, §12.1-12.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -100,15 +110,42 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for sentential_aspect.
-  correction: Correct form.
-  explanation: This is a common error for sentential_aspect.
+- error: 'Using progressive for habitual actions: *''I am writing letters every day.'''
+  correction: I write letters every day.
+  explanation: The progressive aspect describes an ongoing action at a specific moment,
+    not a repeated or customary action. Habitual actions use the present simple, not
+    the present continuous.
   l1_groups:
   - Portuguese
   - Spanish
+  - Chinese
+- error: 'Using perfective for ongoing actions: *''He wrote the report at 3pm yesterday''
+    (meaning he was in the process)'
+  correction: He was writing the report at 3pm yesterday.
+  explanation: The perfective (past simple) suggests a completed action. To describe
+    an action in progress at a specific past time, use the progressive (past continuous)
+    instead.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Japanese
+- error: 'Confusing tense with aspect: treating ''past tense'' and ''perfective aspect''
+    as the same concept.'
+  correction: Past simple can be progressive (was writing). Present can be perfective
+    (I write now). Aspect and tense are independent.
+  explanation: Tense locates an event in time (past, present, future). Aspect describes
+    how the event unfolds in time (completed, ongoing, repeated). A past tense sentence
+    can have progressive aspect, and a present tense sentence can have perfective
+    aspect. Learners from aspect-prominent languages may find this distinction difficult.
+  l1_groups:
+  - Russian
+  - Arabic
+  - Chinese
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: This is a metalinguistic concept used primarily in academic and linguistic
+    contexts.
 dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
+- note: No significant BrE/AmE differences in the core theory of sentential aspect.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: This concept is relevant to academic and linguistic discourse rather than
+    everyday conversation.

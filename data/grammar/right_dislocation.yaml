@@ -12,16 +12,26 @@ meaning:
   ccqs:
   - question: Is there a pronoun at the beginning and a noun at the end?
     answer: Yes, that is right-dislocation.
+    purpose: Tests whether the learner can identify the structural signature of right-dislocation
+      -- a pronoun in the subject position with the full noun phrase appearing after
+      a comma at the end of the clause.
   - question: Is this formal or informal?
     answer: Informal — used in spoken English.
-  example_generator:
-    contexts:
-    - spoken English
-    - informal conversation
-    - emphasis
-    - clarification
-    cultural_notes: []
-    min_examples: 5
+    purpose: Tests the learner's awareness that right-dislocation is a feature of
+      informal spoken English and would be inappropriate in formal writing, helping
+      them match structure to register.
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      right dislocation and explain why they are incorrect.
+example_generator:
+  contexts:
+  - spoken English
+  - informal conversation
+  - emphasis
+  - clarification
+  cultural_notes: []
+  min_examples: 5
 form:
   affirmative:
     structure: 'Pronoun + verb + complement + comma + noun phrase: She is really smart,
@@ -78,8 +88,8 @@ teaching:
     duration: 10
     adaptation_notes: Students transform standard sentences into right-dislocation.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, §12.1-12.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -88,15 +98,39 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for right_dislocation.
-  correction: Correct form.
-  explanation: This is a common error for right_dislocation.
+- error: 'Omitting the pronoun at the beginning: *''Is really smart, my sister.'''
+  correction: She is really smart, my sister.
+  explanation: Right-dislocation requires a pronoun in the subject position to serve
+    as the grammatical subject. The full noun phrase appears only at the end. Omitting
+    the pronoun creates an ungrammatical sentence.
   l1_groups:
   - Portuguese
   - Spanish
+  - Chinese
+- error: 'Using wrong pronoun case: *''Her is really smart, my sister.'''
+  correction: She is really smart, my sister.
+  explanation: The right-dislocation structure requires a subject pronoun (she/he/they)
+    in the initial position, not an object pronoun. The pronoun functions as the grammatical
+    subject of the sentence.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Korean
+- error: 'Forgetting the comma: *''She is really smart my sister.'''
+  correction: She is really smart, my sister.
+  explanation: A comma is essential to signal the right-dislocation structure without
+    it, the sentence reads as if 'my sister' is an appositive but without proper punctuation,
+    it becomes confusing or ungrammatical.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Japanese
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: Right-dislocation is an informal spoken structure and is not appropriate for
+    formal or academic writing.
 dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
+- note: No significant BrE/AmE differences; both varieties use this structure in informal
+    speech.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: This structure is used exclusively in spoken discourse for clarification and
+    emphasis. It is not found in written English except in dialogue or informal messaging.

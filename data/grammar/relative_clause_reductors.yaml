@@ -24,9 +24,20 @@ meaning:
       meaning?
     answer: Yes — if the relative pronoun is the subject and the clause is active
       (for present participle) or passive (for past participle).
+    purpose: Tests whether the learner understands the structural conditions under
+      which relative clause reduction is possible — specifically that the relative
+      pronoun must be the subject of the clause and the clause must contain a form
+      of ''be'' as an auxiliary.
   - question: Is the reduced form more formal or less formal than the full relative
       clause?
     answer: The reduced form is typically more formal and concise.
+    purpose: Tests whether the learner is aware of the register implications of relative
+      clause reduction — that reduced forms are characteristic of formal, academic,
+      and literary writing, and are less common in casual speech.
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      relative clause reductors and explain why they are incorrect.
   example_generator:
     contexts:
     - academic writing
@@ -164,8 +175,8 @@ teaching:
     adaptation_notes: Provide sentences with incorrect reductions and have students
       identify and correct them.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
+    Relative Clauses, §11.1-11.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -174,15 +185,52 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for relative_clause_reductors.
-  correction: Correct form.
-  explanation: This is a common error for relative_clause_reductors.
+- error: 'Reducing when the relative pronoun is the object: *''The man I saw yesterday
+    was my friend'' → *''The man seen yesterday was my friend'' (incorrect reduction).'
+  correction: The man I saw yesterday was my friend. (omit pronoun only, no participle
+    reduction)
+  explanation: Relative clause reduction to a participle is only possible when the
+    relative pronoun is the SUBJECT of the clause. When the pronoun is the object
+    (''I saw the man''), you can omit the pronoun but cannot reduce to a participle.
+    Only subject relative clauses with ''be'' can be reduced.
   l1_groups:
   - Portuguese
   - Spanish
+  - French
+  - Chinese
+- error: 'Reducing a clause without auxiliary ''be'': *''The man who lives next door''
+    → *''The man living next door'' (incorrect — no ''be'' to remove).'
+  correction: The man who lives next door is my friend. (full form — cannot reduce)
+  explanation: Reduction requires the relative clause to contain a form of ''be''
+    (''who is living'' → ''living''). When the relative clause has a simple tense
+    without ''be'' (''who lives''), reduction to a participle is not possible. The
+    pronoun can be omitted only if it is the object.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Arabic
+  - Hindi
+- error: 'Using present participle for passive meaning: *''The letter written by the
+    manager'' → *''The letter writing by the manager'' (incorrect).'
+  correction: The letter written by the manager was clear.
+  explanation: For passive meaning, the reduced form uses the past participle (''written''),
+    not the present participle (''writing''). Using the present participle for passive
+    meaning is grammatically incorrect and changes the meaning to active voice.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Japanese
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, relative clauses are essential for precision and are a
+    marker of proficient writing.
+- note: In conversation, defining relative clauses are more common than non-defining.
+- note: In academic writing, both defining and non-defining relative clauses are used
+    extensively.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In academic writing, relative clauses are essential for precision and are
+    a marker of proficient writing.
+- note: In conversation, defining relative clauses are more common than non-defining.
+- note: In formal writing, 'whom' is used for object relative clauses.

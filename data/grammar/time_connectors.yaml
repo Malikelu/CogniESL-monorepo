@@ -15,12 +15,21 @@ meaning:
   ccqs:
   - question: Does 'before' mean the event happened earlier or later?
     answer: Earlier — 'before' introduces the later event.
+    purpose: Tests whether the learner understands temporal relationships between
+      events. Correct use of time conjunctions is essential for clear communication
+      of sequence and duration.
   - question: Can 'while' be used with short, sudden actions?
     answer: No — 'while' is used with continuous or ongoing actions, not momentary
       ones.
+    purpose: Tests whether the learner understands the difference between present
+      ability (can) and past ability or polite possibility (could). This is important
+      for expressing ability and making requests.
   - question: Do we use a future tense after 'when' in time clauses?
     answer: 'No — we use the present simple after ''when'' to refer to the future:
       ''When I arrive, I''ll call you.'''
+    purpose: Tests whether the learner understands the time reference of the situation.
+      Correct temporal identification is essential for selecting the right grammatical
+      structure.
   example_generator:
     contexts:
     - daily routines
@@ -188,8 +197,8 @@ teaching:
     adaptation_notes: Students write instructions for a simple task (making tea, getting
       to school) using at least 4 different time connectors.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, §12.1-12.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -198,15 +207,58 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for time_connectors.
-  correction: Correct form.
-  explanation: This is a common error for time_connectors.
+- error: '*Before to leave, she turned off the lights.*'
+  correction: Before leaving, she turned off the lights.
+  explanation: After time prepositions like 'before', use a gerund (-ing form), not
+    an infinitive. 'Before' as a preposition requires a noun or gerund; as a conjunction
+    it takes a full clause (before she left).
   l1_groups:
   - Portuguese
   - Spanish
+  - French
+- error: '*After I ate dinner, I watch TV.*'
+  correction: After I ate dinner, I watched TV.
+  explanation: 'Tense harmony: if the time clause is in the past (''ate''), the main
+    clause should typically also be in the past (''watched''). Mixing past in the
+    time clause with present in the main clause can suggest general habit but sounds
+    inconsistent for a specific event.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Arabic
+- error: '*While the phone rang, I was cooking.*'
+  correction: While I was cooking, the phone rang.
+  explanation: '''While'' is typically used with continuous actions, not momentary
+    ones. ''The phone rang'' is a momentary action; ''I was cooking'' has duration.
+    The continuous action should be in the ''while'' clause, and the short interrupting
+    action in the main clause.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Korean
+- error: '*I will call you as soon as I will get home.*'
+  correction: I will call you as soon as I get home.
+  explanation: After 'as soon as' (time conjunction), use present simple to refer
+    to the future. This follows the same rule as 'when', 'before', 'after', 'until',
+    and other time conjunctions.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Arabic
+  - Chinese
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, this structure is standard and expected. Register variation
+    is marked by vocabulary and style rather than grammatical form.
+- note: In formal writing, avoid contractions and use full forms.
+- note: In conversation, contractions and reduced forms are common.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used in everyday communication.
+- note: In academic writing, this structure appears in formal contexts and is a marker
+    of proficient English.
+- note: In professional contexts, correct use of this structure is expected in formal
+    writing.

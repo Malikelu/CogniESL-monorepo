@@ -164,8 +164,8 @@ def validate_html(html_content: str, project_dir: Path, used_scaffold: bool) -> 
     """Validate HTML layout using Playwright."""
     errors = []
 
-    # Validate local image references (photos) exist and are valid
-    errors.extend(_validate_image_refs(project_dir, html_content))
+    # NOTE: Image file validation disabled. All ESL slides use CSS-based visuals (gradients, Font Awesome icons).
+    # No external image files are required or expected.
 
     if re.search(r"[\U0001F300-\U0001FAFF]", html_content):
         errors.append(

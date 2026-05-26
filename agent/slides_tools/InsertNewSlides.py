@@ -31,8 +31,15 @@ from .slide_html_utils import ensure_full_html
 from .template_registry import load_template_index
 
 
-_PLANNER_MODEL_CLAUDE = "anthropic/claude-sonnet-4-6"
-_PLANNER_MODEL_OAI = "anthropic/claude-3-5-haiku"
+# Sub-agent model: read from env so it can be changed without touching code.
+# Priority: SUB_AGENT_MODEL env var → hardcoded default.
+# For OpenRouter models use "openrouter/anthropic/claude-3-5-sonnet-20241022" etc.
+_PLANNER_MODEL_DEFAULT = "anthropic/claude-3-5-sonnet-20241022"
+_PLANNER_MODEL_OAI = "gpt-4o-mini"
+
+
+def _get_planner_model_id() -> str:
+    return os.getenv("SUB_AGENT_MODEL", _PLANNER_MODEL_DEFAULT)
 
 
 class _PlanSlide(BaseModel):
@@ -117,35 +124,64 @@ async def _agent_get_response(agent: Agent, prompt: str, *, use_stream: bool = F
     return await agent.get_response(prompt)
 
 
+def _normalise_model_id(model_id: str, provider: str) -> str:
+    """Return model_id with the correct provider prefix for LiteLLM routing.
+
+    LiteLLM uses 'provider/model' to route requests. Without the prefix it may
+    guess the wrong provider (e.g. openrouter instead of openai).
+    """
+    # Strip any existing provider prefix so we can re-add the right one cleanly
+    for prefix in ("openai/", "anthropic/", "openrouter/"):
+        if model_id.startswith(prefix):
+            model_id = model_id[len(prefix):]
+            break
+    return f"{provider}/{model_id}"
+
+
 def _make_planner_agent(tool=None) -> "tuple[Agent, bool]":
     """Create a fresh, stateless agent instance for one InsertNewSlides call.
 
-    Model priority:
-    1. ANTHROPIC_API_KEY in env → Claude Sonnet 4.6 (best planning quality)
-    2. Calling agent's OpenAI client (browser auth / per-request ClientConfig)
-    3. AsyncOpenAI() default (env vars)
+    Model priority (always via LiteLLM so provider routing is explicit):
+    1. ANTHROPIC_API_KEY  → anthropic/{model_id}
+    2. OPENAI_API_KEY     → openai/{model_id}   (direct, no proxy)
+    3. OPENROUTER_API_KEY → openrouter/{model_id}
+    4. No key found       → raise immediately with a clear message
 
-    Returns (agent, is_codex).
+    OpenAI is checked before OpenRouter because a direct key is always preferred
+    over a proxy, and stale OpenRouter keys cause silent failures.
+
+    Set SUB_AGENT_MODEL in .env to control the model, e.g.:
+      SUB_AGENT_MODEL=gpt-4.1-mini
+      SUB_AGENT_MODEL=claude-3-5-sonnet-20241022
+
+    Returns (agent, is_codex=False).
     """
     anthropic_key = os.getenv("ANTHROPIC_API_KEY")
+    openai_key = os.getenv("OPENAI_API_KEY")
+    openrouter_key = os.getenv("OPENROUTER_API_KEY")
+    model_id = _get_planner_model_id()
     is_codex = False
-    if anthropic_key:
-        model = LitellmModel(model=_PLANNER_MODEL_CLAUDE, api_key=anthropic_key)
+
+    # Honor explicit provider prefix in model_id (e.g. "openrouter/google/gemini-2.5-flash").
+    # This lets .env pin a specific provider regardless of which API keys are present.
+    if model_id.startswith("openrouter/") and openrouter_key:
+        model = LitellmModel(model=model_id, api_key=openrouter_key)
+    elif model_id.startswith("anthropic/") and anthropic_key:
+        model = LitellmModel(model=model_id, api_key=anthropic_key)
+    elif model_id.startswith("openai/") and openai_key:
+        model = LitellmModel(model=model_id, api_key=openai_key)
+    elif anthropic_key:
+        model = LitellmModel(model=_normalise_model_id(model_id, "anthropic"), api_key=anthropic_key)
+    elif openai_key:
+        # Explicit "openai/" prefix tells LiteLLM to route to api.openai.com directly,
+        # preventing it from guessing openrouter or another provider.
+        model = LitellmModel(model=_normalise_model_id(model_id, "openai"), api_key=openai_key)
+    elif openrouter_key:
+        model = LitellmModel(model=_normalise_model_id(model_id, "openrouter"), api_key=openrouter_key)
     else:
-        from agents import OpenAIResponsesModel
-        from openai import AsyncOpenAI
-        caller_client = tool and _get_caller_openai_client(tool)
-        api_key = caller_client.api_key if caller_client else os.getenv("OPENAI_API_KEY", "")
-        base_url = str(caller_client.base_url) if caller_client else (
-            os.getenv("OPENAI_BASE_URL", "https://openrouter.ai/api/v1")
+        raise RuntimeError(
+            "No API key found. Set ANTHROPIC_API_KEY, OPENAI_API_KEY, or OPENROUTER_API_KEY in .env"
         )
-        client = AsyncOpenAI(api_key=api_key, base_url=base_url)
-        is_openai = str(base_url).startswith("https://api.openai.com")
-        if is_openai:
-            model = OpenAIResponsesModel(model=_PLANNER_MODEL_OAI, openai_client=client)
-        else:
-            model = _CodexResponsesModel(model=_PLANNER_MODEL_OAI, openai_client=client)
-            is_codex = True
     agent = Agent(
         name="Slide Planner",
         description="Creates structured slide outline plans.",
@@ -156,7 +192,6 @@ def _make_planner_agent(tool=None) -> "tuple[Agent, bool]":
         tools=[],
         model=model,
         model_settings=ModelSettings(
-            reasoning=Reasoning(effort="high", summary="auto"),
             verbosity=None if is_codex else "medium",
             store=False if is_codex else None,
         ),
@@ -216,7 +251,12 @@ def _build_planner_prompt(
         f"Constraints:\n- exactly {count} slides\n"
         f"- pages must be contiguous from {insert_position} to {insert_position + count - 1}\n"
         "- concise titles; content should describe WHAT the slide covers (topic and key points), not HOW it should look — no layout instructions, no column descriptions, no visual prescriptions\n"
-        "- (CRITICAL) No inline code snippets or code blocks.\n\n"
+        "- (CRITICAL) No inline code snippets or code blocks.\n"
+        "- (CRITICAL) For ESL slides, the 'content' field MUST include speaker notes instructions:\n"
+        "  * After the main content description, add 'SPEAKER NOTES: [teacher talk] | CCQs: [2-3 questions] | WATCH FOR: [common errors]'\n"
+        "  * For Section 2 (Presentation/Meaning) slides: CCQs MUST come BEFORE formulas in the content\n"
+        "  * For L1 Oracle slides: specify which L1 language and at least 2 specific errors with Wrong→Correct examples\n"
+        "  * For Practice slides: specify exercise type and include blank spaces for student answers\n\n"
         "Template assignment rules (CRITICAL):\n"
         "- A template represents a LAYOUT PATTERN, not an individual slide. By default, assign each slide its own unique template_key.\n"
         "- Only share a template_key across slides when the layout is genuinely identical (e.g. a repeated content card format). Reuse templates only when fitting and do not reuse them often.\n"
@@ -357,8 +397,8 @@ class InsertNewSlides(BaseTool):
     approximate_page_count: int = Field(
         ...,
         ge=1,
-        le=20,
-        description="Number of blank slide placeholders to insert (1-20). Content is added later with ModifySlide.",
+        le=15,
+        description="Number of blank slide placeholders to insert (1-15). Keep it manageable — better to have 15 fully populated slides than 30 half-empty ones. Content is added later with ModifySlide.",
     )
     insert_position: int = Field(
         default=1,

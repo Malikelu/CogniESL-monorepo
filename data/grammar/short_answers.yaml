@@ -15,10 +15,19 @@ meaning:
   ccqs:
   - question: Do we repeat the whole sentence in the answer?
     answer: No — we use a short answer with just the subject and auxiliary.
+    purpose: Tests whether the learner understands that short answers use only the
+      subject and auxiliary, not the full sentence. This is important because short
+      answers are the natural, default way to respond in spoken English.
   - question: Does the auxiliary in the answer match the auxiliary in the question?
     answer: Yes — if the question uses 'do', the answer uses 'do'.
+    purpose: Tests whether the learner knows that the auxiliary in the answer must
+      match the auxiliary in the question. This is important because using the wrong
+      auxiliary sounds unnatural.
   - question: Is 'Yes, I like coffee' wrong?
     answer: No — it is grammatically correct, but 'Yes, I do' is more natural in conversation.
+    purpose: Tests whether the learner understands that while full answers are grammatically
+      correct, short answers are more natural in conversation. This is important because
+      always using full answers can sound overly formal or emphatic.
   example_generator:
     contexts:
     - everyday conversation
@@ -148,8 +157,8 @@ teaching:
     adaptation_notes: Students circulate asking yes/no questions and record short
       answers. They then report findings to the class.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, §12.1-12.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.

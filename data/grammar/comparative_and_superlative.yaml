@@ -20,12 +20,21 @@ meaning:
   ccqs:
   - question: Are we comparing two things or more than two?
     answer: Two = comparative (-er / more). Three or more = superlative (-est / most).
+    purpose: Tests whether the learner understands when to use comparative vs. superlative
+      forms. This distinction depends on how many items are being compared.
   - question: Do we use 'than' after the adjective?
     answer: Yes, if it is a comparative (taller than, more interesting than).
+    purpose: Tests whether the learner knows that 'than' (not 'that') follows comparative
+      adjectives. This is a common spelling/usage error across L1 backgrounds.
   - question: Do we use 'the' before the adjective?
     answer: Yes, if it is a superlative (the tallest, the most interesting).
+    purpose: Tests whether the learner knows that superlatives require the definite
+      article 'the'. Omitting the article is a common error, especially for learners
+      from article-less L1s.
   - question: Is the adjective short (one syllable) or long (two or more syllables)?
     answer: Short = add -er/-est. Long = use more/most.
+    purpose: Tests whether the learner understands when to use comparative vs. superlative
+      forms. This distinction depends on how many items are being compared.
   example_generator:
     contexts:
     - everyday situations
@@ -164,8 +173,8 @@ teaching:
     adaptation_notes: Students compare products (price, size, quality) using comparative
       and superlative forms in a role-play.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, §12.1-12.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -174,15 +183,61 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for comparative_and_superlative.
-  correction: Correct form.
-  explanation: This is a common error for comparative_and_superlative.
+- error: '*She is the most tallest girl in the class.*'
+  correction: She is the tallest girl in the class.
+  explanation: 'Double superlative: adding both ''-est'' and ''most'' to the same
+    adjective. One marker is sufficient. This happens when learners are uncertain
+    which form to use and add both for emphasis. Common across many L1 backgrounds.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Arabic
+- error: '*This book is more better than that one.*'
+  correction: This book is better than that one.
+  explanation: Using 'more' + '-er' form creates a double comparative. Short adjectives
+    (one syllable) take '-er', not 'more'. This overgeneralization comes from applying
+    the 'more + adjective' pattern used with longer adjectives to all adjectives.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Arabic
+- error: '*He is the more intelligent student in the class.*'
+  correction: He is the most intelligent student in the class.
+  explanation: Superlative form required for comparing 3+ items. For long adjectives
+    (3+ syllables), use 'most' rather than '-er'. Using 'more' here creates a comparative
+    where a superlative is needed for the group context.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+- error: '*This is the bigger of the three options.*'
+  correction: This is the biggest of the three options.
+  explanation: Superlative required when comparing three or more items. 'Bigger' is
+    comparative (for two items). Learners often default to comparative forms even
+    when the context explicitly requires superlative.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+- error: '*John is more tall than Peter.*'
+  correction: John is taller than Peter.
+  explanation: One-syllable adjectives take '-er' for comparatives, not 'more'. Languages
+    like Portuguese and Spanish always use a separate word for comparison (mais alto,
+    mas alto), which leads to this persistent transfer error.
   l1_groups:
   - Portuguese
   - Spanish
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, this structure is standard and expected. Register variation
+    is marked by vocabulary and style rather than grammatical form.
+- note: In formal writing, avoid contractions and use full forms.
+- note: In conversation, contractions and reduced forms are common.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used in everyday communication.
+- note: In academic writing, this structure appears in formal contexts and is a marker
+    of proficient English.
+- note: In professional contexts, correct use of this structure is expected in formal
+    writing.

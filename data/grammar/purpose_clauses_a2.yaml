@@ -18,6 +18,18 @@ meaning:
   ccqs:
   - question: When do we use so that instead of to
     answer: When the purpose clause has a different subject.
+    purpose: Tests whether the learner can identify the purpose or goal of an action.
+      Purpose clauses require specific structures (to, in order to, so that) that
+      differ from reason clauses.
+  - question: Can we use a different structure here with the same meaning?
+    answer: No — changing the structure would change the meaning or make the sentence
+      ungrammatical.
+    purpose: Tests whether the learner understands that purpose clauses a2 is the
+      only appropriate structure for this meaning/context.
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      purpose clauses a2 and explain why they are incorrect.
   example_generator:
     contexts:
     - everyday situations
@@ -106,25 +118,63 @@ teaching:
     adaptation_notes: 'Students explain their daily actions using purpose clauses:
       ''I woke up early to catch the bus.'''
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
+    Coordination, §16.7 (purpose clauses)'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 15: Coordination, §15.3'
+  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 420-425 (purpose:
+    to, in order to, so that)'
+  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
+    15: Purpose clauses'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 12: Purpose'
 common_errors:
-- error: Common error for purpose_clauses_a2.
-  correction: Correct form.
-  explanation: This is a common error for purpose_clauses_a2.
+- error: '*I went to the store for to buy milk.*'
+  correction: I went to the store to buy milk.
+  explanation: Use 'to + base verb' for purpose, not 'for to + verb'. This archaic
+    form ('for to') does not exist in modern standard English. The error comes from
+    overgeneralizing 'for' as a purpose marker before infinitives.
   l1_groups:
   - Portuguese
   - Spanish
+- error: '*I study English for get a better job.*'
+  correction: I study English to get a better job.
+  explanation: Purpose is expressed with 'to + infinitive', not 'for + base verb'.
+    'For' is followed by a noun (for a job), not a verb. This error directly translates
+    the structure from Portuguese/Spanish 'para conseguir'.
+  l1_groups:
+  - Portuguese
+  - Spanish
+- error: '*She called him so that he can come early.*'
+  correction: She called him so that he could come early.
+  explanation: '''So that'' purpose clause requires a modal that matches the tense
+    of the main verb. If the main verb is past (''called''), the modal should be ''can''
+    to ''could''. Tense harmony between clauses is expected.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Korean
+- error: '*I am saving money in order I can buy a car.*'
+  correction: I am saving money in order to buy a car.
+  explanation: '''In order to'' (not ''in order'' alone) introduces a purpose infinitive.
+    The full form requires ''to'' before the verb. Dropping ''to'' creates an incomplete
+    structure. Same rule applies to ''so as to''.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Chinese
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, relative clauses are essential for precision and are a
+    marker of proficient writing.
+- note: In conversation, defining relative clauses are more common than non-defining.
+- note: In academic writing, both defining and non-defining relative clauses are used
+    extensively.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In academic writing, relative clauses are essential for precision and are
+    a marker of proficient writing.
+- note: In conversation, defining relative clauses are more common than non-defining.
+- note: In formal writing, 'whom' is used for object relative clauses.

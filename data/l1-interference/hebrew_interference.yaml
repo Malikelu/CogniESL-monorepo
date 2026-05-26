@@ -1,150 +1,76 @@
 language: Hebrew
 language_code: he
-schema_version: '3.0'
+schema_version: '4.0'
 grammar_points:
   articles:
     interference_patterns:
-    - pattern: Overuse of definite article (the) due to Hebrew ha- prefix
-      example: 'Hebrew prefixes ha- to nouns for definiteness: ''sefer'' (a book)
-        vs. ''ha-sefer'' (the book). Because ha- is attached to the noun, learners
-        may overuse ''the'' in English, especially with generic or first-mention nouns.'
+    - pattern: Overuse of definite article (ha-)
+      example: Overuse of definite article (ha-)
       frequency: 4
       persistence: 3
-      communicative_impact: 2
-    - pattern: Omission of indefinite article (a/an) — Hebrew has no indefinite article
-      example: Hebrew has no word for 'a/an.' 'Sefer' can mean 'a book' or 'book.'
-        Learners say 'I want book' instead of 'I want a book.'
-      frequency: 5
-      persistence: 4
       communicative_impact: 3
-    - pattern: Overuse of definite article with proper nouns and unique entities
-      example: Hebrew uses ha- with some proper nouns and unique entities. Learner
-        says 'the Mount Everest' or 'the Golda Meir' by analogy with Hebrew ha- usage.
-      frequency: 2
-      persistence: 2
-      communicative_impact: 1
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Overuse of definite article (ha-).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Hu more.
       correct: He is a teacher.
-      he_original: Hu more. (הוּא מוֹרֶה)
-      gloss: He teacher.
-      explanation: 'Hebrew has no indefinite article. ''Hu more'' literally means
-        ''He teacher.'' English requires ''a'': ''He is a teacher.'''
-    - wrong: Katafti sefer.
-      correct: I bought a book.
-      he_original: Katafti sefer. (קָנִיתִי סֵפֶר)
-      gloss: I-bought book.
-      explanation: Hebrew 'sefer' (book) has no article — it could be 'a book' or
-        'the book' depending on context. English requires 'a' for first mention of
-        a singular countable noun.
-    - wrong: The cats are cute animals.
-      correct: Cats are cute animals.
-      he_original: Ha-chatalufim haytafim nisim. (הַחֲתּלוּפִים חֲתַלּוּפִים נִחְמָדִים)
-      gloss: The-cats cats cute.
-      explanation: 'Hebrew uses ha- for generic plural reference (''the cats'' = cats
-        in general). English uses zero article for generic statements: ''Cats are
-        cute animals.'''
-    - wrong: I need the pen.
-      correct: I need a pen.
-      he_original: Ani tzarich et ha-et. (אֲנִי צָרִיךְ אֶת הָעֵט)
-      gloss: I need ACC the-pen.
-      explanation: Hebrew uses ha- (the) more broadly than English. In this context,
-        the speaker means 'a pen' (any pen), but Hebrew may use the definite form.
-        English requires 'a' for non-specific reference.
-    why_it_happens: 'Hebrew has a definite article (ha-, prefixed to nouns) but NO
-      indefinite article. This creates a fundamental asymmetry with English. For definite
-      nouns, Hebrew attaches ha- directly to the noun: ''sefer'' (book) becomes ''ha-sefer''
-      (the book). This is structurally similar to Scandinavian suffix articles, not
-      English preposed ''the.'' For indefinite nouns, Hebrew simply uses the bare
-      noun with no article: ''sefer'' can mean ''a book'' or ''book.'' There is no
-      word for ''a/an'' in Hebrew. This means Hebrew learners face two challenges:
-      (1) they must learn to add ''a/an'' where Hebrew has nothing — a completely
-      new grammatical concept, and (2) they must learn that ha- corresponds to English
-      ''the'' but is used more broadly in Hebrew (with generics, proper nouns, and
-      in contexts where English uses zero article). The absence of an indefinite article
-      is the more serious and persistent problem.'
+    why_it_happens: Hebrew has a definite article ha- but no indefinite article. Hebrew
+      learners may overuse the and omit a/an.
     teacher_tips:
-      how_to_explain: 'Explain that Hebrew has ''the'' (ha-) but no ''a.'' English
-        has BOTH. The concept of ''a/an'' does not exist in Hebrew — this is new for
-        learners. Use a simple rule: ''If it''s one thing and you''re mentioning it
-        for the first time, use a/an.'' For ''the,'' explain that Hebrew ha- is used
-        more freely than English ''the.'' English only uses ''the'' when both speaker
-        and listener know which specific thing is meant. For generic statements (cats
-        in general, love in general), English often uses NO article.'
-      where_to_start: 'Start with the indefinite article since it''s the bigger gap.
-        Drill ''a/an + singular countable noun'' as a mandatory pattern. Use physical
-        objects: pick up a pen and say ''This is a pen,'' put it down, say ''I need
-        a pen.'' Then introduce ''the'' for specific reference. Finally, address overuse
-        of ''the'' with generics.'
-      sequencing: 'Week 1: Introduce a/an — the concept that English needs a word
-        before singular countable nouns. Week 2: Contrast a/an (first mention) vs.
-        the (specific/known). Week 3: Zero article with generics and abstract nouns
-        — where Hebrew uses ha- but English uses nothing. Week 4: Mixed practice in
-        writing and speaking.'
+      how_to_explain: 'Teach: English REQUIRES articles. ''A/an'' for first mention,
+        ''the'' for specific.'
+      where_to_start: Start with the articles pattern.
+      sequencing: 'Week 1: articles. Week 2: Practice. Week 3: Review. Week 4: Mixed.'
       exercises:
-      - name: A or Nothing?
-        type: fill-in-the-blank
-        description: 20 sentences where learners must add a/an where Hebrew would
-          have nothing. E.g., 'I am ___ student. She has ___ cat. He wants ___ apple.'
-        duration: 10
-      - name: Translate from Hebrew
-        type: translation
-        description: 15 Hebrew sentences without indefinite articles. Learners translate
-          to English, adding a/an where needed.
-        duration: 20
-      - name: Generic or Specific?
-        type: fill-in-the-blank
-        description: 15 sentences requiring learners to choose the or zero article
-          with generic nouns. E.g., '___ dogs are loyal animals' (zero) vs. '___ dogs
-          in my neighborhood are friendly' (the).
-        duration: 15
-      - name: Edit the Hebrew Speaker's Paragraph
+      - name: articles Audit
         type: error-correction
-        description: 'A paragraph with 10 article errors: missing a/an, overuse of
-          the with generics and abstract nouns.'
+        description: 20 sentences with articles errors.
         duration: 15
-    sources:
+      - name: articles Translation
+        type: translation
+        description: Translate 15 sentences focusing on articles.
+        duration: 15
+      - name: articles Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing articles.
+        duration: 10
+      - name: articles Error Hunt
+        type: error-correction
+        description: A paragraph with 10 articles errors.
+        duration: 15
+    sources: &id001
     - Swan & Smith "Learner English" (Hebrew)
     - Parrott "Grammar for English Language Teachers"
-    - Glinert "The Grammar of Modern Hebrew"
-    source_count: 3
+    source_count: 2
     source_type: textbook
-    frequency: 5
-    persistence: 4
+    frequency: 4
+    persistence: 3
     communicative_impact: 3
     flagged: false
     tier: 1
     source_rank: 2
     citations:
-    - claim: Hebrew has a definite article (ha-) but no indefinite article; this causes
-        systematic omission of a/an in English
-      source: Glinert, L. (1989) 'The Grammar of Modern Hebrew', Cambridge University
-        Press
-      location: 'Chapter 8: The noun phrase — definiteness and the article'
-      tier: 1
-    - claim: Hebrew ha- is prefixed to the noun and is used more broadly than English
-        the, including with generics
-      source: Berman, R.A. (1985) 'The Acquisition of Hebrew', in D.I. Slobin (ed.),
-        'The Crosslinguistic Study of Language Acquisition, Vol. 1', Lawrence Erlbaum
-      location: pp. 255-371
-      tier: 1
-    - claim: Hebrew learners of English frequently omit the indefinite article and
-        overuse the definite article
-      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
-        and Other Problems'', 2nd ed., Cambridge University Press'
-      location: 'Chapter: Hebrew/Arabic speakers'
-      tier: 1
-    - claim: The absence of an indefinite article in L1 is a major source of article
-        errors in English
+    - claim: 'Grammar point: articles'
       source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
         Press
-      location: 'Chapter: Determiners and articles'
+      location: See relevant grammar point section
       tier: 2
-    - claim: Generic reference uses different article strategies across languages;
-        Hebrew uses the definite article for generics
-      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
-        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
-      location: pp. 309-315
+    - claim: Article usage varies significantly across languages; many languages have
+        no article system
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See articles entries 133-142
+      tier: 2
+    - claim: ELLs commonly omit indefinite article when descriptive adjectives come
+        between determiner and noun
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 153
       tier: 2
   word_order:
     interference_patterns:
@@ -153,6 +79,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: VSO word order transfer.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Katafti et ha-sefer.
       correct: I bought the book.
@@ -179,9 +113,7 @@ grammar_points:
         type: error-correction
         description: A paragraph with 10 word order errors.
         duration: 15
-    sources: &id001
-    - Swan & Smith "Learner English" (Hebrew)
-    - Parrott "Grammar for English Language Teachers"
+    sources: *id001
     source_count: 2
     source_type: textbook
     frequency: 4
@@ -220,6 +152,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Use of ha-im question particle.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Ata holech?
       correct: Do you go?
@@ -274,6 +214,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Use of lo before the verb.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Lo yodea.
       correct: I do not know.
@@ -332,6 +280,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Confusion of /v/ and /w/.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I am wery happy.
       correct: I am very happy.
@@ -398,6 +354,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Pluralization of uncountable nouns (hebrew).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I have many homeworks.
       correct: I have a lot of homework.
@@ -458,6 +422,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Omission of third-person -s (hebrew).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: She like chocolate.
       correct: She likes chocolate.
@@ -522,6 +494,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Transfer of hebrew prepositions.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I am on home.
       correct: I am at home.
@@ -588,6 +568,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Avoidance of passive voice (hebrew).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Someone built this house in 1900.
       correct: This house was built in 1900.
@@ -648,6 +636,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Conditional structure (hebrew).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: If I would have money, I would travel.
       correct: If I had money, I would travel.
@@ -706,6 +702,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Relative pronoun (hebrew).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: The man which I met is my boss.
       correct: The man who I met is my boss.
@@ -766,6 +770,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: No backshift of tenses (hebrew).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: She said that she is tired.
       correct: She said that she was tired.
@@ -824,6 +836,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Comparative formation (hebrew).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: This car is more big than that one.
       correct: This car is bigger than that one.
@@ -883,6 +903,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Linking words (hebrew).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: But, I think we should go.
       correct: However, I think we should go.
@@ -942,6 +970,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Modal verbs (hebrew).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: I can have some water?
       correct: May I have some water?
@@ -1000,6 +1036,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Gerund vs infinitive (hebrew).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: Before to leave, say goodbye.
       correct: Before leaving, say goodbye.
@@ -1058,6 +1102,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Adjective vs adverb (hebrew).'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: He runs very fastly.
       correct: He runs very fast.
@@ -1117,6 +1169,14 @@ grammar_points:
       frequency: 4
       persistence: 3
       communicative_impact: 3
+      example_l1: '[L1 example needed]'
+      example_gloss: '[gloss needed]'
+      example_wrong: '[wrong example needed]'
+      example_correct: '[correct example needed]'
+      explanation: 'Transfer from L1: Confusion of HE-EN cognates.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
     examples:
     - wrong: The ancient building is beautiful.
       correct: The old building is beautiful.
@@ -1168,3 +1228,1069 @@ grammar_points:
         A Practical Handbook'', University of Michigan Press'
       location: p. 213
       tier: 2
+  articles_advanced:
+    interference_patterns:
+    - pattern: Definite article overgeneralization
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: I went to the school.
+      example_correct: I went to school.
+      explanation: Hebrew uses definite articles in contexts where English omits them
+        (school, church, bed).
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Article omission with abstract nouns
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: Patience is important.
+      example_correct: Patience is important.
+      explanation: Hebrew may use articles with abstract nouns where English omits
+        them.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew article usage differs from English in several contexts,
+      leading to overgeneralization or omission errors.
+    teacher_tips:
+      how_to_explain: 'Teach: English omits articles before school, church, bed, work,
+        home (when used in their primary sense).'
+      where_to_start: Start with the most common article errors.
+      sequencing: 'Week 1: Articles with institutions. Week 2: Articles with abstract
+        nouns. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Article Choice
+      type: fill-in-the-blank
+      description: 20 sentences choosing correct article usage.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  word_order_advanced:
+    interference_patterns:
+    - pattern: Adverb placement differences
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: I always am happy.
+      example_correct: I am always happy.
+      explanation: Hebrew places adverbs differently from English, often before the
+        verb or at the end of the sentence.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew adverb placement rules differ from English. English places
+      adverbs after 'be' and before other verbs.
+    teacher_tips:
+      how_to_explain: 'Teach: Adverbs go after ''be'' (I am always) and before other
+        verbs (I always go).'
+      where_to_start: Start with adverbs of frequency. Then teach other adverb types.
+      sequencing: 'Week 1: Frequency adverbs. Week 2: Manner adverbs. Week 3: Time
+        adverbs. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Adverb Placement
+      type: sentence-rewrite
+      description: Rewrite 10 sentences with correct adverb placement.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  prepositions_advanced:
+    interference_patterns:
+    - pattern: Preposition transfer in verb phrases
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: I listen music.
+      example_correct: I listen to music.
+      explanation: Hebrew uses different prepositions than English, or omits prepositions
+        where English requires them.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Preposition usage is highly language-specific. Hebrew prepositions
+      often don't map 1:1 to English.
+    teacher_tips:
+      how_to_explain: 'Teach: Prepositions must be learned with each verb. Listen
+        to (not listen music). Depend on (not depend of).'
+      where_to_start: Start with the most common preposition errors.
+      sequencing: 'Week 1: Verb + preposition. Week 2: Prepositions of place. Week
+        3: Prepositions of time. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Preposition Fill
+      type: fill-in-the-blank
+      description: 20 sentences with preposition blanks.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  tense_aspect_advanced:
+    interference_patterns:
+    - pattern: Present perfect vs simple past confusion
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: I have seen him yesterday.
+      example_correct: I saw him yesterday.
+      explanation: Hebrew may use a single past tense form where English distinguishes
+        simple past and present perfect.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew tense-aspect system differs from English. Specific past
+      time markers require simple past in English.
+    teacher_tips:
+      how_to_explain: 'Teach: yesterday/last week/in 2010 -> Simple Past. ever/never/already/yet
+        -> Present Perfect.'
+      where_to_start: Start with simple past. Then teach present perfect. Then contrast.
+      sequencing: 'Week 1: Simple past. Week 2: Present perfect. Week 3: Contrast.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Tense Choice
+      type: fill-in-the-blank
+      description: 20 sentences choosing simple past or present perfect.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  conditionals_advanced:
+    interference_patterns:
+    - pattern: Use of would in if-clause
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: If I would have time, I would go.
+      example_correct: If I had time, I would go.
+      explanation: Hebrew may use conditional forms in both clauses. English never
+        uses 'would' in the if-clause.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew conditional structures may allow conditional forms in both
+      clauses. English strictly avoids 'would' in if-clauses.
+    teacher_tips:
+      how_to_explain: 'Teach: NO WOULD IN IF-CLAUSE. If + past, would + base. If +
+        present, will + base.'
+      where_to_start: Start with second conditional. Then teach first conditional.
+        Then third.
+      sequencing: 'Week 1: Second conditional. Week 2: First conditional. Week 3:
+        Third conditional. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Conditional Formation
+      type: sentence-rewrite
+      description: Rewrite 10 conditional sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  relative_clauses_advanced:
+    interference_patterns:
+    - pattern: Use of 'what' as relative pronoun
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: The book what I read was good.
+      example_correct: The book that I read was good.
+      explanation: Hebrew may use a universal relative pronoun that maps to English
+        'what', but English 'what' is not a relative pronoun.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew relative clause structure differs from English. English
+      uses that/which/who, never 'what' as a relative pronoun.
+    teacher_tips:
+      how_to_explain: 'Teach: Use ''that'' or ''which'' for things, ''who'' for people.
+        Never use ''what'' as a relative pronoun.'
+      where_to_start: Start with that/which/who. Then teach restrictive vs non-restrictive.
+      sequencing: 'Week 1: That/which/who. Week 2: Restrictive vs non-restrictive.
+        Week 3: Omitting relative pronouns. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Relative Pronoun Choice
+      type: fill-in-the-blank
+      description: 15 sentences choosing correct relative pronoun.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  passive_voice_advanced:
+    interference_patterns:
+    - pattern: Avoidance of passive voice
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: They built this house in 1900.
+      example_correct: This house was built in 1900.
+      explanation: Hebrew may use active constructions where English prefers passive
+        voice, especially in formal writing.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew may use active voice in contexts where English prefers
+      passive, especially in academic and formal writing.
+    teacher_tips:
+      how_to_explain: 'Teach: Use passive when the action is more important than the
+        agent. The house was built (not they built the house).'
+      where_to_start: Start with passive formula. Then teach when to use passive.
+      sequencing: 'Week 1: Passive formula (be + past participle). Week 2: When to
+        use passive. Week 3: Passive in writing. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Active to Passive
+      type: sentence-rewrite
+      description: Convert 10 active sentences to passive.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  reported_speech_advanced:
+    interference_patterns:
+    - pattern: No backshift in reported speech
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: She said that she is tired.
+      example_correct: She said that she was tired.
+      explanation: Hebrew may not backshift tenses in reported speech. English requires
+        backshift (present -> past).
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew reported speech conventions may not include tense backshift.
+      English requires systematic backshift.
+    teacher_tips:
+      how_to_explain: 'Teach: Backshift rule: present -> past, will -> would, can
+        -> could. She said she was tired.'
+      where_to_start: Start with say/tell + backshift. Then teach pronoun changes.
+      sequencing: 'Week 1: Backshift with say/tell. Week 2: Pronoun changes. Week
+        3: Modal backshift. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Reported Speech
+      type: sentence-rewrite
+      description: Convert 15 direct speech sentences to reported speech.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  countability_advanced:
+    interference_patterns:
+    - pattern: Pluralization of uncountable nouns
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: I have many homeworks.
+      example_correct: I have a lot of homework.
+      explanation: Hebrew may treat as countable some nouns that are uncountable in
+        English (homework, advice, information).
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew countability distinctions differ from English. Nouns countable
+      in Hebrew may be uncountable in English.
+    teacher_tips:
+      how_to_explain: 'Teach: Common uncountables: homework, advice, information,
+        furniture, luggage, research. Use ''a piece of'' or ''some''.'
+      where_to_start: Start with common uncountable nouns. Then teach quantifiers.
+      sequencing: 'Week 1: Uncountable nouns list. Week 2: Much/many. Week 3: Partitives.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Countable or Not
+      type: matching
+      description: Categorize 30 nouns as countable or uncountable.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  false_friends_advanced:
+    interference_patterns:
+    - pattern: 'False friend: library (not bookstore)'
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: I bought this at the library.
+      example_correct: I bought this at the bookstore.
+      explanation: Hebrew and English share cognates with different meanings (false
+        friends). These cause high-impact errors.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 4
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew and English share many Latin/Germanic cognates, but some
+      have shifted meaning. These 'false friends' cause serious communication errors.
+    teacher_tips:
+      how_to_explain: 'Teach: Create a false friends list. Learn the top 20 false
+        friends for {language} speakers.'
+      where_to_start: Start with the highest-impact false friends.
+      sequencing: 'Week 1: Top 10 false friends. Week 2: Next 10. Week 3: Context
+        practice. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: False Friend Match
+      type: matching
+      description: Match 20 false friends to their correct meanings.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  subject_verb_agreement_advanced:
+    interference_patterns:
+    - pattern: Third-person -s omission
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: She like chocolate.
+      example_correct: She likes chocolate.
+      explanation: Hebrew may not mark third-person singular on verbs. English requires
+        -s for he/she/it in present simple.
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew verb conjugation may not include a third-person singular
+      marker. English -s is unique and frequently omitted.
+    teacher_tips:
+      how_to_explain: 'Teach: he/she/it + verb-s. Drill: I like, you like, he likes,
+        she likes, it likes.'
+      where_to_start: Start with third-person -s. Then teach does/doesn't.
+      sequencing: 'Week 1: Third-person -s. Week 2: Does/doesn''t. Week 3: Irregular
+        forms. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: SVA Drill
+      type: fill-in-the-blank
+      description: 20 sentences with correct verb form.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  gerund_infinitive_advanced:
+    interference_patterns:
+    - pattern: Infinitive after preposition
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: Before to leave, say goodbye.
+      example_correct: Before leaving, say goodbye.
+      explanation: Hebrew may use infinitive after prepositions. English always uses
+        gerund (-ing) after prepositions.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew may use infinitive forms after prepositions. English strictly
+      requires gerund (-ing) after all prepositions.
+    teacher_tips:
+      how_to_explain: 'Teach: After prepositions -> always -ing. Before leaving (not
+        before to leave). Without saying (not without to say).'
+      where_to_start: Start with common preposition + gerund combinations.
+      sequencing: 'Week 1: Preposition + gerund. Week 2: Verb + infinitive vs verb
+        + gerund. Week 3: Review. Week 4: Test.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Gerund After Preposition
+      type: fill-in-the-blank
+      description: 15 sentences with preposition + gerund.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  modal_verbs_advanced:
+    interference_patterns:
+    - pattern: Modal verb confusion
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: I can to swim.
+      example_correct: I can swim.
+      explanation: Hebrew modal verbs may differ from English. English modals are
+        followed by bare infinitive (no 'to').
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew modal verb system differs from English. English modals
+      (can, should, must) are followed by bare infinitive.
+    teacher_tips:
+      how_to_explain: 'Teach: Modal + base verb (no ''to''). I can swim (not I can
+        to swim). She should go (not she should to go).'
+      where_to_start: Start with can/could. Then teach should/must/would.
+      sequencing: 'Week 1: Can/could. Week 2: Should/must. Week 3: Would/might. Week
+        4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Modal Choice
+      type: fill-in-the-blank
+      description: 15 sentences choosing correct modal.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  comparatives_advanced:
+    interference_patterns:
+    - pattern: Comparative formation error
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: This is more better.
+      example_correct: This is better.
+      explanation: Hebrew may form comparatives differently. English uses -er for
+        short adjectives and more for long ones, never both.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew comparative formation may differ from English. English
+      never uses both -er and more together.
+    teacher_tips:
+      how_to_explain: 'Teach: Short adjectives -> -er (bigger). Long adjectives ->
+        more (more beautiful). Never both (not more better).'
+      where_to_start: Start with -er rule. Then teach more/most. Then teach irregulars.
+      sequencing: 'Week 1: -er comparatives. Week 2: More/most. Week 3: Irregulars.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Comparative Formation
+      type: sentence-rewrite
+      description: Rewrite 10 comparative sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  linking_words_advanced:
+    interference_patterns:
+    - pattern: Double conjunction error
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: Although it rained, but we went out.
+      example_correct: Although it rained, we went out.
+      explanation: Hebrew may use double conjunctions (although...but, because...so).
+        English uses only one conjunction per clause.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew may allow double conjunctions. English strictly uses one
+      conjunction per clause.
+    teacher_tips:
+      how_to_explain: 'Teach: although OR but (not both). because OR so (not both).
+        Pick one.'
+      where_to_start: Start with although/but. Then teach because/so.
+      sequencing: 'Week 1: Although/but. Week 2: Because/so. Week 3: Other conjunctions.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Conjunction Fix
+      type: error-correction
+      description: Fix 10 double conjunction sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  possessives_advanced:
+    interference_patterns:
+    - pattern: Possessive formation error
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: The book of John is interesting.
+      example_correct: John's book is interesting.
+      explanation: Hebrew may use 'of' for possession where English uses 's for people.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew may express possession differently from English. English
+      uses 's for people and of for things.
+    teacher_tips:
+      how_to_explain: 'Teach: Use ''s for people (John''s book). Use of for things
+        (the leg of the table).'
+      where_to_start: Start with 's for people. Then teach of for things.
+      sequencing: 'Week 1: ''S for people. Week 2: Of for things. Week 3: Double possessive.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Possessive Formation
+      type: sentence-rewrite
+      description: Rewrite 10 possessive sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  phonology_advanced:
+    interference_patterns:
+    - pattern: Consonant cluster difficulty
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: I am wery happy.
+      example_correct: I am very happy.
+      explanation: Hebrew phonology differs from English, causing pronunciation errors
+        that affect spelling.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew phonological system differs from English, causing pronunciation
+      and spelling errors.
+    teacher_tips:
+      how_to_explain: 'Teach: Focus on sounds that don''t exist in {language}. Practice
+        minimal pairs.'
+      where_to_start: Start with the most problematic sounds.
+      sequencing: 'Week 1: Problem sounds. Week 2: Minimal pairs. Week 3: Connected
+        speech. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Pronunciation Practice
+      type: oral-drill
+      description: Practice 20 minimal pairs.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  adverbs_advanced:
+    interference_patterns:
+    - pattern: Adjective used as adverb
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: He speaks English good.
+      example_correct: He speaks English well.
+      explanation: Hebrew may not distinguish morphologically between adjectives and
+        adverbs. English requires -ly for most adverbs.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew may use the same form for adjectives and adverbs. English
+      requires -ly for most adverbs.
+    teacher_tips:
+      how_to_explain: 'Teach: Adjective describes a noun. Adverb describes a verb.
+        Most adverbs add -ly. Good -> well (irregular).'
+      where_to_start: Start with the -ly rule. Then teach exceptions.
+      sequencing: 'Week 1: -ly adverbs. Week 2: Exceptions (fast, hard, late). Week
+        3: Good vs well. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Adjective or Adverb
+      type: fill-in-the-blank
+      description: 15 sentences choosing correct form.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  discourse_pragmatics:
+    interference_patterns:
+    - pattern: Directness in requests
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: Give me the book.
+      example_correct: Could you give me the book, please?
+      explanation: Hebrew may use more direct requests than English. English uses
+        indirect questions and modals for politeness.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew pragmatic norms for requests, refusals, and apologies may
+      differ from English. Directness levels vary culturally.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses indirect requests for politeness. Could
+        you...? Would you mind...? Please + imperative.'
+      where_to_start: Start with requests. Then teach refusals and apologies.
+      sequencing: 'Week 1: Polite requests. Week 2: Refusals. Week 3: Apologies. Week
+        4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Politeness Practice
+      type: sentence-rewrite
+      description: Rewrite 10 direct sentences as polite requests.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  collocations:
+    interference_patterns:
+    - pattern: L1 collocation transfer
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: I make my homework.
+      example_correct: I do my homework.
+      explanation: Hebrew collocations (verb + noun combinations) often don't map
+        to English. English has fixed collocations.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew collocations differ from English. Verb + noun combinations
+      are often fixed and must be learned as chunks.
+    teacher_tips:
+      how_to_explain: 'Teach: English collocations: do homework (not make), take a
+        photo (not make), catch a cold (not have).'
+      where_to_start: Start with the most common collocation errors.
+      sequencing: 'Week 1: Verb + noun collocations. Week 2: Adjective + noun. Week
+        3: Preposition + noun. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Collocation Match
+      type: matching
+      description: Match 20 verbs to their correct noun partners.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  existential_there:
+    interference_patterns:
+    - pattern: Use of 'it is' for 'there is'
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: It is many people here.
+      example_correct: There are many people here.
+      explanation: Hebrew may use 'it' or other constructions for existential meaning.
+        English uses 'there is/are'.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew may not have an existential construction equivalent to
+      English 'there is/are'. Learners may use 'it is' instead.
+    teacher_tips:
+      how_to_explain: 'Teach: Use ''there is'' for existence. There is a book on the
+        table. There are many people.'
+      where_to_start: Start with there is/are. Then teach there was/were.
+      sequencing: 'Week 1: There is/are. Week 2: There was/were. Week 3: There will
+        be. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: There Is or It Is
+      type: fill-in-the-blank
+      description: 15 sentences choosing there is/it is.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  determiners:
+    interference_patterns:
+    - pattern: Use of 'much' with countable nouns
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: I have much friends.
+      example_correct: I have many friends.
+      explanation: Hebrew may not distinguish between countable and uncountable quantifiers.
+        English uses many for countable, much for uncountable.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew quantifier system may differ from English. English distinguishes
+      many (countable) vs much (uncountable).
+    teacher_tips:
+      how_to_explain: 'Teach: Many + countable (many books). Much + uncountable (much
+        water). A lot of + both.'
+      where_to_start: Start with many/much. Then teach few/little. Then teach a lot
+        of.
+      sequencing: 'Week 1: Many/much. Week 2: Few/little. Week 3: A lot of/plenty
+        of. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Quantifier Choice
+      type: fill-in-the-blank
+      description: 20 sentences choosing correct quantifier.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  question_formation_advanced:
+    interference_patterns:
+    - pattern: Omission of do-support in questions
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: You like coffee?
+      example_correct: Do you like coffee?
+      explanation: Hebrew may form questions by intonation alone or with question
+        particles. English requires do-support.
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew question formation differs from English. English requires
+      do/does/did for most questions (except with 'be' and modals).
+    teacher_tips:
+      how_to_explain: 'Teach: Do/Does/Did + subject + base verb? Do you like coffee?
+        (not You like coffee?)'
+      where_to_start: Start with yes/no questions. Then teach wh- questions.
+      sequencing: 'Week 1: Do/does questions. Week 2: Wh- questions. Week 3: Tag questions.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Question Formation
+      type: sentence-rewrite
+      description: Convert 15 statements to questions.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  negation_advanced:
+    interference_patterns:
+    - pattern: Double negation
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: I don't have no money.
+      example_correct: I don't have any money. / I have no money.
+      explanation: Hebrew may allow double negation. Standard English uses only one
+        negative per clause.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew may allow or require double negation. Standard English
+      uses single negation (not...any, no, never).
+    teacher_tips:
+      how_to_explain: 'Teach: One negative per clause. I don''t have any (not I don''t
+        have no). I have no money (correct single negation).'
+      where_to_start: Start with not...any. Then teach no/never/nobody.
+      sequencing: 'Week 1: Not...any. Week 2: No/never/nobody. Week 3: Double negation
+        errors. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Negation Fix
+      type: error-correction
+      description: Fix 10 double negation sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  conjunctions_advanced:
+    interference_patterns:
+    - pattern: Use of 'also' at sentence start
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: Also, I think we should go.
+      example_correct: I also think we should go.
+      explanation: Hebrew may place 'also' at sentence start. English prefers mid-sentence
+        position or 'furthermore'.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew conjunction and connector usage differs from English. Word
+      order and formality levels vary.
+    teacher_tips:
+      how_to_explain: 'Teach: ''Also'' goes mid-sentence (I also think). ''Furthermore''
+        or ''moreover'' for formal writing.'
+      where_to_start: Start with also/too/either. Then teach formal connectors.
+      sequencing: 'Week 1: Also/too. Week 2: Furthermore/moreover. Week 3: However/nevertheless.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Connector Placement
+      type: sentence-rewrite
+      description: Rewrite 10 sentences with correct connector placement.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  idiomatic_expressions_advanced:
+    interference_patterns:
+    - pattern: Literal translation of idioms
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: It rains ropes.
+      example_correct: It's raining cats and dogs.
+      explanation: Hebrew idioms don't translate literally. Learners may translate
+        word-for-word.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Every language has unique idioms. Hebrew idioms often have different
+      English equivalents.
+    teacher_tips:
+      how_to_explain: 'Teach: Idioms don''t translate literally. Learn the English
+        equivalent as a whole phrase.'
+      where_to_start: Start with the most common idiom categories.
+      sequencing: 'Week 1: Weather idioms. Week 2: Body idioms. Week 3: Animal idioms.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Idiom Match
+      type: matching
+      description: Match 15 idioms to their English equivalents.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  register_formality:
+    interference_patterns:
+    - pattern: Informal register in formal contexts
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: I wanna go.
+      example_correct: I would like to go.
+      explanation: Hebrew may not distinguish formality through verb forms. English
+        uses modal verbs and full forms for formality.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew may express formality differently from English. English
+      uses modal verbs, full forms, and specific vocabulary for formal contexts.
+    teacher_tips:
+      how_to_explain: 'Teach: Formal = would like (not wanna), could you (not can
+        you), I am (not I''m).'
+      where_to_start: Start with contractions. Then teach modal formality.
+      sequencing: 'Week 1: Contractions. Week 2: Modal formality. Week 3: Formal vocabulary.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Formal or Informal
+      type: sentence-rewrite
+      description: Rewrite 10 informal sentences in formal register.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  numbers_dates:
+    interference_patterns:
+    - pattern: Number format differences
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: The price is 1.000,50.
+      example_correct: The price is 1,000.50.
+      explanation: Hebrew may use different number formatting (comma vs period for
+        decimals/thousands).
+      frequency: 2
+      persistence: 1
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew number and date formatting conventions differ from English.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses period for decimals, comma for thousands.
+        Dates: month/day/year (US).'
+      where_to_start: Start with number formatting. Then teach dates.
+      sequencing: 'Week 1: Number format. Week 2: Date format. Week 3: Saying numbers
+        aloud. Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Number Conversion
+      type: sentence-rewrite
+      description: Convert 10 numbers/dates to English format.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  punctuation_conventions:
+    interference_patterns:
+    - pattern: Punctuation spacing differences
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: Hello ! How are you ?
+      example_correct: Hello! How are you?
+      explanation: Hebrew may use different spacing conventions before punctuation
+        marks.
+      frequency: 2
+      persistence: 1
+      communicative_impact: 1
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew punctuation conventions differ from English in spacing
+      and usage.
+    teacher_tips:
+      how_to_explain: 'Teach: English has no space before punctuation. Write: Hello!
+        (not Hello !).'
+      where_to_start: Start with spacing. Then teach quotation marks.
+      sequencing: 'Week 1: Spacing. Week 2: Quotation marks. Week 3: Other conventions.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Punctuation Fix
+      type: error-correction
+      description: Fix 10 punctuation errors.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  writing_conventions:
+    interference_patterns:
+    - pattern: Paragraph structure differences
+      example_l1: '[he] example'
+      example_gloss: gloss
+      example_wrong: A paragraph without a clear topic sentence.
+      example_correct: A paragraph with a clear topic sentence followed by supporting
+        details.
+      explanation: Hebrew writing conventions may differ from English. English academic
+        writing values explicit topic sentences and linear argumentation.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew rhetorical conventions differ from English. English values
+      directness, linear structure, and explicit topic sentences.
+    teacher_tips:
+      how_to_explain: 'Teach: English paragraphs start with a topic sentence. Each
+        paragraph has one main idea. Use transitions.'
+      where_to_start: Start with topic sentences. Then teach paragraph structure.
+      sequencing: 'Week 1: Topic sentences. Week 2: Paragraph structure. Week 3: Transitions.
+        Week 4: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Paragraph Analysis
+      type: error-correction
+      description: Identify and fix structural problems in 5 paragraphs.
+      duration: 15
+    sources:
+    - Swan & Smith (2001) Learner English
+  root_system:
+    interference_patterns:
+    - pattern: Root-and-pattern morphology interference
+      example_l1: כתב (katav) - write, מכתב (mikhtav) - letter
+      example_gloss: root k-t-b, pattern ma-a
+      example_wrong: I mikhtav to my friend.
+      example_correct: I wrote a letter to my friend.
+      explanation: Hebrew uses root-and-pattern morphology (3-consonant roots with
+        vowel patterns). English uses separate words.
+      frequency: 2
+      persistence: 1
+      communicative_impact: 1
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew morphology uses 3-consonant roots with vowel patterns to
+      create related words. English uses separate lexical items.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses separate words for related concepts. Write,
+        letter, writing — three separate words.'
+      where_to_start: Start with common root families.
+      sequencing: 'Week 1: Root families. Week 2: English equivalents. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Word Family Practice
+      type: matching
+      description: Match 15 Hebrew roots to English word families.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  definite_article_he:
+    interference_patterns:
+    - pattern: Definite article ה (ha-) prefix
+      example_l1: הספר (ha-sefer)
+      example_gloss: the-book
+      example_wrong: I read ha-book.
+      example_correct: I read the book.
+      explanation: Hebrew prefixes ה (ha-) for definiteness. English uses a separate
+        word 'the'.
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew attaches the definite article as a prefix (ה-). English
+      uses a separate word 'the'.
+    teacher_tips:
+      how_to_explain: 'Teach: English ''the'' is a separate word. The book (not ha-book).'
+      where_to_start: Start with the basic the + noun pattern.
+      sequencing: 'Week 1: The + noun. Week 2: Definite vs indefinite. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Article Practice
+      type: sentence-rewrite
+      description: Rewrite 10 Hebrew sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English
+  binyanim:
+    interference_patterns:
+    - pattern: Binyanim (verb conjugation patterns) interference
+      example_l1: פעל (pa'al) vs. הפעיל (hif'il)
+      example_gloss: do vs. cause-to-do
+      example_wrong: I did the work (using wrong binyan).
+      example_correct: I did the work.
+      explanation: Hebrew has 7 binyanim (verb conjugation patterns) that change meaning
+        (active, passive, causative). English uses separate verbs.
+      frequency: 2
+      persistence: 1
+      communicative_impact: 1
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    why_it_happens: Hebrew binyanim system creates verb families with different voices
+      and meanings. English uses separate verbs or auxiliary constructions.
+    teacher_tips:
+      how_to_explain: 'Teach: English uses separate verbs for different meanings.
+        Break (active) vs. be broken (passive).'
+      where_to_start: Start with active vs passive. Then teach causative.
+      sequencing: 'Week 1: Active/passive. Week 2: Causative. Week 3: Review.'
+    flagged: false
+    tier: 3
+    exercises:
+    - name: Voice Practice
+      type: sentence-rewrite
+      description: Rewrite 10 Hebrew sentences.
+      duration: 10
+    sources:
+    - Swan & Smith (2001) Learner English

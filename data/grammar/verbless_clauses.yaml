@@ -13,8 +13,16 @@ meaning:
   ccqs:
   - question: Does this clause have a finite verb?
     answer: No, it is a verbless clause.
+    purpose: Tests whether the learner understands a key concept of verbless_clauses.
+      This is fundamental for correct use of this grammar point.
   - question: Can you add a subject and verb to make it a full clause?
     answer: Yes, that is how verbless clauses are formed.
+    purpose: Tests whether the learner understands a key concept of verbless_clauses.
+      This is fundamental for correct use of this grammar point.
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      verbless clauses and explain why they are incorrect.
   example_generator:
     contexts:
     - formal writing
@@ -96,8 +104,8 @@ teaching:
     duration: 10
     adaptation_notes: Students transform full clauses into verbless clauses.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
+    Nouns and Determiners, §12.1-12.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -106,15 +114,23 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for verbless_clauses.
-  correction: Correct form.
-  explanation: This is a common error for verbless_clauses.
+- error: '*Although was tired, he worked.*'
+  correction: Although tired, he worked.
+  explanation: Verbless clauses omit subject and be.
   l1_groups:
   - Portuguese
   - Spanish
+  - Chinese
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, relative clauses are essential for precision and are a
+    marker of proficient writing.
+- note: In conversation, defining relative clauses are more common than non-defining.
+- note: In academic writing, both defining and non-defining relative clauses are used
+    extensively.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In academic writing, relative clauses are essential for precision and are
+    a marker of proficient writing.
+- note: In conversation, defining relative clauses are more common than non-defining.
+- note: In formal writing, 'whom' is used for object relative clauses.

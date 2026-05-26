@@ -13,8 +13,18 @@ meaning:
   ccqs:
   - question: Is the speaker reporting their own words or someone else's?
     answer: Someone else's — that is reporting.
+    purpose: Tests whether the learner understands that '-ed' adjectives describe
+      how someone feels (experiencer) while '-ing' adjectives describe what causes
+      the feeling (stimulus).
   - question: Is the reporting verb active or passive?
     answer: Passive = impersonal, Active = attributed.
+    purpose: Tests whether the learner can identify whether a sentence is active or
+      passive. Understanding voice is essential for choosing the correct verb form
+      and word order.
+  - question: What would be wrong with [alternative structure]?
+    answer: '[Alternative structure] would be incorrect because [reason].'
+    purpose: Tests whether the learner can identify common errors associated with
+      complex reporting and explain why they are incorrect.
   example_generator:
     contexts:
     - news reporting
@@ -93,8 +103,8 @@ teaching:
     duration: 15
     adaptation_notes: Students rewrite news headlines using passive reporting structures.
 sources:
-  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
-    Geographic Learning/Cengage.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8:
+    Passive Voice, §8.1-8.5'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
@@ -103,15 +113,56 @@ sources:
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: Common error for complex_reporting.
-  correction: Correct form.
-  explanation: This is a common error for complex_reporting.
+- error: '*It is said that he is the richest man is in the world.*'
+  correction: It is said that he is the richest man in the world.
+  explanation: 'Double ''is'': the passive reporting verb (''is said'') and the main
+    verb (''is the richest'') must not be duplicated. The ''that'' clause contains
+    one complete sentence with one main verb.'
   l1_groups:
   - Portuguese
   - Spanish
+  - Chinese
+  - Arabic
+- error: '*She asked me where was the station.*'
+  correction: She asked me where the station was.
+  explanation: Reported questions use statement word order (subject + verb), not question
+    word order (verb + subject). This is one of the most persistent reported errors
+    at B2-C1 level across all L1 backgrounds.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Arabic
+  - Korean
+- error: '*Experts claim the study is flawed that.*'
+  correction: Experts claim that the study is flawed.
+  explanation: The 'that' complementizer must come immediately after the reporting
+    verb, not at the end of the clause. In English, complementizer 'that' begins the
+    complement clause; it does not close it. Germanic L1 speakers transfer verb-final
+    patterns.
+  l1_groups:
+  - German
+  - Dutch
+  - Portuguese
+- error: '*Scientists deny there was a problem that existed.*'
+  correction: Scientists deny that there was a problem.
+  explanation: Doubling the clause content with a relative ('that existed') after
+    'deny that' creates redundancy. The 'that' clause after 'deny' already expresses
+    what is denied. This is a processing error from monitoring multiple clauses.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
 register_notes:
-- note: This grammar point is used in both formal and informal contexts.
+- note: In formal writing, this structure is standard and expected. Register variation
+    is marked by vocabulary and style rather than grammatical form.
+- note: In formal writing, avoid contractions and use full forms.
+- note: In conversation, contractions and reduced forms are common.
 dialectal_variation:
 - note: No significant BrE/AmE differences in the core grammar of this structure.
 discourse_notes:
-- note: This structure is used in both spoken and written discourse.
+- note: In conversation, this structure is used in everyday communication.
+- note: In academic writing, this structure appears in formal contexts and is a marker
+    of proficient English.
+- note: In professional contexts, correct use of this structure is expected in formal
+    writing.
