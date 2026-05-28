@@ -238,20 +238,21 @@ def run_content_qa() -> dict:
 
     all_updates = grammar_updates + l1_updates + activity_updates
 
-    # Log each update as an agent_action for Marcos to review
+    # Batch updates into one agent_action per category (avoid flooding with hundreds of individual actions)
     action_ids = []
-    for update in all_updates:
-        try:
-            action_id = auth_db.log_agent_action(
-                "ContentQA", "sync_proposed",
-                f"[{update['category']}] {update['description']}"
-            )
-            action_ids.append(action_id)
-        except Exception:
-            pass
+    for category, updates in [("grammar", grammar_updates), ("l1_interference", l1_updates), ("activities", activity_updates)]:
+        if updates:
+            try:
+                summary = f"{len(updates)} {category} files need sync: " + ", ".join(u["file"] for u in updates[:5])
+                if len(updates) > 5:
+                    summary += f" (+{len(updates) - 5} more)"
+                action_id = auth_db.log_agent_action("ContentQA", "sync_proposed", summary)
+                action_ids.append(action_id)
+            except Exception:
+                pass
 
-    # Log poor combinations
-    for combo in poor_combos:
+    # Log poor combinations (one per combo — these are high priority)
+    for combo in poor_combos[:5]:  # Cap at 5
         try:
             auth_db.log_agent_action(
                 "ContentQA", "poor_quality",

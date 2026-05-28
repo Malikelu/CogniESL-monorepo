@@ -50,7 +50,7 @@ class AuthError(Exception):
         super().__init__(message)
 
 
-def register(email: str, password: str) -> tuple[UserPublic, str]:
+def register(email: str, password: str, name: str = "") -> tuple[UserPublic, str]:
     """Create a new user. Returns (UserPublic, jwt_token). Raises AuthError on conflict."""
     email = email.lower().strip()
     if not email or "@" not in email:
@@ -63,13 +63,14 @@ def register(email: str, password: str) -> tuple[UserPublic, str]:
         raise AuthError("An account with this email already exists", status_code=409)
 
     pw_hash = hash_password(password)
-    user = create_user(email, pw_hash)
+    user = create_user(email, pw_hash, name=name)
     token = create_token(user.id)
     public = UserPublic(
         id=user.id,
         email=user.email,
         created_at=user.created_at,
         subscription_tier=user.subscription_tier,
+        name=user.name,
     )
     return public, token
 
@@ -87,6 +88,7 @@ def login(email: str, password: str) -> tuple[UserPublic, str]:
         email=user.email,
         created_at=user.created_at,
         subscription_tier=user.subscription_tier,
+        name=user.name,
     )
     return public, token
 

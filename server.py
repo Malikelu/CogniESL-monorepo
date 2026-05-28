@@ -91,10 +91,6 @@ def _clean_response(text: str) -> str:
     return text
 
 
-# Path to the built web UI (Next.js static export)
-_WEBUI_DIR = Path(__file__).parent / "webui" / "out"
-_UI_INDEX = _WEBUI_DIR / "index.html" if _WEBUI_DIR.exists() else None
-
 app = FastAPI()
 
 # Initialise databases on startup
@@ -147,22 +143,20 @@ def _run_daily_digest_scheduler():
 if os.getenv("FOUNDER_EMAIL") and os.getenv("RESEND_API_KEY"):
     _run_daily_digest_scheduler()
 
-# CORS — allow Next.js dev server (port 3000) to reach the API
+# CORS — allow marketing site and dev server to reach the API
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+    allow_origins=[
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+        "https://cogniesl.com",
+        "https://www.cogniesl.com",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-
-# Mount Next.js static export if it exists
-if _UI_INDEX and _UI_INDEX.exists():
-    _next_static = _WEBUI_DIR / "_next"
-    if _next_static.exists():
-        app.mount("/_next", StaticFiles(directory=str(_next_static)), name="next_static")
-        logging.info(f"Mounted _next/static from {_next_static}")
 
 # Mount generated slide HTML files so the presenter can load them by URL
 _SLIDES_MNT_DIR = Path(__file__).parent / "mnt"
@@ -171,45 +165,9 @@ if _SLIDES_MNT_DIR.exists():
     logging.info(f"Mounted slides from {_SLIDES_MNT_DIR}")
 
 
-# Root-level static assets (favicon, svg files in Next.js export root)
-_ROOT_ASSETS_DIR = _WEBUI_DIR if (_UI_INDEX and _UI_INDEX.exists()) else None
-if _ROOT_ASSETS_DIR:
-    app.mount("/root-assets", StaticFiles(directory=str(_ROOT_ASSETS_DIR)), name="root_assets")
-
-
-def _serve_file_or_index(path: str) -> FileResponse | JSONResponse:
-    """Serve a file from the web UI directory, falling back to index.html."""
-    if _ROOT_ASSETS_DIR is None:
-        return JSONResponse({"error": "No web UI"}, status_code=404)
-    # Try exact path first (e.g. favicon.ico, og-image.png)
-    file_path = _ROOT_ASSETS_DIR / path
-    if file_path.exists() and file_path.is_file():
-        return FileResponse(str(file_path))
-    # Try path + .html (Next.js static export creates e.g. materials.html for /materials)
-    html_path = _ROOT_ASSETS_DIR / (path + ".html")
-    if html_path.exists() and html_path.is_file():
-        return FileResponse(str(html_path))
-    # Try path/index.html (directory-style exports)
-    index_path = _ROOT_ASSETS_DIR / path / "index.html"
-    if index_path.exists() and index_path.is_file():
-        return FileResponse(str(index_path))
-    # SPA fallback: serve index.html for all unmatched routes
-    if _UI_INDEX and _UI_INDEX.exists():
-        return FileResponse(str(_UI_INDEX))
-    return JSONResponse({"error": "Not found"}, status_code=404)
-
-
 @app.get("/")
 async def healthcheck():
-    # Serve the web UI index if it exists
-    if _UI_INDEX and _UI_INDEX.exists():
-        return FileResponse(str(_UI_INDEX))
     return {"status": "ok", "service": "CogniESL"}
-
-
-@app.get("/favicon.ico")
-async def favicon():
-    return _serve_file_or_index("favicon.ico")
 
 
 @app.get("/api/healthcheck")
@@ -272,7 +230,7 @@ async def api_register(request: Request):
     except Exception:
         return JSONResponse({"error": "Invalid JSON"}, status_code=400)
     try:
-        user, token = auth_register(body.get("email", ""), body.get("password", ""))
+        user, token = auth_register(body.get("email", ""), body.get("password", ""), body.get("name", ""))
         return JSONResponse({"user": vars(user), "token": token})
     except AuthError as e:
         return JSONResponse({"error": e.message}, status_code=e.status_code)
@@ -303,6 +261,7 @@ async def api_me(request: Request):
     return JSONResponse({
         "id": user.id,
         "email": user.email,
+        "name": user.name,
         "created_at": user.created_at,
         "subscription_tier": user.subscription_tier,
     })
@@ -323,6 +282,34 @@ async def api_usage(request: Request):
         "monthly_generations": monthly,
         "tier_limit": tier_limit,
         "subscription_tier": user.subscription_tier,
+    })
+
+
+@app.get("/api/auth/stats")
+async def api_stats(request: Request):
+    """Return gamification stats for the authenticated user."""
+    auth_header = request.headers.get("Authorization", "")
+    if not auth_header.startswith("Bearer "):
+        return JSONResponse({"error": "Unauthorized"}, status_code=401)
+    user = get_current_user(auth_header[7:])
+    if not user:
+        return JSONResponse({"error": "Invalid or expired token"}, status_code=401)
+    activity = _auth_db.get_user_activity(user.id)
+    stats = activity.get("stats", {})
+    total = stats.get("total_generations", 0)
+    # Derive unique languages taught from generation records
+    langs: set[str] = set()
+    for g in activity.get("generations", []):
+        for lang in (g.get("l1_languages") or "").split(","):
+            lang = lang.strip()
+            if lang:
+                langs.add(lang)
+    return JSONResponse({
+        "total_generations": total,
+        "hours_saved": round(total * 0.75, 1),
+        "languages_taught": sorted(langs),
+        "languages_count": len(langs),
+        "member_since": stats.get("first_seen", ""),
     })
 
 
@@ -475,23 +462,24 @@ async def get_response(request: Request):
     if not message:
         return JSONResponse({"error": "Message is required"}, status_code=400)
 
+    # Auth required — anonymous generation is not allowed.
+    auth_header = request.headers.get("Authorization", "")
+    if not auth_header.startswith("Bearer "):
+        return JSONResponse({"error": "Authentication required"}, status_code=401)
+    _authed_user = get_current_user(auth_header[7:])
+    if not _authed_user:
+        return JSONResponse({"error": "Invalid or expired token"}, status_code=401)
+
     session_id = request.headers.get("X-Session-ID", request.client.host)
     agent, ctx = get_session(session_id)
 
-    # Attach user_id to the context if the request is authenticated
-    auth_header = request.headers.get("Authorization", "")
-    _authed_user = None
-    if auth_header.startswith("Bearer "):
-        _authed_user = get_current_user(auth_header[7:])
-        if _authed_user:
-            ctx.user_id = _authed_user.id  # type: ignore[attr-defined]
-            # Inject the user's email so the agent never needs to ask for it
-            message = (
-                f"<memory-context>teacher_email={_authed_user.email} — "
-                f"the teacher is logged in. Store this as teacher_email immediately. "
-                f"Do NOT ask for their email address at any point in this conversation.</memory-context>\n"
-                + message
-            )
+    ctx.user_id = _authed_user.id  # type: ignore[attr-defined]
+    message = (
+        f"<memory-context>teacher_email={_authed_user.email} — "
+        f"the teacher is logged in. Store this as teacher_email immediately. "
+        f"Do NOT ask for their email address at any point in this conversation.</memory-context>\n"
+        + message
+    )
 
     # Free-tier enforcement: block generation if user has hit their monthly limit
     _GENERATION_TRIGGER_WORDS = (
@@ -500,7 +488,7 @@ async def get_response(request: Request):
     )
     _message_lower = message.lower()
     _is_generation_trigger = any(w in _message_lower for w in _GENERATION_TRIGGER_WORDS)
-    if _authed_user and _is_generation_trigger:
+    if _is_generation_trigger:
         if _authed_user.subscription_tier == "free":
             _monthly = _auth_db.count_monthly_generations(_authed_user.id)
             if _monthly >= _auth_db.get_tier_limit("free"):
@@ -1541,13 +1529,6 @@ async def api_founding_member_status():
         "slots_total": _FOUNDING_MEMBER_SLOTS_TOTAL,
     })
 
-
-@app.api_route("/{path:path}", methods=["GET"])
-async def spa_fallback(path: str):
-    """Catch-all: serve static files from the built UI, or index.html for SPA routes."""
-    if path.startswith(("api/", "cogniesl/", "download/", "slides/", "admin/")):
-        return JSONResponse({"error": "Not found"}, status_code=404)
-    return _serve_file_or_index(path)
 
 
 if __name__ == "__main__":

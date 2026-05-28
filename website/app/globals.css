@@ -1,0 +1,303 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* ============================================
+     COGNIESL DESIGN SYSTEM v3 — Warmer, Friendlier
+     Refined based on target audience feedback:
+     Primarily women, 45-55, ESL teachers
+     ============================================ */
+
+  /* Primary: Brand Teal — matches brand/BRAND_GUIDELINES.md #0b7272 */
+  --color-primary-50: #e6f4f4;
+  --color-primary-100: #b3d9d9;
+  --color-primary-200: #80bfbf;
+  --color-primary-300: #4da4a4;
+  --color-primary-400: #1a9090;
+  --color-primary-500: #0b7272;
+  --color-primary-600: #095c5c;
+  --color-primary-700: #074545;
+  --color-primary-800: #042e2e;
+  --color-primary-900: #021717;
+
+  /* Secondary: Warm Coral — energy, warmth, approachability */
+  --color-secondary-50: #FFF1F0;
+  --color-secondary-100: #FFE0DE;
+  --color-secondary-200: #FFC5C1;
+  --color-secondary-300: #FFA9A4;
+  --color-secondary-400: #FF8D87;
+  --color-secondary-500: #FF6B6B;
+  --color-secondary-600: #E55A5A;
+  --color-secondary-700: #CC4949;
+  --color-secondary-800: #993333;
+  --color-secondary-900: #662222;
+
+  /* Accent: Soft Gold — creativity, warmth, premium */
+  --color-accent-50: #FEF8EF;
+  --color-accent-100: #FDEFD5;
+  --color-accent-200: #FBE3B0;
+  --color-accent-300: #F9D78B;
+  --color-accent-400: #F7CB66;
+  --color-accent-500: #F4A261;
+  --color-accent-600: #D98E4E;
+  --color-accent-700: #BE7A3B;
+  --color-accent-800: #936628;
+  --color-accent-900: #685215;
+
+  /* Success: Mint green */
+  --color-success-50: #E8FCF8;
+  --color-success-100: #B8F5EA;
+  --color-success-200: #88EEDC;
+  --color-success-300: #58E7CE;
+  --color-success-400: #28E0C0;
+  --color-success-500: #2EC4B6;
+  --color-success-600: #259D92;
+  --color-success-700: #1C766D;
+  --color-success-800: #134E49;
+  --color-success-900: #0A2724;
+
+  /* Neutrals: Warm grays (slightly warmer than before) */
+  --color-neutral-50: #FAFAF9;
+  --color-neutral-100: #F5F5F4;
+  --color-neutral-200: #E7E5E4;
+  --color-neutral-300: #D6D3D1;
+  --color-neutral-400: #A8A29E;
+  --color-neutral-500: #78716C;
+  --color-neutral-600: #57534E;
+  --color-neutral-700: #44403C;
+  --color-neutral-800: #292524;
+  --color-neutral-900: #1C1917;
+  --color-neutral-950: #0C0A09;
+
+  /* Typography — Nunito for body (friendlier), Inter for headings */
+  --font-heading: var(--font-inter), system-ui, sans-serif;
+  --font-body: var(--font-nunito), system-ui, sans-serif;
+  --font-rounded: var(--font-nunito), system-ui, sans-serif;
+
+  /* Shadows — softer, warmer */
+  --shadow-glow: 0 0 40px -10px rgba(13, 115, 119, 0.25);
+  --shadow-glow-lg: 0 0 60px -15px rgba(13, 115, 119, 0.3);
+  --shadow-glow-secondary: 0 0 40px -10px rgba(255, 107, 107, 0.2);
+  --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.04), 0 1px 2px -1px rgb(0 0 0 / 0.04);
+  --shadow-card-hover: 0 8px 20px -6px rgb(0 0 0 / 0.06), 0 4px 6px -4px rgb(0 0 0 / 0.03);
+  --shadow-elevated: 0 16px 32px -8px rgb(0 0 0 / 0.08);
+
+  /* Animations */
+  --animate-fade-in: fadeIn 0.5s ease-out forwards;
+  --animate-fade-in-up: fadeInUp 0.6s ease-out forwards;
+  --animate-fade-in-down: fadeInDown 0.4s ease-out forwards;
+  --animate-slide-in-right: slideInRight 0.5s ease-out forwards;
+  --animate-pulse-soft: pulseSoft 3s ease-in-out infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-shimmer: shimmer 2s linear infinite;
+  --animate-bounce-gentle: bounceGentle 2s ease-in-out infinite;
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(24px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-16px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes slideInRight {
+    0% { opacity: 0; transform: translateX(24px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  @keyframes pulseSoft {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  @keyframes bounceGentle {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+  }
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-neutral-50);
+  color: var(--color-neutral-800);
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+html.dark body {
+  background-color: var(--color-neutral-950);
+  color: var(--color-neutral-100);
+}
+
+::selection {
+  background-color: var(--color-primary-200);
+  color: var(--color-primary-900);
+}
+
+.dark ::selection {
+  background-color: var(--color-primary-700);
+  color: var(--color-primary-100);
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+/* Gradient text with fallback */
+.gradient-text {
+  color: var(--color-primary-500);
+  background: linear-gradient(135deg, var(--color-primary-500) 0%, var(--color-success-500) 50%, var(--color-accent-500) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-warm {
+  color: var(--color-secondary-500);
+  background: linear-gradient(135deg, var(--color-secondary-500) 0%, var(--color-accent-500) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glass morphism */
+.glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.dark .glass {
+  background: rgba(12, 10, 9, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Shimmer loading effect */
+.shimmer {
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.4) 50%, transparent 100%);
+  background-size: 200% 100%;
+  animation: shimmer 2s linear infinite;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Scroll reveal — CSS-only approach using @starting-style and animation-timeline where supported */
+/* Fallback: elements start visible. Progressive enhancement only. */
+@supports (animation-timeline: scroll()) {
+  .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% entry 25%;
+  }
+}
+
+/* Highlighted text in error examples */
+.error-text {
+  color: var(--color-secondary-600);
+  text-decoration: line-through;
+  text-decoration-color: var(--color-secondary-400);
+}
+
+.correct-text {
+  color: var(--color-success-600);
+  font-weight: 600;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-neutral-100);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-neutral-300);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-neutral-400);
+}
+
+/* Prose styles for blog content */
+.prose {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+
+.prose h2 {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose h3 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose p {
+  margin-bottom: 1.25rem;
+}
+
+.prose ul, .prose ol {
+  margin-bottom: 1.25rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+}
+
+.prose strong {
+  color: var(--color-neutral-900);
+  font-weight: 600;
+}
+
+.dark .prose strong {
+  color: var(--color-neutral-100);
+}

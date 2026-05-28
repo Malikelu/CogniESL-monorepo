@@ -41,9 +41,16 @@ def init_auth_db() -> None:
                 email TEXT UNIQUE NOT NULL,
                 password_hash TEXT NOT NULL,
                 created_at TEXT NOT NULL,
-                subscription_tier TEXT NOT NULL DEFAULT 'free'
+                subscription_tier TEXT NOT NULL DEFAULT 'free',
+                name TEXT NOT NULL DEFAULT ''
             )
         """)
+        # Migrate existing deployments that pre-date the name column
+        try:
+            conn.execute("ALTER TABLE users ADD COLUMN name TEXT NOT NULL DEFAULT ''")
+            conn.commit()
+        except Exception:
+            pass  # Column already exists
         conn.execute("""
             CREATE TABLE IF NOT EXISTS materials (
                 id TEXT PRIMARY KEY,
@@ -272,18 +279,19 @@ def init_auth_db() -> None:
 
 # ─── User operations ─────────────────────────────────────────────────────────
 
-def create_user(email: str, password_hash: str) -> User:
+def create_user(email: str, password_hash: str, name: str = "") -> User:
     user = User(
         id=str(uuid.uuid4()),
         email=email.lower().strip(),
         password_hash=password_hash,
         created_at=datetime.now(timezone.utc).isoformat(),
         subscription_tier="free",
+        name=name.strip(),
     )
     with _conn() as conn:
         conn.execute(
-            "INSERT INTO users (id, email, password_hash, created_at, subscription_tier) VALUES (?,?,?,?,?)",
-            (user.id, user.email, user.password_hash, user.created_at, user.subscription_tier),
+            "INSERT INTO users (id, email, password_hash, created_at, subscription_tier, name) VALUES (?,?,?,?,?,?)",
+            (user.id, user.email, user.password_hash, user.created_at, user.subscription_tier, user.name),
         )
         conn.commit()
     return user

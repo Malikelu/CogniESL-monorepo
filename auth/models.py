@@ -11,6 +11,7 @@ class User:
     created_at: str
     subscription_tier: str = "free"  # free | pro
     stripe_customer_id: str = ""
+    name: str = ""
 
 
 @dataclass
@@ -20,3 +21,4 @@ class UserPublic:
     email: str
     created_at: str
     subscription_tier: str
+    name: str = ""

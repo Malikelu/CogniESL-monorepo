@@ -214,7 +214,7 @@ def run_seo_agent(max_posts: int = 3) -> dict:
 
     if not top_grammar or not top_l1:
         log.info("No generation data yet — skipping SEO drafts")
-        return {"type": "seo_report", "posts_drafted": 0, "reason": "No generation data yet"}
+        return {"type": "seo_report", "posts_drafted": 0, "reason": "No generation data yet", "action_ids": []}
 
     # Draft posts for top combinations
     drafts = []

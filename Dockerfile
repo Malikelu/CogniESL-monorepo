@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libpango-1.0-0 libpangoft2-1.0-0 libharfbuzz-subset0 libcairo2 \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Node.js 20 LTS
+# Install Node.js 20 LTS (needed for dom-to-pptx)
 RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
     && apt-get install -y nodejs \
     && rm -rf /var/lib/apt/lists/*
@@ -32,8 +32,8 @@ RUN pip install --upgrade pip && \
 # Copy everything else
 COPY . .
 
-# Install Node dependencies (root for dom-to-pptx, webui for Next.js)
-RUN npm install && cd webui && npm install && node node_modules/next/dist/bin/next build
+# Install root Node dependencies (dom-to-pptx only — webui removed, served by Vercel)
+RUN npm install
 
 # Copy read-only grammar/L1/activity data to /app/static-data BEFORE the Railway Volume
 # overlays /app/data at runtime. The Volume is mounted at /app/data to persist SQLite
