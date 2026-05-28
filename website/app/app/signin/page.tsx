@@ -88,7 +88,7 @@ export default function SignInPage() {
                 <label htmlFor="password" className="block text-sm font-medium text-neutral-700 dark:text-neutral-300">
                   Password
                 </label>
-                <Link href="/forgot-password" className="text-xs text-primary-600 dark:text-primary-400 hover:underline">
+                <Link href="/app/forgot-password" className="text-xs text-primary-600 dark:text-primary-400 hover:underline">
                   Forgot password?
                 </Link>
               </div>
