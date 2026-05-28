@@ -172,7 +172,7 @@ async def _generate_one(key: str) -> bool:
 
         # Check if PPTX was generated
         pptx_candidates = list(
-            (Path("mnt") / project_name / "presentations").glob("*.pptx")
+            (Path(os.getenv("COGNIESL_DATA_DIR", Path(__file__).parent.parent)) / "mnt" / project_name / "presentations").glob("*.pptx")
         )
         if not pptx_candidates:
             log.warning(f"No PPTX found for {key} after generation")

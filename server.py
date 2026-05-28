@@ -159,10 +159,10 @@ app.add_middleware(
 
 
 # Mount generated slide HTML files so the presenter can load them by URL
-_SLIDES_MNT_DIR = Path(__file__).parent / "mnt"
-if _SLIDES_MNT_DIR.exists():
-    app.mount("/slides", StaticFiles(directory=str(_SLIDES_MNT_DIR)), name="slides")
-    logging.info(f"Mounted slides from {_SLIDES_MNT_DIR}")
+_SLIDES_MNT_DIR = Path(os.getenv("COGNIESL_DATA_DIR", Path(__file__).parent)) / "mnt"
+_SLIDES_MNT_DIR.mkdir(parents=True, exist_ok=True)
+app.mount("/slides", StaticFiles(directory=str(_SLIDES_MNT_DIR)), name="slides")
+logging.info(f"Mounted slides from {_SLIDES_MNT_DIR}")
 
 
 @app.get("/")
@@ -209,7 +209,7 @@ async def download_file(job_id: str, filename: str):
 
     # Sanitise filename — no path traversal
     safe_name = Path(filename).name
-    project_dir = Path(__file__).parent / "mnt" / project_name
+    project_dir = Path(os.getenv("COGNIESL_DATA_DIR", Path(__file__).parent)) / "mnt" / project_name
     for subdir in ("presentations", "documents"):
         candidate = project_dir / subdir / safe_name
         if candidate.exists() and candidate.is_file():
@@ -644,7 +644,7 @@ async def api_job_slides(job_id: str):
     if not project_name:
         return JSONResponse({"error": "No project"}, status_code=404)
 
-    presentations_dir = Path(__file__).parent / "mnt" / project_name / "presentations"
+    presentations_dir = Path(os.getenv("COGNIESL_DATA_DIR", Path(__file__).parent)) / "mnt" / project_name / "presentations"
     if not presentations_dir.exists():
         return JSONResponse({"error": "Slides not found"}, status_code=404)
 
@@ -692,7 +692,7 @@ async def api_job_bundle(job_id: str):
     if not project_name:
         return JSONResponse({"error": "No project"}, status_code=404)
 
-    presentations_dir = Path(__file__).parent / "mnt" / project_name / "presentations"
+    presentations_dir = Path(os.getenv("COGNIESL_DATA_DIR", Path(__file__).parent)) / "mnt" / project_name / "presentations"
 
     # Inline _theme.css so it works without the server
     theme_css = ""

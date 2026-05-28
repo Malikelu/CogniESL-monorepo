@@ -67,6 +67,15 @@ class QueueGenerationJob(BaseTool):
     )
 
     def run(self) -> str:
+        # Get user_id from agent context (set by server.py from JWT)
+        _user_id = None
+        try:
+            _ctx = getattr(self, '_shared_state', None)
+            if _ctx:
+                _user_id = getattr(_ctx, 'user_id', None)
+        except Exception:
+            pass
+
         # ── Master Repository cache check ──────────────────────────────────────
         # For single-L1, single-level requests, check whether a pre-generated
         # deck already exists. If so, copy it to the project folder and instruct
@@ -95,6 +104,7 @@ class QueueGenerationJob(BaseTool):
                         l1_languages=self.l1_languages,
                         age_group=self.age_group,
                         formats=self.formats,
+                        user_id=_user_id,
                     )
                     return (
                         f"CACHE HIT ✅ job_id={job_id} — pre-generated slides found for "
@@ -111,6 +121,7 @@ class QueueGenerationJob(BaseTool):
             l1_languages=self.l1_languages,
             age_group=self.age_group,
             formats=self.formats,
+            user_id=_user_id,
         )
         base_url = os.getenv("COGNIESL_BASE_URL", "http://localhost:8080")
         msg = f"Job registered. job_id={job_id}"

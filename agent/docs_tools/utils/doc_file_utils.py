@@ -5,7 +5,10 @@ from pathlib import Path
 
 
 def get_mnt_dir() -> Path:
-    return Path("/app/mnt") if Path("/.dockerenv").is_file() else Path(__file__).parents[3] / "mnt"
+    import os
+    if Path("/.dockerenv").is_file():
+        return Path(os.getenv("COGNIESL_DATA_DIR", "/app/data")) / "mnt"
+    return Path(__file__).parents[3] / "mnt"
 
 
 def get_project_dir(project_name: str) -> Path:
