@@ -73,23 +73,32 @@ export function useAuth() {
     };
   }, [logout]);
 
-  // Load from localStorage on mount
+  // Load from localStorage on mount — set state immediately from cache so the
+  // navbar renders correctly before the /api/auth/me round-trip completes.
   useEffect(() => {
     try {
       const token = localStorage.getItem("cogniesl_token");
       const userStr = localStorage.getItem("cogniesl_user");
       if (token && userStr) {
-        const user = JSON.parse(userStr) as User;
+        const cached = JSON.parse(userStr) as User;
+        // Show the user immediately from cache — no loading flicker
+        setState({ user: cached, token, loading: false });
+        // Then verify + refresh from server in background
         fetch(`${API_URL}/api/auth/me`, {
           headers: { Authorization: `Bearer ${token}` },
         })
           .then((res) => {
-            if (res.ok) return res.json().then((data) => setState({ user: { ...user, ...data }, token, loading: false }));
+            if (res.ok) return res.json().then((data) => {
+              const fresh = { ...cached, ...data };
+              localStorage.setItem("cogniesl_user", JSON.stringify(fresh));
+              setState({ user: fresh, token, loading: false });
+            });
+            // Token rejected — clear and log out
             clearStorage();
             setState({ user: null, token: null, loading: false });
           })
           .catch(() => {
-            setState({ user: null, token: null, loading: false });
+            // Network error — keep the cached user, don't log them out
           });
       } else {
         setState({ user: null, token: null, loading: false });

@@ -80,16 +80,6 @@ export function AppNavbar() {
             >
               Blog
             </Link>
-            <Link
-              href="/pricing"
-              className={`text-sm font-medium transition-colors ${
-                pathname === "/pricing"
-                  ? "text-primary-600 dark:text-primary-400"
-                  : "text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100"
-              }`}
-            >
-              Pricing
-            </Link>
           </div>
 
           <div className="flex items-center gap-3">

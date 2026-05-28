@@ -250,7 +250,7 @@ export default function ChatPage() {
       setIsGenerating(false);
       const errorMsg =
         err instanceof Error && err.name === "AbortError"
-          ? "Generation is taking longer than expected. Your download link will arrive by email when ready."
+          ? "Generation is taking longer than expected. Please refresh the page in a few minutes — your materials will be ready to view here."
           : "Sorry, there was an error connecting to the server. Please try again.";
       setMessages((prev) => [
         ...prev,
@@ -425,7 +425,7 @@ export default function ChatPage() {
               </button>
             </div>
             <p className="text-[10px] text-neutral-400 text-center mt-2">
-              Enter to send · Shift+Enter for newline · Materials delivered to your email
+              Enter to send · Shift+Enter for newline · View and present your materials right here
             </p>
           </form>
         </Container>
