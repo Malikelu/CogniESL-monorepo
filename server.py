@@ -450,6 +450,28 @@ async def api_delete_material(material_id: str, request: Request):
     return JSONResponse({"deleted": True})
 
 
+@app.post("/api/materials/{material_id}/edits")
+async def api_log_material_edit(material_id: str, request: Request):
+    user, err = _require_auth(request)
+    if err:
+        return err
+    mat = _auth_db.get_material(material_id, user.id)
+    if not mat:
+        return JSONResponse({"error": "Not found"}, status_code=404)
+    try:
+        body = await request.json()
+    except Exception:
+        return JSONResponse({"error": "Invalid JSON"}, status_code=400)
+    edit_id = _auth_db.log_material_edit(
+        material_id=material_id,
+        user_id=user.id,
+        edit_type=body.get("edit_type", "slide_change"),
+        description=body.get("description", ""),
+        slide_index=body.get("slide_index"),
+    )
+    return JSONResponse({"ok": True, "edit_id": edit_id})
+
+
 @app.post("/cogniesl/get_response")
 async def get_response(request: Request):
     """Persistent agent endpoint — maintains conversation context per session."""

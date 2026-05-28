@@ -143,3 +143,50 @@ export async function apiJobStatus(jobId: string): Promise<Job | null> {
 export function getDownloadUrl(jobId: string, filename: string): string {
   return `${API_URL}/download/${jobId}/${filename}`;
 }
+
+// ─── Materials ────────────────────────────────────────────────────────────────
+
+export interface Material {
+  id: string;
+  job_id: string | null;
+  project_name: string;
+  grammar_point: string;
+  l1_languages: string;
+  age_group: string;
+  formats: string;
+  slide_count: number;
+  html_bundle_path: string | null;
+  pptx_path: string | null;
+  worksheet_pdf_path: string | null;
+  worksheet_docx_path: string | null;
+  activity_pdf_path: string | null;
+  activity_docx_path: string | null;
+  flashcard_pdf_path: string | null;
+  progress_tracker_pdf_path: string | null;
+  created_at: string;
+}
+
+export async function apiGetMaterial(materialId: string): Promise<Material | null> {
+  const token = getAuthToken();
+  if (!token) return null;
+  const res = await fetch(`${API_URL}/api/materials/${materialId}`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  if (!res.ok) return null;
+  return res.json();
+}
+
+export async function apiLogEdit(
+  materialId: string,
+  editType: string,
+  description: string,
+  slideIndex?: number,
+): Promise<void> {
+  const token = getAuthToken();
+  if (!token) return;
+  await fetch(`${API_URL}/api/materials/${materialId}/edits`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+    body: JSON.stringify({ edit_type: editType, description, slide_index: slideIndex }),
+  });
+}

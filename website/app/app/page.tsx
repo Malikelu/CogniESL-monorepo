@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useRef, useEffect, useCallback, type FormEvent, type KeyboardEvent } from "react";
+import { useState, useRef, useEffect, useCallback, type FormEvent, type KeyboardEvent, Suspense } from "react";
 import Link from "next/link";
 import { useAuth } from "@/hooks/useAuth";
-import { apiChat, apiStats, getDownloadUrl, type UserStats } from "@/lib/api";
+import { useSearchParams } from "next/navigation";
+import { apiChat, apiStats, apiGetMaterial, apiLogEdit, getDownloadUrl, type UserStats, type Material } from "@/lib/api";
 import { Container } from "@/components/ui/Container";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -169,18 +170,24 @@ function renderInline(text: string): React.ReactNode {
 
 // ─── Main Page ───────────────────────────────────────────────────────────────
 
-export default function ChatPage() {
+function ChatPage() {
   const { user, isAuthenticated, loading: authLoading } = useAuth();
+  const searchParams = useSearchParams();
+  const editMaterialId = searchParams.get("edit");
+
   const [stats, setStats] = useState<UserStats | null>(null);
-  const [messages, setMessages] = useState<Message[]>([
-    {
-      id: "welcome",
-      role: "assistant" as const,
-      content:
-        "Hi! I'm CogniESL — your AI teaching assistant.\n\nTell me what materials you need and I'll generate them from our validated ESL database.\n\n**For example:**\n- \"Slides for present simple for Brazilian adults\"\n- \"Worksheet on articles for Spanish-speaking teens\"\n- \"Flashcards for past simple errors for Chinese speakers\"\n- \"Activity guide for third conditional for Japanese adults\"",
-      timestamp: new Date(),
-    },
-  ]);
+  const [editMaterial, setEditMaterial] = useState<Material | null>(null);
+  const [editContextInjected, setEditContextInjected] = useState(false);
+
+  const WELCOME_MESSAGE: Message = {
+    id: "welcome",
+    role: "assistant" as const,
+    content:
+      "Hi! I'm CogniESL — your AI teaching assistant.\n\nTell me what materials you need and I'll generate them from our validated ESL database.\n\n**For example:**\n- \"Slides for present simple for Brazilian adults\"\n- \"Worksheet on articles for Spanish-speaking teens\"\n- \"Flashcards for past simple errors for Chinese speakers\"\n- \"Activity guide for third conditional for Japanese adults\"",
+    timestamp: new Date(),
+  };
+
+  const [messages, setMessages] = useState<Message[]>([WELCOME_MESSAGE]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [isGenerating, setIsGenerating] = useState(false);
@@ -196,6 +203,38 @@ export default function ChatPage() {
       apiStats().then((s) => { if (s) setStats(s); });
     }
   }, [isAuthenticated]);
+
+  // Load the material being edited and inject context into the agent
+  useEffect(() => {
+    if (!editMaterialId || !isAuthenticated || editContextInjected) return;
+    apiGetMaterial(editMaterialId).then((mat) => {
+      if (!mat) return;
+      setEditMaterial(mat);
+
+      // Replace welcome message with edit-mode greeting
+      setMessages([{
+        id: "welcome",
+        role: "assistant" as const,
+        content: `I've loaded your material: **${mat.grammar_point}** (${mat.l1_languages}, ${mat.age_group}).\n\nWhat would you like to change? For example:\n- "Change the L1 slides to Korean"\n- "Add more practice examples"\n- "Fix slide 3 — the example is wrong"`,
+        timestamp: new Date(),
+      }]);
+
+      // Silently inject context into the agent session so it knows the job
+      const contextMsg =
+        `<memory-context>EDIT SESSION — do NOT generate new materials from scratch. ` +
+        `The teacher is editing an existing set. ` +
+        `job_id=${mat.job_id} project_name=${mat.project_name} ` +
+        `grammar_point=${mat.grammar_point} l1_languages=${mat.l1_languages} ` +
+        `age_group=${mat.age_group} ` +
+        `html_bundle_path=${mat.html_bundle_path ?? "none"} ` +
+        `Use ModifySlide to change specific slides, then BuildOfflineBundle to rebuild. ` +
+        `Do NOT call QueueGenerationJob.</memory-context> ` +
+        `I am editing existing materials for: ${mat.grammar_point}, ${mat.l1_languages}, ${mat.age_group}. Please confirm you have loaded this context.`;
+
+      apiChat(contextMsg).catch(() => {});
+      setEditContextInjected(true);
+    });
+  }, [editMaterialId, isAuthenticated, editContextInjected]);
 
   const scrollToBottom = useCallback(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -235,6 +274,10 @@ export default function ChatPage() {
 
       if (cleaned.includes("/download/")) {
         setIsGenerating(false);
+        // Log the edit if this was an edit session
+        if (editMaterial) {
+          apiLogEdit(editMaterial.id, "slide_change", trimmed).catch(() => {});
+        }
       }
 
       setMessages((prev) => [
@@ -275,7 +318,7 @@ export default function ChatPage() {
     }
   };
 
-  const isOnlyWelcome = messages.length === 1 && messages[0].id === "welcome";
+  const isOnlyWelcome = messages.length === 1 && messages[0].id === "welcome" && !editMaterial;
 
   // Redirect to sign in if not authenticated
   if (!authLoading && !isAuthenticated) {
@@ -311,8 +354,21 @@ export default function ChatPage() {
 
   return (
     <div className="flex flex-col h-[calc(100vh-64px)]">
+      {/* Edit mode banner */}
+      {editMaterial && (
+        <div className="border-b border-primary-200 dark:border-primary-800 bg-primary-50 dark:bg-primary-900/20 px-4 py-2">
+          <div className="mx-auto max-w-3xl flex items-center justify-between text-xs">
+            <span className="text-primary-700 dark:text-primary-300 font-medium">
+              ✏️ Editing: <strong>{editMaterial.grammar_point}</strong> · {editMaterial.l1_languages} · {editMaterial.age_group}
+            </span>
+            <a href="/app/materials" className="text-primary-600 dark:text-primary-400 hover:underline">
+              ← Back to My Materials
+            </a>
+          </div>
+        </div>
+      )}
       {/* Stats bar — only shown when user has at least one generation */}
-      {stats && stats.total_generations > 0 && (
+      {!editMaterial && stats && stats.total_generations > 0 && (
         <div className="border-b border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950 px-4 py-2">
           <div className="mx-auto max-w-3xl flex items-center gap-6 text-xs text-neutral-500 dark:text-neutral-400">
             <span>
@@ -431,5 +487,13 @@ export default function ChatPage() {
         </Container>
       </div>
     </div>
+  );
+}
+
+export default function ChatPageWrapper() {
+  return (
+    <Suspense>
+      <ChatPage />
+    </Suspense>
   );
 }

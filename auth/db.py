@@ -251,6 +251,18 @@ def init_auth_db() -> None:
                 marcos_notes TEXT DEFAULT ''
             )
         """)
+        conn.execute("""
+            CREATE TABLE IF NOT EXISTS edit_log (
+                id TEXT PRIMARY KEY,
+                material_id TEXT NOT NULL,
+                user_id TEXT NOT NULL,
+                edit_type TEXT NOT NULL DEFAULT 'slide_change',
+                description TEXT DEFAULT '',
+                slide_index INTEGER,
+                created_at TEXT NOT NULL,
+                FOREIGN KEY (material_id) REFERENCES materials(id)
+            )
+        """)
         for col_sql in [
             "ALTER TABLE materials ADD COLUMN level TEXT NOT NULL DEFAULT ''",
             "ALTER TABLE users ADD COLUMN stripe_customer_id TEXT DEFAULT ''",
@@ -400,6 +412,34 @@ def delete_material(material_id: str, user_id: str) -> bool:
         )
         conn.commit()
     return cur.rowcount > 0
+
+
+def log_material_edit(
+    material_id: str,
+    user_id: str,
+    edit_type: str = "slide_change",
+    description: str = "",
+    slide_index: Optional[int] = None,
+) -> str:
+    edit_id = str(uuid.uuid4())
+    with _conn() as conn:
+        conn.execute(
+            """INSERT INTO edit_log (id, material_id, user_id, edit_type, description, slide_index, created_at)
+               VALUES (?, ?, ?, ?, ?, ?, ?)""",
+            (edit_id, material_id, user_id, edit_type, description, slide_index,
+             datetime.now(timezone.utc).isoformat()),
+        )
+        conn.commit()
+    return edit_id
+
+
+def get_edit_log(material_id: str) -> list[dict]:
+    with _conn() as conn:
+        rows = conn.execute(
+            "SELECT * FROM edit_log WHERE material_id = ? ORDER BY created_at ASC",
+            (material_id,),
+        ).fetchall()
+    return [dict(r) for r in rows]
 
 
 def count_materials(user_id: str) -> int:
