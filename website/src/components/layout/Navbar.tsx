@@ -64,20 +64,22 @@ export function Navbar() {
             ))}
           </div>
           <div className="flex items-center gap-3">
-            <button onClick={toggleDark} className="w-10 h-10 rounded-lg flex items-center justify-center text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-all duration-150 cursor-pointer" aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}>
-              {dark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-            </button>
-            {mounted && !loading && !isAuthenticated && (
+            {mounted && (
+              <button onClick={toggleDark} className="w-10 h-10 rounded-lg flex items-center justify-center text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-all duration-150 cursor-pointer" aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}>
+                {dark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+              </button>
+            )}
+            {!loading && !isAuthenticated && (
               <>
-                    <Link href="/app/signin" className="hidden sm:inline-flex text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors px-3 py-2">
-                      Sign In
-                    </Link>
+                <Link href="/app/signin" className="hidden sm:inline-flex text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors px-3 py-2">
+                  Sign In
+                </Link>
                 <Button size="sm" className="hidden sm:inline-flex font-bold" asChild>
                   <Link href="/app/register">Get Started</Link>
                 </Button>
               </>
             )}
-            {mounted && !loading && isAuthenticated && user && (
+            {!loading && isAuthenticated && user && (
               <>
                 <Link href="/app" className="hidden sm:inline-flex text-sm font-medium text-primary-600 dark:text-primary-400 hover:text-primary-700 transition-colors px-3 py-2">
                   Generator

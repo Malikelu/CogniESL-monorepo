@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { inter, nunito } from "@/lib/fonts";
+import { Providers } from "@/components/Providers";
 import "./globals.css";
 
 export const viewport: Viewport = {
@@ -141,8 +142,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${inter.variable} ${nunito.variable}`} suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/logo-symbol.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/logo-symbol.svg" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
         <link rel="manifest" href="/manifest.json" />
         <script
           type="application/ld+json"
@@ -174,7 +175,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   }
 })();
 ` }} />
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
