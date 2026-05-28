@@ -176,6 +176,24 @@ export async function apiGetMaterial(materialId: string): Promise<Material | nul
   return res.json();
 }
 
+export interface Slide {
+  index: number;
+  url: string;
+  notes: string;
+  filename: string;
+}
+
+export async function apiGetMaterialSlides(materialId: string): Promise<Slide[]> {
+  const token = getAuthToken();
+  if (!token) return [];
+  const res = await fetch(`${API_URL}/api/materials/${materialId}/slides`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  if (!res.ok) return [];
+  const data = await res.json();
+  return data.slides ?? [];
+}
+
 export async function apiLogEdit(
   materialId: string,
   editType: string,

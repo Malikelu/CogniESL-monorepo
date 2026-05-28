@@ -450,6 +450,45 @@ async def api_delete_material(material_id: str, request: Request):
     return JSONResponse({"deleted": True})
 
 
+@app.get("/api/materials/{material_id}/slides")
+async def api_material_slides(material_id: str, request: Request):
+    user, err = _require_auth(request)
+    if err:
+        return err
+    mat = _auth_db.get_material(material_id, user.id)
+    if not mat:
+        return JSONResponse({"error": "Not found"}, status_code=404)
+
+    project_name = mat.get("project_name", "")
+    presentations_dir = Path(os.getenv("COGNIESL_DATA_DIR", Path(__file__).parent)) / "mnt" / project_name / "presentations"
+
+    slides = []
+    for i in range(1, 100):
+        # Slides may have suffix variants: slide_01.html OR slide_01_title.html
+        matches = sorted(presentations_dir.glob(f"slide_{i:02d}*.html"))
+        if not matches:
+            break
+        slide_path = matches[0]
+        try:
+            html_text = slide_path.read_text(encoding="utf-8")
+        except Exception:
+            html_text = ""
+        notes_match = re.search(r'data-speaker-notes="([^"]*)"', html_text)
+        notes = notes_match.group(1).replace("&quot;", '"') if notes_match else ""
+        slides.append({
+            "index": i,
+            "url": f"/slides/{project_name}/presentations/{slide_path.name}",
+            "notes": notes,
+            "filename": slide_path.name,
+        })
+
+    return JSONResponse({
+        "slides": slides,
+        "total": len(slides),
+        "project_name": project_name,
+    })
+
+
 @app.post("/api/materials/{material_id}/edits")
 async def api_log_material_edit(material_id: str, request: Request):
     user, err = _require_auth(request)

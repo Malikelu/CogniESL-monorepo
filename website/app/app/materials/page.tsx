@@ -84,7 +84,7 @@ export default function MaterialsPage() {
                   <div className="flex items-center gap-3 shrink-0">
                     <span className="text-xs text-neutral-400">{formatDate(mat.created_at)}</span>
                     <Link
-                      href={`/app?edit=${mat.id}`}
+                      href={`/app/materials/${mat.id}`}
                       className="inline-flex items-center gap-1.5 text-xs font-semibold bg-primary-50 dark:bg-primary-900/20 text-primary-700 dark:text-primary-300 hover:bg-primary-100 dark:hover:bg-primary-900/40 border border-primary-200 dark:border-primary-800 rounded-lg px-3 py-1.5 transition-colors"
                     >
                       ✏️ Edit
