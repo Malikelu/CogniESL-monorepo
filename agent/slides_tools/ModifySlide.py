@@ -220,9 +220,10 @@ def _embed_local_images_as_base64(html: str, project_dir: Path) -> str:
 
 
 # Sub-agent model: read from env so it can be changed without touching code.
-# Priority: SUB_AGENT_MODEL env var → hardcoded default.
-# For OpenRouter models use "openrouter/anthropic/claude-3-5-sonnet-20241022" etc.
-_HTML_WRITER_MODEL_DEFAULT = "anthropic/claude-3-5-sonnet-20241022"
+# Priority: SUB_AGENT_MODEL env var → hardcoded default below.
+# Currently configured via SUB_AGENT_MODEL=openrouter/openai/gpt-4.1 in .env.
+# The hardcoded default here is only used if SUB_AGENT_MODEL is unset.
+_HTML_WRITER_MODEL_DEFAULT = "openrouter/openai/gpt-4.1"
 _HTML_WRITER_MODEL_OAI = "gpt-4o-mini"
 _HTML_WRITER_MAX_ATTEMPTS = 5
 
