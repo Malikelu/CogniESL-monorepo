@@ -191,6 +191,13 @@ async def admin_update_db():
     import sqlite3
     static_dir = Path(os.getenv("COGNIESL_STATIC_DIR", Path(__file__).parent / "data"))
     db_path = Path(os.getenv("COGNIESL_DATA_DIR", "/app/data")) / "cogniesl.db"
+
+    # Debug info
+    import logging
+    logger = logging.getLogger(__name__)
+    logger.info(f"static_dir={static_dir}, exists={static_dir.exists()}")
+    logger.info(f"db_path={db_path}, exists={db_path.exists()}")
+
     if not db_path.exists():
         return JSONResponse({"error": f"DB not found at {db_path}"}, status_code=500)
     conn = sqlite3.connect(str(db_path))
