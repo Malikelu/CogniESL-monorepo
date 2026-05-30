@@ -186,28 +186,22 @@ async def api_healthcheck():
 
 @app.get("/api/admin/update-db")
 async def admin_update_db():
-    """One-shot: update curated YAML files into the SQLite DB on the Railway Volume."""
+    """One-shot: import all YAML files into the SQLite DB on the Railway Volume,
+    then apply targeted updates for curated files."""
+    from agent import import_content
     from agent.update_content import update_grammar, update_l1
     import sqlite3
     static_dir = Path(os.getenv("COGNIESL_STATIC_DIR", Path(__file__).parent / "data"))
     db_path = Path(os.getenv("COGNIESL_DATA_DIR", "/app/data")) / "cogniesl.db"
 
-    # Debug info
-    import logging
-    logger = logging.getLogger(__name__)
-    logger.info(f"static_dir={static_dir}, exists={static_dir.exists()}")
-    logger.info(f"db_path={db_path}, exists={db_path.exists()}")
+    # Step 1: Bulk import all grammar + L1 files from static YAML dir
+    import_content.run_import()
 
-    if not db_path.exists():
-        return JSONResponse({"error": f"DB not found at {db_path}"}, status_code=500)
+    # Step 2: Open connection for targeted updates
     conn = sqlite3.connect(str(db_path))
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA journal_mode=WAL")
     conn.execute("PRAGMA foreign_keys=ON")
-
-    # Ensure schema exists before updating
-    from agent.db_schema import init_content_db
-    init_content_db()
 
     results = {}
     try:
