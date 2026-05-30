@@ -197,7 +197,15 @@ async def admin_update_db():
     # Step 1: Bulk import all grammar + L1 files from static YAML dir
     import_content.run_import()
 
-    # Step 2: Open connection for targeted updates
+    # Step 2: List L1 files to verify naming
+    import logging
+    logger = logging.getLogger(__name__)
+    l1_dir = static_dir / "l1-interference"
+    if l1_dir.exists():
+        l1_files = sorted(f.name for f in l1_dir.glob("*.yaml"))
+        logger.info(f"L1 files ({len(l1_files)}): {l1_files[:5]}...")
+
+    # Step 3: Open connection for targeted updates
     conn = sqlite3.connect(str(db_path))
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA journal_mode=WAL")
