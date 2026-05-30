@@ -184,6 +184,40 @@ async def api_healthcheck():
     return JSONResponse({"status": "ok" if overall else "degraded", "checks": checks}, status_code=status_code)
 
 
+@app.get("/api/admin/update-db")
+async def admin_update_db():
+    """One-shot: update curated YAML files into the SQLite DB on the Railway Volume."""
+    from agent.update_content import update_grammar, update_l1
+    import sqlite3
+    static_dir = Path(os.getenv("COGNIESL_STATIC_DIR", Path(__file__).parent / "data"))
+    db_path = Path(os.getenv("COGNIESL_DATA_DIR", "/app/data")) / "cogniesl.db"
+    if not db_path.exists():
+        return JSONResponse({"error": f"DB not found at {db_path}"}, status_code=500)
+    conn = sqlite3.connect(str(db_path))
+    conn.row_factory = sqlite3.Row
+    conn.execute("PRAGMA journal_mode=WAL")
+    conn.execute("PRAGMA foreign_keys=ON")
+    results = {}
+    try:
+        for ftype, fname in [("grammar", "present_simple.yaml"), ("l1", "spanish_interference.yaml")]:
+            yaml_path = static_dir / ftype / fname
+            if not yaml_path.exists():
+                results[fname] = {"status": "skipped", "reason": "file not found"}
+                continue
+            if ftype == "grammar":
+                ok = update_grammar(conn, yaml_path)
+            else:
+                ok = update_l1(conn, yaml_path)
+            results[fname] = {"status": "ok" if ok else "failed"}
+        conn.commit()
+        return JSONResponse({"status": "done", "results": results})
+    except Exception as e:
+        conn.rollback()
+        return JSONResponse({"error": str(e)}, status_code=500)
+    finally:
+        conn.close()
+
+
 @app.get("/api/jobs/{job_id}")
 async def job_status(job_id: str):
     """Return the current status of a generation job (for debugging / future polling)."""
