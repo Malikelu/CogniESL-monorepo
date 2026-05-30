@@ -1,43 +1,230 @@
-grammar_point: present_simple
-title: Present Simple
+citations:
+- claim: 'Core meaning: Describes actions that happen regularly (habits), things that
+    are always true (facts), and situation'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 5: Present
+    Tenses, §5.1-5.3'
+  tier: 1
+- claim: 'Register distribution: Present simple is neutral in register — used equally
+    in formal and informal contexts.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 5: Present
+    Tenses, §5.1-5.3'
+  tier: 1
+- claim: 'Discourse function: Present simple is used in instructions and recipes:
+    ''First, you chop the onions. Then you heat the o'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 5: Present
+    Tenses, §5.1-5.3'
+  tier: 1
+- claim: 'Common error ''Omitting third person -s: *''She walk to school.'''' for
+    Portuguese, Spanish, Chinese speakers'
+  reliability: B
+  source: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch. 6: Present
+    tenses, §6.1-6.4'
+  tier: 1
+- claim: 'Carl James (1998) classifies errors into five levels: substance (spelling/pronunciation),
+    text (cohesion/coherence), lexical (word choice), grammar (morphology/syntax),
+    and discourse (pragmatic). Errors can be further classified as interlingual (L1
+    transfer) or intralingual (overgeneralization, communication strategies).'
+  reliability: B
+  source: 'James (1998) Errors in Language Learning and Use: Exploring Error Analysis.
+    Routledge. Chapters 4-6.'
+  tier: 2
+- claim: Present tense in discourse establishes immediate factuality and timeless
+    general truths
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9: Tense-Aspect-Modality
+    in Discourse, §9.2-9.4'
+  tier: 1
+- claim: L1 transfer in present simple varies significantly across language backgrounds
+    — Swan & Smith document contrastive patterns for speakers of different L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+common_errors:
+- correction: She walks to school.
+  error: 'Omitting third person -s: *''She walk to school.'''
+  explanation: In English, third person singular (he/she/it) always takes -s in present
+    simple. This is the most common error at A1 level. Many L1s (Portuguese, Spanish,
+    Chinese) do not mark person on verbs in the same way.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Japanese
+  - Korean
+  reliability: D
+- correction: I am eating lunch now.
+  error: 'Using present simple for actions happening now: *''I eat lunch now.'''
+  explanation: Present simple is for habits and general truths, not for actions happening
+    at the moment of speaking. Use present continuous for 'right now'.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+- correction: I walk to school.
+  error: 'Adding -s to all persons: *''I walks to school.'''
+  explanation: Only third person singular (he/she/it) takes -s. All other persons
+    use the base form.
+  flagged: true
+  l1_groups:
+  - Arabic
+  - Hindi
+  reliability: D
+- correction: I walk to school every day.
+  error: 'Using ''do'' in affirmative sentences: *''I do walk to school every day.'''
+  explanation: '''Do/does'' is only used in negatives and questions in present simple.
+    In affirmative sentences, the verb stands alone (with -s for third person).'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: D
+- correction: I am eating lunch now.
+  error: 'Using simple present for actions happening now: *''I eat lunch now.'''
+  explanation: 'Swan Entry 31.2: The simple present is NOT used for temporary situations
+    or actions just around the present. Use present continuous for ''right now''.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed. Entry 31.2
+- correction: He lives in São Paulo.
+  error: 'Using present continuous for permanent states: *''He is living in São Paulo.''
+    (permanent)'
+  explanation: 'Swan Entry 31.1: Permanent situations use simple present. Use present
+    continuous only for temporary situations (''He is living in São Paulo for now''). '
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed. Entry 31.1
+- correction: I like this wine. / She believes him.
+  error: 'Using simple present with stative verbs: *''I am liking this wine.'' / *''She
+    is believing him.'''
+  explanation: 'Swan Entry 4: Some verbs (like, believe, know, want, understand, see=understand)
+    are not generally used in progressive forms. These are ''stative'' verbs — they
+    describe states, not actions.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed. Entry 4.1
+- correction: I promise I won't smoke any more.
+  error: 'Using simple present for promises: *''I promise I don''t smoke any more.'''
+  explanation: 'Swan Entry 31.4: We do not normally use the simple present to talk
+    about the future. Promises about the future use ''will''.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed. Entry 31.4
+- correction: There's the doorbell. 'I'll get it.'
+  error: 'Using simple present for spontaneous decisions: *''There''s the doorbell.''
+    *''I get it.'''
+  explanation: 'Swan Entry 31.4: Spontaneous decisions and offers use ''will'', not
+    simple present.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed. Entry 31.4
+- correction: She always helps people.
+  error: Using 'always + present progressive' for neutral habits
+  explanation: 'Swan Entry 56: Present progressive with ''always'' expresses annoyance/surprise,
+    not neutral habit. ''She always helps'' (neutral). ''She is always helping'' (annoyed/surprised).'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed. Entry 56
 description: Used for habits, routines, general truths, permanent situations, and
   scheduled events. The most fundamental English tense.
+dialectal_variation:
+- note: 'Biber et al. (2021) GSWE: Present simple is the most frequent tense in all registers and dialects. BrE and AmE show minor differences in present perfect vs present simple distribution (AmE accepts simple past with yet/already where BrE requires present perfect), but the present simple itself is stable across varieties.'
+- note: 'Some dialects use ''do'' for emphasis in affirmative sentences: ''I DO walk
+    to school!'' (emphatic do — all dialects)'
+- note: 'In some non-standard dialects, third person -s may be absent: ''He walk to
+    school.'''
+discourse_notes:
+- note: 'Present simple is used in instructions and recipes: ''First, you chop the
+    onions. Then you heat the oil.'''
+- note: 'Present simple is used in sports commentary for dramatic effect: ''He shoots!
+    He scores!'''
+- note: 'Present simple is used in plot summaries and reviews: ''The main character
+    travels to London and meets a mysterious stranger.'''
+- note: 'In academic writing, present simple creates cohesion when discussing established
+    knowledge: ''Smith (2020) argues that... This suggests that...'''
+- 'GB2 Ch.9: Tense serves discourse functions beyond time reference — historical present
+  (vividness), backgrounding (past for supporting info), frame-elaboration (past perfect
+  to simple past), interactive present perfect (topic-opening). Source: Celce-Murcia
+  & Larsen-Freeman (1999) GB2 Ch.9: Tense-Aspect-Modality in Discourse.'
+form:
+  affirmative:
+    example_generator:
+    - I walk to school.
+    - She walks to school.
+    - They work in an office.
+    - He works in an office.
+    min_examples: 4
+    structure: I/you/we/they + base verb (V1) / He/she/it + base verb + s/es
+  negative:
+    example_generator:
+    - I don't like coffee.
+    - She doesn't like coffee.
+    - They don't live here.
+    - He doesn't live here.
+    min_examples: 4
+    structure: Subject + do not (don't) / does not (doesn't) + base verb
+  questions:
+    example_generator:
+    - Do you speak English?
+    - Does she speak English?
+    - Do they work here?
+    - Does he work here?
+    min_examples: 4
+    structure: Do/Does + subject + base verb?
+grammar_point: present_simple
 level: A1
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 5:
-    Present Tenses, §5.1-5.3'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 3: The Verb, §3.2-3.4'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 427-432 (present
-    tenses: habitual events)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    6: Present tenses, §6.1-6.4'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 3: Present tense'
 meaning:
-  core_meaning: Describes actions that happen regularly (habits), things that are
-    always true (facts), and situations that are not temporary (permanent). Does NOT
-    describe actions happening right now.
-  timeline: Present time, but not 'right now'. Think of it as a repeated or permanent
-    state.
-  contrast: '''Present Simple'' = ''I eat breakfast every morning.'' (habit) vs ''Present
-    Continuous'' = ''I am eating breakfast.'' (right now)'
   ccqs:
-  - question: Is this happening right now, at this exact moment?
-    answer: No — it happens regularly or is always true.
+  - answer: No — it happens regularly or is always true.
     purpose: Tests whether the learner understands that present simple describes habitual/repeated
       actions, not actions in progress right now. This is the most fundamental distinction
       between present simple and present continuous.
-  - question: Is this a temporary situation?
-    answer: No — it is permanent or habitual.
+    question: Is this happening right now, at this exact moment?
+  - answer: No — it is permanent or habitual.
     purpose: Tests whether the learner understands that present simple describes states
       and situations that are generally true, not temporary conditions (which require
       present continuous).
-  - question: Can we use words like 'always', 'usually', 'every day' with this?
-    answer: Yes — these time expressions go with the Present Simple.
+    question: Is this a temporary situation?
+  - answer: Yes — these time expressions go with the Present Simple.
     purpose: Tests whether the learner can identify the lexical markers that signal
       present simple, which helps them distinguish it from other tenses in reading
       and listening.
+    question: Can we use words like 'always', 'usually', 'every day' with this?
+  - answer: '''She goes to school every day.'' In third person singular (he/she/it),
+      the present simple takes -s: goes, works, plays.'
+    purpose: Tests whether the learner applies third person singular -s in present
+      simple (Swan PEU 2016, entries 30-31).
+    question: Which is correct? *'She go to school every day' or 'She goes to school
+      every day'?
+  contrast: '''Present Simple'' = ''I eat breakfast every morning.'' (habit) vs ''Present
+    Continuous'' = ''I am eating breakfast.'' (right now)'
+  core_meaning: Describes actions that happen regularly (habits), things that are
+    always true (facts), and situations that are not temporary (permanent). Does NOT
+    describe actions happening right now.
   example_generator:
     contexts:
     - daily routines
@@ -50,69 +237,156 @@ meaning:
     - Use diverse names and cultural contexts
     - Keep examples neutral and appropriate for all ages
     min_examples: 5
-form:
-  affirmative:
-    structure: I/you/we/they + base verb (V1) / He/she/it + base verb + s/es
-    example_generator:
-    - I walk to school.
-    - She walks to school.
-    - They work in an office.
-    - He works in an office.
-    min_examples: 4
-  negative:
-    structure: Subject + do not (don't) / does not (doesn't) + base verb
-    example_generator:
-    - I don't like coffee.
-    - She doesn't like coffee.
-    - They don't live here.
-    - He doesn't live here.
-    min_examples: 4
-  questions:
-    structure: Do/Does + subject + base verb?
-    example_generator:
-    - Do you speak English?
-    - Does she speak English?
-    - Do they work here?
-    - Does he work here?
-    min_examples: 4
+  timeline: Present time, but not 'right now'. Think of it as a repeated or permanent
+    state.
+phonetics:
+- example_generator:
+  - works /wɜːks/ (voiceless /k/ → /s/)
+  - plays /pleɪz/ (voiced /eɪ/ → /z/)
+  - watches /wɒtʃɪz/ (sibilant /tʃ/ → /ɪz/)
+  l1_issue: Portuguese and Spanish speakers often omit the third person -s because
+    their languages do not add -s for he/she/it in the same way. Drill this explicitly.
+  note: 'Third person -s pronunciation: /s/ after voiceless sounds (works, stops),
+    /z/ after voiced sounds (plays, reads), /ɪz/ after sibilant sounds (watches, washes)'
+- example_generator:
+  - Do you...? /də juː/
+  - Does she...? /dʌz ʃiː/
+  l1_issue: Many L1 speakers over-pronounce 'do' and 'does' as /duː/ and /duːz/. Teach
+    the weak forms early.
+  note: 'Weak form of ''do'' in questions: /də/ not /duː/. ''Does'' pronounced /dʌz/
+    not /duːz/.'
+register_notes:
+- note: Present simple is neutral in register — used equally in formal and informal
+    contexts.
+- note: In academic writing, present simple is the default tense for stating facts,
+    generalizations, and research findings.
+- note: 'In news headlines, present simple is used for recent events: ''Prime Minister
+    announces new policy.'''
+- note: 'Biber et al. (2021) — Present tense is the most frequent tense overall (~85%
+    of all finite verb phrases are tensed). Conversation and academic prose both show
+    strong preference for present tense, but for different reasons: conversation =
+    immediate context; academic = general validity/timeless truths. Ch. 6.2.2'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 6.2.2
+sources:
+  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
+    6: Present tenses, §6.1-6.4'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 5:
+    Present Tenses, §5.1-5.3'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 3: The Verb, §3.2-3.4'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 3: Present tense'
+  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 427-432 (present
+    tenses: habitual events)'
 sub_rules:
-- rule: 'Third person singular spelling: add -s'
-  type: spelling
-  examples:
+- examples:
   - work → works
   - play → plays
   - read → reads
-- rule: 'Verbs ending in -s, -sh, -ch, -x, -o: add -es'
+  rule: 'Third person singular spelling: add -s'
   type: spelling
-  examples:
+- examples:
   - watch → watches
   - wash → washes
   - go → goes
   - fix → fixes
-- rule: 'Verbs ending in consonant + y: change y to i, add -es'
+  rule: 'Verbs ending in -s, -sh, -ch, -x, -o: add -es'
   type: spelling
-  examples:
+- examples:
   - study → studies
   - carry → carries
   - fly → flies
-- rule: 'Verbs ending in vowel + y: just add -s'
+  rule: 'Verbs ending in consonant + y: change y to i, add -es'
   type: spelling
-  examples:
+- examples:
   - play → plays
   - enjoy → enjoys
   - buy → buys
-- rule: Have becomes has in third person singular
-  type: irregular
-  examples:
+  rule: 'Verbs ending in vowel + y: just add -s'
+  type: spelling
+- examples:
   - I have → He has
   - They have → She has
-- rule: 'Common time expressions: always, usually, often, sometimes, rarely, never,
-    every day/week/month'
-  type: lexical
-  examples:
+  rule: Have becomes has in third person singular
+  type: irregular
+- examples:
   - I always wake up at 7.
   - She never eats meat.
   - They play football every Sunday.
+  rule: 'Common time expressions: always, usually, often, sometimes, rarely, never,
+    every day/week/month'
+  type: lexical
+teaching:
+  methodology: PPP (Present-Practice-Produce)
+  recommended_activities:
+  - adaptation_notes: Students ask classmates 'Do you...?' questions to find people
+      who match. Great for practicing questions and third person -s when reporting
+      back.
+    duration: 15
+    name: Find Someone Who
+  - adaptation_notes: 'Students interview a partner about their daily routine, then
+      report to the class: ''She wakes up at 7. She has breakfast at 7:30.'' Practices
+      third person -s.'
+    duration: 10
+    name: Daily Routine Interview
+  - adaptation_notes: Show sentences with missing third person -s. Students race to
+      identify and correct the errors. Good for drilling the most common mistake.
+    duration: 10
+    name: Error Correction Race
+  - adaptation_notes: Students write about their ideal daily routine using Present
+      Simple. Encourages creative use of the target structure with frequency adverbs.
+    duration: 15
+    name: My Perfect Day
+  - adaptation_notes: 'Show a real train/bus timetable. Students make sentences: ''The
+      train leaves at 6pm. It arrives at 8pm.'' Practices the ''scheduled events''
+      use.'
+    duration: 10
+    name: Timetable Reading
+  tips:
+  - 'Start with students'' own routines: ''What time do you wake up?'' This makes
+    the grammar personal and meaningful.'
+  - Use a daily routine timeline on the board to visualize the concept of repeated
+    actions.
+  - Drill the third person -s explicitly. This is the most common error at A1 level.
+  - 'Contrast with Present Continuous early: ''I walk to school (every day) vs I am
+    walking to school (right now).'''
+  - Use frequency adverbs (always, usually, sometimes, never) to reinforce the habitual
+    meaning.
+  - Teach the weak forms of 'do' (/də/) and 'does' (/dʌz/) from the beginning — this
+    is essential for natural-sounding speech.
+  - 'Use realia: show timetables, schedules, and routines to demonstrate the ''scheduled
+    events'' use.'
+  - 'Swan Entry 34: Present progressive can be used with ''always'' to express annoyance:
+    ''He''s always losing his keys.'' Useful for teaching emotional coloring.'
+  - 'Swan Entry 4 (non-progressive verbs): Drill the difference between stative and
+    dynamic uses of verbs. ''I see what you mean'' (stative, NOT ''I''m seeing'')
+    vs ''I''m seeing the doctor at 10'' (dynamic, arrangement).'
+  - 'Swan Entry 31: Simple present for timetables — use real train/bus schedules.
+    ''The train leaves at 6pm.'' is a great authentic context.'
+  - 'Swan Entry 56: ''Always'' + present progressive = emotional coloring (annoyance,
+    surprise, admiration). ''He is always losing his keys!'' (annoyance).'
+  - 'GB3 Ch. 7: Simple present core meaning = immediate factuality. Eight uses: (a)
+    habitual actions, (b) general truths, (c) states with stative verbs and be, (d)
+    inception of states (''Now I understand''), (e) subordinate time/condition clauses,
+    (f) scheduled future events, (g) present event (commentary, demonstrations), (h)
+    speech acts (''I resign''). Source: Celce-Murcia & Larsen-Freeman (2015) GB3 Ch.
+    7 §7.2.'
+  - 'GB3 Ch. 7: Simple present vs. progressive — moment of speech vs. habit (''Why
+    are you wearing glasses?'' vs. ''Why do you wear glasses?''). Temporary vs. permanent
+    (''Linda is living with parents'' vs. ''Linda lives with parents''). Specific
+    vs. general (''What are you doing for Thanksgiving?'' vs. ''What do you do?'').
+    Mental activity vs. mental state (''I''m thinking about it'' vs. ''I think it''s
+    right''). Source: Celce-Murcia & Larsen-Freeman (2015) GB3 Ch. 7 §7.5 (point 1).'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 3: CGEL (Ch.3)
+    emphasizes that the present tense does NOT mean ''happening now'' — that''s the
+    progressive. The present tense is used for: habitual actions (''I walk to school''),
+    general truths (''Water boils at 100°C''), states (''I know the answer''), narrative
+    present (''So I walk into the room and...''), and future scheduled events (''The
+    train leaves at 6''). The ''happening now'' meaning belongs to the progressive,
+    not the present tense.'
+title: Present Simple
 use:
 - context: Habits and routines
   description: Actions that happen regularly
@@ -138,115 +412,3 @@ use:
   - The train leaves at 6pm.
   - The class starts at 9am.
   - The shop closes at 10pm.
-phonetics:
-- note: 'Third person -s pronunciation: /s/ after voiceless sounds (works, stops),
-    /z/ after voiced sounds (plays, reads), /ɪz/ after sibilant sounds (watches, washes)'
-  example_generator:
-  - works /wɜːks/ (voiceless /k/ → /s/)
-  - plays /pleɪz/ (voiced /eɪ/ → /z/)
-  - watches /wɒtʃɪz/ (sibilant /tʃ/ → /ɪz/)
-  l1_issue: Portuguese and Spanish speakers often omit the third person -s because
-    their languages do not add -s for he/she/it in the same way. Drill this explicitly.
-- note: 'Weak form of ''do'' in questions: /də/ not /duː/. ''Does'' pronounced /dʌz/
-    not /duːz/.'
-  example_generator:
-  - Do you...? /də juː/
-  - Does she...? /dʌz ʃiː/
-  l1_issue: Many L1 speakers over-pronounce 'do' and 'does' as /duː/ and /duːz/. Teach
-    the weak forms early.
-common_errors:
-- error: 'Omitting third person -s: *''She walk to school.'''
-  correction: She walks to school.
-  explanation: In English, third person singular (he/she/it) always takes -s in present
-    simple. This is the most common error at A1 level. Many L1s (Portuguese, Spanish,
-    Chinese) do not mark person on verbs in the same way.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-  - Japanese
-  - Korean
-- error: 'Using present simple for actions happening now: *''I eat lunch now.'''
-  correction: I am eating lunch now.
-  explanation: Present simple is for habits and general truths, not for actions happening
-    at the moment of speaking. Use present continuous for 'right now'.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: 'Adding -s to all persons: *''I walks to school.'''
-  correction: I walk to school.
-  explanation: Only third person singular (he/she/it) takes -s. All other persons
-    use the base form.
-  l1_groups:
-  - Arabic
-  - Hindi
-- error: 'Using ''do'' in affirmative sentences: *''I do walk to school every day.'''
-  correction: I walk to school every day.
-  explanation: '''Do/does'' is only used in negatives and questions in present simple.
-    In affirmative sentences, the verb stands alone (with -s for third person).'
-  l1_groups:
-  - Portuguese
-  - Spanish
-discourse_notes:
-- note: 'Present simple is used in instructions and recipes: ''First, you chop the
-    onions. Then you heat the oil.'''
-- note: 'Present simple is used in sports commentary for dramatic effect: ''He shoots!
-    He scores!'''
-- note: 'Present simple is used in plot summaries and reviews: ''The main character
-    travels to London and meets a mysterious stranger.'''
-- note: 'In academic writing, present simple creates cohesion when discussing established
-    knowledge: ''Smith (2020) argues that... This suggests that...'''
-register_notes:
-- note: Present simple is neutral in register — used equally in formal and informal
-    contexts.
-- note: In academic writing, present simple is the default tense for stating facts,
-    generalizations, and research findings.
-- note: 'In news headlines, present simple is used for recent events: ''Prime Minister
-    announces new policy.'''
-dialectal_variation:
-- note: No significant BrE/AmE differences in present simple formation.
-- note: 'Some dialects use ''do'' for emphasis in affirmative sentences: ''I DO walk
-    to school!'' (emphatic do — all dialects)'
-- note: 'In some non-standard dialects, third person -s may be absent: ''He walk to
-    school.'''
-teaching:
-  methodology: PPP (Present-Practice-Produce)
-  tips:
-  - 'Start with students'' own routines: ''What time do you wake up?'' This makes
-    the grammar personal and meaningful.'
-  - Use a daily routine timeline on the board to visualize the concept of repeated
-    actions.
-  - Drill the third person -s explicitly. This is the most common error at A1 level.
-  - 'Contrast with Present Continuous early: ''I walk to school (every day) vs I am
-    walking to school (right now).'''
-  - Use frequency adverbs (always, usually, sometimes, never) to reinforce the habitual
-    meaning.
-  - Teach the weak forms of 'do' (/də/) and 'does' (/dʌz/) from the beginning — this
-    is essential for natural-sounding speech.
-  - 'Use realia: show timetables, schedules, and routines to demonstrate the ''scheduled
-    events'' use.'
-  recommended_activities:
-  - name: Find Someone Who
-    duration: 15
-    adaptation_notes: Students ask classmates 'Do you...?' questions to find people
-      who match. Great for practicing questions and third person -s when reporting
-      back.
-  - name: Daily Routine Interview
-    duration: 10
-    adaptation_notes: 'Students interview a partner about their daily routine, then
-      report to the class: ''She wakes up at 7. She has breakfast at 7:30.'' Practices
-      third person -s.'
-  - name: Error Correction Race
-    duration: 10
-    adaptation_notes: Show sentences with missing third person -s. Students race to
-      identify and correct the errors. Good for drilling the most common mistake.
-  - name: My Perfect Day
-    duration: 15
-    adaptation_notes: Students write about their ideal daily routine using Present
-      Simple. Encourages creative use of the target structure with frequency adverbs.
-  - name: Timetable Reading
-    duration: 10
-    adaptation_notes: 'Show a real train/bus timetable. Students make sentences: ''The
-      train leaves at 6pm. It arrives at 8pm.'' Practices the ''scheduled events''
-      use.'
