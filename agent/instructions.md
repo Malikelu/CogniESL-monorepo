@@ -199,6 +199,19 @@ When deciding which data to use from the YAML database:
 
 If the task_brief provides explicit tier/reliability/etiology values, use those. Otherwise check the YAML directly.
 
+### Tier & Reliability Matrix
+
+| tier | reliability | Slide Usage | Speaker Notes |
+|------|-------------|-------------|---------------|
+| 1 | A or B | Use directly in slide content | Cite as "Source: [reference]" |
+| 1 | C or D | Use in slide, add amber "⚠ limited source" badge | Note confidence concern |
+| 2 | Any | Use directly in slide content | Cite as "Source: [reference]" |
+| 3 | A or B | Speaker notes only | Full content in speaker notes |
+| 3 | C or D | Speaker notes only, with caution note | Flag as "limited evidence" |
+| 4 | Any | Skip entirely — lowest quality | Do not reference |
+
+Legacy data (no tier or reliability field): treat as tier 2, reliability B.
+
 ### Step 0: Map Description to Grammar Point (if needed)
 
 Some teachers describe a *problem* rather than a grammar point. Map these to database topics BEFORE calling SearchGrammarTool:
@@ -412,11 +425,13 @@ Plan for this structure (adjust counts based on content richness):
 - Section 2: **Meaning Overview — MANDATORY (1 slide)** — shows core_meaning + contrast from YAML
 - Section 3: CCQ Discovery (1 slide per CCQ — max 1 CCQ per slide)
 - Section 4: Formula + Sub-rules — **ONLY if the grammar point has a clear grammatical formula** (e.g., verb conjugation, sentence structure). For vocabulary/usage topics (proverbs, idioms, discourse markers, fixed expressions), skip the formula slide and use thematic sub-rule slides instead. When formula slides ARE included, they MUST appear in this order: **Affirmative first, then Negative, then Questions** — never skip the affirmative. Each is a separate slide.
-- Section 5: Practice (3-5 slides)
-- Section 5b: **Pronunciation Guide (1 slide — INCLUDE ONLY IF grammar YAML has `phonetics` data)**. Placed after practice slides, before L1 Oracle. Skip entirely if `phonetics` is absent or empty.
-- Section 6: **L1 Oracle (1 slide per L1 language — MANDATORY, always second-to-last section)** — Teachers learn to expect this section here. Never place L1 Oracle slides earlier in the deck.
-- Section 7: Wrap-up (1-2 slides)
-- Section 8: **Closing Brand Slide (1 slide — ALWAYS the final slide)** — pre-built locked template, appended to every deck. See below.
+- Section 5: Sub-rules (1 slide per sub-rule)
+- Section 5b: **Pronunciation Guide (1 slide — INCLUDE ONLY IF grammar YAML has `phonetics` data)**. Placed after formula/sub-rules, before A5c.
+- Section 5c: **L1 Phonology Interference (1 slide — INCLUDE ONLY IF L1 file has `phonology_interference` entries with frequency ≥ 3)**. Placed between A5b and practice.
+- Section 6: Practice (3-5 slides)
+- Section 7: **L1 Oracle (1 slide per L1 language — MANDATORY, always second-to-last section)** — Teachers learn to expect this section here. Never place L1 Oracle slides earlier in the deck.
+- Section 8: Wrap-up (1-2 slides)
+- Section 9: **Closing Brand Slide (1 slide — ALWAYS the final slide)** — pre-built locked template, appended to every deck. See below.
 
 ⚠️ **L1 Oracle position is fixed.** It always goes BETWEEN the last practice slide and the wrap-up. If you have two L1 languages, both L1 Oracle slides appear together in Section 6, still just before wrap-up. Never scatter L1 Oracle slides elsewhere in the deck.
 
@@ -516,6 +531,11 @@ DIFFERENTIATION:
 Support: [paste differentiation.support tip from activities YAML or teaching.tips]
 Extension: [paste differentiation.extension tip from activities YAML or teaching.tips]
 
+KEY PRINCIPLES (if key_principles data exists):
+- Max 3 principles, 1 line each
+- Display as a card with warm teal (#0b7272) left border
+- Only tier 1-3 entries
+
 DESIGN:
 - Light background (#f8fafc). Dark teal (#0b7272) header bar. Two-column layout.
 - Left column: lesson objective + stage plan table.
@@ -571,6 +591,14 @@ Left panel (60%): large bold statement of core_meaning on a deep gradient backgr
 Right panel (40%): contrast card showing the key distinctions — each item on its own colored row (e.g., Proverb vs Idiom vs Collocation).
 No formulas yet. This slide answers: "What IS this thing?"
 
+REGISTER NOTES DISPLAY (if register_notes data exists):
+- Parse each note for register keywords: FORMAL, INFORMAL, ACADEMIC, CONVERSATIONAL, SPOKEN, WRITTEN
+- Display as a small colored badge/pill
+- Color map: FORMAL=deep navy (#1e3a8a), INFORMAL=warm orange (#ea580c), ACADEMIC=dark teal (#0f766e), CONVERSATIONAL=purple (#7c3aed), SPOKEN=amber (#d97706), WRITTEN=blue (#2563eb)
+- If no clear keyword, show as "REGISTER: [first 5 words of note]"
+- Max 3 register badges per slide
+- Only tier 1-2 register_notes. Tier 3-4 go to speaker notes only.
+
 SPEAKER NOTES: Teacher talk: Read the core meaning aloud. Point to each contrast row and ask 'What's the difference?'
 CCQs: 'Can you give me one example of [grammar point]?' 'Is it the same as [contrast item]?'
 Watch for: Students confusing [grammar point] with the most common contrast item.
@@ -621,6 +649,11 @@ RELEVANT TEACHING TIP:
 COMMON ERRORS TO SHOW (filtered for specified L1 groups — paste verbatim):
 Error 1: [paste exact error + correction + l1_groups from common_errors]
 Error 2: [paste exact error + correction + l1_groups from common_errors]
+
+DIALECTAL VARIATION (if dialectal_variation data exists for this formula):
+- Show as: "BrE: [variant] / AmE: [variant]"
+- Place in a small muted text box below the formula, color: #6b7280
+- Only tier 1-2 entries. Max 1 per formula slide.
 
 SPEAKER NOTES: Teacher talk: Point to each formula part. Read aloud: '[exact structure]'.
 Drill: give students a prompt, they produce the sentence.
@@ -727,6 +760,16 @@ Full explanation for speaker notes: "[paste complete why_it_happens text here �
 - For etiology: "If etiology = interlingual, the WHY headline references 
   L1 transfer. If intralingual, reference overgeneralization patterns. 
   If induced, reference teaching method."
+
+### Etiology → WHY Explanation Style
+
+| etiology | WHY Headline Style | Example |
+|----------|-------------------|---------|
+| interlingual | Reference L1 transfer explicitly | "[L1] has no article before professions" |
+| intralingual | Reference overgeneralization | "Learners overgeneralize the regular -ed rule" |
+| induced | Reference teaching method gaps | "Textbooks often introduce these together" |
+| unknown/missing | General explanation | "This is a common error pattern for [L1] speakers" |
+
 - New rule: "If no tier field exists (legacy data), treat as tier 2"
 
 Pattern 1 (highest frequency — primary contrast pair):
@@ -837,6 +880,29 @@ Sample items: [paste example wrong→correct pairs from YAML]
 
 SPEAKER NOTES: Teacher talk: [paste from teacher_tips.how_to_explain]. 
 Watch for: [paste exact interference pattern this exercise targets].
+```
+
+---
+
+**TASK_BRIEF FORMAT — A8: Wrap-up Slide (1-2 slides)**
+
+```
+Slide title: [e.g., "Key Takeaways" or "Quick Check"]
+Slide type: A8 Wrap-up
+Section: SECTION 7 (Always before closing brand slide)
+Grammar point: [grammar_point]
+
+WRAP-UP CONTENT:
+- Key takeaway: [one sentence summarising the grammar point]
+- Most frequent L1 error: Wrong: "[paste highest-frequency example_wrong from L1 YAML]" → Correct: "[paste corresponding example_correct]"
+
+KEY PRINCIPLE (if key_principles data exists):
+- Show one principle as a final tip
+- Format: icon + one line, muted text
+
+SPEAKER NOTES: Teacher talk: "Let's review what we learned today. [Read key takeaway]. Remember, [L1] speakers often say [wrong example] — make sure you say [correct example]."
+CCQs: [1-2 rapid-fire review questions matching the CCQ section]
+Watch for: Students still making the same L1 error — redirect to the correct form.
 ```
 
 ---
