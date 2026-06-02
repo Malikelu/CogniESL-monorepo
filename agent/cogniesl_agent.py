@@ -166,4 +166,10 @@ def create_cogniesl_agent(format_request: str = ""):
         input_guardrails=[require_esl_topic],
         output_guardrails=[validate_l1_content, validate_citations, validate_slide_count],
         validation_attempts=2,
+        conversation_starters=[
+            "I need slides for present simple for Portuguese speakers",
+            "Create a worksheet and activity guide for articles (a/an/the)",
+            "I need materials for past simple for Spanish adults",
+            "Make me slides, worksheet, and flashcards for present perfect",
+        ],
     )
