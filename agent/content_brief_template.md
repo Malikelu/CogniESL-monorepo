@@ -58,6 +58,15 @@ Section D — Activity: Adapted classroom version of [activity name from YAML]
 Section E — Free production: "[paste the use context from YAML — the real-world setting students write about]"
 *Answer Key included on a separate page with L1 explanations ("Why [L1] speakers make this mistake: [why_it_happens]")*
 
+
+📝 **Homework Preview** *(include ONLY if homework was requested — omit entirely otherwise)*
+Estimated time: 15-20 minutes | Complete on your own
+Section A — Warm-up: 2-3 easy review questions from the grammar point
+Section B — Practice: 8-10 exercises from common_errors (gap-fill + error correction)
+Section C — [L1] Challenge: 3-5 exercises from interference_patterns data
+Section D — Challenge: 1-2 harder questions
+*Answer Key on the last page. Space to write answers included.*
+
 🃏 **Flashcard Preview** *(include ONLY if flashcards were requested — omit entirely otherwise)*
 [N] cards covering [key terms/structures from the lesson]
 Front: [example] | Back: [answer]

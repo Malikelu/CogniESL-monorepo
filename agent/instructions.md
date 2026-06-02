@@ -348,7 +348,7 @@ After completing all three database searches, you MUST show the teacher a Conten
 
 The Content Brief follows the exact format defined in `agent/content_brief_template.md`. 
 Read that file and adapt the content naturally while keeping all required sections.
-The teacher must see the 6 required sections: What this grammar means, 
+The teacher must see ALL applicable sections in order. The Content Brief is NOT complete until the 📦 Delivering line is included. After the Slide Plan, ALWAYS include: Worksheet Preview (if requested), Activity (if requested), Homework (if requested), Flashcards (if requested), then 📦 Delivering. Do NOT stop at the Slide Plan., 
 Concept Check Questions, Formula, L1 Oracle, Exercises, and Slide Plan.
 
 ### Rules for the Content Brief
@@ -436,6 +436,7 @@ Plan for this structure (adjust counts based on content richness):
 - Section 4: Formula + Sub-rules — **ONLY if the grammar point has a clear grammatical formula** (e.g., verb conjugation, sentence structure). For vocabulary/usage topics (proverbs, idioms, discourse markers, fixed expressions), skip the formula slide and use thematic sub-rule slides instead. When formula slides ARE included, they MUST appear in this order: **Affirmative first, then Negative, then Questions** — never skip the affirmative. Each is a separate slide.
 - Section 5: Sub-rules (1 slide per sub-rule)
 - Section 5b: **Pronunciation Guide (1 slide — INCLUDE ONLY IF grammar YAML has `phonetics` data)**. Placed after formula/sub-rules, before A5c.
+- **SECTION 5b IS MANDATORY IF PHONETICS DATA EXISTS.** Never skip it. Check `phonetics:` field in the grammar YAML. If the key exists and has content, add the A5b slide. Do not omit it even if the deck feels long.
 - Section 5c: **L1 Phonology Interference (1 slide — INCLUDE ONLY IF L1 file has `phonology_interference` entries with frequency ≥ 3)**. Placed between A5b and practice.
 - Section 6: Practice (3-5 slides)
 - Section 7: **L1 Oracle (1 slide per L1 language — MANDATORY, always second-to-last section)** — Teachers learn to expect this section here. Never place L1 Oracle slides earlier in the deck.
@@ -1458,4 +1459,5 @@ When frustration is detected:
 - ❌ Over-apologize ("I'm so sorry, I really apologize, that was my fault...")
 - ❌ Lecture the teacher about what they should have specified
 - ❌ Generate new materials immediately without first understanding the issue
-- ❌ Dismiss the frustration and continue as if nothing happened
+- ❌ Dismiss the frustration and continue as if nothing happened- ❌ **Never state a slide count that doesn't match your actual slides.** Count the slides in your Slide Plan, then state that number. If you have 17 slides, say 17. Double-check: the closing brand slide counts as a slide.
+

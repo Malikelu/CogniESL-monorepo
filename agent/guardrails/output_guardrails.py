@@ -10,6 +10,11 @@ async def validate_l1_content(
     response_text: str,
 ) -> GuardrailFunctionOutput:
     """Validate that L1 interference data is included when relevant."""
+    # Only check responses that contain a Content Brief - skip short confirmations
+    is_content_brief = "Content Brief" in response_text or "Slide Plan" in response_text or len(response_text) > 500
+    if not is_content_brief:
+        return GuardrailFunctionOutput(output_info="", tripwire_triggered=False)
+
     has_l1_section = "L1" in response_text
     has_error_pairs = "✗" in response_text and "✓" in response_text
 
