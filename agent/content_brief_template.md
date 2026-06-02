@@ -9,6 +9,9 @@
 🔍 **Concept Check Questions** *(shown to students before the formula)*
 1. Q: [paste exact CCQ 1 question from YAML] → A: [paste exact CCQ 1 answer]
 2. Q: [paste exact CCQ 2 question from YAML] → A: [paste exact CCQ 2 answer]
+3. Q: [paste exact CCQ 3 question from YAML if present] → A: [paste exact CCQ 3 answer]
+4. Q: [paste exact CCQ 4 question from YAML if present] → A: [paste exact CCQ 4 answer]
+*(Include all CCQs from the YAML — typically 2-4. Each CCQ gets its own numbered line.)*
 
 📐 **Formula**
 Affirmative: [paste exact form.affirmative.structure from YAML]
