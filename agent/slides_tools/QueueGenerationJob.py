@@ -66,13 +66,11 @@ class QueueGenerationJob(BaseTool):
         description="Teacher's email address for completion notification. None if not provided.",
     )
 
-    def run(self) -> str:
+    async def run(self) -> str:
         # Get user_id from agent context (set by server.py from JWT)
         _user_id = None
         try:
-            _ctx = getattr(self, '_shared_state', None)
-            if _ctx:
-                _user_id = getattr(_ctx, 'user_id', None)
+            _user_id = self.context.get('user_id', None)
         except Exception:
             pass
 

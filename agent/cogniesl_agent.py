@@ -11,6 +11,7 @@ AGENT_DIR = Path(__file__).parent
 sys.path.insert(0, str(AGENT_DIR))
 
 from config import get_default_model
+from agent.guardrails import require_esl_topic, validate_l1_content, validate_slide_count, validate_citations
 
 
 def create_cogniesl_agent():
@@ -128,5 +129,9 @@ def create_cogniesl_agent():
         model=get_default_model(),
         model_settings=ModelSettings(
             temperature=0.7,
+            parallel_tool_calls=False,
         ),
+        input_guardrails=[require_esl_topic],
+        output_guardrails=[validate_l1_content, validate_citations, validate_slide_count],
+        validation_attempts=2,
     )

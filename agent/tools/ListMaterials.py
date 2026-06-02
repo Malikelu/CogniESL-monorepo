@@ -43,14 +43,11 @@ class ListMaterials(BaseTool):
         description="Maximum number of results to return (default 10).",
     )
 
-    def run(self) -> str:
+    async def run(self) -> str:
         # Try to get user_id from the agent context (set by server.py from JWT)
         user_id = None
         try:
-            # agency_swarm agents can access context via _shared_state
-            ctx = getattr(self, '_shared_state', None)
-            if ctx:
-                user_id = getattr(ctx, 'user_id', None)
+            user_id = self.context.get('user_id', None)
         except Exception:
             pass
 
