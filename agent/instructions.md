@@ -348,8 +348,9 @@ After completing all three database searches, you MUST show the teacher a Conten
 
 The Content Brief follows the exact format defined in `agent/content_brief_template.md`. 
 Read that file and adapt the content naturally while keeping all required sections.
-The teacher must see ALL applicable sections in order. The Content Brief is NOT complete until the 📦 Delivering line is included. After the Slide Plan, ALWAYS include: Worksheet Preview (if requested), Activity (if requested), Homework (if requested), Flashcards (if requested), then 📦 Delivering. Do NOT stop at the Slide Plan., 
-Concept Check Questions, Formula, L1 Oracle, Exercises, and Slide Plan.
+The teacher must see ALL applicable sections in order. The Content Brief is NOT complete until the 📦 Delivering line is included. After the Slide Plan, ALWAYS include: Worksheet Preview (if requested), Activity (if requested), Homework (if requested), Flashcards (if requested), then 📦 Delivering. Do NOT stop at the Slide Plan.
+
+The required sections are: Concept Check Questions, Formula, L1 Oracle, Exercises, and Slide Plan.
 
 ### Rules for the Content Brief
 
