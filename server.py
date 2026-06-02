@@ -62,7 +62,7 @@ def _make_context(agent):
     )
 
 
-def get_session(session_id: str):
+def get_session(session_id: str, format_hint: str = ""):
     """Get or create a persistent agent + context for a session."""
     with _lock:
         now = time.time()
@@ -75,7 +75,7 @@ def get_session(session_id: str):
 
         if session_id not in _agents:
             logging.info(f"Creating new agent for session: {session_id}")
-            agent = create_cogniesl_agent()
+            agent = create_cogniesl_agent(format_request=format_hint if format_hint else "")
             _agents[session_id] = agent
             _contexts[session_id] = _make_context(agent)
 
@@ -580,7 +580,26 @@ async def get_response(request: Request):
         return JSONResponse({"error": "Invalid or expired token"}, status_code=401)
 
     session_id = request.headers.get("X-Session-ID", request.client.host)
-    agent, ctx = get_session(session_id)
+    
+    # Detect format from first message to optimize tool loading
+    fmt = message.lower()
+    has_slides = any(w in fmt for w in ["slide", "presentation", "deck", "pptx", "powerpoint"])
+    has_docs = any(w in fmt for w in ["worksheet", "handout", "printable", "pdf", "exercise", "document"])
+    has_activity = any(w in fmt for w in ["activity", "game", "drill"])
+    format_count = sum([has_slides, has_docs, has_activity])
+    
+    # Only optimize when exactly one format is clearly requested
+    if format_count == 1:
+        if has_slides:
+            format_hint = "slides"
+        elif has_docs:
+            format_hint = "worksheet"
+        else:
+            format_hint = "activity"
+    else:
+        format_hint = ""
+    
+    agent, ctx = get_session(session_id, format_hint)
 
     ctx.user_id = _authed_user.id  # type: ignore[attr-defined]
     message = (

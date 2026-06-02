@@ -132,7 +132,7 @@ def _select_tools(format_request: str = "") -> list:
     return selected
 
 
-def create_cogniesl_agent():
+def create_cogniesl_agent(format_request: str = ""):
     # Apply runtime patches to agency_swarm
     from patches.patch_agency_swarm_dual_comms import apply_dual_comms_patch
     from patches.patch_file_attachment_refs import apply_file_attachment_reference_patch
@@ -153,7 +153,7 @@ def create_cogniesl_agent():
             "and generates professional teaching materials (slides, worksheets, activities)."
         ),
         instructions=_build_instructions(),
-        tools=_select_tools(),
+        tools=_select_tools(format_request),
         model=get_default_model(),
         model_settings=ModelSettings(
             temperature=0.7,
