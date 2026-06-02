@@ -14,6 +14,29 @@ from config import get_default_model
 from agent.guardrails import require_esl_topic, validate_l1_content, validate_slide_count, validate_citations
 
 
+def _build_instructions() -> str:
+    """Build agent instructions by appending dynamic context to the static instructions.md."""
+    from datetime import datetime, timezone
+    from pathlib import Path
+    
+    instructions_path = Path(__file__).parent / "instructions.md"
+    now_utc = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    body = instructions_path.read_text(encoding="utf-8")
+    
+    # List existing project folders so the agent can avoid name collisions
+    mnt_dir = Path("/mnt")
+    projects = []
+    if mnt_dir.exists():
+        projects = sorted(d.name for d in mnt_dir.iterdir() if d.is_dir())
+    projects_block = "\n".join(f"  - {p}" for p in projects[:20]) if projects else "  (none)"
+    
+    return (
+        f"{body}\n\n"
+        f"Current date/time (UTC): {now_utc}\n\n"
+        f"Existing project folders (do NOT reuse these names):\n{projects_block}"
+    )
+
+
 def create_cogniesl_agent():
     # Apply runtime patches to agency_swarm
     from patches.patch_agency_swarm_dual_comms import apply_dual_comms_patch
@@ -68,8 +91,6 @@ def create_cogniesl_agent():
         ValidateRequirements,
     )
 
-    instructions_path = AGENT_DIR / "instructions.md"
-
     return Agent(
         name="CogniESL Agent",
         description=(
@@ -77,7 +98,7 @@ def create_cogniesl_agent():
             "Gathers requirements from teachers, searches the grammar/L1/activities database, "
             "and generates professional teaching materials (slides, worksheets, activities)."
         ),
-        instructions=instructions_path.read_text(encoding="utf-8"),
+        instructions=_build_instructions(),
         tools=[
             # Database search tools
             SearchGrammarTool,
