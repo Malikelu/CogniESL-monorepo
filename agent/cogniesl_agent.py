@@ -13,6 +13,35 @@ sys.path.insert(0, str(AGENT_DIR))
 from config import get_default_model
 from agent.guardrails import require_esl_topic, validate_l1_content, validate_slide_count, validate_citations
 
+# Module-level imports for _select_tools() (used before create_cogniesl_agent() executes)
+from agency_swarm.tools import IPythonInterpreter
+from tools import SearchGrammarTool, SearchActivitiesTool, GetL1InterferenceTool
+from slides_tools import (
+    InsertNewSlides,
+    ModifySlide,
+    ManageTheme,
+    BuildPptxFromHtmlSlides,
+    DownloadImage,
+    ImageSearch,
+    GenerateImage,
+)
+from slides_tools.QueueGenerationJob import QueueGenerationJob
+from slides_tools.MarkJobComplete import MarkJobComplete
+from slides_tools.BuildOfflineBundle import BuildOfflineBundle
+from slides_tools.SnapSlideForEmail import SnapSlideForEmail
+from shared_tools.CopyFile import CopyFile
+from utility_tools.ReadFile import ReadFile
+from validation_tools import (
+    ValidateSlideSet,
+    ValidateAndFixSlides,
+    ValidateL1Content,
+)
+from docs_tools.CreateDocument import CreateDocument
+from docs_tools.ConvertDocument import ConvertDocument
+from docs_tools.ModifyDocument import ModifyDocument
+from docs_tools.ViewDocument import ViewDocument
+from docs_tools.ListDocuments import ListDocuments
+
 
 def _build_instructions() -> str:
     """Build agent instructions by appending dynamic context to the static instructions.md."""
@@ -37,6 +66,70 @@ def _build_instructions() -> str:
     )
 
 
+def _select_tools(format_request: str = "") -> list:
+    """Select tools based on the teacher's requested format.
+
+    Instead of loading all ~30 tools for every session, load only the
+    tools needed for the requested format. Falls back to all tools
+    when the format is ambiguous or unspecified.
+    """
+    fmt = format_request.lower()
+
+    # Tools needed regardless of format
+    required_tools = [
+        SearchGrammarTool,
+        GetL1InterferenceTool,
+        SearchActivitiesTool,
+        IPythonInterpreter,
+        ReadFile,
+        CopyFile,
+        QueueGenerationJob,
+        MarkJobComplete,
+    ]
+
+    # Format-specific tool groups
+    slides_tools = [
+        InsertNewSlides,
+        ModifySlide,
+        ManageTheme,
+        BuildPptxFromHtmlSlides,
+        BuildOfflineBundle,
+        ImageSearch,
+        DownloadImage,
+        GenerateImage,
+        SnapSlideForEmail,
+        ValidateSlideSet,
+        ValidateAndFixSlides,
+        ValidateL1Content,
+    ]
+
+    docs_tools = [
+        CreateDocument,
+        ConvertDocument,
+        ModifyDocument,
+        ViewDocument,
+        ListDocuments,
+    ]
+
+    if not fmt or fmt == "all":
+        # Ambiguous or all formats — load everything
+        return required_tools + slides_tools + docs_tools
+
+    selected = list(required_tools)
+
+    if any(w in fmt for w in ["slide", "presentation", "deck", "pptx", "powerpoint"]):
+        selected.extend(slides_tools)
+
+    if any(w in fmt for w in ["worksheet", "activity", "handout", "printable", "pdf", "exercise", "document"]):
+        selected.extend(docs_tools)
+
+    # If nothing matched the format filters, load everything (safe fallback)
+    if len(selected) == len(required_tools):
+        return required_tools + slides_tools + docs_tools
+
+    return selected
+
+
 def create_cogniesl_agent():
     # Apply runtime patches to agency_swarm
     from patches.patch_agency_swarm_dual_comms import apply_dual_comms_patch
@@ -49,47 +142,6 @@ def create_cogniesl_agent():
     apply_utf8_file_read_patch()
 
     from agency_swarm import Agent, ModelSettings
-    from agency_swarm.tools import IPythonInterpreter
-
-    from tools import SearchGrammarTool, SearchActivitiesTool, GetL1InterferenceTool
-    from tools.ListMaterials import ListMaterials
-    from slides_tools import (
-        InsertNewSlides,
-        ModifySlide,
-        ManageTheme,
-        DeleteSlide,
-        SlideScreenshot,
-        ReadSlide,
-        BuildPptxFromHtmlSlides,
-        RestoreSnapshot,
-        CreatePptxThumbnailGrid,
-        CheckSlideCanvasOverflow,
-        CheckSlide,
-        DownloadImage,
-        EnsureRasterImage,
-        ImageSearch,
-        GenerateImage,
-    )
-    from slides_tools.QueueGenerationJob import QueueGenerationJob
-    from slides_tools.MarkJobComplete import MarkJobComplete
-    from slides_tools.BuildOfflineBundle import BuildOfflineBundle
-    from slides_tools.GenerateFlashcardPdf import GenerateFlashcardPdf
-    from slides_tools.GenerateProgressTrackerPdf import GenerateProgressTrackerPdf
-    from slides_tools.SnapSlideForEmail import SnapSlideForEmail
-    from docs_tools.CreateDocument import CreateDocument
-    from docs_tools.ConvertDocument import ConvertDocument
-    from docs_tools.ModifyDocument import ModifyDocument
-    from docs_tools.ViewDocument import ViewDocument
-    from docs_tools.ListDocuments import ListDocuments
-    from docs_tools.RestoreDocument import RestoreDocument
-    from shared_tools.CopyFile import CopyFile
-    from utility_tools.ReadFile import ReadFile
-    from validation_tools import (
-        ValidateSlideSet,
-        ValidateAndFixSlides,
-        ValidateL1Content,
-        ValidateRequirements,
-    )
 
     return Agent(
         name="CogniESL Agent",
@@ -99,54 +151,7 @@ def create_cogniesl_agent():
             "and generates professional teaching materials (slides, worksheets, activities)."
         ),
         instructions=_build_instructions(),
-        tools=[
-            # Database search tools
-            SearchGrammarTool,
-            SearchActivitiesTool,
-            GetL1InterferenceTool,
-            ListMaterials,
-            # Slides tools
-            InsertNewSlides,
-            ModifySlide,
-            ManageTheme,
-            DeleteSlide,
-            SlideScreenshot,
-            ReadSlide,
-            BuildPptxFromHtmlSlides,
-            RestoreSnapshot,
-            CreatePptxThumbnailGrid,
-            CheckSlideCanvasOverflow,
-            CheckSlide,
-            DownloadImage,
-            EnsureRasterImage,
-            ImageSearch,
-            GenerateImage,
-            # Docs tools
-            CreateDocument,
-            ConvertDocument,
-            ModifyDocument,
-            ViewDocument,
-            ListDocuments,
-            RestoreDocument,
-            # Utility tools
-            IPythonInterpreter,
-            ReadFile,
-            CopyFile,
-            # Validation tools
-            ValidateSlideSet,
-            ValidateAndFixSlides,
-            ValidateL1Content,
-            ValidateRequirements,
-            # Job tracking (Phase 5 — async email delivery)
-            QueueGenerationJob,
-            MarkJobComplete,
-            # HTML-first: offline bundle (primary) + PPTX kept as opt-in
-            BuildOfflineBundle,
-            # Flashcard generator (3e) + Progress tracker (3d) + Email snapshot (5e)
-            GenerateFlashcardPdf,
-            GenerateProgressTrackerPdf,
-            SnapSlideForEmail,
-        ],
+        tools=_select_tools(),
         model=get_default_model(),
         model_settings=ModelSettings(
             temperature=0.7,
