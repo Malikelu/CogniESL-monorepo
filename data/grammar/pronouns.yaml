@@ -1,0 +1,219 @@
+citations:
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents
+    how transfer effects are non-linear, determined by functional fit between L1 and
+    L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects
+    are non-linear — determined by functional fit between L1 and L2 systems rather
+    than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning.
+    Routledge.
+  tier: 2
+common_errors:
+- correction: I saw her. / He and I went. / Between you and me.
+  error: '*I saw she.* / *Me and him went.* / *Between you and I.*'
+  explanation: English requires object pronouns (me, him, her, us, them) after verbs
+    and prepositions. Subject pronouns (I, he, she, we, they) are only used as sentence
+    subjects.
+  flagged: false
+  l1_groups:
+  - Spanish
+  reliability: B
+  source: 'Swan & Smith (2001), Ch. 22: Spanish speakers. Spanish subject and object
+    pronouns have the same form in many cases (*I saw she).'
+- correction: He went yesterday. / He is Spanish. / It is Spanish.
+  error: '*He go yesterday.* / *Is Spanish.* (subject pronoun dropped)'
+  explanation: Spanish allows subject pronoun dropping (pro-drop) because verb endings
+    encode person. English requires explicit subjects in all finite clauses.
+  flagged: false
+  l1_groups:
+  - Spanish
+  - Italian
+  reliability: B
+  source: 'Swan & Smith (2001). Spanish (pro-drop: *Is Spanish), Italian (subject
+    pronouns often dropped).'
+- correction: He never shaves after he has washed.
+  error: '*Himself never shaves after he has washed.* (reflexive overuse)'
+  explanation: Dutch uses reflexive pronouns more broadly than English. English reflexives
+    are used only when subject and object refer to the same person.
+  flagged: false
+  l1_groups:
+  - Dutch
+  reliability: B
+  source: 'Swan & Smith (2001), Ch. 9: Dutch speakers. Dutch reflexive overuse: *He
+    never shaves himself after he has washed himself.'
+- correction: It is raining today. / It is very cold.
+  error: '*It is rain today.* / *Is very cold.* (dummy subject omission)'
+  explanation: 'Parrott (2000) Ch. 21: English requires a grammatical subject in all
+    finite clauses, even when the subject has no semantic content ("it" in weather
+    expressions, "there" in existential sentences). Many L1s (pro-drop languages,
+    topic-prominent languages) don''t require this dummy subject. Parrott recommends
+    teaching dummy "it" and existential "there" as structural requirements of English
+    syntax, not as meaningful pronouns.
+
+    '
+  flagged: false
+  l1_groups:
+  - Spanish
+  - Italian
+  - Portuguese
+  - Japanese
+  - Korean
+  - Chinese
+  - Turkish
+  - Arabic
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press. Ch. 21: Existential and dummy subjects.'
+- correction: One should always be careful with one's belongings. / People should
+    always be careful with their belongings.
+  error: '*One should always be careful with their belongings.* (singular they)'
+  explanation: 'Parrott (2000) Ch. 22: Generic "one" is formal and requires "one''s"
+    as the possessive. "They/their" as singular generic pronouns is increasingly common
+    in spoken and informal written English. Parrott notes this as a changing area
+    of usage — teaching both patterns (formal "one...one''s" and informal "they...their")
+    prepares learners for real-world input.
+
+    '
+  flagged: false
+  l1_groups:
+  - Dutch
+  - German
+  - Norwegian
+  - Swedish
+  - French
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press. Ch. 22: Generic reference.'
+description: Words that replace nouns in English. English has distinct subject (I,
+  you, he, she, it, we, they) and object (me, you, him, her, it, us, them) pronoun
+  forms. Many L1s do not make this distinction, creating systematic transfer errors.
+dialectal_variation:
+- note: 'Biber et al. (2021) GSWE Ch. 4.2: Pronoun use shows register variation. First
+    person pronouns are more common in conversation than academic prose. Object pronoun
+    case (me, him, her) is stable across dialects. Who vs whom distinction is maintained
+    in formal writing but whom is rare in conversation. BrE and AmE differ minimally
+    in pronoun usage.'
+discourse_notes:
+- 'GB3 Ch.9: Pronoun choice in discourse — full NPs for first mention, pronouns for
+  subsequent reference. Academic prose uses fewer pronouns (more full NPs); conversation
+  uses more pronouns. Register variation: Biber et al. (2021) Ch.4 — conversation
+  has 5x more pronoun use than academic prose. Source: Celce-Murcia & Larsen-Freeman
+  (1999) GB3 Ch.9; Biber et al. (2021) GSWE Ch.4.'
+grammar_point: pronouns
+level: A2
+meaning:
+  ccqs:
+  - answer: 'No. After a verb, use the object form: I saw her yesterday.'
+    purpose: Tests understanding of subject vs object pronoun distinction
+    question: I saw she yesterday. Is this correct?
+  - answer: 'No. As subjects, use subject pronouns: He and I went to the shop.'
+    purpose: Tests understanding of subject pronoun forms
+    question: Me and him went to the shop. Is this correct?
+  contrast: Subject pronouns (I, he, she) before verbs | Object pronouns (me, him,
+    her) after verbs/prepositions | Possessive pronouns (mine, his, hers) replace
+    noun phrases
+  core_meaning: Pronouns replace nouns to avoid repetition. English pronouns change
+    form based on their grammatical role (subject vs object) and some encode gender
+    (he/she) and number (singular/plural).
+  timeline: N/A (pronouns are not tense-based).
+register_notes:
+- note: Biber et al. (2021) — Pronoun use is much higher in conversation than in academic
+    prose. Academic prose uses predominantly full noun phrases. Register difference
+    in pronoun vs. NP ratio is one of the strongest register correlates. Ch. 4.1.2
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 4.1.2
+sources:
+- Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+- 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University
+  Press. Ch. 21-22: Existential/dummy subjects and generic reference.'
+form:
+  affirmative:
+    structure: 'Subject pronouns before verb: I, you, he, she, it, we, they + verb
+      | Object pronouns after verb/preposition: me, you, him, her, it, us, them |
+      Possessive pronouns standalone: mine, yours, his, hers, its, ours, theirs |
+      Reflexive pronouns: myself, yourself, himself, herself, itself, ourselves, yourselves,
+      themselves'
+  negative:
+    structure: 'Subject pronoun + negative verb: I do not, he does not, we have not
+      | Object pronoun in negative: I did not see him | Negative possessive: It is
+      not mine'
+  questions:
+    structure: 'Question word + verb + subject pronoun? Are you? Does she? | Whom
+      + auxiliary + subject + verb? (formal: To whom did you give it?)'
+sub_rules:
+- examples:
+  - I saw him. (subject + object)
+  - She gave it to me. (subject + verb + object + preposition + object)
+  rule: English uses different pronoun forms for subject and object positions (I/me,
+    he/him, she/her, we/us, they/them). This case distinction does not exist in all
+    languages.
+  type: grammatical
+- examples:
+  - It is raining. / It is important to study. / There is a book on the table.
+  rule: English requires dummy subjects (it, there) in subject position when no semantic
+    subject exists. Many languages allow subjectless sentences.
+  type: grammatical
+- examples:
+  - Myself, I prefer tea. (emphatic)
+  - He hurt himself. (reflexive)
+  - They enjoyed themselves. (reflexive)
+  rule: Reflexive pronouns refer back to the subject. They can also be used emphatically
+    (I myself saw it).
+  type: lexical
+use:
+- context: Referring to people already mentioned
+  examples:
+  - John is here. He arrived early.
+  - I called Mary. She said she would come.
+- context: Avoiding repetition of noun phrases
+  examples:
+  - The book is on the table. Please bring it to me.
+  - The students finished their work. They are leaving now.
+- context: Expressing possession without repeating nouns
+  examples:
+  - This is my coat. Yours is over there.
+  - Their house is bigger than ours.
+- context: Emphasis and self-reference
+  examples:
+  - I myself saw the accident.
+  - She made the cake herself.
+phonetics:
+- example_generator:
+  - him -> /ɪm/ (weak), /hɪm/ (strong)
+  - them -> /ðəm/ (weak), /ðem/ (strong)
+  l1_issue: Learners may give full stress to object pronouns in all positions instead
+    of reducing them.
+  note: Object pronouns are typically unstressed and reduced in connected speech.
+teaching:
+  recommended_activities:
+  - adaptation_notes: 'Students fill in the correct pronoun form: subject, object,
+      possessive, or reflexive.'
+    duration: 10
+    name: Pronoun Substitution Drill
+  - adaptation_notes: Students replace nouns with pronouns in a paragraph and check
+      for clarity and reference.
+    duration: 15
+    name: Pronoun Hunt
+  - adaptation_notes: Students correct pronoun errors in sample sentences from L1-specific
+      common errors.
+    duration: 15
+    name: Error Correction
+  tips:
+  - 'Swan (2016) PEU 4th ed. Swan (2016) PEU 4th ed. Entries 492-510: Pronouns avoid
+    repetition. Subject pronouns (I, you, he) vs object pronouns (me, you, him). It
+    is used for things, animals, and impersonal references. One can be used as an
+    impersonal pronoun in formal English. They/them can refer to singular indefinite
+    antecedents (everyone...they).'
+  - 'CGEL Ch. 5: CGEL classifies fused-head constructions (where a modifier combines
+    with a missing head noun) into three types: simple (The rich get richer), partitive
+    (Some of the books), and special (You should ask the manager, not me). This explains
+    why determiner-like words can function as NPs.'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 5: CGEL (Ch.5)
+    analyzes pronouns as a SUBCLASS of nouns (not a separate category). Like other
+    nouns, pronouns head NPs. The difference: pronouns are a CLOSED class (no new
+    pronouns) while common nouns are an OPEN class. CGEL also notes that pronouns
+    typically don''t take determiners (*''the he'') or modifiers (*''tall he''), though
+    there are exceptions (''poor me,'' ''she who...'').'
+title: Pronouns (Subject, Object, Possessive, Reflexive)

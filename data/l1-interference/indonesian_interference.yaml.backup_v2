@@ -1,0 +1,2392 @@
+language: Indonesian
+language_code: id
+schema_version: '4.0'
+grammar_points:
+  articles:
+    interference_patterns:
+    - pattern: Omission of definite article (M/I has no articles)
+      example: How was exam?
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      example_l1: ujian
+      example_gloss: exam
+      example_wrong: How was exam?
+      example_correct: How was the exam?
+      explanation: M/I has no articles. Demonstratives ini/itu can overlap with 'the' but optionally, so learners drop the definite article.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Indefinite article omission before abstract/mass nouns
+      example: number of schools
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+      example_l1: jumlah sekolah
+      example_gloss: number of schools
+      example_wrong: number of schools
+      example_correct: a number of schools
+      explanation: Learners drop the indefinite article before nouns relating to mass, quantity, and abstract concepts.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Indefinite article overuse
+      example: My hobbies is a sleeping when I have a problems.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: hobi saya adalah tidur
+      example_gloss: my hobby is sleeping
+      example_wrong: My hobbies is a sleeping when I have a problems.
+      example_correct: My hobby is sleeping when I have problems.
+      explanation: Learners may overuse the indefinite article in contexts where English does not require one.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Definite/indefinite article confusion
+      example: They have to deal with a economic recession.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: mereka harus menghadapi resesi ekonomi
+      example_gloss: they must face economic recession
+      example_wrong: They have to deal with a economic recession.
+      example_correct: They have to deal with the economic recession.
+      explanation: The definite article may be used instead of the indefinite and vice versa.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Article with demonstrative + plural
+      example: It have the four legs.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: Itu punya empat kaki
+      example_gloss: It has four legs
+      example_wrong: It have the four legs.
+      example_correct: It has four legs.
+      explanation: Demonstratives are used with M/I reduplicated plurals, leading learners to use an inappropriate article with English plurals.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    examples:
+    - wrong: How was exam?
+      correct: How was the exam?
+    - wrong: number of schools
+      correct: a number of schools
+    - wrong: They have to deal with a economic recession.
+      correct: They have to deal with the economic recession.
+    - wrong: It have the four legs.
+      correct: It has four legs.
+    - wrong: My hobbies is a sleeping when I have a problems.
+      correct: My hobby is sleeping when I have problems.
+    - wrong: They include the secondary school and a kindergarten.
+      correct: They include a secondary school and a kindergarten.
+    why_it_happens: M/I does not have articles. Demonstratives ini (this) and itu (that) can overlap with 'the' but this use is optional. Learners thus drop or misuse articles. (Swan & Smith, pp. 285-286)
+    teacher_tips:
+      how_to_explain: 'Teach: English REQUIRES articles. M/I has no article system, so learners must learn everything from scratch.'
+      where_to_start: Start with the definite article omission pattern (most common).
+      sequencing: 'Week 1: Definite article. Week 2: Indefinite article. Week 3: Article with plurals and mass nouns. Week 4: Review.'
+      exercises:
+      - name: articles Audit
+        type: error-correction
+        description: 20 sentences with articles errors from M/I learner writing.
+        duration: 15
+      - name: articles Translation
+        type: translation
+        description: Translate 15 sentences focusing on articles.
+        duration: 15
+      - name: articles Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing articles.
+        duration: 10
+      - name: articles Error Hunt
+        type: error-correction
+        description: A paragraph with 10 articles errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: M/I does not have articles; learners drop definite and indefinite articles
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, pp. 285-286
+      tier: 1
+    - claim: Learners drop indefinite article before mass/quantity nouns
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 285
+      tier: 1
+    - claim: Definite article may be used instead of indefinite and vice versa
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 286
+      tier: 1
+  word_order:
+    interference_patterns:
+    - pattern: SVO but flexible; subject dropped and order reversed
+      example: From school I learn English.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: Dari sekolah saya belajar bahasa Inggris
+      example_gloss: From school I learn English
+      example_wrong: From school I learn English.
+      example_correct: I learn English at school.
+      explanation: M/I word order is SVO in formal contexts, but in casual speech the subject may be dropped and the word order reversed.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Topicalisation (fronting constituents for emphasis)
+      example: This kind we don't have.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: Jenis ini kami tidak punya
+      example_gloss: Kind this we not have
+      example_wrong: This kind we don't have.
+      example_correct: We don't have this kind.
+      explanation: M/I speakers frequently topicalise constituents by placing them at the beginning of sentences.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Pronoun copying (noun + repeated pronoun)
+      example: My mother, she wants me to help her cook.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: Ibu saya, dia mau saya bantu dia masak
+      example_gloss: Mother my, she wants I help she cook
+      example_wrong: My mother, she wants me to help her cook.
+      example_correct: My mother wants me to help her cook.
+      explanation: 'Pronoun copying: the subject or object is stated as a noun and then repeated in pronominalised form.'
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    examples:
+    - wrong: From school I learn English.
+      correct: I learn English at school.
+    - wrong: This kind we don't have.
+      correct: We don't have this kind.
+    - wrong: Ten per cent off we give our customers.
+      correct: We give our customers ten per cent off.
+    - wrong: My homework I have to do first.
+      correct: I have to do my homework first.
+    - wrong: My mother, she wants me to help her cook.
+      correct: My mother wants me to help her cook.
+    - wrong: Some Europeans, they like to eat here.
+      correct: Some Europeans like to eat here.
+    - wrong: My sister and me, we always fight.
+      correct: My sister and I always fight.
+    why_it_happens: M/I word order is SVO in formal contexts, but in casual speech the subject may be dropped and the word order reversed. Topicalisation and pronoun copying are common M/I discourse features. (Swan & Smith, pp. 284-285)
+    teacher_tips:
+      how_to_explain: 'Teach: English is strictly SVO. Fronting for emphasis is rare. Do not repeat the subject as a pronoun after stating it as a noun.'
+      where_to_start: Start with basic SVO order. Then address topicalisation and pronoun copying.
+      sequencing: 'Week 1: SVO order. Week 2: Topicalisation errors. Week 3: Pronoun copying. Week 4: Review.'
+      exercises:
+      - name: word_order Audit
+        type: error-correction
+        description: 20 sentences with word order errors from M/I learner writing.
+        duration: 15
+      - name: word_order Translation
+        type: translation
+        description: Translate 15 sentences focusing on word order.
+        duration: 15
+      - name: word_order Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing word order.
+        duration: 10
+      - name: word_order Error Hunt
+        type: error-correction
+        description: A paragraph with 10 word order errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 3
+    persistence: 3
+    communicative_impact: 2
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: M/I word order is SVO but flexible; subject may be dropped and order reversed in casual speech
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 282
+      tier: 1
+    - claim: Topicalisation by fronting constituents is common in M/I
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, pp. 284-285
+      tier: 1
+    - claim: Pronoun copying (noun + repeated pronoun) is a feature of M/I discourse
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 285
+      tier: 1
+  questions:
+    interference_patterns:
+    - pattern: Wh-in-situ (no auxiliary inversion)
+      example: Ali buy what?
+      frequency: 5
+      persistence: 4
+      communicative_impact: 4
+      example_l1: Ali beli apa?
+      example_gloss: Ali buy what
+      example_wrong: Ali buy what?
+      example_correct: What did Ali buy?
+      explanation: M/I allows wh-in-situ questions (the wh-word stays in its original position). English requires auxiliary inversion and do-support.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Omission of do-support in questions
+      example: Why you so angry?
+      frequency: 5
+      persistence: 4
+      communicative_impact: 4
+      example_l1: Kenapa kamu marah?
+      example_gloss: Why you angry
+      example_wrong: Why you so angry?
+      example_correct: Why are you so angry?
+      explanation: M/I forms questions without do-support. English requires do/does/did for most questions (except with be and modals).
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Question tag reduction to isn't it? / is it?
+      example: She will remember, isn't it?
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: Dia akan ingat, bukan?
+      example_gloss: She will remember, not
+      example_wrong: She will remember, isn't it?
+      example_correct: She will remember, won't she?
+      explanation: English question tags tend to be reduced to only two forms (isn't it? and is it?), regardless of the auxiliary in the main clause.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    examples:
+    - wrong: Ali buy what?
+      correct: What did Ali buy?
+    - wrong: What Ali buy?
+      correct: What did Ali buy?
+    - wrong: Why you so angry?
+      correct: Why are you so angry?
+    - wrong: Want to go where you?
+      correct: Where do you want to go?
+    - wrong: What that Ali buy?
+      correct: What did Ali buy?
+    - wrong: She will remember, isn't it?
+      correct: She will remember, won't she?
+    - wrong: They don't know you, is it?
+      correct: They don't know you, do they?
+    why_it_happens: M/I allows three question structures (in-situ, fully-moved, and focus) without do-support. English requires systematic auxiliary inversion. Question tags are reduced to two invariant forms. (Swan & Smith, pp. 288-289)
+    teacher_tips:
+      how_to_explain: 'Teach: Do/Does/Did + subject + base verb? Wh- questions require inversion. Question tags must match the auxiliary in the main clause.'
+      where_to_start: Start with yes/no questions and do-support. Then teach wh- questions. Then question tags.
+      sequencing: 'Week 1: Do/does questions. Week 2: Wh- questions. Week 3: Question tags. Week 4: Review.'
+      exercises:
+      - name: questions Audit
+        type: error-correction
+        description: 20 sentences with questions errors from M/I learner writing.
+        duration: 15
+      - name: questions Translation
+        type: translation
+        description: Translate 15 sentences focusing on questions.
+        duration: 15
+      - name: questions Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing questions.
+        duration: 10
+      - name: questions Error Hunt
+        type: error-correction
+        description: A paragraph with 10 questions errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 5
+    persistence: 4
+    communicative_impact: 4
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: M/I allows wh-in-situ questions; learners produce *Ali buy what?
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, pp. 288-289
+      tier: 1
+    - claim: English question tags reduced to isn't it? and is it?
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 289
+      tier: 1
+  negation:
+    interference_patterns:
+    - pattern: Use of 'no' as negator (instead of 'not')
+      example: She no understand my problems.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: Dia tidak paham masalah saya
+      example_gloss: She not understand problems my
+      example_wrong: She no understand my problems.
+      example_correct: She does not understand my problems.
+      explanation: M/I speakers use the negative particles no, not, never and not yet indiscriminately. Tidak is the general negator in M/I.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Omission of do-support in negation
+      example: I not want to be a teacher.
+      frequency: 5
+      persistence: 4
+      communicative_impact: 4
+      example_l1: Saya tidak mau jadi guru
+      example_gloss: I not want become teacher
+      example_wrong: I not want to be a teacher.
+      example_correct: I do not want to be a teacher.
+      explanation: M/I negation uses pre-verbal particles (tidak, belum). English requires do-support for negation of lexical verbs.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Use of 'never' for single past negation
+      example: The teacher never come to class today.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      example_l1: Guru tidak datang ke kelas hari ini
+      example_gloss: Teacher not come to class today
+      example_wrong: The teacher never come to class today.
+      example_correct: The teacher did not come to class today.
+      explanation: M/I speakers use negative particles indiscriminately, including never where English requires did not.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Use of 'not yet' without auxiliary
+      example: He not yet finish his homework.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: Dia belum selesaikan PR-nya
+      example_gloss: He not-yet finish homework-his
+      example_wrong: He not yet finish his homework.
+      example_correct: He has not yet finished his homework.
+      explanation: Belum (not yet) is used as a pre-verbal particle in M/I without auxiliary verbs.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    examples:
+    - wrong: She no understand my problems.
+      correct: She does not understand my problems.
+    - wrong: I not want to be a teacher after I graduate.
+      correct: I do not want to be a teacher after I graduate.
+    - wrong: The teacher never come to class today.
+      correct: The teacher did not come to class today.
+    - wrong: He not yet finish his homework.
+      correct: He has not yet finished his homework.
+    - wrong: I said no to do it again.
+      correct: I said I would not do it again.
+    why_it_happens: M/I uses pre-verbal negative particles (tidak, belum) without do-support. English requires do/does/did + not for negation of lexical verbs. M/I speakers use no, not, never and not yet indiscriminately. (Swan & Smith, p. 289)
+    teacher_tips:
+      how_to_explain: 'Teach: do/does/did + not + base verb. M/I uses tidak before the verb; English needs the auxiliary do.'
+      where_to_start: Start with do-support in negation. Then address no vs. not confusion.
+      sequencing: 'Week 1: Do/does/did + not. Week 2: No vs. not. Week 3: Never vs. did not. Week 4: Review.'
+      exercises:
+      - name: negation Audit
+        type: error-correction
+        description: 20 sentences with negation errors from M/I learner writing.
+        duration: 15
+      - name: negation Translation
+        type: translation
+        description: Translate 15 sentences focusing on negation.
+        duration: 15
+      - name: negation Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing negation.
+        duration: 10
+      - name: negation Error Hunt
+        type: error-correction
+        description: A paragraph with 10 negation errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: M/I speakers use negative particles no, not, never and not yet indiscriminately
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 289
+      tier: 1
+    - claim: M/I uses pre-verbal tidak; English requires do-support for negation
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 289
+      tier: 1
+  phonology:
+    interference_patterns:
+    - pattern: /ae/ and /e/ conflated into /e/
+      example: hat -> /het/
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: N/A (phonological)
+      example_gloss: N/A
+      example_wrong: hat -> /het/, ankle -> /enkal/, grammar -> /grems(r)/
+      example_correct: hat -> /haet/, ankle -> /aenkl/, grammar -> /graem@r/
+      explanation: Indonesian has only six vowels. /ae/ and /e/ are conflated into /e/.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Unaspirated /p, t, k/ (sound like /b, d, g/)
+      example: pin sounds like bin
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: N/A (phonological)
+      example_gloss: N/A
+      example_wrong: pin sounds like bin; tile sounds like dial; cot sounds like got; jump -> jum', sergeant -> saajaan, ask -> as'
+      example_correct: pin (aspirated), tile (aspirated), cot (aspirated), jump, sergeant, ask
+      explanation: /p, t, k/ are always unaspirated in M/I, making them sound close to /b, d, g/. In final position they are unreleased or omitted.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: /f/ replaced by /p/
+      example: prefer -> preper
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: N/A (phonological)
+      example_gloss: N/A
+      example_wrong: prefer -> preper, favour -> pavour/papour, film -> pilam
+      example_correct: prefer, favour, film
+      explanation: /f/ in any position is frequently replaced by /p/ by less proficient speakers.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: /v/ replaced by /f/ or /p/
+      example: very -> fery or pery
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: N/A (phonological)
+      example_gloss: N/A
+      example_wrong: very -> fery/pery; final /v/ dropped
+      example_correct: very
+      explanation: /v/ is very rare in M/I; when used it occurs before vowels only. Students replace /v/ by /f/ or /p/, especially at the ends of words.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: /th/ -> /t/ and /dh/ -> /d/
+      example: thin -> tin, that -> dat
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: N/A (phonological)
+      example_gloss: N/A
+      example_wrong: thin -> tin, thought -> tot, thousand -> tousan; that -> dat, there -> dere
+      example_correct: thin, thought, thousand, that, there
+      explanation: Learners generally pronounce /th/ as /t/ and /dh/ as /d/.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Final voiced stops and fricatives dropped
+      example: bulb -> bul, old -> oul
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: N/A (phonological)
+      example_gloss: N/A
+      example_wrong: bulb -> bul, old -> oul, hand -> haan
+      example_correct: bulb, old, hand
+      explanation: M/I words cannot end in voiced stops /b, d, g/ or the fricatives /v, z, sh/ or the affricates /ch, j/. Learners drop these sounds at the ends of English words.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Consonant cluster simplification or schwa insertion
+      example: stand -> Stan, film -> filom
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: N/A (phonological)
+      example_gloss: N/A
+      example_wrong: stand -> Stan, talked -> talk; film -> filom, project -> porojek, clinic -> klinik
+      example_correct: stand, talked, film, project, clinic
+      explanation: Relatively few consonant clusters are permitted in M/I. The most frequently occurring syllable structure is CVC. Students simplify clusters or insert a schwa vowel.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Syllable-timed rhythm; no reduction of function words
+      example: Full pronunciation of auxiliaries and prepositions
+      frequency: 4
+      persistence: 4
+      communicative_impact: 2
+      example_l1: N/A (phonological)
+      example_gloss: N/A
+      example_wrong: Slow, staccato rhythm; auxiliaries and prepositions given full pronunciation; contracted forms avoided
+      example_correct: Natural English rhythm with reduced forms (I'm, don't, gonna)
+      explanation: Most varieties of M/I have a syllable-timed rhythm. Function words are almost never reduced. Students give English auxiliary verbs and prepositions their full written pronunciation.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    examples:
+    - wrong: hat -> /het/
+      correct: hat -> /haet/
+    - wrong: prefer -> preper
+      correct: prefer
+    - wrong: thin -> tin
+      correct: thin
+    - wrong: bulb -> bul
+      correct: bulb
+    - wrong: stand -> Stan
+      correct: stand
+    why_it_happens: The M/I and English phonological systems are very different. English has 22 vowels and diphthongs and 24 consonants. Indonesian has only six vowels and three diphthongs. M/I has 19 native consonants. M/I syllable structure is predominantly CVC with few consonant clusters. (Swan & Smith, pp. 280-282)
+    teacher_tips:
+      how_to_explain: 'Teach: Focus on sounds that don''t exist in M/I. Practice minimal pairs. Drill consonant clusters. Teach English rhythm and connected speech.'
+      where_to_start: Start with the most problematic sounds (/f/ vs /p/, /v/, /th/, /dh/). Then consonant clusters. Then rhythm.
+      sequencing: 'Week 1: /f/ vs /p/ and /v/. Week 2: /th/ and /dh/. Week 3: Consonant clusters. Week 4: Rhythm and connected speech.'
+      exercises:
+      - name: phonology Audit
+        type: error-correction
+        description: 20 sentences with phonology errors.
+        duration: 15
+      - name: phonology Translation
+        type: translation
+        description: Translate 15 sentences focusing on phonology.
+        duration: 15
+      - name: phonology Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing phonology.
+        duration: 10
+      - name: phonology Error Hunt
+        type: error-correction
+        description: A paragraph with 10 phonology errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Underhill Sound Foundations
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: /ae/ and /e/ conflated into /e/ in M/I English
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 280
+      tier: 1
+    - claim: /p, t, k/ always unaspirated; final position unreleased or omitted
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 281
+      tier: 1
+    - claim: /f/ replaced by /p/; /v/ replaced by /f/ or /p/
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 281
+      tier: 1
+    - claim: /th/ -> /t/; /dh/ -> /d/
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 281
+      tier: 1
+    - claim: Final voiced stops and fricatives dropped
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 281
+      tier: 1
+    - claim: Consonant clusters simplified or schwa inserted
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 281
+      tier: 1
+    - claim: Syllable-timed rhythm; function words not reduced
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 282
+      tier: 1
+  countability:
+    interference_patterns:
+    - pattern: Pluralization of uncountable nouns
+      example: two milks, many furnitures
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: dua susu, banyak furnitur
+      example_gloss: two milk, many furniture
+      example_wrong: two milks / three bags of flours / many furnitures / a lot of butters
+      example_correct: two glasses of milk / three bags of flour / a lot of furniture / a lot of butter
+      explanation: Less proficient learners may pluralise English mass nouns. M/I nouns are not inflected for number and reduplication is used for plurals.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Abstract nouns treated as countable
+      example: five year experiences, very good educations
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: lima tahun pengalaman, pendidikan sangat baik
+      example_gloss: five year experience, education very good
+      example_wrong: some works to do / five year experiences / very good educations
+      example_correct: some work to do / five years of experience / a very good education
+      explanation: Abstract nouns which can be mass or count in English produce errors when learners treat them as countable.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Plural endings dropped after numbers or quantifiers
+      example: She have three sister and two brother.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: Dia punya tiga saudara perempuan dan dua saudara laki-laki
+      example_gloss: She has three sister and two brother
+      example_wrong: She have three sister and two brother. / a number of boy / one of the man / a few doctor
+      example_correct: She has three sisters and two brothers. / a number of boys / one of the men / a few doctors
+      explanation: M/I nouns are not inflected for number. Plural endings are particularly likely to be dropped after numbers or plural quantifiers.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    examples:
+    - wrong: two milks
+      correct: two glasses of milk
+    - wrong: many furnitures
+      correct: a lot of furniture
+    - wrong: She have three sister and two brother.
+      correct: She has three sisters and two brothers.
+    - wrong: a number of boy
+      correct: a number of boys
+    - wrong: five year experiences
+      correct: five years of experience
+    - wrong: The teacher gave too much corrections.
+      correct: The teacher gave too many corrections.
+    why_it_happens: M/I nouns are not inflected for number. Plurals are formed by reduplication (kucing-kucing = cats), though not after numerals. Learners drop English plural endings and may pluralise mass nouns. (Swan & Smith, pp. 282-283)
+    teacher_tips:
+      how_to_explain: 'Teach: English plurals add -s/-es. Mass nouns cannot be pluralised. After numbers, nouns must be plural. Common uncountables: homework, advice, information, furniture, luggage.'
+      where_to_start: Start with regular plurals. Then teach mass/count distinction. Then quantifiers (much/many).
+      sequencing: 'Week 1: Regular plurals. Week 2: Mass vs count nouns. Week 3: Quantifiers (much/many, few/little). Week 4: Review.'
+      exercises:
+      - name: countability Audit
+        type: error-correction
+        description: 20 sentences with countability errors from M/I learner writing.
+        duration: 15
+      - name: countability Translation
+        type: translation
+        description: Translate 15 sentences focusing on countability.
+        duration: 15
+      - name: countability Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing countability.
+        duration: 10
+      - name: countability Error Hunt
+        type: error-correction
+        description: A paragraph with 10 countability errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: M/I nouns are not inflected for number; plural endings dropped after numbers
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 282
+      tier: 1
+    - claim: Mass nouns pluralised by less proficient learners (*two milks, *many furnitures)
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 283
+      tier: 1
+    - claim: Abstract nouns treated as countable (*five year experiences, *very good educations)
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 283
+      tier: 1
+  subject_verb_agreement:
+    interference_patterns:
+    - pattern: Omission of third-person -s
+      example: She have three sister.
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
+      example_l1: Dia punya tiga saudara perempuan
+      example_gloss: She has three sister
+      example_wrong: She have three sister and two brother.
+      example_correct: She has three sisters and two brothers.
+      explanation: M/I verbs are not marked for person, tense or number. Third-person -s is frequently omitted.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Singular/plural demonstrative confusion
+      example: this pictures, these bicycle
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: gambar ini, sepeda ini
+      example_gloss: picture this, bicycle this
+      example_wrong: this pictures / these bicycle
+      example_correct: these pictures / this bicycle
+      explanation: Singular and plural forms of quantifiers and demonstratives are not always correctly used. M/I ini/itu do not change for number.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Quantifier agreement errors
+      example: too much corrections, a lots of types
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: terlalu banyak koreksi, banyak jenis
+      example_gloss: too many correction, many type
+      example_wrong: The teacher gave too much corrections. / a lots of types of stones
+      example_correct: The teacher gave too many corrections. / a lot of types of stones
+      explanation: M/I does not distinguish much/many grammatically. Quantifier forms may be confused.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    examples:
+    - wrong: She have three sister and two brother.
+      correct: She has three sisters and two brothers.
+    - wrong: this pictures
+      correct: these pictures
+    - wrong: these bicycle
+      correct: this bicycle
+    - wrong: The teacher gave too much corrections.
+      correct: The teacher gave too many corrections.
+    - wrong: a lots of types of stones
+      correct: a lot of types of stones
+    why_it_happens: M/I verbs are not inflected for person, tense or number. Third-person -s is the most persistent error. Demonstratives and quantifiers do not change for number in M/I. (Swan & Smith, pp. 282-283)
+    teacher_tips:
+      how_to_explain: Teach the 'he/she/it + verb-s' rule as non-negotiable. Drill with third-person subjects. Teach this/these and much/many distinctions.
+      where_to_start: Start with third-person -s. Then demonstratives. Then quantifiers.
+      sequencing: 'Week 1: Third-person -s. Week 2: Demonstratives (this/these). Week 3: Quantifiers (much/many). Week 4: Review.'
+      exercises:
+      - name: subject_verb_agreement Audit
+        type: error-correction
+        description: 20 sentences with SVA errors from M/I learner writing.
+        duration: 15
+      - name: subject_verb_agreement Translation
+        type: translation
+        description: Translate 15 sentences focusing on SVA.
+        duration: 15
+      - name: subject_verb_agreement Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing SVA.
+        duration: 10
+      - name: subject_verb_agreement Error Hunt
+        type: error-correction
+        description: A paragraph with 10 SVA errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 5
+    persistence: 5
+    communicative_impact: 4
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: M/I verbs are not marked for person, tense or number; third-person -s omitted
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 282
+      tier: 1
+    - claim: Singular and plural forms of quantifiers and demonstratives not always correctly used
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 283
+      tier: 1
+  prepositions:
+    interference_patterns:
+    - pattern: Preposition transfer from M/I (at Monday)
+      example: He don't work at Monday.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: Dia tidak bekerja pada hari Senin
+      example_gloss: He not work on day Monday
+      example_wrong: He don't work at Monday.
+      example_correct: He doesn't work on Monday.
+      explanation: M/I uses pada for time expressions. English uses different prepositions for days (on), months (in), and times (at).
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Preposition omission or wrong choice after verbs/adjectives
+      example: I have to attend for my garden.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: Saya harus mengurus taman saya
+      example_gloss: I must tend garden my
+      example_wrong: I have to attend for my garden. / He shouted in angry his mother.
+      example_correct: I have to attend to my garden. / He shouted angrily at his mother.
+      explanation: Errors occur in the use of the correct preposition after a verb, adjective or noun. Many English prepositions have no direct M/I equivalents.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Adverbial particle errors (on/off confusion)
+      example: Please don't on and off the light.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: Tolong jangan matikan dan nyalakan lampu terus-menerus
+      example_gloss: Please not turn-off and turn-on light continuously
+      example_wrong: Please don't on and off the light.
+      example_correct: Please don't turn the light on and off.
+      explanation: Similar problems arise with adverbial particles. M/I expresses these concepts differently.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Preposition in fixed expressions
+      example: He roundabout his house with bicycle.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: Dia mengelilingi rumahnya dengan sepeda
+      example_gloss: He go-around his house with bicycle
+      example_wrong: He roundabout his house with bicycle.
+      example_correct: He went around his house by bicycle.
+      explanation: Learners have difficulty choosing the right preposition in fixed expressions like by bicycle, on the radio, by the back door.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    examples:
+    - wrong: He don't work at Monday.
+      correct: He doesn't work on Monday.
+    - wrong: I have to attend for my garden.
+      correct: I have to attend to my garden.
+    - wrong: He shouted in angry his mother.
+      correct: He shouted angrily at his mother.
+    - wrong: Please don't on and off the light.
+      correct: Please don't turn the light on and off.
+    - wrong: He roundabout his house with bicycle.
+      correct: He went around his house by bicycle.
+    why_it_happens: Many English prepositions do not have equivalents in M/I and their functions are performed by other types of word. Errors occur in the use of the correct preposition after a verb, adjective or noun. (Swan & Smith, p. 290)
+    teacher_tips:
+      how_to_explain: Teach common M/I-English preposition differences. Drill fixed expressions. Teach prepositions as vocabulary items that must be memorised.
+      where_to_start: Start with time prepositions (at/on/in). Then place prepositions. Then verb+preposition combinations.
+      sequencing: 'Week 1: Time prepositions. Week 2: Place prepositions. Week 3: Verb+preposition. Week 4: Fixed expressions.'
+      exercises:
+      - name: prepositions Audit
+        type: error-correction
+        description: 20 sentences with prepositions errors from M/I learner writing.
+        duration: 15
+      - name: prepositions Translation
+        type: translation
+        description: Translate 15 sentences focusing on prepositions.
+        duration: 15
+      - name: prepositions Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing prepositions.
+        duration: 10
+      - name: prepositions Error Hunt
+        type: error-correction
+        description: A paragraph with 10 prepositions errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Errors occur in the use of the correct preposition after a verb, adjective or noun
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 290
+      tier: 1
+    - claim: Many English prepositions have no equivalents in M/I
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 290
+      tier: 1
+  passive_voice:
+    interference_patterns:
+    - pattern: Avoidance of passive voice (M/I prefers active)
+      example: That car drives by Amin.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: Mobil itu dikendarai oleh Amin
+      example_gloss: Car that driven by Amin
+      example_wrong: That car drives by Amin.
+      example_correct: That car is driven by Amin.
+      explanation: M/I has a strong preference for active forms. In spoken M/I the passive is generally avoided. Learners rephrase or avoid English passives.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Incorrect passive formation
+      example: The door is open by me.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      example_l1: Pintu itu dibuka oleh saya
+      example_gloss: Door that opened by me
+      example_wrong: The door is open by me. / For Sarimah the coffee make by me.
+      example_correct: The door was opened by me. / For Sarimah the coffee was made by me.
+      explanation: Passives are formed very differently in M/I (using di- prefix). Learners produce incorrect English passive forms.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    examples:
+    - wrong: That car drives by Amin.
+      correct: That car is driven by Amin.
+    - wrong: The door is open by me.
+      correct: The door was opened by me.
+    - wrong: For Sarimah the coffee make by me.
+      correct: For Sarimah the coffee was made by me.
+    why_it_happens: M/I has a strong preference for active forms. In spoken M/I the passive is generally avoided. Passives are formed very differently in the two languages (M/I uses di- prefix). (Swan & Smith, p. 288)
+    teacher_tips:
+      how_to_explain: 'Teach the passive formula: be + past participle. M/I uses di- prefix; English uses a different structure.'
+      where_to_start: Start with the passive formula. Then teach when to use passive (focus on the action, not the agent).
+      sequencing: 'Week 1: Passive formula (be + p.p.). Week 2: Active vs passive choice. Week 3: Passive in academic writing. Week 4: Review.'
+      exercises:
+      - name: passive_voice Audit
+        type: error-correction
+        description: 20 sentences with passive voice errors from M/I learner writing.
+        duration: 15
+      - name: passive_voice Translation
+        type: translation
+        description: Translate 15 sentences focusing on passive voice.
+        duration: 15
+      - name: passive_voice Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing passive voice.
+        duration: 10
+      - name: passive_voice Error Hunt
+        type: error-correction
+        description: A paragraph with 10 passive voice errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: M/I has a strong preference for active forms; passive generally avoided in speech
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 288
+      tier: 1
+    - claim: Passives formed very differently in M/I (di- prefix); learners produce incorrect forms
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 288
+      tier: 1
+  tense_aspect:
+    interference_patterns:
+    - pattern: Simple past for present perfect (sudah/telah/pernah)
+      example: I write the letter yesterday.
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
+      example_l1: Saya menulis surat kemarin
+      example_gloss: I write letter yesterday
+      example_wrong: I write the letter yesterday. / I was write yesterday the letter. / I finished written the letter.
+      example_correct: I wrote the letter yesterday. / I wrote the letter yesterday. / I finished writing the letter.
+      explanation: M/I has nothing corresponding to the English distinction between simple past and present perfect. Sudah/telah/pernah indicates completion but maps to both.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Present tense with time adverb for progressive
+      example: Now he swim.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: Sekarang dia berenang
+      example_gloss: Now he swim
+      example_wrong: Now he swim. / He is swim at this time. / He swim right now.
+      example_correct: He is swimming now. / He is swimming at this time. / He is swimming right now.
+      explanation: M/I uses the temporal adverb sekarang (now) before or after a verb to signify an ongoing action. Learners transfer this to English without the -ing form.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Future time expressed without will/going to
+      example: Tomorrow you come.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: Besok kamu datang
+      example_gloss: Tomorrow you come
+      example_wrong: Tomorrow you come. / This book will we read. / They will to market on Sunday.
+      example_correct: Tomorrow you will come. / We will read this book. / They will go to the market on Sunday.
+      explanation: The aspectual particle akan in M/I indicates future time. Students have problems using and distinguishing the various English future forms.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Progressive/continuous without auxiliary
+      example: They eating their dinner tonight.
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
+      example_l1: Mereka makan malam ini
+      example_gloss: They eat dinner this-night
+      example_wrong: They eating their dinner tonight. / They coming back late tomorrow. / They waiting here since 2 o'clock past.
+      example_correct: They are eating their dinner tonight. / They are coming back late tomorrow. / They have been waiting here since 2 o'clock.
+      explanation: M/I expresses durative aspect using sedang/semasa/sewaktu/sementara with a verb. Learners use the English -ing form but drop the auxiliary.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    examples:
+    - wrong: I write the letter yesterday.
+      correct: I wrote the letter yesterday.
+    - wrong: Last week I have wrote to her.
+      correct: Last week I wrote to her.
+    - wrong: I already finish write the notes.
+      correct: I have already finished writing the notes.
+    - wrong: Now he swim.
+      correct: He is swimming now.
+    - wrong: Tomorrow you come.
+      correct: Tomorrow you will come.
+    - wrong: They eating their dinner tonight.
+      correct: They are eating their dinner tonight.
+    - wrong: They playing chess yesterday when the phone was ringing.
+      correct: They were playing chess yesterday when the phone rang.
+    why_it_happens: M/I verbs are not marked for person, tense or number. Auxiliary elements indicate tense and aspect. M/I has nothing corresponding to the English distinction between simple past and present perfect. The progressive is expressed with sedang + verb without auxiliary. (Swan & Smith, pp. 286-287)
+    teacher_tips:
+      how_to_explain: 'Teach: English verbs change for tense. Past = -ed (usually). Progressive = be + -ing. Future = will + base verb. M/I uses particles; English changes the verb.'
+      where_to_start: Start with past tense. Then present perfect vs simple past. Then progressive. Then future.
+      sequencing: 'Week 1: Past tense. Week 2: Present perfect vs past. Week 3: Progressive (be + -ing). Week 4: Future forms.'
+      exercises:
+      - name: tense_aspect Audit
+        type: error-correction
+        description: 20 sentences with tense/aspect errors from M/I learner writing.
+        duration: 15
+      - name: tense_aspect Translation
+        type: translation
+        description: Translate 15 sentences focusing on tense/aspect.
+        duration: 15
+      - name: tense_aspect Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing tense/aspect.
+        duration: 10
+      - name: tense_aspect Error Hunt
+        type: error-correction
+        description: A paragraph with 10 tense/aspect errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 5
+    persistence: 5
+    communicative_impact: 4
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: M/I has nothing corresponding to English distinction between simple past and present perfect
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, pp. 286-287
+      tier: 1
+    - claim: M/I uses sekarang for ongoing action; learners transfer without -ing auxiliary
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 287
+      tier: 1
+    - claim: Akan indicates future; learners have problems with English future forms
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 287
+      tier: 1
+    - claim: Progressive expressed with sedang + verb; learners drop auxiliary
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 287
+      tier: 1
+  copula_be:
+    interference_patterns:
+    - pattern: Omission of copula (to be)
+      example: Yusoff very happy.
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
+      example_l1: Yusoff sangat gembira
+      example_gloss: Yusoff very happy
+      example_wrong: Yusoff very happy. / His sisters very clever too. / They hardworking farmers.
+      example_correct: Yusoff is/was very happy. / His sisters are very clever too. / They are hardworking farmers.
+      explanation: Berada, adalah and ialah correspond to the English copula to be, but they are frequently optional. The copula is dropped in sentences expressing a condition or state.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Incorrect copula use (number/person errors)
+      example: Their parents not happy.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: Orang tua mereka tidak senang
+      example_gloss: Parents their not happy
+      example_wrong: Their parents not happy. / Their parent is not happy. / They was hardworking farmers.
+      example_correct: Their parents are not happy. / Their parents are not happy. / They were hardworking farmers.
+      explanation: Mother-tongue interference and confusion over which form is correct results in omission of forms of to be, or errors in their use.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    examples:
+    - wrong: Yusoff very happy.
+      correct: Yusoff is very happy.
+    - wrong: His sisters very clever too.
+      correct: His sisters are very clever too.
+    - wrong: They hardworking farmers.
+      correct: They are hardworking farmers.
+    - wrong: Their parents not happy.
+      correct: Their parents are not happy.
+    why_it_happens: Berada, adalah and ialah correspond to the English copula to be, but they are frequently optional. The copula is dropped in sentences expressing a condition or state of existence. (Swan & Smith, pp. 287-288)
+    teacher_tips:
+      how_to_explain: 'Teach: English ALWAYS needs a verb. After a subject + adjective, you need ''be'' (am/is/are/was/were). M/I can drop this; English cannot.'
+      where_to_start: Start with subject + be + adjective. Then subject + be + noun. Then subject + be + location.
+      sequencing: 'Week 1: am/is/are with adjectives. Week 2: was/were (past). Week 3: be + noun/location. Week 4: Review.'
+      exercises:
+      - name: copula_be Audit
+        type: error-correction
+        description: 20 sentences with copula be errors from M/I learner writing.
+        duration: 15
+      - name: copula_be Translation
+        type: translation
+        description: Translate 15 sentences focusing on copula be.
+        duration: 15
+      - name: copula_be Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing copula be.
+        duration: 10
+      - name: copula_be Error Hunt
+        type: error-correction
+        description: A paragraph with 10 copula be errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 5
+    persistence: 5
+    communicative_impact: 4
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Berada/adalah/ialah correspond to English copula but are frequently optional
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, pp. 287-288
+      tier: 1
+    - claim: Copula dropped in sentences expressing condition or state of existence
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 287
+      tier: 1
+  relative_clauses:
+    interference_patterns:
+    - pattern: Use of 'which' for people (yang = who/which/that)
+      example: People which live in town are rich.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: Orang yang tinggal di kota itu kaya
+      example_gloss: Person who/which live in town that rich
+      example_wrong: People which live in town are rich.
+      example_correct: People who live in town are rich.
+      explanation: M/I has only one relative word yang, which corresponds to English who, which, that and zero. Learners default to which for all antecedents.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Relative pronoun duplicated by personal pronoun
+      example: The letter that I haven't received it yet.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: Surat yang saya belum terima itu
+      example_gloss: Letter that I not-yet receive that
+      example_wrong: The letter that I haven't received it yet.
+      example_correct: The letter that I haven't received yet.
+      explanation: Relative pronouns may be duplicated by personal pronouns, a common M/I discourse pattern.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Adjective used after relative pronoun (no copula)
+      example: The flower that red is hibiscus.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: Bunga yang merah itu bunga raya
+      example_gloss: Flower that red that hibiscus
+      example_wrong: The flower that red is hibiscus.
+      example_correct: The flower that is red is hibiscus.
+      explanation: M/I yang can be followed directly by an adjective without a copula. English requires the copula after the relative pronoun.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    examples:
+    - wrong: People which live in town are rich.
+      correct: People who live in town are rich.
+    - wrong: The letter that I haven't received it yet.
+      correct: The letter that I haven't received yet.
+    - wrong: The flower that red is hibiscus.
+      correct: The flower that is red is hibiscus.
+    why_it_happens: M/I has only one relative word yang, which corresponds to English who, which, that and zero. Relative pronouns may be duplicated by personal pronouns. (Swan & Smith, pp. 283-284)
+    teacher_tips:
+      how_to_explain: 'Teach: For people -> who/that. For things -> that/which. Do NOT repeat the pronoun after the relative clause. Include the copula if needed.'
+      where_to_start: Start with who vs which/that distinction. Then teach pronoun duplication error. Then copula in relative clauses.
+      sequencing: 'Week 1: who/which/that. Week 2: Pronoun duplication error. Week 3: Copula in relative clauses. Week 4: Review.'
+      exercises:
+      - name: relative_clauses Audit
+        type: error-correction
+        description: 20 sentences with relative clause errors from M/I learner writing.
+        duration: 15
+      - name: relative_clauses Translation
+        type: translation
+        description: Translate 15 sentences focusing on relative clauses.
+        duration: 15
+      - name: relative_clauses Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing relative clauses.
+        duration: 10
+      - name: relative_clauses Error Hunt
+        type: error-correction
+        description: A paragraph with 10 relative clause errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: M/I has only one relative word yang, corresponding to who/which/that
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, pp. 283-284
+      tier: 1
+    - claim: Relative pronouns may be duplicated by personal pronouns
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 284
+      tier: 1
+  reported_speech:
+    interference_patterns:
+    - pattern: No backshift of tenses in reported speech
+      example: She said that she is tired.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: Dia bilang bahwa dia capek
+      example_gloss: She say that she tired
+      example_wrong: She said that she is tired.
+      example_correct: She said that she was tired.
+      explanation: M/I reported speech retains the original tense. English requires backshift (present -> past, will -> would).
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Direct speech patterns in reported speech
+      example: He told me he will come tomorrow.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: Dia bilang saya akan datang besok
+      example_gloss: He say I will come tomorrow
+      example_wrong: He told me he will come tomorrow.
+      example_correct: He told me he would come the next day.
+      explanation: M/I does not change time references or pronouns in reported speech the way English does.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    examples:
+    - wrong: She said that she is tired.
+      correct: She said that she was tired.
+    - wrong: He told me he will come tomorrow.
+      correct: He told me he would come the next day.
+    why_it_happens: M/I reported speech retains the original tense. English requires backshift of tenses and changes to time/place references. (Swan & Smith, p. 289)
+    teacher_tips:
+      how_to_explain: 'Teach the backshift rule: present -> past, will -> would, tomorrow -> the next day. M/I keeps the original tense; English changes it.'
+      where_to_start: Start with tense backshift. Then teach time/place reference changes.
+      sequencing: 'Week 1: Tense backshift. Week 2: Time/place reference changes. Week 3: Question reporting. Week 4: Review.'
+      exercises:
+      - name: reported_speech Audit
+        type: error-correction
+        description: 20 sentences with reported speech errors from M/I learner writing.
+        duration: 15
+      - name: reported_speech Translation
+        type: translation
+        description: Translate 15 sentences focusing on reported speech.
+        duration: 15
+      - name: reported_speech Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing reported speech.
+        duration: 10
+      - name: reported_speech Error Hunt
+        type: error-correction
+        description: A paragraph with 10 reported speech errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: M/I reported speech retains the original tense; English requires backshift
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 289
+      tier: 1
+  comparatives:
+    interference_patterns:
+    - pattern: Use of 'as' instead of 'than' after comparatives
+      example: My sister as clever your sister.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: Saya kakak sepintar kakak kamu
+      example_gloss: My sister as-clever your sister
+      example_wrong: My sister as clever your sister.
+      example_correct: My sister is as clever as your sister.
+      explanation: Common errors with comparatives point to direct translation from M/I. M/I uses 'se-' prefix or 'sama...dengan' for equality comparisons.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Double comparative/superlative
+      example: His cousin is very bravest soldier.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: Sepupunya adalah pemberani yang paling berani
+      example_gloss: His-counin is bravest
+      example_wrong: His cousin is very bravest soldier. / His house less smaller than your house.
+      example_correct: His cousin is the bravest soldier. / His house is smaller than your house.
+      explanation: M/I forms comparatives differently (using 'lebih' for more and '-est' equivalents). Learners produce double comparatives/superlatives.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Superlative with 'most' + '-est' form
+      example: Pak Toha most richest than all people.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: Di desa saya, Pak Toha paling kaya dari semua orang
+      example_gloss: In village my, Pak Toha most rich from all people
+      example_wrong: In my village, Pak Toha most richest than all people.
+      example_correct: In my village, Pak Toha is the richest of all people.
+      explanation: M/I uses 'paling' for superlative. Learners combine 'most' with '-est' form, producing double superlatives.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    examples:
+    - wrong: My sister as clever your sister.
+      correct: My sister is as clever as your sister.
+    - wrong: His cousin is very bravest soldier.
+      correct: His cousin is the bravest soldier.
+    - wrong: His house less smaller than your house.
+      correct: His house is smaller than your house.
+    - wrong: In my village, Pak Toha most richest than all people.
+      correct: In my village, Pak Toha is the richest of all people.
+    why_it_happens: Common errors with adjectives describing degrees of comparison point to direct translation from M/I. M/I forms comparatives using 'lebih' (more) and 'paling' (most) rather than -er/-est suffixes. (Swan & Smith, p. 290)
+    teacher_tips:
+      how_to_explain: 'Teach: 1-2 syllable adjectives -> -er/-est. 3+ syllable adjectives -> more/most. Do NOT use both (no double comparatives). As...as for equality comparisons.'
+      where_to_start: Start with -er/-est rule. Then teach more/most. Then teach as...as. Then address double comparative errors.
+      sequencing: 'Week 1: -er/-est. Week 2: more/most. Week 3: as...as. Week 4: Review.'
+      exercises:
+      - name: comparatives Audit
+        type: error-correction
+        description: 20 sentences with comparatives errors from M/I learner writing.
+        duration: 15
+      - name: comparatives Translation
+        type: translation
+        description: Translate 15 sentences focusing on comparatives.
+        duration: 15
+      - name: comparatives Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing comparatives.
+        duration: 10
+      - name: comparatives Error Hunt
+        type: error-correction
+        description: A paragraph with 10 comparatives errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Comparative errors point to direct translation from M/I (as...instead of -er than)
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 290
+      tier: 1
+    - claim: M/I uses 'lebih' and 'paling' rather than -er/-est suffixes
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 290
+      tier: 1
+  linking_words:
+    interference_patterns:
+    - pattern: Conjunction duplication (although...but)
+      example: Education although expensive but is valuable.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: Pendidikan meskipun mahal tetapi berharga untuk masa depan
+      example_gloss: Education although expensive but valuable for future
+      example_wrong: Education although expensive but is valuable for a good future.
+      example_correct: Although education is expensive, it is valuable for a good future.
+      explanation: Conjunctions and linking expressions may be duplicated. M/I commonly uses paired conjunctions (meskipun...tetapi) where English uses only one.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Conjunction duplication (as a result because)
+      example: I failed my exam as a result because I didn't study hard.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: Saya gagal ujian sebabnya karena saya tidak belajar
+      example_gloss: I failed exam because-of-it because I not study
+      example_wrong: I failed my exam as a result because I didn't study hard.
+      example_correct: I failed my exam as a result of not studying hard. / I failed my exam because I didn't study hard.
+      explanation: Linking expressions may be duplicated. M/I allows multiple causal connectors where English uses one.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Unbalanced structures with 'and' and 'or'
+      example: I like to watching TV and read the story book.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: Saya suka menonton TV dan membaca buku cerita
+      example_gloss: I like watch TV and read book story
+      example_wrong: When I have time I like to watching TV and read the story book.
+      example_correct: When I have time I like watching TV and reading story books.
+      explanation: Structures with and and or may be unbalanced. M/I does not require parallel structure as strictly as English.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    examples:
+    - wrong: Education although expensive but is valuable for a good future.
+      correct: Although education is expensive, it is valuable for a good future.
+    - wrong: I failed my exam as a result because I didn't study hard.
+      correct: I failed my exam because I didn't study hard.
+    - wrong: When I have time I like to watching TV and read the story book.
+      correct: When I have time I like watching TV and reading story books.
+    - wrong: I was late for school and suddenly I got up and with quick I brush my teeth.
+      correct: I was late for school and suddenly I got up and quickly brushed my teeth.
+    why_it_happens: M/I writers tend to avoid complex sentences. When learners use them, they may not structure them well. Conjunctions and linking expressions may be duplicated (meskipun...tetapi). (Swan & Smith, pp. 289-290)
+    teacher_tips:
+      how_to_explain: 'Teach: In English, use ONE conjunction per clause. Although (NOT although...but). Because (NOT because...as a result). Keep parallel structure with and/or.'
+      where_to_start: Start with conjunction duplication errors (although...but, because...as a result). Then teach parallel structure.
+      sequencing: 'Week 1: Conjunction duplication. Week 2: Parallel structure. Week 3: Complex sentence structure. Week 4: Review.'
+      exercises:
+      - name: linking_words Audit
+        type: error-correction
+        description: 20 sentences with linking words errors from M/I learner writing.
+        duration: 15
+      - name: linking_words Translation
+        type: translation
+        description: Translate 15 sentences focusing on linking words.
+        duration: 15
+      - name: linking_words Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing linking words.
+        duration: 10
+      - name: linking_words Error Hunt
+        type: error-correction
+        description: A paragraph with 10 linking words errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Conjunctions and linking expressions may be duplicated (although...but)
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, pp. 289-290
+      tier: 1
+    - claim: Structures with and and or may be unbalanced
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 290
+      tier: 1
+  modal_verbs:
+    interference_patterns:
+    - pattern: '''Can'' overused for multiple modal meanings'
+      example: You can drive, isn't it?
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
+      example_l1: Kamu bisa mengemudi, bukan?
+      example_gloss: You can drive, not
+      example_wrong: You can drive, isn't it? / Can you lend me your car or not? / She can lend you her car.
+      example_correct: You can drive, can't you? / Can you lend me your car? / She will lend you her car.
+      explanation: The complex English modal system is drastically reduced in M/I to two main modals, can and must. Can takes on a wide range of uses (ability, permission, willingness, possibility).
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: '''Must be'' for certainty without inversion'
+      example: Must be he is sick.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: Pasti dia sakit
+      example_gloss: Must he sick
+      example_wrong: Must be he is sick. / Cannot be he so rich as this.
+      example_correct: He must be sick. / He cannot be as rich as this.
+      explanation: M/I word order for modal expressions differs. Learners place 'must be' at the beginning without inversion.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Modal avoidance; adverbs used instead
+      example: Maybe Ahmad calling on the phone.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: Mungkin Ahmad menelepon
+      example_gloss: Maybe Ahmad calling-phone
+      example_wrong: Maybe Ahmad calling on the phone. / I think Samy joking. / Surely that Fatimah.
+      example_correct: That will be Ahmad calling on the phone. / Samy could be joking. / That has to be Fatimah.
+      explanation: Learners may avoid modals altogether, using adverbs or ordinary verbs to express modal meanings.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    examples:
+    - wrong: You can drive, isn't it?
+      correct: You can drive, can't you?
+    - wrong: Can you lend me your car or not?
+      correct: Can you lend me your car?
+    - wrong: He can't be sleeping all this time.
+      correct: He can't have been sleeping all this time.
+    - wrong: Must be he is sick.
+      correct: He must be sick.
+    - wrong: Cannot be he so rich as this.
+      correct: He cannot be as rich as this.
+    - wrong: Maybe Ahmad calling on the phone.
+      correct: That will be Ahmad calling on the phone.
+    - wrong: You must go see your professor.
+      correct: You must go and see your professor.
+    why_it_happens: The complex modal auxiliary system of standard English is drastically reduced in M/I to two main modals, can and must. Can in particular takes on a wide range of uses. Learners may also avoid modals altogether. (Swan & Smith, pp. 288-289)
+    teacher_tips:
+      how_to_explain: 'Teach modal hierarchy: can (ability/permission), may (permission/possibility), will (future/willingness), must (obligation/certainty), should (advice). M/I mainly uses ''bisa'' and ''harus''.'
+      where_to_start: Start with can vs may vs will. Then must for certainty. Then modal avoidance patterns.
+      sequencing: 'Week 1: can/may. Week 2: will/would. Week 3: must/should. Week 4: Modal avoidance and adverbs.'
+      exercises:
+      - name: modal_verbs Audit
+        type: error-correction
+        description: 20 sentences with modal verbs errors from M/I learner writing.
+        duration: 15
+      - name: modal_verbs Translation
+        type: translation
+        description: Translate 15 sentences focusing on modal verbs.
+        duration: 15
+      - name: modal_verbs Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing modal verbs.
+        duration: 10
+      - name: modal_verbs Error Hunt
+        type: error-correction
+        description: A paragraph with 10 modal verbs errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 5
+    persistence: 5
+    communicative_impact: 4
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: English modal system drastically reduced in M/I to can and must
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, pp. 288-289
+      tier: 1
+    - claim: Can takes on wide range of uses in M/I English (ability, permission, willingness, etc.)
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 288
+      tier: 1
+    - claim: Learners may avoid modals altogether, using adverbs instead
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, pp. 288-289
+      tier: 1
+  gerund_infinitive:
+    interference_patterns:
+    - pattern: Gerund/infinitive confusion (to + -ing)
+      example: To running very good for your health.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: Berlari sangat baik untuk kesehatan
+      example_gloss: Running very good for health
+      example_wrong: To running very good for your health. / My mother like to cooking not to sewing.
+      example_correct: Running is very good for your health. / My mother likes cooking, not sewing.
+      explanation: Gerunds and infinitives do not exist in M/I. The various English forms are often confused by learners.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Bare infinitive after modals (to continuing)
+      example: Without money, I can't to continuing my studies.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: Tanpa uang, saya tidak bisa melanjutkan studi
+      example_gloss: Without money, I not can continue study
+      example_wrong: Without money, I can't to continuing my studies. / Mother is going clean the room. / I shall to go to market early.
+      example_correct: Without money, I can't continue my studies. / Mother is going to clean the room. / I shall go to the market early.
+      explanation: M/I does not use infinitives. Learners add 'to' after modals or use -ing form incorrectly.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    examples:
+    - wrong: To running very good for your health.
+      correct: Running is very good for your health.
+    - wrong: My mother like to cooking not to sewing.
+      correct: My mother likes cooking, not sewing.
+    - wrong: Without money, I can't to continuing my studies.
+      correct: Without money, I can't continue my studies.
+    - wrong: Mother is going clean the room.
+      correct: Mother is going to clean the room.
+    - wrong: I shall to go to market early.
+      correct: I shall go to the market early.
+    why_it_happens: Gerunds and infinitives do not exist in M/I. The various English forms are often confused by learners. (Swan & Smith, p. 287)
+    teacher_tips:
+      how_to_explain: 'Teach: After prepositions -> always gerund (-ing). After modals -> bare infinitive (no ''to''). Some verbs take gerund, some take infinitive. M/I has neither; learners must learn the English system from scratch.'
+      where_to_start: Start with gerund after prepositions. Then modal + bare infinitive. Then verb patterns (verb + gerund vs verb + infinitive).
+      sequencing: 'Week 1: Gerund after prepositions. Week 2: Modal + bare infinitive. Week 3: Verb + gerund/infinitive patterns. Week 4: Review.'
+      exercises:
+      - name: gerund_infinitive Audit
+        type: error-correction
+        description: 20 sentences with gerund/infinitive errors from M/I learner writing.
+        duration: 15
+      - name: gerund_infinitive Translation
+        type: translation
+        description: Translate 15 sentences focusing on gerund/infinitive.
+        duration: 15
+      - name: gerund_infinitive Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing gerund/infinitive.
+        duration: 10
+      - name: gerund_infinitive Error Hunt
+        type: error-correction
+        description: A paragraph with 10 gerund/infinitive errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Gerunds and infinitives do not exist in M/I; forms often confused
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 287
+      tier: 1
+  adverbs:
+    interference_patterns:
+    - pattern: Adjective used as adverb (no -ly)
+      example: You sit quiet there.
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+      example_l1: Kamu duduk diam di sana
+      example_gloss: You sit quiet there
+      example_wrong: You sit quiet there. / Ali dress smart every day.
+      example_correct: You sit quietly there. / Ali dresses smartly every day.
+      explanation: Learners may substitute adverbs for adjectives and vice versa, often under the influence of the mother tongue.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Adverb form confusion (adjective vs adverb vs noun)
+      example: He write with well.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: Dia menulis dengan baik
+      example_gloss: He writes with good
+      example_wrong: He write with well. / a luxury life / consist of agriculture land
+      example_correct: He writes well. / a luxurious life / consisting of agricultural land
+      explanation: Confusion with other parts of speech also occurs. M/I does not always distinguish adjectives from adverbs morphologically.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Adverb placement errors
+      example: In recent we have the steadily increase of tourists.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: Akhir-akhir ini kita punya peningkatan stabil turis
+      example_gloss: Recently we have increase steady of tourists
+      example_wrong: In recent we have the steadily increase of tourists.
+      example_correct: Recently we have seen a steady increase in tourists.
+      explanation: M/I adverb placement rules differ from English.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    examples:
+    - wrong: You sit quiet there.
+      correct: You sit quietly there.
+    - wrong: Ali dress smart every day.
+      correct: Ali dresses smartly every day.
+    - wrong: In recent we have the steadily increase of tourists.
+      correct: Recently we have seen a steady increase in tourists.
+    - wrong: The students study hardly.
+      correct: The students study hard.
+    - wrong: He write with well.
+      correct: He writes well.
+    why_it_happens: Learners may substitute adverbs for adjectives and vice versa, often under the influence of the mother tongue. Confusion with other parts of speech also occurs. (Swan & Smith, pp. 289-290)
+    teacher_tips:
+      how_to_explain: 'Teach: Adjective describes a noun. Adverb describes a verb. Most adverbs add -ly. Good -> well (irregular). Hard (not hardly).'
+      where_to_start: Start with the -ly rule. Then teach exceptions (fast, hard, late). Then teach good vs well.
+      sequencing: 'Week 1: -ly adverbs. Week 2: Exceptions (fast, hard, late). Week 3: Good vs well. Week 4: Review.'
+      exercises:
+      - name: adverbs Audit
+        type: error-correction
+        description: 20 sentences with adverbs errors from M/I learner writing.
+        duration: 15
+      - name: adverbs Translation
+        type: translation
+        description: Translate 15 sentences focusing on adverbs.
+        duration: 15
+      - name: adverbs Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing adverbs.
+        duration: 10
+      - name: adverbs Error Hunt
+        type: error-correction
+        description: A paragraph with 10 adverbs errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 2
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Learners substitute adverbs for adjectives and vice versa under L1 influence
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, pp. 289-290
+      tier: 1
+    - claim: Confusion with other parts of speech also occurs (adjective vs adverb vs noun)
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 290
+      tier: 1
+  possessives:
+    interference_patterns:
+    - pattern: Possessive pronoun omission or wrong form
+      example: my wife friend
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: istri saya teman
+      example_gloss: my wife friend / wife-my friend
+      example_wrong: my wife friend / my father name Jaid bin Omar / yours school bag
+      explanation: Possessive relations in M/I can be shown by a bound pronoun -nya or by the free personal pronouns. Students find the English system very different.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Of-construction used instead of possessive 's
+      example: the book of them
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: buku mereka
+      example_gloss: book them/their
+      example_wrong: the book of them / their houses / the cat's tails
+      explanation: M/I uses noun + possessor word order. Learners use 'of' constructions or omit the possessive marker.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    examples:
+    - wrong: my wife friend
+      correct: my wife's friend
+    - wrong: my father name Jaid bin Omar.
+      correct: my father's name is Jaid bin Omar.
+    - wrong: yours school bag
+      correct: your school bag
+    - wrong: the book of them
+      correct: their book
+    - wrong: the cat's tails
+      correct: the cat's tail
+    why_it_happens: Possessive relations in M/I can be shown by a bound pronoun -nya or by the free personal pronouns dia (he/she/it) and mereka (they). Students have difficulty with the very different English system. (Swan & Smith, pp. 283-284)
+    teacher_tips:
+      how_to_explain: 'Teach: For people/animals, use ''s (the cat''s tail). For things, use of (the leg of the table). Possessive pronouns: my, your, his, her, its, our, their.'
+      where_to_start: Start with possessive 's. Then possessive pronouns. Then of-constructions for things.
+      sequencing: 'Week 1: Possessive ''s. Week 2: Possessive pronouns. Week 3: Of-constructions. Week 4: Review.'
+      exercises:
+      - name: possessives Audit
+        type: error-correction
+        description: 20 sentences with possessives errors from M/I learner writing.
+        duration: 15
+      - name: possessives Translation
+        type: translation
+        description: Translate 15 sentences focusing on possessives.
+        duration: 15
+      - name: possessives Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing possessives.
+        duration: 10
+      - name: possessives Error Hunt
+        type: error-correction
+        description: A paragraph with 10 possessives errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Possessive relations shown by bound pronoun -nya or free pronouns; English system very different
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, pp. 283-284
+      tier: 1
+    - claim: Errors include *my wife friend, *the book of them, *your school bag
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 284
+      tier: 1
+  existential_there:
+    interference_patterns:
+    - pattern: Use of 'ada' (got/has/is) instead of 'there is/are'
+      example: A few people in the room.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: Ada beberapa orang di ruangan
+      example_gloss: Got/Has several people in room
+      example_wrong: A few people in the room. / Was an examination last week. / Is nice to play football.
+      explanation: English structures with the dummy subjects it and there are difficult. The equivalent M/I structure uses the word ada (got/has/is).
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Omission of dummy 'it' in impersonal expressions
+      example: Is nice to play football.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: Enak bermain sepak bola
+      example_gloss: Nice play football
+      example_wrong: Is nice to play football.
+      example_correct: It is nice to play football.
+      explanation: M/I can express impersonal statements without a dummy subject. English requires 'it' or 'there'.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    examples:
+    - wrong: A few people in the room.
+      correct: There are a few people in the room.
+    - wrong: Was an examination last week.
+      correct: There was an examination last week.
+    - wrong: Is nice to play football.
+      correct: It is nice to play football.
+    why_it_happens: English structures with the dummy subjects it and there are difficult. The equivalent M/I structure uses the word ada (got/has/is). Errors such as these are common. (Swan & Smith, p. 285)
+    teacher_tips:
+      how_to_explain: 'Teach: English needs a subject. Use ''there is/are'' for existence. Use ''it is'' for impersonal expressions. M/I uses ada; English needs the dummy subject.'
+      where_to_start: Start with there is/are. Then teach impersonal it. Then existential vs locative distinctions.
+      sequencing: 'Week 1: There is/are. Week 2: Impersonal it. Week 3: It vs there. Week 4: Review.'
+      exercises:
+      - name: existential_there Audit
+        type: error-correction
+        description: 20 sentences with existential there errors from M/I learner writing.
+        duration: 15
+      - name: existential_there Translation
+        type: translation
+        description: Translate 15 sentences focusing on existential there.
+        duration: 15
+      - name: existential_there Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing existential there.
+        duration: 10
+      - name: existential_there Error Hunt
+        type: error-correction
+        description: A paragraph with 10 existential there errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: English structures with dummy subjects it and there are difficult; M/I uses ada
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 285
+      tier: 1
+    - claim: Errors include *A few people in the room, *Is nice to play football, *Was an examination last week
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 285
+      tier: 1
+  reflexive_pronouns:
+    interference_patterns:
+    - pattern: Reflexive pronoun form errors
+      example: Ali hurt heself.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: Ali melukai dirinya
+      example_gloss: Ali hurt self-his
+      example_wrong: Ali hurt heself. / They cook for their selves. / We must listen to ourself.
+      explanation: The literal translation of the reflexive self is diri in M/I. Learners find the English reflexive pronoun system complicated.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    - pattern: Intensive pronoun errors
+      example: Me, myself do all the work.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: Saya, diri saya melakukan semua pekerjaan
+      example_gloss: I, self-my do all work
+      example_wrong: Me, myself do all the work.
+      example_correct: I myself do all the work.
+      explanation: M/I uses diri in ways that do not map directly to English reflexive/intensive pronouns.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    examples:
+    - wrong: Ali hurt heself.
+      correct: Ali hurt himself.
+    - wrong: They cook for their selves.
+      correct: They cook for themselves.
+    - wrong: We must listen to ourself.
+      correct: We must listen to ourselves.
+    - wrong: Me, myself do all the work.
+      correct: I myself do all the work.
+    why_it_happens: The literal translation of the reflexive self is diri in M/I. Learners find the English reflexive pronoun system complicated. (Swan & Smith, p. 284)
+    teacher_tips:
+      how_to_explain: 'Teach: myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. Used when subject and object are the same.'
+      where_to_start: Start with the forms. Then teach reflexive vs intensive use.
+      sequencing: 'Week 1: Reflexive pronoun forms. Week 2: Reflexive vs intensive use. Week 3: Common verbs with reflexives. Week 4: Review.'
+      exercises:
+      - name: reflexive_pronouns Audit
+        type: error-correction
+        description: 20 sentences with reflexive pronoun errors from M/I learner writing.
+        duration: 15
+      - name: reflexive_pronouns Translation
+        type: translation
+        description: Translate 15 sentences focusing on reflexive pronouns.
+        duration: 15
+      - name: reflexive_pronouns Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing reflexive pronouns.
+        duration: 10
+      - name: reflexive_pronouns Error Hunt
+        type: error-correction
+        description: A paragraph with 10 reflexive pronoun errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 3
+    persistence: 3
+    communicative_impact: 2
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: The reflexive self is diri in M/I; learners find English system complicated
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 284
+      tier: 1
+    - claim: Errors include *Ali hurt heself, *They cook for their selves, *Me, myself do all the work
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 284
+      tier: 1
+  conditionals:
+    interference_patterns:
+    - pattern: Conditional structure transfer from M/I
+      example: If I would have money, I would travel.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      example_l1: Kalau saya punya uang, saya akan jalan-jalan
+      example_gloss: If I have money, I will travel
+      example_wrong: If I would have money, I would travel.
+      example_correct: If I had money, I would travel.
+      explanation: M/I conditional structure differs from English. M/I uses 'kalau' with present or akan forms; English requires specific tense patterns in if-clauses.
+      etiology: interlingual
+      flagged: false
+      tier: 3
+    examples:
+    - wrong: If I would have money, I would travel.
+      correct: If I had money, I would travel.
+    why_it_happens: M/I conditional structure differs from English. M/I uses kalau + present/akan for both real and unreal conditions. (Swan & Smith, p. 279)
+    teacher_tips:
+      how_to_explain: 'Teach: NO WOULD IN IF-CLAUSE. Use ''were'' for unreal situations (If I were...). Zero, 1st, 2nd, 3rd conditional patterns.'
+      where_to_start: Start with zero and 1st conditional (real). Then 2nd conditional (unreal present). Then 3rd (unreal past).
+      sequencing: 'Week 1: Zero and 1st conditional. Week 2: 2nd conditional. Week 3: 3rd conditional. Week 4: Mixed.'
+      exercises:
+      - name: conditionals Audit
+        type: error-correction
+        description: 20 sentences with conditional errors from M/I learner writing.
+        duration: 15
+      - name: conditionals Translation
+        type: translation
+        description: Translate 15 sentences focusing on conditionals.
+        duration: 15
+      - name: conditionals Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing conditionals.
+        duration: 10
+      - name: conditionals Error Hunt
+        type: error-correction
+        description: A paragraph with 10 conditional errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 3
+    persistence: 3
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: M/I conditional structure differs from English
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, pp. 279-294
+      tier: 1
+  false_friends:
+    interference_patterns:
+    - pattern: Lexical transfer of M/I loanwords with shifted meanings
+      example: talipon for telephone, ekonomi for economy
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: talipon, bankrup, ekonomi, industri, psikologia
+      example_gloss: telephone, bankrupt, economy, industry, psychology
+      example_wrong: talipon (spelling), ekonomi (spelling), psikologia (spelling)
+      explanation: Lexical transfer or borrowing from English to M/I involves loanwords, blends and substitutions. Students may be misled by the M/I spelling of words.
+      etiology: interlingual
+      flagged: true
+      tier: 2
+    - pattern: Confusion of English word pairs with single M/I equivalent
+      example: live/stay, tell/ask/say
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      example_l1: tinggal (live/stay), bilang/minta/kata (tell/ask/say)
+      example_gloss: live/stay, tell/ask/say
+      example_wrong: I've stayed in my village since I was born. / They tell me where is the canteen. / She sends her children to school every day.
+      example_correct: I've lived in my village since I was born. / They ask me where the canteen is. / She takes her children to school every day.
+      explanation: M/I learners have considerable problems distinguishing pairs of English words that have a single M/I equivalent (e.g., tinggal = live/stay).
+      etiology: interlingual
+      flagged: true
+      tier: 2
+    examples:
+    - wrong: I've stayed in my village since I was born.
+      correct: I've lived in my village since I was born.
+    - wrong: They tell me where is the canteen.
+      correct: They ask me where the canteen is.
+    - wrong: She sends her children to school every day.
+      correct: She takes her children to school every day.
+    - wrong: Borrow me two dollars.
+      correct: Lend me two dollars.
+    - wrong: I found everywhere for the cat.
+      correct: I looked everywhere for the cat.
+    - wrong: I listened a sound in the dark.
+      correct: I heard a sound in the dark.
+    why_it_happens: M/I learners have considerable problems distinguishing pairs of English words that have a single M/I equivalent. Lexical transfer from English to M/I involves loanwords with different spellings. (Swan & Smith, pp. 290-291)
+    teacher_tips:
+      how_to_explain: 'Teach: Many English words map to one M/I word. Learn the differences: live vs stay, tell vs ask vs say, lend vs borrow, look vs find, hear vs listen.'
+      where_to_start: Start with the most common confusions (live/stay, lend/borrow, look/find). Then teach loanword spelling differences.
+      sequencing: 'Week 1: live/stay, tell/ask/say. Week 2: lend/borrow, look/find. Week 3: hear/listen, take/send. Week 4: Loanword spelling.'
+      exercises:
+      - name: false_friends Audit
+        type: error-correction
+        description: 20 sentences with false friends errors from M/I learner writing.
+        duration: 15
+      - name: false_friends Translation
+        type: translation
+        description: Translate 15 sentences focusing on false friends.
+        duration: 15
+      - name: false_friends Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing false friends.
+        duration: 10
+      - name: false_friends Error Hunt
+        type: error-correction
+        description: A paragraph with 10 false friends errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: true
+    tier: 2
+    source_rank: 1
+    citations:
+    - claim: M/I learners have problems distinguishing English word pairs with single M/I equivalent
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 291
+      tier: 1
+    - claim: Lexical transfer from English to M/I involves loanwords with different spellings (talipon, ekonomi)
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 291
+      tier: 1
+  vocabulary_style:
+    interference_patterns:
+    - pattern: Reduced vocabulary range; avoidance of idiomatic expressions
+      example: very very proud (for putting on airs)
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: sangat sangat bangga
+      example_gloss: very very proud
+      example_wrong: very very proud / to pass very well / very good food / after I finish doing the course
+      explanation: Even advanced M/I learners may use a relatively reduced range of vocabulary, avoiding idiomatic expressions in favour of more basic forms.
+      etiology: interlingual
+      flagged: false
+      tier: 2
+    - pattern: Tautology for emphasis (M/I discourse feature)
+      example: You just merely cycle along.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: Kamu cukup saja bersepeda
+      example_gloss: You just enough cycle
+      example_wrong: You just merely cycle along. / the short cut way home
+      explanation: Tautology is commonly used to show emphasis in M/I, and this may be reflected in students' use of English.
+      etiology: interlingual
+      flagged: false
+      tier: 2
+    - pattern: Long-windedness (circumlocution)
+      example: my mother stays at home only and doesn't go to work
+      frequency: 3
+      persistence: 3
+      communicative_impact: 1
+      example_l1: ibu saya di rumah saja dan tidak bekerja
+      example_gloss: my mother at home only and not work
+      example_wrong: my mother stays at home only and doesn't go to work. / I will further my studies to specialise.
+      explanation: M/I tends toward circumlocution. English prefers concise expressions (housewife, specialise).
+      etiology: interlingual
+      flagged: false
+      tier: 2
+    examples:
+    - wrong: very very proud
+      correct: putting on airs
+    - wrong: to pass very well
+      correct: to pass with flying colours
+    - wrong: very good food
+      correct: a delicious meal
+    - wrong: after I finish doing the course
+      correct: after I graduate
+    - wrong: You just merely cycle along.
+      correct: You simply cycle along.
+    - wrong: the short cut way home
+      correct: the shortcut home
+    - wrong: my mother stays at home only and doesn't go to work.
+      correct: my mother is a housewife.
+    why_it_happens: Even advanced M/I learners may use a relatively reduced range of vocabulary. Tautology is commonly used to show emphasis in M/I. This contributes to a tendency to long-windedness. (Swan & Smith, pp. 290-291)
+    teacher_tips:
+      how_to_explain: 'Teach: English prefers concise, idiomatic expressions. Avoid tautology (just merely = redundant). Learn common idioms and collocations.'
+      where_to_start: Start with common tautology errors. Then teach idiomatic alternatives. Then vocabulary expansion.
+      sequencing: 'Week 1: Tautology errors. Week 2: Idiomatic expressions. Week 3: Concise writing. Week 4: Review.'
+      exercises:
+      - name: vocabulary_style Audit
+        type: error-correction
+        description: 20 sentences with vocabulary/style errors from M/I learner writing.
+        duration: 15
+      - name: vocabulary_style Translation
+        type: translation
+        description: Translate 15 sentences focusing on vocabulary/style.
+        duration: 15
+      - name: vocabulary_style Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing vocabulary/style.
+        duration: 10
+      - name: vocabulary_style Error Hunt
+        type: error-correction
+        description: A paragraph with 10 vocabulary/style errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 3
+    persistence: 3
+    communicative_impact: 2
+    flagged: false
+    tier: 2
+    source_rank: 1
+    citations:
+    - claim: Even advanced M/I learners use reduced vocabulary range, avoiding idioms
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, pp. 290-291
+      tier: 1
+    - claim: Tautology commonly used for emphasis in M/I; reflected in English writing
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 291
+      tier: 1
+    - claim: Tendency to long-windedness in M/I English
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 291
+      tier: 1
+  gender:
+    interference_patterns:
+    - pattern: Gender pronoun confusion (dia = he/she/it)
+      example: She cannot believe got five distinction.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: Dia tidak percaya dapat lima distinction
+      example_gloss: He/She not believe get five distinction
+      example_wrong: John sat for exam and passed. She cannot believe got five distinction. Her parents very happy.
+      explanation: Gender is not expressed grammatically in M/I. One word, dia (he/she/it), is used for third-person singular subject, object and sometimes possessive pronouns.
+      etiology: interlingual
+      flagged: false
+      tier: 2
+    examples:
+    - wrong: She cannot believe got five distinction.
+      correct: He cannot believe he got five distinctions.
+    - wrong: Her parents very happy.
+      correct: His parents are very happy.
+    why_it_happens: Gender is not expressed grammatically in M/I. One word, dia (he/she/it), is used for third-person singular subject, object and sometimes possessive pronouns. (Swan & Smith, p. 283)
+    teacher_tips:
+      how_to_explain: 'Teach: English distinguishes he/she/it. M/I uses dia for all. Pay attention to the gender of the person being referred to.'
+      where_to_start: Start with he vs she. Then teach possessive pronouns (his/her/its). Then practice with context.
+      sequencing: 'Week 1: he/she/it. Week 2: his/her/its. Week 3: Practice with context. Week 4: Review.'
+      exercises:
+      - name: gender Audit
+        type: error-correction
+        description: 20 sentences with gender errors from M/I learner writing.
+        duration: 15
+      - name: gender Translation
+        type: translation
+        description: Translate 15 sentences focusing on gender.
+        duration: 15
+      - name: gender Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing gender.
+        duration: 10
+      - name: gender Error Hunt
+        type: error-correction
+        description: A paragraph with 10 gender errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 3
+    persistence: 3
+    communicative_impact: 2
+    flagged: false
+    tier: 2
+    source_rank: 1
+    citations:
+    - claim: Gender is not expressed grammatically in M/I; dia = he/she/it
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 283
+      tier: 1
+  personal_pronouns:
+    interference_patterns:
+    - pattern: Repeated noun phrases instead of pronouns
+      example: Many students work very hard. Many of them work all day in the library.
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      example_l1: Banyak siswa bekerja keras. Banyak dari mereka bekerja seharian di perpustakaan
+      example_gloss: Many student work hard. Many of them work all-day in library
+      example_wrong: Many students work very hard. Many of them work all day in the library. Is sad many students cannot pass the English test.
+      explanation: M/I speakers often use repeated noun phrases where English would drop repeated elements or use anaphoric pronouns.
+      etiology: interlingual
+      flagged: false
+      tier: 2
+    examples:
+    - wrong: Is sad many students cannot pass the English test.
+      correct: It is sad that many students cannot pass the English test.
+    why_it_happens: M/I speakers often use repeated noun phrases where English would drop repeated elements or use anaphoric pronouns. (Swan & Smith, p. 283)
+    teacher_tips:
+      how_to_explain: 'Teach: In English, use pronouns to avoid repeating nouns. Use ''it'' as a dummy subject for impersonal expressions.'
+      where_to_start: Start with pronoun reference. Then teach dummy 'it' for impersonal expressions.
+      sequencing: 'Week 1: Pronoun reference. Week 2: Dummy ''it''. Week 3: Practice. Week 4: Review.'
+      exercises:
+      - name: personal_pronouns Audit
+        type: error-correction
+        description: 20 sentences with personal pronoun errors from M/I learner writing.
+        duration: 15
+      - name: personal_pronouns Translation
+        type: translation
+        description: Translate 15 sentences focusing on personal pronouns.
+        duration: 15
+      - name: personal_pronouns Practice
+        type: fill-in-the-blank
+        description: 20 sentences practicing personal pronouns.
+        duration: 10
+      - name: personal_pronouns Error Hunt
+        type: error-correction
+        description: A paragraph with 10 personal pronoun errors.
+        duration: 15
+    sources:
+    - Swan & Smith Learner English (Indonesian)
+    - Parrott Grammar for English Language Teachers
+    source_count: 2
+    source_type: textbook
+    frequency: 3
+    persistence: 3
+    communicative_impact: 2
+    flagged: false
+    tier: 2
+    source_rank: 1
+    citations:
+    - claim: M/I speakers use repeated noun phrases where English uses pronouns
+      source: Swan & Smith (2001) Learner English, 2nd ed., Cambridge University Press
+      location: Malay/Indonesian speakers, p. 283
+      tier: 1

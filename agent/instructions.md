@@ -244,6 +244,12 @@ For any other description-as-topic, use your language knowledge to identify the 
 
 Use **SearchGrammarTool** with the grammar topic name. Read the FULL YAML and copy these fields verbatim into your working memory. Do not paraphrase — every word matters because it will be pasted into task_briefs.
 
+**If the grammar YAML has `status: stub`**, skip that file. Inform the teacher:
+> "This topic is in our database but content is still being developed. 
+> The closest topic I have is [closest matching grammar point] — would you 
+> like materials for that instead?"
+Do NOT say "coming soon." Do NOT fabricate content for the stub.
+
 ```
 GRAMMAR EXTRACTION:
 
@@ -282,6 +288,12 @@ common_errors (copy ALL, grouped by l1_groups — CRITICAL for practice slides):
   Error 2: ...
 
 phonetics: [exact text]
+
+citations (copy ALL — source trail for each claim):
+  Citation 1: claim=[exact] / source=[exact] / reliability=[A/B/C/D] / tier=[1-4]
+
+register_notes (copy ALL — register awareness data):
+  Note 1: note=[exact text] / reliability=[A/B/C/D] / tier=[1-4] / source=[optional]
 ```
 
 **After extraction, identify which teaching.tips are visual** (e.g., "Use a timeline on the board", "Use real objects", "Show contrast between..."). These tips DIRECTLY become slide designs — a tip about timelines becomes a timeline slide, a tip about real objects becomes a visual hook slide.
@@ -304,6 +316,12 @@ Interference patterns (sort by frequency DESC — highest frequency = first slid
     frequency: [n]/5
     persistence: [n]/5
     communicative_impact: [n]/5
+    etiology — root cause classification (interlingual/intralingual/induced). 
+      Use in speaker notes: "This error comes from [L1 transfer / overgeneralization / teaching method]"
+    source — source citation for this pattern (Author, Year). 
+      reliability — A/B = include in slides. C/D = use with caution in speaker notes.
+    citations (copy ALL — source trail for each claim):
+      Citation 1: claim=[exact] / source=[exact] / reliability=[A/B/C/D] / tier=[1-4]
   Pattern 2: ...
 
 teacher_tips.how_to_explain: [exact text — paste into speaker notes]
@@ -745,6 +763,30 @@ SPEAKER NOTES: Model the sounds: "Listen: /[sound]/ — [word1], [word2]. Now yo
 
 ---
 
+### A5c: L1 Phonology Interference (INCLUDE ONLY when L1 file has phonology_interference data with frequency ≥ 3)
+
+**Purpose**: Show specific sounds this L1 struggles with, using minimal pairs.
+
+**What must be on this slide:**
+- Consonant gaps and vowel system entries from L1 YAML phonology_interference
+- Each sound contrast in its own card: target sound → L1 substitute → example pair
+- IPA notation for each sound — displayed large and clearly
+- Speaker notes: drilling script for each contrast
+
+**Design rules:**
+- Background: soft cream `#f8f4ef` — warm, non-threatening
+- Sound contrasts in distinct color-coded cards (3 max)
+- Example words in large type (22px) beneath each card
+- Teal accent color (`#0b7272`) for IPA symbols
+- If frequency ≥ 3: include the contrast. If frequency < 3: speaker notes only.
+- Keep it VISUAL — a teacher should hold up the slide and model sounds immediately.
+
+**Speaker notes format:**
+Teacher talk: "Listen — [target sound] vs [L1 sound]: [minimal pair]. Now you try..."
+CCQs: "Can you hear the difference? Is this the same sound?"
+
+---
+
 **TASK_BRIEF FORMAT — A6: L1 Oracle Slide (MANDATORY for each L1)**
 ```
 Slide title: [e.g., "Portuguese Speakers: Watch Out!" — specific, alarming, name the language]
@@ -764,6 +806,13 @@ YAML INTERFERENCE DATA — paste ALL tier 1 and tier 2 patterns with frequency �
 WHY IT HAPPENS (HEADLINE — use the FIRST SENTENCE ONLY of why_it_happens as the slide headline):
 "[paste only the FIRST SENTENCE of why_it_happens — max 120 characters. If it runs long, cut at the nearest clause end.]"
 Full explanation for speaker notes: "[paste complete why_it_happens text here — the slide shows only the first sentence, speaker notes get everything]"
+
+- For citations[] field: "After pattern cards, include a small 'Source' 
+  line with the citation claim and reference for tier 1 patterns"
+- For etiology: "If etiology = interlingual, the WHY headline references 
+  L1 transfer. If intralingual, reference overgeneralization patterns. 
+  If induced, reference teaching method."
+- New rule: "If no tier field exists (legacy data), treat as tier 2"
 
 Pattern 1 (highest frequency — primary contrast pair):
   Wrong: "[paste exact example_wrong text]"

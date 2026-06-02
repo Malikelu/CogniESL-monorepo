@@ -41,7 +41,7 @@ Every slide MUST include ALL of these in `<head>`, in this exact order:
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Merriweather:wght@300;400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Merriweather:wght@300;400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./_theme.css" />
 </head>
 ```
@@ -618,16 +618,16 @@ The following is the exact HTML pattern for a gap-fill practice slide. Copy this
     .slide{width:1280px;height:720px;display:flex;flex-direction:column;overflow:hidden;}
     .hdr{width:1280px;height:80px;background:linear-gradient(90deg,#2563eb,#1e3a8a);display:flex;align-items:center;padding:0 40px;gap:16px;overflow:hidden;flex-shrink:0;}
     .hdr-emoji{font-size:36px;}
-    .hdr-title{color:#fff;font-size:32px;font-weight:800;font-family:'Nunito',sans-serif;}
+    .hdr-title{color:#fff;font-size:32px;font-weight:800;font-family:'Inter',sans-serif;}
     .content{width:1280px;height:640px;background:#0f1729;display:flex;gap:60px;padding:40px 60px;overflow:hidden;box-sizing:border-box;}
     .col{width:530px;display:flex;flex-direction:column;gap:32px;overflow:hidden;}
     .item{display:flex;flex-direction:column;gap:6px;overflow:hidden;}
-    .num-badge{width:32px;height:32px;background:#ea580c;color:#fff;border-radius:50%;font-size:18px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Nunito',sans-serif;}
-    .sentence{color:#fff;font-size:24px;font-weight:700;font-family:'Nunito',sans-serif;display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
+    .num-badge{width:32px;height:32px;background:#ea580c;color:#fff;border-radius:50%;font-size:18px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Inter',sans-serif;}
+    .sentence{color:#fff;font-size:24px;font-weight:700;font-family:'Inter',sans-serif;display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
     .blank{color:#fbbf24;font-weight:bold;font-size:24px;letter-spacing:2px;}
     .wrong{color:#f87171;font-size:16px;font-style:italic;margin-left:38px;}
     .strip{width:1280px;height:40px;background:#1e293b;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden;}
-    .strip-text{color:#fbbf24;font-size:16px;font-weight:700;font-family:'Nunito',sans-serif;}
+    .strip-text{color:#fbbf24;font-size:16px;font-weight:700;font-family:'Inter',sans-serif;}
   </style>
 </head><body>
   <div class="slide">
@@ -739,14 +739,14 @@ The closing brand slide does NOT get a watermark (it IS the brand).
 <html><head>
   <meta charset="UTF-8"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="./_theme.css"/>
   <style>
     html,body{width:1280px;height:720px;margin:0;padding:0;overflow:hidden;background:#ffffff;}
     .slide{width:1280px;height:720px;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;background:#ffffff;overflow:hidden;}
     .content{display:flex;flex-direction:column;align-items:center;gap:28px;}
-    .tagline{font-family:'Nunito',system-ui,sans-serif;font-size:22px;font-weight:500;color:#4b5563;letter-spacing:0.5px;margin:0;}
-    .url{font-family:'Nunito',system-ui,sans-serif;font-size:18px;font-weight:700;color:#0b7272;letter-spacing:1.5px;margin:0;}
+    .tagline{font-family:'Inter',system-ui,sans-serif;font-size:22px;font-weight:500;color:#4b5563;letter-spacing:0.5px;margin:0;}
+    .url{font-family:'Inter',system-ui,sans-serif;font-size:18px;font-weight:700;color:#0b7272;letter-spacing:1.5px;margin:0;}
     .accent-strip{position:absolute;bottom:0;left:0;width:1280px;height:6px;background:linear-gradient(90deg,#0b7272,#1baa6e);}
   </style>
 </head><body>

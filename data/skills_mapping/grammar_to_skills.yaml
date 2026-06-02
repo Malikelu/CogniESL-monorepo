@@ -1,0 +1,3973 @@
+citations:
+- claim: Maps grammar points to language skills, showing how grammatical knowledge
+    transfers to communicative competence
+  flagged: false
+  reliability: B
+  source: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 1
+  tier: 2
+- claim: Skills mapping links curriculum content to language learning outcomes, enabling
+    teachers to track which skills are developed through specific activities and grammar
+    points.
+  source: Swan, M. & Smith, B. (2001). Learner English, 2nd ed. Cambridge University
+    Press.
+  tier: 2
+  reliability: B
+  flagged: false
+mappings:
+- grammar_file: data/grammar/present_simple.yaml
+  grammar_point: present_simple
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish speakers may overuse present continuous for habitual actions
+      (transferring Spanish present use). In listening, the weak form /dəz/ in 'does'
+      may be missed, leading to subject-verb confusion.
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - Weak forms of auxiliary 'do' (/də/) are hard to hear
+      - Contracted 's in third person may be inaudible in rapid speech
+      relevance: Frequently heard in everyday conversation for habitual actions, general
+        truths, and narrative present. Connected speech forms (does→/dəz/, was→/wəz/)
+        may obscure recognition.
+      source: Underhill, Sound Foundations, pp. 63-64; Biber et al., GSWE 14.1.2.7
+    reading:
+      relevance: Most common tense in news headlines, instructions, academic texts,
+        and narrative. Learners encounter it in virtually every text type.
+      source: Biber et al., GSWE 5.1.2, 6.3.1
+      text_types:
+      - news
+      - academic
+      - instructions
+      - fiction
+      - blogs
+    speaking:
+      functions:
+      - describing_routines
+      - stating_facts
+      - narrating live_events
+      - expressing_preferences
+      relevance: 'Essential for describing routines, facts, preferences, and giving
+        instructions. Functions: describing, explaining, narrating (in sports/live
+        commentary).'
+      source: Biber et al., GSWE 14.1.2.1, 5.1.2
+    writing:
+      genres:
+      - academic essays
+      - news articles
+      - instructions
+      - narrative
+      relevance: Dominant tense in academic writing for stating claims and facts.
+        Used in news leads, instruction manuals, and narrative.
+      source: Biber et al., GSWE 5.1.2, 8.2.1
+- grammar_file: data/grammar/present_continuous.yaml
+  grammar_point: present_continuous
+  l1_notes:
+  - language: Mandarin
+    skill_impact: Mandarin has no morphological present continuous; speakers use context
+      or adverbs. In writing, learners may omit the auxiliary entirely (*'I working').
+      In listening, contracted auxiliaries are hard to perceive.
+    source: Swan & Smith, Learner English, Mandarin chapter
+  skills:
+    listening:
+      challenges:
+      - Contracted auxiliary ('s, 're, 'm) reduced to single consonant in connected
+        speech
+      - -ing ending may be reduced to /ɪn/ in rapid speech
+      relevance: Very common in conversation for describing current activities and
+        temporary situations. Contractions (I'm, he's, they're) dominate; bare -ing
+        form may be the only audible signal.
+      source: Underhill, Sound Foundations, pp. 64-65; Biber et al., GSWE 14.2.2.3
+    reading:
+      relevance: Common in narrative, fiction, and conversational readings. Used for
+        ongoing actions and temporary situations.
+      source: Biber et al., GSWE 5.1.2, 6.3.1
+      text_types:
+      - fiction
+      - dialogue
+      - personal emails
+      - social media
+    speaking:
+      functions:
+      - describing current actions
+      - making future arrangements
+      - expressing temporary situations
+      relevance: 'Essential for describing what is happening now, temporary situations,
+        and future arrangements (Biber GSWE 6.3.2). Functions: describing, explaining
+        plans, complaining about temporary situations.'
+      source: Biber et al., GSWE 6.3.2, 14.1.2.1
+    writing:
+      genres:
+      - personal correspondence
+      - fiction
+      - narrative essays
+      relevance: Used in personal emails, fiction writing, and informal narrative.
+        Less common in academic writing except for describing data or processes.
+      source: Biber et al., GSWE 5.1.2
+- grammar_file: data/grammar/present_perfect.yaml
+  grammar_point: present_perfect
+  l1_notes:
+  - language: German
+    skill_impact: German Perfekt maps roughly onto present perfect but is used more
+      broadly (for spoken past). German speakers may overuse present perfect in writing
+      where past simple is needed (e.g., 'I have seen him yesterday').
+    source: Swan & Smith, Learner English, German chapter
+  - language: French
+    skill_impact: French passé composé maps partially. French speakers may use present
+      perfect where English requires past simple with specific past time reference.
+    source: Swan & Smith, Learner English, French chapter
+  skills:
+    listening:
+      challenges:
+      - In perfect tenses, auxiliary 'have' reduces to /əv/ or disappears entirely
+      - Past participle may be identical to past simple for regular verbs (-ed)
+      relevance: Common in conversational experience narratives ('I've been to...').
+        Auxiliary 'have' almost always reduces to /əv/ or /v/, making it hard to detect.
+      source: Underhill, Sound Foundations, pp. 63-64; Biber et al., GSWE 14.2.2.3
+    reading:
+      relevance: 'Extremely common in news (breaking news: ''has announced''), academic
+        writing, and GSWE 6.4.1.'
+      source: Biber et al., GSWE 5.1.2, 6.4.1
+      text_types:
+      - news
+      - academic
+      - formal reports
+    speaking:
+      functions:
+      - reporting experience
+      - describing recent events
+      - expressing duration with for/since
+      relevance: 'Key for sharing life experiences, recent events, and unfinished
+        time periods (Biber GSWE 6.4.1). Functions: narrating experience, reporting
+        recent news, describing unfinished situations.'
+      source: Biber et al., GSWE 6.4.1, 14.1.2.7
+    writing:
+      genres:
+      - academic essays
+      - news reports
+      - formal emails
+      - reports
+      relevance: Standard in academic introductions ('Research has shown...'), news
+        leads, and formal reports. Essential for academic writing at B2+.
+      source: Biber et al., GSWE 8.2.1, 5.1.2
+- grammar_file: data/grammar/past_simple.yaml
+  grammar_point: past_simple
+  l1_notes:
+  - language: Japanese
+    skill_impact: Japanese has a single past tense marker (-ta) applied uniformly.
+      Japanese speakers may struggle with English irregular past forms in all four
+      skills, producing regularized forms (*'goed', *'eated'). In listening, the -ed
+      morpheme may be missed entirely.
+    source: Swan & Smith, Learner English, Japanese chapter
+  skills:
+    listening:
+      challenges:
+      - Regular past -ed is frequently elided in connected speech
+      - Many common verbs are irregular, requiring memorization
+      relevance: Very common in conversation for storytelling and reporting past events.
+        Regular -ed endings are often inaudible in connected speech (elision after
+        /t/ or /d/).
+      source: Underhill, Sound Foundations, pp. 60-67; Biber et al., GSWE 5.1.2
+    reading:
+      relevance: Dominant narrative tense in fiction, news reports, and historical
+        writing. Most common tense in storytelling and recounts.
+      source: Biber et al., GSWE 5.1.2, 6.2.2
+      text_types:
+      - fiction
+      - news
+      - history
+      - biography
+    speaking:
+      functions:
+      - narrating stories
+      - reporting past events
+      - describing completed actions
+      relevance: 'Essential for telling stories, describing completed past events,
+        and reporting. Functions: narrating, reporting, describing past habits (with
+        ''used to'').'
+      source: Biber et al., GSWE 5.1.2, 14.1.2.1
+    writing:
+      genres:
+      - narrative
+      - news
+      - biography
+      - academic methods sections
+      - personal recounts
+      relevance: Primary tense for narrative, news reports, biographical writing,
+        and personal recounts. Also used in academic writing for describing research
+        methods.
+      source: Biber et al., GSWE 5.1.2, 8.2.1
+- grammar_file: data/grammar/past_continuous.yaml
+  grammar_point: past_continuous
+  l1_notes:
+  - language: Arabic
+    skill_impact: Arabic has a morphological past progressive but it is less commonly
+      used than in English. Arabic speakers may default to past simple where English
+      requires past continuous.
+    source: Swan & Smith, Learner English, Arabic chapter
+  skills:
+    listening:
+      challenges:
+      - '''Was'' and ''were'' reduce to weak forms /wəz/, /wə/ in connected speech'
+      - Longer verb phrases create more connected speech reduction
+      relevance: Appears in conversational storytelling for background clauses ('I
+        was walking home when...'). 'Was' reduces to /wəz/, auxiliary may be hard
+        to hear.
+      source: Underhill, Sound Foundations, pp. 63-64; Biber et al., GSWE 5.1.2
+    reading:
+      relevance: Used in narrative for background actions and setting scenes. Common
+        in fiction and conversational narratives.
+      source: Biber et al., GSWE 5.1.2, 6.2.2
+      text_types:
+      - fiction
+      - narrative
+      - dialogue
+    speaking:
+      functions:
+      - setting narrative scene
+      - describing interrupted actions
+      - making polite background statements
+      relevance: 'Used for narrative background, interrupted actions, and polite requests.
+        Functions: setting scenes in stories, describing simultaneous actions, softening
+        requests.'
+      source: Biber et al., GSWE 5.1.2, 6.2.2
+    writing:
+      genres:
+      - fiction
+      - narrative essays
+      - creative writing
+      - dialogue
+      relevance: Important for fiction, creative writing, and narrative essays. Sets
+        the scene and provides background in stories.
+      source: Biber et al., GSWE 5.1.2
+- grammar_file: data/grammar/past_perfect.yaml
+  grammar_point: past_perfect
+  l1_notes:
+  - language: Korean
+    skill_impact: Korean does not have a morphological past perfect equivalent. Speakers
+      may express anteriority through context or time adverbs rather than verb morphology,
+      leading to underuse in speaking and writing.
+    source: Swan & Smith, Learner English, Korean chapter
+  skills:
+    listening:
+      challenges:
+      - '''Had'' may be fully reduced and nearly inaudible'
+      - In narrative, backshifting to past perfect is often optional; speakers use
+        simple past even when past perfect is 'correct'
+      relevance: Relatively rare in casual conversation; more common in lectures,
+        presentations, and formal speech. 'Had' reduces to /əd/ or /d/.
+      source: Underhill, Sound Foundations, p. 63; Biber et al., GSWE 14.2.2.3
+    reading:
+      relevance: Used in narrative for flashbacks and events before the main timeline.
+        Common in fiction and academic writing.
+      source: Biber et al., GSWE 5.1.2, 6.4.1
+      text_types:
+      - fiction
+      - academic
+      - formal reports
+      - news background
+    speaking:
+      functions:
+      - sequencing past events
+      - backshifting in reported speech
+      - academic narration
+      relevance: 'Used for backshifting in reported speech, describing earlier past
+        events, and academic narration. Functions: sequencing past events, reporting,
+        flashback narration.'
+      source: Biber et al., GSWE 6.4.1, 14.1.2
+    writing:
+      genres:
+      - academic essays
+      - fiction
+      - formal reports
+      - literary analysis
+      relevance: Essential for academic writing (literature review, describing earlier
+        research), fiction, and formal narrative. Important for C1-level writing.
+      source: Biber et al., GSWE 8.2.1, 5.1.2
+- grammar_file: data/grammar/future_will.yaml
+  grammar_point: future_will
+  l1_notes:
+  - language: Mandarin
+    skill_impact: Mandarin does not mark future tense morphologically; future is indicated
+      by time adverbs. Speakers may omit 'will/going to' in both speaking and writing,
+      relying on temporal adverbs alone.
+    source: Swan & Smith, Learner English, Mandarin chapter
+  skills:
+    listening:
+      challenges:
+      - Contracted 'll is a single consonant after pronouns — very hard to hear
+      - Going to and will are often interchangeable in casual speech; learners may
+        not distinguish them auditorily
+      relevance: Very common in conversation for spontaneous decisions, predictions,
+        and promises. 'Will' reduces to /əl/ or /l/; 'll cliticizes onto pronouns.
+      source: Underhill, Sound Foundations, pp. 64-65; Biber et al., GSWE 14.2.2.3
+    reading:
+      relevance: Common in news for predictions, academic writing for forecasting,
+        and everyday texts for promises and offers.
+      source: Biber et al., GSWE 6.6.2, 8.2.1
+      text_types:
+      - news
+      - academic
+      - advertisements
+      - everyday texts
+    speaking:
+      functions:
+      - spontaneous decisions
+      - promises
+      - predictions
+      - offers
+      - requests
+      relevance: 'Core future form for spontaneous decisions, promises, predictions,
+        and offers. Functions: offering, promising, predicting, deciding on the spot.'
+      source: Biber et al., GSWE 6.6.2, 14.1.2
+    writing:
+      genres:
+      - academic essays
+      - news
+      - formal proposals
+      - business forecasts
+      relevance: Used in academic writing for forecasts and predictions, news for
+        planned events, and formal proposals.
+      source: Biber et al., GSWE 8.2.1, 6.6.2
+- grammar_file: data/grammar/future_going_to.yaml
+  grammar_point: future_going_to
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish 'ir a + infinitive' maps closely onto 'going to.' This positive
+      transfer helps production but may lead to overuse at the expense of 'will' for
+      spontaneous decisions.
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - '''Going to'' → /gənə/ in rapid speech; ''want to'' → /wɒnə/ — learners may
+        confuse the two'
+      - Reduced form sounds like 'gonna' which may not be in learners' mental dictionary
+      relevance: Extremely common in informal conversation. 'Going to' reduces to
+        /gənə/ or even /gən/ in rapid speech — a major listening challenge.
+      source: Underhill, Sound Foundations, pp. 60-67; Biber et al., GSWE 14.2.2.3
+    reading:
+      relevance: Common in informal and semi-formal texts for plans and intentions.
+        Less common in formal academic writing.
+      source: Biber et al., GSWE 6.6.2
+      text_types:
+      - personal emails
+      - blogs
+      - informal writing
+    speaking:
+      functions:
+      - expressing plans
+      - predicting from current evidence
+      - announcing intentions
+      relevance: 'Used for expressing plans, intentions, and predictions based on
+        present evidence. Functions: planning, predicting from evidence, announcing
+        intentions.'
+      source: Biber et al., GSWE 6.6.2, 14.1.2
+    writing:
+      genres:
+      - personal emails
+      - informal writing
+      - blogs
+      source: Biber et al., GSWE 6.6.2
+- grammar_file: data/grammar/modals_possibility.yaml
+  grammar_point: modals_possibility
+  l1_notes:
+  - language: German
+    skill_impact: German modal system (konnen, mussen, durfen, etc.) maps partially
+      onto English. German speakers may overuse 'must' for logical deduction where
+      English prefers 'must have + pp' or use 'can' where English requires 'may'.
+    source: Swan & Smith, Learner English, German chapter
+  skills:
+    listening:
+      challenges:
+      - Weak forms of modals are hard to distinguish auditorily
+      - Epistemic vs. deontic meaning must be inferred from context
+      relevance: 'Frequent in conversation for speculation and advice. Modals reduce
+        in connected speech: ''might'' → /maɪt/, ''could'' → /kəd/, ''may'' → /meɪ/
+        (often unclear).'
+      source: Underhill, Sound Foundations, pp. 63-64; Biber et al., GSWE 14.2.2.3
+    reading:
+      relevance: Common in academic hedging, news speculation, and everyday advice.
+        'May,' 'might,' 'could' express epistemic modality across all text types.
+      source: Biber et al., GSWE 6.6.2, 8.2.1
+      text_types:
+      - academic
+      - news
+      - advice columns
+      - everyday texts
+    speaking:
+      functions:
+      - expressing possibility
+      - hedging claims
+      - speculating
+      - giving cautious advice
+      relevance: 'Essential for expressing possibility, probability, and speculation.
+        Functions: hedging, advising, speculating, expressing uncertainty.'
+      source: Biber et al., GSWE 6.6.2, 14.1.2
+    writing:
+      genres:
+      - academic essays
+      - news
+      - formal advice
+      - reports
+      relevance: Critical for academic hedging ('This may suggest...'), news speculation,
+        and formal advice. Overuse or underuse signals non-native writing.
+      source: Biber et al., GSWE 8.2.1, 6.6.2
+- grammar_file: data/grammar/obligation_must_haveto.yaml
+  grammar_point: obligation_must_haveto
+  l1_notes:
+  - language: French
+    skill_impact: French 'devoir' covers both obligation and probability, leading
+      to confusion. French speakers may say 'He must be at home' when they mean 'He
+      has to be at home' (obligation vs. deduction).
+    source: Swan & Smith, Learner English, French chapter
+  skills:
+    listening:
+      challenges:
+      - '''Have to'' reduces to /hæftə/ — sounds like ''hafta'''
+      - '''Must'' in ''You must try it'' reduces from /mʌst/ to /məs/'
+      relevance: Frequent in transactional exchanges (doctor-patient, teacher-student).
+        'Have to' → /hæftə/ in rapid speech; 'must' → /məst/ or /məs/.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in rules, regulations, instructions, and advice texts. 'Must'
+        for internal obligation, 'have to' for external rules.
+      source: Biber et al., GSWE 6.6.2
+      text_types:
+      - rules
+      - instructions
+      - advice
+      - signs
+      - formal notices
+    speaking:
+      functions:
+      - giving advice
+      - stating rules
+      - making strong recommendations
+      - commanding
+      relevance: 'Used for giving strong advice, expressing rules, and making requests.
+        Functions: advising, commanding, insisting, recommending.'
+      source: Biber et al., GSWE 6.6.2, 14.1.2
+    writing:
+      genres:
+      - rules
+      - instructions
+      - advice
+      - persuasive essays
+      relevance: Used in formal rules, instructions, advice columns, and persuasive
+        writing. 'Must' is stronger and more formal than 'have to.'
+      source: Biber et al., GSWE 6.6.2
+- grammar_file: data/grammar/first_conditional.yaml
+  grammar_point: first_conditional
+  l1_notes:
+  - language: Arabic
+    skill_impact: Arabic conditional system uses different particles (ʾin, law). Arabic
+      speakers may struggle with the English present-after-if rule (*'If I will go...').
+    source: Swan & Smith, Learner English, Arabic chapter
+  skills:
+    listening:
+      challenges:
+      - '''If'' may reduce to /ɪf/ or even /əf/ in rapid speech'
+      - Contracted 'll is hard to hear after 'if' clauses
+      relevance: Frequent in conversation for making plans, promises, and threats.
+        'If' may be reduced; 'will' → /əl/ or /l/.
+      source: Underhill, Sound Foundations, pp. 63-65
+    reading:
+      relevance: Common in advice texts, instructions, and everyday communication.
+        'If + present, will + infinitive' for real future possibilities.
+      source: Biber et al., GSWE 6.6.2, 10.2.1
+      text_types:
+      - advice
+      - instructions
+      - everyday texts
+      - blogs
+    speaking:
+      functions:
+      - making promises
+      - giving warnings
+      - bargaining
+      - predicting
+      relevance: 'Used for making promises, threats, warnings, and predictions about
+        the future. Functions: promising, warning, bargaining, planning.'
+      source: Biber et al., GSWE 10.2.1, 14.1.2
+    writing:
+      genres:
+      - advice columns
+      - informal writing
+      - instructions
+      source: Biber et al., GSWE 10.2.1
+- grammar_file: data/grammar/second_conditional.yaml
+  grammar_point: second_conditional
+  l1_notes:
+  - language: Japanese
+    skill_impact: Japanese conditionals use different forms (-tara, -ba, -nara, -to)
+      with nuanced meanings. Japanese speakers may overgeneralize one conditional
+      pattern to all English hypotheticals.
+    source: Swan & Smith, Learner English, Japanese chapter
+  skills:
+    listening:
+      challenges:
+      - '''Would'' reduces to /wəd/ or /d/ — hard to distinguish from past tense'
+      - Hypothetical meaning must be inferred from context, not morphology alone
+      relevance: Appears in conversational hypotheticals and advice. 'Would' → /wəd/
+        or /d/; 'if' clause may be the only signal.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in advice, hypothetical discussions, and imaginative fiction.
+        'If + past simple, would + infinitive' for unreal present/future.
+      source: Biber et al., GSWE 10.2.1
+      text_types:
+      - advice
+      - fiction
+      - opinion pieces
+      - blogs
+    speaking:
+      functions:
+      - giving advice
+      - imagining hypotheticals
+      - making polite requests
+      - expressing wishes
+      relevance: 'Used for giving advice, imagining hypothetical situations, and polite
+        requests. Functions: advising, imagining, softening requests.'
+      source: Biber et al., GSWE 10.2.1, 14.1.2
+    writing:
+      genres:
+      - opinion essays
+      - advice
+      - creative writing
+      - formal hypotheticals
+      source: Biber et al., GSWE 10.2.1
+- grammar_file: data/grammar/third_conditional.yaml
+  grammar_point: third_conditional
+  l1_notes:
+  - language: Korean
+    skill_impact: Korean has conditional forms but the hypothetical past is expressed
+      differently. Korean speakers may avoid third conditional in speaking, using
+      simpler constructions.
+    source: Swan & Smith, Learner English, Korean chapter
+  skills:
+    listening:
+      challenges:
+      - '''Would have'' reduces to /wədə/ — sounds like ''woulda'''
+      - Three-part structure (if + past perfect, would + have + pp) is complex to
+        parse auditorily
+      relevance: Rare in casual conversation; more common in lectures and formal speech.
+        'Would have' → /wədəv/ or /wədə/ — very reduced.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Found in reflective writing, literary analysis, and academic discussion
+        of past events. Relatively rare in everyday texts.
+      source: Biber et al., GSWE 10.2.1
+      text_types:
+      - academic
+      - literary analysis
+      - reflective writing
+    speaking:
+      functions:
+      - expressing regret
+      - criticizing past decisions
+      - speculating about alternative pasts
+      relevance: 'Used for expressing regret, criticizing past actions, and imagining
+        alternative pasts. Functions: expressing regret, criticizing, speculating
+        about the past.'
+      source: Biber et al., GSWE 10.2.1, 14.1.2
+    writing:
+      genres:
+      - reflective essays
+      - academic writing
+      - literary analysis
+      - formal reports
+      source: Biber et al., GSWE 10.2.1
+- grammar_file: data/grammar/passive_voice.yaml
+  grammar_point: passive_voice
+  l1_notes:
+  - language: Japanese
+    skill_impact: Japanese passive has additional adversative meaning (suffering passive)
+      not present in English. Japanese speakers may avoid English passive or use it
+      incorrectly in writing.
+    source: Swan & Smith, Learner English, Japanese chapter
+  - language: Arabic
+    skill_impact: Arabic uses passive voice less frequently and with different constraints.
+      Arabic speakers may underuse passive in academic English writing.
+    source: Swan & Smith, Learner English, Arabic chapter
+  skills:
+    listening:
+      challenges:
+      - Passive constructions are longer and harder to parse in real-time listening
+      - Agent ('by...') is often omitted, making meaning ambiguous
+      relevance: More common in lectures, news broadcasts, and formal speech than
+        in casual conversation. 'Was/were + past participle' — 'was' reduces to /wəz/.
+      source: Underhill, Sound Foundations, pp. 63-64; Biber et al., GSWE 8.1.1
+    reading:
+      relevance: 'Dominant in academic prose (Biber GSWE 8.1.1: academic prose has
+        highest passive frequency). Common in news, scientific writing, and formal
+        reports.'
+      source: Biber et al., GSWE 8.1.1, 6.4.1
+      text_types:
+      - academic
+      - news
+      - scientific
+      - formal reports
+    speaking:
+      functions:
+      - focusing on process
+      - depersonalizing statements
+      - formal reporting
+      - scientific description
+      relevance: 'Used in formal presentations, academic discussions, and when the
+        agent is unknown or unimportant. Functions: focusing on process/result, depersonalizing,
+        formal reporting.'
+      source: Biber et al., GSWE 8.1.1, 14.1.2
+    writing:
+      genres:
+      - academic essays
+      - scientific reports
+      - news
+      - formal reports
+      - process descriptions
+      relevance: Essential for academic writing, scientific reports, news, and formal
+        prose. Biber shows academic prose has significantly more passives than conversation
+        (GSWE 8.1.1).
+      source: Biber et al., GSWE 8.1.1, 6.4.1
+- grammar_file: data/grammar/relative_clauses.yaml
+  grammar_point: relative_clauses
+  l1_notes:
+  - language: Korean
+    skill_impact: Korean relative clauses are pre-nominal (before the noun), unlike
+      English post-nominal relatives. Korean speakers may produce head-final relative
+      clauses or avoid them entirely.
+    source: Swan & Smith, Learner English, Korean chapter
+  - language: Japanese
+    skill_impact: Japanese relative clauses are also pre-nominal. Japanese speakers
+      may struggle with English post-nominal relative clauses in both production and
+      comprehension.
+    source: Swan & Smith, Learner English, Japanese chapter
+  skills:
+    listening:
+      challenges:
+      - Relative pronouns (who, which, that) may be reduced or omitted in speech
+      - Long relative clauses create complex noun phrases that are hard to parse in
+        real-time
+      relevance: 'Less common in casual conversation (Biber GSWE 14.1.2: conversation
+        prefers simple clauses). When they occur, relative pronouns may be reduced
+        or omitted.'
+      source: Biber et al., GSWE 14.1.2, 8.6.1
+    reading:
+      relevance: Extremely common in academic prose, news, and formal writing. Biber
+        shows academic prose has the highest frequency of relative clauses (GSWE 8.1.1,
+        8.6.1).
+      source: Biber et al., GSWE 8.1.1, 8.6.1
+      text_types:
+      - academic
+      - news
+      - formal writing
+      - fiction
+    speaking:
+      functions:
+      - defining
+      - adding information
+      - identifying referents
+      - formal description
+      relevance: Used for adding information, defining, and identifying. More common
+        in formal speech and presentations than in casual conversation.
+      source: Biber et al., GSWE 8.6.1, 14.1.2
+    writing:
+      genres:
+      - academic essays
+      - formal reports
+      - descriptive writing
+      - news
+      relevance: Essential for academic writing, formal descriptions, and complex
+        prose. Defining vs. non-defining relative clauses are a key B2-C1 writing
+        skill.
+      source: Biber et al., GSWE 8.1.1, 8.6.1
+- grammar_file: data/grammar/reported_speech.yaml
+  grammar_point: reported_speech
+  l1_notes:
+  - language: Russian
+    skill_impact: Russian reported speech does not require backshifting. Russian speakers
+      may not backshift tenses in English reported speech (*'She said she is tired').
+    source: Swan & Smith, Learner English, Russian chapter
+  skills:
+    listening:
+      challenges:
+      - Backshifting may not occur in casual speech
+      - Vernacular reporting verbs ('was like,' 'goes') may not be recognized by learners
+        who only know 'said'
+      relevance: Appears in conversation for reporting what others said. Biber documents
+        vernacular reporting clauses ('was like,' 'goes') alongside standard 'said'
+        (GSWE 14.4.4).
+      source: Biber et al., GSWE 14.4.4
+    reading:
+      relevance: Common in news (reporting what officials said), fiction (dialogue
+        reporting), and academic writing (citing sources).
+      source: Biber et al., GSWE 8.2.1, 14.4.4
+      text_types:
+      - news
+      - fiction
+      - academic
+      - formal reports
+    speaking:
+      functions:
+      - reporting speech
+      - narrating conversations
+      - gossiping
+      - summarizing what others said
+      relevance: 'Used for telling stories, reporting conversations, and gossip. Functions:
+        reporting, narrating, gossiping, summarizing.'
+      source: Biber et al., GSWE 14.4.4, 14.1.2
+    writing:
+      genres:
+      - academic essays
+      - news
+      - narrative
+      - formal reports
+      relevance: Essential for academic writing (citing sources), news reporting,
+        and narrative. Formal reported speech with backshifting is a B2+ writing skill.
+      source: Biber et al., GSWE 8.2.1, 14.4.4
+- grammar_file: data/grammar/articles.yaml
+  grammar_point: articles
+  l1_notes:
+  - language: Mandarin
+    skill_impact: Mandarin has no article system. Mandarin speakers consistently omit
+      or misuse articles in all four skills. This is one of the most persistent errors.
+    source: Swan & Smith, Learner English, Mandarin chapter
+  - language: Korean
+    skill_impact: Korean has no articles. Korean speakers struggle with article use
+      in writing and may not perceive articles in listening.
+    source: Swan & Smith, Learner English, Korean chapter
+  - language: Japanese
+    skill_impact: Japanese has no article system. Japanese speakers have persistent
+      article errors in writing and may miss articles in listening.
+    source: Swan & Smith, Learner English, Japanese chapter
+  - language: Russian
+    skill_impact: Russian has no articles. Russian speakers must learn the entire
+      article system from scratch, affecting all four skills.
+    source: Swan & Smith, Learner English, Russian chapter
+  skills:
+    listening:
+      challenges:
+      - Articles are function words with weak forms — nearly inaudible in connected
+        speech
+      - Learners must infer article presence from context and noun phrase structure
+      relevance: 'Articles are almost always in weak form: ''a'' → /ə/, ''an'' → /ən/,
+        ''the'' → /ðə/. They are among the hardest words to hear in connected speech.'
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Articles appear in every English text. Correct interpretation depends
+        on article use (definite vs. indefinite vs. zero article signals given vs.
+        new information).
+      source: Biber et al., GSWE 2.3.5, 4.1.1
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - introducing referents
+      - referring back
+      - generalizing
+      - specifying
+      relevance: 'Article errors are among the most persistent in L1s without articles.
+        Functions: introducing new referents (a/an), referring back (the), generalizing
+        (zero article).'
+      source: Biber et al., GSWE 2.3.5
+    writing:
+      genres:
+      - all writing genres
+      relevance: Article use is a key marker of writing quality at all levels. Errors
+        in article use are common even at C1 for speakers of article-less L1s.
+      source: Biber et al., GSWE 2.3.5, 8.2.1
+- grammar_file: data/grammar/complex_noun_phrases.yaml
+  grammar_point: complex_noun_phrases
+  l1_notes:
+  - language: Japanese
+    skill_impact: Japanese noun phrases are head-final with pre-nominal modifiers.
+      Japanese speakers may produce head-final English noun phrases or avoid complex
+      pre-modification.
+    source: Swan & Smith, Learner English, Japanese chapter
+  skills:
+    listening:
+      challenges:
+      - Multiple modifiers before the head noun are hard to parse in real-time
+      - Post-modification (prepositional phrases, relative clauses) adds length
+      relevance: Complex noun phrases in lectures and presentations are challenging
+        because all information is packed into a single noun phrase with no visual
+        support.
+      source: Biber et al., GSWE 8.1.1
+    reading:
+      relevance: Biber shows academic prose has the most complex noun phrases with
+        pre- and post-modification (GSWE 8.1.1, 8.6.1). Key for reading academic texts.
+      source: Biber et al., GSWE 8.1.1, 8.6.1
+      text_types:
+      - academic
+      - news
+      - formal reports
+    speaking:
+      functions:
+      - precise description
+      - academic argumentation
+      - technical explanation
+      relevance: 'Used in formal presentations and academic discussion. Functions:
+        precise description, academic argumentation, technical explanation.'
+      source: Biber et al., GSWE 8.1.1
+    writing:
+      genres:
+      - academic essays
+      - formal reports
+      - scientific writing
+      relevance: Essential for academic writing. Biber shows academic prose has significantly
+        more complex noun phrases than other registers (GSWE 8.1.1).
+      source: Biber et al., GSWE 8.1.1, 8.6.1
+- grammar_file: data/grammar/countable_uncountable.yaml
+  grammar_point: countable_uncountable
+  l1_notes:
+  - language: French
+    skill_impact: French 'information' is countable (des informations) but English
+      'information' is uncountable. French speakers may say *'an information' or *'informations.'
+    source: Swan & Smith, Learner English, French chapter
+  skills:
+    listening:
+      challenges:
+      - Plural -s may be inaudible in connected speech
+      - Quantifiers like 'much' vs. 'many' depend on countability
+      relevance: Plurals and quantifiers must be perceived in connected speech. Final
+        -s on plurals is often reduced or elided.
+      source: Underhill, Sound Foundations, pp. 60-67
+    reading:
+      relevance: Affects interpretation of noun phrases. Many nouns have different
+        countability in English vs. L1 (e.g., 'information,' 'furniture,' 'advice').
+      source: Biber et al., GSWE 2.3.5
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - quantifying
+      - describing amounts
+      - making requests
+      relevance: 'Errors in countability affect article use, quantifier choice, and
+        verb agreement. Functions: quantifying, describing amounts, requesting.'
+      source: Biber et al., GSWE 2.3.5
+    writing:
+      genres:
+      - all writing genres
+      relevance: Countability errors affect article use, subject-verb agreement, and
+        quantifier choice. Common even at B2.
+      source: Biber et al., GSWE 2.3.5
+- grammar_file: data/grammar/prepositions_time.yaml
+  grammar_point: prepositions_time
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish 'en' covers both 'in' and 'on.' Spanish speakers may confuse
+      'in' and 'on' (*'on the morning,' *'in the table').
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - Prepositions are function words — weak forms, often inaudible
+      - Choice of preposition must be inferred from context when the preposition itself
+        is unclear
+      relevance: Prepositions are function words with weak forms. 'In' → /ɪn/ or /ən/,
+        'on' → /ɒn/, 'at' → /ət/. Very hard to hear in connected speech.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Prepositions of time (in, on, at) appear in all text types. Correct
+        interpretation is essential for understanding temporal references.
+      source: Biber et al., GSWE 2.3.5, 8.6.1
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - specifying time
+      - indicating location
+      - expressing manner
+      relevance: 'Preposition errors are persistent and common. Functions: specifying
+        time, place, manner.'
+      source: Biber et al., GSWE 2.3.5
+    writing:
+      genres:
+      - all writing genres
+      relevance: Preposition errors are among the most persistent in writing. Collocations
+        with prepositions (dependent prepositions) must be learned as chunks.
+      source: Biber et al., GSWE 2.3.5
+- grammar_file: data/grammar/discourse_markers_advanced.yaml
+  grammar_point: discourse_markers_advanced
+  l1_notes:
+  - language: Arabic
+    skill_impact: Arabic discourse markers (e.g., 'fa-', 'wa-') do not map directly
+      onto English. Arabic speakers may underuse discourse markers in English writing.
+    source: Swan & Smith, Learner English, Arabic chapter
+  skills:
+    listening:
+      challenges:
+      - Discourse markers in conversation are often reduced and may be inaudible
+      - Function must be inferred from discourse context
+      relevance: Biber documents discourse markers in conversation (well, so, anyway,
+        I mean, you know) (GSWE 14.3.2.1, 14.3.3.3). They signal transitions and stance.
+      source: Biber et al., GSWE 14.3.2.1, 14.3.3.3
+    reading:
+      relevance: Discourse markers (however, therefore, moreover, nevertheless) signal
+        text organization. Essential for understanding academic and formal texts.
+      source: Biber et al., GSWE 13.2.1.1, 10.4.3.1
+      text_types:
+      - academic
+      - formal writing
+      - news
+    speaking:
+      functions:
+      - signaling transitions
+      - hedging
+      - emphasizing
+      - managing conversation
+      - expressing stance
+      relevance: 'Essential for organizing speech, signaling transitions, and managing
+        conversation. Functions: transitioning, hedging, emphasizing, managing turn-taking.'
+      source: Biber et al., GSWE 14.3.2.1, 14.3.3.3
+    writing:
+      genres:
+      - academic essays
+      - formal reports
+      - argumentative writing
+      relevance: Critical for academic writing cohesion. Biber shows academic prose
+        uses elaborate linking adverbials (GSWE 13.2.1.1).
+      source: Biber et al., GSWE 13.2.1.1
+- grammar_file: data/grammar/gerunds_infinitives.yaml
+  grammar_point: gerunds_infinitives
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish tends to use infinitive where English uses gerund (after
+      prepositions, as subject). Spanish speakers may say *'I am interested in learn'
+      or *'To swim is fun' (acceptable but less common than 'Swimming is fun').
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - '''To'' before infinitives reduces to /tə/ — may be inaudible'
+      - Gerund vs. present participle may be indistinguishable in speech
+      relevance: The -ing ending and 'to' before infinitives may be reduced. 'To'
+        → /tə/ in connected speech.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Gerunds and infinitives appear in all text types. Correct interpretation
+        depends on knowing which form follows which verb.
+      source: Biber et al., GSWE 9.2.2.3, 9.4.2.9
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - expressing purpose
+      - describing activities
+      - reporting
+      - expressing preferences
+      relevance: 'Choice between gerund and infinitive after verbs is a major source
+        of error. Functions: expressing purpose, describing activities, reporting.'
+      source: Biber et al., GSWE 9.2.2.3, 14.1.2
+    writing:
+      genres:
+      - all writing genres
+      relevance: Errors in gerund/infinitive choice are common in writing. Some verbs
+        change meaning depending on complementation (stop, remember, try).
+      source: Biber et al., GSWE 9.2.2.3
+- grammar_file: data/grammar/comparatives_superlatives.yaml
+  grammar_point: comparatives_superlatives
+  l1_notes:
+  - language: German
+    skill_impact: German comparative formation is similar (-er suffix) but superlative
+      differs. German speakers may produce double comparatives (*'more bigger') by
+      combining L1 and L2 patterns.
+    source: Swan & Smith, Learner English, German chapter
+  skills:
+    listening:
+      challenges:
+      - Comparative suffix -er may be inaudible
+      - '''More'' reduces to /mə/ in connected speech'
+      relevance: Used in conversation for comparisons. '-er' and 'more' may be reduced
+        in connected speech.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in academic writing (comparing theories, data), news (comparing
+        statistics), and everyday texts (product comparisons).
+      source: Biber et al., GSWE 2.3.5, 8.2.1
+      text_types:
+      - academic
+      - news
+      - advertisements
+      - reviews
+    speaking:
+      functions:
+      - comparing things
+      - evaluating options
+      - making recommendations
+      - expressing preferences
+      relevance: 'Used for comparing, evaluating, and expressing preferences. Functions:
+        comparing, evaluating, recommending, expressing preferences.'
+      source: Biber et al., GSWE 14.1.2
+    writing:
+      genres:
+      - academic essays
+      - reviews
+      - evaluative writing
+      - advertisements
+      relevance: Essential for academic comparison essays, product reviews, and evaluative
+        writing.
+      source: Biber et al., GSWE 8.2.1
+- grammar_file: data/grammar/nominalization.yaml
+  grammar_point: nominalization
+  l1_notes:
+  - language: French
+    skill_impact: French academic writing also uses nominalization, providing positive
+      transfer. However, the specific nominalization patterns differ.
+    source: Swan & Smith, Learner English, French chapter
+  skills:
+    listening:
+      challenges:
+      - Nominalized verbs packed into noun phrases increase information density
+      - Listeners must unpack the verbal meaning from nominal forms
+      relevance: Nominalizations create dense noun phrases that are hard to parse
+        in real-time listening, especially in lectures.
+      source: Biber et al., GSWE 8.1.1
+    reading:
+      relevance: Biber shows academic prose has the highest frequency of nominalizations
+        (GSWE 8.1.1). Key for understanding dense academic text.
+      source: Biber et al., GSWE 8.1.1, 6.4.1
+      text_types:
+      - academic
+      - news
+      - formal reports
+    speaking:
+      functions:
+      - academic argumentation
+      - formal reporting
+      - abstract description
+      relevance: 'Used in formal presentations and academic discussion. Functions:
+        academic argumentation, formal reporting, abstract description.'
+      source: Biber et al., GSWE 8.1.1
+    writing:
+      genres:
+      - academic essays
+      - formal reports
+      - scientific writing
+      relevance: Essential for academic writing. Nominalization is a key feature of
+        academic register (Biber GSWE 8.1.1).
+      source: Biber et al., GSWE 8.1.1, 6.4.1
+- grammar_file: data/grammar/hedging.yaml
+  grammar_point: hedging
+  l1_notes:
+  - language: Japanese
+    skill_impact: Japanese communication culture values indirectness, which may lead
+      to over-hedging in English academic writing. Japanese speakers may hedge more
+      than necessary.
+    source: Swan & Smith, Learner English, Japanese chapter
+  skills:
+    listening:
+      challenges:
+      - Hedging expressions may be subtle and reduced in speech
+      - Cultural differences in directness may affect recognition
+      relevance: Hedging expressions in lectures and presentations signal uncertainty.
+        Must be recognized to understand the speaker's stance.
+      source: Biber et al., GSWE 10.3.1
+    reading:
+      relevance: Common in academic writing and news. Hedging language (seem, appear,
+        tend to, it appears that) signals the writer's stance.
+      source: Biber et al., GSWE 8.2.1, 10.3.1
+      text_types:
+      - academic
+      - news
+      - formal reports
+    speaking:
+      functions:
+      - softening claims
+      - expressing uncertainty
+      - being diplomatic
+      - avoiding overgeneralization
+      relevance: 'Used for softening claims, expressing uncertainty, and being polite.
+        Functions: hedging claims, expressing uncertainty, being diplomatic.'
+      source: Biber et al., GSWE 10.3.1, 14.1.2
+    writing:
+      genres:
+      - academic essays
+      - formal reports
+      - research papers
+      relevance: Essential for academic writing. Overuse or underuse of hedging signals
+        non-native writing style.
+      source: Biber et al., GSWE 8.2.1, 10.3.1
+- grammar_file: data/grammar/linking_words.yaml
+  grammar_point: linking_words
+  l1_notes:
+  - language: Arabic
+    skill_impact: Arabic uses 'wa-' (and) very frequently, leading to overuse of 'and'
+      in English writing (and...and...and...).
+    source: Swan & Smith, Learner English, Arabic chapter
+  skills:
+    listening:
+      challenges:
+      - Coordinating conjunctions are function words — weak forms
+      - In casual speech, connectors may be omitted entirely
+      relevance: Connectors in speech may be reduced or omitted. Learners must infer
+        relationships between clauses from context.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Connectors (and, but, or, so, because, although, however) signal
+        text organization. Essential for understanding relationships between ideas.
+      source: Biber et al., GSWE 10.4.3.1, 13.2.1.1
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - adding information
+      - contrasting
+      - explaining cause
+      - sequencing
+      - concluding
+      relevance: 'Used for organizing speech, showing relationships between ideas,
+        and managing conversation. Functions: adding, contrasting, explaining cause,
+        sequencing.'
+      source: Biber et al., GSWE 14.1.2
+    writing:
+      genres:
+      - all writing genres
+      relevance: Essential for all writing genres. Range and accuracy of connectors
+        is a key assessment criterion.
+      source: Biber et al., GSWE 13.2.1.1
+- grammar_file: data/grammar/cleft_sentences.yaml
+  grammar_point: cleft_sentences
+  l1_notes:
+  - language: French
+    skill_impact: French uses cleft sentences frequently ('C'est... que...'). This
+      positive transfer may help French speakers use English clefts.
+    source: Swan & Smith, Learner English, French chapter
+  skills:
+    listening:
+      challenges:
+      - Cleft structure may be hard to parse in real-time
+      - The focused element is prosodically prominent — learners must recognize this
+      relevance: It-clefts and wh-clefts in speech signal focus and emphasis. The
+        stressed element carries new information.
+      source: Underhill, Sound Foundations, pp. 76-81
+    reading:
+      relevance: Common in academic and formal writing for emphasis. 'It was... that...'
+        and 'What... is...' structures.
+      source: Biber et al., GSWE 8.2.1, 10.2.1
+      text_types:
+      - academic
+      - formal writing
+      - news
+    speaking:
+      functions:
+      - emphasizing
+      - correcting
+      - focusing attention
+      - contrasting
+      relevance: 'Used for emphasis, contrast, and correcting. Functions: emphasizing,
+        correcting, focusing attention.'
+      source: Biber et al., GSWE 10.2.1
+    writing:
+      genres:
+      - academic essays
+      - formal writing
+      - argumentative essays
+      source: Biber et al., GSWE 8.2.1
+- grammar_file: data/grammar/subjunctive.yaml
+  grammar_point: subjunctive
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish has a fully productive subjunctive mood. Spanish speakers
+      may overuse English subjunctive or use it in contexts where English prefers
+      indicative.
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - Subjunctive is morphologically identical to base form — no auditory signal
+      - Only recognizable from context (after specific verbs/adjectives)
+      relevance: Rare in casual speech. When it occurs, the subjunctive form is identical
+        to the base form, making it indistinguishable from present simple.
+      source: Biber et al., GSWE 8.2.1
+    reading:
+      relevance: Found in formal writing, legal texts, and fixed expressions. 'I suggest
+        he go,' 'If I were you,' 'It is essential that she be informed.'
+      source: Biber et al., GSWE 8.2.1
+      text_types:
+      - formal writing
+      - legal
+      - academic
+    speaking:
+      functions:
+      - recommending
+      - demanding
+      - expressing necessity
+      - formal suggestion
+      relevance: 'Used in formal speech and fixed expressions. Functions: recommending,
+        demanding, expressing necessity.'
+      source: Biber et al., GSWE 8.2.1
+    writing:
+      genres:
+      - formal writing
+      - legal
+      - academic
+      source: Biber et al., GSWE 8.2.1
+- grammar_file: data/grammar/phrasal_verbs.yaml
+  grammar_point: phrasal_verbs
+  l1_notes:
+  - language: German
+    skill_impact: German has separable prefix verbs that partially map onto English
+      phrasal verbs. German speakers may understand the concept but struggle with
+      specific meanings.
+    source: Swan & Smith, Learner English, German chapter
+  skills:
+    listening:
+      challenges:
+      - Particle may be reduced or inaudible
+      - Separable phrasal verbs split the components across the clause
+      relevance: Very common in conversation. The particle may be separated from the
+        verb by connected speech features.
+      source: Underhill, Sound Foundations, pp. 60-67
+    reading:
+      relevance: Common in fiction, informal writing, and news. Biber shows conversation
+        has high frequency of phrasal verbs (GSWE 14.1.2.7).
+      source: Biber et al., GSWE 14.1.2.7
+      text_types:
+      - fiction
+      - informal writing
+      - news
+      - conversation transcripts
+    speaking:
+      functions:
+      - everyday communication
+      - informal narration
+      - casual requests
+      - describing actions
+      relevance: 'Essential for natural-sounding conversation. Functions: everyday
+        communication, informal narration, casual requests.'
+      source: Biber et al., GSWE 14.1.2.7
+    writing:
+      genres:
+      - informal writing
+      - fiction
+      - personal emails
+      - blogs
+      source: Biber et al., GSWE 14.1.2.7
+- grammar_file: data/grammar/ellipsis_advanced.yaml
+  grammar_point: ellipsis_advanced
+  l1_notes:
+  - language: Mandarin
+    skill_impact: Mandarin allows extensive ellipsis (pro-drop, topic-drop). This
+      positive transfer may help in conversation but may lead to under-specification
+      in writing.
+    source: Swan & Smith, Learner English, Mandarin chapter
+  skills:
+    listening:
+      challenges:
+      - Learners must recover elided material from context
+      - Non-clausal units (Yeah, Okay, Really?) are not 'incomplete sentences' — they
+        are the default
+      relevance: Biber shows 38.6% of conversation units are non-clausal (GSWE 14.3.1.4).
+        Ellipsis is the norm in conversation, not the exception.
+      source: Biber et al., GSWE 14.3.1.4, 14.3.3
+    reading:
+      relevance: Common in dialogue, informal writing, and conversational texts. Learners
+        must recover elided material from context.
+      source: Biber et al., GSWE 14.3.1.4
+      text_types:
+      - fiction
+      - dialogue
+      - informal writing
+    speaking:
+      functions:
+      - responding
+      - agreeing
+      - confirming
+      - backchanneling
+      - natural conversation
+      relevance: 'Used for natural conversation. Functions: responding, agreeing,
+        confirming, backchanneling.'
+      source: Biber et al., GSWE 14.3.1.4, 14.3.3
+    writing:
+      genres:
+      - informal writing
+      - dialogue
+      - fiction
+      source: Biber et al., GSWE 14.3.1.4
+- grammar_file: data/grammar/inversion_negative.yaml
+  grammar_point: inversion_negative
+  l1_notes:
+  - language: German
+    skill_impact: German has verb-second (V2) word order, which creates inversion
+      in many contexts. This positive transfer may help German speakers with English
+      inversion.
+    source: Swan & Smith, Learner English, German chapter
+  skills:
+    listening:
+      challenges:
+      - Inverted word order is unexpected and may cause processing difficulty
+      - Only occurs after specific negative/restrictive adverbials
+      relevance: Rare in casual speech. When it occurs, the inverted structure may
+        be hard to parse in real-time.
+      source: Biber et al., GSWE 8.2.1
+    reading:
+      relevance: Found in formal and literary writing. 'Never have I...,' 'Not only...
+        but also...,' 'Seldom...'
+      source: Biber et al., GSWE 8.2.1
+      text_types:
+      - formal writing
+      - literary
+      - academic
+    speaking:
+      functions:
+      - emphasizing
+      - formal speech
+      - dramatic effect
+      source: Biber et al., GSWE 8.2.1
+    writing:
+      genres:
+      - formal writing
+      - literary
+      - academic
+      source: Biber et al., GSWE 8.2.1
+- grammar_file: data/grammar/wishes_regrets.yaml
+  grammar_point: wishes_regrets
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish uses subjunctive after 'ojala' (I wish). Spanish speakers
+      may try to map subjunctive onto English 'wish' constructions.
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - Hypothetical meaning must be inferred from context
+      - '''Wish'' + past tense for present unreal may be confused with past simple'
+      relevance: Appears in conversation for expressing regrets and wishes. 'Wish'
+        + past tense/hypothetical.
+      source: Biber et al., GSWE 10.2.1
+    reading:
+      relevance: Common in fiction, personal writing, and conversational texts. 'I
+        wish I had...,' 'If only I could...'
+      source: Biber et al., GSWE 10.2.1
+      text_types:
+      - fiction
+      - personal writing
+      - dialogue
+    speaking:
+      functions:
+      - expressing regret
+      - expressing wishes
+      - complaining
+      - imagining alternatives
+      source: Biber et al., GSWE 10.2.1, 14.1.2
+    writing:
+      genres:
+      - personal writing
+      - fiction
+      - reflective essays
+      source: Biber et al., GSWE 10.2.1
+- grammar_file: data/grammar/fronting.yaml
+  grammar_point: fronting
+  l1_notes:
+  - language: Arabic
+    skill_impact: Arabic allows fronting for emphasis (topic-comment structure). This
+      positive transfer may help Arabic speakers understand English fronting.
+    source: Swan & Smith, Learner English, Arabic chapter
+  skills:
+    listening:
+      challenges:
+      - Fronted word order is unexpected
+      - The fronted element carries emphasis — must be recognized prosodically
+      relevance: Rare in casual speech. When it occurs, the fronted element is prosodically
+        prominent.
+      source: Underhill, Sound Foundations, pp. 76-81
+    reading:
+      relevance: Found in literary and formal writing for emphasis. Fronted elements
+        create dramatic or literary effect.
+      source: Biber et al., GSWE 8.2.1
+      text_types:
+      - literary
+      - formal writing
+    speaking:
+      functions:
+      - emphasizing
+      - creating dramatic effect
+      - focusing attention
+      source: Biber et al., GSWE 8.2.1
+    writing:
+      genres:
+      - literary
+      - creative writing
+      - formal writing
+      source: Biber et al., GSWE 8.2.1
+- grammar_file: data/grammar/register_variation.yaml
+  grammar_point: register_variation
+  l1_notes:
+  - language: Japanese
+    skill_impact: Japanese has elaborate honorific system (keigo) that marks formality
+      grammatically. Japanese speakers may expect similar grammatical marking in English
+      and struggle with lexical/register variation.
+    source: Swan & Smith, Learner English, Japanese chapter
+  skills:
+    listening:
+      challenges:
+      - Casual conversation has maximum connected speech reduction
+      - Academic lectures blend conversational delivery with academic grammar
+      relevance: Underhill's careful vs. rapid colloquial speech continuum (pp. 58-59).
+        Learners must adjust listening strategies to register.
+      source: Underhill, Sound Foundations, pp. 58-59; Biber et al., GSWE 1.5
+    reading:
+      relevance: 'Biber''s core finding: each register has a distinctive grammatical
+        profile (GSWE 1.5, 2.3.5). Learners must recognize register from grammatical
+        features.'
+      source: Biber et al., GSWE 1.5, 2.3.5
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - adjusting register
+      - formal speech
+      - informal conversation
+      - academic discussion
+      source: Biber et al., GSWE 1.5, 14.1.2
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 1.5, 8.2.1
+- grammar_file: data/grammar/zero_conditional.yaml
+  grammar_point: zero_conditional
+  l1_notes:
+  - language: Arabic
+    skill_impact: Arabic conditionals use different particles. Arabic speakers may
+      struggle with the present-after-if rule.
+    source: Swan & Smith, Learner English, Arabic chapter
+  skills:
+    listening:
+      challenges:
+      - May be confused with first conditional if context is unclear
+      relevance: Appears in conversation for general truths and habitual results.
+        Both clauses use present simple, making it straightforward to parse.
+      source: Biber et al., GSWE 10.2.1
+    reading:
+      relevance: Common in scientific texts, instructions, and general truth statements.
+        'If + present, present' for universal truths and cause-effect.
+      source: Biber et al., GSWE 10.2.1
+      text_types:
+      - scientific
+      - instructions
+      - everyday texts
+    speaking:
+      functions:
+      - stating general truths
+      - explaining cause-effect
+      - giving instructions
+      relevance: 'Used for stating general truths, scientific facts, and habitual
+        results. Functions: explaining, stating facts, giving instructions.'
+      source: Biber et al., GSWE 10.2.1
+    writing:
+      genres:
+      - scientific writing
+      - instructions
+      - general essays
+      source: Biber et al., GSWE 10.2.1
+- grammar_file: data/grammar/mixed_conditionals.yaml
+  grammar_point: mixed_conditionals
+  l1_notes:
+  - language: Mandarin
+    skill_impact: Mandarin does not mark conditional time morphologically. Mandarin
+      speakers may struggle with the tense mixing in mixed conditionals.
+    source: Swan & Smith, Learner English, Mandarin chapter
+  skills:
+    listening:
+      challenges:
+      - Two different time frames in one sentence create processing load
+      relevance: Rare in casual speech; more common in lectures and formal discussion.
+        The mixed time reference adds processing complexity.
+      source: Biber et al., GSWE 10.2.1
+    reading:
+      relevance: Found in reflective and academic writing. Mixed time references (past
+        condition → present result, or vice versa).
+      source: Biber et al., GSWE 10.2.1
+      text_types:
+      - academic
+      - reflective writing
+      - literary
+    speaking:
+      functions:
+      - expressing hypothetical mixed-time situations
+      - reflecting on past decisions
+      source: Biber et al., GSWE 10.2.1
+    writing:
+      genres:
+      - reflective essays
+      - academic writing
+      - literary analysis
+      source: Biber et al., GSWE 10.2.1
+- grammar_file: data/grammar/future_continuous.yaml
+  grammar_point: future_continuous
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish has a parallel structure (estar + gerundio) for future continuous.
+      Positive transfer helps production.
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - Contracted forms may be hard to distinguish from other future forms
+      relevance: Appears in conversation for describing future plans and arrangements.
+        'Will be' → /wɪl biː/ or /əl biː/.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Found in narrative, fiction, and informal writing for actions in
+        progress at a future time.
+      source: Biber et al., GSWE 6.3.2
+      text_types:
+      - fiction
+      - narrative
+      - informal writing
+    speaking:
+      functions:
+      - describing future actions in progress
+      - polite inquiries about plans
+      source: Biber et al., GSWE 6.3.2
+    writing:
+      genres:
+      - fiction
+      - narrative
+      - informal writing
+      source: Biber et al., GSWE 6.3.2
+- grammar_file: data/grammar/future_perfect.yaml
+  grammar_point: future_perfect
+  l1_notes:
+  - language: German
+    skill_impact: German Futur II maps partially onto English future perfect. German
+      speakers may understand the concept but struggle with the reduced forms in listening.
+    source: Swan & Smith, Learner English, German chapter
+  skills:
+    listening:
+      challenges:
+      - Reduced auxiliary forms are hard to perceive
+      relevance: Rare in casual speech; more common in lectures and formal presentations.
+        'Will have' → /wɪl hæv/ or /ələv/.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Found in academic writing, formal reports, and news for actions completed
+        before a future reference point.
+      source: Biber et al., GSWE 6.4.1
+      text_types:
+      - academic
+      - formal reports
+      - news
+    speaking:
+      functions:
+      - projecting completion
+      - setting deadlines
+      - academic discussion
+      source: Biber et al., GSWE 6.4.1
+    writing:
+      genres:
+      - academic essays
+      - formal reports
+      - project plans
+      source: Biber et al., GSWE 6.4.1
+- grammar_file: data/grammar/future_perfect_continuous.yaml
+  grammar_point: future_perfect_continuous
+  l1_notes:
+  - language: French
+    skill_impact: French does not have an exact equivalent. French speakers may avoid
+      this structure entirely.
+    source: Swan & Smith, Learner English, French chapter
+  skills:
+    listening:
+      challenges:
+      - Long auxiliary chain is nearly impossible to perceive in connected speech
+      relevance: Very rare in speech. When it occurs, the long auxiliary chain ('will
+        have been doing') is heavily reduced.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Rare; found in formal and academic writing for duration of actions
+        up to a future point.
+      source: Biber et al., GSWE 6.4.1
+      text_types:
+      - academic
+      - formal writing
+    speaking:
+      functions:
+      - projecting duration
+      - formal academic discussion
+      source: Biber et al., GSWE 6.4.1
+    writing:
+      genres:
+      - academic essays
+      - formal reports
+      source: Biber et al., GSWE 6.4.1
+- grammar_file: data/grammar/past_perfect_continuous.yaml
+  grammar_point: past_perfect_continuous
+  l1_notes:
+  - language: Arabic
+    skill_impact: Arabic does not have a morphological past perfect continuous. Arabic
+      speakers may use past continuous instead.
+    source: Swan & Smith, Learner English, Arabic chapter
+  skills:
+    listening:
+      challenges:
+      - Reduced 'had' may be inaudible; the -ing form may be the only audible signal
+      relevance: Rare in casual conversation; more common in storytelling and formal
+        speech. 'Had been' → /həd biːn/ or /əd biːn/.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Used in narrative for duration of actions before another past event.
+        Common in fiction and biographical writing.
+      source: Biber et al., GSWE 6.4.1
+      text_types:
+      - fiction
+      - biography
+      - narrative
+    speaking:
+      functions:
+      - describing duration before a past event
+      - explaining background circumstances
+      source: Biber et al., GSWE 6.4.1
+    writing:
+      genres:
+      - fiction
+      - narrative
+      - academic writing
+      source: Biber et al., GSWE 6.4.1
+- grammar_file: data/grammar/present_perfect_continuous.yaml
+  grammar_point: present_perfect_continuous
+  l1_notes:
+  - language: Mandarin
+    skill_impact: Mandarin uses time adverbs rather than verb morphology for duration.
+      Mandarin speakers may omit the auxiliary or use simple present.
+    source: Swan & Smith, Learner English, Mandarin chapter
+  skills:
+    listening:
+      challenges:
+      - Reduced auxiliaries may be hard to detect
+      relevance: Appears in conversation for describing ongoing situations. 'Have
+        been' → /hæv biːn/ or /əv biːn/; 'has been' → /həz biːn/.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in news, academic writing, and informal texts for actions
+        continuing up to the present.
+      source: Biber et al., GSWE 6.4.1
+      text_types:
+      - news
+      - academic
+      - informal writing
+    speaking:
+      functions:
+      - describing ongoing actions
+      - explaining recent activities
+      - expressing duration
+      source: Biber et al., GSWE 6.4.1
+    writing:
+      genres:
+      - academic essays
+      - news
+      - informal writing
+      source: Biber et al., GSWE 6.4.1
+- grammar_file: data/grammar/modals_past.yaml
+  grammar_point: modals_past
+  l1_notes:
+  - language: German
+    skill_impact: German modal past forms (konnte, musste, durfte) map partially.
+      German speakers may overuse 'could' for past ability where English prefers 'was
+      able to' for single events.
+    source: Swan & Smith, Learner English, German chapter
+  skills:
+    listening:
+      challenges:
+      - '''Might have'' → /maɪtəv/ sounds like ''mighta''; ''should have'' → /ʃʊdə/
+        sounds like ''shoulda'''
+      relevance: Appears in conversation for past habits ('would'), past ability ('could'),
+        and speculation about the past ('might have').
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in news, academic writing, and fiction for past possibility,
+        ability, and obligation. 'Could,' 'would,' 'might have,' 'should have.'
+      source: Biber et al., GSWE 6.6.2
+      text_types:
+      - news
+      - academic
+      - fiction
+    speaking:
+      functions:
+      - expressing past ability
+      - past habits
+      - speculation about the past
+      - regret
+      source: Biber et al., GSWE 6.6.2
+    writing:
+      genres:
+      - narrative
+      - academic writing
+      - reflective essays
+      source: Biber et al., GSWE 6.6.2
+- grammar_file: data/grammar/modals_perfect.yaml
+  grammar_point: modals_perfect
+  l1_notes:
+  - language: French
+    skill_impact: French 'aurait pu,' 'aurait dû' map onto 'could have,' 'should have.'
+      French speakers may understand the concept but struggle with reduced forms in
+      listening.
+    source: Swan & Smith, Learner English, French chapter
+  skills:
+    listening:
+      challenges:
+      - Heavily reduced forms are hard to distinguish auditorily
+      relevance: 'Appears in conversation for speculation and criticism. All modal+have
+        forms reduce heavily: ''must have'' → /mʌstəv/, ''could have'' → /kʊdə/.'
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in academic hedging, news speculation, and formal writing.
+        'May have,' 'could have,' 'must have,' 'should have.'
+      source: Biber et al., GSWE 6.6.2
+      text_types:
+      - academic
+      - news
+      - formal writing
+    speaking:
+      functions:
+      - speculating about the past
+      - expressing regret
+      - criticizing
+      - deducing
+      source: Biber et al., GSWE 6.6.2
+    writing:
+      genres:
+      - academic essays
+      - formal reports
+      - reflective writing
+      source: Biber et al., GSWE 6.6.2
+- grammar_file: data/grammar/deduction_speculation.yaml
+  grammar_point: deduction_speculation
+  l1_notes:
+  - language: German
+    skill_impact: German 'müssen' covers both obligation and deduction. German speakers
+      may confuse the two meanings in English.
+    source: Swan & Smith, Learner English, German chapter
+  skills:
+    listening:
+      challenges:
+      - Deduction vs. obligation meaning of 'must' must be inferred from context
+      relevance: Appears in conversation for speculation and deduction. 'Must' → /məst/
+        or /məs/; 'can't' → /kɑːnt/ or /kænt/.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in academic writing and news for logical deduction. 'Must'
+        for positive deduction, 'can't' for negative deduction.
+      source: Biber et al., GSWE 6.6.2
+      text_types:
+      - academic
+      - news
+      - formal writing
+    speaking:
+      functions:
+      - deducing
+      - speculating
+      - expressing certainty
+      - expressing impossibility
+      source: Biber et al., GSWE 6.6.2
+    writing:
+      genres:
+      - academic essays
+      - formal reports
+      - analytical writing
+      source: Biber et al., GSWE 6.6.2
+- grammar_file: data/grammar/wish_if_only_past.yaml
+  grammar_point: wish_if_only_past
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish uses subjunctive after 'ojala.' Spanish speakers may try
+      to map subjunctive onto English 'wish' constructions.
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - Hypothetical meaning must be inferred from context
+      relevance: Appears in conversation for expressing wishes and regrets. 'Wish'
+        + past tense for present unreal.
+      source: Biber et al., GSWE 10.2.1
+    reading:
+      relevance: Common in fiction, personal writing, and conversational texts for
+        expressing wishes about the present.
+      source: Biber et al., GSWE 10.2.1
+      text_types:
+      - fiction
+      - personal writing
+      - dialogue
+    speaking:
+      functions:
+      - expressing wishes about the present
+      - complaining
+      - imagining alternatives
+      source: Biber et al., GSWE 10.2.1
+    writing:
+      genres:
+      - personal writing
+      - fiction
+      - reflective essays
+      source: Biber et al., GSWE 10.2.1
+- grammar_file: data/grammar/would_rather_prefer.yaml
+  grammar_point: would_rather_prefer
+  l1_notes:
+  - language: French
+    skill_impact: French 'je préférerais' maps onto 'I would prefer.' Positive transfer
+      helps production.
+    source: Swan & Smith, Learner English, French chapter
+  skills:
+    listening:
+      challenges:
+      - Contracted forms may be hard to distinguish
+      relevance: Common in conversation for expressing preferences. 'Would rather'
+        → /wʊd ˈrɑːðə/; 'would prefer' → /wʊd prɪˈfɜː/.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Found in informal and semi-formal texts for expressing preferences.
+      source: Biber et al., GSWE 6.6.2
+      text_types:
+      - personal emails
+      - blogs
+      - informal writing
+      - dialogue
+    speaking:
+      functions:
+      - expressing preferences
+      - making polite suggestions
+      - declining offers
+      source: Biber et al., GSWE 6.6.2
+    writing:
+      genres:
+      - personal emails
+      - informal writing
+      source: Biber et al., GSWE 6.6.2
+- grammar_file: data/grammar/stative_dynamic_verbs.yaml
+  grammar_point: stative_dynamic_verbs
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish 'saber/conocer' both map to 'know' but with different uses.
+      Spanish speakers may overuse progressive forms with stative verbs.
+    source: Swan & Smith, Learner English, Spanish chapter
+  - language: Mandarin
+    skill_impact: Mandarin does not distinguish stative/dynamic verbs morphologically.
+      Mandarin speakers may use progressive with stative verbs (*'I am knowing').
+    source: Swan & Smith, Learner English, Mandarin chapter
+  skills:
+    listening:
+      challenges:
+      - Some verbs can be both stative and dynamic with meaning changes (think, have,
+        see)
+      relevance: Stative verbs in progressive forms (e.g., 'I'm understanding') signal
+        non-native speech. Learners must recognize standard forms.
+      source: Biber et al., GSWE 6.3.1
+    reading:
+      relevance: Understanding stative vs. dynamic distinction is essential for interpreting
+        verb use in all text types. Stative verbs resist progressive forms.
+      source: Biber et al., GSWE 6.3.1
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - using verbs correctly in progressive/non-progressive forms
+      - avoiding stative-in-progressive errors
+      source: Biber et al., GSWE 6.3.1
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 6.3.1
+- grammar_file: data/grammar/substitution_advanced.yaml
+  grammar_point: substitution_advanced
+  l1_notes:
+  - language: Japanese
+    skill_impact: Japanese allows extensive ellipsis, reducing the need for substitution
+      pro-forms. Japanese speakers may omit pro-forms where English requires them.
+    source: Swan & Smith, Learner English, Japanese chapter
+  skills:
+    listening:
+      challenges:
+      - Pro-forms are function words — weak forms, often inaudible
+      relevance: Substitution in speech ('I think so,' 'I hope not') is extremely
+        common. Biber shows conversation relies heavily on substitution (GSWE 14.3.1.4).
+      source: Biber et al., GSWE 14.3.1.4
+    reading:
+      relevance: Substitution pro-forms (do so, so, not, one/ones, that/those) are
+        essential for text cohesion. Common in all text types.
+      source: Biber et al., GSWE 10.4.3.1
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - avoiding repetition
+      - maintaining cohesion
+      - natural conversation
+      source: Biber et al., GSWE 14.3.1.4
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 10.4.3.1
+- grammar_file: data/grammar/topic_comment.yaml
+  grammar_point: topic_comment
+  l1_notes:
+  - language: Japanese
+    skill_impact: Japanese is a topic-prominent language (wa/ga). Japanese speakers
+      may overuse topic-comment structures in English.
+    source: Swan & Smith, Learner English, Japanese chapter
+  - language: Korean
+    skill_impact: Korean is also topic-prominent. Korean speakers may transfer topic-marking
+      strategies to English.
+    source: Swan & Smith, Learner English, Korean chapter
+  skills:
+    listening:
+      challenges:
+      - Non-standard word order may cause processing difficulty
+      relevance: Rare in casual speech. When it occurs, the topicalized element is
+        prosodically prominent.
+      source: Underhill, Sound Foundations, pp. 76-81
+    reading:
+      relevance: Found in literary and academic writing. Topic-comment structure manipulates
+        information flow for emphasis.
+      source: Biber et al., GSWE 8.2.1
+      text_types:
+      - literary
+      - academic
+      - formal writing
+    speaking:
+      functions:
+      - topicalizing
+      - emphasizing
+      - managing information flow
+      source: Biber et al., GSWE 8.2.1
+    writing:
+      genres:
+      - literary
+      - academic writing
+      - formal essays
+      source: Biber et al., GSWE 8.2.1
+- grammar_file: data/grammar/unless.yaml
+  grammar_point: unless
+  l1_notes:
+  - language: German
+    skill_impact: German 'es sei denn' maps onto 'unless.' German speakers may understand
+      the concept but use it less frequently than native speakers.
+    source: Swan & Smith, Learner English, German chapter
+  skills:
+    listening:
+      challenges:
+      - Negative condition meaning must be inferred; 'unless' is less frequent than
+        'if'
+      relevance: Appears in conversation for conditions and warnings. 'Unless' → /ənˈlɛs/
+        in connected speech.
+      source: Biber et al., GSWE 10.2.1
+    reading:
+      relevance: Common in formal writing, rules, and conditions. 'Unless' = 'if not'
+        for negative conditions.
+      source: Biber et al., GSWE 10.2.1
+      text_types:
+      - formal writing
+      - rules
+      - academic
+      - everyday texts
+    speaking:
+      functions:
+      - setting conditions
+      - giving warnings
+      - making exceptions
+      source: Biber et al., GSWE 10.2.1
+    writing:
+      genres:
+      - formal writing
+      - rules
+      - academic essays
+      source: Biber et al., GSWE 10.2.1
+- grammar_file: data/grammar/verbs_followed_by_to_infinitive.yaml
+  grammar_point: verbs_followed_by_to_infinitive
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish tends to use infinitive after verbs where English sometimes
+      uses gerund. Spanish speakers may say *'I want leaving' instead of 'I want to
+      leave.'
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - Reduced 'to' may be inaudible; learners must infer the infinitive from context
+      relevance: The 'to' before infinitives reduces to /tə/ in connected speech.
+        Learners must recognize the infinitive pattern.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Extremely common in all text types. Correct interpretation depends
+        on knowing which verbs take to-infinitive complements.
+      source: Biber et al., GSWE 9.2.2.3
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - expressing intention
+      - making plans
+      - reporting
+      - requesting
+      source: Biber et al., GSWE 9.2.2.3
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 9.2.2.3
+- grammar_file: data/grammar/verbs_followed_by_ing.yaml
+  grammar_point: verbs_followed_by_ing
+  l1_notes:
+  - language: French
+    skill_impact: French uses infinitive after most verbs (éviter de, finir de). French
+      speakers may say *'I enjoy to swim' instead of 'I enjoy swimming.'
+    source: Swan & Smith, Learner English, French chapter
+  skills:
+    listening:
+      challenges:
+      - Reduced -ing may be confused with present participle
+      relevance: The -ing ending may be reduced to /ɪn/ in rapid speech. Learners
+        must recognize the gerund pattern.
+      source: Underhill, Sound Foundations, pp. 60-67
+    reading:
+      relevance: Common in all text types. Verbs like 'enjoy,' 'avoid,' 'mind,' 'finish'
+        take gerund complements.
+      source: Biber et al., GSWE 9.2.2.3
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - expressing enjoyment
+      - avoidance
+      - completion
+      - suggestion
+      source: Biber et al., GSWE 9.2.2.3
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 9.2.2.3
+- grammar_file: data/grammar/verbs_followed_by_bare_infinitive.yaml
+  grammar_point: verbs_followed_by_bare_infinitive
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish uses bare infinitive after most verbs. Spanish speakers
+      may omit 'to' where English requires it (*'I want go').
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - No 'to' marker means learners must recognize the bare infinitive from context
+      relevance: Bare infinitives lack the 'to' marker, making them harder to identify
+        in connected speech.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in all text types. Modal verbs and causatives (let, make,
+        help) take bare infinitives.
+      source: Biber et al., GSWE 9.2.2.3
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - expressing permission
+      - causation
+      - obligation
+      - suggestion
+      source: Biber et al., GSWE 9.2.2.3
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 9.2.2.3
+- grammar_file: data/grammar/causative_have_get.yaml
+  grammar_point: causative_have_get
+  l1_notes:
+  - language: Arabic
+    skill_impact: Arabic uses a different causative morphology. Arabic speakers may
+      use active voice where English requires causative.
+    source: Swan & Smith, Learner English, Arabic chapter
+  skills:
+    listening:
+      challenges:
+      - Causative meaning must be distinguished from possessive 'have'
+      relevance: Appears in conversation for describing services. 'Have' → /hæv/ or
+        /əv/; 'get' → /gɛt/.
+      source: Biber et al., GSWE 9.2.2.3
+    reading:
+      relevance: Common in formal and informal writing for describing services and
+        arrangements. 'Have/get something done.'
+      source: Biber et al., GSWE 9.2.2.3
+      text_types:
+      - formal writing
+      - informal writing
+      - service contexts
+    speaking:
+      functions:
+      - arranging services
+      - describing things done by others
+      - reporting
+      source: Biber et al., GSWE 9.2.2.3
+    writing:
+      genres:
+      - formal writing
+      - informal writing
+      - service descriptions
+      source: Biber et al., GSWE 9.2.2.3
+- grammar_file: data/grammar/purpose_clauses.yaml
+  grammar_point: purpose_clauses
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish 'para + infinitive' maps onto 'to + infinitive.' Positive
+      transfer helps production.
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - Reduced 'to' may be confused with infinitive marker
+      relevance: Appears in conversation and lectures for explaining reasons. 'To'
+        → /tə/ in connected speech.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in academic writing, instructions, and formal texts. 'To,'
+        'in order to,' 'so as to,' 'so that' for expressing purpose.
+      source: Biber et al., GSWE 10.2.1
+      text_types:
+      - academic
+      - instructions
+      - formal writing
+    speaking:
+      functions:
+      - explaining purpose
+      - giving reasons
+      - making plans
+      source: Biber et al., GSWE 10.2.1
+    writing:
+      genres:
+      - academic essays
+      - instructions
+      - formal writing
+      source: Biber et al., GSWE 10.2.1
+- grammar_file: data/grammar/result_clauses.yaml
+  grammar_point: result_clauses
+  l1_notes:
+  - language: German
+    skill_impact: German 'so...dass' maps onto 'so...that.' Positive transfer helps
+      production.
+    source: Swan & Smith, Learner English, German chapter
+  skills:
+    listening:
+      challenges:
+      - '''So'' as result marker vs. discourse marker must be distinguished'
+      relevance: Appears in conversation and lectures for describing consequences.
+        'So' → /səʊ/ in connected speech.
+      source: Biber et al., GSWE 10.2.1
+    reading:
+      relevance: Common in academic and formal writing. 'So...that,' 'such...that,'
+        'so that' for expressing results.
+      source: Biber et al., GSWE 10.2.1
+      text_types:
+      - academic
+      - formal writing
+      - news
+    speaking:
+      functions:
+      - describing consequences
+      - explaining results
+      - emphasizing outcomes
+      source: Biber et al., GSWE 10.2.1
+    writing:
+      genres:
+      - academic essays
+      - formal reports
+      - analytical writing
+      source: Biber et al., GSWE 10.2.1
+- grammar_file: data/grammar/contrast_clauses.yaml
+  grammar_point: contrast_clauses
+  l1_notes:
+  - language: Arabic
+    skill_impact: Arabic uses 'wa-' (and) for addition, not contrast. Arabic speakers
+      may underuse contrast markers in English writing.
+    source: Swan & Smith, Learner English, Arabic chapter
+  skills:
+    listening:
+      challenges:
+      - Multiple contrast markers with subtle meaning differences
+      relevance: Appears in conversation and lectures for contrasting ideas. 'Although'
+        → /ɔːlˈðəʊ/ in connected speech.
+      source: Biber et al., GSWE 10.2.1
+    reading:
+      relevance: Common in academic and formal writing. 'Although,' 'even though,'
+        'while,' 'whereas,' 'despite,' 'in spite of.'
+      source: Biber et al., GSWE 10.2.1
+      text_types:
+      - academic
+      - formal writing
+      - news
+    speaking:
+      functions:
+      - contrasting ideas
+      - conceding points
+      - showing unexpected results
+      source: Biber et al., GSWE 10.2.1
+    writing:
+      genres:
+      - academic essays
+      - formal reports
+      - argumentative writing
+      source: Biber et al., GSWE 10.2.1
+- grammar_file: data/grammar/reason_clauses.yaml
+  grammar_point: reason_clauses
+  l1_notes:
+  - language: Mandarin
+    skill_impact: Mandarin 'yīnwèi' maps onto 'because.' However, Mandarin allows
+      reason clauses after the main clause more freely than English.
+    source: Swan & Smith, Learner English, Mandarin chapter
+  skills:
+    listening:
+      challenges:
+      - Reduced 'because' → /kɒz/ may be hard to hear
+      relevance: Very common in conversation for explaining. 'Because' → /bɪˈkɒz/
+        or /kɒz/ in connected speech.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in all text types. 'Because,' 'since,' 'as,' 'now that,' 'seeing
+        that' for expressing reasons.
+      source: Biber et al., GSWE 10.2.1
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - explaining reasons
+      - justifying
+      - giving causes
+      source: Biber et al., GSWE 10.2.1
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 10.2.1
+- grammar_file: data/grammar/time_clauses.yaml
+  grammar_point: time_clauses
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish uses subjunctive in future time clauses. Spanish speakers
+      may overuse subjunctive-like structures in English time clauses.
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - Present tense after time clauses referring to future (*'when I will go') is
+        a common error
+      relevance: Very common in conversation for sequencing events. Time conjunctions
+        may be reduced in connected speech.
+      source: Biber et al., GSWE 10.2.1
+    reading:
+      relevance: Common in all text types. 'When,' 'while,' 'before,' 'after,' 'until,'
+        'as soon as' for temporal relationships.
+      source: Biber et al., GSWE 10.2.1
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - sequencing events
+      - describing routines
+      - making plans
+      source: Biber et al., GSWE 10.2.1
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 10.2.1
+- grammar_file: data/grammar/indirect_questions.yaml
+  grammar_point: indirect_questions
+  l1_notes:
+  - language: Japanese
+    skill_impact: Japanese indirect questions use different particles. Japanese speakers
+      may use question word order in indirect questions (*'I wonder where is it').
+    source: Swan & Smith, Learner English, Japanese chapter
+  skills:
+    listening:
+      challenges:
+      - Learners must recognize that indirect questions use statement word order,
+        not question word order
+      relevance: Appears in conversation for polite requests and information-seeking.
+        Word order change (subject before verb) is key.
+      source: Biber et al., GSWE 10.2.1
+    reading:
+      relevance: Common in formal writing, academic texts, and reported speech. 'I
+        wonder if,' 'Do you know where,' 'I'm not sure how.'
+      source: Biber et al., GSWE 10.2.1
+      text_types:
+      - formal writing
+      - academic
+      - reported speech
+    speaking:
+      functions:
+      - asking politely
+      - reporting questions
+      - seeking information
+      source: Biber et al., GSWE 10.2.1
+    writing:
+      genres:
+      - formal writing
+      - academic essays
+      - reported speech
+      source: Biber et al., GSWE 10.2.1
+- grammar_file: data/grammar/question_tags.yaml
+  grammar_point: question_tags
+  l1_notes:
+  - language: French
+    skill_impact: French uses 'n'est-ce pas' as a universal tag. French speakers may
+      overuse 'isn't it' for all tags.
+    source: Swan & Smith, Learner English, French chapter
+  skills:
+    listening:
+      challenges:
+      - Intonation pattern changes meaning; learners must recognize the difference
+      relevance: Extremely common in conversation. Tags are usually said with rising
+        intonation (genuine question) or falling (seeking agreement).
+      source: Underhill, Sound Foundations, pp. 76-81
+    reading:
+      relevance: Common in dialogue, fiction, and informal writing. Tags seek confirmation
+        or express attitude.
+      source: Biber et al., GSWE 14.1.2
+      text_types:
+      - fiction
+      - dialogue
+      - informal writing
+    speaking:
+      functions:
+      - seeking confirmation
+      - showing interest
+      - softening statements
+      - managing conversation
+      source: Biber et al., GSWE 14.1.2
+    writing:
+      genres:
+      - fiction
+      - dialogue
+      - informal writing
+      source: Biber et al., GSWE 14.1.2
+- grammar_file: data/grammar/imperatives.yaml
+  grammar_point: imperatives
+  l1_notes:
+  - language: Japanese
+    skill_impact: Japanese has elaborate imperative forms with different politeness
+      levels. Japanese speakers may struggle with the directness of English imperatives.
+    source: Swan & Smith, Learner English, Japanese chapter
+  skills:
+    listening:
+      challenges:
+      - Imperatives can sound rude without softening ('please,' intonation)
+      relevance: Very common in conversation for giving directions, instructions,
+        and advice. Stress pattern is key.
+      source: Underhill, Sound Foundations, pp. 76-81
+    reading:
+      relevance: Common in instructions, recipes, signs, and informal writing. Direct
+        commands and requests.
+      source: Biber et al., GSWE 10.2.1
+      text_types:
+      - instructions
+      - recipes
+      - signs
+      - informal writing
+    speaking:
+      functions:
+      - giving instructions
+      - making requests
+      - giving advice
+      - warning
+      source: Biber et al., GSWE 10.2.1
+    writing:
+      genres:
+      - instructions
+      - recipes
+      - signs
+      - informal writing
+      source: Biber et al., GSWE 10.2.1
+- grammar_file: data/grammar/existential.yaml
+  grammar_point: existential
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish 'hay' covers both 'there is' and 'there are.' Spanish speakers
+      may use 'there is' with plural nouns (*'there is many people').
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - Contracted 'there's' is used even with plural nouns in casual speech
+      relevance: Very common in conversation. 'There's' → /ðɛːz/ or /ðəz/; 'there
+        are' → /ðɛːr ɑː/.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in all text types for introducing new information. 'There
+        is/are' signals the existence or presence of something.
+      source: Biber et al., GSWE 8.2.1
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - introducing new information
+      - describing existence
+      - presenting
+      source: Biber et al., GSWE 8.2.1
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 8.2.1
+- grammar_file: data/grammar/demonstratives.yaml
+  grammar_point: demonstratives
+  l1_notes:
+  - language: Japanese
+    skill_impact: Japanese has a three-way demonstrative system (ko-/so-/a-). Japanese
+      speakers may overuse 'that' where English prefers 'this.'
+    source: Swan & Smith, Learner English, Japanese chapter
+  skills:
+    listening:
+      challenges:
+      - Learners must infer the referent from context and gesture
+      relevance: Demonstratives are function words with weak forms. 'This' → /ðɪs/,
+        'that' → /ðæt/.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in all text types. 'This/that/these/those' signal proximity
+        and reference.
+      source: Biber et al., GSWE 2.3.5
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - pointing
+      - referring
+      - introducing
+      - contrasting
+      source: Biber et al., GSWE 2.3.5
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 2.3.5
+- grammar_file: data/grammar/possessive_adjectives.yaml
+  grammar_point: possessive_adjectives
+  l1_notes:
+  - language: Portuguese
+    skill_impact: Portuguese possessives agree with the noun, not the possessor. Portuguese
+      speakers may confuse 'his' and 'her.'
+    source: Swan & Smith, Learner English, Portuguese chapter
+  skills:
+    listening:
+      challenges:
+      - 'Weak forms are hard to distinguish: ''his'' vs. ''is,'' ''your'' vs. ''you'''
+      relevance: Possessive adjectives are function words with weak forms. 'Your'
+        → /jə/, 'their' → /ðɛː/.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in all text types. 'My, your, his, her, its, our, their' signal
+        possession and relationships.
+      source: Biber et al., GSWE 2.3.5
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - showing possession
+      - describing relationships
+      - referring
+      source: Biber et al., GSWE 2.3.5
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 2.3.5
+- grammar_file: data/grammar/reflexive_pronouns.yaml
+  grammar_point: reflexive_pronouns
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish uses reflexive verbs more extensively (irse, lavarse). Spanish
+      speakers may overuse reflexive pronouns in English.
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - Reflexive vs. emphatic use must be distinguished by stress and context
+      relevance: Reflexive pronouns in connected speech may be reduced. Stress pattern
+        distinguishes reflexive from emphatic use.
+      source: Underhill, Sound Foundations, pp. 76-81
+    reading:
+      relevance: Common in all text types. 'Myself, yourself, himself, herself, itself,
+        ourselves, themselves.'
+      source: Biber et al., GSWE 2.3.5
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - referring back to subject
+      - emphasizing
+      - expressing self-action
+      source: Biber et al., GSWE 2.3.5
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 2.3.5
+- grammar_file: data/grammar/reciprocal_pronouns.yaml
+  grammar_point: reciprocal_pronouns
+  l1_notes:
+  - language: German
+    skill_impact: German uses 'einander' for reciprocals. German speakers may understand
+      the concept but confuse 'each other' and 'one another.'
+    source: Swan & Smith, Learner English, German chapter
+  skills:
+    listening:
+      challenges:
+      - Distinction between 'each other' (two) and 'one another' (three+) is often
+        ignored in speech
+      relevance: Appears in conversation for describing mutual actions. 'Each other'
+        → /iːtʃ ˈʌðə/ in connected speech.
+      source: Biber et al., GSWE 2.3.5
+    reading:
+      relevance: Found in all text types. 'Each other' and 'one another' for mutual
+        actions.
+      source: Biber et al., GSWE 2.3.5
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - describing mutual actions
+      - relationships
+      - interactions
+      source: Biber et al., GSWE 2.3.5
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 2.3.5
+- grammar_file: data/grammar/indefinite_pronouns.yaml
+  grammar_point: indefinite_pronouns
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish allows double negatives (*'No vi nada'). Spanish speakers
+      may produce *'I didn't see nothing' in English.
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - Negative indefinite pronouns with negative verbs create double negatives in
+        some L1s
+      relevance: Very common in conversation. Indefinite pronouns may be reduced in
+        connected speech.
+      source: Biber et al., GSWE 2.3.5
+    reading:
+      relevance: Common in all text types. 'Someone, anybody, nobody, everyone, something,
+        nothing, etc.'
+      source: Biber et al., GSWE 2.3.5
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - referring to non-specific people/things
+      - generalizing
+      - negating
+      source: Biber et al., GSWE 2.3.5
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 2.3.5
+- grammar_file: data/grammar/quantifiers.yaml
+  grammar_point: quantifiers
+  l1_notes:
+  - language: Mandarin
+    skill_impact: Mandarin does not distinguish 'much' and 'many' (都 = dōu). Mandarin
+      speakers may use 'much' with count nouns (*'much people').
+    source: Swan & Smith, Learner English, Mandarin chapter
+  skills:
+    listening:
+      challenges:
+      - '''Much'' vs. ''many'' distinction depends on countability; ''few'' vs. ''a
+        few'' changes meaning'
+      relevance: Very common in conversation. Quantifiers are function words with
+        weak forms.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in all text types. 'Some, any, much, many, a lot of, few,
+        little, several, plenty of.'
+      source: Biber et al., GSWE 2.3.5
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - quantifying
+      - describing amounts
+      - comparing quantities
+      source: Biber et al., GSWE 2.3.5
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 2.3.5
+- grammar_file: data/grammar/prepositions_of_movement.yaml
+  grammar_point: prepositions_of_movement
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish 'en' covers both 'in' and 'on.' Spanish speakers may confuse
+      prepositions of movement (*'go in the bus' vs. 'go on the bus').
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - Weak forms are often inaudible; meaning must be inferred from context
+      relevance: Prepositions of movement are function words with weak forms. Hard
+        to perceive in connected speech.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in narrative, instructions, and descriptive writing. 'Into,
+        onto, through, across, along, towards.'
+      source: Biber et al., GSWE 2.3.5
+      text_types:
+      - narrative
+      - instructions
+      - descriptive writing
+    speaking:
+      functions:
+      - describing movement
+      - giving directions
+      - narrating
+      source: Biber et al., GSWE 2.3.5
+    writing:
+      genres:
+      - narrative
+      - instructions
+      - descriptive writing
+      source: Biber et al., GSWE 2.3.5
+- grammar_file: data/grammar/dependent_prepositions.yaml
+  grammar_point: dependent_prepositions
+  l1_notes:
+  - language: French
+    skill_impact: French preposition collocations often differ from English (intéressé
+      par vs. interested in). French speakers may transfer L1 collocations.
+    source: Swan & Smith, Learner English, French chapter
+  skills:
+    listening:
+      challenges:
+      - Preposition collocations must be learned as chunks; no rules predict the correct
+        preposition
+      relevance: Dependent prepositions are function words with weak forms. Hard to
+        perceive in connected speech.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in all text types. Prepositions that are fixed with specific
+        verbs, adjectives, and nouns (interested in, good at, reason for).
+      source: Biber et al., GSWE 2.3.5
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - using correct preposition collocations
+      - natural-sounding speech
+      source: Biber et al., GSWE 2.3.5
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 2.3.5
+- grammar_file: data/grammar/compound_nouns.yaml
+  grammar_point: compound_nouns
+  l1_notes:
+  - language: German
+    skill_impact: German forms compound nouns by concatenation (Schreibtisch). German
+      speakers may understand the concept but struggle with English stress patterns.
+    source: Swan & Smith, Learner English, German chapter
+  skills:
+    listening:
+      challenges:
+      - Stress on first element vs. second element changes meaning (greenhouse vs.
+        green house)
+      relevance: Compound nouns in connected speech may be hard to segment. Stress
+        pattern (usually on first element) helps identification.
+      source: Underhill, Sound Foundations, pp. 76-81
+    reading:
+      relevance: Very common in academic and news writing. Biber shows academic prose
+        has high frequency of compound nouns (GSWE 8.1.1).
+      source: Biber et al., GSWE 8.1.1
+      text_types:
+      - academic
+      - news
+      - everyday texts
+    speaking:
+      functions:
+      - precise description
+      - technical vocabulary
+      - everyday communication
+      source: Biber et al., GSWE 8.1.1
+    writing:
+      genres:
+      - academic essays
+      - news
+      - technical writing
+      source: Biber et al., GSWE 8.1.1
+- grammar_file: data/grammar/adjective_order.yaml
+  grammar_point: adjective_order
+  l1_notes:
+  - language: French
+    skill_impact: French adjective order differs from English (usually after the noun).
+      French speakers may place adjectives after the noun in English.
+    source: Swan & Smith, Learner English, French chapter
+  skills:
+    listening:
+      challenges:
+      - Adjective order rules are complex and largely intuitive for native speakers
+      relevance: Multiple adjectives before a noun create a complex noun phrase that
+        may be hard to parse in real-time.
+      source: Biber et al., GSWE 2.3.5
+    reading:
+      relevance: Common in descriptive writing, fiction, and everyday texts. Opinion-size-age-shape-color-origin-material-purpose
+        order.
+      source: Biber et al., GSWE 2.3.5
+      text_types:
+      - descriptive writing
+      - fiction
+      - everyday texts
+    speaking:
+      functions:
+      - describing objects
+      - people
+      - places; precise description
+      source: Biber et al., GSWE 2.3.5
+    writing:
+      genres:
+      - descriptive writing
+      - fiction
+      - everyday texts
+      source: Biber et al., GSWE 2.3.5
+- grammar_file: data/grammar/ed_vs_ing_adjectives.yaml
+  grammar_point: ed_vs_ing_adjectives
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish uses different forms for -ed/-ing adjectives (aburrido/aburriendo).
+      Spanish speakers may confuse the two in English.
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - Learners must distinguish 'bored' (feeling) from 'boring' (cause) from context
+        alone
+      relevance: The difference between '-ed' and '-ing' adjectives is not audible;
+        meaning must be inferred from context.
+      source: Biber et al., GSWE 2.3.5
+    reading:
+      relevance: Common in all text types. '-ed' adjectives describe feelings; '-ing'
+        adjectives describe causes.
+      source: Biber et al., GSWE 2.3.5
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - describing feelings
+      - describing causes
+      - expressing opinions
+      source: Biber et al., GSWE 2.3.5
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 2.3.5
+- grammar_file: data/grammar/narrative_tenses.yaml
+  grammar_point: narrative_tenses
+  l1_notes:
+  - language: Arabic
+    skill_impact: Arabic narrative uses different tense patterns. Arabic speakers
+      may overuse past simple where English requires past perfect for flashbacks.
+    source: Swan & Smith, Learner English, Arabic chapter
+  skills:
+    listening:
+      challenges:
+      - Tense shifts in narrative may be hard to follow in real-time
+      relevance: Very common in conversational storytelling. Tense shifts signal foreground/background
+        information.
+      source: Biber et al., GSWE 6.2.2
+    reading:
+      relevance: Essential for understanding fiction, news reports, and biographical
+        writing. Past simple, past continuous, past perfect in narrative.
+      source: Biber et al., GSWE 6.2.2
+      text_types:
+      - fiction
+      - news
+      - biography
+      - narrative
+    speaking:
+      functions:
+      - telling stories
+      - reporting events
+      - describing past experiences
+      source: Biber et al., GSWE 6.2.2
+    writing:
+      genres:
+      - fiction
+      - narrative
+      - news
+      - biography
+      source: Biber et al., GSWE 6.2.2
+- grammar_file: data/grammar/passive_with_reporting_verbs.yaml
+  grammar_point: passive_with_reporting_verbs
+  l1_notes:
+  - language: French
+    skill_impact: French uses 'on dit que' for impersonal reporting. French speakers
+      may overuse 'people say' instead of passive reporting structures.
+    source: Swan & Smith, Learner English, French chapter
+  skills:
+    listening:
+      challenges:
+      - Complex structure with passive + infinitive is challenging in real-time listening
+      relevance: Appears in lectures and news broadcasts. The passive reporting structure
+        is formal and may be hard to parse.
+      source: Biber et al., GSWE 8.1.1
+    reading:
+      relevance: Common in academic writing and news. 'It is said that...,' 'He is
+        believed to...,' 'It has been reported that...'
+      source: Biber et al., GSWE 8.1.1
+      text_types:
+      - academic
+      - news
+      - formal writing
+    speaking:
+      functions:
+      - reporting information
+      - academic discussion
+      - formal presentation
+      source: Biber et al., GSWE 8.1.1
+    writing:
+      genres:
+      - academic essays
+      - news
+      - formal reports
+      source: Biber et al., GSWE 8.1.1
+- grammar_file: data/grammar/pseudo_clefts.yaml
+  grammar_point: pseudo_clefts
+  l1_notes:
+  - language: French
+    skill_impact: French uses cleft sentences ('C'est... que...') frequently. Positive
+      transfer may help French speakers use English pseudo-clefts.
+    source: Swan & Smith, Learner English, French chapter
+  skills:
+    listening:
+      challenges:
+      - Focus structure may be hard to parse in real-time
+      relevance: Appears in conversation and lectures for emphasis. The wh-clause
+        carries old information; the focus is on the new information.
+      source: Underhill, Sound Foundations, pp. 76-81
+    reading:
+      relevance: Found in academic and formal writing for emphasis. 'What I need is...,'
+        'What happened was...'
+      source: Biber et al., GSWE 8.2.1
+      text_types:
+      - academic
+      - formal writing
+      - news
+    speaking:
+      functions:
+      - emphasizing
+      - correcting
+      - focusing attention
+      - clarifying
+      source: Biber et al., GSWE 8.2.1
+    writing:
+      genres:
+      - academic essays
+      - formal writing
+      source: Biber et al., GSWE 8.2.1
+- grammar_file: data/grammar/litotes.yaml
+  grammar_point: litotes
+  l1_notes:
+  - language: German
+    skill_impact: German uses litotes less frequently. German speakers may interpret
+      litotes literally, missing the intended meaning.
+    source: Swan & Smith, Learner English, German chapter
+  skills:
+    listening:
+      challenges:
+      - Non-literal meaning must be inferred from context and intonation
+      relevance: Appears in conversation for politeness and understatement. The intended
+        meaning is the opposite of the literal meaning.
+      source: Underhill, Sound Foundations, pp. 76-81
+    reading:
+      relevance: Found in formal and literary writing. Understatement through negation
+        of the opposite ('not bad' = good).
+      source: Biber et al., GSWE 8.2.1
+      text_types:
+      - formal writing
+      - literary
+      - academic
+    speaking:
+      functions:
+      - being polite
+      - understating
+      - being diplomatic
+      - expressing irony
+      source: Biber et al., GSWE 8.2.1
+    writing:
+      genres:
+      - formal writing
+      - literary
+      - academic
+      source: Biber et al., GSWE 8.2.1
+- grammar_file: data/grammar/politeness_continuous.yaml
+  grammar_point: politeness_continuous
+  l1_notes:
+  - language: Japanese
+    skill_impact: Japanese has elaborate honorific system (keigo) for politeness.
+      Japanese speakers may not recognize that English uses tense for politeness.
+    source: Swan & Smith, Learner English, Japanese chapter
+  skills:
+    listening:
+      challenges:
+      - Politeness meaning must be inferred from context; the past tense does not
+        refer to past time
+      relevance: Very common in conversation for polite requests. The past continuous
+        softens the request.
+      source: Biber et al., GSWE 14.1.2
+    reading:
+      relevance: Found in formal and informal writing. Past continuous for politeness
+        ('I was wondering if,' 'I was hoping to').
+      source: Biber et al., GSWE 14.1.2
+      text_types:
+      - formal writing
+      - informal writing
+      - dialogue
+    speaking:
+      functions:
+      - making polite requests
+      - softening statements
+      - being diplomatic
+      source: Biber et al., GSWE 14.1.2
+    writing:
+      genres:
+      - formal emails
+      - informal writing
+      source: Biber et al., GSWE 14.1.2
+- grammar_file: data/grammar/short_answers.yaml
+  grammar_point: short_answers
+  l1_notes:
+  - language: Mandarin
+    skill_impact: Mandarin short answers use different patterns (是/不是). Mandarin speakers
+      may transfer L1 patterns to English.
+    source: Swan & Smith, Learner English, Mandarin chapter
+  skills:
+    listening:
+      challenges:
+      - Learners must recognize short answers as complete, grammatical responses
+      relevance: Biber shows 38.6% of conversation units are non-clausal (GSWE 14.3.1.4).
+        Short answers are the norm in conversation.
+      source: Biber et al., GSWE 14.3.1.4
+    reading:
+      relevance: Common in dialogue and informal writing. 'Yes, I do.' 'No, she hasn't.'
+        'So do I.' 'Neither can he.'
+      source: Biber et al., GSWE 14.3.1.4
+      text_types:
+      - dialogue
+      - informal writing
+    speaking:
+      functions:
+      - responding
+      - agreeing
+      - disagreeing
+      - confirming
+      - natural conversation
+      source: Biber et al., GSWE 14.3.1.4
+    writing:
+      genres:
+      - dialogue
+      - informal writing
+      source: Biber et al., GSWE 14.3.1.4
+- grammar_file: data/grammar/used_to.yaml
+  grammar_point: used_to
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish 'solía' maps onto 'used to.' Positive transfer helps production.
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - '''Used to'' vs. ''be used to'' vs. ''get used to'' must be distinguished
+        by context'
+      relevance: Appears in conversation for describing past habits. 'Used to' → /ˈjuːst
+        tə/ in connected speech.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in narrative, personal writing, and conversational texts for
+        past habits and states.
+      source: Biber et al., GSWE 6.3.2
+      text_types:
+      - narrative
+      - personal writing
+      - dialogue
+    speaking:
+      functions:
+      - describing past habits
+      - comparing past and present
+      - reminiscing
+      source: Biber et al., GSWE 6.3.2
+    writing:
+      genres:
+      - narrative
+      - personal writing
+      - reflective essays
+      source: Biber et al., GSWE 6.3.2
+- grammar_file: data/grammar/shall.yaml
+  grammar_point: shall
+  l1_notes:
+  - language: German
+    skill_impact: German 'sollen' maps partially onto 'shall.' German speakers may
+      overuse 'shall' in formal contexts.
+    source: Swan & Smith, Learner English, German chapter
+  skills:
+    listening:
+      challenges:
+      - '''Shall'' is increasingly rare; ''will'' and ''should'' are more common alternatives'
+      relevance: Rare in American English; more common in British English. 'Shall'
+        → /ʃæl/ or /ʃəl/ in connected speech.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Found in formal writing, legal texts, and British English. 'Shall'
+        for suggestions, offers, and formal future.
+      source: Biber et al., GSWE 6.6.2
+      text_types:
+      - formal writing
+      - legal
+      - British English texts
+    speaking:
+      functions:
+      - making suggestions
+      - offering
+      - formal future (British English)
+      source: Biber et al., GSWE 6.6.2
+    writing:
+      genres:
+      - formal writing
+      - legal
+      - British English
+      source: Biber et al., GSWE 6.6.2
+- grammar_file: data/grammar/have_got.yaml
+  grammar_point: have_got
+  l1_notes:
+  - language: French
+    skill_impact: French 'avoir' maps onto 'have.' French speakers may not distinguish
+      'have' and 'have got.'
+    source: Swan & Smith, Learner English, French chapter
+  skills:
+    listening:
+      challenges:
+      - '''Have got'' vs. ''have'' distinction is primarily British; American English
+        prefers ''have'''
+      relevance: Very common in British English conversation. 'I've got' → /aɪv gɒt/;
+        'have you got' → /hæv jə gɒt/.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in informal British English writing. 'Have got' = 'have' for
+        possession.
+      source: Biber et al., GSWE 6.6.2
+      text_types:
+      - informal writing
+      - dialogue
+      - British English texts
+    speaking:
+      functions:
+      - expressing possession
+      - obligation
+      - describing symptoms
+      source: Biber et al., GSWE 6.6.2
+    writing:
+      genres:
+      - informal writing
+      - dialogue
+      - British English
+      source: Biber et al., GSWE 6.6.2
+- grammar_file: data/grammar/so_such_inversion.yaml
+  grammar_point: so_such_inversion
+  l1_notes:
+  - language: German
+    skill_impact: German has verb-second (V2) word order, which creates inversion
+      in many contexts. This positive transfer may help German speakers.
+    source: Swan & Smith, Learner English, German chapter
+  skills:
+    listening:
+      challenges:
+      - Inverted word order is unexpected and may cause processing difficulty
+      relevance: Rare in casual speech. When it occurs, the inverted structure may
+        be hard to parse.
+      source: Biber et al., GSWE 8.2.1
+    reading:
+      relevance: Found in formal and literary writing. 'So beautiful was that...,'
+        'Such was the impact that...'
+      source: Biber et al., GSWE 8.2.1
+      text_types:
+      - formal writing
+      - literary
+      - academic
+    speaking:
+      functions:
+      - emphasizing
+      - formal speech
+      - dramatic effect
+      source: Biber et al., GSWE 8.2.1
+    writing:
+      genres:
+      - formal writing
+      - literary
+      - academic
+      source: Biber et al., GSWE 8.2.1
+- grammar_file: data/grammar/even_if.yaml
+  grammar_point: even_if
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish 'aunque' covers both 'even if' and 'even though.' Spanish
+      speakers may not distinguish the two in English.
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - '''Even if'' vs. ''even though'' must be distinguished: hypothetical vs. factual'
+      relevance: Appears in conversation for concessive conditions. 'Even if' → /ˈiːvən
+        ɪf/ in connected speech.
+      source: Biber et al., GSWE 10.2.1
+    reading:
+      relevance: Common in formal writing and academic texts. 'Even if' for concessive
+        conditions.
+      source: Biber et al., GSWE 10.2.1
+      text_types:
+      - formal writing
+      - academic
+      - everyday texts
+    speaking:
+      functions:
+      - expressing concessive conditions
+      - emphasizing
+      - contrasting
+      source: Biber et al., GSWE 10.2.1
+    writing:
+      genres:
+      - formal writing
+      - academic essays
+      source: Biber et al., GSWE 10.2.1
+- grammar_file: data/grammar/in_case.yaml
+  grammar_point: in_case
+  l1_notes:
+  - language: French
+    skill_impact: French 'au cas où' maps onto 'in case.' French speakers may understand
+      the concept but confuse it with 'if.'
+    source: Swan & Smith, Learner English, French chapter
+  skills:
+    listening:
+      challenges:
+      - '''In case'' vs. ''if'' must be distinguished: precaution vs. condition'
+      relevance: Appears in conversation for giving advice. 'In case' → /ɪn keɪs/
+        in connected speech.
+      source: Biber et al., GSWE 10.2.1
+    reading:
+      relevance: Common in instructions, advice, and formal writing. 'In case' for
+        precautions.
+      source: Biber et al., GSWE 10.2.1
+      text_types:
+      - instructions
+      - advice
+      - formal writing
+    speaking:
+      functions:
+      - giving advice
+      - expressing precautions
+      - warning
+      source: Biber et al., GSWE 10.2.1
+    writing:
+      genres:
+      - instructions
+      - advice
+      - formal writing
+      source: Biber et al., GSWE 10.2.1
+- grammar_file: data/grammar/as_long_as.yaml
+  grammar_point: as_long_as
+  l1_notes:
+  - language: German
+    skill_impact: German 'solange' maps onto 'As long as.' Positive transfer helps
+      production.
+    source: Swan & Smith, Learner English, German chapter
+  skills:
+    listening:
+      challenges:
+      - '''As long as'' for condition vs. duration must be distinguished by context'
+      relevance: Appears in conversation for setting conditions. 'As long as' → /əz
+        lɒŋ əz/ in connected speech.
+      source: Biber et al., GSWE 10.2.1
+    reading:
+      relevance: Common in formal writing and conditions. 'As long as' for conditions
+        and duration.
+      source: Biber et al., GSWE 10.2.1
+      text_types:
+      - formal writing
+      - everyday texts
+    speaking:
+      functions:
+      - setting conditions
+      - expressing duration
+      - negotiating
+      source: Biber et al., GSWE 10.2.1
+    writing:
+      genres:
+      - formal writing
+      - everyday texts
+      source: Biber et al., GSWE 10.2.1
+- grammar_file: data/grammar/provided_that.yaml
+  grammar_point: provided_that
+  l1_notes:
+  - language: French
+    skill_impact: French 'à condition que' maps onto 'provided that.' French speakers
+      may understand the concept.
+    source: Swan & Smith, Learner English, French chapter
+  skills:
+    listening:
+      challenges:
+      - Formal register may be unfamiliar to learners at lower levels
+      relevance: Rare in casual speech; more common in formal presentations and legal
+        contexts.
+      source: Biber et al., GSWE 10.2.1
+    reading:
+      relevance: Found in formal writing, legal texts, and contracts. 'Provided that'
+        for formal conditions.
+      source: Biber et al., GSWE 10.2.1
+      text_types:
+      - formal writing
+      - legal
+      - contracts
+    speaking:
+      functions:
+      - setting formal conditions
+      - legal language
+      - formal negotiation
+      source: Biber et al., GSWE 10.2.1
+    writing:
+      genres:
+      - formal writing
+      - legal
+      - contracts
+      source: Biber et al., GSWE 10.2.1
+- grammar_file: data/grammar/supposing.yaml
+  grammar_point: supposing
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish 'y si' maps onto 'supposing.' Positive transfer helps production.
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - '''Supposing'' vs. ''what if'' must be distinguished by register'
+      relevance: Appears in conversation for hypothetical scenarios. 'Supposing' →
+        /səˈpəʊzɪŋ/ in connected speech.
+      source: Biber et al., GSWE 10.2.1
+    reading:
+      relevance: Found in informal and semi-formal writing. 'Supposing' for hypothetical
+        scenarios.
+      source: Biber et al., GSWE 10.2.1
+      text_types:
+      - informal writing
+      - dialogue
+    speaking:
+      functions:
+      - imagining hypothetical scenarios
+      - speculating
+      - planning
+      source: Biber et al., GSWE 10.2.1
+    writing:
+      genres:
+      - informal writing
+      - dialogue
+      source: Biber et al., GSWE 10.2.1
+- grammar_file: data/grammar/its_time.yaml
+  grammar_point: its_time
+  l1_notes:
+  - language: French
+    skill_impact: French 'il est temps que' uses subjunctive. French speakers may
+      not recognize the past tense after 'it's time' as subjunctive-like.
+    source: Swan & Smith, Learner English, French chapter
+  skills:
+    listening:
+      challenges:
+      - Past tense after 'it's time' does not refer to past time — this is a common
+        source of confusion
+      relevance: Appears in conversation for expressing urgency. 'It's time' → /ɪts
+        taɪm/ in connected speech.
+      source: Biber et al., GSWE 10.2.1
+    reading:
+      relevance: Found in informal and semi-formal writing. 'It's time + past tense'
+        for expressing that something should have happened.
+      source: Biber et al., GSWE 10.2.1
+      text_types:
+      - informal writing
+      - dialogue
+    speaking:
+      functions:
+      - expressing urgency
+      - suggesting action
+      - complaining
+      source: Biber et al., GSWE 10.2.1
+    writing:
+      genres:
+      - informal writing
+      - dialogue
+      source: Biber et al., GSWE 10.2.1
+- grammar_file: data/grammar/had_better.yaml
+  grammar_point: had_better
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish 'más te vale' maps loosely onto 'had better.' Spanish speakers
+      may understand the concept but struggle with the form.
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - Contraction to 'better' may be confusing; 'had' is often dropped in casual
+        speech
+      relevance: Appears in conversation for strong advice. 'Had better' → /hæd ˈbɛtə/;
+        often contracted to 'better' in casual speech.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Found in informal writing and dialogue. 'Had better' for strong advice
+        with implied negative consequences.
+      source: Biber et al., GSWE 6.6.2
+      text_types:
+      - informal writing
+      - dialogue
+    speaking:
+      functions:
+      - giving strong advice
+      - warning
+      - expressing urgency
+      source: Biber et al., GSWE 6.6.2
+    writing:
+      genres:
+      - informal writing
+      - dialogue
+      source: Biber et al., GSWE 6.6.2
+- grammar_file: data/grammar/bound_to.yaml
+  grammar_point: bound_to
+  l1_notes:
+  - language: German
+    skill_impact: German 'bestimmt' maps loosely onto 'bound to.' German speakers
+      may understand the concept.
+    source: Swan & Smith, Learner English, German chapter
+  skills:
+    listening:
+      challenges:
+      - '''Bound to'' vs. ''due to'' must be distinguished: certainty vs. schedule'
+      relevance: Appears in conversation for confident predictions. 'Bound to' → /baʊnd
+        tə/ in connected speech.
+      source: Biber et al., GSWE 6.6.2
+    reading:
+      relevance: Found in formal and semi-formal writing. 'Bound to' for near-certainty.
+      source: Biber et al., GSWE 6.6.2
+      text_types:
+      - formal writing
+      - news
+      - everyday texts
+    speaking:
+      functions:
+      - expressing near-certainty
+      - making confident predictions
+      source: Biber et al., GSWE 6.6.2
+    writing:
+      genres:
+      - formal writing
+      - news
+      source: Biber et al., GSWE 6.6.2
+- grammar_file: data/grammar/likely.yaml
+  grammar_point: likely
+  l1_notes:
+  - language: French
+    skill_impact: French 'probable' maps onto 'likely.' French speakers may understand
+      the concept but struggle with adverb/adjective distinction.
+    source: Swan & Smith, Learner English, French chapter
+  skills:
+    listening:
+      challenges:
+      - '''Likely'' as adverb vs. adjective must be distinguished by position'
+      relevance: Appears in conversation and lectures for probability. 'Likely' →
+        /ˈlaɪkli/ in connected speech.
+      source: Biber et al., GSWE 6.6.2
+    reading:
+      relevance: Common in news, academic writing, and formal texts. 'Likely' for
+        probability.
+      source: Biber et al., GSWE 6.6.2
+      text_types:
+      - news
+      - academic
+      - formal writing
+    speaking:
+      functions:
+      - expressing probability
+      - making predictions
+      - hedging
+      source: Biber et al., GSWE 6.6.2
+    writing:
+      genres:
+      - academic essays
+      - news
+      - formal reports
+      source: Biber et al., GSWE 6.6.2
+- grammar_file: data/grammar/definitely_probably.yaml
+  grammar_point: definitely_probably
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish 'definitivamente' and 'probablemente' map onto English equivalents.
+      Positive transfer helps production.
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - Position of adverbs of certainty varies; learners must recognize different
+        positions
+      relevance: Very common in conversation. Adverbs of certainty are usually stressed
+        for emphasis.
+      source: Underhill, Sound Foundations, pp. 76-81
+    reading:
+      relevance: Common in all text types. Adverbs of certainty for expressing degrees
+        of probability.
+      source: Biber et al., GSWE 6.6.2
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - expressing certainty
+      - hedging
+      - emphasizing
+      source: Biber et al., GSWE 6.6.2
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 6.6.2
+- grammar_file: data/grammar/may_might_probability.yaml
+  grammar_point: may_might_probability
+  l1_notes:
+  - language: German
+    skill_impact: German 'kann' and 'könnte' map onto 'may' and 'might.' German speakers
+      may understand the concept.
+    source: Swan & Smith, Learner English, German chapter
+  skills:
+    listening:
+      challenges:
+      - '''May'' and ''might'' are often interchangeable in speech; learners may not
+        perceive a difference'
+      relevance: Appears in conversation for speculation. 'May' → /meɪ/; 'might' →
+        /maɪt/ in connected speech.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in academic writing, news, and formal texts. 'May' and 'might'
+        for epistemic possibility.
+      source: Biber et al., GSWE 6.6.2
+      text_types:
+      - academic
+      - news
+      - formal writing
+    speaking:
+      functions:
+      - expressing possibility
+      - hedging
+      - speculating
+      source: Biber et al., GSWE 6.6.2
+    writing:
+      genres:
+      - academic essays
+      - news
+      - formal reports
+      source: Biber et al., GSWE 6.6.2
+- grammar_file: data/grammar/may_but_concession.yaml
+  grammar_point: may_but_concession
+  l1_notes:
+  - language: French
+    skill_impact: French uses 'il est vrai que... mais' for concession. French speakers
+      may not recognize the concessive use of 'may.'
+    source: Swan & Smith, Learner English, French chapter
+  skills:
+    listening:
+      challenges:
+      - Concessive 'may' is rare and may be confused with permission 'may'
+      relevance: Rare in casual speech. When it occurs, the concessive meaning must
+        be inferred from context.
+      source: Biber et al., GSWE 10.2.1
+    reading:
+      relevance: Found in formal and academic writing. 'May' for concessive meaning
+        ('He may be rich, but he is not happy').
+      source: Biber et al., GSWE 10.2.1
+      text_types:
+      - formal writing
+      - academic
+    speaking:
+      functions:
+      - conceding a point
+      - contrasting
+      - formal argumentation
+      source: Biber et al., GSWE 10.2.1
+    writing:
+      genres:
+      - formal writing
+      - academic essays
+      source: Biber et al., GSWE 10.2.1
+- grammar_file: data/grammar/mustnt.yaml
+  grammar_point: mustnt
+  l1_notes:
+  - language: French
+    skill_impact: French 'ne pas devoir' means 'don't have to' (absence of obligation), not 'mustn't' (prohibition). French speakers may confuse 'mustn't' and 'don't have to' because both involve negation of devoir.
+    source: Swan & Smith, Learner English, French chapter
+  skills:
+    listening:
+      challenges:
+      - '''Mustn''t'' (prohibition) vs. ''don''t have to'' (no obligation) must be
+        distinguished'
+      relevance: Appears in conversation for prohibitions. 'Mustn't' → /ˈmʌsənt/ in
+        connected speech.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in rules, signs, and formal writing. 'Mustn't' for prohibition.
+      source: Biber et al., GSWE 6.6.2
+      text_types:
+      - rules
+      - signs
+      - formal writing
+    speaking:
+      functions:
+      - expressing prohibition
+      - giving rules
+      - warning
+      source: Biber et al., GSWE 6.6.2
+    writing:
+      genres:
+      - rules
+      - signs
+      - formal writing
+      source: Biber et al., GSWE 6.6.2
+- grammar_file: data/grammar/neednt.yaml
+  grammar_point: neednt
+  l1_notes:
+  - language: German
+    skill_impact: German 'nicht brauchen' maps onto 'needn't.' German speakers may
+      understand the concept.
+    source: Swan & Smith, Learner English, German chapter
+  skills:
+    listening:
+      challenges:
+      - '''Needn''t'' vs. ''mustn''t'' must be distinguished: lack of necessity vs.
+        prohibition'
+      relevance: Appears in conversation for lack of necessity. 'Needn't' → /ˈniːdənt/
+        in connected speech.
+      source: Biber et al., GSWE 6.6.2
+    reading:
+      relevance: Found in formal and semi-formal writing. 'Needn't' for lack of necessity.
+      source: Biber et al., GSWE 6.6.2
+      text_types:
+      - formal writing
+      - everyday texts
+    speaking:
+      functions:
+      - expressing lack of necessity
+      - giving permission not to do something
+      source: Biber et al., GSWE 6.6.2
+    writing:
+      genres:
+      - formal writing
+      - everyday texts
+      source: Biber et al., GSWE 6.6.2
+- grammar_file: data/grammar/need_to.yaml
+  grammar_point: need_to
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish 'necesitar' maps onto 'need to.' Positive transfer helps
+      production.
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - Reduced 'need to' → /niːtə/ may be hard to distinguish from 'kneed to'
+      relevance: Very common in conversation. 'Need to' → /niːd tə/ or /niːtə/ (reduction
+        to 'needa') in connected speech.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in all text types. 'Need to' for necessity and obligation.
+      source: Biber et al., GSWE 6.6.2
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - expressing necessity
+      - making requests
+      - giving advice
+      source: Biber et al., GSWE 6.6.2
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 6.6.2
+- grammar_file: data/grammar/should_shouldnt.yaml
+  grammar_point: should_shouldnt
+  l1_notes:
+  - language: Arabic
+    skill_impact: Arabic uses different structures for advice. Arabic speakers may
+      underuse 'should' in English.
+    source: Swan & Smith, Learner English, Arabic chapter
+  skills:
+    listening:
+      challenges:
+      - Reduced 'should' → /ʃəd/ may be hard to hear
+      relevance: Very common in conversation for advice. 'Should' → /ʃʊd/ or /ʃəd/
+        in connected speech.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in advice texts, formal writing, and everyday texts. 'Should'
+        for advice and expectation.
+      source: Biber et al., GSWE 6.6.2
+      text_types:
+      - advice
+      - formal writing
+      - everyday texts
+    speaking:
+      functions:
+      - giving advice
+      - expressing expectation
+      - recommending
+      source: Biber et al., GSWE 6.6.2
+    writing:
+      genres:
+      - advice columns
+      - formal writing
+      - everyday texts
+      source: Biber et al., GSWE 6.6.2
+- grammar_file: data/grammar/can_cant.yaml
+  grammar_point: can_cant
+  l1_notes:
+  - language: Mandarin
+    skill_impact: Mandarin 'néng' maps onto 'can.' Mandarin speakers may overuse 'can'
+      where English prefers 'may' for permission.
+    source: Swan & Smith, Learner English, Mandarin chapter
+  skills:
+    listening:
+      challenges:
+      - Weak form /kən/ is hard to hear; 'can' and 'can't' may be distinguished only
+        by final /t/
+      relevance: Very common in conversation. 'Can' → /kæn/ or /kən/ (weak form);
+        'can't' → /kɑːnt/ or /kænt/.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in all text types. 'Can' for ability, permission, and possibility.
+      source: Biber et al., GSWE 6.6.2
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - expressing ability
+      - asking permission
+      - making requests
+      - expressing possibility
+      source: Biber et al., GSWE 6.6.2
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 6.6.2
+- grammar_file: data/grammar/could.yaml
+  grammar_point: could
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish 'podía' and 'pudiera' map onto 'could.' Spanish speakers
+      may understand the concept but struggle with the weak form in listening.
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - Weak form /kəd/ is hard to hear; 'could' vs. 'can' distinction may be lost
+        in rapid speech
+      relevance: Very common in conversation. 'Could' → /kʊd/ or /kəd/ (weak form)
+        in connected speech.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in all text types. 'Could' for past ability, polite requests,
+        and possibility.
+      source: Biber et al., GSWE 6.6.2
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - making polite requests
+      - expressing past ability
+      - suggesting
+      - speculating
+      source: Biber et al., GSWE 6.6.2
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 6.6.2
+- grammar_file: data/grammar/might.yaml
+  grammar_point: might
+  l1_notes:
+  - language: German
+    skill_impact: German 'könnte' maps onto 'might.' German speakers may understand
+      the concept.
+    source: Swan & Smith, Learner English, German chapter
+  skills:
+    listening:
+      challenges:
+      - '''Might'' is often interchangeable with ''may'' in speech'
+      relevance: Appears in conversation for speculation. 'Might' reduces to /maɪt/
+        in connected speech.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in academic writing, news, and formal texts. 'Might' for possibility
+        and hedging.
+      source: Biber et al., GSWE 6.6.2
+      text_types:
+      - academic
+      - news
+      - formal writing
+    speaking:
+      functions:
+      - expressing possibility
+      - hedging
+      - speculating
+      source: Biber et al., GSWE 6.6.2
+    writing:
+      genres:
+      - academic essays
+      - news
+      - formal reports
+      source: Biber et al., GSWE 6.6.2
+- grammar_file: data/grammar/will_would_habits.yaml
+  grammar_point: will_would_habits
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish uses present tense for habits. Spanish speakers may not
+      recognize 'will' for habitual meaning.
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - '''Will'' for habits vs. future must be distinguished by context'
+      relevance: Appears in conversation for describing habits.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Found in narrative and descriptive writing. 'Will' for present habits,
+        'would' for past habits.
+      source: Biber et al., GSWE 6.3.2
+      text_types:
+      - narrative
+      - descriptive writing
+    speaking:
+      functions:
+      - describing habits
+      - characterizing behavior
+      - reminiscing
+      source: Biber et al., GSWE 6.3.2
+    writing:
+      genres:
+      - narrative
+      - descriptive writing
+      source: Biber et al., GSWE 6.3.2
+- grammar_file: data/grammar/would_like.yaml
+  grammar_point: would_like
+  l1_notes:
+  - language: French
+    skill_impact: French 'voudrais' maps onto 'would like.' Positive transfer helps
+      production.
+    source: Swan & Smith, Learner English, French chapter
+  skills:
+    listening:
+      challenges:
+      - '''Would like'' vs. ''like'' must be distinguished: desire vs. enjoyment'
+      relevance: Very common in conversation for polite requests.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in dialogue, informal writing, and service contexts. 'Would
+        like' for polite requests and desires.
+      source: Biber et al., GSWE 6.6.2
+      text_types:
+      - dialogue
+      - informal writing
+      - service contexts
+    speaking:
+      functions:
+      - making polite requests
+      - expressing desires
+      - ordering
+      source: Biber et al., GSWE 6.6.2
+    writing:
+      genres:
+      - dialogue
+      - informal writing
+      - service contexts
+      source: Biber et al., GSWE 6.6.2
+- grammar_file: data/grammar/another_other_others.yaml
+  grammar_point: another_other_others
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish 'otro' covers both 'another' and 'other.' Spanish speakers
+      may confuse the two.
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - '''Another'' vs. ''other'' must be distinguished by position and meaning'
+      relevance: Appears in conversation for referring to additional or different
+        items.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in all text types. 'Another' (one more), 'other' (different),
+        'others' (additional).
+      source: Biber et al., GSWE 2.3.5
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - referring to additional items
+      - contrasting
+      - generalizing
+      source: Biber et al., GSWE 2.3.5
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 2.3.5
+- grammar_file: data/grammar/some_any.yaml
+  grammar_point: some_any
+  l1_notes:
+  - language: French
+    skill_impact: French 'des' covers both 'some' and 'any.' French speakers may not
+      distinguish the two.
+    source: Swan & Smith, Learner English, French chapter
+  skills:
+    listening:
+      challenges:
+      - '''Some'' in questions (offers/requests) vs. ''any'' must be distinguished
+        by context'
+      relevance: Very common in conversation. Weak forms may obscure the distinction.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in all text types. 'Some' in affirmative, 'any' in negative
+        and questions.
+      source: Biber et al., GSWE 2.3.5
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - quantifying
+      - offering
+      - requesting
+      - negating
+      source: Biber et al., GSWE 2.3.5
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 2.3.5
+- grammar_file: data/grammar/much_many.yaml
+  grammar_point: much_many
+  l1_notes:
+  - language: Mandarin
+    skill_impact: Mandarin does not distinguish 'much' and 'many.' Mandarin speakers
+      may use 'much' with count nouns.
+    source: Swan & Smith, Learner English, Mandarin chapter
+  skills:
+    listening:
+      challenges:
+      - '''Much'' vs. ''many'' depends on countability; ''a lot of'' is used for both
+        in informal speech'
+      relevance: Very common in conversation. Weak forms may obscure the distinction.
+      source: Underhill, Sound Foundations, pp. 63-64
+    reading:
+      relevance: Common in all text types. 'Much' for uncountable, 'many' for countable
+        nouns.
+      source: Biber et al., GSWE 2.3.5
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - quantifying
+      - asking about amounts
+      - comparing
+      source: Biber et al., GSWE 2.3.5
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 2.3.5
+- grammar_file: data/grammar/collocations.yaml
+  grammar_point: collocations
+  l1_notes:
+  - language: German
+    skill_impact: German collocations often differ from English. German speakers may
+      transfer L1 collocations.
+    source: Swan & Smith, Learner English, German chapter
+  skills:
+    listening:
+      challenges:
+      - Learners may not recognize collocations as fixed chunks; word-by-word processing
+        slows comprehension
+      relevance: Very common in conversation. Collocations are processed as chunks
+        by native speakers.
+      source: Underhill, Sound Foundations, pp. 60-67
+    reading:
+      relevance: Common in all text types. Collocations (make a decision, heavy rain)
+        are essential for natural language.
+      source: Biber et al., GSWE 8.2.1
+      text_types:
+      - all text types
+    speaking:
+      functions:
+      - natural-sounding speech
+      - fluency
+      - precision
+      source: Biber et al., GSWE 8.2.1
+    writing:
+      genres:
+      - all writing genres
+      source: Biber et al., GSWE 8.2.1
+- grammar_file: data/grammar/idiomatic_expressions.yaml
+  grammar_point: idiomatic_expressions
+  l1_notes:
+  - language: Spanish
+    skill_impact: Spanish has many idioms that do not translate directly. Literal
+      translations may be incomprehensible.
+    source: Swan & Smith, Learner English, Spanish chapter
+  skills:
+    listening:
+      challenges:
+      - Idioms cannot be understood from individual words; learners must know the
+        expression as a whole
+      relevance: Very common in conversation. Non-literal meaning must be inferred
+        from context.
+      source: Underhill, Sound Foundations, pp. 60-67
+    reading:
+      relevance: Common in all text types. Idioms are culturally specific and non-compositional.
+      source: Biber et al., GSWE 8.2.1
+      text_types:
+      - all text_types
+    speaking:
+      functions:
+      - natural-sounding speech
+      - cultural fluency
+      - humor
+      - emphasis
+      source: Biber et al., GSWE 8.2.1
+    writing:
+      genres:
+      - informal writing
+      - fiction
+      - dialogue
+      source: Biber et al., GSWE 8.2.1
+- grammar_file: data/grammar/figurative_language.yaml
+  grammar_point: figurative_language
+  l1_notes:
+  - language: Mandarin
+    skill_impact: Mandarin has rich figurative traditions. Mandarin speakers may understand
+      metaphor but struggle with English-specific idioms.
+    source: Swan & Smith, Learner English, Mandarin chapter
+  skills:
+    listening:
+      challenges:
+      - Non-literal meaning must be inferred; learners may interpret figurative language
+        literally
+      relevance: Appears in conversation for emphasis and humor. Non-literal meaning
+        must be inferred from context.
+      source: Underhill, Sound Foundations, pp. 76-81
+    reading:
+      relevance: Common in literary, academic, and persuasive texts. Metaphor, simile,
+        and other figurative devices.
+      source: Biber et al., GSWE 8.2.1
+      text_types:
+      - literary
+      - academic
+      - persuasive
+      - news
+    speaking:
+      functions:
+      - expressing creativity
+      - emphasizing
+      - being humorous
+      - persuasive speech
+      source: Biber et al., GSWE 8.2.1
+    writing:
+      genres:
+      - literary
+      - creative writing
+      - persuasive essays
+      source: Biber et al., GSWE 8.2.1
+sources:
+  primary: Biber, Johansson, Leech, Conrad & Finegan. Grammar of Spoken and Written
+    English (1999)
+  secondary: Underhill, Adrian. Sound Foundations (1994); Swan & Smith, Learner English
+    (2001)

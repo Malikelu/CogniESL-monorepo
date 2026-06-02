@@ -1,0 +1,730 @@
+language: Dholuo
+language_code: luo
+schema_version: '4.0'
+note: 'Data sourced from L1 Interference ESL Teacher Resources (S09) and enriched
+  with primary Dholuo sources: Okombo (1997) ''A Functional Grammar of Dholuo'' (Nilo-Saharan
+  Vol. 12, Rudiger Koppe Verlag) and the Handbook of the Kavirondo Language (1920,
+  Caxton Printing, Nairobi). Tier ratings: Okombo = tier 1 (primary descriptive grammar
+  by native-speaker linguist); Handbook = tier 1 (early missionary grammar, detailed
+  morphological data); S09 = tier 4 (general reference survey).'
+grammar_points:
+  articles:
+    interference_patterns:
+    - pattern: Article omission
+      example_wrong: '*He has job.'
+      example_correct: He has a job.
+      explanation: 'Dholuo has no formal article system. Nouns appear bare without
+        determiners in contexts where English requires a/an/the. Learners transfer
+        this bare-noun pattern to English, producing articleless sentences.
+
+        '
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: true
+      tier: 4
+      reliability: B
+    why_it_happens: 'Dholuo lacks formal articles entirely. English requires both
+      definite and indefinite articles. The complete absence of articles in the L1
+      makes this a fundamental structural gap. (L1 Interference ESL Teacher Resources,
+      S09, Syntactic and Morphological Transfer Matrix: Article Omission).
+
+      '
+    teacher_tips:
+      how_to_explain: Explain the L1-specific error patterns and provide contrastive
+        examples.
+      where_to_start: Begin with the most frequent error pattern for this L1.
+      exercises:
+      - name: Contrastive Analysis
+        type: translation
+        duration: 15
+    citations:
+    - claim: Interference pattern for articles in Dholuo
+      source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+        Ch. Nilotic languages
+      tier: 1
+  noun_system:
+    interference_patterns:
+    - pattern: Article omission (no definite/indefinite articles)
+      example_wrong: '*I saw leader.'
+      example_correct: I saw the leader.
+      explanation: 'Dholuo has no article system. Definiteness is marked by demonstratives
+        (no/cha ''that'', go/ka ''those'') only when needed for clarity. Nouns appear
+        bare in all other contexts. Example from Okombo: ''Nameno Jatelo'' = ''I saw
+        (the) leader'' — no article is used. Learners transfer this bare-noun pattern
+        to English, omitting a/an/the.'
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: true
+      tier: 1
+      reliability: B
+      source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 2.2.1.1: Definiteness,
+        pp. 22-24'
+    - pattern: Plural formation irregularity
+      example_wrong: '*childs, *womans, *sheeps'
+      example_correct: children, women, sheep
+      explanation: 'Dholuo plural formation is highly irregular with multiple patterns:
+        vowel change (a→e), suffixation (-ini, -e, -che, -de), and completely suppletive
+        forms (dhano→jo ''person→people'', dhako→mon ''woman→women''). The Handbook
+        lists 10+ plural formation rules with many exceptions. English irregular plurals
+        may be challenging because Dholuo has its own complex system that doesn''t
+        map onto English patterns.'
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: true
+      tier: 1
+      reliability: B
+      source: 'Handbook of the Kavirondo Language (1920), Chapter I: The Noun, Paragraph
+        4: The Number, pp. 4-7'
+    - pattern: No grammatical gender
+      example_wrong: '*he (for female referent), *she (for male referent)'
+      explanation: 'Dholuo has no grammatical gender. The Handbook states: ''There
+        is no properly defined gender in Nilotic.'' Natural gender is expressed by
+        different words (chwo ''husband'' vs chi ''wife'', dhano ''man'' vs dhako
+        ''woman''), not by pronoun agreement. English he/she/it gender distinctions
+        have no L1 basis.'
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 1
+      reliability: B
+      source: 'Handbook of the Kavirondo Language (1920), Chapter I: The Noun, Paragraph
+        2: The Gender, p. 3'
+    why_it_happens: Dholuo nouns lack articles, grammatical gender, and have complex
+      irregular plural formation. English requires articles, has natural gender in
+      pronouns, and has its own irregular plurals. The structural gaps are significant.
+    teacher_tips:
+      how_to_explain: 'Explain that English requires articles before most nouns. Use
+        contrastive examples: Dholuo ''Nameno jatelo'' vs English ''I saw the leader.''
+        For plurals, teach English patterns (regular -s, irregular forms) as a separate
+        system.'
+      where_to_start: Begin with article usage (a/an/the) as the most frequent error
+      exercises:
+      - name: Article insertion
+        type: gap-fill
+        duration: 15
+      - name: Plural formation
+        type: transformation
+        duration: 10
+    citations:
+    - claim: Dholuo has no article system; definiteness marked by demonstratives no/cha
+      source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 2.2.1.1: Definiteness,
+        pp. 22-24'
+      tier: 1
+    - claim: Dholuo has no grammatical gender; natural gender expressed by different
+        lexical items
+      source: 'Handbook of the Kavirondo Language (1920), Chapter I, Paragraph 2:
+        The Gender, p. 3'
+      tier: 1
+    - claim: Dholuo plural formation follows 10+ irregular patterns with many exceptions
+      source: 'Handbook of the Kavirondo Language (1920), Chapter I, Paragraph 4:
+        The Number, pp. 4-7'
+      tier: 1
+  verb_tense_aspect:
+    interference_patterns:
+    - pattern: Past tense marking with prefix ne-
+      example_wrong: '*I ne-go yesterday.'
+      example_correct: I went yesterday.
+      explanation: Dholuo marks past tense with the prefix 'ne-' added to the present
+        indefinite form (e.g., 'Ne ahero' = 'I loved'). English uses suffix -ed or
+        irregular forms. Learners may overgeneralize the prefix pattern or omit past
+        marking entirely since Dholuo also uses time adverbs (nyoro 'yesterday') to
+        indicate past time.
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: true
+      tier: 1
+      reliability: B
+      source: 'Handbook of the Kavirondo Language (1920), Chapter IV: The Verb, Paragraph
+        2: Conjugation, Past Indefinite, pp. 38-39'
+    - pattern: Future with biro (separate word) vs English will/shall
+      example_wrong: '*I biro go tomorrow.'
+      example_correct: I will go tomorrow.
+      explanation: 'Dholuo forms the immediate future with ''biro'' (a separate word
+        meaning ''come'') followed by the infinitive: ''Abiro gedo'' =''I am going
+        to build here'' (lit. ''I come to build here''). The ordinary future uses
+        the prefix ''ne-'' attached to the root: ''Na-na-her'' = ''I shall love''.
+        English uses modal ''will'' or ''be going to''. The Dholuo ''biro + infinitive''
+        structure may transfer as ''*I come to do'' patterns.'
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: true
+      tier: 1
+      reliability: B
+      source: 'Handbook of the Kavirondo Language (1920), Chapter IV: The Verb, Future
+        tense, pp. 42-43'
+    - pattern: Present perfect with se-/seko- prefix
+      example_wrong: '*I se-go already.'
+      example_correct: I have gone already.
+      explanation: 'Dholuo forms present perfect by adding ''se-'' or ''seko-'' between
+        the pronominal prefix and the infinitive: ''Asehero'' or ''Aseko hero'' =
+        ''I have loved''. This indicates a completed action with present relevance.
+        English uses ''have + past participle''. The structural difference may cause
+        learners to omit auxiliaries.'
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: true
+      tier: 1
+      reliability: B
+      source: 'Handbook of the Kavirondo Language (1920), Chapter IV: The Verb, Present
+        Perfect, pp. 40-41'
+    - pattern: Passive voice rare; impersonal o- prefix
+      example_wrong: '*The food has been brought (using full passive).'
+      example_correct: The food has been brought.
+      explanation: 'Dholuo rarely uses passive voice. The Handbook states: ''The Passive
+        Voice is one of the most difficult in Nilotic from the very fact that they
+        very seldom use it.'' When used, it employs the impersonal prefix ''o-'':
+        ''Chiemo okel'' = ''The food has been brought'' (lit. ''Food it-has-brought'').
+        Learners may avoid English passive constructions or produce ungrammatical
+        forms.'
+      frequency: 3
+      persistence: 4
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: true
+      tier: 1
+      reliability: B
+      source: 'Handbook of the Kavirondo Language (1920), Chapter IV: The Verb, Paragraph
+        4: Passive Voice, pp. 52-53'
+    why_it_happens: Dholuo verb morphology uses prefixes (ne-, se-, biro, o-) for
+      tense and aspect, while English uses suffixes (-ed), auxiliaries (have, will,
+      be), and word order. The passive is rare in Dholuo. These structural differences
+      lead to systematic transfer errors.
+    teacher_tips:
+      how_to_explain: Contrast Dholuo prefix-based tense marking with English auxiliary/suffix
+        system. Use timelines to show when each tense is used. Drill auxiliary + past
+        participle patterns.
+      where_to_start: Begin with past tense (most frequent error), then present perfect
+      exercises:
+      - name: Tense transformation
+        type: transformation
+        duration: 15
+      - name: Auxiliary insertion
+        type: gap-fill
+        duration: 10
+    citations:
+    - claim: Dholuo marks past with prefix ne-, future with biro+infinitive or ne-+root
+      source: 'Handbook of the Kavirondo Language (1920), Chapter IV: The Verb, pp.
+        38-43'
+      tier: 1
+    - claim: Dholuo present perfect formed with se-/seko- prefix; passive voice rare,
+        uses o- impersonal
+      source: 'Handbook of the Kavirondo Language (1920), Chapter IV: The Verb, pp.
+        40-41, 52-53'
+      tier: 1
+  negation:
+    interference_patterns:
+    - pattern: Negation with ok (preverbal particle)
+      example_wrong: '*I no go. / *I not go.'
+      example_correct: I don't go. / I didn't go.
+      explanation: 'Dholuo negates with the particle ''ok'' placed before the verb:
+        ''Ok ahero'' = ''I do not love''. In past tenses, ''ok'' can precede or follow
+        the tense marker: ''Ne ok ahero'' or ''Ok nahero'' = ''I did not love''. Future
+        negative uses ''ok'', ''oka-'', or ''okan-''. English requires do-support
+        (don''t, ''didn''t) which has no equivalent in Dholuo. Learners may produce
+        ''*I not go'' or ''*I no go'' by direct transfer.'
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: true
+      tier: 1
+      reliability: B
+      source: 'Handbook of the Kavirondo Language (1920), Chapter IV: The Verb, Paragraph
+        3: Negative Conjugation, pp. 50-51; Okombo (1997) Ch. 1.3.1: Ok-Placement,
+        p. 3'
+    - pattern: Double negation
+      example_wrong: '*I don''t know nothing.'
+      example_correct: '*I don''t know anything.'
+      explanation: 'The Handbook notes: ''In Nilotic very frequently two negations
+        are combined, e.g., Okdak anene — I did not see him at all.'' This double
+        negation is grammatical in Dholuo but produces non-standard English. Learners
+        may transfer the double negation pattern.'
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: true
+      tier: 1
+      reliability: B
+      source: 'Handbook of the Kavirondo Language (1920), Chapter IV: The Verb, Paragraph
+        3, p. 51'
+    why_it_happens: Dholuo negation uses a preverbal particle 'ok' with no do-support.
+      English requires do/does/did + not + infinitive. The structural difference is
+      fundamental and leads to persistent errors.
+    teacher_tips:
+      how_to_explain: 'Explain that English requires ''do'' as a helper verb for negation
+        in present and past simple. Contrast: Dholuo ''Ok adhi'' vs English ''I don''t
+        go'' (not ''*I no go'').'
+      where_to_start: Present simple negation (don/doesn/t) first
+      exercises:
+      - name: Negation transformation
+        type: transformation
+        duration: 15
+    citations:
+    - claim: Dholuo negation uses preverbal particle ok; no do-support; double negation
+        grammatical
+      source: 'Handbook of the Kavirondo Language (1920), Chapter IV: The Verb, Paragraph
+        3: Negative Conjugation, pp. 50-51'
+      tier: 1
+    - claim: Ok can be placed in various sentential positions (Ok-Placement)
+      source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 1.3.1: Ok-Placement,
+        p. 3'
+      tier: 1
+  relative_clauses:
+    interference_patterns:
+    - pattern: Relative clause with ma- (single morpheme)
+      example_wrong: '*The man who he is coming is my teacher.'
+      example_correct: The man who is coming is my teacher.
+      explanation: 'Dholuo relative clauses are introduced by the single morpheme
+        ''ma-'' (or ''ma'' as a free form): ''Ruoth ma onge dhako'' = ''A chief who
+        does not have a wife''. Single-word relatives like ''marach'' (ma + rach =
+        ''which is bad'') function as adjectives. English uses who/which/that with
+        a full relative clause structure. Learners may omit relative pronouns or produce
+        resumptive pronouns (*''the man who he is...'').'
+      frequency: 3
+      persistence: 4
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: true
+      tier: 1
+      reliability: B
+      source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 2.2.1.3: Relative
+        Clauses, pp. 26-28'
+    - pattern: Adjective follows noun
+      example_wrong: '*a car red, *a house big'
+      example_correct: a red car, a big house
+      explanation: 'In Dholuo, adjectives (which are technically relative clauses)
+        follow the noun: ''Nyathi maber'' = ''child good'' =''good child''. Okombo
+        notes that Dholuo attributive adjectives are ''strictly speaking, relative
+        clauses''. English adjectives precede the noun. This word order difference
+        leads to transfer errors.'
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: true
+      tier: 1
+      reliability: B
+      source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 2.2.1.3, p. 27; Handbook
+        (1920), Chapter II: Adjectives, Paragraph 1, p. 8'
+    why_it_happens: Dholuo relative clauses use a single morpheme ma- and adjectives
+      follow the noun. English uses multi-word relative clauses with who/which/that
+      and adjectives precede nouns. The structural differences are significant.
+    teacher_tips:
+      how_to_explain: 'Teach English relative pronouns (who, which, that) explicitly.
+        Contrast word order: Dholuo ''Noun + ma + clause'' vs English ''Noun + who/which/that
+        + clause''. For adjectives, drill pre-noun position.'
+      where_to_start: Relative pronouns (who/which/that) first, then adjective position
+      exercises:
+      - name: Relative clause formation
+        type: sentence-combining
+        duration: 15
+      - name: Adjective ordering
+        type: reordering
+        duration: 10
+    citations:
+    - claim: Dholuo relative clauses introduced by ma-; single-word relatives function
+        as adjectives
+      source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 2.2.1.3: Relative
+        Clauses, pp. 26-28'
+      tier: 1
+    - claim: Dholuo adjectives follow the noun; preceded by ema except quantitative
+        adjectives
+      source: 'Handbook of the Kavirondo Language (1920), Chapter II: Adjectives,
+        Paragraph 1, p. 8'
+      tier: 1
+  word_order:
+    interference_patterns:
+    - pattern: Flexible constituent order (topicalization)
+      example_wrong: '*The drum the elders want. (OSV order)'
+      example_correct: The elders want the drum.
+      explanation: 'Dholuo has flexible constituent order. Okombo documents extensive
+        topicalization where any constituent can be fronted: ''Bul jodongo dwaro''
+        (Drum elders want) = ''The elders want the drum'' — the object ''drum'' is
+        fronted for focus. SVO is the basic order, but OSV, VSO, and other orders
+        are grammatical. English has rigid SVO. Learners may produce non-English word
+        orders by transfer.'
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+      etiology: interlingual
+      flagged: true
+      tier: 1
+      reliability: B
+      source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 1.3.7: Topicalization,
+        p. 5'
+    - pattern: Cleft constructions for focus
+      example_wrong: '*Fish is what the child wants.'
+      example_correct: The child wants fish. / What the child wants is fish.
+      explanation: 'Dholuo uses cleft constructions for focus: ''Rech e ma nyathi
+        dwaro'' (Fish is what child wants) = ''The child wants fish''. This is a common
+        and natural Dholuo structure. English clefts exist but are less frequent.
+        Learners may overuse cleft structures in English.'
+      frequency: 2
+      persistence: 3
+      communicative_impact: 2
+      etiology: interlingual
+      flagged: false
+      tier: 1
+      reliability: B
+      source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 1.3.8: Cleft Constructions,
+        pp. 5-6'
+    why_it_happens: Dholuo has flexible constituent order with topicalization and
+      clefting as common focus strategies. English has rigid SVO with limited cleft
+      use. The typological difference leads to word order transfer errors.
+    teacher_tips:
+      how_to_explain: 'Emphasize that English word order is fixed: Subject-Verb-Object.
+        Use contrastive examples showing Dholuo flexibility vs English rigidity. Practice
+        SVO patterns extensively.'
+      where_to_start: Basic SVO order, then introduce passive as the main word order
+        variation
+      exercises:
+      - name: Word order correction
+        type: error-correction
+        duration: 15
+    citations:
+    - claim: Dholuo has flexible constituent order; topicalization fronts any constituent;
+        SVO is basic
+      source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 1.3.7: Topicalization,
+        p. 5'
+      tier: 1
+    - claim: 'Dholuo uses cleft constructions for focus: Rech e ma nyathi dwaro (Fish
+        is what child wants)'
+      source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 1.3.8: Cleft Constructions,
+        pp. 5-6'
+      tier: 1
+phonology_interference:
+  consonant_gaps:
+  - phoneme: /ʃ/ — voiceless palato-alveolar fricative
+    transfer_type: Phonemic Substitution
+    error_pattern: Substituted with alveolar /s/ (e.g., sip for ship)
+    explanation: 'Dholuo lacks /ʃ/. The nearest phoneme is /s/. Learners collapse
+      the /ʃ/-/s/ distinction, affecting minimal pairs (ship/sip, shoe/sue, sheet/seat).
+      Teaching: retract tongue from alveolar ridge to palato-alveolar position; add
+      slight lip rounding.'
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    tier: 1
+    source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 1.8.1: Consonants,
+      p. 17'
+  - phoneme: /tʃ/ — voiceless palato-alveolar affricate
+    transfer_type: Phonemic Substitution
+    error_pattern: May be substituted with /ts/ or /s/
+    explanation: Dholuo has the digraph 'ch' but it represents a different articulation
+      from English /tʃ/. The Handbook lists 'ch' as pronounced 'as Ch in Kiswahili'
+      which may differ from English church/chain. Learners may produce a more dental
+      or alveolar variant.
+    frequency: 3
+    persistence: 3
+    communicative_impact: 2
+    tier: 1
+    source: Handbook of the Kavirondo Language (1920), The Alphabet, p. 2
+  - phoneme: /θ/ — voiceless dental fricative
+    transfer_type: Phonemic Substitution
+    error_pattern: Substituted with /t/ or /s/ (e.g., tin for thin, sink for think)
+    explanation: Dholuo lacks /θ/. The Handbook lists 'th' as a separate consonant
+      'as in thatch', but this appears to be a stop or affricate rather than a fricative.
+      English /θ/ and /ð/ are absent from Dholuo phonology. Learners substitute the
+      nearest available phoneme.
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    tier: 1
+    source: Handbook of the Kavirondo Language (1920), The Alphabet, p. 2; Okombo
+      (1997) Ch. 1.8.1
+  - phoneme: /ð/ — voiced dental fricative
+    transfer_type: Phonemic Substitution
+    error_pattern: Substituted with /d/ or /z/ (e.g., dis for this)
+    explanation: Dholuo lacks /ð/. The Dholuo 'd' is a dental/alveolar stop, not a
+      fricative. English 'th' in this/that/the is produced with tongue between teeth,
+      a gesture absent from Dholuo phonology.
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    tier: 1
+    source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 1.8.1: Consonants,
+      p. 17'
+  - phoneme: /ŋ/ — velar nasal (word-final)
+    transfer_type: Distributional Restriction
+    error_pattern: May substitute /ŋg/ or /n/ for word-final /ŋ/
+    explanation: Dholuo has the velar nasal /ŋ/ written as 'ng'' (with apostrophe),
+      but it contrasts with the nasal-stop compound ng /ŋg/. In English, /ŋ/ occurs
+      word-final (sing, ring) but Dholuo phonotactics may not permit the same distribution.
+      Learners may produce 'singger' for 'singer'.
+    frequency: 3
+    persistence: 3
+    communicative_impact: 2
+    tier: 1
+    source: Okombo (1997) A Functional Grammar of Dholuo, Ch. 1.8.1, p. 17; Handbook
+      (1920), The Alphabet, p. 2
+  - phoneme: /r/ — English approximant
+    transfer_type: Allophonic Substitution
+    error_pattern: May use trilled or tapped /r/ instead of English approximant /ɹ/
+    explanation: Dholuo has /r/ but its phonetic realization may differ from English
+      /ɹ/. The Handbook describes it as 'as in rat'. Dholuo /r/ may be more strongly
+      trilled or tapped, leading to a pronounced 'foreign accent' in English /r/.
+    frequency: 3
+    persistence: 3
+    communicative_impact: 1
+    tier: 1
+    source: Handbook of the Kavirondo Language (1920), The Alphabet, p. 2
+  vowel_system:
+    description: Dholuo has 9 vowel phonemes organized in 4 pairs by Advanced Tongue
+      Root (ATR) position plus /a/. Orthography uses only 5 symbols (a, e, i, o, u),
+      underdifferentiating the ATR pairs. This creates homographs distinguished only
+      by tongue-root position in speech. Learners may struggle with English vowel
+      quality distinctions that do not map cleanly onto the Dholuo system.
+    vowel_inventory:
+    - phoneme: /a/
+      orthography: a
+      example: mako (to hold)
+      note: Single low front vowel, no ATR pair
+    - phoneme: /e/ vs /ɛ/
+      orthography: e
+      example: lemo (to pray) vs lɛndo (to clean)
+      note: ATR pair underdifferented in writing
+    - phoneme: /i/ vs /ɪ/
+      orthography: i
+      example: pi (water) vs pɪth (hill)
+      note: ATR pair; /i/ is [+ATR], /ɪ/ is [-ATR]
+    - phoneme: /o/ vs /ɔ/
+      orthography: o
+      example: loko (to change) vs lɔŋgo (to be clean)
+      note: ATR pair underdifferented in writing
+    - phoneme: /u/ vs /ʊ/
+      orthography: u
+      example: bur (hole) vs bʊr (type of hole)
+      note: ATR pair; /u/ is [+ATR], /ʊ/ is [-ATR]
+    source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 1.8.2: Vowels, pp.
+      18-19'
+    tier: 1
+  tone_system:
+    description: Dholuo is a tone language, but tones are NOT represented in the orthography.
+      Tone distinguishes lexical items (e.g., kich 'orphan' with low tone vs kich
+      'bee' with high tone). Minimal pairs based on tone are few and rarely in the
+      same semantic field, so context usually disambiguates. However, English is a
+      stress-timed language with no lexical tone, so Dholuo learners must acquire
+      English stress patterns without relying on tonal cues. The absence of tone marks
+      in written Dholuo means learners have no visual guide to tonal patterns.
+    features:
+    - feature: Lexical tone
+      description: High vs low tone distinguishes some words
+      example: kich (low) 'orphan' vs kich (high) 'bee'
+      esl_implication: Learners may not mark English stress patterns in writing
+    - feature: No orthographic tone marking
+      description: Tone is never written in standard Dholuo orthography
+      example: All Dholuo texts lack diacritics for tone
+      esl_implication: No transfer of tone-to-spelling awareness; learners must rely
+        on context
+    - feature: Aspectual tone
+      description: Tone also marks some grammatical aspect distinctions
+      example: Certain verb forms distinguished by tone pattern
+      esl_implication: English aspect is marked by auxiliaries (have, be) rather than
+        prosody
+    source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 1.8.3: Tones, pp. 19-20'
+    tier: 1
+  nasal_stop_compounds:
+    description: 'Dholuo has 5 nasal-stop compounds: mb, nd, ng (ŋg), ng'' (ŋ), and
+      ny (ɲ). These are single phonemes, not clusters. They occur word-initially and
+      are written as digraphs. English has no exact equivalents — English ''mb'' in
+      ''lamb'' is word-final and the /b/ is often silent. Dholuo learners may insert
+      epenthetic vowels between nasal and stop in English clusters, or fail to produce
+      the nasal component.'
+    compounds:
+    - digraph: mb
+      ipa: /ᵐb/
+      example: mbaka (conversation)
+      position: word-initial
+    - digraph: nd
+      ipa: /ⁿd/
+      example: ndawa (tobacco)
+      position: word-initial
+    - digraph: ng
+      ipa: /ᵑg/
+      example: ngʼato (person)
+      position: word-initial
+    - digraph: ng'
+      ipa: /ŋ/
+      example: ng'owo (fig tree)
+      position: word-initial or word-final
+    - digraph: ny
+      ipa: /ɲ/
+      example: nyako (girl)
+      position: word-initial
+    source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 1.8.1: Consonants,
+      pp. 17-18; Handbook (1920), The Alphabet, pp. 2-3'
+    tier: 1
+sources:
+- 'Okombo, D. O. (1997). A Functional Grammar of Dholuo. Nilo-Saharan: Linguistic
+  Analyses and Documentation, Vol. 12. Rudiger Koppe Verlag, Cologne. [Tier 1 — Primary
+  descriptive grammar by native-speaker linguist using Functional Grammar framework]'
+- Handbook of the Kavirondo Language (1920). Caxton Printing & Publishing Works, Nairobi.
+  [Tier 1 — Early missionary grammar with detailed morphological paradigms and conjugation
+  tables]
+- 'L1 Interference ESL Teacher Resources — Comparative Analysis of Cross-Linguistic
+  Influence: Best-in-Class Resources and L1 Interference Databases for English Language
+  Educators. (S09) [Tier 4 — General reference survey]'
+citations:
+- claim: Dholuo is a Western Nilotic language with SVO word order, no articles, a
+    tone system, and different tense-aspect marking — significant typological distance
+    from English
+  source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 1.1: General Background,
+    pp. 1-2'
+  tier: 1
+  reliability: B
+  flagged: false
+- claim: Dholuo has 26 consonants including 5 nasal-stop compounds (mb, nd, ng, ng',
+    ny), 9 vowel phonemes in ATR pairs, and a tone system not represented in orthography
+  source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 1.8: Orthographic Conventions,
+    pp. 17-20'
+  tier: 1
+  reliability: B
+  flagged: false
+- claim: Dholuo nouns lack articles and grammatical gender; definiteness marked by
+    demonstratives; plural formation follows 10+ irregular patterns
+  source: 'Handbook of the Kavirondo Language (1920), Chapter I: The Noun, pp. 3-7;
+    Okombo (1997) Ch. 2.2.1, pp. 21-29'
+  tier: 1
+  reliability: B
+  flagged: false
+- claim: 'Dholuo verb tense marked by prefixes: ne- (past), biro+infinitive (immediate
+    future), se-/seko- (present perfect); negation with preverbal ok; passive voice
+    rare'
+  source: 'Handbook of the Kavirondo Language (1920), Chapter IV: The Verb, pp. 38-53'
+  tier: 1
+  reliability: B
+  flagged: false
+- claim: Dholuo relative clauses introduced by ma-; adjectives follow noun; flexible
+    constituent order with topicalization and clefting for focus
+  source: Okombo (1997) A Functional Grammar of Dholuo, Ch. 2.2.1.3 (pp. 26-28), Ch.
+    1.3.7-1.3.8 (pp. 5-6)
+  tier: 1
+  reliability: B
+  flagged: false
+- claim: Singleton (2016) claim about Dholuo as typologically distant from English
+    is retained but downgraded — the specific CLI claims in Singleton were not verified
+    against primary Dholuo sources
+  source: Singleton (2016) Crosslinguistic Influence in Second Language Acquisition.
+    Multilingual Matters.
+  tier: 3
+  reliability: D
+  flagged: true
+- claim: Biber claim about register distribution and L1 typological distance is generic,
+    not Dholuo-specific
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins.
+    Ch. 1.5
+  tier: 3
+  reliability: D
+  flagged: true
+vocabulary_interference:
+  description: 'Dholuo vocabulary interference patterns in English. Sources: Okombo
+    (1997) and Handbook of Kavirondo (1920).'
+  patterns:
+  - category: False cognates / semantic overlap
+    patterns:
+    - dholuo_word: kendo
+      meaning: to marry (verb); marriage (noun)
+      english_false_friend: kind
+      explanation: Dholuo 'kendo' means 'to marry' or 'marriage'. It has no relation
+        to English 'kind'. Learners may confuse these if relying on phonetic similarity.
+      example_wrong: '*She is a kendo person.'
+      example_correct: She is a kind person.
+      frequency: 2
+      persistence: 2
+      tier: 1
+      source: Handbook of the Kavirondo Language (1920), vocabulary sections
+  - category: Lexical gaps
+    patterns:
+    - concept: Countability distinctions
+      explanation: Dholuo nouns do not mark count vs. mass distinctions morphologically.
+        The same noun form is used regardless of countability. English requires different
+        determiners and forms for count (a book, two books) vs. mass (water, information).
+        Learners may produce '*informations', '*furnitures', '*advices'.
+      example_wrong: '*I need some informations.'
+      example_correct: I need some information.
+      frequency: 3
+      persistence: 3
+      tier: 1
+      source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 2.2.1: Nouns and
+        Noun Phrases, pp. 21-22'
+    - concept: Prepositions vs. adpositions
+      explanation: Dholuo uses postpositions and case markers rather than English
+        prepositions. The dative is marked with 'ni' (e.g., 'kelo buk ni japuonj'
+        = 'bring book to teacher'). Learners may omit or misplace English prepositions.
+      example_wrong: '*I gave the book the teacher.'
+      example_correct: I gave the book to the teacher.
+      frequency: 3
+      persistence: 3
+      tier: 1
+      source: 'Handbook of the Kavirondo Language (1920), Chapter I: The Noun, Paragraph
+        12: Cases, p. 7'
+  sources:
+  - 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 2.2.1: Nouns and Noun Phrases'
+  - 'Handbook of the Kavirondo Language (1920), Chapter I: The Noun; Chapter IV: The
+    Verb'
+etiology:
+- claim: Dholuo belongs to the Nilo-Saharan > Eastern Sudanic > Nilotic > Western
+    Nilotic language family.
+  reliability: A
+  source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 1.1: General Background,
+    pp. 1-2; Handbook (1920), Introduction, p. 1'
+  tier: 1
+- claim: 'Related languages: Acholi, Alur, Anuak, Lango, Padhola, Shilluk.'
+  reliability: A
+  source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 1.1: General Background,
+    pp. 1-2; Handbook (1920), Introduction, p. 1'
+  tier: 1
+- claim: 'Speaker population: ~2 million (1979 Kenya census; excludes diaspora).'
+  reliability: C
+  source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 1.1: General Background,
+    pp. 1-2; Handbook (1920), Introduction, p. 1'
+  tier: 1
+- claim: 'Geographic distribution: Nyanza region, Kenya (Lake Victoria basin).'
+  reliability: A
+  source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 1.1: General Background,
+    pp. 1-2; Handbook (1920), Introduction, p. 1'
+  tier: 1
+- claim: 'Typological profile — Word order: SVO (basic), with flexible constituent
+    order for focus/topic'
+  reliability: A
+  source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 1.1: General Background,
+    pp. 1-2; Handbook (1920), Introduction, p. 1'
+  tier: 1
+- claim: 'Typological profile — Morphology: Agglutinative; prefixing and suffixing'
+  reliability: A
+  source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 1.1: General Background,
+    pp. 1-2; Handbook (1920), Introduction, p. 1'
+  tier: 1
+- claim: 'Typological profile — Noun system: No articles, no grammatical gender, complex
+    plural formation'
+  reliability: A
+  source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 1.1: General Background,
+    pp. 1-2; Handbook (1920), Introduction, p. 1'
+  tier: 1
+- claim: 'Typological profile — Verb system: Tense-aspect marked by prefixes (ne-,
+    se-, biro); negation with ok'
+  reliability: A
+  source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 1.1: General Background,
+    pp. 1-2; Handbook (1920), Introduction, p. 1'
+  tier: 1
+- claim: 'Typological profile — Phonology: 26 consonants (5 nasal-stop compounds),
+    9 vowels (ATR pairs), tonal'
+  reliability: A
+  source: 'Okombo (1997) A Functional Grammar of Dholuo, Ch. 1.1: General Background,
+    pp. 1-2; Handbook (1920), Introduction, p. 1'
+  tier: 1

@@ -1,0 +1,261 @@
+citations:
+- claim: English is SVO-dominant; placing an adverb between verb and direct object
+    is generally avoided
+  flagged: false
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press. Ch. 20: Sentence constituents'
+  tier: 3
+- claim: L1 transfer in word order varies significantly across language backgrounds
+    — Swan & Smith document contrastive patterns for speakers of different L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents
+    how transfer effects are non-linear, determined by functional fit between L1 and
+    L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects
+    are non-linear — determined by functional fit between L1 and L2 systems rather
+    than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning.
+    Routledge.
+  tier: 2
+common_errors:
+- correction: He sometimes works on Sundays. / He works on Sundays sometimes.
+  error: '*He works sometimes on Sundays.* (German/Dutch word order)'
+  explanation: 'Dutch and German allow adverbs between subject and verb or between
+    verb and object (German: Er arbeitet manchmal sonntags). English frequency adverbs
+    go before the main verb (or at sentence end).'
+  flagged: false
+  l1_groups:
+  - Dutch
+  - German
+  reliability: B
+  source: 'Swan & Smith (2001), Ch. 9: Dutch speakers (subject and finite verb inseparable:
+    *He works sometimes on Sundays); Ch. 12: German speakers (word order: verb-second,
+    separable prefixes).'
+- correction: Tomorrow I shall see him. (no inversion after time adverbial fronting)
+  error: '*Tomorrow shall I see him.* (Dutch: inversion after any fronting)'
+  explanation: Dutch uses subject-verb inversion after ANY fronted element. English
+    uses inversion only with negative/restrictive fronting (Never have I...), not
+    time adverbials.
+  flagged: false
+  l1_groups:
+  - Dutch
+  reliability: B
+  source: 'Swan & Smith (2001), Ch. 9: Dutch speakers.'
+- correction: I read the book.
+  error: '*I the book read.* (SOV influence)'
+  explanation: SOV languages (Japanese, Korean, Turkish, Hindi, German subordinate
+    clauses) place the verb last. English SVO is the only available order in main
+    clauses.
+  flagged: false
+  l1_groups:
+  - Japanese
+  - Korean
+  - Turkish
+  - Hindi
+  - German
+  reliability: B
+  source: Swan & Smith (2001). Japanese, Korean, Turkish, Hindi (SOV word order transfer).
+    German (verb-final in subordinate clauses).
+- error: '[See SOV Transfer transfer patterns]'
+  explanation: Turkish is SOV agglutinative; transfers to English as word order errors
+    (e.g., "I the book read")
+  l1_groups:
+  - Turkish
+  reliability: C
+  source: 'L1 Interference ESL Teacher Resources — Comparative Analysis of Cross-Linguistic
+    Influence: Best-in-Class Resources and L1 Interference Databases for English Language
+    Educators.'
+  tier: 4
+- correction: I like music very much. / I really like music.
+  error: 'Adverb between verb and object: *I like very much music.'
+  explanation: English generally avoids placing adverbs between the verb and its direct
+    object. Adverbs of degree like very, really, extremely typically go before the
+    intensifier word or at the end of the clause. This is a common error across learners
+    whose L1 allows this order.
+  flagged: false
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  - Dutch
+  - German
+  - Japanese
+  - Korean
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press. Ch. 20: Sentence constituents — basic principles Typical difficulties
+    for learners — Adverbs between verb and object: *I like very much music, *She
+    opened carefully the door.'
+description: English has a relatively strict Subject-Verb-Object (SVO) word order.
+  Many L1s have freer word order, verb-second rules, or SOV order. These differences
+  cause systematic transfer, especially in adverb placement, question formation, and
+  subordinate clauses.
+dialectal_variation:
+- note: 'Biber et al. (2021) GSWE: Word order is stable across English dialects. SVO
+    is fixed in all standard varieties. Minor differences: AmE allows more flexible
+    adverb placement (He definitely is going vs He is definitely going). BrE prefers
+    subject-verb inversion in reported speech (said he vs he said). Inversion after
+    negative adverbials is standard in both varieties.'
+discourse_notes:
+- note: 'English SVO order is relatively fixed compared to many languages. Parrott
+    (2010) notes: "The rules which govern word order in English are complex but fundamental
+    to intelligibility." Emphasis shifts through fronting and cleft structures.'
+- 'GB3 Ch.9: Word order choices in discourse serve information packaging — fronting
+  for emphasis, end-focus for new information, inversion for dramatic effect. English
+  SVO is relatively fixed compared to many L1s. Source: Celce-Murcia & Larsen-Freeman
+  (1999) GB3 Ch.9.'
+- 'GB3 Ch.15: Article usage with word order — word order + article choice together
+  signal given/new information (The book, I read / I read a book). Source: Celce-Murcia
+  & Larsen-Freeman (1999) GB3 Ch.15.'
+grammar_point: word_order
+key_principles: []
+level: B1
+meaning:
+  ccqs:
+  - answer: 'No. Standard English: I went to school yesterday. Time adverbs typically
+      go at the end.'
+    purpose: Tests understanding of English adverb position
+    question: I yesterday went to school. Is this correct English?
+  - answer: 'No. Adverbs of frequency go BEFORE the main verb: She is always late.'
+    purpose: Tests frequency adverb placement
+    question: Always she is late. Is this correct?
+  contrast: 'SVO (default): She reads books regularly | Adverb fronting (with inversion):
+    Never have I seen such a thing | SOV (German subordinate clauses): ..., weil er
+    das Buch liest (because he the book reads)'
+  core_meaning: 'English word order is generally fixed: Subject + Verb + Object +
+    Adverbials. Changing the order changes meaning or creates ungrammaticality (unlike
+    languages where case endings mark grammatical roles).'
+  timeline: N/A (word order is syntactic, not tense-based).
+sub_rules:
+- examples:
+  - The dog bit the man. vs The man bit the dog.
+  - She called him. vs He called her.
+  rule: English word order is fixed SVO. Changing word order changes meaning because
+    English lacks case markings on nouns. This is different from languages with case
+    systems (Latin, German, Russian, Arabic) where word order is freer.
+  type: grammatical
+- examples:
+  - Never have I seen such beauty. (inversion)
+  - Only then did she understand. (inversion)
+  - Not until later did he call. (inversion)
+  rule: Negative adverbials at the start of a sentence trigger subject-auxiliary inversion
+    (Never have I, Not only did she, Rarely do we).
+  type: grammatical
+- examples:
+  - Slowly, he opened the door. (adverb fronted)
+  - In the garden, there was a fountain. (place fronted)
+  - The book, I already read it. (object fronting, informal)
+  rule: 'Fronting for emphasis: adverbs of time/place can be fronted. Object fronting
+    is rare and informal. English does not allow free word order reordering for discourse
+    purposes like many other languages.'
+  type: discourse
+use:
+- context: Declarative statements
+  examples:
+  - The children are playing in the garden.
+  - She wrote a long letter to her mother.
+- context: Questions
+  examples:
+  - Are you coming to the party?
+  - What time does the train leave?
+- context: Commands and requests
+  examples:
+  - Sit down.
+  - Please close the door.
+- context: Emphasis through fronting
+  examples:
+  - Never have I been so surprised.
+  - Only after the war did they return home.
+phonetics:
+- example_generator:
+  - Do you like coffee? -> /dʒə laɪk kɒfi/ (auxiliary reduction)
+  - Where does she go -> /weə dəz ʃi gəʊ/ (weak forms)
+  l1_issue: Learners whose L1 has flexible word order may not realize English relies
+    on fixed SVO for meaning. Japanese and Korean SOV speakers may place verbs at
+    the end of English sentences.
+  note: Word order carries meaning in English. Position determines grammatical function,
+    unlike case-marking languages where inflection shows the role regardless of position.
+- example_generator:
+  - Never have I seen -> /nevə həv aɪ siːn/ (inversion stress pattern)
+  l1_issue: Learners may not invert subject and auxiliary after negative fronting
+    (Never I have seen).
+  note: Inversion after negative adverbials requires subject-auxiliary inversion,
+    which may not exist in the learners L1.
+recommended_activities:
+- adaptation_notes: 'Give learners mixed-up sentences to reorder: "read / she / books
+    / regularly" → "She reads books regularly."'
+  duration: 10
+  name: SVO Detective
+- adaptation_notes: 'Contrast: "Never I have seen..." → "Never have I seen..." Practice
+    with negative adverbs at front: rarely, seldom, hardly.'
+  duration: 15
+  name: Fronting and Inversion
+form:
+  affirmative:
+    structure: 'Standard SVO: Subject + Verb + Object (The cat chased the mouse).
+      Subject + Verb + Indirect Object + Direct Object (She gave him a book). Subject
+      + Verb + Object + Object Complement (They elected her president). Subject +
+      Verb + Adverbial (He lives in London).'
+  negative:
+    structure: 'Subject + auxiliary + not + verb + object: She does not like coffee.
+      He has not finished the report. Subject + be + not: They are not ready.'
+  questions:
+    structure: 'Yes/No: Auxiliary + Subject + Verb? (Do you like coffee?). WH-: WH-word
+      + Auxiliary + Subject + Verb? (Where does she live?). Subject questions: Who
+      + Verb? (Who called?). Tag: Statement + auxiliary + subject? (You are coming,
+      arent you?)'
+register_notes:
+- note: 'Biber et al. (2021) — Word order variation: conversation uses more fronting,
+    dislocation, and postposing than academic prose. Academic prose favors canonical
+    SVO order with complex NPs. Ch. 11.1-11.5'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 11.1-11.5
+sources:
+- 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University
+  Press. Ch. 20-21: Sentence constituents — basic principles and major variants-21.5'
+- 'L1 Interference ESL Teacher Resources — Comparative Analysis of Cross-Linguistic
+  Influence: Best-in-Class Resources and L1 Interference Databases for English Language
+  Educators. Transfer Matrix: SOV Transfer'
+teaching:
+  methodology: PPP (Present-Practice-Produce)
+  recommended_activities:
+  - adaptation_notes: Students arrange scrambled words into correct English SVO order.
+      Include adverb placement challenges.
+    duration: 10
+    name: Word Order Scramble
+  - adaptation_notes: Show pictures and have students describe who did what to whom,
+      emphasizing SVO.
+    duration: 10
+    name: Subject-Verb-Object Cards
+  - adaptation_notes: Students rewrite sentences with fronted adverbs (Never, Only
+      then, Not until) using correct inversion.
+    duration: 15
+    name: Inversion Practice
+  tips:
+  - 'Parrott (2000) Ch. 20: Sentence constituents — noun phrases, verb phrases, preposition
+    phrases. Terms vary across grammars. Teachers may avoid overly technical explanations.
+    Basic English word order is SVO. Constituents have both form (what they consist
+    of) and function (subject, object, complement, adverbial).'
+  - 'Swan (2016) PEU 4th ed. Swan (2016) PEU 4th ed. Entries 590-600: English word
+    order is relatively fixed: Subject-Verb-Object. Adverbs of frequency go before
+    the main verb but after be. Place expressions usually come before time expressions.
+    Indirect objects normally come before direct objects unless the direct object
+    is short.'
+  - 'Parrott (2000) Ch. 20: Teach English as SVO-dominant. The "Subject and finite
+    verb are inseparable" rule from Dutch/German is useful to teach explicitly — you
+    cannot put time adverbs between subject and verb.'
+  - Use translation exercises where learners see SOV vs SVO differences directly.
+    Contrast English with L1 word order for impact.
+  - 'Practice inversion patterns: negative/restrictive fronting (Never have I...,
+    Not once did she...). These are formal/written patterns — teach as fixed expressions
+    first.'
+  - 'Parrott (2000): Existential ''there'' (There is a problem) is a major teaching
+    point — it violates SVO order and needs explicit instruction.'
+title: Word Order (SVO, Adverb Position, Inversion)

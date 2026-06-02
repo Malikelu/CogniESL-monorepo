@@ -1,0 +1,254 @@
+citations:
+- claim: L1 transfer in conditionals varies significantly across language backgrounds
+    — Swan & Smith document contrastive patterns for speakers of different L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents
+    how transfer effects are non-linear, determined by functional fit between L1 and
+    L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects
+    are non-linear — determined by functional fit between L1 and L2 systems rather
+    than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning.
+    Routledge.
+  tier: 2
+common_errors:
+- correction: If I see him, I will tell him.
+  error: '*If I will see him, I will tell him.* (future in if-clause)'
+  explanation: First conditional uses present tense in the if-clause, not will. The
+    will goes in the main clause only.
+  flagged: false
+  l1_groups:
+  - Spanish
+  - Dutch
+  - French
+  - Italian
+  - Russian
+  - Polish
+  - Arabic
+  - Turkish
+  - Japanese
+  - Chinese
+  - Korean
+  - Thai
+  reliability: B
+  source: 'Swan & Smith (2001) Learner English. Spanish (future in time subclauses:
+    *when Mary will get here), Dutch (no sharp conditional/subclause distinction:
+    *If I shall see him), French (conditional system differs), Italian (conditional
+    differs), Polish (conditional system differs), Russian (conditional system differs),
+    Arabic (conditional differs), Turkish (conditional differs), Japanese (conditional
+    differs), Chinese (conditional differs), Korean (conditional differs), Thai (conditional
+    differs).'
+- correction: If I had money, I would buy it. (second conditional) / If I had had
+    money, I would have bought it. (third conditional)
+  error: '*If I would have money, I will buy it.* (mixed conditional - Dutch influence)'
+  explanation: Dutch allows *If I shall/would in conditionals. English requires past
+    simple in if-clause for second conditional, past perfect for third.
+  flagged: false
+  l1_groups:
+  - Dutch
+  reliability: B
+  source: 'Swan & Smith (2001), Ch. 9: Dutch speakers.'
+- correction: If I studied harder, I would pass the exam. (second conditional)
+  error: '*If I studied harder, I will pass the exam.*'
+  explanation: 'Parrott (2000) Ch. 19: The past tense in second/third conditionals
+    signals unreality — it is NOT past time. Teach it as "unreal past" not "past time"
+    to avoid confusion with past tenses. Learners who process the if-clause past tense
+    as real past time mismatch it with "will" in the main clause, collapsing hypothetical
+    meaning into real/possible meaning.
+
+    '
+  flagged: false
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Arabic
+  - Japanese
+  - Chinese
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press. Ch. 19.
+- correction: If I could speak English better, I would get a good job now. / If I
+    had been able to speak English better, I would have gotten a good job last year.
+  error: '*If I could speak English better, I would get a good job last year.*'
+  explanation: 'Parrott (2000) Ch. 19: "Could" overlaps with past ability and hypothetical
+    meaning. Parrott recommends teaching Type 2 as default for "mildly hypothetical"
+    and Type 3 for "counterflear past." Mixing time frames requires mixed conditionals,
+    not just swapping tenses independently.
+
+    '
+  flagged: false
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Dutch
+  - Italian
+  - Russian
+  - Polish
+  - Arabic
+  - Japanese
+  - Chinese
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press. Ch. 19: Modal remoteness.'
+description: Structures used to express hypothetical situations and their consequences.
+  English has several conditional patterns (zero, first, second, third, mixed) which
+  pose difficulty for many L1 groups due to different L1 conditional systems.
+grammar_point: conditionals
+level: B1
+meaning:
+  ccqs:
+  - answer: General habit (zero conditional - always true).
+    purpose: Tests understanding of zero vs first conditional
+    question: If it rains, I take an umbrella. Is this a general habit or a specific
+      future prediction?
+  - answer: Unreal present - I don't have a million dollars (second conditional).
+    purpose: Tests understanding of second conditional as unreal/hypothetical
+    question: If I had a million dollars, I would buy a house. Is this about the past,
+      present, or future?
+  contrast: 'Zero: If + present, present (general truth) | First: If + present, will
+    + base (real future) | Second: If + past, would + base (unreal present) | Third:
+    If + past perfect, would have + past participle (unreal past)'
+  core_meaning: Conditional sentences describe what will, might, or would happen IF
+    a certain condition is met.
+  timeline: Conditional structures range from general truths (zero) to impossible
+    past situations (third conditional).
+form:
+  affirmative:
+    structure: 'Zero: If/When + present simple, present simple | First: If + present
+      simple, will + base verb | Second: If + past simple, would + base verb | Third:
+      If + past perfect, would have + past participle | Mixed: If + past perfect,
+      would + base verb or If + past simple, would have + past participle'
+  negative:
+    structure: 'Zero: If + present simple, do/does not + base | First: If + present
+      simple, will not + base | Second: If + past simple, would not + base | Third:
+      If + past perfect, would not have + past participle'
+  questions:
+    structure: Will/Would + subject + base verb + if...? | What will/would + subject
+      + base verb + if...?
+dialectal_variation:
+- note: 'Biber et al. (2021) GSWE Ch. 10.2.8.12: Conditional structures show significant
+    register variation. If-conditionals are most common in conversation, less frequent
+    in academic prose. Formal inversion conditionals (Had I known) are rare and restricted
+    to formal writing. BrE and AmE show similar conditional patterns but differ in
+    frequency of specific types.'
+  reliability: B
+  source: Biber, D., Johansson, S., Leech, G., Conrad, S., & Finegan, E. (2021). Grammar
+    of Spoken and Written English. John Benjamins. Ch. 10.2.8.12
+discourse_notes:
+- note: 'Conditionals function as politeness strategies: Second conditional (If I
+    could just interrupt) softens requests. First conditional (If you wait here) expresses
+    polite instruction. CGEL Ch. 10 analyzes conditionals as open interrogatives (if)
+    or closed interrogatives (inverted).'
+register_notes:
+- note: Biber et al. (2021) — Conditional structures have register distribution patterns.
+    If-conditionals vary in frequency across conversation, academic prose, news, and
+    fiction. Formal conditionals (inversion without 'if') are rare and mostly in literary/formal
+    writing. Ch. 10.2.8.12
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 10.2.8.12
+sources:
+- Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+- 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University
+  Press. Ch. 19: Unreal past in conditionals.'
+sub_rules:
+- examples:
+  - If it rains, the ground gets wet. (zero)
+  - If I see her, I will invite her. (first)
+  - If I had money, I would travel. (second)
+  - If I had studied, I would have passed. (third)
+  rule: 'Five types: zero (general truth), first (real future), second (unreal present),
+    third (unreal past), mixed (past condition + present result)'
+  type: grammatical
+- examples:
+  - Had I known, I would have come (formal inversion)
+  - Were she here, she would help.
+  rule: Formal English allows inversion without if (Had I known, Were she here, Should
+    you need)
+  type: register
+phonetics:
+- example_generator:
+  - If I had studied -> /ɪf aɪ həd stʌdɪd/ (linking, weak forms)
+  - Would have -> /wʊdəv/ in connected speech
+  l1_issue: Spanish speakers may stress if-clause equally, while English reduces it.
+  note: In natural speech, if is reduced to a weak form and have in would have reduces
+    to /əv/.
+use:
+- context: General truths (zero conditional)
+  examples:
+  - If you heat ice, it melts.
+  - Water boils if you heat it to 100 degrees.
+- context: Real future possibilities (first conditional)
+  examples:
+  - If it rains tomorrow, I will stay home.
+  - She will pass if she studies hard.
+- context: Hypothetical present (second conditional)
+  examples:
+  - If I had a million dollars, I would travel the world.
+  - If she knew the answer, she would tell us.
+- context: Impossible past (third conditional)
+  examples:
+  - If I had studied, I would have passed.
+  - They would have won if they had practiced more.
+teaching:
+  recommended_activities:
+  - adaptation_notes: Students complete if-clauses or result clauses of mixed conditional
+      types.
+    duration: 15
+    name: Conditional Chain
+  - adaptation_notes: Give students scenarios (finding money, winning lottery, time
+      travel). They write sentences for each type.
+    duration: 20
+    name: What Would You Do If
+  - adaptation_notes: Students correct and classify conditionals errors from real
+      writing.
+    duration: 15
+    name: Error Correction
+  tips:
+  - 'Parrott (2000) Ch. 19: Four basic types of conditional sentences, each with a
+    range of possible forms beyond the basic pattern. Teaching advice: practise one
+    clause at a time, give learners opportunities to get their tongues round complete
+    sentences. In casual conversation, if is often barely pronounced (/faiwaju:/ for
+    If I were you). Type 1 expresses persuasion, warnings, and threats. Source: Parrott
+    (2000) Grammar for English Language Teachers, 2nd ed. Ch. 19: Conditional sentences,
+    19.1-19.7.'
+  - 'Swan PEU: Teach conditionals not as ''4 types'' but as a choice between open
+    (real) and remote (unreal) meanings. ''If I have time'' is open — it may happen.
+    ''If I had time'' is remote — it is unlikely or impossible. The remote past (If
+    I had known) refers to impossible past situations.'
+  - 'Use the timeline method: present the four main conditional types as a continuum
+    from real to unreal.'
+  - 'Teach the form-meaning pairing explicitly: past tense in if-clause = unreality,
+    not past time.'
+  - 'Contrastive analysis helps: show learners how their L1 expresses conditionals
+    vs. English.'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 10: CGEL (Ch.10)
+    analyzes conditional clauses as open interrogatives (conditionals with ''if'')
+    or closed interrogatives (inverted conditionals: ''Had I known...''). CGEL notes
+    that the traditional ''zero/first/second/third'' conditional taxonomy is a pedagogical
+    simplification — the real system allows many more combinations. Mixed conditionals
+    (past condition + present result) are grammatically standard.'
+  - 'Celce-Murcia & Larsen-Freeman (1999) The Grammar Book, 2nd ed. National Geographic Learning.
+    Ch. 27: GB 3rd ed. (Ch.27) analyzes conditionals as discourse strategies, not
+    just tense patterns. The traditional zero/first/second/third classification is
+    a pedagogical simplification — mixed conditionals (past condition + present result)
+    are grammatically standard. Conditionals also function for POLITENESS: ''If I
+    could just interrupt...'' (2nd conditional for tentativeness), ''If you would
+    wait here...'' (politeness). ''Unless'' = ''if not'' but with a negative presupposition:
+    ''Unless you study, you''ll fail'' (= if you don''t study...).'
+teaching_tips:
+- source: 'Celce-Murcia & Larsen-Freeman (1999) The Grammar Book: An ESL/EFL Teacher''s
+    Course, 2nd ed. National Geographic Learning.'
+  tip: 'EXTENDED CONDITIONAL TAXONOMY (GB3 Ch.27): Beyond the standard zero/first/second/third
+    system, GB3 identifies: (1) Factual — generic truths and implicit inferences (''If
+    water freezes, it expands''). The implicit inference type should have parallel
+    tense-aspect in both clauses (''If she was there, she did the work''). (2) Weakened
+    forms with ''should''/''happen to''. (3) Sarcastic conditionals — antecedent MUST
+    precede consequent. (4) Contrastive conditionals with ''but''. Source: Ch.27 p.420-426.'
+title: Conditional Sentences (If-clauses)
