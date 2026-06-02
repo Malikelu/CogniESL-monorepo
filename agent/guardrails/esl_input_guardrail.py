@@ -26,6 +26,13 @@ async def require_esl_topic(
         "handout", "printable", "pdf", "exercise sheet",
         "curriculum", "syllabus", "lesson plan", "unit plan",
         "warm-up", "icebreaker", "drill", "game",
+        # Common ESL question patterns
+        "correct", "incorrect", "right or wrong",
+        "difference between", "how do i", "when do i",
+        "can i say", "what does", "which one",
+        "much", "many", "say in english", "how to say",
+        "mean?", "synonym", "antonym", "spell",
+        "pronounce", "pronunciation of",
     ]
 
     is_esl = any(indicator in text_lower for indicator in esl_indicators)

@@ -46,9 +46,10 @@ async def validate_citations(
         idx = text_lower.find(indicator)
         if idx == -1:
             continue
-        # Look ahead for a citation pattern (year in parens, author name, etc.)
-        after = text_lower[idx + len(indicator):idx + len(indicator) + 80]
-        if _re.search(r'\bby\s+[A-Z][a-z]+|\(\d{4}\)', after):
+        # Look ahead for a citation pattern (year in parens, "by Author", etc.)
+        # Use original case so [A-Z] patterns work
+        after_original = response_text[idx + len(indicator):idx + len(indicator) + 80]
+        if _re.search(r'(?i)\bby\s+[A-Za-z]+|\(\d{4}\)', after_original):
             continue  # Has a legitimate citation following the phrase
         has_vague = True
         break
