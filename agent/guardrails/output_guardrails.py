@@ -38,7 +38,20 @@ async def validate_citations(
         "it is widely believed", "commonly thought", "some linguists argue",
         "research indicates", "studies suggest",
     ]
-    has_vague = any(indicator in text_lower for indicator in fabrication_indicators)
+    # Only flag vague attribution if it is NOT followed by a specific citation
+    # e.g., "According to research by Swan (2016)" has a citation and is OK
+    import re as _re
+    has_vague = False
+    for indicator in fabrication_indicators:
+        idx = text_lower.find(indicator)
+        if idx == -1:
+            continue
+        # Look ahead for a citation pattern (year in parens, author name, etc.)
+        after = text_lower[idx + len(indicator):idx + len(indicator) + 80]
+        if _re.search(r'\bby\s+[A-Z][a-z]+|\(\d{4}\)', after):
+            continue  # Has a legitimate citation following the phrase
+        has_vague = True
+        break
 
     return GuardrailFunctionOutput(
         output_info=(
@@ -57,10 +70,7 @@ async def validate_slide_count(
     response_text: str,
 ) -> GuardrailFunctionOutput:
     """Validate standard grammar decks have at least 16 slides."""
-    slide_count_match = re.search(r'Slide Plan[—–-]+\s*(\d+)', response_text)
-
-    if not slide_count_match:
-        slide_count_match = re.search(r'(\d+)\s*slides?\b', response_text, re.IGNORECASE)
+    slide_count_match = re.search(r'Slide Plan\s*[—–-]+\s*(\d+)', response_text)
 
     if slide_count_match:
         count = int(slide_count_match.group(1))

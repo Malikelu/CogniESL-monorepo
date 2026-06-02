@@ -1,5 +1,4 @@
 """Input guardrail: Keeps the agent focused on ESL topics."""
-import re
 from agency_swarm import Agent, GuardrailFunctionOutput, RunContextWrapper, input_guardrail
 
 
