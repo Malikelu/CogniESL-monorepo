@@ -507,6 +507,11 @@ Design freely — three columns, stacked summary cards, a visual timeline of the
 - **Typography contrast**: 56-64px headings + 24-28px body text + 18px labels
 - **CSS shapes**: Circles, rounded rectangles, diagonal cuts for visual interest
 - **Inline SVG**: Simple geometric shapes, arrows, dividers
+- **Glowing orbs**: colored `<div>` elements with `filter: blur(60px–120px)` and `opacity: 0.10–0.20` positioned behind content — creates ambient depth without gradients. Use on A1 Hook for immersive backgrounds.
+- **Kicker labels**: small all-caps label above a heading — `letter-spacing: 2px; text-transform: uppercase; font-size: 14px` — signals section identity (e.g., `01 // HOOK`, `THE CHALLENGE`). Use on all section-start slides.
+- **Per-item color coding**: each card in a group gets its own distinct accent color (icon background, top bar, or border). Avoids monotony. Use on A7 Practice — each exercise type gets a different accent.
+- **Corner brackets**: L-shaped border fragments at card corners using absolute-positioned elements — creates technical editorial framing. Use on A2 Meaning to frame the core statement.
+- **Grid-div backgrounds**: 1px `<div>` elements placed absolutely to form a grid pattern — renders perfectly in PPTX unlike CSS background-image grid tricks. Use on A5 Formula as subtle background behind formula pills.
 
 ---
 
@@ -550,6 +555,10 @@ Every slide must feel FULL:
 10. **Layout best practices**: Avoid deeply nested flex inside flex for content areas when simple pixel widths work just as well. `position: absolute` is fine for decorative layers but avoid it for content teachers and students must read — use flow layout for text content.
 11. **Blanks for fill-in-the-blank exercises**: ALWAYS use `<span style="color:#fbbf24; font-weight:bold; font-size:26px; letter-spacing:2px;">__________</span>`. Never use empty spans with CSS borders — they fuse adjacent words visually.
 12. **CogniESL watermark — MANDATORY on every content slide**: Every slide (except the closing brand slide) MUST include the CogniESL symbol SVG in the bottom-right corner. See the "Mandatory Watermark" section below for the exact element. The `.slide` div must have `position: relative` or `position: absolute` for the watermark to sit correctly inside it.
+13. **PPTX badge/pill placement** — For slides that will export to PPTX, badges or pills with background colors MUST be on their own line or inside their own container. NEVER inline in a sentence. PPTX treats inline background-color spans as standalone shapes that split sentences.
+14. **PPTX gap sizes** — Use minimum 8px gap between pill/badge groups (`gap: 8px` on flex container). PPTX renders exact box coordinates, so smaller gaps look cramped.
+15. **PPTX animations** — CSS animations do NOT export to PPTX. The PPTX uses only the final state of each animation. For slides with required animations (A1, A6, A8), ensure the final state is complete and readable without animation.
+16. **PPTX font embedding** — Only these Google Fonts embed in PPTX: Roboto, Open Sans, Lato, Montserrat, Poppins, Raleway, Inter, Work Sans, Urbanist, Space Grotesk, Lora, Merriweather, Playfair Display, Libre Baskerville, Roboto Mono, Inconsolata, IBM Plex Mono, Oswald, Roboto Condensed. Nunito and other fonts NOT on this list fall back to a system font.
 
 ---
 
