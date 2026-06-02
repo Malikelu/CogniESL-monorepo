@@ -1,0 +1,140 @@
+"""Generate a print-and-cut flashcard PDF from grammar and L1 data."""
+
+import json
+import hashlib
+import random
+from pathlib import Path
+
+from agency_swarm.tools import BaseTool
+from pydantic import Field
+
+from .CreateDocument import CreateDocument
+from .ConvertDocument import ConvertDocument
+
+
+class GenerateFlashcardPdf(BaseTool):
+    """Generate a print-and-cut flashcard PDF combining grammar common_errors and L1 interference patterns."""
+
+    project_name: str = Field(
+        ..., description="Project folder name"
+    )
+    grammar_point: str = Field(
+        ..., description="Grammar point name"
+    )
+    common_errors_json: str = Field(
+        ..., description="JSON string of common_errors array from grammar YAML"
+    )
+    l1_language: str = Field(
+        default="",
+        description="L1 language name or empty string if no L1 data",
+    )
+    l1_patterns_json: str = Field(
+        default="[]",
+        description="JSON string of interference_patterns array from L1 YAML",
+    )
+
+    def run(self) -> str:
+        common_errors = json.loads(self.common_errors_json) if self.common_errors_json else []
+        l1_patterns = json.loads(self.l1_patterns_json) if self.l1_patterns_json else []
+
+        cards = []
+
+        for err in common_errors[:8]:
+            wrong = err.get("error", err.get("wrong", ""))
+            correct = err.get("correction", err.get("correct", ""))
+            explanation = err.get("explanation", err.get("why", ""))
+            if wrong and correct:
+                front = wrong.replace("*", "").strip()
+                back = correct.strip()
+                if explanation:
+                    back += " - " + explanation
+                cards.append((front, back))
+
+        for pat in l1_patterns[:6]:
+            examples = pat.get("examples", [])
+            why = pat.get("why_it_happens", "")
+            for ex in examples[:2]:
+                w = ex.get("wrong", "").replace("*", "").strip()
+                c = ex.get("correct", "").strip()
+                if w and c:
+                    back_text = c
+                    if why:
+                        back_text += " - " + why[:80]
+                    cards.append((w, back_text))
+
+        if len(cards) > 15:
+            seed = hashlib.md5(self.grammar_point.encode()).hexdigest()
+            rng = random.Random(seed)
+            rng.shuffle(cards)
+            cards = cards[:15]
+
+        if not cards:
+            return "Error: No card pairs could be generated from the provided data"
+
+        title = self.grammar_point + " Flashcards"
+        if self.l1_language:
+            title += " - " + self.l1_language
+
+        fronts_html = ""
+        backs_html = ""
+        for i, (front, back) in enumerate(cards):
+            fronts_html += (
+                '<div class="card">'
+                '<div class="card-num">' + str(i + 1) + '</div>'
+                '<div class="card-front">' + front + '</div>'
+                '</div>'
+            )
+            backs_html += (
+                '<div class="card back-card">'
+                '<div class="card-num">' + str(i + 1) + '</div>'
+                '<div class="card-back">' + back + '</div>'
+                '</div>'
+            )
+
+        html = (
+            '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>' + title + '</title>'
+            '<style>'
+            '@page { size: A4; margin: 12pt; }'
+            'body { font-family: Inter, Arial, sans-serif; margin: 0; padding: 12pt; }'
+            '.page-title { text-align: center; font-size: 14pt; font-weight: 700; color: #0b7272; margin-bottom: 12pt; }'
+            '.page-label { text-align: center; font-size: 10pt; color: #6b7280; margin-bottom: 8pt; font-style: italic; }'
+            '.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8pt; }'
+            '.card { position: relative; border: 1px solid #d1d5db; border-radius: 6pt; padding: 12pt 8pt; min-height: 90pt; display: flex; flex-direction: column; align-items: center; justify-content: center; page-break-inside: avoid; }'
+            '.back-card { background: #f8fafc; }'
+            '.card-num { position: absolute; top: 3pt; right: 5pt; font-size: 8pt; color: #9ca3af; }'
+            '.card-front { font-size: 13pt; font-weight: 600; color: #1f2937; text-align: center; }'
+            '.card-back { font-size: 12pt; font-weight: 500; color: #0b7272; text-align: center; }'
+            '</style></head><body>'
+            '<div class="page-title">' + title + '</div>'
+            '<div class="page-label">Front - Look at the prompt. Try to say the correct answer.</div>'
+            '<div class="grid">' + fronts_html + '</div>'
+            '<div style="page-break-before: always;"></div>'
+            '<div class="page-title">' + title + '</div>'
+            '<div class="page-label">Back - Check your answers.</div>'
+            '<div class="grid">' + backs_html + '</div>'
+            '</body></html>'
+        )
+
+        doc_name = (
+            self.grammar_point.lower().replace(" ", "_")
+            + "-"
+            + (self.l1_language.lower() if self.l1_language else "general")
+            + "-flashcards"
+        )
+
+        doc_result = CreateDocument(
+            project_name=self.project_name,
+            document_name=doc_name,
+            content={"type": "html", "value": html},
+        ).run()
+
+        if doc_result.startswith("Error"):
+            return doc_result
+
+        pdf_result = ConvertDocument(
+            project_name=self.project_name,
+            document_name=doc_name,
+            target_format="pdf",
+        ).run()
+
+        return pdf_result

@@ -41,6 +41,8 @@ from docs_tools.ConvertDocument import ConvertDocument
 from docs_tools.ModifyDocument import ModifyDocument
 from docs_tools.ViewDocument import ViewDocument
 from docs_tools.ListDocuments import ListDocuments
+from docs_tools.GenerateFlashcardPdf import GenerateFlashcardPdf
+from docs_tools.GenerateProgressTrackerPdf import GenerateProgressTrackerPdf
 
 
 def _build_instructions() -> str:
@@ -111,6 +113,8 @@ def _select_tools(format_request: str = "") -> list:
         ModifyDocument,
         ViewDocument,
         ListDocuments,
+        GenerateFlashcardPdf,
+        GenerateProgressTrackerPdf,
     ]
 
     if not fmt or fmt == "all":

@@ -72,6 +72,8 @@ Does this look right? You can ask me to:
 - **Add or remove a slide**
 - **Adjust the worksheet** — more/fewer exercises, different exercise types
 - **Change the L1** — I'll swap the error examples immediately
+- **Change the flashcards** — add/remove cards, change examples
+- **Ask for a different format** — add homework, quiz, or progress tracker
 
 Changes here are **instant and free** — no generation happens until you say 'looks good'. Reply **'looks good'** when ready and I'll start — your files will arrive at [teacher_email] when done.
 ```
