@@ -53,10 +53,12 @@ def _build_instructions() -> str:
     body = instructions_path.read_text(encoding="utf-8")
     
     # List existing project folders so the agent can avoid name collisions
-    mnt_dir = Path("/mnt")
-    projects = []
-    if mnt_dir.exists():
+    try:
+        from agent.slides_tools.slide_file_utils import get_mnt_dir
+        mnt_dir = get_mnt_dir()
         projects = sorted(d.name for d in mnt_dir.iterdir() if d.is_dir())
+    except (ImportError, FileNotFoundError):
+        projects = []
     projects_block = "\n".join(f"  - {p}" for p in projects[:20]) if projects else "  (none)"
     
     return (
