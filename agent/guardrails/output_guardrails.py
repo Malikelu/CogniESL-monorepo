@@ -75,15 +75,16 @@ async def validate_slide_count(
 
     if slide_count_match:
         count = int(slide_count_match.group(1))
-        if count < 16:
+        if count < 14:
             return GuardrailFunctionOutput(
                 output_info=(
                     f"Your Slide Plan has {count} slides but standard grammar topics "
-                    f"need minimum 16 (1 lesson plan cover + 1 hook + 1 meaning + "
-                    f"2-3 CCQs + 1 affirmative + 1 negative + 1 question + "
-                    f"1-2 sub-rules + 3 practice + 1-2 L1 Oracle + 1 wrap-up + "
-                    f"1 closing brand). You're missing at least {16 - count} slides. "
-                    f"Add the missing sections."
+                    f"need minimum 16. Vocabulary or usage topics need minimum 14. "
+                    f"You are missing at least {16 - count} slides. "
+                    f"Add the missing sections: 1 cover + 1 hook + 1 meaning + "
+                    f"2-3 CCQs + Affirmative + Negative + Question formulas + "
+                    f"1-2 sub-rules + Pronunciation (if data exists) + "
+                    f"3 practice + 1-2 L1 Oracle + 1 wrap-up + 1 closing brand."
                 ),
                 tripwire_triggered=True,
             )

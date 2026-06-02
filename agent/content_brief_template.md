@@ -58,7 +58,12 @@ Section D — Activity: Adapted classroom version of [activity name from YAML]
 Section E — Free production: "[paste the use context from YAML — the real-world setting students write about]"
 *Answer Key included on a separate page with L1 explanations ("Why [L1] speakers make this mistake: [why_it_happens]")*
 
-📦 **Delivering:** [exact list of formats — e.g., slides + worksheet + activity guide]
+🃏 **Flashcard Preview** *(include ONLY if flashcards were requested — omit entirely otherwise)*
+[N] cards covering [key terms/structures from the lesson]
+Front: [example] | Back: [answer]
+Format: Printable PDF — fronts page 1, backs page 2. Cut and fold.
+
+📦 **Delivering:** [exact list of formats — e.g., slides + worksheet + activity guide + flashcards]
 
 ---
 Does this look right? You can ask me to:
