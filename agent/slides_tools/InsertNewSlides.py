@@ -28,7 +28,11 @@ from .slide_file_utils import (
     list_slide_files,
 )
 from .slide_html_utils import ensure_full_html
-from .template_registry import load_template_index
+from .template_registry import (
+    is_valid_template_key,
+    known_template_keys,
+    load_template_index,
+)
 
 
 # Sub-agent model: read from env so it can be changed without touching code.
@@ -55,6 +59,11 @@ class _PlanSlide(BaseModel):
 
 class _PlanResponse(BaseModel):
     slides: list[_PlanSlide]
+
+
+# Public aliases — exported so other tools can consume structured plans
+PlanSlide = _PlanSlide
+PlanResponse = _PlanResponse
 
 
 def _get_caller_openai_client(tool) -> "AsyncOpenAI | None":
@@ -453,6 +462,15 @@ class InsertNewSlides(BaseTool):
         except (json.JSONDecodeError, ValidationError) as exc:
             return f"❌ Outline generation failed: planner returned invalid JSON ({exc})."
 
+        # Validate template keys — warn on non-standard keys without blocking
+        template_warnings: list[str] = []
+        for ps in plan_obj.slides:
+            if ps.template_key and not is_valid_template_key(ps.template_key):
+                template_warnings.append(
+                    f"  - Page {ps.page}: template_key '{ps.template_key}' is not a standard key"
+                )
+        self._parsed_plan = plan_obj  # expose for other tools
+
         # Write blank slide placeholders (no content generation here)
         created: list[str] = []
         outline = _normalize_outline(plan_obj, n, insert_position, existing_templates)
@@ -474,8 +492,12 @@ class InsertNewSlides(BaseTool):
             f"- Insert positions: Before page {insert_position} (inserted at positions: {insert_position} to {insert_position + n - 1})",
             f"- Total slides in presentation: {total_after_insert} slides",
             "",
-            "**Slide Outline:**",
         ]
+        if template_warnings:
+            lines.append("**Template Key Warnings:**")
+            lines.extend(template_warnings)
+            lines.append("")
+        lines.append("**Slide Outline:**")
         for row in outline:
             page = row["page"]
             lines.append(f"**Page {page}:**")

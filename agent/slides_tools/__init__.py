@@ -1,5 +1,18 @@
 """Tools for the slides_agent."""
 
+# Template registry (Phase 4a)
+from .template_registry import (
+    is_valid_template_key,
+    known_template_keys,
+    load_template_index,
+    register_template,
+    save_template_index,
+    template_path,
+)
+
+# Structured slide plan models (Phase 4a)
+from .InsertNewSlides import PlanResponse, PlanSlide
+
 # Slide creation and management: InsertNewSlides then ModifySlide
 from .InsertNewSlides import InsertNewSlides
 from .ModifySlide import ModifySlide
@@ -28,6 +41,16 @@ from .ImageSearch import ImageSearch
 from .GenerateImage import GenerateImage
 
 __all__ = [
+    # Template registry
+    "is_valid_template_key",
+    "known_template_keys",
+    "load_template_index",
+    "register_template",
+    "save_template_index",
+    "template_path",
+    # Structured slide plan
+    "PlanResponse",
+    "PlanSlide",
     # Slide management
     "InsertNewSlides",
     "ModifySlide",
