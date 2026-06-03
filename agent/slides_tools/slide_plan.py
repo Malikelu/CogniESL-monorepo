@@ -54,7 +54,10 @@ def compute_slide_plan(
     # Slide 1: A0 Lesson Plan Cover
     slides.append({"type": "A0", "label": "Lesson Plan Cover"})
 
-    # Slide 2: A1 Hook
+    # Slide 2: A0b Student Intro — beautiful class-opening slide
+    slides.append({"type": "A0b", "label": "Student Intro"})
+
+    # Slide 3: A1 Hook
     slides.append({"type": "A1", "label": "Hook"})
 
     # Slide 3: A2 Meaning Overview
@@ -87,6 +90,13 @@ def compute_slide_plan(
     if has_phonetics:
         slides.append({"type": "A5b", "label": "Pronunciation Guide"})
 
+    # A6: L1 Oracle (one per L1 language) — placed BEFORE practice so
+    # students are warned about their specific errors before they practice.
+    for l1 in l1_list:
+        slides.append({
+            "type": "A6", "label": f"L1 Oracle — {l1}", "l1_language": l1,
+        })
+
     # A7: Practice slides (3 gap-fills from common_errors)
     # Only create as many as there are available error items (minimum 2, max 3)
     error_pool = [e for e in common_errors if isinstance(e, dict)]
@@ -96,12 +106,6 @@ def compute_slide_plan(
         slides.append({
             "type": "A7_GAP_FILL", "label": f"Practice — {practice_labels[i]}",
             "practice_index": i,
-        })
-
-    # A6: L1 Oracle (one per L1 language)
-    for l1 in l1_list:
-        slides.append({
-            "type": "A6", "label": f"L1 Oracle — {l1}", "l1_language": l1,
         })
 
     # A8: Wrap-up
@@ -131,6 +135,7 @@ def build_task_brief(
 
     builders = {
         "A0": _build_a0_brief,
+        "A0b": _build_a0b_brief,
         "A1": _build_a1_brief,
         "A2": _build_a2_brief,
         "A3": _build_a3_brief,
@@ -396,6 +401,68 @@ def _build_a0_brief(
     lines.append("- Section labels in teal with 4px left border.")
     lines.append("- Error examples: wrong in red, correct in green.")
     lines.append("- Do NOT add a watermark to this slide (it is teacher-only).")
+
+    return "\n".join(lines)
+
+
+def _build_a0b_brief(
+    slide_meta: dict,
+    grammar_data: dict,
+    l1_data_list: list[dict],
+    age_group: str,
+    l1_languages: str,
+) -> str:
+    """Build A0b Student Intro — a visually stunning class opener.
+
+    This is the FIRST slide students see when the lesson is projected.
+    Minimal content: just the topic name + a tagline + visual impact.
+    """
+    grammar_point = _s(grammar_data.get("title", grammar_data.get("name", grammar_data.get("topic", ""))))
+    meaning = grammar_data.get("meaning", {})
+    core_meaning = _s(meaning.get("core_meaning", meaning.get("short_meaning", "")))
+    use_data = grammar_data.get("use") or []
+    tagline = ""
+    if isinstance(use_data, list) and use_data:
+        first_use = use_data[0]
+        if isinstance(first_use, dict):
+            tagline = _s(first_use.get("context", first_use.get("description", first_use.get("use", ""))))
+        else:
+            tagline = _s(first_use)
+    if not tagline:
+        tagline = core_meaning
+
+    lines = [
+        f"Slide title: {grammar_point}",
+        "Slide type: A0b Student Intro — class opening slide",
+        "Section: 0b of 8 (student-facing opener — shown to class when lesson begins)",
+        f"Grammar point: {grammar_point}",
+        f"Age group: {age_group}",
+        "WATERMARK: none",  # No watermark — this is the brand preview
+        "",
+        "TAGLINE (one line summarizing the grammar's purpose — paste verbatim below):",
+        f'"{tagline}"',
+        "",
+        "CORE MEANING (from YAML meaning.core_meaning — paste verbatim):",
+        f'"{core_meaning}"',
+        "",
+        "DESIGN GUIDELINES — THIS IS THE MOST IMPORTANT SLIDE FOR FIRST IMPRESSIONS:",
+        "- FULL-BLEED design. The ENTIRE 1280×720 canvas. No border, no card.",
+        "- Grammar point title: large, bold, elegant typography (60-80px)",
+        "- Tagline: smaller, lighter, underneath the title (24-28px)",
+        "- Minimal content — this is a VISUAL opener, not a teaching slide",
+        "- Background: use the CSS variables from _theme.css (var(--bg), var(--primary), etc.)",
+        "- Consider: gradient background, large geometric decoration, subtle pattern overlay",
+        "- The mood/emotion should match the grammar:",
+        "  * Present Simple → organized, routine-like (grid, lines, structured)",
+        "  * Past tense → nostalgic (warm overlay, softer shapes)",
+        "  * Future → forward-looking (arrows, upward motion, lighter at top)",
+        "  * Conditionals → dreamy, hypothetical (overlapping circles, soft blur)",
+        "  * Modals (can/should) → empowering (bold shapes, centered, confident)",
+        "  * Questions → curious (question marks, playful arrangement)",
+        "- Include a subtle CogniESL logo/brand mark in bottom-right at low opacity",
+        "- SPEAKER NOTES: Brief teacher script: 'Today we're learning [topic]. [Tagline]. Let's get started.'",
+        "- This slide sets the visual theme — all subsequent slides will use the same _theme.css",
+    ]
 
     return "\n".join(lines)
 

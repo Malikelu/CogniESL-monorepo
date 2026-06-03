@@ -183,7 +183,7 @@ class QueueGenerationJob(BaseTool):
 # Background Generation Pipeline
 # ═══════════════════════════════════════════════════════════════════════════
 
-BATCH_SIZE = 3  # Number of slides to generate in parallel
+BATCH_SIZE = 2  # Number of slides to generate in parallel (reduced from 3 for API reliability)
 
 
 def _run_background_generation(
@@ -543,13 +543,25 @@ def _run_generation(
         # ── Step 3: Create blank slide placeholders ─────────────────────────────
         _create_blank_slides(project_name, slide_count)
 
+        # ── Step 3b: Generate Theme DNA ─────────────────────────────────────────
+        # Before any slides, generate and write a cohesive visual theme (_theme.css)
+        # so every ModifySlide call shares the same color palette, fonts, and style.
+        try:
+            from agent.slides_tools.theme_generator import generate_theme, write_theme_css
+            presentations_dir = _get_presentations_dir(project_name)
+            theme = generate_theme(grammar_point, age_group)
+            theme_path = write_theme_css(presentations_dir, theme)
+            logger.info(f"Theme DNA: {theme_path.name} ({theme.get('mood', '?')}/{theme.get('font_heading', '?')})")
+        except Exception as exc:
+            logger.warning(f"Theme generation skipped: {exc}")
+
         # ── Step 4: Run ModifySlide in parallel batches ─────────────────────────
         async def _run_slide_batches():
             from agent.slides_tools.ModifySlide import ModifySlide
 
             # Get slide file names (may be 'slide_01.html', 'slide_02.html', ...)
             slide_files = _list_slide_filenames(project_name)
-            delay = int(os.getenv("SLIDE_GENERATION_DELAY", "0"))
+            delay = int(os.getenv("SLIDE_GENERATION_DELAY", "5"))  # seconds between batches
 
             for i in range(0, len(slide_files), BATCH_SIZE):
                 batch = slide_files[i:i + BATCH_SIZE]

@@ -96,6 +96,45 @@ This means:
 
 ---
 
+## ⚠️ CRITICAL: Theme Consistency Rules
+
+This lesson has a `_theme.css` file with CSS custom properties (variables). **You MUST use these variables throughout your slide.** This is what makes the entire deck look like a single, professionally-designed set rather than 24 disconnected slides.
+
+### What you MUST use from `_theme.css`:
+
+| CSS Variable | What it controls |
+|---|---|
+| `var(--font-heading)` | Font for ALL headings (h1, h2, h3) |
+| `var(--font-body)` | Font for ALL body text |
+| `var(--bg)` | Background color for the slide |
+| `var(--bg-card)` | Background for cards/panels |
+| `var(--text-primary)` | Primary text color |
+| `var(--text-secondary)` | Secondary/muted text color |
+| `var(--border-radius)` | Corner rounding for ALL cards/panels |
+| `var(--shadow)` | Box shadow for cards/panels |
+| `var(--primary)` | Base primary color (or use slide-type identity below) |
+| `var(--accent)` | Highlight/accent color |
+
+### What you must NOT do:
+
+- ❌ Do NOT define your own `font-family` — use `var(--font-heading)` and `var(--font-body)`.
+- ❌ Do NOT define your own `background` for the slide itself — use `var(--bg)`.
+- ❌ Do NOT define your own `border-radius` — use `var(--border-radius)`.
+- ❌ Do NOT define custom box-shadows — use `var(--shadow)`.
+- ❌ Do NOT use raw `#hex` or `rgb()` colors for backgrounds, text, or borders.
+- ❌ Do NOT set a fixed height or width on the `.slide` container beyond `1280px` and `720px`.
+
+### What you ARE allowed to define:
+
+- **Slide-type identity colors** (see the MANDATORY table below) — those specific hex colors are part of the slide-type visual language and override the base `var(--primary)` for that section. E.g., a CCQ slide MUST use the light background `#f8fafc` and a navy card regardless of whether the theme is dark.
+- **Gradient backgrounds** for decorative sections — you can layer gradients ON TOP of the identity colors.
+- **Font sizes and weights** — these are not in `_theme.css`; you control typography scale.
+- **Icon colors** — use Unicode emoji or Font Awesome; colors for these are your choice.
+
+**The rule of thumb**: Any element that repeats across multiple slide types (fonts, button shapes, card shadows, backgrounds) should use the CSS variable. Only the distinctive per-slide-type colors should be overridden. If in doubt, use the variable.
+
+---
+
 ## Canvas Rules
 
 1. **Canvas size**: 1280 × 720 pixels — the standard 16:9 presentation canvas. The HTML viewer scales this to fit any screen. Keep your designs within these dimensions.

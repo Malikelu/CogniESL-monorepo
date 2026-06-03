@@ -739,6 +739,10 @@ class ModifySlide(BaseTool):
         used_scaffold = False
 
         for attempt in range(1, _HTML_WRITER_MAX_ATTEMPTS + 1):
+            # Universal backoff on ALL retries (not just rate limits).
+            # Gives API headroom during parallel batch generation.
+            if attempt > 1:
+                await asyncio.sleep(3 * attempt)  # 6s, 9s, 12s, ...
             prompt = _build_sub_run_prompt(
                 task_brief=self.task_brief,
                 slide_name=slide_filename,
@@ -814,6 +818,12 @@ class ModifySlide(BaseTool):
 
         # Fallback: if all attempts failed, generate minimal but valid HTML
         if not final_html:
+            import logging as _fb_log
+            _fb_logging = _fb_log.getLogger(__name__)
+            _fb_logging.warning(
+                f"[{slide_filename}] All {_HTML_WRITER_MAX_ATTEMPTS} attempts failed. "
+                f"Last error: {last_validation_error[:200]}"
+            )
             final_html = _generate_minimal_html_fallback(
                 slide_name=slide_filename,
                 task_brief=self.task_brief,
@@ -837,11 +847,11 @@ class ModifySlide(BaseTool):
             _pw_logger = _pw_logging.getLogger(__name__)
             _pw_logger.warning(
                 f"{slide_filename}: written size {_pw_written_size}B < {_POST_WRITE_MIN}B "
-                f"— retrying once (1 round, up to 2 attempts)."
+                f"— retrying once (1 round, up to 3 attempts)."
             )
             _pw_html = ""
             _pw_err = ""
-            for _pw_attempt in range(1, 3):  # 2 attempts, 1 round
+            for _pw_attempt in range(1, 4):  # 3 attempts, 1 round
                 _pw_prompt = _build_sub_run_prompt(
                     task_brief=self.task_brief,
                     slide_name=slide_filename,
@@ -871,6 +881,8 @@ class ModifySlide(BaseTool):
                     _pw_result = await _agent_get_response(writer, _pw_prompt, use_stream=is_codex)
                 except Exception as _pw_exc:
                     _pw_err_str = str(_pw_exc)
+                    # Universal backoff for ALL post-write retry errors
+                    await asyncio.sleep(5 * _pw_attempt)  # 5s, 10s, 15s
                     if "RateLimitError" in type(_pw_exc).__name__ or "rate_limit" in _pw_err_str.lower():
                         await asyncio.sleep(30 * _pw_attempt)
                     _pw_err = _pw_err_str
