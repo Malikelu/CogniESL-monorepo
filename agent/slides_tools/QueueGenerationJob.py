@@ -548,7 +548,8 @@ def _run_generation(
         # so every ModifySlide call shares the same color palette, fonts, and style.
         try:
             from agent.slides_tools.theme_generator import generate_theme, write_theme_css
-            presentations_dir = _get_presentations_dir(project_name)
+            from agent.slides_tools.slide_file_utils import get_project_dir
+            presentations_dir = get_project_dir(project_name)
             theme = generate_theme(grammar_point, age_group)
             theme_path = write_theme_css(presentations_dir, theme)
             logger.info(f"Theme DNA: {theme_path.name} ({theme.get('mood', '?')}/{theme.get('font_heading', '?')})")
