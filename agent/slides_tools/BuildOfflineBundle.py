@@ -496,7 +496,9 @@ class BuildOfflineBundle(BaseTool):
         )
 
         # Save
-        out_dir = project_dir / "presentations"
+        # Note: get_project_dir() already returns mnt/{name}/presentations —
+        # do NOT append /presentations again or the path doubles.
+        out_dir = project_dir
         out_dir.mkdir(parents=True, exist_ok=True)
         out_path = out_dir / f"{self.project_name}.html"
         out_path.write_text(bundle_html, encoding="utf-8")

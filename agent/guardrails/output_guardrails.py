@@ -9,14 +9,46 @@ async def validate_l1_content(
     agent: Agent,
     response_text: str,
 ) -> GuardrailFunctionOutput:
-    """Validate that L1 interference data is included when relevant."""
-    # Only check responses that contain a Content Brief - skip short confirmations
-    is_content_brief = "Content Brief" in response_text or "Slide Plan" in response_text or len(response_text) > 500
+    """Validate that L1 interference data is included when relevant.
+
+    This guardrail is intentionally narrow: it only fires on Content Brief
+    responses, never on background generation completion messages.
+    """
+    # Skip short responses (confirmations, one-liners)
+    if len(response_text.strip()) <= 500:
+        return GuardrailFunctionOutput(output_info="", tripwire_triggered=False)
+
+    # Skip background generation completion messages.
+    # After the background thread finishes, the agent returns something like
+    # "Job XXXXXXXX marked complete. 17 file(s) registered." — which is long
+    # but has no ✗/✓ symbols. Without this guard, the guardrail fires, causes
+    # validation_attempts=2 retry, and can trigger a second generation run.
+    text_lower = response_text.lower()
+    is_job_completion = (
+        "marked complete" in text_lower
+        or "file(s) registered" in text_lower
+        or "proceed_with_generation" in text_lower
+        or "job_id=" in text_lower
+        or ("generating" in text_lower and "background" in text_lower)
+    )
+    if is_job_completion:
+        return GuardrailFunctionOutput(output_info="", tripwire_triggered=False)
+
+    # Only check responses that look like a Content Brief
+    is_content_brief = "Content Brief" in response_text or "Slide Plan" in response_text
     if not is_content_brief:
         return GuardrailFunctionOutput(output_info="", tripwire_triggered=False)
 
     has_l1_section = "L1" in response_text
-    has_error_pairs = "✗" in response_text and "✓" in response_text
+
+    # Accept error pairs in either format:
+    # - Slide/Oracle format: ✗ / ✓ symbols (used in HTML slides)
+    # - Content Brief format: Wrong: "..." → Correct: "..." (used in teacher-facing briefs)
+    has_error_pairs = (
+        ("✗" in response_text and "✓" in response_text)
+        or ("Wrong:" in response_text and "Correct:" in response_text)
+        or ("wrong" in response_text.lower() and "correct" in response_text.lower() and "→" in response_text)
+    )
 
     tripwire = not (has_l1_section and has_error_pairs)
 

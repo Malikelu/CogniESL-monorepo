@@ -229,7 +229,13 @@ _HTML_WRITER_MAX_ATTEMPTS = 5
 
 
 def _get_html_writer_model_id() -> str:
-    return os.getenv("SUB_AGENT_MODEL", _HTML_WRITER_MODEL_DEFAULT)
+    # BG_SUB_AGENT_MODEL takes priority over SUB_AGENT_MODEL.
+    # Since all slide generation now runs in the background thread,
+    # this effectively IS the sub-agent model in production.
+    # Railway env var guide:
+    #   BG_SUB_AGENT_MODEL=openrouter/deepseek/deepseek-v4-flash   # prod (cheap)
+    #   BG_SUB_AGENT_MODEL=openrouter/owl-alpha                    # testing (free)
+    return os.getenv("BG_SUB_AGENT_MODEL") or os.getenv("SUB_AGENT_MODEL", _HTML_WRITER_MODEL_DEFAULT)
 
 
 def _get_caller_openai_client(tool) -> "AsyncOpenAI | None":
@@ -313,6 +319,11 @@ def _make_html_writer_agent(tool=None) -> "tuple[Agent, bool]":
     """Create a fresh, stateless agent instance for one ModifySlide call.
 
     Model priority:
+    0. OPENAI_BASE_URL + OPENAI_API_KEY + bare model name (no '/') → OpenAI SDK direct,
+       bypasses LiteLLM entirely. Use this for background-thread generation to avoid
+       LiteLLM's internal asyncio worker tasks conflicting with threading.Thread.
+       Railway: set OPENAI_BASE_URL=https://api.deepseek.com/v1, OPENAI_API_KEY=<deepseek_key>,
+       SUB_AGENT_MODEL=deepseek-chat (no slash).
     1. ANTHROPIC_API_KEY → direct Anthropic via LiteLLM
     2. OPENROUTER_API_KEY → OpenRouter via LiteLLM
     3. OPENAI_API_KEY → OpenAI via LiteLLM (explicit prefix prevents misrouting)
@@ -326,8 +337,26 @@ def _make_html_writer_agent(tool=None) -> "tuple[Agent, bool]":
     anthropic_key = os.getenv("ANTHROPIC_API_KEY")
     openai_key = os.getenv("OPENAI_API_KEY")
     openrouter_key = os.getenv("OPENROUTER_API_KEY")
+    openai_base_url = os.getenv("OPENAI_BASE_URL")
     model_id = _get_html_writer_model_id()
     is_codex = False
+
+    # Priority 0: direct OpenAI SDK when OPENAI_BASE_URL is set and model has no provider prefix.
+    # This avoids LiteLLM's background asyncio tasks which cause silent failures in threads.
+    if openai_key and openai_base_url and "/" not in model_id:
+        from openai import AsyncOpenAI
+        _direct_client = AsyncOpenAI(api_key=openai_key, base_url=openai_base_url)
+        _direct_model = _CodexResponsesModel(model=model_id, openai_client=_direct_client)
+        return Agent(
+            name="Slide HTML Writer",
+            description="Generates complete slide HTML from task briefs.",
+            instructions=_read_html_writer_instructions(),
+            tools=[],
+            model=_direct_model,
+            model_settings=ModelSettings(verbosity="medium"),
+        ), False
+
+    deepseek_key = os.getenv("DEEPSEEK_API_KEY")
 
     # Honor explicit provider prefix in model_id (e.g. "openrouter/google/gemini-2.5-flash").
     # This lets .env pin a specific provider regardless of which API keys are present.
@@ -337,6 +366,10 @@ def _make_html_writer_agent(tool=None) -> "tuple[Agent, bool]":
         model = LitellmModel(model=model_id, api_key=anthropic_key)
     elif model_id.startswith("openai/") and openai_key:
         model = LitellmModel(model=model_id, api_key=openai_key)
+    elif model_id.startswith("deepseek/") and deepseek_key:
+        # Pass the key explicitly — avoids LiteLLM env-var resolution failures in
+        # background threads (threading.Thread + asyncio.run() context).
+        model = LitellmModel(model=model_id, api_key=deepseek_key)
     elif anthropic_key:
         model = LitellmModel(model=_normalise_model_id(model_id, "anthropic"), api_key=anthropic_key)
     elif openai_key:
@@ -346,7 +379,7 @@ def _make_html_writer_agent(tool=None) -> "tuple[Agent, bool]":
         model = LitellmModel(model=_normalise_model_id(model_id, "openrouter"), api_key=openrouter_key)
     else:
         raise RuntimeError(
-            "No API key found. Set ANTHROPIC_API_KEY, OPENAI_API_KEY, or OPENROUTER_API_KEY in .env"
+            "No API key found. Set ANTHROPIC_API_KEY, OPENAI_API_KEY, OPENROUTER_API_KEY, or DEEPSEEK_API_KEY in .env"
         )
     agent = Agent(
         name="Slide HTML Writer",
@@ -683,6 +716,20 @@ class ModifySlide(BaseTool):
         theme_css = _read_theme_css(project_dir)
         main_text_contents = _build_main_text_contents(project_dir, slide_filename)
 
+        # Log task_brief size — thin task_briefs produce thin slides.
+        # If this shows < 400 chars, the main agent isn't pasting YAML data.
+        import logging as _log
+        _tb_log = _log.getLogger(__name__)
+        _tb_len = len(self.task_brief)
+        _tb_preview = self.task_brief[:300].replace("\n", " ")
+        if _tb_len < 400:
+            _tb_log.warning(
+                f"[{slide_filename}] THIN TASK_BRIEF ({_tb_len} chars) — "
+                f"agent likely not pasting YAML. Preview: {_tb_preview!r}"
+            )
+        else:
+            _tb_log.info(f"[{slide_filename}] task_brief={_tb_len} chars. Preview: {_tb_preview!r}")
+
         writer, is_codex = _make_html_writer_agent(tool=self)
 
         sub_results: list[Any] = []
@@ -692,22 +739,8 @@ class ModifySlide(BaseTool):
         used_scaffold = False
 
         for attempt in range(1, _HTML_WRITER_MAX_ATTEMPTS + 1):
-            # Simplify task brief for attempts 3+ (reduce complexity)
-            effective_task_brief = self.task_brief
-            if attempt >= 3:
-                effective_task_brief = f"""SIMPLIFIED REQUEST (attempt {attempt}):
-Provide basic HTML structure only:
-- Slide wrapper
-- Main heading/title
-- Key content (bullet points or text blocks)
-- Speaker notes in data-speaker-notes attribute
-Keep visual complexity minimal. No advanced CSS animations or complex layouts.
-
-ORIGINAL TASK:
-{self.task_brief}"""
-
             prompt = _build_sub_run_prompt(
-                task_brief=effective_task_brief,
+                task_brief=self.task_brief,
                 slide_name=slide_filename,
                 total_pages=total_pages,
                 main_text_contents=main_text_contents,
@@ -806,7 +839,7 @@ ORIGINAL TASK:
                     f"(placeholder detected). Waiting 10s then retrying HTML writer "
                     f"(round {_pw_round}/3)."
                 )
-                await asyncio.sleep(10)  # was 120s (OpenAI rate limit recovery) — OpenRouter doesn't need this
+                await asyncio.sleep(2)  # short delay — not rate-limited on DeepSeek/OpenRouter
                 _pw_html = ""
                 _pw_err = ""
                 for _pw_attempt in range(1, 4):  # 3 attempts per retry round
@@ -821,6 +854,22 @@ ORIGINAL TASK:
                         retry_validation_error=_pw_err,
                         previous_failed_html=None,
                     )
+                    # On retry rounds, inject a content density requirement
+                    if _pw_round >= 2:
+                        _size_str = str(_pw_written_size)
+                        _pw_prompt = (
+                            f"⚠️ PREVIOUS VERSION WAS TOO THIN ({_size_str}B). "
+                            "This slide MUST have substantial content: a clear title, "
+                            "detailed explanation, multiple examples, bullet points or "
+                            "numbered steps, visual cues (icons/colors), and complete "
+                            "speaker notes with CCQs and watch-for items.\n\n"
+                            "MINIMUM CONTENT REQUIREMENTS:\n"
+                            "- At least 3-4 sentences of teaching content\n"
+                            "- Examples from the YAML data (wrong → correct pairs)\n"
+                            "- Visual elements: colored cards, badges, icons, or layout\n"
+                            "- Full speaker notes with teacher talk + CCQs + watch-for\n\n"
+                            f"{_pw_prompt}"
+                        )
                     try:
                         _pw_result = await _agent_get_response(writer, _pw_prompt, use_stream=is_codex)
                     except Exception as _pw_exc:

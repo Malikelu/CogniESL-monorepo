@@ -167,10 +167,13 @@ def validate_html(html_content: str, project_dir: Path, used_scaffold: bool) -> 
     # NOTE: Image file validation disabled. All ESL slides use CSS-based visuals (gradients, Font Awesome icons).
     # No external image files are required or expected.
 
-    if re.search(r"[\U0001F300-\U0001FAFF]", html_content):
-        errors.append(
-            "Emoji/Unicode symbols detected. Use image icons (PNG) instead of emoji."
-        )
+    # Unicode emoji in the U+1F300–U+1FAFF range are ALLOWED in ESL slides.
+    # The html_writer_instructions.md explicitly requests 💡📖🛡👤💬📝🎉
+    # for semantic icons (teacher-facing indicators, not student content).
+    # Only block emoji that are pure decoration with no semantic meaning —
+    # which we currently don't have a reliable heuristic for, so we allow all.
+    # Previously this check blocked all emoji, causing validation failures
+    # on every slide that followed the instructions → thin slide cascade.
 
     if re.search(r"<span[^>]*class=[\"'][^\"']*\\bdot\\b[^\"']*[\"'][^>]*>\\s*</span>", html_content, flags=re.IGNORECASE):
         errors.append(

@@ -4,6 +4,7 @@ import hashlib
 import logging
 import os
 import re
+import sys
 import time
 from pathlib import Path
 from threading import Lock
@@ -12,6 +13,11 @@ from dotenv import load_dotenv
 load_dotenv(override=True)
 
 logging.basicConfig(level=logging.INFO)
+
+# Ensure all logging goes to stdout so Railway captures it
+for h in logging.root.handlers:
+    if isinstance(h, logging.StreamHandler):
+        h.setStream(sys.stdout)
 
 # Disable openai-agents tracing — it spams the log with 400 errors about
 # unknown span parameters that don't affect functionality.
@@ -677,6 +683,9 @@ async def get_response(request: Request):
             "stay tuned", "coming right up",
             "putting together", "will be ready", "brief is coming",
             "getting your brief", "preparing your brief",
+            "here's a quick preview", "here's what i'm planning",
+            "here's a preview", "preview of what i'm planning",
+            "quick preview", "here's a quick overview",
             # Post-approval kickoffs (agent announces generation instead of doing it)
             "be right back", "give me a few", "one moment", "just a moment",
             "starting now", "i'll start", "i will start", "i'll get started",
@@ -686,6 +695,9 @@ async def get_response(request: Request):
             "i'll now", "i will now", "back in a few",
             "i'm generating", "i am generating",
             "i'm creating", "i am creating", "i'm building", "i am building",
+            "we're generating", "we are generating",
+            "materials are being generated",
+            "all ready for your review",
         )
         text_lower = text.lower()
         return any(phrase in text_lower for phrase in _kickoff_phrases)
@@ -743,6 +755,22 @@ async def get_response(request: Request):
         else:
             response_text = await asyncio.shield(_run())
         response_text = _clean_response(response_text)
+        # If QueueGenerationJob was called and returned STOP, the agent might
+        # have continued with generation tools. The "STOP" message is what
+        # the BG thread was triggered — return it immediately to free the
+        # HTTP connection. If generation tools ran, the agent will have
+        # also returned file paths, but we return the short version for
+        # the async flow.
+        if "QueueGenerationJob complete" in response_text:
+            # Build a friendly message for the teacher
+            _email = _authed_user.email
+            response_text = (
+                f"Your materials are being generated now! 🎉\n\n"
+                f"You'll receive an email at **{_email}** with download links "
+                f"when they're ready — usually 15–25 minutes.\n\n"
+                f"**Need to change anything?** Reply here before the email "
+                f"arrives and I'll adjust!"
+            )
         return JSONResponse({"response": response_text})
 
     except asyncio.CancelledError:
@@ -752,7 +780,56 @@ async def get_response(request: Request):
         raise
 
     except Exception as e:
+        # OutputGuardrailTripwireTriggered means the agent produced a response but
+        # it failed the output guardrail check. Instead of returning a useless error
+        # message, try to extract the agent's actual response text and return it.
+        # The teacher still gets their Content Brief; quality enforcement is best-effort.
+        try:
+            from agents import OutputGuardrailTripwireTriggered
+            if isinstance(e, OutputGuardrailTripwireTriggered):
+                # Extract the agent output from the exception
+                run_data = getattr(e, "run_data", None)
+                agent_text = None
+                if run_data is not None:
+                    from agents.items import MessageOutputItem
+                    for item in reversed(getattr(run_data, "new_items", [])):
+                        if isinstance(item, MessageOutputItem):
+                            raw = getattr(item, "raw_item", None)
+                            content = getattr(raw, "content", None)
+                            if isinstance(content, str) and content.strip():
+                                agent_text = content.strip()
+                                break
+                            elif isinstance(content, list):
+                                for block in content:
+                                    text = getattr(block, "text", None)
+                                    if isinstance(text, str) and text.strip():
+                                        agent_text = text.strip()
+                                        break
+                # Fallback: check guardrail_result for agent_output
+                if not agent_text:
+                    gr = getattr(e, "guardrail_result", None)
+                    ao = getattr(gr, "agent_output", None)
+                    if isinstance(ao, str) and ao.strip():
+                        agent_text = ao.strip()
+                    elif isinstance(ao, list) and ao:
+                        agent_text = str(ao[0]).strip()
+                if agent_text:
+                    logging.warning(
+                        f"[{session_id}] Output guardrail tripped but returning agent response anyway. "
+                        f"Response length: {len(agent_text)}"
+                    )
+                    return JSONResponse({"response": agent_text})
+                logging.error(f"[{session_id}] Output guardrail tripped and no agent text extractable: {e}")
+                return JSONResponse(
+                    {"response": "Sorry, an error occurred. Please try again."},
+                    status_code=200,
+                )
+        except Exception:
+            pass  # Import or extraction failed — fall through to generic handler
+
         logging.error(f"Error processing message: {e}", exc_info=True)
+        import traceback
+        traceback.print_exc()
         return JSONResponse(
             {"response": "Sorry, an error occurred. Please try again."},
             status_code=200,

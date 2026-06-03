@@ -114,8 +114,17 @@ def mark_done(job_id: str, file_paths: list[str]) -> None:
 
 
 def mark_error(job_id: str, error: str) -> None:
-    """Mark job as errored."""
-    update_job(job_id, status="error", error=error)
+    """Mark job as errored. Does NOT overwrite a job already in 'done' state.
+
+    The output guardrail runs after MarkJobComplete and can call mark_error on
+    a job that's already done. The conditional UPDATE prevents that race condition
+    from clobbering a successfully completed job.
+    """
+    with sqlite3.connect(_DB_PATH) as db:
+        db.execute(
+            "UPDATE jobs SET status='error', error=? WHERE job_id=? AND status != 'done'",
+            (error, job_id),
+        )
     logger.error(f"Job {job_id} errored: {error}")
 
 

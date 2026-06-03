@@ -136,7 +136,16 @@ def _select_tools(format_request: str = "") -> list:
     return selected
 
 
-def create_cogniesl_agent(format_request: str = ""):
+def create_cogniesl_agent(format_request: str = "", bg_mode: bool = False):
+    """Create the CogniESL agent.
+
+    Args:
+        format_request: Hint about what formats are being generated (e.g. "slides").
+        bg_mode: True when running inside a background generation thread.
+                 Uses BG_DEFAULT_MODEL env var if set, so background traffic can
+                 be routed through OpenRouter while the main thread stays on direct
+                 DeepSeek. Set bg_mode=True only in QueueGenerationJob._run_generation().
+    """
     # Apply runtime patches to agency_swarm
     from patches.patch_agency_swarm_dual_comms import apply_dual_comms_patch
     from patches.patch_file_attachment_refs import apply_file_attachment_reference_patch
@@ -148,6 +157,7 @@ def create_cogniesl_agent(format_request: str = ""):
     apply_utf8_file_read_patch()
 
     from agency_swarm import Agent, ModelSettings
+    from config import get_default_model, get_bg_default_model
 
     return Agent(
         name="CogniESL Agent",
@@ -158,7 +168,7 @@ def create_cogniesl_agent(format_request: str = ""):
         ),
         instructions=_build_instructions(),
         tools=_select_tools(format_request),
-        model=get_default_model(),
+        model=get_bg_default_model() if bg_mode else get_default_model(),
         model_settings=ModelSettings(
             temperature=0.7,
             parallel_tool_calls=False,
