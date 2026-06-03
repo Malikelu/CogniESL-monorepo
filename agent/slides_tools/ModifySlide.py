@@ -826,11 +826,12 @@ class ModifySlide(BaseTool):
 
         # ---- Post-write size check -----------------------------------------------
         # If a placeholder (fallback) was written, retry the HTML writer automatically.
-        # Fallback HTML is ~1,500 bytes; real slides should be ≥ 6,000 bytes.
-        # This triggers when all _HTML_WRITER_MAX_ATTEMPTS failed (e.g. rate limits).
+        # Fallback HTML is ~1,500 bytes; real slides should be ≥ 4,000 bytes.
+        # Skip for CLOSING_BRAND slides — they're locked templates (~2KB is expected).
         _POST_WRITE_MIN = 4000
         _pw_written_size = slide_path.stat().st_size
-        if _pw_written_size < _POST_WRITE_MIN:
+        _is_closing_brand = "CLOSING_BRAND" in self.task_brief
+        if _pw_written_size < _POST_WRITE_MIN and not _is_closing_brand:
             import logging as _pw_logging
             _pw_logger = _pw_logging.getLogger(__name__)
             for _pw_round in range(1, 4):  # up to 3 extra rounds
