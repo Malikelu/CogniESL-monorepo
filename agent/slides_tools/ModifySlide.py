@@ -825,8 +825,9 @@ class ModifySlide(BaseTool):
         slide_path.write_text(final_html, encoding="utf-8")
 
         # ---- Post-write size check -----------------------------------------------
-        # If a placeholder (fallback) was written, retry the HTML writer automatically.
+        # If a placeholder (fallback) was written, retry once more.
         # Fallback HTML is ~1,500 bytes; real slides should be ≥ 4,000 bytes.
+        # Reduced from 3×3=9 retries to 1×2=2 to avoid excessive LLM calls.
         # Skip for CLOSING_BRAND slides — they're locked templates (~2KB is expected).
         _POST_WRITE_MIN = 4000
         _pw_written_size = slide_path.stat().st_size
@@ -834,71 +835,64 @@ class ModifySlide(BaseTool):
         if _pw_written_size < _POST_WRITE_MIN and not _is_closing_brand:
             import logging as _pw_logging
             _pw_logger = _pw_logging.getLogger(__name__)
-            for _pw_round in range(1, 4):  # up to 3 extra rounds
-                _pw_logger.warning(
-                    f"{slide_filename}: written size {_pw_written_size}B < {_POST_WRITE_MIN}B "
-                    f"(placeholder detected). Waiting 10s then retrying HTML writer "
-                    f"(round {_pw_round}/3)."
+            _pw_logger.warning(
+                f"{slide_filename}: written size {_pw_written_size}B < {_POST_WRITE_MIN}B "
+                f"— retrying once (1 round, up to 2 attempts)."
+            )
+            _pw_html = ""
+            _pw_err = ""
+            for _pw_attempt in range(1, 3):  # 2 attempts, 1 round
+                _pw_prompt = _build_sub_run_prompt(
+                    task_brief=self.task_brief,
+                    slide_name=slide_filename,
+                    total_pages=total_pages,
+                    main_text_contents=main_text_contents,
+                    base_html=base_html,
+                    current_html=None,
+                    theme_css=theme_css,
+                    retry_validation_error=_pw_err,
+                    previous_failed_html=None,
                 )
-                await asyncio.sleep(2)  # short delay — not rate-limited on DeepSeek/OpenRouter
-                _pw_html = ""
-                _pw_err = ""
-                for _pw_attempt in range(1, 4):  # 3 attempts per retry round
-                    _pw_prompt = _build_sub_run_prompt(
-                        task_brief=self.task_brief,
-                        slide_name=slide_filename,
-                        total_pages=total_pages,
-                        main_text_contents=main_text_contents,
-                        base_html=base_html,
-                        current_html=None,
-                        theme_css=theme_css,
-                        retry_validation_error=_pw_err,
-                        previous_failed_html=None,
-                    )
-                    # On retry rounds, inject a content density requirement
-                    if _pw_round >= 2:
-                        _size_str = str(_pw_written_size)
-                        _pw_prompt = (
-                            f"⚠️ PREVIOUS VERSION WAS TOO THIN ({_size_str}B). "
-                            "This slide MUST have substantial content: a clear title, "
-                            "detailed explanation, multiple examples, bullet points or "
-                            "numbered steps, visual cues (icons/colors), and complete "
-                            "speaker notes with CCQs and watch-for items.\n\n"
-                            "MINIMUM CONTENT REQUIREMENTS:\n"
-                            "- At least 3-4 sentences of teaching content\n"
-                            "- Examples from the YAML data (wrong → correct pairs)\n"
-                            "- Visual elements: colored cards, badges, icons, or layout\n"
-                            "- Full speaker notes with teacher talk + CCQs + watch-for\n\n"
-                            f"{_pw_prompt}"
-                        )
-                    try:
-                        _pw_result = await _agent_get_response(writer, _pw_prompt, use_stream=is_codex)
-                    except Exception as _pw_exc:
-                        _pw_err_str = str(_pw_exc)
-                        if "RateLimitError" in type(_pw_exc).__name__ or "rate_limit" in _pw_err_str.lower():
-                            await asyncio.sleep(30 * _pw_attempt)
-                        _pw_err = _pw_err_str
-                        continue
-                    if _pw_result is None:
-                        continue
-                    _pw_output = str(getattr(_pw_result, "final_output", "") or "")
-                    _pw_candidate = _extract_html_from_output(_pw_output)
-                    if not _pw_candidate:
-                        continue
-                    _pw_full, _pw_scaffold = ensure_full_html(_pw_candidate)
-                    _pw_validation = await asyncio.to_thread(validate_html, _pw_full, project_dir, _pw_scaffold)
-                    if not _pw_validation.get("valid"):
-                        _pw_err = str(_pw_validation.get("error", ""))
-                        continue
-                    _pw_html = _pw_full
-                    break
-                if _pw_html:
-                    _pw_html = _convert_css_bg_images_to_img_tags(_pw_html)
-                    _pw_html = _embed_local_images_as_base64(_pw_html, project_dir)
-                    slide_path.write_text(_pw_html, encoding="utf-8")
-                    _pw_written_size = slide_path.stat().st_size
-                    if _pw_written_size >= _POST_WRITE_MIN:
-                        break  # Success — stop retrying
+                _size_str = str(_pw_written_size)
+                _pw_prompt = (
+                    f"⚠️ PREVIOUS VERSION WAS TOO THIN ({_size_str}B). "
+                    "This slide MUST have substantial content: a clear title, "
+                    "detailed explanation, multiple examples, bullet points or "
+                    "numbered steps, visual cues (icons/colors), and complete "
+                    "speaker notes with CCQs and watch-for items.\n\n"
+                    "MINIMUM CONTENT REQUIREMENTS:\n"
+                    "- At least 3-4 sentences of teaching content\n"
+                    "- Examples from the YAML data (wrong → correct pairs)\n"
+                    "- Visual elements: colored cards, badges, icons, or layout\n"
+                    "- Full speaker notes with teacher talk + CCQs + watch-for\n\n"
+                    f"{_pw_prompt}"
+                )
+                try:
+                    _pw_result = await _agent_get_response(writer, _pw_prompt, use_stream=is_codex)
+                except Exception as _pw_exc:
+                    _pw_err_str = str(_pw_exc)
+                    if "RateLimitError" in type(_pw_exc).__name__ or "rate_limit" in _pw_err_str.lower():
+                        await asyncio.sleep(30 * _pw_attempt)
+                    _pw_err = _pw_err_str
+                    continue
+                if _pw_result is None:
+                    continue
+                _pw_output = str(getattr(_pw_result, "final_output", "") or "")
+                _pw_candidate = _extract_html_from_output(_pw_output)
+                if not _pw_candidate:
+                    continue
+                _pw_full, _pw_scaffold = ensure_full_html(_pw_candidate)
+                _pw_validation = await asyncio.to_thread(validate_html, _pw_full, project_dir, _pw_scaffold)
+                if not _pw_validation.get("valid"):
+                    _pw_err = str(_pw_validation.get("error", ""))
+                    continue
+                _pw_html = _pw_full
+                break
+            if _pw_html:
+                _pw_html = _convert_css_bg_images_to_img_tags(_pw_html)
+                _pw_html = _embed_local_images_as_base64(_pw_html, project_dir)
+                slide_path.write_text(_pw_html, encoding="utf-8")
+                _pw_written_size = slide_path.stat().st_size
         # ---- End post-write size check -------------------------------------------
 
         save_note = ""

@@ -146,6 +146,27 @@ def get_job(job_id: str) -> dict | None:
     return d
 
 
+def get_running_jobs() -> list[dict]:
+    """Return all jobs with status='running' (for recovery on server restart)."""
+    with sqlite3.connect(_DB_PATH) as db:
+        db.row_factory = sqlite3.Row
+        rows = db.execute(
+            "SELECT * FROM jobs WHERE status=? ORDER BY created_at DESC",
+            ("running",),
+        ).fetchall()
+    results = []
+    for r in rows:
+        d = dict(r)
+        for field in ("file_paths", "formats"):
+            if d.get(field):
+                try:
+                    d[field] = json.loads(d[field])
+                except (json.JSONDecodeError, TypeError):
+                    pass
+        results.append(d)
+    return results
+
+
 def list_jobs(limit: int = 50) -> list[dict]:
     """Return the most recent jobs (for debugging/admin)."""
     with sqlite3.connect(_DB_PATH) as db:

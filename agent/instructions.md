@@ -972,12 +972,6 @@ This creates a single self-contained `.html` file with all slides, inlined fonts
 
 **If the teacher explicitly asks for PowerPoint:** call `BuildPptxFromHtmlSlides` as well and include the `.pptx` path in `MarkJobComplete`. Otherwise skip it.
 
-#### Step D: Inter-Format Cooling Period
-
-**MANDATORY when generating multiple formats (slides + worksheet, slides + activity guide, or all three):**
-
-After `BuildOfflineBundle` completes, wait **at least 3 minutes before starting worksheet or activity guide generation**. This prevents hitting the OpenAI TPM rate limit mid-worksheet. Do not skip this pause — rate limit errors cause placeholder content that is worse than a short wait.
-
 ---
 
 ### Worksheet (DOCX + PDF)
@@ -1467,7 +1461,6 @@ Same format as Part 5, but add one opening line:
 - ❌ Generate wrong/correct examples — extract from `interference_patterns` in the L1 YAML
 - ❌ Generate activity instructions — extract from `instructions` and `script` in activities YAML
 - ❌ Integrate activity guide content into slides or the worksheet — it must always be a separate file
-- ❌ Skip the inter-format cooling period when generating multiple formats — always wait 3 min after PPTX before worksheet/activity generation
 - ❌ Skip L1 Oracle sections when L1 is specified — they are MANDATORY
 - ❌ Create worksheets as markdown — always HTML → CreateDocument → ConvertDocument
 - ❌ Respond to teacher before validation completes

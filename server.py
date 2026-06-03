@@ -103,6 +103,51 @@ app = FastAPI()
 _jobs.init_db()
 _auth_db.init_auth_db()
 
+# ── Job Recovery on Restart ───────────────────────────────────────────────────
+# Railway auto-deploys kill background threads mid-generation. On restart,
+# scan for jobs with status='running' and check if their files exist on disk.
+# If so, mark them 'done'. If not, mark them 'error'.
+try:
+    data_dir = Path(os.getenv("COGNIESL_DATA_DIR", "/app/data"))
+    recovered = 0
+    for job in _jobs.list_jobs(limit=200):
+        if job.get("status") not in ("running", "processing"):
+            continue
+        project_name = job.get("project_name", "")
+        if not project_name:
+            _jobs.mark_error(job["job_id"], "No project_name — lost on restart")
+            continue
+        # Check for slide files on disk
+        mnt_candidates = [
+            data_dir / "mnt" / project_name / "presentations",
+            Path(__file__).parent / "mnt" / project_name / "presentations",
+        ]
+        found_files = []
+        for candidate in mnt_candidates:
+            if candidate.exists():
+                for f in candidate.glob("slide_*.html"):
+                    found_files.append(str(f))
+        if found_files:
+            _jobs.mark_done(job["job_id"], found_files)
+            recovered += 1
+            logging.info(f"[recovery] Job {job['job_id']} recovered with {len(found_files)} files")
+        else:
+            # Check if project.html bundle exists
+            for candidate in mnt_candidates:
+                bundle_path = candidate.parent / f"{project_name}.html"
+                if bundle_path.exists():
+                    _jobs.mark_done(job["job_id"], [str(bundle_path)])
+                    recovered += 1
+                    logging.info(f"[recovery] Job {job['job_id']} recovered (bundle found)")
+                    break
+            else:
+                _jobs.mark_error(job["job_id"], "Restart recovery: no files found on disk")
+                logging.warning(f"[recovery] Job {job['job_id']} lost — no files on disk")
+    if recovered:
+        logging.info(f"[recovery] Total jobs recovered on startup: {recovered}")
+except Exception as exc:
+    logging.warning(f"[recovery] Job recovery scan failed (non-fatal): {exc}")
+
 
 # ── Daily digest email scheduler (I-3) ──────────────────────────────────────
 # Sends a branded digest to FOUNDER_EMAIL every day at 7:00 AM server time.
