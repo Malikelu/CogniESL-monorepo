@@ -254,7 +254,7 @@ async def download_file(job_id: str, filename: str):
     Links of this form are sent in the completion email.
     """
     job = _jobs.get_job(job_id)
-    if not job or job.get("status") != "done":
+    if not job or job.get("status") not in ("done", "running"):
         return JSONResponse({"error": "File not available"}, status_code=404)
 
     project_name = job.get("project_name", "")
@@ -842,7 +842,7 @@ async def get_response(request: Request):
 async def api_job_slides(job_id: str):
     """Return ordered slide metadata + speaker notes for the HTML presenter."""
     job = _jobs.get_job(job_id)
-    if not job or job.get("status") != "done":
+    if not job or job.get("status") not in ("done", "running"):
         return JSONResponse({"error": "Not available"}, status_code=404)
 
     project_name = job.get("project_name", "")
@@ -890,7 +890,7 @@ async def api_job_bundle(job_id: str):
     import json as _json_mod
 
     job = _jobs.get_job(job_id)
-    if not job or job.get("status") != "done":
+    if not job or job.get("status") not in ("done", "running"):
         return JSONResponse({"error": "Not available"}, status_code=404)
 
     project_name = job.get("project_name", "")
