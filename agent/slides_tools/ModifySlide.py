@@ -609,10 +609,9 @@ class ModifySlide(BaseTool):
         used_scaffold = False
 
         for attempt in range(1, _HTML_WRITER_MAX_ATTEMPTS + 1):
-            # Universal backoff on ALL retries (not just rate limits).
-            # Gives API headroom during parallel batch generation.
+            # Backoff on retries — gives API headroom during parallel generation
             if attempt > 1:
-                await asyncio.sleep(3 * attempt)  # 6s, 9s, 12s, ...
+                await asyncio.sleep(2 * attempt)  # 4s, 6s
             prompt = _build_sub_run_prompt(
                 task_brief=self.task_brief,
                 slide_name=slide_filename,
@@ -632,7 +631,7 @@ class ModifySlide(BaseTool):
                 err_str = str(exc)
                 # Rate limit: wait and retry rather than failing immediately
                 if "RateLimitError" in type(exc).__name__ or "rate_limit" in err_str.lower() or "rate limit" in err_str.lower():
-                    wait = 30 * attempt  # 30s, 60s, 90s
+                    wait = 15 * attempt  # 15s, 30s
                     import logging
                     logging.getLogger(__name__).warning(
                         f"Rate limit hit on attempt {attempt} for {slide_filename}. Waiting {wait}s before retry."
@@ -745,9 +744,9 @@ class ModifySlide(BaseTool):
                 except Exception as _pw_exc:
                     _pw_err_str = str(_pw_exc)
                     # Universal backoff for ALL post-write retry errors
-                    await asyncio.sleep(5 * _pw_attempt)  # 5s, 10s, 15s
+                    await asyncio.sleep(3 * _pw_attempt)  # 3s, 6s, 9s
                     if "RateLimitError" in type(_pw_exc).__name__ or "rate_limit" in _pw_err_str.lower():
-                        await asyncio.sleep(30 * _pw_attempt)
+                        await asyncio.sleep(15 * _pw_attempt)
                     _pw_err = _pw_err_str
                     continue
                 if not _pw_output.strip():
