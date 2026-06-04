@@ -35,6 +35,9 @@ def _resolve(model: str):
     prefixes. 'deepseek/deepseek-v4-flash' without a recognised prefix causes
     an 'Unknown prefix: deepseek' error. Wrapping in LitellmModel bypasses
     the prefix parsing and hands the request directly to LiteLLM.
+
+    Note: We explicitly pass base_url to override LiteLLM's default
+    /beta endpoint. DeepSeek's documented API base is https://api.deepseek.com.
     """
     if "/" not in model:
         return model
@@ -43,8 +46,8 @@ def _resolve(model: str):
         if model.startswith("deepseek/"):
             deepseek_key = os.getenv("DEEPSEEK_API_KEY")
             if deepseek_key:
-                return LitellmModel(model=model, api_key=deepseek_key)
-            return LitellmModel(model=model)
+                return LitellmModel(model=model, api_key=deepseek_key, base_url="https://api.deepseek.com")
+            return LitellmModel(model=model, base_url="https://api.deepseek.com")
         if model.startswith("litellm/"):
             return LitellmModel(model=model[len("litellm/"):])
         return LitellmModel(model=model)

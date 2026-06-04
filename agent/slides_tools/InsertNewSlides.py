@@ -14,10 +14,8 @@ from typing import Literal
 
 import os
 from dotenv import load_dotenv
-from agency_swarm import Agent, ModelSettings, Reasoning
 from agency_swarm.tools import BaseTool
 from openai import AsyncOpenAI
-from agents.extensions.models.litellm_model import LitellmModel
 from pydantic import BaseModel, Field, ValidationError
 
 from .slide_file_utils import (
@@ -36,11 +34,38 @@ from .template_registry import (
 
 
 # Sub-agent model: DeepSeek v4 flash only.
-_PLANNER_MODEL_DEFAULT = "deepseek/deepseek-v4-flash"
+_PLANNER_MODEL_DEFAULT = "deepseek-v4-flash"
 
 
 def _get_planner_model_id() -> str:
-    return os.getenv("BG_SUB_AGENT_MODEL") or os.getenv("SUB_AGENT_MODEL", _PLANNER_MODEL_DEFAULT)
+    model = os.getenv("BG_SUB_AGENT_MODEL") or os.getenv("SUB_AGENT_MODEL", _PLANNER_MODEL_DEFAULT)
+    # Strip provider prefix if present (e.g. "deepseek/deepseek-v4-flash" -> "deepseek-v4-flash")
+    if "/" in model:
+        model = model.split("/", 1)[1]
+    return model
+
+
+def _make_deepseek_client(tool=None) -> AsyncOpenAI:
+    """Create a direct AsyncOpenAI client pointed at DeepSeek's API."""
+    deepseek_key = os.getenv("DEEPSEEK_API_KEY")
+    if not deepseek_key:
+        raise RuntimeError("DEEPSEEK_API_KEY is required. Set it in .env")
+    return AsyncOpenAI(
+        api_key=deepseek_key,
+        base_url="https://api.deepseek.com",
+    )
+
+
+async def _call_deepseek(client: AsyncOpenAI, model_id: str, system_prompt: str, user_prompt: str) -> str:
+    """Call DeepSeek API directly and return the text response."""
+    response = await client.chat.completions.create(
+        model=model_id,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt},
+        ],
+    )
+    return response.choices[0].message.content or ""
 
 
 class _PlanSlide(BaseModel):
@@ -60,99 +85,6 @@ class _PlanResponse(BaseModel):
 # Public aliases — exported so other tools can consume structured plans
 PlanSlide = _PlanSlide
 PlanResponse = _PlanResponse
-
-
-def _get_caller_openai_client(tool) -> "AsyncOpenAI | None":
-    ctx = getattr(tool, "_context", None)
-    master = getattr(ctx, "context", None)
-    agent_name = getattr(master, "current_agent_name", None)
-    agents = getattr(master, "agents", {})
-    agent = agents.get(agent_name) if agent_name else None
-    model = getattr(agent, "model", None)
-    for attr in ("_client", "openai_client", "client"):
-        maybe = getattr(model, attr, None)
-        if isinstance(maybe, AsyncOpenAI):
-            return maybe
-    return None
-
-
-class _CodexResponsesModel:
-    """OpenAIResponsesModel subclass that strips unsupported params (truncation) for non-OpenAI endpoints."""
-
-    _cls = None
-
-    @classmethod
-    def _get_cls(cls):
-        if cls._cls is None:
-            from agents import OpenAIResponsesModel
-            from dataclasses import replace
-
-            class _Impl(OpenAIResponsesModel):
-                async def _fetch_response(self, system_instructions, input, model_settings, *args, **kwargs):
-                    model_settings = replace(model_settings, truncation=None)
-                    return await super()._fetch_response(system_instructions, input, model_settings, *args, **kwargs)
-
-            cls._cls = _Impl
-        return cls._cls
-
-    def __new__(cls, model: str, openai_client):
-        return cls._get_cls()(model=model, openai_client=openai_client)
-
-
-async def _agent_get_response(agent: Agent, prompt: str, *, use_stream: bool = False):
-    """Call agent.get_response or stream-based equivalent.
-
-    Codex endpoint requires stream=True; use get_response_stream() in that case.
-    """
-    if use_stream:
-        stream = agent.get_response_stream(prompt)
-        text_deltas: list[str] = []
-        async for event in stream:
-            data = getattr(event, "data", None)
-            if data is not None:
-                delta = getattr(data, "delta", None)
-                if delta and isinstance(delta, str):
-                    text_deltas.append(delta)
-        result = await stream.wait_final_result()
-        fo = getattr(result, "final_output", None) if result is not None else None
-        if not fo and text_deltas:
-            assembled = "".join(text_deltas)
-            try:
-                if result is not None:
-                    result.final_output = assembled
-                else:
-                    class _R:
-                        final_output = assembled
-                    result = _R()
-            except Exception:
-                pass
-        return result
-    return await agent.get_response(prompt)
-
-
-def _make_planner_agent(tool=None) -> "tuple[Agent, bool]":
-    """Create a fresh, stateless agent instance for one InsertNewSlides call.
-
-    ONLY DeepSeek is supported. Uses DEEPSEEK_API_KEY from .env.
-    """
-    model_id = _get_planner_model_id()
-    deepseek_key = os.getenv("DEEPSEEK_API_KEY")
-    if not deepseek_key:
-        raise RuntimeError("DEEPSEEK_API_KEY is required. Set it in .env")
-
-    model = LitellmModel(model=model_id, api_key=deepseek_key)
-    agent = Agent(
-        name="Slide Planner",
-        description="Creates structured slide outline plans.",
-        instructions=(
-            "You generate JSON plans for slide creation. "
-            "Output must be valid JSON only, no markdown fences, no extra text."
-        ),
-        tools=[],
-        model=model,
-        model_settings=ModelSettings(verbosity=None),
-    )
-    return agent, False
 
 
 def _run_awaitable(awaitable):
@@ -389,18 +321,21 @@ class InsertNewSlides(BaseTool):
         apply_renames(rename_map)
 
         try:
-            planner, is_codex = _make_planner_agent(tool=self)
+            model_id = _get_planner_model_id()
+            system_prompt = (
+                "You generate JSON plans for slide creation. "
+                "Output must be valid JSON only, no markdown fences, no extra text."
+            )
+            client = _make_deepseek_client(tool=self)
             prompt = _build_planner_prompt(
                 self.task_brief, n, insert_position, existing_templates
             )
-            plan_result = _run_awaitable(
-                _agent_get_response(planner, prompt, use_stream=is_codex)
+            plan_text = _run_awaitable(
+                _call_deepseek(client, model_id, system_prompt, prompt)
             )
         except Exception as exc:
             return f"❌ Outline generation failed: {exc}"
-        plan_text = _extract_json_block(
-            str(getattr(plan_result, "final_output", "") or "")
-        )
+        plan_text = _extract_json_block(str(plan_text or ""))
         if not plan_text:
             return "❌ Outline generation failed: planner returned empty output."
         try:

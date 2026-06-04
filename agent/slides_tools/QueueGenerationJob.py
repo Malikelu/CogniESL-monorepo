@@ -769,10 +769,8 @@ def _run_generation(
             project_name=project_name,
             html_bundle_path=bundle_path,
             slide_count=slide_count,
-            worksheet_pdf_path=worksheet_paths.get("pdf"),
-            worksheet_docx_path=worksheet_paths.get("docx"),
-            activity_pdf_path=activity_paths.get("pdf"),
-            activity_docx_path=activity_paths.get("docx"),
+            worksheet_pdf_path=worksheet_paths.get("source"),
+            activity_pdf_path=activity_paths.get("source"),
             flashcard_pdf_path=flashcard_path,
         ).run()
         logger.info(f"Job {job_id} complete: {mark_result[:200]}")

@@ -18,9 +18,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from agency_swarm import Agent, ModelSettings, Reasoning
 from agency_swarm.tools import BaseTool, tool_output_image_from_path
-from agents.extensions.models.litellm_model import LitellmModel
 from openai import AsyncOpenAI
 from pydantic import Field
 
@@ -220,111 +218,43 @@ def _embed_local_images_as_base64(html: str, project_dir: Path) -> str:
 
 
 # Sub-agent model: DeepSeek v4 flash only.
-_HTML_WRITER_MODEL_DEFAULT = "deepseek/deepseek-v4-flash"
+_HTML_WRITER_MODEL_DEFAULT = "deepseek-v4-flash"
 _HTML_WRITER_MAX_ATTEMPTS = 5
 
 
 def _get_html_writer_model_id() -> str:
-    return os.getenv("BG_SUB_AGENT_MODEL") or os.getenv("SUB_AGENT_MODEL", _HTML_WRITER_MODEL_DEFAULT)
+    model = os.getenv("BG_SUB_AGENT_MODEL") or os.getenv("SUB_AGENT_MODEL", _HTML_WRITER_MODEL_DEFAULT)
+    # Strip provider prefix if present (e.g. "deepseek/deepseek-v4-flash" -> "deepseek-v4-flash")
+    if "/" in model:
+        model = model.split("/", 1)[1]
+    return model
 
 
-def _get_caller_openai_client(tool) -> "AsyncOpenAI | None":
-    ctx = getattr(tool, "_context", None)
-    master = getattr(ctx, "context", None)
-    agent_name = getattr(master, "current_agent_name", None)
-    agents = getattr(master, "agents", {})
-    agent = agents.get(agent_name) if agent_name else None
-    model = getattr(agent, "model", None)
-    for attr in ("_client", "openai_client", "client"):
-        maybe = getattr(model, attr, None)
-        if isinstance(maybe, AsyncOpenAI):
-            return maybe
-    return None
+def _make_deepseek_client(tool=None) -> AsyncOpenAI:
+    """Create a direct AsyncOpenAI client pointed at DeepSeek's API.
 
-
-class _CodexResponsesModel:
-    """OpenAIResponsesModel subclass that strips unsupported params (truncation) for non-OpenAI endpoints."""
-
-    _cls = None
-
-    @classmethod
-    def _get_cls(cls):
-        if cls._cls is None:
-            from agents import OpenAIResponsesModel
-            from dataclasses import replace
-
-            class _Impl(OpenAIResponsesModel):
-                async def _fetch_response(self, system_instructions, input, model_settings, *args, **kwargs):
-                    model_settings = replace(model_settings, truncation=None)
-                    return await super()._fetch_response(system_instructions, input, model_settings, *args, **kwargs)
-
-            cls._cls = _Impl
-        return cls._cls
-
-    def __new__(cls, model: str, openai_client):
-        return cls._get_cls()(model=model, openai_client=openai_client)
-
-
-async def _agent_get_response(agent: Agent, prompt: str, *, use_stream: bool = False):
-    """Call agent.get_response or stream-based equivalent.
-
-    Codex endpoint requires stream=True; use get_response_stream() in that case.
+    Uses DEEPSEEK_API_KEY from .env. No agents SDK, no LiteLLM.
+    Calls go directly to https://api.deepseek.com/chat/completions.
     """
-    if use_stream:
-        stream = agent.get_response_stream(prompt)
-        text_deltas: list[str] = []
-        async for event in stream:
-            data = getattr(event, "data", None)
-            if data is not None:
-                delta = getattr(data, "delta", None)
-                if delta and isinstance(delta, str):
-                    text_deltas.append(delta)
-        result = await stream.wait_final_result()
-        fo = getattr(result, "final_output", None) if result is not None else None
-        if not fo and text_deltas:
-            assembled = "".join(text_deltas)
-            try:
-                if result is not None:
-                    result.final_output = assembled
-                else:
-                    class _R:
-                        final_output = assembled
-                    result = _R()
-            except Exception:
-                pass
-        return result
-    return await agent.get_response(prompt)
-
-
-def _normalise_model_id(model_id: str, provider: str) -> str:
-    """Strip any existing provider prefix and add the correct one."""
-    for prefix in ("openai/", "anthropic/", "openrouter/"):
-        if model_id.startswith(prefix):
-            model_id = model_id[len(prefix):]
-            break
-    return f"{provider}/{model_id}"
-
-
-def _make_html_writer_agent(tool=None) -> "tuple[Agent, bool]":
-    """Create a fresh, stateless agent instance for one ModifySlide call.
-
-    ONLY DeepSeek is supported. Uses DEEPSEEK_API_KEY from .env.
-    """
-    model_id = _get_html_writer_model_id()
     deepseek_key = os.getenv("DEEPSEEK_API_KEY")
     if not deepseek_key:
         raise RuntimeError("DEEPSEEK_API_KEY is required. Set it in .env")
-
-    model = LitellmModel(model=model_id, api_key=deepseek_key)
-    agent = Agent(
-        name="Slide HTML Writer",
-        description="Generates complete slide HTML from task briefs.",
-        instructions=_read_html_writer_instructions(),
-        tools=[],
-        model=model,
-        model_settings=ModelSettings(verbosity="medium"),
+    return AsyncOpenAI(
+        api_key=deepseek_key,
+        base_url="https://api.deepseek.com",
     )
-    return agent, False
+
+
+async def _call_deepseek(client: AsyncOpenAI, model_id: str, system_prompt: str, user_prompt: str) -> str:
+    """Call DeepSeek API directly and return the text response."""
+    response = await client.chat.completions.create(
+        model=model_id,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt},
+        ],
+    )
+    return response.choices[0].message.content or ""
 
 
 def _extract_html_from_output(text: str) -> str:
@@ -663,9 +593,11 @@ class ModifySlide(BaseTool):
         else:
             _tb_log.info(f"[{slide_filename}] task_brief={_tb_len} chars. Preview: {_tb_preview!r}")
 
-        writer, is_codex = _make_html_writer_agent(tool=self)
+        model_id = _get_html_writer_model_id()
+        system_prompt = _read_html_writer_instructions()
+        client = _make_deepseek_client(tool=self)
 
-        sub_results: list[Any] = []
+        sub_results: list[str] = []
         last_validation_error = ""
         previous_failed_html: str | None = None
         final_html = ""
@@ -689,7 +621,7 @@ class ModifySlide(BaseTool):
             )
 
             try:
-                final_result = await _agent_get_response(writer, prompt, use_stream=is_codex)
+                output_text = await _call_deepseek(client, model_id, system_prompt, prompt)
             except Exception as exc:
                 import traceback
                 err_str = str(exc)
@@ -701,21 +633,14 @@ class ModifySlide(BaseTool):
                         f"Rate limit hit on attempt {attempt} for {slide_filename}. Waiting {wait}s before retry."
                     )
                     await asyncio.sleep(wait)
-                last_validation_error = f"Sub-agent error (attempt {attempt}): {exc}\n{traceback.format_exc()}"
+                last_validation_error = f"DeepSeek API error (attempt {attempt}): {exc}\n{traceback.format_exc()}"
                 continue
-            sub_results.append(final_result)
+            sub_results.append(output_text)
 
-            # No result object means the framework swallowed an API-level error
-            # (e.g. rate limit).  Extract whatever error detail is available.
-            if final_result is None:
-                last_validation_error = f"Sub-agent returned no result on attempt {attempt} (possible rate limit or API error)."
-                continue
-            api_error = getattr(final_result, "error", None) or getattr(final_result, "last_error", None)
-            if api_error:
-                last_validation_error = f"Sub-agent API error (attempt {attempt}): {api_error}"
+            if not output_text.strip():
+                last_validation_error = f"Model returned empty output on attempt {attempt}."
                 continue
 
-            output_text = str(getattr(final_result, "final_output", "") or "")
             candidate_html = _extract_html_from_output(output_text)
             if not candidate_html:
                 last_validation_error = f"Model returned empty output on attempt {attempt}."
@@ -811,7 +736,7 @@ class ModifySlide(BaseTool):
                     f"{_pw_prompt}"
                 )
                 try:
-                    _pw_result = await _agent_get_response(writer, _pw_prompt, use_stream=is_codex)
+                    _pw_output = await _call_deepseek(client, model_id, system_prompt, _pw_prompt)
                 except Exception as _pw_exc:
                     _pw_err_str = str(_pw_exc)
                     # Universal backoff for ALL post-write retry errors
@@ -820,9 +745,8 @@ class ModifySlide(BaseTool):
                         await asyncio.sleep(30 * _pw_attempt)
                     _pw_err = _pw_err_str
                     continue
-                if _pw_result is None:
+                if not _pw_output.strip():
                     continue
-                _pw_output = str(getattr(_pw_result, "final_output", "") or "")
                 _pw_candidate = _extract_html_from_output(_pw_output)
                 if not _pw_candidate:
                     continue
