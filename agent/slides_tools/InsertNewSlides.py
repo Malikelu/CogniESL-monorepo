@@ -59,7 +59,7 @@ def _make_deepseek_client(tool=None) -> AsyncOpenAI:
 async def _call_deepseek(client: AsyncOpenAI, model_id: str, system_prompt: str, user_prompt: str) -> str:
     """Call DeepSeek API directly and return the text response.
 
-    Uses reasoning_effort="non-thinking" to minimize latency.
+    Disables thinking mode to minimize latency.
     """
     response = await client.chat.completions.create(
         model=model_id,
@@ -67,7 +67,7 @@ async def _call_deepseek(client: AsyncOpenAI, model_id: str, system_prompt: str,
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt},
         ],
-        extra_body={"reasoning_effort": "non-thinking"},
+        extra_body={"thinking": {"type": "disabled"}},
     )
     return response.choices[0].message.content or ""
 
