@@ -26,7 +26,7 @@ from pathlib import Path
 from agency_swarm.tools import BaseTool
 from pydantic import Field
 
-from .slide_file_utils import get_project_dir, list_slide_files
+from .slide_file_utils import get_mnt_dir, list_slide_files
 
 log = logging.getLogger(__name__)
 
@@ -445,8 +445,9 @@ class BuildOfflineBundle(BaseTool):
     )
 
     def run(self) -> str:
-        project_dir = get_project_dir(self.project_name)
-        slides = list_slide_files(project_dir)
+        # Slides are in presentations/; build output goes there too.
+        presentations_dir = get_mnt_dir() / self.project_name / "presentations"
+        slides = list_slide_files(presentations_dir)
 
         if not slides:
             return f"Error: No slides found in project '{self.project_name}'."
@@ -495,10 +496,8 @@ class BuildOfflineBundle(BaseTool):
             notes_json=notes_json,
         )
 
-        # Save
-        # Note: get_project_dir() already returns mnt/{name}/presentations —
-        # do NOT append /presentations again or the path doubles.
-        out_dir = project_dir
+        # Save bundle to the presentations directory
+        out_dir = presentations_dir
         out_dir.mkdir(parents=True, exist_ok=True)
         out_path = out_dir / f"{self.project_name}.html"
         out_path.write_text(bundle_html, encoding="utf-8")

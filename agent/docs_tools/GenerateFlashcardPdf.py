@@ -75,6 +75,8 @@ class GenerateFlashcardPdf(BaseTool):
         if self.l1_language:
             title += " - " + self.l1_language
 
+        fronts_html = ""
+        backs_html = ""
         fronts_rows = ""
         backs_rows = ""
         for i, (front, back) in enumerate(cards):
