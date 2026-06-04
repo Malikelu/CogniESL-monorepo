@@ -716,6 +716,7 @@ def _run_generation(
         activity_paths = {}
         if has_activity:
             _write_progress(project_name, "8:activity", "start")
+            try:
                 from agent.docs_tools.CreateDocument import CreateDocument
                 html_content = _build_activity_guide_html(
                     grammar_data, grammar_point, age_group,
