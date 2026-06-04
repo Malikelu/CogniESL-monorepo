@@ -34,6 +34,13 @@ meaning:
     purpose: Tests whether the learner can identify and apply the correct form/meaning
       of this grammar point in context. The question ''This time tomorrow, I will
       be flying to Paris.' W...' checks conceptual understanding, not just memorization.
+  - question: Can we say 'I will be knowing the answer at 8pm' using future continuous?
+    answer: No. Future continuous cannot be used with stative verbs like 'know.' Use
+      'I will know the answer by 8pm' (simple future) instead.
+    purpose: Tests whether the learner knows the stative verb restriction on future
+      continuous (will be + -ing). Stative verbs such as know, believe, love, and
+      want cannot appear in the continuous aspect, a rule that applies across all
+      continuous tenses.
   example_generator:
     contexts:
     - everyday situations
@@ -113,6 +120,18 @@ teaching:
   - 'Week 2: Negative and questions, polite requests.'
   - 'Week 3: Contrast with future will/going to.'
   - 'Use timeline visuals: Mark specific future time, show action in progress.'
+  - 'Swan PEU: Future continuous for polite inquiries — ''Will you be using the car
+    tonight?'' is more polite than ''Will you use the car tonight?'''
+  - 'Swan PEU: ''This time tomorrow'' + future continuous — ''This time tomorrow,
+    I will be flying to Paris.'' (action in progress at that future moment).'
+  - 'Swan PEU: Future continuous for parallel future actions — ''While I will be cooking,
+    you will be setting the table.'''
+  - 'GB3 Ch. 7: Future progressive — (a) action in progress at specific future time
+    (''A driver will be waiting''), (b) duration of future action (''Mavis will be
+    working on her thesis for 3 years''). More common in BrE but expanding in both
+    dialects. Source: Celce-Murcia & Larsen-Freeman (2015) GB3 Ch. 7 §7.2.'
+  - 'CGEL Ch. 3: English has no future tense. Will is a modal auxiliary expressing
+    prediction, not a tense marker. Future time is expressed through multiple constructions.'
   recommended_activities:
   - name: This Time Tomorrow
     duration: 15
@@ -123,12 +142,12 @@ teaching:
     adaptation_notes: 'Students practice polite requests using future continuous:
       ''Will you be using the car tonight?'''
 sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
-    Modals, §9.1-9.6'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7:
+    Future Time'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
     University Press.
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
@@ -141,13 +160,37 @@ common_errors:
   - Portuguese
   - Spanish
   - French
+  reliability: D
+  flagged: true
+- error: 'Using future continuous for stative verbs: *''I will be knowing the answer.'''
+  correction: I will know the answer.
+  explanation: 'Swan PEU: Future continuous is NOT used with stative verbs (know,
+    believe, love, want, understand). Use simple future with stative verbs.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  source: Swan (2016) Practical English Usage, 4th ed.
+  reliability: B
+- error: 'Using future continuous for spontaneous decisions: *''I will be getting
+    the door.'''
+  correction: I'll get the door.
+  explanation: 'Swan PEU: Future continuous is for actions already in progress at
+    a future time. Spontaneous decisions use ''will'' (simple).'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  source: Swan (2016) Practical English Usage, 4th ed.
+  reliability: B
 register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
+- note: 'Biber et al. (2021) — Future progressive: register-dependent distribution.
+    More common in conversation (polite tentativeness) than in academic prose. Ch.
+    6.2.1.3'
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 6.2.1.3
+  reliability: C
+dialectal_variation: []
 discourse_notes:
 - note: In conversation, this structure is used for everyday communication and is
     among the most frequent patterns in spoken English.
@@ -155,3 +198,22 @@ discourse_notes:
     knowledge, methodology, and findings.
 - note: In news reports, this structure is used for reporting events and attributing
     statements.
+citations:
+- claim: 'Core meaning: An action that is in progress at a specific future time, or
+    a future action that is already planned'
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: Future
+    Time'
+  tier: 1
+  reliability: B
+- claim: 'Discourse function: In conversation, this structure is used for everyday
+    communication and is among the most frequent patterns'
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: Future
+    Time'
+  tier: 1
+  reliability: B
+- claim: Common error '*I will cook dinner at 8pm.* (action in progress)' for Portuguese,
+    Spanish, French speakers
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+  reliability: B

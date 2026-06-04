@@ -1,17 +1,84 @@
+citations:
+- claim: 'Core meaning: Give strong advice or warnings, implying negative consequences if not followed'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms'
+  tier: 1
+- claim: 'Register distribution: ''Had better'' is primarily spoken and informal; rare in formal writing where ''should'' is preferred.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms'
+  tier: 1
+- claim: Common error '*You had better to go.*' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+common_errors:
+- correction: You had better go.
+  error: '*You had better to go.*'
+  explanation: '''Had better'' is followed by the base verb (no ''to''). This is a common structural error.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+- correction: You should have studied yesterday.
+  error: 'Using ''had better'' for past advice: *''You had better studied yesterday.'''
+  explanation: 'Swan PEU: ''Had better'' refers to present/future only -- not past. For past advice that was not followed, use ''should have + past participle''.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: I would rather stay home.
+  error: 'Confusing ''had better'' with ''would rather'': *''I had rather stay home.'''
+  explanation: 'Swan PEU: ''Had better'' = strong advice/warning. ''Would rather'' = preference. They are not interchangeable.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+description: 'Structure used to give strong advice or warnings, similar to ''should'' but more urgent: had better + base verb.'
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - education and school
+      min_examples: 4
+    structure: 'Had better + base verb: You had better go now.'
+  negative:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: 'Had better not + base verb: You had better not go.'
+  questions:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: 'Invert had and subject: Had you better go? (rare, more common: Do you think I had better go?)'
 grammar_point: had_better
-title: Had Better (Strong Advice)
-description: 'Structure used to give strong advice or warnings, similar to ''should''
-  but more urgent: had better + base verb.'
 level: B2
 meaning:
-  core_meaning: Give strong advice or warnings, implying negative consequences if
-    not followed. This grammar point is essential for expressing had better in English.
-    Learners at this level need to understand both the form and the appropriate contexts
-    for use. Common errors include confusion with related structures and inappropriate
-    register use.
-  timeline: 'Present/future: Advice for current or future actions.'
-  contrast: 'Had Better = Strong advice (negative consequence): You had better go
-    (or you''ll be late)
+  ccqs:
+  - answer: It is stronger. 'Had better' implies something bad will happen if you do not follow the advice, whereas 'should' is a milder suggestion.
+    purpose: Tests whether the learner understands the relative strength of 'had better' compared to other advice modals.
+    question: Is 'You had better' stronger or weaker than 'You should'?
+  - answer: You are giving strong advice with an implied warning, not a formal rule. The speaker is suggesting negative consequences will follow if the advice is not followed.
+    purpose: Tests whether the learner understands the implied warning and consequence function of 'had better'.
+    question: If I say 'You had better not be late,' am I giving advice or making a threat?
+  - answer: You had better study. Had better is followed by the base verb without to.
+    purpose: Tests whether the learner knows that had better takes the bare verb form, unlike ought to or want to.
+    question: Is it correct to say "You had better to study" or "You had better study"?
+  contrast: 'Had Better = Strong advice (negative consequence): You had better go (or you''ll be late)
 
 
     Should = Mild advice: You should go (good idea)
@@ -20,148 +87,88 @@ meaning:
     Must = Obligation: You must go (rule)
 
     '
-  ccqs:
-  - question: If I say 'You had better study tonight,' is it just a suggestion or
-      a strong warning?
-    answer: It is a strong warning — there will be negative consequences if you don't.
-    purpose: Tests whether the learner understands that 'had better' expresses strong
-      advice with an implied negative consequence if not followed. It is stronger
-      than 'should' but weaker than 'must'.
-  - question: Is 'You had better' stronger or weaker than 'You should'?
-    answer: It is stronger. 'Had better' implies something bad will happen if you
-      don't follow the advice.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Is 'You had better' stronger
-      or weaker than 'You s...' checks conceptual understanding, not just memorization.
-  - question: If I say 'You had better not be late,' am I giving advice or making
-      a rule?
-    answer: You are giving strong advice with an implied warning — not a formal rule,
-      but a serious suggestion.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'If I say 'You had better not
-      be late,' am I giving...' checks conceptual understanding, not just memorization.
+  core_meaning: Had better expresses strong advice or a warning, implying negative consequences if not followed. It is stronger than 'should' but not as strong as 'must'. The form is fixed and restricted
+    to present/future time reference.
   example_generator:
     contexts:
     - everyday situations
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Had better + base verb: You had better go now.'
-    example_generator:
-      contexts:
-      - education and school
-      min_examples: 4
-  negative:
-    structure: 'Had better not + base verb: You had better not go.'
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
-  questions:
-    structure: 'Invert had and subject: Had you better go? (rare, more common: Do
-      you think I had better go?)'
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
+  timeline: 'Present/future: Advice for current or future actions.'
+phonetics:
+- example_generator:
+    contexts:
+    - had better contraction
+  l1_issue: Learners may write 'You better go' in formal contexts. Teach that the standard form is 'You had better go.'
+  note: 'Had better is often contracted to better in informal speech: ''You better go'' /jə ˈbetə ɡəʊ/. The had is dropped in casual speech, though this is not standard in writing.'
+register_notes:
+- note: 'Biber et al. (1999) — Semi-modal expressions like ''had better'': register distribution skewed toward spoken/directive contexts. More common in conversation and informal writing. Ch. 6.6'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 6.6
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Had better expresses strong advice or a warning. It means it would be a good
-    idea to do something, often with an implied negative consequence
-  type: semantic
-  examples:
+- examples:
   - You had better study for the exam (or you will fail)
   - We had better leave now (or we will be late)
   - He had better apologise (or she will be angry)
-- rule: Had better is followed by the base form of the verb (without to)
-  type: grammatical
-  examples:
+  rule: Had better expresses strong advice or a warning. It means it would be a good idea to do something, often with an implied negative consequence
+  type: semantic
+- examples:
   - You had better go (correct)
   - You had better to go (WRONG)
-- rule: The negative form is had better not
+  rule: Had better is followed by the base form of the verb (without to)
   type: grammatical
-  examples:
+- examples:
   - You had better not be late
   - We had better not forget the tickets
   - She had better not tell anyone
-- rule: Had better is not the same as would rather. Had better = advice or warning.
-    Would rather = preference
-  type: semantic
-  examples:
+  rule: The negative form is had better not
+  type: grammatical
+- examples:
   - You had better go (advice — you should go)
   - I would rather go (preference — I prefer to go)
-use:
-- name: Strong Advice
-  description: Urgent advice with implied negative consequence.
-  examples:
-  - You had better apologise.
-  - We had better hurry.
-  key_point: Stronger than 'should'.
-- name: Warnings
-  description: Warn about negative outcomes.
-  examples:
-  - You had better not touch that (it's hot).
-  - You had better be careful.
-  key_point: Implies bad things will happen if ignored.
-- name: Informal Use
-  description: Most common in spoken English, informal contexts.
-  examples:
-  - You'd better go now. (contraction)
-  key_point: Contraction 'you'd better' is common in speech.
-phonetics:
-- note: 'Had better is often contracted to better in informal speech: ''You better
-    go'' /jə ˈbetə ɡəʊ/. The had is dropped in casual speech, though this is not standard
-    in writing.'
-  example_generator:
-    contexts:
-    - had better contraction
-  l1_issue: Learners may write 'You better go' in formal contexts. Teach that the
-    standard form is 'You had better go.'
+  rule: Had better is not the same as would rather. Had better = advice or warning. Would rather = preference
+  type: semantic
 teaching:
   methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Give students scenarios. They give advice using had better: ''My friend has an exam tomorrow.'' → ''He had better study tonight.'''
+    duration: 15
+    name: Advice Scenarios
+  - adaptation_notes: 'Show warning signs (wet floor, high voltage). Students create sentences: ''You had better not touch that.'''
+    duration: 10
+    name: Warning Signs
   tips:
+  - 'Parrott (2000) Ch. 11: Had better negative is had better not (not hadn''t better). In questions, subject goes after had: Hadn''t you better wear something warmer? Many people avoid had better in questions,
+    preferring should. In speaking, had is sometimes dropped. Source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 11: Modal verbs, 11.5.'
   - 'Week 1: Affirmative had better (strong advice).'
   - 'Week 2: Negative had better (warnings).'
   - 'Week 3: Contrast with should/must, formal vs informal.'
   - 'Use warning scenarios: You had better not be late for the exam!'
-  recommended_activities:
-  - name: Advice Scenarios
-    duration: 15
-    adaptation_notes: 'Give students scenarios. They give advice using had better:
-      ''My friend has an exam tomorrow.'' → ''He had better study tonight.'''
-  - name: Warning Signs
-    duration: 10
-    adaptation_notes: 'Show warning signs (wet floor, high voltage). Students create
-      sentences: ''You had better not touch that.'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
-    Modals, §9.1-9.6'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*You had better to go.*'
-  correction: You had better go.
-  explanation: '''Had better'' is followed by the base verb (no ''to''). This is a
-    common structural error.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.
+  - 'Swan PEU: ''Had better'' is stronger than ''should'' but not as strong as ''must''. ''You''d better leave'' = strong warning. ''You should leave'' = advice. ''You must leave'' = order.'
+  - 'Swan PEU: ''Had better'' has an ''if not'' implication. ''You''d better be careful'' = ''If you''re not careful (something bad will happen)''.'
+  - 'Swan PEU: ''You''d better not'' for warnings. ''You''d better not touch that'' (implied: or something bad will happen).'
+title: Had Better (Strong Advice)
+use:
+- description: Urgent advice with implied negative consequence.
+  examples:
+  - You had better apologise.
+  - We had better hurry.
+  key_point: Stronger than 'should'.
+  name: Strong Advice
+- description: Warn about negative outcomes.
+  examples:
+  - You had better not touch that (it's hot).
+  - You had better be careful.
+  key_point: Implies bad things will happen if ignored.
+  name: Warnings
+- description: Most common in spoken English, informal contexts.
+  examples:
+  - You'd better go now. (contraction)
+  key_point: Contraction 'you'd better' is common in speech.
+  name: Informal Use

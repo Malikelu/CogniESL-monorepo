@@ -1,168 +1,226 @@
-grammar_point: reflexive_pronouns
-title: Reflexive Pronouns (myself, yourself, himself, herself, itself, ourselves,
-  yourselves, themselves)
-description: Pronouns that refer back to the subject of the sentence, indicating the
-  subject and object are the same person or thing.
-level: A2
-meaning:
-  core_meaning: Reflexive pronouns indicate the action of the verb is performed on
-    the subject itself (subject = object).
-  timeline: N/A (Reflexive pronouns are not tense-based; they match the subject's
-    person and number.)
-  contrast: 'Non-reflexive: "I cut the bread." (object = bread, different from subject)
-
-    Reflexive: "I cut myself." (object = myself, same as subject)
-
-    '
-  ccqs:
-  - question: Does the subject and object refer to the same person?
-    answer: Yes — the subject does the action to itself.
-    purpose: 'Tests whether the learner understands the fundamental condition for
-      using reflexive pronouns: the subject and object must be the same entity.'
-  - question: Is the reflexive pronoun necessary here?
-    answer: Yes — without it, the sentence would be ungrammatical or have a different
-      meaning.
-    purpose: Tests whether the learner can distinguish when a reflexive pronoun is
-      required (subject = object) vs when a regular pronoun is needed.
-  - question: Is this reflexive pronoun used for emphasis?
-    answer: Yes — it emphasizes that I did it personally, not someone else.
-    purpose: 'Tests whether the learner understands the emphatic use: ''I did it myself''
-      (emphasis) vs ''I hurt myself'' (reflexive).'
-  example_generator:
-    contexts:
-    - everyday situations
-    cultural_notes: []
-    min_examples: 5
-form:
-  affirmative:
-    structure: 'Subject + Verb + Reflexive Pronoun: "I cut myself." "She taught herself."
-
-      Reflexive pronouns: myself, yourself, himself, herself, itself, ourselves, yourselves,
-      themselves
-
-      '
-    example_generator:
-      contexts:
-      - entertainment and media
-      - social interactions
-      min_examples: 4
-  negative:
-    structure: 'Subject + don''t/doesn''t/didn''t + Verb + Reflexive Pronoun: "I didn''t
-      hurt myself." "She doesn''t drive herself."
-
-      '
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
-  questions:
-    structure: 'Auxiliary + Subject + Verb + Reflexive Pronoun: "Did you hurt yourself?"
-      "Can she drive herself?"
-
-      '
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
-sub_rules:
-- rule: 'Complete list: myself, yourself, himself, herself, itself, ourselves, yourselves,
-    themselves'
-  type: lexical
-  examples:
-  - I hurt myself
-  - She taught herself
-  - They enjoyed themselves
-- rule: Used when subject and object are the same person
-  type: grammatical
-  examples:
-  - I cut myself (I = subject, myself = object)
-  - She looked at herself in the mirror
-  - They hurt themselves
-- rule: 'Common verbs used with reflexives: cut, hurt, burn, teach, enjoy, behave,
-    introduce, blame, pride'
-  type: lexical
-  examples:
-  - I cut myself
-  - She taught herself guitar
-  - They enjoyed themselves
-use:
-- name: Same Subject/Object
-  description: Action is done to the subject by the subject.
-  examples:
-  - She washed herself.
-  - We introduced ourselves.
-  key_point: Reflexive pronoun must match the subject's person/number.
-- name: Emphasis
-  description: Emphasize the subject did the action alone (no help).
-  examples:
-  - I built this house myself.
-  - She fixed the car herself.
-  key_point: Placed after the verb or at the end of the sentence for emphasis.
-- name: Idiomatic Expressions
-  description: Fixed phrases using reflexive pronouns.
-  examples:
-  - Help yourself to food.
-  - Make yourself at home.
-  - Behave yourself.
-  key_point: Memorize common idiomatic uses.
-phonetics:
-- note: 'Reflexive pronouns are usually unstressed: ''I hurt myself'' → /aɪ hɜːt mɪself/.
-    The stress falls on the verb.'
-  example_generator:
-    contexts:
-    - reflexive pronunciation
-  l1_issue: Portuguese speakers may use the wrong reflexive form. Teach the complete
-    list and drill.
-teaching:
-  methodology: PPP
-  tips:
-  - 'Week 1: Basic reflexive pronouns (match to subject: I → myself, you → yourself).'
-  - 'Week 2: Emphatic use and placement.'
-  - 'Week 3: Idiomatic expressions (help yourself, make yourself at home).'
-  - 'Use mirror activity: Students point to themselves and say ''I see myself'' to
-    reinforce the concept.'
-  recommended_activities:
-  - name: Reflexive or Not
-    duration: 10
-    adaptation_notes: 'Students identify if a reflexive pronoun is needed: ''I cut
-      ___'' (myself), ''She cut ___'' (herself), ''I cut him'' (NOT himself — different
-      person).'
-  - name: Reflexive Pronoun List
-    duration: 10
-    adaptation_notes: 'Students memorize the complete list using a chant: ''Myself,
-      yourself, himself, herself, itself, ourselves, yourselves, themselves.'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, 12.20'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 5: Nouns and Noun Phrases, 5.8 (reflexive pronouns)'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 481-485 (reflexive
-    pronouns: myself, yourself, himself)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    11: Pronouns, 11.6 (reflexives)'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 6: Reflexive pronouns'
+citations:
+- claim: 'Core meaning: Reflexive pronouns indicate the action of the verb is performed on the subject itself (subject = obj'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession-16.5, 12.20'
+  tier: 1
+- claim: 'Register distribution: Reflexive pronouns are neutral in register.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession'
+  tier: 1
+- claim: 'Discourse function: In conversation, reflexive pronouns are used for emphasis: ''I did it myself.'''
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession'
+  tier: 1
+- claim: Common error '*I myself did it.* (emphasis) vs *I hurt me.* (reflexive)' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 11: Pronouns, 11.6 (reflexives)'
+  tier: 1
+- claim: L1 transfer in reflexive pronouns varies significantly across language backgrounds — Swan & Smith document contrastive
+    patterns for speakers of different L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents how transfer effects are non-linear,
+    determined by functional fit between L1 and L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects are non-linear — determined by functional
+    fit between L1 and L2 systems rather than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning. Routledge.
+  tier: 2
 common_errors:
-- error: '*I myself did it.* (emphasis) vs *I hurt me.* (reflexive)'
-  correction: I did it myself. / I hurt myself.
-  explanation: Reflexive pronouns are used when subject and object are the same (I
-    hurt myself) or for emphasis (I did it myself). 'I hurt me' is incorrect.
+- correction: I did it myself. / I hurt myself.
+  error: '*I myself did it.* (emphasis) vs *I hurt me.* (reflexive)'
+  explanation: Reflexive pronouns are used when subject and object are the same (I hurt myself) or for emphasis (I did it
+    myself). 'I hurt me' is incorrect.
   l1_groups:
   - Portuguese
   - Spanish
   - French
   - Chinese
-register_notes:
-- note: Reflexive pronouns are neutral in register.
-- note: 'In formal writing, reflexive pronouns add emphasis: ''The minister herself
-    announced the decision.'''
-- note: 'In conversation, reflexive pronouns are in fixed expressions: ''Enjoy yourself.''
-    ''Behave yourself.'''
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Pronouns'
+- correction: Please contact me.
+  error: 'Using reflexive when not needed: *''Please contact myself.'''
+  explanation: 'Swan (2016) PEU Entry 178: Reflexive pronouns are used when subject and object are the same person. "I hurt
+    myself" (OK). "Contact me" (NOT "contact myself").'
+  l1_groups: &id001
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan Entry 72. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+- correction: They did it by themselves.
+  error: 'Using ''hisself'' / ''theirselfs'': *''They did it by theirselfs.'''
+  explanation: 'Swan PEU: Correct reflexives -- myself, yourself, himself, herself, itself, ourselves, yourselves, themselves.
+    "Hisself" and "theirself" are non-standard.'
+  l1_groups: *id001
+  reliability: B
+  source: Swan Entry 72. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+description: Pronouns that refer back to the subject of the sentence, indicating the subject and object are the same person
+  or thing.
+dialectal_variation: []
 discourse_notes:
 - note: 'In conversation, reflexive pronouns are used for emphasis: ''I did it myself.'''
-- note: 'In academic writing, reflexive pronouns add emphasis: ''The researchers themselves
-    conducted the interviews.'''
-- note: 'In conversation, reflexive pronouns are common in fixed expressions: ''Help
-    yourself.'' ''Make yourself at home.'''
+- note: 'In academic writing, reflexive pronouns add emphasis: ''The researchers themselves conducted the interviews.'''
+- note: 'In conversation, reflexive pronouns are common in fixed expressions: ''Help yourself.'' ''Make yourself at home.'''
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - entertainment and media
+      - social interactions
+      min_examples: 4
+    structure: 'Subject + Verb + Reflexive Pronoun: "I cut myself." "She taught herself."
+
+      Reflexive pronouns: myself, yourself, himself, herself, itself, ourselves, yourselves, themselves
+
+      '
+  negative:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: 'Subject + don''t/doesn''t/didn''t + Verb + Reflexive Pronoun: "I didn''t hurt myself." "She doesn''t drive
+      herself."
+
+      '
+  questions:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: 'Auxiliary + Subject + Verb + Reflexive Pronoun: "Did you hurt yourself?" "Can she drive herself?"
+
+      '
+grammar_point: reflexive_pronouns
+level: A2
+meaning:
+  ccqs:
+  - answer: Yes — the subject does the action to itself.
+    purpose: 'Tests whether the learner understands the fundamental condition for using reflexive pronouns: the subject and
+      object must be the same entity.'
+    question: Does the subject and object refer to the same person?
+  - answer: Yes — without it, the sentence would be ungrammatical or have a different meaning.
+    purpose: Tests whether the learner can distinguish when a reflexive pronoun is required (subject = object) vs when a regular
+      pronoun is needed.
+    question: Is the reflexive pronoun necessary here?
+  - answer: Yes — it emphasizes that I did it personally, not someone else.
+    purpose: 'Tests whether the learner understands the emphatic use: ''I did it myself'' (emphasis) vs ''I hurt myself''
+      (reflexive).'
+    question: Is this reflexive pronoun used for emphasis?
+  - answer: When the subject and object refer to the same person, English requires a reflexive pronoun (myself, yourself,
+      himself, etc.), not a regular object pronoun. 'I cut me' uses the object pronoun 'me' which implies a different person
+      from the subject 'I'. 'I cut myself' correctly shows that the subject and object are the same person.
+    purpose: Tests whether the learner understands the grammatical rule that reflexive pronouns must be used when the object
+      of a verb is the same as the subject. This is a fundamental rule of English grammar at A2 level, and using a regular
+      object pronoun (me, him, her) instead of a reflexive pronoun (myself, himself, herself) when subject and object are
+      identical is a common error across many L1 backgrounds.
+    question: Why is 'I cut myself' correct but 'I cut me' incorrect?
+  contrast: 'Non-reflexive: "I cut the bread." (object = bread, different from subject)
+
+    Reflexive: "I cut myself." (object = myself, same as subject)
+
+    '
+  core_meaning: Reflexive pronouns indicate the action of the verb is performed on the subject itself (subject = object).
+  example_generator:
+    contexts:
+    - everyday situations
+    cultural_notes: []
+    min_examples: 5
+  timeline: N/A (Reflexive pronouns are not tense-based; they match the subject's person and number.)
+phonetics:
+- example_generator:
+    contexts:
+    - reflexive pronunciation
+  l1_issue: Portuguese speakers may use the wrong reflexive form. Teach the complete list and drill.
+  note: 'Reflexive pronouns are usually unstressed: ''I hurt myself'' → /aɪ hɜːt mɪself/. The stress falls on the verb.'
+register_notes:
+- note: Reflexive pronouns are neutral in register.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In formal writing, reflexive pronouns add emphasis: ''The minister herself announced the decision.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In conversation, reflexive pronouns are in fixed expressions: ''Enjoy yourself.'' ''Behave yourself.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Reflexive pronouns: register distribution varies. Conversation uses more emphatic reflexives;
+    academic prose uses more standard reflexive patterns. Ch. 2.10.4'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 2.10.4
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 11: Pronouns, 11.6 (reflexives)'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession-16.5, 12.20'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Ch. 5: Nouns and Noun Phrases, 5.8
+    (reflexive pronouns)'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners. Ch. 6: Reflexive pronouns'
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(reflexive pronouns: myself, yourself, himself)'
+sub_rules:
+- examples:
+  - I hurt myself
+  - She taught herself
+  - They enjoyed themselves
+  rule: 'Complete list: myself, yourself, himself, herself, itself, ourselves, yourselves, themselves'
+  type: lexical
+- examples:
+  - I cut myself (I = subject, myself = object)
+  - She looked at herself in the mirror
+  - They hurt themselves
+  rule: Used when subject and object are the same person
+  type: grammatical
+- examples:
+  - I cut myself
+  - She taught herself guitar
+  - They enjoyed themselves
+  rule: 'Common verbs used with reflexives: cut, hurt, burn, teach, enjoy, behave, introduce, blame, pride'
+  type: lexical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students identify if a reflexive pronoun is needed: ''I cut ___'' (myself), ''She cut ___'' (herself),
+      ''I cut him'' (NOT himself — different person).'
+    duration: 10
+    name: Reflexive or Not
+  - adaptation_notes: 'Students memorize the complete list using a chant: ''Myself, yourself, himself, herself, itself, ourselves,
+      yourselves, themselves.'''
+    duration: 10
+    name: Reflexive Pronoun List
+  tips:
+  - 'GB3 Ch. 16: Reflexive pronouns replace NP objects that refer back to the subject. Exception: object pronouns, NOT reflexives,
+    are used after prepositions of place: ''He set his briefcase down next to him'' (not *next to himself). But reflexives
+    ARE used after other prepositions: ''He was angry with himself.'' Source: Celce-Murcia & Larsen-Freeman (2015) GB3 3rd
+    ed. Ch. 16 §16.1.'
+  - 'Week 1: Basic reflexive pronouns (match to subject: I → myself, you → yourself).'
+  - 'Week 2: Emphatic use and placement.'
+  - 'Week 3: Idiomatic expressions (help yourself, make yourself at home).'
+  - 'Use mirror activity: Students point to themselves and say ''I see myself'' to reinforce the concept.'
+  - 'Swan PEU: Reflexives for emphasis. "I made it myself" (emphasis). "The mayor herself opened the building" (emphatic).'
+  - 'Swan PEU: "Each other" vs "one another". Traditionally: "each other" for two people, "one another" for three+. In practice,
+    they are interchangeable in modern English.'
+title: Reflexive Pronouns (myself, yourself, himself, herself, itself, ourselves, yourselves, themselves)
+use:
+- description: Action is done to the subject by the subject.
+  examples:
+  - She washed herself.
+  - We introduced ourselves.
+  key_point: Reflexive pronoun must match the subject's person/number.
+  name: Same Subject/Object
+- description: Emphasize the subject did the action alone (no help).
+  examples:
+  - I built this house myself.
+  - She fixed the car herself.
+  key_point: Placed after the verb or at the end of the sentence for emphasis.
+  name: Emphasis
+- description: Fixed phrases using reflexive pronouns.
+  examples:
+  - Help yourself to food.
+  - Make yourself at home.
+  - Behave yourself.
+  key_point: Memorize common idiomatic uses.
+  name: Idiomatic Expressions

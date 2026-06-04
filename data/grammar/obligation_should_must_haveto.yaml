@@ -1,49 +1,102 @@
+citations:
+- claim: 'Core meaning: "Should" expresses advice or recommendation — it is a good idea, but there is no requirement'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms-9.6'
+  tier: 1
+- claim: 'Discourse function: In conversation, modals are essential for politeness, expressing degrees of certainty, and making
+    re'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms-9.6'
+  tier: 1
+- claim: Common error '*You should wear a seatbelt.* (legal requirement)' for Portuguese, Spanish speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for L1-specific error patterns in English.
+    Their learner English framework documents how each L1 group produces characteristic errors in this grammatical domain,
+    enabling teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference and Other Problems, 2nd ed. Cambridge
+    University Press.'
+  tier: 2
+common_errors:
+- correction: You must wear a seatbelt. / You have to wear a seatbelt.
+  error: '*You should wear a seatbelt.* (legal requirement)'
+  explanation: '''Should'' is advice, not a rule. For legal requirements, use ''must'' or ''have to''. Confusing these can
+    lead to dangerous misunderstandings.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: D
+description: Comparing and contrasting should (advice), must (strong obligation), and have to (external obligation) to express
+  different degrees of necessity.
+dialectal_variation: []
+discourse_notes:
+- note: In conversation, modals are essential for politeness, expressing degrees of certainty, and making requests.
+- note: 'In academic writing, modals express hedging and caution: ''These results may suggest...'' ''It could be argued that...'''
+- note: 'In legal and regulatory language, modals express obligation and permission: ''All passengers must wear seatbelts.'''
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - giving advice
+      - expressing obligation
+      - stating rules
+      min_examples: 4
+    structure: 'Should: Subject + should + base verb — "You should study more." Must: Subject + must + base verb — "You must
+      study more." Have to: Subject + have/has to + base verb — "You have to study more." All three are followed by the base
+      form of the verb (no -s, no to).'
+  negative:
+    example_generator:
+      contexts:
+      - negative advice
+      - prohibitions
+      - lack of obligation
+      min_examples: 3
+    structure: 'Should not (shouldn''t): Subject + shouldn''t + base verb — "You shouldn''t eat so much sugar." Must not (mustn''t):
+      Subject + mustn''t + base verb — "You mustn''t touch that." Don''t have to: Subject + don''t/doesn''t have to + base
+      verb — "You don''t have to pay now."'
+  questions:
+    example_generator:
+      contexts:
+      - asking for advice
+      - checking obligations
+      - clarifying rules
+      min_examples: 3
+    structure: 'Should: Should + subject + base verb? — "Should I see a doctor?" Must: Must + subject + base verb? — "Must
+      I finish this today?" Have to: Do/Does + subject + have to + base verb? — "Do I have to finish this today?"'
 grammar_point: obligation_should_must_haveto
-title: 'Advice and Obligation: Should, Must, and Have to'
-description: Comparing and contrasting should (advice), must (strong obligation),
-  and have to (external obligation) to express different degrees of necessity.
 level: A2
 meaning:
-  core_meaning: '"Should" expresses advice or recommendation — it is a good idea,
-    but there is no requirement. "Must" expresses strong obligation — it is necessary
-    and the speaker feels strongly about it. "Have to" expresses external obligation
-    — a rule, law, or another person requires it. The strength increases: should <
-    have to < must.'
-  timeline: 'All three can express present or future meaning: "You should rest." /
-    "You have to rest." / "You must rest." For past advice, use "should have + past
-    participle": "You should have rested." For past obligation, use "had to": "I had
-    to work."'
-  contrast: 'Should (advice): "You should eat more vegetables." (It would be a good
-    idea, but it is your choice.)
+  ccqs:
+  - answer: No. You are giving advice. It is a recommendation, not a requirement.
+    purpose: 'Tests whether the learner understands the three-way distinction: should (advice), must (strong obligation),
+      have to (external requirement). All three express obligation but with different sources and strengths.'
+    question: If I say 'You should see a doctor,' am I forcing the person?
+  - answer: Yes. "Must" shows strong obligation — the speaker believes it is very important or necessary.
+    purpose: Tests understanding of obligation_should_must_haveto.
+    question: If I say 'You must see a doctor,' is it stronger than 'should'?
+  - answer: It could be an external reason — perhaps the clinic requires it, or your boss insists. The obligation comes from
+      outside.
+    purpose: Tests understanding of obligation_should_must_haveto.
+    question: If I say 'I have to see a doctor,' who is making me go?
+  - answer: '"Must not" means parking is forbidden. "Don''t have to" means parking is optional — you can park elsewhere if
+      you prefer.'
+    purpose: Tests understanding of obligation_should_must_haveto.
+    question: Can you explain the difference between 'You must not park here' and 'You don't have to park here' by giving
+      an example of when to use each?
+  contrast: 'Should (advice): "You should eat more vegetables." (It would be a good idea, but it is your choice.)
 
-    Have to (external rule): "I have to wear a uniform." (The company requires it;
-    I have no choice.)
+    Have to (external rule): "I have to wear a uniform." (The company requires it; I have no choice.)
 
-    Must (strong obligation): "You must stop at a red light." (It is essential — a
-    law or a moral duty.)
+    Must (strong obligation): "You must stop at a red light." (It is essential — a law or a moral duty.)
 
     No obligation: "You don''t have to come if you don''t want to." (It is optional.)
 
     '
-  ccqs:
-  - question: If I say 'You should see a doctor,' am I forcing the person?
-    answer: No. You are giving advice. It is a recommendation, not a requirement.
-    purpose: 'Tests whether the learner understands the three-way distinction: should
-      (advice), must (strong obligation), have to (external requirement). All three
-      express obligation but with different sources and strengths.'
-  - question: If I say 'You must see a doctor,' is it stronger than 'should'?
-    answer: Yes. "Must" shows strong obligation — the speaker believes it is very
-      important or necessary.
-    purpose: Tests understanding of obligation_should_must_haveto.
-  - question: If I say 'I have to see a doctor,' who is making me go?
-    answer: It could be an external reason — perhaps the clinic requires it, or your
-      boss insists. The obligation comes from outside.
-    purpose: Tests understanding of obligation_should_must_haveto.
-  - question: What is the difference between 'You must not park here' and 'You don't
-      have to park here'?
-    answer: '"Must not" means parking is forbidden. "Don''t have to" means parking
-      is optional — you can park elsewhere if you prefer.'
-    purpose: Tests understanding of obligation_should_must_haveto.
+  core_meaning: '"Should" expresses advice or recommendation — it is a good idea, but there is no requirement. "Must" expresses
+    strong obligation — it is necessary and the speaker feels strongly about it. "Have to" expresses external obligation —
+    a rule, law, or another person requires it. The strength increases: should < have to < must.'
   example_generator:
     contexts:
     - health advice
@@ -52,85 +105,123 @@ meaning:
     - everyday recommendations
     - legal obligations
     cultural_notes:
-    - 'In British English, "should" is very commonly used for polite advice: "You
-      should try the fish." It is softer than "must" and less direct. In many cultures,
-      direct advice can sound rude, so "should" is a useful softening device.'
-    - Learners often confuse "must" and "should" because both can translate to the
-      same word in their L1. Emphasise the strength difference with clear contexts.
+    - 'In British English, "should" is very commonly used for polite advice: "You should try the fish." It is softer than
+      "must" and less direct. In many cultures, direct advice can sound rude, so "should" is a useful softening device.'
+    - Learners often confuse "must" and "should" because both can translate to the same word in their L1. Emphasise the strength
+      difference with clear contexts.
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Should: Subject + should + base verb — "You should study more." Must:
-      Subject + must + base verb — "You must study more." Have to: Subject + have/has
-      to + base verb — "You have to study more." All three are followed by the base
-      form of the verb (no -s, no to).'
-    example_generator:
-      contexts:
-      - giving advice
-      - expressing obligation
-      - stating rules
-      min_examples: 4
-  negative:
-    structure: 'Should not (shouldn''t): Subject + shouldn''t + base verb — "You shouldn''t
-      eat so much sugar." Must not (mustn''t): Subject + mustn''t + base verb — "You
-      mustn''t touch that." Don''t have to: Subject + don''t/doesn''t have to + base
-      verb — "You don''t have to pay now."'
-    example_generator:
-      contexts:
-      - negative advice
-      - prohibitions
-      - lack of obligation
-      min_examples: 3
-  questions:
-    structure: 'Should: Should + subject + base verb? — "Should I see a doctor?" Must:
-      Must + subject + base verb? — "Must I finish this today?" Have to: Do/Does +
-      subject + have to + base verb? — "Do I have to finish this today?"'
-    example_generator:
-      contexts:
-      - asking for advice
-      - checking obligations
-      - clarifying rules
-      min_examples: 3
+  timeline: 'All three can express present or future meaning: "You should rest." / "You have to rest." / "You must rest."
+    For past advice, use "should have + past participle": "You should have rested." For past obligation, use "had to": "I
+    had to work."'
+phonetics:
+- example_generator:
+    contexts:
+    - connected speech
+    - weak forms
+  l1_issue: Learners may over-pronounce "should" as /ʃuːld/ with a full vowel. Drill the reduced form in natural sentences.
+  note: '"Should" is pronounced /ʃʊd/ in its strong form but is often reduced to /ʃəd/ or even /ʃd/ in connected speech: "You
+    should go" /ju ʃəd ɡəʊ/. "Shouldn''t" is pronounced /ˈʃʊdənt/.'
+- example_generator:
+    contexts:
+    - connected speech
+    - weak forms
+  l1_issue: Learners may drop the /t/ in "mustn't," making it sound like "musn't." Practice the full pronunciation.
+  note: '"Must" in connected speech: /məs/ — "You must try it" /ju məs traɪ ɪt/. "Mustn''t" is /ˈmʌsənt/ with a clear /t/
+    at the end.'
+register_notes:
+- note: 'In conversation, modals are essential for politeness: ''Could you pass the salt?'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In legal language, ''must'' expresses strong obligation: ''All passengers must wear seatbelts.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Obligation modals (''should'', ''must'', ''have to''): register distribution varies significantly.
+    Conversation favors ''have to''; formal/academic writing favors ''must'' and ''should''. Ch. 6.6.2'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 6.6.2
+- note: 'Biber et al. (2021) — Obligation modals and semi-modals: conversation favors ''have to''; formal/academic writing
+    favors ''must'' and ''should''. Register choice signals formality level. Ch. 6.6.2, 6.6.4.2'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 6.6.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Should — advice, recommendation, or expectation
-  type: grammatical
-  examples:
+- examples:
   - You should drink more water. (Advice.)
   - He should be here by now. (Expectation.)
   - Students should arrive on time. (Recommendation.)
-- rule: Must — strong obligation, necessity, or logical deduction
+  rule: Should — advice, recommendation, or expectation
   type: grammatical
-  examples:
+- examples:
   - You must wear a helmet. (Strong obligation.)
   - She must be tired after such a long journey. (Logical deduction.)
   - I must remember to lock the door. (Personal necessity.)
-- rule: Have to — external obligation from rules, laws, or circumstances
+  rule: Must — strong obligation, necessity, or logical deduction
   type: grammatical
-  examples:
+- examples:
   - I have to work on Saturdays. (My contract requires it.)
   - You have to show your passport at the border. (The law requires it.)
   - She has to take the bus because her car broke down. (Circumstances.)
-- rule: Should have + past participle — advice about the past (regret or criticism)
+  rule: Have to — external obligation from rules, laws, or circumstances
   type: grammatical
-  examples:
+- examples:
   - You should have studied harder. (But you didn't.)
   - She should have told the truth. (But she didn't.)
   - We should have left earlier. (But we didn't.)
-- rule: Must not vs don't have to — prohibition vs no obligation
+  rule: Should have + past participle — advice about the past (regret or criticism)
   type: grammatical
-  examples:
+- examples:
   - You must not enter. (Prohibition — it is forbidden.)
   - You don't have to enter. (No obligation — it is your choice.)
-- rule: 'Degree of strength: should (weak) → have to (medium) → must (strong)'
-  type: pragmatic
-  examples:
+  rule: Must not vs don't have to — prohibition vs no obligation
+  type: grammatical
+- examples:
   - You should wear a coat. (It is a good idea — it is cold.)
   - You have to wear a coat. (The school policy requires it.)
   - You must wear a coat. (I insist — it is freezing!)
+  rule: 'Degree of strength: should (weak) → have to (medium) → must (strong)'
+  type: pragmatic
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Give students 10 sentences (e.g., "Wear a seatbelt," "Try the cake," "Stop at red lights"). Students
+      discuss and place each on a scale from advice (should) to strong obligation (must). Class discussion to agree.
+    duration: 15
+    name: Strength scale
+  - adaptation_notes: 'One student is the doctor, the other describes symptoms. The doctor gives advice using should, have
+      to, and must: "You should rest." / "You have to take this medicine." / "You must not drink alcohol."'
+    duration: 20
+    name: Doctor-patient role play
+  - adaptation_notes: 'Students sort 12 sentences into two columns: "It is forbidden" (mustn''t) and "It is not necessary"
+      (don''t have to). Pair work, then class check.'
+    duration: 15
+    name: Mustn't vs don't have to
+  - adaptation_notes: 'Students write 3 pieces of advice for a friend who is stressed, using should, have to, and must. Share
+      and discuss: which sounds strongest?'
+    duration: 15
+    name: My advice
+  tips:
+  - 'Use a strength scale: write SHOULD → HAVE TO → MUST on the board with increasing emphasis. Give examples and ask students
+    to place them on the scale.'
+  - 'Use real-life scenarios: a doctor giving advice (should), a boss giving instructions (have to), a police officer stating
+    the law (must). This contextualises the difference.'
+  - Drill the pronunciation of "should" /ʃəd/ and "must" /məs/ in connected speech. These weak forms are essential for natural-sounding
+    English.
+  - Contrast "mustn't" and "don't have to" explicitly with a table. This is one of the most common confusion points at A2.
+  - 'Personalise: ask students to give each other advice using "should" and to describe their obligations using "have to"
+    and "must."'
+  - 'Swan Entry 78-82: Obligation scale — should (mild advice) < must (strong obligation) < have to (external rule). Negative:
+    mustn''t (forbidden) vs don''t have to (not necessary). Common error: using mustn''t when you mean don''t have to.'
+title: 'Advice and Obligation: Should, Must, and Have to'
 use:
 - context: Giving advice
-  description: '"Should" is the most common way to give advice in English. It is polite
-    and not too direct.'
+  description: '"Should" is the most common way to give advice in English. It is polite and not too direct.'
   examples:
   - You should try the chocolate cake — it is delicious.
   - You should get more sleep.
@@ -142,8 +233,7 @@ use:
   - Drivers have to stop at red lights.
   - Passengers must fasten their seatbelts.
 - context: Health and wellbeing
-  description: All three can be used for health-related advice, with different degrees
-    of strength.
+  description: All three can be used for health-related advice, with different degrees of strength.
   examples:
   - You should exercise more. (General advice.)
   - You have to take this medicine twice a day. (Doctor's instruction.)
@@ -154,88 +244,3 @@ use:
   - You should arrive ten minutes before the meeting. (Advice.)
   - Employees have to complete the training by March. (Requirement.)
   - You must not share confidential information. (Prohibition.)
-phonetics:
-- note: '"Should" is pronounced /ʃʊd/ in its strong form but is often reduced to /ʃəd/
-    or even /ʃd/ in connected speech: "You should go" /ju ʃəd ɡəʊ/. "Shouldn''t" is
-    pronounced /ˈʃʊdənt/.'
-  example_generator:
-    contexts:
-    - connected speech
-    - weak forms
-  l1_issue: Learners may over-pronounce "should" as /ʃuːld/ with a full vowel. Drill
-    the reduced form in natural sentences.
-- note: '"Must" in connected speech: /məs/ — "You must try it" /ju məs traɪ ɪt/. "Mustn''t"
-    is /ˈmʌsənt/ with a clear /t/ at the end.'
-  example_generator:
-    contexts:
-    - connected speech
-    - weak forms
-  l1_issue: Learners may drop the /t/ in "mustn't," making it sound like "musn't."
-    Practice the full pronunciation.
-teaching:
-  methodology: Guided discovery
-  tips:
-  - 'Use a strength scale: write SHOULD → HAVE TO → MUST on the board with increasing
-    emphasis. Give examples and ask students to place them on the scale.'
-  - 'Use real-life scenarios: a doctor giving advice (should), a boss giving instructions
-    (have to), a police officer stating the law (must). This contextualises the difference.'
-  - Drill the pronunciation of "should" /ʃəd/ and "must" /məs/ in connected speech.
-    These weak forms are essential for natural-sounding English.
-  - Contrast "mustn't" and "don't have to" explicitly with a table. This is one of
-    the most common confusion points at A2.
-  - 'Personalise: ask students to give each other advice using "should" and to describe
-    their obligations using "have to" and "must."'
-  recommended_activities:
-  - name: Strength scale
-    duration: 15
-    adaptation_notes: Give students 10 sentences (e.g., "Wear a seatbelt," "Try the
-      cake," "Stop at red lights"). Students discuss and place each on a scale from
-      advice (should) to strong obligation (must). Class discussion to agree.
-  - name: Doctor-patient role play
-    duration: 20
-    adaptation_notes: 'One student is the doctor, the other describes symptoms. The
-      doctor gives advice using should, have to, and must: "You should rest." / "You
-      have to take this medicine." / "You must not drink alcohol."'
-  - name: Mustn't vs don't have to
-    duration: 15
-    adaptation_notes: 'Students sort 12 sentences into two columns: "It is forbidden"
-      (mustn''t) and "It is not necessary" (don''t have to). Pair work, then class
-      check.'
-  - name: My advice
-    duration: 15
-    adaptation_notes: 'Students write 3 pieces of advice for a friend who is stressed,
-      using should, have to, and must. Share and discuss: which sounds strongest?'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
-    Modals, §9.1-9.6'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*You should wear a seatbelt.* (legal requirement)'
-  correction: You must wear a seatbelt. / You have to wear a seatbelt.
-  explanation: '''Should'' is advice, not a rule. For legal requirements, use ''must''
-    or ''have to''. Confusing these can lead to dangerous misunderstandings.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-register_notes:
-- note: 'In formal writing, modals express hedging and caution: ''These results may
-    suggest...'''
-- note: 'In conversation, modals are essential for politeness: ''Could you pass the
-    salt?'''
-- note: 'In legal language, ''must'' expresses strong obligation: ''All passengers
-    must wear seatbelts.'''
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, modals are essential for politeness, expressing degrees of
-    certainty, and making requests.
-- note: 'In academic writing, modals express hedging and caution: ''These results
-    may suggest...'' ''It could be argued that...'''
-- note: 'In legal and regulatory language, modals express obligation and permission:
-    ''All passengers must wear seatbelts.'''

@@ -1,31 +1,51 @@
-id: whispers
-name: Whispers
-category: listening
-description: A sentence is whispered from student to student down a line. The last
-  student writes what they heard on the board. A classic telephone game that highlights
-  listening accuracy, pronunciation clarity, and how messages change in transmission.
-targetStructures:
-- listening-comprehension
+adaptableToTopic: true
 bestForLevels:
 - A1
 - A2
 - B1
 - B2
+category: listening
+citations:
+- claim: The "Whispers" (telephone game) activity develops listening accuracy
+    and highlights how sounds change in connected speech transmission.
+  flagged: false
+  reliability: B
+  source: Underhill (1994) Sound Foundations. Heinemann
+  tier: 2
+description: A sentence is whispered from student to student down a line. The last
+  student writes what they heard on the board. A classic telephone game that highlights
+  listening accuracy, pronunciation clarity, and how messages change in transmission.
+differentiation:
+  extension: Use longer, more complex sentences with subordinate clauses. Add background
+    noise to increase difficulty. Have students analyze WHY specific sounds were confused
+    (e.g., /l/ vs /r/ for Japanese speakers).
+  support: Use shorter sentences (5-6 words) for weaker groups. Allow the whisperer
+    to repeat the sentence once. Use sentences with high-frequency vocabulary.
+digitalReady: false
 duration: 10
-groupSize: whole-class
 energyRequired: low
-prepTime: low
-materials:
-- Prepared sentences on cards or paper
+exampleSnippet:
+  execution:
+  - 'Round 1 sentence: ''I have never eaten sushi but I have tried ramen twice.'''
+  - 'Round 2 sentence: ''She has already finished her homework and cleaned her room.'''
+  - Students compare the original with the final version and identify where the message
+    broke down.
+  teacherDialogue:
+  - '''"Listen carefully. I''m going to show Maria the sentence. Maria, come here."'' '
+  - '''"Last person, write it on the board. Let''s see how well the message traveled!"'' '
+  - '''"What happened to the word ''never''? It became ''ever'' — the N got lost!"'' '
+  topic: present perfect — life experiences
 format:
 - in-person
-requiresTech: false
-digitalReady: false
+grammar_focus:
+- listening_comprehension
+- connected_speech
+groupSize: whole-class
 hasAudioComponent: false
 hasPrintableComponent: true
 hasSlidesComponent: false
 hasVisualComponent: false
-adaptableToTopic: true
+id: whispers
 instructions:
 - Divide the class into two or more teams of 6-10 students. Each team forms a line.
 - Show the first student in each line a sentence (or whisper it to them). They must
@@ -36,6 +56,28 @@ instructions:
 - Reveal the original sentence. Compare versions and discuss what changed and why.
 - Play 3-4 rounds with different sentences. The team with the most accurate final
   sentence wins.
+keywords:
+- telephone game
+- listening
+- pronunciation
+- whispering
+- message chain
+l1_enhanced:
+- adaptation: Japanese and Korean speakers often confuse /l/ and /r/ in listening. Prepare sentences with l/r contrasts (e.g., "The light is on the right"). Use whisper chain errors to diagnose specific phoneme pairs.
+  language: Japanese
+  priority: high
+- adaptation: Arabic speakers may struggle with consonant clusters in English (e.g., "strengths"). Use these as diagnostic sentences in the whisper chain to identify cluster simplification patterns.
+  language: Arabic
+  priority: high
+- adaptation: Spanish speakers may insert epenthetic vowels before initial /s/ clusters (e.g., "eschool" for "school"). Listen for this pattern in the whispered output and address in feedback.
+  language: Spanish
+  priority: medium
+l1_specific: []
+materials:
+- Prepared sentences on cards or paper
+name: Whispers
+prepTime: low
+requiresTech: false
 script:
 - '''"Here''s the sentence. Read it silently, then whisper it to the next person.
   Go!"'' '
@@ -45,27 +87,16 @@ script:
 setupInstructions: Prepare 4-6 sentences that include target grammar or vocabulary.
   Write each sentence on a separate card. Sentences should be 8-12 words long with
   some phonetically tricky elements.
-exampleSnippet:
-  topic: present perfect — life experiences
-  execution:
-  - 'Round 1 sentence: ''I have never eaten sushi but I have tried ramen twice.'''
-  - 'Round 2 sentence: ''She has already finished her homework and cleaned her room.'''
-  - Students compare the original with the final version and identify where the message
-    broke down.
-  teacherDialogue:
-  - '''"Listen carefully. I''m going to show Maria the sentence. Maria, come here."'' '
-  - '''"Last person, write it on the board. Let''s see how well the message traveled!"'' '
-  - '''"What happened to the word ''never''? It became ''ever'' — the N got lost!"'' '
-differentiation:
-  support: Use shorter sentences (5-6 words) for weaker groups. Allow the whisperer
-    to repeat the sentence once. Use sentences with high-frequency vocabulary.
-  extension: Use longer, more complex sentences with subordinate clauses. Add background
-    noise to increase difficulty. Have students analyze WHY specific sounds were confused
-    (e.g., /l/ vs /r/ for Japanese speakers).
-keywords:
-- telephone game
+skill_areas:
 - listening
-- pronunciation
-- whispering
-- message chain
-l1Enhanced: true
+sources:
+- Underhill (1994) Sound Foundations. Heinemann
+targetStructures:
+- listening-comprehension
+teaching_tips:
+- Choose sentences that target specific phonological contrasts (e.g., /l/ vs /r/, /θ/
+    vs /s/) to diagnose common listening difficulties for specific L1 groups.
+- After revealing the original sentence, have students analyze WHERE the message broke
+    down — this metacognitive step helps them identify their own listening weak spots.
+- Keep sentences between 8-12 words. Shorter sentences are too easy; longer ones become
+    noise. The goal is a message long enough to challenge but short enough to trace errors.

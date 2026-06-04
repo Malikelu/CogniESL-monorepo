@@ -1,36 +1,54 @@
-id: summarize-ted
-name: Summarize TED
+adaptableToTopic: true
+bestForAges:
+- teens
+- adults
+bestForLevels:
+- B2
+- C1
 category: listening
+citations:
+- claim: The "Summarize TED" activity develops listening, note-taking, and summarization skills through authentic academic content exposure
+  flagged: false
+  reliability: B
+  source: 'Peregoy & Boyle (2023) Reading, Writing, and Learning in ESL, 8th ed.'
+  tier: 2
 description: Students watch a short TED talk or professional presentation and must
   summarize the main argument in 3-5 sentences. A high-level comprehension task that
   targets academic English, note-taking skills, and the ability to synthesize complex
   ideas.
-targetStructures:
-- listening-comprehension
-bestForLevels:
-- B2
-- C1
-bestForAges:
-- teens
-- adults
+differentiation:
+  extension: 'Require a longer summary (1 paragraph). Have students also evaluate
+    the speaker''s arguments: Do you agree? Why or why not? Have them present their
+    summary to the class.'
+  support: Use a shorter video (3-4 minutes). Provide a fill-in-the-blank summary
+    template. Give students the transcript to read after watching. Work through the
+    summary as a class.
+digitalReady: true
 duration: 30
-groupSize: individuals
 energyRequired: low
-prepTime: medium
-materials:
-- TED talk video (5-10 minutes)
-- Projector or screen
-- Note-taking handout (optional)
+exampleSnippet:
+  execution:
+  - 'Video: ''The Happy Secret to Better Work'' by Shawn Achor (7 minutes).'
+  - 'Summary: Shawn Achor argues that happiness fuels success, not the other way around. He
+    presents research showing that when the brain works positively, performance improves. He suggests daily
+    habits like writing down three gratitudes to retrain the brain for optimism.'
+  teacherDialogue:
+  - '"Do not try to write everything down. Focus on the main points and key examples."'
+  - '"Your summary should answer: What did the speaker believe? What evidence did
+    they give?"'
+  topic: academic listening and summarization
 format:
 - in-person
 - online
-requiresTech: true
-digitalReady: true
+grammar_focus:
+- listening_comprehension
+- connected_speech
+groupSize: individuals
 hasAudioComponent: true
 hasPrintableComponent: false
 hasSlidesComponent: false
 hasVisualComponent: true
-adaptableToTopic: true
+id: summarize-ted
 instructions:
 - Select a TED talk (5-10 minutes) related to your lesson topic or a general interest
   topic. Prepare 2-3 pre-viewing questions.
@@ -40,32 +58,6 @@ instructions:
   the speaker''s main point, 1-2 supporting arguments, and the conclusion.'
 - Students share their summaries in pairs or small groups. Compare what they understood.
 - 'Discuss as a class: What was the main argument? What evidence did the speaker use?'
-script:
-- '"We are going to watch a TED talk about happiness. Before we start, think about
-  this: What do you think makes people happy?"'
-- '"Watch and take notes. You will write a summary afterward."'
-- '"Now write your summary in 3-5 sentences. Include the main point and the key evidence."'
-setupInstructions: Select a TED talk (5-10 minutes) at an appropriate level. Prepare
-  pre-viewing questions and a note-taking template. Test the video and audio before
-  class.
-exampleSnippet:
-  topic: academic listening and summarization
-  execution:
-  - 'Video: ''The Happy Secret to Better Work'' by Shawn Achor (7 minutes).'
-  - 'Summary: Shawn Achor argues that fuels success, not the other way around. He
-    presents research showing that positive brains perform better. He suggests daily
-    habits like writing down three gratitudes to rewire the brain for positivity.'
-  teacherDialogue:
-  - '"Do not try to write everything down. Focus on the main points and key examples."'
-  - '"Your summary should answer: What did the speaker believe? What evidence did
-    they give?"'
-differentiation:
-  support: Use a shorter video (3-4 minutes). Provide a fill-in-the-blank summary
-    template. Give students the transcript to read after watching. Work through the
-    summary as a class.
-  extension: 'Require a longer summary (1 paragraph). Have students also evaluate
-    the speaker''s arguments: Do you agree? Why or why not? Have them present their
-    summary to the class.'
 keywords:
 - TED talks
 - academic listening
@@ -74,4 +66,42 @@ keywords:
 - note-taking
 - synthesis
 - academic English
-l1Enhanced: true
+l1_enhanced:
+- adaptation: Pair Spanish-speaking students for L1 contrastive discussions. Provide
+    bilingual glossaries for key terms.
+  language: Spanish
+  priority: low
+- adaptation: Arabic is written right-to-left. Allow extra time for reading English
+    text. Provide left-to-right reading guides.
+  language: Arabic
+  priority: medium
+- adaptation: Mandarin is tonal. Activities involving listening/speaking should include
+    minimal pair practice for word-level stress.
+  language: Mandarin
+  priority: medium
+l1_specific: []
+materials:
+- TED talk video (5-10 minutes)
+- Projector or screen
+- Note-taking handout (optional)
+name: Summarize TED
+prepTime: medium
+requiresTech: true
+script:
+- '"We are going to watch a TED talk about happiness. Before we start, think about
+  this: What do you think makes people happy?"'
+- '"Watch and take notes. You will write a summary afterward."'
+- '"Now write your summary in 3-5 sentences. Include the main point and the key evidence."'
+setupInstructions: Select a TED talk (5-10 minutes) at an appropriate level. Prepare
+  pre-viewing questions and a note-taking template. Test the video and audio before
+  class.
+skill_areas:
+- listening
+sources:
+- Klippel, F. (1984). Keep Talking: Communicative Fluency Activities for Language Teaching. Cambridge University Press.
+- author: Klippel, F.
+  title: 'Keep Talking: Communicative Fluency Activities for Language Teaching'
+  year: 1984
+targetStructures:
+- listening-comprehension
+teaching_tips: ''

@@ -1,41 +1,37 @@
-grammar_point: adjectives_without_nouns
-title: Adjectives Without Nouns (The + Adjective)
-description: 'Using ''the'' + adjective to refer to a group of people: the rich, the
-  poor, the elderly. Essential for talking about groups in society.'
-level: B2
-meaning:
-  core_meaning: '''The + adjective'' refers to ALL people who have that characteristic.
-    It means ''people who are [adjective]''. Always plural.'
-  timeline: N/A (Not tense-based; refers to a category of people, can be past/present/future.)
-  contrast: '''THE + ADJ'' = Group of people: "The rich" (all rich people)
-
-    ''ADJ + NOUN'' = Specific people: "Rich people" (same meaning, less formal)
-
-    ''NOUN'' = Different meaning: "The rich man" (one person) vs "The rich" (all rich
-    people)
-
-    '
-  ccqs:
-  - question: The elderly need more support. Does this mean one old person or all
-      old people?
-    answer: All old people as a group. The plus adjective always refers to the whole
-      group.
-    purpose: Tests understanding that the plus adjective means entire group (plural
-      meaning)
-  - question: Can we say The rich is happy? Why or why not?
-    answer: No. The rich is plural (it means rich people), so we say The rich are
-      happy.
-    purpose: Tests understanding that the plus adjective takes a plural verb
-  - question: The French are known for their cuisine. Does this mean one French person?
-    answer: No. It means French people as a whole group or nationality.
-    purpose: Tests understanding of nationality use with the plus adjective
-  example_generator:
-    contexts:
-    - everyday situations
-    cultural_notes: []
-    min_examples: 5
+citations:
+- claim: 'Core meaning: ''The + adjective'' refers to ALL people who have that characteristic'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 20: Adjectives'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17: Partitives, Collectives, and Quantifiers'
+  tier: 1
+- claim: Common error '*The rich is happy.*' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+common_errors:
+- correction: The rich are happy.
+  error: '*The rich is happy.*'
+  explanation: Adjectives with 'the' (the rich, the poor, the elderly) refer to groups and take plural verbs.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan Entry 190. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+description: 'Using ''the'' + adjective to refer to a group of people: the rich, the poor, the elderly. Essential for talking
+  about groups in society.'
+dialectal_variation: []
+discourse_notes: []
 form:
   affirmative:
+    example_generator:
+      contexts:
+      - shopping and commerce
+      min_examples: 4
     structure: 'The + adjective (no noun) = plural meaning, refers to group of people
 
       "the rich" (rich people), "the poor" (poor people), "the young" (young people)
@@ -43,39 +39,93 @@ form:
       Some can be used alone as nouns: "rich and poor" (without ''the'' in some contexts)
 
       '
+  negative:
     example_generator:
       contexts:
-      - shopping and commerce
+      - everyday situations
       min_examples: 4
-  negative:
     structure: 'Negation with verb, not adjective:
 
       "The rich aren''t paying enough." "The poor don''t have access."
 
       '
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
   questions:
-    structure: '"Do the rich...?" "Should the government help the poor?"
-
-      '
     example_generator:
       contexts:
       - shopping and commerce
       min_examples: 4
+    structure: '"Do the rich...?" "Should the government help the poor?"
+
+      '
+grammar_point: adjectives_without_nouns
+level: B2
+meaning:
+  ccqs:
+  - answer: All old people as a group. The plus adjective always refers to the whole group.
+    purpose: Tests understanding that the plus adjective means entire group (plural meaning)
+    question: The elderly need more support. Does this mean one old person or all old people?
+  - answer: No. The rich is plural (it means rich people), so we say The rich are happy.
+    purpose: Tests understanding that the plus adjective takes a plural verb
+    question: Can we say The rich is happy? Why or why not?
+  - answer: No. It means French people as a whole group or nationality.
+    purpose: Tests understanding of nationality use with the plus adjective
+    question: The French are known for their cuisine. Does this mean one French person?
+  - answer: 'No. "The tall" is not a standard expression. Only certain categories work with "the + adjective" to refer to
+      groups: primarily social or economic groups (the rich, the poor, the unemployed), age groups (the young, the elderly),
+      and nationalities ending in specific sounds (the French, the Chinese). Physical characteristic adjectives like tall,
+      beautiful, or short do not work this way.'
+    purpose: Tests whether the learner knows that not all adjectives can be used with "the" to mean a group of people. Understanding
+      this restriction prevents errors like "the beautiful need help" or "the tall play basketball," which sound unnatural
+      to native speakers.
+    question: Can we say "the tall" to mean tall people? Why or why not?
+  contrast: '''THE + ADJ'' = Group of people: "The rich" (all rich people)
+
+    ''ADJ + NOUN'' = Specific people: "Rich people" (same meaning, less formal)
+
+    ''NOUN'' = Different meaning: "The rich man" (one person) vs "The rich" (all rich people)
+
+    '
+  core_meaning: '''The + adjective'' refers to ALL people who have that characteristic. It means ''people who are [adjective]''.
+    Always plural.'
+  example_generator:
+    contexts:
+    - everyday situations
+    cultural_notes: []
+    min_examples: 5
+  timeline: N/A (Not tense-based; refers to a category of people, can be past/present/future.)
+phonetics:
+- example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Some L1 speakers stress the equally or more than the adjective. In natural English, the is reduced and the adjective
+    carries the primary stress.
+  note: Stress on the adjective in the plus adjective constructions
+  practice: Drill the rich, the poor, the elderly with stress on the adjective.
+- example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Speakers whose first language lacks this sound (e.g., French, Italian, Japanese) may substitute a different sound.
+  note: The voiced dental fricative sound in the before consonant sounds
+  practice: Practise tongue-between-teeth position for the before common adjectives.
+register_notes:
+- note: 'Biber et al. (2021) — Nominalized adjectives (the poor, the elderly, the impossible): more common in academic prose
+    and news than in conversation. Academic prose uses more adjective-to-noun conversion for generic reference. Ch. 7.2.1'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 7.2.1
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 20: Adjectives'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- type: grammar
-  rule: The plus adjective takes a plural verb
-  examples:
+- examples:
   - The poor are struggling. (not The poor is struggling.)
   - The young have more energy. (not The young has more energy.)
-  explanation: Even though there is no visible plural ending, the meaning is always
-    plural (a group of people).
-- type: usage
-  rule: Only certain adjectives work this way — mainly social, economic, or age groups
-  examples:
+  explanation: Even though there is no visible plural ending, the meaning is always plural (a group of people).
+  rule: The plus adjective takes a plural verb
+  type: grammar
+- examples:
   - the rich
   - the poor
   - the elderly
@@ -83,11 +133,11 @@ sub_rules:
   - the disabled
   - the homeless
   - the unemployed
-  explanation: You cannot use any adjective this way. The tall or the beautiful do
-    not work to mean tall people or beautiful people.
-- type: usage
-  rule: Nationalities ending in certain sounds can use the plus adjective
-  examples:
+  explanation: You cannot use any adjective this way. The tall or the beautiful do not work to mean tall people or beautiful
+    people.
+  rule: Only certain adjectives work this way — mainly social, economic, or age groups
+  type: usage
+- examples:
   - the French
   - the English
   - the Spanish
@@ -95,116 +145,71 @@ sub_rules:
   - the Japanese
   - the Irish
   explanation: These nationality adjectives can function as group nouns with the.
-- type: register
-  rule: Some the plus adjective forms are considered outdated or offensive
-  examples:
+  rule: Nationalities ending in certain sounds can use the plus adjective
+  type: usage
+- examples:
   - the disabled — prefer people with disabilities
   - the handicapped — prefer people with disabilities
-  explanation: Person-first language (people with...) is generally preferred in modern
-    English.
-- type: contrast
-  rule: The plus adjective vs adjective plus people or noun
-  examples:
+  explanation: Person-first language (people with...) is generally preferred in modern English.
+  rule: Some the plus adjective forms are considered outdated or offensive
+  type: register
+- examples:
   - The poor need help. (formal, written) is the same as Poor people need help. (neutral)
-  - The elderly were evacuated. (news) is the same as Elderly people were evacuated.
-    (neutral)
-  explanation: Both mean the same thing, but the plus adjective is more formal and
-    common in news and political writing.
+  - The elderly were evacuated. (news) is the same as Elderly people were evacuated. (neutral)
+  explanation: Both mean the same thing, but the plus adjective is more formal and common in news and political writing.
+  rule: The plus adjective vs adjective plus people or noun
+  type: contrast
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students analyze news headlines that use adjectives without nouns: ''The rich, the poor, the unemployed.''
+      They identify the implied noun and discuss why the adjective alone is used.'
+    duration: 15
+    name: News Headline Analysis
+  - adaptation_notes: 'Students discuss social issues using adjectives as nouns: ''The elderly need more support. The homeless
+      need shelter.'' Practice in pairs or small groups.'
+    duration: 20
+    name: Debate — Social Issues
+  - adaptation_notes: Students sort sentences into formal and informal registers. Discuss when adjectives without nouns are
+      appropriate (formal writing, news headlines).
+    duration: 10
+    name: Register Sorting
+  tips:
+  - 'Start with common pairs: the rich/the poor, the young/the old, the sick/the healthy.'
+  - Compare 'rich people' (informal) vs 'the rich' (formal) to show register difference.
+  - 'Discuss people-first language: ''people with disabilities'' vs ''the disabled'' (more respectful).'
+  - 'Practice with news headlines: ''The unemployed rise by 5%.'''
+  - 'Swan PEU: Adjectives as nouns — the + adjective can represent a group of people: ''the poor'', ''the rich'', ''the old'',
+    ''the young'', ''the sick'', ''the blind'', ''the disabled'', ''the unemployed'', ''the French'', ''the British''. These
+    take plural verbs: ''The poor are suffering.'''
+  - 'Swan PEU: This does NOT work with all adjectives. We say ''the British'' but NOT ''the selfemployed'' or ''the anxious.''
+    The pattern is mostly for nationalities and groups defined by social/economic/health conditions. Nationalities ending
+    in -sh/-ch/-ss take this form: the French, the Dutch, the Swiss.'
+  - 'Swan PEU: Superlatives without nouns: ''the biggest (one)'', ''the best (one)''. These are common in comparative/superlative
+    contexts where the noun is understood from context.'
+title: Adjectives Without Nouns (The + Adjective)
 use:
-- name: Social and Economic Groups
-  description: Talk about groups based on wealth, age, or social status.
+- description: Talk about groups based on wealth, age, or social status.
   examples:
   - the rich and the poor
   - the young and the elderly
   - the working class
   key_point: Common in news, politics, and social discussions.
-- name: People with Conditions or Characteristics
-  description: Refer to groups with specific conditions or traits.
+  name: Social and Economic Groups
+- description: Refer to groups with specific conditions or traits.
   examples:
   - the disabled
   - the blind
   - the deaf
   - the injured
   - the homeless
-  key_point: 'Often used in formal/political contexts; some consider ''people-first''
-    language better: ''people with disabilities''.'
-- name: Nationalities (The + Adjective from Country)
-  description: 'Some nationalities use the + adjective: the French, the English, the
-    Dutch.'
+  key_point: 'Often used in formal/political contexts; some consider ''people-first'' language better: ''people with disabilities''.'
+  name: People with Conditions or Characteristics
+- description: 'Some nationalities use the + adjective: the French, the English, the Dutch.'
   examples:
   - the Spanish
   - the Chinese
   - the Irish
-  key_point: 'Not all nationalities work this way; some use plural noun: ''the French''
-    vs ''the Americans'' (plural noun, not adjective).'
-phonetics:
-- note: Stress on the adjective in the plus adjective constructions
-  l1_issue: Some L1 speakers stress the equally or more than the adjective. In natural
-    English, the is reduced and the adjective carries the primary stress.
-  practice: Drill the rich, the poor, the elderly with stress on the adjective.
-  example_generator:
-    contexts:
-    - connected speech
-- note: The voiced dental fricative sound in the before consonant sounds
-  l1_issue: Speakers whose first language lacks this sound (e.g., French, Italian,
-    Japanese) may substitute a different sound.
-  practice: Practise tongue-between-teeth position for the before common adjectives.
-  example_generator:
-    contexts:
-    - connected speech
-teaching:
-  methodology: PPP
-  tips:
-  - 'Start with common pairs: the rich/the poor, the young/the old, the sick/the healthy.'
-  - Compare 'rich people' (informal) vs 'the rich' (formal) to show register difference.
-  - 'Discuss people-first language: ''people with disabilities'' vs ''the disabled''
-    (more respectful).'
-  - 'Practice with news headlines: ''The unemployed rise by 5%.'''
-  recommended_activities:
-  - name: News Headline Analysis
-    duration: 15
-    adaptation_notes: 'Students analyze news headlines that use adjectives without
-      nouns: ''The rich, the poor, the unemployed.'' They identify the implied noun
-      and discuss why the adjective alone is used.'
-  - name: Debate — Social Issues
-    duration: 20
-    adaptation_notes: 'Students discuss social issues using adjectives as nouns: ''The
-      elderly need more support. The homeless need shelter.'' Practice in pairs or
-      small groups.'
-  - name: Register Sorting
-    duration: 10
-    adaptation_notes: Students sort sentences into formal and informal registers.
-      Discuss when adjectives without nouns are appropriate (formal writing, news
-      headlines).
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*The rich is happy.*'
-  correction: The rich are happy.
-  explanation: Adjectives with 'the' (the rich, the poor, the elderly) refer to groups
-    and take plural verbs.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.
+  key_point: 'Not all nationalities work this way; some use plural noun: ''the French'' vs ''the Americans'' (plural noun,
+    not adjective).'
+  name: Nationalities (The + Adjective from Country)

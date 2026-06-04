@@ -1,31 +1,227 @@
-grammar_point: adverb_placement
-title: Adverb Placement
+citations:
+- claim: 'Core meaning: Adverb placement in English follows specific rules'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday
+    communication.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs'
+  tier: 1
+- claim: Common error '*She quickly runs home.*' for Portuguese, Spanish, Chinese,
+    Turkish speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: Turkish EFL beginners exhibit SOV transfer in adverb-verb placement with
+    unfamiliar verb phrases
+  flagged: false
+  reliability: B
+  source: Mede et al. (2014) The effects of language transfer in Turkish EFL learners.
+    ELT Research Journal 3(2), 70-83. Results pp. 77-78, Discussion pp. 78-79.
+  tier: 1
+- claim: L1 transfer in adverb placement varies significantly across language backgrounds
+    — Swan & Smith document contrastive patterns for speakers of different L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+common_errors:
+- correction: She runs home quickly.
+  error: '*She quickly runs home.*'
+  explanation: Manner adverbs typically go after the verb.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Turkish
+  reliability: B
+- correction: Teach adverbs by type position rules — manner (end), frequency (mid),
+    degree (immediately before the word it modifies), focusing (flexible but meaning-sensitive),
+    attitude markers (front/end/before complement).
+  error: Teaching all adverbs as one unified category with a single placement rule.
+  explanation: Parrott explicitly calls "adverb" a "dustbin term" — a label that groups
+    many structurally different word types together. Treating them as one category
+    misleads learners because the position rules differ sharply by type. Instructors
+    should organise teaching around adverb subtypes rather than the overarching label.
+  l1_groups: []
+  pedagogical_note: true
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press. Ch. 5: Adverbs.'
+  tier: 1
+- correction: I like music very much.
+  error: '*I like very much music.*'
+  examples:
+  - correct_form: I enjoy cooking very much.
+    error_form: I enjoy very much cooking.
+  - correct_form: She speaks English very well.
+    error_form: She speaks very well English.
+  explanation: Manner/degree adverbs must not be placed between the verb and its direct
+    object. End position (after the object) is the standard slot. Parrott highlights
+    this as a key cross-linguistic error — learners insert the adverb directly after
+    the verb following L1 patterns where verb-adverb adjacency is normal.
+  l1_groups:
+  - French
+  - Italian
+  - Spanish
+  - Portuguese
+  - Arabic
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press. Ch. 5: Adverbs.'
+  tier: 1
+- correction: The position of even, only, and also must be placed immediately before
+    (or as close as possible to) the constituent they focus on, because position changes
+    meaning.
+  error: Placing focusing adverbs (even / only / also) in a fixed or default position
+    without regard for meaning.
+  examples:
+  - only_before_subject: Only I love her. (= no one else loves her)
+  - only_before_verb: I only love her. (= I do nothing but love her / ambiguous in
+      speech)
+  - only_before_object: I love only her. (= I love no one else)
+  - even_front: Even children understood the rule. (= children, who might not be expected
+      to, understood)
+  - even_mid: She even passed the hardest exam. (= the hardest exam was also passed)
+  explanation: 'Parrott demonstrates that position of focusing adverbs is not decorative
+    — it is semantic. Compare: "Only I love her" (no one else loves her) vs. "I only
+    love her" (I don''t do anything else to her) vs. "I love only her" (no one else
+    is loved). Each sentence conveys a different proposition. Learners often default
+    to mid-position regardless of intended meaning.'
+  l1_groups: []
+  note: In spoken English only/even are often placed in mid-position; in formal written
+    English strict proximity to the focused element is preferred and expected.
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press. Ch. 5: Adverbs.'
+  tier: 1
+- correction: Attitude markers are flexible — they can appear in front position (before
+    the whole clause), end position (after the whole clause), or before a complement.
+    All three are grammatical.
+  error: Placing attitude markers (fortunately, luckily, surprisingly, etc.) only
+    in mid-position or omitting them from front/end positions.
+  examples:
+  - end_position: We arrived on time, fortunately.
+    front_position: Fortunately, we arrived on time.
+    pre_complement: She was, fortunately, unharmed.
+  - end_position: He refused the offer, surprisingly.
+    front_position: Surprisingly, he refused the offer.
+  explanation: 'Parrott identifies attitude markers as a distinct adverb subtype with
+    front/end/pre-complement flexibility. Learners who know only mid-position placement
+    or who have learned that adverbs go "before the verb" may either misplace attitude
+    markers or avoid them entirely. Examples of all valid positions: "Fortunately,
+    she passed." (front) / "She passed, fortunately." (end) / "She was, fortunately,
+    unharmed." (before complement).'
+  l1_groups: []
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press. Ch. 5: Adverbs.'
+  tier: 1
+- correction: English offers five distinct positions for adverbs depending on type
+    and function. Learners should be taught each position explicitly.
+  error: Unaware of the full range of grammatical sentence positions available for
+    adverbs — defaulting to one or two positions for all adverb types.
+  explanation: 'Parrott (Ch. 5) maps five sentence positions for adverbs: (a) before
+    the whole clause — "Fortunately, we arrived on time." (attitude markers, time/place
+    adverbs for emphasis); (b) before the main verb — "She always arrives on time."
+    (frequency adverbs, relative time adverbs); (c) between auxiliary and main verb
+    — "She has always arrived on time." (frequency, relative time); (d) end of clause
+    — "She arrived on time, fortunately." / "He drove carefully." (manner, time, place,
+    attitude markers); (e) before adverbials — "He drove carefully through the city."
+    (manner before prepositional adverbials). Teaching position as a single rule or
+    only two positions causes persistent systematic errors.'
+  l1_groups: []
+  positions:
+  - adverb_types: attitude markers, time/place for emphasis
+    example: Fortunately, we arrived on time.
+    label: (a) Front — before the whole clause
+  - adverb_types: frequency, relative time (just, still, already)
+    example: She always arrives on time.
+    label: (b) Before the main verb
+  - adverb_types: frequency, relative time
+    example: She has always arrived on time.
+    label: (c) Between auxiliary and main verb
+  - adverb_types: manner, time, place, attitude markers
+    example: She arrived on time, fortunately. / He drove carefully.
+    label: (d) End of clause
+  - adverb_types: manner before prepositional adverbials
+    example: He drove carefully through the city.
+    label: (e) Before adverbials
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press. Ch. 5: Adverbs.'
+  tier: 1
 description: Rules for where adverbs are placed in sentences — before adjectives,
   after verbs, front position for emphasis.
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - manner adverbs
+      - frequency adverbs
+      - front position
+      min_examples: 4
+    structure: 'Adverb of manner after verb: She ran quickly. / Adverb of frequency
+      before main verb: I always eat breakfast. / Front position for emphasis: Suddenly,
+      the lights went out.'
+  negative:
+    example_generator:
+      contexts:
+      - negative sentences
+      min_examples: 3
+    structure: 'Same positions: She did not run quickly. / I never eat breakfast.'
+  questions:
+    example_generator:
+      contexts:
+      - question formation
+      min_examples: 3
+    structure: 'Adverb placement in questions: Do you always eat breakfast?'
+grammar_point: adverb_placement
 level: B2
 meaning:
-  core_meaning: Adverb placement in English follows specific rules. Adverbs of manner
-    usually go after the verb. Adverbs of frequency go before the main verb. Some
-    adverbs can go at the beginning of a sentence for emphasis.
-  timeline: Timeless — placement rules apply to all tenses.
-  contrast: Correct = She quickly ran. vs Incorrect placement = Quickly she ran. (different
-    emphasis)
   ccqs:
-  - question: Does this adverb sound natural in this position?
-    answer: If yes, the placement is correct.
+  - answer: If yes, the placement is correct.
     purpose: Tests whether the learner can judge whether an adverb sounds natural
       in a given position. This is important because adverb placement in English is
       often a matter of convention rather than strict rules, and learners need to
       develop an ear for natural-sounding sentences.
-  - question: What type of adverb is it?
-    answer: Type determines placement.
+    question: Does this adverb sound natural in this position?
+  - answer: Type determines placement.
     purpose: Tests whether the learner understands that adverb type determines placement.
       This is important because manner, frequency, and time adverbs each follow different
       placement rules.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
+    question: What type of adverb is it?
+  - answer: The first sentence means she does nothing except love her (mid-position
+      'only' modifies the verb). The second means she loves no one else (pre-object
+      'only' modifies the object). Adverb placement changes the focused constituent
+      and therefore the meaning.
     purpose: Tests whether the learner can identify common errors associated with
       adverb placement and explain why they are incorrect.
+    question: What is the difference in meaning between 'I only love her' and 'I love
+      only her'?
+  - answer: She speaks English fluently sounds more natural. Manner adverbs like fluently
+      typically go after the verb or at the end of the clause in English. Placing
+      the manner adverb between the subject and verb (She fluently speaks) sounds
+      unnatural and overly formal in most contexts.
+    purpose: Tests whether the learner has internalized the natural position for manner
+      adverbs. While basic grammar rules state that frequency adverbs go mid-position
+      (before the main verb), manner adverbs behave differently and prefer end position.
+      Confusing these two patterns is one of the most common word-order errors across
+      all L1 groups.
+    question: She speaks English fluently versus She fluently speaks English -- which
+      sounds more natural in everyday English?
+  contrast: Correct = She quickly ran. vs Emphatic fronting = Quickly she ran. (different
+    emphasis — both grammatical)
+  core_meaning: Adverb placement in English follows specific rules. Adverbs of manner
+    usually go after the verb. Adverbs of frequency go before the main verb. Some
+    adverbs can go at the beginning of a sentence for emphasis.
   example_generator:
     contexts:
     - sentence structure
@@ -36,51 +232,77 @@ meaning:
     - Adverb placement varies across languages — many L1 speakers struggle with English
       word order
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Adverb of manner after verb: She ran quickly. / Adverb of frequency
-      before main verb: I always eat breakfast. / Front position for emphasis: Suddenly,
-      the lights went out.'
-    example_generator:
-      contexts:
-      - manner adverbs
-      - frequency adverbs
-      - front position
-      min_examples: 4
-  negative:
-    structure: 'Same positions: She did not run quickly. / I never eat breakfast.'
-    example_generator:
-      contexts:
-      - negative sentences
-      min_examples: 3
-  questions:
-    structure: 'Adverb placement in questions: Do you always eat breakfast?'
-    example_generator:
-      contexts:
-      - question formation
-      min_examples: 3
+  timeline: Timeless — placement rules apply to all tenses.
+phonetics:
+- example_generator:
+    contexts:
+    - emphasis
+  l1_issue: Word order — many L1 speakers place adverbs in positions that sound unnatural
+    in English
+  note: Stress on the adverb when it is fronted for emphasis
+register_notes:
+- note: 'Biber et al. (2021) — Adverbial position: conversation uses more clause-initial
+    and clause-final adverbials; academic prose uses more medial position. Stance
+    adverbials differ markedly between registers. Ch. 10.1.3, 12.5'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 10.1.3, 12.5
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Adverbs of manner — after the verb or at the end
-  type: word_order
-  examples:
+- examples:
   - She speaks English fluently.
   - He drove carefully.
-- rule: Adverbs of frequency — before the main verb, after be
+  rule: Adverbs of manner — after the verb or at the end
   type: word_order
-  examples:
+- examples:
   - I always wake up early.
   - She is never late.
-- rule: Adverbs of time — beginning or end of sentence
+  rule: Adverbs of frequency — before the main verb, after be
   type: word_order
-  examples:
+- examples:
   - Yesterday, I went to the store.
   - I went to the store yesterday.
-- rule: 'Mid-position adverbs: always, never, often, sometimes, usually, already,
-    still, just'
+  rule: Adverbs of time — beginning or end of sentence
   type: word_order
-  examples:
+- examples:
   - I have already finished.
   - She is still waiting.
+  rule: 'Mid-position adverbs: always, never, often, sometimes, usually, already,
+    still, just'
+  type: word_order
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Students rearrange sentences with adverbs in different positions.
+    duration: 10
+    name: Adverb Shuffle
+  tips:
+  - 'CGEL Ch. 10: CGEL classifies adjuncts into semantic categories: temporal (then,
+    yesterday), locative (here, outside), manner (carefully, slowly), degree (very,
+    quite). The position of the adjunct affects its scope — initial adjuncts have
+    clausal scope, final adjuncts have VP scope.'
+  - Use the MIFF rule for position
+  - Practice moving adverbs and noticing emphasis changes
+  - Contrast with L1 adverb placement
+  - 'Swan (2016) PEU: The ''mid position'' — after auxiliary/modal, before main verb:
+    ''I have always wanted to go.'' ''She can never remember names.'' For ''be'':
+    after the verb: ''He is always late.'''
+  - 'Celce-Murcia & Larsen-Freeman (1999) The Grammar Book, 2nd ed. Heinle & Heinle.
+    Ch. 25: GB 2nd ed. (Ch.25) classifies adverbials by DISCOURSE FUNCTION: ADJUNCT
+    (integrated into clause: ''She left yesterday''), DISJUNCT (speaker comment: ''Frankly,
+    I don''t care''), CONJUNCT (discourse connector: ''However, I disagree''). This
+    distinction explains ordering constraints: adjuncts have flexible position; disjuncts
+    are typically clause-initial or final; conjuncts are clause-initial.'
+title: Adverb Placement
 use:
 - context: Natural speech
   description: Using adverbs in their natural positions
@@ -92,51 +314,3 @@ use:
   examples:
   - Suddenly, everyone stopped talking.
   - Never have I seen such a beautiful sunset.
-phonetics:
-- note: Stress on the adverb when it is fronted for emphasis
-  example_generator:
-    contexts:
-    - emphasis
-  l1_issue: Word order — many L1 speakers place adverbs in positions that sound unnatural
-    in English
-teaching:
-  methodology: Guided discovery
-  tips:
-  - Use the MIFF rule for position
-  - Practice moving adverbs and noticing emphasis changes
-  - Contrast with L1 adverb placement
-  recommended_activities:
-  - name: Adverb Shuffle
-    duration: 10
-    adaptation_notes: Students rearrange sentences with adverbs in different positions.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 13:
-    Adjectives, §13.1-13.8'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*She quickly runs home.*'
-  correction: She runs home quickly.
-  explanation: Manner adverbs typically go after the verb.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

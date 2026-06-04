@@ -1,36 +1,115 @@
-grammar_point: look_sound_feel_smell_taste
-title: Sense Verbs (look, sound, feel, smell, taste)
+citations:
+- claim: 'Core meaning: Describes perception through the five senses: sight (look),
+    hearing (sound), touch (feel), smell (smell), taste (taste)'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 20:
+    Adjectives'
+  tier: 1
+- claim: 'Register distribution: Sense verbs are everyday structures used across
+    all registers — conversation, academic, and narrative. They are fundamental A2-level
+    vocabulary, not markers of formal style.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 20:
+    Adjectives'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday
+    communication.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 20:
+    Adjectives'
+  tier: 1
+- claim: Common error '*The food tastes deliciously.*' for Portuguese, Spanish, Chinese
+    speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: Sense verbs in discourse describe perception and sensory experience, linking the subject to a quality perceived through sight, hearing, touch, smell, or taste
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 20:
+    Adjectives'
+  tier: 1
+common_errors:
+- correction: The food tastes delicious.
+  error: '*The food tastes deliciously.*'
+  explanation: After sense verbs, use adjective not adverb.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
 description: Verbs that describe how something appears, sounds, feels, smells, or
   tastes. Essential for descriptions using adjectives.
+dialectal_variation: []
+discourse_notes:
+- 'Sense verbs link perception to description: look (visual), sound (auditory), feel (tactile), smell (olfactory), taste (gustatory). They are typically stative — the progressive form is rare and implies a temporary or deliberate act of perception (''I''m feeling the fabric''). Source: Celce-Murcia & Larsen-Freeman (2015) GB3 Ch. 20: Adjectives.'
+
+form:
+  affirmative:
+    example_generator:
+    - You look happy.
+    - That sounds good.
+    - The silk feels smooth.
+    - The flower smells sweet.
+    - The soup tastes salty.
+    min_examples: 4
+    structure: Subject + sense verb + adjective OR Subject + sense verb + like + noun
+  negative:
+    example_generator:
+    - It does not look good.
+    - That does not sound right.
+    - This does not feel comfortable.
+    min_examples: 4
+    structure: Subject + sense verb + not + adjective
+  questions:
+    example_generator:
+    - Do I look tired
+    - Does that sound good
+    - How does this taste
+    min_examples: 4
+    structure: Auxiliary + subject + sense verb + adjective
+grammar_point: look_sound_feel_smell_taste
 level: A2
 meaning:
-  core_meaning: 'Describes perception through the five senses: sight (look), hearing
-    (sound), touch (feel), smell (smell), taste (taste). These verbs are followed
-    by adjectives (not adverbs) to describe the quality of what is perceived.'
-  timeline: Describes current state, though can be used in any tense. 'It looked nice'
-    (past). 'It will sound great' (future).
-  contrast: Look + adjective = appearance. Look + like + noun = similarity. Look +
-    adverb = action of looking (different meaning).
   ccqs:
-  - question: Do we say 'It looks good' or 'It looks well'?
-    answer: '''It looks good'' — sense verbs take adjectives, not adverbs. Exception:
+  - answer: '''It looks good'' — sense verbs take adjectives, not adverbs. Exception:
       ''well'' for health.'
     purpose: 'Tests whether the learner understands that sense verbs (look, sound,
       feel, smell, taste) are followed by adjectives, not adverbs. ''It looks good''
       (adjective describing the thing) NOT ''It looks well'' (adverb describing the
       looking). Exception: ''I feel well'' = health.'
-  - question: What is the difference between 'look' and 'look like'?
-    answer: '''Look'' + adjective describes appearance. ''Look like'' + noun describes
+    question: Do we say 'It looks good' or 'It looks well'?
+  - answer: '''Look'' + adjective describes appearance. ''Look like'' + noun describes
       similarity.'
     purpose: 'Tests whether the learner understands the structural distinction: ''look
       + adjective'' (She looks happy) vs ''look like + noun'' (She looks like her
       mother). Both describe appearance but with different complements.'
-  - question: Can we use these verbs in continuous tenses?
-    answer: Rarely. 'It is looking good' is possible but unusual. These are stative
+    question: Can you explain the difference between 'look' and 'look like' by giving
+      an example of when to use each?
+  - answer: Rarely. 'It is looking good' is possible but unusual. These are stative
       verbs.
     purpose: Tests whether the learner understands that sense verbs are typically
       stative and not used in continuous forms. 'The food tastes good' NOT 'The food
       is tasting good' (except in informal/informal progressive for temporary situations).
+    question: Can we use these verbs in continuous tenses?
+  - answer: No. She looks at the photo describes the action of directing her eyes
+      toward the photo (dynamic verb + preposition). The photo looks good describes
+      the appearance of the photo (stative sense verb + adjective). Same verb, different
+      meaning and grammar.
+    purpose: Tests whether the learner can distinguish between the dynamic action
+      meaning of sense verbs (look at, listen to) and the stative perception meaning
+      (look good, sound nice). This distinction is essential because the stative use
+      requires an adjective complement, while the dynamic use takes a direct object
+      or prepositional phrase.
+    question: Does look in she looks at the photo mean the same as look in the photo
+      looks good?
+  contrast: Look + adjective = appearance. Look + like + noun = similarity. Look +
+    adverb = action of looking (different meaning).
+  core_meaning: 'Describes perception through the five senses: sight (look), hearing
+    (sound), touch (feel), smell (smell), taste (taste). These verbs are followed
+    by adjectives (not adverbs) to describe the quality of what is perceived.'
   example_generator:
     contexts:
     - food and drink
@@ -40,52 +119,85 @@ meaning:
     - These verbs are stative — they describe states, not actions
     - 'Use real objects for demonstration: touch, smell, taste'
     min_examples: 5
-form:
-  affirmative:
-    structure: Subject + sense verb + adjective OR Subject + sense verb + like + noun
-    example_generator:
-    - You look happy.
-    - That sounds good.
-    - The silk feels smooth.
-    - The flower smells sweet.
-    - The soup tastes salty.
-    min_examples: 4
-  negative:
-    structure: Subject + sense verb + not + adjective
-    example_generator:
-    - It does not look good.
-    - That does not sound right.
-    - This does not feel comfortable.
-    min_examples: 4
-  questions:
-    structure: Auxiliary + subject + sense verb + adjective
-    example_generator:
-    - Do I look tired
-    - Does that sound good
-    - How does this taste
-    min_examples: 4
+  timeline: Describes current state, though can be used in any tense. 'It looked nice'
+    (past). 'It will sound great' (future).
+phonetics:
+  example_generator:
+    contexts:
+    - sense verb stress
+  l1_issue: 'Portuguese and Spanish speakers often use adverbs after sense verbs.
+    Teach: ''It looks good'' NOT ''It looks well'' (except for health). Drill the
+    adjective pattern.'
+  note: 'Sense verbs are usually stressed in questions: ''Does it LOOK good?'' ''How
+    does it TASTE?'' The adjective is also stressed: ''It looks GOOD.'''
+register_notes:
+- note: 'Biber et al. (1999) — Perception verbs (''look'', ''sound'', ''feel'', ''smell'',
+    ''taste''): stative meaning resists progressive, but conversation uses progressive
+    for immediacy (''It''s tasting great''). Academic prose uses simple tenses. Ch.
+    6.3.3.1'
+  reliability: C
+  source: Biber et al. (1999) Longman Grammar of Spoken and Written English. Longman
+    Publishing Company. Ch. 6.3.3.1
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 20:
+    Adjectives'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Sense verbs take adjectives, not adverbs
-  type: grammatical
-  examples:
+- examples:
   - It looks good (NOT looks well — except for health)
   - You sound happy (NOT sound happily)
-- rule: Look like + noun for similarity
+  rule: Sense verbs take adjectives, not adverbs
   type: grammatical
-  examples:
+- examples:
   - You look like your mother
   - It looks like rain
-- rule: These are stative verbs — rarely used in continuous tenses
+  rule: Look like + noun for similarity
   type: grammatical
-  examples:
+- examples:
   - It looks good (NOT it is looking good — unusual)
-- rule: 'Each verb corresponds to one sense: look (sight), sound (hearing), feel (touch),
-    smell (smell), taste (taste)'
-  type: semantic
-  examples:
+  rule: These are stative verbs — rarely used in continuous tenses
+  type: grammatical
+- examples:
   - Look at the picture (sight)
   - Listen to that sound (hearing)
   - Touch the fabric (touch)
+  rule: 'Each verb corresponds to one sense: look (sight), sound (hearing), feel (touch),
+    smell (smell), taste (taste)'
+  type: semantic
+teaching:
+  methodology: PPP with real objects
+  recommended_activities:
+  - adaptation_notes: 'Students match sense verbs to senses: look (sight), sound (hearing),
+      feel (touch), smell (smell), taste (taste).'
+    duration: 10
+    name: Sense Verb Matching
+  - adaptation_notes: 'Bring objects to class. Students describe them using sense
+      verbs: ''This feels soft. It smells like vanilla. It tastes sweet.'''
+    duration: 15
+    name: Describe the Object
+  - adaptation_notes: 'Show photos of people. Students describe them: ''She looks
+      happy. He looks tired. They look like students.'''
+    duration: 15
+    name: Photo Description
+  tips:
+  - 'CGEL Ch. 4: Sense verbs (look, sound, feel, smell, taste) are ascriptive — they assign a perceived quality to the subject. ''The soup tastes strange'' ascribes the quality of strangeness to the soup via sensory perception.'
+  - 'Use real objects: touch fabric (feel), smell flowers (smell), taste food (taste).'
+  - 'Practice with photos: ''How does s/he look? Tired? Happy? Angry?'''
+  - 'Show ''look'' ambiguity: ''Look!'' (action) vs ''You look...'' (appearance).'
+  - 'Swan PEU: Verbs of perception + adjective — ''The soup tastes good,'' ''You look
+    tired,'' ''That sounds interesting,'' ''It feels soft,'' ''It smells fresh.''
+    After these verbs, use adjectives (not adverbs) to describe the subject: ''You
+    look good'' not ''You look well.'''
+  - 'Swan PEU: These verbs link the subject quality with perception. ''The food tastes
+    strange'' = the food has a strange taste. Contrast: ''He tastes the food carefully''
+    (action verb with adverb).'
+title: Sense Verbs (look, sound, feel, smell, taste)
 use:
 - context: Describing appearance
   examples:
@@ -102,62 +214,3 @@ use:
   - This feels soft
   - The coffee smells delicious
   - The soup tastes too salty
-phonetics:
-  note: 'Sense verbs are usually stressed in questions: ''Does it LOOK good?'' ''How
-    does it TASTE?'' The adjective is also stressed: ''It looks GOOD.'''
-  example_generator:
-    contexts:
-    - sense verb stress
-  l1_issue: 'Portuguese and Spanish speakers often use adverbs after sense verbs.
-    Teach: ''It looks good'' NOT ''It looks well'' (except for health). Drill the
-    adjective pattern.'
-teaching:
-  methodology: PPP with real objects
-  tips:
-  - 'Use real objects: touch fabric (feel), smell flowers (smell), taste food (taste).'
-  - 'Practice with photos: ''How does s/he look? Tired? Happy? Angry?'''
-  - 'Show ''look'' ambiguity: ''Look!'' (action) vs ''You look...'' (appearance).'
-  recommended_activities:
-  - name: Sense Verb Matching
-    duration: 10
-    adaptation_notes: 'Students match sense verbs to senses: look (sight), sound (hearing),
-      feel (touch), smell (smell), taste (taste).'
-  - name: Describe the Object
-    duration: 15
-    adaptation_notes: 'Bring objects to class. Students describe them using sense
-      verbs: ''This feels soft. It smells like vanilla. It tastes sweet.'''
-  - name: Photo Description
-    duration: 15
-    adaptation_notes: 'Show photos of people. Students describe them: ''She looks
-      happy. He looks tired. They look like students.'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 13:
-    Adjectives, §13.1-13.8'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*The food tastes deliciously.*'
-  correction: The food tastes delicious.
-  explanation: After sense verbs, use adjective not adverb.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

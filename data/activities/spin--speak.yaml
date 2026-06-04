@@ -1,36 +1,55 @@
-id: spin--speak
-name: Spin & Speak
-category: speaking
-description: A spontaneous speech prompt activity where a spinner selects a topic
-  and students must speak about it for a set duration. Reduces speech inhibition and
-  focuses on extemporaneous fluency.
-targetStructures:
-- clauses
-- verb-tenses
+adaptableToTopic: true
+bestForAges:
+- teens
+- adults
 bestForLevels:
 - A2
 - B1
 - B2
-bestForAges:
-- teens
-- adults
+category: speaking
+citations:
+- claim: Timed spontaneous speaking activities reduce speech inhibition and build
+    extemporaneous fluency in L2 learners.
+  flagged: false
+  reliability: B
+  source: Peregoy & Boyle (2023) Reading, Writing, and Learning in ESL. Ch. 5
+  tier: 2
+description: A spontaneous speech prompt activity where a spinner selects a topic
+  and students must speak about it for a set duration. Reduces speech inhibition and
+  focuses on extemporaneous fluency.
+differentiation:
+  extension: Increase speaking time to 90 seconds. Require students to use specific
+    grammar structures (past tense, conditionals). Have the audience ask follow-up
+    questions.
+  support: Allow 30 seconds of speaking time. Provide sentence starters on the board.
+    Let students choose from two topics instead of one.
+digitalReady: true
 duration: 10
-groupSize: whole-class
 energyRequired: medium
-prepTime: low
-materials:
-- Spinner (physical or digital)
-- Timer
+exampleSnippet:
+  execution:
+  - Spinner lands on 'Dream vacation.' Student speaks for 45 seconds about where they
+    would go and why.
+  - Spinner lands on 'Worst travel experience.' Student narrates a past event using
+    past tenses.
+  - Spinner lands on 'If I could live anywhere.' Student practices conditional structures.
+  teacherDialogue:
+  - Your topic is 'My hometown.' Tell us about it -- what is it like? What do people
+    do there? Go!
+  - Do not worry about being perfect. Just keep talking. What else can you say?
+  topic: travel and holidays
 format:
 - in-person
 - online
-requiresTech: false
-digitalReady: true
+grammar_focus:
+- clauses
+- verb_tenses
+groupSize: whole-class
 hasAudioComponent: false
 hasPrintableComponent: false
 hasSlidesComponent: true
 hasVisualComponent: true
-adaptableToTopic: true
+id: spin--speak
 instructions:
 - Prepare a spinner with 8-12 topic options related to your lesson or general interest
   topics.
@@ -43,6 +62,33 @@ instructions:
 - After the student finishes, briefly give positive feedback and one gentle correction
   if needed.
 - Spin again for the next student. Aim to give 4-6 students a turn per session.
+keywords:
+- speaking
+- fluency
+- spinner
+- spontaneous
+- extemporaneous
+- topic talk
+l1_enhanced:
+- adaptation: Spanish speakers may self-monitor heavily due to L1-L2 structural differences.
+    The timed, low-stakes format reduces overthinking.
+  language: Spanish
+  priority: medium
+- adaptation: Arabic speakers may pause extensively due to VSO vs SVO word order transfer.
+    The keep-going encouragement specifically targets fluency over accuracy.
+  language: Arabic
+  priority: high
+- adaptation: Mandarin speakers may struggle with topicalization in extemporaneous
+    speech. Provide pre-speaking thinking time (10 seconds) as scaffolding.
+  language: Mandarin
+  priority: medium
+l1_specific: []
+materials:
+- Spinner (physical or digital)
+- Timer
+name: Spin & Speak
+prepTime: low
+requiresTech: false
 script:
 - Spin the wheel! It landed on... FAVORITE FOOD. Maria, tell us about your favorite
   food for 45 seconds. Go!
@@ -52,29 +98,20 @@ script:
 setupInstructions: 'Create a spinner with topic options. You can use a physical spinner,
   a digital spinner app, or simply draw topics from a hat. Topics should be accessible
   to all levels: favorite food, weekend plans, a memorable trip, etc.'
-exampleSnippet:
-  topic: travel and holidays
-  execution:
-  - Spinner lands on 'Dream vacation.' Student speaks for 45 seconds about where they
-    would go and why.
-  - Spinner lands on 'Worst travel experience.' Student narrates a past event using
-    past tenses.
-  - Spinner lands on 'If I could live anywhere.' Student practices conditional structures.
-  teacherDialogue:
-  - Your topic is 'My hometown.' Tell us about it -- what is it like? What do people
-    do there? Go!
-  - Do not worry about being perfect. Just keep talking. What else can you say?
-differentiation:
-  support: Allow 30 seconds of speaking time. Provide sentence starters on the board.
-    Let students choose from two topics instead of one.
-  extension: Increase speaking time to 90 seconds. Require students to use specific
-    grammar structures (past tense, conditionals). Have the audience ask follow-up
-    questions.
-keywords:
+skill_areas:
 - speaking
-- fluency
-- spinner
-- spontaneous
-- extemporaneous
-- topic talk
-l1Enhanced: true
+sources:
+- author: Peregoy, S. & Boyle, O.
+  year: 2023
+  title: Reading, Writing, and Learning in ESL
+  edition: 8th ed.
+  publisher: Pearson
+  chapter: 'Ch. 5: Oral English Development for Multilingual Learners'
+targetStructures:
+- clauses
+- verb-tenses
+teaching_tips:
+- tip: "Klippel emphasizes that fluency activities should reduce the strain on individual students. Timed speaking activities work best when students have a clear topic and when the focus is on communicating ideas rather than perfect accuracy (Klippel 1984, Ch. 2: Questions and answers)."
+  context: Fluency focus
+- tip: "Klippel notes that pair work is the least threatening format for speaking because everybody is talking at the same time and each student has only one listener (Klippel 1984, p. 12)."
+  context: Pair work safety

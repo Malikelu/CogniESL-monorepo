@@ -1,36 +1,92 @@
-id: grammar-dice
-name: Grammar Dice
-category: grammar-practice
-description: Students roll dice to determine the subject, verb, and tense they must
-  use to create a sentence. Combines chance with grammar practice.
-targetStructures:
-- verb-tenses
-- sentence-structure
-- clauses
+adaptableToTopic: true
 bestForLevels:
 - A1
 - A2
 - B1
 - B2
+category: grammar-practice
+citations:
+- claim: "Penny Ur provides communicative practice activities for interrogatives following a communicative methodology"
+  source: 'Ur, Penny (1988) Grammar Practice Activities: A Practical Guide for Teachers. Cambridge University Press, Ch. 15: Interrogatives'
+  tier: 2
+  reliability: B
+  flagged: false
+
+- claim: "Penny Ur provides communicative practice activities for past simple following a communicative methodology"
+  source: 'Ur, Penny (1988) Grammar Practice Activities: A Practical Guide for Teachers. Cambridge University Press, Ch. 23: Past simple'
+  tier: 2
+  reliability: B
+  flagged: false
+
+- claim: "Penny Ur provides communicative practice activities for present perfect following a communicative methodology"
+  source: 'Ur, Penny (1988) Grammar Practice Activities: A Practical Guide for Teachers. Cambridge University Press, Ch. 26: Present perfect'
+  tier: 2
+  reliability: B
+  flagged: false
+
+- claim: "Penny Ur provides communicative practice activities for present simple following a communicative methodology"
+  source: 'Ur, Penny (1988) Grammar Practice Activities: A Practical Guide for Teachers. Cambridge University Press, Ch. 28: Present simple'
+  tier: 2
+  reliability: B
+  flagged: false
+- claim: "Penny Ur provides practice activities and teaching guidelines for interrogatives following a communicative methodology."
+  source: 'Ur, Penny (1988) Grammar Practice Activities: A Practical Guide for Teachers. Cambridge University Press, Ch. 15: Interrogatives'
+  tier: 2
+  reliability: B
+  flagged: false
+
+- claim: "Penny Ur provides practice activities and teaching guidelines for past simple following a communicative methodology."
+  source: 'Ur, Penny (1988) Grammar Practice Activities: A Practical Guide for Teachers. Cambridge University Press, Ch. 23: Past simple'
+  tier: 2
+  reliability: B
+  flagged: false
+
+- claim: "Penny Ur provides practice activities and teaching guidelines for present perfect following a communicative methodology."
+  source: 'Ur, Penny (1988) Grammar Practice Activities: A Practical Guide for Teachers. Cambridge University Press, Ch. 26: Present perfect'
+  tier: 2
+  reliability: B
+  flagged: false
+
+- claim: "Penny Ur provides practice activities and teaching guidelines for present simple following a communicative methodology."
+  source: 'Ur, Penny (1988) Grammar Practice Activities: A Practical Guide for Teachers. Cambridge University Press, Ch. 28: Present simple'
+  tier: 2
+  reliability: B
+  flagged: false
+- claim: The "Grammar Dice" activity supports language learning through grammar-practice-focused
+    practice
+  flagged: false
+  reliability: B
+  source: Peregoy & Boyle (2023) Reading, Writing, and Learning in ESL, 8th ed.
+  tier: 2
+- claim: "Based on the Board and card games from Watcyn-Jones (1981), which uses game-based pair and group work to make grammar practice dynamic and engaging."
+  source: 'Watcyn-Jones, P. (1981) Grammar Games and Activities. Penguin Books.'
+  tier: 2
+  reliability: 'B'
+  flagged: false
+description: Students roll dice to determine the subject, verb, and tense they must
+  use to create a sentence. Combines chance with grammar practice.
+differentiation:
+  extension: Add negative forms, questions, or passive voice. Require students to
+    also create a question from their sentence.
+  support: Use simpler subjects and verbs. Provide a grammar reference sheet. Allow
+    students to work in pairs.
+digitalReady: true
 duration: 15
-groupSize: small-groups
 energyRequired: medium
-prepTime: low
-materials:
-- Dice (or digital dice app)
-- Subject cards
-- Verb cards
-- Tense cards
 format:
 - in-person
 - online
-requiresTech: false
-digitalReady: true
+grammar_focus:
+- present_simple
+- past_simple
+- present_perfect
+- word_order
+groupSize: small-groups
 hasAudioComponent: false
 hasPrintableComponent: true
 hasSlidesComponent: false
 hasVisualComponent: false
-adaptableToTopic: true
+id: grammar-dice
 instructions:
 - 'Prepare three sets of cards: subjects (I, she, they, the dog, my mother), verbs
   (go, eat, make, study, play), and tenses (past simple, present perfect, future).'
@@ -43,20 +99,55 @@ instructions:
 - Review any sentences that caused difficulty. Discuss the grammar rules.
 - 'Extension: Add a fourth category (adverbs, objects, or negative forms) to increase
   difficulty.'
-script:
-- Roll the dice! You got she, go, and past simple. Make a sentence. Ready?
-- She went to the store. Perfect! Next roll.
-setupInstructions: Create subject, verb, and tense cards. Have dice available. Prepare
-  an answer key for common combinations.
-differentiation:
-  support: Use simpler subjects and verbs. Provide a grammar reference sheet. Allow
-    students to work in pairs.
-  extension: Add negative forms, questions, or passive voice. Require students to
-    also create a question from their sentence.
 keywords:
 - dice
 - grammar
 - sentence creation
 - random
 - game
-l1Enhanced: true
+l1_enhanced:
+- adaptation: 'Spanish speakers may confuse present perfect and past simple. Provide
+    explicit contrast: "he comido" (present perfect) vs "comí" (past simple).'
+  language: Spanish
+  priority: high
+- adaptation: Arabic has perfective/imperfective aspect rather than tense. Provide
+    timeline visuals to illustrate English tense system.
+  language: Arabic
+  priority: high
+- adaptation: Mandarin has no verb inflection for tense. Tense is indicated by time
+    words (yesterday, now) and aspect markers (le, zhe). Provide explicit verb conjugation
+    practice.
+  language: Mandarin
+  priority: high
+l1_specific: []
+materials:
+- Dice (or digital dice app)
+- Subject cards
+- Verb cards
+- Tense cards
+name: Grammar Dice
+prepTime: low
+requiresTech: false
+script:
+- Roll the dice! You got she, go, and past simple. Make a sentence. Ready?
+- She went to the store. Perfect! Next roll.
+setupInstructions: Create subject, verb, and tense cards. Have dice available. Prepare
+  an answer key for common combinations.
+skill_areas:
+- grammar
+targetStructures:
+- verb-tenses
+- sentence-structure
+- clauses
+teaching_tips:
+- tip: "Start with just subject + verb + tense (3 dice). Once students are comfortable, add a fourth category (adverbs, objects, or negative forms). Common mistake: students produce grammatically correct but pragmatically odd sentences — use these as teaching moments about natural usage, not just form."
+sources:
+- Peregoy, S. & Boyle, O. (2023). Reading, Writing, and Learning in ESL, 8th ed. Pearson.
+- Celce-Murcia, M. & Larsen-Freeman, D. (2015). The Grammar Book, 3rd ed. National Geographic Learning.
+- 'Watcyn-Jones, P. (1981) Grammar Games and Activities. Penguin Books.'
+- 'Ur, Penny (1988) Grammar Practice Activities: A Practical Guide for Teachers. Cambridge University Press'
+- 'Ur, Penny (1988) Grammar Practice Activities: A Practical Guide for Teachers. Cambridge University Press'
+- 'Ur, Penny (1988) Grammar Practice Activities: A Practical Guide for Teachers. Cambridge University Press'
+
+
+

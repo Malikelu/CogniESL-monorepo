@@ -1,31 +1,44 @@
-id: bookworm-87922e
-name: Bookworm
-category: reading
-description: Bookworm -- a reading activity. Select a short passage (100-150 words)
-  related to your lesson topic. It should contain a clear conflict or problem. Give
-  students 3 minutes to read th...
-targetStructures:
-- reading-comprehension
+adaptableToTopic: true
+bestForAges:
+- adults
 bestForLevels:
 - A2
 - B1
-bestForAges:
-- adults
+category: reading
+citations:
+- claim: The "Bookworm" activity develops reading comprehension through guided practice
+    with structured summarization tasks
+  flagged: false
+  reliability: B
+  source: Peregoy & Boyle (2023) Reading, Writing, and Learning in ESL, 8th ed. Ch.
+    9
+  tier: 2
+- claim: Extensive reading is a key source of language exposure in TBL. Willis (1996)
+    encourages extensive reading for pleasure and describes class libraries as valuable.
+  source: Willis, J. (1996) A Framework for Task-Based Learning. Longman.
+  tier: 2
+  reliability: B
+  flagged: false
+description: Bookworm -- a reading activity. Select a short passage (100-150 words)
+  related to your lesson topic. It should contain a clear conflict or problem. Give
+  students 3 minutes to read the passage silently.
+differentiation:
+  extension: Add resolution prediction.
+  support: Provide conflict definition.
+digitalReady: true
 duration: 15
-groupSize: pairs
 energyRequired: medium
-prepTime: low
-materials:
-- handouts
 format:
 - in-person
-requiresTech: false
-digitalReady: true
+grammar_focus:
+- reading_comprehension
+- vocabulary_in_context
+groupSize: pairs
 hasAudioComponent: false
 hasPrintableComponent: true
 hasSlidesComponent: false
 hasVisualComponent: true
-adaptableToTopic: true
+id: bookworm-87922e
 instructions:
 - Select a short passage (100-150 words) related to your lesson topic. It should contain
   a clear conflict or problem.
@@ -37,15 +50,37 @@ instructions:
 - Ask 3-4 students to read their summaries aloud. Discuss which summaries capture
   the conflict most accurately.
 - 'Discuss: What makes a good summary? (Key idea, concise, accurate)'
-script:
-- '"Short passage."'
-- Summarize conflict in 15 words.
-- '"With partner."'
-differentiation:
-  support: Provide conflict definition.
-  extension: Add resolution prediction.
 keywords:
 - book
 - worm
 - summary
-l1Enhanced: true
+l1_enhanced:
+- adaptation: Pair Spanish-speaking students for L1 contrastive discussions. Provide
+    bilingual glossaries for key terms.
+  language: Spanish
+  priority: low
+- adaptation: Arabic is written right-to-left. Allow extra time for reading English
+    text. Provide left-to-right reading guides.
+  language: Arabic
+  priority: medium
+l1_specific: []
+materials:
+- handouts
+name: Bookworm
+prepTime: low
+requiresTech: false
+script:
+- '"Short passage."'
+- Summarize conflict in 15 words.
+- '"With partner."'
+skill_areas:
+- reading
+sources:
+- Willis, J. (1996) A Framework for Task-Based Learning. Longman.
+targetStructures:
+- reading-comprehension
+teaching_tips:
+- tip: Willis encourages extensive reading for pleasure as a key source of language
+    exposure. A class library of stories, magazines, and comics supports this. (Willis
+    1996, Ch. 5.2)
+  context: TBL methodology

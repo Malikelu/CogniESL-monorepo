@@ -1,31 +1,97 @@
+citations:
+- claim: 'Core meaning: Substitution with do so, so, and not allows speakers to refer back to previously mentioned actions, '
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 30: Information Packaging (substitution and
+    ellipsis)'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 30: Information Packaging (substitution and
+    ellipsis)'
+  tier: 1
+- claim: Common error '*She likes coffee and I do too so.*' for Portuguese, Spanish, Chinese speakers
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 15: Substitution'
+  tier: 1
+- claim: Oshima & Hogue's Great Writing series demonstrates how this grammatical structure functions in academic writing contexts.
+    Their approach connects grammar instruction to writing outcomes, showing learners how accurate use of this structure improves
+    paragraph cohesion, essay organization, and academic register.
+  source: Oshima, A. and Hogue, A. (2006). Introduction to Academic Writing, 3rd ed. Pearson Longman.
+  tier: 2
+common_errors:
+- correction: She likes coffee and so do I.
+  error: '*She likes coffee and I do too so.*'
+  explanation: Do so substitutes for verb phrases.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+description: Using do so, so, and not to substitute for previously mentioned phrases, avoiding repetition in formal and informal
+  English.
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - formal reports
+      - agreeing with statements
+      - confirming actions
+      min_examples: 4
+    structure: 'Subject + auxiliary + do so: She said she would finish the report and she did so. / So + auxiliary + subject:
+      She was tired, and so was he.'
+  negative:
+    example_generator:
+      contexts:
+      - disagreeing
+      - reporting failures
+      - negative agreement
+      min_examples: 3
+    structure: 'Subject + auxiliary + not do so: He promised to come but did not do so. / Not + auxiliary + subject: She was
+      not happy, and neither was he.'
+  questions:
+    example_generator:
+      contexts:
+      - confirming
+      - checking understanding
+      min_examples: 3
+    structure: 'Auxiliary + subject + do so?: Did she do so? / So + auxiliary + subject?: Was she angry, and so was he?'
 grammar_point: do_so_substitution
-title: Do so / So / Not (Substitution)
-description: Using do so, so, and not to substitute for previously mentioned phrases,
-  avoiding repetition in formal and informal English.
 level: C1
 meaning:
-  core_meaning: Substitution with do so, so, and not allows speakers to refer back
-    to previously mentioned actions, ideas, or clauses without repeating them. This
-    creates more concise, natural-sounding discourse.
-  timeline: Varies — the tense is carried by the auxiliary verb in the substitution.
-  contrast: Without substitution = She asked me to leave and I left. With substitution
-    = She asked me to leave and I did so. / She asked me to leave and so I did.
   ccqs:
-  - question: Does do so replace a verb phrase that was mentioned earlier?
-    answer: Yes, it substitutes for the entire verb phrase.
-    purpose: Tests whether the learner understands that 'do so' is a pro-form that
-      replaces a previously mentioned verb phrase to avoid repetition. 'She asked
-      me to leave and I did so' = 'I left.' This is common in formal and academic
-      writing.
-  - question: Does so in 'so I did' replace a that-clause?
-    answer: Yes, so substitutes for the content of the that-clause.
-    purpose: Tests whether the learner understands that 'so' in response clauses ('I
-      think so,' 'so I did,' 'I hope so') replaces an entire that-clause. 'Do you
-      think it will rain?' 'I think so' = 'I think that it will rain.'
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      do so substitution and explain why they are incorrect.
+  - answer: Yes, it substitutes for the entire verb phrase.
+    purpose: Tests whether the learner understands that 'do so' is a pro-form that replaces a previously mentioned verb phrase
+      to avoid repetition. 'She asked me to leave and I did so' = 'I left.' This is common in formal and academic writing.
+    question: Does do so replace a verb phrase that was mentioned earlier?
+  - answer: Yes, so substitutes for the content of the that-clause.
+    purpose: Tests whether the learner understands that 'so' in response clauses ('I think so,' 'so I did,' 'I hope so') replaces
+      an entire that-clause. 'Do you think it will rain?' 'I think so' = 'I think that it will rain.'
+    question: Does so in 'so I did' replace a that-clause?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with do so substitution and explain why they
+      are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: 'Nor and neither are interchangeable in agreement clauses -- both express agreement with a negative statement.
+      She was not happy, and neither or nor was I. However, nor cannot replace neither when neither is used as a determiner
+      (neither option) or in correlative pairs (neither...nor).
+
+      '
+    purpose: 'Tests whether the learner understands the functional interchangeability of neither and nor in agreement clauses
+      after negative statements, while recognizing they are not synonymous in all contexts. This distinction within the do_so_substitution
+      grammar point is crucial for learners to avoid overgeneralizing nor to determiner positions where only neither works.
+
+      '
+    question: 'In the sentence She was not happy about the decision, and neither was she, can we replace neither with nor,
+      and does nor work in all the same contexts?
+
+      '
+  contrast: Without substitution = She asked me to leave and I left. With substitution = She asked me to leave and I did so.
+    / She asked me to leave and so I did.
+  core_meaning: Substitution with do so, so, and not allows speakers to refer back to previously mentioned actions, ideas,
+    or clauses without repeating them. This creates more concise, natural-sounding discourse.
   example_generator:
     contexts:
     - formal writing
@@ -36,83 +102,98 @@ meaning:
     - The phrase do so is more formal than simply repeating the verb
     - So and not in response clauses are very common in spoken English
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Subject + auxiliary + do so: She said she would finish the report
-      and she did so. / So + auxiliary + subject: She was tired, and so was he.'
-    example_generator:
-      contexts:
-      - formal reports
-      - agreeing with statements
-      - confirming actions
-      min_examples: 4
-  negative:
-    structure: 'Subject + auxiliary + not do so: He promised to come but did not do
-      so. / Not + auxiliary + subject: She was not happy, and neither was he.'
-    example_generator:
-      contexts:
-      - disagreeing
-      - reporting failures
-      - negative agreement
-      min_examples: 3
-  questions:
-    structure: 'Auxiliary + subject + do so?: Did she do so? / So + auxiliary + subject?:
-      Was she angry, and so was he?'
-    example_generator:
-      contexts:
-      - confirming
-      - checking understanding
-      min_examples: 3
+  timeline: Varies — the tense is carried by the auxiliary verb in the substitution.
+phonetics:
+- example_generator:
+    contexts:
+    - formal speech
+    - presentations
+  l1_issue: Learners may repeat the full verb phrase instead of using substitution, sounding unnatural.
+  note: Do so in speech is often reduced, with so carrying light stress.
+- example_generator:
+    contexts:
+    - casual conversation
+    - quick responses
+  l1_issue: Speakers from languages without equivalent substitution patterns may find these structures unfamiliar.
+  note: So and not in responses are typically unstressed and produced quickly.
+register_notes:
+- note: 'Biber et al. (2021) — Substitution (''do so'', ''do it'', ''do that''): academic prose uses more ''do so'' (formal);
+    conversation uses more ''do it/that''. Ch. 12.2'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 12.2
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 15: Substitution'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 30: Information Packaging (substitution and
+    ellipsis)'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Ch. 30: Information Packaging'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners. Ch. 13: Substitution'
+  validation: Swan (2016) Practical English Usage, 4th ed.(do so substitution)
 sub_rules:
-- rule: 'Do so substitutes for a verb phrase (action): She asked him to apologise,
-    and he did so immediately.'
-  type: grammatical
-  examples:
+- examples:
   - The company promised to compensate customers and has now done so.
   - He was told to leave, and he did so without argument.
   - She asked me to review the document, and I did so last night.
-- rule: 'So substitutes for a that-clause after verbs of thinking, saying, and hoping:
-    I think so, I hope so, I believe so, I imagine so'
+  rule: 'Do so substitutes for a verb phrase (action): She asked him to apologise, and he did so immediately.'
   type: grammatical
-  examples:
+- examples:
   - Will she come? I think so.
   - Is it true? I believe so.
   - Will they win? I hope so.
-- rule: 'So + auxiliary + subject expresses agreement with a positive statement: I
-    was delighted, and so was she.'
+  rule: 'So substitutes for a that-clause after verbs of thinking, saying, and hoping: I think so, I hope so, I believe so,
+    I imagine so'
   type: grammatical
-  examples:
+- examples:
   - He can speak French, and so can his sister.
   - I have finished the report, and so has everyone else.
   - She loves jazz, and so do I.
-- rule: 'Neither/Nor + auxiliary + subject expresses agreement with a negative statement:
-    I was not impressed, and neither was he.'
+  rule: 'So + auxiliary + subject expresses agreement with a positive statement: I was delighted, and so was she.'
   type: grammatical
-  examples:
+- examples:
   - She cannot drive, nor can her husband.
   - I have not been to Japan, and neither has my brother.
   - He does not like spicy food, and neither do I.
-- rule: 'Not substitutes for a negative that-clause: I hope not, I think not, I am
-    afraid not'
+  rule: 'Neither/Nor + auxiliary + subject expresses agreement with a negative statement: I was not impressed, and neither
+    was he.'
   type: grammatical
-  examples:
+- examples:
   - Will it rain? I hope not.
   - Is she coming? I think not.
   - Can you help? I am afraid not.
-- rule: 'So at the beginning of a sentence (formal/literary): So it proved. So it
-    would seem.'
+  rule: 'Not substitutes for a negative that-clause: I hope not, I think not, I am afraid not'
   type: grammatical
-  examples:
+- examples:
   - The plan was risky. So it proved.
   - He was, so it would seem, the only survivor.
+  rule: 'So at the beginning of a sentence (formal/literary): So it proved. So it would seem.'
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Students rewrite repetitive sentences using do so, so, and not as quickly as possible.
+    duration: 10
+    name: Substitution Race
+  - adaptation_notes: Teacher makes statements; students respond with so do I, neither can she, I think so, etc.
+    duration: 10
+    name: Response Drill
+  - adaptation_notes: Students identify and explain do so substitutions in authentic legal or official texts.
+    duration: 15
+    name: Legal Language Analysis
+  tips:
+  - Introduce substitution as a natural way to avoid repetition — compare repetitive and substituted versions.
+  - Teach do so for verb phrases and so/not for that-clauses as two separate substitution types.
+  - Practice agreement patterns (so do I, neither do I) as a separate but related skill.
+  - Use gap-fill exercises where students must choose between repeating and substituting.
+  - 'Swan PEU: ''Do so'' substitutes for a verb phrase: ''She asked me to leave, and I did so immediately.'' = ''I left immediately.''
+    More formal than ''do it.'' Not common in everyday speech — use ''do it'' or repeat the verb.'
+  - 'Swan PEU: ''So'' with say/think/believe — ''I think so,'' ''I hope so,'' ''She said so.'' Little words with high frequency
+    in natural speech.'
+title: Do so / So / Not (Substitution)
 use:
 - context: Formal and legal writing
-  description: Do so is widely used in legal and official documents to refer back
-    to obligations and actions.
+  description: Do so is widely used in legal and official documents to refer back to obligations and actions.
   examples:
   - The tenant is required to pay rent on time. Failure to do so may result in eviction.
-  - The applicant must submit all documents by the deadline. Those who do so will
-    be considered.
+  - The applicant must submit all documents by the deadline. Those who do so will be considered.
 - context: Everyday conversation
   description: So and not in responses are extremely common in casual speech.
   examples:
@@ -120,85 +201,12 @@ use:
   - Did he pass the exam? I hope so.
   - Can she speak German? I believe so.
 - context: Expressing agreement
-  description: So + auxiliary + subject and neither + auxiliary + subject are standard
-    patterns for agreeing.
+  description: So + auxiliary + subject and neither + auxiliary + subject are standard patterns for agreeing.
   examples:
   - I love Italian food. So do I.
   - She was not happy about it. Neither was I.
 - context: Academic and professional writing
   description: Do so allows writers to refer back to complex actions without repetition.
   examples:
-  - The participants were asked to complete a questionnaire. Those who did so were
-    included in the analysis.
-  - The government pledged to reduce emissions. Whether it will do so remains to be
-    seen.
-phonetics:
-- note: Do so in speech is often reduced, with so carrying light stress.
-  example_generator:
-    contexts:
-    - formal speech
-    - presentations
-  l1_issue: Learners may repeat the full verb phrase instead of using substitution,
-    sounding unnatural.
-- note: So and not in responses are typically unstressed and produced quickly.
-  example_generator:
-    contexts:
-    - casual conversation
-    - quick responses
-  l1_issue: Speakers from languages without equivalent substitution patterns may find
-    these structures unfamiliar.
-teaching:
-  methodology: PPP
-  tips:
-  - Introduce substitution as a natural way to avoid repetition — compare repetitive
-    and substituted versions.
-  - Teach do so for verb phrases and so/not for that-clauses as two separate substitution
-    types.
-  - Practice agreement patterns (so do I, neither do I) as a separate but related
-    skill.
-  - Use gap-fill exercises where students must choose between repeating and substituting.
-  recommended_activities:
-  - name: Substitution Race
-    duration: 10
-    adaptation_notes: Students rewrite repetitive sentences using do so, so, and not
-      as quickly as possible.
-  - name: Response Drill
-    duration: 10
-    adaptation_notes: Teacher makes statements; students respond with so do I, neither
-      can she, I think so, etc.
-  - name: Legal Language Analysis
-    duration: 15
-    adaptation_notes: Students identify and explain do so substitutions in authentic
-      legal or official texts.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
-    Information Packaging, §16.6 (substitution and ellipsis)'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 16: Information Packaging, §16.5'
-  validation: Swan (2016) Practical English Usage, 4th ed. Entries 165-170 (do so
-    substitution)
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    15: Substitution'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 13: Substitution'
-common_errors:
-- error: '*She likes coffee and I do too so.*'
-  correction: She likes coffee and so do I.
-  explanation: Do so substitutes for verb phrases.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.
+  - The participants were asked to complete a questionnaire. Those who did so were included in the analysis.
+  - The government pledged to reduce emissions. Whether it will do so remains to be seen.

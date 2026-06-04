@@ -1,44 +1,59 @@
-grammar_point: gerund_participle
-title: Verb + -ing (Gerund-Participle)
-description: The -ing form of a verb used as a noun (gerund) or in continuous tenses
-  (participle). After prepositions, certain verbs, and as the subject of a sentence.
-level: A2
-meaning:
-  core_meaning: 'The -ing form has two main uses: (1) as a gerund (noun) — ''Swimming
-    is fun.'' (2) as a participle in continuous tenses — ''I am swimming.'''
-  timeline: Depends on context — gerund is timeless, participle shows ongoing action.
-  contrast: '''Gerund (noun)'' = "I enjoy swimming." (activity as thing)
-
-    ''Infinitive'' = "I want to swim." (purpose/intention)
-
-    ''Participle'' = "I am swimming." (ongoing action)
-
-    '
-  ccqs:
-  - question: Is the -ing word the subject or object of the sentence?
-    answer: If yes, it's a gerund (noun).
-    purpose: Tests whether the learner understands that a gerund (-ing form) functions
-      as a noun in the sentence, even though it looks like a verb.
-  - question: Is there a 'be' verb before the -ing?
-    answer: If yes, it's a participle (continuous tense).
-    purpose: 'Tests whether the learner can distinguish between a present participle
-      (adjective: ''The movie is boring'') and a gerund (noun: ''Watching movies is
-      fun'').'
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      gerund participle and explain why they are incorrect.
-  example_generator:
-    contexts:
-    - hobbies and interests
-    - sports and activities
-    - daily routines
-    - likes and dislikes
-    cultural_notes:
-    - Some languages don't have an equivalent gerund form — explain the concept clearly
-    min_examples: 5
+citations:
+- claim: 'Core meaning: The -ing form has two main uses: (1) as a gerund (noun) — ''Swimming is fun'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 31: Complementation'
+  tier: 4
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 31: Complementation'
+  tier: 4
+- claim: Common error '*I enjoy to read.*' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- claim: Oshima & Hogue's Great Writing series demonstrates how this grammatical structure functions in academic writing contexts.
+    Their approach connects grammar instruction to writing outcomes, showing learners how accurate use of this structure improves
+    paragraph cohesion, essay organization, and academic register.
+  source: Oshima, A. and Hogue, A. (2006). Introduction to Academic Writing, 3rd ed. Pearson Longman.
+  tier: 2
+common_errors:
+- correction: I enjoy reading.
+  error: '*I enjoy to read.*'
+  explanation: '''Enjoy'' must be followed by a gerund (-ing), not an infinitive. This is a common error because many verbs
+    in other languages use infinitive after ''enjoy''.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Gerunds and infinitives'
+- correction: The movie was boring.
+  error: '*The movie was bored.*'
+  explanation: Use '-ing' form to describe what something does (The movie bores viewers → boring). Use '-ed' form to describe
+    how someone feels (I was bored).
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Japanese
+  - Korean
+  reliability: D
+description: The -ing form of a verb used as a noun (gerund) or in continuous tenses (participle). After prepositions, certain
+  verbs, and as the subject of a sentence.
+dialectal_variation: []
+discourse_notes: []
 form:
   affirmative:
+    example_generator:
+      contexts:
+      - sports
+      - hobbies
+      - daily activities
+      min_examples: 4
     structure: 'Gerund (noun): Verb + -ing as subject or object
 
       "Swimming is healthy." / "I enjoy swimming."
@@ -48,13 +63,12 @@ form:
       "I am swimming." / "She was reading."
 
       '
+  negative:
     example_generator:
       contexts:
-      - sports
-      - hobbies
-      - daily activities
+      - prohibitions
+      - negative statements
       min_examples: 4
-  negative:
     structure: 'Gerund: "not + verb + -ing" or "No + verb + -ing"
 
       "Not swimming is boring." / "No smoking."
@@ -64,12 +78,12 @@ form:
       "I am not swimming." / "She wasn''t reading."
 
       '
+  questions:
     example_generator:
       contexts:
-      - prohibitions
-      - negative statements
+      - asking about activities
+      - current actions
       min_examples: 4
-  questions:
     structure: 'Gerund: "Is [activity] [adjective]?" / "Do you enjoy [activity]?"
 
       "Is swimming fun?" / "Do you enjoy cooking?"
@@ -79,35 +93,101 @@ form:
       "Are you swimming?" / "What are you reading?"
 
       '
-    example_generator:
-      contexts:
-      - asking about activities
-      - current actions
-      min_examples: 4
+grammar_point: gerund_participle
+level: A2
+meaning:
+  ccqs:
+  - answer: '''If yes, it''s a gerund (noun).'''
+    purpose: Tests whether the learner understands that a gerund (-ing form) functions as a noun in the sentence, even though
+      it looks like a verb.
+    question: Is the -ing word the subject or object of the sentence?
+  - answer: '''If yes, it''s a participle (continuous tense).'''
+    purpose: 'Tests whether the learner can distinguish between a present participle (adjective: ''''The movie is boring'''')
+      and a gerund (noun: ''''Watching movies is fun'''').'
+    question: '''''''Is there a ''''be'''' verb before the -ing?'''''''
+  - answer: '''The alternative form changes the meaning or creates an ungrammatical sentence.'''
+    purpose: Tests whether the learner can identify common errors associated with gerund participle and explain why they are
+      incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: '''I am interested in learning.'' After any preposition (in, at, for, about, etc.), the verb must take the -ing
+      form (gerund), never the infinitive.'
+    purpose: Tests whether the learner knows the preposition + gerund rule. In English, every preposition must be followed
+      by a noun or gerund (-ing form), never a bare infinitive. This is one of the most reliable rules for choosing between
+      gerund and infinitive.
+    question: After the preposition 'interested in,' do we say 'I am interested in to learn' or 'I am interested in learning'?
+  contrast: '''Gerund (noun)'' = "I enjoy swimming." (activity as thing)
+
+    ''Infinitive'' = "I want to swim." (purpose/intention)
+
+    ''Participle'' = "I am swimming." (ongoing action)
+
+    '
+  core_meaning: 'The -ing form has two main uses: (1) as a gerund (noun) — ''Swimming is fun.'' (2) as a participle in continuous
+    tenses — ''I am swimming.'''
+  example_generator:
+    contexts:
+    - hobbies and interests
+    - sports and activities
+    - daily routines
+    - likes and dislikes
+    cultural_notes:
+    - Some languages don't have an equivalent gerund form — explain the concept clearly
+    min_examples: 5
+  timeline: Depends on context — gerund is timeless, participle shows ongoing action.
+phonetics:
+- example_generator:
+    contexts:
+    - noun stress patterns
+  l1_issue: Some L1 speakers may use infinitive where gerund is required
+  note: Stress on the first syllable of gerunds used as nouns
+register_notes: []
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Verbs followed by gerund (not infinitive)
-  type: grammatical
-  examples:
+- examples:
   - enjoy + -ing (I enjoy reading)
   - finish + -ing (I finished eating)
   - mind + -ing (Do you mind waiting?)
-- rule: Verbs followed by infinitive (not gerund)
+  rule: Verbs followed by gerund (not infinitive)
   type: grammatical
-  examples:
+- examples:
   - want + to (I want to go)
   - need + to (I need to study)
   - hope + to (I hope to travel)
-- rule: Verbs that can take both with different meanings
+  rule: Verbs followed by infinitive (not gerund)
   type: grammatical
-  examples:
+- examples:
   - stop + -ing (stop talking) vs stop + to (stop to talk)
   - remember + -ing (remember doing) vs remember + to (remember to do)
-- rule: Spelling rules for -ing
-  type: spelling
-  examples:
+  rule: Verbs that can take both with different meanings
+  type: grammatical
+- examples:
   - run → running (double consonant)
   - write → writing (drop -e)
   - lie → lying (ie → y)
+  rule: Spelling rules for -ing
+  type: spelling
+teaching:
+  methodology: PPP (Present-Practice-Produce)
+  recommended_activities:
+  - adaptation_notes: Students sort verbs into 'gerund', 'infinitive', or 'both' categories.
+    duration: 10
+    name: Verb Sorting
+  - adaptation_notes: Students ask classmates about hobbies using 'Do you enjoy...?'
+    duration: 15
+    name: Find Someone Who
+  tips:
+  - Start with gerund as noun (easier concept)
+  - Contrast gerund vs infinitive explicitly
+  - Use verb sorting activities (gerund verbs vs infinitive verbs)
+  - 'Swan PEU: Modern grammar uses ''-ing form'' rather than separating ''gerund'' and ''participle.'' ''-ing form'' can be
+    noun-like (gerund: ''Swimming is good exercise''), adjective-like (participle: ''a running stream''), or verb-like (progressive:
+    ''I am swimming''). One form, multiple functions.'
+title: Verb + -ing (Gerund-Participle)
 use:
 - context: As a noun (gerund)
   description: The -ing form acts as a noun — subject or object
@@ -126,66 +206,3 @@ use:
   examples:
   - I am studying right now.
   - She was cooking when I arrived.
-phonetics:
-- note: Stress on the first syllable of gerunds used as nouns
-  example_generator:
-    contexts:
-    - noun stress patterns
-  l1_issue: Some L1 speakers may use infinitive where gerund is required
-teaching:
-  methodology: PPP (Present-Practice-Produce)
-  tips:
-  - Start with gerund as noun (easier concept)
-  - Contrast gerund vs infinitive explicitly
-  - Use verb sorting activities (gerund verbs vs infinitive verbs)
-  recommended_activities:
-  - name: Verb Sorting
-    duration: 10
-    adaptation_notes: Students sort verbs into 'gerund', 'infinitive', or 'both' categories.
-  - name: Find Someone Who
-    duration: 15
-    adaptation_notes: Students ask classmates about hobbies using 'Do you enjoy...?'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I enjoy to read.*'
-  correction: I enjoy reading.
-  explanation: '''Enjoy'' must be followed by a gerund (-ing), not an infinitive.
-    This is a common error because many verbs in other languages use infinitive after
-    ''enjoy''.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - Italian
-- error: '*The movie was bored.*'
-  correction: The movie was boring.
-  explanation: Use '-ing' form to describe what something does (The movie bores viewers
-    → boring). Use '-ed' form to describe how someone feels (I was bored).
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-  - Japanese
-  - Korean
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

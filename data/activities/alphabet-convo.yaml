@@ -1,58 +1,40 @@
-id: alphabet-convo
-name: Alphabet Convo
-category: speaking
-description: Partners carry on a dialogue where each new sentence must start with
-  the next letter of the alphabet. A creative speaking activity that pushes students
-  to think on their feet, use varied vocabulary, and practice diverse sentence structures
-  under a challenging constraint.
-targetStructures:
-- clauses
-- verb-tenses
+adaptableToTopic: true
+bestForAges:
+- teens
+- adults
 bestForLevels:
 - A2
 - B1
 - B2
-bestForAges:
-- teens
-- adults
-duration: 10
-groupSize: pairs
-energyRequired: medium
-prepTime: none
-materials:
-- None
-format:
-- in-person
-- online
-requiresTech: false
+category: speaking
+citations:
+- claim: The "Alphabet Convo" speaking activity develops oral fluency through structured
+    conversational practice
+  flagged: false
+  reliability: B
+  source: 'Peregoy & Boyle (2023) Reading, Writing, and Learning in ESL. Ch. 5: Oral English Development for Multilingual Learners'
+  tier: 2
+
+- claim: Communication games are 'activities with a non-linguistic goal or aim' -- not focused on correct production of a structure, but on completing a task. Constraint-based games (where learners must follow an artificial rule) push students to stretch their language. Hadfield notes the emphasis 'is on successful communication rather than on correctness of language.'
+  source: 'Hadfield, J. (1990) Intermediate Communications Games. Longman/Pearson. Introduction.'
+  tier: 3
+  reliability: B
+  flagged: false
+description: Partners carry on a dialogue where each new sentence must start with
+  the next letter of the alphabet. A creative speaking activity that pushes students
+  to think on their feet, use varied vocabulary, and practice diverse sentence structures
+  under a challenging constraint.
+differentiation:
+  extension: Advanced students can go through the entire alphabet (A-Z), use only
+    complex sentences, or add a thematic constraint (e.g., all sentences must relate
+    to travel). They can also try to make the conversation coherent rather than disjointed.
+  support: Allow students to work in groups of three so each person has more time
+    to think. Provide a word bank organized by starting letter. Let students use a
+    shorter sequence (A-J) or skip difficult letters (Q, X, Z).
 digitalReady: true
-hasAudioComponent: false
-hasPrintableComponent: false
-hasSlidesComponent: false
-hasVisualComponent: false
-adaptableToTopic: true
-instructions:
-- Pair students up and explain the alphabet constraint for dialogue.
-- Student A starts with a sentence beginning with 'A.' Student B must respond with
-  a sentence beginning with 'B,' and so on through the alphabet.
-- Set a 10-second time limit per turn. If a student cannot produce a sentence, they
-  pass and the partner gets a point.
-- After reaching Z, they switch roles and go backward.
-- Monitor and award points for successful turns; track which letters cause difficulty.
-- Debrief by discussing which letters were hardest and why.
-script:
-- '"Partner A, start a conversation with a sentence that begins with A. Partner B,
-  your response must begin with B. Keep going through the alphabet! You have 10 seconds
-  per turn. If you cannot think of something, say ''pass'' and your partner gets a
-  point."'
-- '"Let me show you: I will start — ''Amazing weather we are having today!'' Your
-  turn — respond with a B sentence. ''Beautiful, is not it? I love spring.'' Great!
-  Now C!"'
-setupInstructions: No materials needed. Optionally prepare alphabet reference cards
-  with 2-3 example words for each letter (especially Q, X, Z) to support struggling
-  students. Decide whether to go A-Z or use a shorter sequence for lower levels.
+duration: 10
+energyRequired: medium
 exampleSnippet:
-  topic: vocabulary flexibility
   execution:
   - Pair students up. Student A starts with a sentence beginning with 'A.' Student
     B must respond with a sentence beginning with 'B,' and so on through the alphabet.
@@ -64,15 +46,30 @@ exampleSnippet:
     10 seconds per turn. If you cannot think of something, say ''pass'' and your partner
     gets a point."'
   - '"Let me show you: I will start — ''Amazing weather we are having today!'' Your
-    turn — respond with a B sentence. ''Beautiful, is not it? I love spring.'' Great!
+    turn — respond with a B sentence. ''Beautiful, isn''t it? I love spring.'' Great!
     Now C!"'
-differentiation:
-  support: Allow students to work in groups of three so each person has more time
-    to think. Provide a word bank organized by starting letter. Let students use a
-    shorter sequence (A-J) or skip difficult letters (Q, X, Z).
-  extension: Advanced students can go through the entire alphabet (A-Z), use only
-    complex sentences, or add a thematic constraint (e.g., all sentences must relate
-    to travel). They can also try to make the conversation coherent rather than disjointed.
+  topic: vocabulary flexibility
+format:
+- in-person
+- online
+grammar_focus:
+- speaking_fluency
+- vocabulary_flexibility
+groupSize: pairs
+hasAudioComponent: false
+hasPrintableComponent: false
+hasSlidesComponent: false
+hasVisualComponent: false
+id: alphabet-convo
+instructions:
+- Pair students up and explain the alphabet constraint for dialogue.
+- Student A starts with a sentence beginning with 'A.' Student B must respond with
+  a sentence beginning with 'B,' and so on through the alphabet.
+- Set a 10-second time limit per turn. If a student cannot produce a sentence, they
+  pass and the partner gets a point.
+- After reaching Z, they switch roles and go backward.
+- Monitor and award points for successful turns; track which letters cause difficulty.
+- Debrief by discussing which letters were hardest and why.
 keywords:
 - speaking fluency
 - creative conversation
@@ -81,4 +78,48 @@ keywords:
 - alphabet game
 - spontaneous speech
 - turn-taking
-l1Enhanced: true
+l1_enhanced:
+- adaptation: 'Spanish speakers may find Q, X, Z particularly challenging as these
+    letters have fewer common Spanish words. Consider allowing English-only words
+    or providing letter-specific word banks.'
+  language: Spanish
+  priority: low
+- adaptation: Arabic speakers whose L1 has fewer vowels in certain positions may
+    find vowel-heavy letters (A, E, I) easier than consonant-heavy letters (Q, X,
+    Z). Monitor and adjust time limits.
+  language: Arabic
+  priority: medium
+- adaptation: Mandarin speakers may benefit from explicit practice with English word-initial
+    sounds not found in Mandarin (e.g., /θ/, /v/). Use especially challenging letters
+    to target these sounds.
+  language: Mandarin
+  priority: low
+l1_specific: []
+materials:
+- None
+name: Alphabet Convo
+prepTime: none
+requiresTech: false
+script:
+- '"Partner A, start a conversation with a sentence that begins with A. Partner B,
+  your response must begin with B. Keep going through the alphabet! You have 10 seconds
+  per turn. If you cannot think of something, say ''pass'' and your partner gets a
+  point."'
+- '"Let me show you: I will start — ''Amazing weather we are having today!'' Your
+  turn — respond with a B sentence. ''Beautiful, isn''t it? I love spring.'' Great!
+  Now C!"'
+setupInstructions: No materials needed. Optionally prepare alphabet reference cards
+  with 2-3 example words for each letter (especially Q, X, Z) to support struggling
+  students. Decide whether to go A-Z or use a shorter sequence for lower levels.
+skill_areas:
+- speaking
+sources:
+- 'Klippel, F. (1984) Keep Talking: Communicative Fluency Activities for Language Teaching. Cambridge University Press.'
+targetStructures:
+- spontaneous-speech
+- creative-sentences
+teaching_tips:
+- tip: "Klippel's communicative approach emphasizes that fluency activities should reduce the strain on individual students by reorganizing so that students question each other in pairs or small groups (Klippel 1984, p. 12)."
+  context: Reducing strain
+- tip: "Klippel notes that warming-up exercises can be adapted to higher proficiency levels by increasing the complexity of language content while keeping the simple organizational structure (Klippel 1984, p. 13)."
+  context: Adapting levels

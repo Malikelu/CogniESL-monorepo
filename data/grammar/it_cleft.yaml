@@ -1,29 +1,94 @@
+citations:
+- claim: 'Core meaning: It-cleft sentences divide a single clause into two parts for emphasis'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11: Focus and Emphasis'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11: Focus and Emphasis'
+  tier: 1
+- claim: Common error '*John broke the window.* (emphasizing John)' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents how transfer effects are non-linear,
+    determined by functional fit between L1 and L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects are non-linear — determined by functional
+    fit between L1 and L2 systems rather than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning. Routledge.
+  tier: 2
+- claim: Oshima & Hogue's Great Writing series demonstrates how this grammatical structure functions in academic writing contexts.
+    Their approach connects grammar instruction to writing outcomes, showing learners how accurate use of this structure improves
+    paragraph cohesion, essay organization, and academic register.
+  source: Oshima, A. and Hogue, A. (2006). Introduction to Academic Writing, 3rd ed. Pearson Longman.
+  tier: 2
+common_errors:
+- correction: It was John who broke the window.
+  error: '*John broke the window.* (emphasizing John)'
+  explanation: It-cleft sentences emphasize one element by placing it after 'It was'. The rest goes in a relative clause.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  reliability: D
+description: 'Using it + be + focused element + who/that for emphasis: It was John who broke the window.'
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - emphasis
+      - contrast
+      - correcting misunderstandings
+      min_examples: 4
+    structure: 'It + be + focused element + who/that + clause: It was John who broke the window. / It was yesterday that she
+      arrived.'
+  negative:
+    example_generator:
+      contexts:
+      - emphasis
+      - contrast
+      - correcting misunderstandings
+      min_examples: 4
+    structure: 'It + be + not + focused element: It was not John who broke the window.'
+  questions:
+    example_generator:
+      contexts:
+      - emphasis
+      - contrast
+      - correcting misunderstandings
+      min_examples: 4
+    structure: 'Was/Were + it + focused element?: Was it John who broke the window?'
 grammar_point: it_cleft
-title: It-Cleft Sentences
-description: 'Using it + be + focused element + who/that for emphasis: It was John
-  who broke the window.'
 level: B2
 meaning:
-  core_meaning: It-cleft sentences divide a single clause into two parts for emphasis.
-    The focused element comes after it was/who/that.
-  timeline: Depends on the tense used.
-  contrast: Simple = John broke the window. vs It-cleft = It was John who broke the
-    window.
   ccqs:
-  - question: Is this sentence dividing information into two parts?
-    answer: Yes, it is an it-cleft.
-    purpose: Tests whether the learner understands that 'it-cleft' sentences (It was
-      John who...) are used to emphasize a specific element. This is common in both
-      spoken and written English.
-  - question: What element is being emphasized?
-    answer: The element after it was.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'What element is being emphasized?...'
-      checks conceptual understanding, not just memorization.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      it cleft and explain why they are incorrect.
+  - answer: Yes, it is an it-cleft.
+    purpose: Tests whether the learner understands that 'it-cleft' sentences (It was John who...) are used to emphasize a
+      specific element. This is common in both spoken and written English.
+    question: Is this sentence dividing information into two parts?
+  - answer: The element after it was.
+    purpose: Tests whether the learner can identify and apply the correct form/meaning of this grammar point in context. The
+      question 'What element is being emphasized?...' checks conceptual understanding, not just memorization.
+    question: What element is being emphasized?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with it cleft and explain why they are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: The price. In an it-cleft sentence (It + be + FOCUS + that/who + clause), the focused element immediately follows
+      'it was.' Here, 'the price' is being highlighted as the central concern, in contrast to other possible factors like
+      quality or brand.
+    purpose: Tests whether the learner can identify and correctly place the focused element in an it-cleft structure. The
+      it-cleft formula (It + be + focused element + that-clause) front-loads emphasis, and learners must be able to determine
+      which element to highlight for the intended communicative purpose.
+    question: '"It was the price that mattered most to the buyers." Which element is the speaker focusing on — the buyers,
+      the price, or something else?'
+  contrast: Simple = John broke the window. vs It-cleft = It was John who broke the window.
+  core_meaning: It-cleft sentences divide a single clause into two parts for emphasis. The focused element comes after it
+    was/who/that.
   example_generator:
     contexts:
     - emphasis
@@ -32,39 +97,49 @@ meaning:
     - formal writing
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: 'It + be + focused element + who/that + clause: It was John who broke
-      the window. / It was yesterday that she arrived.'
-    example_generator:
-      contexts:
-      - emphasis
-      - contrast
-      - correcting misunderstandings
-      min_examples: 4
-  negative:
-    structure: 'It + be + not + focused element: It was not John who broke the window.'
-    example_generator:
-      contexts:
-      - emphasis
-      - contrast
-      - correcting misunderstandings
-      min_examples: 4
-  questions:
-    structure: 'Was/Were + it + focused element?: Was it John who broke the window?'
-    example_generator:
-      contexts:
-      - emphasis
-      - contrast
-      - correcting misunderstandings
-      min_examples: 4
+  timeline: Depends on the tense used.
+phonetics:
+- example_generator:
+    contexts:
+    - emphasis
+  l1_issue: Many L1 speakers do not use cleft sentences, missing opportunities for natural emphasis.
+  note: Stress on the focused element
+register_notes:
+- note: 'Biber et al. (2021) — It-cleft distribution: register-dependent. More frequent in conversation and news. Academic
+    prose uses fewer clefts. Ch. 11.6.4'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 11.6.4
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11: Focus and Emphasis'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: It-cleft emphasizes one element of the sentence
-  type: grammatical
-  examples:
+- examples:
   - It was Mary who called. (not John)
   - It was yesterday that she arrived. (not today)
   - It is the price that matters most. (not the quality)
+  rule: It-cleft emphasizes one element of the sentence
+  type: grammatical
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Students rewrite simple sentences using it-cleft for emphasis.
+    duration: 15
+    name: Emphasis Practice
+  tips:
+  - Use contrastive contexts (I thought it was X, but it was actually Y)
+  - Practice identifying the focused element
+  - Contrast with simple sentences
+  - 'Swan PEU: It-cleft — ''It was John that/who called,'' ''It was yesterday that she arrived,'' ''It''''s the red one that
+    I want.'' The focused element goes between ''it is/was'' and the relative clause. The relative pronoun can often be omitted
+    in informal speech.'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 16: CGEL (Ch.16) analyzes ''It was John who left'' as:
+    dummy ''it'' + copula + focused constituent (''John'') + relative clause (''who left''). The focused element receives
+    contrastive stress. CGEL: it-clefts presuppose the proposition (''someone left'') and assert the identity of the filler
+    (''it was John'').'
+title: It-Cleft Sentences
 use:
 - context: Emphasis
   description: Highlighting specific information
@@ -76,53 +151,3 @@ use:
   examples:
   - It was not me who broke the window — it was John.
   - It was an accident, not intentional.
-phonetics:
-- note: Stress on the focused element
-  example_generator:
-    contexts:
-    - emphasis
-  l1_issue: Many L1 speakers do not use cleft sentences, missing opportunities for
-    natural emphasis.
-teaching:
-  methodology: Guided discovery
-  tips:
-  - Use contrastive contexts (I thought it was X, but it was actually Y)
-  - Practice identifying the focused element
-  - Contrast with simple sentences
-  recommended_activities:
-  - name: Emphasis Practice
-    duration: 15
-    adaptation_notes: Students rewrite simple sentences using it-cleft for emphasis.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
-    Relative Clauses, §11.1-11.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*John broke the window.* (emphasizing John)'
-  correction: It was John who broke the window.
-  explanation: It-cleft sentences emphasize one element by placing it after 'It was'.
-    The rest goes in a relative clause.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - German
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

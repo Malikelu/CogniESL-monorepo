@@ -1,31 +1,50 @@
-id: reading-speed-sprint-b49aa1
-name: Reading Speed Sprint
-category: reading
-description: Reading Speed Sprint -- a reading activity. Select a text of appropriate
-  length (200-300 words) for your students' level. Students read silently for 2 minutes.
-  They mark how far they got....
-targetStructures:
-- reading-comprehension
+adaptableToTopic: true
+bestForAges:
+- adults
 bestForLevels:
 - A2
 - B1
-bestForAges:
-- adults
+category: reading
+citations:
+- claim: Timed reading with WPM tracking helps students develop reading fluency and
+    become aware of their own reading strategies.
+  flagged: false
+  reliability: B
+  source: Peregoy & Boyle (2023) Reading, Writing, and Learning in ESL, 8th ed.
+  tier: 2
+- claim: Self-monitoring of reading speed and strategy use develops metacognitive
+    awareness in language learners.
+  source: Peregoy, S. & Boyle, O. (2017). Reading, Writing, and Learning in ESL, 7th
+    ed. Pearson.
+  tier: 2
+  reliability: B
+  flagged: false
+- claim: Developing reading speed and flexibility is a TBL goal. Willis (1996) notes
+    that learners need exposure to varied text types and different reading strategies.
+  source: Willis, J. (1996) A Framework for Task-Based Learning. Longman.
+  tier: 2
+  reliability: B
+  flagged: false
+description: Reading Speed Sprint -- a reading activity. Select a text of appropriate
+  length (200-300 words) for your students' level. Students read silently for 2 minutes.
+  They mark how far they got....
+differentiation:
+  extension: Track improvement over time.
+  support: Start with short passages.
+digitalReady: true
 duration: 20
-groupSize: pairs
 energyRequired: medium
-prepTime: low
-materials:
-- handouts
 format:
 - in-person
-requiresTech: false
-digitalReady: true
+grammar_focus:
+- reading_comprehension
+- vocabulary_in_context
+groupSize: pairs
 hasAudioComponent: false
 hasPrintableComponent: true
 hasSlidesComponent: false
 hasVisualComponent: true
-adaptableToTopic: true
+id: reading-speed-sprint-b49aa1
 instructions:
 - Select a text of appropriate length (200-300 words) for your students' level.
 - Students read silently for 2 minutes. They mark how far they got.
@@ -34,15 +53,47 @@ instructions:
   Do you guess from context?'
 - Students re-read the same text, applying one new strategy. Time again.
 - 'Compare WPM. Discuss: Did the strategy help? Which strategy works best for you?'
-script:
-- '"Set 2-minute timer."'
-- '"Passage silently."'
-- '"Words per minute."'
-differentiation:
-  support: Start with short passages.
-  extension: Track improvement over time.
 keywords:
 - speed
 - fluency
 - timing
-l1Enhanced: true
+l1_enhanced:
+- adaptation: Spanish-speaking students may transfer L1 reading speed to English.
+    Discuss cognates as fluency boosters when encountered during timed reading.
+  language: Spanish
+  priority: low
+- adaptation: Arabic is written right-to-left. Timed reading may cause more regression
+    (backtracking) initially. Allow extra practice time for left-to-right eye movement.
+  language: Arabic
+  priority: medium
+- adaptation: Mandarin readers may process characters holistically. Encourage chunking
+    English text into phrases rather than reading word by word.
+  language: Mandarin
+  priority: medium
+l1_specific: []
+materials:
+- handouts
+name: Reading Speed Sprint
+prepTime: low
+requiresTech: false
+script:
+- '"Set 2-minute timer."'
+- '"Passage silently."'
+- '"Words per minute."'
+skill_areas:
+- reading
+sources:
+- Willis, J. (1996) A Framework for Task-Based Learning. Longman.
+targetStructures:
+- reading-comprehension
+teaching_tips:
+- context: Students may feel anxious about reading speed comparisons.
+  tip: Emphasize personal improvement over class ranking. Each student compares their
+    own first and second readings, not their score against others.
+- context: Students may sacrifice comprehension for speed on the first read.
+  tip: Before timing, tell students they will discuss reading strategies afterward.
+    Knowing they need to reflect on HOW they read encourages strategic reading, not
+    just fast reading.
+- tip: TBL aims to develop flexible readers who can adjust speed and strategy according
+    to text type and purpose. (Willis 1996, Ch. 5.3)
+  context: TBL methodology

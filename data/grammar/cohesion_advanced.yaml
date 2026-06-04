@@ -1,37 +1,85 @@
+citations:
+- claim: 'Core meaning: Advanced cohesion refers to the linguistic devices that connect ideas across sentences and paragraph'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24: Coordination-16.7'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24: Coordination-16.7'
+  tier: 1
+- claim: Common error '*The results were bad. Anyway we continued.*' for Portuguese, Spanish, Chinese speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- claim: Understanding cohesion advanced is essential for academic writing — Oshima & Hogue emphasize how writers use these
+    structures to create clear, coherent prose
+  flagged: false
+  reliability: B
+  source: 'Oshima and Hogue (2006) Introduction to Academic Writing, 3rd ed. Pearson. Ch. 5: Complex Sentences in Academic
+    Writing'
+  tier: 2
+common_errors:
+- correction: The results were bad. Nevertheless, we continued.
+  error: '*The results were bad. Anyway we continued.*'
+  explanation: Use appropriate linking words for cohesion.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+description: 'Advanced cohesive devices: discourse markers, lexical cohesion, substitution, ellipsis, and reference.'
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - academic writing
+      - formal essays
+      - professional communication
+      min_examples: 4
+    structure: 'Discourse markers: However, the results were inconclusive. / Reference: This suggests that... / Substitution:
+      I asked him to leave, and he did so.'
+  negative:
+    example_generator:
+      contexts:
+      - negative cohesion
+      min_examples: 3
+    structure: Nevertheless, the project continued. / This does not mean that...
+  questions:
+    example_generator:
+      contexts:
+      - question formation
+      min_examples: 3
+    structure: 'Can appear in questions: Does this mean that...?'
 grammar_point: cohesion_advanced
-title: Advanced Cohesion
-description: 'Advanced cohesive devices: discourse markers, lexical cohesion, substitution,
-  ellipsis, and reference.'
 level: C1
 meaning:
-  core_meaning: Advanced cohesion refers to the linguistic devices that connect ideas
-    across sentences and paragraphs. This includes discourse markers (however, moreover),
-    lexical cohesion (repetition, synonyms), substitution (do so, so does he), ellipsis
-    (omission of understood words), and reference (this, that, the former).
-  timeline: Timeless — applies to all texts regardless of tense.
-  contrast: Basic cohesion = and, but, so vs Advanced cohesion = nevertheless, furthermore,
-    in contrast, as a result
   ccqs:
-  - question: '''However'' and ''but'' both show contrast. Which is more formal and
-      suitable for academic writing?'
-    answer: '''However'' is more formal and is preferred in academic writing. ''But''
-      is more common in speech and informal writing.'
-    purpose: Tests whether the learner understands the register distinction between
-      'however' (formal/academic) and 'but' (informal/spoken). Advanced cohesion requires
-      using appropriate linking devices for the register.
-  - question: In the sentence 'The study found significant results. These were published
-      in a journal,' what does 'These' refer to?
-    answer: '''These'' refers to ''significant results.'' This is an example of reference
-      as a cohesive device — using a pronoun to refer back to something already mentioned.'
-    purpose: Tests whether the learner understands reference as a cohesive device.
-      Pronouns (this, these, that, those) and determiners (the, such) create cohesion
-      by linking back to previously mentioned information.
-  - question: What is the difference between 'so' and 'as a result'?
-    answer: Both show result, but 'as a result' is more formal and is preferred in
-      academic writing. 'So' is more common in speech.
-    purpose: Tests whether the learner can distinguish between formal and informal
-      result linking words. Advanced cohesion in academic writing favors 'as a result,'
-      'consequently,' 'therefore' over informal 'so.'
+  - answer: '''However'' is more formal and is preferred in academic writing. ''But'' is more common in speech and informal
+      writing.'
+    purpose: Tests whether the learner understands the register distinction between 'however' (formal/academic) and 'but'
+      (informal/spoken). Advanced cohesion requires using appropriate linking devices for the register.
+    question: '''However'' and ''but'' both show contrast. Which is more formal and suitable for academic writing?'
+  - answer: '''These'' refers to ''significant results.'' This is an example of reference as a cohesive device — using a pronoun
+      to refer back to something already mentioned.'
+    purpose: Tests whether the learner understands reference as a cohesive device. Pronouns (this, these, that, those) and
+      determiners (the, such) create cohesion by linking back to previously mentioned information.
+    question: In the sentence 'The study found significant results. These were published in a journal,' what does 'These'
+      refer to?
+  - answer: Both show result, but 'as a result' is more formal and is preferred in academic writing. 'So' is more common in
+      speech.
+    question: Can you explain the difference between 'so' and 'as a result' by giving an example of when to use each?
+    purpose: 'Tests whether the learner can identify and use advanced cohesion devices appropriately (CCQ #3).'
+  - answer: '''I am one of them who agrees.'' After ''one of + plural noun + who/that'', the verb is singular if it refers
+      to ''one''.'
+    purpose: Tests subject-verb agreement after 'one of + plural noun + relative clause' (Swan PEU 2016, entry 119.4).
+    question: Which is correct? *'I am one of them who agree' or 'I am one of them who agrees'?
+  contrast: Basic cohesion = and, but, so vs Advanced cohesion = nevertheless, furthermore, in contrast, as a result
+  core_meaning: Advanced cohesion refers to the linguistic devices that connect ideas across sentences and paragraphs. This
+    includes discourse markers (however, moreover), lexical cohesion (repetition, synonyms), substitution (do so, so does
+    he), ellipsis (omission of understood words), and reference (this, that, the former).
   example_generator:
     contexts:
     - academic writing
@@ -42,107 +90,69 @@ meaning:
     - Cohesion patterns vary across languages
     - English academic writing values explicit cohesive devices
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Discourse markers: However, the results were inconclusive. / Reference:
-      This suggests that... / Substitution: I asked him to leave, and he did so.'
-    example_generator:
-      contexts:
-      - academic writing
-      - formal essays
-      - professional communication
-      min_examples: 4
-  negative:
-    structure: Nevertheless, the project continued. / This does not mean that...
-    example_generator:
-      contexts:
-      - negative cohesion
-      min_examples: 3
-  questions:
-    structure: 'Can appear in questions: Does this mean that...?'
-    example_generator:
-      contexts:
-      - question formation
-      min_examples: 3
+  timeline: Timeless — applies to all texts regardless of tense.
+phonetics:
+- example_generator:
+    contexts:
+    - pausing
+    - reading aloud
+  l1_issue: Many L1 speakers underuse cohesive devices, making writing sound choppy
+  note: Discourse markers are typically followed by a pause (comma) in speech
+register_notes:
+- note: 'Biber et al. (2021) — Cohesion devices: academic prose uses more explicit lexical cohesion (linking adverbials, lexical
+    bundles); conversation uses more implicit cohesion (shared context, pronouns). Ch. 10.4, 4.1.2'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 10.4
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24: Coordination-16.7'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: 'Discourse markers for contrast: however, nevertheless, on the other hand,
-    conversely'
-  type: discourse
-  examples:
+- examples:
   - The results were promising. However, more research is needed.
   - On the other hand, there are significant drawbacks.
-- rule: 'Discourse markers for addition: furthermore, moreover, in addition, besides'
+  rule: 'Discourse markers for contrast: however, nevertheless, on the other hand, conversely'
   type: discourse
-  examples:
+- examples:
   - The plan is expensive. Furthermore, it is risky.
-- rule: 'Reference words: this, that, these, those, the former, the latter'
-  type: reference
-  examples:
+  rule: 'Discourse markers for addition: furthermore, moreover, in addition, besides'
+  type: discourse
+- examples:
   - The results were inconclusive. This suggests that more research is needed.
   - Both methods have advantages. The former is cheaper; the latter is faster.
-- rule: 'Substitution: do so, so does/did + subject'
-  type: substitution
-  examples:
+  rule: 'Reference words: this, that, these, those, the former, the latter'
+  type: reference
+- examples:
   - She asked him to leave, and he did so.
   - I enjoy reading, and so does my sister.
+  rule: 'Substitution: do so, so does/did + subject'
+  type: substitution
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Students identify and categorize cohesive devices in academic texts.
+    duration: 15
+    name: Cohesion Analysis
+  tips:
+  - 'CGEL Ch. 16: Information packaging includes the given-before-new principle: English prefers to place given (known) information
+    before new information. This explains passive choice (The window was broken by John) and inversion (On the table stood
+    a lamp).'
+  - Use authentic academic texts as examples
+  - Have students identify cohesive devices in texts
+  - Practice adding cohesion to student writing
+  - 'Swan PEU: Cohesion devices in writing — conjunctions, adverbials, discourse markers. Formal texts make logical relationships
+    explicit through these devices. Informal writing can leave more implicit.'
+title: Advanced Cohesion
 use:
 - context: Academic writing
   description: Connecting ideas in essays and reports
   examples:
   - The data suggests a correlation. However, causation cannot be inferred.
-  - Furthermore, the sample size was small. This limits the generalizability of the
-    findings.
+  - Furthermore, the sample size was small. This limits the generalizability of the findings.
 - context: Professional communication
   description: Formal emails and reports
   examples:
   - I have reviewed the proposal. While it has merit, I have several concerns.
   - The deadline is approaching. As such, we need to accelerate our efforts.
-phonetics:
-- note: Discourse markers are typically followed by a pause (comma) in speech
-  example_generator:
-    contexts:
-    - pausing
-    - reading aloud
-  l1_issue: Many L1 speakers underuse cohesive devices, making writing sound choppy
-teaching:
-  methodology: Guided discovery
-  tips:
-  - Use authentic academic texts as examples
-  - Have students identify cohesive devices in texts
-  - Practice adding cohesion to student writing
-  recommended_activities:
-  - name: Cohesion Analysis
-    duration: 15
-    adaptation_notes: Students identify and categorize cohesive devices in academic
-      texts.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
-    Coordination, §16.5-16.7'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*The results were bad. Anyway we continued.*'
-  correction: The results were bad. Nevertheless, we continued.
-  explanation: Use appropriate linking words for cohesion.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

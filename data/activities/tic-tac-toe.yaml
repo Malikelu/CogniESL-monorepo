@@ -1,52 +1,29 @@
-id: tic-tac-toe
-name: Tic-Tac-Toe
-category: games
-description: A grammar-focused strategy game played on a 3x3 grid. To mark a square,
-  the team must produce a correct sentence using that square's prompt (grammar point,
-  vocabulary word, or question). Combines strategic thinking with grammar practice.
-targetStructures:
-- clauses
-- verb-tenses
+adaptableToTopic: true
 bestForLevels:
 - A1
 - A2
 - B1
 - B2
-duration: 15
-groupSize: whole-class
-energyRequired: medium
-prepTime: low
-materials:
-- Whiteboard and markers
-- 3x3 grid drawn on the board
-format:
-- in-person
-requiresTech: false
+category: games
+citations:
+- claim: 'The "Tic-Tac-Toe" activity engages learners through targeted grammar and vocabulary practice in a competitive game format.'
+  flagged: false
+  reliability: B
+  source: Peregoy & Boyle (2023) Reading, Writing, and Learning in ESL, 8th ed. Ch. 5
+  tier: 2
+description: A grammar-focused strategy game played on a 3x3 grid. To mark a square,
+  the team must produce a correct sentence using that square's prompt (grammar point,
+  vocabulary word, or question). Combines strategic thinking with grammar practice.
+differentiation:
+  extension: 'Require more complex sentences (e.g., use the past simple in a sentence
+    with a time clause: ''When I arrived, the movie had already started''). Add a
+    time limit of 10 seconds per turn.'
+  support: Use simpler prompts (single word transformations). Allow teams to discuss
+    before answering. Give a word bank for reference.
 digitalReady: false
-hasAudioComponent: false
-hasPrintableComponent: false
-hasSlidesComponent: false
-hasVisualComponent: true
-adaptableToTopic: true
-instructions:
-- Draw a 3x3 grid on the board. Write a grammar prompt in each square (e.g., past
-  simple of 'eat,' make a question with 'where,' use 'since' in a sentence).
-- 'Divide the class into two teams: X and O.'
-- Team X chooses a square. They must produce a correct sentence using that square's
-  prompt. If correct, they mark the square with X. If wrong, the other team can steal.
-- Teams alternate turns. The first team to get 3 in a row wins.
-- Play 2-3 rounds with different prompts each time.
-script:
-- '"Here is the grid. Top left: past tense of ''go.'' Top middle: make a question
-  with ''what.'' Top right: use ''already'' in a sentence. Team X, choose a square!"'
-- '"Team X chose the middle: make a question with ''where.'' Your question?"'
-- '"Where did you go last weekend? Correct! Team X gets the middle square. Team O,
-  your turn!"'
-setupInstructions: Prepare 3x3 grids with grammar prompts. Each square should have
-  a different prompt related to your current grammar focus. Draw the grid on the board
-  before class.
+duration: 15
+energyRequired: medium
 exampleSnippet:
-  topic: past simple practice
   execution:
   - 'Square prompts: past tense of eat (ate), past tense of see (saw), past tense
     of buy (bought), negative past (did not go), question with where (Where did you
@@ -56,16 +33,63 @@ exampleSnippet:
   - '"Remember: to get the square, your sentence must be grammatically correct. If
     there is an error, the other team can steal."'
   - '"Think strategically -- which square will help you get 3 in a row?"'
-differentiation:
-  support: Use simpler prompts (single word transformations). Allow teams to discuss
-    before answering. Give a word bank for reference.
-  extension: 'Require more complex sentences (e.g., use the past simple in a sentence
-    with a time clause: ''When I arrived, the movie had already started''). Add a
-    time limit of 10 seconds per turn.'
+  topic: past simple practice
+format:
+- in-person
+grammar_focus:
+- clauses
+- verb_tenses
+groupSize: whole-class
+hasAudioComponent: false
+hasPrintableComponent: false
+hasSlidesComponent: false
+hasVisualComponent: true
+id: tic-tac-toe
+instructions:
+- Draw a 3x3 grid on the board. Write a grammar prompt in each square (e.g., past
+  simple of 'eat,' make a question with 'where,' use 'since' in a sentence).
+- 'Divide the class into two teams: X and O.'
+- Team X chooses a square. They must produce a correct sentence using that square's
+  prompt. If correct, they mark the square with X. If wrong, the other team can steal.
+- Teams alternate turns. The first team to get 3 in a row wins.
+- Play 2-3 rounds with different prompts each time.
 keywords:
 - grammar game
 - strategy
 - sentence production
 - team competition
 - grid game
-l1Enhanced: true
+l1_enhanced:
+- adaptation: Spanish speakers may overuse present perfect where past simple is needed (he comido vs comí). Include both tenses in game squares for contrastive practice.
+  language: Spanish
+  priority: high
+- adaptation: Arabic speakers may struggle with past tense verb forms since Arabic marks aspect (perfective/imperfective) rather than tense. Include explicit verb conjugation prompts in game squares.
+  language: Arabic
+  priority: high
+- adaptation: Mandarin speakers may omit tense markers since Mandarin has no verb inflection. Include verb tense transformation prompts (change this to past tense) in game squares.
+  language: Mandarin
+  priority: high
+l1_specific: []
+materials:
+- Whiteboard and markers
+- 3x3 grid drawn on the board
+name: Tic-Tac-Toe
+prepTime: low
+requiresTech: false
+script:
+- '"Here is the grid. Top left: past tense of ''go.'' Top middle: make a question
+  with ''what.'' Top right: use ''already'' in a sentence. Team X, choose a square!"'
+- '"Team X chose the middle: make a question with ''where.'' Your question?"'
+- '"Where did you go last weekend? Correct! Team X gets the middle square. Team O,
+  your turn!"'
+setupInstructions: Prepare 3x3 grids with grammar prompts. Each square should have
+  a different prompt related to your current grammar focus. Draw the grid on the board
+  before class.
+skill_areas:
+- grammar
+- speaking
+sources: []
+targetStructures:
+- clauses
+- verb-tenses
+teaching_tips: ''

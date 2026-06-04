@@ -1,56 +1,48 @@
-grammar_point: present_perfect_experiential
-title: Present Perfect - Experiential (Actions occurring at least once)
-description: Use of the present perfect to talk about life experiences — things someone
-  has done at least once in their life up to now, without specifying when.
-level: B1
-meaning:
-  core_meaning: The experiential present perfect describes actions or events that
-    have happened at least once (or never) in someone's life up to the present moment.
-    The exact time is not specified or not important. The focus is on whether the
-    experience has occurred at all during the person's lifetime.
-  timeline: The time period is the person's entire life up to now. The action happened
-    at some unspecified point within that period.
-  contrast: 'Experiential: "I have been to Japan." (at some point in my life — when
-    is not important)
-
-    Past Simple: "I went to Japan in 2019." (specific time — completed action)
-
-    Resultative: "I have lost my keys." (past action with present result — I still
-    cannot find them)
-
-    '
-  ccqs:
-  - question: Is the speaker talking about a life experience without saying exactly
-      when?
-    answer: Yes — the focus is on whether it has happened at all, not when.
-    purpose: Tests whether the learner understands the experiential use of present
-      perfect — that it describes actions that have occurred at some unspecified point
-      in a person's life up to now, where the exact time is irrelevant.
-  - question: Can we say exactly when it happened (e.g., in 2019, last Tuesday)?
-    answer: No — with the experiential present perfect, we do not specify the time.
-    purpose: Tests whether the learner knows that specifying a definite past time
-      is incompatible with the experiential present perfect, because doing so shifts
-      the focus from life experience to a completed past event (requiring past simple).
-    contexts:
-    - travel experiences
-    - life achievements
-    - food and culture
-    - sports and hobbies
-    - job interviews
-    cultural_notes:
-    - This is one of the most common uses of the present perfect and is essential
-      from B1 onwards
-    - In American English, the past simple is sometimes used for experiences ('Did
-      you ever go to Japan?'), which differs from British English norms
-    min_examples: 5
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      present perfect experiential and explain why they are incorrect.
+citations:
+- claim: 'Core meaning: The experiential present perfect describes actions or events that have happened at least once (or
+    ne'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The Tense-Aspect System'
+  tier: 4
+- claim: 'Discourse function: In conversation, this structure is used for everyday communication and is among the most frequent
+    patterns'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The Tense-Aspect System'
+  tier: 4
+- claim: Common error '*Did you ever been to Paris?*' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents how transfer effects are non-linear,
+    determined by functional fit between L1 and L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects are non-linear — determined by functional
+    fit between L1 and L2 systems rather than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning. Routledge.
+  tier: 2
+common_errors:
+- correction: Have you ever been to Paris?
+  error: '*Did you ever been to Paris?*'
+  explanation: Use present perfect (not past simple) with 'ever' and 'never' to ask about life experiences. 'Have you ever...'
+    not 'Did you ever...'.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+description: Use of the present perfect to talk about life experiences — things someone has done at least once in their life
+  up to now, without specifying when.
+dialectal_variation: []
+discourse_notes:
+- note: In conversation, this structure is used for everyday communication and is among the most frequent patterns in spoken
+    English.
+- note: In academic writing, this structure appears in discussions of established knowledge, methodology, and findings.
+- note: In news reports, this structure is used for reporting events and attributing statements.
 form:
   affirmative:
-    structure: 'Subject + have/has + past participle: ''I have visited Paris.'' ''She
-      has tried sushi.'' ''They have never seen snow.'''
     example_generator:
       contexts:
       - travel
@@ -58,154 +50,176 @@ form:
       - sports
       - cultural experiences
       min_examples: 4
+    structure: 'Subject + have/has + past participle: ''I have visited Paris.'' ''She has tried sushi.'' ''They have never
+      seen snow.'''
   negative:
-    structure: 'Subject + have/has + never + past participle: ''I have never been
-      to Australia.'' ''He has never ridden a horse.'' ''We have never eaten frog
-      legs.'''
     example_generator:
       contexts:
       - things not yet experienced
       - surprising facts
       - conversation starters
       min_examples: 4
+    structure: 'Subject + have/has + never + past participle: ''I have never been to Australia.'' ''He has never ridden a
+      horse.'' ''We have never eaten frog legs.'''
   questions:
-    structure: 'Have/Has + subject + ever + past participle?: ''Have you ever been
-      to Japan?'' ''Has she ever tried bungee jumping?'' / Have/Has + subject + past
-      participle + yet?: ''Have you been to the new museum yet?'''
     example_generator:
       contexts:
       - asking about experiences
       - making conversation
       - finding common ground
       min_examples: 4
+    structure: 'Have/Has + subject + ever + past participle?: ''Have you ever been to Japan?'' ''Has she ever tried bungee
+      jumping?'' / Have/Has + subject + past participle + yet?: ''Have you been to the new museum yet?'''
+grammar_point: present_perfect_experiential
+level: B1
+meaning:
+  ccqs:
+  - answer: Yes — the focus is on whether it has happened at all, not when.
+    purpose: Tests whether the learner understands the experiential use of present perfect — that it describes actions that
+      have occurred at some unspecified point in a person's life up to now, where the exact time is irrelevant.
+    question: Is the speaker talking about a life experience without saying exactly when?
+  - answer: No — with the experiential present perfect, we do not specify the time.
+    contexts:
+    - travel experiences
+    - life achievements
+    - food and culture
+    - sports and hobbies
+    - job interviews
+    cultural_notes:
+    - This is one of the most common uses of the present perfect and is essential from B1 onwards
+    - In American English, the past simple is sometimes used for experiences ('Did you ever go to Japan?'), which differs
+      from British English norms
+    min_examples: 5
+    purpose: Tests whether the learner knows that specifying a definite past time is incompatible with the experiential present
+      perfect, because doing so shifts the focus from life experience to a completed past event (requiring past simple).
+    question: Can we say exactly when it happened (e.g., in 2019, last Tuesday)?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with present perfect experiential and explain
+      why they are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: '''I have been to London three times.'' ''Have been to'' (experiential perfect) cannot be used with specific past
+      time expressions.'
+    purpose: Tests whether the learner distinguishes experiential perfect (have been to) from past simple with time references
+      (Swan PEU 2016, entry 47).
+    question: Which is correct? *'I have been to London last year' or 'I have been to London three times'?
+  contrast: 'Experiential: "I have been to Japan." (at some point in my life — when is not important)
+
+    Past Simple: "I went to Japan in 2019." (specific time — completed action)
+
+    Resultative: "I have lost my keys." (past action with present result — I still cannot find them)
+
+    '
+  core_meaning: The experiential present perfect describes actions or events that have happened at least once (or never) in
+    someone's life up to the present moment. The exact time is not specified or not important. The focus is on whether the
+    experience has occurred at all during the person's lifetime.
+  timeline: The time period is the person's entire life up to now. The action happened at some unspecified point within that
+    period.
+phonetics:
+- example_generator:
+    contexts:
+    - natural conversation
+    - interviews
+  l1_issue: 'Speakers of languages without perfect tenses (e.g., Mandarin, Japanese) may use the past simple instead: ''I
+    went to Japan'' when they mean ''I have been to Japan''.'
+  note: '''Have'' is often reduced in connected speech: /əv/ or /v/ — ''I''ve been'' /aɪv biːn/. ''Has'' is reduced to /z/
+    or /s/ — ''She''s been'' /ʃiːz biːn/. ''Never'' is stressed for emphasis: ''I have NEVER been there.'''
+register_notes:
+- note: 'Biber et al. (2021) — Present perfect experiential (''I have been to Paris''): more common in conversation and fiction.
+    Academic prose uses fewer experientials and more resultative/completive perfects. Ch. 6.3'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 6.3
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The Tense-Aspect System-7.5'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: '''Ever'' in questions — at any time in your life'
-  type: semantic
-  examples:
+- examples:
   - Have you ever eaten snails?
   - Has she ever met a celebrity?
   - Have they ever been skiing?
-- rule: '''Never'' in negatives — not at any time'
+  rule: '''Ever'' in questions — at any time in your life'
   type: semantic
-  examples:
+- examples:
   - I have never flown in a helicopter.
   - He has never been abroad.
   - We have never seen a ghost.
-- rule: '''Before'' — at some unspecified time before now'
+  rule: '''Never'' in negatives — not at any time'
   type: semantic
-  examples:
+- examples:
   - I have seen this film before.
   - Have you been here before?
   - She has done this kind of work before.
-- rule: '''Once'', ''twice'', ''several times'' — number of times'
+  rule: '''Before'' — at some unspecified time before now'
   type: semantic
-  examples:
+- examples:
   - I have been to London three times.
   - She has called twice today.
   - We have watched this film several times.
-- rule: Contrast with past simple — specific time vs. life experience
+  rule: '''Once'', ''twice'', ''several times'' — number of times'
   type: semantic
-  examples:
+- examples:
   - 'Experiential: I have been to Japan. (life experience)'
   - 'Past simple: I went to Japan in 2019. (specific time)'
+  rule: Contrast with past simple — specific time vs. life experience
+  type: semantic
+teaching:
+  methodology: PPP with personalisation
+  recommended_activities:
+  - adaptation_notes: Students interview each other using 'Have you ever...?' questions. Provide a list of experiences to
+      ask about.
+    duration: 15
+    name: Have you ever...? interview
+  - adaptation_notes: Students draw a timeline of their life and write sentences about their experiences using the present
+      perfect.
+    duration: 15
+    name: Life experiences timeline
+  - adaptation_notes: Students create a 'bucket list' of things they want to do and things they have already done. Share with
+      the class.
+    duration: 15
+    name: Bucket list
+  - adaptation_notes: Give students sentences and have them classify as experiential present perfect or past simple. Discuss
+      the difference.
+    duration: 10
+    name: Experiential vs. past simple sorting
+  tips:
+  - Use a timeline showing the person's life from birth to now, with an arrow for the experience at an unspecified point.
+  - 'Contrast with past simple: ''I have been to Japan'' vs ''I went to Japan in 2019''.'
+  - Use 'Have you ever...?' as a conversation starter — students ask each other about experiences.
+  - Teach 'ever', 'never', 'before', and 'once/twice/three times' as common adverbs with this structure.
+  - 'Swan PEU: Experiential — ''Have you ever been to Paris?'' ''I have visited three countries this year.'' Focus on life
+    experience without specifying when. Contrast with past simple which specifies time.'
+  - 'GB3 Ch. 7: Experiential use — ''I have visited three countries this year.'' Focus on life experience without specifying
+    when. Co-occurs with ''ever'' in questions (''Have you ever been to Paris?''). Source: Celce-Murcia & Larsen-Freeman (2015)
+    GB3 Ch. 7 §7.2.'
+title: Present Perfect - Experiential (Actions occurring at least once)
 use:
-- name: Talking about travel experiences
-  description: Used to discuss places someone has visited or never visited.
+- description: Used to discuss places someone has visited or never visited.
   examples:
   - I have been to 15 countries.
   - Have you ever been to South America?
   - She has never left her home town.
   key_point: Very common in conversation and travel discussions.
-- name: Job interviews and CVs
-  description: Used to describe skills and experiences relevant to a job.
+  name: Talking about travel experiences
+- description: Used to describe skills and experiences relevant to a job.
   examples:
   - I have managed a team of 20 people.
   - Have you ever worked abroad?
   - She has experience in project management.
-  key_point: The experiential present perfect shows what someone has done in their
-    career.
-- name: Making conversation and finding common ground
-  description: Used to ask about shared experiences and interests.
+  key_point: The experiential present perfect shows what someone has done in their career.
+  name: Job interviews and CVs
+- description: Used to ask about shared experiences and interests.
   examples:
   - Have you ever tried Korean food?
   - I have never been to a music festival.
   - Have you seen the new Marvel film?
   key_point: Great conversation starters — helps people find things in common.
-- name: Life achievements and milestones
-  description: Used to talk about significant things someone has done.
+  name: Making conversation and finding common ground
+- description: Used to talk about significant things someone has done.
   examples:
   - He has climbed Mount Kilimanjaro.
   - She has published three novels.
   - They have raised over 1 million pounds for charity.
   key_point: Celebrates accomplishments without focusing on when they happened.
-phonetics:
-- note: '''Have'' is often reduced in connected speech: /əv/ or /v/ — ''I''ve been''
-    /aɪv biːn/. ''Has'' is reduced to /z/ or /s/ — ''She''s been'' /ʃiːz biːn/. ''Never''
-    is stressed for emphasis: ''I have NEVER been there.'''
-  example_generator:
-    contexts:
-    - natural conversation
-    - interviews
-  l1_issue: 'Speakers of languages without perfect tenses (e.g., Mandarin, Japanese)
-    may use the past simple instead: ''I went to Japan'' when they mean ''I have been
-    to Japan''.'
-teaching:
-  methodology: PPP with personalisation
-  tips:
-  - Use a timeline showing the person's life from birth to now, with an arrow for
-    the experience at an unspecified point.
-  - 'Contrast with past simple: ''I have been to Japan'' vs ''I went to Japan in 2019''.'
-  - Use 'Have you ever...?' as a conversation starter — students ask each other about
-    experiences.
-  - Teach 'ever', 'never', 'before', and 'once/twice/three times' as common adverbs
-    with this structure.
-  recommended_activities:
-  - name: Have you ever...? interview
-    duration: 15
-    adaptation_notes: Students interview each other using 'Have you ever...?' questions.
-      Provide a list of experiences to ask about.
-  - name: Life experiences timeline
-    duration: 15
-    adaptation_notes: Students draw a timeline of their life and write sentences about
-      their experiences using the present perfect.
-  - name: Bucket list
-    duration: 15
-    adaptation_notes: Students create a 'bucket list' of things they want to do and
-      things they have already done. Share with the class.
-  - name: Experiential vs. past simple sorting
-    duration: 10
-    adaptation_notes: Give students sentences and have them classify as experiential
-      present perfect or past simple. Discuss the difference.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*Did you ever been to Paris?*'
-  correction: Have you ever been to Paris?
-  explanation: Use present perfect (not past simple) with 'ever' and 'never' to ask
-    about life experiences. 'Have you ever...' not 'Did you ever...'.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used for everyday communication and is
-    among the most frequent patterns in spoken English.
-- note: In academic writing, this structure appears in discussions of established
-    knowledge, methodology, and findings.
-- note: In news reports, this structure is used for reporting events and attributing
-    statements.
+  name: Life achievements and milestones

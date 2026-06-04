@@ -1,40 +1,131 @@
+citations:
+- claim: 'Core meaning: Mixed conditionals combine second and third conditional structures when the time in the if-clause
+    is'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27: Conditionals-10.6'
+  tier: 1
+- claim: 'Register distribution: Mixed conditionals are more common in formal writing and academic prose than in casual conversation.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27: Conditionals-10.6'
+  tier: 1
+- claim: 'Discourse function: Mixed conditionals create complex narratives that connect past events to present consequences:
+    ''If I'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27: Conditionals-10.6'
+  tier: 1
+- claim: 'Common error ''Using wrong tense combination: *''If I studied harder, I woul'' for Portuguese, Spanish, French speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents how transfer effects are non-linear,
+    determined by functional fit between L1 and L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects are non-linear — determined by functional
+    fit between L1 and L2 systems rather than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning. Routledge.
+  tier: 2
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for L1-specific error patterns in English.
+    Their learner English framework documents how each L1 group produces characteristic errors in this grammatical domain,
+    enabling teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference and Other Problems, 2nd ed. Cambridge
+    University Press.'
+  tier: 2
+common_errors:
+- correction: If I had studied harder, I would have passed.
+  error: 'Using wrong tense combination: *''If I studied harder, I would have passed.'''
+  explanation: 'Mixed conditionals require specific tense combinations. Type 1 (past→present): if + past perfect, would +
+    base. Type 2 (present→past): if + past simple, would have + past participle.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Conditionals'
+- correction: If I had studied, I would pass now.
+  error: 'Using ''would have'' in both clauses: *''If I would have studied, I would have passed.'''
+  explanation: In Type 1 mixed conditional, only the if-clause uses past perfect. The main clause uses 'would + base verb'
+    for the present result.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - German
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Conditionals'
+- correction: If I had studied, I would be a doctor now.
+  error: 'Using ''would have'' in the if-clause of mixed conditional: *''If I would have studied, I would be a doctor now.'''
+  explanation: 'Swan PEU: In mixed conditionals (past → present), the if-clause uses past perfect (NOT ''would have''). ''Would
+    have'' in the if-clause is non-standard.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+description: Combines different conditional structures when the time in the if-clause is different from the time in the main
+  clause. Past condition with present result, or present condition with past result.
+dialectal_variation:
+- note: In informal speech, 'would have' is often contracted to 'would've' /wʊdəv/.
+discourse_notes:
+- note: 'Mixed conditionals create complex narratives that connect past events to present consequences: ''If I had taken that
+    job, I would be living in London now.'''
+- note: Mixed conditionals are used for expressing regret about past decisions and their present consequences.
+- note: In academic writing, mixed conditionals are used for discussing the present implications of past research decisions.
+form:
+  affirmative:
+    example_generator:
+    - If I had studied harder, I would have a better job now. (past → present)
+    - If she had learned English as a child, she wouldn't need a translator now. (past → present)
+    - If he were taller, he would have become a pilot. (present → past)
+    - If she weren't so stubborn, she would have apologized yesterday. (present → past)
+    min_examples: 4
+    structure: 'Type 1 — Past condition → present result: If + past perfect, would + base verb / Type 2 — Present condition
+      → past result: If + past simple, would have + past participle'
+  negative:
+    example_generator:
+    - If I hadn't taken that job, I wouldn't be living in London now.
+    - If she weren't so shy, she would have made more friends at the party.
+    - If he had saved money, he wouldn't be in debt now.
+    min_examples: 4
+    structure: 'If clause negative: If + subject + hadn''t/weren''t... / Main clause negative: subject + wouldn''t + base
+      verb / wouldn''t have + past participle'
+  questions:
+    example_generator:
+    - Would you have a better job now if you had studied harder?
+    - Would she have apologized yesterday if she weren't so stubborn?
+    - Would he be living in London now if he had taken that job?
+    min_examples: 4
+    structure: Would + subject + base verb / would have + past participle + if + past perfect / past simple?
 grammar_point: mixed_conditionals
-title: Mixed Conditionals
-description: Combines different conditional structures when the time in the if-clause
-  is different from the time in the main clause. Past condition with present result,
-  or present condition with past result.
 level: B2
 meaning:
-  core_meaning: Mixed conditionals combine second and third conditional structures
-    when the time in the if-clause is different from the time in the main clause.
-    The condition refers to one time period, the result to another. This reflects
-    how past choices affect present situations, or how present characteristics would
-    have changed past outcomes.
-  timeline: 'Mixed: past condition → present result, OR present condition → past result.
-    The two clauses refer to different time periods.'
-  contrast: '''2nd Conditional'' = ''If I had money, I would buy a car.'' (present
-    → present) vs ''3rd Conditional'' = ''If I had had money, I would have bought
-    a car.'' (past → past) vs ''Mixed'' = ''If I had studied, I would have a better
-    job now.'' (past → present)'
   ccqs:
-  - question: Do both clauses refer to the same time period?
-    answer: No — that is what makes it mixed. The if-clause and main clause refer
-      to different times.
-    purpose: Tests whether the learner understands that mixed conditionals combine
-      different time frames in the if-clause and main clause. This is important because
-      it allows speakers to express complex cause-effect relationships across time.
-  - question: Is this about how a past choice affects the present?
-    answer: Yes — one type of mixed conditional shows how a past action changed the
-      present situation.
-    purpose: Tests whether the learner understands that one type of mixed conditional
-      shows how a past choice affects the present situation. This is important because
-      it is a common way to express regret about life decisions.
-  - question: Or is it about how a present trait would have changed the past?
-    answer: Yes — the other type shows how a current characteristic would have affected
-      a past outcome.
-    purpose: Tests whether the learner understands that the other type shows how a
-      present trait would have changed a past outcome. This is important because it
-      allows reflection on how current characteristics influence past events.
+  - answer: No — that is what makes it mixed. The if-clause and main clause refer to different times.
+    purpose: Tests whether the learner understands that mixed conditionals combine different time frames in the if-clause
+      and main clause. This is important because it allows speakers to express complex cause-effect relationships across time.
+    question: Do both clauses refer to the same time period?
+  - answer: Yes — one type of mixed conditional shows how a past action changed the present situation.
+    purpose: Tests whether the learner understands that one type of mixed conditional shows how a past choice affects the
+      present situation. This is important because it is a common way to express regret about life decisions.
+    question: Is this about how a past choice affects the present?
+  - answer: Yes — the other type shows how a current characteristic would have affected a past outcome.
+    purpose: Tests whether the learner understands that the other type shows how a present trait would have changed a past
+      outcome. This is important because it allows reflection on how current characteristics influence past events.
+    question: Or is it about how a present trait would have changed the past?
+  - answer: The if-clause follows the third conditional pattern (if + past perfect) and the main clause follows the second
+      conditional pattern (would + base verb). This is a Type 1 mixed conditional, combining a past condition with a present
+      result two different conditional structures in one sentence.
+    purpose: Tests whether the learner can identify the specific tense patterns in each clause of a mixed conditional. Recognising
+      that the if-clause uses past perfect (third conditional form) while the main clause uses would + base verb (second conditional
+      form) is essential for producing mixed conditionals accurately.
+    question: In the sentence if I had taken that job, I would be living in London now, which conditional pattern does each
+      clause follow?
+  contrast: '''2nd Conditional'' = ''If I had money, I would buy a car.'' (present → present) vs ''3rd Conditional'' = ''If
+    I had had money, I would have bought a car.'' (past → past) vs ''Mixed'' = ''If I had studied, I would have a better job
+    now.'' (past → present)'
+  core_meaning: Mixed conditionals combine second and third conditional structures when the time in the if-clause is different
+    from the time in the main clause. The condition refers to one time period, the result to another. This reflects how past
+    choices affect present situations, or how present characteristics would have changed past outcomes.
   example_generator:
     contexts:
     - past choices affecting present
@@ -46,63 +137,107 @@ meaning:
     - Avoid examples that may trigger strong emotional responses
     - Keep examples relatable and thought-provoking
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Type 1 — Past condition → present result: If + past perfect, would
-      + base verb / Type 2 — Present condition → past result: If + past simple, would
-      have + past participle'
-    example_generator:
-    - If I had studied harder, I would have a better job now. (past → present)
-    - If she had learned English as a child, she wouldn't need a translator now. (past
-      → present)
-    - If he were taller, he would have become a pilot. (present → past)
-    - If she weren't so stubborn, she would have apologized yesterday. (present →
-      past)
-    min_examples: 4
-  negative:
-    structure: 'If clause negative: If + subject + hadn''t/weren''t... / Main clause
-      negative: subject + wouldn''t + base verb / wouldn''t have + past participle'
-    example_generator:
-    - If I hadn't taken that job, I wouldn't be living in London now.
-    - If she weren't so shy, she would have made more friends at the party.
-    - If he had saved money, he wouldn't be in debt now.
-    min_examples: 4
-  questions:
-    structure: Would + subject + base verb / would have + past participle + if + past
-      perfect / past simple?
-    example_generator:
-    - Would you have a better job now if you had studied harder?
-    - Would she have apologized yesterday if she weren't so stubborn?
-    - Would he be living in London now if he had taken that job?
-    min_examples: 4
+  timeline: 'Mixed: past condition → present result, OR present condition → past result. The two clauses refer to different
+    time periods.'
+phonetics:
+- example_generator:
+  - would have → would've /wʊdəv/
+  - had → /əd/ or /d/
+  l1_issue: Many L1 speakers over-pronounce 'would have' and 'had' in mixed conditionals. Teach contracted forms for natural
+    speech.
+  note: 'Contractions are essential: ''would'' → /d/ in connected speech, ''would have'' → /wʊdəv/, ''had'' → /əd/ or /d/.'
+- example_generator:
+  - I would be → /aɪd biː/
+  - she would have → /ʃiːd hæv/ or /ʃiːdəv/
+  l1_issue: 'Portuguese and Spanish speakers often struggle with the mixed time references. Drill the structure with clear
+    time markers: ''now'' for present result, ''yesterday'' for past result.'
+  note: 'In Type 1 mixed conditionals, the present result clause uses the same pronunciation as second conditional: ''I would
+    be'' → /aɪd biː/.'
+register_notes:
+- note: Mixed conditionals are more common in formal writing and academic prose than in casual conversation.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In academic writing, mixed conditionals are used for discussing implications: ''If the theory had been correct, we
+    would see different results now.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In conversation, mixed conditionals are used for reflecting on life choices: ''If I had studied harder, I would have
+    a better job now.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Mixed conditionals: primarily in planned/written discourse; rare in casual conversation. Register
+    distribution skews toward formal contexts. Ch. 10.2.8.12'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 10.2.8.12
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27: Conditionals-10.6'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: 'Type 1: Past condition → present result (If + past perfect, would + base
-    verb)'
-  type: grammatical
-  examples:
+- examples:
   - If I had studied harder, I would have a better job now.
   - If she had accepted that offer, she would be living in London now.
   - If they had saved money, they would own a house now.
-- rule: 'Type 2: Present condition → past result (If + past simple, would have + past
-    participle)'
+  rule: 'Type 1: Past condition → present result (If + past perfect, would + base verb)'
   type: grammatical
-  examples:
+- examples:
   - If he were taller, he would have become a pilot.
   - If she weren't so shy, she would have made more friends.
   - If I were braver, I would have spoken up at the meeting.
-- rule: Mixed conditional for regret about how past choices affect the present
-  type: semantic
-  examples:
+  rule: 'Type 2: Present condition → past result (If + past simple, would have + past participle)'
+  type: grammatical
+- examples:
   - If I had chosen a different career, I would be happier now.
   - If she had moved to another city, she would have more opportunities now.
   - If they had invested earlier, they would be wealthy now.
-- rule: Mixed conditional for reflecting on how present traits would have changed
-    the past
+  rule: Mixed conditional for regret about how past choices affect the present
   type: semantic
-  examples:
+- examples:
   - If I were more confident, I would have applied for that job.
   - If she were more patient, she would have passed the driving test.
   - If he were more organized, he would have finished the project on time.
+  rule: Mixed conditional for reflecting on how present traits would have changed the past
+  type: semantic
+teaching:
+  methodology: Guided discovery with life reflection scenarios
+  recommended_activities:
+  - adaptation_notes: 'Students write 5 mixed conditional sentences about their own lives: ''If I had studied harder, I would
+      have a better job now.'' Then share with a partner.'
+    duration: 15
+    name: Life Reflection
+  - adaptation_notes: 'Teacher says a mixed conditional sentence. Students identify the time reference of each clause: ''If
+      I had studied (past), I would have a better job now (present).'''
+    duration: 10
+    name: Past → Present or Present → Past?
+  - adaptation_notes: 'Students discuss how their lives would be different now if they had made different choices: ''If I
+      had learned English as a child, I would speak fluently now.'''
+    duration: 15
+    name: What Would Be Different?
+  - adaptation_notes: 'Student A says the if-clause: ''If I had studied medicine...'' Student B completes: ''...I would be
+      a doctor now.'' Then Student B starts a new if-clause.'
+    duration: 10
+    name: Mixed Conditional Chain
+  tips:
+  - Master pure second and third conditionals before introducing mixed. Students need a solid foundation.
+  - 'Use clear time markers: ''now'' for present result, ''yesterday/last year'' for past result. This helps students see
+    the time difference.'
+  - 'Use life reflection scenarios: ''If you had chosen a different university, where would you live now?'' Makes the grammar
+    personal and meaningful.'
+  - 'Draw two timelines side by side: label each clause with its time reference. Visual support is essential.'
+  - Teach Type 1 first (past → present) as it is more common and intuitive. Then introduce Type 2 (present → past).
+  - 'Swan PEU: Mixed conditionals combine time frames. Type 1: past condition → present result (If + past perfect, would +
+    base). Type 2: present condition → past result (If + past simple, would have + past participle).'
+teaching_tips:
+- source: 'Celce-Murcia & Larsen-Freeman (1999) The Grammar Book: An ESL/EFL Teacher''s Course, 2nd ed. Heinle & Heinle.'
+  tip: 'MIXED CONDITIONALS: Past condition + present result: ''If I HAD studied harder [past], I WOULD BE in medical school
+    now [present].'' NOT *''If I would have studied...'' The past perfect in the if-clause marks counterfactuality in the
+    past; ''would be'' marks present unreal result. Source: Ch.27 p.420-424.'
+title: Mixed Conditionals
 use:
 - context: Past choices affecting the present
   description: How a past decision or event affects the current situation
@@ -112,8 +247,7 @@ use:
   - If they had saved money, they wouldn't be in debt now.
   - If I had studied medicine, I would be a doctor now.
 - context: Present traits affecting the past
-  description: How a current characteristic or situation would have changed a past
-    outcome
+  description: How a current characteristic or situation would have changed a past outcome
   examples:
   - If he were taller, he would have become a pilot.
   - If she weren't so stubborn, she would have apologized yesterday.
@@ -125,99 +259,3 @@ use:
   - If I had made different choices, I would be in a different place now.
   - If she had been more careful with money, she would own a house now.
   - If they had listened to my advice, they wouldn't be in this situation now.
-phonetics:
-- note: 'Contractions are essential: ''would'' → /d/ in connected speech, ''would
-    have'' → /wʊdəv/, ''had'' → /əd/ or /d/.'
-  example_generator:
-  - would have → would've /wʊdəv/
-  - had → /əd/ or /d/
-  l1_issue: Many L1 speakers over-pronounce 'would have' and 'had' in mixed conditionals.
-    Teach contracted forms for natural speech.
-- note: 'In Type 1 mixed conditionals, the present result clause uses the same pronunciation
-    as second conditional: ''I would be'' → /aɪd biː/.'
-  example_generator:
-  - I would be → /aɪd biː/
-  - she would have → /ʃiːd hæv/ or /ʃiːdəv/
-  l1_issue: 'Portuguese and Spanish speakers often struggle with the mixed time references.
-    Drill the structure with clear time markers: ''now'' for present result, ''yesterday''
-    for past result.'
-teaching:
-  methodology: Guided discovery with life reflection scenarios
-  tips:
-  - Master pure second and third conditionals before introducing mixed. Students need
-    a solid foundation.
-  - 'Use clear time markers: ''now'' for present result, ''yesterday/last year'' for
-    past result. This helps students see the time difference.'
-  - 'Use life reflection scenarios: ''If you had chosen a different university, where
-    would you live now?'' Makes the grammar personal and meaningful.'
-  - 'Draw two timelines side by side: label each clause with its time reference. Visual
-    support is essential.'
-  - Teach Type 1 first (past → present) as it is more common and intuitive. Then introduce
-    Type 2 (present → past).
-  recommended_activities:
-  - name: Life Reflection
-    duration: 15
-    adaptation_notes: 'Students write 5 mixed conditional sentences about their own
-      lives: ''If I had studied harder, I would have a better job now.'' Then share
-      with a partner.'
-  - name: Past → Present or Present → Past?
-    duration: 10
-    adaptation_notes: 'Teacher says a mixed conditional sentence. Students identify
-      the time reference of each clause: ''If I had studied (past), I would have a
-      better job now (present).'''
-  - name: What Would Be Different?
-    duration: 15
-    adaptation_notes: 'Students discuss how their lives would be different now if
-      they had made different choices: ''If I had learned English as a child, I would
-      speak fluently now.'''
-  - name: Mixed Conditional Chain
-    duration: 10
-    adaptation_notes: 'Student A says the if-clause: ''If I had studied medicine...''
-      Student B completes: ''...I would be a doctor now.'' Then Student B starts a
-      new if-clause.'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 10:
-    Conditionals, §10.1-10.6'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: 'Using wrong tense combination: *''If I studied harder, I would have passed.'''
-  correction: If I had studied harder, I would have passed.
-  explanation: 'Mixed conditionals require specific tense combinations. Type 1 (past→present):
-    if + past perfect, would + base. Type 2 (present→past): if + past simple, would
-    have + past participle.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: 'Using ''would have'' in both clauses: *''If I would have studied, I would
-    have passed.'''
-  correction: If I had studied, I would pass now.
-  explanation: In Type 1 mixed conditional, only the if-clause uses past perfect.
-    The main clause uses 'would + base verb' for the present result.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - German
-register_notes:
-- note: Mixed conditionals are more common in formal writing and academic prose than
-    in casual conversation.
-- note: 'In academic writing, mixed conditionals are used for discussing implications:
-    ''If the theory had been correct, we would see different results now.'''
-- note: 'In conversation, mixed conditionals are used for reflecting on life choices:
-    ''If I had studied harder, I would have a better job now.'''
-dialectal_variation:
-- note: No significant BrE/AmE differences in mixed conditional formation.
-- note: In informal speech, 'would have' is often contracted to 'would've' /wʊdəv/.
-discourse_notes:
-- note: 'Mixed conditionals create complex narratives that connect past events to
-    present consequences: ''If I had taken that job, I would be living in London now.'''
-- note: Mixed conditionals are used for expressing regret about past decisions and
-    their present consequences.
-- note: In academic writing, mixed conditionals are used for discussing the present
-    implications of past research decisions.

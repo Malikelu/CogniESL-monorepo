@@ -1,35 +1,47 @@
-id: ballot-box
-name: Ballot Box
-category: speaking
-description: Ballot Box -- a speaking activity. Give each student 2-3 slips of paper.
-  Pose a question or statement. Students write their opinion on a slip. They do NOT
-  write their name....
-targetStructures:
-- speaking-fluency
-- sentence-structure
-- discourse
+adaptableToTopic: true
 bestForLevels:
 - A2
 - B1
 - B2
 - C1
+category: speaking
+citations:
+- claim: "During a communication game, carry paper and pen and note any persistent errors or areas of difficulty. Do not interrupt or correct during the game, as this impedes fluency. Deal with errors in a feedback session after the game."
+  source: Hadfield, J. (1990) Intermediate Communication Games. Longman/Pearson. Teacher's notes.
+  tier: 3
+  reliability: B
+  flagged: false
+- claim: Anonymous opinion sharing reduces anxiety and encourages participation from reluctant speakers, supporting oral fluency development in mixed-ability classrooms
+  flagged: false
+  reliability: B
+  source: 'Peregoy & Boyle (2023) Reading, Writing, and Learning in ESL, 8th ed. Pearson.
+    Ch. 5: Oral English Development for Multilingual Learners'
+  tier: 2
+
+description: A speaking activity that reduces anxiety through anonymous opinion sharing.
+  Students write opinions on slips of paper without names. The teacher reads them
+  aloud and the class discusses. Designed to encourage participation from shy students
+  who might not speak up in open discussion.
+differentiation:
+  extension: Require 2-3 sentences with reasons. After reading, have students debate.
+  support: Provide sentence starters. Use simpler questions.
+digitalReady: true
 duration: 15
-groupSize: whole-class
 energyRequired: low
-prepTime: none
-materials:
-- Slips of paper
-- A box or bag
 format:
 - in-person
 - online
-requiresTech: false
-digitalReady: true
+grammar_focus:
+- discourse_markers
+- linking_words
+- sentence_structure
+- word_order
+groupSize: whole-class
 hasAudioComponent: false
 hasPrintableComponent: false
 hasSlidesComponent: false
 hasVisualComponent: false
-adaptableToTopic: true
+id: ballot-box
 instructions:
 - Give each student 2-3 slips of paper. Pose a question or statement.
 - Students write their opinion on a slip. They do NOT write their name.
@@ -37,17 +49,57 @@ instructions:
 - The teacher draws slips one at a time and reads them aloud anonymously.
 - 'After each slip, the class discusses: Do you agree? Why or why not?'
 - 'Discuss: Were there any surprising opinions?'
-script:
-- '"Your opinion on this slip. Do NOT put your name. Fold it and put it in the box."'
-- '"Let me read the first one... Do you agree?"'
-setupInstructions: Have slips of paper and a box ready. Prepare 2-3 discussion questions.
-differentiation:
-  support: Provide sentence starters. Use simpler questions.
-  extension: Require 2-3 sentences with reasons. After reading, have students debate.
 keywords:
 - ballot box
 - anonymous
 - opinion
 - discussion
 - shy students
-l1Enhanced: true
+l1_enhanced:
+- adaptation: 'Spanish has formal/informal registers for expressing opinions (tu/usted).
+    English lacks this distinction, which can cause over-formalization. Provide opinion
+    expression frames at different registers.'
+  language: Spanish
+  priority: medium
+- adaptation: Arabic diglossia (MSA vs dialect) affects opinion expression. Students
+    may feel more confident expressing opinions in dialect. Anonymity helps bridge
+    this gap.
+  language: Arabic
+  priority: medium
+- adaptation: Mandarin speakers may prefer indirect opinion expression. The anonymous
+    ballot box format helps bypass cultural reluctance to state opinions directly.
+    Provide sentence frames for hedging.
+  language: Mandarin
+  priority: medium
+l1_specific: []
+materials:
+- Slips of paper
+- A box or bag
+name: Ballot Box
+prepTime: none
+requiresTech: false
+script:
+- '"Your opinion on this slip. Do NOT put your name. Fold it and put it in the box."'
+- '"Let me read the first one... Do you agree?"'
+setupInstructions: Have slips of paper and a box ready. Prepare 2-3 discussion questions.
+skill_areas:
+- speaking
+sources:
+- 'Klippel, F. (1984) Keep Talking: Communicative Fluency Activities for Language Teaching. Cambridge University Press.'
+- 'Peregoy & Boyle (2023) Reading, Writing, and Learning in ESL, 8th ed. Pearson.'
+- 'Hadfield, J. (1990) Intermediate Communication Games. Longman/Pearson.'
+targetStructures:
+- speaking-fluency
+- sentence-structure
+- discourse
+teaching_tips:
+- tip: 'Klippel describes opinion polling activities where students anonymously submit opinions and the class discusses the results. She notes that anonymous formats reduce anxiety and encourage honest expression of views (Klippel 1984, Ch. 2.5: Questioning activities).'
+  context: Klippel (1984)
+- tip: 'Klippel emphasizes that activities where students express personal opinions create genuine communicative need because students truly want to know what their classmates think (Klippel 1984, p. 51).'
+  context: Klippel (1984)
+- Anonymity is the key feature. Emphasize that names must not be written. This
+  reduces anxiety and encourages honest opinions including controversial ones.
+- For sensitive topics, this format is especially useful. Students can express
+  opinions they would not dare to state openly.
+- Provide sentence frames for lower levels. For higher levels, require supporting
+  reasons with discourse markers (because, however, on the other hand).

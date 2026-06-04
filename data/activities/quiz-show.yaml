@@ -1,35 +1,41 @@
-id: quiz-show
-name: Quiz Show
-category: games
-description: A game-show format review activity. Teams compete to answer questions
-  across categories. Includes a final question round for dramatic finishes.
-targetStructures:
-- verb-tenses
-- vocabulary
-- clauses
+adaptableToTopic: true
 bestForLevels:
 - A1
 - A2
 - B1
 - B2
 - C1
+category: games
+citations:
+- claim: The "Quiz Show" activity engages learners through competitive grammar review.
+  flagged: false
+  reliability: B
+  source: Peregoy & Boyle (2023) Reading, Writing, and Learning in ESL, 8th ed. Pearson.
+  tier: 2
+- claim: "Based on the Quiz and game-show formats, Team-based grammar game formats from Watcyn-Jones (1981), which uses game-based pair and group work to make grammar practice dynamic and engaging."
+  source: 'Watcyn-Jones, P. (1981) Grammar Games and Activities. Penguin Books.'
+  tier: 2
+  reliability: 'B'
+  flagged: false
+description: A game-show format review activity. Teams compete to answer questions
+  across categories. Includes a final question round for dramatic finishes.
+differentiation:
+  extension: Include trick questions. Require teams to explain their answers.
+  support: Use simpler questions for lower points. Allow notes for 100-point questions.
+digitalReady: false
 duration: 30
-groupSize: small-groups
 energyRequired: high
-prepTime: medium
-materials:
-- Question cards by category and point value
-- Scoreboard
-- Timer
 format:
 - in-person
-requiresTech: false
-digitalReady: false
+grammar_focus:
+- clauses
+- verb_tenses
+groupSize: small-groups
 hasAudioComponent: false
 hasPrintableComponent: true
 hasSlidesComponent: false
 hasVisualComponent: false
-adaptableToTopic: true
+id: quiz-show
 instructions:
 - 'Divide into 3-4 teams. Draw a grid: 4 categories x 5 point values (100-500).'
 - Teams choose a category and point value. Read the question.
@@ -38,18 +44,51 @@ instructions:
 - 'Include special rounds: Double Points and Final Question (all teams wager points).'
 - The team with the most points wins.
 - Review any questions that stumped multiple teams.
-script:
-- '"To the Quiz Show! Team 1, choose a category and point value."'
-- Grammar for 300! Here is your question... 30 seconds. Go!
-setupInstructions: Create 20-30 questions in 4 categories with 5 difficulty levels.
-  Prepare a scoreboard.
-differentiation:
-  support: Use simpler questions for lower points. Allow notes for 100-point questions.
-  extension: Include trick questions. Require teams to explain their answers.
 keywords:
 - quiz show
 - game show
 - review
 - competition
 - points
-l1Enhanced: true
+l1_enhanced:
+- adaptation: 'Spanish speakers may confuse present perfect and past simple. Provide
+    explicit contrast: "he comido" (present perfect) vs "comí" (past simple).'
+  language: Spanish
+  priority: high
+- adaptation: Arabic has perfective/imperfective aspect rather than tense. Provide
+    timeline visuals to illustrate English tense system.
+  language: Arabic
+  priority: high
+- adaptation: Mandarin has no verb inflection for tense. Tense is indicated by time
+    words (yesterday, now) and aspect markers (le, zhe). Provide explicit verb conjugation
+    practice.
+  language: Mandarin
+  priority: high
+l1_specific: []
+materials:
+- Question cards by category and point value
+- Scoreboard
+- Timer
+name: Quiz Show
+prepTime: medium
+requiresTech: false
+script:
+- '"To the Quiz Show! Team 1, choose a category and point value."'
+- Grammar for 300! Here is your question... 30 seconds. Go!
+setupInstructions: Create 20-30 questions in 4 categories with 5 difficulty levels.
+  Prepare a scoreboard.
+skill_areas:
+- grammar
+- speaking
+targetStructures:
+- verb-tenses
+- vocabulary
+- clauses
+teaching_tips:
+- context: Question difficulty
+  tip: Write 100-point questions that test recognition (easy) and 500-point questions that require production or explanation (hard). This ensures all levels participate.
+- context: Steal mechanic
+  tip: After a wrong answer, give other teams 15 seconds to discuss before stealing. This keeps all teams engaged even when it is not their turn.
+sources:
+- Peregoy, S. & Boyle, O. (2023). Reading, Writing, and Learning in ESL, 8th ed. Pearson.
+- 'Watcyn-Jones, P. (1981) Grammar Games and Activities. Penguin Books.'

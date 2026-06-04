@@ -1,28 +1,99 @@
-grammar_point: apposition
-title: Appositives
+citations:
+- claim: 'Core meaning: An appositive is a noun phrase placed next to another noun
+    to rename, identify, or explain it'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
+    Reference and Possession'
+  tier: 4
+- claim: 'Discourse function: In conversation, this structure is used in everyday
+    communication.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
+    Reference and Possession'
+  tier: 4
+- claim: Common error '*My friend he is a doctor.*' for Portuguese, Spanish, Chinese
+    speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: Oshima & Hogue's Great Writing series demonstrates how this grammatical structure
+    functions in academic writing contexts. Their approach connects grammar instruction
+    to writing outcomes, showing learners how accurate use of this structure improves
+    paragraph cohesion, essay organization, and academic register.
+  source: Oshima, A. and Hogue, A. (2006). Introduction to Academic Writing, 3rd ed.
+    Pearson Longman.
+  tier: 2
+common_errors:
+- correction: My friend is a doctor.
+  error: '*My friend he is a doctor.*'
+  explanation: Do not repeat subject with pronoun in apposition.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
 description: 'Noun phrases placed next to another noun to rename or explain it: My
   friend, a doctor, helped me.'
+dialectal_variation: []
+discourse_notes:
+- note: Apposition structures provide additional identifying information about a noun
+    phrase. They are common in academic writing for defining and elaborating concepts.
+  affirmative:
+    example_generator:
+      contexts:
+      - non-restrictive appositives
+      - restrictive appositives
+      min_examples: 4
+    structure: 'Noun + comma + appositive + comma (non-restrictive): My friend, a
+      doctor, helped me. / No commas (restrictive): My friend John helped me.'
+  negative:
+    example_generator:
+      contexts:
+      - negative sentences
+      min_examples: 3
+    structure: 'Same structure with negation: My friend, a doctor, could not help.'
+  questions:
+    example_generator:
+      contexts:
+      - question formation
+      min_examples: 3
+    structure: 'Can appear in questions: Is your friend, a doctor, available?'
+grammar_point: apposition
 level: B2
 meaning:
-  core_meaning: An appositive is a noun phrase placed next to another noun to rename,
-    identify, or explain it. It provides additional information about the noun it
-    follows.
-  timeline: Timeless — describes a permanent or ongoing relationship.
-  contrast: Appositive = My friend, a doctor, helped me. (renames friend) vs Relative
-    clause = My friend who is a doctor helped me.
   ccqs:
-  - question: Does this noun phrase rename or explain another noun?
-    answer: Yes, it is an appositive.
+  - answer: Yes, it is an appositive.
     purpose: Tests whether the learner understands that appositives rename or identify
       a noun and that non-restrictive appositives require commas while restrictive
       ones do not.
-  - question: Is it set off by commas?
-    answer: Usually yes, if it is non-restrictive.
+    question: Does this noun phrase rename or explain another noun?
+  - answer: Usually yes, if it is non-restrictive.
     purpose: Tests whether the learner understands the comma rule for appositives.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
+    question: Is it set off by commas?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
     purpose: Tests whether the learner can identify common errors associated with
       apposition and explain why they are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: With commas (My friend, a doctor, helped me), a doctor is non-restrictive
+      -- it adds extra information about one specific friend (the listener already
+      knows which friend). Without commas (My friend a doctor helped me), it reads
+      as restrictive, trying to identify which friend among several, but this version
+      is ungrammatical.
+    purpose: Tests whether the learner understands the critical role of commas in
+      appositive constructions. The commas signal whether the appositive is extra
+      information (non-restrictive) or essential for identification (restrictive).
+      Omitting commas incorrectly can create ambiguous or ungrammatical sentences.
+    question: My friend, a doctor, helped me versus My friend a doctor helped me --
+      what difference do the commas make?
+  contrast: Appositive = My friend, a doctor, helped me. (renames friend) vs Relative
+    clause = My friend who is a doctor helped me.
+  core_meaning: An appositive is a noun phrase placed next to another noun to rename,
+    identify, or explain it. It provides additional information about the noun it
+    follows.
   example_generator:
     contexts:
     - describing people
@@ -33,38 +104,57 @@ meaning:
     - Appositives are more common in formal written English than in speech
     - Punctuation (commas) is essential for clarity
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Noun + comma + appositive + comma (non-restrictive): My friend, a
-      doctor, helped me. / No commas (restrictive): My friend John helped me.'
-    example_generator:
-      contexts:
-      - non-restrictive appositives
-      - restrictive appositives
-      min_examples: 4
-  negative:
-    structure: 'Same structure with negation: My friend, a doctor, could not help.'
-    example_generator:
-      contexts:
-      - negative sentences
-      min_examples: 3
-  questions:
-    structure: 'Can appear in questions: Is your friend, a doctor, available?'
-    example_generator:
-      contexts:
-      - question formation
-      min_examples: 3
+  timeline: Timeless — describes a permanent or ongoing relationship.
+phonetics:
+- example_generator:
+    contexts:
+    - punctuation
+    - reading aloud
+  l1_issue: Punctuation — many L1 speakers do not use commas correctly with appositives
+  note: Pause (comma) before and after non-restrictive appositives when speaking
+register_notes:
+- note: 'Biber et al. (2021) — Appositive noun phrases: more common in news and academic
+    prose than in conversation. Written registers pack more information through apposition.
+    Ch. 8.1.1.4'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 8.1.1.4
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
+    Reference and Possession'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Non-restrictive appositives — set off by commas, provide extra information
-  type: punctuation
-  examples:
+- examples:
   - London, the capital of England, is very crowded.
   - My brother, who lives in Paris, is visiting.
-- rule: Restrictive appositives — no commas, essential information
+  rule: Non-restrictive appositives — set off by commas, provide extra information
   type: punctuation
-  examples:
+- examples:
   - My friend John helped me. (specifies which friend)
   - The word happy is an adjective.
+  rule: Restrictive appositives — no commas, essential information
+  type: punctuation
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Students add appositives to simple sentences to provide more
+      information.
+    duration: 10
+    name: Appositive Addition
+  tips:
+  - Use real examples from news and academic texts
+  - Practice the comma rules explicitly
+  - Contrast restrictive vs non-restrictive
+  - 'Swan PEU: Apposition — ''My friend John is a doctor.'' / ''London, the capital
+    of England, is huge.'' The second noun phrase renames or describes the first.
+    Compare with relative clauses.'
+title: Appositives
 use:
 - context: Providing additional information
   description: Adding details about a noun
@@ -76,52 +166,3 @@ use:
   examples:
   - The study, conducted over three years, revealed significant findings.
   - Dr. Smith, the lead researcher, presented the results.
-phonetics:
-- note: Pause (comma) before and after non-restrictive appositives when speaking
-  example_generator:
-    contexts:
-    - punctuation
-    - reading aloud
-  l1_issue: Punctuation — many L1 speakers do not use commas correctly with appositives
-teaching:
-  methodology: Guided discovery
-  tips:
-  - Use real examples from news and academic texts
-  - Practice the comma rules explicitly
-  - Contrast restrictive vs non-restrictive
-  recommended_activities:
-  - name: Appositive Addition
-    duration: 10
-    adaptation_notes: Students add appositives to simple sentences to provide more
-      information.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*My friend he is a doctor.*'
-  correction: My friend is a doctor.
-  explanation: Do not repeat subject with pronoun in apposition.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

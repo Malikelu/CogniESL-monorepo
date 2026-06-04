@@ -1,41 +1,116 @@
-grammar_point: tenses_overview
-title: Tenses Overview (All 12 English Tenses)
+citations:
+- claim: 'Core meaning: Tenses indicate the time (past/present/future) and aspect
+    (simple/continuous/perfect) of an action o'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 4
+- claim: 'Discourse function: In conversation, this structure is used for everyday
+    communication and is among the most frequent patterns'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 4
+- claim: Common error '*I am going to school yesterday.*' for Portuguese, Spanish,
+    Chinese speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: CGEL analyzes English as having a two-tense system (present/past) with no
+    morphological future tense (Ch.3).
+  reliability: A
+  source: Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 3
+  tier: 2
+- claim: L1 transfer in tenses overview varies significantly across language backgrounds
+    — Swan & Smith document contrastive patterns for speakers of different L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents
+    how transfer effects are non-linear, determined by functional fit between L1 and
+    L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects
+    are non-linear — determined by functional fit between L1 and L2 systems rather
+    than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning.
+    Routledge.
+  tier: 2
+common_errors:
+- correction: I went to school yesterday.
+  error: '*I am going to school yesterday.*'
+  explanation: Past time requires past tense.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - French
+  - German
+  - Dutch
+  - Italian
+  - Russian
+  - Polish
+  - Arabic
+  - Turkish
+  - Japanese
+  - Korean
+  - Thai
+  - Farsi
+  - Hindi
+  - Swahili
+  - Malay
+  reliability: D
+- correction: ''
+  error: See Swan & Smith (2001) for L1-specific patterns
+  explanation: 'Swan & Smith (2001). All these L1s have tense systems that differ
+    categorically from English. Spanish: present for actions now (*Look it rains!).
+    French: no present perfect equivalent. Italian: tense differences. Portuguese:
+    tense differences. Russian: aspect instead of tense. Polish: tense differences.
+    Arabic: tense/aspect differences. Turkish: tense differences. Japanese: tense/aspect
+    differences. Chinese: tense lexical not morphological. Korean: tense differences.
+    Thai: tense differences (lexical particles).'
+  flagged: false
+  l1_groups:
+  - Spanish
+  - French
+  - Italian
+  - Portuguese
+  - Russian
+  - Polish
+  - Arabic
+  - Turkish
+  - Japanese
+  - Chinese
+  - Korean
+  - Thai
+  reliability: B
+  source: 'Swan & Smith (2001) Learner English: A Teacher''s Guide to Interference
+    and Other Problems, 2nd ed. Cambridge University Press.'
 description: A comprehensive summary of all 12 English verb tenses, including their
   form, core meaning, and common uses for quick teacher reference.
-level: A1-B2
-meaning:
-  core_meaning: Tenses indicate the time (past/present/future) and aspect (simple/continuous/perfect)
-    of an action or state.
-  timeline: 'Past (before now), Present (now), Future (after now); Aspects: Simple
-    (fact), Continuous (ongoing), Perfect (completed with present relevance).'
-  contrast: 'Present Simple (fact): "I work here."
-
-    Present Continuous (ongoing): "I am working now."
-
-    Present Perfect (completed with relevance): "I have worked here for 5 years."
-
-    '
-  ccqs:
-  - question: How many tenses does English have
-    answer: '12 main tenses: 4 present, 4 past, 4 future.'
-    purpose: Tests whether the learner understands a key concept of tenses_overview.
-      This is fundamental for correct use of this grammar point.
-  - question: Can we use a different structure here with the same meaning?
-    answer: No — changing the structure would change the meaning or make the sentence
-      ungrammatical.
-    purpose: Tests whether the learner understands that tenses overview is the only
-      appropriate structure for this meaning/context.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      tenses overview and explain why they are incorrect.
-  example_generator:
-    contexts:
-    - everyday situations
-    cultural_notes: []
-    min_examples: 5
+dialectal_variation: []
+discourse_notes:
+- note: In conversation, this structure is used for everyday communication and is
+    among the most frequent patterns in spoken English.
+- note: In academic writing, this structure appears in discussions of established
+    knowledge, methodology, and findings.
+- note: In news reports, this structure is used for reporting events and attributing
+    statements.
+- 'GB3 Ch.9: Tense serves discourse functions beyond time reference — historical present
+  (vividness), backgrounding (past for supporting info), frame-elaboration (past perfect
+  to simple past), interactive present perfect (topic-opening). Source: Celce-Murcia
+  & Larsen-Freeman (1999) GB3 Ch.9: Tense-Aspect-Modality in Discourse.'
 form:
   affirmative:
+    example_generator:
+      contexts:
+      - food and daily routines
+      min_examples: 4
     structure: 'Present Tenses:
 
       - Present Simple: Subject + Base Verb (s/es for 3rd sing): "I work."
@@ -69,56 +144,167 @@ form:
       been working."
 
       '
+  negative:
     example_generator:
       contexts:
       - food and daily routines
       min_examples: 4
-  negative:
     structure: 'Add ''not'' after auxiliary verb: "I don''t work." "I am not working."
       "I haven''t worked."
 
       '
-    example_generator:
-      contexts:
-      - food and daily routines
-      min_examples: 4
   questions:
-    structure: 'Auxiliary + Subject + Main Verb: "Do you work?" "Are you working?"
-      "Have you worked?"
-
-      '
     example_generator:
       contexts:
       - work and professional life
       min_examples: 4
+    structure: 'Auxiliary + Subject + Main Verb: "Do you work?" "Are you working?"
+      "Have you worked?"
+
+      '
+grammar_point: tenses_overview
+level: A1-B2
+meaning:
+  ccqs:
+  - answer: '12 main tenses: 4 present, 4 past, 4 future.'
+    purpose: Tests whether the learner understands a key concept of tenses_overview.
+      This is fundamental for correct use of this grammar point.
+    question: How many tenses does English have
+  - answer: No — changing the structure would change the meaning or make the sentence
+      ungrammatical.
+    purpose: Tests whether the learner understands that tenses overview is the only
+      appropriate structure for this meaning/context.
+    question: Can we use a different structure here with the same meaning?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with
+      tenses overview and explain why they are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: '''I have lived here since 2010.'' For situations that started in the
+      past and continue now, use present perfect.'
+    purpose: Tests whether the learner chooses the correct tense for duration from
+      past to present (Swan PEU 2016, entries 47-50).
+    question: Which is correct? *'I am living here since 2010' or 'I have lived here
+      since 2010'?
+  contrast: 'Present Simple (fact): "I work here."
+
+    Present Continuous (ongoing): "I am working now."
+
+    Present Perfect (completed with relevance): "I have worked here for 5 years."
+
+    '
+  core_meaning: Tenses indicate the time (past/present/future) and aspect (simple/continuous/perfect)
+    of an action or state.
+  example_generator:
+    contexts:
+    - everyday situations
+    cultural_notes: []
+    min_examples: 5
+  timeline: 'Past (before now), Present (now), Future (after now); Aspects: Simple
+    (fact), Continuous (ongoing), Perfect (completed with present relevance).'
+phonetics:
+- example_generator:
+    contexts:
+    - all tenses
+  l1_issue: Many L1 speakers struggle with the variety of English tenses. Use timelines
+    to visualize the differences.
+  note: Each tense has distinct pronunciation patterns. Teach the pronunciation of
+    each tense separately, focusing on the auxiliary verbs and their contractions.
+register_notes:
+- note: 'Biber et al. (2021) — Tense distribution across all registers: conversation
+    and academic prose strongly prefer present tense; fiction strongly prefers past
+    tense (narrative); news has roughly equal present and past. ~85% of finite verb
+    phrases are tensed; ~10-15% have modals. Ch. 6.2.2'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 6.2.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7:
+    The Tense-Aspect System-7.5'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: 'Present tenses: simple (I work), continuous (I am working), perfect (I have
-    worked), perfect continuous (I have been working)'
-  type: grammatical
-  examples:
+- examples:
   - I work every day
   - I am working now
   - I have worked here for 5 years
   - I have been working all day
-- rule: 'Past tenses: simple (I worked), continuous (I was working), perfect (I had
-    worked), perfect continuous (I had been working)'
+  rule: 'Present tenses: simple (I work), continuous (I am working), perfect (I have
+    worked), perfect continuous (I have been working)'
   type: grammatical
-  examples:
+- examples:
   - I worked yesterday
   - I was working when he called
   - I had worked there for 5 years
   - I had been working all day
-- rule: 'Future tenses: simple (I will work), continuous (I will be working), perfect
-    (I will have worked), perfect continuous (I will have been working)'
+  rule: 'Past tenses: simple (I worked), continuous (I was working), perfect (I had
+    worked), perfect continuous (I had been working)'
   type: grammatical
-  examples:
+- examples:
   - I will work tomorrow
   - I will be working at 8pm
   - I will have worked here for 5 years by then
   - I will have been working all day
+  rule: 'Future tenses: simple (I will work), continuous (I will be working), perfect
+    (I will have worked), perfect continuous (I will have been working)'
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Students draw a timeline and place all 12 tenses on it. Visual
+      support helps understanding.
+    duration: 15
+    name: Tense Timeline
+  - adaptation_notes: Show sentences. Students identify the tense and explain why
+      it is used.
+    duration: 10
+    name: Tense Identification
+  tips:
+  - 'GB3 Ch. 9: Bull Framework — three axes of orientation (present, past, future),
+    each with before (perfect) and after times. Teach tenses one axis at a time, not
+    one form at a time. Present axis: simple present (now) → present perfect (before)
+    → be going to (after). Past axis: simple past (then) → past perfect (before then).
+    Future axis: will (future) → future perfect (before future). Source: Celce-Murcia
+    & Larsen-Freeman (2015) GB3 3rd ed. Ch. 9 §9.1.'
+  - 'GB3 Ch. 9: Present perfect discourse functions — framing habitual narratives
+    (present perfect → simple present) and transitioning to past narratives (present
+    perfect → simple past). Present perfect is often a discourse opener, not just
+    a tense choice. Source: GB3 3rd ed. Ch. 9 §9.3 (citing Suh 1992).'
+  - 'Week 1: Present Simple vs Present Continuous.'
+  - 'Week 2: Past Simple vs Present Perfect.'
+  - 'Week 3: Future forms (will vs going to).'
+  - 'Use timeline drawings: Visualize past/present/future on a line to show tense
+    relationships.'
+  - 'Swan systematic tense coverage: Present (30-34), Future (35-43), Past and Perfect
+    (44-56). Each entry focuses on one specific tense/aspect difficulty. Essential
+    reference for comprehensive tense teaching.'
+  - 'GB3 Ch. 7: The tense-aspect system has 12 combinations but only 5 building blocks
+    — learn 3 tenses (simple forms) + 2 aspects (perfect, progressive). High-frequency
+    ''northwest'' (present progressive, simple present, simple past) should get more
+    attention than low-frequency ''southeast'' (past perfect progressive, future perfect
+    progressive). Source: Celce-Murcia & Larsen-Freeman (2015) GB3 Ch. 7 §7.1.'
+  - 'GB3 Ch. 7: Core meaning of tenses — Present = immediate factuality (not just
+    ''now''). Past = remoteness (in time, reality, OR social distance — explaining
+    hypotheticals, politeness, reported speech). Future with will = strong prediction.
+    These invariant meanings explain ALL uses of each tense. Source: Celce-Murcia
+    & Larsen-Freeman (2015) GB3 Ch. 7 §7.2.'
+  - 'GB3 Ch. 7: Form-Meaning-Use framework — every grammar teaching should address
+    all three: Form (morphology+syntax), Meaning (semantic contribution), Use (when/why
+    speakers choose this over alternatives). The three are interrelated — changing
+    one changes others. Source: Celce-Murcia & Larsen-Freeman (2015) GB3 Ch. 1 §1.5.'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 3: CGEL (Ch.3)
+    analyzes English as having a TWO-TENSE system: present and past. There is NO morphological
+    future tense in English — ''will'' is a modal verb, not a tense marker. The perfect
+    and progressive are ASPECTS, not tenses. This means English has: present tense
+    (simple/progressive/perfect/perfect-progressive) and past tense (simple/progressive/perfect/perfect-progressive),
+    plus modal combinations. CGEL''s analysis is standard in modern linguistics.'
+title: Tenses Overview (All 12 English Tenses)
 use:
-- name: Present Tenses
-  description: 'Present Simple: habits, facts; Present Continuous: ongoing actions;
+- description: 'Present Simple: habits, facts; Present Continuous: ongoing actions;
     Present Perfect: past actions with present relevance; Present Perfect Continuous:
     ongoing actions with duration.'
   examples:
@@ -126,76 +312,20 @@ use:
   - I am drinking coffee. (now)
   - I have drunk coffee. (relevance)
   key_point: Present tenses refer to now or general time.
-- name: Past Tenses
-  description: 'Past Simple: completed past actions; Past Continuous: ongoing past
+  name: Present Tenses
+- description: 'Past Simple: completed past actions; Past Continuous: ongoing past
     actions; Past Perfect: past action before another past action; Past Perfect Continuous:
     ongoing past action before another past action.'
   examples:
   - I worked yesterday. (completed)
   - I was working when he called. (ongoing)
   key_point: Past tenses refer to time before now.
-- name: Future Tenses
-  description: 'Future Simple: predictions, promises; Future Continuous: ongoing future
+  name: Past Tenses
+- description: 'Future Simple: predictions, promises; Future Continuous: ongoing future
     actions; Future Perfect: completed future actions; Future Perfect Continuous:
     ongoing future actions with duration.'
   examples:
   - I will work tomorrow. (prediction)
   - I will be working at 5 PM. (ongoing)
   key_point: Future tenses refer to time after now.
-phonetics:
-- note: Each tense has distinct pronunciation patterns. Teach the pronunciation of
-    each tense separately, focusing on the auxiliary verbs and their contractions.
-  example_generator:
-    contexts:
-    - all tenses
-  l1_issue: Many L1 speakers struggle with the variety of English tenses. Use timelines
-    to visualize the differences.
-teaching:
-  methodology: PPP
-  tips:
-  - 'Week 1: Present Simple vs Present Continuous.'
-  - 'Week 2: Past Simple vs Present Perfect.'
-  - 'Week 3: Future forms (will vs going to).'
-  - 'Use timeline drawings: Visualize past/present/future on a line to show tense
-    relationships.'
-  recommended_activities:
-  - name: Tense Timeline
-    duration: 15
-    adaptation_notes: Students draw a timeline and place all 12 tenses on it. Visual
-      support helps understanding.
-  - name: Tense Identification
-    duration: 10
-    adaptation_notes: Show sentences. Students identify the tense and explain why
-      it is used.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I am going to school yesterday.*'
-  correction: I went to school yesterday.
-  explanation: Past time requires past tense.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used for everyday communication and is
-    among the most frequent patterns in spoken English.
-- note: In academic writing, this structure appears in discussions of established
-    knowledge, methodology, and findings.
-- note: In news reports, this structure is used for reporting events and attributing
-    statements.
+  name: Future Tenses

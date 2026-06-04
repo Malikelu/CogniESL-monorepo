@@ -1,12 +1,151 @@
-grammar_point: relative_pronouns
-title: Relative Pronouns (Who/Which/That/Whose/Where/When)
+citations:
+- claim: 'Core meaning: Connects a relative clause to a noun to add essential (defining)
+    or extra (non-defining) information'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
+    Relative Clauses'
+  tier: 1
+- claim: 'Register distribution: Relative pronouns vary by register: ''who/which/that''
+    (all registers), ''whom'' (formal).'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
+    Relative Clauses'
+  tier: 1
+- claim: 'Discourse function: In academic writing, relative pronouns are essential
+    for precision: ''The participants who completed '
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
+    Relative Clauses'
+  tier: 1
+- claim: 'Common error ''Using ''''which'''' for people: *''''The man which called
+    is my fr'' for Portuguese, Spanish, French speakers'
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 13: Relative
+    clauses'
+  tier: 1
+- claim: Understanding relative pronouns is essential for academic writing — Oshima
+    & Hogue emphasize how writers use these structures to create clear, coherent prose
+  flagged: false
+  reliability: B
+  source: 'Oshima and Hogue (2006) Introduction to Academic Writing, 3rd ed. Pearson.
+    Ch. 5: Complex Sentences in Academic Writing'
+  tier: 2
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents
+    how transfer effects are non-linear, determined by functional fit between L1 and
+    L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects
+    are non-linear — determined by functional fit between L1 and L2 systems rather
+    than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning.
+    Routledge.
+  tier: 2
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for
+    L1-specific error patterns in English. Their learner English framework documents
+    how each L1 group produces characteristic errors in this grammatical domain, enabling
+    teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+    and Other Problems, 2nd ed. Cambridge University Press.'
+  tier: 2
+common_errors:
+- correction: The man who called is my friend. / The man that called is my friend.
+  error: 'Using ''''which'''' for people: *''''The man which called is my friend.'''''
+  explanation: '''''Which'''' is only used for things and animals, not people. For
+    people, use ''''who'''' (formal) or ''''that'''' (informal, defining clauses only).
+    Using ''''which'''' for people is grammatically incorrect in standard English.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+- correction: My car, which I bought last year, broke down.
+  error: 'Using ''''that'''' in non-defining clauses: *''''My car, that I bought last
+    year, broke down.'''''
+  explanation: '''''That'''' cannot be used in non-defining (non-essential) relative
+    clauses. Non-defining clauses require ''''who'''' or ''''which'''' and are set
+    off by commas. ''''That'''' is restricted to defining clauses without commas.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Japanese
+  reliability: D
+- correction: The man who called yesterday is my friend.
+  error: 'Omitting the relative pronoun when it is the subject: *''''The man called
+    yesterday is my friend'''' (when ''''who'''' is the subject of ''''called'''').'
+  explanation: When the relative pronoun is the SUBJECT of the relative clause, it
+    cannot be omitted. Pronouns can only be dropped when they are the OBJECT of the
+    clause (''The man I saw'' — ''I'' is the subject, ''man/whom'' is the object).
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Korean
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Relative clauses'
 description: Words that connect a relative clause to a noun, giving more information
   about the noun (person, thing, place, time, possession).
+dialectal_variation: []
+discourse_notes:
+- note: 'In academic writing, relative pronouns are essential for precision: ''The
+    participants who completed the survey...'' (defining) vs ''The participants, who
+    were all volunteers...'' (non-defining).'
+- note: In conversation, defining relative clauses are more common.
+- note: In formal writing, 'whom' is used for object relative clauses.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - education and school
+      - family and relationships
+      - health and wellbeing
+      min_examples: 4
+    structure: "Defining relative clauses (essential info, no commas): Noun + relative\
+      \ pronoun + clause\nNon-defining relative clauses (extra info, commas): Noun\
+      \ + , + relative pronoun + clause + ,\nPronoun rules:\n  Who/whom = People (who\
+      \ = subject, whom = object, formal)\n  Which = Things\n  That = People or things\
+      \ (defining clauses only)\n  Whose = Possession (people or things)\n  Where\
+      \ = Places\n  When = Times\n"
+  negative:
+    example_generator:
+      contexts:
+      - entertainment and media
+      - shopping and commerce
+      min_examples: 4
+    structure: Noun + relative pronoun + negative clause
+  questions:
+    example_generator:
+      contexts:
+      - social interactions
+      min_examples: 4
+    structure: Same as affirmative, with question mark if the whole sentence is a
+      question
+grammar_point: relative_pronouns
 level: B1
 meaning:
-  core_meaning: Connects a relative clause to a noun to add essential (defining) or
-    extra (non-defining) information about the noun.
-  timeline: Verb tense in the relative clause matches the time of the action described.
+  ccqs:
+  - answer: '''Who'' (people), ''which'' (things), ''that'' (people or things).'
+    purpose: Tests whether the learner can choose the correct relative pronoun based
+      on the antecedent (person vs thing).
+    question: Does this pronoun refer to a person or a thing?
+  - answer: Defining (essential information, no commas) or non-defining (extra information,
+      with commas).
+    purpose: Tests whether the learner understands the difference between defining
+      and non-defining relative clauses and the comma rules.
+    question: Is this a defining or non-defining relative clause?
+  - answer: Only in defining clauses when the pronoun is the object.
+    purpose: Tests whether the learner understands when the relative pronoun can be
+      omitted (object position in defining clauses).
+    question: Can we omit the relative pronoun?
+  - answer: Learners often make errors with this structure that change the intended
+      meaning.
+    purpose: Tests whether the learner can identify and correct a common error associated
+      with relative pronouns. Recognizing typical mistakes helps learners self-edit
+      and produce more accurate English.
+    question: Can you identify and correct the error in this sentence related to this
+      grammar point?
   contrast: 'Defining: ''The book that I bought is good.'' (essential: which book?
     The one I bought)
 
@@ -17,173 +156,129 @@ meaning:
     and non-defining.
 
     '
-  ccqs:
-  - question: Does this pronoun refer to a person or a thing?
-    answer: '''Who'' (people), ''which'' (things), ''that'' (people or things).'
-    purpose: Tests whether the learner can choose the correct relative pronoun based
-      on the antecedent (person vs thing).
-  - question: Is this a defining or non-defining relative clause?
-    answer: Defining (essential information, no commas) or non-defining (extra information,
-      with commas).
-    purpose: Tests whether the learner understands the difference between defining
-      and non-defining relative clauses and the comma rules.
-  - question: Can we omit the relative pronoun?
-    answer: Only in defining clauses when the pronoun is the object.
-    purpose: Tests whether the learner understands when the relative pronoun can be
-      omitted (object position in defining clauses).
+  core_meaning: Connects a relative clause to a noun to add essential (defining) or
+    extra (non-defining) information about the noun.
   example_generator:
     contexts:
     - everyday situations
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: "Defining relative clauses (essential info, no commas): Noun + relative\
-      \ pronoun + clause\nNon-defining relative clauses (extra info, commas): Noun\
-      \ + , + relative pronoun + clause + ,\nPronoun rules:\n  Who/whom = People (who\
-      \ = subject, whom = object, formal)\n  Which = Things\n  That = People or things\
-      \ (defining clauses only)\n  Whose = Possession (people or things)\n  Where\
-      \ = Places\n  When = Times\n"
-    example_generator:
-      contexts:
-      - education and school
-      - family and relationships
-      - health and wellbeing
-      min_examples: 4
-  negative:
-    structure: Noun + relative pronoun + negative clause
-    example_generator:
-      contexts:
-      - entertainment and media
-      - shopping and commerce
-      min_examples: 4
-  questions:
-    structure: Same as affirmative, with question mark if the whole sentence is a
-      question
-    example_generator:
-      contexts:
-      - social interactions
-      min_examples: 4
+  timeline: Verb tense in the relative clause matches the time of the action described.
+phonetics:
+- example_generator:
+    contexts:
+    - relative pronoun stress
+  l1_issue: Portuguese and Spanish speakers often omit relative pronouns. Teach that
+    English requires them.
+  note: 'Relative pronouns are usually unstressed: ''The man who called'' → /ðə mæn
+    huː kɔːld/. The stress falls on the main clause.'
+register_notes:
+- note: 'Relative pronouns vary by register: ''who/which/that'' (all registers), ''whom''
+    (formal).'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In formal writing, 'whom' is used for object relative clauses.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In conversation, 'who' often replaces 'whom'.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (1999) — Relative pronoun choice (who/which/that/zero): register
+    distribution varies. Conversation uses more zero relatives and ''that''; academic
+    prose uses more ''which'' and ''who''. Ch. 8.6'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 8.6
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch.
+    13: Relative clauses'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
+    Relative Clauses'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 12: Relative Clauses'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 12: Relative clauses'
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(relative pronouns: who,
+    which, that, whose, whom)'
 sub_rules:
-- rule: Who for people, which for things, that for both (defining only)
-  type: grammatical
-  examples:
+- examples:
   - The man who called is my friend
   - The book which I read was interesting
   - The man that called is my friend
-- rule: Whose for possession (people and things)
+  rule: Who for people, which for things, that for both (defining only)
   type: grammatical
-  examples:
+- examples:
   - The woman whose car was stolen called the police
   - The house whose roof was damaged needs repairs
-- rule: Where for places, when for times
+  rule: Whose for possession (people and things)
   type: grammatical
-  examples:
+- examples:
   - The restaurant where we had dinner was excellent
   - I remember the day when we first met
-- rule: Relative pronoun can be omitted when it is the object of the clause
+  rule: Where for places, when for times
   type: grammatical
-  examples:
+- examples:
   - The book (that) I read was interesting
   - The man (who) I met was friendly
+  rule: Relative pronoun can be omitted when it is the object of the clause
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students choose the correct relative pronoun: ''The person
+      ___ called'' (who/that), ''The book ___ I read'' (which/that).'
+    duration: 10
+    name: Who Which or That
+  - adaptation_notes: 'Students combine two simple sentences with a relative pronoun:
+      ''The man is my friend. He called me.'' → ''The man who called me is my friend.'''
+    duration: 15
+    name: Sentence Combining
+  tips:
+  - 'Swan PEU: ''Whose'' can refer to both people and things (''The book whose cover
+    is torn''). For things, alternatives include ''of which'' (''The book the cover
+    of which is torn'') but these are formal. In conversation, ''that'' with a possessive
+    (non-standard) or rephrasing is more natural.'
+  - Start with defining clauses (essential info) before non-defining (extra info).
+  - Contrast 'that' (defining only) and 'which' (both) early.
+  - 'Practice omitting the pronoun in defining object clauses: ''The man I saw'' instead
+    of ''who I saw''.'
+  - 'Swan PEU: Who vs. which — ''who'' for people, ''which'' for things. ''Whose''
+    for possession with both: ''the man whose car was stolen,'' ''the house whose
+    roof was damaged.'' ''That'' can replace ''who'' or ''which'' in defining clauses.'
+  - 'Swan PEU: Omitting the relative pronoun — possible when the pronoun is the object:
+    ''The man (that) I saw.'' NOT when the pronoun is the subject: ''The man who called''
+    (cannot omit ''who'').'
+teaching_tips:
+- source: 'Celce-Murcia & Larsen-Freeman (1999) The Grammar Book: An ESL/EFL Teacher''s
+    Course, 2nd ed. Heinle & Heinle.'
+  tip: 'RELATIVE PRONOUN CHOICE: (a) THAT cannot follow a fronted preposition (*''about
+    that you asked'' → must be WHOM). (b) Subject relativizers CANNOT be deleted (*''The
+    teacher who left was unhappy'' — deleting ''who'' is ungrammatical). (c) Whose
+    requires the head noun to front with it (''the student whose birthday we''ll celebrate''
+    — *''whose we''ll celebrate birthday'' is wrong). Note: Formal WHOM vs. informal
+    WHO varies by register. Source: Ch.28 p.436.'
+title: Relative Pronouns (Who/Which/That/Whose/Where/When)
 use:
-- name: Defining Relative Clauses
-  description: Give essential information to identify the noun (no commas, 'that'
+- description: Give essential information to identify the noun (no commas, 'that'
     allowed).
   examples:
   - The woman who called you is my boss.
   - The car that I rented broke down.
   key_point: 'Omit the relative pronoun if it is the object: ''The car I rented broke
     down'' (correct).'
-- name: Non-Defining Relative Clauses
-  description: Give extra, non-essential information (commas required, no 'that').
+  name: Defining Relative Clauses
+- description: Give extra, non-essential information (commas required, no 'that').
   examples:
   - My car, which I rented yesterday, broke down.
   - Paris, where I lived for 2 years, is beautiful.
   key_point: Cannot omit the relative pronoun in non-defining clauses.
-- name: Possession, Place, Time
-  description: Use whose (possession), where (place), when (time) to connect clauses.
+  name: Non-Defining Relative Clauses
+- description: Use whose (possession), where (place), when (time) to connect clauses.
   examples:
   - The house where I grew up is for sale.
   - The day when we met was sunny.
   key_point: '''Where'' and ''when'' replace ''in which''/''on which'' in casual speech.'
-phonetics:
-- note: 'Relative pronouns are usually unstressed: ''The man who called'' → /ðə mæn
-    huː kɔːld/. The stress falls on the main clause.'
-  example_generator:
-    contexts:
-    - relative pronoun stress
-  l1_issue: Portuguese and Spanish speakers often omit relative pronouns. Teach that
-    English requires them.
-teaching:
-  methodology: PPP
-  tips:
-  - Start with defining clauses (essential info) before non-defining (extra info).
-  - Contrast 'that' (defining only) and 'which' (both) early.
-  - 'Practice omitting the pronoun in defining object clauses: ''The man I saw'' instead
-    of ''who I saw''.'
-  recommended_activities:
-  - name: Who Which or That
-    duration: 10
-    adaptation_notes: 'Students choose the correct relative pronoun: ''The person
-      ___ called'' (who/that), ''The book ___ I read'' (which/that).'
-  - name: Sentence Combining
-    duration: 15
-    adaptation_notes: 'Students combine two simple sentences with a relative pronoun:
-      ''The man is my friend. He called me.'' → ''The man who called me is my friend.'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
-    Relative Clauses, 11.1-11.4'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 12: Relative Clauses, 12.1-12.4'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 470-480 (relative
-    pronouns: who, which, that, whose, whom)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    13: Relative clauses, 13.1-13.3'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 12: Relative clauses'
-common_errors:
-- error: 'Using ''''which'''' for people: *''''The man which called is my friend.'''''
-  correction: The man who called is my friend. / The man that called is my friend.
-  explanation: '''''Which'''' is only used for things and animals, not people. For
-    people, use ''''who'''' (formal) or ''''that'''' (informal, defining clauses only).
-    Using ''''which'''' for people is grammatically incorrect in standard English.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: 'Using ''''that'''' in non-defining clauses: *''''My car, that I bought last
-    year, broke down.'''''
-  correction: My car, which I bought last year, broke down.
-  explanation: '''''That'''' cannot be used in non-defining (non-essential) relative
-    clauses. Non-defining clauses require ''''who'''' or ''''which'''' and are set
-    off by commas. ''''That'''' is restricted to defining clauses without commas.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-  - Japanese
-- error: 'Omitting the relative pronoun when it is the subject: *''''The man called
-    yesterday is my friend'''' (when ''''who'''' is the subject of ''''called'''').'
-  correction: The man who called yesterday is my friend.
-  explanation: When the relative pronoun is the SUBJECT of the relative clause, it
-    cannot be omitted. Pronouns can only be dropped when they are the OBJECT of the
-    clause (''The man I saw'' — ''I'' is the subject, ''man/whom'' is the object).
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-  - Korean
-register_notes:
-- note: 'Relative pronouns vary by register: ''who/which/that'' (all registers), ''whom''
-    (formal).'
-- note: In formal writing, 'whom' is used for object relative clauses.
-- note: In conversation, 'who' often replaces 'whom'.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: 'In academic writing, relative pronouns are essential for precision: ''The
-    participants who completed the survey...'' (defining) vs ''The participants, who
-    were all volunteers...'' (non-defining).'
-- note: In conversation, defining relative clauses are more common.
-- note: In formal writing, 'whom' is used for object relative clauses.
+  name: Possession, Place, Time

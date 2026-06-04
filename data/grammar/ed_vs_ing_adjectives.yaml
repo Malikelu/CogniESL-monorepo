@@ -1,169 +1,191 @@
+citations:
+- claim: 'Core meaning: -ed = feeling experienced by a person (I am bored = I feel boredom)'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 20: Adjectives'
+  tier: 4
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 20: Adjectives'
+  tier: 4
+- claim: Common error '*I was boring at the meeting.*' for Portuguese, Spanish, Chinese speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+common_errors:
+- correction: I was bored at the meeting.
+  error: '*I was boring at the meeting.*'
+  explanation: -ed for feelings, -ing for cause.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+- correction: The movie was boring.
+  error: 'Using -ed adjective for things: *''The movie was bored.'''
+  explanation: 'Swan PEU: -ed adjectives describe how people FEEL (I''m bored, she''s tired). -ing adjectives describe the
+    THING that causes the feeling (The movie is boring, The news is exciting).'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: I am bored.
+  error: 'Using -ing adjective for people: *''I am boring.'' (meaning: I feel bored)'
+  explanation: 'Swan PEU: ''I am boring'' = I cause boredom in others. ''I am bored'' = I feel boredom. This distinction is
+    crucial.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+description: Adjectives ending in -ed (feelings of a person) vs -ing (characteristic of a thing/person that causes the feeling).
+  Essential for expressing emotions correctly.
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - entertainment and media
+      min_examples: 4
+    structure: '-ed adjectives: Describe how a person feels (passive, result of an action)
+
+      "bored, excited, interested, tired, annoyed, surprised"
+
+      -ing adjectives: Describe the thing/person that causes the feeling (active, causing the feeling)
+
+      "boring, exciting, interesting, tiring, annoying, surprising"
+
+      '
+  negative:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: '"I''m not bored." "The movie isn''t boring." "We aren''t excited."
+
+      '
+  questions:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: '"Are you bored?" "Is the movie boring?" "How do you feel?"
+
+      '
 grammar_point: ed_vs_ing_adjectives
-title: -ed vs -ing Adjectives (Participial Adjectives)
-description: Adjectives ending in -ed (feelings of a person) vs -ing (characteristic
-  of a thing/person that causes the feeling). Essential for expressing emotions correctly.
 level: B1
 meaning:
-  core_meaning: -ed = feeling experienced by a person (I am bored = I feel boredom).
-    -ing = thing/person causing the feeling (The movie is boring = causes boredom).
-  timeline: N/A (Not tense-based; these are adjective forms, not verb tenses. Can
-    be past, present, or future.)
-  contrast: '''-ED'' = Person''s feeling: "I''m bored." (I feel...), "He''s tired."
-    (He feels...)
+  ccqs:
+  - answer: Causing it — 'I am boring' means I make other people feel bored.
+    purpose: Tests whether the learner understands the fundamental -ed/-ing distinction. '-ing' adjectives (boring, exciting,
+      tiring) describe what causes the feeling. '-ed' adjectives (bored, excited, tired) describe how someone feels. 'I am
+      boring' = I cause boredom in others.
+    question: '''I am boring.'' Am I feeling boredom or causing it?'
+  - answer: No — films don't feel emotions. It should be 'The film was exciting.'
+    purpose: Tests whether the learner can apply the -ed/-ing rule to inanimate subjects. Only beings that can feel emotions
+      take '-ed' adjectives. Inanimate things (films, books, songs) cause feelings and take '-ing' adjectives.
+    question: Is 'The film was excited' correct?
+  - answer: She feels interest — 'interested' describes her feeling.
+    purpose: Tests whether the learner understands that prepositional phrases with '-ed' adjectives (interested in, bored
+      by, excited about) describe the experiencer's feeling. 'Interested in music' = she feels interest toward music.
+    question: '''She is interested in music.'' Does she feel interest or cause it?'
+  - answer: '''I am bored in this class.'' ''-ed'' adjectives describe how you FEEL. ''-ing'' adjectives describe the THING.'
+    purpose: Tests whether the learner distinguishes -ed (feeling) from -ing (causing the feeling) adjectives (Swan PEU 2016,
+      entry 193.4).
+    question: Which is correct? *'I am boring in this class' or 'I am bored in this class'?
+  contrast: '''-ED'' = Person''s feeling: "I''m bored." (I feel...), "He''s tired." (He feels...)
 
-    ''-ING'' = Causes feeling: "It''s boring." (It causes...), "He''s tiring." (He
-    causes tiredness)
+    ''-ING'' = Causes feeling: "It''s boring." (It causes...), "He''s tiring." (He causes tiredness)
 
     ''SAME ROOT'' = Related meaning: "bore → bored/boring", "excite → excited/exciting"
 
     '
-  ccqs:
-  - question: '''I am boring.'' Am I feeling boredom or causing it?'
-    answer: Causing it — 'I am boring' means I make other people feel bored.
-    purpose: Tests whether the learner understands the fundamental -ed/-ing distinction.
-      '-ing' adjectives (boring, exciting, tiring) describe what causes the feeling.
-      '-ed' adjectives (bored, excited, tired) describe how someone feels. 'I am boring'
-      = I cause boredom in others.
-  - question: Is 'The film was excited' correct?
-    answer: No — films don't feel emotions. It should be 'The film was exciting.'
-    purpose: Tests whether the learner can apply the -ed/-ing rule to inanimate subjects.
-      Only beings that can feel emotions take '-ed' adjectives. Inanimate things (films,
-      books, songs) cause feelings and take '-ing' adjectives.
-  - question: '''She is interested in music.'' Does she feel interest or cause it?'
-    answer: She feels interest — 'interested' describes her feeling.
-    purpose: Tests whether the learner understands that prepositional phrases with
-      '-ed' adjectives (interested in, bored by, excited about) describe the experiencer's
-      feeling. 'Interested in music' = she feels interest toward music.
+  core_meaning: -ed = feeling experienced by a person (I am bored = I feel boredom). -ing = thing/person causing the feeling
+    (The movie is boring = causes boredom).
   example_generator:
     contexts:
     - everyday situations
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: '-ed adjectives: Describe how a person feels (passive, result of an
-      action)
-
-      "bored, excited, interested, tired, annoyed, surprised"
-
-      -ing adjectives: Describe the thing/person that causes the feeling (active,
-      causing the feeling)
-
-      "boring, exciting, interesting, tiring, annoying, surprising"
-
-      '
-    example_generator:
-      contexts:
-      - entertainment and media
-      min_examples: 4
-  negative:
-    structure: '"I''m not bored." "The movie isn''t boring." "We aren''t excited."
-
-      '
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
-  questions:
-    structure: '"Are you bored?" "Is the movie boring?" "How do you feel?"
-
-      '
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
+  timeline: N/A (Not tense-based; these are adjective forms, not verb tenses. Can be past, present, or future.)
+phonetics:
+- example_generator:
+  - contexts: null
+  - ed adjective pronunciation
+  l1_issue: Learners may not distinguish between the three pronunciations of the -ed ending. Drill all three patterns explicitly.
+  note: 'The -ed ending in adjectives has three pronunciations: /t/ after voiceless sounds, /d/ after voiced sounds, and /ɪd/
+    after /t/ or /d/ sounds.'
+register_notes:
+- note: 'Biber et al. (2021) — Participial adjectives (-ed/-ing): attributive vs. predicative distribution varies by register.
+    Academic prose uses more participial premodifiers. Ch. 7.9.1'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 7.9.1
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Ed adjectives describe how someone feels (the experiencer). Ing adjectives
-    describe the thing or person that causes the feeling (the cause)
-  type: semantic
-  examples:
+- examples:
   - I am bored (I feel boredom)
   - The lesson is boring (the lesson causes boredom)
   - She is interested (she feels interest)
   - The topic is interesting (the topic causes interest)
-- rule: 'Common pairs: bored/boring, interested/interesting, excited/exciting, surprised/surprising,
-    tired/tiring, amazed/amazing, confused/confusing, embarrassed/embarrassing'
-  type: lexical
-  examples:
+  rule: Ed adjectives describe how someone feels (the experiencer). Ing adjectives describe the thing or person that causes
+    the feeling (the cause)
+  type: semantic
+- examples:
   - I was surprised by the news. The news was surprising.
   - She was embarrassed by her mistake. The situation was embarrassing.
+  rule: 'Common pairs: bored/boring, interested/interesting, excited/exciting, surprised/surprising, tired/tiring, amazed/amazing,
+    confused/confusing, embarrassed/embarrassing'
+  type: lexical
+teaching:
+  methodology: Guided discovery with contextualised examples. Present contrasting pairs (bored/boring, excited/exciting) in
+    authentic contexts, then elicit the rule from students through concept-checking. Follow with controlled practice (gap-fills,
+    sentence transformation) and freer production (personalised speaking activities).
+  recommended_activities:
+  - adaptation_notes: 'Students choose the correct form: ''I was very (bored/boring) in class.'' ''The movie was (excited/exciting).'''
+    duration: 10
+    name: Ed or Ing
+  - adaptation_notes: Students describe their feelings about different topics using ed adjectives, then describe the topics
+      using ing adjectives.
+    duration: 15
+    name: Describe Your Feelings
+  tips:
+  - 'Use the formula: ''I''m -ed'' (person) vs ''It''s -ing'' (thing).'
+  - 'Practice with surveys: ''What do you find interesting?'' ''What bores you?'''
+  - 'Drill common pairs: bore/bored/boring, excite/excited/exciting, interest/interested/interesting.'
+  - 'Act out emotions: Teacher acts bored → students say ''You''re bored'' and ''The class is boring''.'
+  - 'Swan PEU: -ed = feeling (I''m interested), -ing = cause (The book is interested → WRONG. The book is interesting).'
+  - 'Swan PEU: Common pairs: boring/bored, exciting/excited, interesting/interested, surprising/surprised, frightening/frightened,
+    disappointing/disappointed.'
+title: -ed vs -ing Adjectives (Participial Adjectives)
 use:
-- name: Describing Feelings (-ed Adjectives)
-  description: Describe how a person feels about something.
+- description: Describe how a person feels about something.
   examples:
   - I'm confused about the rules.
   - We were disappointed with the result.
   key_point: -ed adjectives describe the experiencer's feelings (usually a person).
-- name: Describing Things That Cause Feelings (-ing Adjectives)
-  description: Describe the thing or person that causes the feeling.
+  name: Describing Feelings (-ed Adjectives)
+- description: Describe the thing or person that causes the feeling.
   examples:
   - The explanation is confusing.
   - It was a disappointing result.
   key_point: -ing adjectives describe the stimulus (thing/person causing the feeling).
-- name: 'Advanced: People as Stimuli (-ing for People)'
-  description: Some people can be described as -ing if they cause that feeling in
-    others.
+  name: Describing Things That Cause Feelings (-ing Adjectives)
+- description: Some people can be described as -ing if they cause that feeling in others.
   examples:
   - He's a boring teacher.
   - She's an exciting speaker.
   - He's so annoying!
   key_point: People can be -ing if they consistently cause that feeling in others.
-phonetics:
-- note: 'The -ed ending in adjectives has three pronunciations: /t/ after voiceless
-    sounds, /d/ after voiced sounds, and /ɪd/ after /t/ or /d/ sounds.'
-  example_generator:
-  - contexts: null
-  - ed adjective pronunciation
-  l1_issue: Learners may not distinguish between the three pronunciations of the -ed
-    ending. Drill all three patterns explicitly.
-teaching:
-  methodology: Guided discovery with contextualised examples. Present contrasting
-    pairs (bored/boring, excited/exciting) in authentic contexts, then elicit the
-    rule from students through concept-checking. Follow with controlled practice (gap-fills,
-    sentence transformation) and freer production (personalised speaking activities).
-  tips:
-  - 'Use the formula: ''I''m -ed'' (person) vs ''It''s -ing'' (thing).'
-  - 'Practice with surveys: ''What do you find interesting?'' ''What bores you?'''
-  - 'Drill common pairs: bore/bored/boring, excite/excited/exciting, interest/interested/interesting.'
-  - 'Act out emotions: Teacher acts bored → students say ''You''re bored'' and ''The
-    class is boring''.'
-  recommended_activities:
-  - name: Ed or Ing
-    duration: 10
-    adaptation_notes: 'Students choose the correct form: ''I was very (bored/boring)
-      in class.'' ''The movie was (excited/exciting).'''
-  - name: Describe Your Feelings
-    duration: 15
-    adaptation_notes: Students describe their feelings about different topics using
-      ed adjectives, then describe the topics using ing adjectives.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I was boring at the meeting.*'
-  correction: I was bored at the meeting.
-  explanation: -ed for feelings, -ing for cause.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.
+  name: 'Advanced: People as Stimuli (-ing for People)'

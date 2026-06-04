@@ -1,56 +1,49 @@
-grammar_point: presupposition
-title: Presupposition and Implicature
+citations:
+- claim: 'Core meaning: Information that is taken for granted or assumed to be true
+    by the speaker, rather than explicitly s'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 30:
+    Focus and Emphasis'
+  tier: 4
+- claim: 'Discourse function: In conversation, this structure is used in everyday
+    communication.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 30:
+    Focus and Emphasis'
+  tier: 4
+- claim: 'Common error ''*Have you stopped to smoke?* (presupposition: you smoked)''
+    for Portuguese, Spanish, French speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+common_errors:
+- correction: Have you stopped smoking?
+  error: '*Have you stopped to smoke?* (presupposition: you smoked)'
+  explanation: '''Have you stopped smoking?'' presupposes that the person used to
+    smoke. ''Have you stopped to smoke?'' means ''Did you pause in order to smoke?''
+    -- different meaning.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
 description: Meanings that are implied rather than directly stated. Understanding
   what speakers take for granted and what utterances implicitly convey.
-level: C1
-meaning:
-  core_meaning: Information that is taken for granted or assumed to be true by the
-    speaker, rather than explicitly stated. Presuppositions survive negation — they
-    remain true even when the sentence is negated.
-  timeline: Presuppositions are timeless background assumptions; they do not change
-    with tense or aspect of the main clause.
-  contrast: 'Presupposition = what the speaker assumes is already known (background).
-
-
-    Entailment = what logically must be true if the sentence is true.
-
-
-    Implicature = what is suggested or implied beyond the literal meaning.
-
-
-    Assertion = what is directly stated (foreground).'
-  ccqs:
-  - question: If I say 'She regrets leaving,' do we know whether she left?
-    answer: Yes — 'She regrets leaving' presupposes that she left. Even 'She doesn't
-      regret leaving' still presupposes she left.
-    purpose: Tests whether the learner understands the key property of factive presuppositions
-      — that they survive negation. Even when the main clause is negated, the presupposition
-      (she left) remains true.
-  - question: If I say 'Have you stopped smoking?' what am I assuming?
-    answer: I am assuming you used to smoke. This is a loaded question because it
-      traps you — both 'yes' and 'no' confirm you smoked.
-    purpose: Tests whether the learner can identify the hidden assumptions in loaded
-      questions, which is essential for critical thinking and for recognizing manipulative
-      language in political rhetoric and advertising.
-  - question: Is 'It was Mary who broke the vase' the same as 'Mary broke the vase'?
-    answer: They share the entailment that Mary broke the vase, but the cleft version
-      additionally presupposes that someone broke the vase.
-    purpose: Tests whether the learner can distinguish between entailment and presupposition
-      in cleft sentences, understanding that clefts add a presuppositional layer (someone
-      did the action) beyond the basic assertion.
-    contexts:
-    - everyday conversation
-    - legal and political discourse
-    - advertising and persuasion
-    - news reporting
-    cultural_notes:
-    - Presuppositions are heavily used in political rhetoric and advertising to smuggle
-      in assumptions — e.g., 'When did you stop cheating on your taxes?'
-    - Different cultures have different presuppositions about politeness, directness,
-      and social hierarchy.
-    min_examples: 6
-form:
+dialectal_variation: []
+discourse_notes:
+- note: Presupposition triggers carry implicit assumptions that structure discourse
+    coherence and can be exploited for rhetorical effects.
   affirmative:
+    example_generator:
+      contexts:
+      - everyday conversation
+      - news and media
+      - academic writing
+      min_examples: 5
     structure: "Presuppositions are triggered by specific words and structures:\n\n\
       Factive verbs: know, realise, regret, discover → presuppose the truth of their\
       \ complement.\n  'She knows (that) he left' → He left.\n\nChange-of-state verbs:\
@@ -63,13 +56,13 @@ form:
       \ called.\n\nWh-questions with 'why/how come': presuppose the embedded clause.\n\
       \  'Why did she leave?' → She left.\n\nIteratives: again, another, return, repeat\
       \ → presuppose prior occurrence.\n  'She called again' → She called before."
+  negative:
     example_generator:
       contexts:
-      - everyday conversation
-      - news and media
-      - academic writing
-      min_examples: 5
-  negative:
+      - argumentation and debate
+      - legal cross-examination
+      - everyday denial
+      min_examples: 4
     structure: 'Presuppositions typically survive negation. The presupposition remains
       even when the main clause is negated:
 
@@ -86,13 +79,13 @@ form:
 
       Note: Some factive presuppositions can be cancelled with certain matrix predicates
       like ''don''t know'' or ''it''s not the case that''.'
+  questions:
     example_generator:
       contexts:
-      - argumentation and debate
-      - legal cross-examination
-      - everyday denial
+      - legal questioning
+      - job interviews
+      - casual conversation
       min_examples: 4
-  questions:
     structure: 'Questions can carry presuppositions that the respondent may wish to
       challenge:
 
@@ -108,54 +101,144 @@ form:
 
       Responding to the presupposition: ''I never cheated in the first place!'' challenges
       the loaded assumption.'
-    example_generator:
-      contexts:
-      - legal questioning
-      - job interviews
-      - casual conversation
-      min_examples: 4
+grammar_point: presupposition
+level: C1
+meaning:
+  ccqs:
+  - answer: Yes — 'She regrets leaving' presupposes that she left. Even 'She doesn't
+      regret leaving' still presupposes she left.
+    purpose: Tests whether the learner understands the key property of factive presuppositions
+      — that they survive negation. Even when the main clause is negated, the presupposition
+      (she left) remains true.
+    question: If I say 'She regrets leaving,' do we know whether she left?
+  - answer: I am assuming you used to smoke. This is a loaded question because it
+      traps you — both 'yes' and 'no' confirm you smoked.
+    purpose: Tests whether the learner can identify the hidden assumptions in loaded
+      questions, which is essential for critical thinking and for recognizing manipulative
+      language in political rhetoric and advertising.
+    question: If I say 'Have you stopped smoking?' what am I assuming?
+  - answer: They share the entailment that Mary broke the vase, but the cleft version
+      additionally presupposes that someone broke the vase.
+    purpose: Tests whether the learner can distinguish between entailment and presupposition
+      in cleft sentences, understanding that clefts add a presuppositional layer (someone
+      did the action) beyond the basic assertion.
+    question: Is 'It was Mary who broke the vase' the same as 'Mary broke the vase'?
+  - answer: '''Have you stopped smoking?'' ''Stop + -ing'' = cease an activity. ''Stop
+      + to-infinitive'' = pause in order to do something else.'
+    purpose: Tests whether the learner distinguishes stop + -ing (cease) from stop
+      + to-infinitive (Swan PEU 2016, entry 105.5).
+    question: Which is correct? *'Have you stopped to smoke?' (asking about cessation)
+      or 'Have you stopped smoking?'
+  contrast: 'Presupposition = what the speaker assumes is already known (background).
+
+
+    Entailment = what logically must be true if the sentence is true.
+
+
+    Implicature = what is suggested or implied beyond the literal meaning.
+
+
+    Assertion = what is directly stated (foreground).'
+  core_meaning: Information that is taken for granted or assumed to be true by the
+    speaker, rather than explicitly stated. Presuppositions survive negation — they
+    remain true even when the sentence is negated.
+  timeline: Presuppositions are timeless background assumptions; they do not change
+    with tense or aspect of the main clause.
+phonetics:
+- example_generator:
+  - It was JOHN who called (not Mary) — stress on new info.
+  - She REGRETS leaving (not that she left) — stress on the factive verb.
+  l1_issue: Speakers from languages without factive verb distinctions (e.g., Mandarin,
+    Japanese) may struggle to identify what is presupposed vs asserted.
+  note: Presupposed information is typically de-emphasised in speech — lower pitch,
+    reduced stress, faster delivery. New information carries the main stress.
+register_notes:
+- note: 'Biber et al. (2021) — Presupposition and information status: academic prose
+    uses more presupposition through definite reference and discourse-old information.
+    Conversation manages presupposition more interactively. Ch. 12'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 12
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Factive presuppositions (verbs like know, realise, regret, discover, be aware)
-  type: grammatical
-  examples:
+- examples:
   - She regrets saying it. → She said it.
   - I realised I was wrong. → I was wrong.
   - He discovered the truth. → The truth existed.
-- rule: Change-of-state presuppositions (stop, start, continue, finish, begin)
+  rule: Factive presuppositions (verbs like know, realise, regret, discover, be aware)
   type: grammatical
-  examples:
+- examples:
   - She stopped crying. → She was crying.
   - He started learning Japanese. → He wasn't learning Japanese before.
   - They continued working. → They were working before.
-- rule: Implicative presuppositions (manage, forget, happen, avoid)
+  rule: Change-of-state presuppositions (stop, start, continue, finish, begin)
   type: grammatical
-  examples:
+- examples:
   - She managed to escape. → She tried to escape.
   - I forgot to lock the door. → I was supposed to lock the door.
   - He happened to be there. → His being there was not planned.
-- rule: Definite description presuppositions (the, possessives, proper names)
+  rule: Implicative presuppositions (manage, forget, happen, avoid)
   type: grammatical
-  examples:
+- examples:
   - The President of France visited. → There is a President of France.
   - My brother is a doctor. → I have a brother.
   - John's car broke down. → John has a car.
-- rule: Cleft sentence presuppositions (it-clefts, wh-clefts)
+  rule: Definite description presuppositions (the, possessives, proper names)
   type: grammatical
-  examples:
+- examples:
   - It was Sarah who won. → Someone won.
   - What I need is a holiday. → I need something.
-- rule: Iterative presuppositions (again, another, return, repeat, back)
+  rule: Cleft sentence presuppositions (it-clefts, wh-clefts)
   type: grammatical
-  examples:
+- examples:
   - She called again. → She called before.
   - Let's have another drink. → We've had at least one drink.
   - He returned to Paris. → He had been to Paris before.
-- rule: Scalar implicature (some implies not all, or implies and possibly all)
-  type: pragmatic
-  examples:
+  rule: Iterative presuppositions (again, another, return, repeat, back)
+  type: grammatical
+- examples:
   - Some students passed. → Not all students passed (implicature).
   - It's possible she'll come. → It's not certain (implicature).
   - I like some of his films. → Not all of them (implicature).
+  rule: Scalar implicature (some implies not all, or implies and possibly all)
+  type: pragmatic
+teaching:
+  methodology: Guided discovery — present examples and guide students to identify
+    what is assumed vs stated.
+  recommended_activities:
+  - adaptation_notes: Give students a text (news article, political speech, ad) and
+      have them highlight all presuppositions. Works well at B2+.
+    duration: 20
+    name: Presupposition detective
+  - adaptation_notes: Students ask each other loaded questions and practise challenging
+      the presupposition rather than answering directly.
+    duration: 15
+    name: Loaded question challenge
+  - adaptation_notes: Students negate sentences and identify which parts remain true.
+      Good for reinforcing the concept.
+    duration: 15
+    name: Negation survival test
+  tips:
+  - 'Start with loaded questions: ''Have you stopped cheating?'' Why is this question
+    unfair?'
+  - 'Use the negation test: negate the sentence and see what survives — that''s the
+    presupposition.'
+  - 'Compare factive vs non-factive: ''She knows he left'' vs ''She thinks he left''
+    — only the first presupposes he left.'
+  - Use real political speeches and advertisements to find hidden presuppositions.
+  - 'Role-play: one student asks loaded questions, the other challenges the presupposition.'
+  - 'Swan Entries 267-278 on information structure address presupposition — what is
+    assumed to be shared knowledge. Cleft sentences presuppose the truth of their
+    relative clause: ''It was John (who called)'' presupposes that someone called.'
+title: Presupposition and Implicature
 use:
 - context: Loaded questions and political rhetoric
   description: Speakers use presuppositions to smuggle in assumptions that the listener
@@ -191,69 +274,3 @@ use:
   - As we have seen, the results confirm... → Presupposes prior discussion.
   - It is well known that... → Presupposes common knowledge.
   - The fact that X causes Y is established. → Presupposes X causes Y.
-phonetics:
-- note: Presupposed information is typically de-emphasised in speech — lower pitch,
-    reduced stress, faster delivery. New information carries the main stress.
-  example_generator:
-  - It was JOHN who called (not Mary) — stress on new info.
-  - She REGRETS leaving (not that she left) — stress on the factive verb.
-  l1_issue: Speakers from languages without factive verb distinctions (e.g., Mandarin,
-    Japanese) may struggle to identify what is presupposed vs asserted.
-teaching:
-  methodology: Guided discovery — present examples and guide students to identify
-    what is assumed vs stated.
-  tips:
-  - 'Start with loaded questions: ''Have you stopped cheating?'' Why is this question
-    unfair?'
-  - 'Use the negation test: negate the sentence and see what survives — that''s the
-    presupposition.'
-  - 'Compare factive vs non-factive: ''She knows he left'' vs ''She thinks he left''
-    — only the first presupposes he left.'
-  - Use real political speeches and advertisements to find hidden presuppositions.
-  - 'Role-play: one student asks loaded questions, the other challenges the presupposition.'
-  recommended_activities:
-  - name: Presupposition detective
-    duration: 20
-    adaptation_notes: Give students a text (news article, political speech, ad) and
-      have them highlight all presuppositions. Works well at B2+.
-  - name: Loaded question challenge
-    duration: 15
-    adaptation_notes: Students ask each other loaded questions and practise challenging
-      the presupposition rather than answering directly.
-  - name: Negation survival test
-    duration: 15
-    adaptation_notes: Students negate sentences and identify which parts remain true.
-      Good for reinforcing the concept.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*Have you stopped to smoke?* (presupposition: you smoked)'
-  correction: Have you stopped smoking?
-  explanation: '''Have you stopped smoking?'' presupposes that the person used to
-    smoke. ''Have you stopped to smoke?'' means ''Did you pause in order to smoke?''
-    -- different meaning.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

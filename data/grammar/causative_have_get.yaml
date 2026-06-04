@@ -1,45 +1,93 @@
-grammar_point: causative_have_get
-title: Causative Have and Get (Have/Get Something Done)
+citations:
+- claim: 'Core meaning: Indicate that the subject arranges for someone else to perform
+    an action, rather than doing it themselves'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 19:
+    Sentences with Indirect Objects'
+  tier: 4
+- claim: Common error '*I did my house painted last week.*' for Portuguese, Spanish
+    speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+common_errors:
+- correction: I had my house painted last week.
+  error: '*I did my house painted last week.*'
+  explanation: The causative structure requires 'have/get + object + past participle'.
+    'Do' cannot be used as a causative verb for services. 'I had my house painted'
+    means someone else painted it for you.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: D
+- correction: She got her nails painted.
+  error: '*She got paint her nails.*'
+  explanation: Causative 'get' requires the pattern 'get + object + past participle'.
+    The object (nails) must come before the past participle (painted). Without the
+    object, the structure is incomplete.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+- correction: I had the mechanic check my car.
+  error: '*I had the mechanic to check my car.*'
+  explanation: 'When specifying the person who performed the action, use ''have +
+    person + base verb'' (no ''to''). Adding ''to'' is incorrect. Compare: ''I had
+    my car checked'' vs ''I had the mechanic check my car''.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+- correction: I will get my hair cut tomorrow.
+  error: '*I will get my hair cut tomorrow by.* (incomplete)'
+  explanation: The agent ('by someone') is typically omitted in causative sentences
+    because the focus is on the service, not who performed it. Adding 'by' without
+    the agent creates an incomplete phrase.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+- correction: I had my hair cut.
+  error: '*I had cut my hair.*'
+  explanation: Using the simple past 'had cut' changes the meaning — it means you
+    cut your own hair. The causative structure requires 'had + object + past participle'
+    to show someone else did it.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+- correction: She made him apologize.
+  error: 'Using ''to'' after causative ''make'': *''She made him to apologize.'''
+  explanation: 'Swan PEU: ''Make'' in causative takes the bare infinitive (no ''to'').
+    ''Make someone do something'' -- no ''to''.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Chinese
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
 description: 'Structures used to describe arranging for someone else to do a task
   for you, rather than doing it yourself: ''have/get + object + past participle''.'
-level: B1
-meaning:
-  core_meaning: Indicate that the subject arranges for someone else to perform an
-    action, rather than doing it themselves.
-  timeline: 'Present: have/has/get/gets + past participle. Past: had/got + past participle.
-    Future: will have/get + past participle.'
-  contrast: '''Have/get something done'' = arrange for others: "I had my car washed"
-    (I paid someone to wash it)
-
-    ''Do something yourself'' = active: "I washed my car" (I did it myself)
-
-    ''Get'' is more informal than ''have'' in causative structures.
-
-    '
-  ccqs:
-  - question: I had my hair cut. Did I cut my own hair?
-    answer: No. Someone else cut it. You arranged for them to do it.
-    purpose: Tests whether the learner understands the key concept of causative have
-      get. This is important because mastering this distinction is essential for accurate
-      and natural English at B1 level.
-  - question: She got her car repaired. Did she repair it herself?
-    answer: No. She arranged for someone else to repair it.
-    purpose: Tests whether the learner can distinguish between existential 'there'
-      (indicating existence) and dummy 'it' (used for weather, time, distance). Confusing
-      these is a very common beginner error.
-  - question: Is 'I had my house painted' the same as 'I painted my house'?
-    answer: No. In the first sentence, someone else painted it. In the second, you
-      did it yourself.
-    purpose: Tests whether the learner understands that '-ed' adjectives describe
-      how someone feels (experiencer) while '-ing' adjectives describe what causes
-      the feeling (stimulus).
-  example_generator:
-    contexts:
-    - everyday situations
-    cultural_notes: []
-    min_examples: 5
+dialectal_variation: []
+discourse_notes: []
 form:
   affirmative:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
     structure: 'Have + object + past participle: "I had my hair cut." (arranged for
       someone to cut it)
 
@@ -49,164 +97,170 @@ form:
       Have + person + base verb: "I had the mechanic fix my car." (less common, informal)
 
       '
+  negative:
     example_generator:
       contexts:
       - everyday situations
       min_examples: 4
-  negative:
     structure: 'Do/does/did not + have/get + object + past participle: ''I didn''t
       have my phone fixed.'' ''She doesn''t get her nails done often.'''
+  questions:
     example_generator:
       contexts:
       - everyday situations
       min_examples: 4
-  questions:
     structure: 'Invert subject and auxiliary: ''Did you have your suit tailored?''
       ''Has she got her bike serviced?'''
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
-sub_rules:
-- rule: The most common causative structure is have + object + past participle. The
-    subject does not perform the action
-  type: grammatical
-  examples:
-  - I had my hair cut yesterday
-  - She had her car repaired
-  - They had their house painted
-- rule: Get + object + past participle means the same as have + object + past participle
-    but is more informal
-  type: grammatical
-  examples:
-  - I got my hair cut yesterday
-  - She got her car fixed
-  - They got the roof repaired
-- rule: Another structure is have + person + base verb. This specifies who performed
-    the action
-  type: grammatical
-  examples:
-  - I had the mechanic check my car
-  - She had her assistant book the tickets
-  - They had the chef prepare a special meal
-- rule: Get + person + to + base verb implies persuasion or effort. The person may
-    have been reluctant
-  type: grammatical
-  examples:
-  - I got the mechanic to check my car for free
-  - She got her assistant to work late
-  - They got the chef to make a vegan option
-- rule: The causative can also describe things that happen to you without arranging
-    them, often unpleasant events
-  type: semantic
-  examples:
-  - I had my wallet stolen on the bus
-  - She had her bag snatched
-  - They had their car broken into
-use:
-- name: Arrange Services
-  description: Hire professionals to perform tasks (repairs, grooming, maintenance).
-  examples:
-  - I had my computer upgraded.
-  - She gets her hair dyed every 6 weeks.
-  key_point: Most common use for daily services.
-- name: Repairs and Maintenance
-  description: Fix broken items or maintain property.
-  examples:
-  - We had the leak fixed.
-  - He got his bike tuned up.
-  key_point: Past participle of the action verb is required.
-- name: Informal Requests (Get)
-  description: More casual way to describe arranging tasks, common in spoken English.
-  examples:
-  - I got my friend to help me move.
-  - She got her brother to fix the sink.
-  key_point: Get is preferred in informal spoken contexts.
-phonetics:
-- note: 'In the causative structure, the past participle carries the main stress:
-    ''I had my HAIR CUT.'' The focus is on what was done, not who did it.'
+grammar_point: causative_have_get
+level: B1
+meaning:
+  ccqs:
+  - answer: No. Someone else cut it. You arranged for them to do it.
+    purpose: Tests whether the learner understands the key concept of causative have
+      get. This is important because mastering this distinction is essential for accurate
+      and natural English at B1 level.
+    question: I had my hair cut. Did I cut my own hair?
+  - answer: No. She arranged for someone else to repair it.
+    purpose: Tests whether the learner understands that causative 'get' means arranging
+      for someone else to do something, not doing it themselves.
+    question: She got her car repaired. Did she repair it herself?
+  - answer: Yes. "Get + person + to + verb" implies persuasion or effort, suggesting
+      the person needed convincing or was initially unwilling.
+    purpose: Tests whether the learner understands the nuance of "get + person + to
+      verb" (persuasion) versus "have + person + base verb" (neutral arrangement).
+      "I had the mechanic check my car" is a straightforward request, while "I got
+      the mechanic to check my car" implies the speaker had to convince them, which
+      is a key distinction in causative have/get at B1 level.
+    question: Is 'I had my house painted' the same as 'I painted my house'?
+  - answer: I will get my car repaired. When you use the causative get, the object
+      (my car) must come before the past participle (repaired). The fixed pattern
+      is get + object + past participle.
+    purpose: Tests whether the learner understands the fixed word order in causative
+      get structures. Word order errors are common with learners who transfer L1 constituent
+      order.
+    question: Why is I will get my car repaired correct but I will get repaired my
+      car wrong?
+  contrast: '''Have/get something done'' = arrange for others: "I had my car washed"
+    (I paid someone to wash it)
+
+    ''Do something yourself'' = active: "I washed my car" (I did it myself)
+
+    ''Get'' is more informal than ''have'' in causative structures.
+
+    '
+  core_meaning: Indicate that the subject arranges for someone else to perform an
+    action, rather than doing it themselves.
   example_generator:
+    contexts:
+    - everyday situations
+    cultural_notes: []
+    min_examples: 5
+  timeline: 'Present: have/has/get/gets + past participle. Past: had/got + past participle.
+    Future: will have/get + past participle.'
+phonetics:
+- example_generator:
     contexts:
     - causative stress patterns
   l1_issue: Learners may stress the wrong word, making the sentence sound unnatural.
     Drill the stress pattern.
+  note: 'In the causative structure, the past participle carries the main stress:
+    ''I had my HAIR CUT.'' The focus is on what was done, not who did it.'
+register_notes:
+- note: 'Biber et al. (2021) — Causative constructions: register distribution differs.
+    ''Get'' causative is strongly conversational; ''have'' causative is neutral. Ch.
+    5.2.4'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 5.2.4
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+sub_rules:
+- examples:
+  - I had my hair cut yesterday
+  - She had her car repaired
+  - They had their house painted
+  rule: The most common causative structure is have + object + past participle. The
+    subject does not perform the action
+  type: grammatical
+- examples:
+  - I got my hair cut yesterday
+  - She got her car fixed
+  - They got the roof repaired
+  rule: Get + object + past participle means the same as have + object + past participle
+    but is more informal
+  type: grammatical
+- examples:
+  - I had the mechanic check my car
+  - She had her assistant book the tickets
+  - They had the chef prepare a special meal
+  rule: Another structure is have + person + base verb. This specifies who performed
+    the action
+  type: grammatical
+- examples:
+  - I got the mechanic to check my car for free
+  - She got her assistant to work late
+  - They got the chef to make a vegan option
+  rule: Get + person + to + base verb implies persuasion or effort. The person may
+    have been reluctant
+  type: grammatical
+- examples:
+  - I had my wallet stolen on the bus
+  - She had her bag snatched
+  - They had their car broken into
+  rule: The causative can also describe things that happen to you without arranging
+    them, often unpleasant events
+  type: semantic
 teaching:
   methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students create a chain of causative sentences: ''I had my
+      hair cut. I got my car fixed. I had my house painted.'''
+    duration: 15
+    name: Causative Chain
+  - adaptation_notes: 'Students role-play persuading someone to do something: ''Can
+      you get the teacher to extend the deadline?'''
+    duration: 15
+    name: Get Someone To
+  - adaptation_notes: 'Students describe unfortunate events using the causative: ''I
+      had my phone stolen. She had her bike taken.'''
+    duration: 10
+    name: What Happened To You
   tips:
   - 'Week 1: Have something done (present/past forms).'
   - 'Week 2: Get something done (informal contrast).'
   - 'Week 3: Contrast causative with active voice (I washed car vs I had car washed).'
   - 'Use real-life scenarios: ''What services do you have done regularly? (haircut,
     car wash)'''
-  recommended_activities:
-  - name: Causative Chain
-    duration: 15
-    adaptation_notes: 'Students create a chain of causative sentences: ''I had my
-      hair cut. I got my car fixed. I had my house painted.'''
-  - name: Get Someone To
-    duration: 15
-    adaptation_notes: 'Students role-play persuading someone to do something: ''Can
-      you get the teacher to extend the deadline?'''
-  - name: What Happened To You
-    duration: 10
-    adaptation_notes: 'Students describe unfortunate events using the causative: ''I
-      had my phone stolen. She had her bike taken.'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I did my house painted last week.*'
-  correction: I had my house painted last week.
-  explanation: The causative structure requires 'have/get + object + past participle'.
-    'Do' cannot be used as a causative verb for services. 'I had my house painted'
-    means someone else painted it for you.
-  l1_groups:
-  - Portuguese
-  - Spanish
-- error: '*She got paint her nails.*'
-  correction: She got her nails painted.
-  explanation: Causative 'get' requires the pattern 'get + object + past participle'.
-    The object (nails) must come before the past participle (painted). Without the
-    object, the structure is incomplete.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-- error: '*I had the mechanic to check my car.*'
-  correction: I had the mechanic check my car.
-  explanation: 'When specifying the person who performed the action, use ''have +
-    person + base verb'' (no ''to''). Adding ''to'' is incorrect. Compare: ''I had
-    my car checked'' vs ''I had the mechanic check my car''.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: '*I will get my hair cut tomorrow by.* (incomplete)'
-  correction: I will get my hair cut tomorrow.
-  explanation: The agent ('by someone') is typically omitted in causative sentences
-    because the focus is on the service, not who performed it. Adding 'by' without
-    the agent creates an incomplete phrase.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.
+  - 'Swan PEU: ''Have something done'' = arrange services. ''Get something done''
+    = more informal.'
+  - 'Swan PEU: Unpleasant causatives -- ''I had my wallet stolen.'' (something bad
+    happened to me -- I did not arrange it).'
+  - 'Swan PEU: ''Get someone to do something'' = persuade. ''Have someone do something''
+    = instruct.'
+title: Causative Have and Get (Have/Get Something Done)
+use:
+- description: Hire professionals to perform tasks (repairs, grooming, maintenance).
+  examples:
+  - I had my computer upgraded.
+  - She gets her hair dyed every 6 weeks.
+  key_point: Most common use for daily services.
+  name: Arrange Services
+- description: Fix broken items or maintain property.
+  examples:
+  - We had the leak fixed.
+  - He got his bike tuned up.
+  key_point: Past participle of the action verb is required.
+  name: Repairs and Maintenance
+- description: More casual way to describe arranging tasks, common in spoken English.
+  examples:
+  - I got my friend to help me move.
+  - She got her brother to fix the sink.
+  key_point: Get is preferred in informal spoken contexts.
+  name: Informal Requests (Get)

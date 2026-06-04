@@ -1,41 +1,123 @@
-grammar_point: linking_words_advanced
-title: Advanced Linking Words (moreover/furthermore/in addition)
+citations:
+- claim: 'Core meaning: Advanced linking words connect ideas at the discourse level,
+    signalling relationships such as addition, contrast, cause, result, and concession.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 26:
+    Logical Connectors'
+  tier: 4
+- claim: 'Register distribution: Advanced linking adverbials (moreover, nevertheless,
+    consequently) are strongly associated with academic prose and formal registers.
+    They are rare in casual conversation (Biber et al. 1999, Ch. 14).'
+  flagged: false
+  reliability: B
+  source: 'Biber et al. (1999) Longman Grammar of Spoken and Written English. Ch.
+    14: Narrative and Non-narrative Discourse'
+  tier: 2
+- claim: 'Discourse function: Linking words establish logical coherence between paragraphs
+    and sections in academic writing. They signal addition, contrast, cause, result,
+    and concession relationships between ideas.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 26:
+    Logical Connectors'
+  tier: 4
+- claim: Common error '*The results were bad. Anyway, we continued.* (academic)' for
+    Portuguese, Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: Understanding linking words advanced is essential for academic writing —
+    Oshima & Hogue emphasize how writers use these structures to create clear, coherent
+    prose
+  flagged: false
+  reliability: B
+  source: 'Oshima and Hogue (2006) Introduction to Academic Writing, 3rd ed. Pearson.
+    Ch. 5: Complex Sentences in Academic Writing'
+  tier: 2
+common_errors:
+- correction: The results were unfavorable. Nevertheless, we continued.
+  error: '*The results were bad. Anyway, we continued.* (academic)'
+  explanation: Academic writing uses formal linking words (nevertheless, furthermore).
+    Informal words (anyway, also) are inappropriate in academic prose.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  reliability: D
 description: Formal connectors for adding information, building arguments, and expressing
   contrast in academic and professional writing.
+dialectal_variation: []
+discourse_notes:
+- 'Advanced linking words signal discourse relationships between ideas — addition,
+  contrast, cause, result, and concession. In academic writing, they establish logical
+  coherence between paragraphs and sections. Source: Celce-Murcia & Larsen-Freeman
+  (2015) GB3 Ch. 26: Logical Connectors.'
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - academic writing
+      - formal reports
+      - professional emails
+      min_examples: 4
+    structure: 'Addition: Moreover/Furthermore/In addition/Besides, + clause. Contrast:
+      However/Nevertheless/Nonetheless/On the other hand, + clause. Cause: Consequently/Therefore/Thus/Hence,
+      + clause. Concession: Notwithstanding/Despite this/In spite of this, + clause.'
+  negative:
+    example_generator:
+      contexts:
+      - negative arguments
+      - conceding points
+      min_examples: 3
+    structure: 'Negative addition: Nor/Neither + auxiliary + subject. Negative contrast:
+      Even so/All the same/That said, + clause.'
+  questions:
+    example_generator:
+      contexts:
+      - rhetorical questions
+      - academic discussion
+      min_examples: 3
+    structure: 'Linking words are not typically used in direct questions. They connect
+      statements. However, rhetorical questions may follow linking words: Furthermore,
+      is this really the best approach?'
+grammar_point: linking_words_advanced
 level: B2
 meaning:
-  core_meaning: Advanced linking words connect ideas at the discourse level, signalling
-    relationships such as addition, contrast, cause, result, and concession. They
-    are essential for coherent academic writing and formal speech.
-  timeline: Linking words themselves do not carry tense. They connect clauses that
-    may be in any tense.
-  contrast: 'Basic: and, but, so, because. Advanced: moreover, furthermore, nevertheless,
-    consequently, notwithstanding. The advanced forms are more precise and formal.'
   ccqs:
-  - question: Is moreover the same as also?
-    answer: Similar meaning, but moreover is more formal and is used at the beginning
+  - answer: Similar meaning, but moreover is more formal and is used at the beginning
       of a sentence or clause, not mid-sentence.
     purpose: Tests whether the learner knows that formal linking words (nevertheless,
       furthermore, consequently) are used in academic writing, while informal ones
       (also, so, anyway) are for conversation.
-  - question: Can we use furthermore in casual conversation?
-    answer: It sounds overly formal in casual speech. Use also, on top of that, or
+    question: Is moreover the same as also?
+  - answer: It sounds overly formal in casual speech. Use also, on top of that, or
       what is more instead.
     purpose: Tests whether the learner can identify and apply the correct form/meaning
       of this grammar point in context. The question 'Can we use furthermore in casual
       conversation?...' checks conceptual understanding, not just memorization.
-  - question: What is the difference between however and nevertheless?
-    answer: Both express contrast. Nevertheless is stronger and more formal, implying
+    question: Can we use furthermore in casual conversation?
+  - answer: Both express contrast. Nevertheless is stronger and more formal, implying
       despite everything.
     purpose: Tests whether the learner can identify and apply the correct form/meaning
       of this grammar point in context. The question 'What is the difference between
       however and neverth...' checks conceptual understanding, not just memorization.
-  - question: Is in addition to followed by a clause?
-    answer: No. In addition to is a preposition and must be followed by a noun or
+    question: Can you explain the difference between however and nevertheless by giving
+      an example of when to use each?
+  - answer: No. In addition to is a preposition and must be followed by a noun or
       gerund, not a clause.
     purpose: Tests whether the learner can identify and apply the correct form/meaning
       of this grammar point in context. The question 'Is in addition to followed by
       a clause?...' checks conceptual understanding, not just memorization.
+    question: Is in addition to followed by a clause?
+  contrast: 'Basic: and, but, so, because. Advanced: moreover, furthermore, nevertheless,
+    consequently, notwithstanding. The advanced forms are more precise and formal.'
+  core_meaning: Advanced linking words connect ideas at the discourse level, signalling
+    relationships such as addition, contrast, cause, result, and concession. They
+    are essential for coherent academic writing and formal speech.
   example_generator:
     contexts:
     - academic essays
@@ -47,158 +129,118 @@ meaning:
     - Different academic disciplines have different conventions for linking word use
     - British English tends to use more formal connectors than American English
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Addition: Moreover/Furthermore/In addition/Besides, + clause. Contrast:
-      However/Nevertheless/Nonetheless/On the other hand, + clause. Cause: Consequently/Therefore/Thus/Hence,
-      + clause. Concession: Notwithstanding/Despite this/In spite of this, + clause.'
-    example_generator:
-      contexts:
-      - academic writing
-      - formal reports
-      - professional emails
-      min_examples: 4
-  negative:
-    structure: 'Negative addition: Nor/Neither + auxiliary + subject. Negative contrast:
-      Even so/All the same/That said, + clause.'
-    example_generator:
-      contexts:
-      - negative arguments
-      - conceding points
-      min_examples: 3
-  questions:
-    structure: 'Linking words are not typically used in direct questions. They connect
-      statements. However, rhetorical questions may follow linking words: Furthermore,
-      is this really the best approach?'
-    example_generator:
-      contexts:
-      - rhetorical questions
-      - academic discussion
-      min_examples: 3
-sub_rules:
-- rule: Moreover and furthermore. Formal addition, stronger than also or in addition
-  type: grammatical
-  examples:
-  - The plan is expensive. Moreover, it is unlikely to succeed.
-  - She is highly qualified. Furthermore, she has ten years of experience.
-- rule: In addition to + noun/gerund. Prepositional form of in addition
-  type: grammatical
-  examples:
-  - In addition to English, she speaks French and Mandarin.
-  - In addition to being affordable, the car is also reliable.
-- rule: Nevertheless and nonetheless. Strong contrast or concession
-  type: grammatical
-  examples:
-  - The evidence was weak. Nevertheless, the jury found him guilty.
-  - It was raining heavily. Nonetheless, the match went ahead.
-- rule: Consequently, therefore, thus, hence. Formal result or consequence
-  type: grammatical
-  examples:
-  - The road was icy. Consequently, several accidents occurred.
-  - He failed the entrance exam. Therefore, he could not enrol.
-- rule: Notwithstanding. Formal preposition meaning despite
-  type: grammatical
-  examples:
-  - Notwithstanding the difficulties, they completed the project on time.
-  - The weather was poor. Notwithstanding, the event was a success.
-- rule: On the one hand... on the other hand. Balanced contrast
-  type: grammatical
-  examples:
-  - On the one hand, the job pays well. On the other hand, the hours are terrible.
-use:
-- name: Academic essay writing
-  description: Building coherent arguments with clear logical connections
-  examples:
-  - The data supports the hypothesis. Furthermore, the results are consistent with
-    previous studies.
-  - The sample size was small. Nevertheless, the findings are statistically significant.
-  key_point: Essential for achieving coherence in extended writing. Examiners look
-    for varied linking words.
-- name: Professional reports and proposals
-  description: Presenting information clearly and persuasively
-  examples:
-  - The current system is outdated. Consequently, productivity has declined.
-  - The initial investment is high. However, the long-term savings are substantial.
-  key_point: Formal linking words add credibility and professionalism to business
-    writing.
-- name: Formal presentations
-  description: Signalling transitions between points
-  examples:
-  - Let us turn to the financial implications. Moreover, we must consider the environmental
-    impact.
-  key_point: Helps the audience follow the structure of the argument.
-- name: Concession and counter-argument
-  description: Acknowledging opposing views before presenting your own
-  examples:
-  - Admittedly, the plan has some merits. Nevertheless, the risks outweigh the benefits.
-  - While the cost is a concern, the benefits are undeniable.
-  key_point: Shows critical thinking and balanced analysis.
+  timeline: Linking words themselves do not carry tense. They connect clauses that
+    may be in any tense.
 phonetics:
-- note: Formal linking words are typically followed by a brief pause in speech, corresponding
-    to the comma in writing
-  example_generator:
+- example_generator:
     contexts:
     - formal speech
   l1_issue: Learners may run linking words together with the following clause, losing
     the pause that signals the logical connection
-- note: Words like consequently, nevertheless, and notwithstanding have stress on
-    the second or third syllable
-  example_generator:
+  note: Formal linking words are typically followed by a brief pause in speech, corresponding
+    to the comma in writing
+- example_generator:
     contexts:
     - pronunciation practice
   l1_issue: Mispronunciation of multi-syllable linking words can reduce clarity in
     formal presentations
+  note: Words like consequently, nevertheless, and notwithstanding have stress on
+    the second or third syllable
+register_notes:
+- note: Advanced linking adverbials (moreover, nevertheless, consequently) are strongly
+    associated with academic prose and formal registers. They are rare in casual conversation.
+  reliability: D
+  source: Team observation
+  tier: 4
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+sub_rules:
+- examples:
+  - The plan is expensive. Moreover, it is unlikely to succeed.
+  - She is highly qualified. Furthermore, she has ten years of experience.
+  rule: Moreover and furthermore. Formal addition, stronger than also or in addition
+  type: grammatical
+- examples:
+  - In addition to English, she speaks French and Mandarin.
+  - In addition to being affordable, the car is also reliable.
+  rule: In addition to + noun/gerund. Prepositional form of in addition
+  type: grammatical
+- examples:
+  - The evidence was weak. Nevertheless, the jury found him guilty.
+  - It was raining heavily. Nonetheless, the match went ahead.
+  rule: Nevertheless and nonetheless. Strong contrast or concession
+  type: grammatical
+- examples:
+  - The road was icy. Consequently, several accidents occurred.
+  - He failed the entrance exam. Therefore, he could not enrol.
+  rule: Consequently, therefore, thus, hence. Formal result or consequence
+  type: grammatical
+- examples:
+  - Notwithstanding the difficulties, they completed the project on time.
+  - The weather was poor. Notwithstanding, the event was a success.
+  rule: Notwithstanding. Formal preposition meaning despite
+  type: grammatical
+- examples:
+  - On the one hand, the job pays well. On the other hand, the hours are terrible.
+  rule: On the one hand... on the other hand. Balanced contrast
+  type: grammatical
 teaching:
   methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students sort linking words into categories: addition, contrast,
+      cause, result, concession. Discuss formality levels.'
+    duration: 10
+    name: Linking word sorting
+  - adaptation_notes: Students rewrite a paragraph using basic connectors (and, but,
+      so) with advanced linking words. Compare the effect.
+    duration: 15
+    name: Paragraph upgrade
+  - adaptation_notes: Students plan an argumentative essay, choosing appropriate linking
+      words for each paragraph transition. Peer review.
+    duration: 20
+    name: Essay planning with linking words
   tips:
   - 'Teach linking words in semantic groups: addition, contrast, cause, result, concession'
   - 'Provide a scale of formality: also (informal), moreover (formal), furthermore
     (very formal)'
   - Use gap-fill exercises with authentic academic texts
   - Have students rewrite informal paragraphs using advanced linking words
-  recommended_activities:
-  - name: Linking word sorting
-    duration: 10
-    adaptation_notes: 'Students sort linking words into categories: addition, contrast,
-      cause, result, concession. Discuss formality levels.'
-  - name: Paragraph upgrade
-    duration: 15
-    adaptation_notes: Students rewrite a paragraph using basic connectors (and, but,
-      so) with advanced linking words. Compare the effect.
-  - name: Essay planning with linking words
-    duration: 20
-    adaptation_notes: Students plan an argumentative essay, choosing appropriate linking
-      words for each paragraph transition. Peer review.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*The results were bad. Anyway, we continued.* (academic)'
-  correction: The results were unfavorable. Nevertheless, we continued.
-  explanation: Academic写作 uses formal linking words (nevertheless, furthermore). Informal
-    words (anyway, also) are inappropriate in academic prose.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - German
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
+  - 'Swan PEU: Linking with conjunctions and adverbs in written texts — formal writing
+    requires explicit logical connectors. Beginners overuse ''and'' and ''but.'' Advanced
+    learners must learn ''furthermore,'' ''moreover,'' ''nevertheless,'' ''consequently.'''
+title: Advanced Linking Words (moreover/furthermore/in addition)
+use:
+- description: Building coherent arguments with clear logical connections
+  examples:
+  - The data supports the hypothesis. Furthermore, the results are consistent with
+    previous studies.
+  - The sample size was small. Nevertheless, the findings are statistically significant.
+  key_point: Essential for achieving coherence in extended writing. Examiners look
+    for varied linking words.
+  name: Academic essay writing
+- description: Presenting information clearly and persuasively
+  examples:
+  - The current system is outdated. Consequently, productivity has declined.
+  - The initial investment is high. However, the long-term savings are substantial.
+  key_point: Formal linking words add credibility and professionalism to business
     writing.
+  name: Professional reports and proposals
+- description: Signalling transitions between points
+  examples:
+  - Let us turn to the financial implications. Moreover, we must consider the environmental
+    impact.
+  key_point: Helps the audience follow the structure of the argument.
+  name: Formal presentations
+- description: Acknowledging opposing views before presenting your own
+  examples:
+  - Admittedly, the plan has some merits. Nevertheless, the risks outweigh the benefits.
+  - While the cost is a concern, the benefits are undeniable.
+  key_point: Shows critical thinking and balanced analysis.
+  name: Concession and counter-argument

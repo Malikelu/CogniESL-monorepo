@@ -1,35 +1,46 @@
-id: shiritori
-name: Shiritori
-category: games
-description: A last-letter word relay where students take turns saying words that
-  begin with the final letter of the previous word. A fast-paced vocabulary retrieval
-  game that activates mental lexicon scanning and reinforces spelling awareness.
-targetStructures:
-- vocabulary
+adaptableToTopic: true
+bestForAges:
+- teens
+- adults
 bestForLevels:
 - A1
 - A2
 - B1
 - B2
-bestForAges:
-- teens
-- adults
+category: games
+citations: []
+description: A last-letter word relay where students take turns saying words that
+  begin with the final letter of the previous word. A fast-paced vocabulary retrieval
+  game that activates mental lexicon scanning and reinforces spelling awareness.
+differentiation:
+  extension: Challenge advanced students by banning common words, requiring words
+    of 5+ letters, or adding a semantic connection rule (the word must relate to the
+    previous word).
+  support: Allow 5 seconds for struggling students. Let them whisper to a partner
+    first. Provide a word bank on the board for reference.
+digitalReady: true
 duration: 10
-groupSize: whole-class
 energyRequired: medium
-prepTime: none
-materials:
-- None
+exampleSnippet:
+  execution:
+  - 'Teacher starts with ''dog''. Students continue: goat, tiger, rabbit, turtle,
+    eagle, lion...'
+  - When a student hesitates on N, the teacher gently moves to the next student.
+  teacherDialogue:
+  - Dog ends in G. What animal starts with G? Quick!
+  - Goat! Perfect. Goat ends in T. What starts with T?
+  topic: animal vocabulary
 format:
 - in-person
 - online
-requiresTech: false
-digitalReady: true
+grammar_focus:
+- vocabulary
+groupSize: whole-class
 hasAudioComponent: false
 hasPrintableComponent: false
 hasSlidesComponent: false
 hasVisualComponent: false
-adaptableToTopic: true
+id: shiritori
 instructions:
 - 'Explain the rules: each new word must start with the final letter of the previous
   word. No repeating words.'
@@ -38,28 +49,6 @@ instructions:
 - If a student cannot think of a word in 3 seconds, or repeats a word, they sit out.
 - Optionally restrict the category (animals, food, etc.) to tie to your lesson topic.
 - Play until a few students remain. Review any challenging words that came up.
-script:
-- My word is ocean. What word starts with N? Go!
-- Nice! Night. Now we need a word starting with T. You have 3 seconds...
-- Tiger! Great. R...? Come on, think of an R word!
-- If you cannot think of one in 3 seconds, sit down. Next person -- rabbit!
-setupInstructions: No materials needed. Optionally prepare a few starter words related
-  to your lesson topic.
-exampleSnippet:
-  topic: animal vocabulary
-  execution:
-  - 'Teacher starts with ''dog''. Students continue: goat, tiger, rabbit, turtle,
-    eagle, lion...'
-  - When a student hesitates on N, the teacher gently moves to the next student.
-  teacherDialogue:
-  - Dog ends in G. What animal starts with G? Quick!
-  - Goat! Perfect. Goat ends in T. What starts with T?
-differentiation:
-  support: Allow 5 seconds for struggling students. Let them whisper to a partner
-    first. Provide a word bank on the board for reference.
-  extension: Challenge advanced students by banning common words, requiring words
-    of 5+ letters, or adding a semantic connection rule (the word must relate to the
-    previous word).
 keywords:
 - shiritori
 - word chain
@@ -67,4 +56,39 @@ keywords:
 - spelling
 - quick thinking
 - last letter
-l1Enhanced: true
+l1_enhanced:
+- adaptation: Spanish speakers may find this game easier due to the high frequency
+    of Spanish words ending in vowels, which gives many options for starting letters.
+    Challenge them with consonant-ending categories.
+  language: Spanish
+  priority: low
+- adaptation: Arabic is written right-to-left and words are often consonant-skeleton
+    based. The last-letter rule may feel unnatural — practice identifying the final
+    letter of English words explicitly before starting.
+  language: Arabic
+  priority: high
+- adaptation: Mandarin speakers may categorize words differently based on character
+    frequency rather than alphabetical order. Pre-teach the concept of "last letter"
+    in English spelling before playing.
+  language: Mandarin
+  priority: medium
+l1_specific: []
+materials:
+- None
+name: Shiritori
+prepTime: none
+requiresTech: false
+script:
+- My word is ocean. What word starts with N? Go!
+- Nice! Night. Now we need a word starting with T. You have 3 seconds...
+- Tiger! Great. R...? Come on, think of an R word!
+- If you cannot think of one in 3 seconds, sit down. Next person -- rabbit!
+setupInstructions: No materials needed. Optionally prepare a few starter words related
+  to your lesson topic.
+skill_areas:
+- grammar
+- speaking
+sources: []
+targetStructures:
+- vocabulary
+teaching_tips: ''

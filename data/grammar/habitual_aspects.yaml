@@ -1,31 +1,74 @@
+citations:
+- claim: 'Core meaning: Habitual aspect describes actions that happen regularly or repeatedly'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: Aspect Hypothesis and Tense-Aspect Acquisition'
+  tier: 1
+- claim: 'Register distribution: ''Used to'' and ''would'' for past habits are common in narrative/storytelling; academic prose prefers present simple for universal statements.'
+  reliability: B
+  source: Biber et al. (1999) Grammar of Spoken and Written English. Ch. 6.2.2
+  tier: 1
+- claim: 'Discourse function: ''Used to'' and ''would'' establish background habits and routines in narrative, signaling the actions are no longer current.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: Aspect Hypothesis and Tense-Aspect Acquisition'
+  tier: 1
+- claim: Common error '*I would live in London when I was a child.*' for Portuguese, Spanish, Chinese, Arabic speakers
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Would for past habits'
+  tier: 1
+common_errors:
+- correction: I used to live in London when I was a child.
+  error: '*I would live in London when I was a child.*'
+  explanation: '''''Would'''' can only describe repeated past actions (go, play, visit), not past states (live, know, be). For past states, use ''''used to''''.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Arabic
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Would for past habits'
+description: Expressing habitual actions — things that happen regularly. Uses used to, would, will for habits, be used to, get used to.
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - past routines
+      - typical behavior
+      - present habits
+      min_examples: 4
+    structure: 'Past: Subject + used to + base verb / Subject + would + base verb / Present: Subject + will + base verb'
+  negative:
+    example_generator:
+      contexts:
+      - negative habits
+      min_examples: 3
+    structure: 'Past: Subject + did not use to + base verb / Present: Subject + will not + base verb'
+  questions:
+    example_generator:
+      contexts:
+      - asking about habits
+      min_examples: 3
+    structure: 'Past: Did + subject + use to + verb? / Present: Does + subject + always + verb?'
 grammar_point: habitual_aspects
-title: Habitual Aspects
-description: Expressing habitual actions — things that happen regularly. Uses used
-  to, would, will for habits, be used to, get used to.
 level: B1
 meaning:
-  core_meaning: Habitual aspect describes actions that happen regularly or repeatedly.
-    Different structures express past habits, present habits, and getting accustomed
-    to something.
-  timeline: Past habits (used to, would) vs Present habits (will) vs Getting accustomed
-    (be/get used to)
-  contrast: Used to = I used to play football. (past habit, not now) vs Will = He
-    will sit for hours. (present habit, typical behavior)
   ccqs:
-  - question: Is this a past habit or a present habit?
-    answer: Past = used to/would, Present = will
-    purpose: Tests whether the learner can distinguish between habitual actions (present
-      simple) and one-time actions (past simple). This is fundamental for clear time
-      reference.
-  - question: Does the person still do this?
-    answer: Used to = no longer, Will = still does
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Does the person still do this?...'
-      checks conceptual understanding, not just memorization.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      habitual aspects and explain why they are incorrect.
+  - answer: No. 'Used to' implies the habit has stopped.
+    purpose: Tests whether the learner understands that 'used to' encodes discontinuation — the habit is no longer current.
+    question: She used to collect stamps. Does she still collect stamps now?
+  - answer: '''Used to smoke'' — the habit is discontinued. ''Would'' only works for repeated actions, not states.'
+    purpose: Tests whether the learner selects the correct form based on the discontinuation meaning.
+    question: My grandfather smoked for 40 years but stopped at 60. Which verb form do we use?
+  - answer: '''Used to'' can describe both past states (live, know, be) and past actions (go, play, visit). ''Would'' can only describe repeated past actions, not past states.'''
+    purpose: Tests whether the learner knows that 'would' for past habits is restricted to action verbs and cannot be used with stative verbs, while 'used to' covers both.
+    question: What is the difference in meaning between these two forms?
+  - answer: 'No. ''Would'' can only describe repeated past actions, not past states. For past states, use ''used to'': ''I used to live in London when I was a child.'''
+    purpose: Tests whether the learner knows that 'would' for past habits is restricted to action verbs (go, play, visit) and cannot be used with stative verbs like live, know, or be. 'Used to' covers both
+      actions and states.
+    question: I would live in London when I was a child. Is this sentence correct?
+  contrast: Used to = I used to play football. (past habit, not now) vs Will = He will sit for hours. (present habit, typical behavior)
+  core_meaning: Habitual aspect describes actions that happen regularly or repeatedly. Different structures express past habits, present habits, and getting accustomed to something.
   example_generator:
     contexts:
     - past routines
@@ -36,51 +79,64 @@ meaning:
     - Used to for past habits is very common in storytelling
     - Would for past habits is more formal/literary
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Past: Subject + used to + base verb / Subject + would + base verb
-      / Present: Subject + will + base verb'
-    example_generator:
-      contexts:
-      - past routines
-      - typical behavior
-      - present habits
-      min_examples: 4
-  negative:
-    structure: 'Past: Subject + did not use to + base verb / Present: Subject + will
-      not + base verb'
-    example_generator:
-      contexts:
-      - negative habits
-      min_examples: 3
-  questions:
-    structure: 'Past: Did + subject + use to + verb? / Present: Does + subject + always
-      + verb?'
-    example_generator:
-      contexts:
-      - asking about habits
-      min_examples: 3
+  timeline: Past habits (used to, would) vs Present habits (will) vs Getting accustomed (be/get used to)
+phonetics:
+- example_generator:
+    contexts:
+    - pronunciation
+  l1_issue: Some L1 speakers confuse used to and be used to
+  note: Used to pronounced /juːst tuː/ (not /juːs tuː/)
+register_notes:
+- note: 'Biber et al. (1999) — Habitual aspect (present simple, ''used to'', ''would'' for past habits): conversation uses more habitual markers; academic prose uses present tense for universal/generic
+    statement. Ch. 6.2.2'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 6.2.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: Aspect Hypothesis and Tense-Aspect Acquisition'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Used to for past states and actions
-  type: grammatical
-  examples:
+- examples:
   - I used to live in London. (state)
   - She used to play tennis. (action)
-- rule: Would only for past actions (not states)
+  rule: Used to for past states and actions
   type: grammatical
-  examples:
+- examples:
   - We would go to the beach. (action)
   - I would live in London. (state — WRONG, use used to)
-- rule: Be used to = be accustomed to (followed by noun or -ing)
+  rule: Would only for past actions (not states)
   type: grammatical
-  examples:
+- examples:
   - I am used to the noise.
   - She is used to working late.
-- rule: Get used to = become accustomed to (followed by noun or -ing)
+  rule: Be used to = be accustomed to (followed by noun or -ing)
   type: grammatical
-  examples:
+- examples:
   - I am getting used to the weather.
   - You will get used to it.
+  rule: Get used to = become accustomed to (followed by noun or -ing)
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Students compare past and present habits using used to and would.
+    duration: 15
+    name: Then and Now
+  tips:
+  - 'GB3 Ch. 7: The aspect hypothesis — learners acquire past tense first with achievement/accomplishment verbs (clear completion, like ''He found the ticket''), NOT with habitual or activity verbs initially.
+    Teaching implication: teach past tense through completed single events first, then extend to habits. Source: Celce-Murcia & Larsen-Freeman (2015) GB3 3rd ed. Ch. 7 §7.3 (citing Andersen & Shirai 1994,
+    Bardovi-Harlig & Reynolds 1995).'
+  - 'GB3: Used to/would for past habits are briefly noted in the modals discussion. The core remote meaning of past tense also applies to past habits: the event is remote (over and done with). This remoteness
+    explains why ''used to'' implies the habit no longer continues.'
+  - Contrast used to (past) vs be used to (present)
+  - Use nostalgia scenarios for past habits
+  - Use real-life adaptation scenarios for get used to
+  - 'Swan PEU: ''Would'' for past habits — ''Every summer we would go to the seaside.'' Describes repeated past actions. More nostalgic/narrative than ''used to.'' Can NOT be used for past states: ''I would
+    be tall'' is wrong.'
+  - 'Swan PEU: Present continuous with ''always'' for annoying habits — ''He''s always complaining.'' NOT for neutral habits (use present simple: ''He always arrives on time.'').'
+title: Habitual Aspects
 use:
 - context: Past habits
   description: Talking about things you did regularly in the past
@@ -92,51 +148,3 @@ use:
   examples:
   - I am getting used to the new job.
   - She is used to living alone.
-phonetics:
-- note: Used to pronounced /juːst tuː/ (not /juːs tuː/)
-  example_generator:
-    contexts:
-    - pronunciation
-  l1_issue: Some L1 speakers confuse used to and be used to
-teaching:
-  methodology: PPP
-  tips:
-  - Contrast used to (past) vs be used to (present)
-  - Use nostalgia scenarios for past habits
-  - Use real-life adaptation scenarios for get used to
-  recommended_activities:
-  - name: Then and Now
-    duration: 15
-    adaptation_notes: Students compare past and present habits using used to and would.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
-    Modals, §9.1-9.6'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I go to the gym yesterday.*'
-  correction: I went to the gym yesterday.
-  explanation: Past time expressions (yesterday, last week) require past simple, not
-    present simple.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

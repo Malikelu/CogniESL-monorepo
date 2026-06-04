@@ -1,38 +1,185 @@
-grammar_point: gerunds_infinitives
-title: Gerunds & Infinitives (Verb + -ing / To + Base Verb)
-description: Verb patterns where some verbs are followed by gerund (-ing), some by
-  infinitive (to + base verb), and some by both with different meanings.
-level: B1
-meaning:
-  core_meaning: 'Fixed verb patterns for what follows: gerund (action as noun) or
-    infinitive (purpose/future action).'
-  timeline: N/A (Applies to all tenses; verb pattern does not change with tense).
-  contrast: 'Gerund = Action as noun: Swimming is fun.
-
-
-    Infinitive = Purpose/future: I went to swim.
-
-
-    Same meaning = like/love/hate: I like swimming/to swim.
-
-
-    Different meaning = stop/remember/forget: Stop doing (quit) vs stop to do (purpose).
-
-    '
-  ccqs:
-  - question: If I say 'I enjoy swimming,' can I also say 'I enjoy to swim'?
-    answer: No. 'Enjoy' is always followed by a gerund, not an infinitive.
-  - question: If I say 'I stopped smoking,' did I quit smoking or pause to smoke?
-    answer: It means I quit smoking. 'Stop + gerund' means to quit.
-  - question: If I say 'I want to go,' is 'want' followed by a gerund or an infinitive?
-    answer: It is followed by an infinitive. 'Want' always takes the infinitive.
-  example_generator:
-    contexts:
-    - everyday situations
-    cultural_notes: []
-    min_examples: 5
+citations:
+- claim: 'Core meaning: Fixed verb patterns for what follows: gerund (action as noun) or infinitive (purpose/future action)'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 31: Complementation-17.4'
+  tier: 1
+- claim: 'Register distribution: Gerund/infinitive choice is consistent across registers.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 31: Complementation-17.4'
+  tier: 1
+- claim: 'Discourse function: Gerunds create cohesion by turning actions into nouns: ''I enjoy swimming'' (the activity itself).'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 31: Complementation-17.4'
+  tier: 1
+- claim: 'Common error ''Using infinitive after ''enjoy'': *''I enjoy to swim.'''' for Portuguese, Spanish, French speakers'
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 16: Verb complementation-16.4'
+  tier: 1
+- claim: CGEL unifies gerund and present participle into 'gerund-participial' category (Ch.14).
+  reliability: A
+  source: Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 14
+  tier: 2
+- claim: Oshima & Hogue's Great Writing series demonstrates how this grammatical structure functions in academic writing contexts.
+    Their approach connects grammar instruction to writing outcomes, showing learners how accurate use of this structure improves
+    paragraph cohesion, essay organization, and academic register.
+  source: Oshima, A. and Hogue, A. (2006). Introduction to Academic Writing, 3rd ed. Pearson Longman.
+  tier: 2
+common_errors:
+- correction: I enjoy swimming.
+  error: 'Using infinitive after ''enjoy'': *''I enjoy to swim.'''
+  explanation: '''Enjoy'' is followed by a gerund, not an infinitive.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Dutch
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Gerunds and infinitives'
+- correction: I enjoy swimming.
+  error: 'Using infinitive after ''enjoy'': *''I enjoy to swim.'''
+  explanation: 'Swan PEU: ''Enjoy'' requires a gerund (not infinitive). Other verbs that take only gerunds: avoid, finish,
+    mind, suggest, recommend, consider, dislike, practise.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Dutch
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: I want to go home.
+  error: 'Using gerund after ''want'': *''I want going home.'''
+  explanation: 'Swan PEU: ''Want'' requires a to-infinitive (not gerund). Other verbs: hope, plan, decide, expect, need, promise,
+    refuse, seem.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Dutch
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: I suggest going now. / I suggest that we go now.
+  error: 'Using infinitive after ''suggest'': *''I suggest to go now.'''
+  explanation: 'Swan PEU: ''Suggest'' takes a gerund or a that-clause, NOT an infinitive. This is a common L1 transfer error.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  - Dutch
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: I look forward to hearing from you.
+  error: 'Using ''to'' + -ing: *''I look forward to hear from you.'''
+  explanation: 'Swan PEU: In ''look forward to'', ''to'' is a preposition (not part of the infinitive), so it must be followed
+    by a gerund. Same: ''used to doing'', ''object to doing'', ''be accustomed to doing''.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  - Dutch
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: ''
+  error: See Swan & Smith (2001) for L1-specific patterns
+  explanation: 'Swan & Smith (2001). Dutch (no gerund: *I don''t mind to do it), Spanish (infinitive as abstract noun: *To
+    smoke is bad for you - usage differs from English gerund).'
+  flagged: false
+  l1_groups:
+  - Dutch
+  - Spanish
+  reliability: B
+  source: 'Swan & Smith (2001) Learner English: A Teacher''s Guide to Interference and Other Problems, 2nd ed. Cambridge University
+    Press.'
+- correction: try to do = attempt (I tried to open the jar but I couldn't). try doing = experiment (Try adding more salt and
+    see if it tastes better). remember to do = don't forget (Remember to lock the door before you leave). remember doing =
+    recall a past event (I remember meeting her at the party). stop to do = pause in order to (He stopped to look at the map).
+    stop doing = cease/quit (She stopped smoking last year). forget to do = fail to remember (I forgot to call him). forget
+    doing = lose memory of a past event (I'll never forget visiting Rome. regret to do = be sorry about present/future news
+    (I regret to inform you that your application was unsuccessful). regret doing = feel bad about a past action (She regrets
+    leaving her job).
+  error: 'Confusing meaning-changing dual-pattern verbs — using the wrong form: *''I tried eating less but it was hard'' (when
+    meaning an attempt, not an experiment); *''I forgot to meet her'' (when meaning a lost memory of the event, not a failure
+    to remember).'
+  explanation: 'Parrott Ch. 12: Five verbs (try, remember, stop, forget, regret) each take both the infinitive and the -ing
+    form, but with a distinct meaning change. The infinitive typically refers to purpose, intention, or a prospective/future-oriented
+    action, while the -ing form refers to an action that was or is actually happening (past event, ongoing habit, or experiment).
+    Learners frequently select the wrong form because both are grammatically plausible, so the error produces a meaningful
+    but unintended sentence rather than an obvious grammar mistake.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  - German
+  - Chinese
+  - Japanese
+  reliability: A
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press. Ch. 12: Infinitive and
+    -ing forms-12.6.'
+- correction: 'I decided to go home. She refused to help. He managed to finish on time. Verbs that take ONLY the infinitive
+    (to + base verb): agree, arrange, attempt, claim, decide, demand, deserve, expect, fail, hope, intend, learn, manage,
+    need, offer, plan, prepare, pretend, promise, refuse, seem, tend, threaten, want, wish.'
+  error: 'Using -ing after a verb that takes ONLY the infinitive: *''I decided going home.'' / *''She refused helping.'' /
+    *''He managed finishing on time.'''
+  explanation: 'Parrott Ch. 12: A core set of verbs is restricted to the infinitive and cannot be followed by the -ing form
+    at all. These verbs typically express decisions, plans, attempts, or mental orientations toward a future action. Learners
+    who overgeneralise the -ing form (because it feels like a "safe" choice after many common verbs) produce errors like *''''I
+    hope going'''' or *''''She intends leaving''''. The full Parrott list should be memorised or practised systematically.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  - German
+  reliability: A
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press. Ch. 12: Infinitive and
+    -ing forms-12.6.'
+- correction: 'I avoid eating meat. She admitted taking the money. He discussed changing the plan. Verbs that take ONLY the
+    -ing form: admit, appreciate, avoid, consider, delay, deny, discuss, dislike, enjoy, finish, imagine, involve, keep, mention,
+    mind, miss, practise, put off, quit, recall, recommend, risk, suggest, tolerate, understand.'
+  error: 'Using the infinitive after a verb that takes ONLY the -ing form: *''I avoid to eat meat.'' / *''She admitted to
+    take the money.'' / *''He discussed to change the plan.'''
+  explanation: 'Parrott Ch. 12: A distinct set of verbs is restricted to the -ing form and cannot be followed by a to-infinitive.
+    These include verbs of attitude, reporting, and activity management. L1 transfer is the primary cause: in many languages
+    the equivalent construction uses an infinitive, so learners map that pattern directly into English. Verbs of liking and
+    disliking (dislike, enjoy, miss, mind) are especially prone to this error because learners know that like/love/hate accept
+    both forms and incorrectly extend that flexibility to the full group.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  - German
+  - Dutch
+  - Chinese
+  reliability: A
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press. Ch. 12: Infinitive and
+    -ing forms-12.6.'
+description: Verb patterns where some verbs are followed by gerund (-ing), some by infinitive (to + base verb), and some by
+  both with different meanings.
+dialectal_variation:
+- note: 'Biber et al. (2021) GSWE Ch. 1.3.2/1.3.4: This grammatical feature is stable across BrE and AmE. Any differences
+    are in frequency and register distribution, not core structure.'
+- note: 'In some dialects, ''like'' + infinitive is common: ''I like to swim'' (standard) vs ''I like swimming'' (also standard).
+    Both are acceptable.'
+- note: 'In informal speech, ''try and'' replaces ''try to'': ''Try and finish'' (informal) vs ''Try to finish'' (standard).'
+discourse_notes:
+- note: 'Gerunds create cohesion by turning actions into nouns: ''I enjoy swimming'' (the activity itself).'
+- note: 'Infinitives express purpose and intention: ''I went to the store to buy milk.'''
+- note: 'In academic writing, gerunds are used for describing processes: ''Collecting data involves...'''
+- note: 'The choice between gerund and infinitive can change meaning: ''I stopped smoking'' (quit) vs ''I stopped to smoke''
+    (paused for a purpose).'
+- note: 'CGEL (Ch.14) identifies four non-finite clause types: gerund-participial (-ing), to-infinitival (to + V), bare infinitival
+    (V after modals/causatives), and past-participial (-ed/irregular). The traditional ''gerund vs present participle'' split
+    is not motivated in Modern English — the two were distinct in Old English but merged by Middle English.'
+  source: Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 14
 form:
   affirmative:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
     structure: 'Verb + gerund: I enjoy swimming.
 
 
@@ -45,143 +192,187 @@ form:
       Verb + gerund/infinitive (same meaning): I like swimming/to swim.
 
 
-      Verb + gerund/infinitive (different meaning): I stopped smoking (quit) vs I
-      stopped to smoke (purpose).
+      Verb + gerund/infinitive (different meaning): I stopped smoking (quit) vs I stopped to smoke (purpose).
 
       '
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
   negative:
-    structure: 'Verb + not + gerund/infinitive: I enjoy not swimming. I decided not
-      to go.'
     example_generator:
       contexts:
       - work and professional life
       min_examples: 4
+    structure: 'Verb + not + gerund/infinitive: I enjoy not swimming. I decided not to go.'
   questions:
-    structure: 'Invert auxiliary: Do you enjoy swimming? Did he decide to go?'
     example_generator:
       contexts:
       - everyday situations
       min_examples: 4
+    structure: 'Invert auxiliary: Do you enjoy swimming? Did he decide to go?'
+grammar_point: gerunds_infinitives
+level: B1
+meaning:
+  ccqs:
+  - answer: No. 'Enjoy' is always followed by a gerund, not an infinitive.
+    purpose: 'Tests the learner knows that ''enjoy'' must be followed by a gerund (-ing), not an infinitive. This is a fixed
+      verb pattern: enjoy + -ing is one of the most common gerund patterns in English.'
+    question: If I say 'I enjoy swimming,' can I also say 'I enjoy to swim'?
+  - answer: It means I quit smoking. 'Stop + gerund' means to quit.
+    purpose: 'Tests the learner understands the meaning change with ''stop'': stop + gerund means to quit a habit, while stop
+      + infinitive means to pause for a purpose.'
+    question: If I say 'I stopped smoking,' did I quit smoking or pause to smoke?
+  - answer: It is followed by an infinitive. 'Want' always takes the infinitive.
+    purpose: 'Tests the learner can categorise verbs correctly: ''want'' is always followed by an infinitive (to + base verb),
+      never a gerund, making it part of the infinitive-only verb group.'
+    question: If I say 'I want to go,' is 'want' followed by a gerund or an infinitive?
+  - answer: 'Verb + object + infinitive. Some verbs (tell, ask, want, expect, advise, allow) require an object before the
+      infinitive. The pattern is: verb + person + to + base verb.'
+    purpose: Tests the learner can identify the verb + object + infinitive pattern, which is distinct from both simple gerund
+      patterns (enjoy + -ing) and simple infinitive patterns (want + to). Verbs of command, request, and expectation follow
+      this three-part structure.
+    question: 'I told him to leave. What pattern is this: verb + object + gerund, or verb + object + infinitive?'
+  contrast: 'Gerund = Action as noun: Swimming is fun.
+
+
+    Infinitive = Purpose/future: I went to swim.
+
+
+    Same meaning = like/love/hate: I like swimming/to swim.
+
+
+    Different meaning = stop/remember/forget: Stop doing (quit) vs stop to do (purpose).
+
+    '
+  core_meaning: 'Fixed verb patterns for what follows: gerund (action as noun) or infinitive (purpose/future action).'
+  example_generator:
+    contexts:
+    - everyday situations
+    cultural_notes: []
+    min_examples: 5
+  timeline: N/A (Applies to all tenses; verb pattern does not change with tense).
+phonetics:
+- example_generator:
+    contexts:
+    - gerund vs infinitive stress
+  l1_issue: Learners may stress the wrong word, making the sentence sound unnatural.
+  note: 'When a verb is followed by a gerund, the stress falls on the gerund: ''I enjoy READING.'' When followed by an infinitive,
+    the stress falls on the infinitive: ''I want to GO.'''
+register_notes:
+- note: Gerund/infinitive choice is consistent across registers.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In academic writing, gerunds are common as subjects: ''Swimming is good exercise.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In formal writing, infinitives often express purpose: ''The study was conducted to investigate...'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In conversation, gerunds are common after phrasal verbs: ''I gave up smoking.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 16: Verb complementation-16.4'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 31: Complementation-17.4'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Ch. 14: Non-finite Clauses-14.4'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners. Ch. 13: Gerunds and infinitives'
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(gerunds and infinitives: verb patterns)'
 sub_rules:
-- rule: 'Some verbs are followed only by gerunds (ing): enjoy, avoid, finish, mind,
-    suggest, recommend, deny, admit, consider, imagine, practice, risk, miss'
-  type: grammatical
-  examples:
+- examples:
   - I enjoy reading
   - She avoids eating meat
   - He finished working
   - Do you mind waiting
-- rule: 'Some verbs are followed only by infinitives (to + verb): want, need, decide,
-    plan, hope, agree, refuse, promise, offer, afford, manage, fail, seem, appear'
+  rule: 'Some verbs are followed only by gerunds (ing): enjoy, avoid, finish, mind, suggest, recommend, deny, admit, consider,
+    imagine, practice, risk, miss'
   type: grammatical
-  examples:
+- examples:
   - I want to go
   - She needs to study
   - He decided to leave
   - They plan to travel
-- rule: 'Some verbs can take both gerund and infinitive with a change in meaning:
-    stop, remember, forget, try, regret, go on'
-  type: semantic
-  examples:
+  rule: 'Some verbs are followed only by infinitives (to + verb): want, need, decide, plan, hope, agree, refuse, promise,
+    offer, afford, manage, fail, seem, appear'
+  type: grammatical
+- examples:
   - I stopped smoking (quit the habit)
   - I stopped to smoke (paused in order to smoke)
   - I remember locking the door (memory of past action)
   - I remembered to lock the door (did not forget to do it)
-use:
-- name: Verbs + Gerund
-  description: 'Verbs like enjoy, avoid, suggest, finish: I enjoy reading.'
-  examples:
-  - She avoids driving.
-  - He finished working.
-  key_point: Memorise these verb patterns.
-- name: Verbs + Infinitive
-  description: 'Verbs like want, decide, promise, hope: I want to go.'
-  examples:
-  - She decided to leave.
-  - He promised to help.
-  key_point: Memorise these verb patterns.
-- name: Verbs + Object + Infinitive
-  description: 'Verbs like tell, ask, want, expect: I told him to go.'
-  examples:
-  - She asked me to help.
-  - He wanted us to stay.
-  key_point: Object between verb and infinitive.
-- name: Same Meaning (Like/Love/Hate)
-  description: 'Gerund and infinitive have same meaning: I like swimming/to swim.'
-  examples:
-  - She loves dancing/to dance.
-  key_point: No meaning change.
-- name: Different Meaning (Stop/Remember/Forget)
-  description: 'Gerund = action stopped; Infinitive = purpose: I stopped smoking (quit)
-    vs I stopped to smoke (purpose).'
-  examples:
-  - I remembered locking the door (memory of past action) vs I remembered to lock
-    the door (didn't forget).
-  key_point: Meaning changes completely.
-phonetics:
-- note: 'When a verb is followed by a gerund, the stress falls on the gerund: ''I
-    enjoy READING.'' When followed by an infinitive, the stress falls on the infinitive:
-    ''I want to GO.'''
-  example_generator:
-    contexts:
-    - gerund vs infinitive stress
-  l1_issue: Learners may stress the wrong word, making the sentence sound unnatural.
+  rule: 'Some verbs can take both gerund and infinitive with a change in meaning: stop, remember, forget, try, regret, go
+    on'
+  type: semantic
 teaching:
   methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students sort verbs into three groups: gerund only, infinitive only, and both (with meaning change).'
+    duration: 10
+    name: Verb Sorting
+  - adaptation_notes: 'Students create pairs of sentences showing the meaning change: ''I stopped smoking'' vs ''I stopped
+      to smoke.'''
+    duration: 15
+    name: Meaning Change
   tips:
+  - 'Parrott (2000) Ch. 12: Infinitive vs -ing choices may seem arbitrary to learners. Teach rules one at a time over time,
+    not all at once. Mistakes rarely cause misunderstanding but are heavily penalised in exams. Infinitive is the base form
+    of the verb, sometimes preceded by to (full infinitive).'
+  - 'Parrott (2000) Ch. 12: Verbs taking both infinitive and -ing with meaning change — try to do (attempt) vs try doing (experiment),
+    remember to do (don''t forget) vs remember doing (recall past), stop to do (pause purpose) vs stop doing (cease), regret
+    to do (formal announcement) vs regret doing (feel sorry about). Source: Parrott (2000) Grammar for English Language Teachers,
+    2nd ed. Ch. 12: Infinitive and -ing forms, 12.1-12.6.'
+  - 'Start with verbs that take the same pattern in L1 and L2. form, rejecting the traditional split between gerund and participle.
+    This unifies the analysis: ''Swimming is fun'' and ''He is swimming'' both use the same form with different functions.'
   - 'Week 1: Verbs + gerund (enjoy, avoid, finish).'
   - 'Week 2: Verbs + infinitive (want, decide, promise).'
   - 'Week 3: Verbs with different meanings (stop, remember, forget).'
   - 'Use verb pattern charts: List verbs by pattern for students to memorise.'
-  recommended_activities:
-  - name: Verb Sorting
-    duration: 10
-    adaptation_notes: 'Students sort verbs into three groups: gerund only, infinitive
-      only, and both (with meaning change).'
-  - name: Meaning Change
-    duration: 15
-    adaptation_notes: 'Students create pairs of sentences showing the meaning change:
-      ''I stopped smoking'' vs ''I stopped to smoke.'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17:
-    Complementation, §17.1-17.4'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 14: Non-finite Clauses, §14.1-14.4'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 295-310 (gerunds
-    and infinitives: verb patterns)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    16: Verb complementation, §16.1-16.4'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 13: Gerunds and infinitives'
-common_errors:
-- error: 'Using infinitive after ''enjoy'': *''I enjoy to swim.'''
-  correction: I enjoy swimming.
-  explanation: '''Enjoy'' is followed by a gerund, not an infinitive.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: Gerund/infinitive choice is consistent across registers.
-- note: 'In academic writing, gerunds are common as subjects: ''Swimming is good exercise.'''
-- note: 'In formal writing, infinitives often express purpose: ''The study was conducted
-    to investigate...'''
-- note: 'In conversation, gerunds are common after phrasal verbs: ''I gave up smoking.'''
-dialectal_variation:
-- note: No significant BrE/AmE differences in gerund/infinitive usage.
-- note: 'In some dialects, ''like'' + infinitive is common: ''I like to swim'' (standard)
-    vs ''I like swimming'' (also standard). Both are acceptable.'
-- note: 'In informal speech, ''try and'' replaces ''try to'': ''Try and finish'' (informal)
-    vs ''Try to finish'' (standard).'
-discourse_notes:
-- note: 'Gerunds create cohesion by turning actions into nouns: ''I enjoy swimming''
-    (the activity itself).'
-- note: 'Infinitives express purpose and intention: ''I went to the store to buy milk.'''
-- note: 'In academic writing, gerunds are used for describing processes: ''Collecting
-    data involves...'''
-- note: 'The choice between gerund and infinitive can change meaning: ''I stopped
-    smoking'' (quit) vs ''I stopped to smoke'' (paused for a purpose).'
+  - 'Swan PEU: Make two lists — verbs + gerund (enjoy, avoid, finish, mind) and verbs + infinitive (want, hope, plan, decide).
+    Drill with gap-fills.'
+  - 'Swan PEU: Verbs that take BOTH gerund and infinitive with different meanings: ''stop'', ''remember'', ''forget'', ''try'',
+    ''regret'', ''go on'', ''mean''.'
+  - 'Swan PEU: ''Stop smoking'' (quit) vs ''stop to smoke'' (pause in order to smoke). Use contrasting examples.'
+  - 'Swan PEU: ''To'' as preposition vs infinitive marker — ''I''m used to driving on the left'' (preposition + gerund) vs
+    ''I used to drive on the left'' (past habit).'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 14: CGEL (Ch.14) replaces the traditional ''gerund vs
+    infinitive'' split with a FOUR-WAY classification: (1) Gerund-participial (unified -ing form: ''I enjoy swimming'' = ''I
+    am swimming''), (2) To-infinitival, (3) Bare infinitival, (4) Past-participial. CGEL''s KEY innovation: collapsing traditional
+    ''gerund'' and ''present participle'' into one category (''gerund-participial'') because both end in -ing and share distribution.
+    This simplifies teaching: one -ing form, multiple functions.'
+teaching_tips:
+- source: 'Celce-Murcia & Larsen-Freeman (1999) The Grammar Book: An ESL/EFL Teacher''s Course, 2nd ed. Heinle & Heinle.'
+  tip: 'COMPLEMENTATION IS LEXICAL: Each verb determines its complement type — want requires infinitive (*''I want that he
+    go''); insist requires subjunctive that-clause (*''insist him to go''); force requires to-infinitive (*''force that he
+    go''); many verbs allow BOTH (try, stop, remember, forget, regret, like, begin, continue) with meaning changes. The ''-ing
+    first'' heuristic (use gerund -ing if the action clearly happened) is a useful lower-level strategy but oversimplifies.
+    Source: Ch.31 p.442-450.'
+title: Gerunds & Infinitives (Verb + -ing / To + Base Verb)
+use:
+- description: 'Verbs like enjoy, avoid, suggest, finish: I enjoy reading.'
+  examples:
+  - She avoids driving.
+  - He finished working.
+  key_point: Memorise these verb patterns.
+  name: Verbs + Gerund
+- description: 'Verbs like want, decide, promise, hope: I want to go.'
+  examples:
+  - She decided to leave.
+  - He promised to help.
+  key_point: Memorise these verb patterns.
+  name: Verbs + Infinitive
+- description: 'Verbs like tell, ask, want, expect: I told him to go.'
+  examples:
+  - She asked me to help.
+  - He wanted us to stay.
+  key_point: Object between verb and infinitive.
+  name: Verbs + Object + Infinitive
+- description: 'Gerund and infinitive have same meaning: I like swimming/to swim.'
+  examples:
+  - She loves dancing/to dance.
+  key_point: No meaning change.
+  name: Same Meaning (Like/Love/Hate)
+- description: 'Gerund = action stopped; Infinitive = purpose: I stopped smoking (quit) vs I stopped to smoke (purpose).'
+  examples:
+  - I remembered locking the door (memory of past action) vs I remembered to lock the door (didn't forget).
+  key_point: Meaning changes completely.
+  name: Different Meaning (Stop/Remember/Forget)

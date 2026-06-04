@@ -1,39 +1,201 @@
+citations:
+- claim: 'Core meaning: When two or more adjectives modify the same noun, they must follow a specific order that native spea'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 20: Adjectives-13.5 (adjective order)'
+  tier: 1
+- claim: 'Register distribution: In conversation, adjective order is rarely tested directly but errors sound unnatural.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 20: Adjectives-13.5 (adjective order)'
+  tier: 1
+- claim: 'Discourse function: In conversation, adjective order is rarely tested directly but errors sound unnatural: *''a
+    red big c'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 20: Adjectives-13.5 (adjective order)'
+  tier: 1
+- claim: Common error '*a red big car*' for Portuguese, Spanish, Chinese speakers
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 20: Adjectives-13.5'
+  tier: 1
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents how transfer effects are non-linear,
+    determined by functional fit between L1 and L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects are non-linear — determined by functional
+    fit between L1 and L2 systems rather than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning. Routledge.
+  tier: 2
+common_errors:
+- correction: a big red car
+  error: '*a red big car*'
+  explanation: Size before color in adjective order.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - French
+  - Italian
+  reliability: B
+  source: Swan Entry 185. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+- error: Adjective agreement difficulty depends on L1 morphology (Golden et al. Ch.5)
+  explanation: 'Golden et al. (2017) Ch.5 (Janik): English-speaking learners of Norwegian (no adjective inflection in English)
+    have more difficulty with Norwegian adjective agreement than German or Polish speakers. German learners are additionally
+    disadvantaged in predicative position (German leaves adjectives uninflected predicatively; Norwegian inflects). Polish
+    learners perform well because Polish has similar predicative adjective inflection to Norwegian. This shows positive AND
+    negative transfer can coexist in the same L1 for the same grammatical feature.'
+  l1_groups:
+  - English
+  - German
+  - Polish
+  - Norwegian
+  - Czech
+  - Russian
+  reliability: C
+  source: Golden et al. (2017), Ch. 5
+- correction: ''
+  error: See Swan & Smith (2001) for L1-specific patterns
+  explanation: 'Swan & Smith (2001). Spanish (post-nominal adjectives: casa roja), French (post-nominal BANGS adjectives),
+    Italian (post-nominal adjectives common).'
+  flagged: false
+  l1_groups:
+  - Spanish
+  - French
+  - Italian
+  reliability: B
+  source: 'Swan & Smith (2001) Learner English: A Teacher''s Guide to Interference and Other Problems, 2nd ed. Cambridge University
+    Press.'
+- error: '[See Adjective Placement transfer patterns]'
+  explanation: Native syntax places adjectives after nouns; this word order is directly transferred to English (e.g., "I read
+    a book interesting")
+  l1_groups:
+  - Arabic
+  - Spanish
+  - Vietnamese
+  reliability: C
+  source: 'L1 Interference ESL Teacher Resources — Comparative Analysis of Cross-Linguistic Influence: Best-in-Class Resources
+    and L1 Interference Databases for English Language Educators.'
+  tier: 4
+- correction: 'When all adjectives qualify the same noun before it, separate with commas: "a terrifying, dark, gloomy clearing".
+    With three or more pre-noun adjectives, use AND before the final one: "a dark, gloomy and terrifying clearing". After
+    the noun, also use AND before the last: "The clearing was dark, gloomy and terrifying."'
+  error: Missing commas and AND with multiple pre-noun adjectives (e.g., *"a terrifying dark gloomy clearing" or *"a dark
+    gloomy terrifying clearing")
+  explanation: 'Parrott distinguishes two comma/AND rules for adjectives: (1) pre-noun adjectives that all qualify the same
+    noun are comma-separated; (2) when three or more adjectives precede a noun, AND is required before the final adjective.
+    The same AND-before-last rule applies when adjectives follow the noun in predicative position. Learners often omit both
+    commas and AND, producing unnatural strings.'
+  l1_groups:
+  - Spanish
+  - French
+  - Italian
+  - Portuguese
+  - Chinese
+  - Japanese
+  reliability: A
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press. Ch. 4: Adjectives-4.7.'
+- correction: '"absolutely fantastic" / "very big" / "quite amazing = completely amazing"'
+  error: '*"very fantastic" / *"absolutely big" / *"quite amazing = rather amazing"'
+  explanation: 'Parrott distinguishes gradable adjectives (big, good, tired — can vary in degree) from ungradable/extreme
+    adjectives (fantastic, enormous, exhausted, freezing — already at an extreme). The adverb choice must match: very/fairly/rather
+    collocate only with gradable adjectives ("very big", "fairly good", "rather tired"); absolutely/completely/totally collocate
+    only with ungradable adjectives ("absolutely fantastic", "completely wrong", "totally exhausted"). "Quite" behaves differently
+    depending on adjective type: with a gradable adjective it is a downtowner meaning less than ''very'' ("quite good" = not
+    very good); with an ungradable adjective it is an intensifier meaning completely ("quite amazing" = absolutely amazing).
+    Mixing these (e.g., *"very fantastic", *"absolutely big") is a persistent learner error.'
+  l1_groups:
+  - Spanish
+  - French
+  - Italian
+  - Portuguese
+  - German
+  - Chinese
+  - Japanese
+  - Arabic
+  reliability: A
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press. Ch. 4: Adjectives-4.7.'
+- correction: '"The lecture was boring." / "The students were bored."'
+  error: '*"The lecture was bored." / *"The students were boring."'
+  explanation: 'Parrott identifies the -ing/-ed participial adjective distinction as a core learner difficulty: the -ing form
+    describes the cause or source of a feeling (a boring lecture — the lecture causes boredom; an interesting book — the book
+    causes interest); the -ed form describes the effect on the experiencer (bored students — the students experience boredom;
+    interested learners — the learners experience interest). Confusion between these forms is one of the most frequent adjective
+    errors across all L1 groups. This is distinct from adjective ordering: it is a meaning/form selection error, not a sequence
+    error.'
+  l1_groups:
+  - Spanish
+  - French
+  - Italian
+  - Portuguese
+  - German
+  - Chinese
+  - Japanese
+  - Arabic
+  - Korean
+  - Turkish
+  reliability: A
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press. Ch. 4: Adjectives-4.7.'
+description: The fixed sequence in which multiple adjectives appear before a noun in English, following a set order of opinion,
+  size, age, shape, colour, origin, material and purpose.
+dialectal_variation: []
+discourse_notes:
+- note: 'In conversation, adjective order is rarely tested directly but errors sound unnatural: *''a red big car'' (incorrect
+    order)'
+- note: 'In academic writing, adjective order appears in descriptions: ''A large-scale longitudinal study was conducted.'''
+- note: 'In creative writing, adjective order creates vivid imagery: ''The old wooden house stood at the end of the lane.'''
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - describing products
+      - estate agent descriptions
+      - museum catalogues
+      - travel writing
+      min_examples: 4
+    structure: 'Determiner + opinion + size + age + shape + colour + origin + material + purpose + noun. Example: ''a lovely
+      small old rectangular brown French oak writing desk'''
+  negative:
+    example_generator:
+      contexts:
+      - complaints
+      - expressing dissatisfaction
+      - negative reviews
+      min_examples: 4
+    structure: 'The same adjective order applies in negative sentences. Example: ''It wasn''t a beautiful large old house.''
+      / ''I don''t want a cheap plastic Chinese phone.'''
+  questions:
+    example_generator:
+      contexts:
+      - asking for descriptions
+      - identifying people
+      - shopping questions
+      min_examples: 3
+    structure: 'Questions follow the same order. Example: ''Is this a genuine Italian leather bag?'' / ''Did you see the tall
+      young blonde woman?'''
 grammar_point: adjective_order
-title: Adjective Order
-description: The fixed sequence in which multiple adjectives appear before a noun
-  in English, following a set order of opinion, size, age, shape, colour, origin,
-  material and purpose.
 level: B2
 meaning:
-  core_meaning: When two or more adjectives modify the same noun, they must follow
-    a specific order that native speakers use intuitively. Violating this order sounds
-    unnatural even if grammatically understandable.
-  timeline: Timeless - the order rule applies regardless of tense.
-  contrast: 'Correct order: "a beautiful large old round red Italian wooden dining
-    table"
+  ccqs:
+  - answer: Opinion adjectives (beautiful, ugly, nice) come before material adjectives (wooden, plastic, silk).
+    purpose: 'Tests whether the learner understands the standard adjective order in English: opinion → size → age → shape
+      → color → origin → material → purpose.'
+    question: Does this adjective describe what someone thinks of the thing, or what it is made of?
+  - answer: No - size comes before colour, so it should be 'a big red car'.
+    purpose: 'Tests whether the learner can apply the order rule to multiple-adjective noun phrases: ''a beautiful old Italian
+      leather bag.'''
+    question: Can you say 'a red big car'?
+  - answer: A beautiful old Italian leather bag. The order is opinion, age, origin, material. Violating this order sounds
+      unnatural to native speakers.
+    purpose: Tests whether the learner can apply the standard adjective order (Swan PEU 2016, entries 261-270).
+    question: 'Which sounds natural: ''a beautiful old Italian leather bag'' or *''a leather Italian old beautiful bag''?'
+  - answer: 'A big red car. Size comes before colour in adjective order (OSASCOMP: Opinion, Size, Age, Shape, Colour, Origin,
+      Material, Purpose).'
+    purpose: Tests whether the learner can apply the size-before-colour rule (Swan PEU 2016, entry 261).
+    question: 'Which comes first: size or colour? ''A big red car'' or *''a red big car''?'
+  contrast: 'Correct order: "a beautiful large old round red Italian wooden dining table"
 
     Incorrect order: "a red beautiful Italian old large wooden round dining table"
 
     '
-  ccqs:
-  - question: Does this adjective describe what someone thinks of the thing, or what
-      it is made of?
-    answer: Opinion adjectives (beautiful, ugly, nice) come before material adjectives
-      (wooden, plastic, silk).
-    purpose: 'Tests whether the learner understands the standard adjective order in
-      English: opinion → size → age → shape → color → origin → material → purpose.'
-  - question: Can you say 'a red big car'?
-    answer: No - size comes before colour, so it should be 'a big red car'.
-    purpose: 'Tests whether the learner can apply the order rule to multiple-adjective
-      noun phrases: ''a beautiful old Italian leather bag.'''
-  - question: '[Add specific question for CCQ 3]'
-    answer: '[Add specific answer for CCQ 3]'
-    purpose: 'Tests whether the learner understands that violating the order sounds
-      unnatural to native speakers: *''a leather Italian old beautiful bag.'''
-  - question: '[Add specific question for CCQ 4]'
-    answer: '[Add specific answer for CCQ 4]'
-    purpose: Tests whether the learner can use the OSASCOM mnemonic (Opinion, Size,
-      Age, Shape, Color, Origin, Material) to remember the order.
+  core_meaning: When two or more adjectives modify the same noun, they must follow a specific order that native speakers use
+    intuitively. Violating this order sounds unnatural even if grammatically understandable.
   example_generator:
     contexts:
     - describing objects
@@ -42,183 +204,150 @@ meaning:
     - travel
     - home and furniture
     cultural_notes:
-    - This order is intuitive for native speakers but must be learned explicitly by
-      L2 speakers
+    - This order is intuitive for native speakers but must be learned explicitly by L2 speakers
     - Some languages place adjectives after the noun
     - making pre-noun ordering challenging
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Determiner + opinion + size + age + shape + colour + origin + material
-      + purpose + noun. Example: ''a lovely small old rectangular brown French oak
-      writing desk'''
-    example_generator:
-      contexts:
-      - describing products
-      - estate agent descriptions
-      - museum catalogues
-      - travel writing
-      min_examples: 4
-  negative:
-    structure: 'The same adjective order applies in negative sentences. Example: ''It
-      wasn''t a beautiful large old house.'' / ''I don''t want a cheap plastic Chinese
-      phone.'''
-    example_generator:
-      contexts:
-      - complaints
-      - expressing dissatisfaction
-      - negative reviews
-      min_examples: 4
-  questions:
-    structure: 'Questions follow the same order. Example: ''Is this a genuine Italian
-      leather bag?'' / ''Did you see the tall young blonde woman?'''
-    example_generator:
-      contexts:
-      - asking for descriptions
-      - identifying people
-      - shopping questions
-      min_examples: 3
+  timeline: Timeless - the order rule applies regardless of tense.
+phonetics:
+- example_generator:
+    contexts:
+    - natural conversation
+    - descriptions
+  l1_issue: Speakers of languages where adjectives follow the noun (e.g., Spanish, Arabic, French) may struggle with both
+    the order and the pre-noun placement.
+  note: 'When multiple adjectives precede a noun, stress typically falls on the noun and the first (opinion) adjective: ''a
+    BEAUTIFUL BIG house''. Later adjectives receive progressively less stress.'
+register_notes:
+- note: In conversation, adjective order is rarely tested directly but errors sound unnatural.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In academic writing, adjective order appears in descriptions: ''A large-scale longitudinal study.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In creative writing, adjective order creates vivid imagery: ''The old wooden house.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: Biber et al. (2021) — Attributive adjective position is the default in English; predicative position is register-sensitive.
+    Academic prose uses more complex premodified NPs. Ch. 7.2.1, 8.4
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 7.2.1, 8.4
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 13: Adjectives-13.5'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 20: Adjectives-13.5 (adjective order)'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Ch. 6: Adjectives (attributive adjective
+    order)'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners. Ch. 11: Adjective order'
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(adjective order: opinion, size, age, shape, color, origin, material)'
 sub_rules:
-- rule: Opinion before fact
-  type: grammatical
-  examples:
+- examples:
   - a delicious meal (opinion) vs. a French meal (fact)
   - an ugly building (opinion) vs. a brick building (material)
-- rule: Size before age
+  rule: Opinion before fact
   type: grammatical
-  examples:
+- examples:
   - a big old house
   - a small young puppy
   - a tiny new-born baby
-- rule: Age before shape
+  rule: Size before age
   type: grammatical
-  examples:
+- examples:
   - an old round table
   - a new square box
   - a young slender model
-- rule: Shape before colour
+  rule: Age before shape
   type: grammatical
-  examples:
+- examples:
   - a round red ball
   - a flat blue screen
   - a long black dress
-- rule: Colour before origin
+  rule: Shape before colour
   type: grammatical
-  examples:
+- examples:
   - a red Italian sports car
   - a blue Japanese motorbike
   - a green Egyptian cotton shirt
-- rule: Origin before material
+  rule: Colour before origin
   type: grammatical
-  examples:
+- examples:
   - a French silk scarf
   - a Brazilian leather bag
   - a Chinese porcelain vase
-- rule: Material before purpose
+  rule: Origin before material
   type: grammatical
-  examples:
+- examples:
   - a wooden cooking spoon
   - a plastic gardening pot
   - a stainless steel frying pan
-- rule: Maximum of three adjectives is most natural
-  type: pragmatic
-  examples:
+  rule: Material before purpose
+  type: grammatical
+- examples:
   - a beautiful old house (3 is natural)
-  - a beautiful large old round red Italian wooden dining table (grammatically correct
-    but unwieldy in speech)
+  - a beautiful large old round red Italian wooden dining table (grammatically correct but unwieldy in speech)
+  rule: Maximum of three adjectives is most natural
+  type: pragmatic
+teaching:
+  methodology: Mnemonic-based explicit instruction with practice
+  recommended_activities:
+  - adaptation_notes: 'Teach the mnemonic: Opinion, Size, Age, Shape, Colour, Origin, Material, Purpose. Have students memorise
+      it and apply it to example sentences.'
+    duration: 10
+    name: OSASCOMP mnemonic
+  - adaptation_notes: Give students sets of jumbled adjectives and a noun. They must arrange them in the correct order. Works
+      well as a team competition.
+    duration: 15
+    name: Adjective ordering game
+  - adaptation_notes: Show pictures of objects and have students describe them using at least three adjectives in the correct
+      order. Peer correction encouraged.
+    duration: 15
+    name: Picture description
+  - adaptation_notes: Provide sentences with incorrect adjective order and have students identify and correct them. Good for
+      individual or pair work.
+    duration: 10
+    name: Error correction
+  tips:
+  - 'Parrott (2000) Ch. 4: Adjective order rule of thumb — general before specific, opinion before description. Detailed order:
+    size, shape/age, colour, origin, material, purpose. When three or more adjectives appear before a noun, use commas between
+    them and and before the final one (a dark, gloomy and terrifying forest). Source: Parrott (2000) Grammar for English Language
+    Teachers, 2nd ed. Ch. 4: Adjectives, 4.5.'
+  - Teach the OSASCOMP mnemonic (Opinion, Size, Age, Shape, Colour, Origin, Material, Purpose) as a memory aid.
+  - Point out that native speakers follow this order intuitively but cannot always explain why.
+  - Limit practice to 2-3 adjectives at a time; more than three sounds unnatural in most contexts.
+  - Contrast with the student's L1 adjective order to raise awareness of differences.
+  - 'Swan PEU: Order of adjectives — the canonical order is: opinion-size-age-shape-color-origin-material-purpose. For example:
+    ''a beautiful small old round brown Italian leather traveling bag.'' Teach the mnemonic ''OSAShCOMP'' (Opinion, Size,
+    Age, Shape, Color, Origin, Material, Purpose).'
+  - 'Swan PEU: Native speakers follow this order intuitively but rarely can explain it. Learners should practice with real
+    examples. Multiple adjectives of the same category go together: ''a kind, generous person'' (two opinion adjectives).
+    Use commas between same-category adjectives, no comma between different categories.'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 6: CGEL (Ch.6) notes that some adjectives are ATTRIBUTIVE-ONLY
+    (''former,'' ''main,'' ''mere,'' ''very,'' ''alleged'') or PREDICATIVE-ONLY (''afraid,'' ''alive,'' ''alone,'' ''asleep,''
+    ''aware''). Some change meaning by position: ''the present members'' = members who are here now; ''the members present''
+    = members who are here (postposed, reduced relative). ''The late queen'' = deceased (not ''former''). L1s with obligatory
+    pre/post-nominal adjective distinction (French, Spanish) may transfer this pattern.'
+title: Adjective Order
 use:
-- name: Describing objects and products
-  description: Used when giving detailed descriptions of items, especially in shopping,
-    catalogues, and reviews.
+- description: Used when giving detailed descriptions of items, especially in shopping, catalogues, and reviews.
   examples:
   - She bought a beautiful small silver Swiss watch.
   - He drives a fast new black German car.
   - I'd like a large round wooden dining table.
   key_point: Essential for natural-sounding descriptions in both speech and writing.
-- name: Writing and storytelling
-  description: Used in creative writing, travel writing, and journalism to create
-    vivid descriptions.
+  name: Describing objects and products
+- description: Used in creative writing, travel writing, and journalism to create vivid descriptions.
   examples:
   - They lived in a charming little old stone cottage.
   - The museum displayed a rare ancient Egyptian gold necklace.
   - We sat at a long white marble bar.
   key_point: Good adjective ordering makes writing sound fluent and native-like.
-- name: Identifying people
-  description: Used when describing someone's appearance to help identify them.
+  name: Writing and storytelling
+- description: Used when describing someone's appearance to help identify them.
   examples:
   - I saw a tall young blonde woman.
   - He's a short middle-aged bald man.
   - She was carrying a small brown leather handbag.
   key_point: Common in police descriptions, lost-person reports, and everyday conversation.
-phonetics:
-- note: 'When multiple adjectives precede a noun, stress typically falls on the noun
-    and the first (opinion) adjective: ''a BEAUTIFUL BIG house''. Later adjectives
-    receive progressively less stress.'
-  example_generator:
-    contexts:
-    - natural conversation
-    - descriptions
-  l1_issue: Speakers of languages where adjectives follow the noun (e.g., Spanish,
-    Arabic, French) may struggle with both the order and the pre-noun placement.
-teaching:
-  methodology: Mnemonic-based explicit instruction with practice
-  recommended_activities:
-  - name: OSASCOMP mnemonic
-    duration: 10
-    adaptation_notes: 'Teach the mnemonic: Opinion, Size, Age, Shape, Colour, Origin,
-      Material, Purpose. Have students memorise it and apply it to example sentences.'
-  - name: Adjective ordering game
-    duration: 15
-    adaptation_notes: Give students sets of jumbled adjectives and a noun. They must
-      arrange them in the correct order. Works well as a team competition.
-  - name: Picture description
-    duration: 15
-    adaptation_notes: Show pictures of objects and have students describe them using
-      at least three adjectives in the correct order. Peer correction encouraged.
-  - name: Error correction
-    duration: 10
-    adaptation_notes: Provide sentences with incorrect adjective order and have students
-      identify and correct them. Good for individual or pair work.
-  tips:
-  - Teach the OSASCOMP mnemonic (Opinion, Size, Age, Shape, Colour, Origin, Material,
-    Purpose) as a memory aid.
-  - Point out that native speakers follow this order intuitively but cannot always
-    explain why.
-  - Limit practice to 2-3 adjectives at a time; more than three sounds unnatural in
-    most contexts.
-  - Contrast with the student's L1 adjective order to raise awareness of differences.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 13:
-    Adjectives, §13.4-13.5 (adjective order)'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 6: Adjectives, §6.3 (attributive adjective order)'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 261-270 (adjective
-    order: opinion, size, age, shape, color, origin, material)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    13: Adjectives, §13.4-13.5'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 11: Adjective order'
-common_errors:
-- error: '*a red big car*'
-  correction: a big red car
-  explanation: Size before color in adjective order.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In conversation, adjective order is rarely tested directly but errors sound
-    unnatural.
-- note: 'In academic writing, adjective order appears in descriptions: ''A large-scale
-    longitudinal study.'''
-- note: 'In creative writing, adjective order creates vivid imagery: ''The old wooden
-    house.'''
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: 'In conversation, adjective order is rarely tested directly but errors sound
-    unnatural: *''a red big car'' (incorrect order)'
-- note: 'In academic writing, adjective order appears in descriptions: ''A large-scale
-    longitudinal study was conducted.'''
-- note: 'In creative writing, adjective order creates vivid imagery: ''The old wooden
-    house stood at the end of the lane.'''
+  name: Identifying people

@@ -1,33 +1,148 @@
-grammar_point: linking_words
-title: Linking Words (Addition, Contrast, Cause, Result)
+citations:
+- claim: 'Core meaning: Linking words show relationships between ideas — adding information,
+    showing contrast, explaining ca'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24:
+    Coordination'
+  tier: 1
+- claim: 'Register distribution: In academic writing, linking words are essential
+    for cohesion: ''However, the results were inconclusi'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24:
+    Coordination'
+  tier: 1
+- claim: 'Discourse function: In academic writing, linking words are essential for
+    cohesion: ''However, the results were inconclusi'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24:
+    Coordination'
+  tier: 1
+- claim: Common error '*Because I was tired, so I went to bed.*' for Portuguese, Spanish,
+    Chinese speakers
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 15: Linking
+    words'
+  tier: 1
+- claim: Understanding linking words is essential for academic writing — Oshima &
+    Hogue emphasize how writers use these structures to create clear, coherent prose
+  flagged: false
+  reliability: B
+  source: 'Oshima and Hogue (2006) Introduction to Academic Writing, 3rd ed. Pearson.
+    Ch. 5: Complex Sentences in Academic Writing'
+  tier: 2
+common_errors:
+- correction: Because I was tired, I went to bed. / I was tired, so I went to bed.
+  error: '*Because I was tired, so I went to bed.*'
+  explanation: English does not use 'because' and 'so' together. Choose one.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - French
+  reliability: B
+  source: Swan Entries 197, 283. Swan (2016) Practical English Usage, 4th ed. Oxford
+    University Press.
+- correction: Although it rained, we went out.
+  error: 'Using ''but'' and ''although'' together: *''Although it rained, but we went
+    out.'''
+  explanation: 'Swan PEU: ''Although'' and ''but'' do the same job (contrast). Use
+    one or the other, not both. Same: ''because'' + ''so'' = error.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Chinese
+  - Arabic
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: Despite being tired, he worked.
+  error: 'Using ''despite'' + clause: *''Despite he was tired, he worked.'''
+  explanation: 'Swan PEU: ''Despite'' and ''in spite of'' are prepositions. They must
+    be followed by a noun/gerund, NOT a clause. For clauses, use ''although''.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: I study hard so that I can pass.
+  error: 'Using ''so that'' with infinitive: *''I study hard so that to pass.'''
+  explanation: 'Swan PEU: ''So that'' must be followed by a clause (subject + verb).
+    For +infinitive of purpose, use: ''I study hard to pass.'''
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Arabic
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
 description: Words and phrases that connect ideas in sentences and paragraphs.
+dialectal_variation: []
+discourse_notes:
+- note: 'In academic writing, linking words are essential for cohesion: ''However,
+    the results were inconclusive.'' ''Furthermore, the study found...'''
+- note: 'In conversation, ''and'', ''but'', and ''so'' are the most common connectors:
+    ''I was tired, so I went to bed.'''
+- note: 'In formal writing, varied linking words are expected: ''nevertheless'', ''moreover'',
+    ''consequently'''
+form:
+  affirmative:
+    example_generator:
+    - I like coffee and tea.
+    - She is smart. Moreover, she is kind.
+    - I like coffee but not tea.
+    - Although it rained, we went out.
+    min_examples: 4
+    structure: 'Addition: and, also, in addition, moreover Contrast: but, however,
+      although, nevertheless Cause: because, since, as, due to Result: so, therefore,
+      as a result, consequently
+
+      '
+  negative:
+    example_generator:
+    - I do not like coffee, nor do I like tea.
+    - She did not come because she was sick.
+    min_examples: 4
+    structure: Negative clauses with linking words. Nor + auxiliary + subject for
+      addition of negatives.
+  questions:
+    example_generator:
+    - Do you like coffee or tea
+    - Why did you stay home since you were sick
+    min_examples: 4
+    structure: Questions with linking words. Or for alternatives. Why for cause.
+grammar_point: linking_words
 level: B1
 meaning:
-  core_meaning: Linking words show relationships between ideas — adding information,
-    showing contrast, explaining causes, or describing results.
-  timeline: N/A — linking words match the tense of the clauses they connect.
-  contrast: 'Addition: and adds similar ideas. Contrast: but shows opposition. Cause:
-    because explains why. Result: so shows the outcome.'
   ccqs:
-  - question: Does 'and' add similar ideas or show contrast?
-    answer: '''And'' adds similar ideas. ''But'' shows contrast.'
+  - answer: '''And'' adds similar ideas. ''But'' shows contrast.'
     purpose: 'Tests whether the learner understands the function of different linking
       words: addition (and, moreover, furthermore), contrast (but, however, although),
       cause (because, since, as), result (so, therefore, consequently).'
-  - question: What is the difference between 'because' and 'so'?
-    answer: '''Because'' introduces the reason. ''So'' introduces the result.'
+    question: Does 'and' add similar ideas or show contrast?
+  - answer: '''Because'' introduces the reason. ''So'' introduces the result.'
     purpose: Tests whether the learner can distinguish between cause ('because') and
       effect ('so'). These two words are the most commonly confused linking words
       at A2 level -- learners often say 'Because I was tired, so I went to bed.'
-  - question: '[Add specific question for CCQ 3]'
-    answer: '[Add specific answer for CCQ 3]'
-    purpose: 'Tests whether the learner understands the grammatical differences: ''but''
-      (coordinating conjunction), ''although'' (subordinating conjunction), ''however''
-      (conjunctive adverb — requires semicolon or new sentence).'
-  - question: '[Add specific question for CCQ 4]'
-    answer: '[Add specific answer for CCQ 4]'
-    purpose: Tests whether the learner can use linking words to improve cohesion in
-      writing.
+    question: Can you explain the difference between 'because' and 'so' by giving
+      an example of when to use each?
+  - answer: '''But'' is a coordinating conjunction (joins two clauses with a comma).
+      ''However'' is a conjunctive adverb — needs a semicolon or new sentence: ''It
+      was raining. However, we went out.'''
+    purpose: Tests whether the learner understands the grammatical difference between
+      coordinating conjunctions and conjunctive adverbs (Swan PEU 2016, entry 197).'
+    question: Can you explain the difference between 'but' and 'however' by giving
+      an example of when to use each?
+  - answer: I was tired, so I went to bed. English does not use ''because'' and ''so''
+      together. Choose one.
+    purpose: Tests whether the learner knows that because (subordinating) and so (coordinating)
+      cannot co-occur in the same sentence (Swan PEU 2016, entry 283).
+    question: Which is correct? 'I was tired, so I went to bed' or *'Because I was
+      tired, so I went to bed'?
+  contrast: 'Addition: and adds similar ideas. Contrast: but shows opposition. Cause:
+    because explains why. Result: so shows the outcome.'
+  core_meaning: Linking words show relationships between ideas — adding information,
+    showing contrast, explaining causes, or describing results.
   example_generator:
     contexts:
     - academic writing
@@ -35,53 +150,102 @@ meaning:
     cultural_notes:
     - Formal linking words are essential for academic writing
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Addition: and, also, in addition, moreover Contrast: but, however,
-      although, nevertheless Cause: because, since, as, due to Result: so, therefore,
-      as a result, consequently
-
-      '
-    example_generator:
-    - I like coffee and tea.
-    - She is smart. Moreover, she is kind.
-    - I like coffee but not tea.
-    - Although it rained, we went out.
-    min_examples: 4
-  negative:
-    structure: Negative clauses with linking words. Nor + auxiliary + subject for
-      addition of negatives.
-    example_generator:
-    - I do not like coffee, nor do I like tea.
-    - She did not come because she was sick.
-    min_examples: 4
-  questions:
-    structure: Questions with linking words. Or for alternatives. Why for cause.
-    example_generator:
-    - Do you like coffee or tea
-    - Why did you stay home since you were sick
-    min_examples: 4
+  timeline: N/A — linking words match the tense of the clauses they connect.
+phonetics:
+  example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Portuguese and Spanish speakers often use 'but' where English requires
+    'however' in formal writing. Teach the register difference.
+  note: 'Linking words are usually unstressed: ''and'' → /ən/, ''but'' → /bət/, ''because''
+    → /bɪˈkɒz/ (standard weak form) or /kəz/ (very informal/casual). Formal linking
+    words receive more stress.'
+register_notes:
+- note: 'In academic writing, linking words are essential for cohesion: ''However,
+    the results were inconclusive.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In conversation, 'and', 'but', and 'so' are the most common connectors.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In formal writing, varied linking words are expected: ''nevertheless'', ''moreover'',
+    ''consequently'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Linking adverbials (however, therefore, moreover):
+    distribution varies dramatically by register. Academic prose uses far more linking
+    adverbials than conversation. Conversation uses more implicit cohesion. Ch. 10.4'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 10.4
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch.
+    15: Linking words'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24:
+    Coordination'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 15: Coordination-15.3'
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(linking words: however,
+    therefore, moreover, although, because)'
 sub_rules:
-- rule: 'Addition: and (informal), moreover and furthermore (formal)'
-  type: grammatical
-  examples:
+- examples:
   - I like coffee and tea
   - She is smart. Moreover, she is kind
-- rule: 'Contrast: but (informal), however and although (formal)'
+  rule: 'Addition: and (informal), moreover and furthermore (formal)'
   type: grammatical
-  examples:
+- examples:
   - I like coffee but not tea
   - However, I prefer tea
-- rule: 'Cause: because (common), due to (formal with noun)'
+  rule: 'Contrast: but (informal), however and although (formal)'
   type: grammatical
-  examples:
+- examples:
   - I drink coffee because I like it
   - Due to the rain, we stayed home
-- rule: 'Result: so (informal), therefore (formal)'
+  rule: 'Cause: because (common), due to (formal with noun)'
   type: grammatical
-  examples:
+- examples:
   - I like coffee, so I drink it daily
   - It rained. Therefore, we stayed home
+  rule: 'Result: so (informal), therefore (formal)'
+  type: grammatical
+teaching:
+  methodology: PPP with paragraph building
+  recommended_activities:
+  - adaptation_notes: Students sort linking words into categories.
+    duration: 10
+    name: Linking Word Sort
+  - adaptation_notes: Students connect short sentences with linking words to create
+      a coherent paragraph.
+    duration: 15
+    name: Paragraph Building
+  - adaptation_notes: Students rewrite informal sentences using formal linking words.
+    duration: 10
+    name: Formal or Informal
+  tips:
+  - 'Week 1: Basic addition (and) and contrast (but).'
+  - 'Week 2: Cause (because) and result (so).'
+  - 'Week 3: Formal linking words (moreover, however, therefore).'
+  - 'Swan PEU: ''Because'' + ''so'' = error. ''Although'' + ''but'' = error. English
+    uses ONE conjunction per pair, unlike many L1s.'
+  - 'Swan PEU: ''Despite'' (preposition) = noun/gerund. ''Although'' (conjunction)
+    = clause. ''Despite the rain'' / ''Although it rained''.'
+  - 'Swan PEU: ''So that'' for purpose with clause. ''In order to'' / ''to'' for purpose
+    with infinitive.'
+  - 'Swan PEU: Positioning of connecting adverbials — ''however,'' ''therefore,''
+    ''moreover'' typically go at the start of a clause, set off by commas: ''She was
+    tired. However, she continued.'''
+  - 'Celce-Murcia & Larsen-Freeman (1999) The Grammar Book, 2nd ed. Heinle & Heinle.
+    Ch. 26: GB 2nd ed. (Ch.26) classifies logical connectors (conjuncts) by discourse
+    function: ADDITION (moreover, furthermore, in addition), CONTRAST (however, nevertheless,
+    on the other hand), RESULT (therefore, consequently, as a result), CONCESSION
+    (admittedly, granted, of course). Conjuncts are sentence-initial or mid-sentence,
+    NOT sentence-final. They are more formal than coordinating conjunctions.'
+title: Linking Words (Addition, Contrast, Cause, Result)
 use:
 - context: Addition
   examples:
@@ -99,64 +263,3 @@ use:
   examples:
   - I like coffee, so I drink it daily
   - It rained. As a result, we stayed home
-phonetics:
-  note: 'Linking words are usually unstressed: ''and'' → /ən/, ''but'' → /bət/, ''because''
-    → /bɪˈkɒz/ (standard weak form) or /kəz/ (very informal/casual). Formal linking
-    words receive more stress.'
-  example_generator:
-    contexts:
-    - connected speech
-  l1_issue: Portuguese and Spanish speakers often use 'but' where English requires
-    'however' in formal writing. Teach the register difference.
-teaching:
-  methodology: PPP with paragraph building
-  tips:
-  - 'Week 1: Basic addition (and) and contrast (but).'
-  - 'Week 2: Cause (because) and result (so).'
-  - 'Week 3: Formal linking words (moreover, however, therefore).'
-  recommended_activities:
-  - name: Linking Word Sort
-    duration: 10
-    adaptation_notes: Students sort linking words into categories.
-  - name: Paragraph Building
-    duration: 15
-    adaptation_notes: Students connect short sentences with linking words to create
-      a coherent paragraph.
-  - name: Formal or Informal
-    duration: 10
-    adaptation_notes: Students rewrite informal sentences using formal linking words.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
-    Coordination, §16.5-16.7'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 15: Coordination, §15.1-15.3'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 315-330 (linking
-    words: however, therefore, moreover, although, because)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    15: Linking words, §15.4-15.6'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 12: Linking words'
-common_errors:
-- error: '*Because I was tired, so I went to bed.*'
-  correction: Because I was tired, I went to bed. / I was tired, so I went to bed.
-  explanation: English does not use 'because' and 'so' together. Choose one.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-  - French
-register_notes:
-- note: 'In academic writing, linking words are essential for cohesion: ''However,
-    the results were inconclusive.'''
-- note: In conversation, 'and', 'but', and 'so' are the most common connectors.
-- note: 'In formal writing, varied linking words are expected: ''nevertheless'', ''moreover'',
-    ''consequently'''
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: 'In academic writing, linking words are essential for cohesion: ''However,
-    the results were inconclusive.'' ''Furthermore, the study found...'''
-- note: 'In conversation, ''and'', ''but'', and ''so'' are the most common connectors:
-    ''I was tired, so I went to bed.'''
-- note: 'In formal writing, varied linking words are expected: ''nevertheless'', ''moreover'',
-    ''consequently'''

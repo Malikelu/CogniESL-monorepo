@@ -1,40 +1,145 @@
-grammar_point: formal_conditionals
-title: Formal Conditionals (Were he to..., Should you..., Had I known...)
+citations:
+- claim: 'Core meaning: In formal English, conditional sentences can be formed by
+    inverting the subject and auxiliary verb, omitting "if". This creates a more elevated,
+    literary, or diplomatic tone.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27:
+    Conditionals'
+  tier: 1
+- claim: 'Register distribution: Inverted conditionals are primarily found in formal
+    writing, legal language, and literary prose. They are rare in conversation.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27:
+    Conditionals'
+  tier: 1
+- claim: 'Discourse function: In formal writing and diplomatic language, inverted
+    conditionals convey tact, politeness, and measured tone.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27:
+    Conditionals'
+  tier: 1
+- claim: Common error '*If I was you, I would accept.* (formal context)' for Portuguese,
+    Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: Conditional structures in discourse establish hypothetical relationships
+    between events or states
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27:
+    Conditionals'
+  tier: 1
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents
+    how transfer effects are non-linear, determined by functional fit between L1 and
+    L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects
+    are non-linear — determined by functional fit between L1 and L2 systems rather
+    than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning.
+    Routledge.
+  tier: 2
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for
+    L1-specific error patterns in English. Their learner English framework documents
+    how each L1 group produces characteristic errors in this grammatical domain, enabling
+    teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+    and Other Problems, 2nd ed. Cambridge University Press.'
+  tier: 2
+- claim: Oshima & Hogue's Great Writing series demonstrates how this grammatical structure
+    functions in academic writing contexts. Their approach connects grammar instruction
+    to writing outcomes, showing learners how accurate use of this structure improves
+    paragraph cohesion, essay organization, and academic register.
+  source: Oshima, A. and Hogue, A. (2006). Introduction to Academic Writing, 3rd ed.
+    Pearson Longman.
+  tier: 2
+common_errors:
+- correction: If I were you, I would accept. / Were I you, I would accept.
+  error: '*If I was you, I would accept.* (formal context)'
+  explanation: In formal English, 'were' is used for all persons in conditional clauses
+    (If I were, if he were). 'Was' is informal.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Conditionals'
 description: Inverted conditional structures used in formal and literary English to
   replace 'if' in conditional sentences.
+dialectal_variation: []
+discourse_notes:
+- note: In formal writing, inverted conditionals replace standard 'if' conditionals
+    to create an elevated, literary, or diplomatic tone.
+- note: 'In legal and contractual language, inverted conditionals express hypothetical
+    scenarios with precision: "Were the tenant to default on payment, the landlord
+    may terminate the lease."'
+- note: 'In diplomatic and political discourse, inverted conditionals allow speakers
+    to present hypotheticals tactfully: "Were the government to act now, much suffering
+    could be avoided."'
+- note: In casual speech, inverted conditionals sound affected or pretentious. Standard
+    'if' conditionals are preferred in informal contexts.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - formal correspondence
+      - legal language
+      - literary narrative
+      - diplomatic negotiation
+      min_examples: 4
+    structure: Were + Subject + (to-infinitive / complement) → unreal present/future
+      / Should + Subject + bare infinitive → possible future / Had + Subject + past
+      participle → past unreal
+  negative:
+    example_generator:
+      contexts:
+      - formal warnings
+      - hypothetical scenarios
+      - regret expressions
+      min_examples: 3
+    structure: Were + Subject + not + (to-infinitive / complement) / Should + Subject
+      + not + bare infinitive / Had + Subject + not + past participle
+  questions:
+    example_generator:
+      contexts:
+      - formal inquiry
+      min_examples: 2
+    structure: Inverted conditionals are not typically used in questions. Standard
+      'if' conditionals are preferred for interrogative forms.
+grammar_point: formal_conditionals
 level: C2
 meaning:
+  ccqs:
+  - answer: No — the 'if' is removed and the auxiliary comes before the subject.
+    purpose: Tests whether the learner knows that formal conditionals use 'were' instead
+      of 'was' and can invert subject and auxiliary (Were I you...). This is important
+      for academic and professional writing.
+    question: Do we use 'if' in inverted conditionals?
+  - answer: Yes — the inverted form is more formal and literary.
+    purpose: Tests whether the learner can identify and apply the correct form/meaning
+      of this grammar point in context. The question 'Is 'Were he to agree' more formal
+      than 'If he were...' checks conceptual understanding, not just memorization.
+    question: Is 'Were he to agree' more formal than 'If he were to agree'?
+  - answer: Yes — 'Should you need help' means 'If you need help' (and you might).
+    purpose: Tests whether the learner can identify and apply the correct form/meaning
+      of this grammar point in context. The question 'Can we use should-inversion
+      for likely future even...' checks conceptual understanding, not just memorization.
+    question: Can we use should-inversion for likely future events?
+  - answer: Yes — 'Had I known' means 'If I had known' (but I didn't).
+    purpose: Tests whether the learner can identify and apply the correct form/meaning
+      of this grammar point in context. The question 'Is had-inversion used for past
+      events that didn't ...' checks conceptual understanding, not just memorization.
+    question: Is had-inversion used for past events that didn't happen?
+  contrast: 'Standard: ''If I were rich, I would travel the world.'' / Inverted: ''Were
+    I rich, I would travel the world.'' — Same meaning, but the inverted form is more
+    formal and literary.'
   core_meaning: 'In formal English, conditional sentences can be formed by inverting
     the subject and auxiliary verb, omitting ''if''. This creates a more elevated,
     literary, or diplomatic tone. The three main types are: were-inversion (unreal
     present/future), should-inversion (possible future), and had-inversion (unreal
     past).'
-  timeline: Were-inversion → present or future unreal; Should-inversion → possible
-    future; Had-inversion → past unreal (third conditional).
-  contrast: 'Standard: ''If I were rich, I would travel the world.'' / Inverted: ''Were
-    I rich, I would travel the world.'' — Same meaning, but the inverted form is more
-    formal and literary.'
-  ccqs:
-  - question: Do we use 'if' in inverted conditionals?
-    answer: No — the 'if' is removed and the auxiliary comes before the subject.
-    purpose: Tests whether the learner knows that formal conditionals use 'were' instead
-      of 'was' and can invert subject and auxiliary (Were I you...). This is important
-      for academic and professional writing.
-  - question: Is 'Were he to agree' more formal than 'If he were to agree'?
-    answer: Yes — the inverted form is more formal and literary.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Is 'Were he to agree' more formal
-      than 'If he were...' checks conceptual understanding, not just memorization.
-  - question: Can we use should-inversion for likely future events?
-    answer: Yes — 'Should you need help' means 'If you need help' (and you might).
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Can we use should-inversion
-      for likely future even...' checks conceptual understanding, not just memorization.
-  - question: Is had-inversion used for past events that didn't happen?
-    answer: Yes — 'Had I known' means 'If I had known' (but I didn't).
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Is had-inversion used for past
-      events that didn't ...' checks conceptual understanding, not just memorization.
   example_generator:
     contexts:
     - formal writing
@@ -46,67 +151,128 @@ meaning:
     - Inverted conditionals are common in British English formal writing and are a
       marker of high proficiency. Overuse in casual speech can sound affected or pretentious.
     min_examples: 5
-form:
-  affirmative:
-    structure: Were + Subject + (to-infinitive / complement) → unreal present/future
-      / Should + Subject + bare infinitive → possible future / Had + Subject + past
-      participle → past unreal
-    example_generator:
-      contexts:
-      - formal correspondence
-      - legal language
-      - literary narrative
-      - diplomatic negotiation
-      min_examples: 4
-  negative:
-    structure: Were + Subject + not + (to-infinitive / complement) / Should + Subject
-      + not + bare infinitive / Had + Subject + not + past participle
-    example_generator:
-      contexts:
-      - formal warnings
-      - hypothetical scenarios
-      - regret expressions
-      min_examples: 3
-  questions:
-    structure: Inverted conditionals are not typically used in questions. Standard
-      'if' conditionals are preferred for interrogative forms.
-    example_generator:
-      contexts:
-      - formal inquiry
-      min_examples: 2
+  timeline: Were-inversion → present or future unreal; Should-inversion → possible
+    future; Had-inversion → past unreal (third conditional).
+phonetics:
+- example_generator:
+  - contexts:
+    - formal speech delivery
+    - public speaking
+  l1_issue: Speakers from languages without subject-auxiliary inversion (e.g., Chinese,
+    Japanese, Turkish) may find the word order deeply unnatural and need extensive
+    practice.
+  note: Inverted conditionals often carry a slower, more deliberate rhythm in speech,
+    with a slight pause after the conditional clause.
+- example_generator:
+  - contexts:
+    - stress and rhythm in formal speech
+  l1_issue: Stress-timed language speakers may adapt more easily than syllable-timed
+    language speakers (e.g., Spanish, French).
+  note: 'The auxiliary in inverted conditionals is typically stressed: ''WERE she
+    to come...'', ''SHOULD you need...'', ''HAD I known...'''
+register_notes:
+- note: Inverted conditionals are a marker of formal register. They appear primarily
+    in academic prose, legal documents, literary fiction, and diplomatic communication.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (1999) — Formal conditional structures (inversion without ''if''):
+    primarily academic and formal written English. Rare in conversation. Ch. 10.2.8.12'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 10.2.8.12
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27:
+    Conditionals'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Were-inversion (Type 2 / unreal present)
-  type: grammatical
-  examples:
+- examples:
   - Were she to resign, the whole project would collapse. (= If she were to resign...)
   - Were I in your position, I would accept the offer. (= If I were in your position...)
   - Were it not for your help, we would have failed. (= If it were not for your help...)
-- rule: Should-inversion (Type 1 / possible future)
+  rule: Were-inversion (Type 2 / unreal present)
   type: grammatical
-  examples:
+- examples:
   - Should you require assistance, please do not hesitate to call. (= If you should
     require... / If you require...)
   - Should the weather improve, we will proceed as planned. (= If the weather improves...)
   - Should anyone object, the motion will be put to a vote. (= If anyone objects...)
-- rule: Had-inversion (Type 3 / unreal past)
+  rule: Should-inversion (Type 1 / possible future)
   type: grammatical
-  examples:
+- examples:
   - Had I known about the delay, I would have left earlier. (= If I had known...)
   - Had they invested wisely, they would be wealthy now. (= If they had invested...)
   - Had it not been for the rain, the event would have been a success. (= If it had
     not been for...)
-- rule: Mixed conditional with had-inversion
+  rule: Had-inversion (Type 3 / unreal past)
   type: grammatical
-  examples:
+- examples:
   - Had she studied harder, she would be at university now. (past condition → present
     result)
   - Had he not missed the flight, he wouldn't be stuck in Paris. (past condition →
     present result)
-- rule: Omission of 'if' only with were, should, and had
+  rule: Mixed conditional with had-inversion
   type: grammatical
-  examples:
+- examples:
   - 'Correct: Were he here, he''d agree. / Incorrect: *Did he know, he would help.'
   - 'Correct: Had they arrived on time... / Incorrect: *Would they arrive...'
+  rule: Omission of 'if' only with were, should, and had
+  type: grammatical
+teaching:
+  methodology: PPP (Presentation, Practice, Production)
+  recommended_activities:
+  - adaptation_notes: Students rewrite 10 standard conditional sentences using inversion.
+      Start with had-inversion, then should, then were.
+    duration: 15
+    name: Conditional Transformation Drill
+  - adaptation_notes: Students write a formal complaint or enquiry letter that must
+      include at least three inverted conditionals (should-inversion works best here).
+    duration: 25
+    name: Formal Letter Writing
+  - adaptation_notes: Provide a literary passage containing inverted conditionals.
+      Students identify the type, rewrite in standard 'if' form, and discuss the effect
+      of the formal structure.
+    duration: 20
+    name: Literary Analysis
+  - adaptation_notes: Give students 15 conditional sentences (mix of standard and
+      inverted). They sort them into 'formal' and 'informal' and discuss when each
+      would be appropriate.
+    duration: 10
+    name: Register Sorting
+  tips:
+  - 'GB3 Ch. 27: Subject/operator inversion in conditionals with should/had/were:
+    Should the guests arrive early, no one will be here = If the guests should arrive...;
+    Had I known that, I would not have said anything; Were I in his shoes, I would
+    say nothing. Rare in conversation, most common with should in academic prose.
+    Source: Celce-Murcia & Larsen-Freeman (2015) GB3 3rd ed. Ch. 27 27.1.'
+  - Present the three types (were, should, had) separately, starting with had-inversion
+    as it maps clearly onto the third conditional.
+  - 'Use matching activities: pair standard ''if'' conditionals with their inverted
+    equivalents.'
+  - Provide authentic examples from formal letters, legal texts, and literature.
+  - Emphasise register — inverted conditionals are formal and would sound odd in casual
+    chat.
+  - 'Practice transformation drills: ''If I were to...'' → ''Were I to...'''
+  - 'Introduce the ''but for'' alternative for negative conditionals: ''Had it not
+    been for...'' = ''But for...'''
+  - 'Swan PEU: Alternative conditional forms — inversion (Were I you), ''unless''
+    (= if not), ''provided/providing that,'' ''as long as,'' ''on condition that,''
+    ''supposing.'' Each has a different register level.'
+teaching_tips:
+- source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book: An ESL/EFL Teacher''s
+    Course, 3rd ed. Heinle & Heinle.'
+  tip: 'FORMAL CONDITIONAL STRUCTURES: Had I known... = If I had known... (subject-auxiliary
+    inversion in conditional). Should you need help... = If you need help... (should
+    in if-clause). Were he here... = If he were here... (were inversion). These are
+    formal/literary alternatives to standard conditional structures. Source: Ch.27
+    p.420-426.'
+title: Formal Conditionals (Were he to..., Should you..., Had I known...)
 use:
 - context: Formal correspondence and business communication
   description: Should-inversion is extremely common in formal letters, emails, and
@@ -136,87 +302,3 @@ use:
   examples:
   - Were this hypothesis correct, we would expect to see different results.
   - Had the experiment been conducted differently, the conclusions might vary.
-phonetics:
-- note: Inverted conditionals often carry a slower, more deliberate rhythm in speech,
-    with a slight pause after the conditional clause.
-  example_generator:
-  - contexts:
-    - formal speech delivery
-    - public speaking
-  l1_issue: Speakers from languages without subject-auxiliary inversion (e.g., Chinese,
-    Japanese, Turkish) may find the word order deeply unnatural and need extensive
-    practice.
-- note: 'The auxiliary in inverted conditionals is typically stressed: ''WERE she
-    to come...'', ''SHOULD you need...'', ''HAD I known...'''
-  example_generator:
-  - contexts:
-    - stress and rhythm in formal speech
-  l1_issue: Stress-timed language speakers may adapt more easily than syllable-timed
-    language speakers (e.g., Spanish, French).
-teaching:
-  methodology: PPP (Presentation, Practice, Production)
-  tips:
-  - Present the three types (were, should, had) separately, starting with had-inversion
-    as it maps clearly onto the third conditional.
-  - 'Use matching activities: pair standard ''if'' conditionals with their inverted
-    equivalents.'
-  - Provide authentic examples from formal letters, legal texts, and literature.
-  - Emphasise register — inverted conditionals are formal and would sound odd in casual
-    chat.
-  - 'Practice transformation drills: ''If I were to...'' → ''Were I to...'''
-  - 'Introduce the ''but for'' alternative for negative conditionals: ''Had it not
-    been for...'' = ''But for...'''
-  recommended_activities:
-  - name: Conditional Transformation Drill
-    duration: 15
-    adaptation_notes: Students rewrite 10 standard conditional sentences using inversion.
-      Start with had-inversion, then should, then were.
-  - name: Formal Letter Writing
-    duration: 25
-    adaptation_notes: Students write a formal complaint or enquiry letter that must
-      include at least three inverted conditionals (should-inversion works best here).
-  - name: Literary Analysis
-    duration: 20
-    adaptation_notes: Provide a literary passage containing inverted conditionals.
-      Students identify the type, rewrite in standard 'if' form, and discuss the effect
-      of the formal structure.
-  - name: Register Sorting
-    duration: 10
-    adaptation_notes: Give students 15 conditional sentences (mix of standard and
-      inverted). They sort them into 'formal' and 'informal' and discuss when each
-      would be appropriate.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 10:
-    Conditionals, §10.1-10.6'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*If I was you, I would accept.* (formal context)'
-  correction: If I were you, I would accept. / Were I you, I would accept.
-  explanation: In formal English, 'were' is used for all persons in conditional clauses
-    (If I were, if he were). 'Was' is informal.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: 'In formal writing, modals express hedging and caution: ''These results may
-    suggest...'''
-- note: 'In conversation, modals are essential for politeness: ''Could you pass the
-    salt?'''
-- note: 'In legal language, ''must'' expresses strong obligation: ''All passengers
-    must wear seatbelts.'''
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, modals are essential for politeness, expressing degrees of
-    certainty, and making requests.
-- note: 'In academic writing, modals express hedging and caution: ''These results
-    may suggest...'' ''It could be argued that...'''
-- note: 'In legal and regulatory language, modals express obligation and permission:
-    ''All passengers must wear seatbelts.'''

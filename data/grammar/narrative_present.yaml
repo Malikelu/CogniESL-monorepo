@@ -1,15 +1,129 @@
-grammar_point: narrative_present
-title: Narrative Present (Historic Present)
+citations:
+- claim: 'Core meaning: The narrative present (also called the historic present or
+    dramatic present) is the use of the present simple tense to describe past events,
+    creating a sense of immediacy and drama.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 4
+- claim: 'Register distribution: The narrative present is common in conversational
+    storytelling, jokes, and sports commentary. In writing, it appears in literary
+    fiction, journalism (headlines), and informal blogs. It is rare in academic prose.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 4
+- claim: 'Discourse function: In conversation, the narrative present creates vividness
+    and immediacy in storytelling. Speakers switch from past to present tense at dramatic
+    moments to make the listener feel as though events are happening now.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 4
+- claim: Common error '*Yesterday I go to the store and I buy some milk.*' (narrative
+    present used incorrectly for simple past reporting) for Portuguese, Spanish, Chinese
+    speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: The narrative present exploits the immediacy of the present tense to create
+    dramatic effect, making past events feel as though they are unfolding in real
+    time
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 2
+common_errors:
+- correction: Yesterday I went to the store and I bought some milk. (standard past)
+    / So yesterday I go to the store and I see this guy... (narrative present for
+    drama)
+  error: '*Yesterday I go to the store and I buy some milk.* (narrative present)'
+  explanation: Narrative present is used for dramatic storytelling, not for simple
+    past reporting. In standard reporting, use past simple.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
 description: Using the present simple tense to tell stories or recount past events,
   creating a sense of immediacy and drama.
+dialectal_variation: []
+discourse_notes:
+- note: In conversation, the narrative present is among the most frequent tense choices
+    for jokes, anecdotes, and personal stories.
+- note: In fiction and journalism, the narrative present creates immediacy in storytelling
+    and headlines.
+- 'The narrative present is one of several discourse-level tense choices. GB3 Ch.7
+  covers how speakers strategically switch tenses for dramatic effect: past tense
+  sets the scene, present tense highlights key moments. Source: Celce-Murcia & Larsen-Freeman
+  (2015) GB3 Ch.7: The Tense-Aspect System.'
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - personal anecdotes
+      - jokes
+      - storytelling
+      min_examples: 4
+    structure: 'Subject + present simple verb (with past reference): ''So I go to
+      the shop and I see this guy...'' ''She walks up to me and says...'' The subject
+      is often ''I'' or ''he/she'' in personal narratives. Time adverbs may anchor
+      the past: ''Yesterday, I''m walking down the street and...'''
+  negative:
+    example_generator:
+      contexts:
+      - negative events in stories
+      - describing inaction
+      min_examples: 3
+    structure: 'Subject + don''t/doesn''t + base verb (with past reference): ''So
+      I don''t know what to do, right?'' ''She doesn''t even look at me.'' ''I don''t
+      say anything — I just leave.'''
+  questions:
+    example_generator:
+      contexts:
+      - rhetorical questions in stories
+      - reported speech within narratives
+      min_examples: 3
+    structure: 'Questions within narrative present often use past tense or remain
+      in present: ''And what do you think he does? He just walks away!'' ''So I''m
+      like, what is he doing?'' Note: ''I''m like'' and ''I''m all'' are informal
+      quotative frames used with narrative present.'
+grammar_point: narrative_present
 level: C1
 meaning:
-  core_meaning: The narrative present (also called the historic present or dramatic
-    present) is the use of the present simple tense to describe past events. This
-    technique makes the listener feel as though the events are happening now, creating
-    vividness, excitement, and emotional engagement.
-  timeline: Refers to past events but uses present tense forms. The effect is to 'bring
-    the past to life' by removing the temporal distance.
+  ccqs:
+  - answer: No — it refers to past events. The present tense is used for dramatic
+      effect, to make the story feel immediate.
+    purpose: Tests whether the learner understands a key concept of narrative_present.
+      This is fundamental for correct use of this grammar point.
+    question: Does the narrative present refer to the present time?
+  - answer: It is primarily used in informal spoken English — jokes, anecdotes, and
+      personal stories. It can also appear in literary and journalistic writing.
+    purpose: Tests whether the learner understands a key concept of narrative_present.
+      This is fundamental for correct use of this grammar point.
+    question: Is the narrative present formal or informal?
+  - answer: Yes — speakers often switch between past and present for effect. The past
+      sets the scene, and the present highlights key moments.
+    purpose: Tests whether the learner understands a key concept of narrative_present.
+      This is fundamental for correct use of this grammar point.
+    question: Can we mix past and present in a narrative?
+  - answer: B is more natural. Jokes in English conventionally use the narrative present
+      (walks, orders) for the setup and punchline. Using past tense (walked, ordered)
+      is grammatically correct but sounds flat and less engaging. The narrative present
+      is the default tense for joke-telling in English.
+    purpose: Tests whether the learner understands the pragmatic convention of using
+      narrative present in jokes. This is a specific discourse context where past
+      tense is grammatically possible but pragmatically unnatural, and recognising
+      this convention is important for C1-level fluency in spoken English storytelling.
+    question: Which of these two sentences is more natural for telling a joke and
+      why? A) A man walked into a bar and ordered a drink. B) A man walks into a bar
+      and orders a drink.
   contrast: 'Past simple (standard narrative): "I walked into the room and saw a strange
     man." (distant, factual)
 
@@ -22,22 +136,10 @@ meaning:
     are watching it happen)
 
     '
-  ccqs:
-  - question: Does the narrative present refer to the present time?
-    answer: No — it refers to past events. The present tense is used for dramatic
-      effect, to make the story feel immediate.
-    purpose: Tests whether the learner understands a key concept of narrative_present.
-      This is fundamental for correct use of this grammar point.
-  - question: Is the narrative present formal or informal?
-    answer: It is primarily used in informal spoken English — jokes, anecdotes, and
-      personal stories. It can also appear in literary and journalistic writing.
-    purpose: Tests whether the learner understands a key concept of narrative_present.
-      This is fundamental for correct use of this grammar point.
-  - question: Can we mix past and present in a narrative?
-    answer: Yes — speakers often switch between past and present for effect. The past
-      sets the scene, and the present highlights key moments.
-    purpose: Tests whether the learner understands a key concept of narrative_present.
-      This is fundamental for correct use of this grammar point.
+  core_meaning: The narrative present (also called the historic present or dramatic
+    present) is the use of the present simple tense to describe past events. This
+    technique makes the listener feel as though the events are happening now, creating
+    vividness, excitement, and emotional engagement.
   example_generator:
     contexts:
     - telling jokes
@@ -53,122 +155,90 @@ meaning:
     - Some languages (e.g., French) use a similar technique called 'présent historique'
       in formal writing
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Subject + present simple verb (with past reference): ''So I go to
-      the shop and I see this guy...'' ''She walks up to me and says...'' The subject
-      is often ''I'' or ''he/she'' in personal narratives. Time adverbs may anchor
-      the past: ''Yesterday, I''m walking down the street and...'''
-    example_generator:
-      contexts:
-      - personal anecdotes
-      - jokes
-      - storytelling
-      min_examples: 4
-  negative:
-    structure: 'Subject + don''t/doesn''t + base verb (with past reference): ''So
-      I don''t know what to do, right?'' ''She doesn''t even look at me.'' ''I don''t
-      say anything — I just leave.'''
-    example_generator:
-      contexts:
-      - negative events in stories
-      - describing inaction
-      min_examples: 3
-  questions:
-    structure: 'Questions within narrative present often use past tense or remain
-      in present: ''And what do you think he does? He just walks away!'' ''So I''m
-      like, what is he doing?'' Note: ''I''m like'' and ''I''m all'' are informal
-      quotative frames used with narrative present.'
-    example_generator:
-      contexts:
-      - rhetorical questions in stories
-      - reported speech within narratives
-      min_examples: 3
-sub_rules:
-- rule: Tense switching — past to present for dramatic moments
-  type: discourse
-  examples:
-  - I was walking home when suddenly this dog comes running out at me.
-  - We were having dinner when the phone rings.
-  - I was waiting for the bus and this woman comes up and asks me for money.
-- rule: Quotative 'like' and 'go' with narrative present
-  type: pragmatic
-  examples:
-  - And I'm like, 'No way!'
-  - And she goes, 'Really?'
-  - And he's all, 'I don't believe it.'
-- rule: Narrative present in jokes
-  type: discourse
-  examples:
-  - A man walks into a bar and says...
-  - So an Englishman, an Irishman, and a Scotsman walk into a pub...
-  - This guy goes to the doctor and says...
-- rule: Narrative present in sports commentary
-  type: discourse
-  examples:
-  - He passes to Messi, Messi shoots — and he scores!
-  - She serves, the return comes back, and she smashes it down the line.
-  - Ronaldo gets the ball, he cuts inside, he shoots — goal!
-- rule: Narrative present in film/book summaries
-  type: discourse
-  examples:
-  - In the film, a young woman discovers she has magical powers.
-  - The hero arrives in the city and immediately gets into trouble.
-  - At the end of the story, the two characters finally meet.
-use:
-- name: Personal anecdotes and storytelling
-  description: The narrative present is most commonly used in spoken English when
-    telling personal stories or anecdotes. It makes the story more engaging and dramatic.
-  examples:
-  - So I'm sitting on the train and this guy comes up and sits right next to me —
-    even though the whole carriage is empty!
-  - Yesterday I'm walking down the street and I see my old teacher.
-  - I go to the shop and the guy says they don't have it. I'm like, 'Are you serious?'
-  key_point: The narrative present is a hallmark of natural, fluent spoken English.
-    Using only past tense in casual storytelling can sound overly formal or bookish.
-- name: Jokes and humorous stories
-  description: Jokes in English almost always use the narrative present for the setup
-    and punchline.
-  examples:
-  - A man walks into a bar. He says to the bartender, 'I'll have a pint.'
-  - So this woman goes to the doctor and says, 'Doctor, everyone ignores me.' The
-    doctor says, 'Next!'
-  - Two fish are sitting in a tank. One says to the other, 'Do you know how to drive
-    this thing?'
-  key_point: The narrative present is the default tense for joke-telling in English.
-    Using past tense can make jokes sound flat.
-- name: Sports commentary
-  description: Live sports commentary uses the narrative present to describe the action
-    as it unfolds.
-  examples:
-  - Kane receives the ball, he turns, he shoots — it's a goal!
-  - She serves, the ball goes long, and that's match point.
-  - He dribbles past one defender, then another — what a goal!
-  key_point: The narrative present creates excitement and immediacy, making the listener
-    feel as though they are watching the event live.
-- name: Film, book, and plot summaries
-  description: When summarising the plot of a film, book, or play, English conventionally
-    uses the present tense (the 'literary present').
-  examples:
-  - In the novel, the protagonist travels to London and meets a mysterious stranger.
-  - At the end of the film, the hero defeats the villain and saves the city.
-  - The play is set in 19th-century Russia.
-  key_point: This is a convention of literary and film analysis. The events are treated
-    as 'always happening' each time the work is experienced.
+  timeline: Refers to past events but uses present tense forms. The effect is to 'bring
+    the past to life' by removing the temporal distance.
 phonetics:
-- note: 'In narrative present storytelling, speakers often use a faster pace and more
-    animated intonation to convey excitement. Key dramatic moments are spoken louder
-    and with more emphasis. Pauses are used for suspense: ''And then... (pause) ...he
-    opens the door.'''
-  example_generator:
+- example_generator:
     contexts:
     - natural storytelling
     - joke-telling
   l1_issue: Some languages do not use tense-switching for narrative effect, so students
     may find it unnatural. Speakers of languages with rich aspectual systems (e.g.,
     Slavic languages) may prefer to use aspect rather than tense for narrative vividness.
+  note: 'In narrative present storytelling, speakers often use a faster pace and more
+    animated intonation to convey excitement. Key dramatic moments are spoken louder
+    and with more emphasis. Pauses are used for suspense: ''And then... (pause) ...he
+    opens the door.'''
+register_notes:
+- note: 'Biber et al. (2021) — Narrative present (historical present): primarily fiction
+    and conversational storytelling. Rare in academic prose. Register-restricted tense
+    use for vivid narrative. Ch. 6.2.2'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 6.2.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7:
+    The Tense-Aspect System-7.5'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+sub_rules:
+- examples:
+  - I was walking home when suddenly this dog comes running out at me.
+  - We were having dinner when the phone rings.
+  - I was waiting for the bus and this woman comes up and asks me for money.
+  rule: Tense switching — past to present for dramatic moments
+  type: discourse
+- examples:
+  - And I'm like, 'No way!'
+  - And she goes, 'Really?'
+  - And he's all, 'I don't believe it.'
+  rule: Quotative 'like' and 'go' with narrative present
+  type: pragmatic
+- examples:
+  - A man walks into a bar and says...
+  - So an Englishman, an Irishman, and a Scotsman walk into a pub...
+  - This guy goes to the doctor and says...
+  rule: Narrative present in jokes
+  type: discourse
+- examples:
+  - He passes to Messi, Messi shoots — and he scores!
+  - She serves, the return comes back, and she smashes it down the line.
+  - Ronaldo gets the ball, he cuts inside, he shoots — goal!
+  rule: Narrative present in sports commentary
+  type: discourse
+- examples:
+  - In the film, a young woman discovers she has magical powers.
+  - The hero arrives in the city and immediately gets into trouble.
+  - At the end of the story, the two characters finally meet.
+  rule: Narrative present in film/book summaries
+  type: discourse
 teaching:
   methodology: Awareness-raising through authentic listening and guided practice
+  recommended_activities:
+  - adaptation_notes: Give students three short jokes written in the past tense. They
+      must retell them using the narrative present. Perform for the class.
+    duration: 15
+    name: Joke telling
+  - adaptation_notes: Provide a short narrative in the past simple. Students identify
+      the most dramatic moments and rewrite those sentences in the narrative present.
+      Discuss the effect.
+    duration: 15
+    name: Story transformation
+  - adaptation_notes: In small groups, each student tells a short personal anecdote
+      (a funny or surprising experience) using the narrative present. Other students
+      ask follow-up questions.
+    duration: 20
+    name: Anecdote circle
+  - adaptation_notes: Play a short silent video clip (a sports moment, a funny scene).
+      Students provide live commentary using the narrative present. This works well
+      as a pair activity.
+    duration: 15
+    name: Commentary practice
   tips:
   - 'Start with a joke: tell a joke using the narrative present and ask students why
     the present tense is used for a past event.'
@@ -180,58 +250,49 @@ teaching:
     — this is a fluency activity, not an accuracy activity.
   - Note that the narrative present is primarily a spoken feature — students should
     recognise it in writing but not necessarily use it in formal essays.
-  recommended_activities:
-  - name: Joke telling
-    duration: 15
-    adaptation_notes: Give students three short jokes written in the past tense. They
-      must retell them using the narrative present. Perform for the class.
-  - name: Story transformation
-    duration: 15
-    adaptation_notes: Provide a short narrative in the past simple. Students identify
-      the most dramatic moments and rewrite those sentences in the narrative present.
-      Discuss the effect.
-  - name: Anecdote circle
-    duration: 20
-    adaptation_notes: In small groups, each student tells a short personal anecdote
-      (a funny or surprising experience) using the narrative present. Other students
-      ask follow-up questions.
-  - name: Commentary practice
-    duration: 15
-    adaptation_notes: Play a short silent video clip (a sports moment, a funny scene).
-      Students provide live commentary using the narrative present. This works well
-      as a pair activity.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*Yesterday I go to the store and I buy some milk.* (narrative present)'
-  correction: Yesterday I went to the store and I bought some milk. (standard past)
-    / So yesterday I go to the store and I see this guy... (narrative present for
-    drama)
-  explanation: Narrative present is used for dramatic storytelling, not for simple
-    past reporting. In standard reporting, use past simple.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used for everyday communication and is
-    among the most frequent patterns in spoken English.
-- note: In academic writing, this structure appears in discussions of established
-    knowledge, methodology, and findings.
-- note: In news reports, this structure is used for reporting events and attributing
-    statements.
+  - 'Swan PEU: Historic present — ''So I go to the bar and this guy comes up to me...''
+    Makes storytelling vivid and immediate. Very common in informal narratives, jokes,
+    and anecdotes.'
+  - 'Swan PEU: Also used in live commentaries and demonstrations: ''First you take
+    the onion and chop it finely...'''
+title: Narrative Present (Historic Present)
+use:
+- description: The narrative present is most commonly used in spoken English when
+    telling personal stories or anecdotes. It makes the story more engaging and dramatic.
+  examples:
+  - So I'm sitting on the train and this guy comes up and sits right next to me —
+    even though the whole carriage is empty!
+  - Yesterday I'm walking down the street and I see my old teacher.
+  - I go to the shop and the guy says they don't have it. I'm like, 'Are you serious?'
+  key_point: The narrative present is a hallmark of natural, fluent spoken English.
+    Using only past tense in casual storytelling can sound overly formal or bookish.
+  name: Personal anecdotes and storytelling
+- description: Jokes in English almost always use the narrative present for the setup
+    and punchline.
+  examples:
+  - A man walks into a bar. He says to the bartender, 'I'll have a pint.'
+  - So this woman goes to the doctor and says, 'Doctor, everyone ignores me.' The
+    doctor says, 'Next!'
+  - Two fish are sitting in a tank. One says to the other, 'Do you know how to drive
+    this thing?'
+  key_point: The narrative present is the default tense for joke-telling in English.
+    Using past tense can make jokes sound flat.
+  name: Jokes and humorous stories
+- description: Live sports commentary uses the narrative present to describe the action
+    as it unfolds.
+  examples:
+  - Kane receives the ball, he turns, he shoots — it's a goal!
+  - She serves, the ball goes long, and that's match point.
+  - He dribbles past one defender, then another — what a goal!
+  key_point: The narrative present creates excitement and immediacy, making the listener
+    feel as though they are watching the event live.
+  name: Sports commentary
+- description: When summarising the plot of a film, book, or play, English conventionally
+    uses the present tense (the 'literary present').
+  examples:
+  - In the novel, the protagonist travels to London and meets a mysterious stranger.
+  - At the end of the film, the hero defeats the villain and saves the city.
+  - The play is set in 19th-century Russia.
+  key_point: This is a convention of literary and film analysis. The events are treated
+    as 'always happening' each time the work is experienced.
+  name: Film, book, and plot summaries

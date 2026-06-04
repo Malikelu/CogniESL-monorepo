@@ -1,19 +1,109 @@
-grammar_point: performative_verbs
-title: Performative Verbs (I promise / I apologise / I declare / I suggest)
+citations:
+- claim: 'Core meaning: Performative verbs are verbs where saying the words is itself
+    the performance of the action (e.g., I promise IS the promise, I apologise IS the apology)'
+  flagged: false
+  reliability: B
+  source: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press. Ch. 16.3: Speech acts and performative utterances'
+  tier: 2
+- claim: 'Form: Performatives typically use the simple present tense even for immediate
+    future commitment, because the utterance itself constitutes the action. Not *I am
+    promising* (descriptive) but *I promise* (performative).'
+  flagged: false
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed. Oxford University Press.:
+    Performatives — I promise, I apologize, I declare (not progressive forms)'
+  tier: 1
+- claim: Common error '*I will promise to help you.* (redundant)' for Portuguese,
+    Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+common_errors:
+- correction: I promise to help you.
+  error: '*I will promise to help you.* (redundant)'
+  explanation: Performative verbs (promise, apologize, declare) perform the action
+    in the present simple. 'I promise' IS the promise. 'I will promise' is redundant.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 2
 description: Verbs that perform an action simply by being uttered — the act of speaking
   IS the act of promising, apologising, ordering, etc.
+dialectal_variation: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - promises
+      - apologies
+      - declarations
+      - suggestions
+      - warnings
+      min_examples: 4
+    structure: 'Subject (usually ''I'' or ''we'') + performative verb (present simple)
+      + complement. Common patterns: I/We + verb + (that) clause — ''I promise (that)
+      I will help.'' / I/We + verb + to-infinitive — ''I agree to pay.'' / I/We +
+      verb + object — ''I congratulate you.'' / I/We + verb + object + on + noun —
+      ''I congratulate you on your promotion.'''
+  negative:
+    example_generator:
+      contexts:
+      - denial
+      - refusal
+      - negative recommendation
+      min_examples: 3
+    structure: 'Negatives are less common with true performatives because the act
+      of saying ''I do not promise'' is not itself a promise. However, some performatives
+      can be negated: ''I do not recommend this restaurant.'' (I am actively advising
+      against it.) / ''I deny the allegations.'' (I am performing the act of denial.)
+      / ''I refuse to answer.'' (I am performing the act of refusal.)'
+  questions:
+    example_generator:
+      contexts:
+      - requesting promises
+      - offering suggestions
+      - seeking agreement
+      min_examples: 3
+    structure: 'Questions with performatives are usually indirect speech acts — they
+      perform a different function: ''Do you promise to help?'' (This is a request
+      for a promise, not a promise itself.) / ''Can I suggest something?'' (This is
+      a polite way of introducing a suggestion.) / ''Would you agree to this?'' (This
+      is a request for agreement.)'
+grammar_point: performative_verbs
 level: B2
 meaning:
-  core_meaning: 'Performative verbs are verbs where saying the words is itself the
-    performance of the action. When you say ''I promise,'' you are not describing
-    a promise — you are making one. When you say ''I apologise,'' you are not reporting
-    an apology — you are giving one. These verbs blur the line between language and
-    action: the utterance IS the act.'
-  timeline: 'Performatives are typically used in the simple present tense because
-    the action happens at the moment of speaking: ''I promise to help you.'' (The
-    promise is made now, as I speak.) / ''I declare the meeting open.'' (The meeting
-    becomes open as I say this.) Past tense performatives describe a past speech act:
-    ''I promised to help.'' (The promise was made in the past.)'
+  ccqs:
+  - answer: I am making a promise. The act of saying 'I promise' IS the promise.
+    purpose: Tests whether the learner understands that some verbs (promise, apologize,
+      declare, name) perform the action they describe when spoken. These are called
+      performative verbs.
+    question: If I say 'I promise to come,' am I describing a promise or making a
+      promise?
+  - answer: "Yes, but it becomes descriptive. 'I promised' reports a past speech
+      act. The true performative force is in the present: 'I promise.'"
+    purpose: Tests whether the learner understands that performative verbs in past
+      tense describe rather than perform the action, and that true performatives
+      require present simple.
+    question: Can you perform a performative in the past tense?
+  - answer: No. 'Think' is not a performative verb. You are describing your mental
+      state, not performing an action by speaking.
+    purpose: Tests whether the learner can distinguish performative verbs (where the
+      utterance IS the action) from ordinary verbs that merely describe mental states
+      or actions.
+    question: Is 'I think it will rain' a performative?
+  - answer: No. 'I declare the meeting open' is a performative — the words
+      themselves declare the meeting open. 'I run every morning' is not — it describes
+      a habit, not performing an action by speaking.
+    purpose: Tests whether the learner can distinguish performative verbs (where saying
+      IS doing) from ordinary action verbs (where speaking describes an action).
+    question: 'Which of these is a performative: "I declare the meeting open" or "I run every morning"?'
   contrast: 'Performative (doing the action now): "I promise I will help you." (By
     saying this, I am making a promise.)
 
@@ -25,26 +115,11 @@ meaning:
     Descriptive: "He apologised for being late." (He apologised in the past.)
 
     '
-  ccqs:
-  - question: If I say 'I promise to come,' am I describing a promise or making a
-      promise?
-    answer: I am making a promise. The act of saying 'I promise' IS the promise.
-    purpose: Tests whether the learner understands that some verbs (promise, apologize,
-      declare, name) perform the action they describe when spoken. These are called
-      performative verbs.
-  - question: Can you perform a performative in the past tense?
-    answer: 'Yes, but it becomes descriptive. ''I promised'' reports a past speech
-      act. The true performative force is in the present: ''I promise.'''
-    purpose: Tests understanding of performative_verbs.
-  - question: Is 'I think it will rain' a performative?
-    answer: No. 'Think' is not a performative verb. You are describing your mental
-      state, not performing an action by speaking.
-    purpose: Tests understanding of performative_verbs.
-  - question: Why are performatives important in English?
-    answer: 'They are essential for social functions: making promises, giving apologies,
-      making offers, giving warnings, and issuing formal declarations. Understanding
-      them helps learners use language appropriately in social and professional contexts.'
-    purpose: Tests understanding of performative_verbs.
+  core_meaning: 'Performative verbs are verbs where saying the words is itself the
+    performance of the action. When you say ''I promise,'' you are not describing
+    a promise — you are making one. When you say ''I apologise,'' you are not reporting
+    an apology — you are giving one. These verbs blur the line between language and
+    action: the utterance IS the act.'
   example_generator:
     contexts:
     - formal ceremonies
@@ -62,98 +137,148 @@ meaning:
       you to...'' / ''I name this ship...'' / ''I pronounce you husband and wife.''
       These words have legal and social force.'
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Subject (usually ''I'' or ''we'') + performative verb (present simple)
-      + complement. Common patterns: I/We + verb + (that) clause — ''I promise (that)
-      I will help.'' / I/We + verb + to-infinitive — ''I agree to pay.'' / I/We +
-      verb + object — ''I congratulate you.'' / I/We + verb + object + on + noun —
-      ''I congratulate you on your promotion.'''
-    example_generator:
-      contexts:
-      - promises
-      - apologies
-      - declarations
-      - suggestions
-      - warnings
-      min_examples: 4
-  negative:
-    structure: 'Negatives are less common with true performatives because the act
-      of saying ''I do not promise'' is not itself a promise. However, some performatives
-      can be negated: ''I do not recommend this restaurant.'' (I am actively advising
-      against it.) / ''I deny the allegations.'' (I am performing the act of denial.)
-      / ''I refuse to answer.'' (I am performing the act of refusal.)'
-    example_generator:
-      contexts:
-      - denial
-      - refusal
-      - negative recommendation
-      min_examples: 3
-  questions:
-    structure: 'Questions with performatives are usually indirect speech acts — they
-      perform a different function: ''Do you promise to help?'' (This is a request
-      for a promise, not a promise itself.) / ''Can I suggest something?'' (This is
-      a polite way of introducing a suggestion.) / ''Would you agree to this?'' (This
-      is a request for agreement.)'
-    example_generator:
-      contexts:
-      - requesting promises
-      - offering suggestions
-      - seeking agreement
-      min_examples: 3
+  timeline: 'Performatives are typically used in the simple present tense because
+    the action happens at the moment of speaking: ''I promise to help you.'' (The
+    promise is made now, as I speak.) / ''I declare the meeting open.'' (The meeting
+    becomes open as I say this.) Past tense performatives describe a past speech act:
+    ''I promised to help.'' (The promise was made in the past.)'
+phonetics:
+- example_generator:
+    contexts:
+    - stress for emphasis
+    - sincerity
+  l1_issue: Learners may use flat intonation for performatives, which can sound insincere
+    or uncertain. Practice with emphatic stress on the performative verb.
+  note: 'Performative verbs in the first person often carry strong stress because
+    they represent a personal commitment or declaration: ''I PROMISE I will help.''
+    /aɪ ˈprɒmɪz aɪ wɪl help/. The stress on the performative verb signals sincerity
+    and commitment.'
+- example_generator:
+    contexts:
+    - formal vs informal pronunciation
+    - connected speech
+  l1_issue: Learners may use overly careful pronunciation in informal contexts or
+    overly casual pronunciation in formal contexts. Discuss register-appropriate pronunciation.
+  note: 'In formal performatives, each word tends to be clearly articulated: ''I declare
+    the meeting open.'' /aɪ dɪˈkleə ðə ˈmiːtɪŋ ˈəʊpən/. In informal performatives,
+    connected speech applies: ''I apologise'' → /aɪ əˈpɒlədʒaɪz/.'
+register_notes:
+- note: 'Biber et al. (1999) — Performative verbs (''promise'', ''declare'', ''suggest''):
+    register distribution varies. Legal/formal prose uses more explicit performatives;
+    conversation uses indirect speech acts.'
+  reliability: B
+  source: Biber et al. (1999) Grammar of Spoken and Written English. Longman.
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  secondary: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Promising — I promise, I swear, I guarantee, I vow
-  type: grammatical
-  examples:
+- examples:
   - I promise to be on time.
   - I swear I am telling the truth.
   - I guarantee that the product is authentic.
   - I vow to protect this country.
-- rule: Apologising — I apologise, I regret, I am sorry
+  rule: Promising — I promise, I swear, I guarantee, I vow
   type: grammatical
-  examples:
+- examples:
   - I apologise for the delay.
   - I regret any inconvenience caused.
   - I am sorry for what happened.
   - We apologise for the mistake.
-- rule: Declaring and announcing — I declare, I announce, I pronounce, I name
+  rule: Apologising — I apologise, I regret, I am sorry
   type: grammatical
-  examples:
+- examples:
   - I declare the meeting open.
   - I am pleased to announce the winner.
   - I pronounce you husband and wife.
   - I name this ship the Queen Elizabeth.
-- rule: Advising and recommending — I suggest, I recommend, I advise, I urge
+  rule: Declaring and announcing — I declare, I announce, I pronounce, I name
   type: grammatical
-  examples:
+- examples:
   - I suggest that you arrive early.
   - I recommend the fish.
   - I advise you to save money.
   - I urge everyone to vote.
-- rule: Ordering and requesting — I order, I request, I demand, I ask
+  rule: Advising and recommending — I suggest, I recommend, I advise, I urge
   type: grammatical
-  examples:
+- examples:
   - I order you to leave.
   - I request that all passengers remain seated.
   - I demand an explanation.
   - I ask you to be quiet.
-- rule: Congratulating and thanking — I congratulate, I thank, I welcome
+  rule: Ordering and requesting — I order, I request, I demand, I ask
   type: grammatical
-  examples:
+- examples:
   - I congratulate you on your success.
   - I thank you for your support.
   - I welcome you to our school.
   - I congratulate the team on their victory.
-- rule: Warning — I warn, I caution
+  rule: Congratulating and thanking — I congratulate, I thank, I welcome
   type: grammatical
-  examples:
+- examples:
   - I warn you — this is dangerous.
   - I caution against making hasty decisions.
   - I warn you not to go there alone.
+  rule: Warning — I warn, I caution
+  type: grammatical
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: 'Give students 12 sentences. They identify whether each is performative
+      (doing the action now) or descriptive (reporting a past action): ''I promise
+      to help.'' (performative) / ''She promised to help.'' (descriptive). Discuss
+      the difference.'
+    duration: 15
+    name: Performative or descriptive?
+  - adaptation_notes: 'Students work in pairs. Each card describes a scenario: you
+      are late for a meeting, you want to make a promise, you need to apologise, you
+      are opening a ceremony. Students act out the scenario using appropriate performative
+      verbs.'
+    duration: 25
+    name: Role play scenarios
+  - adaptation_notes: 'Give students a list of 20 performative verbs. They categorise
+      them: promising, apologising, declaring, suggesting, warning, ordering, thanking,
+      congratulating. Discuss any that could fit multiple categories.'
+    duration: 15
+    name: Categorisation activity
+  - adaptation_notes: Students write a short script for a formal ceremony (opening
+      a conference, naming a ship, a wedding) using at least 6 performative verbs.
+      Perform for the class.
+    duration: 20
+    name: Formal ceremony writing
+  tips:
+  - 'Start with a simple question: ''What happens when you say I promise?'' Elicit
+    that the act of saying it IS the promise. This helps learners understand the concept
+    before introducing the term ''performative.'''
+  - 'Use role plays: set up scenarios where students must apologise, promise, suggest,
+    or declare. This makes the performative function concrete and memorable.'
+  - 'Create a categorised list of performative verbs: promises, apologies, declarations,
+    suggestions, warnings, orders. Have students add to each category.'
+  - 'Contrast performatives with descriptives: ''I promise to help'' (performative
+    — I am making a promise now) vs. ''She promised to help'' (descriptive — reporting
+    a past promise). This clarifies the key distinction.'
+  - 'Discuss cultural differences: in some cultures, apologies are implied rather
+    than stated explicitly. Explain that in English, saying ''I apologise'' is important
+    and expected.'
+  - 'Swan PEU: Performatives — ''I promise to help'' (not ''I am promising'').
+    ''I apologize for being late.'' ''I name this ship the Queen Mary.'' Present simple
+    performs the action, not describes it.'
+  - 'Swan PEU: Not all verbs can be performative. Only specific verbs of declaration,
+    commitment, or naming work this way: promise, apologize, resign, name, declare,
+    swear, bet.'
+  - 'Swan PEU: Performatives beyond verbs — some nouns and adjectives can also carry
+    performative force: ''Congratulations'', ''Thanks'', ''Sorry'' can function as
+    performative expressions in informal speech.'
+title: Performative Verbs (I promise / I apologise / I declare / I suggest)
 use:
 - context: Formal and ceremonial contexts
-  description: Performatives are essential in ceremonies, legal proceedings, and official
-    events where words have legal or social force.
+  description: 'Performatives are essential in ceremonies, legal proceedings, and official
+    events where words have legal or social force.'
   examples:
   - I declare the Olympic Games open.
   - I sentence you to five years in prison.
@@ -182,95 +307,4 @@ use:
   - I hereby declare that the information is true.
   - I agree to the terms and conditions.
   - I certify that this is a genuine document.
-  - I accept full responsibility for my actions.
-phonetics:
-- note: 'Performative verbs in the first person often carry strong stress because
-    they represent a personal commitment or declaration: ''I PROMISE I will help.''
-    /aɪ ˈprɒmɪz aɪ wɪl help/. The stress on the performative verb signals sincerity
-    and commitment.'
-  example_generator:
-    contexts:
-    - stress for emphasis
-    - sincerity
-  l1_issue: Learners may use flat intonation for performatives, which can sound insincere
-    or uncertain. Practice with emphatic stress on the performative verb.
-- note: 'In formal performatives, each word tends to be clearly articulated: ''I declare
-    the meeting open.'' /aɪ dɪˈkleə ðə ˈmiːtɪŋ ˈəʊpən/. In informal performatives,
-    connected speech applies: ''I apologise'' → /aɪ əˈpɒlədʒaɪz/.'
-  example_generator:
-    contexts:
-    - formal vs informal pronunciation
-    - connected speech
-  l1_issue: Learners may use overly careful pronunciation in informal contexts or
-    overly casual pronunciation in formal contexts. Discuss register-appropriate pronunciation.
-teaching:
-  methodology: Guided discovery
-  tips:
-  - 'Start with a simple question: ''What happens when you say I promise?'' Elicit
-    that the act of saying it IS the promise. This helps learners understand the concept
-    before introducing the term ''performative.'''
-  - 'Use role plays: set up scenarios where students must apologise, promise, suggest,
-    or declare. This makes the performative function concrete and memorable.'
-  - 'Create a categorised list of performative verbs: promises, apologies, declarations,
-    suggestions, warnings, orders. Have students add to each category.'
-  - 'Contrast performatives with descriptives: ''I promise to help'' (performative
-    — I am making a promise now) vs. ''She promised to help'' (descriptive — reporting
-    a past promise). This clarifies the key distinction.'
-  - 'Discuss cultural differences: in some cultures, apologies are implied rather
-    than stated explicitly. Explain that in English, saying ''I apologise'' is important
-    and expected.'
-  recommended_activities:
-  - name: Performative or descriptive?
-    duration: 15
-    adaptation_notes: 'Give students 12 sentences. They identify whether each is performative
-      (doing the action now) or descriptive (reporting a past action): ''I promise
-      to help.'' (performative) / ''She promised to help.'' (descriptive). Discuss
-      the difference.'
-  - name: Role play scenarios
-    duration: 25
-    adaptation_notes: 'Students work in pairs. Each card describes a scenario: you
-      are late for a meeting, you want to make a promise, you need to apologise, you
-      are opening a ceremony. Students act out the scenario using appropriate performative
-      verbs.'
-  - name: Categorisation activity
-    duration: 15
-    adaptation_notes: 'Give students a list of 20 performative verbs. They categorise
-      them: promising, apologising, declaring, suggesting, warning, ordering, thanking,
-      congratulating. Discuss any that could fit multiple categories.'
-  - name: Formal ceremony writing
-    duration: 20
-    adaptation_notes: Students write a short script for a formal ceremony (opening
-      a conference, naming a ship, a wedding) using at least 6 performative verbs.
-      Perform for the class.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I will promise to help you.* (redundant)'
-  correction: I promise to help you.
-  explanation: Performative verbs (promise, apologize, declare) perform the action
-    in the present simple. 'I promise' IS the promise. 'I will promise' is redundant.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.
+  - I accept full responsibility for my actions.'

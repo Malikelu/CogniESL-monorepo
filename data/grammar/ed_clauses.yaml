@@ -1,13 +1,99 @@
-grammar_point: ed_clauses
-title: -ed Clauses (Past Participle Clauses)
+citations:
+- claim: 'Core meaning: Shows passive voice (something done to the subject) or a completed
+    state/condition'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 18:
+    Passive Voice-8.5'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used for everyday
+    communication and is among the most frequent patterns'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 18:
+    Passive Voice-8.5'
+  tier: 1
+- claim: Common error '*I was boring at the meeting.*' for Portuguese, Spanish, Chinese
+    speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: Oshima & Hogue's Great Writing series demonstrates how this grammatical structure
+    functions in academic writing contexts. Their approach connects grammar instruction
+    to writing outcomes, showing learners how accurate use of this structure improves
+    paragraph cohesion, essay organization, and academic register.
+  source: Oshima, A. and Hogue, A. (2006). Introduction to Academic Writing, 3rd ed.
+    Pearson Longman.
+  tier: 2
+common_errors:
+- correction: I was bored at the meeting.
+  error: '*I was boring at the meeting.*'
+  explanation: -ed for feelings, -ing for cause.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
 description: Clauses using past participle forms to show passive voice or completed
   states. Essential for concise formal writing.
+dialectal_variation: []
+discourse_notes:
+- note: Participial -ed clauses function as reduced passive or perfect adverbials,
+    condensing information in formal written registers.
+  affirmative:
+    example_generator:
+      contexts:
+      - work and professional life
+      - entertainment and media
+      min_examples: 4
+    structure: '-ed at sentence start: "Built in 1990, the house is old." (The house
+      was built...)
+
+      -ed after noun: "The house built in 1990 is old." (which was built...)
+
+      -ed as adjective: "I''m interested in art."
+
+      '
+  negative:
+    example_generator:
+      contexts:
+      - social interactions
+      min_examples: 4
+    structure: Not typically negated (use 'not + -ed' rarely).
+  questions:
+    example_generator:
+      contexts:
+      - entertainment and media
+      min_examples: 4
+    structure: Questions not common with -ed clauses.
+grammar_point: ed_clauses
 level: B2
 meaning:
-  core_meaning: Shows passive voice (something done to the subject) or a completed
-    state/condition.
-  timeline: 'Often implies completed action before main verb: ''Built in 1990, the
-    house...'' (built first, then house exists).'
+  ccqs:
+  - answer: We don't know — the house was built (passive) in 1900. The -ed clause
+      describes the house.
+    purpose: Tests whether the learner understands that past participle (-ed) clauses
+      at the beginning of a sentence are reduced passive relative clauses. 'Built
+      in 1900' = 'which was built in 1900.' This is common in formal and academic
+      writing.
+    question: '''Built in 1900, the house is old.'' Who built the house?'
+  - answer: Exhausted (very tired). The -ed clause tells us why he collapsed.
+    purpose: Tests whether the learner understands that past participle clauses can
+      express cause/reason. 'Exhausted by the race' = 'Because he was exhausted by
+      the race.' The -ed clause gives the reason for the main clause event.
+    question: '''Exhausted by the race, he collapsed.'' Was he tired or energetic?'
+  - answer: Feeling it — 'interested' describes your feeling.
+    purpose: Tests whether the learner understands the '-ed/-ing' adjective distinction.
+      '-ed' adjectives (interested, exhausted, bored) describe how someone feels.
+      '-ing' adjectives (interesting, exhausting, boring) describe what causes the
+      feeling. This distinction affects adjective choice with -ed clauses.
+    question: '''I am interested in art.'' Am I causing interest or feeling it?'
+  - answer: '''Seen from the hill, the city is beautiful.'' The -ed clause must relate
+      to the subject (''the city'').'
+    purpose: Tests whether the learner knows that -ed participle clauses must have
+      a logical connection to the subject (Swan PEU 2016, entry 108.3).
+    question: Which is correct? *'Seen from the hill, the city is beautiful' or 'Seen
+      from the hill, we can see the city beautifully'?
   contrast: '''-ed'' = passive (something done TO the subject)
 
     ''-ing'' = active (subject does the action)
@@ -17,103 +103,68 @@ meaning:
     ''-ed adjective'' = state (not action)
 
     '
-  ccqs:
-  - question: '''Built in 1900, the house is old.'' Who built the house?'
-    answer: We don't know — the house was built (passive) in 1900. The -ed clause
-      describes the house.
-    purpose: Tests whether the learner understands that past participle (-ed) clauses
-      at the beginning of a sentence are reduced passive relative clauses. 'Built
-      in 1900' = 'which was built in 1900.' This is common in formal and academic
-      writing.
-  - question: '''Exhausted by the race, he collapsed.'' Was he tired or energetic?'
-    answer: Exhausted (very tired). The -ed clause tells us why he collapsed.
-    purpose: Tests whether the learner understands that past participle clauses can
-      express cause/reason. 'Exhausted by the race' = 'Because he was exhausted by
-      the race.' The -ed clause gives the reason for the main clause event.
-  - question: '''I am interested in art.'' Am I causing interest or feeling it?'
-    answer: Feeling it — 'interested' describes your feeling.
-    purpose: Tests whether the learner understands the '-ed/-ing' adjective distinction.
-      '-ed' adjectives (interested, exhausted, bored) describe how someone feels.
-      '-ing' adjectives (interesting, exhausting, boring) describe what causes the
-      feeling. This distinction affects adjective choice with -ed clauses.
+  core_meaning: Shows passive voice (something done to the subject) or a completed
+    state/condition.
   example_generator:
     contexts:
     - everyday situations
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: '-ed at sentence start: "Built in 1990, the house is old." (The house
-      was built...)
-
-      -ed after noun: "The house built in 1990 is old." (which was built...)
-
-      -ed as adjective: "I''m interested in art."
-
-      '
-    example_generator:
-      contexts:
-      - work and professional life
-      - entertainment and media
-      min_examples: 4
-  negative:
-    structure: Not typically negated (use 'not + -ed' rarely).
-    example_generator:
-      contexts:
-      - social interactions
-      min_examples: 4
-  questions:
-    structure: Questions not common with -ed clauses.
-    example_generator:
-      contexts:
-      - entertainment and media
-      min_examples: 4
-sub_rules:
-- rule: Ed clauses (reduced relative clauses) use a past participle to modify a noun.
-    They are equivalent to passive relative clauses
-  type: grammatical
-  examples:
-  - The book written by Chomsky (which was written by Chomsky)
-  - The man injured in the accident (who was injured)
-  - The money stolen from the bank (which was stolen)
-- rule: Ed clauses can also express a state resulting from a past action
-  type: grammatical
-  examples:
-  - The broken window (the window that was broken)
-  - The excited children (the children who were excited)
-  - The closed door (the door that was closed)
-- rule: 'Position: ed clauses go immediately after the noun they modify'
-  type: word_order
-  examples:
-  - The letter posted yesterday arrived today
-  - The students selected for the team were excited
-use:
-- name: Reduced Passive Clauses
-  description: Replace 'which/who + be + -ed' with just -ed.
-  examples:
-  - The car driven by Tom (which was driven by Tom)...
-  key_point: Subject of main clause = thing that -ed was done TO.
-- name: Fronted -ed Clauses
-  description: -ed clause at sentence start for cause/reason.
-  examples:
-  - Exhausted by the race, he collapsed.
-  - Built in 1900, the house has history.
-  key_point: Shows reason or background information.
-- name: -ed as Adjective
-  description: Words like 'interested', 'bored', 'tired' as states.
-  examples:
-  - I'm interested.
-  - He's bored.
-  - We're tired.
-  key_point: These describe permanent or temporary states.
+  timeline: 'Often implies completed action before main verb: ''Built in 1990, the
+    house...'' (built first, then house exists).'
 phonetics:
-- note: 'In ed clauses, the past participle is usually stressed: ''The book WRITTEN
-    by Chomsky.'''
-  example_generator:
+- example_generator:
     contexts:
     - ed clause stress
   l1_issue: Learners may not stress the past participle sufficiently, making the sentence
     structure unclear.
+  note: 'In ed clauses, the past participle is usually stressed: ''The book WRITTEN
+    by Chomsky.'''
+register_notes:
+- note: In conversation, defining relative clauses are more common than non-defining.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In academic writing, both defining and non-defining relative clauses are used
+    extensively.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — -ed participial clauses (reduced relatives): more common
+    in written registers (news, academic prose) than in conversation. Reflects written
+    language information density. Ch. 8.6'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 8.6
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 18:
+    Passive Voice-8.5'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+sub_rules:
+- examples:
+  - The book written by Chomsky (which was written by Chomsky)
+  - The man injured in the accident (who was injured)
+  - The money stolen from the bank (which was stolen)
+  rule: Ed clauses (reduced relative clauses) use a past participle to modify a noun.
+    They are equivalent to passive relative clauses
+  type: grammatical
+- examples:
+  - The broken window (the window that was broken)
+  - The excited children (the children who were excited)
+  - The closed door (the door that was closed)
+  rule: Ed clauses can also express a state resulting from a past action
+  type: grammatical
+- examples:
+  - The letter posted yesterday arrived today
+  - The students selected for the team were excited
+  rule: 'Position: ed clauses go immediately after the noun they modify'
+  type: word_order
 teaching:
   methodology: 'Use a consciousness-raising approach: present full relative clauses
     alongside their reduced -ed forms and guide students to discover the reduction
@@ -121,50 +172,40 @@ teaching:
     to controlled production (sentence combining), and finally free writing (describing
     pictures or experiences). Use physical gestures to reinforce the passive meaning
     (done TO vs done BY).'
+  recommended_activities:
+  - adaptation_notes: Give students ed clauses. They expand them into full relative
+      clauses.
+    duration: 15
+    name: Expand the Clause
+  - adaptation_notes: Give students full relative clauses. They reduce them to ed
+      clauses.
+    duration: 15
+    name: Reduce the Clause
   tips:
   - 'Use ''done TO'' gesture: point to self for -ed (something done to me).'
   - 'Practice minimal pairs: ''I''m boring'' (I bore others) vs ''I''m bored'' (others
     bore me).'
   - 'Show reduction: ''which was built'' → ''built''.'
-  recommended_activities:
-  - name: Expand the Clause
-    duration: 15
-    adaptation_notes: Give students ed clauses. They expand them into full relative
-      clauses.
-  - name: Reduce the Clause
-    duration: 15
-    adaptation_notes: Give students full relative clauses. They reduce them to ed
-      clauses.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8:
-    Passive Voice, §8.1-8.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I was boring at the meeting.*'
-  correction: I was bored at the meeting.
-  explanation: -ed for feelings, -ing for cause.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, relative clauses are essential for precision and are a
-    marker of proficient writing.
-- note: In conversation, defining relative clauses are more common than non-defining.
-- note: In academic writing, both defining and non-defining relative clauses are used
-    extensively.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used for everyday communication and is
-    among the most frequent patterns in spoken English.
-- note: In academic writing, this structure appears in discussions of established
-    knowledge, methodology, and findings.
-- note: In news reports, this structure is used for reporting events and attributing
-    statements.
+  - 'Swan PEU: Past participle clauses — ''Built in 1900, the bridge is now a heritage
+    site.'' = ''The bridge, which was built in 1900...'' These are common in formal
+    and academic writing.'
+title: -ed Clauses (Past Participle Clauses)
+use:
+- description: Replace 'which/who + be + -ed' with just -ed.
+  examples:
+  - The car driven by Tom (which was driven by Tom)...
+  key_point: Subject of main clause = thing that -ed was done TO.
+  name: Reduced Passive Clauses
+- description: -ed clause at sentence start for cause/reason.
+  examples:
+  - Exhausted by the race, he collapsed.
+  - Built in 1900, the house has history.
+  key_point: Shows reason or background information.
+  name: Fronted -ed Clauses
+- description: Words like 'interested', 'bored', 'tired' as states.
+  examples:
+  - I'm interested.
+  - He's bored.
+  - We're tired.
+  key_point: These describe permanent or temporary states.
+  name: -ed as Adjective

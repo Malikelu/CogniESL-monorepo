@@ -1,30 +1,101 @@
+citations:
+- claim: 'Core meaning: Fixed multi-word units that function as single prepositions with idiomatic meanings that cannot be
+    d'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21: Prepositions-15.7'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21: Prepositions-15.7'
+  tier: 1
+- claim: Common error '*In spite the rain, we went out.*' for Portuguese, Spanish, Chinese speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- claim: Complex prepositions (IN FRONT OF, BECAUSE OF, IN SPITE OF, IN ADDITION TO) consist of multiple words functioning
+    as a single preposition
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21: Prepositions'
+  tier: 1
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents how transfer effects are non-linear,
+    determined by functional fit between L1 and L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects are non-linear — determined by functional
+    fit between L1 and L2 systems rather than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning. Routledge.
+  tier: 2
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for L1-specific error patterns in English.
+    Their learner English framework documents how each L1 group produces characteristic errors in this grammatical domain,
+    enabling teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference and Other Problems, 2nd ed. Cambridge
+    University Press.'
+  tier: 2
+common_errors:
+- correction: In spite of the rain, we went out.
+  error: '*In spite the rain, we went out.*'
+  explanation: 'Expanded prepositions are fixed: in spite of.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: B
+  source: Swan Entry 214. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+- error: Finnish L1 omits prepositions due to case inflection transfer (covert transfer) (Odlin Ch.3)
+  explanation: 'Odlin (Ch.3): Jarvis & Odlin (2000). Finnish uses case inflections (15 cases), not prepositions. "nurmikolle"
+    = stem + allative -lle = "on(to) the grass". Example: "go to sit the grass" (missing "on"). COVERT transfer: ABSENCE reflects
+    L1 influence. Occurred ONLY among Finnish learners.'
+  l1_groups:
+  - Finnish
+  reliability: C
+  source: Odlin, T. Explorations of Language Transfer, Ch. 3; Jarvis & Odlin (2000)
+description: 'Multi-word prepositions: in addition to, with regard to, on behalf of, in spite of, due to, owing to.'
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - formal letters
+      - academic writing
+      - business reports
+      min_examples: 4
+    structure: Expanded preposition + noun phrase
+  negative:
+    example_generator:
+      contexts:
+      - formal contexts
+      min_examples: 3
+    structure: Expanded preposition + negative phrase
+  questions:
+    example_generator:
+      contexts:
+      - formal discussions
+      min_examples: 3
+    structure: 'Can appear in questions: In terms of cost, is this feasible?'
 grammar_point: expanded_prepositions
-title: Expanded Prepositions
-description: 'Multi-word prepositions: in addition to, with regard to, on behalf of,
-  in spite of, due to, owing to.'
+key_principles: []
 level: C1
 meaning:
-  core_meaning: Fixed multi-word units that function as single prepositions with idiomatic
-    meanings that cannot be deduced from the individual words.
-  timeline: Timeless — used across all tenses.
-  contrast: Simple = on the table vs Expanded = in front of the television vs In spite
-    of the rain, we went for a walk.
   ccqs:
-  - question: Does this expression function as a single preposition?
-    answer: Yes, the words together act as one prepositional unit.
-    purpose: Tests whether the learner understands that expanded prepositions (in
-      spite of, with regard to, in front of) function as single prepositional units
-      despite containing multiple words. They cannot be broken apart or translated
-      word-by-word.
-  - question: Can you change any of the words in the middle without changing the meaning?
-    answer: No, the expression is fixed.
-    purpose: Tests whether the learner understands that expanded prepositions are
-      fixed expressions. 'In spite of' cannot be changed to 'in despite of' or 'in
-      the spite of.' Each expanded preposition must be learned as an immutable chunk.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      expanded prepositions and explain why they are incorrect.
+  - answer: Yes, the words together act as one prepositional unit.
+    purpose: Tests whether the learner understands that expanded prepositions (in spite of, with regard to, in front of) function
+      as single prepositional units despite containing multiple words. They cannot be broken apart or translated word-by-word.
+    question: Does this expression function as a single preposition?
+  - answer: No, the expression is fixed.
+    purpose: Tests whether the learner understands that expanded prepositions are fixed expressions. 'In spite of' cannot
+      be changed to 'in despite of' or 'in the spite of.' Each expanded preposition must be learned as an immutable chunk.
+    question: Can you change any of the words in the middle without changing the meaning?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with expanded prepositions and explain why they
+      are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: '''I am interested in learning English.'' After ''interested'', the fixed preposition is ''in'', not ''for''.'
+    purpose: Tests whether the learner knows fixed adjective + preposition combinations (Swan PEU 2016, entries 83-85).
+    question: Which is correct? *'I am interested for learning English' or 'I am interested in learning English'?
+  contrast: Simple = on the table vs Expanded = in front of the television vs In spite of the rain, we went for a walk.
+  core_meaning: Fixed multi-word units that function as single prepositions with idiomatic meanings that cannot be deduced
+    from the individual words.
   example_generator:
     contexts:
     - formal writing
@@ -35,99 +106,63 @@ meaning:
     - More common in formal British English than casual American English
     - Avoid overusing in spoken conversation
     min_examples: 5
-form:
-  affirmative:
-    structure: Expanded preposition + noun phrase
-    example_generator:
-      contexts:
-      - formal letters
-      - academic writing
-      - business reports
-      min_examples: 4
-  negative:
-    structure: Expanded preposition + negative phrase
-    example_generator:
-      contexts:
-      - formal contexts
-      min_examples: 3
-  questions:
-    structure: 'Can appear in questions: In terms of cost, is this feasible?'
-    example_generator:
-      contexts:
-      - formal discussions
-      min_examples: 3
+  timeline: Timeless — used across all tenses.
+phonetics:
+- example_generator:
+    contexts:
+    - formal speech
+  l1_issue: Speakers of syllable-timed languages may give equal stress to all words in the expression
+  note: Stress typically falls on the content word within the expanded preposition
+register_notes:
+- note: Biber et al. (2021) — Complex/expanded prepositions (in terms of, with respect to, in the case of) are overwhelmingly
+    more common in academic prose. Conversation uses simple prepositions. The simple/complex preposition ratio is a strong
+    register discriminator. Ch. 2.4.5, 5.3.3
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 2.4.5
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21: Prepositions-15.7'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Two-word expanded prepositions
-  type: grammatical
-  examples:
+- examples:
   - according to the report
   - because of the delay
   - instead of waiting
   - prior to the meeting
-- rule: Three-word expanded prepositions
+  rule: Two-word expanded prepositions
   type: grammatical
-  examples:
+- examples:
   - in addition to the main course
   - with regard to your complaint
   - on behalf of the team
   - in front of the building
-- rule: Expanded prepositions followed by gerunds
+  rule: Three-word expanded prepositions
   type: grammatical
-  examples:
+- examples:
   - Instead of complaining, try to help.
   - In addition to teaching, she writes textbooks.
+  rule: Expanded prepositions followed by gerunds
+  type: grammatical
+teaching:
+  methodology: Guided discovery with contrastive analysis
+  recommended_activities:
+  - adaptation_notes: Students rewrite informal sentences using expanded prepositions for a formal register.
+    duration: 15
+    name: Register transformation
+  tips:
+  - Teach as fixed chunks — students should memorize them as single units
+  - Contrast with simple prepositions to show register difference
+  - Provide a reference list organized by function
+  - 'Swan PEU: Prepositions after nouns — ''an increase in prices,'' ''a solution to the problem,'' ''a reaction to the news,''
+    ''a lack of information,'' ''an interest in art.'' Many nouns take the same preposition as related verbs.'
+  - 'Swan PEU: Prepositions after adjectives — ''afraid of,'' ''interested in,'' ''good at,'' ''fond of,'' ''different from/than,''
+    ''full of,'' ''aware of,'' ''similar to.'' Teach as adjective-preposition collocations.'
+title: Expanded Prepositions
 use:
 - context: Formal writing and academic discourse
   description: Preferred in formal registers where precision and tone matter
   examples:
   - In accordance with the regulations, all participants must register.
   - With respect to your proposal, we have several concerns.
-phonetics:
-- note: Stress typically falls on the content word within the expanded preposition
-  example_generator:
-    contexts:
-    - formal speech
-  l1_issue: Speakers of syllable-timed languages may give equal stress to all words
-    in the expression
-teaching:
-  methodology: Guided discovery with contrastive analysis
-  tips:
-  - Teach as fixed chunks — students should memorize them as single units
-  - Contrast with simple prepositions to show register difference
-  - Provide a reference list organized by function
-  recommended_activities:
-  - name: Register transformation
-    duration: 15
-    adaptation_notes: Students rewrite informal sentences using expanded prepositions
-      for a formal register.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 15:
-    Prepositions, §15.1-15.7'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*In spite the rain, we went out.*'
-  correction: In spite of the rain, we went out.
-  explanation: 'Expanded prepositions are fixed: in spite of.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

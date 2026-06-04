@@ -1,39 +1,113 @@
-grammar_point: live_commentaries
-title: Live Commentaries (Present Tense Narrative)
+citations:
+- claim: 'Core meaning: Live commentaries use present tenses to describe actions as
+    they unfold in real time'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 4
+- claim: 'Register distribution: Live commentary is a specialized spoken register,
+    almost exclusively oral/auditory. It is not a written form — its grammar is shaped
+    by real-time production constraints.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 4
+- claim: 'Discourse function: Live commentary creates immediacy by describing events in real time using present tenses, placing the audience directly in the moment. It is a specialized spoken register distinct from everyday conversation.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 4
+- claim: Common error using past tense instead of present tense in live commentary
+    for Portuguese, Spanish, Chinese speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+common_errors:
+- correction: He scores! The goalkeeper dives but he misses it.
+  error: 'He scored! The goalkeeper dived but he missed it. (using past tense for live commentary)'
+  explanation: Live commentary uses present tenses to describe actions as they happen. Using past tense (scored, dived, missed) sounds like a news report after the event, not live commentary.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
 description: The use of present tenses (especially present simple and present continuous)
   to describe events as they happen, typical of sports broadcasts, demonstrations,
   and real-time narration.
+dialectal_variation: []
+discourse_notes:
+- 'Live commentary uses present tenses for real-time description, creating immediacy. Unlike conversational present tenses, commentary has unique features: rapid sequential present simple for main actions, present continuous for background actions, and present perfect for just-completed events. Source: Celce-Murcia & Larsen-Freeman (2015) GB3 Ch. 7: The Tense-Aspect System.'
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - sports commentary
+      - cooking shows
+      - live demonstrations
+      min_examples: 4
+    structure: 'Present simple for quick, sequential actions: Subject + base verb
+      (add -s for third person). Present continuous for ongoing background actions:
+      Subject + is/are + verb-ing.'
+  negative:
+    example_generator:
+      contexts:
+      - describing failures
+      - missed actions
+      min_examples: 3
+    structure: 'Present simple negative: Subject + does not/do not + base verb. Present
+      continuous negative: Subject + is not/are not + verb-ing.'
+  questions:
+    example_generator:
+      contexts:
+      - dramatic moments
+      - uncertain outcomes
+      min_examples: 3
+    structure: 'Questions in live commentaries are rare but possible for dramatic
+      effect: Will he score? Can he reach it? Is she going to make it?'
+grammar_point: live_commentaries
 level: B2
 meaning:
-  core_meaning: Live commentaries use present tenses to describe actions as they unfold
-    in real time. This creates immediacy and excitement, placing the listener or reader
-    directly in the moment. The present simple is used for quick, sequential actions,
-    while the present continuous describes ongoing background actions.
-  timeline: Present time reference. The events are happening now, at the moment of
-    speaking. Past tenses may be used for brief background information.
-  contrast: 'Narrative past: He ran down the ball and scored. (reporting after the
-    event) Live commentary: He runs down the ball... he shoots... and scores! (describing
-    as it happens) Documentary: The lion stalks its prey. (timeless present for dramatic
-    effect) News report: A man has been arrested. (present perfect for recent events)'
   ccqs:
-  - question: In a live football commentary, do we say he scored or he scores?
-    answer: He scores. The present simple is used for live, moment-by-moment description.
+  - answer: He scores. The present simple is used for live, moment-by-moment description.
     purpose: Tests whether the learner understands that live commentaries use present
       simple for actions happening in real time. 'He shoots... he scores!' describes
       events as they unfold, not after they happen.
-  - question: Can we use present continuous in live commentaries?
-    answer: 'Yes, for background actions: The crowd is going wild while he is preparing
+    question: In a live football commentary, do we say he scored or he scores?
+  - answer: 'Yes, for background actions: The crowd is going wild while he is preparing
       for the penalty.'
     purpose: Tests whether the learner understands the tense distribution in live
       commentary. Present simple = main events in sequence. Present continuous = simultaneous
       background actions.
-  - question: Is this the same as the historic present in storytelling?
-    answer: Similar, but live commentaries describe events actually happening now,
+    question: Can we use present continuous in live commentaries?
+  - answer: Similar, but live commentaries describe events actually happening now,
       while the historic present narrates past events in the present tense for dramatic
       effect.
     purpose: Tests whether the learner can distinguish between live commentary (real-time
       description) and historic present (past events told in present tense for drama).
       Both use present simple but differ in time reference.
+    question: Is this the same as the historic present in storytelling?
+  - answer: I add the salt. Live demonstrations follow the same present simple pattern
+      as sports commentary for sequential actions. I am adding the salt would describe
+      a background action in progress, not the main step-by-step narration.
+    purpose: Tests whether the learner can apply live commentary tense conventions
+      beyond sports to other demonstration genres. Using present simple for sequential
+      steps (I add, I stir, I pour) is the natural register for demonstrations, while
+      present continuous is reserved for background actions.
+    question: In a cooking demonstration, should the presenter say I am adding the
+      salt now or I add the salt?
+  contrast: 'Narrative past: He ran down the ball and scored. (reporting after the
+    event) Live commentary: He runs down the ball... he shoots... and scores! (describing
+    as it happens) Documentary: The lion stalks its prey. (timeless present for dramatic
+    effect) News report: A man has been arrested. (present perfect for recent events)'
+  core_meaning: Live commentaries use present tenses to describe actions as they unfold
+    in real time. This creates immediacy and excitement, placing the listener or reader
+    directly in the moment. The present simple is used for quick, sequential actions,
+    while the present continuous describes ongoing background actions.
   example_generator:
     contexts:
     - sports broadcasting
@@ -47,150 +121,116 @@ meaning:
     - The use of present simple for rapid actions is a distinctive feature of English
       commentary
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Present simple for quick, sequential actions: Subject + base verb
-      (add -s for third person). Present continuous for ongoing background actions:
-      Subject + is/are + verb-ing.'
-    example_generator:
-      contexts:
-      - sports commentary
-      - cooking shows
-      - live demonstrations
-      min_examples: 4
-  negative:
-    structure: 'Present simple negative: Subject + does not/do not + base verb. Present
-      continuous negative: Subject + is not/are not + verb-ing.'
-    example_generator:
-      contexts:
-      - describing failures
-      - missed actions
-      min_examples: 3
-  questions:
-    structure: 'Questions in live commentaries are rare but possible for dramatic
-      effect: Will he score? Can he reach it? Is she going to make it?'
-    example_generator:
-      contexts:
-      - dramatic moments
-      - uncertain outcomes
-      min_examples: 3
-sub_rules:
-- rule: Present simple for rapid, sequential actions. The main commentary mode
-  type: grammatical
-  examples:
-  - He passes to Messi. Messi shoots. It is a goal!
-  - She chops the onions, heats the oil, and adds the garlic.
-- rule: Present continuous for simultaneous or background actions
-  type: grammatical
-  examples:
-  - The crowd is cheering as he is running towards the goal.
-  - While the sauce is simmering, she is preparing the salad.
-- rule: Present perfect for very recent events within the commentary
-  type: grammatical
-  examples:
-  - He has just scored his third goal of the match.
-  - The referee has given a penalty.
-- rule: Will for immediate predictions during the event
-  type: grammatical
-  examples:
-  - He will take the penalty. He will aim for the bottom left corner.
-- rule: Commentary often uses short, elliptical sentences for speed
-  type: stylistic
-  examples:
-  - What a goal! Incredible! He has done it again!
-  - And it is over. What a match that was.
-- rule: Commentators use the first person plural (we) to include the audience
-  type: pragmatic
-  examples:
-  - We are witnessing something truly special here.
-  - Let us take a look at that replay.
-use:
-- name: Sports broadcasting
-  description: Describing sporting events in real time for radio and television
-  examples:
-  - Ronaldo receives the ball, he turns, he shoots... and it is in!
-  - The goalkeeper is diving to his left but he cannot reach it.
-  key_point: The present simple creates a sense of immediacy and excitement.
-- name: Cooking and demonstration shows
-  description: Describing actions as they are performed
-  examples:
-  - Now I am adding the flour gradually. You can see the dough is coming together.
-  - We heat the pan, add the butter, and wait until it is foaming.
-  key_point: Helps the audience follow along in real time.
-- name: Live news reporting
-  description: Reporting events as they unfold
-  examples:
-  - The Prime Minister is arriving at the conference centre now.
-  - We are receiving reports that the situation is under control.
-  key_point: Present tenses convey the breaking-news feel.
-- name: Video game streaming and walkthroughs
-  description: Narrating gameplay for online audiences
-  examples:
-  - I am heading towards the castle now. I need to avoid the guards.
-  - He picks up the sword and attacks the dragon.
-  key_point: A growing genre, especially on platforms like YouTube and Twitch.
+  timeline: Present time reference. The events are happening now, at the moment of
+    speaking. Past tenses may be used for brief background information.
 phonetics:
-- note: Live commentary is characterised by rapid speech, rising excitement, and varied
-    intonation
-  example_generator:
+- example_generator:
     contexts:
     - sports broadcasting
   l1_issue: Learners may struggle with the speed and rhythm of natural commentary.
     Practice with slowed-down recordings first.
-- note: 'Key moments receive extra stress and higher pitch: He SHOOTS... and SCORES!'
-  example_generator:
+  note: Live commentary is characterised by rapid speech, rising excitement, and varied
+    intonation
+- example_generator:
     contexts:
     - dramatic moments
   l1_issue: Flat intonation can make commentary sound boring or unnatural
+  note: 'Key moments receive extra stress and higher pitch: He SHOOTS... and SCORES!'
+register_notes:
+- note: 'Biber et al. (1999) — Live commentary grammar: unplanned spoken register
+    with unique features (present tense, heavy deixis, ellipsis). Distinguishes from
+    both conversation and written registers. Ch. 14'
+  reliability: C
+  source: Biber et al. (1999) Longman Grammar of Spoken and Written English. Longman
+    Publishing Company. Ch. 14
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+sub_rules:
+- examples:
+  - He passes to Messi. Messi shoots. It is a goal!
+  - She chops the onions, heats the oil, and adds the garlic.
+  rule: Present simple for rapid, sequential actions. The main commentary mode
+  type: grammatical
+- examples:
+  - The crowd is cheering as he is running towards the goal.
+  - While the sauce is simmering, she is preparing the salad.
+  rule: Present continuous for simultaneous or background actions
+  type: grammatical
+- examples:
+  - He has just scored his third goal of the match.
+  - The referee has given a penalty.
+  rule: Present perfect for very recent events within the commentary
+  type: grammatical
+- examples:
+  - He will take the penalty. He will aim for the bottom left corner.
+  rule: Will for immediate predictions during the event
+  type: grammatical
+- examples:
+  - What a goal! Incredible! He has done it again!
+  - And it is over. What a match that was.
+  rule: Commentary often uses short, elliptical sentences for speed
+  type: stylistic
+- examples:
+  - We are witnessing something truly special here.
+  - Let us take a look at that replay.
+  rule: Commentators use the first person plural (we) to include the audience
+  type: pragmatic
 teaching:
   methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Play a short sports clip without sound. Students take turns
+      providing live commentary. Focus on present simple for actions.
+    duration: 15
+    name: Silent video commentary
+  - adaptation_notes: Students perform a simple demonstration (making a sandwich,
+      folding paper) while commentating in present tenses. Class gives feedback.
+    duration: 20
+    name: Cooking show role-play
+  - adaptation_notes: Students listen to a short commentary clip and transcribe it.
+      Then analyse the tense choices and sentence structures used.
+    duration: 15
+    name: Commentary transcription
   tips:
   - Play authentic commentary clips and ask students to identify the tenses used
   - Have students practise commentating on silent video clips
   - Start with slow-paced demonstrations (cooking) before moving to fast-paced sports
   - Encourage short, punchy sentences for rapid action sequences
-  recommended_activities:
-  - name: Silent video commentary
-    duration: 15
-    adaptation_notes: Play a short sports clip without sound. Students take turns
-      providing live commentary. Focus on present simple for actions.
-  - name: Cooking show role-play
-    duration: 20
-    adaptation_notes: Students perform a simple demonstration (making a sandwich,
-      folding paper) while commentating in present tenses. Class gives feedback.
-  - name: Commentary transcription
-    duration: 15
-    adaptation_notes: Students listen to a short commentary clip and transcribe it.
-      Then analyse the tense choices and sentence structures used.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: A common error for live_commentaries
-  correction: Correct form for live_commentaries
-  explanation: This error occurs when learners apply L1 rules to live_commentaries.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used for everyday communication and is
-    among the most frequent patterns in spoken English.
-- note: In academic writing, this structure appears in discussions of established
-    knowledge, methodology, and findings.
-- note: In news reports, this structure is used for reporting events and attributing
-    statements.
+  - 'Swan PEU: Historic present / commentary — ''And Ronaldo shoots...and he
+    scores!'' The present simple is used to describe ongoing actions in real time.
+    Sports commentary is a classic example.'
+  - 'Swan PEU: Another use — narratives/demonstrations: ''First you take an
+    egg, then you break it into a bowl.'' ''And Napoleon crosses the Alps...'' Storytelling
+    technique for vividness.'
+title: Live Commentaries (Present Tense Narrative)
+use:
+- description: Describing sporting events in real time for radio and television
+  examples:
+  - Ronaldo receives the ball, he turns, he shoots... and it is in!
+  - The goalkeeper is diving to his left but he cannot reach it.
+  key_point: The present simple creates a sense of immediacy and excitement.
+  name: Sports broadcasting
+- description: Describing actions as they are performed
+  examples:
+  - Now I am adding the flour gradually. You can see the dough is coming together.
+  - We heat the pan, add the butter, and wait until it is foaming.
+  key_point: Helps the audience follow along in real time.
+  name: Cooking and demonstration shows
+- description: Reporting events as they unfold
+  examples:
+  - The Prime Minister is arriving at the conference centre now.
+  - We are receiving reports that the situation is under control.
+  key_point: Present tenses convey the breaking-news feel.
+  name: Live news reporting
+- description: Narrating gameplay for online audiences
+  examples:
+  - I am heading towards the castle now. I need to avoid the guards.
+  - He picks up the sword and attacks the dragon.
+  key_point: A growing genre, especially on platforms like YouTube and Twitch.
+  name: Video game streaming and walkthroughs

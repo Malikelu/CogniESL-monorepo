@@ -16,17 +16,23 @@ meaning:
   ccqs:
   - question: Is this a mild preference or a strong one?
     answer: Strong — 'would sooner' is more emphatic than 'would rather'.
-    purpose: Tests whether the learner understands a key concept of would_sooner.
-      This is fundamental for correct use of this grammar point.
+    purpose: Tests whether the learner understands the difference in emphasis between
+      "would sooner" (strong/dramatic) and "would rather" (mild).
   - question: Is the alternative desirable or undesirable?
     answer: Usually undesirable — 'would sooner' often implies the alternative is
       very bad.
-    purpose: Tests whether the learner understands a key concept of would_sooner.
-      This is fundamental for correct use of this grammar point.
+    purpose: Tests whether the learner understands that "would sooner" implies the
+      alternative is undesirable or unacceptable.
   - question: Can we use this for past preferences?
     answer: Yes — use 'would sooner have + past participle' for past preferences.
-    purpose: Tests whether the learner understands a key concept of would_sooner.
-      This is fundamental for correct use of this grammar point.
+    purpose: Tests whether the learner knows the past form "would sooner have + past
+      participle" for expressing past preferences.
+  - question: Which is correct? 'I would sooner walk than take the bus' or *'I would
+      sooner to walk'?
+    answer: '''I would sooner walk than take the bus.'' ''Would sooner'' takes the
+      bare infinitive (no ''to''), just like ''would rather''.'
+    purpose: Tests whether the learner knows that "would sooner" takes the bare infinitive
+      without "to" (following the same pattern as "would rather").
   example_generator:
     contexts:
     - strong preferences
@@ -135,6 +141,9 @@ teaching:
   - 'Teach the past form: ''would sooner have + past participle''. This is often overlooked.'
   - Explain that 'would sooner' is more common in British English. American English
     speakers often use 'would rather' instead.
+  - 'Swan PEU: ''Would sooner'' = ''would rather'' — ''I''d sooner walk than wait
+    for a bus.'' Less common than ''would rather'' but perfectly grammatical. Same
+    structure: bare infinitive for self, past tense for others.'
   recommended_activities:
   - name: Would Sooner or Would Rather?
     duration: 10
@@ -157,33 +166,75 @@ teaching:
       would you sooner live in the city or the countryside?'' Practices the structure
       in conditional contexts.'
 sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
-    Modals, §9.1-9.6'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8:
+    Modal Auxiliaries and Related Phrasal Forms'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
     University Press.
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: '*I would prefer to don''t go.*'
-  correction: I would prefer not to go.
-  explanation: Would prefer + not to + verb.
+- error: '*I would sooner to walk than take the bus.*'
+  correction: I would sooner walk than take the bus.
+  explanation: '"Would sooner" takes the bare infinitive (no "to"), just like "would
+    rather".'
   l1_groups:
   - Portuguese
   - Spanish
-  - Chinese
+  - French
+  reliability: D
+  flagged: true
+- error: '*I would sooner walk than to take the bus.*'
+  correction: I would sooner walk than take the bus.
+  explanation: '"Would sooner" takes the bare infinitive in BOTH parts. No "to" after
+    "than".'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: D
+  flagged: true
 register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
+- note: 'Biber et al. (2021) — ''Would sooner'' (preference): conversational and informal/literary
+    register. Academic prose uses more explicit preference expressions. Would + infinitive
+    patterns are register-sensitive. Ch. 6.6'
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 6.6
+  reliability: C
 dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.
+- note: '"Would sooner" is more common in British English. American English speakers
+    typically use "would rather" or "would prefer" instead. In AmE, "would sooner"
+    can sound formal or literary.'
+discourse_notes: []
+citations:
+- claim: 'Core meaning: Expresses a strong, often dramatic preference for one action
+    over another'
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal
+    Auxiliaries and Related Phrasal Forms'
+  tier: 1
+  reliability: B
+- claim: 'Register distribution: In conversational and informal/literary registers;
+    rare in academic prose'
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal
+    Auxiliaries and Related Phrasal Forms'
+  tier: 1
+  reliability: B
+- claim: 'Discourse function: Expresses strong preference, often with dramatic or
+    humorous effect'
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal
+    Auxiliaries and Related Phrasal Forms'
+  tier: 1
+  reliability: B
+- claim: Common error '*I would sooner to walk than take the bus.*' for Portuguese,
+    Spanish, French speakers
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+  reliability: B
+- claim: L1 transfer in modal/preference expressions varies across language backgrounds
+    — Swan & Smith document contrastive patterns for speakers of different L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2

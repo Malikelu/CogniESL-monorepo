@@ -1,157 +1,193 @@
-grammar_point: reciprocal_pronouns
-title: Reciprocal Pronouns (each other, one another)
-description: 'Pronouns that show a mutual action or relationship between two or more
-  people/things: each other (traditionally two), one another (traditionally three+;
-  modern English often uses each other for all cases).'
-level: A2
-meaning:
-  core_meaning: Indicate that two or more people/things perform the same action toward
-    each other mutually.
-  timeline: N/A (Reciprocal pronouns are not tense-based; they describe mutual relationships
-    regardless of time.)
-  contrast: 'each other = Traditionally two people/things (modern English: any number)
-
-    one another = Traditionally three+ people/things (modern English: interchangeable
-    with each other)
-
-    Never add ''s'': "each others" (wrong) vs "each other" (right)
-
-    '
-  ccqs:
-  - question: Do both people do the action to each other?
-    answer: Yes — the action is mutual.
-    purpose: Tests whether the learner understands that reciprocal pronouns (each
-      other, one another) describe mutual actions where both parties do the same thing.
-  - question: How many people are involved?
-    answer: Two or more — reciprocal pronouns require at least two participants.
-    purpose: Tests whether the learner understands that reciprocal pronouns require
-      a plural subject.
-  - question: What is the difference between 'each other' and 'one another'?
-    answer: '''Each other'' is for two (or informal for more); ''one another'' is
-      for three or more (formal).'
-    purpose: Tests whether the learner understands the subtle distinction between
-      the two reciprocal pronouns.
-  example_generator:
-    contexts:
-    - everyday situations
-    cultural_notes: []
-    min_examples: 5
+citations:
+- claim: 'Core meaning: Indicate that two or more people/things perform the same action toward each other mutually'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession-16.5, 12.21'
+  tier: 1
+- claim: 'Register distribution: Reciprocal pronouns are neutral in register.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession'
+  tier: 1
+- claim: 'Discourse function: In conversation, reciprocal pronouns describe mutual actions: ''We help each other.'''
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession'
+  tier: 1
+- claim: Common error '*The two friends helped one another.* (less common)' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 11: Pronouns, 11.7 (reciprocals)'
+  tier: 1
+- claim: L1 transfer in reciprocal pronouns varies significantly across language backgrounds — Swan & Smith document contrastive
+    patterns for speakers of different L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents how transfer effects are non-linear,
+    determined by functional fit between L1 and L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects are non-linear — determined by functional
+    fit between L1 and L2 systems rather than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning. Routledge.
+  tier: 2
+common_errors:
+- correction: The two friends helped each other.
+  error: '*The two friends helped one another.* (less common)'
+  explanation: '''Each other'' is traditionally used for two people; ''one another'' for three or more. In modern English,
+    both are acceptable, but ''each other'' is more common.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+description: 'Pronouns that show a mutual action or relationship between two or more people/things: each other (traditionally
+  two), one another (traditionally three+; modern English often uses each other for all cases).'
+dialectal_variation: []
+discourse_notes:
+- note: 'In conversation, reciprocal pronouns describe mutual actions: ''We help each other.'''
+- note: 'In academic writing, reciprocal pronouns appear in discussions of relationships: ''The two groups influenced each
+    other.'''
+- note: In informal speech, 'each other' is more common than 'one another'.
 form:
   affirmative:
-    structure: 'Subject + verb + reciprocal pronoun: "They like each other."
-
-      Reciprocal pronouns act as objects: "We help one another."
-
-      '
     example_generator:
       contexts:
       - family and relationships
       - sports and hobbies
       min_examples: 4
+    structure: 'Subject + verb + reciprocal pronoun: "They like each other."
+
+      Reciprocal pronouns act as objects: "We help one another."
+
+      '
   negative:
-    structure: 'Reciprocal pronouns follow negative verbs: ''They don''t see each
-      other often.'' ''We haven''t met one another yet.'''
     example_generator:
       contexts:
       - everyday situations
       min_examples: 4
+    structure: 'Reciprocal pronouns follow negative verbs: ''They don''t see each other often.'' ''We haven''t met one another
+      yet.'''
   questions:
-    structure: 'Reciprocal pronouns follow verbs in questions: ''Do they know each
-      other?'' ''Have you met one another?'''
     example_generator:
       contexts:
       - education and school
       min_examples: 4
+    structure: 'Reciprocal pronouns follow verbs in questions: ''Do they know each other?'' ''Have you met one another?'''
+grammar_point: reciprocal_pronouns
+level: A2
+meaning:
+  ccqs:
+  - answer: Yes — the action is mutual.
+    purpose: Tests whether the learner understands that reciprocal pronouns (each other, one another) describe mutual actions
+      where both parties do the same thing.
+    question: Do both people do the action to each other?
+  - answer: Two or more — reciprocal pronouns require at least two participants.
+    purpose: Tests whether the learner understands that reciprocal pronouns require a plural subject.
+    question: How many people are involved?
+  - answer: '''Each other'' is for two (or informal for more); ''one another'' is for three or more (formal).'
+    purpose: Tests whether the learner understands the subtle distinction between the two reciprocal pronouns.
+    question: Can you explain the difference between 'each other' and 'one another' by giving an example of when to use each?
+  - answer: Learners often make errors with this structure that change the intended meaning.
+    purpose: Tests whether the learner can identify and correct a common error associated with reciprocal pronouns. Recognizing
+      typical mistakes helps learners self-edit and produce more accurate English.
+    question: Can you identify and correct the error in this sentence related to this grammar point?
+  contrast: 'each other = Traditionally two people/things (modern English: any number)
+
+    one another = Traditionally three+ people/things (modern English: interchangeable with each other)
+
+    Never add ''s'': "each others" (wrong) vs "each other" (right)
+
+    '
+  core_meaning: Indicate that two or more people/things perform the same action toward each other mutually.
+  example_generator:
+    contexts:
+    - everyday situations
+    cultural_notes: []
+    min_examples: 5
+  timeline: N/A (Reciprocal pronouns are not tense-based; they describe mutual relationships regardless of time.)
+phonetics:
+- example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Portuguese speakers may say 'each one other' separately. Teach the blended pronunciation.
+  note: 'Each other is often reduced in connected speech: /iːtʃ ʌðə/. One another → /wʌn ənʌðə/.'
+register_notes:
+- note: Reciprocal pronouns are neutral in register.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In formal writing, 'one another' is preferred for groups of three or more.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In conversation, 'each other' is used for both two and more than two.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Reciprocal pronouns (''each other'', ''one another''): register distribution varies. Conversation
+    uses more ''each other''; academic prose may use more explicit reciprocal expressions. Ch. 4.1.2'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 4.1.2
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 11: Pronouns, 11.7 (reciprocals)'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession-16.5, 12.21'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Ch. 5: Nouns and Noun Phrases, 5.8
+    (reciprocal pronouns)'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners. Ch. 6: Reciprocal pronouns'
+  validation: Swan (2016) Practical English Usage, 4th ed.(each other, one another)
 sub_rules:
-- rule: Each other for two people
-  type: grammatical
-  examples:
+- examples:
   - They love each other
   - We help each other
   - The two friends hugged each other
-- rule: One another for more than two (traditional usage)
+  rule: Each other for two people
   type: grammatical
-  examples:
+- examples:
   - The students helped one another
   - The team members support one another
-- rule: 'Position: reciprocal pronouns usually come after the verb'
-  type: word_order
-  examples:
+  rule: One another for more than two (traditional usage)
+  type: grammatical
+- examples:
   - They love each other (NOT Each other they love)
   - We help each other (NOT Each other we help)
-- rule: 'Possessive form: each other''s / one another''s'
-  type: grammatical
-  examples:
+  rule: 'Position: reciprocal pronouns usually come after the verb'
+  type: word_order
+- examples:
   - They read each other's emails
   - We respect one another's opinions
+  rule: 'Possessive form: each other''s / one another''s'
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students choose: ''They love each other'' (two people) vs ''They love themselves'' (reflexive).'
+    duration: 10
+    name: Each Other or Themselves
+  - adaptation_notes: 'Students write sentences about their relationships: ''My best friend and I help each other.'''
+    duration: 15
+    name: Reciprocal Pronoun Practice
+  tips:
+  - 'GB3 Ch. 16: Reciprocal pronouns (each other, one another) replace NP objects that refer back to plural or conjoined subjects.
+    ''Jane and Donna respect each other.'' Both require a plural antecedent — never used with singular subjects. Source: Celce-Murcia
+    & Larsen-Freeman (2015) GB3 3rd ed. Ch. 16 §16.1.'
+  - 'Week 1: Explain mutual action with pair drawings (two stick figures with arrows between them).'
+  - 'Week 2: Drill ''each other'' with pairs, ''one another'' with groups.'
+  - 'Use roleplay: Two students act out mutual actions (hug, argue) and describe with reciprocal pronouns.'
+  - 'Swan PEU: Reciprocal pronouns — ''each other'' (two people): ''They looked at each other.'' ''One another'' (more than
+    two): ''The three sisters helped one another.'' In modern English, the distinction is fading and ''each other'' is used
+    for all numbers.'
+title: Reciprocal Pronouns (each other, one another)
 use:
-- name: Mutual Actions
-  description: Describe actions done by two+ people to each other.
+- description: Describe actions done by two+ people to each other.
   examples:
   - They kissed each other.
   - The neighbors help one another.
   key_point: Action flows both ways between the subjects.
-- name: Mutual Relationships
-  description: Describe connections between two+ people.
+  name: Mutual Actions
+- description: Describe connections between two+ people.
   examples:
   - The two dogs play with each other.
   - The club members care for one another.
   key_point: Always refers to a two-way relationship.
-phonetics:
-- note: 'Each other is often reduced in connected speech: /iːtʃ ʌðə/. One another
-    → /wʌn ənʌðə/.'
-  example_generator:
-    contexts:
-    - connected speech
-  l1_issue: Portuguese speakers may say 'each one other' separately. Teach the blended
-    pronunciation.
-teaching:
-  methodology: PPP
-  tips:
-  - 'Week 1: Explain mutual action with pair drawings (two stick figures with arrows
-    between them).'
-  - 'Week 2: Drill ''each other'' with pairs, ''one another'' with groups.'
-  - 'Use roleplay: Two students act out mutual actions (hug, argue) and describe with
-    reciprocal pronouns.'
-  recommended_activities:
-  - name: Each Other or Themselves
-    duration: 10
-    adaptation_notes: 'Students choose: ''They love each other'' (two people) vs ''They
-      love themselves'' (reflexive).'
-  - name: Reciprocal Pronoun Practice
-    duration: 15
-    adaptation_notes: 'Students write sentences about their relationships: ''My best
-      friend and I help each other.'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, 12.21'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 5: Nouns and Noun Phrases, 5.8 (reciprocal pronouns)'
-  validation: Swan (2016) Practical English Usage, 4th ed. Entries 486-489 (each other,
-    one another)
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    11: Pronouns, 11.7 (reciprocals)'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 6: Reciprocal pronouns'
-common_errors:
-- error: '*The two friends helped one another.* (less common)'
-  correction: The two friends helped each other.
-  explanation: '''Each other'' is traditionally used for two people; ''one another''
-    for three or more. In modern English, both are acceptable, but ''each other''
-    is more common.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: Reciprocal pronouns are neutral in register.
-- note: In formal writing, 'one another' is preferred for groups of three or more.
-- note: In conversation, 'each other' is used for both two and more than two.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: 'In conversation, reciprocal pronouns describe mutual actions: ''We help each
-    other.'''
-- note: 'In academic writing, reciprocal pronouns appear in discussions of relationships:
-    ''The two groups influenced each other.'''
-- note: In informal speech, 'each other' is more common than 'one another'.
+  name: Mutual Relationships

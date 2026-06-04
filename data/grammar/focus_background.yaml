@@ -1,38 +1,94 @@
-grammar_point: focus_background
-title: Focus and Background Information
+citations:
+- claim: 'Core meaning: English allows speakers to rearrange sentence elements so
+    that the most important or newsworthy info'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 30:
+    Information Packaging-16.3 (focus and background)'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday
+    communication.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 30:
+    Information Packaging-16.3 (focus and background)'
+  tier: 1
+common_errors: []
 description: Manipulating sentence structure to highlight new, important, or contrastive
   information while backgrounding given or assumed knowledge.
+dialectal_variation: []
+discourse_notes:
+- In formal writing, focus structures (clefts, passives, fronting) are used to foreground
+  new or important information while backgrounding given knowledge. In conversation,
+  prosodic stress and word order serve similar functions.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - news reporting
+      - academic writing
+      - everyday conversation
+      - literary analysis
+      min_examples: 4
+    structure: It + be + FOCUS + who/that + rest of sentence (It-cleft) / Wh-clause
+      + be + FOCUS (Wh-cleft or pseudo-cleft) / Subject + verb + complement (neutral,
+      with end-focus on final element)
+  negative:
+    example_generator:
+      contexts:
+      - argumentation
+      - correcting misunderstandings
+      - formal debate
+      min_examples: 3
+    structure: It + be + not + FOCUS + who/that + rest of sentence (negative cleft)
+      / It + be + FOCUS + who/that + not/n't + verb (negated clause)
+  questions:
+    example_generator:
+      contexts:
+      - interviewing
+      - investigative questioning
+      - classroom discussion
+      min_examples: 3
+    structure: Wh-clause + be + FOCUS? (pseudo-cleft question) / Is/Was it + FOCUS
+      + who/that + clause? (cleft question)
+grammar_point: focus_background
 level: C2
 meaning:
-  core_meaning: English allows speakers to rearrange sentence elements so that the
-    most important or newsworthy information receives prominence (focus), while known
-    or less important information is backgrounded. This is achieved through cleft
-    sentences, passives, fronting, and end-weight principles.
-  timeline: Applicable across all tenses; the choice of focus structure depends on
-    discourse context rather than time reference.
+  ccqs:
+  - answer: Yes — cleft sentences single out one element for focus.
+    purpose: Tests whether the learner understands how English sentences structure
+      information -- known information comes first, new information comes second.
+      This affects word order and article choice.
+    question: Do we use a cleft sentence when we want to emphasise one particular
+      element?
+  - answer: Yes — backgrounded information is typically given or assumed.
+    purpose: Tests whether the learner can identify and apply the correct form/meaning
+      of this grammar point in context. The question 'Is the background information
+      usually something th...' checks conceptual understanding, not just memorization.
+    question: Is the background information usually something the listener already
+      knows?
+  - answer: Yes — fronting moves an element to the beginning of the sentence for emphasis
+      or contrast, while the rest of the sentence follows normal word order.
+    purpose: Tests whether the learner understands that fronting is a focus strategy
+      distinct from clefting, and that it changes the information structure without
+      changing the core meaning.
+    question: Can we move an element to the front of the sentence for emphasis without
+      using a cleft structure?
+  - answer: In a wh-cleft, the wh-clause comes first (packaging known/given info),
+      and the focused element comes at the end. In an it-cleft, the focused element
+      comes right after 'it is,' and the backgrounded info comes at the end. Both
+      highlight different elements but package information differently.
+    purpose: Tests whether the learner understands the information-flow difference
+      between it-clefts and wh-clefts — not just the structural pattern but WHY a
+      speaker/writer would choose one over the other.
+    question: How does the information flow differ between 'It was Shakespeare who
+      wrote the play' and 'What Shakespeare wrote was a masterpiece'?
   contrast: 'Neutral: ''Shakespeare wrote the play in 1599.'' / It-cleft: ''It was
     Shakespeare who wrote the play.'' (focus on agent) / Wh-cleft: ''What Shakespeare
     wrote was a masterpiece.'' (focus on creation) / Passive: ''The play was written
     in 1599.'' (focus on play/date)'
-  ccqs:
-  - question: Do we use a cleft sentence when we want to emphasise one particular
-      element?
-    answer: Yes — cleft sentences single out one element for focus.
-    purpose: Tests whether the learner understands how English sentences structure
-      information -- known information comes first, new information comes second.
-      This affects word order and article choice.
-  - question: Is the background information usually something the listener already
-      knows?
-    answer: Yes — backgrounded information is typically given or assumed.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Is the background information
-      usually something th...' checks conceptual understanding, not just memorization.
-  - question: Can we use the passive to move the most important information to the
-      end?
-    answer: Yes — the passive allows end-focus on the agent or the action.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Can we use the passive to move
-      the most important ...' checks conceptual understanding, not just memorization.
+  core_meaning: English allows speakers to rearrange sentence elements so that the
+    most important or newsworthy information receives prominence (focus), while known
+    or less important information is backgrounded. This is achieved through cleft
+    sentences, passives, fronting, and end-weight principles.
   example_generator:
     contexts:
     - academic writing
@@ -44,64 +100,102 @@ meaning:
     - English relies heavily on word order for focus, unlike languages that use particles
       or intonation alone.
     min_examples: 5
-form:
-  affirmative:
-    structure: It + be + FOCUS + who/that + rest of sentence (It-cleft) / Wh-clause
-      + be + FOCUS (Wh-cleft or pseudo-cleft) / Subject + verb + complement (neutral,
-      with end-focus on final element)
-    example_generator:
-      contexts:
-      - news reporting
-      - academic writing
-      - everyday conversation
-      - literary analysis
-      min_examples: 4
-  negative:
-    structure: It + be + not + FOCUS + who/that + rest of sentence (negative cleft)
-      / It + be + FOCUS + who/that + not/n't + verb (negated clause)
-    example_generator:
-      contexts:
-      - argumentation
-      - correcting misunderstandings
-      - formal debate
-      min_examples: 3
-  questions:
-    structure: Wh-clause + be + FOCUS? (pseudo-cleft question) / Is/Was it + FOCUS
-      + who/that + clause? (cleft question)
-    example_generator:
-      contexts:
-      - interviewing
-      - investigative questioning
-      - classroom discussion
-      min_examples: 3
+  timeline: Applicable across all tenses; the choice of focus structure depends on
+    discourse context rather than time reference.
+phonetics:
+- example_generator:
+  - contexts:
+    - spoken emphasis in cleft sentences
+  l1_issue: Speakers whose L1 uses particles for focus (e.g., Japanese 'wa', Arabic)
+    may underuse English word-order focus strategies.
+  note: Nuclear stress typically falls on the focused element in cleft sentences.
+- example_generator:
+  - contexts:
+    - intonation patterns in pseudo-clefts
+  l1_issue: Tonal language speakers (e.g., Mandarin, Vietnamese) may need practice
+    with English intonation contours for focus.
+  note: 'Wh-cleft sentences often have a two-tone pattern: rising on the wh-clause,
+    falling on the focus.'
+register_notes:
+- note: 'Biber et al. (1999) — Focus and background information packaging: written
+    registers use more cleft constructions and fronting; conversation uses more prosodic
+    focusing. Ch. 11'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 11
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch.
+    15: Information packaging'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 30:
+    Information Packaging-16.3 (focus and background)'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 30: Information Packaging'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 13: Focus structures'
+  validation: Swan (2016) Practical English Usage, 4th ed.(information structure)
 sub_rules:
-- rule: It-cleft sentences
-  type: grammatical
-  examples:
+- examples:
   - It was Marie Curie who discovered radium. (focus on Marie Curie)
   - It is the economy that concerns voters most. (focus on the economy)
   - It was in 1969 that humans first walked on the Moon. (focus on time)
-- rule: Wh-cleft (pseudo-cleft) sentences
+  rule: It-cleft sentences
   type: grammatical
-  examples:
+- examples:
   - What we need now is a clear plan. (focus on a clear plan)
   - What she did was completely unexpected. (focus on the action)
   - Where he went remains a mystery. (focus on location)
-- rule: Passive for end-focus
+  rule: Wh-cleft (pseudo-cleft) sentences
   type: grammatical
-  examples:
+- examples:
   - The Mona Lisa was painted by Leonardo da Vinci. (focus on da Vinci)
   - The decision was made after hours of deliberation. (focus on the decision)
-- rule: Fronting for focus
+  rule: Passive for end-focus
   type: grammatical
-  examples:
+- examples:
   - A wonderful performer she truly was. (fronted complement)
   - This question we must answer first. (fronted object)
-- rule: End-weight principle
-  type: stylistic
-  examples:
+  rule: Fronting for focus
+  type: grammatical
+- examples:
   - It is important to consider all options. (extraposition — heavy clause moved right)
   - She gave the book to the student who had been waiting all week. (heavy NP at end)
+  rule: End-weight principle
+  type: stylistic
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Give students 10 sentences and ask them to identify which element
+      is in focus and why the author chose that structure.
+    duration: 15
+    name: Spot the Focus
+  - adaptation_notes: Students bid on whether cleft sentences are grammatically correct
+      or appropriate for the context. Works well as a competitive group activity.
+    duration: 20
+    name: Cleft Sentence Auction
+  - adaptation_notes: Students take a neutral news paragraph and rewrite key sentences
+      using cleft structures to foreground different elements. Compare versions as
+      a class.
+    duration: 25
+    name: News Rewrite
+  - adaptation_notes: Give a base sentence. Students must rewrite it with focus on
+      the subject, then the object, then the time, then the place — using appropriate
+      structures each time.
+    duration: 15
+    name: Focus Shift Drill
+  tips:
+  - 'Start with it-clefts using familiar contexts (correcting: ''It wasn''t me — it
+    was John'').'
+  - Use information-gap activities where students must identify the focused element.
+  - Compare neutral vs cleft versions of the same sentence to show the difference
+    in emphasis.
+  - Introduce wh-clefts after it-clefts are secure, as they are more abstract.
+  - Use authentic texts (news articles, academic abstracts) to show focus structures
+    in context.
+  - Practice rewriting sentences to shift focus to different elements.
+  - 'Swan PEU: Cleft sentences create focus — ''It was John who called'' makes ''John''
+    the focus. ''What I need is a rest'' makes ''a rest'' the focus. Contrast with
+    normal sentence structure where focus typically falls at the end.'
+title: Focus and Background Information
 use:
 - context: Correcting misinformation
   description: Cleft sentences are frequently used to correct a misunderstanding or
@@ -133,83 +227,3 @@ use:
   examples:
   - What I really want is a cup of tea.
   - It's the children I'm worried about, not myself.
-phonetics:
-- note: Nuclear stress typically falls on the focused element in cleft sentences.
-  example_generator:
-  - contexts:
-    - spoken emphasis in cleft sentences
-  l1_issue: Speakers whose L1 uses particles for focus (e.g., Japanese 'wa', Arabic)
-    may underuse English word-order focus strategies.
-- note: 'Wh-cleft sentences often have a two-tone pattern: rising on the wh-clause,
-    falling on the focus.'
-  example_generator:
-  - contexts:
-    - intonation patterns in pseudo-clefts
-  l1_issue: Tonal language speakers (e.g., Mandarin, Vietnamese) may need practice
-    with English intonation contours for focus.
-teaching:
-  methodology: Guided discovery
-  tips:
-  - 'Start with it-clefts using familiar contexts (correcting: ''It wasn''t me — it
-    was John'').'
-  - Use information-gap activities where students must identify the focused element.
-  - Compare neutral vs cleft versions of the same sentence to show the difference
-    in emphasis.
-  - Introduce wh-clefts after it-clefts are secure, as they are more abstract.
-  - Use authentic texts (news articles, academic abstracts) to show focus structures
-    in context.
-  - Practice rewriting sentences to shift focus to different elements.
-  recommended_activities:
-  - name: Spot the Focus
-    duration: 15
-    adaptation_notes: Give students 10 sentences and ask them to identify which element
-      is in focus and why the author chose that structure.
-  - name: Cleft Sentence Auction
-    duration: 20
-    adaptation_notes: Students bid on whether cleft sentences are grammatically correct
-      or appropriate for the context. Works well as a competitive group activity.
-  - name: News Rewrite
-    duration: 25
-    adaptation_notes: Students take a neutral news paragraph and rewrite key sentences
-      using cleft structures to foreground different elements. Compare versions as
-      a class.
-  - name: Focus Shift Drill
-    duration: 15
-    adaptation_notes: Give a base sentence. Students must rewrite it with focus on
-      the subject, then the object, then the time, then the place — using appropriate
-      structures each time.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
-    Information Packaging, §16.1-16.3 (focus and background)'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 16: Information Packaging, §16.1'
-  validation: Swan (2016) Practical English Usage, 4th ed. Entries 200-210 (information
-    structure)
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    15: Information packaging'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 13: Focus structures'
-common_errors:
-- error: '*The book is on table.* (first mention)'
-  correction: A book is on the table.
-  explanation: First mention uses 'a' (new information). 'The' is used when both speaker
-    and listener know which specific thing is being discussed.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-  - Japanese
-  - Korean
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

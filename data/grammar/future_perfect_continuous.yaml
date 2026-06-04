@@ -29,16 +29,24 @@ meaning:
       Does she stop studying when you arrive?'
     answer: Not necessarily -- the sentence only tells us the duration up to that
       point. She may continue.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question ''She will have been studying
-      for 3 hours by the ti...' checks conceptual understanding, not just memorization.
+    purpose: Tests whether the learner understands that future perfect continuous
+      describes duration up to a future point without implying the action stops at
+      that point.
   - question: '''Will you have been waiting long?'' Am I asking about the future or
       the past?'
     answer: The future -- I'm asking about the duration of waiting up to a future
       moment.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question ''Will you have been waiting
-      long?' Am I asking abo...' checks conceptual understanding, not just memorization.
+    purpose: Tests whether the learner recognizes that "will have been + -ing" always
+      refers to a future duration, even though the structure uses past-like elements
+      ("been"). It is not about the present or past.
+  - question: By next March, I will have been working here for 20 years. Am I still
+      working there in March?
+    answer: Yes, the sentence implies the speaker will still be working there. Future
+      perfect continuous emphasises the duration of an ongoing action up to a future
+      point, not its completion.
+    purpose: Tests whether the learner can distinguish future perfect continuous (duration
+      of ongoing action) from future perfect simple (completed action). The continuous
+      form signals the action continues past the future reference point.
   example_generator:
     contexts:
     - everyday situations
@@ -121,6 +129,13 @@ teaching:
   - 'Week 3: Contrast with future perfect and future continuous.'
   - 'Use timeline visuals: Show action starting before future time, continuing until
     then.'
+  - 'Swan PEU: Future perfect continuous — ''By June, I will have been working here
+    for ten years.'' Emphasizes the duration of an ongoing action up to a future time
+    point. Less common than future perfect simple.'
+  - 'GB3 Ch. 7: Future perfect progressive — ''prior'' + ''incomplete'' applied to
+    future. Durative action continuing until future time (''On Christmas Eve, we will
+    have been living here for 20 years''). Very low frequency — ''southeast'' corner
+    of the map. Source: Celce-Murcia & Larsen-Freeman (2015) GB3 Ch. 7 §7.2.'
   recommended_activities:
   - name: Milestone Moments
     duration: 15
@@ -132,12 +147,12 @@ teaching:
       will have finished the book (completion) vs I will have been reading the book
       for 3 hours (duration).'''
 sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
-    Modals, §9.1-9.6'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7:
+    The Tense-Aspect System'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
     University Press.
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
@@ -150,17 +165,39 @@ common_errors:
   - Portuguese
   - Spanish
   - French
+  reliability: D
+  flagged: true
 register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
+- note: 'Biber et al. (2021) — Future perfect continuous: extremely rare across all
+    registers; may appear in formal planning/writing contexts. Ch. 6.2.1.3'
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 6.2.1.3
+  reliability: C
+dialectal_variation: []
 discourse_notes:
-- note: In conversation, this structure is used for everyday communication and is
-    among the most frequent patterns in spoken English.
-- note: In academic writing, this structure appears in discussions of established
-    knowledge, methodology, and findings.
-- note: In news reports, this structure is used for reporting events and attributing
-    statements.
+- note: 'Future perfect continuous is extremely rare in conversation. In the rare
+    spoken instances, it appears in formal/planning contexts to emphasize duration
+    of an ongoing action: "By the time you arrive, I will have been cooking for 3
+    hours."'
+- note: 'In academic and professional writing, future perfect continuous can appear
+    in progress reports and longitudinal study descriptions to emphasize duration:
+    "By year 5, participants will have been receiving the intervention for 48 months."'
+citations:
+- claim: 'Core meaning: An action that starts before a future time and continues up
+    to that time, emphasizing the duration o'
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 1
+  reliability: B
+- claim: 'Discourse function: In conversation, this structure is used for everyday
+    communication and is among the most frequent patterns'
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 1
+  reliability: B
+- claim: Common error '*By December, I will work here for 5 years.*' for Portuguese,
+    Spanish, French speakers
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+  reliability: B

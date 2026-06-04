@@ -1,34 +1,134 @@
-grammar_point: discourse_markers_advanced
-title: Advanced Discourse Markers
+citations:
+- claim: 'Core meaning: Advanced discourse markers are words and phrases that structure
+    extended speech or text, signalling '
+  reliability: B
+  source: 'Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch.
+    10.4: Linking adverbials (register distribution, semantic categories, syntactic
+    forms)'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday
+    communication.'
+  reliability: B
+  source: 'Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch.
+    10.4: Linking adverbials (register distribution, semantic categories, syntactic
+    forms)'
+  tier: 1
+- claim: Common error '*The results were good. Anyway, we need more.*' for Portuguese,
+    Spanish, Chinese speakers
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 19:
+    Cohesion and Discourse-19.3'
+  tier: 1
+- claim: This structure functions and signal relationships between ideas
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 19:
+    Cohesion and Discourse'
+  tier: 1
+- claim: Oshima & Hogue's Great Writing series demonstrates how paragraph structure
+    and essay organization function in academic writing contexts. Their approach connects
+    grammar instruction to writing outcomes, showing learners how accurate use of
+    cohesive devices improves paragraph development and essay organization.
+  source: Oshima, A. and Hogue, A. (2006). Introduction to Academic Writing, 3rd ed.
+    Pearson Longman.
+  tier: 2
+common_errors:
+- correction: The results were good. However, we need more.
+  error: '*The results were good. Anyway, we need more.*'
+  explanation: Anyway dismisses. However acknowledges and contrasts.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+- correction: It was raining. Nevertheless, we went out.
+  error: 'Using ''moreover'' for contrast: *''It was raining. Moreover, we went out.'''
+  explanation: '''Moreover'' adds a supporting point (addition). For contrast/concession,
+    use ''nevertheless'' or ''however''. Swan PEU: connecting adverbials by function.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan Entry 197, 283. Swan (2016) Practical English Usage, 4th ed. Oxford
+    University Press.
 description: Sophisticated markers that organise extended discourse, signal relationships
   between ideas, and manage the flow of argument in formal and academic English.
+dialectal_variation: null
+discourse_notes:
+- note: In conversation, this structure is used in everyday communication.
+- note: In academic writing, this structure appears in formal contexts and is a marker
+    of proficient English.
+- note: In professional contexts, correct use of this structure is expected in formal
+    writing.
+- note: Advanced discourse markers organise extended text, signal relationships between
+    ideas, and manage the flow of argument. In conversation, basic connectors (and,
+    but, so) are more common; in formal writing, advanced markers (nevertheless, furthermore,
+    in contrast) signal academic proficiency.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - essay writing
+      - formal presentations
+      - debate
+      min_examples: 4
+    structure: 'Discourse marker + clause or sentence. Position varies: initial, medial,
+      or final.'
+  negative:
+    example_generator:
+      contexts:
+      - contradicting
+      - correcting
+      min_examples: 3
+    structure: 'Negative discourse markers: far from it, not only that but, on the
+      contrary'
+  questions:
+    example_generator:
+      contexts:
+      - rhetorical argument
+      - persuasive writing
+      min_examples: 3
+    structure: 'Discourse markers in rhetorical questions: After all, is it not true
+      that...?'
+grammar_point: discourse_markers_advanced
 level: C2
 meaning:
-  core_meaning: Advanced discourse markers are words and phrases that structure extended
-    speech or text, signalling transitions, concessions, elaborations, and conclusions.
-    They guide the listener or reader through complex arguments.
-  timeline: Timeless — discourse markers organise logical relationships, not temporal
-    ones.
-  contrast: Basic markers = and, but, so. Advanced markers = nevertheless, notwithstanding,
-    be that as it may, in light of this.
   ccqs:
-  - question: Does this marker signal a relationship between two ideas or sections
-      of text?
-    answer: Yes, it is a discourse marker.
+  - answer: Yes, it is a discourse marker.
     purpose: Tests whether the learner understands that advanced discourse markers
       (nevertheless, furthermore, in contrast, as a result) signal logical relationships
       between ideas. They are the 'glue' of coherent academic and formal writing.
-  - question: Is it more formal than basic connectors like 'and' or 'but'?
-    answer: Yes, advanced discourse markers are typically used in formal or academic
+    question: Does this marker signal a relationship between two ideas or sections
+      of text?
+  - answer: Yes, advanced discourse markers are typically used in formal or academic
       contexts.
     purpose: Tests whether the learner understands the register distinction between
       basic connectors (and, but, so) and advanced discourse markers (furthermore,
       nevertheless, in contrast). Using advanced markers appropriately signals academic
       proficiency.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      discourse markers advanced and explain why they are incorrect.
+    question: Is it more formal than basic connectors like 'and' or 'but'?
+  - answer: No — 'furthermore' adds a supporting point (addition), while 'nevertheless'
+      introduces a concession (contrast). Using 'nevertheless' here would incorrectly
+      suggest the second clause contradicts the first, when in fact it reinforces
+      the argument against the plan.
+    purpose: Tests whether the learner can distinguish between the functional categories
+      of advanced discourse markers — specifically addition (furthermore, moreover)
+      versus concession (nevertheless, nonetheless). Confusing these categories changes
+      the logical relationship between clauses and is a common error in academic writing.
+    question: What is the difference in meaning between these two forms?
+  - answer: '''The results were good. However, we need more data.'' Don''t combine
+      ''however'' and ''but''.'
+    purpose: Tests whether the learner uses discourse markers correctly without redundancy
+      (Swan PEU 2016, entries 197, 283).
+    question: Which is correct? *'The results were good, but however we need more
+      data' or 'The results were good. However, we need more data'?
+  contrast: Basic markers = and, but, so. Advanced markers = nevertheless, notwithstanding,
+    be that as it may, in light of this.
+  core_meaning: Advanced discourse markers are words and phrases that structure extended
+    speech or text, signalling transitions, concessions, elaborations, and conclusions.
+    They guide the listener or reader through complex arguments.
   example_generator:
     contexts:
     - academic essays
@@ -39,72 +139,130 @@ meaning:
     - Overuse of advanced discourse markers can make writing sound stilted or artificial
     - Native speakers use them sparingly and strategically
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Discourse marker + clause or sentence. Position varies: initial, medial,
-      or final.'
-    example_generator:
-      contexts:
-      - essay writing
-      - formal presentations
-      - debate
-      min_examples: 4
-  negative:
-    structure: 'Negative discourse markers: far from it, not only that but, on the
-      contrary'
-    example_generator:
-      contexts:
-      - contradicting
-      - correcting
-      min_examples: 3
-  questions:
-    structure: 'Discourse markers in rhetorical questions: After all, is it not true
-      that...?'
-    example_generator:
-      contexts:
-      - rhetorical argument
-      - persuasive writing
-      min_examples: 3
+  timeline: Timeless — discourse markers organise logical relationships, not temporal
+    ones.
+phonetics:
+- example_generator:
+    contexts:
+    - formal speaking
+    - presentations
+  l1_issue: Learners may place discourse markers incorrectly or use them with the
+    wrong punctuation.
+  note: Discourse markers are typically set off by pauses in speech and by commas
+    in writing, creating a natural break before the main clause.
+- example_generator:
+    contexts:
+    - academic lectures
+    - debates
+  l1_issue: Speakers from languages with different discourse-marking systems may underuse
+    or overuse these markers.
+  note: Initial discourse markers are followed by a slight pause and a drop in pitch,
+    signalling a new section of the argument.
+register_notes:
+- note: 'Biber et al. (1999) GSWE Ch. 14: Discourse markers are far more common in
+    conversation than in any written register. Academic prose uses logical connectors
+    (however, therefore, thus) instead of conversational markers.'
+  reliability: D
+  source: Team observation
+  tier: 4
+sources:
+  corpus_evidence: Biber et al. (1999) LSWE Corpus — Linking adverbials are most common
+    in academic prose, where they explicitly mark logical coherence and argument development.
+    Almost 80% of linking adverbials are single adverbs. They express addition, enumeration,
+    summation, apposition, result/inference, contrast/concession, and transition.
+    Stance adverbials are most common in conversation; linking adverbials are most
+    common in academic prose (<10% of all adverbials but strategically crucial).
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch.
+    10.4: Linking adverbials (register distribution, semantic categories, syntactic
+    forms)'
+  secondary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 19:
+    Cohesion and Discourse-19.3'
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed.(connecting and comment
+    adverbials), 283 (linking with conjunctions and adverbs in writing), 301 (discourse
+    markers in speech).
 sub_rules:
-- rule: 'Addition and elaboration: furthermore, moreover, in addition, what is more,
-    not only that but also'
-  type: functional
-  examples:
+- examples:
   - The plan is expensive. Furthermore, it is unlikely to succeed.
   - She is highly qualified. Moreover, she has ten years of experience.
   - Not only is the scheme costly, but it is also impractical.
-- rule: 'Concession and counter-argument: nevertheless, nonetheless, having said that,
-    be that as it may, that said, even so'
+  rule: 'Addition and elaboration: furthermore, moreover, in addition, what is more,
+    not only that but also'
   type: functional
-  examples:
+- examples:
   - The evidence is compelling. Nevertheless, we must remain cautious.
   - I understand your concerns. Having said that, I believe we should proceed.
   - Be that as it may, the decision has already been made.
-- rule: 'Cause and result: consequently, as a result, hence, thus, for this reason,
-    in consequence'
+  rule: 'Concession and counter-argument: nevertheless, nonetheless, having said that,
+    be that as it may, that said, even so'
   type: functional
-  examples:
+- examples:
   - The funding was cut. Consequently, the project had to be abandoned.
   - She had not prepared adequately. As a result, she performed poorly.
-- rule: 'Contrast and opposition: on the other hand, conversely, by contrast, in contrast,
-    whereas, while'
+  rule: 'Cause and result: consequently, as a result, hence, thus, for this reason,
+    in consequence'
   type: functional
-  examples:
+- examples:
   - The north is industrial. By contrast, the south is predominantly agricultural.
   - Some people thrive under pressure. Conversely, others perform best in calm environments.
-- rule: 'Summarising and concluding: in conclusion, to sum up, all in all, on balance,
-    in short, to put it briefly'
+  rule: 'Contrast and opposition: on the other hand, conversely, by contrast, in contrast,
+    whereas, while'
   type: functional
-  examples:
+- examples:
   - All in all, the project was a success despite the setbacks.
   - On balance, the advantages outweigh the disadvantages.
-- rule: 'Exemplification: for instance, to illustrate, namely, in particular, specifically'
+  rule: 'Summarising and concluding: in conclusion, to sum up, all in all, on balance,
+    in short, to put it briefly'
   type: functional
-  examples:
+- examples:
   - Several factors contributed to the decline. In particular, rising costs played
     a major role.
   - Many languages are endangered. To illustrate, fewer than 100 people speak Ainu
     fluently.
+  rule: 'Exemplification: for instance, to illustrate, namely, in particular, specifically'
+  type: functional
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Students sort a list of discourse markers by function (concession,
+      addition, contrast, etc.).
+    duration: 10
+    name: Marker Sorting
+  - adaptation_notes: Students improve a flat, unstructured paragraph by adding appropriate
+      discourse markers.
+    duration: 20
+    name: Essay Surgery
+  - adaptation_notes: Students debate a topic, required to use at least five advanced
+      discourse markers in their arguments.
+    duration: 25
+    name: Formal Debate
+  tips:
+  - 'Parrott (2000) Ch. 23: Discourse markers help learners understand logical structure
+    of texts. Cannot always rely on them — meaning is often inferred from context.
+    Teaching depends on three factors: frequency (however > nonetheless), text/context
+    type (I''m afraid in speech, hence in formal writing), and whether they introduce
+    text blocks (however, furthermore) or shorter segments.'
+  - Teach discourse markers by function (concession, addition, contrast, conclusion)
+    rather than as a flat list.
+  - Use authentic academic texts and have students identify and categorise discourse
+    markers.
+  - 'Practice positioning: initial, medial, and final positions change the emphasis.'
+  - Warn against overuse — one well-placed marker is better than three forced ones.
+  - 'Swan PEU: Connecting and comment adverbials — ''however'' and ''on the other
+    hand'' introduce contrast; ''moreover'' and ''furthermore'' add supporting points;
+    ''consequently'' and ''as a result'' show result. Register matters: ''and/but/so''
+    (informal) vs ''furthermore/nevertheless/therefore'' (formal/academic).'
+  - 'Swan PEU: Linking with conjunctions and adverbs in writing — discourse markers
+    organise extended text. Initial position is most common for linking adverbials.
+    Avoid redundancy: do not combine ''but'' and ''however'' (*''but however''). Use
+    ''however'' alone or start a new sentence.'
+  - 'Swan PEU: Discourse markers in speech — spoken English uses markers like ''well,''
+    ''you know,'' ''I mean,'' ''actually'' to manage conversation flow. These differ
+    from formal written markers and serve pragmatic (interactional) functions.'
+title: Advanced Discourse Markers
 use:
 - context: Academic essays and dissertations
   description: Advanced discourse markers are essential for structuring coherent academic
@@ -133,73 +291,3 @@ use:
   - The novel is, on the surface, a simple love story. Beneath that, however, lies
     a profound critique of class.
   - While the film is visually stunning, its narrative is, to put it mildly, underdeveloped.
-phonetics:
-- note: Discourse markers are typically set off by pauses in speech and by commas
-    in writing, creating a natural break before the main clause.
-  example_generator:
-    contexts:
-    - formal speaking
-    - presentations
-  l1_issue: Learners may place discourse markers incorrectly or use them with the
-    wrong punctuation.
-- note: Initial discourse markers are followed by a slight pause and a drop in pitch,
-    signalling a new section of the argument.
-  example_generator:
-    contexts:
-    - academic lectures
-    - debates
-  l1_issue: Speakers from languages with different discourse-marking systems may underuse
-    or overuse these markers.
-teaching:
-  methodology: Guided discovery
-  tips:
-  - Teach discourse markers by function (concession, addition, contrast, conclusion)
-    rather than as a flat list.
-  - Use authentic academic texts and have students identify and categorise discourse
-    markers.
-  - 'Practice positioning: initial, medial, and final positions change the emphasis.'
-  - Warn against overuse — one well-placed marker is better than three forced ones.
-  recommended_activities:
-  - name: Marker Sorting
-    duration: 10
-    adaptation_notes: Students sort a list of discourse markers by function (concession,
-      addition, contrast, etc.).
-  - name: Essay Surgery
-    duration: 20
-    adaptation_notes: Students improve a flat, unstructured paragraph by adding appropriate
-      discourse markers.
-  - name: Formal Debate
-    duration: 25
-    adaptation_notes: Students debate a topic, required to use at least five advanced
-      discourse markers in their arguments.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*The results were good. Anyway, we need more.*'
-  correction: The results were good. However, we need more.
-  explanation: Anyway dismisses. However acknowledges and contrasts.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

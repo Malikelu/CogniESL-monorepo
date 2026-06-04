@@ -1,34 +1,85 @@
+citations:
+- claim: 'Core meaning: The emotional or cultural associations that words carry beyond their literal (denotative) meaning
+    — '
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 36: Conclusion'
+  tier: 4
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 36: Conclusion'
+  tier: 4
+- claim: Common error '*He is skinny.* (neutral)' for Portuguese, Spanish, Chinese speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+common_errors:
+- correction: He is slim.
+  error: '*He is skinny.* (neutral)'
+  explanation: Skinny has negative connotation. Slim is positive.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+description: The emotional associations and subtle meanings of words beyond their literal definitions, including positive,
+  negative, and neutral connotations.
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - character descriptions
+      - product reviews
+      - news reporting
+      min_examples: 4
+    structure: 'Connotation is not a grammatical structure but a lexical property. Words carry connotations naturally: ''slim''
+      (positive), ''skinny'' (negative), ''thin'' (neutral).'
+  negative:
+    example_generator:
+      contexts:
+      - character descriptions
+      - critical reviews
+      - complaints
+      min_examples: 4
+    structure: 'Negative connotation words: ''stingy'', ''arrogant'', ''childish'', ''nosy'', ''pushy''. These words express
+      disapproval or criticism.'
+  questions:
+    example_generator:
+      contexts:
+      - vocabulary discussion
+      - word choice analysis
+      min_examples: 3
+    structure: Does this word have a positive or negative feeling? Would you use this word to compliment someone or to criticise
+      them?
 grammar_point: connotation
-title: Connotation and Semantic Prosody
-description: The emotional associations and subtle meanings of words beyond their
-  literal definitions, including positive, negative, and neutral connotations.
 level: C2
 meaning:
-  core_meaning: The emotional or cultural associations that words carry beyond their
-    literal (denotative) meaning — the 'feeling' a word evokes.
-  timeline: Timeless — connotations are properties of words themselves, not tied to
-    any tense or time frame.
-  contrast: Denotation = literal dictionary definition. Connotation = emotional/cultural
-    associations. 'Slim' and 'skinny' both denote 'thin' but have different connotations.
   ccqs:
-  - question: Do 'slim' and 'skinny' mean the same thing?
-    answer: They both mean 'thin' (denotation), but 'slim' has a positive connotation
-      and 'skinny' has a negative connotation.
-    purpose: Tests whether the learner understands that words with similar denotations
-      (literal meanings) can have very different connotations (emotional associations).
-      'Slim' is complimentary; 'skinny' is often insulting.
-  - question: Is 'childish' a compliment?
-    answer: No, 'childish' has a negative connotation (immature, silly). 'Childlike'
-      has a positive connotation (innocent, wonder).
-    purpose: Tests whether the learner understands that connotation can turn a neutral
-      concept (child) into either praise ('childlike') or criticism ('childish').
-      This distinction is essential for appropriate word choice in sensitive contexts.
-  - question: Can the same word have different connotations in different contexts?
-    answer: Yes — 'ambitious' can be positive (driven, goal-oriented) or negative
-      (ruthless, power-hungry) depending on context.
-    purpose: Tests whether the learner understands that connotation is context-dependent.
-      The same word can shift from positive to negative depending on the speaker's
-      attitude, the audience, and the situation.
+  - answer: They both mean 'thin' (denotation), but 'slim' has a positive connotation and 'skinny' has a negative connotation.
+    purpose: Tests whether the learner understands that words with similar denotations (literal meanings) can have very different
+      connotations (emotional associations). 'Slim' is complimentary; 'skinny' is often insulting.
+    question: Do 'slim' and 'skinny' mean the same thing?
+  - answer: No, 'childish' has a negative connotation (immature, silly). 'Childlike' has a positive connotation (innocent,
+      wonder).
+    purpose: Tests whether the learner understands that connotation can turn a neutral concept (child) into either praise
+      ('childlike') or criticism ('childish'). This distinction is essential for appropriate word choice in sensitive contexts.
+    question: Is 'childish' a compliment?
+  - answer: Yes — 'ambitious' can be positive (driven, goal-oriented) or negative (ruthless, power-hungry) depending on context.
+    purpose: Tests whether the learner understands that connotation is context-dependent. The same word can shift from positive
+      to negative depending on the speaker's attitude, the audience, and the situation.
+    question: Can the same word have different connotations in different contexts?
+  - answer: Learners often make errors with this structure that change the intended meaning.
+    purpose: Tests whether the learner can identify and correct a common error associated with connotation. Recognizing typical
+      mistakes helps learners self-edit and produce more accurate English.
+    question: Can you identify and correct the error in this sentence related to this grammar point?
+  contrast: Denotation = literal dictionary definition. Connotation = emotional/cultural associations. 'Slim' and 'skinny'
+    both denote 'thin' but have different connotations.
+  core_meaning: The emotional or cultural associations that words carry beyond their literal (denotative) meaning — the 'feeling'
+    a word evokes.
   example_generator:
     contexts:
     - character descriptions
@@ -36,185 +87,116 @@ meaning:
     - literary analysis
     - advertising language
     cultural_notes:
-    - Connotations vary across cultures — 'dragon' is positive in Chinese culture
-      but often negative in Western culture
-    - 'Advertisers exploit connotation extensively: ''home'' sells better than ''house''
-      because of its warm associations'
+    - Connotations vary across cultures — 'dragon' is positive in Chinese culture but often negative in Western culture
+    - 'Advertisers exploit connotation extensively: ''home'' sells better than ''house'' because of its warm associations'
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Connotation is not a grammatical structure but a lexical property.
-      Words carry connotations naturally: ''slim'' (positive), ''skinny'' (negative),
-      ''thin'' (neutral).'
-    example_generator:
-      contexts:
-      - character descriptions
-      - product reviews
-      - news reporting
-      min_examples: 4
-  negative:
-    structure: 'Negative connotation words: ''stingy'', ''arrogant'', ''childish'',
-      ''nosy'', ''pushy''. These words express disapproval or criticism.'
-    example_generator:
-      contexts:
-      - character descriptions
-      - critical reviews
-      - complaints
-      min_examples: 4
-  questions:
-    structure: Does this word have a positive or negative feeling? Would you use this
-      word to compliment someone or to criticise them?
-    example_generator:
-      contexts:
-      - vocabulary discussion
-      - word choice analysis
-      min_examples: 3
+  timeline: Timeless — connotations are properties of words themselves, not tied to any tense or time frame.
+phonetics:
+- example_generator:
+    contexts:
+    - spoken English
+    - presentations
+  l1_issue: L1 speakers may not perceive subtle connotative differences between near-synonyms, leading to inappropriate word
+    choice.
+  note: Connotation is not directly related to phonetics, but the rhythm and intonation of a word in context can reinforce
+    its connotative meaning.
+- example_generator:
+    contexts:
+    - spoken English
+    - expressing opinions
+  l1_issue: Speakers may use flat intonation when expressing negative connotations, weakening the intended effect.
+  note: Words with negative connotations are often pronounced with falling intonation or stress to emphasise disapproval.
+register_notes:
+- note: 'Biber et al. (2021) — Stance and connotation: academic prose uses more hedged/neutral stance markers; conversation
+    uses more affective/evaluative markers. Register determines connotational choices. Ch. 12.5'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 12.5
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Many word pairs share the same denotation but differ in connotation — one
-    is positive, the other negative.
-  type: lexical
-  examples:
+- examples:
   - slim (positive) vs skinny (negative)
   - thrifty (positive) vs stingy (negative)
   - confident (positive) vs arrogant (negative)
   - curious (positive) vs nosy (negative)
-- rule: Some words are neutral in connotation and can be used without positive or
-    negative judgement.
+  rule: Many word pairs share the same denotation but differ in connotation — one is positive, the other negative.
   type: lexical
-  examples:
+- examples:
   - thin (neutral between slim and skinny)
   - house (neutral between home and residence)
   - child (neutral between childlike and childish)
-- rule: Semantic prosody refers to the consistent positive or negative associations
-    a word picks up from its typical collocates.
+  rule: Some words are neutral in connotation and can be used without positive or negative judgement.
   type: lexical
-  examples:
-  - '''cause'' typically collocates with negative outcomes: cause problems, cause
-    damage, cause concern'
-  - '''provide'' typically collocates with positive outcomes: provide support, provide
-    care, provide opportunities'
-- rule: Connotations can shift over time and vary between dialects of English.
+- examples:
+  - '''cause'' typically collocates with negative outcomes: cause problems, cause damage, cause concern'
+  - '''provide'' typically collocates with positive outcomes: provide support, provide care, provide opportunities'
+  rule: Semantic prosody refers to the consistent positive or negative associations a word picks up from its typical collocates.
   type: lexical
-  examples:
+- examples:
   - '''terrific'' originally meant ''terrifying'' but now has a positive connotation'
-  - '''quite'' means ''completely'' in American English but ''fairly/rather'' in British
-    English'
+  - '''quite'' means ''completely'' in American English but ''fairly/rather'' in British English'
+  rule: Connotations can shift over time and vary between dialects of English.
+  type: lexical
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Give students a set of near-synonyms and have them arrange on a positive-to-negative spectrum. Discuss
+      disagreements as a class.
+    duration: 20
+    name: Connotation Spectrum
+  - adaptation_notes: Students rewrite a neutral description to make it either very positive or very negative by changing
+      word choice only.
+    duration: 15
+    name: Rewrite the Description
+  - adaptation_notes: Students analyse advertisements, identifying words chosen for their positive connotations and explaining
+      the effect.
+    duration: 25
+    name: Advertisement Analysis
+  tips:
+  - Present pairs of near-synonyms and have students sort them into positive, negative, and neutral before explaining the
+    concept
+  - Use real examples from advertising, news headlines, and literature to show connotation in action
+  - 'Create a ''connotation spectrum'' activity: students place words on a line from very positive to very negative'
+  - Discuss how the same person or thing can be described differently depending on word choice and connotation
+  - Encourage students to use a thesaurus with connotation labels when writing
+  - Swan vocabulary section covers connotation — thin/slim/skinny; old/elderly/ancient. Connotations (positive/negative/neutral)
+    are part of word meaning that learners must acquire for natural usage.
+title: Connotation and Semantic Prosody
 use:
-- name: Positive connotation
-  description: Words with favourable emotional associations that make the subject
-    sound appealing or admirable.
+- description: Words with favourable emotional associations that make the subject sound appealing or admirable.
   examples:
   - She has a slim figure. (positive — suggests attractiveness)
   - He's very thrifty with money. (positive — suggests good management)
   - She remained confident throughout. (positive — suggests strength)
   - The cottage felt like a real home. (positive — suggests warmth and comfort)
   - Her childlike enthusiasm was infectious. (positive — suggests innocence and joy)
-  key_point: Positive connotations make descriptions more appealing and are essential
-    in persuasive and promotional writing.
-- name: Negative connotation
-  description: Words with unfavourable emotional associations that make the subject
-    sound unappealing or criticisable.
+  key_point: Positive connotations make descriptions more appealing and are essential in persuasive and promotional writing.
+  name: Positive connotation
+- description: Words with unfavourable emotional associations that make the subject sound unappealing or criticisable.
   examples:
   - She looked skinny and unwell. (negative — suggests poor health)
   - He's so stingy he won't buy anyone a coffee. (negative — suggests meanness)
   - His arrogant attitude annoyed everyone. (negative — suggests superiority)
   - Stop being so childish! (negative — suggests immaturity)
-  - The house felt cold and unwelcoming. (neutral word, but context creates negative
-    feeling)
-  key_point: Negative connotations are used in criticism, complaints, and negative
-    character descriptions.
-- name: Connotation in persuasive writing
-  description: Choosing words with specific connotations to influence the reader's
-    emotional response.
+  - The house felt cold and unwelcoming. (neutral word, but context creates negative feeling)
+  key_point: Negative connotations are used in criticism, complaints, and negative character descriptions.
+  name: Negative connotation
+- description: Choosing words with specific connotations to influence the reader's emotional response.
   examples:
-  - 'Advertising: ''Discover your dream home'' (not ''house'') — ''home'' evokes warmth
-    and belonging'
-  - 'News: ''The politician claimed'' (neutral/slightly doubtful) vs ''The politician
-    admitted'' (implies wrongdoing)'
-  - 'Reviews: ''The restaurant offers an intimate dining experience'' (positive) vs
-    ''The restaurant is small and cramped'' (negative)'
-  key_point: Skilled writers and speakers choose words based on connotation to shape
-    audience perception.
-- name: Connotation in literary analysis
-  description: Analysing how authors use connotation to create mood, characterise,
-    and convey themes.
+  - 'Advertising: ''Discover your dream home'' (not ''house'') — ''home'' evokes warmth and belonging'
+  - 'News: ''The politician claimed'' (neutral/slightly doubtful) vs ''The politician admitted'' (implies wrongdoing)'
+  - 'Reviews: ''The restaurant offers an intimate dining experience'' (positive) vs ''The restaurant is small and cramped''
+    (negative)'
+  key_point: Skilled writers and speakers choose words based on connotation to shape audience perception.
+  name: Connotation in persuasive writing
+- description: Analysing how authors use connotation to create mood, characterise, and convey themes.
   examples:
   - A character described as 'slender' vs 'gaunt' creates very different impressions
   - Describing a setting as 'quiet' (peaceful) vs 'silent' (eerie) changes the atmosphere
-  - Calling someone 'determined' (positive) vs 'stubborn' (negative) reveals the narrator's
-    attitude
-  key_point: Connotation analysis is a key skill in literary criticism and advanced
-    reading comprehension.
-phonetics:
-- note: Connotation is not directly related to phonetics, but the rhythm and intonation
-    of a word in context can reinforce its connotative meaning.
-  example_generator:
-    contexts:
-    - spoken English
-    - presentations
-  l1_issue: L1 speakers may not perceive subtle connotative differences between near-synonyms,
-    leading to inappropriate word choice.
-- note: Words with negative connotations are often pronounced with falling intonation
-    or stress to emphasise disapproval.
-  example_generator:
-    contexts:
-    - spoken English
-    - expressing opinions
-  l1_issue: Speakers may use flat intonation when expressing negative connotations,
-    weakening the intended effect.
-teaching:
-  methodology: Guided discovery
-  tips:
-  - Present pairs of near-synonyms and have students sort them into positive, negative,
-    and neutral before explaining the concept
-  - Use real examples from advertising, news headlines, and literature to show connotation
-    in action
-  - 'Create a ''connotation spectrum'' activity: students place words on a line from
-    very positive to very negative'
-  - Discuss how the same person or thing can be described differently depending on
-    word choice and connotation
-  - Encourage students to use a thesaurus with connotation labels when writing
-  recommended_activities:
-  - name: Connotation Spectrum
-    duration: 20
-    adaptation_notes: Give students a set of near-synonyms and have them arrange on
-      a positive-to-negative spectrum. Discuss disagreements as a class.
-  - name: Rewrite the Description
-    duration: 15
-    adaptation_notes: Students rewrite a neutral description to make it either very
-      positive or very negative by changing word choice only.
-  - name: Advertisement Analysis
-    duration: 25
-    adaptation_notes: Students analyse advertisements, identifying words chosen for
-      their positive connotations and explaining the effect.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*He is skinny.* (neutral)'
-  correction: He is slim.
-  explanation: Skinny has negative connotation. Slim is positive.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.
+  - Calling someone 'determined' (positive) vs 'stubborn' (negative) reveals the narrator's attitude
+  key_point: Connotation analysis is a key skill in literary criticism and advanced reading comprehension.
+  name: Connotation in literary analysis

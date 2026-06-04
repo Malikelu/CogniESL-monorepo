@@ -1,33 +1,37 @@
-id: predict-confirm-reading
-name: Predict and Confirm
-category: reading
-description: Students predict what a text will be about using only the title and images.
-  Then they read to confirm or revise their predictions.
-targetStructures:
-- reading-comprehension
-- verb-tenses
-- sentence-structure
+adaptableToTopic: true
 bestForLevels:
 - A2
 - B1
 - B2
 - C1
+category: reading
+citations:
+- claim: Prediction tasks are a TBL text-based task design. Willis (1996) describes
+    prediction tasks where learners read openings and predict what comes next.
+  source: Willis, J. (1996) A Framework for Task-Based Learning. Longman.
+  tier: 2
+  reliability: B
+  flagged: false
+description: Students predict what a text will be about using only the title and images.
+  Then they read to confirm or revise their predictions.
+differentiation:
+  extension: Ask students to predict specific details, not just the topic.
+  support: Provide sentence starters for predictions. Use shorter texts.
+digitalReady: true
 duration: 20
-groupSize: pairs
 energyRequired: low
-prepTime: low
-materials:
-- Texts with titles and images covered
 format:
 - in-person
 - online
-requiresTech: false
-digitalReady: true
+grammar_focus:
+- reading_strategies
+- sentence_structure
+groupSize: pairs
 hasAudioComponent: false
 hasPrintableComponent: true
 hasSlidesComponent: false
 hasVisualComponent: true
-adaptableToTopic: true
+id: predict-confirm-reading
 instructions:
 - Show students only the title and any images from the text.
 - Students write 3 predictions about what the text will be about.
@@ -35,17 +39,37 @@ instructions:
 - Students read the text silently. They check their predictions.
 - After reading, students compare predictions with a partner.
 - 'Discuss: Which predictions were closest? What clues were most helpful?'
-script:
-- I am going to show you only the title and picture. What do you think this text will
-  be about?
-- Interesting predictions! Now read and check. Were you right?
-setupInstructions: Select texts with informative titles and relevant images.
-differentiation:
-  support: Provide sentence starters for predictions. Use shorter texts.
-  extension: Ask students to predict specific details, not just the topic.
 keywords:
 - prediction
 - critical reading
 - comprehension
 - title analysis
-l1Enhanced: true
+l1_enhanced:
+- adaptation: Prediction strategies transfer across languages. Encourage students
+    to use L1 prediction skills (title analysis, image interpretation) as a bridge
+    to English reading.
+  language: all
+  priority: medium
+l1_specific: []
+materials:
+- Texts with titles and images covered
+name: Predict and Confirm
+prepTime: low
+requiresTech: false
+script:
+- I am going to show you only the title and picture. What do you think this text will
+  be about?
+- Interesting predictions! Now read and check. Were you right?
+setupInstructions: Select texts with informative titles and relevant images.
+skill_areas:
+- reading
+sources:
+- Willis, J. (1996) A Framework for Task-Based Learning. Longman.
+targetStructures:
+- reading-comprehension
+- verb-tenses
+- sentence-structure
+teaching_tips:
+- tip: Prediction tasks activate learners expectations about text content and structure,
+    making them more engaged readers. (Willis 1996, Ch. 5.4)
+  context: TBL methodology

@@ -1,33 +1,114 @@
-grammar_point: short_answers
-title: Short Answers
+citations:
+- claim: 'Core meaning: Short, natural responses to yes/no questions'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 14:
+    Tag, Alternative, Exclamatory, and Rhetorical Questions'
+  tier: 4
+- claim: 'Register distribution: Short answers are common in conversation. In formal
+    writing, full sentences are preferred.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 14:
+    Tag, Alternative, Exclamatory, and Rhetorical Questions'
+  tier: 4
+- claim: 'Discourse function: Short answers maintain conversational flow: ''Do you
+    like it?'' ''Yes, I do.'''
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 14:
+    Tag, Alternative, Exclamatory, and Rhetorical Questions'
+  tier: 4
+- claim: 'Common error ''Using full sentence for short answers: *''Do you like coffee?''
+    for Portuguese, Spanish, Chinese speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+common_errors:
+- correction: '''Do you like coffee?'' ''Yes, I do.'''
+  error: 'Using full sentence for short answers: *''Do you like coffee?'' ''Yes, I
+    like coffee.'''
+  explanation: Short answers use the auxiliary verb, not the full sentence.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+- correction: '''Can you swim?'' ''Yes, I can.'''
+  error: 'Using wrong auxiliary: *''Can you swim?'' ''Yes, I can swim.'' (full)'
+  explanation: Short answers repeat only the auxiliary, not the main verb.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: D
 description: Brief responses to yes/no questions that avoid repeating the full sentence.
   Uses the auxiliary verb from the question.
+dialectal_variation: []
+discourse_notes:
+- note: 'Short answers maintain conversational flow: ''Do you like it?'' ''Yes, I
+    do.'''
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - do/does questions
+      - can questions
+      - be questions
+      - have questions
+      min_examples: 4
+    structure: 'Yes, subject + auxiliary verb: ''Yes, I do.'' / ''Yes, she can.''
+      / ''Yes, they are.'' / ''Yes, he has.'''
+  negative:
+    example_generator:
+      contexts:
+      - negative responses
+      - disagreeing
+      - correcting
+      min_examples: 3
+    structure: 'No, subject + auxiliary + n''t (contracted): ''No, I don''t.'' / ''No,
+      she can''t.'' / ''No, they aren''t.'' / ''No, he hasn''t.'''
+  questions:
+    example_generator:
+      contexts:
+      - yes/no questions
+      min_examples: 3
+    structure: 'Short answers respond to questions but are not questions themselves.
+      The question form is: Auxiliary + subject + ...?: ''Do you like coffee?'' /
+      ''Can she swim?'' / ''Are they ready?'''
+grammar_point: short_answers
 level: A1
 meaning:
-  core_meaning: Short, natural responses to yes/no questions. Instead of repeating
-    the whole sentence ('Yes, I like coffee'), we use just the subject and the auxiliary
-    verb ('Yes, I do'). This is how native speakers typically respond in conversation.
-  timeline: Present time — responding to a question about now or in general. The tense
-    of the short answer matches the tense of the question.
-  contrast: 'Full answer: ''Yes, I like coffee.'' / Short answer: ''Yes, I do.'' /
-    Full answer: ''No, she cannot swim.'' / Short answer: ''No, she can''t.'' The
-    short answer is more natural in conversation.'
   ccqs:
-  - question: Do we repeat the whole sentence in the answer?
-    answer: No — we use a short answer with just the subject and auxiliary.
+  - answer: No — we use a short answer with just the subject and auxiliary.
     purpose: Tests whether the learner understands that short answers use only the
       subject and auxiliary, not the full sentence. This is important because short
       answers are the natural, default way to respond in spoken English.
-  - question: Does the auxiliary in the answer match the auxiliary in the question?
-    answer: Yes — if the question uses 'do', the answer uses 'do'.
+    question: Do we repeat the whole sentence in the answer?
+  - answer: Yes — if the question uses 'do', the answer uses 'do'.
     purpose: Tests whether the learner knows that the auxiliary in the answer must
       match the auxiliary in the question. This is important because using the wrong
       auxiliary sounds unnatural.
-  - question: Is 'Yes, I like coffee' wrong?
-    answer: No — it is grammatically correct, but 'Yes, I do' is more natural in conversation.
+    question: Does the auxiliary in the answer match the auxiliary in the question?
+  - answer: No — it is grammatically correct, but 'Yes, I do' is more natural in conversation.
     purpose: Tests whether the learner understands that while full answers are grammatically
       correct, short answers are more natural in conversation. This is important because
       always using full answers can sound overly formal or emphatic.
+    question: Is 'Yes, I like coffee' wrong?
+  - answer: '''Yes, I can.'' Short answers use subject + auxiliary only: Yes, I can
+      / No, I can''t.'
+    purpose: Tests whether the learner can form short answers correctly (Swan PEU
+      2016, entry 216.5).
+    question: Which is the correct short answer to 'Can you swim?' — *'Yes, I can
+      swim' or 'Yes, I can'?
+  contrast: 'Full answer: ''Yes, I like coffee.'' / Short answer: ''Yes, I do.'' /
+    Full answer: ''No, she cannot swim.'' / Short answer: ''No, she can''t.'' The
+    short answer is more natural in conversation.'
+  core_meaning: Short, natural responses to yes/no questions. Instead of repeating
+    the whole sentence ('Yes, I like coffee'), we use just the subject and the auxiliary
+    verb ('Yes, I do'). This is how native speakers typically respond in conversation.
   example_generator:
     contexts:
     - everyday conversation
@@ -42,60 +123,98 @@ meaning:
     - Answering only 'Yes' or 'No' without the auxiliary can sound blunt or rude in
       English
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Yes, subject + auxiliary verb: ''Yes, I do.'' / ''Yes, she can.''
-      / ''Yes, they are.'' / ''Yes, he has.'''
-    example_generator:
-      contexts:
-      - do/does questions
-      - can questions
-      - be questions
-      - have questions
-      min_examples: 4
-  negative:
-    structure: 'No, subject + auxiliary + n''t (contracted): ''No, I don''t.'' / ''No,
-      she can''t.'' / ''No, they aren''t.'' / ''No, he hasn''t.'''
-    example_generator:
-      contexts:
-      - negative responses
-      - disagreeing
-      - correcting
-      min_examples: 3
-  questions:
-    structure: 'Short answers respond to questions but are not questions themselves.
-      The question form is: Auxiliary + subject + ...?: ''Do you like coffee?'' /
-      ''Can she swim?'' / ''Are they ready?'''
-    example_generator:
-      contexts:
-      - yes/no questions
-      min_examples: 3
+  timeline: Present time — responding to a question about now or in general. The tense
+    of the short answer matches the tense of the question.
+phonetics:
+- example_generator:
+    contexts:
+    - stress and emphasis
+  l1_issue: Learners may produce flat, unstressed short answers that sound uncertain
+    or unnatural.
+  note: 'In affirmative short answers, the auxiliary is stressed: ''Yes, I DO.'' /
+    ''Yes, she CAN.'' This gives a confident, natural sound.'
+- example_generator:
+    contexts:
+    - negative pronunciation
+  l1_issue: Some learners may say 'No, I do not' in full, which sounds overly formal
+    in casual conversation.
+  note: In negative short answers, the contraction carries the stress. The final t
+    sound in negative contractions is often clearly pronounced.
+register_notes:
+- note: Short answers are common in conversation. In formal writing, full sentences
+    are preferred.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (1999) — Short answers and elliptic responses: overwhelmingly
+    conversational. Academic prose and news avoid ellipsis in favor of full clauses.
+    Short answers are a strong marker of spoken language. Ch. 14'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 14
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: The auxiliary in the answer must match the auxiliary in the question
-  type: grammatical
-  examples:
+- examples:
   - Do you like coffee? -> Yes, I do. (not 'Yes, I like.')
   - Can she swim? -> Yes, she can. (not 'Yes, she swims.')
   - Are you tired? -> Yes, I am.
   - Have you finished? -> Yes, I have. (not 'Yes, I finished.')
-- rule: Use contractions in negative short answers
+  rule: The auxiliary in the answer must match the auxiliary in the question
   type: grammatical
-  examples:
+- examples:
   - No, I don't. (not 'No, I do not.')
   - No, she can't.
   - No, they aren't.
   - No, he hasn't.
-- rule: With 'be', use the same form as the question
+  rule: Use contractions in negative short answers
   type: grammatical
-  examples:
+- examples:
   - Are you happy? -> Yes, I am. / No, I'm not.
   - Is she a teacher? -> Yes, she is. / No, she isn't.
   - Are they coming? -> Yes, they are. / No, they aren't.
-- rule: With 'have' (as auxiliary), use 'have' in the answer
+  rule: With 'be', use the same form as the question
   type: grammatical
-  examples:
+- examples:
   - Have you been to Paris? -> Yes, I have. / No, I haven't.
   - Has she finished? -> Yes, she has. / No, she hasn't.
+  rule: With 'have' (as auxiliary), use 'have' in the answer
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Teacher fires yes/no questions at students one after another.
+      Students must respond with a short answer within 2 seconds. Great for building
+      automaticity.
+    duration: 5
+    name: Rapid-Fire Questions
+  - adaptation_notes: Students receive cards with questions and cards with answers.
+      They must match them correctly. Can be done as a memory game or relay race.
+    duration: 10
+    name: Auxiliary Matching Game
+  - adaptation_notes: Students circulate asking yes/no questions and record short
+      answers. They then report findings to the class.
+    duration: 15
+    name: 'Information Gap: Find Someone Who...'
+  tips:
+  - 'Drill with rapid-fire questions: teacher asks, students respond with short answers
+    only.'
+  - 'Emphasise the auxiliary matching rule: ''Do? -> do. Can? -> can. Are? -> am/is/are.'''
+  - 'Practice contractions in negative answers from the start: ''don''t'', ''can''t'',
+    ''aren''t'', ''hasn''t''.'
+  - Role-play service encounters (shop, restaurant) where short answers are natural.
+  - Contrast with full answers to show when each is appropriate.
+  - 'Swan PEU: Short answers use the first auxiliary: ''Can you swim?'' ''Yes, I can.''
+    NOT ''Yes, I swim.'' ''Do you like it?'' ''Yes, I do'' (not ''Yes, I like'').
+    Be careful with: ''Yes, I am,'' ''Yes, I have,'' etc.'
+title: Short Answers
 use:
 - context: Everyday conversation
   description: Short answers are the natural, default way to respond to yes/no questions
@@ -117,75 +236,3 @@ use:
   examples:
   - Do you have a reservation? -> Yes, I do. / No, I don't.
   - Can I pay by card? -> Yes, you can. / No, I'm afraid not.
-phonetics:
-- note: 'In affirmative short answers, the auxiliary is stressed: ''Yes, I DO.'' /
-    ''Yes, she CAN.'' This gives a confident, natural sound.'
-  example_generator:
-    contexts:
-    - stress and emphasis
-  l1_issue: Learners may produce flat, unstressed short answers that sound uncertain
-    or unnatural.
-- note: In negative short answers, the contraction carries the stress. The final t
-    sound in negative contractions is often clearly pronounced.
-  example_generator:
-    contexts:
-    - negative pronunciation
-  l1_issue: Some learners may say 'No, I do not' in full, which sounds overly formal
-    in casual conversation.
-teaching:
-  methodology: PPP
-  tips:
-  - 'Drill with rapid-fire questions: teacher asks, students respond with short answers
-    only.'
-  - 'Emphasise the auxiliary matching rule: ''Do? -> do. Can? -> can. Are? -> am/is/are.'''
-  - 'Practice contractions in negative answers from the start: ''don''t'', ''can''t'',
-    ''aren''t'', ''hasn''t''.'
-  - Role-play service encounters (shop, restaurant) where short answers are natural.
-  - Contrast with full answers to show when each is appropriate.
-  recommended_activities:
-  - name: Rapid-Fire Questions
-    duration: 5
-    adaptation_notes: Teacher fires yes/no questions at students one after another.
-      Students must respond with a short answer within 2 seconds. Great for building
-      automaticity.
-  - name: Auxiliary Matching Game
-    duration: 10
-    adaptation_notes: Students receive cards with questions and cards with answers.
-      They must match them correctly. Can be done as a memory game or relay race.
-  - name: 'Information Gap: Find Someone Who...'
-    duration: 15
-    adaptation_notes: Students circulate asking yes/no questions and record short
-      answers. They then report findings to the class.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: 'Using full sentence for short answers: *''Do you like coffee?'' ''Yes, I
-    like coffee.'''
-  correction: '''Do you like coffee?'' ''Yes, I do.'''
-  explanation: Short answers use the auxiliary verb, not the full sentence.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-- error: 'Using wrong auxiliary: *''Can you swim?'' ''Yes, I can swim.'' (full)'
-  correction: '''Can you swim?'' ''Yes, I can.'''
-  explanation: Short answers repeat only the auxiliary, not the main verb.
-  l1_groups:
-  - Portuguese
-  - Spanish
-register_notes:
-- note: Short answers are common in conversation. In formal writing, full sentences
-    are preferred.
-dialectal_variation:
-- note: No significant BrE/AmE differences.
-discourse_notes:
-- note: 'Short answers maintain conversational flow: ''Do you like it?'' ''Yes, I
-    do.'''

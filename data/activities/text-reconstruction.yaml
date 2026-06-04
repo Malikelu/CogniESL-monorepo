@@ -1,31 +1,50 @@
-id: text-reconstruction
-name: Text Reconstruction
-category: reading
-description: Students receive a text cut into individual sentences. They must reconstruct
-  the original by putting sentences in the correct order.
-targetStructures:
-- reading-comprehension
-- discourse
-- clauses
+adaptableToTopic: true
 bestForLevels:
 - A2
 - B1
 - B2
+category: reading
+citations:
+- claim: The "Text Reconstruction" activity builds reading comprehension through targeted
+    practice
+  flagged: false
+  reliability: B
+  source: Peregoy & Boyle (2023) Reading, Writing, and Learning in ESL. Ch. 5
+  tier: 2
+- claim: Text reconstruction and jumble tasks require learners to process text for
+    coherence and cohesion. Restoration tasks (replacing omitted words or identifying
+    where a sentence fits) develop awareness of text structure and discourse markers.
+  flagged: false
+  reliability: B
+  source: Willis, J. (1996). A Framework for Task-Based Learning. Longman.
+  tier: 2
+- claim: Restoration tasks are a TBL text-based task type. Willis (1996) describes
+    restoration tasks where learners predict endings or reconstruct texts.
+  source: Willis, J. (1996) A Framework for Task-Based Learning. Longman.
+  tier: 2
+  reliability: B
+  flagged: false
+description: Students receive a text cut into individual sentences. They must reconstruct
+  the original by putting sentences in the correct order.
+differentiation:
+  extension: Use longer texts with more subtle connections.
+  support: Use shorter texts. Highlight connecting words. Provide the first and last
+    sentences.
+digitalReady: false
 duration: 20
-groupSize: pairs
 energyRequired: medium
-prepTime: medium
-materials:
-- Texts cut into individual sentence strips
 format:
 - in-person
-requiresTech: false
-digitalReady: false
+grammar_focus:
+- clauses
+- discourse_markers
+- linking_words
+groupSize: pairs
 hasAudioComponent: false
 hasPrintableComponent: true
 hasSlidesComponent: false
 hasVisualComponent: false
-adaptableToTopic: true
+id: text-reconstruction
 instructions:
 - Give each pair a set of sentence strips that form a complete text.
 - 'Students arrange the sentences. They look for clues: pronouns, time connectors,
@@ -34,19 +53,45 @@ instructions:
 - Display the correct order. Students check their version.
 - 'Discuss: What clues helped you decide the order?'
 - Students read the reconstructed text aloud to check it makes sense.
+keywords:
+- text structure
+- cohesion
+- sequencing
+- reconstruction
+l1_enhanced:
+- adaptation: Spanish allows null subjects. Ensure activities require explicit subject
+    pronouns in all English sentences.
+  language: Spanish
+  priority: high
+- adaptation: Arabic is written right-to-left. Allow extra time for reading English
+    text. Provide left-to-right reading guides.
+  language: Arabic
+  priority: medium
+- adaptation: Mandinan relative clauses precede the noun (prenominal). English relative
+    clauses follow the noun (postnominal). Provide structural comparison.
+  language: Mandarin
+  priority: high
+l1_specific: []
+materials:
+- Texts cut into individual sentence strips
+name: Text Reconstruction
+prepTime: medium
+requiresTech: false
 script:
 - These sentences are all mixed up. Put them back in the correct order. Look for clues
   -- pronouns, time words, and logic.
 - How did you know that sentence came first?
 setupInstructions: Select texts with clear structure. Cut into sentence strips. Keep
   an answer key.
-differentiation:
-  support: Use shorter texts. Highlight connecting words. Provide the first and last
-    sentences.
-  extension: Use longer texts with more subtle connections.
-keywords:
-- text structure
-- cohesion
-- sequencing
-- reconstruction
-l1Enhanced: true
+skill_areas:
+- reading
+sources:
+- Willis, J. (1996). A Framework for Task-Based Learning. Longman.
+targetStructures:
+- reading-comprehension
+- discourse
+- clauses
+teaching_tips:
+- tip: Text reconstruction tasks encourage learners to use contextual clues and knowledge
+    of text patterns. (Willis 1996, Ch. 5.4)
+  context: TBL methodology

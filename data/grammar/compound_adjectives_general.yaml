@@ -1,29 +1,115 @@
+citations:
+- claim: 'Core meaning: Compound adjectives combine two or more words into a single descriptive unit that modifies a noun'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 20: Adjectives'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 20: Adjectives'
+  tier: 1
+- claim: Common error '*She is a well known author.*' for Portuguese, Spanish, Chinese speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- claim: Oshima & Hogue's Great Writing series demonstrates how this grammatical structure functions in academic writing contexts.
+    Their approach connects grammar instruction to writing outcomes, showing learners how accurate use of this structure improves
+    paragraph cohesion, essay organization, and academic register.
+  source: Oshima, A. and Hogue, A. (2006). Introduction to Academic Writing, 3rd ed. Pearson Longman.
+  tier: 2
+common_errors:
+- correction: She is a well-known author.
+  error: '*She is a well known author.*'
+  explanation: 'Compound adjectives before a noun are hyphenated: ''well-known'', ''short-lived'', ''ready-made''. The hyphen
+    signals that the two words function as a single modifier. Without hyphens, the meaning can be ambiguous or misleading.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Japanese
+  reliability: B
+  source: Swan Entry 187. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+- correction: He designs newly-built houses.
+  error: '*He is a newly-built house designer.* (meaning: he designs newly built houses)'
+  explanation: 'Misplaced modifier: ''newly-built'' modifies ''houses'', not ''designer''. The compound adjective must be
+    adjacent to the noun it describes. Poor word order changes the meaning entirely.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Arabic
+  - Chinese
+  reliability: B
+  source: Swan Entry 187. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+- correction: This is a poorly written essay by a badly prepared student.
+  error: '*This is a poorly-written essay by a badly prepared student.*'
+  explanation: Hyphens in compound adjectives are needed before a noun ('poorly-written essay') but not after it ('the essay
+    is poorly written'). The hyphen rule changes based on the adjective's position in the sentence.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Chinese
+  reliability: B
+  source: Swan Entry 187. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+- correction: A three-year-old child was crying.
+  error: '*A three-years-old child was crying.*'
+  explanation: 'In compound adjectives with numbers, the measurement noun remains singular: ''three-year-old'' (not ''three-years-old'').
+    This is a spelling rule that even advanced learners get wrong.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Arabic
+  reliability: B
+  source: Swan Entry 187. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+description: Adjectives formed by combining two or more words, usually hyphenated, that function as a single modifier before
+  a noun.
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - job descriptions
+      - personal profiles
+      - product reviews
+      min_examples: 4
+    structure: 'compound adjective (hyphenated) + noun: a well-known actor, a part-time job'
+  negative:
+    example_generator:
+      contexts:
+      - expressing difficulty
+      - understatement
+      min_examples: 3
+    structure: 'not + compound adjective + noun: a not-so-easy decision, a not-well-understood phenomenon'
+  questions:
+    example_generator:
+      contexts:
+      - asking about qualities
+      - enquiring about products
+      min_examples: 3
+    structure: 'How + compound adjective + noun: How long-lasting is the effect?'
 grammar_point: compound_adjectives_general
-title: Compound Adjectives (General)
-description: Adjectives formed by combining two or more words, usually hyphenated,
-  that function as a single modifier before a noun.
 level: B2
 meaning:
-  core_meaning: Compound adjectives combine two or more words into a single descriptive
-    unit that modifies a noun. They are typically hyphenated when placed before the
-    noun to avoid ambiguity.
-  timeline: Timeless — compound adjectives describe qualities, not temporal relationships.
-  contrast: Compound adj = a well-known author. Separate words = The author is well
-    known. (predicative, no hyphen)
   ccqs:
-  - question: Is this adjective made up of two or more words joined together?
-    answer: Yes, it is a compound adjective.
-    purpose: Tests whether the learner understands when to use comparative vs. superlative
-      forms. This distinction depends on how many items are being compared.
-  - question: Is it hyphenated when placed before the noun?
-    answer: Yes, hyphenation before the noun is standard.
-    purpose: Tests whether the learner understands temporal relationships between
-      events. Correct use of time conjunctions is essential for clear communication
-      of sequence and duration.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      compound adjectives general and explain why they are incorrect.
+  - answer: Yes, it is a compound adjective.
+    question: Is this adjective made up of two or more words joined together?
+    purpose: 'Tests whether the learner can correctly form and use compound adjectives (CCQ #1).'
+  - answer: Yes, hyphenation before the noun is standard.
+    question: Is it hyphenated when placed before the noun?
+    purpose: 'Tests whether the learner can correctly form and use compound adjectives (CCQ #2).'
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with compound adjectives general and explain
+      why they are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: Learners often make errors with this structure that change the intended meaning.
+    purpose: Tests whether the learner can identify and correct a common error associated with compound adjectives general.
+      Recognizing typical mistakes helps learners self-edit and produce more accurate English.
+    question: Can you identify and correct the error in this sentence related to this grammar point?
+  contrast: Compound adj = a well-known author. Separate words = The author is well known. (predicative, no hyphen)
+  core_meaning: Compound adjectives combine two or more words into a single descriptive unit that modifies a noun. They are
+    typically hyphenated when placed before the noun to avoid ambiguity.
   example_generator:
     contexts:
     - product descriptions
@@ -31,79 +117,99 @@ meaning:
     - professional profiles
     - travel writing
     cultural_notes:
-    - Hyphenation rules for compound adjectives are a common source of confusion even
-      for native speakers
+    - Hyphenation rules for compound adjectives are a common source of confusion even for native speakers
     - British English tends to hyphenate more conservatively than American English
     min_examples: 5
-form:
-  affirmative:
-    structure: 'compound adjective (hyphenated) + noun: a well-known actor, a part-time
-      job'
-    example_generator:
-      contexts:
-      - job descriptions
-      - personal profiles
-      - product reviews
-      min_examples: 4
-  negative:
-    structure: 'not + compound adjective + noun: a not-so-easy decision, a not-well-understood
-      phenomenon'
-    example_generator:
-      contexts:
-      - expressing difficulty
-      - understatement
-      min_examples: 3
-  questions:
-    structure: 'How + compound adjective + noun: How long-lasting is the effect?'
-    example_generator:
-      contexts:
-      - asking about qualities
-      - enquiring about products
-      min_examples: 3
+  timeline: Timeless — compound adjectives describe qualities, not temporal relationships.
+phonetics:
+- example_generator:
+    contexts:
+    - spoken descriptions
+    - presentations
+  l1_issue: Speakers may incorrectly stress the second element or fail to hyphenate in writing.
+  note: 'Compound adjectives carry primary stress on the first element: a WELL-known actor, a GOOD-looking design.'
+- example_generator:
+    contexts:
+    - reading aloud
+    - editing
+  l1_issue: Languages without hyphenation conventions (e.g. Chinese, Japanese) may lead learners to omit hyphens.
+  note: The hyphen signals to the reader that the two words function as one unit, preventing misreading.
+register_notes:
+- note: 'Biber et al. (2021) — Compound adjectives: more common in written registers (news, academic prose) than in conversation.
+    Register distribution reflects information density differences. Ch. 7.6'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 7.6
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 20: Adjectives'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: 'Adjective + past participle: well-known, well-established, short-lived, ready-made'
-  type: grammatical
-  examples:
+- examples:
   - a well-known fact
   - a short-lived trend
   - a ready-made meal
-- rule: 'Adjective + present participle: good-looking, long-lasting, far-reaching,
-    eye-catching'
+  rule: 'Adjective + past participle: well-known, well-established, short-lived, ready-made'
   type: grammatical
-  examples:
+- examples:
   - a long-lasting impression
   - a far-reaching decision
   - an eye-catching design
-- rule: 'Noun + past participle: home-made, sun-dried, hand-made, tongue-tied'
+  rule: 'Adjective + present participle: good-looking, long-lasting, far-reaching, eye-catching'
   type: grammatical
-  examples:
+- examples:
   - home-made bread
   - sun-dried tomatoes
   - a hand-made gift
-- rule: 'Noun + adjective: ice-cold, dirt-cheap, world-famous, blood-red'
+  rule: 'Noun + past participle: home-made, sun-dried, hand-made, tongue-tied'
   type: grammatical
-  examples:
+- examples:
   - ice-cold water
   - a dirt-cheap flight
   - a world-famous landmark
-- rule: 'Adverb + past participle (where the adverb is not -ly): well-behaved, badly-dressed,
-    ill-advised'
+  rule: 'Noun + adjective: ice-cold, dirt-cheap, world-famous, blood-red'
   type: grammatical
-  examples:
+- examples:
   - a well-behaved child
   - an ill-advised investment
   - a badly-dressed man
-- rule: 'No hyphen after an adverb ending in -ly: a newly built house, a beautifully
-    designed garden'
+  rule: 'Adverb + past participle (where the adverb is not -ly): well-behaved, badly-dressed, ill-advised'
   type: grammatical
-  examples:
+- examples:
   - a recently published article
   - a poorly constructed argument
   - a highly respected professor
+  rule: 'No hyphen after an adverb ending in -ly: a newly built house, a beautifully designed garden'
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Give students a list of compound adjectives and have them sort by pattern type (adj+pp, noun+adj, etc.).
+    duration: 10
+    name: Compound Adjective Sort
+  - adaptation_notes: Students describe a product using at least five compound adjectives, practising hyphenation and stress.
+    duration: 15
+    name: Product Pitch
+  - adaptation_notes: Students find and correct missing or incorrect hyphens in a text.
+    duration: 10
+    name: Hyphen Hunt
+  tips:
+  - Teach compound adjectives by pattern type (adj+pp, noun+pp, etc.) rather than as a random list.
+  - 'Highlight the hyphenation rule: hyphenate before the noun, not after (a well-known author vs. the author is well known).'
+  - Use real product descriptions and reviews as authentic material.
+  - Practice converting compound adjectives to predicative position and back.
+  - 'Swan PEU: Compound adjectives are formed from two or more words: ''a well-known actor,'' ''a part-time job,'' ''a home-made
+    cake,'' ''a good-looking man.'' When formed with a number, the noun is singular: ''a five-year plan'' (not ''five-years'').'
+  - 'Swan PEU: Common patterns include: noun + past participle (hand-made, home-grown), adjective + noun + -ed (blue-eyed,
+    short-sighted), adjective + present participle (easy-going, good-looking), adverb + past participle (well-known, much-loved).
+    Hyphenate when the compound comes before the noun: ''a well-known fact'' but ''the fact is well known.'''
+  - 'Swan PEU: Warning — do NOT hyphenate when the compound comes after the noun. ''She is well known'' (no hyphen after verb).
+    ''A home-made cake'' (hyphen before noun). This is a common error and one of the most visible mistakes in writing.'
+title: Compound Adjectives (General)
 use:
 - context: Describing people and personalities
-  description: Compound adjectives efficiently convey character traits and personal
-    qualities.
+  description: Compound adjectives efficiently convey character traits and personal qualities.
   examples:
   - She is a strong-willed, quick-thinking woman.
   - He is a mild-mannered, soft-spoken gentleman.
@@ -113,8 +219,7 @@ use:
   - This is a top-of-the-range, state-of-the-art laptop.
   - We offer a cost-effective, long-term solution.
 - context: Professional and academic writing
-  description: Compound adjectives allow precise, formal description in reports and
-    papers.
+  description: Compound adjectives allow precise, formal description in reports and papers.
   examples:
   - The study used a well-established, peer-reviewed methodology.
   - This is a little-known but highly significant historical event.
@@ -123,106 +228,3 @@ use:
   examples:
   - That was a once-in-a-lifetime experience.
   - He told a laugh-out-loud funny story.
-phonetics:
-- note: 'Compound adjectives carry primary stress on the first element: a WELL-known
-    actor, a GOOD-looking design.'
-  example_generator:
-    contexts:
-    - spoken descriptions
-    - presentations
-  l1_issue: Speakers may incorrectly stress the second element or fail to hyphenate
-    in writing.
-- note: The hyphen signals to the reader that the two words function as one unit,
-    preventing misreading.
-  example_generator:
-    contexts:
-    - reading aloud
-    - editing
-  l1_issue: Languages without hyphenation conventions (e.g. Chinese, Japanese) may
-    lead learners to omit hyphens.
-teaching:
-  methodology: PPP
-  tips:
-  - Teach compound adjectives by pattern type (adj+pp, noun+pp, etc.) rather than
-    as a random list.
-  - 'Highlight the hyphenation rule: hyphenate before the noun, not after (a well-known
-    author vs. the author is well known).'
-  - Use real product descriptions and reviews as authentic material.
-  - Practice converting compound adjectives to predicative position and back.
-  recommended_activities:
-  - name: Compound Adjective Sort
-    duration: 10
-    adaptation_notes: Give students a list of compound adjectives and have them sort
-      by pattern type (adj+pp, noun+adj, etc.).
-  - name: Product Pitch
-    duration: 15
-    adaptation_notes: Students describe a product using at least five compound adjectives,
-      practising hyphenation and stress.
-  - name: Hyphen Hunt
-    duration: 10
-    adaptation_notes: Students find and correct missing or incorrect hyphens in a
-      text.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.6-12.13'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*She is a well known author.*'
-  correction: She is a well-known author.
-  explanation: 'Compound adjectives before a noun are hyphenated: ''well-known'',
-    ''short-lived'', ''ready-made''. The hyphen signals that the two words function
-    as a single modifier. Without hyphens, the meaning can be ambiguous or misleading.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-  - Japanese
-- error: '*He is a newly-built house designer.* (meaning: he designs newly built houses)'
-  correction: He designs newly-built houses.
-  explanation: 'Misplaced modifier: ''newly-built'' modifies ''houses'', not ''designer''.
-    The compound adjective must be adjacent to the noun it describes. Poor word order
-    changes the meaning entirely.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Arabic
-  - Chinese
-- error: '*This is a poorly-written essay by a badly prepared student.*'
-  correction: This is a poorly written essay by a badly prepared student.
-  explanation: Hyphens in compound adjectives are needed before a noun ('poorly-written
-    essay') but not after it ('the essay is poorly written'). The hyphen rule changes
-    based on the adjective's position in the sentence.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - Chinese
-- error: '*A three-years-old child was crying.*'
-  correction: A three-year-old child was crying.
-  explanation: 'In compound adjectives with numbers, the measurement noun remains
-    singular: ''three-year-old'' (not ''three-years-old''). This is a spelling rule
-    that even advanced learners get wrong.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-  - Arabic
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

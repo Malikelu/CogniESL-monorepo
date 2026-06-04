@@ -1,35 +1,172 @@
-grammar_point: phrasal_verbs
-title: Phrasal Verbs (Verb + Particle)
+citations:
+- claim: 'Core meaning: A phrasal verb is a verb + particle (preposition or adverb)
+    that together have a meaning different from the individual words. The meaning
+    is often idiomatic — you cannot guess it from the parts.'
+  reliability: B
+  source: 'Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch.
+    5: Phrasal verbs and multi-word verbs (register distribution, conversation vs
+    academic prose)'
+  tier: 1
+- claim: 'Register distribution: Phrasal verbs are much more common in conversation
+    and fiction than in academic prose and news. Academic prose favors one-word Latinate
+    equivalents (e.g., investigate over look into).'
+  reliability: B
+  source: 'Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch.
+    5: Phrasal verbs and multi-word verbs (register distribution)'
+  tier: 1
+- claim: 'Discourse function: Phrasal verbs in conversation serve as informal alternatives
+    to Latinate verbs, contributing to a casual, everyday register. In academic prose,
+    single-word equivalents are strongly preferred.'
+  flagged: false
+  reliability: B
+  source: 'Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch.
+    5: Phrasal verbs and multi-word verbs'
+  tier: 1
+- claim: Common error '*I looked up it in the dictionary.*' for All L1 groups speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: Phrasal verbs combine verb + particle where the particle often retains preposition-like
+    directional meaning that modifies the verb semantically
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 14:
+    Phrasal Verbs'
+  tier: 2
+common_errors:
+- correction: I looked it up in the dictionary.
+  error: '*I looked up it in the dictionary.*'
+  explanation: With separable phrasal verbs, pronouns MUST go between the verb and
+    particle. 'Look it up' NOT 'Look up it'. This is one of the most common errors
+    with phrasal verbs.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan Entry 58. Swan (2016) Practical English Usage, 4th ed. Oxford University
+    Press.
+- correction: Turn it on.
+  error: 'Putting pronoun after particle: *''Turn on it.'''
+  explanation: 'Swan PEU: With separable phrasal verbs, pronouns MUST go between the
+    verb and particle. "Turn it on" NOT "Turn on it".'
+  l1_groups: &id001
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan Entry 58. Swan (2016) Practical English Usage, 4th ed. Oxford University
+    Press.
+- correction: I look after my children.
+  error: 'Using prepositional verb as separable: *''I look my children after.'''
+  explanation: 'Swan PEU: Some phrasal verbs are inseparable (look after, look into,
+    come across). The object must come after the particle.'
+  l1_groups: *id001
+  reliability: B
+  source: Swan Entry 58. Swan (2016) Practical English Usage, 4th ed. Oxford University
+    Press.
+- correction: Take off your jacket. / The plane took off.
+  error: 'Confusing literal and idiomatic phrasal verbs: *''take off your jacket''
+    vs *''the plane took off your jacket.'''
+  explanation: 'Swan PEU: Many phrasal verbs have both literal and idiomatic meanings.
+    "Take off" = remove (literal) OR depart (idiomatic).'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  - Italian
+  - Chinese
+  - Japanese
+  - Arabic
+  - Russian
+  reliability: B
+  source: Swan Entry 58. Swan (2016) Practical English Usage, 4th ed. Oxford University
+    Press.
 description: Verbs combined with prepositions or adverbs (particles) that create new
   meanings, often idiomatic. Very common in informal spoken English.
+dialectal_variation: []
+form:
+  affirmative:
+    example_generator:
+    - I get up at 7am.
+    - She turned on the light.
+    - They looked after the children.
+    - He gave up smoking.
+    min_examples: 4
+    structure: 'Subject + verb + particle (+ object). Separable: verb + object + particle
+      OR verb + particle + object. Inseparable: verb + particle + object (no separation).'
+  negative:
+    example_generator:
+    - I don't get up early.
+    - She didn't turn on the light.
+    - They don't look after the dog.
+    - He didn't give up.
+    min_examples: 4
+    structure: Subject + don't/doesn't/didn't + verb + particle
+  questions:
+    example_generator:
+    - Do you get up early?
+    - Did she turn on the light?
+    - Do they look after the children?
+    - Did he give up?
+    min_examples: 4
+    structure: Do/Does/Did + subject + verb + particle?
+grammar_point: phrasal_verbs
+key_principles: []
 level: B1
 meaning:
+  ccqs:
+  - answer: Usually not — phrasal verbs are idiomatic and must be learned as a unit.
+    purpose: Tests whether the learner understands that phrasal verbs (look up, give
+      in, take off) have idiomatic meanings that cannot be predicted from the individual
+      words.
+    question: Can you guess the meaning of this phrasal verb from the individual words?
+  - answer: Because the meaning is idiomatic, you cannot predict it from the parts.
+      'Give up' does not mean giving something upward — it means 'quit' or 'stop trying'.
+      This is why phrasal verbs must be learned as whole units.
+    purpose: Tests whether the learner understands that phrasal verb meanings are
+      idiomatic — the whole is greater than the sum of its parts. This is the core
+      concept that distinguishes phrasal verbs from literal verb+preposition combinations.
+    question: Why is 'give up' (meaning 'quit') difficult to understand from its individual
+      words?
+  - answer: 'If the particle can be separated from the verb (e.g., Turn the light
+      on = Turn on the light), the verb is separable. But if the particle must stay
+      attached to the verb (e.g., Look after the children), the verb is inseparable.
+      Inseparable verbs must be memorized as units.
+
+      '
+    purpose: Tests whether the learner understands the structural distinction between
+      separable and inseparable phrasal verbs.
+    question: 'Turn the light on and Turn on the light are both correct. But Look
+      after the children — can we say Look the children after? Why not?
+
+      '
+  - answer: 'No — when a pronoun is the object, it MUST go between the verb and particle
+      for separable phrasal verbs. Turn it on is correct; Turn on it is not.
+
+      '
+    purpose: Tests whether the learner can apply the pronoun placement rule for separable
+      phrasal verbs.
+    question: Can we say Turn on it instead of Turn it on? Why do pronouns go in the
+      middle?
+  - answer: 'Confusing the literal and idiomatic meanings — e.g., thinking take off
+      your jacket means the same as the plane took off. Context determines which meaning
+      is intended.
+
+      '
+    purpose: Tests whether the learner understands that many phrasal verbs have both
+      literal and figurative meanings that depend on context.
+    question: What are two different meanings of take off? How does context tell us
+      which one is meant?
+  contrast: '''Get up'' = ''wake up and leave bed'' (idiomatic) vs ''get'' + ''up''
+    = literal movement upward (not idiomatic). ''Give up'' = ''quit'' (idiomatic)
+    vs ''give'' + ''up'' = literal.'
   core_meaning: A phrasal verb is a verb + particle (preposition or adverb) that together
     have a meaning different from the individual words. The meaning is often idiomatic
     — you cannot guess it from the parts. Phrasal verbs are extremely common in everyday
     spoken English.
-  timeline: 'Follows normal tense rules: get up (present), got up (past), will get
-    up (future). The tense is carried by the verb, not the particle.'
-  contrast: '''Get up'' = ''wake up and leave bed'' (idiomatic) vs ''get'' + ''up''
-    = literal movement upward (not idiomatic). ''Give up'' = ''quit'' (idiomatic)
-    vs ''give'' + ''up'' = literal.'
-  ccqs:
-  - question: Can you guess the meaning of this phrasal verb from the individual words?
-    answer: Usually not — phrasal verbs are idiomatic and must be learned as a unit.
-    purpose: Tests whether the learner understands that phrasal verbs (look up, give
-      in, take off) have idiomatic meanings that cannot be predicted from the individual
-      words.
-  - question: Is this phrasal verb separable or inseparable?
-    answer: Separable = object can go between verb and particle. Inseparable = object
-      must come after.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Is this phrasal verb separable
-      or inseparable?...' checks conceptual understanding, not just memorization.
-  - question: Where does a pronoun go with a separable phrasal verb?
-    answer: 'Always between the verb and particle: ''Turn it on'' NOT ''Turn on it.'''
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Where does a pronoun go with
-      a separable phrasal v...' checks conceptual understanding, not just memorization.
   example_generator:
     contexts:
     - daily routines
@@ -43,70 +180,146 @@ meaning:
     - Some phrasal verbs have multiple meanings depending on context
     - Use diverse scenarios to show range of meanings
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Subject + verb + particle (+ object). Separable: verb + object + particle
-      OR verb + particle + object. Inseparable: verb + particle + object (no separation).'
-    example_generator:
-    - I get up at 7am.
-    - She turned on the light.
-    - They looked after the children.
-    - He gave up smoking.
-    min_examples: 4
-  negative:
-    structure: Subject + don't/doesn't/didn't + verb + particle
-    example_generator:
-    - I don't get up early.
-    - She didn't turn on the light.
-    - They don't look after the dog.
-    - He didn't give up.
-    min_examples: 4
-  questions:
-    structure: Do/Does/Did + subject + verb + particle?
-    example_generator:
-    - Do you get up early?
-    - Did she turn on the light?
-    - Do they look after the children?
-    - Did he give up?
-    min_examples: 4
+  timeline: 'Follows normal tense rules: get up (present), got up (past), will get
+    up (future). The tense is carried by the verb, not the particle.'
+phonetics:
+- example_generator:
+  - turn ON /tɜːn ɒn/
+  - get UP /ɡet ʌp/
+  - look AFTER /lʊk ɑːftə/
+  l1_issue: Many L1 speakers stress the verb instead of the particle. Teach correct
+    stress patterns for natural speech.
+  note: 'The particle is usually stressed in phrasal verbs: ''turn ON'', ''get UP'',
+    ''look AFTER''. The verb may be unstressed.'
+- example_generator:
+  - get up → /ɡet ʌp/
+  - pick up → /pɪk ʌp/
+  l1_issue: Portuguese and Spanish speakers often separate the verb and particle too
+    much. Teach blending for natural speech.
+  note: 'In connected speech, the verb and particle often blend: ''get up'' → /ɡet
+    ʌp/, ''turn on'' → /tɜːn ɒn/.'
+register_notes:
+- note: Biber et al. (1999) — Phrasal verbs are much more common in conversation and
+    fiction than in academic prose and news. Academic prose favors one-word Latinate
+    equivalents (e.g., 'investigate' over 'look into'). Ch. 5.3.2a
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 5.3.2a
+- note: In academic and formal registers, single-word Latinate verbs are preferred
+    (e.g., 'investigate', 'postpone', 'tolerate'). In informal conversation, phrasal
+    verbs are the natural choice (e.g., 'look into', 'put off', 'put up with').
+  reliability: D
+  source: Team observation
+  tier: 4
+sources:
+  corpus_evidence: Biber et al. (1999) LSWE Corpus — Phrasal verbs are overwhelmingly
+    more common in conversation and fiction than in academic prose and news. They
+    are a hallmark of informal, spoken English. Academic prose Latinate single-word
+    equivalents (investigate vs look into, postpone vs put off). This is one of the
+    strongest lexical markers of register variation in English.
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch.
+    5: Phrasal verbs and multi-word verbs (register distribution, conversation vs
+    academic prose)'
+  secondary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 14:
+    Phrasal Verbs-14.5'
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: 'Separable phrasal verbs: object can go between verb and particle or after
-    the particle'
-  type: grammatical
-  examples:
+- examples:
   - Turn on the light. = Turn the light on.
   - Pick up the book. = Pick the book up.
   - Turn off the TV. = Turn the TV off.
-- rule: 'Inseparable phrasal verbs: object must come after the particle (no separation)'
+  rule: 'Separable phrasal verbs: object can go between verb and particle or after
+    the particle'
   type: grammatical
-  examples:
+- examples:
   - Look after the dog. (NOT Look the dog after)
   - Run into an old friend. (NOT Run an old friend into)
   - Look into the problem. (NOT Look the problem into)
-- rule: Pronouns always go between verb and particle in separable phrasal verbs
+  rule: 'Inseparable phrasal verbs: object must come after the particle (no separation)'
   type: grammatical
-  examples:
+- examples:
   - Turn it on. (NOT Turn on it)
   - Pick it up. (NOT Pick up it)
   - Turn it off. (NOT Turn off it)
-- rule: Three-part phrasal verbs (verb + particle + preposition) are always inseparable
+  rule: Pronouns always go between verb and particle in separable phrasal verbs
   type: grammatical
-  examples:
+- examples:
   - Look forward to meeting you.
   - Get along with your colleagues.
   - Come up with an idea.
   - Put up with the noise.
-- rule: 'Common phrasal verbs by particle: get (get up, get over, get along, get by),
-    take (take off, take up, take after, take over), put (put on, put off, put up
-    with, put away), turn (turn on, turn off, turn up, turn down), look (look after,
-    look into, look forward to, look up)'
-  type: lexical
-  examples:
+  rule: Three-part phrasal verbs (verb + particle + preposition) are always inseparable
+  type: grammatical
+- examples:
   - get up = wake up
   - take off = remove / depart
   - put off = postpone
   - turn down = reject / lower volume
   - look forward to = anticipate with pleasure
+  rule: 'Common phrasal verbs by particle: get (get up, get over, get along, get by),
+    take (take off, take up, take after, take over), put (put on, put off, put up
+    with, put away), turn (turn on, turn off, turn up, turn down), look (look after,
+    look into, look forward to, look up)'
+  type: lexical
+teaching:
+  methodology: Chunk-based teaching with contextual practice
+  recommended_activities:
+  - adaptation_notes: 'Students match phrasal verbs to their meanings: ''give up''
+      = ''quit'', ''look after'' = ''take care of'', ''run into'' = ''meet by chance''.
+      Practices vocabulary.'
+    duration: 10
+    name: Phrasal Verb Matching
+  - adaptation_notes: 'Students ask about each other''s daily routines using phrasal
+      verbs: ''What time do you get up?'' ''What do you put on first?'' ''Do you eat
+      out or eat in?'''
+    duration: 15
+    name: Daily Routine Dialogue
+  - adaptation_notes: 'Give students phrasal verbs. They decide if they are separable
+      or inseparable and create sentences: ''Turn on the light'' = separable. ''Look
+      after the dog'' = inseparable.'
+    duration: 10
+    name: Separable or Inseparable?
+  - adaptation_notes: Students write a short story using at least 8 phrasal verbs
+      from a list. They underline the phrasal verbs. Practices using multiple phrasal
+      verbs in context.
+    duration: 15
+    name: Phrasal Verb Story
+  tips:
+  - 'Parrott (2000) Ch. 10: Multiword verbs are one of the most important and difficult
+    features of English. Learners often fail to understand them and avoid using them
+    — a reasonable coping strategy. Some learners benefit from form analysis and classification;
+    others prefer learning as individual vocabulary items.'
+  - 'GB3 Ch. 14: Transitive phrasal verbs are separable — the particle can move after
+    the direct object: ''throw away the ball'' = ''throw the ball away.'' Pronoun
+    objects REQUIRE separation: ''throw it away'' (NOT *throw away it). Inseparable
+    phrasal verbs keep the particle next to the verb: ''came across an article'' =
+    ''came across it'' (NOT *came it across). Source: Celce-Murcia & Larsen-Freeman
+    (2015) GB3 3rd ed. Ch. 14 §14.3-14.5.'
+  - 'GB3 Ch. 14: Three-word phrasal verbs (verb + particle + preposition) must be
+    learned as units: put up with, come up with, look forward to, get along with,
+    cut down on, keep up with. Source: GB3 3rd ed. Ch. 14 §14.5.'
+  - Teach phrasal verbs as chunks, not as separate words. Students should memorize
+    'get up' as one unit, not 'get' + 'up'.
+  - 'Group phrasal verbs by particle: all ''get'' phrasal verbs together, all ''take''
+    phrasal verbs together. This helps students see patterns.'
+  - 'Use daily routine dialogues: ''What time do you get up?'' ''I turn on the coffee
+    first.'' Makes the grammar personal and practical.'
+  - 'Contrast phrasal verbs with single-word equivalents: ''look into'' = ''investigate'',
+    ''put off'' = ''postpone'', ''give up'' = ''quit''. This helps students understand
+    meaning.'
+  - 'Drill separable vs inseparable explicitly. This is a common source of errors.
+    Use pronouns to test: ''Turn it on'' (correct) vs ''Turn on it'' (incorrect).'
+  - 'Swan PEU: Teach separable vs inseparable phrasal verbs. Separable: "Turn on the
+    light" = "Turn the light on" = "Turn it on". Inseparable: "Look after the children"
+    (NOT "Look the children after").'
+  - 'Swan PEU: Three-part phrasal verbs are always inseparable. "Look forward to",
+    "put up with", "get on with". "I look forward to meeting you" (NOT "look forward
+    meeting you to").'
+title: Phrasal Verbs (Verb + Particle)
 use:
 - context: Daily routines
   description: Common phrasal verbs for everyday actions
@@ -140,85 +353,3 @@ use:
   - He broke up with his girlfriend.
   - They made up after the argument.
   - We look after our elderly parents.
-phonetics:
-- note: 'The particle is usually stressed in phrasal verbs: ''turn ON'', ''get UP'',
-    ''look AFTER''. The verb may be unstressed.'
-  example_generator:
-  - turn ON /tɜːn ɒn/
-  - get UP /ɡet ʌp/
-  - look AFTER /lʊk ɑːftə/
-  l1_issue: Many L1 speakers stress the verb instead of the particle. Teach correct
-    stress patterns for natural speech.
-- note: 'In connected speech, the verb and particle often blend: ''get up'' → /ɡet
-    ʌp/, ''turn on'' → /tɜːn ɒn/.'
-  example_generator:
-  - get up → /ɡet ʌp/
-  - pick up → /pɪk ʌp/
-  l1_issue: Portuguese and Spanish speakers often separate the verb and particle too
-    much. Teach blending for natural speech.
-teaching:
-  methodology: Chunk-based teaching with contextual practice
-  tips:
-  - Teach phrasal verbs as chunks, not as separate words. Students should memorize
-    'get up' as one unit, not 'get' + 'up'.
-  - 'Group phrasal verbs by particle: all ''get'' phrasal verbs together, all ''take''
-    phrasal verbs together. This helps students see patterns.'
-  - 'Use daily routine dialogues: ''What time do you get up?'' ''I turn on the coffee
-    first.'' Makes the grammar personal and practical.'
-  - 'Contrast phrasal verbs with single-word equivalents: ''look into'' = ''investigate'',
-    ''put off'' = ''postpone'', ''give up'' = ''quit''. This helps students understand
-    meaning.'
-  - 'Drill separable vs inseparable explicitly. This is a common source of errors.
-    Use pronouns to test: ''Turn it on'' (correct) vs ''Turn on it'' (incorrect).'
-  recommended_activities:
-  - name: Phrasal Verb Matching
-    duration: 10
-    adaptation_notes: 'Students match phrasal verbs to their meanings: ''give up''
-      = ''quit'', ''look after'' = ''take care of'', ''run into'' = ''meet by chance''.
-      Practices vocabulary.'
-  - name: Daily Routine Dialogue
-    duration: 15
-    adaptation_notes: 'Students ask about each other''s daily routines using phrasal
-      verbs: ''What time do you get up?'' ''What do you put on first?'' ''Do you eat
-      out or eat in?'''
-  - name: Separable or Inseparable?
-    duration: 10
-    adaptation_notes: 'Give students phrasal verbs. They decide if they are separable
-      or inseparable and create sentences: ''Turn on the light'' = separable. ''Look
-      after the dog'' = inseparable.'
-  - name: Phrasal Verb Story
-    duration: 15
-    adaptation_notes: Students write a short story using at least 8 phrasal verbs
-      from a list. They underline the phrasal verbs. Practices using multiple phrasal
-      verbs in context.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I looked up the word in the dictionary.* (literal) vs *I looked up to my
-    teacher.* (figurative: admire)'
-  correction: Both are correct but have different meanings.
-  explanation: Phrasal verbs often have multiple meanings. 'Look up' can mean 'search
-    for information' (literal) or 'admire' (figurative). Context determines meaning.
-  l1_groups:
-  - All L1 groups
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

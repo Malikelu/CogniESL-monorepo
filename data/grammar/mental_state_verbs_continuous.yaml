@@ -1,42 +1,106 @@
-grammar_point: mental_state_verbs_continuous
-title: Mental-State Verbs in Continuous Tenses
+citations:
+- claim: 'Core meaning: Mental-state verbs (also called stative verbs) are normally
+    used in simple tenses because they descr'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
+    The Tense-Aspect System'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used for everyday
+    communication and is among the most frequent patterns'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
+    The Tense-Aspect System'
+  tier: 1
+- claim: Common error '*I am knowing the answer.*' for Portuguese, Spanish, Chinese
+    speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+common_errors:
+- correction: I know the answer.
+  error: '*I am knowing the answer.*'
+  explanation: Stative verbs are not used in continuous forms.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: State and dynamic verbs'
 description: The use of stative and mental-state verbs (think, feel, love, hate, know,
   understand, believe, remember) in continuous tenses, which is normally restricted
   but possible in specific contexts for emphasis or temporary meaning.
+dialectal_variation: null
+discourse_notes:
+- note: Stative verbs in progressive aspect express ongoing mental states or attitudes,
+    often marking informal or emotive usage.
+  affirmative:
+    example_generator:
+      contexts:
+      - temporary feelings
+      - developing opinions
+      - active mental processes
+      min_examples: 4
+    structure: Subject + am/is/are + verb-ing (for mental-state verbs being used in
+      their dynamic sense). Subject + was/were + verb-ing (past continuous for temporary
+      past states). Subject + has/have + been + verb-ing (present perfect continuous
+      for developing states).
+  negative:
+    example_generator:
+      contexts:
+      - denying temporary states
+      - expressing absence of feeling
+      min_examples: 3
+    structure: Subject + am/is/are + not + verb-ing. Subject + was/were + not + verb-ing.
+  questions:
+    example_generator:
+      contexts:
+      - checking temporary states
+      - enquiring about feelings
+      min_examples: 3
+    structure: Am/Is/Are + subject + verb-ing? Was/Were + subject + verb-ing?
+grammar_point: mental_state_verbs_continuous
 level: B2
 meaning:
-  core_meaning: Mental-state verbs (also called stative verbs) are normally used in
-    simple tenses because they describe states, not actions. However, they can appear
-    in continuous tenses when the meaning shifts to emphasise a temporary situation,
-    a developing feeling, an active process, or a repeated/emerging behaviour.
-  timeline: Continuous forms emphasise that the mental state is temporary, developing,
-    or in progress at a specific moment, rather than a permanent or general state.
-  contrast: 'Stative (simple): I think this is correct. (opinion) Dynamic (continuous):
-    I am thinking about the problem. (mental process) Stative (simple): I feel this
-    is wrong. (opinion) Dynamic (continuous): I am feeling unwell. (physical sensation
-    right now) Stative (simple): I love chocolate. (general preference) Dynamic (continuous):
-    I am loving this holiday. (temporary, emphatic)'
   ccqs:
-  - question: Can we say I am thinking that this is correct?
-    answer: Not for opinions. I think that this is correct is correct. But I am thinking
+  - answer: Not for opinions. I think that this is correct is correct. But I am thinking
       about this problem is fine for an active mental process.
     purpose: Tests whether the learner understands the stative/dynamic distinction
       for mental state verbs. 'I think that...' (opinion, stative) cannot be used
       in continuous form. 'I am thinking about...' (active mental process, dynamic)
       can.
-  - question: What is the difference between I feel it is wrong and I am feeling it
-      is wrong?
-    answer: I feel it is wrong expresses a general opinion. I am feeling it is wrong
+    question: Can we say I am thinking that this is correct?
+  - answer: I feel it is wrong expresses a general opinion. I am feeling it is wrong
       is less common and suggests a developing or tentative opinion.
     purpose: Tests whether the learner understands that continuous forms of mental
       state verbs express temporariness and tentativeness. 'I am feeling that...'
       suggests the opinion is still developing, not settled.
-  - question: Is I am loving this grammatically correct?
-    answer: Yes, in modern English. It emphasises a temporary, intense enjoyment.
+    question: Can you explain the difference between I feel it is wrong and I am feeling
+      it is wrong by giving an example of when to use each?
+  - answer: Yes, in modern English. It emphasises a temporary, intense enjoyment.
       It is more emphatic than I love this.
     purpose: Tests whether the learner understands that traditionally stative verbs
       (love, like, hate) can be used in continuous form for emphasis and temporary
       intensity in modern usage. 'I am loving this!' = right now, intensely.
+    question: Is I am loving this grammatically correct?
+  - answer: No. Know is a pure stative verb that does not have a dynamic meaning and
+      cannot be used in continuous form. Unlike think or feel, which have both stative
+      and dynamic uses, know always describes a state of awareness and must remain
+      in simple form (I know the answer).
+    purpose: Tests whether the learner can identify which mental state verbs are purely
+      stative (know, believe, understand) versus those that allow both stative and
+      dynamic uses (think, feel, love). This distinction is important because not
+      all mental state verbs behave the same way with continuous tenses.
+    question: Can we say I am knowing the answer in any context?
+  contrast: 'Stative (simple): I think this is correct. (opinion) Dynamic (continuous):
+    I am thinking about the problem. (mental process) Stative (simple): I feel this
+    is wrong. (opinion) Dynamic (continuous): I am feeling unwell. (physical sensation
+    right now) Stative (simple): I love chocolate. (general preference) Dynamic (continuous):
+    I am loving this holiday. (temporary, emphatic)'
+  core_meaning: Mental-state verbs (also called stative verbs) are normally used in
+    simple tenses because they describe states, not actions. However, they can appear
+    in continuous tenses when the meaning shifts to emphasise a temporary situation,
+    a developing feeling, an active process, or a repeated/emerging behaviour.
   example_generator:
     contexts:
     - expressing opinions
@@ -48,161 +112,138 @@ meaning:
     - Advertising has popularised forms like I am loving it (McDonalds slogan)
     - In formal writing, the simple form is still preferred for stative meanings
     min_examples: 5
-form:
-  affirmative:
-    structure: Subject + am/is/are + verb-ing (for mental-state verbs being used in
-      their dynamic sense). Subject + was/were + verb-ing (past continuous for temporary
-      past states). Subject + has/have + been + verb-ing (present perfect continuous
-      for developing states).
-    example_generator:
-      contexts:
-      - temporary feelings
-      - developing opinions
-      - active mental processes
-      min_examples: 4
-  negative:
-    structure: Subject + am/is/are + not + verb-ing. Subject + was/were + not + verb-ing.
-    example_generator:
-      contexts:
-      - denying temporary states
-      - expressing absence of feeling
-      min_examples: 3
-  questions:
-    structure: Am/Is/Are + subject + verb-ing? Was/Were + subject + verb-ing?
-    example_generator:
-      contexts:
-      - checking temporary states
-      - enquiring about feelings
-      min_examples: 3
-sub_rules:
-- rule: Think. Simple for opinions, continuous for active mental process
-  type: grammatical
-  examples:
-  - I think you are right. (opinion, simple)
-  - I am thinking about what you said. (mental process, continuous)
-  - She was thinking of changing her mind. (considering, continuous)
-- rule: Feel. Simple for opinions and general states, continuous for physical sensations
-    and developing emotions
-  type: grammatical
-  examples:
-  - I feel that we should wait. (opinion, simple)
-  - I am feeling tired today. (physical sensation, continuous)
-  - She was feeling optimistic about the future. (developing emotion, continuous)
-- rule: Love and hate. Simple for general preferences, continuous for temporary emphasis
-  type: grammatical
-  examples:
-  - I love chocolate. (general preference, simple)
-  - I am loving this new restaurant. (temporary emphasis, continuous)
-  - She is hating every minute of this course. (temporary emphasis, continuous)
-- rule: See. Simple for perception, continuous for meeting/understanding
-  type: grammatical
-  examples:
-  - I see what you mean. (understand, simple)
-  - I am seeing the doctor tomorrow. (meeting, continuous)
-  - Are you seeing anyone? (dating, continuous)
-- rule: Have. Simple for possession, continuous for experiencing
-  type: grammatical
-  examples:
-  - I have a car. (possession, simple)
-  - I am having lunch. (experiencing, continuous)
-  - She is having a difficult time. (experiencing, continuous)
-- rule: Remember and forget. Simple for memory, continuous for the act of recalling
-  type: grammatical
-  examples:
-  - I remember that day clearly. (memory, simple)
-  - I am trying to remember his name. (act of recalling, continuous)
-use:
-- name: Emphasising temporary feelings
-  description: Using continuous forms to highlight that a feeling is temporary or
-    unusual
-  examples:
-  - I am feeling much better today. (temporary, not my normal state)
-  - She is enjoying the course more than she expected. (developing feeling)
-  key_point: The continuous form signals that this is not a permanent state.
-- name: Active mental processes
-  description: Using continuous forms for thinking, considering, and deliberating
-  examples:
-  - I am thinking about changing jobs. (active consideration)
-  - We are considering your application. (process in progress)
-  key_point: The verb shifts from stative (opinion) to dynamic (process).
-- name: Informal emphasis and enthusiasm
-  description: Using continuous forms for dramatic or enthusiastic effect
-  examples:
-  - I am loving this party!
-  - We are having such a great time.
-  key_point: Common in informal speech and advertising. Adds emotional intensity.
-- name: Developing or changing states
-  description: Using continuous forms to show that a mental state is evolving
-  examples:
-  - I am beginning to understand the problem.
-  - She is starting to like her new colleagues.
-  key_point: Emphasises the transition from one state to another.
+  timeline: Continuous forms emphasise that the mental state is temporary, developing,
+    or in progress at a specific moment, rather than a permanent or general state.
 phonetics:
-- note: 'In continuous forms, the -ing ending is clearly pronounced: thinking, feeling,
-    having'
-  example_generator:
+- example_generator:
     contexts:
     - pronunciation practice
   l1_issue: Learners may drop the -ing ending, making the continuous form sound like
     the simple form
-- note: The auxiliary (am, is, are) in continuous forms is typically reduced in connected
-    speech
-  example_generator:
+  note: 'In continuous forms, the -ing ending is clearly pronounced: thinking, feeling,
+    having'
+- example_generator:
     contexts:
     - connected speech
   l1_issue: Over-pronouncing the auxiliary can make speech sound stilted
+  note: The auxiliary (am, is, are) in continuous forms is typically reduced in connected
+    speech
+register_notes:
+- note: 'Biber et al. (2021) — Mental state verbs in progressive: normally non-progressive,
+    but conversation increasingly uses progressive (''I''m understanding more now'')
+    for developing states. Conversational/ informal register feature. Ch. 6.3.3.1'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 6.3.3.1
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
+    The Tense-Aspect System'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+sub_rules:
+- examples:
+  - I think you are right. (opinion, simple)
+  - I am thinking about what you said. (mental process, continuous)
+  - She was thinking of changing her mind. (considering, continuous)
+  rule: Think. Simple for opinions, continuous for active mental process
+  type: grammatical
+- examples:
+  - I feel that we should wait. (opinion, simple)
+  - I am feeling tired today. (physical sensation, continuous)
+  - She was feeling optimistic about the future. (developing emotion, continuous)
+  rule: Feel. Simple for opinions and general states, continuous for physical sensations
+    and developing emotions
+  type: grammatical
+- examples:
+  - I love chocolate. (general preference, simple)
+  - I am loving this new restaurant. (temporary emphasis, continuous)
+  - She is hating every minute of this course. (temporary emphasis, continuous)
+  rule: Love and hate. Simple for general preferences, continuous for temporary emphasis
+  type: grammatical
+- examples:
+  - I see what you mean. (understand, simple)
+  - I am seeing the doctor tomorrow. (meeting, continuous)
+  - Are you seeing anyone? (dating, continuous)
+  rule: See. Simple for perception, continuous for meeting/understanding
+  type: grammatical
+- examples:
+  - I have a car. (possession, simple)
+  - I am having lunch. (experiencing, continuous)
+  - She is having a difficult time. (experiencing, continuous)
+  rule: Have. Simple for possession, continuous for experiencing
+  type: grammatical
+- examples:
+  - I remember that day clearly. (memory, simple)
+  - I am trying to remember his name. (act of recalling, continuous)
+  rule: Remember and forget. Simple for memory, continuous for the act of recalling
+  type: grammatical
 teaching:
   methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Students classify sentences as stative (simple) or dynamic (continuous).
+      Discuss why each form is used.
+    duration: 10
+    name: Stative or dynamic?
+  - adaptation_notes: 'Students write two sentences with the same verb: one stative,
+      one continuous. Explain the difference in meaning. Example: I think it is great
+      vs I am thinking about it.'
+    duration: 15
+    name: Meaning shift pairs
+  - adaptation_notes: Students describe their current temporary feelings (continuous)
+      vs their general preferences (simple). Partner asks follow-up questions.
+    duration: 20
+    name: 'Role-play: temporary vs permanent'
   tips:
+  - 'GB3 Ch. 7: The key distinction is mental ACTIVITY vs mental STATE. ''I am thinking
+    about the answer'' = mental activity (dynamic, can take progressive). ''I think
+    it is 144'' = mental state/report (stative, simple form). Other examples: ''I
+    am seeing the doctor tomorrow'' (arrangement, dynamic) vs ''I see what you mean''
+    (understanding, state). Source: Celce-Murcia & Larsen-Freeman (2015) GB3 3rd ed.
+    Ch. 7 §7.5.'
+  - 'GB3 Ch. 7: Progressive statives with mental verbs — advanced uses for specific
+    effects: vividness (''I''m hearing dripping in the middle of the night''), personal
+    involvement (''Are you liking it?''), change over time (''I''m understanding less
+    and less''). These are NOT errors but deliberate choices. Source: Celce-Murcia
+    & Larsen-Freeman (2015) GB3 3rd ed. Ch. 7 §7.3 (citing Gavis 1997).'
   - 'Present pairs of sentences: one simple, one continuous. Ask students to identify
     the difference in meaning.'
   - Use a table showing the same verb in stative vs dynamic meanings
   - 'Start with the most common examples: think, feel, love, have'
   - 'Discuss register: continuous forms of stative verbs are more common in informal
     English'
-  recommended_activities:
-  - name: Stative or dynamic?
-    duration: 10
-    adaptation_notes: Students classify sentences as stative (simple) or dynamic (continuous).
-      Discuss why each form is used.
-  - name: Meaning shift pairs
-    duration: 15
-    adaptation_notes: 'Students write two sentences with the same verb: one stative,
-      one continuous. Explain the difference in meaning. Example: I think it is great
-      vs I am thinking about it.'
-  - name: 'Role-play: temporary vs permanent'
-    duration: 20
-    adaptation_notes: Students describe their current temporary feelings (continuous)
-      vs their general preferences (simple). Partner asks follow-up questions.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
-    Relative Clauses, §11.1-11.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I am knowing the answer.*'
-  correction: I know the answer.
-  explanation: Stative verbs are not used in continuous forms.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used for everyday communication and is
-    among the most frequent patterns in spoken English.
-- note: In academic writing, this structure appears in discussions of established
-    knowledge, methodology, and findings.
-- note: In news reports, this structure is used for reporting events and attributing
-    statements.
+  - 'Swan PEU: Mental state verbs — think, know, understand, remember, believe, want,
+    love, hate. Usually stative, BUT many have dynamic meanings: ''I think he''''s
+    nice'' (opinion, stative) vs ''I''''m thinking about it'' (process, dynamic).
+    ''I have a car'' vs ''I''''m having dinner.'''
+title: Mental-State Verbs in Continuous Tenses
+use:
+- description: Using continuous forms to highlight that a feeling is temporary or
+    unusual
+  examples:
+  - I am feeling much better today. (temporary, not my normal state)
+  - She is enjoying the course more than she expected. (developing feeling)
+  key_point: The continuous form signals that this is not a permanent state.
+  name: Emphasising temporary feelings
+- description: Using continuous forms for thinking, considering, and deliberating
+  examples:
+  - I am thinking about changing jobs. (active consideration)
+  - We are considering your application. (process in progress)
+  key_point: The verb shifts from stative (opinion) to dynamic (process).
+  name: Active mental processes
+- description: Using continuous forms for dramatic or enthusiastic effect
+  examples:
+  - I am loving this party!
+  - We are having such a great time.
+  key_point: Common in informal speech and advertising. Adds emotional intensity.
+  name: Informal emphasis and enthusiasm
+- description: Using continuous forms to show that a mental state is evolving
+  examples:
+  - I am beginning to understand the problem.
+  - She is starting to like her new colleagues.
+  key_point: Emphasises the transition from one state to another.
+  name: Developing or changing states

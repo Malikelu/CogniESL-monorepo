@@ -1,31 +1,93 @@
-grammar_point: place_adverbs
-title: Common Place Adverbs
+citations:
+- claim: 'Core meaning: Place adverbs tell us WHERE something happens or where something/someone
+    is. This includes deictic place adverbs (here, there, over there) and general
+    locative adverbs (everywhere, somewhere, nowhere, upstairs, downstairs).'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbials'
+  tier: 3
+- claim: 'Register distribution: Place adverbs and locative expressions are more common
+    in conversation than in academic prose, which tends to use more precise locative
+    descriptions.'
+  reliability: B
+  source: 'Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch.
+    12: Register distribution of locative expressions'
+  tier: 2
+- claim: Common error '*Put it here.* (pointing to a distant location)' for Portuguese,
+    Spanish, Chinese speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+common_errors:
+- correction: Put it there. / Put it over there.
+  error: '*Put it here.* (pointing to a distant location)'
+  explanation: '''Here'' is for locations near the speaker. ''There'' is for locations
+    away from the speaker. Using ''here'' for distant objects is a common error.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
 description: 'Words that tell us where: here, there, everywhere, somewhere, nowhere,
   upstairs, downstairs, inside, outside.'
+dialectal_variation: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - giving directions
+      - describing locations
+      - talking about where things are
+      min_examples: 4
+    structure: 'Subject + verb + place adverb: ''I live here.'', ''She is upstairs.'''
+  negative:
+    example_generator:
+      contexts:
+      - giving directions
+      - describing locations
+      - talking about where things are
+      min_examples: 4
+    structure: 'Subject + verb + no-/nowhere: ''I found it nowhere.'' / ''There''s
+      nothing here.'''
+  questions:
+    example_generator:
+      contexts:
+      - giving directions
+      - describing locations
+      - talking about where things are
+      min_examples: 4
+    structure: 'Where + be/auxiliary + subject?: ''Where is the bathroom?'', ''Where
+      do you live?'''
+grammar_point: place_adverbs
 level: A1
 meaning:
+  ccqs:
+  - answer: Here — the teacher is pointing to a desk right next to them.
+    purpose: Tests whether the learner understands that 'here' refers to a location
+      close to the speaker, and 'there' to a location away from the speaker.
+    question: The teacher says 'Put your book here' while pointing to the desk next
+      to them. Does 'here' mean near or far from the teacher?
+  - answer: There — it is away from the speaker. 'Over there' would be even more distant.
+    purpose: Tests whether the learner can distinguish between 'here' (near speaker),
+      'there' (away from speaker), and 'over there' (more distance).
+    question: You are giving directions. The bathroom is down the hall. Do you say
+      'It is here' or 'It is there'?
+  - answer: Here and there are deictic — their meaning depends on where the speaker
+      is. If I say Come here, I mean Come to where I am. If I say Put it there, I
+      mean Put it in that place, not where I am.
+    purpose: Tests whether the learner understands the deictic nature of place adverbs
+      — the meaning changes depending on the speaker's position and intention.
+    question: If I say 'Come here,' where do you go? If I say 'Put it there,' where
+      do you put it?
+  contrast: '''Here'' = near the speaker vs ''There'' = far from the speaker'
   core_meaning: Place adverbs tell us WHERE something happens or where something/someone
     is. This grammar point is essential for expressing place adverbs in English. Learners
     at this level need to understand both the form and the appropriate contexts for
     use. Common errors include confusion with related structures and inappropriate
     register use.
-  timeline: Timeless — describes location, not time.
-  contrast: '''Here'' = near the speaker vs ''There'' = far from the speaker'
-  ccqs:
-  - question: Does this word tell us WHERE?
-    answer: Yes — it's a place adverb.
-    purpose: 'Tests whether the learner understands the spatial reference system:
-      here (near speaker), there (away from speaker), over there (distant from both
-      speaker and listener).'
-  - question: Is it near or far from the speaker?
-    answer: Here = near, There = far
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Is it near or far from the speaker?...'
-      checks conceptual understanding, not just memorization.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      place adverbs and explain why they are incorrect.
   example_generator:
     contexts:
     - giving directions
@@ -34,44 +96,55 @@ meaning:
     - daily routines
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Subject + verb + place adverb: ''I live here.'', ''She is upstairs.'''
-    example_generator:
-      contexts:
-      - giving directions
-      - describing locations
-      - talking about where things are
-      min_examples: 4
-  negative:
-    structure: 'Subject + verb + no-/nowhere: ''I found it nowhere.'' / ''There''s
-      nothing here.'''
-    example_generator:
-      contexts:
-      - giving directions
-      - describing locations
-      - talking about where things are
-      min_examples: 4
-  questions:
-    structure: 'Where + be/auxiliary + subject?: ''Where is the bathroom?'', ''Where
-      do you live?'''
-    example_generator:
-      contexts:
-      - giving directions
-      - describing locations
-      - talking about where things are
-      min_examples: 4
+  timeline: Timeless — describes location, not time.
+phonetics:
+- contexts:
+  - emphasis
+  example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Some L1 speakers confuse 'here' and 'there'
+  note: Stress on 'here' and 'there' for emphasis
+register_notes:
+- note: 'Biber et al. (1999) — Place adverbs/locative expressions: conversation uses
+    more deictic place expressions (here, there, this way); academic prose uses more
+    precise locative descriptions. Ch. 12.5'
+  reliability: B
+  source: Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch.
+    12.5
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Here = near speaker, There = far from speaker
-  type: semantic
-  examples:
+- examples:
   - Come here. (near me)
   - Put it there. (over there)
-- rule: No- words for negative meaning
-  type: grammatical
-  examples:
+  rule: Here = near speaker, There = far from speaker
+  type: semantic
+- examples:
   - nowhere = not anywhere
   - nothing = not anything
+  rule: No- words for negative meaning
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Hide objects, students describe where they are using place adverbs.
+    duration: 10
+    name: Hide and Seek
+  tips:
+  - Use classroom locations to demonstrate
+  - Use gestures to reinforce here/there
+  - 'Swan PEU: Place adverbs — here, there, everywhere, somewhere, nowhere, abroad,
+    overseas, downtown, upstairs. Unlike prepositions, these can stand alone: ''She
+    lives there'' but NOT ''at there.'''
+title: Common Place Adverbs
 use:
 - context: Giving directions
   description: Telling someone where to go
@@ -83,52 +156,3 @@ use:
   examples:
   - My keys are here somewhere.
   - She lives nearby.
-phonetics:
-- note: Stress on 'here' and 'there' for emphasis
-  contexts:
-  - emphasis
-  l1_issue: Some L1 speakers confuse 'here' and 'there'
-  example_generator:
-    contexts:
-    - connected speech
-teaching:
-  methodology: PPP
-  tips:
-  - Use classroom locations to demonstrate
-  - Use gestures to reinforce here/there
-  recommended_activities:
-  - name: Hide and Seek
-    duration: 10
-    adaptation_notes: Hide objects, students describe where they are using place adverbs.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*Put it here.* (pointing to a distant location)'
-  correction: Put it there. / Put it over there.
-  explanation: '''Here'' is for locations near the speaker. ''There'' is for locations
-    away from the speaker. Using ''here'' for distant objects is a common error.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

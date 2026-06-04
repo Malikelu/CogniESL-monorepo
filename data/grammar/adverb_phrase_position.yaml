@@ -1,30 +1,104 @@
-grammar_point: adverb_phrase_position
-title: Position of Adverb Phrases
+citations:
+- claim: 'Core meaning: Adverbs can go in different positions in a sentence'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday
+    communication.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs'
+  tier: 1
+- claim: Common error '*She quickly runs home.*' for Portuguese, Spanish, Chinese
+    speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: L1 transfer in adverb phrase position varies significantly across language
+    backgrounds — Swan & Smith document contrastive patterns for speakers of different
+    L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+common_errors:
+- correction: She runs home quickly.
+  error: '*She quickly runs home.*'
+  explanation: Manner adverbs typically go after the verb.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: B
 description: Where adverbs and adverb phrases go in a sentence — front, mid, and end
   position. Different types of adverbs have different preferred positions.
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - front position
+      - mid position
+      - end position
+      min_examples: 4
+    structure: 'Front: Yesterday, I went to the store. / Mid: I always go to the store.
+      / End: I went to the store yesterday.'
+  negative:
+    example_generator:
+      contexts:
+      - negative adverbs
+      - inversion
+      min_examples: 3
+    structure: 'Same positions: Never have I seen such a thing. (front with inversion)
+      / I never go there. (mid)'
+  questions:
+    example_generator:
+      contexts:
+      - question formation
+      min_examples: 3
+    structure: Where does the adverb go?
+grammar_point: adverb_phrase_position
 level: B2
 meaning:
-  core_meaning: Adverbs can go in different positions in a sentence. The position
-    depends on the type of adverb and what you want to emphasize. Front position adds
-    emphasis, end position is neutral.
-  timeline: Depends on the tense used.
-  contrast: Front position = Yesterday, I went to the store. (emphasis) vs End position
-    = I went to the store yesterday. (neutral)
   ccqs:
-  - question: Is the adverb at the beginning, middle, or end?
-    answer: Different positions have different emphasis.
+  - answer: Different positions have different emphasis.
     purpose: Tests whether the learner understands that adverbs can occupy different
       positions (front, mid, end) with different emphasis. This is important because
       adverb position affects the focus and naturalness of a sentence.
-  - question: What type of adverb is it?
-    answer: Manner, frequency, time, or place — each has preferred positions.
+    question: Is the adverb at the beginning, middle, or end?
+  - answer: Manner, frequency, time, or place — each has preferred positions.
     purpose: Tests whether the learner can identify the type of adverb (manner, frequency,
       time, place) and knows its preferred position. This is important because different
       adverb types follow different placement rules.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
+    question: What type of adverb is it?
+  - answer: End position is neutral and most common in everyday English. Front position
+      ('Suddenly, the door opened') adds emphasis or narrative drama. Mid-position
+      with a time adverb ('I yesterday went to the store') sounds unnatural in modern
+      English. Position depends on adverb type and intended effect.
     purpose: Tests whether the learner can identify common errors associated with
       adverb phrase position and explain why they are incorrect.
+    question: Which sounds more natural — 'Yesterday I went to the store', 'I yesterday
+      went to the store', or 'I went to the store yesterday'?
+  - answer: Never have I seen such talent is more emphatic because fronting a negative
+      adverb (Never) triggers subject-auxiliary inversion, which draws attention to
+      the dramatic statement. The neutral version I have never seen such talent states
+      the fact without special emphasis. Inversion after fronted negatives is a formal
+      and literary device.
+    purpose: Tests whether the learner understands the relationship between fronted
+      negative adverbs and subject-auxiliary inversion. This grammatical rule is essential
+      for producing formal, emphatic English and for recognizing why sentences like
+      Never have I seen have a different impact than their neutrally-ordered counterparts.
+    question: Never have I seen such talent versus I have never seen such talent --
+      which is more emphatic and why?
+  contrast: Front position = Yesterday, I went to the store. (emphasis) vs End position
+    = I went to the store yesterday. (neutral)
+  core_meaning: Adverbs can go in different positions in a sentence. The position
+    depends on the type of adverb and what you want to emphasize. Front position adds
+    emphasis, end position is neutral.
   example_generator:
     contexts:
     - sentence structure
@@ -35,57 +109,75 @@ meaning:
     - Word order errors with adverbs are very common across L1 groups
     - Some L1 speakers put all adverbs at the end
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Front: Yesterday, I went to the store. / Mid: I always go to the store.
-      / End: I went to the store yesterday.'
-    example_generator:
-      contexts:
-      - front position
-      - mid position
-      - end position
-      min_examples: 4
-  negative:
-    structure: 'Same positions: Never have I seen such a thing. (front with inversion)
-      / I never go there. (mid)'
-    example_generator:
-      contexts:
-      - negative adverbs
-      - inversion
-      min_examples: 3
-  questions:
-    structure: Where does the adverb go?
-    example_generator:
-      contexts:
-      - question formation
-      min_examples: 3
+  timeline: Depends on the tense used.
+phonetics:
+- example_generator:
+    contexts:
+    - emphasis
+  l1_issue: Many L1 speakers put all adverbs at the end, sounding unnatural
+  note: Stress changes with position — front position gets more emphasis
+register_notes:
+- note: 'Biber et al. (2021) — Adverbial position: fronting (initial position) is
+    more common in written registers (news, fiction); medial position dominates conversation.
+    Academic prose uses more carefully placed stance adverbials. Ch. 11.2'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 11.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Frequency adverbs — mid position before main verb, after be
-  type: word_order
-  examples:
+- examples:
   - I always eat breakfast.
   - She is never late.
   - They often go out.
-- rule: Manner adverbs — end position
+  rule: Frequency adverbs — mid position before main verb, after be
   type: word_order
-  examples:
+- examples:
   - She speaks English fluently.
   - He drove carefully.
-- rule: Time adverbs — front or end position
+  rule: Manner adverbs — end position
   type: word_order
-  examples:
+- examples:
   - Yesterday, I went to the store.
   - I went to the store yesterday.
-- rule: Place adverbs — end position
+  rule: Time adverbs — front or end position
   type: word_order
-  examples:
+- examples:
   - I live here.
   - She went home.
-- rule: Front position with inversion for negative adverbs
+  rule: Place adverbs — end position
   type: word_order
-  examples:
+- examples:
   - Never have I seen such a thing.
   - Seldom do we see him.
+  rule: Front position with inversion for negative adverbs
+  type: word_order
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Students move adverbs to different positions and notice meaning
+      changes.
+    duration: 10
+    name: Adverb Position Game
+  tips:
+  - 'Parrott (2000): Parrott (2000) Ch. 5: Adverbs can occupy a range of positions.
+    Five sentence positions: before whole clause, before verb, between auxiliary and
+    main verb, end of clause, before adverbials. Placing adverb between verb and object
+    (I like very much music) is a common learner error.'
+  - Use the MIFF rule for position
+  - Practice moving adverbs and noticing emphasis changes
+  - 'Swan (2016) PEU: Three positions for adverbials — initial (end weight, linking),
+    mid (after auxiliary before verb), end (most common). Choice affects emphasis
+    and formality.'
+title: Position of Adverb Phrases
 use:
 - context: Emphasizing information
   description: Moving adverbs to the front for emphasis
@@ -97,50 +189,3 @@ use:
   examples:
   - I always wake up early.
   - She is usually on time.
-phonetics:
-- note: Stress changes with position — front position gets more emphasis
-  example_generator:
-    contexts:
-    - emphasis
-  l1_issue: Many L1 speakers put all adverbs at the end, sounding unnatural
-teaching:
-  methodology: Guided discovery
-  tips:
-  - Use the MIFF rule for position
-  - Practice moving adverbs and noticing emphasis changes
-  recommended_activities:
-  - name: Adverb Position Game
-    duration: 10
-    adaptation_notes: Students move adverbs to different positions and notice meaning
-      changes.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 14:
-    Adverbs, §14.1-14.8'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*She quickly runs home.*'
-  correction: She runs home quickly.
-  explanation: Manner adverbs typically go after the verb.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

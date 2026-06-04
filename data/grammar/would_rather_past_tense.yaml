@@ -21,17 +21,27 @@ meaning:
   ccqs:
   - question: What structure do we use for past regrets with would rather
     answer: Would rather have plus past participle.
-    purpose: Tests whether the learner understands a key concept of would_rather_past_tense.
-      This is fundamental for correct use of this grammar point.
+    purpose: Tests whether the learner knows the past perfect form 'would rather have
+      + past participle' for expressing past preferences and regrets.
   - question: Can we use a different structure here with the same meaning?
     answer: No — changing the structure would change the meaning or make the sentence
       ungrammatical.
-    purpose: Tests whether the learner understands that would rather past tense is
-      the only appropriate structure for this meaning/context.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      would rather past tense and explain why they are incorrect.
+    purpose: Tests whether the learner understands that 'would rather' with a different
+      subject is the appropriate structure for expressing preferences about others'
+      actions.
+  - question: What is the difference in meaning between these two forms?
+    answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can distinguish between 'would rather + base
+      verb' (present/future) and 'would rather + past simple with different subject'
+      (subjunctive for others' actions).
+  - question: Which is correct? 'I would rather you stayed here' or *'I would rather
+      you stay here'?
+    answer: '''I would rather you stayed here.'' After ''would rather'' with a different
+      subject, use the past tense (subjunctive-like) to talk about present/future
+      preference.'
+    purpose: Tests whether the learner knows that 'would rather + different subject'
+      takes past simple (not base verb) for present/future meaning — the subjunctive
+      pattern.
   example_generator:
     contexts:
     - everyday situations
@@ -118,6 +128,9 @@ teaching:
   - Start with present/future preferences using 'Would you rather X or Y?' games.
   - Contrast 'would rather' and 'would prefer' immediately to avoid structure confusion.
   - Practice the 'would rather + someone + past simple' structure with role-play requests.
+  - 'Swan PEU: ''Would rather + bare infinitive'' for present preference: ''I''''d
+    rather stay.'' ''Would rather + subject + past tense'' for hypothetical: ''I''''d
+    rather you didn''''t tell anyone.'' = please don''t. Polite and indirect.'
   recommended_activities:
   - name: Past Regrets
     duration: 15
@@ -128,34 +141,92 @@ teaching:
     adaptation_notes: 'Students express regrets about what others did: ''I would rather
       she had told me.'' ''He would rather they had not come.'''
 sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
-    Modals, §9.1-9.6'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8:
+    Modal Auxiliaries and Related Phrasal Forms'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
     University Press.
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
 common_errors:
-- error: '*I would prefer to don''t go.*'
-  correction: I would prefer not to go.
-  explanation: Would prefer + not to + verb.
+- error: '*I would rather you stay here.*'
+  correction: I would rather you stayed here.
+  explanation: After 'would rather' with a different subject, use past simple (subjunctive)
+    for present/future preference about others.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Chinese
+  reliability: D
+  flagged: true
+- error: '*I would rather have went to the party.*'
+  correction: I would rather have gone to the party.
+  explanation: '''Would rather have'' must be followed by a past participle, not a
+    past simple form.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+  flagged: true
+- error: '*I would rather she tell me the truth.*'
+  correction: I would rather she told me the truth.
+  explanation: For preferences about others' actions, use past simple after 'would
+    rather' (subjunctive mood), not base verb.
   l1_groups:
   - Portuguese
   - Spanish
   - Chinese
+  reliability: D
+  flagged: true
 register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
+- note: 'Biber et al. (2021) — ''Would rather'' with past tense (unreal preference):
+    conversational and informal written register. Academic prose uses more explicit
+    preference framing. Ch. 6.6'
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 6.6
+  reliability: C
 dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
+- note: The subjunctive use of 'would rather + subject + past simple' is standard
+    in both BrE and AmE. Some advanced learners avoid this structure in favor of 'I
+    wish' or 'I want' due to L1 transfer.
 discourse_notes:
-- note: In conversation, this structure is used for everyday communication and is
-    among the most frequent patterns in spoken English.
-- note: In academic writing, this structure appears in discussions of established
-    knowledge, methodology, and findings.
-- note: In news reports, this structure is used for reporting events and attributing
-    statements.
+- note: '''Would rather + subject + past simple'' functions as a polite/indirect way
+    to express preferences about others'' actions (subjunctive mood). The past tense
+    form does not refer to past time.'
+- note: '''Would rather have + past participle'' expresses regret or preference about
+    past events. Common in conversational narratives.'
+citations:
+- claim: 'Core meaning: Expresses personal preference for one option over another'
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal
+    Auxiliaries and Related Phrasal Forms'
+  tier: 1
+  reliability: B
+- claim: 'Register distribution: Conversational and informal written register; academic
+    prose uses more explicit preference framing'
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal
+    Auxiliaries and Related Phrasal Forms'
+  tier: 1
+  reliability: B
+- claim: 'Discourse function: Expressing preferences and regrets, including preferences
+    about other people''s actions (subjunctive use)'
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal
+    Auxiliaries and Related Phrasal Forms'
+  tier: 1
+  reliability: B
+- claim: Common error '*I would rather you stay here.*' for Portuguese, Spanish, French,
+    Chinese speakers
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+  reliability: B
+- flagged: false
+  reliability: B
+  claim: Swan & Smith (2001) document L1-specific transfer patterns in modal expressions,
+    including errors with subjunctive-like structures.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+    and Other Problems, 2nd ed. Cambridge University Press.'
+  tier: 2

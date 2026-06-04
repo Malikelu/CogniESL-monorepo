@@ -1,33 +1,81 @@
-grammar_point: result_clauses
-title: Result Clauses (so...that, such...that, therefore)
+citations:
+- claim: 'Core meaning: Shows the consequence or outcome that results from a situation
+    or action'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 26:
+    Logical Connectors'
+  tier: 4
+- claim: 'Register distribution: ''So...that'' and ''such...that'' are neutral in
+    register and work in both speech and writing: ''It was so cold that we left''
+    (conversation) and ''The results were so significant that the study was published''
+    (academic).'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 26:
+    Logical Connectors'
+  tier: 4
+- claim: 'Discourse function: In spoken discourse, result clauses add dramatic emphasis
+    and emotional weight: ''The food was so good that I ordered seconds.'' In academic
+    writing, they structure cause-effect arguments: ''The results were so significant
+    that the hypothesis was confirmed.'''
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 26:
+    Logical Connectors'
+  tier: 4
+- claim: 'Common error ''Confusing ''so'' and ''such'': *''It was so a hot day that...''''
+    for Portuguese, Spanish, French speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+common_errors:
+- correction: It was such a hot day that...
+  error: 'Confusing ''so'' and ''such'': *''It was so a hot day that...'''
+  explanation: '''So'' is used before adjectives/adverbs (so hot), while ''such''
+    precedes noun phrases (such a hot day). Learners frequently confuse these two
+    patterns.'
+  flagged: false
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+- correction: It was so cold that...
+  error: 'Using ''so much'' before an adjective: *''It was so much cold that...'''
+  explanation: '''So much'' is used before uncountable nouns (so much rain), not before
+    adjectives. Before a bare adjective, use ''so'' alone.'
+  flagged: false
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Italian
+  reliability: B
+- correction: It was so hot that we left.
+  error: 'Omitting ''that'' in formal writing without adjusting structure: *''It was
+    so hot we left'' in an academic essay.'
+  explanation: In formal and written English, the conjunction 'that' should be included
+    in result clauses. While dropping 'that' is acceptable in informal speech, it
+    should be included in academic and professional writing.
+  flagged: false
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: B
 description: Structures that show the consequence or outcome of an action. Essential
   for showing cause-effect relationships.
-level: B2
-meaning:
-  core_meaning: Shows the consequence or outcome that results from a situation or
-    action. This grammar point is essential for expressing result clauses in English.
-    Learners at this level need to understand both the form and the appropriate contexts
-    for use. Common errors include confusion with related structures and inappropriate
-    register use.
-  timeline: N/A (Result clauses show logical relationships, not time sequence.)
-  contrast: '''So + adj + that'' = result (emphasis on degree) ''Such + noun + that''
-    = result (emphasis on noun) ''Therefore'' = formal result connector ''So'' (simple)
-    = result without ''that'' clause '
-  ccqs:
-  - question: What conjunctions introduce result clauses
-    answer: So...that, such...that, so, therefore.
-    purpose: Tests whether the learner can identify the connectors that introduce
-      result clauses, which is essential for both producing and comprehending cause-effect
-      sentence patterns at B2 level.
-  - question: Can we use a different structure here with the same meaning?
-    answer: No — changing the structure would change the meaning or make the sentence
-      ungrammatical.
-    purpose: Tests whether the learner understands that result clauses is the only
-      appropriate structure for this meaning/context.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      result clauses and explain why they are incorrect.
+dialectal_variation: []
+discourse_notes:
+- note: 'In spoken discourse, result clauses add dramatic emphasis and emotional weight:
+    ''The food was so good that I ordered seconds'' (restaurant review among friends).
+    In academic and scientific writing, they structure cause-effect arguments: ''The
+    temperature was so elevated that the enzyme denatured.'' In film and book reviews,
+    ''such...that'' is particularly common: ''It was such a compelling story that
+    I finished it in one sitting.'' Teachers can use authentic review excerpts (TripAdvisor,
+    Goodreads, academic abstracts) to show learners how result clauses function across
+    different text types, and to highlight the register-appropriate connector choices.'
 example_generator:
   contexts:
   - everyday situations
@@ -35,128 +83,151 @@ example_generator:
   min_examples: 5
 form:
   affirmative:
-    structure: 'So + adjective/adverb + that + clause: "It was so hot that we left."
-      Such + (a/an) + noun + that + clause: "It was such a hot day that we left."
-      Main clause + therefore + clause: "It was hot; therefore, we left." '
     example_generator:
       contexts:
       - entertainment and media
       - health and wellbeing
       min_examples: 4
+    structure: 'So + adjective/adverb + that + clause: "It was so hot that we left."
+      Such + (a/an) + noun + that + clause: "It was such a hot day that we left."
+      Main clause + therefore + clause: "It was hot; therefore, we left." '
   negative:
-    structure: Negative in either part.
     example_generator:
       contexts:
       - weather and nature
       min_examples: 4
+    structure: Negative in either part.
   questions:
-    structure: Questions less common; use 'so' in statement questions.
     example_generator:
       contexts:
       - everyday situations
       min_examples: 4
-sub_rules:
-- rule: So + adjective/adverb + that + clause
-  type: grammatical
-  examples:
-  - It was so cold that the water froze
-  - She spoke so fast that I could not understand
-  - He ran so quickly that he won
-- rule: Such + noun phrase + that + clause
-  type: grammatical
-  examples:
-  - It was such a cold day that the water froze
-  - She is such a good speaker that everyone listens
-  - He made such a big mistake that he was fired
-- rule: So (informal, without that)
-  type: grammatical
-  examples:
-  - It was so cold I stayed inside
-  - She spoke so fast I could not understand
-use:
-- name: Degree Result (so...that)
-  description: Emphasizes how extreme something is that it causes a result.
-  examples:
-  - So hungry that I fainted.
-  - So loudly that everyone heard.
-  key_point: So + adjective/adverb (not noun).
-- name: Noun Result (such...that)
-  description: Emphasizes a noun so much that it causes a result.
-  examples:
-  - Such a mess that we couldn't find anything.
-  - Such heavy rain that roads flooded.
-  key_point: Such + (a/an) + adjective + noun.
-- name: Formal Result (therefore)
-  description: Formal connector between sentences.
-  examples:
-  - It rained; therefore, the game was cancelled.
-  key_point: Therefore = very formal, needs semicolon or period before.
+    structure: Questions less common; use 'so' in statement questions.
+grammar_point: result_clauses
+level: B2
+meaning:
+  ccqs:
+  - answer: 'Both so...that and such...that express result, but the grammar after
+      each connector differs: so takes an adjective/adverb, such takes a noun phrase.'
+    purpose: Tests whether the learner understands the structural difference between
+      so and such - that so modifies adjectives/adverbs while such modifies noun phrases.
+    question: '''It was so hot that we left'' - why ''so'' and not ''such''? What
+      determines whether we use ''so'' or ''such''?'
+  - answer: No. Without the that clause, the result is incomplete. 'It was so hot'
+      but we do not know what happened. The that clause is necessary to express the
+      consequence.
+    purpose: Tests whether the learner understands that result clauses require both
+      a cause and a consequence to express complete meaning.
+    question: Can we omit the that clause in so...that and still express a complete
+      result?
+  - answer: Formal writing uses therefore and consequently as result connectors. Informal
+      speech and writing use so...that and such...that.
+    purpose: Tests whether the learner understands the register differences between
+      informal and formal result connectors.
+    question: When should I use therefore instead of so...that?
+  - answer: '''so'' + adjective (so hot that) vs ''such'' + noun phrase (such a hot
+      day that). A common error is *so a hot day that.'
+    purpose: Tests whether the learner can identify and correct the most common error
+      with result clauses - using so before a noun phrase instead of such.
+    question: What is wrong with this sentence? *It was so a hot day that we left.*
+  contrast: '''So + adj + that'' = result (emphasis on degree) ''Such + noun + that''
+    = result (emphasis on noun) ''Therefore'' = formal result connector ''So'' (simple)
+    = result without ''that'' clause '
+  core_meaning: Shows the consequence or outcome that results from a situation or
+    action. This grammar point is essential for expressing result clauses in English.
+    Learners at this level need to understand both the form and the appropriate contexts
+    for use. Common errors include confusion with related structures and inappropriate
+    register use.
+  timeline: N/A (Result clauses show logical relationships, not time sequence.)
 phonetics:
-- note: 'So is stressed in result clauses: ''It was SO cold that...'' ''Such'' is
-    also stressed: ''It was SUCH a cold day that...'''
-  example_generator:
+- example_generator:
     contexts:
     - result clause stress
   l1_issue: 'Portuguese speakers may use ''so much'' instead of ''so'' before adjectives.
     Teach: ''so cold'' NOT ''so much cold.'''
+  note: 'So is stressed in result clauses: ''It was SO cold that...'' ''Such'' is
+    also stressed: ''It was SUCH a cold day that...'''
+register_notes:
+- note: '''So...that'' and ''such...that'' are neutral in register and work in both
+    speech and writing: ''It was so cold that we left'' (spoken anecdote) and ''The
+    results were so significant that the study was published'' (academic). However,
+    ''therefore'' and ''consequently'' are restricted to formal writing and academic
+    discourse: ''The sample was contaminated; therefore, the data were discarded.''
+    In very formal prose, ''to such a degree that'' and ''to the extent that'' replace
+    ''so...that'': ''The damage was to such a degree that the building was condemned.''
+    Teachers should note that ''so'' used alone as a result connector (''It was cold,
+    so we left'') is informal and should be upgraded to ''therefore'' or ''as a result''
+    in academic essays.'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (1999) — Result clauses (so...that, such...that): register distribution
+    varies. Academic prose uses more explicit result connectors; conversation uses
+    more implicit result expressions. Ch. 10.2'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 10.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+sub_rules:
+- examples:
+  - It was so cold that the water froze
+  - She spoke so fast that I could not understand
+  - He ran so quickly that he won
+  rule: So + adjective/adverb + that + clause
+  type: grammatical
+- examples:
+  - It was such a cold day that the water froze
+  - She is such a good speaker that everyone listens
+  - He made such a big mistake that he was fired
+  rule: Such + noun phrase + that + clause
+  type: grammatical
+- examples:
+  - It was so cold I stayed inside
+  - She spoke so fast I could not understand
+  rule: So (informal, without that)
+  type: grammatical
 teaching:
   methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students create result chains: ''It was so cold that... the
+      water froze. The water froze so... people could skate.'''
+    duration: 15
+    name: Result Chain
+  - adaptation_notes: 'Students choose: ''It was ___ cold that...'' (so) / ''It was
+      ___ a cold day that...'' (such).'
+    duration: 10
+    name: So or Such
   tips:
   - 'Use thermometer analogy: ''so hot'' (temperature) vs ''such heat'' (noun).'
   - 'Practice with weather: ''So cold that...'', ''Such a storm that...'''
   - 'Show formality: ''so'' (speaking) vs ''therefore'' (writing).'
-  recommended_activities:
-  - name: Result Chain
-    duration: 15
-    adaptation_notes: 'Students create result chains: ''It was so cold that... the
-      water froze. The water froze so... people could skate.'''
-  - name: So or Such
-    duration: 10
-    adaptation_notes: 'Students choose: ''It was ___ cold that...'' (so) / ''It was
-      ___ a cold day that...'' (such).'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: 'Confusing ''so'' and ''such'': *''It was so a hot day that...'''
-  correction: It was such a hot day that...
-  explanation: '''So'' is used before adjectives/adverbs (so hot), while ''such''
-    precedes noun phrases (such a hot day). Learners frequently confuse these two
-    patterns.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: 'Using ''so much'' before an adjective: *''It was so much cold that...'''
-  correction: It was so cold that...
-  explanation: '''So much'' is used before uncountable nouns (so much rain), not before
-    adjectives. Before a bare adjective, use ''so'' alone.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Italian
-- error: 'Omitting ''that'' in formal writing without adjusting structure: *''It was
-    so hot we left'' in an academic essay.'
-  correction: It was so hot that we left.
-  explanation: In formal and written English, the conjunction 'that' should be included
-    in result clauses. While dropping 'that' is acceptable in informal speech, it
-    should be included in academic and professional writing.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: '''So...that'' and ''such...that'' are acceptable in both formal and informal
-    contexts. ''Therefore'' is preferred in formal writing.'
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: Result clauses are common in both spoken and written discourse, especially
-    in reviews, narratives, and academic arguments.
+  - 'Swan PEU: Result — ''so...that'': ''It was so cold that the lake froze.'' ''Such...that'':
+    ''It was such a cold day that...'' Use ''so'' with adjectives/adverbs, ''such''
+    with nouns.'
+  - 'Swan PEU: ''So that'' can also express purpose: ''Speak louder so that everyone
+    can hear you.'' Context determines whether the clause shows purpose or result.'
+title: Result Clauses (so...that, such...that, therefore)
+use:
+- description: Emphasizes how extreme something is that it causes a result.
+  examples:
+  - So hungry that I fainted.
+  - So loudly that everyone heard.
+  key_point: So + adjective/adverb (not noun).
+  name: Degree Result (so...that)
+- description: Emphasizes a noun so much that it causes a result.
+  examples:
+  - Such a mess that we couldn't find anything.
+  - Such heavy rain that roads flooded.
+  key_point: Such + (a/an) + adjective + noun.
+  name: Noun Result (such...that)
+- description: Formal connector between sentences.
+  examples:
+  - It rained; therefore, the game was cancelled.
+  key_point: Therefore = very formal, needs semicolon or period before.
+  name: Formal Result (therefore)

@@ -21,10 +21,78 @@ Usage:
 from __future__ import annotations
 
 import os
+from pathlib import Path
 from typing import Any
 
 # ── Watermark ────────────────────────────────────────────────────────────────
 _WATERMARK = os.getenv("COGNIESL_WATERMARK", "free")
+
+
+# ── Compositions Registry ─────────────────────────────────────────────────────
+# Caches for grammar-compositions.yaml and cross-cutting YAMLs.
+# Loaded once per process; safe because these files are read-only at runtime.
+
+_COMPOSITIONS_CACHE: list[dict] | None = None
+_CROSS_CUTTING_CACHE: dict[str, dict] = {}
+
+
+def _load_compositions_registry() -> list[dict]:
+    """Load and cache data/grammar-compositions.yaml."""
+    global _COMPOSITIONS_CACHE
+    if _COMPOSITIONS_CACHE is not None:
+        return _COMPOSITIONS_CACHE
+
+    registry_path = Path(__file__).resolve().parents[2] / "data" / "grammar-compositions.yaml"
+    if not registry_path.exists():
+        _COMPOSITIONS_CACHE = []
+        return _COMPOSITIONS_CACHE
+
+    try:
+        import yaml
+        data = yaml.safe_load(registry_path.read_text(encoding="utf-8"))
+        _COMPOSITIONS_CACHE = data.get("compositions", []) if isinstance(data, dict) else []
+    except Exception:
+        _COMPOSITIONS_CACHE = []
+
+    return _COMPOSITIONS_CACHE
+
+
+def _load_cross_cutting_yaml(topic_slug: str) -> dict:
+    """Load and cache a cross-cutting grammar YAML (e.g., question_forms, question_tags)."""
+    if topic_slug in _CROSS_CUTTING_CACHE:
+        return _CROSS_CUTTING_CACHE[topic_slug]
+
+    yaml_path = Path(__file__).resolve().parents[2] / "data" / "grammar" / f"{topic_slug}.yaml"
+    if not yaml_path.exists():
+        _CROSS_CUTTING_CACHE[topic_slug] = {}
+        return {}
+
+    try:
+        import yaml
+        data = yaml.safe_load(yaml_path.read_text(encoding="utf-8"))
+        _CROSS_CUTTING_CACHE[topic_slug] = data if isinstance(data, dict) else {}
+    except Exception:
+        _CROSS_CUTTING_CACHE[topic_slug] = {}
+
+    return _CROSS_CUTTING_CACHE[topic_slug]
+
+
+def _get_compositions_for_grammar(grammar_data: dict) -> list[dict]:
+    """Return all composition topics for the given grammar point.
+
+    Includes all topics (WH questions, short answers, question tags) without
+    level filtering — complete lessons always benefit from all three structures.
+    """
+    grammar_point = str(grammar_data.get("grammar_point", "")).strip()
+    if not grammar_point:
+        return []
+
+    registry = _load_compositions_registry()
+    entry = next((e for e in registry if e.get("base") == grammar_point), None)
+    if entry is None:
+        return []
+
+    return entry.get("topics", [])
 
 
 # ── Slide Plan ───────────────────────────────────────────────────────────────
@@ -74,6 +142,16 @@ def compute_slide_plan(
             slides.append({
                 "type": "A5", "label": f"Formula — {label_map[form_key]}", "form_key": form_key,
             })
+
+    # A5_COMPOSITION: Cross-cutting structure slides (WH questions, short answers, question tags)
+    # Loaded from grammar-compositions.yaml — structures and examples are tense-specific.
+    # Pedagogical depth (CCQs, teaching tips) is pulled from cross-cutting YAMLs at brief-build time.
+    for comp in _get_compositions_for_grammar(grammar_data):
+        slides.append({
+            "type": "A5_COMPOSITION",
+            "label": comp.get("label", comp.get("topic", "Composition")),
+            "composition": comp,
+        })
 
     # A5: Sub-rule slides (spelling rules, irregulars)
     for i in range(len(sub_rules)):
@@ -140,6 +218,7 @@ def build_task_brief(
         "A2": _build_a2_brief,
         "A3": _build_a3_brief,
         "A5": _build_a5_brief,
+        "A5_COMPOSITION": _build_a5_composition_brief,
         "A5_SUB": _build_a5_sub_brief,
         "A5b": _build_a5b_brief,
         "A6": _build_a6_brief,
@@ -670,6 +749,116 @@ def _build_a5_brief(
     ])
     if relevant_errors:
         lines.append(f"  Watch for: {_s(relevant_errors[0].get('wrong', relevant_errors[0].get('example_wrong', '')))}")
+
+    return "\n".join(lines)
+
+
+def _build_a5_composition_brief(
+    slide_meta: dict,
+    grammar_data: dict,
+    l1_data_list: list[dict],
+    age_group: str,
+    l1_languages: str,
+) -> str:
+    """Build A5_COMPOSITION slide task_brief.
+
+    Combines:
+    - Tense-specific structure + examples from grammar-compositions.yaml (the registry)
+    - CCQs, teaching tips, and common errors from the cross-cutting YAML
+      (question_forms.yaml or question_tags.yaml)
+
+    This ensures the slide shows the correct auxiliary for THIS tense while the
+    pedagogical depth (why, how to teach, common errors) comes from the vetted source.
+    """
+    grammar_point = _s(grammar_data.get("title", grammar_data.get("name", grammar_data.get("topic", ""))))
+    comp = slide_meta.get("composition", {})
+
+    topic = _s(comp.get("topic", ""))
+    label = _s(comp.get("label", ""))
+    structure = _s(comp.get("structure", ""))
+    examples: list = comp.get("examples") or []
+    cross_cutting_source = _s(comp.get("cross_cutting_source", ""))
+
+    # Load the cross-cutting YAML for CCQs and teaching tips
+    cross_yaml = _load_cross_cutting_yaml(cross_cutting_source) if cross_cutting_source else {}
+
+    # CCQs: pick the most relevant 2 from the cross-cutting YAML
+    ccqs: list = (cross_yaml.get("meaning", {}) or {}).get("ccqs") or []
+    relevant_ccqs = ccqs[:2]
+
+    # Teaching tips from cross-cutting YAML
+    tips: list = (cross_yaml.get("teaching", {}) or {}).get("tips") or []
+    tip = _s(tips[0]) if tips else ""
+
+    # Common errors from cross-cutting YAML (most broadly applicable)
+    cross_errors: list = cross_yaml.get("common_errors") or []
+    # Filter to errors with broad L1 coverage (long l1_groups lists = high priority)
+    sorted_errors = sorted(
+        [e for e in cross_errors if isinstance(e, dict)],
+        key=lambda e: len(e.get("l1_groups") or []),
+        reverse=True,
+    )
+    top_errors = sorted_errors[:2]
+
+    lines = [
+        f"Slide title: {label}",
+        "Slide type: A5 Grammar Formula — Cross-cutting Structure",
+        "Section: 4 of 8 (continuation of formula section — same visual style as other A5 slides)",
+        f"Grammar point: {grammar_point}",
+        f"Cross-cutting topic: {topic}",
+        f"WATERMARK: {_WATERMARK}",
+        "",
+        "TENSE-SPECIFIC STRUCTURE (from grammar-compositions.yaml — use EXACTLY as written):",
+        f"  Structure: {structure}",
+        "",
+        f"TENSE-SPECIFIC EXAMPLES (all correct for {grammar_point} — use verbatim):",
+    ]
+    for ex in examples:
+        lines.append(f"  - {ex}")
+
+    if relevant_ccqs:
+        lines.append("")
+        lines.append(f"CCQs FROM {cross_cutting_source.upper()}.YAML (paste verbatim — use these in speaker notes):")
+        for ccq in relevant_ccqs:
+            if isinstance(ccq, dict):
+                q = _s(ccq.get("question", ""))
+                a = _s(ccq.get("answer", ""))
+                lines.append(f"  Q: {q}")
+                if a:
+                    lines.append(f"  A: {a}")
+
+    if top_errors:
+        lines.append("")
+        lines.append(f"COMMON ERRORS FROM {cross_cutting_source.upper()}.YAML (paste verbatim — show in slide):")
+        for err in top_errors:
+            wrong = _s(err.get("error", err.get("wrong", "")))
+            correct = _s(err.get("correction", err.get("correct", "")))
+            if wrong:
+                lines.append(f"  ❌ Wrong:   \"{wrong}\"")
+                lines.append(f"  ✅ Correct: \"{correct}\"")
+
+    lines.extend([
+        "",
+        "DESIGN: Same A5 formula-slide layout as other formula slides in this lesson.",
+        "- Structure box at top (matches style of Affirmative / Negative / Questions slides)",
+        "- Examples in two columns below, each on its own card",
+        "- Wrong/correct error cards below examples (red left, green right)",
+        "- Match colours and typography of the preceding A5 slides exactly",
+        "",
+        "SPEAKER NOTES:",
+        f"  Teacher talk: 'Now let's look at {label}. The structure is: {structure}'",
+        "  Point to each part of the structure. Drill: give a prompt, students produce the sentence.",
+    ])
+    if relevant_ccqs:
+        ccq0 = relevant_ccqs[0]
+        if isinstance(ccq0, dict):
+            lines.append(f"  CCQ: {_s(ccq0.get('question', ''))}")
+            lines.append(f"  Expected answer: {_s(ccq0.get('answer', ''))}")
+    if tip:
+        lines.append(f"  Teaching tip (from {cross_cutting_source}.yaml): {tip}")
+    if top_errors:
+        err0 = top_errors[0]
+        lines.append(f"  Watch for: \"{_s(err0.get('error', err0.get('wrong', '')))}\"")
 
     return "\n".join(lines)
 

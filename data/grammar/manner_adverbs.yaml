@@ -1,29 +1,116 @@
-grammar_point: manner_adverbs
-title: Manner Adverbs (How Actions Are Done)
+citations:
+- claim: 'Core meaning: Manner adverbs answer the question ''HOW?'' They describe
+    the way an action is performed'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs'
+  tier: 1
+- claim: 'Register distribution: Manner adverbs are most common in fiction and
+    narrative writing, where they add vividness to action descriptions. They are less
+    frequent in academic prose, where degree and stance adverbs dominate.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs'
+  tier: 1
+- claim: 'Discourse function: Manner adverbs add vividness and precision to action
+    descriptions. In narrative, they create mental imagery (''He quietly opened the
+    door''). In instructions, they specify how to perform actions (''Mix gently'').'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs'
+  tier: 1
+- claim: Common error '*He speaks English very good.*' for Portuguese, Spanish, French
+    speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+common_errors:
+- correction: He speaks English very well.
+  error: '*He speaks English very good.*'
+  explanation: '''Good'' is an adjective. ''Well'' is the adverb form. Use adverbs
+    to describe how someone does something.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Chinese
+  reliability: D
+- correction: She runs quickly. / She quickly ran.
+  error: 'She quickly runs. (stylistically marked — pre-verbal position is grammatical but literary/formal)'
+  explanation: Manner adverbs typically go after the verb in everyday speech. Mid-position
+    (before the verb) is grammatical but more formal/learned. Not an error, but a register choice.
+  flagged: false
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: D
 description: 'Adverbs that describe HOW an action is performed: quickly, slowly, carefully,
   well, badly. Usually end in -ly.'
+dialectal_variation: []
+discourse_notes:
+- 'Manner adverbs modify the verbs they accompany, specifying how an action is performed. In narrative fiction, they add vividness (''He quietly opened the door''). In academic prose, they are more commonly replaced by adjectives in nominal structures (''the rapid opening of the door''). Source: Celce-Murcia & Larsen-Freeman (2015) GB3 Ch. 25: Adverbials.'
+
+form:
+  affirmative:
+    example_generator:
+    - She drives carefully.
+    - He speaks slowly.
+    - They worked hard.
+    - She sings well.
+    min_examples: 4
+    structure: 'Adjective + -ly: quick → quickly, careful → carefully, slow → slowly
+      Irregular: good → well, fast → fast, hard → hard Spelling: -y → -ily (happy
+      → happily), -le → -ly (simple → simply)
+
+      '
+  negative:
+    example_generator:
+    - She does not drive carefully.
+    - He does not speak clearly.
+    - They did not work hard.
+    min_examples: 4
+    structure: Subject + auxiliary + not + verb + adverb
+  questions:
+    example_generator:
+    - How does she drive
+    - How did he speak
+    - How do they work
+    min_examples: 4
+    structure: How + auxiliary + subject + verb
+grammar_point: manner_adverbs
 level: A2
 meaning:
-  core_meaning: Manner adverbs answer the question 'HOW?' They describe the way an
-    action is performed. Most are formed by adding -ly to an adjective.
-  timeline: N/A — adverbs modify verbs in any tense.
+  ccqs:
+  - answer: Add -ly to the adjective. Quick becomes quickly. Careful becomes carefully.
+    purpose: Tests whether the learner can apply the standard -ly suffix rule to
+      form manner adverbs from adjectives, and recognizes this as the default pattern.
+    question: How do we form most manner adverbs
+  - answer: '''Good'' is an adjective (She is good). ''Well'' is an adverb (She sings
+      well).'
+    purpose: Tests whether the learner distinguishes adjectives from adverbs and
+      knows that 'well' (not 'good') is needed to describe how an action is performed.
+    question: Can you explain the difference between 'good' and 'well' by giving an
+      example of when to use each?
+  - answer: 'No. Some are irregular: fast (not fastly), hard (not hardly), good →
+      well.'
+    purpose: Tests whether the learner knows that some common words (fast, hard) don't follow the regular -ly pattern, and that 'hardly' has a different meaning from 'hard' as an adverb.
+    question: Do all adverbs end in -ly
+  - answer: After the verb or at the end of the sentence. She drove carefully to the
+      hospital or She drove to the hospital carefully. Placing it before the verb
+      (She carefully drove) is more formal and literary, while mid-position is less
+      common in everyday speech.
+    purpose: Tests whether the learner knows the correct word order for manner adverbs.
+      The default position is after the verb or at the end of the clause. Placing
+      the adverb before the verb is grammatically correct but changes the register
+      to more formal or literary, which learners need to be aware of for natural spoken
+      English.
+    question: Where does the manner adverb go in the sentence she drove to the hospital?
   contrast: Manner adverb = how (She drives carefully). Adjective = what like (She
     is careful).
-  ccqs:
-  - question: How do we form most manner adverbs
-    answer: Add -ly to the adjective. Quick becomes quickly. Careful becomes carefully.
-    purpose: Tests whether the learner understands a key concept of manner_adverbs.
-      This is fundamental for correct use of this grammar point.
-  - question: What is the difference between 'good' and 'well'
-    answer: '''Good'' is an adjective (She is good). ''Well'' is an adverb (She sings
-      well).'
-    purpose: Tests whether the learner understands a key concept of manner_adverbs.
-      This is fundamental for correct use of this grammar point.
-  - question: Do all adverbs end in -ly
-    answer: 'No. Some are irregular: fast (not fastly), hard (not hardly), good →
-      well.'
-    purpose: Tests whether the learner understands a key concept of manner_adverbs.
-      This is fundamental for correct use of this grammar point.
+  core_meaning: Manner adverbs answer the question 'HOW?' They describe the way an
+    action is performed. Most are formed by adding -ly to an adjective.
   example_generator:
     contexts:
     - everyday actions
@@ -33,56 +120,82 @@ meaning:
     - Manner adverbs are essential for precise communication
     - The -ly ending is a key marker of adverbs in English
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Adjective + -ly: quick → quickly, careful → carefully, slow → slowly
-      Irregular: good → well, fast → fast, hard → hard Spelling: -y → -ily (happy
-      → happily), -le → -ly (simple → simply)
-
-      '
-    example_generator:
-    - She drives carefully.
-    - He speaks slowly.
-    - They worked hard.
-    - She sings well.
-    min_examples: 4
-  negative:
-    structure: Subject + auxiliary + not + verb + adverb
-    example_generator:
-    - She does not drive carefully.
-    - He does not speak clearly.
-    - They did not work hard.
-    min_examples: 4
-  questions:
-    structure: How + auxiliary + subject + verb
-    example_generator:
-    - How does she drive
-    - How did he speak
-    - How do they work
-    min_examples: 4
+  timeline: N/A — adverbs modify verbs in any tense.
+phonetics:
+  example_generator:
+    contexts:
+    - adverb pronunciation
+  l1_issue: 'Portuguese and Spanish speakers often use adjectives where English requires
+    adverbs. Teach: ''She drives careful'' is WRONG. ''She drives carefully'' is correct.'
+  note: 'The -ly ending is pronounced /li/ and is usually unstressed: ''carefully''
+    → /ˈkeəfəli/, ''quickly'' → /ˈkwɪkli/.'
+register_notes:
+- note: 'Biber et al. (1999) — Manner adverbs (-ly adverbs): fiction uses more manner
+    adverbs for vivid narrative description; academic prose uses more degree and stance
+    adverbs. Ch. 12.5'
+  reliability: C
+  source: Biber et al. (1999) Longman Grammar of Spoken and Written English. Longman
+    Publishing Company. Ch. 12.5
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: 'Most adverbs: adjective + -ly'
-  type: spelling
-  examples:
+- examples:
   - quick → quickly
   - careful → carefully
   - slow → slowly
-- rule: 'Irregular forms: good → well, fast → fast, hard → hard'
-  type: irregular
-  examples:
+  rule: 'Most adverbs: adjective + -ly'
+  type: spelling
+- examples:
   - She sings well (NOT good)
   - He runs fast (NOT fastly)
-- rule: 'Spelling rules: -y → -ily, -le → -ly, -ic → -ally'
-  type: spelling
-  examples:
+  rule: 'Irregular forms: good → well, fast → fast, hard → hard'
+  type: irregular
+- examples:
   - happy → happily
   - simple → simply
   - basic → basically
-- rule: 'Position: after the verb or at the end of the sentence'
-  type: word_order
-  examples:
+  rule: 'Spelling rules: -y → -ily, -le → -ly, -ic → -ally'
+  type: spelling
+- examples:
   - She drives carefully
   - He spoke slowly
+  rule: 'Position: after the verb or at the end of the sentence'
+  type: word_order
+teaching:
+  methodology: PPP with physical actions
+  recommended_activities:
+  - adaptation_notes: 'Students add -ly to adjectives: quick → quickly, careful →
+      carefully. Practice spelling rules.'
+    duration: 10
+    name: Adverb Formation
+  - adaptation_notes: 'Students perform actions. Others describe them: ''He is walking
+      slowly. She is writing carefully.'''
+    duration: 15
+    name: Action Description
+  - adaptation_notes: 'Students practice the irregular form: ''She sings well'' (NOT
+      ''She sings good'').'
+    duration: 10
+    name: Good or Well
+  tips:
+  - Use the question 'HOW?' to identify manner adverbs.
+  - 'Practice with classroom actions: ''Walk slowly.'' ''Write neatly.'' ''Speak clearly.'''
+  - 'Contrast adjective vs adverb: ''She is careful'' (adj) vs ''She drives carefully''
+    (adv).'
+  - 'Swan PEU: Adverbs of manner modify verbs: ''She sings beautifully,'' ''He
+    drives carefully.'' Some informal adjective-as-adverb: ''She talks funny'' (AmE,
+    informal). NOT standard.'
+  - 'Swan PEU: Confusing cases — friendly, lively, lovely, ugly are adjectives,
+    not adverbs. ''She spoke in a friendly way'' NOT ''She spoke friendly.'' Difference
+    between adjective and adverb function.'
+title: Manner Adverbs (How Actions Are Done)
 use:
 - context: Describing action quality
   examples:
@@ -99,71 +212,3 @@ use:
   - He walked quietly into the room
   - She smiled happily
   - They argued loudly
-phonetics:
-  note: 'The -ly ending is pronounced /li/ and is usually unstressed: ''carefully''
-    → /ˈkeəfəli/, ''quickly'' → /ˈkwɪkli/.'
-  example_generator:
-    contexts:
-    - adverb pronunciation
-  l1_issue: 'Portuguese and Spanish speakers often use adjectives where English requires
-    adverbs. Teach: ''She drives careful'' is WRONG. ''She drives carefully'' is correct.'
-teaching:
-  methodology: PPP with physical actions
-  tips:
-  - Use the question 'HOW?' to identify manner adverbs.
-  - 'Practice with classroom actions: ''Walk slowly.'' ''Write neatly.'' ''Speak clearly.'''
-  - 'Contrast adjective vs adverb: ''She is careful'' (adj) vs ''She drives carefully''
-    (adv).'
-  recommended_activities:
-  - name: Adverb Formation
-    duration: 10
-    adaptation_notes: 'Students add -ly to adjectives: quick → quickly, careful →
-      carefully. Practice spelling rules.'
-  - name: Action Description
-    duration: 15
-    adaptation_notes: 'Students perform actions. Others describe them: ''He is walking
-      slowly. She is writing carefully.'''
-  - name: Good or Well
-    duration: 10
-    adaptation_notes: 'Students practice the irregular form: ''She sings well'' (NOT
-      ''She sings good'').'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 14:
-    Adverbs, §14.1-14.8'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*He speaks English very good.*'
-  correction: He speaks English very well.
-  explanation: '''Good'' is an adjective. ''Well'' is the adverb form. Use adverbs
-    to describe how someone does something.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - Chinese
-- error: '*She quickly runs.* (less natural)'
-  correction: She runs quickly. / She quickly ran.
-  explanation: Manner adverbs typically go after the verb, not before. Mid-position
-    (before the verb) is more formal/literary.
-  l1_groups:
-  - Portuguese
-  - Spanish
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

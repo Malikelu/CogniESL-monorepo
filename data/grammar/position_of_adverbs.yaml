@@ -1,48 +1,63 @@
-grammar_point: position_of_adverbs
-title: Position of Adverbs (initial, mid, end)
+citations:
+- claim: 'Core meaning: Adverb position affects emphasis and sentence rhythm, not
+    core meaning'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs (adverb position)'
+  tier: 1
+- claim: 'Register distribution: In conversation, adverb position affects naturalness:
+    ''I always go to the gym'' (not *''I go always to'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs (adverb position)'
+  tier: 1
+- claim: 'Discourse function: In conversation, adverb position affects naturalness:
+    ''I always go to the gym'' (not *''I go always to'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs (adverb position)'
+  tier: 1
+- claim: Common error '*I always am late.*' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed.
+  tier: 1
+common_errors:
+- correction: I am always late. / I'm always late.
+  error: '*I always am late.*'
+  explanation: Frequency adverbs go AFTER 'be' but BEFORE other main verbs. 'I am
+    always late' NOT 'I always am late'.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  reliability: D
+- error: '[See Adverb Position transfer patterns]'
+  explanation: Mandarin adverb-before-verb order transfers to English
+  l1_groups:
+  - Mandarin
+  reliability: C
+  source: 'L1 Interference ESL Teacher Resources — Comparative Analysis of Cross-Linguistic
+    Influence: Best-in-Class Resources and L1 Interference Databases for English Language
+    Educators.'
+  tier: 4
 description: Rules for where to place adverbs in sentences. Essential for natural-sounding
   English word order.
-level: A2
-meaning:
-  core_meaning: Adverb position affects emphasis and sentence rhythm, not core meaning.
-    This grammar point is essential for expressing position of adverbs in English.
-    Learners at this level need to understand both the form and the appropriate contexts
-    for use. Common errors include confusion with related structures and inappropriate
-    register use.
-  timeline: N/A (Position is about syntax, not time.)
-  contrast: 'Initial position = emphasis, sets scene
-
-    Mid position = neutral, most common
-
-    End position = afterthought, less emphasis
-
-    Position with ''be'' vs other verbs differs
-
-    '
-  ccqs:
-  - question: Where do frequency adverbs go
-    answer: Before the main verb but after be.
-    purpose: 'Tests whether the learner knows the three main positions for adverbs:
-      initial (before subject), mid (after auxiliary/before main verb), and end (after
-      verb/object). Different adverb types prefer different positions.'
-  - question: '[Add specific question for CCQ 2]'
-    answer: '[Add specific answer for CCQ 2]'
-    purpose: 'Tests whether the learner can place frequency adverbs in mid-position:
-      ''I always go to the gym.'' (not *''I go always to the gym'')'
-  - question: '[Add specific question for CCQ 3]'
-    answer: '[Add specific answer for CCQ 3]'
-    purpose: 'Tests whether the learner understands that different adverb types have
-      preferred positions: frequency (mid), manner (end), time (front or end).'
-  - question: '[Add specific question for CCQ 4]'
-    answer: '[Add specific answer for CCQ 4]'
-    purpose: Tests whether the learner can identify and correct adverb position errors.
-  example_generator:
-    contexts:
-    - everyday situations
-    cultural_notes: []
-    min_examples: 5
+dialectal_variation: []
+discourse_notes:
+- note: 'In conversation, adverb position affects naturalness: ''I always go to the
+    gym'' (not *''I go always to the gym'')'
+- note: 'In academic writing, mid-position adverbs are standard: ''The results clearly
+    indicate...'' ''This has been widely studied.'''
+- note: 'In formal writing, front-position adverbs create emphasis: ''Never have I
+    seen such a beautiful sunset.'''
 form:
   affirmative:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
     structure: 'Initial: Adverb + comma + sentence: "Suddenly, it rained."
 
       Mid: Subject + adverb + verb: "She quickly left."
@@ -54,120 +69,169 @@ form:
       End (time): Sentence + adverb: "She left yesterday."
 
       '
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
   negative:
-    structure: 'Adverb before main verb in negatives: ''I don''t usually go.'''
     example_generator:
       contexts:
       - travel and places
       min_examples: 4
+    structure: 'Adverb before main verb in negatives: ''I don''t usually go.'''
   questions:
-    structure: 'Adverb after auxiliary: ''Do you usually go?'' ''Have you already
-      finished?'''
     example_generator:
       contexts:
       - social interactions
       min_examples: 4
-sub_rules:
-- rule: Frequency adverbs (always, usually, often, sometimes, rarely, never) go before
-    the main verb but after be
-  type: word_order
-  examples:
-  - I always eat breakfast (before main verb)
-  - She is never late (after be)
-  - They often go out (before main verb)
-- rule: Manner adverbs (quickly, carefully, fluently) go after the verb or at the
-    end of the sentence
-  type: word_order
-  examples:
-  - She speaks English fluently (after verb)
-  - He drove carefully (after verb)
-  - They worked hard (after verb)
-- rule: Time adverbs (yesterday, last week, today) go at the beginning or end of the
-    sentence
-  type: word_order
-  examples:
-  - Yesterday I went to the store (beginning)
-  - I went to the store yesterday (end)
-use:
-- name: Frequency Adverbs (mid position)
-  description: Usually, always, often, never go in mid position.
-  examples:
-  - I always go.
-  - She is always late.
-  key_point: Before main verb, after 'be', after first auxiliary.
-- name: Time Adverbs (end position)
-  description: Yesterday, today, tomorrow, soon go at end.
-  examples:
-  - I went yesterday.
-  - We'll leave soon.
-  key_point: Time adverbs typically at sentence end.
-- name: Manner Adverbs (end position)
-  description: Quickly, slowly, carefully go at end.
-  examples:
-  - She drove carefully.
-  - He spoke loudly.
-  key_point: Manner adverbs answer 'how' - go at end.
-phonetics:
-- note: 'Adverbs in mid-position are usually unstressed: ''I always eat'' → /aɪ ˈɔːlweɪz
-    iːt/. Adverbs at the end may be stressed: ''She speaks English FLUENTLY.'''
+    structure: 'Adverb after auxiliary: ''Do you usually go?'' ''Have you already
+      finished?'''
+grammar_point: position_of_adverbs
+level: A2
+meaning:
+  ccqs:
+  - answer: Before the main verb but after be.
+    purpose: 'Tests whether the learner knows the three main positions for adverbs:
+      initial (before subject), mid (after auxiliary/before main verb), and end (after
+      verb/object). Different adverb types prefer different positions.'
+    question: Where do frequency adverbs go
+  - answer: I always go to the gym. Frequency adverbs go in mid-position — before
+      the main verb, not between verb and object.
+    purpose: Tests whether the learner can place frequency adverbs in mid-position
+      (Swan PEU 2016, entries 198, 200).
+    question: 'Which is correct: ''I always go to the gym'' or *''I go always to the
+      gym''?'
+  - answer: No — time adverbs go in front or end position, never mid-position. ''Yesterday
+      I went to the store'' or ''I went to the store yesterday.''
+    purpose: Tests whether the learner understands that time adverbs occupy front
+      or end position, not mid-position (Swan PEU 2016, entry 196).
+    question: Can you say *'I yesterday went to the store'? Where does 'yesterday'
+      go?
+  - answer: She speaks English fluently. Manner adverbs go at the end of the clause.
+      We do not normally put adverbials between a verb and its object.
+    purpose: Tests the end-position rule for manner adverbs and the verb-object adjacency
+      rule (Swan PEU 2016, entries 196, 201).
+    question: 'Which is correct: ''She speaks English fluently'' or *''She fluently
+      speaks English''?'
+  contrast: 'Initial position = emphasis, sets scene
+
+    Mid position = neutral, most common
+
+    End position = afterthought, less emphasis
+
+    Position with ''be'' vs other verbs differs
+
+    '
+  core_meaning: Adverb position affects emphasis and sentence rhythm, not core meaning.
+    This grammar point is essential for expressing position of adverbs in English.
+    Learners at this level need to understand both the form and the appropriate contexts
+    for use. Common errors include confusion with related structures and inappropriate
+    register use.
   example_generator:
+    contexts:
+    - everyday situations
+    cultural_notes: []
+    min_examples: 5
+  timeline: N/A (Position is about syntax, not time.)
+phonetics:
+- example_generator:
     contexts:
     - adverb stress
   l1_issue: Portuguese and Spanish speakers often place adverbs in different positions.
     Teach the standard English positions explicitly.
-teaching:
-  methodology: PPP
-  tips:
-  - 'Teach formula: Subject + (adverb) + verb + (adverb) + object.'
-  - 'Use color coding: blue for subject, red for adverb, green for verb.'
-  - 'Practice with ''be'' separately: ''I am always...'' vs ''I always...''.'
-  recommended_activities:
-  - name: Adverb Placement
-    duration: 10
-    adaptation_notes: 'Students put adverbs in the correct position: ''I go always
-      to school'' → ''I always go to school.'''
-  - name: Front Mid or End
-    duration: 10
-    adaptation_notes: 'Students categorize adverbs by their correct position: front
-      (never, rarely), mid (always, usually), end (yesterday, carefully).'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 14:
-    Adverbs, §14.6-14.8 (adverb position)'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 6: Adverbs, §6.6 (adverb placement)'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 220-230 (adverb
-    position: front, mid, end position)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    14: Adverbs, §14.6-14.8'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 11: Adverb position'
-common_errors:
-- error: '*I always am late.*'
-  correction: I am always late. / I'm always late.
-  explanation: Frequency adverbs go AFTER 'be' but BEFORE other main verbs. 'I am
-    always late' NOT 'I always am late'.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - German
+  note: 'Adverbs in mid-position are usually unstressed: ''I always eat'' → /aɪ ˈɔːlweɪz
+    iːt/. Adverbs at the end may be stressed: ''She speaks English FLUENTLY.'''
 register_notes:
 - note: 'In conversation, adverb position affects naturalness: ''I always go to the
     gym'' (not *''I go always to the gym'')'
+  reliability: D
+  source: Team observation
+  tier: 4
 - note: 'In academic writing, mid-position adverbs are standard: ''The results clearly
     indicate...'''
+  reliability: D
+  source: Team observation
+  tier: 4
 - note: 'In formal writing, front-position adverbs create emphasis: ''Never have I
     seen such a beautiful sunset.'''
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: 'In conversation, adverb position affects naturalness: ''I always go to the
-    gym'' (not *''I go always to the gym'')'
-- note: 'In academic writing, mid-position adverbs are standard: ''The results clearly
-    indicate...'' ''This has been widely studied.'''
-- note: 'In formal writing, front-position adverbs create emphasis: ''Never have I
-    seen such a beautiful sunset.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch.
+    5: Adverbs'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs (adverb position)'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 6: Adverbs (adverb placement)'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 11: Adverb position'
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(adverb position: front,
+    mid, end position)'
+sub_rules:
+- examples:
+  - I always eat breakfast (before main verb)
+  - She is never late (after be)
+  - They often go out (before main verb)
+  rule: Frequency adverbs (always, usually, often, sometimes, rarely, never) go before
+    the main verb but after be
+  type: word_order
+- examples:
+  - She speaks English fluently (after verb)
+  - He drove carefully (after verb)
+  - They worked hard (after verb)
+  rule: Manner adverbs (quickly, carefully, fluently) go after the verb or at the
+    end of the sentence
+  type: word_order
+- examples:
+  - Yesterday I went to the store (beginning)
+  - I went to the store yesterday (end)
+  rule: Time adverbs (yesterday, last week, today) go at the beginning or end of the
+    sentence
+  type: word_order
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students put adverbs in the correct position: ''I go always
+      to school'' → ''I always go to school.'''
+    duration: 10
+    name: Adverb Placement
+  - adaptation_notes: 'Students categorize adverbs by their correct position: front
+      (never, rarely), mid (always, usually), end (yesterday, carefully).'
+    duration: 10
+    name: Front Mid or End
+  tips:
+  - 'Parrott (2000) Ch. 5: Adverb is a dustbin term for words that do not fit other
+    categories. Teach by category: manner, frequency, time/place, relative time, degree,
+    focusing, attitude markers. Adverb position is a major learner problem. Meaning
+    of certain adverbs (yet, already, ever) is complex and should be taught separately
+    from tense. Source: Parrott (2000) Grammar for English Language Teachers, 2nd
+    ed. Ch. 5: Adverbs, 5.1-5.8.'
+  - 'Teach formula: Subject + (adverb) + verb + (adverb) + object.'
+  - 'Use color coding: blue for subject, red for adverb, green for verb.'
+  - 'Practice with ''be'' separately: ''I am always...'' vs ''I always...''.'
+  - 'Swan PEU: Front position — adverbials at the start for emphasis or linking: ''Suddenly,
+    the lights went out.'' ''Unfortunately, I couldn''t attend.'' Also time adverbials:
+    ''Yesterday I saw her.'''
+  - 'Swan PEU: Mid position — after the auxiliary, before the main verb: ''I have
+    always liked music.'' ''She can never remember names.'' ''They are often late.''
+    NOT after the main verb.'
+  - 'Swan PEU: End position — most adverbials go at the end: ''I saw her yesterday.''
+    ''She speaks English very well.'' Manner-Place-Time order: ''I read a book in
+    the garden yesterday.'''
+title: Position of Adverbs (initial, mid, end)
+use:
+- description: Usually, always, often, never go in mid position.
+  examples:
+  - I always go.
+  - She is always late.
+  key_point: Before main verb, after 'be', after first auxiliary.
+  name: Frequency Adverbs (mid position)
+- description: Yesterday, today, tomorrow, soon go at end.
+  examples:
+  - I went yesterday.
+  - We'll leave soon.
+  key_point: Time adverbs typically at sentence end.
+  name: Time Adverbs (end position)
+- description: Quickly, slowly, carefully go at end.
+  examples:
+  - She drove carefully.
+  - He spoke loudly.
+  key_point: Manner adverbs answer 'how' - go at end.
+  name: Manner Adverbs (end position)

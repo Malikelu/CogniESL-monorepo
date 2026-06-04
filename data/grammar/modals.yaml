@@ -1,35 +1,370 @@
+citations:
+- claim: 'Core meaning: Modal verbs express the speaker''s attitude toward an action — whether it is possible, permitted,
+    obl'
+  reliability: B
+  source: Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch. 6.6
+  tier: 1
+- claim: 'Register distribution: ''May'' is more formal than ''can'' for permission. Biber et al. corpus: may is extremely
+    common in acad'
+  reliability: B
+  source: Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch. 6.6
+  tier: 1
+- claim: 'Discourse function: Modals are used for politeness strategies: "Could you...?" is more polite than "Can you...?"'
+  reliability: B
+  source: Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch. 6.6
+  tier: 1
+- claim: 'Common error ''Using ''to'' after modals: *''I can to swim.'''' for Portuguese, Spanish, French speakers'
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press. Ch. 8: Modal Auxiliaries
+    and Related Phrasal Forms'
+  tier: 1
+- claim: 'Dialectal variation: ''Shall'' is used in BrE for first person questions. AmE uses ''should''.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms'
+  tier: 1
+- claim: L1 transfer in modals varies significantly across language backgrounds — Swan & Smith document contrastive patterns
+    for speakers of different L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents how transfer effects are non-linear,
+    determined by functional fit between L1 and L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects are non-linear — determined by functional
+    fit between L1 and L2 systems rather than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning. Routledge.
+  tier: 2
+common_errors:
+- correction: I can swim.
+  error: 'Using ''to'' after modals: *''I can to swim.'''
+  explanation: Modal verbs are followed by the base verb without to.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  - Dutch
+  - Italian
+  - Russian
+  - Polish
+  - Arabic
+  - Turkish
+  - Japanese
+  - Chinese
+  - Korean
+  - Thai
+  - Farsi
+  - Hindi
+  - Swahili
+  - Malay
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Modal verbs'
+- correction: He can swim.
+  error: 'Adding -s to modals: *''He cans swim.'''
+  explanation: Modal verbs never change form.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Dutch
+  - Italian
+  - Russian
+  - Polish
+  - Arabic
+  - Turkish
+  - Japanese
+  - Chinese
+  - Korean
+  - Thai
+  - Farsi
+  - Hindi
+  - Swahili
+  - Malay
+  reliability: D
+- correction: You should go to the doctor tomorrow.
+  error: 'Using ''must'' for future obligation: *''You must go to the doctor tomorrow.'' (when giving advice, not a rule)'
+  explanation: 'Swan PEU: ''Must'' expresses strong obligation (rules, laws). For advice or recommendations, use ''should''.
+    ''Must'' for future obligation sounds like a command.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: You don't have to come tomorrow.
+  error: 'Using ''mustn''t'' to mean ''don''t have to'': *''You mustn''t come tomorrow'' (meaning it''s optional)'
+  explanation: 'Swan PEU: ''Mustn''t'' (prohibition) does NOT mean the same as ''don''t have to'' (no obligation). ''You mustn''t
+    come'' = you are forbidden. ''You don''t have to come'' = it''s your choice.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: Might it rain this afternoon? / Do you think it will rain this afternoon?
+  error: 'Using ''may'' for possibility in questions: *''May it rain this afternoon?'''
+  explanation: 'Swan PEU: ''May'' is not normally used in questions about possibility. Use ''might'' or ''do you think...
+    will'' instead.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: I could run fast when I was young.
+  error: 'Using ''can'' for past ability (general): *''I could run fast when I was young'' (when meaning general ability,
+    not specific occasion)'
+  explanation: 'Swan PEU: ''Could'' is used for general past ability (''I could swim at age 5''). For a specific past occasion,
+    use ''was able to'' or ''managed to''.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: You had better hurry up. / You'd better hurry up.
+  error: 'Using ''had better'' with ''have'': *''You have better hurry up.'''
+  explanation: 'Swan PEU: ''Had better'' is a fixed expression — it does not use ''have''. The negative is ''had better not''
+    (not ''hadn''t better'').'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: I have to go. (external rule/requirement) / I must go. (personal, internal sense of obligation)
+  error: 'Confusing ''must'' (internal obligation) with ''have to'' (external obligation): *''I must go'' when meaning a rule
+    or requirement imposed from outside'
+  explanation: 'Parrott’s rule of thumb: must = the speaker feels the obligation internally (I must phone her — I feel I should).
+    have to = an external source imposes the obligation (I have to wear a uniform — the school requires it). Many native speakers
+    do not consistently distinguish these, but the distinction is useful for learners, especially in formal and written English.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  - German
+  - Japanese
+  - Chinese
+  - Korean
+  - Arabic
+  - Russian
+  - Polish
+  - Turkish
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press. Ch. 11: Modal verbs'
+- correction: You don't have to come. (absence of obligation — it is your choice)
+  error: 'Treating ''mustn''t'' and ''don''t have to'' as equivalent negatives of ''must'': *''You mustn''t come'' (when meaning
+    it is optional, not forbidden)'
+  explanation: Parrott highlights this as a completely different meaning pair, not just negation. mustn’t = prohibition (it
+    is forbidden). don’t have to = absence of obligation (you are free to choose). These are among the most frequently confused
+    modal pairs across all L1 groups.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  - German
+  - Japanese
+  - Chinese
+  - Korean
+  - Arabic
+  - Russian
+  - Polish
+  - Turkish
+  - Thai
+  - Farsi
+  - Hindi
+  reliability: A
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press. Ch. 11: Modal verbs'
+- correction: 'Use the deduction scale according to certainty: must (certain — He must be home, the lights are on) / should/ought
+    to (likely — He should be home by now) / could/might (possible — He might be at the shops) / can''t (impossible — He can''t
+    be home, his car is gone).'
+  error: 'Misusing epistemic (logical deduction) modals — treating ''must'', ''should/ought to'', ''could/might'', and ''can''t''
+    as interchangeable for logical deduction: *''He might be the manager'' (when the speaker is certain from evidence)'
+  explanation: 'Parrott’s epistemic scale: must = speaker is certain from evidence; should/ought to = likely from expectation;
+    could/might = possible but uncertain; can’t = speaker is certain it is impossible. This deontic–epistemic distinction
+    (obligation vs deduction) is one of the hardest aspects of modal meaning for learners.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  - German
+  - Japanese
+  - Chinese
+  - Korean
+  - Arabic
+  - Russian
+  - Polish
+  - Turkish
+  reliability: A
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press. Ch. 11: Modal verbs'
+- correction: He must have been tired yesterday. / You should have told her last week.
+  error: 'Using a bare modal for past modal meaning other than past ability: *''He must be tired yesterday'' / *''You should
+    tell her last week'''
+  explanation: 'Parrott: could is used for general past ability (I could swim when I was five). For all other past modal meanings
+    — logical deduction, obligation, advice, possibility — use modal + have + past participle: must have been, should have
+    gone, could have done, might have seen, would have known.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  - German
+  - Japanese
+  - Chinese
+  - Korean
+  - Arabic
+  - Russian
+  - Polish
+  - Turkish
+  - Thai
+  - Farsi
+  - Hindi
+  reliability: A
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press. Ch. 11: Modal verbs'
+- correction: Shall I open the window? / Shall we go?
+  error: 'Using ''will'' for first-person offers or suggestions: *''Will I open the window?'' / *''Will we go now?'''
+  explanation: 'Parrott: shall (not will) is the correct modal for offers and suggestions with I/we in BrE. "Shall I...?"
+    = offering to do something for someone. "Shall we...?" = suggesting a joint action. "Will I...?" in this context is non-standard
+    and sounds unnatural to most BrE speakers.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  - German
+  - Japanese
+  - Chinese
+  - Korean
+  - Arabic
+  - Russian
+  - Polish
+  - Turkish
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press. Ch. 11: Modal verbs'
+- correction: I suggested that he should leave immediately. (BrE) / I suggested that he leave immediately. (AmE subjunctive)
+  error: 'Omitting ''should'' in subordinate clauses after suggest/recommend/demand: *''I suggested that he leave immediately''
+    (when the learner intends the British-English pattern with should)'
+  explanation: 'Parrott: in BrE, verbs such as suggest, recommend, demand, insist, and propose are typically followed by a
+    that-clause containing should + base verb (I recommend that you should see a doctor). The bare subjunctive form (I recommend
+    that you see a doctor) is the standard AmE pattern. Learners following a BrE model should include should; those following
+    an AmE model should use the bare subjunctive.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  - German
+  - Japanese
+  - Chinese
+  - Korean
+  - Arabic
+  - Russian
+  - Polish
+  - Turkish
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press. Ch. 11: Modal verbs'
+- correction: ''
+  error: See Swan & Smith (2001) for L1-specific patterns
+  explanation: 'Swan & Smith (2001). Spanish (no modal auxiliaars: *Maria cans cook), Portuguese (similar to Spanish), French
+    (different modal system), Dutch (different modals), German (different modal system, separable prefixes), Italian (different
+    modals), Russian (different modals), Polish (different modals), Arabic (different modals), Turkish (different modals),
+    Japanese (different modality system), Chinese (different modality system), Korean (different modality system), Thai (different
+    modality system).'
+  flagged: false
+  l1_groups:
+  - Spanish
+  - Portuguese
+  - French
+  - Dutch
+  - German
+  - Italian
+  - Russian
+  - Polish
+  - Arabic
+  - Turkish
+  - Japanese
+  - Chinese
+  - Korean
+  - Thai
+  reliability: B
+  source: 'Swan & Smith (2001) Learner English: A Teacher''s Guide to Interference and Other Problems, 2nd ed. Cambridge University
+    Press.'
+description: Auxiliary verbs that express ability, permission, possibility, obligation, or prediction. Used with the base
+  form of the main verb (no -s, -ing, -ed).
+dialectal_variation:
+- note: '''Shall'' is used in BrE for first person questions. AmE uses ''should''.'
+- note: '''Mustn''t'' is used in BrE for prohibition. AmE uses ''can''t''.'
+- note: 'BrE vs AmE (Biber corpus): In fiction and conversation, obligation modals (must, should) and prediction modals (will,
+    would, shall) are more common in BrE. Semi-modals have to and be going to are more common in AmE. (Had) better and (have)
+    got to (gotta) are considerably more common in BrE conversation.'
+- note: 'Historical development (OED data in Biber): semi-modals developed recently — need to/ought to/used to attested before
+    1400; have to/be going to 1400-1650; be supposed to 1650-1800; (have) got to after 1800. Linguistic novelty appears in
+    conversation first, then spreads to writing.'
+discourse_notes:
+- note: 'Modals are used for politeness strategies: "Could you...?" is more polite than "Can you...?"'
+- note: 'Modals express degrees of certainty: "must" (certain) vs "might" (possible).'
+- note: 'In academic writing, hedging modals are common: "This could suggest that..."'
+- note: 'Biber corpus finding: verbs most associated with modals (over 60%) include mental/emotional verbs (imagine, cope,
+    tolerate, fathom, abide) — these co-occur with modals because they express personal stance.'
+form:
+  affirmative:
+    example_generator:
+    - I can swim.
+    - She must go.
+    - They should study.
+    - He might come.
+    min_examples: 4
+    structure: Subject + modal + base verb (no to, no -s, no -ing, no -ed)
+  negative:
+    example_generator:
+    - I cannot (can't) swim.
+    - She must not (mustn't) go.
+    - They should not (shouldn't) study.
+    - He might not (mightn't) come.
+    min_examples: 4
+    structure: 'Subject + modal + not + base verb (contractions: can''t, couldn''t, mustn''t, shouldn''t, won''t, wouldn''t,
+      mightn''t)'
+  questions:
+    example_generator:
+    - Can you swim?
+    - Must she go?
+    - Should they study?
+    - Might he come?
+    min_examples: 4
+    structure: Modal + subject + base verb?
 grammar_point: modals
-title: Modal Verbs (can, could, may, might, will, would, shall, should, must)
-description: Auxiliary verbs that express ability, permission, possibility, obligation,
-  or prediction. Used with the base form of the main verb (no -s, -ing, -ed).
 level: A2
 meaning:
-  core_meaning: Modal verbs express the speaker's attitude toward an action — whether
-    it is possible, permitted, obligatory, or likely. They do not describe the action
-    itself but the speaker's judgment about it. All modals are followed by the base
-    form of the main verb (no to, no -s, no -ing).
-  timeline: 'Varies by modal: can (present ability), could (past ability), will (future
-    prediction), must (present obligation), might (future possibility).'
-  contrast: '''Can'' = present ability/permission (I can drive.) vs ''Could'' = past
-    ability/polite request (I could drive when I was 18.) vs ''Must'' = strong obligation
-    (You must wear a seatbelt.)'
   ccqs:
-  - question: Is this about what someone is able to do, or what they are allowed to
-      do?
-    answer: Ability = can/could. Permission = can/may/could.
-    purpose: Tests whether the learner can distinguish between the two main functions
-      of modals -- ability (can/could) vs permission (can/may/could). This is the
-      most fundamental distinction for modal verbs at A2 level.
-  - question: Is this about something that is certain, possible, or obligatory?
-    answer: Certain = will. Possible = may/might/could. Obligation = must/should.
-    purpose: Tests whether the learner can identify the semantic categories that different
-      modals express. This helps them choose the correct modal for the intended meaning.
-  - question: Does the modal change form for he/she/it (add -s)?
-    answer: No — modals never change form. 'He can' NOT 'He cans'. 'She must' NOT
-      'She musts'.
-    purpose: Tests whether the learner knows that modals are invariable -- they never
-      take -s, -ing, or -ed. This is a structural rule that applies to ALL modals
-      and is one of the most common errors at A2 level.
+  - answer: Ability = can/could. Permission = can/may/could.
+    purpose: Tests understanding that must not = prohibition; do not have to = absence of obligation
+    question: Is 'must not' the same as 'do not have to'? What is the difference?
+  - answer: Certain = will. Possible = may/might/could. Obligation = must/should.
+    purpose: Tests whether the learner can identify the semantic categories that different modals express. This helps them
+      choose the correct modal for the intended meaning.
+    question: Is this about something that is certain, possible, or obligatory?
+  - answer: No — modals never change form. 'He can' NOT 'He cans'. 'She must' NOT 'She musts'.
+    purpose: Tests whether the learner knows that modals are invariable -- they never take -s, -ing, or -ed. This is a structural
+      rule that applies to ALL modals and is one of the most common errors at A2 level.
+    question: Does the modal change form for he/she/it (add -s)?
+  - answer: The negative form is must not (mustn't). However, must not (prohibition -- you are forbidden) does not mean the
+      same as do not have to (no obligation -- it is optional). You must not smoke here means it is forbidden. You do not
+      have to smoke here means it is your choice.
+    purpose: Tests whether the learner understands that must and do not have to are not opposites. Must not expresses prohibition
+      while do not have to expresses lack of obligation. This is one of the most important semantic distinctions for modal
+      verbs and a frequent source of confusion across all proficiency levels.
+    question: What is the negative form of must, and does must not mean the same as do not have to?
+  contrast: '''Can'' = present ability/permission (I can drive.) vs ''Could'' = past ability/polite request (I could drive
+    when I was 18.) vs ''Must'' = strong obligation (You must wear a seatbelt.)'
+  core_meaning: Modal verbs express the speaker's attitude toward an action — whether it is possible, permitted, obligatory,
+    or likely. They do not describe the action itself but the speaker's judgment about it. All modals are followed by the
+    base form of the main verb (no to, no -s, no -ing).
   example_generator:
     contexts:
     - ability and skills
@@ -39,78 +374,190 @@ meaning:
     - advice and recommendations
     cultural_notes:
     - Use diverse scenarios (workplace, school, travel, daily life)
-    - Be mindful of cultural differences in politeness — 'may' is more formal than
-      'can' for permission
+    - Be mindful of cultural differences in politeness — 'may' is more formal than 'can' for permission
     - Avoid examples with alcohol, gambling, or illegal activities
     min_examples: 5
-form:
-  affirmative:
-    structure: Subject + modal + base verb (no to, no -s, no -ing, no -ed)
-    example_generator:
-    - I can swim.
-    - She must go.
-    - They should study.
-    - He might come.
-    min_examples: 4
-  negative:
-    structure: 'Subject + modal + not + base verb (contractions: can''t, couldn''t,
-      mustn''t, shouldn''t, won''t, wouldn''t, mightn''t)'
-    example_generator:
-    - I cannot (can't) swim.
-    - She must not (mustn't) go.
-    - They should not (shouldn't) study.
-    - He might not (mightn't) come.
-    min_examples: 4
-  questions:
-    structure: Modal + subject + base verb?
-    example_generator:
-    - Can you swim?
-    - Must she go?
-    - Should they study?
-    - Might he come?
-    min_examples: 4
+  timeline: 'Varies by modal: can (present ability), could (past ability), will (future prediction), must (present obligation),
+    might (future possibility).'
+phonetics:
+- example_generator:
+  - I can /aɪ kən/
+  - She could /ʃiː kəd/
+  - You should /juː ʃəd/
+  l1_issue: Portuguese and Spanish speakers often pronounce modals with full vowel sounds. Teach weak forms for natural speech.
+  note: 'Weak forms in connected speech: ''can'' → /kən/, ''could'' → /kəd/, ''should'' → /ʃəd/, ''would'' → /wəd/, ''might''
+    → /maɪt/ (no reduction).'
+- example_generator:
+  - can't /kɑːnt/
+  - won't /wəʊnt/
+  - shouldn't /ʃʊdnt/
+  l1_issue: Many L1 speakers struggle with 'won't' pronunciation /wəʊnt/. It does not rhyme with 'don't'. Drill explicitly.
+  note: 'Contractions are essential in spoken English: can''t /kɑːnt/, couldn''t /kʊdnt/, mustn''t /mʌsnt/, shouldn''t /ʃʊdnt/,
+    won''t /wəʊnt/, wouldn''t /wʊdnt/.'
+register_notes:
+- note: '''May'' is more formal than ''can'' for permission. Biber et al. corpus: may is extremely common in academic prose
+    but rare in conversation, where it typically marks logical possibility rather than permission.'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: '''Shall'' is formal and primarily used in BrE. Corpus data: shall is the rarest modal; in academic prose it marks
+    volition more often than prediction (e.g., "We shall deal with...").'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: '''Must'' is strong and direct. ''Should'' is more polite. Corpus finding: must in conversation is used mostly for
+    logical necessity ("It must have fallen out"), while in academic prose it more often marks personal obligation ("Care
+    must be taken...").'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: Semi-modals (have to, be going to, need to) are 5x more common in conversation than in written registers. Have to
+    is the only semi-modal common across all four registers.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: Be going to is the most common semi-modal in conversation, used mainly for personal volition. It is many times more
+    frequent in conversation than in academic prose.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: Can and could are relatively common across all registers. Can is extremely common in conversation and academic prose;
+    could is particularly common in fiction.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: Will is extremely common in conversation and news reportage. Would is extremely common in conversation and fiction.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: Biber et al. (2021) — Modals comprise only 10-15% of all finite verb phrases across ALL registers. Each modal has
+    distinct register distribution patterns. Ch. 6.6.2
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 6.6.2
+- note: 'GB 2nd ed. (Ch.9) notes that academic writing uses modal hedging (may, might, could) to express caution and avoid
+    overgeneralization: ''This may be the case,'' ''The results could suggest...''  Academic hedging is a pragmatic use of
+    modality, not just epistemic possibility. Hard sciences tend toward weaker modals (it is possible that...) while humanities
+    use stronger assertions.'
+  source: Team observation
+  reliability: D
+  tier: 4
+sources:
+  corpus_evidence: 'Biber et al. (1999) LSWE Corpus: 4-register comparison (conversation, fiction, news, academic prose).
+    Key findings: modals are most common in conversation, least common in news and academic prose; semi-modals are 5x more
+    common in conversation than in written expository registers.'
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Swan (2016) Practical English Usage, 4th ed.(modal auxiliary verbs: can, could, may, might, must, should, will,
+    would, shall, ought)'
+  secondary: Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch. 6.6
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners. Ch. 8: Modals'
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(modals: can, could, may, might, must, should, will, would)'
 sub_rules:
-- rule: Modals never change form — no -s for third person, no -ing, no -ed
-  type: grammatical
-  examples:
+- examples:
   - He can swim. (NOT He cans)
   - She must go. (NOT She musts)
   - They should study. (NOT They shoulds)
-- rule: Modals are always followed by the base verb (no 'to')
+  rule: Modals never change form — no -s for third person, no -ing, no -ed
   type: grammatical
-  examples:
+- examples:
   - I can swim. (NOT I can to swim)
   - She must go. (NOT She must to go)
-- rule: Can/cannot for ability and permission
-  type: semantic
-  examples:
+  rule: Modals are always followed by the base verb (no 'to')
+  type: grammatical
+- examples:
   - I can speak English. (ability)
   - Can I leave early? (permission)
   - You cannot park here. (prohibition)
-- rule: May/might for possibility and formal permission
+  rule: Can/cannot for ability and permission
   type: semantic
-  examples:
+- examples:
   - It might rain. (possibility)
   - May I come in? (formal permission)
   - She may be late. (possibility)
-- rule: Must/should for obligation and advice
+  rule: May/might for possibility and formal permission
   type: semantic
-  examples:
+- examples:
   - You must wear a seatbelt. (strong obligation)
   - You should study more. (advice)
   - We must not be late. (prohibition)
-- rule: Will/would for predictions and polite requests
+  rule: Must/should for obligation and advice
   type: semantic
-  examples:
+- examples:
   - It will rain tomorrow. (prediction)
   - Would you help me? (polite request)
   - I would like some coffee. (polite desire)
-- rule: Could for past ability and polite requests
+  rule: Will/would for predictions and polite requests
   type: semantic
-  examples:
+- examples:
   - I could run fast when I was young. (past ability)
   - Could you open the window? (polite request)
   - Could I borrow your pen? (polite request)
+  rule: Could for past ability and polite requests
+  type: semantic
+teaching:
+  methodology: PPP (Present-Practice-Produce)
+  recommended_activities:
+  - adaptation_notes: 'Students ask classmates about abilities: ''Can you swim?'' ''Can you play guitar?'' Then report: ''Pedro
+      can swim. Maria can''t play guitar.'''
+    duration: 10
+    name: Can You...?
+  - adaptation_notes: 'Students practice asking for permission in different situations: classroom, office, restaurant. ''Can
+      I...?'' ''May I...?'' ''Could I...?'' Focus on polite forms.'
+    duration: 15
+    name: Permission Role Play
+  - adaptation_notes: 'Teacher says a situation. Students choose ''must'' or ''should'': ''Wear a seatbelt.'' (must) ''Study
+      more.'' (should) ''Be kind to others.'' (should) ''Stop at a red light.'' (must)'
+    duration: 10
+    name: Must or Should?
+  - adaptation_notes: 'Show pictures of situations (dark clouds, someone studying hard, a job interview). Students make predictions:
+      ''It might rain.'' ''She might pass the exam.'' ''He might get the job.'''
+    duration: 15
+    name: What Might Happen?
+  tips:
+  - 'Biber et al. (2021) GSWE. John Benjamins. Ch. 6.6.4.1: Permission/possibility modals differ by register. In academic
+    prose, could, may, and might are used almost exclusively for logical possibility. Permission is rarely expressed in academic
+    writing. May is rarely used in conversation; when it occurs it marks logical possibility. Can is the most multifunctional
+    — marking permission, ability, and possibility across all registers. Might is the most restricted — only logical possibility.'
+  - 'GB3 Ch. 8: Three types of modal meaning — logical probability (epistemic: may/might/must for inference), social interaction
+    (deontic: can/may/should/must for permission, advice, obligation), and ability/tendency (can/could/would for ability,
+    past habit). Each modal has at least two of these meanings. Source: Celce-Murcia & Larsen-Freeman (2015) GB3 3rd ed. Ch.
+    8 §8.2.'
+  - 'GB3 Ch. 8: Core meaning framework (Sweetser 1990, Tyler 2012) — each modal expresses a force-dynamic relationship: can
+    = potential force, could = weakened potential, must = irresistible force, should = weakened obliging force, will = force
+    of commitment, would = weakened force of commitment. These core meanings extend across all three domains (logical, social,
+    ability). Source: GB3 3rd ed. Ch. 8 §8.2.'
+  - 'GB3 Ch. 8: Modal advice scale (from weakest to strongest) — might/could (tentative suggestion) < should/ought to/had
+    better (stronger advice) < must/have to/have got to/need to (strong obligation). Modal request scale — Can/Could/Will/Would/May
+    (increasing politeness). Past modals (could, would) are more polite than present forms. Source: GB3 3rd ed. Ch. 8 §8.3.'
+  - 'Parrott (2000) Ch. 11: Modal verbs are used far more in spoken than in written English, because communicative functions
+    are more common in face-to-face interaction. Pure modals (can, could, may, might, must, shall, should, will, would) have
+    five formal characteristics: no 3rd person -s, followed by bare infinitive, negated with not, inverted for questions,
+    no past form. Semi-modals (ought, had better, have got to) share meaning but not all formal features. Source: Parrott
+    (2000) Grammar for English Language Teachers, 2nd ed. Ch. 11: Modal verbs, 11.1-11.8.'
+  - 'Start with ''can'' for ability — this is the most intuitive modal for A2 students. Use real examples: ''I can swim. I
+    can''''t fly.'''
+  - 'Move from ability to permission: ''I can swim (ability) vs Can I go to the bathroom? (permission).'' Same word, different
+    meaning.'
+  - 'Teach must/should as a pair: must = strong obligation (rules), should = advice (recommendations).'
+  - 'Use real-life scenarios for permission: ''Can I leave early?'' ''May I open the window?'' ''Could I borrow your pen?'''
+  - Drill contractions explicitly — they are essential for natural spoken English.
+  - 'Contrast ''may'' and ''might'' for possibility: may = more likely, might = less certain.'
+  - 'Swan PEU: Modals have no infinitives, participles, or past tenses. Drill: ''I can swim'' NOT ''I cans swim'' or ''I can
+    to swim''.'
+  - 'Swan PEU: For deduction, ''must'' = certain, ''should'' = probable, ''may/might/could'' = possible, ''can''t'' = impossible.
+    Teach as a certainty scale.'
+  - 'Swan PEU: ''Must'' vs ''have to'' — in conversation, ''must'' is mostly used for logical necessity (''It must have fallen
+    out''), not personal obligation.'
+  - 'Swan PEU: ''Will'' for willingness/offers: ''I''ll help you'' (spontaneous decision). Contrast with ''going to'' for
+    pre-planned intentions.'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 3: CGEL (Ch.3) classifies core modals (can, could, may,
+    might, shall, should, will, would, must) as a CLOSED class — no new members. Semi-modals (ought to, need to, have to,
+    be able to, be going to, be supposed to) are an OPEN class. This distinction matters for teaching: core modals have no
+    -s form (*he cans), no infinitive (*to can), no past participle (*have canned for modal meaning).'
+  - 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: GB3 analyzes modal remoteness: past tense modals
+    express politeness by creating interpersonal distance. ''Could you help me?'' is more polite than ''Can you help me?''
+    because the past tense modal ''could'' signals remoteness from immediate insistence. ''Would you,'' ''Might you'' follow
+    the same pattern. This is the MODAL remoteness use of past tense discourse — not past time reference.'
+title: Modal Verbs (can, could, may, might, will, would, shall, should, must)
 use:
 - context: Ability (can/could)
   description: Expressing what someone is or was able to do
@@ -147,93 +594,3 @@ use:
   - Would you help me with this?
   - I would like some coffee.
   - Will you marry me?
-phonetics:
-- note: 'Weak forms in connected speech: ''can'' → /kən/, ''could'' → /kəd/, ''should''
-    → /ʃəd/, ''would'' → /wəd/, ''might'' → /maɪt/ (no reduction).'
-  example_generator:
-  - I can /aɪ kən/
-  - She could /ʃiː kəd/
-  - You should /juː ʃəd/
-  l1_issue: Portuguese and Spanish speakers often pronounce modals with full vowel
-    sounds. Teach weak forms for natural speech.
-- note: 'Contractions are essential in spoken English: can''t /kɑːnt/, couldn''t /kʊdnt/,
-    mustn''t /mʌsnt/, shouldn''t /ʃʊdnt/, won''t /wəʊnt/, wouldn''t /wʊdnt/.'
-  example_generator:
-  - can't /kɑːnt/
-  - won't /wəʊnt/
-  - shouldn't /ʃʊdnt/
-  l1_issue: Many L1 speakers struggle with 'won't' pronunciation /wəʊnt/. It does
-    not rhyme with 'don't'. Drill explicitly.
-teaching:
-  methodology: PPP (Present-Practice-Produce)
-  tips:
-  - 'Start with ''can'' for ability — this is the most intuitive modal for A2 students.
-    Use real examples: ''I can swim. I can''t fly.'''
-  - 'Move from ability to permission: ''I can swim (ability) vs Can I go to the bathroom?
-    (permission).'' Same word, different meaning.'
-  - 'Teach must/should as a pair: must = strong obligation (rules), should = advice
-    (recommendations).'
-  - 'Use real-life scenarios for permission: ''Can I leave early?'' ''May I open the
-    window?'' ''Could I borrow your pen?'''
-  - Drill contractions explicitly — they are essential for natural spoken English.
-  - 'Contrast ''may'' and ''might'' for possibility: may = more likely, might = less
-    certain.'
-  recommended_activities:
-  - name: Can You...?
-    duration: 10
-    adaptation_notes: 'Students ask classmates about abilities: ''Can you swim?''
-      ''Can you play guitar?'' Then report: ''Pedro can swim. Maria can''t play guitar.'''
-  - name: Permission Role Play
-    duration: 15
-    adaptation_notes: 'Students practice asking for permission in different situations:
-      classroom, office, restaurant. ''Can I...?'' ''May I...?'' ''Could I...?'' Focus
-      on polite forms.'
-  - name: Must or Should?
-    duration: 10
-    adaptation_notes: 'Teacher says a situation. Students choose ''must'' or ''should'':
-      ''Wear a seatbelt.'' (must) ''Study more.'' (should) ''Be kind to others.''
-      (should) ''Stop at a red light.'' (must)'
-  - name: What Might Happen?
-    duration: 15
-    adaptation_notes: 'Show pictures of situations (dark clouds, someone studying
-      hard, a job interview). Students make predictions: ''It might rain.'' ''She
-      might pass the exam.'' ''He might get the job.'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
-    Modals, §9.1-9.6'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 3: The Verb, §3.9 (modality)'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 121-170 (modals:
-    can, could, may, might, must, should, will, would)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    9: Modals, §9.1-9.6'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 8: Modals'
-common_errors:
-- error: 'Using ''to'' after modals: *''I can to swim.'''
-  correction: I can swim.
-  explanation: Modal verbs are followed by the base verb without to.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - German
-- error: 'Adding -s to modals: *''He cans swim.'''
-  correction: He can swim.
-  explanation: Modal verbs never change form.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: '''May'' is more formal than ''can'' for permission.'
-- note: '''Shall'' is formal and primarily used in BrE.'
-- note: '''Must'' is strong and direct. ''Should'' is more polite.'
-dialectal_variation:
-- note: '''Shall'' is used in BrE for first person questions. AmE uses ''should''.'
-- note: '''Mustn''t'' is used in BrE for prohibition. AmE uses ''can''t''.'
-discourse_notes:
-- note: 'Modals are used for politeness strategies: "Could you...?" is more polite
-    than "Can you...?"'
-- note: 'Modals express degrees of certainty: "must" (certain) vs "might" (possible).'
-- note: 'In academic writing, hedging modals are common: "This could suggest that..."'

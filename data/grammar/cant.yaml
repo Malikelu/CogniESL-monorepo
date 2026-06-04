@@ -1,13 +1,11 @@
 grammar_point: cant
 title: Can't (inability, impossibility)
-description: Modal verb used to express inability (present/past) or that something
-  is impossible.
+description: Modal verb used to express inability (present/past) or that something is impossible.
 level: A2
 meaning:
-  core_meaning: Expresses present inability (can't) or past inability (couldn't);
-    also used for impossibility (it can't be true).
-  timeline: Present inability (can't), past inability (couldn't), present impossibility
-    (can't be).
+  core_meaning: Expresses present inability (can't) or past inability (couldn't); also used for impossibility (it can't be
+    true).
+  timeline: Present inability (can't), past inability (couldn't), present impossibility (can't be).
   contrast: 'Can''t = Present inability: "I can''t drive" (now)
 
     Couldn''t = Past inability: "I couldn''t drive last year" (past)
@@ -18,19 +16,23 @@ meaning:
   ccqs:
   - question: I can't drive. Is this about now or the past?
     answer: Now. 'Can't' is present inability.
-    purpose: Tests whether the learner understands that "can't" expresses present
-      inability. This is important because it is the negative form of "can" for ability
-      and is used constantly in everyday communication.
+    purpose: Tests whether the learner understands that "can't" expresses present inability. This is important because it
+      is the negative form of "can" for ability and is used constantly in everyday communication.
   - question: It can't be 10 PM already! Does the speaker think it is possible?
     answer: No. The speaker believes it is impossible or very surprising.
-    purpose: Tests whether the learner understands that "can't" can express impossibility
-      or disbelief (logical deduction), not just inability. This extends the use of
-      "can't" beyond physical ability to logical reasoning.
+    purpose: Tests whether the learner understands that "can't" can express impossibility or disbelief (logical deduction),
+      not just inability. This extends the use of "can't" beyond physical ability to logical reasoning.
   - question: She couldn't come yesterday. Was she able to come?
-    answer: No. 'Couldn't' means she was not able to come in the past.
-    purpose: Tests whether the learner understands that "couldn't" is the past form
-      of "can't" for inability. This is important because learners need to express
-      what they were unable to do in the past.
+    answer: No, she wasn't able to come yesterday. 'Couldn't' expresses past inability, which is different from 'mustn't'
+      (prohibition).
+    purpose: Tests whether the learner can distinguish "can't" (impossibility) from "mustn't" (prohibition). With young children,
+      "can't" is sometimes used loosely to mean "not allowed to," but these are fundamentally different concepts. "I can't
+      eat nuts" means it is impossible (allergy), while "I mustn't eat nuts" means I am forbidden from doing so.
+  - question: Which is correct? *'I can't see nothing' or 'I can't see anything'?
+    answer: '''I can''t see anything.'' After can''t (negative), we use ''anything'', not ''nothing''. Double negatives are
+      not standard in English.'
+    purpose: Tests whether the learners know that can't requires a non-affirmative word (anything, anyone), not a negative
+      one (Swan PEU 2016, entry 309).
   example_generator:
     contexts:
     - everyday situations
@@ -69,22 +71,19 @@ sub_rules:
   - I couldn't sleep last night
   - She couldn't come yesterday
   - They couldn't find the address
-- rule: Can't expresses that something is logically impossible or the speaker believes
-    it is not true
+- rule: Can't expresses that something is logically impossible or the speaker believes it is not true
   type: semantic
   examples:
   - That can't be right — I checked twice
   - It can't be 10 PM already
   - She can't be 40 — she looks 25
-- rule: Can't means inability or impossibility. Mustn't means prohibition. They are
-    completely different
+- rule: Can't means inability or impossibility. Mustn't means prohibition. They are completely different
   type: semantic
   examples:
   - You can't park here (it is not possible)
   - You mustn't park here (it is forbidden)
   - I can't eat nuts (I am allergic)
-- rule: In informal English, can't is sometimes used to mean not allowed to, especially
-    with children
+- rule: In informal English, can't is sometimes used to mean not allowed to, especially with children
   type: register
   examples:
   - You can't eat sweets before dinner
@@ -110,77 +109,88 @@ use:
   - That can't be her; she's in London.
   key_point: Based on logical impossibility.
 phonetics:
-- note: The key difference between can and can't in speech is the vowel. Can is reduced
-    to /kən/ (schwa), while can't has a full vowel /kɑːnt/ (British) or /kænt/ (American).
+- note: The key difference between can and can't in speech is the vowel. Can is reduced to /kən/ (schwa), while can't has
+    a full vowel /kɑːnt/ (British) or /kænt/ (American).
   example_generator:
     contexts:
     - can vs can't distinction
-  l1_issue: Learners often struggle to hear the difference, especially in fast speech.
-    Spanish and Japanese speakers may not distinguish the vowel quality clearly.
-- note: Couldn't is pronounced /ˈkʊdənt/. The first syllable has a short /ʊ/ vowel,
-    and the second syllable is reduced to a schwa. The l in couldn't is silent.
+  l1_issue: Learners often struggle to hear the difference, especially in fast speech. Spanish and Japanese speakers may not
+    distinguish the vowel quality clearly.
+- note: Couldn't is pronounced /ˈkʊdənt/. The first syllable has a short /ʊ/ vowel, and the second syllable is reduced to
+    a schwa. The l in couldn't is silent.
   example_generator:
     contexts:
     - couldn't pronunciation
-  l1_issue: Learners may pronounce the l in couldn't — it is silent. Arabic speakers
-    may struggle with the /d/ to /n/ transition.
+  l1_issue: Learners may pronounce the l in couldn't — it is silent. Arabic speakers may struggle with the /d/ to /n/ transition.
 teaching:
   methodology: PPP
   tips:
-  - 'Contrast with ''can'' for ability vs inability: ''I can swim'' vs ''I can''t
-    swim''.'
+  - 'Contrast with ''can'' for ability vs inability: ''I can swim'' vs ''I can''t swim''.'
   - 'Practice with past time markers: ''yesterday'', ''last year'' and use ''couldn''t''.'
   - 'Role-play: Student expresses inability to do a task using ''can''t''.'
   - 'Use surprise scenarios for impossibility: ''It can''t be Monday already!'''
+  - 'Swan PEU: ''Can''''t'' = logically impossible — ''That can''''t be true!'' = it''s impossible. ''She can''''t be at home
+    — her car isn''''t there.'' NOT ''must not'' (mustn''t = prohibition, not impossibility in English).'
   recommended_activities:
   - name: I Can't Yet
     duration: 15
-    adaptation_notes: 'Students make a list of things they can''t do but want to learn.
-      They share with a partner: ''I can''t cook Thai food, but I want to learn.''
-      Add ''yet'' for a growth mindset focus.'
+    adaptation_notes: 'Students make a list of things they can''t do but want to learn. They share with a partner: ''I can''t
+      cook Thai food, but I want to learn.'' Add ''yet'' for a growth mindset focus.'
   - name: Mystery Object
     duration: 10
-    adaptation_notes: 'Show a strange object. Students guess what it is using ''It
-      can''t be a...'' and ''It might be a...'': ''It can''t be a kitchen tool — it
-      is too small.'''
+    adaptation_notes: 'Show a strange object. Students guess what it is using ''It can''t be a...'' and ''It might be a...'':
+      ''It can''t be a kitchen tool — it is too small.'''
   - name: Then and Now
     duration: 15
-    adaptation_notes: 'Students compare what they couldn''t do in the past with what
-      they can do now: ''I couldn''t read English when I was six, but I can read it
-      now.'''
+    adaptation_notes: 'Students compare what they couldn''t do in the past with what they can do now: ''I couldn''t read English
+      when I was six, but I can read it now.'''
 sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
-    Modals, §9.1-9.6'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
 common_errors:
 - error: '*I can''t to go.*'
   correction: I can't go.
-  explanation: Modal verbs (can, could, must, should) are followed by the base verb
-    directly -- no 'to'.
+  explanation: Modal verbs (can, could, must, should) are followed by the base verb directly -- no 'to'.
   l1_groups:
   - Portuguese
   - Spanish
   - French
   - Italian
+  reliability: D
+  flagged: true
 register_notes:
-- note: 'In formal writing, modals express hedging and caution: ''These results may
-    suggest...'''
-- note: 'In conversation, modals are essential for politeness: ''Could you pass the
-    salt?'''
-- note: 'In legal language, ''must'' expresses strong obligation: ''All passengers
-    must wear seatbelts.'''
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
+- note: 'In conversation, modals are essential for politeness: ''Could you pass the salt?'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In legal language, ''must'' expresses strong obligation: ''All passengers must wear seatbelts.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — ''Can''t/cannot'': academic prose uses ''cannot'' for inability; conversation uses ''can''t''.
+    Negation with modals is register-sensitive — full forms are more formal/written. Ch. 6.6'
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 6.6
+  reliability: C
+dialectal_variation: []
 discourse_notes:
-- note: In conversation, modals are essential for politeness, expressing degrees of
-    certainty, and making requests.
-- note: 'In academic writing, modals express hedging and caution: ''These results
-    may suggest...'' ''It could be argued that...'''
-- note: 'In legal and regulatory language, modals express obligation and permission:
-    ''All passengers must wear seatbelts.'''
+- note: In conversation, modals are essential for politeness, expressing degrees of certainty, and making requests.
+- note: 'In academic writing, modals express hedging and caution: ''These results may suggest...'' ''It could be argued that...'''
+- note: 'In legal and regulatory language, modals express obligation and permission: ''All passengers must wear seatbelts.'''
+citations:
+- claim: 'Core meaning: Expresses present inability (can''t) or past inability (couldn''t); also used for impossibility (it
+    ca'
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms'
+  tier: 1
+  reliability: B
+- claim: 'Discourse function: In conversation, modals are essential for politeness, expressing degrees of certainty, and making
+    re'
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms'
+  tier: 1
+  reliability: B
+- claim: Common error '*I can't to go.*' for Portuguese, Spanish, French speakers
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+  reliability: B

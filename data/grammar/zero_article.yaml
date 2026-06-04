@@ -1,46 +1,78 @@
-grammar_point: zero_article
-title: Zero Article
+citations:
+- claim: 'Core meaning: Signals general reference to plural countable nouns or uncountable
+    nouns, indicating all members of '
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 15:
+    Articles'
+  tier: 4
+- claim: 'Register distribution: Article usage is consistent across registers.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 15:
+    Articles'
+  tier: 4
+- claim: 'Discourse function: Zero article makes general statements: ''Dogs are loyal.''
+    (all dogs, in general)'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 15:
+    Articles'
+  tier: 4
+- claim: 'Common error ''Using ''the'' with general plurals: *''I love the music.''''
+    for Portuguese, Spanish, French speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: 'Dialectal variation: BrE uses ''the'' before some nouns where AmE uses zero
+    article: ''in the hospital'' (AmE) vs ''in hospita'
+  reliability: B
+  source: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  tier: 1
+- claim: L1 transfer in zero article varies across language backgrounds \u2014 Swan
+    & Smith document contrastive patterns for different L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+common_errors:
+- correction: I love music.
+  error: 'Using ''the'' with general plurals: *''I love the music.'''
+  explanation: No article for general statements with uncountable or plural nouns.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+- correction: I visited France.
+  error: 'Using ''the'' with most country names: *''I visited the France.'''
+  explanation: No article with most country names. Use 'the' with countries containing
+    'kingdom', 'states', 'republic'.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: D
 description: Omission of articles (a, an, the) before plural countable nouns or uncountable
   nouns when referring to them in general, or in specific fixed expressions. Essential
   for natural general statements.
-level: A1
-meaning:
-  core_meaning: Signals general reference to plural countable nouns or uncountable
-    nouns, indicating all members of a class rather than a specific item. Also used
-    in fixed expressions for meals, transport, and institutions.
-  timeline: N/A (Zero article is not tense-based; it describes noun reference, not
-    time.)
-  contrast: 'Zero article = General plural/uncountable: "Books are useful" (all books)
-
-    THE = Specific plural/uncountable: "The books on the table are mine" (specific
-    books)
-
-    A/AN = Never used for general plurals/uncountables
-
-    '
-  ccqs:
-  - question: When do we use no article
-    answer: With general plural nouns, most country names, meals, languages, sports.
-    purpose: Tests whether the learner understands when to use no article (zero article)
-      with general plural nouns, most country names, meals, languages, and sports.
-      This is important because many L1s (Portuguese, Spanish, French) use articles
-      in these contexts where English does not.
-  - question: Can we use a different structure here with the same meaning?
-    answer: No — changing the structure would change the meaning or make the sentence
-      ungrammatical.
-    purpose: Tests whether the learner understands that zero article is the only appropriate
-      structure for this meaning/context.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      zero article and explain why they are incorrect.
-  example_generator:
-    contexts:
-    - everyday situations
-    cultural_notes: []
-    min_examples: 5
+dialectal_variation:
+- note: 'BrE uses ''the'' before some nouns where AmE uses zero article: ''in the
+    hospital'' (AmE) vs ''in hospital'' (BrE).'
+discourse_notes:
+- note: 'Zero article makes general statements: ''Dogs are loyal.'' (all dogs, in
+    general)'
+- note: '''The'' makes specific reference: ''The dog next door barks all night.''\n    (specific
+    dog)'
 form:
   affirmative:
+    example_generator:
+      contexts:
+      - food and daily routines
+      min_examples: 4
     structure: 'Zero article + plural countable noun (general): "Dogs are friendly"
 
       Zero article + uncountable noun (general): "Water is essential"
@@ -51,133 +83,185 @@ form:
       bus", "go to school"
 
       '
-    example_generator:
-      contexts:
-      - food and daily routines
-      min_examples: 4
   negative:
-    structure: 'Zero article itself has no negative form; negation applies to the
-      verb: ''We don''t eat meat'' (not ''We eat no meat'' as general rule).'
     example_generator:
       contexts:
       - education and school
       - food and daily routines
       min_examples: 4
+    structure: 'Zero article itself has no negative form; negation applies to the
+      verb: ''We don''t eat meat'' (not ''We eat no meat'' as general rule).'
   questions:
-    structure: 'Zero article stays in same position in questions: ''Do dogs bark?''
-      ''Is water wet?'''
     example_generator:
       contexts:
       - everyday situations
       min_examples: 4
+    structure: 'Zero article stays in same position in questions: ''Do dogs bark?''
+      ''Is water wet?'''
+grammar_point: zero_article
+level: A1
+meaning:
+  ccqs:
+  - answer: With general plural nouns, most country names, meals, languages, sports.
+    purpose: Tests whether the learner understands when to use no article (zero article)
+      with general plural nouns, most country names, meals, languages, and sports.
+      This is important because many L1s (Portuguese, Spanish, French) use articles
+      in these contexts where English does not.
+    question: When do we use no article
+  - answer: No — changing the structure would change the meaning or make the sentence
+      ungrammatical.
+    purpose: Tests whether the learner understands that zero article is the only appropriate
+      structure for this meaning/context.
+    question: Can we use a different structure here with the same meaning?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with
+      zero article and explain why they are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: '''I go to school every day.'' With institutions (school, church, prison)
+      used for their primary purpose, no article is used.'
+    purpose: Tests whether the learner knows the zero article rule for institutions
+      used for their primary purpose (Swan PEU 2016, entries 606-607).
+    question: Which is correct? *'I go to the school every day' or 'I go to school
+      every day'?
+  contrast: 'Zero article = General plural/uncountable: "Books are useful" (all books)
+
+    THE = Specific plural/uncountable: "The books on the table are mine" (specific
+    books)
+
+    A/AN = Never used for general plurals/uncountables
+
+    '
+  core_meaning: Signals general reference to plural countable nouns or uncountable
+    nouns, indicating all members of a class rather than a specific item. Also used
+    in fixed expressions for meals, transport, and institutions.
+  example_generator:
+    contexts:
+    - everyday situations
+    cultural_notes: []
+    min_examples: 5
+  timeline: N/A (Zero article is not tense-based; it describes noun reference, not
+    time.)
+phonetics:
+- example_generator:
+    contexts:
+    - general vs specific
+  l1_issue: 'Portuguese and Spanish speakers often add articles where English does
+    not use them. Drill: ''I like cats'' NOT ''I like the cats'' (when speaking generally).'
+  note: 'When no article is used, the noun is often stressed: ''I like CATS'' (not
+    ''I like the cats''). The absence of an article changes the stress pattern.'
+register_notes:
+- note: 'In headlines, articles are often omitted: ''President Visits France.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) \u2014 Zero article use: academic prose uses more zero
+    articles (with abstract/non-count nouns in generic reference); conversation uses
+    more definite/indefinite articles. Article distribution is register-sensitive.
+    Ch. 4.4, 4.5'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 4.4
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 15:
+    Articles'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: No article with general plural nouns
-  type: grammatical
-  examples:
+- examples:
   - I like cats (cats in general)
   - She studies languages (languages in general)
   - They play sports (sports in general)
-- rule: No article with most country names
+  rule: No article with general plural nouns
   type: grammatical
-  examples:
+- examples:
   - I live in Brazil
   - She is from Japan
   - They visited France
-- rule: Use the with countries containing kingdom, states, republic
+  rule: No article with most country names
   type: grammatical
-  examples:
+- examples:
   - the United States
   - the United Kingdom
   - the Czech Republic
   - the Dominican Republic
-- rule: No article with meals, languages, sports, academic subjects
+  rule: Use the with countries containing kingdom, states, republic
   type: grammatical
-  examples:
+- examples:
   - I have breakfast at 7am
   - She speaks English
   - He plays tennis
   - I study mathematics
+  rule: No article with meals, languages, sports, academic subjects
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students decide: article or no article? ''___ cats'' (no article
+      — general), ''___ cats in my building'' (the — specific).'
+    duration: 10
+    name: Article or No Article
+  - adaptation_notes: 'Students list countries: which use ''the'' and which do not?
+      ''Brazil'' (no article), ''the United States'' (with article).'
+    duration: 10
+    name: Country Names
+  - adaptation_notes: 'Students practice the difference: ''I like music'' (general,
+      no article) vs ''I like the music in this restaurant'' (specific, with article).'
+    duration: 15
+    name: General or Specific
+  tips:
+  - 'GB3 Ch. 15: Zero article = no background, sui generis. With noncount and plural
+    count nouns, zero article gives the impression of ''something continuous with
+    indefinite limits'' (Christophersen 1939). Compare ''I need water'' (unlimited,
+    quality focus) vs ''I need some water'' (limited quantity). Source: Celce-Murcia
+    & Larsen-Freeman (2015) GB3 3rd ed. Ch. 15 §15.2.'
+  - 'GB3 Ch. 15: Proper nouns with zero article = implied definiteness. Unique individuals
+    don''t need the for identification (they are already unique) and don''t need a/an
+    for classification (they are not members of a larger class). Exceptions exist
+    when proper nouns are modified (''the young Michael Jordan''). Source: GB3 3rd
+    ed. Ch. 15 §15.2.'
+  - 'Parrott (2000): Zero article with fixed expressions (at home, by car, in bed,
+    at school, on foot) should be taught as lexical chunks rather than through rules.
+    Many of these are idiomatic and do not follow predictable patterns.'
+  - 'Week 1: General plurals/uncountables (drill zero article with common nouns).'
+  - 'Week 2: Abstract nouns and fixed expressions (use flashcards for set phrases).'
+  - 'Use real examples: ''Apples are sweet'' (hold up apple) vs ''The apple on the
+    table is red'' (point to specific).'
+  - 'Swan PEU: Zero article with plurals and uncountables for general statements:
+    ''Dogs are loyal,'' ''Water is essential.'' NOT ''The dogs are loyal'' (unless
+    referring to specific dogs).'
+  - 'Swan PEU: ''The'' does NOT mean ''all.'' For general statements, use zero article:
+    ''Life is hard,'' ''Books are expensive,'' ''Honesty is important.'' Using ''the''
+    with general statements changes the meaning to specific reference.'
+  - 'Celce-Murcia & Larsen-Freeman (1999) The Grammar Book, 2nd ed. Heinle & Heinle.
+    Ch. 15: GB 2nd ed. (Ch.15) documents zero-article geographical names: continents
+    (Asia, Africa), singular countries (Canada, France, Nigeria — exceptions: The
+    Hague, The Matterhorn), cities (London, Tokyo), single mountains (Mount Whitney),
+    single lakes (Lake Michigan), single islands (Catalina Island), streets (Wilshire
+    Boulevard), squares (Trafalgar Square). Plural/collective geographical names require
+    ''the'': the Philippines, the Rockies, the Great Lakes.'
+title: Zero Article
 use:
-- name: General Statements
-  description: Talk about plural countable or uncountable nouns in general.
+- description: Talk about plural countable or uncountable nouns in general.
   examples:
   - Trees produce oxygen.
   - Music calms the mind.
   key_point: No article for general meanings; never use A/AN for general plurals.
-- name: Abstract Concepts
-  description: Refer to abstract nouns (emotions, ideas) in general.
+  name: General Statements
+- description: Refer to abstract nouns (emotions, ideas) in general.
   examples:
   - Honesty is the best policy.
   - Time flies.
   key_point: Abstract nouns take zero article unless specified.
-- name: Fixed Expressions
-  description: Used in set phrases for meals, transport, institutions.
+  name: Abstract Concepts
+- description: Used in set phrases for meals, transport, institutions.
   examples:
   - have lunch
   - by train
   - go to university
   key_point: Memorize fixed expressions; do not add articles.
-phonetics:
-- note: 'When no article is used, the noun is often stressed: ''I like CATS'' (not
-    ''I like the cats''). The absence of an article changes the stress pattern.'
-  example_generator:
-    contexts:
-    - general vs specific
-  l1_issue: 'Portuguese and Spanish speakers often add articles where English does
-    not use them. Drill: ''I like cats'' NOT ''I like the cats'' (when speaking generally).'
-teaching:
-  methodology: PPP
-  tips:
-  - 'Week 1: General plurals/uncountables (drill zero article with common nouns).'
-  - 'Week 2: Abstract nouns and fixed expressions (use flashcards for set phrases).'
-  - 'Use real examples: ''Apples are sweet'' (hold up apple) vs ''The apple on the
-    table is red'' (point to specific).'
-  recommended_activities:
-  - name: Article or No Article
-    duration: 10
-    adaptation_notes: 'Students decide: article or no article? ''___ cats'' (no article
-      — general), ''___ cats in my building'' (the — specific).'
-  - name: Country Names
-    duration: 10
-    adaptation_notes: 'Students list countries: which use ''the'' and which do not?
-      ''Brazil'' (no article), ''the United States'' (with article).'
-  - name: General or Specific
-    duration: 15
-    adaptation_notes: 'Students practice the difference: ''I like music'' (general,
-      no article) vs ''I like the music in this restaurant'' (specific, with article).'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: 'Using ''the'' with general plurals: *''I love the music.'''
-  correction: I love music.
-  explanation: No article for general statements with uncountable or plural nouns.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: 'Using ''the'' with most country names: *''I visited the France.'''
-  correction: I visited France.
-  explanation: No article with most country names. Use 'the' with countries containing
-    'kingdom', 'states', 'republic'.
-  l1_groups:
-  - Portuguese
-  - Spanish
-register_notes:
-- note: Article usage is consistent across registers.
-- note: 'In headlines, articles are often omitted: ''President Visits France.'''
-dialectal_variation:
-- note: 'BrE uses ''the'' before some nouns where AmE uses zero article: ''in the
-    hospital'' (AmE) vs ''in hospital'' (BrE).'
-discourse_notes:
-- note: 'Zero article makes general statements: ''Dogs are loyal.'' (all dogs, in
-    general)'
-- note: '''The'' makes specific reference: ''The dog next door barks all night.''
-    (specific dog)'
+  name: Fixed Expressions

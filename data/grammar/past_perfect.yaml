@@ -1,33 +1,169 @@
-grammar_point: past_perfect
-title: Past Perfect (had + past participle)
+citations:
+- claim: 'Core meaning: An action that was completed before another past action or
+    a specific point in the past'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 1
+- claim: 'Register distribution: Past perfect is common in formal writing and academic
+    prose to clarify chronological order.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 2
+- claim: 'Discourse function: Past perfect creates background information in narratives:
+    ''The sun was shining. It had been a beautiful morning. Suddenly, the phone rang.'''
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 2
+- claim: 'Common error ''Using past simple when past perfect is needed: *''I ate breakfast
+    before he arrived.'' for Portuguese, Spanish, French speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: Perfect aspect in discourse connects past events to current relevance or
+    viewpoint
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 2
+- claim: L1 transfer in past perfect varies significantly across language backgrounds
+    — Swan & Smith document contrastive patterns for speakers of different L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+common_errors:
+- correction: I went to school yesterday.
+  error: 'Using past perfect when past simple is sufficient: *''I had gone to school
+    yesterday.'''
+  explanation: Past perfect is only needed to clarify the order of two past events.
+    If there's only one past event with a specific time, use past simple.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+- correction: I had eaten breakfast before he arrived.
+  error: 'Using past simple instead of past perfect for the earlier event: *''I ate
+    breakfast before he arrived.'''
+  explanation: When emphasizing that one past event was completed before another,
+    use past perfect for the earlier event. However, with 'before' and 'after', past
+    simple is often acceptable because the order is clear.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+- correction: I had finished before he arrived.
+  error: 'Omitting ''had'': *''I finished before he arrived.'''
+  explanation: Past perfect requires 'had' + past participle. Omitting 'had' makes
+    it past simple.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Japanese
+  reliability: D
+- correction: I arrived at 5pm.
+  error: 'Using past perfect with only specific time: *''I had arrived at 5pm.'''
+  explanation: 'Swan PEU: Past perfect requires a second past reference point. With
+    only a specific time and no other past event, use simple past.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
 description: Describes an action that was completed before another past action or
   specific past time. Often called the 'past before the past' tense.
+dialectal_variation:
+- note: 'In informal speech, past perfect is often replaced by past simple, especially
+    with ''already'', ''just'', ''before'': ''I already ate'' vs ''I had already eaten.'''
+- note: In some dialects, 'had' may be reduced to /əd/ or even omitted in fast speech.
+discourse_notes:
+- note: 'Past perfect creates background information in narratives: ''The sun was
+    shining. It had been a beautiful morning. Suddenly, the phone rang.'''
+- note: 'Past perfect is used in reported speech for backshift: ''She said she had
+    finished the report.'''
+- note: 'In academic writing, past perfect establishes the timeline of prior research:
+    ''Smith (2020) had argued that...'''
+- note: 'Past perfect can create suspense in storytelling: ''Little did they know,
+    the decision had already been made.'''
+- note: 'GB3 Ch. 9: Past perfect in narrative — FLASHBACK function. The past perfect
+    shifts the narrative timeline backward to events that occurred before the main
+    past timeline: ''She had never been so lucky. She was walking home that day...''
+    In narratives, past perfect is used briefly for flashbacks, then the narrator
+    returns to simple past for the main timeline.'
+  source: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - completed earlier actions
+      - preparation
+      - background events
+      min_examples: 4
+    structure: 'Subject + had + past participle (V3): ''I had eaten.'' / ''They had
+      left.'' / ''She had finished.'''
+  negative:
+    example_generator:
+      contexts:
+      - things not done before a past moment
+      - unfulfilled expectations
+      min_examples: 3
+    structure: 'Subject + had not (hadn''t) + past participle: ''I hadn''t eaten.''
+      / ''They hadn''t left.'' / ''She hadn''t finished.'''
+  questions:
+    example_generator:
+      contexts:
+      - checking prior events
+      - investigating causes
+      - surprise or disbelief
+      min_examples: 3
+    structure: 'Had + subject + past participle: ''Had you eaten?'' / ''Had they left?''
+      / ''Had she finished?'''
+grammar_point: past_perfect
 level: B1
 meaning:
-  core_meaning: An action that was completed before another past action or a specific
-    point in the past. It clarifies the order of events when both are in the past.
-  timeline: 'Past timeline: [Past Perfect (earlier)] → [Past Simple (later)] → [Now].
-    The Past Perfect event is further back in the past than the Past Simple event.'
-  contrast: '''I had eaten before he came.'' (First: I ate. Then: he came. Both in
-    the past, but eating happened first.) vs ''I ate before he came.'' (Both in past
-    simple — order is clear from ''before'', but no emphasis on completion.)'
   ccqs:
-  - question: Did both actions happen in the past?
-    answer: Yes — both are in the past.
+  - answer: Yes — both are in the past.
     purpose: Tests whether the learner understands that both actions are in the past,
       but one happened before the other. This is the core concept of past perfect,
       the "past before the past".
-  - question: Which happened first — the Past Perfect action or the Past Simple action?
-    answer: The Past Perfect action happened first.
+    question: Did both actions happen in the past?
+  - answer: The Past Perfect action happened first.
     purpose: Tests whether the learner understands that the past perfect action happened
       FIRST, before the past simple action. This is important because getting the
       order wrong changes the meaning of the narrative.
-  - question: Do we know the exact time it happened?
-    answer: Not necessarily — the focus is on the order of events, not the specific
+    question: Which happened first — the Past Perfect action or the Past Simple action?
+  - answer: Not necessarily — the focus is on the order of events, not the specific
       time.
     purpose: Tests whether the learner understands that the focus is on the order
       of events, not the specific time. This is important because past perfect is
       used when the sequence matters more than the exact timing.
+    question: Do we know the exact time it happened?
+  - answer: Learners often make errors with this structure that change the intended
+      meaning.
+    purpose: Tests whether the learner can identify and correct a common error associated
+      with past perfect. Recognizing typical mistakes helps learners self-edit and
+      produce more accurate English.
+    question: Can you identify and correct the error in this sentence related to this
+      grammar point?
+  contrast: '''I had eaten before he came.'' (First: I ate. Then: he came. Both in
+    the past, but eating happened first.) vs ''I ate before he came.'' (Both in past
+    simple — order is clear from ''before'', but no emphasis on completion.)'
+  core_meaning: An action that was completed before another past action or a specific
+    point in the past. It clarifies the order of events when both are in the past.
   example_generator:
     contexts:
     - telling stories
@@ -41,65 +177,136 @@ meaning:
       would be more precise
     - The Past Perfect is very common in written narratives and news reports
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Subject + had + past participle (V3): ''I had eaten.'' / ''They had
-      left.'' / ''She had finished.'''
-    example_generator:
-      contexts:
-      - completed earlier actions
-      - preparation
-      - background events
-      min_examples: 4
-  negative:
-    structure: 'Subject + had not (hadn''t) + past participle: ''I hadn''t eaten.''
-      / ''They hadn''t left.'' / ''She hadn''t finished.'''
-    example_generator:
-      contexts:
-      - things not done before a past moment
-      - unfulfilled expectations
-      min_examples: 3
-  questions:
-    structure: 'Had + subject + past participle: ''Had you eaten?'' / ''Had they left?''
-      / ''Had she finished?'''
-    example_generator:
-      contexts:
-      - checking prior events
-      - investigating causes
-      - surprise or disbelief
-      min_examples: 3
+  timeline: 'Past timeline: [Past Perfect (earlier)] → [Past Simple (later)] → [Now].
+    The Past Perfect event is further back in the past than the Past Simple event.'
+phonetics:
+- example_generator:
+    contexts:
+    - connected speech
+    - contractions
+  l1_issue: Learners may not contract 'had' in speech, making it sound overly formal
+    or unnatural. Practice with contractions is essential.
+  note: '''Had'' is often contracted to /d/ or /əd/ in connected speech: ''I''d eaten''
+    (/aɪd iːtn/), ''She''d left'' (/ʃiːd left/).'
+- example_generator:
+    contexts:
+    - negative pronunciation
+  l1_issue: Some learners may confuse 'hadn't' with 'haven't' in speech — the vowel
+    and final consonant differ.
+  note: In negative forms, 'hadn't' is pronounced /hædnt/ with a clear /t/ sound in
+    careful speech, but the /t/ may be dropped in fast speech.
+register_notes:
+- note: Past perfect is common in formal writing and academic prose to clarify chronological
+    order.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In news reporting, past perfect provides background: ''The president had
+    left the building before the explosion occurred.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In conversation, past perfect is often replaced by past simple with time
+    markers: ''I already ate'' instead of ''I had already eaten.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In academic writing, past perfect is used for describing prior research:
+    ''Previous studies had found that...'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Past perfect aspect: most common in fiction (narrative
+    backshift); less frequent in conversation and academic prose. Ch. 6.3.2'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 6.3.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7:
+    The Tense-Aspect System-7.5'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Use with 'by the time' to show something was completed before a past moment
-  type: grammatical
-  examples:
+- examples:
   - By the time I got to the station, the train had left.
   - By the time we arrived, the film had already started.
   - By 2020, she had written three novels.
-- rule: Use with 'before' and 'after' to clarify sequence (though Past Simple can
-    also be used with these)
+  rule: Use with 'by the time' to show something was completed before a past moment
   type: grammatical
-  examples:
+- examples:
   - After I had eaten, I went for a walk.
   - Before she had finished her degree, she got a job.
   - He left before I had a chance to explain.
-- rule: Use in reported speech when the original statement was in Present Perfect
-    or Past Simple
+  rule: Use with 'before' and 'after' to clarify sequence (though Past Simple can
+    also be used with these)
   type: grammatical
-  examples:
+- examples:
   - '''I have eaten.'' → He said he had eaten.'
   - '''I never saw Paris.'' → She said she had never seen Paris.'
   - '''I lost my keys.'' → He told me he had lost his keys.'
-- rule: Use with 'never' for life experience up to a past point
+  rule: Use in reported speech when the original statement was in Present Perfect
+    or Past Simple
   type: grammatical
-  examples:
+- examples:
   - I had never flown before 2019.
   - They had never seen snow until they moved to Canada.
   - He had never eaten sushi before that dinner.
-- rule: Use with 'for' and 'since' for duration up to a past point
+  rule: Use with 'never' for life experience up to a past point
   type: grammatical
-  examples:
+- examples:
   - I had lived in London for five years when I met her.
   - She had worked there since 2015 when the company closed.
+  rule: Use with 'for' and 'since' for duration up to a past point
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Give students 6-8 picture cards showing a sequence of events.
+      Students narrate the story using Past Perfect for earlier events and Past Simple
+      for later ones.
+    duration: 15
+    name: Timeline Stories
+  - adaptation_notes: Teacher describes a situation ('Maria was crying at the airport').
+      Students guess what had happened before ('She had missed her flight' / 'She
+      had said goodbye to her family').
+    duration: 10
+    name: What Had Happened?
+  - adaptation_notes: Students convert direct speech to reported speech, practising
+      the shift from Present Perfect/Past Simple to Past Perfect.
+    duration: 15
+    name: Reported Speech Shift
+  tips:
+  - 'Use timeline drawings on the board: mark Past Perfect to the left (earlier) and
+    Past Simple to the right (later).'
+  - 'Start with clear sequences: ''First I had eaten. Then I went out.'' Then combine:
+    ''After I had eaten, I went out.'''
+  - 'Use storytelling activities: students narrate a sequence of past events, using
+    Past Perfect for background.'
+  - 'Contrast with Past Simple: ''I ate at 7'' (specific time) vs ''I had eaten before
+    he came'' (before another past event).'
+  - Drill the contraction 'I'd / you'd / he'd / she'd / we'd / they'd' + past participle.
+  - 'Swan PEU: Past perfect = ''the past before the past''. Always requires TWO past
+    events -- the earlier one uses past perfect.'
+  - 'Swan PEU: ''By the time'' + past perfect -- ''By the time I arrived, the train
+    had left.'' The past perfect emphasizes the train was already gone.'
+  - 'Swan PEU: In reported speech, present perfect and past simple both shift to past
+    perfect. ''I have finished'' -> He said he had finished.'
+  - 'GB3 Ch. 7: Past perfect — retrospective viewpoint on past time. (a) action completed
+    prior to another past event (''He had already left before I could offer him a
+    ride''), (b) imaginative conditional past (''If Sally had studied harder, she
+    would have passed''). Source: Celce-Murcia & Larsen-Freeman (2015) GB3 Ch. 7 §7.2.'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 3: CGEL (Ch.3)
+    analyzes the past perfect (''I had seen it'') as past-within-past: it locates
+    a situation in a time-span that extends up to and includes a past reference point.
+    This is parallel to the present perfect (past-within-present) but with a past
+    rather than present reference point. Teaching: the past perfect always requires
+    a past reference point (explicit or implicit).'
+title: Past Perfect (had + past participle)
 use:
 - context: Storytelling and narratives
   description: The Past Perfect sets the scene or provides background before the main
@@ -120,108 +327,3 @@ use:
   examples:
   - '''I have finished.'' → She said she had finished.'
   - '''I didn''t know.'' → He said he hadn''t known.'
-phonetics:
-- note: '''Had'' is often contracted to /d/ or /əd/ in connected speech: ''I''d eaten''
-    (/aɪd iːtn/), ''She''d left'' (/ʃiːd left/).'
-  example_generator:
-    contexts:
-    - connected speech
-    - contractions
-  l1_issue: Learners may not contract 'had' in speech, making it sound overly formal
-    or unnatural. Practice with contractions is essential.
-- note: In negative forms, 'hadn't' is pronounced /hædnt/ with a clear /t/ sound in
-    careful speech, but the /t/ may be dropped in fast speech.
-  example_generator:
-    contexts:
-    - negative pronunciation
-  l1_issue: Some learners may confuse 'hadn't' with 'haven't' in speech — the vowel
-    and final consonant differ.
-teaching:
-  methodology: PPP
-  tips:
-  - 'Use timeline drawings on the board: mark Past Perfect to the left (earlier) and
-    Past Simple to the right (later).'
-  - 'Start with clear sequences: ''First I had eaten. Then I went out.'' Then combine:
-    ''After I had eaten, I went out.'''
-  - 'Use storytelling activities: students narrate a sequence of past events, using
-    Past Perfect for background.'
-  - 'Contrast with Past Simple: ''I ate at 7'' (specific time) vs ''I had eaten before
-    he came'' (before another past event).'
-  - Drill the contraction 'I'd / you'd / he'd / she'd / we'd / they'd' + past participle.
-  recommended_activities:
-  - name: Timeline Stories
-    duration: 15
-    adaptation_notes: Give students 6-8 picture cards showing a sequence of events.
-      Students narrate the story using Past Perfect for earlier events and Past Simple
-      for later ones.
-  - name: What Had Happened?
-    duration: 10
-    adaptation_notes: Teacher describes a situation ('Maria was crying at the airport').
-      Students guess what had happened before ('She had missed her flight' / 'She
-      had said goodbye to her family').
-  - name: Reported Speech Shift
-    duration: 15
-    adaptation_notes: Students convert direct speech to reported speech, practising
-      the shift from Present Perfect/Past Simple to Past Perfect.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: 'Using past perfect when past simple is sufficient: *''I had gone to school
-    yesterday.'''
-  correction: I went to school yesterday.
-  explanation: Past perfect is only needed to clarify the order of two past events.
-    If there's only one past event with a specific time, use past simple.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: 'Using past simple instead of past perfect for the earlier event: *''I ate
-    breakfast before he arrived.'''
-  correction: I had eaten breakfast before he arrived.
-  explanation: When emphasizing that one past event was completed before another,
-    use past perfect for the earlier event. However, with 'before' and 'after', past
-    simple is often acceptable because the order is clear.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-- error: 'Omitting ''had'': *''I finished before he arrived.'''
-  correction: I had finished before he arrived.
-  explanation: Past perfect requires 'had' + past participle. Omitting 'had' makes
-    it past simple.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-  - Japanese
-register_notes:
-- note: Past perfect is common in formal writing and academic prose to clarify chronological
-    order.
-- note: 'In news reporting, past perfect provides background: ''The president had
-    left the building before the explosion occurred.'''
-- note: 'In conversation, past perfect is often replaced by past simple with time
-    markers: ''I already ate'' instead of ''I had already eaten.'''
-- note: 'In academic writing, past perfect is used for describing prior research:
-    ''Previous studies had found that...'''
-dialectal_variation:
-- note: No significant BrE/AmE differences in past perfect formation.
-- note: 'In informal speech, past perfect is often replaced by past simple, especially
-    with ''already'', ''just'', ''before'': ''I already ate'' vs ''I had already eaten.'''
-- note: In some dialects, 'had' may be reduced to /əd/ or even omitted in fast speech.
-discourse_notes:
-- note: 'Past perfect creates background information in narratives: ''The sun was
-    shining. It had been a beautiful morning. Suddenly, the phone rang.'''
-- note: 'Past perfect is used in reported speech for backshift: ''She said she had
-    finished the report.'''
-- note: 'In academic writing, past perfect establishes the timeline of prior research:
-    ''Smith (2020) had argued that...'''
-- note: 'Past perfect can create suspense in storytelling: ''Little did they know,
-    the decision had already been made.'''

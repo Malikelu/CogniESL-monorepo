@@ -1,12 +1,116 @@
+citations:
+- claim: 'Core meaning: Combines two or more words to create a single noun with a specific meaning that is more than the sum'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession'
+  tier: 1
+- claim: Common error '*I need a brush of teeth.*' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- claim: Oshima & Hogue's Great Writing series demonstrates how this grammatical structure functions in academic writing contexts.
+    Their approach connects grammar instruction to writing outcomes, showing learners how accurate use of this structure improves
+    paragraph cohesion, essay organization, and academic register.
+  source: Oshima, A. and Hogue, A. (2006). Introduction to Academic Writing, 3rd ed. Pearson Longman.
+  tier: 2
+common_errors:
+- correction: I need a toothbrush.
+  error: '*I need a brush of teeth.*'
+  explanation: English uses noun-noun compounds (toothbrush), not noun + of + noun for common objects. L1s that use 'of' constructions
+    (Portuguese 'escova de dentes') transfer this pattern incorrectly.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  reliability: D
+- correction: I wait at the bus stop for the bus.
+  error: '*I stop at the station to wait for the bus.* (confusing terms)'
+  explanation: 'Confusing similar compound nouns: ''bus stop'' (a place where buses stop briefly, for passengers) vs ''bus
+    station'' (a large terminus where buses are stored and depart). Choosing the wrong compound changes the meaning.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: D
+- correction: Two toothbrushes are in the bathroom.
+  error: '*Two teethbrush are in the bathroom.*'
+  explanation: 'Compound noun plurals are formed on the main noun (the last word): toothbrush to toothbrushes. Some learners
+    incorrectly pluralize the first element (*teethbrush) following the compound''s internal logic.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+- correction: My mother-in-law is visiting.
+  error: '*My mother in law is visiting.*'
+  explanation: 'Compound nouns with family terms use hyphens: mother-in-law, father-in-law, brother-in-law. Without hyphens,
+    the words read as separate nouns rather than a single compound. This is a spelling convention, not a grammar error.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Japanese
+  reliability: D
+description: Nouns formed by combining two or more words to act as a single noun, with different spelling patterns.
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - family and relationships
+      - travel and places
+      - daily routines
+      min_examples: 4
+    structure: 'Closed (one word): toothbrush, toothpaste, bedroom
+
+      Hyphenated (with hyphen): mother-in-law, well-known, self-esteem
+
+      Open (two separate words): bus stop, post office, high school
+
+      Plural rule: Pluralize the last word (toothbrushes, bus stops, mothers-in-law)
+
+      '
+  negative:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: No + compound noun (plural for countable)
+  questions:
+    example_generator:
+      contexts:
+      - education and school
+      - shopping
+      min_examples: 4
+    structure: How many + plural compound noun? / Is this a + singular compound noun?
 grammar_point: compound_nouns
-title: Compound Nouns (Two+ Words as One Noun)
-description: Nouns formed by combining two or more words to act as a single noun,
-  with different spelling patterns.
 level: A2
 meaning:
-  core_meaning: Combines two or more words to create a single noun with a specific
-    meaning that is more than the sum of its parts.
-  timeline: N/A (Noun form, not tense-based).
+  ccqs:
+  - answer: One word = closed (toothbrush). Two words = open (bus stop). Hyphenated = mother-in-law.
+    purpose: Tests understanding that -s goes on the main noun, especially in hyphenated compounds
+    question: 'Which is the correct plural: ''toothbrushes'' or ''toothbrush''? Where does the -s go in ''mother-in-law''?'
+  - answer: 'Almost always on the first word: TOOTHbrush, BUS stop, MOTHER-in-law.'
+    purpose: Tests whether the learner understands the key concept of compound nouns. This is important because mastering
+      this distinction is essential for accurate and natural English at A2 level.
+    question: Where is the stress in this compound noun?
+  - answer: 'On the last word: toothbrushes, bus stops, mothers-in-law.'
+    purpose: Tests whether the learner understands how cleft sentences (it-clefts and wh-clefts) are used to emphasize specific
+      information. The structure changes the focus of the sentence.
+    question: What is the plural form — where does the -s go?
+  - answer: Sometimes yes (bedroom = bed + room), sometimes no (butterfly ≠ butter + fly).
+    purpose: Tests whether the learner understands the difference between present ability (can) and past ability or polite
+      possibility (could). This is important for expressing ability and making requests.
+    question: Can you guess the meaning from the two words?
   contrast: 'Closed: ''Toothbrush'' (one word, common objects)
 
 
@@ -19,29 +123,8 @@ meaning:
     Stress is almost always on the first word: ''TOOTHbrush'', ''BUS stop'', ''MOTHER-in-law''.
 
     '
-  ccqs:
-  - question: Is this one word, two words, or hyphenated?
-    answer: One word = closed (toothbrush). Two words = open (bus stop). Hyphenated
-      = mother-in-law.
-    purpose: Tests whether the learner understands that '-ed' adjectives describe
-      how someone feels (experiencer) while '-ing' adjectives describe what causes
-      the feeling (stimulus).
-  - question: Where is the stress in this compound noun?
-    answer: 'Almost always on the first word: TOOTHbrush, BUS stop, MOTHER-in-law.'
-    purpose: Tests whether the learner understands the key concept of compound nouns.
-      This is important because mastering this distinction is essential for accurate
-      and natural English at A2 level.
-  - question: What is the plural form — where does the -s go?
-    answer: 'On the last word: toothbrushes, bus stops, mothers-in-law.'
-    purpose: Tests whether the learner understands how cleft sentences (it-clefts
-      and wh-clefts) are used to emphasize specific information. The structure changes
-      the focus of the sentence.
-  - question: Can you guess the meaning from the two words?
-    answer: Sometimes yes (bedroom = bed + room), sometimes no (butterfly ≠ butter
-      + fly).
-    purpose: Tests whether the learner understands the difference between present
-      ability (can) and past ability or polite possibility (could). This is important
-      for expressing ability and making requests.
+  core_meaning: Combines two or more words to create a single noun with a specific meaning that is more than the sum of its
+    parts.
   example_generator:
     contexts:
     - everyday situations
@@ -49,83 +132,94 @@ meaning:
     - travel
     - work
     cultural_notes:
-    - English has many compound nouns and new ones are created all the time (e.g.,
-      'smartphone', 'earbuds')
-    - The spelling (closed/open/hyphenated) must often be memorised — there is no
-      single rule
+    - English has many compound nouns and new ones are created all the time (e.g., 'smartphone', 'earbuds')
+    - The spelling (closed/open/hyphenated) must often be memorised — there is no single rule
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Closed (one word): toothbrush, toothpaste, bedroom
-
-      Hyphenated (with hyphen): mother-in-law, well-known, self-esteem
-
-      Open (two separate words): bus stop, post office, high school
-
-      Plural rule: Pluralize the last word (toothbrushes, bus stops, mothers-in-law)
-
-      '
-    example_generator:
-      contexts:
-      - family and relationships
-      - travel and places
-      - daily routines
-      min_examples: 4
-  negative:
-    structure: No + compound noun (plural for countable)
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
-  questions:
-    structure: How many + plural compound noun? / Is this a + singular compound noun?
-    example_generator:
-      contexts:
-      - education and school
-      - shopping
-      min_examples: 4
+  timeline: N/A (Noun form, not tense-based).
+phonetics:
+- example_generator:
+    contexts:
+    - word stress
+    - pronunciation drills
+  l1_issue: Many L1 speakers stress the second element, which can make the compound hard to recognise
+  note: 'Primary stress on the first element: TOOTHbrush, BUS stop, MOTHER-in-law'
+- example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Some L1 speakers insert a small pause between the words, breaking the compound into separate words
+  note: No pause between the elements — they are pronounced as one unit
+register_notes:
+- note: 'Biber et al. (2021) — Noun + noun sequences: distribution varies by register. News uses more noun+noun compounds;
+    academic prose uses more complex nominalizations. Conversation has simpler NP structures. Ch. 8.3.1'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 8.3.1
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Closed compound nouns are one word — most common for everyday objects
-  type: orthographic
-  examples:
+- examples:
   - toothbrush
   - bedroom
   - notebook
   - sunflower
   - football
   - raincoat
-- rule: Open compound nouns are two separate words — common for locations and services
+  rule: Closed compound nouns are one word — most common for everyday objects
   type: orthographic
-  examples:
+- examples:
   - bus stop
   - post office
   - swimming pool
   - train station
   - police station
   - high school
-- rule: Hyphenated compound nouns use a hyphen — common for family terms and some
-    adjectives
+  rule: Open compound nouns are two separate words — common for locations and services
   type: orthographic
-  examples:
+- examples:
   - mother-in-law
   - father-in-law
   - well-known
   - self-esteem
   - check-in
   - editor-in-chief
-- rule: Plural is formed on the last element, not the first
-  type: grammatical
-  examples:
+  rule: Hyphenated compound nouns use a hyphen — common for family terms and some adjectives
+  type: orthographic
+- examples:
   - toothbrush → toothbrushes
   - bus stop → bus stops
   - mother-in-law → mothers-in-law
   - passer-by → passers-by
-- rule: Stress is almost always on the first element of a compound noun
-  type: phonological
-  examples:
+  rule: Plural is formed on the last element, not the first
+  type: grammatical
+- examples:
   - TOOTHbrush (not toothBRUSH)
   - BUS stop (not bus STOP)
   - MOTHER-in-law (not mother-in-LAW)
+  rule: Stress is almost always on the first element of a compound noun
+  type: phonological
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Students sort a list of compound nouns into closed, open, and hyphenated columns on the board.
+    duration: 10
+    name: Compound Noun Sort
+  - adaptation_notes: Students combine two simple words to make compound nouns and illustrate them. Check if the meaning is
+      transparent or opaque.
+    duration: 15
+    name: Create a Compound
+  tips:
+  - Sort common compound nouns into closed, hyphenated, and open categories.
+  - Practice pronunciation with stress on the first word.
+  - 'Drill plural forms: ''toothbrushes'', ''mothers-in-law''.'
+  - Use picture flashcards — students guess the compound noun from an image.
+  - 'Swan PEU: Compound nouns — a bus stop, a toothbrush, a swimming pool, a dining room. Noun + noun compounds are very productive
+    in English. Stress usually falls on the first element: ''a ''bus stop'' (not ''a bus ''stop'').'
+  - 'Swan PEU: Open vs. closed vs. hyphenated: ''bus stop'' (two words), ''toothbrush'' (one word), ''mother-in-law'' (hyphenated).
+    There are no firm rules — consult a dictionary. Trend is toward closed compounds over time.'
+title: Compound Nouns (Two+ Words as One Noun)
 use:
 - context: Common Objects
   description: Closed compound nouns for everyday objects.
@@ -145,94 +239,3 @@ use:
   - My mother-in-law is visiting.
   - She is a well-known author.
   - He has low self-esteem.
-phonetics:
-- note: 'Primary stress on the first element: TOOTHbrush, BUS stop, MOTHER-in-law'
-  example_generator:
-    contexts:
-    - word stress
-    - pronunciation drills
-  l1_issue: Many L1 speakers stress the second element, which can make the compound
-    hard to recognise
-- note: No pause between the elements — they are pronounced as one unit
-  example_generator:
-    contexts:
-    - connected speech
-  l1_issue: Some L1 speakers insert a small pause between the words, breaking the
-    compound into separate words
-teaching:
-  methodology: PPP
-  tips:
-  - Sort common compound nouns into closed, hyphenated, and open categories.
-  - Practice pronunciation with stress on the first word.
-  - 'Drill plural forms: ''toothbrushes'', ''mothers-in-law''.'
-  - Use picture flashcards — students guess the compound noun from an image.
-  recommended_activities:
-  - name: Compound Noun Sort
-    duration: 10
-    adaptation_notes: Students sort a list of compound nouns into closed, open, and
-      hyphenated columns on the board.
-  - name: Create a Compound
-    duration: 15
-    adaptation_notes: Students combine two simple words to make compound nouns and
-      illustrate them. Check if the meaning is transparent or opaque.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.6-12.13'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I need a brush of teeth.*'
-  correction: I need a toothbrush.
-  explanation: English uses noun-noun compounds (toothbrush), not noun + of + noun
-    for common objects. L1s that use 'of' constructions (Portuguese 'escova de dentes')
-    transfer this pattern incorrectly.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - Italian
-- error: '*I stop at the station to wait for the bus.* (confusing terms)'
-  correction: I wait at the bus stop for the bus.
-  explanation: 'Confusing similar compound nouns: ''bus stop'' (a place where buses
-    stop briefly, for passengers) vs ''bus station'' (a large terminus where buses
-    are stored and depart). Choosing the wrong compound changes the meaning.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-- error: '*Two teethbrush are in the bathroom.*'
-  correction: Two toothbrushes are in the bathroom.
-  explanation: 'Compound noun plurals are formed on the main noun (the last word):
-    toothbrush to toothbrushes. Some learners incorrectly pluralize the first element
-    (*teethbrush) following the compound''s internal logic.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: '*My mother in law is visiting.*'
-  correction: My mother-in-law is visiting.
-  explanation: 'Compound nouns with family terms use hyphens: mother-in-law, father-in-law,
-    brother-in-law. Without hyphens, the words read as separate nouns rather than
-    a single compound. This is a spelling convention, not a grammar error.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-  - Japanese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

@@ -1,17 +1,115 @@
-grammar_point: negative_inversion
-title: Negative Inversion (Never have I..., Rarely do we..., Not only... but also)
+citations:
+- claim: 'Core meaning: Negative inversion is a grammatical structure in which a negative
+    or restrictive adverbial is placed'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 10:
+    Negation'
+  tier: 4
+- claim: 'Register distribution: Negative inversion is rare in conversation; it is
+    primarily found in formal writing, speeches, and literary texts.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 10:
+    Negation'
+  tier: 4
+- claim: Common error '*Never I have seen such beauty.*' for Portuguese, Spanish,
+    French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents
+    how transfer effects are non-linear, determined by functional fit between L1 and
+    L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects
+    are non-linear — determined by functional fit between L1 and L2 systems rather
+    than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning.
+    Routledge.
+  tier: 2
+- claim: Oshima & Hogue's Great Writing series demonstrates how this grammatical structure
+    functions in academic writing contexts. Their approach connects grammar instruction
+    to writing outcomes, showing learners how accurate use of this structure improves
+    paragraph cohesion, essay organization, and academic register.
+  source: Oshima, A. and Hogue, A. (2006). Introduction to Academic Writing, 3rd ed.
+    Pearson Longman.
+  tier: 2
+common_errors:
+- correction: Never have I seen such beauty.
+  error: '*Never I have seen such beauty.*'
+  explanation: Fronted negative adverbs require subject-auxiliary inversion. This
+    is a formal/literary structure.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  reliability: D
 description: Inverting the subject and auxiliary verb after negative or restrictive
   adverbials placed at the beginning of a sentence for emphasis and stylistic effect.
+dialectal_variation: []
+discourse_notes:
+- note: Negative inversion is primarily a formal/literary structure. In academic writing
+    and speeches, it adds emphasis and sophistication. In casual speech, it can sound
+    overly dramatic or pretentious.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - formal writing
+      - speeches
+      - literary prose
+      min_examples: 4
+    structure: 'Negative adverbial + auxiliary + subject + main verb. The auxiliary
+      depends on the tense: present perfect → ''have/has'', past simple → ''did'',
+      modal → modal verb, present simple → ''do/does''. Examples: ''Never have I...'',
+      ''Rarely does he...'', ''Not only did she...'', ''Hardly ever do we...'''
+  negative:
+    example_generator:
+      contexts:
+      - double negatives with neither/nor
+      - formal negation
+      min_examples: 3
+    structure: 'The negative meaning is already in the adverbial, so the main verb
+      is NOT negated. ''Never have I seen...'' (not ''Never have I not seen...'').
+      However, ''neither'' and ''nor'' can introduce a second negative clause: ''Neither
+      did she apologise, nor did she offer an explanation.'''
+  questions:
+    example_generator:
+      contexts:
+      - rhetorical questions in literature
+      - dramatic writing
+      min_examples: 3
+    structure: 'Negative inversion is not used in standard questions. However, rhetorical
+      questions can use inversion for dramatic effect: ''Never before had he felt
+      so alone — but would he ever feel this way again?'' The inversion is in the
+      statement, not the question.'
+grammar_point: negative_inversion
 level: C1
 meaning:
-  core_meaning: 'Negative inversion is a grammatical structure in which a negative
-    or restrictive adverbial is placed at the beginning of a sentence for emphasis,
-    and the subject and auxiliary verb are inverted (swapped). This creates a formal,
-    dramatic, or literary tone. The structure is: Negative adverbial + auxiliary verb
-    + subject + main verb.'
-  timeline: 'Applicable across all tenses. The auxiliary verb changes to match the
-    tense: ''Never have I seen...'' (present perfect), ''Never did I imagine...''
-    (past simple with ''did'' support), ''Never will I forget...'' (future).'
+  ccqs:
+  - answer: It is more common in formal writing, speeches, and literature. In casual
+      speech, it can sound overly dramatic or pretentious.
+    purpose: Tests whether the learner knows that negative adverbs (never, rarely,
+      seldom, hardly, not only) at the beginning of a sentence trigger subject-auxiliary
+      inversion.
+    question: Do we use negative inversion in everyday conversation?
+  - answer: The sentence is grammatically incorrect in standard English. 'Never I
+      have seen...' is wrong. The inversion is obligatory.
+    purpose: Tests understanding of negative_inversion.
+    question: What happens if we don't invert after a negative adverbial?
+  - answer: 'We add the appropriate form of ''do'' (do/does/did). For example: ''Rarely
+      she complains'' → ''Rarely does she complain.'''
+    purpose: Tests understanding of negative_inversion.
+    question: Which auxiliary do we use if there is no auxiliary in the original sentence?
+  - answer: No — inversion happens after negative ADVERBIALS (never, rarely, seldom,
+      hardly, not only, etc.), not after the negative particles 'no' or 'not' on their
+      own.
+    purpose: Tests understanding of negative_inversion.
+    question: Can we invert after 'no' or 'not'?
   contrast: 'Normal word order: "I have never seen such a beautiful sunset." (neutral)
 
     Negative inversion: "Never have I seen such a beautiful sunset." (emphatic, literary)
@@ -25,26 +123,11 @@ meaning:
     Inversion: "Not only does she sing, but she also dances." (emphatic)
 
     '
-  ccqs:
-  - question: Do we use negative inversion in everyday conversation?
-    answer: It is more common in formal writing, speeches, and literature. In casual
-      speech, it can sound overly dramatic or pretentious.
-    purpose: Tests whether the learner knows that negative adverbs (never, rarely,
-      seldom, hardly, not only) at the beginning of a sentence trigger subject-auxiliary
-      inversion.
-  - question: What happens if we don't invert after a negative adverbial?
-    answer: The sentence is grammatically incorrect in standard English. 'Never I
-      have seen...' is wrong. The inversion is obligatory.
-    purpose: Tests understanding of negative_inversion.
-  - question: Which auxiliary do we use if there is no auxiliary in the original sentence?
-    answer: 'We add the appropriate form of ''do'' (do/does/did). For example: ''Rarely
-      she complains'' → ''Rarely does she complain.'''
-    purpose: Tests understanding of negative_inversion.
-  - question: Can we invert after 'no' or 'not'?
-    answer: No — inversion happens after negative ADVERBIALS (never, rarely, seldom,
-      hardly, not only, etc.), not after the negative particles 'no' or 'not' on their
-      own.
-    purpose: Tests understanding of negative_inversion.
+  core_meaning: 'Negative inversion is a grammatical structure in which a negative
+    or restrictive adverbial is placed at the beginning of a sentence for emphasis,
+    and the subject and auxiliary verb are inverted (swapped). This creates a formal,
+    dramatic, or literary tone. The structure is: Negative adverbial + auxiliary verb
+    + subject + main verb.'
   example_generator:
     contexts:
     - formal writing
@@ -60,77 +143,122 @@ meaning:
     - Overusing negative inversion can make writing sound unnatural. It should be
       used sparingly for maximum impact.
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Negative adverbial + auxiliary + subject + main verb. The auxiliary
-      depends on the tense: present perfect → ''have/has'', past simple → ''did'',
-      modal → modal verb, present simple → ''do/does''. Examples: ''Never have I...'',
-      ''Rarely does he...'', ''Not only did she...'', ''Hardly ever do we...'''
-    example_generator:
-      contexts:
-      - formal writing
-      - speeches
-      - literary prose
-      min_examples: 4
-  negative:
-    structure: 'The negative meaning is already in the adverbial, so the main verb
-      is NOT negated. ''Never have I seen...'' (not ''Never have I not seen...'').
-      However, ''neither'' and ''nor'' can introduce a second negative clause: ''Neither
-      did she apologise, nor did she offer an explanation.'''
-    example_generator:
-      contexts:
-      - double negatives with neither/nor
-      - formal negation
-      min_examples: 3
-  questions:
-    structure: 'Negative inversion is not used in standard questions. However, rhetorical
-      questions can use inversion for dramatic effect: ''Never before had he felt
-      so alone — but would he ever feel this way again?'' The inversion is in the
-      statement, not the question.'
-    example_generator:
-      contexts:
-      - rhetorical questions in literature
-      - dramatic writing
-      min_examples: 3
+  timeline: 'Applicable across all tenses. The auxiliary verb changes to match the
+    tense: ''Never have I seen...'' (present perfect), ''Never did I imagine...''
+    (past simple with ''did'' support), ''Never will I forget...'' (future).'
+phonetics:
+- example_generator:
+    contexts:
+    - spoken emphasis
+    - rhetorical delivery
+  l1_issue: Learners may not stress the initial adverbial enough, making the inversion
+    sound flat. Practice with exaggerated stress patterns first, then naturalise.
+  note: 'In negative inversion, the negative adverbial receives strong stress and
+    a slight pause follows it: ''NEVER have I...'' /ˈnevər hæv aɪ/. This creates the
+    dramatic effect.'
+- example_generator:
+    contexts:
+    - connected speech
+    - natural rhythm
+  l1_issue: Learners may over-pronounce the auxiliary, making the sentence sound stilted.
+    Encourage natural rhythm and linking.
+  note: 'In connected speech, the auxiliary is often reduced: ''Never have I'' → /ˈnevər
+    əv aɪ/. ''Rarely does he'' → /ˈreərli dəz iː/.'
+register_notes:
+- note: 'Biber et al. (1999) — Negative inversion (Never have I..., Seldom does he...):
+    rare in conversation; more common in news and formal/literary writing. Register-restricted
+    structure. Ch. 11.2.3'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 11.2.3
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Never
-  type: grammatical
-  examples:
+- examples:
   - Never have I been so embarrassed.
   - Never did she expect to win.
   - Never will I forget that day.
   - Never in my life have I seen such courage.
-- rule: Rarely / Seldom
+  rule: Never
   type: grammatical
-  examples:
+- examples:
   - Rarely do we see such dedication.
   - Seldom has a student achieved such high marks.
   - Rarely does he arrive on time.
   - Seldom had they faced such a challenge.
-- rule: Hardly ever / Scarcely / Barely
+  rule: Rarely / Seldom
   type: grammatical
-  examples:
+- examples:
   - Hardly ever do they complain.
   - Scarcely had I arrived when the phone rang.
   - Barely had she finished speaking when the audience applauded.
-- rule: Not only... but also
+  rule: Hardly ever / Scarcely / Barely
   type: grammatical
-  examples:
+- examples:
   - Not only is she intelligent, but she is also incredibly kind.
   - Not only did he fail the exam, but he also lost his scholarship.
   - Not only was the food excellent, but the service was also outstanding.
-- rule: No sooner... than / Hardly... when
+  rule: Not only... but also
   type: grammatical
-  examples:
+- examples:
   - No sooner had I sat down than the phone rang.
   - Hardly had we left the house when it started raining.
   - No sooner had she opened the letter than she burst into tears.
-- rule: Under no circumstances / At no time / In no way
+  rule: No sooner... than / Hardly... when
   type: grammatical
-  examples:
+- examples:
   - Under no circumstances should you reveal the password.
   - At no time did I agree to those terms.
   - In no way can this be considered acceptable.
+  rule: Under no circumstances / At no time / In no way
+  type: grammatical
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Give students 10 sentences in normal word order. They must rewrite
+      each one using negative inversion. Check for correct auxiliary use and word
+      order.
+    duration: 15
+    name: Sentence transformation
+  - adaptation_notes: Display sentences on the board — some correctly inverted, some
+      incorrectly. Teams 'bid' on which ones are correct. Discuss errors and why they
+      are wrong.
+    duration: 20
+    name: Inversion auction
+  - adaptation_notes: Students write a short speech (5-8 lines) on a topic they care
+      about, using at least three different negative inversion structures. Perform
+      for the class.
+    duration: 25
+    name: Speech writing
+  - adaptation_notes: Provide a short literary text containing several examples of
+      negative inversion. Students identify each one, explain its effect, and discuss
+      why the author chose inversion over normal word order.
+    duration: 20
+    name: Literary analysis
+  tips:
+  - 'Start with a normal sentence: ''I have never seen such a thing.'' Move ''never''
+    to the front and ask: ''What needs to change?'' Guide students to discover the
+    inversion rule.'
+  - 'Provide a list of negative adverbials and have students categorise them: frequency
+    (rarely, seldom), time (never, at no time), condition (under no circumstances),
+    addition (not only).'
+  - 'Use exam-style transformation exercises: ''I have never been so surprised. →
+    Never...'' Students complete the inverted sentence.'
+  - Read aloud examples with dramatic emphasis to show the rhetorical effect. Have
+    students practise the same sentences with appropriate stress and intonation.
+  - Caution students against overuse — negative inversion should be used sparingly
+    for maximum impact.
+  - 'Swan PEU: ''Hardly...when,'' ''scarcely...when,'' ''no sooner...than'' — ''Hardly
+    had I arrived when it started raining.'' Past perfect in the inverted clause.
+    Very formal/literary.'
+title: Negative Inversion (Never have I..., Rarely do we..., Not only... but also)
 use:
 - context: Formal and academic writing
   description: Negative inversion is used in essays, reports, and academic papers
@@ -161,90 +289,3 @@ use:
   - Rarely has a government faced such widespread criticism.
   - Not only did the company lose money, but it also lost the trust of its customers.
   - Under no circumstances should this be allowed to happen again.
-phonetics:
-- note: 'In negative inversion, the negative adverbial receives strong stress and
-    a slight pause follows it: ''NEVER have I...'' /ˈnevər hæv aɪ/. This creates the
-    dramatic effect.'
-  example_generator:
-    contexts:
-    - spoken emphasis
-    - rhetorical delivery
-  l1_issue: Learners may not stress the initial adverbial enough, making the inversion
-    sound flat. Practice with exaggerated stress patterns first, then naturalise.
-- note: 'In connected speech, the auxiliary is often reduced: ''Never have I'' → /ˈnevər
-    əv aɪ/. ''Rarely does he'' → /ˈreərli dəz iː/.'
-  example_generator:
-    contexts:
-    - connected speech
-    - natural rhythm
-  l1_issue: Learners may over-pronounce the auxiliary, making the sentence sound stilted.
-    Encourage natural rhythm and linking.
-teaching:
-  methodology: Guided discovery
-  tips:
-  - 'Start with a normal sentence: ''I have never seen such a thing.'' Move ''never''
-    to the front and ask: ''What needs to change?'' Guide students to discover the
-    inversion rule.'
-  - 'Provide a list of negative adverbials and have students categorise them: frequency
-    (rarely, seldom), time (never, at no time), condition (under no circumstances),
-    addition (not only).'
-  - 'Use exam-style transformation exercises: ''I have never been so surprised. →
-    Never...'' Students complete the inverted sentence.'
-  - Read aloud examples with dramatic emphasis to show the rhetorical effect. Have
-    students practise the same sentences with appropriate stress and intonation.
-  - Caution students against overuse — negative inversion should be used sparingly
-    for maximum impact.
-  recommended_activities:
-  - name: Sentence transformation
-    duration: 15
-    adaptation_notes: Give students 10 sentences in normal word order. They must rewrite
-      each one using negative inversion. Check for correct auxiliary use and word
-      order.
-  - name: Inversion auction
-    duration: 20
-    adaptation_notes: Display sentences on the board — some correctly inverted, some
-      incorrectly. Teams 'bid' on which ones are correct. Discuss errors and why they
-      are wrong.
-  - name: Speech writing
-    duration: 25
-    adaptation_notes: Students write a short speech (5-8 lines) on a topic they care
-      about, using at least three different negative inversion structures. Perform
-      for the class.
-  - name: Literary analysis
-    duration: 20
-    adaptation_notes: Provide a short literary text containing several examples of
-      negative inversion. Students identify each one, explain its effect, and discuss
-      why the author chose inversion over normal word order.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*Never I have seen such beauty.*'
-  correction: Never have I seen such beauty.
-  explanation: Fronted negative adverbs require subject-auxiliary inversion. This
-    is a formal/literary structure.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - German
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

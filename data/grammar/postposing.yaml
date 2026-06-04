@@ -1,22 +1,122 @@
-grammar_point: postposing
-title: Postposing (Heavy Subject Postposing, Extraposition, and Rightward Movement)
+citations:
+- claim: 'Core meaning: Postposing is the movement of a grammatically heavy or informationally
+    complex element to a position'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 30:
+    Focus and Emphasis'
+  tier: 1
+- claim: 'Register distribution: Postposing (especially extraposition with it) is
+    common in academic and formal writing. Existential there postposing is frequent
+    in conversation. Heavy NP postposing is primarily literary/formal.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 30:
+    Focus and Emphasis'
+  tier: 1
+- claim: 'Discourse function: Postposing serves information structure — moving heavy
+    or complex elements to the end of the clause for processing ease (the end-weight
+    principle). Existential there introduces new information.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 30:
+    Focus and Emphasis; Ch. 23: Nonreferential Subjects'
+  tier: 4
+- claim: Common error '*The man who was wearing a red hat and carrying a large umbrella
+    that he had bought in London walked in.* (heavy subject)' for Portuguese, Spanish
+    speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+common_errors:
+- correction: In walked the man who was wearing a red hat and carrying a large umbrella
+    that he had bought in London.
+  error: 'The man who was wearing a red hat and carrying a large umbrella that he
+    had bought in London walked in. (heavy subject — grammatically correct but stylistically
+    awkward; postposing is preferred)'
+  explanation: When the subject is very long, English prefers to postpose it and put
+    the verb first. Both forms are grammatical, but the postposed version is more
+    natural and easier to process.
+  flagged: false
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: D
 description: The syntactic operation of moving a heavy or complex element to the rightmost
   position in a sentence, after lighter elements, to improve processing and naturalness.
   Includes subject postposing, complement postposing, and existential postposing.
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - subject postposing
+      - existential postposing
+      - complement postposing
+      min_examples: 4
+    structure: 'Subject-to-it postposing: It + verb + complement + postponed clause.
+      ''It surprises me that he came.'' / ''It is clear that she is talented.'' /
+      ''It seems that they have left.'' / Existential postposing: There + verb + postponed
+      subject. ''There are three books on the table.'' / ''There appears to be a problem.''
+      / ''There arose a terrible storm.'' / Complement postposing: Subject + verb
+      + object + postponed complement. ''He made it clear that he disagreed.'' (The
+      object ''it'' stands in for the postponed that-clause.)'
+  negative:
+    example_generator:
+      contexts:
+      - negative existential
+      - negative postposing
+      min_examples: 3
+    structure: 'Negative postposing follows the same patterns with negation on the
+      main verb or auxiliary: ''It is not surprising that he failed.'' / ''There is
+      no reason to worry.'' / ''It has not been proven that the drug is safe.'' /
+      ''There were no survivors.'''
+  questions:
+    example_generator:
+      contexts:
+      - questions with postposed subjects
+      - existential questions
+      min_examples: 3
+    structure: 'Questions with postposed structures: ''Is it true that she resigned?''
+      / ''Are there any questions?'' / ''Does it matter what they think?'' / ''Was
+      there anyone at home?'' / ''Is there a reason to be concerned?'''
+grammar_point: postposing
 level: C1
 meaning:
-  core_meaning: 'Postposing is the movement of a grammatically heavy or informationally
-    complex element to a position later in the sentence than its canonical (default)
-    position. English has a strong preference for placing heavy constituents at the
-    end of a clause (the ''end-weight'' principle). Postposing allows speakers to
-    keep light elements (especially pronouns) early in the sentence and push complex
-    material to the right, making sentences easier to process and more natural-sounding.
-    Common types include: subject postposing (moving a clausal subject to the end
-    and filling the subject position with ''it''), complement postposing, and existential
-    postposing with ''there''.'
-  timeline: Postposing is not tense-dependent. It applies across all tenses and aspects.
-    The choice to postpose is driven by information structure and processing ease,
-    not by time reference.
+  ccqs:
+  - answer: The real subject is the that-clause 'that he left.' The word 'it' is a
+      dummy subject (expletive) that fills the subject position. The heavy subject
+      has been postposed to the end.
+    purpose: Tests whether the learner understands that English can move heavy or
+      complex elements to the end of a sentence for processing ease. This is called
+      postposing or extraposition.
+    question: In 'It surprised me that he left,' what is the real subject?
+  - answer: Both are grammatically correct, but English strongly prefers to postpose
+      heavy subjects. 'It is important to study' sounds more natural because the heavy
+      infinitive clause is at the end, following the end-weight principle.
+    purpose: Tests whether the learner can identify and apply the correct form/meaning
+      of this grammar point in context. The question 'Why do we say 'It is important
+      to study' instead o...' checks conceptual understanding, not just memorization.
+    question: Why do we say 'It is important to study' instead of 'To study is important'?
+  - answer: Both are grammatical, but 'There arrived three guests' uses existential
+      postposing to present new information. The 'there' construction signals that
+      the postposed subject ('three guests') is new or unexpected. 'Three guests arrived'
+      is a neutral statement.
+    purpose: Tests whether the learner can identify and apply the correct form/meaning
+      of this grammar point in context. The question 'What is the difference between
+      'There arrived thre...' checks conceptual understanding, not just memorization.
+    question: Can you explain the difference between 'There arrived three guests'
+      and 'Three guests arrived' by giving an example of when to use each?
+  - answer: 'Only clausal subjects (that-clauses, infinitive clauses, wh-clauses)
+      can be postposed with ''it''. Noun phrase subjects cannot: ''*It arrived three
+      guests'' is ungrammatical. However, existential ''there'' can postpose some
+      NP subjects in specific contexts.'
+    purpose: Tests whether the learner can identify and apply the correct form/meaning
+      of this grammar point in context. The question 'Can any subject be postposed?...'
+      checks conceptual understanding, not just memorization.
+    question: Can any subject be postposed?
   contrast: 'Canonical (heavy subject first): "That she managed to escape from the
     burning building amazed everyone."
 
@@ -32,38 +132,15 @@ meaning:
     Postposed (existential): "There appeared a man who claimed to be a doctor."
 
     '
-  ccqs:
-  - question: In 'It surprised me that he left,' what is the real subject?
-    answer: The real subject is the that-clause 'that he left.' The word 'it' is a
-      dummy subject (expletive) that fills the subject position. The heavy subject
-      has been postposed to the end.
-    purpose: Tests whether the learner understands that English can move heavy or
-      complex elements to the end of a sentence for processing ease. This is called
-      postposing or extraposition.
-  - question: Why do we say 'It is important to study' instead of 'To study is important'?
-    answer: Both are grammatically correct, but English strongly prefers to postpose
-      heavy subjects. 'It is important to study' sounds more natural because the heavy
-      infinitive clause is at the end, following the end-weight principle.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Why do we say 'It is important
-      to study' instead o...' checks conceptual understanding, not just memorization.
-  - question: What is the difference between 'There arrived three guests' and 'Three
-      guests arrived'?
-    answer: Both are grammatical, but 'There arrived three guests' uses existential
-      postposing to present new information. The 'there' construction signals that
-      the postposed subject ('three guests') is new or unexpected. 'Three guests arrived'
-      is a neutral statement.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'What is the difference between
-      'There arrived thre...' checks conceptual understanding, not just memorization.
-  - question: Can any subject be postposed?
-    answer: 'Only clausal subjects (that-clauses, infinitive clauses, wh-clauses)
-      can be postposed with ''it''. Noun phrase subjects cannot: ''*It arrived three
-      guests'' is ungrammatical. However, existential ''there'' can postpose some
-      NP subjects in specific contexts.'
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Can any subject be postposed?...'
-      checks conceptual understanding, not just memorization.
+  core_meaning: 'Postposing is the movement of a grammatically heavy or informationally
+    complex element to a position later in the sentence than its canonical (default)
+    position. English has a strong preference for placing heavy constituents at the
+    end of a clause (the ''end-weight'' principle). Postposing allows speakers to
+    keep light elements (especially pronouns) early in the sentence and push complex
+    material to the right, making sentences easier to process and more natural-sounding.
+    Common types include: subject postposing (moving a clausal subject to the end
+    and filling the subject position with ''it''), complement postposing, and existential
+    postposing with ''there''.'
   example_generator:
     contexts:
     - academic writing
@@ -83,45 +160,48 @@ meaning:
       spoken English: ''There''s a problem'' / ''There were several people waiting''
       / ''There seems to be a misunderstanding.'''
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Subject-to-it postposing: It + verb + complement + postponed clause.
-      ''It surprises me that he came.'' / ''It is clear that she is talented.'' /
-      ''It seems that they have left.'' / Existential postposing: There + verb + postponed
-      subject. ''There are three books on the table.'' / ''There appears to be a problem.''
-      / ''There arose a terrible storm.'' / Complement postposing: Subject + verb
-      + object + postponed complement. ''He made it clear that he disagreed.'' (The
-      object ''it'' stands in for the postponed that-clause.)'
-    example_generator:
-      contexts:
-      - subject postposing
-      - existential postposing
-      - complement postposing
-      min_examples: 4
-  negative:
-    structure: 'Negative postposing follows the same patterns with negation on the
-      main verb or auxiliary: ''It is not surprising that he failed.'' / ''There is
-      no reason to worry.'' / ''It has not been proven that the drug is safe.'' /
-      ''There were no survivors.'''
-    example_generator:
-      contexts:
-      - negative existential
-      - negative postposing
-      min_examples: 3
-  questions:
-    structure: 'Questions with postposed structures: ''Is it true that she resigned?''
-      / ''Are there any questions?'' / ''Does it matter what they think?'' / ''Was
-      there anyone at home?'' / ''Is there a reason to be concerned?'''
-    example_generator:
-      contexts:
-      - questions with postposed subjects
-      - existential questions
-      min_examples: 3
+  timeline: Postposing is not tense-dependent. It applies across all tenses and aspects.
+    The choice to postpose is driven by information structure and processing ease,
+    not by time reference.
+phonetics:
+- example_generator:
+    contexts:
+    - stress patterns in postposed sentences
+    - dummy subject pronunciation
+  l1_issue: 'Learners may stress the dummy ''it'' or ''there'' too heavily, making
+    speech sound unnatural. Drill the weak forms: ''it'' /ɪt/ → /ɪt/ or /t/, ''there''
+    /ðeə/ → /ðə/.'
+  note: 'In postposed structures, the dummy subject ''it'' or ''there'' is typically
+    unstressed in connected speech: ''It is IMPORTANT to STUDY.'' /ɪt ɪz ɪmˈpɔːtənt
+    tu ˈstʌdi/. The main stress falls on the complement or the postposed clause.'
+- example_generator:
+    contexts:
+    - existential there pronunciation
+    - weak forms
+  l1_issue: Learners may pronounce 'there' as /ðeə/ with full stress in existential
+    sentences, which sounds overly careful. Encourage the weak form for natural speech.
+  note: 'In existential ''there'' constructions, ''there'' is pronounced with the
+    weak form /ðə/ (not /ðeðeə/): ''There are three books'' /ðər ɑː θriː bʊks/. The
+    contraction ''there''s'' /ðez/ is extremely common in speech.'
+- example_generator:
+    contexts:
+    - literary inversion stress patterns
+  l1_issue: Learners may struggle with the unusual word order and stress pattern.
+    Use reading aloud and listening exercises to build familiarity.
+  note: 'In literary postposing with inversion (''Into the room walked a man''), the
+    fronted adverbial carries strong stress, and the verb is unstressed: ''Into the
+    ROOM WALKED a MAN.'''
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Extraposition of clausal subjects — moving a that-clause or infinitive subject
-    to the end and inserting 'it'
-  type: syntactic
-  examples:
+- examples:
   - It is obvious that he is lying. (That he is lying is obvious.)
   - It was surprising for her to react like that. (For her to react like that was
     surprising.)
@@ -130,10 +210,10 @@ sub_rules:
   - It is a well-known fact that smoking causes cancer. (That smoking causes cancer
     is a well-known fact.)
   - It seems that nobody was informed. (That nobody was informed seems to be the case.)
-- rule: Existential 'there' — postposing the subject after the verb 'be' or other
-    intransitive verbs of existence/appearance
+  rule: Extraposition of clausal subjects — moving a that-clause or infinitive subject
+    to the end and inserting 'it'
   type: syntactic
-  examples:
+- examples:
   - There are many reasons to be optimistic.
   - There was a knock at the door.
   - There appears to have been a mistake.
@@ -142,32 +222,87 @@ sub_rules:
   - There came a time when he had to decide.
   - There followed a long period of silence.
   - There remains one question to be answered.
-- rule: Postposing with 'make it + adjective' — the object 'it' stands in for a postponed
-    clause
+  rule: Existential 'there' — postposing the subject after the verb 'be' or other
+    intransitive verbs of existence/appearance
   type: syntactic
-  examples:
+- examples:
   - She made it clear that she disagreed. (She made [that she disagreed] clear.)
   - He made it obvious that he was unhappy.
   - They made it possible for us to attend.
   - I find it difficult to believe. (I find [to believe] difficult.)
   - She considers it unlikely that he will come.
-- rule: Postposing of heavy noun phrases — moving a complex NP to the right in literary
-    or formal style
-  type: stylistic
-  examples:
+  rule: Postposing with 'make it + adjective' — the object 'it' stands in for a postponed
+    clause
+  type: syntactic
+- examples:
   - Then came the moment we had all been waiting for.
   - Into the room walked a tall, distinguished-looking man.
   - At the top of the hill stood an ancient castle.
   - On the table lay a letter addressed to the king.
   - From the ashes rose a new hope.
-- rule: Postposing with reporting verbs — 'It is said/believed/reported that...'
-  type: syntactic
-  examples:
+  rule: Postposing of heavy noun phrases — moving a complex NP to the right in literary
+    or formal style
+  type: stylistic
+- examples:
   - It is said that the castle is haunted.
   - It was believed that the earth was flat.
   - It has been reported that the president will resign.
   - It is thought that the treasure is buried nearby.
   - It was rumoured that the king had been poisoned.
+  rule: Postposing with reporting verbs — 'It is said/believed/reported that...'
+  type: syntactic
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: 'Give students 10 pairs of sentences: one with a heavy subject
+      in canonical position, one with postposing. They choose which sounds more natural
+      and explain why. Discuss the end-weight principle.'
+    duration: 15
+    name: Heavy or light? — Postposing decision exercise
+  - adaptation_notes: 'Students rewrite 10 sentences using postposing: ''That she
+      passed the exam surprised everyone.'' → ''It surprised everyone that she passed
+      the exam.'' Include that-clauses, infinitive clauses, and existential ''there''
+      patterns.'
+    duration: 20
+    name: Canonical to postposed transformation
+  - adaptation_notes: 'Students are given 8 sentences and must decide whether to use
+      existential ''there'' or subject postposing with ''it'': ''Several problems
+      remain'' → ''There remain several problems.'' / ''That he lied is obvious''
+      → ''It is obvious that he lied.'''
+    duration: 15
+    name: Existential there vs. postposed subject
+  - adaptation_notes: Provide a short literary extract (opening of a novel or fairy
+      tale). Students identify all examples of postposing, classify the type, and
+      discuss the effect. How would the passage sound with canonical word order?
+    duration: 20
+    name: Literary postposing analysis
+  - adaptation_notes: 'Students write a short academic paragraph (100-150 words) on
+      a given topic, using at least 5 postposed structures: ''It has been shown that...''
+      / ''There is evidence to suggest that...'' / ''It is important to note that...''
+      Peer review for naturalness.'
+    duration: 25
+    name: Academic writing practice
+  tips:
+  - 'Start with the most common pattern: existential ''there.'' Students encounter
+    this from A1 level, so build on their existing knowledge to introduce the concept
+    of postposing.'
+  - 'Use the ''end-weight'' principle as a guiding concept: English likes to put heavy
+    things at the end. Show how postposing improves sentence flow with side-by-side
+    comparisons.'
+  - Introduce extraposition ('It is clear that...') separately from existential 'there.'
+    They are different structures but share the same underlying principle.
+  - 'Use transformation exercises: give students canonical sentences and have them
+    postpose the heavy element. Then reverse: give postposed sentences and have students
+    identify the canonical form.'
+  - Emphasise that postposing is a matter of style and naturalness, not grammaticality.
+    Both 'That he left surprised me' and 'It surprised me that he left' are correct,
+    but the postposed version is far more common.
+  - For literary postposing, use authentic texts (novels, fairy tales) and focus on
+    receptive understanding rather than production.
+  - 'Swan PEU: Postposing — moving a heavy/long element to the end: ''The man
+    arrived that I told you about.'' (instead of ''The man that I told you about arrived.'')
+    Makes the clause easier to process. Also: extraposition of heavy subjects.'
+title: Postposing (Heavy Subject Postposing, Extraposition, and Rightward Movement)
 use:
 - context: Academic and formal writing
   description: Postposing is essential in academic English, where complex clausal
@@ -215,112 +350,3 @@ use:
   - It should be emphasised that this is a preliminary report.
   - There is a possibility that the deadline will be extended.
   - It is essential that we act quickly.
-phonetics:
-- note: 'In postposed structures, the dummy subject ''it'' or ''there'' is typically
-    unstressed in connected speech: ''It is IMPORTANT to STUDY.'' /ɪt ɪz ɪmˈpɔːtənt
-    tu ˈstʌdi/. The main stress falls on the complement or the postposed clause.'
-  example_generator:
-    contexts:
-    - stress patterns in postposed sentences
-    - dummy subject pronunciation
-  l1_issue: 'Learners may stress the dummy ''it'' or ''there'' too heavily, making
-    speech sound unnatural. Drill the weak forms: ''it'' /ɪt/ → /ɪt/ or /t/, ''there''
-    /ðeə/ → /ðə/.'
-- note: 'In existential ''there'' constructions, ''there'' is pronounced with the
-    weak form /ðə/ (not /ðeðeə/): ''There are three books'' /ðər ɑː θriː bʊks/. The
-    contraction ''there''s'' /ðez/ is extremely common in speech.'
-  example_generator:
-    contexts:
-    - existential there pronunciation
-    - weak forms
-  l1_issue: Learners may pronounce 'there' as /ðeə/ with full stress in existential
-    sentences, which sounds overly careful. Encourage the weak form for natural speech.
-- note: 'In literary postposing with inversion (''Into the room walked a man''), the
-    fronted adverbial carries strong stress, and the verb is unstressed: ''Into the
-    ROOM WALKED a MAN.'''
-  example_generator:
-    contexts:
-    - literary inversion stress patterns
-  l1_issue: Learners may struggle with the unusual word order and stress pattern.
-    Use reading aloud and listening exercises to build familiarity.
-teaching:
-  methodology: Guided discovery
-  tips:
-  - 'Start with the most common pattern: existential ''there.'' Students encounter
-    this from A1 level, so build on their existing knowledge to introduce the concept
-    of postposing.'
-  - 'Use the ''end-weight'' principle as a guiding concept: English likes to put heavy
-    things at the end. Show how postposing improves sentence flow with side-by-side
-    comparisons.'
-  - Introduce extraposition ('It is clear that...') separately from existential 'there.'
-    They are different structures but share the same underlying principle.
-  - 'Use transformation exercises: give students canonical sentences and have them
-    postpose the heavy element. Then reverse: give postposed sentences and have students
-    identify the canonical form.'
-  - Emphasise that postposing is a matter of style and naturalness, not grammaticality.
-    Both 'That he left surprised me' and 'It surprised me that he left' are correct,
-    but the postposed version is far more common.
-  - For literary postposing, use authentic texts (novels, fairy tales) and focus on
-    receptive understanding rather than production.
-  recommended_activities:
-  - name: Heavy or light? — Postposing decision exercise
-    duration: 15
-    adaptation_notes: 'Give students 10 pairs of sentences: one with a heavy subject
-      in canonical position, one with postposing. They choose which sounds more natural
-      and explain why. Discuss the end-weight principle.'
-  - name: Canonical to postposed transformation
-    duration: 20
-    adaptation_notes: 'Students rewrite 10 sentences using postposing: ''That she
-      passed the exam surprised everyone.'' → ''It surprised everyone that she passed
-      the exam.'' Include that-clauses, infinitive clauses, and existential ''there''
-      patterns.'
-  - name: Existential there vs. postposed subject
-    duration: 15
-    adaptation_notes: 'Students are given 8 sentences and must decide whether to use
-      existential ''there'' or subject postposing with ''it'': ''Several problems
-      remain'' → ''There remain several problems.'' / ''That he lied is obvious''
-      → ''It is obvious that he lied.'''
-  - name: Literary postposing analysis
-    duration: 20
-    adaptation_notes: Provide a short literary extract (opening of a novel or fairy
-      tale). Students identify all examples of postposing, classify the type, and
-      discuss the effect. How would the passage sound with canonical word order?
-  - name: Academic writing practice
-    duration: 25
-    adaptation_notes: 'Students write a short academic paragraph (100-150 words) on
-      a given topic, using at least 5 postposed structures: ''It has been shown that...''
-      / ''There is evidence to suggest that...'' / ''It is important to note that...''
-      Peer review for naturalness.'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*The man who was wearing a red hat and carrying a large umbrella that he
-    had bought in London walked in.* (heavy subject)'
-  correction: In walked the man who was wearing a red hat and carrying a large umbrella
-    that he had bought in London.
-  explanation: When the subject is very long, English can invert to put the verb first.
-    This makes the sentence easier to process.
-  l1_groups:
-  - Portuguese
-  - Spanish
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

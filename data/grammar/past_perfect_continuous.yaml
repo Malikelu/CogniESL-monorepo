@@ -1,13 +1,115 @@
-grammar_point: past_perfect_continuous
-title: Past Perfect Continuous (had been + -ing)
+citations:
+- claim: 'Core meaning: An action that was in progress for a period of time before
+    another action or a specific moment in the past'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used for everyday
+    communication and is among the most frequent patterns'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 4
+- claim: Common error '*I had been waiting for 2 hours when he finally arrived.* (c'
+    for Portuguese, Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: Perfect aspect in discourse connects past events to current relevance or
+    viewpoint
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 2
+common_errors:
+- correction: I had been waiting for 2 hours when he arrived.
+  error: 'Using past perfect simple for duration emphasis: *''I had waited for 2 hours
+    when he arrived.'''
+  explanation: 'Swan PEU: Use past perfect continuous when emphasizing the duration
+    of an ongoing past action before another past event.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
 description: Describes actions that were ongoing before another action or moment in
   the past. Emphasizes duration.
+dialectal_variation: []
+discourse_notes:
+- note: Past perfect continuous is rare in conversation; it appears mainly in written
+    narratives and planned discourse.
+- note: In fiction writing, past perfect continuous provides narrative backgrounding
+    — showing what had been ongoing before a key past event.
+- 'GB3 Ch. 9: Past perfect in narrative — FLASHBACK function. The past perfect shifts
+  the narrative timeline backward to events before the main past timeline: ''She had
+  never been so lucky. She was walking home that day...'' In narratives, past perfect
+  is used briefly for flashbacks, then the narrator returns to simple past for the
+  main timeline. Source: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd
+  ed. Ch. 9.'
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - education and school
+      - food and daily routines
+      min_examples: 4
+    structure: 'Subject + had + been + V-ing: "I had been walking."
+
+      Same for all subjects (no 3rd person variation).
+
+      '
+  negative:
+    example_generator:
+      contexts:
+      - shopping and commerce
+      - social interactions
+      min_examples: 4
+    structure: 'Subject + had not (hadn''t) + been + V-ing: ''I hadn''t been sleeping.''
+      ''She hadn''t been working.'''
+  questions:
+    example_generator:
+      contexts:
+      - health and wellbeing
+      min_examples: 4
+    structure: 'Had + subject + been + V-ing: ''Had you been running?'' ''Had she
+      been studying?'''
+grammar_point: past_perfect_continuous
 level: B1
 meaning:
-  core_meaning: An action that was in progress for a period of time before another
-    action or a specific moment in the past.
-  timeline: Before-past. One ongoing past action is interrupted or referenced by another
-    past event.
+  ccqs:
+  - answer: Past perfect = completed action. Past perfect continuous = ongoing action
+      with focus on duration.
+    purpose: Tests whether the learner understands that past perfect continuous emphasizes
+      the duration of an activity leading up to a past moment, while past perfect
+      presents the action as completed. This is the core distinction between the two
+      forms.
+    question: Can you explain the difference between past perfect and past perfect
+      continuous by giving an example of when to use each?
+  - answer: Yes — past perfect continuous emphasizes duration, often with ''for''
+      or ''since''.
+    purpose: Tests whether the learner can identify duration markers (for/since) that
+      signal past perfect continuous, and distinguish this from past perfect which
+      does not emphasize duration.
+    question: Do we know how long the action had been happening?
+  - answer: Yes — past perfect continuous describes an action that was ongoing up
+      until (and possibly beyond) a specific past event.
+    purpose: Tests whether the learner understands the temporal relationship between
+      past perfect continuous and a second past event — the continuous action was
+      in progress when the second event occurred.
+    question: Does this action continue up to another past moment?
+  - answer: Learners often make errors with this structure that change the intended
+      meaning.
+    purpose: Tests whether the learner can identify and correct a common error associated
+      with past perfect continuous. Recognizing typical mistakes helps learners self-edit
+      and produce more accurate English.
+    question: Can you identify and correct the error in this sentence related to this
+      grammar point?
   contrast: '''Past Perfect Continuous'' = "She had been studying for 3 hours when
     I arrived."
 
@@ -16,107 +118,70 @@ meaning:
     Emphasizes the duration leading up to a past moment.
 
     '
-  ccqs:
-  - question: What is the difference between past perfect and past perfect continuous
-    answer: Past perfect = completed action. Past perfect continuous = ongoing action
-      with focus on duration.
-    purpose: Tests whether the learner understands that past perfect continuous emphasizes
-      the duration of an activity leading up to a past moment, while past perfect
-      presents the action as completed. This is the core distinction between the two
-      forms.
-  - question: Do we know how long the action had been happening?
-    answer: Yes — past perfect continuous emphasizes duration, often with ''for''
-      or ''since''.
-    purpose: Tests whether the learner can identify duration markers (for/since) that
-      signal past perfect continuous, and distinguish this from past perfect which
-      does not emphasize duration.
-  - question: Does this action continue up to another past moment?
-    answer: Yes — past perfect continuous describes an action that was ongoing up
-      until (and possibly beyond) a specific past event.
-    purpose: Tests whether the learner understands the temporal relationship between
-      past perfect continuous and a second past event — the continuous action was
-      in progress when the second event occurred.
+  core_meaning: An action that was in progress for a period of time before another
+    action or a specific moment in the past.
   example_generator:
     contexts:
     - everyday situations
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Subject + had + been + V-ing: "I had been walking."
-
-      Same for all subjects (no 3rd person variation).
-
-      '
-    example_generator:
-      contexts:
-      - education and school
-      - food and daily routines
-      min_examples: 4
-  negative:
-    structure: 'Subject + had not (hadn''t) + been + V-ing: ''I hadn''t been sleeping.''
-      ''She hadn''t been working.'''
-    example_generator:
-      contexts:
-      - shopping and commerce
-      - social interactions
-      min_examples: 4
-  questions:
-    structure: 'Had + subject + been + V-ing: ''Had you been running?'' ''Had she
-      been studying?'''
-    example_generator:
-      contexts:
-      - health and wellbeing
-      min_examples: 4
-sub_rules:
-- rule: 'Structure: had been + verb-ing'
-  type: grammatical
-  examples:
-  - I had been waiting for 2 hours
-  - She had been studying all day
-  - They had been living there for 5 years
-- rule: Used to show duration of an action that was in progress before another past
-    action
-  type: semantic
-  examples:
-  - I had been waiting for 2 hours when the bus finally came
-  - She had been studying all day when she fell asleep
-- rule: Often used with for and since to show duration
-  type: grammatical
-  examples:
-  - I had been waiting for 2 hours
-  - She had been studying since morning
-use:
-- name: Duration Before a Past Event
-  description: Shows how long something had been happening before something else occurred.
-  examples:
-  - I had been waiting for 20 minutes when the bus finally arrived.
-  - She had been working there for 5 years when she got promoted.
-  key_point: 'Often used with time expressions: for, since, all morning, all day.'
-- name: Cause of a Past Situation
-  description: Explains why something was the way it was at a past moment.
-  examples:
-  - He was tired because he had been running.
-  - The kitchen was dirty because they had been cooking all day.
-  key_point: The continuous action explains a visible result in the past.
-- name: Ongoing Past Actions Interrupted
-  description: An action in progress that is interrupted by a sudden past event (often
-    with 'when').
-  examples:
-  - We had been walking home when it started raining.
-  - She had been reading when the phone rang.
-  key_point: Use Past Perfect Continuous for the ongoing action, Past Simple for the
-    interruption.
+  timeline: Before-past. One ongoing past action is interrupted or referenced by another
+    past event.
 phonetics:
-- note: 'Had been is often contracted in speech: ''I''d been waiting'' /aɪd biːn ˈweɪtɪŋ/.
-    The contraction is very common.'
-  example_generator:
+- example_generator:
     contexts:
     - had been contraction
   l1_issue: Many L1 speakers do not contract 'had been' in speech. Teach the contracted
     forms.
+  note: 'Had been is often contracted in speech: ''I''d been waiting'' /aɪd biːn ˈweɪtɪŋ/.
+    The contraction is very common.'
+register_notes:
+- note: 'Biber et al. (2021) — Past perfect progressive: rare across all registers;
+    most common in fiction (narrative backgrounding) and planned discourse. Rare in
+    conversation and academic prose. Register distribution of perfect progressive
+    forms is skewed toward written narrative. Ch. 6.3'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 6.3
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7:
+    The Tense-Aspect System-7.5'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+sub_rules:
+- examples:
+  - I had been waiting for 2 hours
+  - She had been studying all day
+  - They had been living there for 5 years
+  rule: 'Structure: had been + verb-ing'
+  type: grammatical
+- examples:
+  - I had been waiting for 2 hours when the bus finally came
+  - She had been studying all day when she fell asleep
+  rule: Used to show duration of an action that was in progress before another past
+    action
+  type: semantic
+- examples:
+  - I had been waiting for 2 hours
+  - She had been studying since morning
+  rule: Often used with for and since to show duration
+  type: grammatical
 teaching:
   methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students describe what had been happening before a past event:
+      ''When the teacher arrived, the students had been talking for 10 minutes.'''
+    duration: 15
+    name: Duration Before Past
+  - adaptation_notes: 'Students choose the correct form based on context: completed
+      action vs ongoing action.'
+    duration: 10
+    name: Past Perfect or Past Perfect Continuous
   tips:
   - 'Use a timeline diagram: show Past Perfect Continuous as a long line leading up
     to a point, then Past Simple as a dot.'
@@ -124,45 +189,34 @@ teaching:
     in the rain.'''
   - 'Contrast with Past Perfect Simple: ''I had read 10 books'' (completed) vs ''I
     had been reading all night'' (ongoing).'
-  recommended_activities:
-  - name: Duration Before Past
-    duration: 15
-    adaptation_notes: 'Students describe what had been happening before a past event:
-      ''When the teacher arrived, the students had been talking for 10 minutes.'''
-  - name: Past Perfect or Past Perfect Continuous
-    duration: 10
-    adaptation_notes: 'Students choose the correct form based on context: completed
-      action vs ongoing action.'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I had been waiting for 2 hours when he finally arrived.* (correct but complex)'
-  correction: I had been waiting for 2 hours when he finally arrived.
-  explanation: Past perfect continuous (had been + -ing) emphasizes duration before
-    a past event. It is the past equivalent of present perfect continuous.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used for everyday communication and is
-    among the most frequent patterns in spoken English.
-- note: In academic writing, this structure appears in discussions of established
-    knowledge, methodology, and findings.
-- note: In news reports, this structure is used for reporting events and attributing
-    statements.
+  - 'Swan PEU: PPC = past perfect + duration. ''I had been waiting for 2 hours'' (duration)
+    vs ''I had waited'' (completion).'
+  - 'Swan PEU: Used for causes of past situations. ''I was tired because I had been
+    working all day.'' (the working caused the tiredness).'
+  - 'GB3 Ch. 7: Past perfect progressive — ''prior'' + ''incomplete'' in past. (a)
+    ongoing past action prior to other past event (''Karen had been working hard''),
+    (b) interrupted past plan (''We had been planning to vacation in Maine''), (c)
+    satisfied ongoing state (''I had been hoping to see that play''). Source: Celce-Murcia
+    & Larsen-Freeman (2015) GB3 Ch. 7 §7.2.'
+title: Past Perfect Continuous (had been + -ing)
+use:
+- description: Shows how long something had been happening before something else occurred.
+  examples:
+  - I had been waiting for 20 minutes when the bus finally arrived.
+  - She had been working there for 5 years when she got promoted.
+  key_point: 'Often used with time expressions: for, since, all morning, all day.'
+  name: Duration Before a Past Event
+- description: Explains why something was the way it was at a past moment.
+  examples:
+  - He was tired because he had been running.
+  - The kitchen was dirty because they had been cooking all day.
+  key_point: The continuous action explains a visible result in the past.
+  name: Cause of a Past Situation
+- description: An action in progress that is interrupted by a sudden past event (often
+    with 'when').
+  examples:
+  - We had been walking home when it started raining.
+  - She had been reading when the phone rang.
+  key_point: Use Past Perfect Continuous for the ongoing action, Past Simple for the
+    interruption.
+  name: Ongoing Past Actions Interrupted

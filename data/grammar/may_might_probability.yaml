@@ -1,33 +1,114 @@
-grammar_point: may_might_probability
-title: May and Might (Probability)
+citations:
+- claim: 'Core meaning: Express probability or possibility'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms
+    (possibility and probability)'
+  tier: 1
+- claim: 'Register distribution: In academic writing, ''may'' and ''might'' are essential hedging devices: ''These findings
+    may have impor'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms
+    (possibility and probability)'
+  tier: 1
+- claim: 'Discourse function: In academic writing, ''may'' and ''might'' are essential hedging devices: ''These findings may
+    have impor'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms
+    (possibility and probability)'
+  tier: 1
+- claim: Common error '*It may rain tomorrow.* (less likely than might)' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms
+    (possibility)'
+  tier: 1
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for L1-specific error patterns in English.
+    Their learner English framework documents how each L1 group produces characteristic errors in this grammatical domain,
+    enabling teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference and Other Problems, 2nd ed. Cambridge
+    University Press.'
+  tier: 2
+common_errors:
+- correction: It might rain tomorrow. / It may rain tomorrow.
+  error: '*It may rain tomorrow.* (less likely than might)'
+  explanation: '''May'' suggests higher probability than ''might''. ''It might rain'' = less certain. ''It may rain'' = more
+    possible. Both are correct but express different degrees of certainty.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+- correction: Are you likely to go camping?
+  error: 'Using ''may'' in direct questions about possibility: *''May you go camping?'''
+  explanation: 'Swan PEU: ''May'' is not normally used in direct questions about possibility. Use ''might'' or ''be likely
+    to'' instead.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: She may not be at home.
+  error: 'Confusing ''may not'' and ''can''t'': *''She can''t be at home.'' (meaning: perhaps she is not)'
+  explanation: 'Swan PEU: ''May not'' = perhaps not (possibility). ''Can''t'' = certainly not (impossibility). These are completely
+    different.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
 description: Modal verbs used to express possibility or probability.
+dialectal_variation: []
+discourse_notes:
+- note: 'In academic writing, ''may'' and ''might'' are essential hedging devices: ''These findings may have important implications.''
+    ''This could potentially lead to...'''
+- note: 'In conversation, ''might'' is more common than ''may'' for possibility: ''It might rain later.'''
+- note: 'In formal requests, ''may'' is the standard permission modal: ''May I ask a question?'''
+form:
+  affirmative:
+    example_generator:
+    - It may rain tomorrow.
+    - She might get the job.
+    min_examples: 4
+    structure: Subject + may + base verb / Subject + might + base verb / Subject + could + base verb
+  negative:
+    example_generator:
+    - It may not rain today.
+    - She might not come.
+    min_examples: 4
+    structure: Subject + may not + base verb / Subject + might not + base verb
+  questions:
+    example_generator:
+    - Do you think it may rain
+    min_examples: 3
+    structure: Do you think it may rain
+grammar_point: may_might_probability
 level: B1
 meaning:
-  core_meaning: Express probability or possibility. May suggests higher likelihood
-    than might. This grammar point is essential for expressing may might probability
-    in English. Learners at this level need to understand both the form and the appropriate
-    contexts for use. Common errors include confusion with related structures and
-    inappropriate register use.
-  timeline: Present and future possibilities.
-  contrast: May = more likely. Might = less likely. Could = general possibility.
   ccqs:
-  - question: Is may stronger or weaker than might?
-    answer: May is stronger.
-    purpose: Tests whether the learner understands that 'may' and 'might' express
-      possibility, with 'might' suggesting slightly less certainty.
-  - question: '[Add specific question for CCQ 2]'
-    answer: '[Add specific answer for CCQ 2]'
-    purpose: Tests whether the learner can distinguish 'may/might' (possibility) from
-      'can' (ability/permission) and 'must' (strong probability).
-  - question: '[Add specific question for CCQ 3]'
-    answer: '[Add specific answer for CCQ 3]'
-    purpose: 'Tests whether the learner understands that ''may'' is used for formal
-      permission: ''May I ask a question?'' (not *''Can I ask a question?'' in formal
-      contexts).'
-  - question: '[Add specific question for CCQ 4]'
-    answer: '[Add specific answer for CCQ 4]'
-    purpose: 'Tests whether the learner can use ''may/might have + past participle''
-      for past possibility: ''She may have forgotten.'''
+  - answer: May is stronger.
+    purpose: Tests whether the learner understands that 'may' and 'might' express possibility, with 'might' suggesting slightly
+      less certainty.
+    question: Is may stronger or weaker than might?
+  - answer: No — may is not normally used in direct questions about possibility. Use 'Are you likely to go?' or 'Do you think
+      you might go?'
+    purpose: Tests whether the learner knows that may is not used in direct questions about chance (Swan PEU 2016, entry 71.3).
+    question: Can you ask 'May you go camping?' to ask about possibility?
+  - answer: It may rain suggests a higher probability (perhaps 50%+). 'It might rain' is more hesitant (perhaps 30%).
+    purpose: Tests whether the learner understands that might/could suggest a smaller chance than may (Swan PEU 2016, entry
+      71).
+    question: 'Which suggests a greater chance: ''It may rain'' or ''It might rain''?'
+  - answer: May not = perhaps she is not (possibility). 'Can't' = she is certainly not (impossibility).
+    purpose: 'Tests the two negatives: may/might not (= possible that not) vs can''t (= not possible) (Swan PEU 2016, entry
+      71.4).'
+    question: Can you explain the difference between 'She may not be at home' and 'She can't be at home' by giving an example
+      of when to use each?
+  contrast: May = more likely. Might = less likely. Could = general possibility.
+  core_meaning: Express probability or possibility. May suggests higher likelihood than might. This grammar point is essential
+    for expressing may might probability in English. Learners at this level need to understand both the form and the appropriate
+    contexts for use. Common errors include confusion with related structures and inappropriate register use.
   example_generator:
     contexts:
     - weather predictions
@@ -35,39 +116,80 @@ meaning:
     cultural_notes:
     - May is more common in British English for requests
     min_examples: 5
-form:
-  affirmative:
-    structure: Subject + may + base verb / Subject + might + base verb / Subject +
-      could + base verb
-    example_generator:
-    - It may rain tomorrow.
-    - She might get the job.
-    min_examples: 4
-  negative:
-    structure: Subject + may not + base verb / Subject + might not + base verb
-    example_generator:
-    - It may not rain today.
-    - She might not come.
-    min_examples: 4
-  questions:
-    structure: Do you think it may rain
-    example_generator:
-    - Do you think it may rain
-    min_examples: 3
+  timeline: Present and future possibilities.
+phonetics:
+  example_generator:
+    contexts:
+    - modal pronunciation
+  l1_issue: Portuguese and Spanish speakers often use maybe where English requires may or might.
+  note: May is /meɪ/. Might is /maɪt/.
+register_notes:
+- note: 'In academic writing, ''may'' and ''might'' are essential hedging devices: ''These findings may have important implications.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In conversation, ''might'' is more common than ''may'' for possibility: ''It might rain later.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In formal requests, ''may'' is the standard permission modal: ''May I ask a question?'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: Biber et al. (2021) — 'May' and 'might' are register-sensitive; 'may' is more common in academic prose and formal
+    writing than in conversation. 'Might' has lower frequency across all registers. Ch. 6.6.2
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 6.6.2
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 9: Modals (possibility)'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Ch. 3: The Verb (epistemic modality)'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners. Ch. 8: May and might'
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(may/might: possibility, permission)'
 sub_rules:
-- rule: 'May and might: same structure, different probability'
-  type: semantic
-  examples:
+- examples:
   - It may rain (50 percent plus)
   - It might rain (under 50 percent)
-- rule: Could expresses general probability
+  rule: 'May and might: same structure, different probability'
   type: semantic
-  examples:
+- examples:
   - It could rain
-- rule: May for formal permission
-  type: pragmatic
-  examples:
+  rule: Could expresses general probability
+  type: semantic
+- examples:
   - May I use your phone
+  rule: May for formal permission
+  type: pragmatic
+teaching:
+  methodology: PPP with probability scales
+  recommended_activities:
+  - adaptation_notes: Students place modals on a scale.
+    duration: 10
+    name: Probability Scale
+  - adaptation_notes: Students make predictions using may and might.
+    duration: 15
+    name: Weather Predictions
+  tips:
+  - 'GB3 Ch. 8: Logical probability scale — must/has to/has got to (highest certainty > will/would/is going to > should/ought
+    to > may > could/might (lowest certainty). For negative inference: might not > may not > won''t/wouldn''t > can''t/couldn''t
+    (impossibility). Each modal has a specific force-dynamic core that extends to logical meaning. Source: Celce-Murcia &
+    Larsen-Freeman (2015) GB3 3rd ed. Ch. 8 §8.3.'
+  - 'GB3 Ch. 8: Must is used for inference (not prediction) because of its historical past tense origin. Predictions use will/be
+    going to > should > may > could/might instead. For past inference: must have + PP, may/might have + PP, can''t have +
+    PP. Source: GB3 3rd ed. Ch. 8 §8.3.'
+  - Week 1: May and might for future probability.
+  - 'Week 2: Present probability.'
+  - 'Week 3: May for formal requests.'
+  - 'Swan PEU: The probability scale -- ''may'' (50%+) > ''might'' (30%) > ''could'' (possible but uncertain). Use a visual
+    probability line.'
+  - 'Swan PEU: ''May/might have + past participle'' for past possibility. ''She may have left'' (perhaps she left).'
+  - 'Swan PEU: In academic writing, ''may'' and ''might'' are essential hedging devices. ''These findings may suggest...''
+    is more appropriate than ''These findings prove...''.'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 3: CGEL (Ch.3) notes that ''might'' is NOT simply ''more
+    uncertain than may.'' ''May'' expresses epistemic possibility (''She may be there'' = it''s possible). ''Might'' can express:
+    (1) epistemic possibility with less confidence, (2) modal remoteness (''If you tried harder, you might succeed''), (3)
+    past time in reported speech (''She said she might come''). CGEL rejects the ''might = more uncertain'' simplification.'
+title: May and Might (Probability)
 use:
 - context: Future probability
   examples:
@@ -79,61 +201,3 @@ use:
 - context: Polite requests
   examples:
   - May I use your phone
-phonetics:
-  note: May is /meɪ/. Might is /maɪt/.
-  example_generator:
-    contexts:
-    - modal pronunciation
-  l1_issue: Portuguese and Spanish speakers often use maybe where English requires
-    may or might.
-teaching:
-  methodology: PPP with probability scales
-  tips:
-  - 'Week 1: May and might for future probability.'
-  - 'Week 2: Present probability.'
-  - 'Week 3: May for formal requests.'
-  recommended_activities:
-  - name: Probability Scale
-    duration: 10
-    adaptation_notes: Students place modals on a scale.
-  - name: Weather Predictions
-    duration: 15
-    adaptation_notes: Students make predictions using may and might.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
-    Modals, §9.2 (possibility and probability)'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 3: The Verb, §3.9 (epistemic modality)'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 136-139 (may/might:
-    possibility, permission)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    9: Modals, §9.2 (possibility)'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 8: May and might'
-common_errors:
-- error: '*It may rain tomorrow.* (less likely than might)'
-  correction: It might rain tomorrow. / It may rain tomorrow.
-  explanation: '''May'' suggests higher probability than ''might''. ''It might rain''
-    = less certain. ''It may rain'' = more possible. Both are correct but express
-    different degrees of certainty.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: 'In academic writing, ''may'' and ''might'' are essential hedging devices:
-    ''These findings may have important implications.'''
-- note: 'In conversation, ''might'' is more common than ''may'' for possibility: ''It
-    might rain later.'''
-- note: 'In formal requests, ''may'' is the standard permission modal: ''May I ask
-    a question?'''
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: 'In academic writing, ''may'' and ''might'' are essential hedging devices:
-    ''These findings may have important implications.'' ''This could potentially lead
-    to...'''
-- note: 'In conversation, ''might'' is more common than ''may'' for possibility: ''It
-    might rain later.'''
-- note: 'In formal requests, ''may'' is the standard permission modal: ''May I ask
-    a question?'''

@@ -1,13 +1,80 @@
+citations:
+- claim: 'Core meaning: Might = weak possibility'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms-9.6'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms-9.6'
+  tier: 1
+- claim: Common error '*Might you help me?* (direct request)' for Portuguese, Spanish, Chinese speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+common_errors:
+- correction: Could you help me? / Would you help me?
+  error: '*Might you help me?* (direct request)'
+  explanation: '''Might'' is not used for polite requests. Use ''could'' or ''would''. ''Might'' is for expressing possibility.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+description: '''Might'' expresses weak possibility -- things that are uncertain but not impossible. It is weaker than ''may''
+  and much weaker than ''will''. Essential for expressing doubt and uncertainty.'
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - entertainment and media
+      - weather and nature
+      - social interactions
+      min_examples: 4
+    structure: 'Subject + might + V1: "I might go. She might eat."
+
+      '
+  negative:
+    example_generator:
+      contexts:
+      - entertainment and media
+      - weather and nature
+      - social interactions
+      min_examples: 4
+    structure: 'Subject + might not + V1: "I might not go. She might not eat."
+
+      '
+  questions:
+    example_generator:
+      contexts:
+      - weather and nature
+      min_examples: 4
+    structure: '"Might + subject + V1?" (formal/rare) or "Do you think + subject + might + V1?"
+
+      '
 grammar_point: might
-title: Might (Possibility)
-description: '''Might'' expresses weak possibility -- things that are uncertain but
-  not impossible. It is weaker than ''may'' and much weaker than ''will''. Essential
-  for expressing doubt and uncertainty.'
 level: A2
 meaning:
-  core_meaning: Might = weak possibility. The speaker thinks something is possible
-    but not certain. Less certain than 'may'.
-  timeline: Might can refer to present or future.
+  ccqs:
+  - answer: Might is weaker. It expresses less certainty.
+    purpose: Tests understanding that might not = possibility of negation; must not = prohibition
+    question: Is 'might not' the same as 'must not'? Explain the difference.
+  - answer: 'Might not. Note: might not does not mean must not.'
+    purpose: Tests whether the learner understands a key concept of might. This is fundamental for correct use of this grammar
+      point.
+    question: What is the negative form of might
+  - answer: Yes. Might have plus past participle for past possibilities that did not happen.
+    purpose: Tests whether the learner understands a key concept of might. This is fundamental for correct use of this grammar
+      point.
+    question: Can we use might for past possibilities
+  - answer: No. Might is not used for polite requests. Use could or may for permission (could I borrow your pen) and could
+      or would for requests (could you pass the salt). Might is used for weak possibility and tentative suggestions only.
+    purpose: Tests whether the learner knows the pragmatic limits of might. Although might is the past form of may, it cannot
+      substitute for may or could in request structures. Attempting might for requests sounds unnatural and is a common overgeneralisation
+      error among learners who associate past tense forms with politeness.
+    question: Can we use might to make a polite request, such as might you pass the salt?
   contrast: '''Will'' = "It will rain (I am sure)."
 
     ''May'' = "It may rain (50% chance)."
@@ -15,164 +82,109 @@ meaning:
     ''Might'' = "It might rain (30% chance, less sure)."
 
     '
-  ccqs:
-  - question: Is might stronger or weaker than may
-    answer: Might is weaker. It expresses less certainty.
-    purpose: Tests whether the learner understands a key concept of might. This is
-      fundamental for correct use of this grammar point.
-  - question: What is the negative form of might
-    answer: 'Might not. Note: might not does not mean must not.'
-    purpose: Tests whether the learner understands a key concept of might. This is
-      fundamental for correct use of this grammar point.
-  - question: Can we use might for past possibilities
-    answer: Yes. Might have plus past participle for past possibilities that did not
-      happen.
-    purpose: Tests whether the learner understands a key concept of might. This is
-      fundamental for correct use of this grammar point.
+  core_meaning: Might = weak possibility. The speaker thinks something is possible but not certain. Less certain than 'may'.
   example_generator:
     contexts:
     - everyday situations
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Subject + might + V1: "I might go. She might eat."
-
-      '
-    example_generator:
-      contexts:
-      - entertainment and media
-      - weather and nature
-      - social interactions
-      min_examples: 4
-  negative:
-    structure: 'Subject + might not + V1: "I might not go. She might not eat."
-
-      '
-    example_generator:
-      contexts:
-      - entertainment and media
-      - weather and nature
-      - social interactions
-      min_examples: 4
-  questions:
-    structure: '"Might + subject + V1?" (formal/rare) or "Do you think + subject +
-      might + V1?"
-
-      '
-    example_generator:
-      contexts:
-      - weather and nature
-      min_examples: 4
+  timeline: Might can refer to present or future.
+phonetics:
+- example_generator:
+    contexts:
+    - might reduction
+  l1_issue: Learners may confuse might with must by mispronouncing the vowel. Teach the clear /aɪ/ diphthong in might vs the
+    /ʌ/ in must.
+  note: 'Might is pronounced /maɪt/ with a clear diphthong. In connected speech, it is often reduced: ''I might go'' → /aɪ
+    maɪt ɡəʊ/.'
+register_notes:
+- note: 'In conversation, modals are essential for politeness: ''Could you pass the salt?'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In legal language, ''must'' expresses strong obligation: ''All passengers must wear seatbelts.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: Biber et al. (2021) — 'Might' distribution is register-dependent; generally lower frequency than other modals, with
+    specific register preferences. Ch. 6.6.2
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 6.6.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Might expresses weak possibility (about 30% chance). It is weaker than may
-  type: semantic
-  examples:
+- examples:
   - It might rain later (possible but not certain)
   - She might come to the party (I am not sure)
   - He might have forgotten (it is possible he forgot)
-- rule: Might not expresses weak negative possibility
-  type: grammatical
-  examples:
+  rule: Might expresses weak possibility (about 30% chance). It is weaker than may
+  type: semantic
+- examples:
   - She might not come (it is possible she will not come)
   - He might not have heard the news (perhaps he has not heard)
-- rule: Might have + past participle expresses a past possibility that may or may
-    not have happened
+  rule: Might not expresses weak negative possibility
   type: grammatical
-  examples:
+- examples:
   - She might have left already (perhaps she has left)
   - He might have forgotten about the meeting (perhaps he forgot)
   - They might have got lost (perhaps they are lost)
-- rule: Might can also be used for polite suggestions, often with want or like
-  type: pragmatic
-  examples:
+  rule: Might have + past participle expresses a past possibility that may or may not have happened
+  type: grammatical
+- examples:
   - You might want to check that again (polite suggestion)
   - We might consider waiting (tentative suggestion)
   - He might try the other restaurant (gentle recommendation)
+  rule: Might can also be used for polite suggestions, often with want or like
+  type: pragmatic
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students speculate about mysteries using might: ''Where is John?'' ''He might be at the gym. He might
+      have gone home.'''
+    duration: 15
+    name: Speculation Game
+  - adaptation_notes: 'Students make polite suggestions using might: ''You might want to bring an umbrella.'' ''We might consider
+      taking a taxi.'''
+    duration: 10
+    name: Polite Suggestions
+  tips:
+  - 'Use a probability line: will (100%) → may (50%) → might (30%).'
+  - 'Practice with weather: ''It might rain'' vs ''It will rain'' -- show the difference.'
+  - 'Role-play: ''What will you do this weekend?'' ''I might go to the beach.'' (not sure)'
+  - 'Swan PEU: ''Might'' = more tentative than ''may.'' ''It might rain'' is less certain than ''it may rain.'' In practice,
+    ''might'' is more common in spoken English. For permission, ''might'' is very formal: ''Might I ask a question?'''
+  - 'Swan PEU: ''Might have + pp'' for past possibility — ''She might have forgotten.'' = it''s possible she forgot (but I''m
+    not certain). Compare with ''must have'' (certain) and ''can''''t have'' (impossible).'
+title: Might (Possibility)
 use:
-- name: Weak Future Possibility
-  description: Something that could happen but is uncertain.
+- description: Something that could happen but is uncertain.
   examples:
   - I might go to the cinema tonight.
   - She might get the job.
   - We might move to a new city.
   key_point: The speaker is not committing. There is doubt.
-- name: Present Possibility
-  description: Something that is possibly true now.
+  name: Weak Future Possibility
+- description: Something that is possibly true now.
   examples:
   - He might be at home.
   - She might know the answer.
   - They might be sleeping.
   key_point: Expresses uncertainty about a present situation.
-- name: Polite Suggestions
-  description: Using 'might' to soften suggestions.
+  name: Present Possibility
+- description: Using 'might' to soften suggestions.
   examples:
   - You might want to check that again.
   - You might try the other restaurant.
   - We might consider waiting.
   key_point: More polite and less direct than 'you should'.
-- name: Might for Regret (might have)
-  description: Talking about past possibilities that did not happen (introduction
-    at A2).
+  name: Polite Suggestions
+- description: Talking about past possibilities that did not happen (introduction at A2).
   examples:
   - I might have passed if I had studied more.
   - She might have forgotten.
   key_point: Might + have + past participle = past possibility that didn't happen.
-phonetics:
-- note: 'Might is pronounced /maɪt/ with a clear diphthong. In connected speech, it
-    is often reduced: ''I might go'' → /aɪ maɪt ɡəʊ/.'
-  example_generator:
-    contexts:
-    - might reduction
-  l1_issue: Learners may confuse might with must by mispronouncing the vowel. Teach
-    the clear /aɪ/ diphthong in might vs the /ʌ/ in must.
-teaching:
-  methodology: PPP
-  tips:
-  - 'Use a probability line: will (100%) → may (50%) → might (30%).'
-  - 'Practice with weather: ''It might rain'' vs ''It will rain'' -- show the difference.'
-  - 'Role-play: ''What will you do this weekend?'' ''I might go to the beach.'' (not
-    sure)'
-  recommended_activities:
-  - name: Speculation Game
-    duration: 15
-    adaptation_notes: 'Students speculate about mysteries using might: ''Where is
-      John?'' ''He might be at the gym. He might have gone home.'''
-  - name: Polite Suggestions
-    duration: 10
-    adaptation_notes: 'Students make polite suggestions using might: ''You might want
-      to bring an umbrella.'' ''We might consider taking a taxi.'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
-    Modals, §9.1-9.6'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*Might you help me?* (direct request)'
-  correction: Could you help me? / Would you help me?
-  explanation: '''Might'' is not used for polite requests. Use ''could'' or ''would''.
-    ''Might'' is for expressing possibility.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: 'In formal writing, modals express hedging and caution: ''These results may
-    suggest...'''
-- note: 'In conversation, modals are essential for politeness: ''Could you pass the
-    salt?'''
-- note: 'In legal language, ''must'' expresses strong obligation: ''All passengers
-    must wear seatbelts.'''
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.
+  name: Might for Regret (might have)

@@ -1,31 +1,46 @@
-id: read-aloud-066b1c
-name: Read Aloud
-category: reading
-description: Read Aloud -- a reading activity. Select a short text (150-200 words)
-  related to your lesson. Read the text aloud first, modeling pronunciation, stress,
-  and intonation....
-targetStructures:
-- reading-comprehension
+adaptableToTopic: true
+bestForAges:
+- adults
 bestForLevels:
 - A2
 - B1
-bestForAges:
-- adults
+category: reading
+citations:
+- claim: The "Read Aloud" activity builds reading fluency through modeled oral reading
+    practice.
+  flagged: false
+  reliability: B
+  source: Peregoy & Boyle (2023) Reading, Writing, and Learning in ESL, 8th ed. Pearson.
+  tier: 2
+- claim: Reading aloud and oral presentation of texts is part of the TBL report stage.
+    Willis (1996) describes how students report back after tasks.
+  source: Willis, J. (1996) A Framework for Task-Based Learning. Longman.
+  tier: 2
+  reliability: B
+  flagged: false
+description: Read Aloud -- a reading activity. Select a short text (150-200 words)
+  related to your lesson. Read the text aloud first, modeling pronunciation, stress,
+  and intonation....
+differentiation:
+  extension: 'Challenge advanced students: require longer or more complex output,
+    add grammar constraints, have them create their own version, or teach the concept
+    to a peer.'
+  support: 'Provide additional scaffolding: simplify instructions, allow pair work,
+    offer word banks or sentence starters, and give more time.'
+digitalReady: true
 duration: 15
-groupSize: pairs
 energyRequired: medium
-prepTime: low
-materials:
-- handouts
 format:
 - in-person
-requiresTech: false
-digitalReady: true
+grammar_focus:
+- reading_comprehension
+- vocabulary_in_context
+groupSize: pairs
 hasAudioComponent: false
 hasPrintableComponent: true
 hasSlidesComponent: false
 hasVisualComponent: true
-adaptableToTopic: true
+id: read-aloud-066b1c
 instructions:
 - Select a short text (150-200 words) related to your lesson.
 - Read the text aloud first, modeling pronunciation, stress, and intonation.
@@ -33,18 +48,48 @@ instructions:
 - After each reader, give one specific compliment and one suggestion for improvement.
 - 'Focus on: pronunciation of difficult words, sentence stress, and natural pausing.'
 - Students practice reading the same text in pairs, helping each other improve.
-script:
-- '"Turns reading paragraph."'
-- '"On clear pronunciation."'
-- '"For mistakes."'
-differentiation:
-  support: 'Provide additional scaffolding: simplify instructions, allow pair work,
-    offer word banks or sentence starters, and give more time.'
-  extension: 'Challenge advanced students: require longer or more complex output,
-    add grammar constraints, have them create their own version, or teach the concept
-    to a peer.'
 keywords:
 - read
 - aloud
 - fluency
-l1Enhanced: true
+l1_enhanced:
+- adaptation: Arabic is written right-to-left. When reading English text aloud, use
+    a finger or pointer to track left-to-right progression.
+  language: Arabic
+  priority: high
+- adaptation: Mandarin speakers may carry over tonal pitch patterns into English sentence
+    intonation. Practice falling intonation for statements and rising for yes/no questions.
+  language: Mandarin
+  priority: medium
+l1_specific: []
+materials:
+- handouts
+name: Read Aloud
+prepTime: low
+requiresTech: false
+script:
+- '"Today we will practice reading aloud. I will read a short text first, then you
+  will take turns reading paragraphs aloud."'
+- '"Listen carefully to my pronunciation, stress, and intonation. Ready? Let me read
+  the first paragraph."'
+- '"Excellent reading! Now focus on sentence stress and natural pausing. Try reading
+  it again with more expression."'
+skill_areas:
+- reading
+targetStructures:
+- reading-comprehension
+- pronunciation
+teaching_tips:
+- context: Modeling
+  tip: Read the text aloud with exaggerated expression, pausing at punctuation, and
+    emphasizing stressed words. Students imitate your prosody, not just pronunciation.
+- context: Feedback focus
+  tip: 'Alternate what you compliment and suggest. First reader: praise pronunciation,
+    suggest pausing. Second reader: praise pausing, suggest intonation. This prevents
+    overwhelming students with corrections.'
+- tip: In TBL, reading aloud can be part of the report stage where students share
+    their findings or written work. (Willis 1996, Ch. 4.4)
+  context: TBL methodology
+sources:
+- Peregoy, S. & Boyle, O. (2023). Reading, Writing, and Learning in ESL, 8th ed. Pearson.
+- Willis, J. (1996) A Framework for Task-Based Learning. Longman.

@@ -1,14 +1,83 @@
+citations:
+- claim: 'Core meaning: Make logical inferences about present or past situations based on evidence, not direct knowledge'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms-9.6'
+  tier: 1
+- claim: 'Discourse function: In conversation, modals are essential for politeness, expressing degrees of certainty, and making
+    re'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms-9.6'
+  tier: 1
+- claim: Common error '*He mustn't be at home -- I saw him out.*' for Portuguese, Spanish, Chinese speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+common_errors:
+- correction: He can't be at home -- I saw him out.
+  error: '*He mustn''t be at home -- I saw him out.*'
+  explanation: Use can't for negative deduction, not mustn't.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+description: 'Structures used to make logical guesses about situations based on evidence, with varying degrees of certainty:
+  must (90%+ sure), might/could (50% sure), can''t (0% sure).'
+dialectal_variation: []
+discourse_notes:
+- note: In conversation, modals are essential for politeness, expressing degrees of certainty, and making requests.
+- note: 'In academic writing, modals express hedging and caution: ''These results may suggest...'' ''It could be argued that...'''
+- note: 'In legal and regulatory language, modals express obligation and permission: ''All passengers must wear seatbelts.'''
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - entertainment and media
+      - social interactions
+      min_examples: 4
+    structure: 'Present deduction: Modal + base verb: "He must be tired. (90% sure)", "He might be tired. (50% sure)", "He
+      can''t be tired. (0% sure)"
+
+      Past deduction: Modal + have + past participle: "He must have gone. (90% sure past)", "He might have gone. (50% sure
+      past)", "He can''t have gone. (0% sure past)"
+
+      '
+  negative:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: 'Use ''can''t'' for negative certainty; ''might not/could not'' for negative possibility: ''He can''t be here.''
+      ''He might not come.'''
+  questions:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: 'Invert modal and subject: ''Must he be tired?'' ''Could she have left?'''
 grammar_point: deduction_speculation
-title: Deduction & Speculation (Must, Can't, Could, Might)
-description: 'Structures used to make logical guesses about situations based on evidence,
-  with varying degrees of certainty: must (90%+ sure), might/could (50% sure), can''t
-  (0% sure).'
 level: B2
 meaning:
-  core_meaning: Make logical inferences about present or past situations based on
-    evidence, not direct knowledge.
-  timeline: 'Present deduction: Modal + base verb. Past deduction: Modal + have +
-    past participle.'
+  ccqs:
+  - answer: Yes — you would say "She must be intelligent" (high certainty based on evidence).
+    purpose: Tests whether the learner can use 'must' to make logical deductions from evidence. When the evidence strongly
+      supports the conclusion (PhD in physics → intelligent), 'must be' expresses high certainty about a present state.
+    question: She has a PhD in physics. Is it possible she is intelligent?
+  - answer: No — you would say "He might not be at home" or "He can't be at home" depending on how strong the evidence is.
+    purpose: Tests whether the learner can distinguish between different degrees of negative deduction. 'Can't be' = near-certainty
+      from evidence (lights off at 3pm suggests absence). 'Might not be' = possibility without certainty. Choosing the correct
+      modal reflects the strength of the evidence.
+    question: The lights are off at his house at 3pm. Is he definitely not at home?
+  - answer: The past — "must have + past participle" refers to a past deduction.
+    purpose: Tests whether the learner understands that 'modal + have + past participle' shifts the deduction from present
+      to past. 'He must be at the gym' = present deduction. 'He must have gone to the gym' = past deduction. This structural
+      distinction is essential for accurate speculation about past events.
+    question: '"He must have gone to the gym" — are we talking about now or the past?'
+  - answer: Learners often make errors with this structure that change the intended meaning.
+    purpose: Tests whether the learner can identify and correct a common error associated with deduction speculation. Recognizing
+      typical mistakes helps learners self-edit and produce more accurate English.
+    question: Can you identify and correct the error in this sentence related to this grammar point?
   contrast: '''Must'' = High certainty (90%+): "He must be rich (seen his car)"
 
     ''Might/Could'' = Medium certainty (50%): "He might be rich (not sure)"
@@ -18,163 +87,101 @@ meaning:
     ''Past'' = Add ''have + past participle'': "Must have been rich"
 
     '
-  ccqs:
-  - question: She has a PhD in physics. Is it possible she is intelligent?
-    answer: Yes — you would say "She must be intelligent" (high certainty based on
-      evidence).
-    purpose: Tests whether the learner can use 'must' to make logical deductions from
-      evidence. When the evidence strongly supports the conclusion (PhD in physics
-      → intelligent), 'must be' expresses high certainty about a present state.
-  - question: The lights are off at his house at 3pm. Is he definitely not at home?
-    answer: No — you would say "He might not be at home" or "He can't be at home"
-      depending on how strong the evidence is.
-    purpose: Tests whether the learner can distinguish between different degrees of
-      negative deduction. 'Can't be' = near-certainty from evidence (lights off at
-      3pm suggests absence). 'Might not be' = possibility without certainty. Choosing
-      the correct modal reflects the strength of the evidence.
-  - question: '"He must have gone to the gym" — are we talking about now or the past?'
-    answer: The past — "must have + past participle" refers to a past deduction.
-    purpose: Tests whether the learner understands that 'modal + have + past participle'
-      shifts the deduction from present to past. 'He must be at the gym' = present
-      deduction. 'He must have gone to the gym' = past deduction. This structural
-      distinction is essential for accurate speculation about past events.
+  core_meaning: Make logical inferences about present or past situations based on evidence, not direct knowledge.
   example_generator:
     contexts:
     - everyday situations
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Present deduction: Modal + base verb: "He must be tired. (90% sure)",
-      "He might be tired. (50% sure)", "He can''t be tired. (0% sure)"
-
-      Past deduction: Modal + have + past participle: "He must have gone. (90% sure
-      past)", "He might have gone. (50% sure past)", "He can''t have gone. (0% sure
-      past)"
-
-      '
-    example_generator:
-      contexts:
-      - entertainment and media
-      - social interactions
-      min_examples: 4
-  negative:
-    structure: 'Use ''can''t'' for negative certainty; ''might not/could not'' for
-      negative possibility: ''He can''t be here.'' ''He might not come.'''
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
-  questions:
-    structure: 'Invert modal and subject: ''Must he be tired?'' ''Could she have left?'''
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
+  timeline: 'Present deduction: Modal + base verb. Past deduction: Modal + have + past participle.'
+phonetics:
+- example_generator:
+    contexts:
+    - deduction stress patterns
+  l1_issue: Learners may not stress the modal sufficiently, making the deduction sound uncertain.
+  note: 'In deduction sentences, the modal verb is usually stressed: ''She MUST be tired.'' ''He CAN''T have finished.'''
+register_notes:
+- note: 'In conversation, modals are essential for politeness: ''Could you pass the salt?'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In legal language, ''must'' expresses strong obligation: ''All passengers must wear seatbelts.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Deduction modals (''must'', ''might'', ''could''): academic prose uses more tentative speculation
+    markers for hedging claims; conversation uses more direct deduction modals. Ch. 6.6.2'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 6.6.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Must expresses a logical deduction based on evidence — the speaker is almost
-    certain
-  type: semantic
-  examples:
+- examples:
   - She must be tired — she has been working all day
   - He must have forgotten — he is not answering
   - They must be lost — they have been driving for hours
-- rule: Can't/cannot expresses a logical deduction that something is impossible
+  rule: Must expresses a logical deduction based on evidence — the speaker is almost certain
   type: semantic
-  examples:
+- examples:
   - She can't be at home — her car is not outside
   - He can't have finished already — he only started an hour ago
   - That can't be right — the numbers do not add up
-- rule: Might/may/could expresses speculation without strong evidence
+  rule: Can't/cannot expresses a logical deduction that something is impossible
   type: semantic
-  examples:
+- examples:
   - She might be at the gym — I am not sure
   - He may have already left
   - They could be stuck in traffic
-use:
-- name: High Certainty (Must)
-  description: Strong logical guess based on clear evidence.
-  examples:
-  - The ground is wet, so it must have rained.
-  - She has a PhD, so she must be smart.
-  key_point: Must for deduction is not the same as must for obligation.
-- name: Medium Certainty (Might/Could)
-  description: Possible but not certain, based on weak evidence.
-  examples:
-  - It might rain later.
-  - He could be at the gym.
-  key_point: Might and could are interchangeable for possibility.
-- name: Zero Certainty (Can't)
-  description: Impossible based on evidence.
-  examples:
-  - He can't be at work; the office is closed.
-  - She can't have eaten it; she's vegan.
-  key_point: Can't is the opposite of must for deduction.
-- name: Past Deduction
-  description: Guess about past events using have + past participle.
-  examples:
-  - The car is gone; he must have left.
-  - She wasn't at home; she could have gone shopping.
-  key_point: Past deduction always uses 'have + past participle'.
-phonetics:
-- note: 'In deduction sentences, the modal verb is usually stressed: ''She MUST be
-    tired.'' ''He CAN''T have finished.'''
-  example_generator:
-    contexts:
-    - deduction stress patterns
-  l1_issue: Learners may not stress the modal sufficiently, making the deduction sound
-    uncertain.
+  rule: Might/may/could expresses speculation without strong evidence
+  type: semantic
 teaching:
-  methodology: 'Guided discovery: present visual or textual evidence and elicit modal
-    choices from students before explaining the rules. Move from controlled practice
-    (matching evidence to modals) to free production (detective scenarios). Use a
+  methodology: 'Guided discovery: present visual or textual evidence and elicit modal choices from students before explaining
+    the rules. Move from controlled practice (matching evidence to modals) to free production (detective scenarios). Use a
     PPP framework for lower levels and a task-based approach for higher levels.'
+  recommended_activities:
+  - adaptation_notes: 'Show crime scene photos or mystery scenarios. Students make deductions: ''The window is open — someone
+      must have entered through it.'''
+    duration: 15
+    name: Detective Deductions
+  - adaptation_notes: 'Students see a photo of a person and speculate: ''She might be a doctor. She must be very busy.'''
+    duration: 15
+    name: Speculation Game
   tips:
   - 'Week 1: Present deduction (must/might/can''t).'
   - 'Week 2: Past deduction (must have/might have/can''t have).'
   - 'Week 3: Distinguish must (deduction) vs must (obligation).'
-  - 'Use crime scene scenarios: ''The window is broken, so the thief must have climbed
-    in.'''
-  recommended_activities:
-  - name: Detective Deductions
-    duration: 15
-    adaptation_notes: 'Show crime scene photos or mystery scenarios. Students make
-      deductions: ''The window is open — someone must have entered through it.'''
-  - name: Speculation Game
-    duration: 15
-    adaptation_notes: 'Students see a photo of a person and speculate: ''She might
-      be a doctor. She must be very busy.'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
-    Modals, §9.1-9.6'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*He mustn''t be at home -- I saw him out.*'
-  correction: He can't be at home -- I saw him out.
-  explanation: Use can't for negative deduction, not mustn't.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: 'In formal writing, modals express hedging and caution: ''These results may
-    suggest...'''
-- note: 'In conversation, modals are essential for politeness: ''Could you pass the
-    salt?'''
-- note: 'In legal language, ''must'' expresses strong obligation: ''All passengers
-    must wear seatbelts.'''
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, modals are essential for politeness, expressing degrees of
-    certainty, and making requests.
-- note: 'In academic writing, modals express hedging and caution: ''These results
-    may suggest...'' ''It could be argued that...'''
-- note: 'In legal and regulatory language, modals express obligation and permission:
-    ''All passengers must wear seatbelts.'''
+  - 'Use crime scene scenarios: ''The window is broken, so the thief must have climbed in.'''
+  - 'Swan PEU: Modal strength scale for deduction — must (certain) > should (probable) > may/might/could (possible) > can''''t
+    (impossible). ''She must be home — the lights are on.'' ''She might be home.'' ''She can''''t be home — her car is gone.'''
+  - 'Swan PEU: ''Must have + past participle'' for past deduction — ''She must have forgotten.'' = I''m sure she forgot. ''Can''''t
+    have + pp'' — ''He can''''t have known.'' = it''s impossible he knew.'
+title: Deduction & Speculation (Must, Can't, Could, Might)
+use:
+- description: Strong logical guess based on clear evidence.
+  examples:
+  - The ground is wet, so it must have rained.
+  - She has a PhD, so she must be smart.
+  key_point: Must for deduction is not the same as must for obligation.
+  name: High Certainty (Must)
+- description: Possible but not certain, based on weak evidence.
+  examples:
+  - It might rain later.
+  - He could be at the gym.
+  key_point: Might and could are interchangeable for possibility.
+  name: Medium Certainty (Might/Could)
+- description: Impossible based on evidence.
+  examples:
+  - He can't be at work; the office is closed.
+  - She can't have eaten it; she's vegan.
+  key_point: Can't is the opposite of must for deduction.
+  name: Zero Certainty (Can't)
+- description: Guess about past events using have + past participle.
+  examples:
+  - The car is gone; he must have left.
+  - She wasn't at home; she could have gone shopping.
+  key_point: Past deduction always uses 'have + past participle'.
+  name: Past Deduction

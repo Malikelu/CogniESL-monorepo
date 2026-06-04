@@ -1,15 +1,103 @@
-grammar_point: frequency_adverbs
-title: Frequency Adverbs (always, usually, often, sometimes, rarely, never)
+citations:
+- claim: 'Core meaning: Indicates how frequently an action occurs, from 0% (never)
+    to 100% (always).'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs'
+  tier: 1
+- claim: 'Register distribution: Frequency adverbs are neutral in register.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs'
+  tier: 1
+- claim: 'Discourse function: Frequency adverbs create habitual meaning: ''I usually
+    have coffee in the morning.'''
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs'
+  tier: 1
+- claim: 'Common error ''Placing frequency adverbs after the main verb: *''I go always''
+    for Portuguese, Spanish, French speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+common_errors:
+- correction: I always go to school.
+  error: 'Placing frequency adverbs after the main verb: *''I go always to school.'''
+  explanation: Place frequency adverbs before the main verb (but after 'be').
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
 description: Adverbs that show how often an action happens. Essential for describing
   habits and routines.
+dialectal_variation: []
+discourse_notes:
+- note: Frequency adverbs create habitual meaning and are used across all registers,
+    though academic prose tends to prefer more precise measures ('typically', 'frequently',
+    'occasionally') over everyday frequency adverbs.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - food and daily routines
+      min_examples: 4
+    structure: 'Subject + frequency adverb + main verb: "I always go."
+
+      Subject + BE + frequency adverb: "I am always late."
+
+      Adverb position varies with verb type.
+
+      '
+  negative:
+    example_generator:
+      contexts:
+      - entertainment and media
+      min_examples: 4
+    structure: 'Frequency adverb before main verb (not after): ''I never go'' (not
+      ''I don''t never go'').'
+  questions:
+    example_generator:
+      contexts:
+      - travel and places
+      min_examples: 4
+    structure: 'Frequency adverb after auxiliary/before main verb: ''Do you always
+      go?'' ''Are you often late?'''
+grammar_point: frequency_adverbs
 level: A1
 meaning:
-  core_meaning: Indicates how frequently an action occurs, from 0% (never) to 100%
-    (always). This grammar point is essential for expressing frequency adverbs in
-    English. Learners at this level need to understand both the form and the appropriate
-    contexts for use. Common errors include confusion with related structures and
-    inappropriate register use.
-  timeline: N/A (Frequency adverbs describe habituality, not specific time points.)
+  ccqs:
+  - answer: Yes — 'always' means 100% of the time.
+    purpose: Tests whether the learner understands that "always" means 100% frequency.
+      This is important because learners need to grasp the precise meaning of each
+      frequency adverb to communicate accurately about habits and routines.
+    question: '''I always go to the gym.'' Does this mean every single time?'
+  - answer: No — 'never' means 0% of the time.
+    purpose: Tests whether the learner understands that "never" means 0% frequency
+      (not "rarely" or "seldom"). This distinction is critical because "never" is
+      an absolute term that completely negates the action.
+    question: '''I never eat meat.'' Does this mean I eat meat sometimes?'
+  - answer: After the verb 'be' — 'She is always late.' Before other verbs — 'She
+      always arrives late.'
+    purpose: Tests whether the learner understands the different positions of frequency
+      adverbs with "be" versus other verbs. This word order rule is one of the most
+      common sources of error for A1 learners.
+    question: '''She is always late.'' Where does ''always'' go?'
+  - answer: Between the auxiliary 'have' and the main verb 'been' — 'I have always
+      been happy.' When a sentence has an auxiliary verb (have, will, can, etc.),
+      the frequency adverb goes AFTER the first auxiliary and BEFORE the main verb.
+      This is a separate rule from the verb-'be' position rule and causes frequent
+      errors with compound tenses.
+    purpose: 'Tests whether the learner understands the position of frequency adverbs
+      in compound verb phrases with auxiliaries. The rule is: frequency adverb goes
+      after the first auxiliary (have/will/can) and before the main verb. Learners
+      often place it at the end (''*I have been happy always'') or at the beginning
+      of the auxiliary cluster, which sounds unnatural in English.'
+    question: Where does the frequency adverb go in "I have always been happy" — and
+      why?
   contrast: '''Always'' = 100% of the time
 
     ''Usually'' = about 80% of the time
@@ -23,139 +111,114 @@ meaning:
     ''Never'' = 0% of the time
 
     '
-  ccqs:
-  - question: '''I always go to the gym.'' Does this mean every single time?'
-    answer: Yes — 'always' means 100% of the time.
-    purpose: Tests whether the learner understands that "always" means 100% frequency.
-      This is important because learners need to grasp the precise meaning of each
-      frequency adverb to communicate accurately about habits and routines.
-  - question: '''I never eat meat.'' Does this mean I eat meat sometimes?'
-    answer: No — 'never' means 0% of the time.
-    purpose: Tests whether the learner understands that "never" means 0% frequency
-      (not "rarely" or "seldom"). This distinction is critical because "never" is
-      an absolute term that completely negates the action.
-  - question: '''She is always late.'' Where does ''always'' go?'
-    answer: After the verb 'be' — 'She is always late.' Before other verbs — 'She
-      always arrives late.'
-    purpose: Tests whether the learner understands the different positions of frequency
-      adverbs with "be" versus other verbs. This word order rule is one of the most
-      common sources of error for A1 learners.
+  core_meaning: Indicates how frequently an action occurs, from 0% (never) to 100%
+    (always). This grammar point is essential for expressing frequency adverbs in
+    English. Learners at this level need to understand both the form and the appropriate
+    contexts for use. Common errors include confusion with related structures and
+    inappropriate register use.
   example_generator:
     contexts:
     - everyday situations
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Subject + frequency adverb + main verb: "I always go."
-
-      Subject + BE + frequency adverb: "I am always late."
-
-      Adverb position varies with verb type.
-
-      '
-    example_generator:
-      contexts:
-      - food and daily routines
-      min_examples: 4
-  negative:
-    structure: 'Frequency adverb before main verb (not after): ''I never go'' (not
-      ''I don''t never go'').'
-    example_generator:
-      contexts:
-      - entertainment and media
-      min_examples: 4
-  questions:
-    structure: 'Frequency adverb after auxiliary/before main verb: ''Do you always
-      go?'' ''Are you often late?'''
-    example_generator:
-      contexts:
-      - travel and places
-      min_examples: 4
+  timeline: N/A (Frequency adverbs describe habituality, not specific time points.)
+phonetics:
+- example_generator:
+    contexts:
+    - frequency adverb stress
+  l1_issue: Learners may stress the frequency adverb too much, making the sentence
+    sound unnatural.
+  note: 'Frequency adverbs are usually unstressed in connected speech: ''I always
+    eat'' → /aɪ ˈɔːlweɪz iːt/. The stress falls on the main verb.'
+register_notes:
+- note: Frequency adverbs are neutral in register.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Frequency adverbs (''always'', ''never'', ''often'',
+    ''sometimes''): conversation uses more affective frequency expressions; academic
+    prose uses more precise measures (''typically'', ''frequently'', ''occasionally'').
+    Ch. 12.5'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 12.5
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Frequency adverbs go before the main verb but after the verb be
-  type: word_order
-  examples:
+- examples:
   - I always eat breakfast (before main verb)
   - She is never late (after be)
   - They often go to the cinema (before main verb)
-- rule: 'Order from highest to lowest: always (100%), usually (90%), often (70%),
-    sometimes (50%), rarely (10%), seldom (5%), never (0%)'
-  type: semantic
-  examples:
+  rule: Frequency adverbs go before the main verb but after the verb be
+  type: word_order
+- examples:
   - I always brush my teeth (100%)
   - I usually have coffee in the morning (90%)
   - I often go to the gym (70%)
   - I sometimes eat out (50%)
   - I rarely watch TV (10%)
   - I never eat meat (0%)
-- rule: Ever is used in questions and negatives. Never is used in affirmative sentences
-    with negative meaning
-  type: grammatical
-  examples:
+  rule: 'Order from highest to lowest: always (100%), usually (90%), often (70%),
+    sometimes (50%), rarely (10%), seldom (5%), never (0%)'
+  type: semantic
+- examples:
   - Do you ever go to the cinema? (question)
   - I never go to the cinema (affirmative with negative meaning)
-use:
-- name: Daily Routines
-  description: Describe how often you do regular activities.
-  examples:
-  - I always brush my teeth.
-  - She sometimes walks to work.
-  key_point: Frequency adverbs are essential for routine descriptions.
-- name: Habits
-  description: Talk about repeated behaviors over time.
-  examples:
-  - He often forgets his keys.
-  - They never complain.
-  key_point: Position changes with 'be' vs other verbs.
-phonetics:
-- note: 'Frequency adverbs are usually unstressed in connected speech: ''I always
-    eat'' → /aɪ ˈɔːlweɪz iːt/. The stress falls on the main verb.'
-  example_generator:
-    contexts:
-    - frequency adverb stress
-  l1_issue: Learners may stress the frequency adverb too much, making the sentence
-    sound unnatural.
+  rule: Ever is used in questions and negatives. Never is used in affirmative sentences
+    with negative meaning
+  type: grammatical
 teaching:
   methodology: Visual and kinaesthetic approach. Use a 0–100% scale on the board to
     position each adverb, making the frequency spectrum tangible. Drill word order
     through substitution tables and choral repetition, then move to personalised practice
     via class surveys and routine descriptions. Contrast position with 'be' vs other
     verbs explicitly.
+  recommended_activities:
+  - adaptation_notes: Students survey classmates about their habits using 'How often
+      do you...?' and report back with frequency adverbs.
+    duration: 15
+    name: Frequency Survey
+  - adaptation_notes: Students put frequency adverbs in the correct position in sentences.
+    duration: 10
+    name: Adverb Placement
   tips:
+  - 'Parrott (2000): Parrott (2000) Ch. 5: Frequency adverbs (always, often, never)
+    go before the main verb (I always go) but after be (I am always). Position changes
+    meaning for some adverbs. Never creates inversion when fronted: Never have I seen...'
   - Use a scale from 0-100% on the board with adverbs placed along it.
   - 'Drill position: ''I always...'', ''I am always...'' contrast.'
   - 'Survey activity: students ask ''How often do you...?'' and graph results.'
-  recommended_activities:
-  - name: Frequency Survey
-    duration: 15
-    adaptation_notes: Students survey classmates about their habits using 'How often
-      do you...?' and report back with frequency adverbs.
-  - name: Adverb Placement
-    duration: 10
-    adaptation_notes: Students put frequency adverbs in the correct position in sentences.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 14:
-    Adverbs, §14.1-14.8'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: 'Placing frequency adverbs after the main verb: *''I go always to school.'''
-  correction: I always go to school.
-  explanation: Place frequency adverbs before the main verb (but after 'be').
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: Frequency adverbs are neutral in register.
-dialectal_variation:
-- note: No significant BrE/AmE differences.
-discourse_notes:
-- note: 'Frequency adverbs create habitual meaning: ''I usually have coffee in the
-    morning.'''
+  - 'Swan PEU: Frequency adverbs — always, usually, often, sometimes, occasionally,
+    seldom, rarely, never. Position: BEFORE the main verb, AFTER ''be.'' ''She always
+    drinks coffee.'' ''She is always on time.'''
+  - 'Swan PEU: ''Ever'' and ''never'' in questions/negatives. ''Have you ever been
+    to Paris?'' ''I have never seen such a thing.'' ''Ever'' is not used in affirmative
+    statements.'
+  - 'GB3 Ch. 7: Frequency adverbs and tense — ''already/just/yet/still/soon/anymore''
+    co-occur with specific tense-aspect combinations. Already/just = semantically
+    complete; yet = semantically incomplete (continued expectation); still = continuation;
+    anymore = ceased. AmE/BrE divergence: AmE permits simple past with yet/already/just
+    where BrE requires present perfect. Source: Celce-Murcia & Larsen-Freeman (2015)
+    GB3 Ch. 7 §7.4.'
+title: Frequency Adverbs (always, usually, often, sometimes, rarely, never)
+use:
+- description: Describe how often you do regular activities.
+  examples:
+  - I always brush my teeth.
+  - She sometimes walks to work.
+  key_point: Frequency adverbs are essential for routine descriptions.
+  name: Daily Routines
+- description: Talk about repeated behaviors over time.
+  examples:
+  - He often forgets his keys.
+  - They never complain.
+  key_point: Position changes with 'be' vs other verbs.
+  name: Habits

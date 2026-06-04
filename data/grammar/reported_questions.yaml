@@ -1,31 +1,59 @@
-grammar_point: reported_questions
-title: Reported Questions (Indirect Questions)
-description: A structure to paraphrase questions someone asked in the past, with tense
-  backshifting and no question inversion or question marks.
-level: B1
-meaning:
-  core_meaning: Reports a question that was asked in the past, paraphrasing the original
-    question without using its exact words or question structure.
-  timeline: 'Same backshift rules as reported statements: tenses shift to past relative
-    to the past reporting verb.'
-  contrast: 'Direct question: ''Where are you going?'' (inverted, question mark) Reported
-    question: He asked where I was going (no inversion, no question mark) ''Say''
-    is used for statements; ''ask''/''inquire'' is used for questions. '
-  ccqs:
-  - question: Do we use question word order in reported questions
-    answer: No. Reported questions use statement word order.
-    purpose: Tests whether the learner understands that reported questions lose subject-auxiliary
-      inversion and become statement-ordered clauses, which is the most critical structural
-      change from direct to reported questions.
-  - question: Can we use a different structure here with the same meaning?
-    answer: No — changing the structure would change the meaning or make the sentence
-      ungrammatical.
-    purpose: Tests whether the learner understands that reported questions is the
-      only appropriate structure for this meaning/context.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      reported questions and explain why they are incorrect.
+citations:
+- claim: 'Core meaning: Reports a question that was asked in the past, paraphrasing the original question without using its '
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 33: Reported Speech and Writing'
+  tier: 4
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 33: Reported Speech and Writing'
+  tier: 4
+- claim: 'Common error ''Keeping question word order in reported questions: *''He aske'' for Portuguese, Spanish, French speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for L1-specific error patterns in English.
+    Their learner English framework documents how each L1 group produces characteristic errors in this grammatical domain,
+    enabling teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference and Other Problems, 2nd ed. Cambridge
+    University Press.'
+  tier: 2
+common_errors:
+- correction: He asked where I lived.
+  error: 'Keeping question word order in reported questions: *''He asked where did I live.'''
+  explanation: Reported questions use statement word order (subject before verb), not question word order. The auxiliary 'did'
+    is removed and the verb takes the appropriate past tense form.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Word order'
+- correction: He asked if/whether I was hungry.
+  error: 'Using ''that'' instead of ''if/whether'' for yes/no questions: *''He asked that I was hungry.'''
+  explanation: Yes/no questions in reported speech require 'if' or 'whether', not 'that'. 'That' is used for reported statements,
+    not questions.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+- correction: He asked where I lived.
+  error: 'Forgetting tense backshift: *''He asked where I live.'''
+  explanation: When the reporting verb is in the past tense, the verb in the reported clause must be backshifted. Present
+    simple becomes past simple.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Japanese
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Reported speech'
+description: A structure to paraphrase questions someone asked in the past, with tense backshifting and no question inversion
+  or question marks.
+dialectal_variation: []
+discourse_notes: []
 example_generator:
   contexts:
   - everyday situations
@@ -33,136 +61,120 @@ example_generator:
   min_examples: 5
 form:
   affirmative:
-    structure: 'Yes/No questions: Reporting verb (ask/inquire) + if/whether + subject
-      + backshifted verb Wh-questions: Reporting verb + wh-word + subject + backshifted
-      verb Same backshift rules as reported statements apply No question mark, no
-      auxiliary verb inversion '
     example_generator:
       contexts:
       - everyday situations
       min_examples: 4
+    structure: 'Yes/No questions: Reporting verb (ask/inquire) + if/whether + subject + backshifted verb Wh-questions: Reporting
+      verb + wh-word + subject + backshifted verb Same backshift rules as reported statements apply No question mark, no auxiliary
+      verb inversion '
   negative:
-    structure: Reporting verb + if/whether + subject + negative backshifted verb /
-      Reporting verb + wh-word + subject + negative backshifted verb
     example_generator:
       contexts:
       - everyday situations
       min_examples: 4
+    structure: Reporting verb + if/whether + subject + negative backshifted verb / Reporting verb + wh-word + subject + negative
+      backshifted verb
   questions:
-    structure: N/A (Reported questions are statements about a question, so no interrogative
-      form for the reported clause)
     example_generator:
       contexts:
       - everyday situations
       min_examples: 4
+    structure: N/A (Reported questions are statements about a question, so no interrogative form for the reported clause)
+grammar_point: reported_questions
+level: B1
+meaning:
+  ccqs:
+  - answer: No. Reported questions use statement word order.
+    purpose: Tests whether the learner understands that reported questions lose subject-auxiliary inversion and become statement-ordered
+      clauses, which is the most critical structural change from direct to reported questions.
+    question: Do we use question word order in reported questions
+  - answer: No — changing the structure would change the meaning or make the sentence ungrammatical.
+    purpose: Tests whether the learner understands that reported questions is the only appropriate structure for this meaning/context.
+    question: Can we use a different structure here with the same meaning?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with reported questions and explain why they
+      are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: No. In reported questions, the word order must be statement order (subject before verb), not question order. The
+      correct form is 'She asked me where I was going'. The auxiliary 'was' does not invert with the subject. Reported questions
+      are statements about a question, so they follow normal subject + verb word order.
+    purpose: Tests whether the learner understands that reported questions must always use statement word order, never question
+      inversion. This is the most critical structural rule for reported questions — learners frequently retain the inverted
+      word order of the direct question (where was I going) instead of switching to statement order (where I was going), which
+      is one of the most common reported speech errors at B1 level.
+    question: Is 'She asked me where was I going' a correct reported question?
+  contrast: 'Direct question: ''Where are you going?'' (inverted, question mark) Reported question: He asked where I was going
+    (no inversion, no question mark) ''Say'' is used for statements; ''ask''/''inquire'' is used for questions. '
+  core_meaning: Reports a question that was asked in the past, paraphrasing the original question without using its exact
+    words or question structure.
+  timeline: 'Same backshift rules as reported statements: tenses shift to past relative to the past reporting verb.'
+phonetics:
+- example_generator:
+    contexts:
+    - reported question intonation
+  l1_issue: Many L1 speakers use rising intonation for reported questions. Teach falling intonation — they are statements,
+    not questions.
+  note: 'Reported questions typically have falling intonation (not rising like direct questions): ''He asked where I lived
+    ↘'' NOT ''He asked where I lived ↗.'''
+register_notes: []
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: 'Wh- questions: reporting verb + wh-word + subject + verb (statement order)'
-  type: grammatical
-  examples:
+- examples:
   - He asked where I lived
   - She wanted to know what I was doing
   - They asked why I was late
-- rule: 'Yes/no questions: reporting verb + if/whether + subject + verb'
+  rule: 'Wh- questions: reporting verb + wh-word + subject + verb (statement order)'
   type: grammatical
-  examples:
+- examples:
   - He asked if I was hungry
   - She wanted to know whether I had finished
   - They asked if I could help
-- rule: No auxiliary inversion in reported questions
+  rule: 'Yes/no questions: reporting verb + if/whether + subject + verb'
   type: grammatical
-  examples:
+- examples:
   - He asked where I lived (NOT where did I live)
   - She asked if I was hungry (NOT if was I hungry)
-use:
-- name: Conversation Reporting
-  description: Summarize questions asked in past conversations.
-  examples:
-  - She asked if I wanted to join the meeting.
-  - He asked where the bathroom was.
-  key_point: Most common everyday use.
-- name: Interview Reporting
-  description: Report questions from job interviews, surveys, or research.
-  examples:
-  - The interviewer asked if I had any relevant experience.
-  - They asked why I applied for the role.
-  key_point: 'Uses formal reporting verbs: inquire, question, ask.'
-- name: News and Media
-  description: Report questions asked to public figures.
-  examples:
-  - The journalist asked whether the prime minister would resign.
-  key_point: Formal register for public reporting.
-phonetics:
-- note: 'Reported questions typically have falling intonation (not rising like direct
-    questions): ''He asked where I lived ↘'' NOT ''He asked where I lived ↗.'''
-  example_generator:
-    contexts:
-    - reported question intonation
-  l1_issue: Many L1 speakers use rising intonation for reported questions. Teach falling
-    intonation — they are statements, not questions.
+  rule: No auxiliary inversion in reported questions
+  type: grammatical
 teaching:
   methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Give students direct questions. They convert to reported speech: ''Where do you live?'' → ''He asked
+      where I lived.'' ''Are you hungry?'' → ''She asked if I was hungry.'''
+    duration: 15
+    name: Direct to Reported
+  - adaptation_notes: 'Students identify and correct word order errors in reported questions: ''He asked where did I live''
+      → ''He asked where I lived.'''
+    duration: 10
+    name: Statement Order
   tips:
   - Start with yes/no questions (if/whether) before moving to wh-questions.
   - Contrast direct and reported questions side by side to show word order changes.
   - 'Practice with common wh-words: what, where, when, why, how.'
-  recommended_activities:
-  - name: Direct to Reported
-    duration: 15
-    adaptation_notes: 'Give students direct questions. They convert to reported speech:
-      ''Where do you live?'' → ''He asked where I lived.'' ''Are you hungry?'' → ''She
-      asked if I was hungry.'''
-  - name: Statement Order
-    duration: 10
-    adaptation_notes: 'Students identify and correct word order errors in reported
-      questions: ''He asked where did I live'' → ''He asked where I lived.'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: 'Keeping question word order in reported questions: *''He asked where did
-    I live.'''
-  correction: He asked where I lived.
-  explanation: Reported questions use statement word order (subject before verb),
-    not question word order. The auxiliary 'did' is removed and the verb takes the
-    appropriate past tense form.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: 'Using ''that'' instead of ''if/whether'' for yes/no questions: *''He asked
-    that I was hungry.'''
-  correction: He asked if/whether I was hungry.
-  explanation: Yes/no questions in reported speech require 'if' or 'whether', not
-    'that'. 'That' is used for reported statements, not questions.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-- error: 'Forgetting tense backshift: *''He asked where I live.'''
-  correction: He asked where I lived.
-  explanation: When the reporting verb is in the past tense, the verb in the reported
-    clause must be backshifted. Present simple becomes past simple.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Japanese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.
+  - 'Swan PEU: Questions in reported speech — yes/no: ''if'' or ''whether.'' Wh-: same question word. NO inversion in reported
+    questions: ''She asked where I lived'' (NOT ''where did I live''). Subject before verb.'
+title: Reported Questions (Indirect Questions)
+use:
+- description: Summarize questions asked in past conversations.
+  examples:
+  - She asked if I wanted to join the meeting.
+  - He asked where the bathroom was.
+  key_point: Most common everyday use.
+  name: Conversation Reporting
+- description: Report questions from job interviews, surveys, or research.
+  examples:
+  - The interviewer asked if I had any relevant experience.
+  - They asked why I applied for the role.
+  key_point: 'Uses formal reporting verbs: inquire, question, ask.'
+  name: Interview Reporting
+- description: Report questions asked to public figures.
+  examples:
+  - The journalist asked whether the prime minister would resign.
+  key_point: Formal register for public reporting.
+  name: News and Media

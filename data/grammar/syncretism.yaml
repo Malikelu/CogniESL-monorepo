@@ -1,36 +1,75 @@
-grammar_point: syncretism
-title: Syncretism in English Grammar
+citations:
+- claim: 'Core meaning: Syncretism refers to the phenomenon where a single word form
+    serves multiple grammatical functions'
+  reliability: B
+  source: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 3: The Verb (syncretism)'
+  tier: 1
+- claim: 'Register distribution: This is a metalinguistic concept used in academic
+    and linguistic discourse, not in everyday conversa'
+  reliability: B
+  source: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 3: The Verb (syncretism)'
+  tier: 1
+- claim: 'Discourse function: This concept is relevant to academic, linguistic, and
+    pedagogical discourse.'
+  reliability: B
+  source: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 3: The Verb (syncretism)'
+  tier: 1
+- claim: 'Common error ''Assuming identical forms have identical functions: *''I work''''
+    for Russian, Arabic, Finnish speakers'
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 5: Verb
+    forms'
+  tier: 1
+- claim: 'Dialectal variation: Biber et al. (1999) GSWE Ch. 1.3.2/1.3.4: This feature shows no systematic BrE/AmE differences in core grammar, though register distribution may vary.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 4: Basic
+    Structures'
+  tier: 1
+common_errors:
+- correction: I work (verb) / my work (noun) -- same form, different function.
+  error: 'Assuming identical forms have identical functions: *''I work'' and ''my
+    work'' are the same word.'
+  explanation: Learners from highly inflected languages may assume that identical
+    forms must have identical grammatical functions. In English, the same form can
+    be a verb, noun, or adjective depending on its position and role in the sentence.
+  flagged: true
+  l1_groups:
+  - Russian
+  - Arabic
+  - Finnish
+  reliability: D
+- correction: REcord (noun) / reCORD (verb)
+  error: 'Overgeneralizing stress patterns: *''REcord'' for both noun and verb.'
+  explanation: Some syncretic noun-verb pairs are distinguished by stress placement.
+    Learners who are unaware of this pattern may use the wrong stress, leading to
+    confusion or miscommunication.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Japanese
+  reliability: D
+- correction: He runs fast. (correct -- 'fast' is both adjective and adverb)
+  error: 'Treating syncretic forms as errors: *''He runs fast'' -- thinking ''fast''
+    should be ''fastly''.'
+  explanation: Some learners, aware that adverbs often end in '-ly', may incorrectly
+    assume that syncretic adjective-adverb forms like 'fast' and 'hard' are errors
+    and try to add '-ly'. Understanding syncretism helps them accept these forms as
+    correct.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
 description: Understanding how identical word forms serve different grammatical functions,
   and how context determines meaning.
-level: C2
-meaning:
-  core_meaning: Syncretism refers to the phenomenon where a single word form serves
-    multiple grammatical functions. In English, many words are syncretic -- the same
-    spelling and pronunciation can represent different parts of speech or grammatical
-    categories depending on context.
-  timeline: Not a tense or aspect -- this is a metalinguistic concept about the relationship
-    between form and function in English.
-  contrast: Unlike inflectional languages (e.g., Latin, German) where different functions
-    require different endings, English relies heavily on word order and context to
-    distinguish syncretic forms.
-  ccqs:
-  - question: Is 'run' in 'I run every day' and 'a run in her tights' the same word?
-    answer: Same form, different function -- that's syncretism.
-    purpose: Tests whether the learner can identify concrete examples of syncretism
-      -- the same word form serving different grammatical functions (verb vs noun)
-      -- which is the core concept of syncretism in English.
-  - question: Does English use different endings to show different grammatical roles?
-    answer: Not always -- often the same form is used, and word order or context tells
-      us the function.
-    purpose: Tests whether the learner understands that English relies on word order
-      and context rather than inflectional endings to distinguish grammatical functions,
-      which is the cross-linguistic basis for syncretism.
-  - question: Is syncretism common in English?
-    answer: Very common -- English has a high degree of syncretism compared to many
-      other languages.
-    purpose: Tests whether the learner has a general awareness of the prevalence of
-      syncretism in English compared to other languages, which contextualizes why
-      this concept is important for understanding English grammar.
+dialectal_variation: []
+discourse_notes:
+- note: This concept is relevant to academic, linguistic, and pedagogical discourse.
 example_generator:
   contexts:
   - linguistic analysis
@@ -42,62 +81,148 @@ example_generator:
   min_examples: 5
 form:
   affirmative:
-    structure: N/A -- syncretism is a descriptive concept, not a productive grammar
-      pattern. It describes existing form-function relationships.
     example_generator:
       contexts:
       - analysis
       - explanation
       min_examples: 4
+    structure: N/A -- syncretism is a descriptive concept, not a productive grammar
+      pattern. It describes existing form-function relationships.
   negative:
-    structure: N/A
     example_generator:
       contexts:
       - analysis
       min_examples: 3
+    structure: N/A
   questions:
-    structure: N/A
     example_generator:
       contexts:
       - analysis
       min_examples: 3
+    structure: N/A
+grammar_point: syncretism
+level: C2
+meaning:
+  ccqs:
+  - answer: Same form, different function -- that's syncretism.
+    purpose: Tests whether the learner can identify concrete examples of syncretism
+      -- the same word form serving different grammatical functions (verb vs noun)
+      -- which is the core concept of syncretism in English.
+    question: Is 'run' in 'I run every day' and 'a run in her tights' the same word?
+  - answer: Not always -- often the same form is used, and word order or context tells
+      us the function.
+    purpose: Tests whether the learner understands that English relies on word order
+      and context rather than inflectional endings to distinguish grammatical functions,
+      which is the cross-linguistic basis for syncretism.
+    question: Does English use different endings to show different grammatical roles?
+  - answer: Very common -- English has a high degree of syncretism compared to many
+      other languages.
+    purpose: Tests whether the learner has a general awareness of the prevalence of
+      syncretism in English compared to other languages, which contextualizes why
+      this concept is important for understanding English grammar.
+    question: Is syncretism common in English?
+  contrast: Unlike inflectional languages (e.g., Latin, German) where different functions
+    require different endings, English relies heavily on word order and context to
+    distinguish syncretic forms.
+  core_meaning: Syncretism refers to the phenomenon where a single word form serves
+    multiple grammatical functions. In English, many words are syncretic -- the same
+    spelling and pronunciation can represent different parts of speech or grammatical
+    categories depending on context.
+  timeline: Not a tense or aspect -- this is a metalinguistic concept about the relationship
+    between form and function in English.
+phonetics:
+- example_generator:
+    contexts:
+    - stress pattern drills
+    - minimal pair practice
+  l1_issue: Speakers of highly inflected languages (e.g., Russian, Finnish, Arabic)
+    may expect distinct forms for each function and find English syncretism confusing
+    or imprecise.
+  note: 'Some syncretic pairs differ in stress: ''REcord'' (noun) vs. ''reCORD'' (verb),
+    ''PREsent'' (noun/adj) vs. ''preSENT'' (verb).'
+register_notes:
+- note: 'Biber et al. (1999) — Morphological syncretism (identical forms for different
+    functions): register distribution of ambiguous forms varies. Conversation relies
+    more on context for disambiguation. Ch. 2.2'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 2.2
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch.
+    5: Verb forms'
+  primary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 3: The Verb (syncretism)'
+  secondary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 4:
+    Basic Structures'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 5: Verb forms'
+  validation: Swan (2016) Practical English Usage, 4th ed.(syncretism)
 sub_rules:
-- rule: 'Noun-verb syncretism: ''run'' (verb: I run / noun: a run), ''walk'', ''talk'',
-    ''work'', ''play'', ''love'', ''hate'''
-  type: grammatical
-  examples:
+- examples:
   - I work every day. (verb) / It was hard work. (noun)
   - She loves music. (verb) / Their love grew stronger. (noun)
-- rule: 'Adjective-verb syncretism (past participle): ''broken'' (adjective: a broken
-    window / verb: has broken)'
+  rule: 'Noun-verb syncretism: ''run'' (verb: I run / noun: a run), ''walk'', ''talk'',
+    ''work'', ''play'', ''love'', ''hate'''
   type: grammatical
-  examples:
+- examples:
   - The window is broken. (adjective) / Someone has broken the window. (verb)
   - The door was closed. (adjective) / She closed the door. (verb)
-- rule: 'Subject-object pronoun syncretism: ''you'', ''it'' -- same form for subject
-    and object'
+  rule: 'Adjective-verb syncretism (past participle): ''broken'' (adjective: a broken
+    window / verb: has broken)'
   type: grammatical
-  examples:
+- examples:
   - You are brilliant. (subject) / I admire you. (object)
   - It is raining. (subject) / I like it. (object)
-- rule: 'Adjective-adverb syncretism: ''fast'', ''hard'', ''early'', ''late'', ''daily'',
-    ''weekly'''
+  rule: 'Subject-object pronoun syncretism: ''you'', ''it'' -- same form for subject
+    and object'
   type: grammatical
-  examples:
+- examples:
   - a fast car (adjective) / He runs fast (adverb)
   - a hard test (adjective) / She works hard (adverb)
-- rule: 'Past-simple/past-participle syncretism: regular verbs where both forms are
-    identical: ''walked/walked'', ''played/played'''
+  rule: 'Adjective-adverb syncretism: ''fast'', ''hard'', ''early'', ''late'', ''daily'',
+    ''weekly'''
   type: grammatical
-  examples:
+- examples:
   - I walked home. (past simple) / I have walked home. (past participle)
   - She played tennis. (past simple) / She has played tennis. (past participle)
-- rule: 'Genitive-plural syncretism: ''children''s'' -- the apostrophe-s marks possession,
-    but ''children'' is already irregular plural'
-  type: orthographic
-  examples:
+  rule: 'Past-simple/past-participle syncretism: regular verbs where both forms are
+    identical: ''walked/walked'', ''played/played'''
+  type: grammatical
+- examples:
   - the children's toys (plural + possessive)
   - the teachers' lounge (plural + possessive)
+  rule: 'Genitive-plural syncretism: ''children''s'' -- the apostrophe-s marks possession,
+    but ''children'' is already irregular plural'
+  type: orthographic
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Students find and explain ambiguous sentences caused by syncretism
+      in authentic texts.
+    duration: 15
+    name: Ambiguity hunt
+  - adaptation_notes: Given a list of words, students categorise each use as noun,
+      verb, adjective, or adverb.
+    duration: 10
+    name: Word function sorting
+  - adaptation_notes: Students compile a personal reference of syncretic words they
+      encounter, with example sentences for each function.
+    duration: 20
+    name: Syncretism journal
+  tips:
+  - This is a metalinguistic concept -- best taught to advanced learners who already
+    have strong grammar foundations.
+  - 'Use ambiguity as a teaching tool: present sentences with multiple interpretations.'
+  - Encourage students to keep a 'syncretism journal' noting words they encounter
+    in multiple grammatical roles.
+  - 'Connect to word formation: many syncretic pairs arise from conversion/zero-derivation.'
+  - Use tree diagrams or colour-coding to visually distinguish functions of identical
+    forms.
+  - 'Swan covers syncretism — where one form serves multiple functions. Examples:
+    ''his'' = possessive adjective AND possessive pronoun. Past participle = adjective
+    (''a broken window'') and verb (''it was broken''). Same form, different grammatical
+    function.'
+title: Syncretism in English Grammar
 use:
 - context: Advanced grammar analysis
   description: Understanding why English sentences can be ambiguous without context.
@@ -125,85 +250,3 @@ use:
   - 'Puns: ''Time flies like an arrow; fruit flies like a banana.'''
   - 'Poetry: ''The long day wanes'' -- ''long'' as adjective modifying ''day'' or
     adverb modifying ''wanes''?'
-phonetics:
-- note: 'Some syncretic pairs differ in stress: ''REcord'' (noun) vs. ''reCORD'' (verb),
-    ''PREsent'' (noun/adj) vs. ''preSENT'' (verb).'
-  example_generator:
-    contexts:
-    - stress pattern drills
-    - minimal pair practice
-  l1_issue: Speakers of highly inflected languages (e.g., Russian, Finnish, Arabic)
-    may expect distinct forms for each function and find English syncretism confusing
-    or imprecise.
-teaching:
-  methodology: Guided discovery
-  tips:
-  - This is a metalinguistic concept -- best taught to advanced learners who already
-    have strong grammar foundations.
-  - 'Use ambiguity as a teaching tool: present sentences with multiple interpretations.'
-  - Encourage students to keep a 'syncretism journal' noting words they encounter
-    in multiple grammatical roles.
-  - 'Connect to word formation: many syncretic pairs arise from conversion/zero-derivation.'
-  - Use tree diagrams or colour-coding to visually distinguish functions of identical
-    forms.
-  recommended_activities:
-  - name: Ambiguity hunt
-    duration: 15
-    adaptation_notes: Students find and explain ambiguous sentences caused by syncretism
-      in authentic texts.
-  - name: Word function sorting
-    duration: 10
-    adaptation_notes: Given a list of words, students categorise each use as noun,
-      verb, adjective, or adverb.
-  - name: Syncretism journal
-    duration: 20
-    adaptation_notes: Students compile a personal reference of syncretic words they
-      encounter, with example sentences for each function.
-sources:
-  primary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 3: The Verb, §3.1 (syncretism)'
-  secondary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 4:
-    Basic Structures, §4.1'
-  validation: Swan (2016) Practical English Usage, 4th ed. Entries 541-545 (syncretism)
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    5: Verb forms'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 5: Verb forms'
-common_errors:
-- error: 'Assuming identical forms have identical functions: *''I work'' and ''my
-    work'' are the same word.'
-  correction: I work (verb) / my work (noun) -- same form, different function.
-  explanation: Learners from highly inflected languages may assume that identical
-    forms must have identical grammatical functions. In English, the same form can
-    be a verb, noun, or adjective depending on its position and role in the sentence.
-  l1_groups:
-  - Russian
-  - Arabic
-  - Finnish
-- error: 'Overgeneralizing stress patterns: *''REcord'' for both noun and verb.'
-  correction: REcord (noun) / reCORD (verb)
-  explanation: Some syncretic noun-verb pairs are distinguished by stress placement.
-    Learners who are unaware of this pattern may use the wrong stress, leading to
-    confusion or miscommunication.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Japanese
-- error: 'Treating syncretic forms as errors: *''He runs fast'' -- thinking ''fast''
-    should be ''fastly''.'
-  correction: He runs fast. (correct -- 'fast' is both adjective and adverb)
-  explanation: Some learners, aware that adverbs often end in '-ly', may incorrectly
-    assume that syncretic adjective-adverb forms like 'fast' and 'hard' are errors
-    and try to add '-ly'. Understanding syncretism helps them accept these forms as
-    correct.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: This is a metalinguistic concept used in academic and linguistic discourse,
-    not in everyday conversation.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core concept of syncretism.
-discourse_notes:
-- note: This concept is relevant to academic, linguistic, and pedagogical discourse.

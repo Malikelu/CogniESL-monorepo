@@ -1,35 +1,91 @@
-grammar_point: stative_dynamic_verbs
-title: Stative vs. Dynamic Verbs
+citations:
+- claim: 'Core meaning: Stative verbs describe states, feelings, or conditions (know,
+    believe, love, want)'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 4
+- claim: 'Register distribution: The stative/dynamic distinction is most rigidly observed
+    in formal writing, where stative verbs in c'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 4
+- claim: 'Discourse function: This distinction is relevant in all forms of spoken
+    and written discourse.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 4
+- claim: 'Common error ''Using continuous with stative verbs: *''I am knowing the
+    answ'' for Portuguese, Spanish, Chinese speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: L1 transfer in stative dynamic verbs varies significantly across language
+    backgrounds — Swan & Smith document contrastive patterns for speakers of different
+    L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+common_errors:
+- correction: I know the answer.
+  error: 'Using continuous with stative verbs: *''I am knowing the answer.'''
+  explanation: Stative verbs (know, believe, love, want) describe states, not actions.
+    They are not normally used in continuous tenses. This is one of the most common
+    errors at B1 level.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: State and dynamic verbs'
+- correction: I am thinking about it now.
+  error: 'Using stative form for dynamic meaning: *''I think about it now'' (meaning
+    the process of considering)'
+  explanation: Some verbs like 'think', 'have', and 'see' can be both stative and
+    dynamic. When they describe an active process rather than a state, the continuous
+    form is correct. 'I think about it' (stative) vs 'I am thinking about it' (dynamic
+    process).
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Japanese
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: State and dynamic verbs'
+- correction: This food tastes delicious.
+  error: 'Using continuous with sense verbs: *''This food is tasting delicious.'''
+  explanation: Sense verbs (taste, smell, feel, see, hear) are typically stative when
+    they describe a perception or quality. Using the continuous form with these verbs
+    is non-standard in most contexts.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Korean
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: State and dynamic verbs'
+- correction: I see what you mean.
+  error: 'Using progressive with ''see'': *''I am seeing what you mean.'''
+  explanation: 'Swan PEU: "See" = understand is stative. "See" = meet/visit is dynamic.
+    "I see what you mean" (stative, NOT progressive). "I am seeing the doctor" (dynamic,
+    OK).'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 description: The distinction between verbs that describe states (stative) and verbs
   that describe actions (dynamic). Stative verbs are not normally used in continuous
   tenses.
-level: B1
-meaning:
-  core_meaning: Stative verbs describe states, feelings, or conditions (know, believe,
-    love, want). Dynamic verbs describe actions (run, eat, write). Stative verbs are
-    NOT normally used in continuous tenses.
-  timeline: Stative = unchanging state. Dynamic = action in progress.
-  contrast: '''Stative'' = ''I know the answer.'' (not ''I am knowing'') vs ''Dynamic''
-    = ''I am running.'' (action in progress)'
-  ccqs:
-  - question: Is this verb describing an action or a state?
-    answer: 'Action = dynamic (can use continuous). State = stative (usually no continuous).
-      BUT some verbs can be both: ''I think it''s great'' (stative/opinion) vs ''I''m
-      thinking about it'' (dynamic/process).'
-    purpose: Tests whether the learner can classify verbs as stative or dynamic, which
-      is essential for choosing the correct tense (simple vs continuous) and avoiding
-      the most common verb tense error at B1 level.
-  - question: Can we say 'I am knowing the answer'?
-    answer: 'No -- ''know'' is always stative. But some stative verbs CAN be continuous
-      with a different meaning: ''I have a car'' (stative) vs ''I am having lunch''
-      (dynamic).'
-    purpose: Tests whether the learner understands that while some verbs are exclusively
-      stative, others can shift between stative and dynamic uses with a change in
-      meaning, which is a key nuance at B1-B2 level.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      stative dynamic verbs and explain why they are incorrect.
+dialectal_variation: []
+discourse_notes:
+- note: This distinction is relevant in all forms of spoken and written discourse.
 example_generator:
   contexts:
   - describing feelings and opinions
@@ -40,49 +96,164 @@ example_generator:
   min_examples: 5
 form:
   affirmative:
+    example_generator:
+      contexts:
+      - describing feelings and opinions
+      - talking about possession
+      - mental states
+      min_examples: 4
     structure: 'Stative: Subject + stative verb: ''I know her.'', ''She loves chocolate.''
       / Dynamic: Subject + be + verb-ing: ''I am running.'''
+  negative:
     example_generator:
       contexts:
       - describing feelings and opinions
       - talking about possession
       - mental states
       min_examples: 4
-  negative:
     structure: 'Stative: Subject + don''t/doesn''t + stative verb: ''I don''t know.''
       / Dynamic: Subject + be + not + verb-ing: ''I am not running.'''
+  questions:
     example_generator:
       contexts:
       - describing feelings and opinions
       - talking about possession
       - mental states
       min_examples: 4
-  questions:
     structure: 'Stative: Do/Does + subject + stative verb?: ''Do you know her?'' /
       Dynamic: Am/Is/Are + subject + verb-ing?: ''Are you running?'''
-    example_generator:
-      contexts:
-      - describing feelings and opinions
-      - talking about possession
-      - mental states
-      min_examples: 4
+grammar_point: stative_dynamic_verbs
+level: B1
+meaning:
+  ccqs:
+  - answer: 'Action = dynamic (can use continuous). State = stative (usually no continuous).
+      BUT some verbs can be both: ''I think it''s great'' (stative/opinion) vs ''I''m
+      thinking about it'' (dynamic/process).'
+    purpose: Tests whether the learner can classify verbs as stative or dynamic, which
+      is essential for choosing the correct tense (simple vs continuous) and avoiding
+      the most common verb tense error at B1 level.
+    question: Is this verb describing an action or a state?
+  - answer: 'No -- ''know'' is always stative. But some stative verbs CAN be continuous
+      with a different meaning: ''I have a car'' (stative) vs ''I am having lunch''
+      (dynamic).'
+    purpose: Tests whether the learner understands that while some verbs are exclusively
+      stative, others can shift between stative and dynamic uses with a change in
+      meaning, which is a key nuance at B1-B2 level.
+    question: Can we say 'I am knowing the answer'?
+  - answer: 'Using the simple form with ''''think'''' expresses a fixed opinion or
+      belief (stative: ''''I think it''''). Using the continuous form expresses an
+      active, ongoing mental process (dynamic: ''''I''m thinking about it''''). For
+      verbs like ''''have'''' and ''''see'''', the same principle applies: ''''I have
+      a car'''' (possession, stative) vs ''''I''m having lunch'''' (action, dynamic).
+      For exclusively stative verbs (know, believe, love), the continuous is ungrammatical
+      (*''''I am knowing'''').'
+    purpose: Tests whether the learner can explain the meaning difference between
+      stative and dynamic uses of versatile verbs like ''think'', ''have'', and ''see''.
+    question: What is the difference in meaning between ''I think it's great'' and
+      ''I am thinking about it''?
+  - answer: Yes! 'I am thinking about you' = ongoing mental activity (dynamic). 'I
+      think you are right' = opinion (stative).
+    purpose: Tests whether the learner understands that some verbs (think, have, see)
+      can be stative or dynamic depending on meaning (Swan PEU 2016).
+    question: Can you say 'I am thinking about you' AND 'I think you are right'? What
+      is the difference?
+  contrast: '''Stative'' = ''I know the answer.'' (not ''I am knowing'') vs ''Dynamic''
+    = ''I am running.'' (action in progress)'
+  core_meaning: Stative verbs describe states, feelings, or conditions (know, believe,
+    love, want). Dynamic verbs describe actions (run, eat, write). Stative verbs are
+    NOT normally used in continuous tenses.
+  timeline: Stative = unchanging state. Dynamic = action in progress.
+phonetics:
+- contexts:
+  - tense usage
+  example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Many L1 speakers overuse continuous tenses with stative verbs
+  note: No specific phonetic pattern -- focus on correct tense usage
+register_notes:
+- note: 'The stative/dynamic distinction is most rigidly observed in formal writing,
+    where stative verbs in continuous tenses are treated as errors: academic prose
+    demands ''The results suggest...'' not *''The results are suggesting...'' However,
+    spoken English and informal registers frequently bend this rule for expressive
+    effect. The progressive with statives can signal temporariness or emphasis: ''I''m
+    loving it'' (McDonald''s slogan, deliberate dynamic use), ''You''re being rude''
+    (dynamic interpretation of ''be'' to mean temporary behavior, not permanent trait),
+    ''I''m thinking about your offer'' (active deliberation vs. fixed opinion: ''I
+    think it''). Advertising and casual speech exploit this shift systematically:
+    ''We''re wanting the best for you'' (service encounter, softening). Teachers should
+    explain that while formal writing requires strict adherence, learners will encounter
+    stative progressives in authentic speech and media, and that the meaning often
+    shifts subtly (temporary vs. permanent, active process vs. fixed state).'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (1999) — Stative vs. dynamic verb distinction: register distribution
+    of progressive with stative verbs differs. Conversation uses more progressive
+    statives (I''m loving it) as a trend. Ch. 6.3.3.1'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 6.3.3.1
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7:
+    The Tense-Aspect System-7.5'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: 'Common stative verbs: know, believe, understand, love, hate, want, need,
-    prefer, own, belong, seem, appear'
-  type: grammatical
-  examples:
+- examples:
   - I understand. (not 'I am understanding')
   - She loves music. (not 'She is loving music')
-- rule: Some verbs can be both stative and dynamic with different meanings
-  type: semantic
-  examples:
+  rule: 'Common stative verbs: know, believe, understand, love, hate, want, need,
+    prefer, own, belong, seem, appear'
+  type: grammatical
+- examples:
   - I think it's great. (opinion = stative) / I'm thinking about it. (process = dynamic)
   - I have a car. (possession = stative) / I'm having lunch. (action = dynamic)
-- rule: 'Sense verbs are usually stative: see, hear, smell, taste, feel'
-  type: grammatical
-  examples:
+  rule: Some verbs can be both stative and dynamic with different meanings
+  type: semantic
+- examples:
   - I see a bird. (not 'I am seeing')
   - This tastes good. (not 'This is tasting')
+  rule: 'Sense verbs are usually stative: see, hear, smell, taste, feel'
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Students classify verbs and create sentences.
+    duration: 10
+    name: Stative or Dynamic?
+  tips:
+  - Create a list of common stative verbs
+  - Use the "Can I see someone doing this?" test (if no, it's stative)
+  - 'Swan PEU: Common stative verbs -- know, believe, understand, remember, forget,
+    love, hate, want, prefer, see (understand), hear (understand), seem, mean.'
+  - 'Swan PEU: Some verbs change meaning in stative vs dynamic use. "Have" (possess
+    vs eat/do), "think" (opinion vs consider), "see" (perceive vs meet).'
+  - 'GB3 Ch. 7: Lexical aspect (Vendler categories) — Activity, Accomplishment, Achievement
+    (punctual), State. These four verb types interact with grammatical aspect. Activity
+    verbs take progressive naturally. Achievement verbs in progressive = iteration
+    or inception (''He''s nodding'' / ''Joe is realizing''). Stative verbs resist
+    progressive BUT progressive statives are possible for specific effects: (a) intensify
+    emotion (''I''m hating this''), (b) current behavior vs general (''He''s being
+    rude'' vs ''He''s rude''), (c) change over time (''I''m understanding less and
+    less''), (d) limited duration, vividness, personal involvement, mitigate criticism,
+    avoid imposition. Source: Celce-Murcia & Larsen-Freeman (2015) GB3 Ch. 7 §7.3
+    (citing Kesner Bland 1988, Gavis 1997).'
+  - 'GB3 Ch. 7: Aspect hypothesis — learners acquire tense-aspect in stages: past
+    tense first with achievement/accomplishment verbs (clear completion); progressive
+    first with activity verbs (no endpoint). Cross-linguistically robust (Andersen
+    & Shirai 1994, Collins 2007). Teaching implication: don''t expect uniform acquisition
+    — some verb types will trigger correct earlier. Source: Celce-Murcia & Larsen-Freeman
+    (2015) GB3 Ch. 7 §7.3.'
+  - 'GB3 Ch. 7: Stative ''meanings'' not stative ''verbs'' — many stative verbs have
+    nonstative counterparts: ''The steak weighs 12 oz'' (state) vs ''The butcher is
+    weighing the steak'' (action). ''You are a fool'' vs ''You''re being a fool.''
+    Teach meanings, not verb lists. Source: Celce-Murcia & Larsen-Freeman (2015) GB3
+    Ch. 7 §7.3.'
+title: Stative vs. Dynamic Verbs
 use:
 - context: Describing feelings and opinions
   description: Using stative verbs for emotions and thoughts
@@ -95,67 +266,3 @@ use:
   examples:
   - I am reading a book.
   - She is cooking dinner.
-phonetics:
-- note: No specific phonetic pattern -- focus on correct tense usage
-  contexts:
-  - tense usage
-  l1_issue: Many L1 speakers overuse continuous tenses with stative verbs
-  example_generator:
-    contexts:
-    - connected speech
-teaching:
-  methodology: PPP
-  tips:
-  - Create a list of common stative verbs
-  - Use the "Can I see someone doing this?" test (if no, it's stative)
-  recommended_activities:
-  - name: Stative or Dynamic?
-    duration: 10
-    adaptation_notes: Students classify verbs and create sentences.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: 'Using continuous with stative verbs: *''I am knowing the answer.'''
-  correction: I know the answer.
-  explanation: Stative verbs (know, believe, love, want) describe states, not actions.
-    They are not normally used in continuous tenses. This is one of the most common
-    errors at B1 level.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-- error: 'Using stative form for dynamic meaning: *''I think about it now'' (meaning
-    the process of considering)'
-  correction: I am thinking about it now.
-  explanation: Some verbs like 'think', 'have', and 'see' can be both stative and
-    dynamic. When they describe an active process rather than a state, the continuous
-    form is correct. 'I think about it' (stative) vs 'I am thinking about it' (dynamic
-    process).
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Japanese
-- error: 'Using continuous with sense verbs: *''This food is tasting delicious.'''
-  correction: This food tastes delicious.
-  explanation: Sense verbs (taste, smell, feel, see, hear) are typically stative when
-    they describe a perception or quality. Using the continuous form with these verbs
-    is non-standard in most contexts.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Korean
-register_notes:
-- note: This distinction applies across all registers. Using continuous with stative
-    verbs is considered an error in both formal and informal English.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: This distinction is relevant in all forms of spoken and written discourse.

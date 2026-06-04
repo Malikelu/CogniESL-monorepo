@@ -1,100 +1,204 @@
-grammar_point: question_tags
-title: Question Tags (Tag Questions)
-description: Short questions added to the end of statements to confirm information,
-  check understanding, or invite agreement.
-level: A2
-meaning:
-  core_meaning: Question tags turn statements into interactive questions. They are
-    added to the end of a statement to confirm information the speaker thinks is true,
-    or to ask a genuine question when the speaker is unsure. The tag uses the same
-    auxiliary as the main statement, but with opposite polarity (positive statement
-    → negative tag, negative statement → positive tag).
-  timeline: N/A — tags match the tense/modality of the main statement. Present tense
-    statement uses present tense tag, past uses past, etc.
-  contrast: '''Statement'' = ''You like coffee.'' (declarative) vs ''Tag (confirmation)''
-    = ''You like coffee, don''t you?'' (falling intonation — expecting agreement)
-    vs ''Tag (genuine question)'' = ''You like coffee, do you?'' (rising intonation
-    — surprised/unsure)'
-  ccqs:
-  - question: Is the speaker confirming information or asking a genuine question?
-    answer: Confirmation = falling intonation (speaker expects agreement). Genuine
-      question = rising intonation (speaker is unsure).
-    purpose: Tests whether the learner understands the intonation-based meaning distinction
-      in question tags — that the same sentence can have two different communicative
-      functions depending on whether the intonation falls (confirmation) or rises
-      (genuine question).
-  - question: If the statement is positive, is the tag positive or negative?
-    answer: Negative. Positive statement = negative tag. 'You like coffee, don't you?'
-    purpose: Tests whether the learner understands the opposite polarity rule — the
-      fundamental structural principle governing question tag formation, where the
-      tag always has the opposite polarity of the main statement.
-  - question: What auxiliary is used in the tag?
-    answer: The same auxiliary as the main statement. 'You like coffee' → 'don't you?'
-      (do). 'She is here' → 'isn't she?' (is).
-    purpose: Tests whether the learner knows the auxiliary matching rule — that the
-      tag must use the same auxiliary or modal verb as the main statement. This is
-      essential for correct tag formation.
-    contexts:
-    - everyday conversations
-    - confirming information
-    - social interaction
-    cultural_notes:
-    - Question tags are very common in British English, less so in American English
-    - They are used to build rapport and encourage conversation
-    - Keep examples natural and conversational
-    min_examples: 5
+citations:
+- claim: 'Core meaning: Question tags turn statements into interactive questions'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 14: Tag, Alternative, Exclamatory, and Rhetorical
+    Questions'
+  tier: 4
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 14: Tag, Alternative, Exclamatory, and Rhetorical
+    Questions'
+  tier: 4
+- claim: Common error '*You like coffee, isn't it?*' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- claim: L1 transfer in question tags varies significantly across language backgrounds — Swan & Smith document contrastive
+    patterns for speakers of different L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+common_errors:
+- correction: You like coffee, don't you?
+  error: '*You like coffee, isn''t it?*'
+  explanation: Tag questions use the same auxiliary as the main clause. 'You like' uses 'do' (not 'be'), so the tag is 'don't
+    you' NOT 'isn't it'.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  reliability: D
+- correction: You like coffee, do you? / You do not like coffee, do you?
+  error: 'Using positive tag after positive statement: *''You like coffee, do you?'' (expects agreement)'
+  explanation: 'Swan PEU: Standard tags are negative after positive, positive after negative. "You like coffee, do not you?"
+    but "You do not like coffee, do you?"'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Japanese
+  - Chinese
+  reliability: B
+  source: Swan Entry 44.3. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+- correction: You like coffee, do not you?
+  error: 'Using ''is it'' as universal tag: *''You like coffee, is it?'''
+  explanation: 'Swan PEU: Tags must match the auxiliary of the main verb. "Like" uses "do". "Is" uses "is". There is NO universal
+    tag in English (unlike French "n''est-ce pas?" or German "nicht?").'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Japanese
+  reliability: B
+  source: Swan Entry 44.3. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+description: Short questions added to the end of statements to confirm information, check understanding, or invite agreement.
+dialectal_variation: []
+discourse_notes: []
 form:
   affirmative:
-    structure: Positive statement + negative tag (auxiliary + subject pronoun)
     example_generator:
     - You like coffee, don't you?
     - She works here, doesn't she?
     - They can swim, can't they?
     - He is coming, isn't he?
     min_examples: 4
+    structure: Positive statement + negative tag (auxiliary + subject pronoun)
   negative:
-    structure: Negative statement + positive tag (auxiliary + subject pronoun)
     example_generator:
     - You don't like coffee, do you?
     - She doesn't work here, does she?
     - They can't swim, can they?
     - He isn't coming, is he?
     min_examples: 4
+    structure: Negative statement + positive tag (auxiliary + subject pronoun)
   questions:
-    structure: 'Tags always follow the statement. No separate question structure.
-      Intonation: rising for genuine questions, falling for confirmation.'
     example_generator:
     - You live in Brazil, don't you? (falling — confirmation)
     - You don't know the answer, do you? (rising — genuine question)
     min_examples: 4
+    structure: 'Tags always follow the statement. No separate question structure. Intonation: rising for genuine questions,
+      falling for confirmation.'
+grammar_point: question_tags
+level: A2
+meaning:
+  ccqs:
+  - answer: Confirmation = falling intonation (speaker expects agreement). Genuine question = rising intonation (speaker is
+      unsure).
+    purpose: Tests whether the learner understands the intonation-based meaning distinction in question tags — that the same
+      sentence can have two different communicative functions depending on whether the intonation falls (confirmation) or
+      rises (genuine question).
+    question: Is the speaker confirming information or asking a genuine question?
+  - answer: Negative. Positive statement = negative tag. 'You like coffee, don't you?'
+    purpose: Tests whether the learner understands the opposite polarity rule — the fundamental structural principle governing
+      question tag formation, where the tag always has the opposite polarity of the main statement.
+    question: If the statement is positive, is the tag positive or negative?
+  - answer: The same auxiliary as the main statement. 'You like coffee' → 'don't you?' (do). 'She is here' → 'isn't she?'
+      (is).
+    purpose: Tests whether the learner knows the auxiliary matching rule — that the tag must use the same auxiliary or modal
+      verb as the main statement. This is essential for correct tag formation.
+    question: What auxiliary is used in the tag?
+  - answer: Learners often make errors with this structure that change the intended meaning.
+    purpose: Tests whether the learner can identify and correct a common error associated with question tags. Recognizing
+      typical mistakes helps learners self-edit and produce more accurate English.
+    question: Can you identify and correct the error in this sentence related to this grammar point?
+  contrast: '''Statement'' = ''You like coffee.'' (declarative) vs ''Tag (confirmation)'' = ''You like coffee, don''t you?''
+    (falling intonation — expecting agreement) vs ''Tag (genuine question)'' = ''You like coffee, do you?'' (rising intonation
+    — surprised/unsure)'
+  core_meaning: Question tags turn statements into interactive questions. They are added to the end of a statement to confirm
+    information the speaker thinks is true, or to ask a genuine question when the speaker is unsure. The tag uses the same
+    auxiliary as the main statement, but with opposite polarity (positive statement → negative tag, negative statement → positive
+    tag).
+  timeline: N/A — tags match the tense/modality of the main statement. Present tense statement uses present tense tag, past
+    uses past, etc.
+phonetics:
+- example_generator:
+  - 'Falling: You like coffee, don''t you? ↘ (confirmation)'
+  - 'Rising: You like coffee, don''t you? ↗ (genuine question)'
+  l1_issue: Portuguese and Spanish speakers often use the same intonation for both. Teach the difference explicitly — it changes
+    the meaning.
+  note: 'Intonation is crucial: falling intonation (↘) = confirmation (speaker expects agreement). Rising intonation (↗) =
+    genuine question (speaker is unsure). ''You like coffee, don''t you? ↘'' vs ''You like coffee, don''t you? ↗'''
+- example_generator:
+  - don't /dəʊnt/
+  - isn't /ɪznt/
+  - can't /kɑːnt/
+  l1_issue: Many L1 speakers avoid contractions in tags. Teach that contractions are mandatory in natural speech.
+  note: 'Contractions are always used in tags: ''don''t you'' NOT ''do not you'', ''isn''t she'' NOT ''is not she''.'
+register_notes:
+- note: 'Biber et al. (2021) — Question tags: overwhelmingly conversational; rare in academic prose and formal writing. One
+    of the strongest markers of informal speech. Ch. 3.13.2.4'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 3.13.2.4
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 3: Questions-3.5'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: 'Opposite polarity: positive statement = negative tag, negative statement
-    = positive tag'
-  type: grammatical
-  examples:
+- examples:
   - You like coffee, don't you? (positive → negative)
   - You don't like coffee, do you? (negative → positive)
   - She is here, isn't she? (positive → negative)
   - She isn't here, is she? (negative → positive)
-- rule: The tag uses the same auxiliary as the main statement
+  rule: 'Opposite polarity: positive statement = negative tag, negative statement = positive tag'
   type: grammatical
-  examples:
+- examples:
   - You like coffee, don't you? (do)
   - She is here, isn't she? (is)
   - They can swim, can't they? (can)
   - He has finished, hasn't he? (has)
-- rule: Subject in the tag is always a pronoun (not a noun)
+  rule: The tag uses the same auxiliary as the main statement
   type: grammatical
-  examples:
+- examples:
   - Maria is here, isn't she? (NOT isn't Maria)
   - The students are ready, aren't they? (NOT aren't the students)
-- rule: 'Special cases: ''I am'' → ''aren''t I?'' / ''Let''s'' → ''shall we?'' / ''There
-    is'' → ''isn''t there?'''
+  rule: Subject in the tag is always a pronoun (not a noun)
   type: grammatical
-  examples:
+- examples:
   - I am right, aren't I?
   - Let's go, shall we?
   - There is a problem, isn't there?
+  rule: 'Special cases: ''I am'' → ''aren''t I?'' / ''Let''s'' → ''shall we?'' / ''There is'' → ''isn''t there?'''
+  type: grammatical
+teaching:
+  methodology: PPP with intonation practice
+  recommended_activities:
+  - adaptation_notes: 'Give students statements and separate tags. They match them correctly: ''You like coffee'' + ''don''t
+      you?'' Practices the opposite polarity rule.'
+    duration: 10
+    name: Tag Matching
+  - adaptation_notes: Teacher says a statement with a tag. Students identify if it is confirmation (falling) or genuine question
+      (rising). Then students practice both.
+    duration: 10
+    name: Intonation Practice
+  - adaptation_notes: 'Students interview a partner using question tags: ''You like coffee, don''t you?'' ''You don''t eat
+      meat, do you?'' Practices all tag forms in conversation.'
+    duration: 15
+    name: Tag Interview
+  - adaptation_notes: 'Teacher says tag questions with different intonation. Students identify: confirmation (falling) or
+      genuine question (rising). Practices listening for intonation.'
+    duration: 10
+    name: Falling or Rising?
+  tips:
+  - 'CGEL Ch. 10: Biased questions include declarative questions (You''re leaving?) and negative interrogatives (Don''t you
+    like it?). Tag questions have two types: reversed polarity (You''re coming, aren''t you?) and constant polarity (You''re
+    coming, are you?). The choice signals the speaker''s expectation about the answer.'
+  - Start with positive statements + negative tags using do/does/did. Master these before introducing other auxiliaries.
+  - 'Teach the opposite polarity rule explicitly: positive → negative, negative → positive.'
+  - 'Practice intonation extensively: falling for confirmation, rising for genuine questions. This is essential for correct
+    meaning.'
+  - 'Use pair work: Student A makes a statement, Student B adds the correct tag with appropriate intonation.'
+  - 'Teach the special cases: ''I am'' → ''aren''t I?'', ''Let''s'' → ''shall we?'', ''There is'' → ''isn''t there?'''
+  - 'Swan PEU: Tag rules -- positive statement + negative tag. Negative statement + positive tag. "You are coming, are not
+    you?" "You are not coming, are you?"'
+  - 'Swan PEU: "Let us" -> tag is "shall we". "Lets go, shall we?" (suggestion). Special case.'
+title: Question Tags (Tag Questions)
 use:
 - context: Confirmation
   description: Confirming information the speaker already thinks is true
@@ -117,87 +221,3 @@ use:
   - This is hard, isn't it?
   - You've been to Paris, haven't she?
   - We should leave soon, shouldn't we?
-phonetics:
-- note: 'Intonation is crucial: falling intonation (↘) = confirmation (speaker expects
-    agreement). Rising intonation (↗) = genuine question (speaker is unsure). ''You
-    like coffee, don''t you? ↘'' vs ''You like coffee, don''t you? ↗'''
-  example_generator:
-  - 'Falling: You like coffee, don''t you? ↘ (confirmation)'
-  - 'Rising: You like coffee, don''t you? ↗ (genuine question)'
-  l1_issue: Portuguese and Spanish speakers often use the same intonation for both.
-    Teach the difference explicitly — it changes the meaning.
-- note: 'Contractions are always used in tags: ''don''t you'' NOT ''do not you'',
-    ''isn''t she'' NOT ''is not she''.'
-  example_generator:
-  - don't /dəʊnt/
-  - isn't /ɪznt/
-  - can't /kɑːnt/
-  l1_issue: Many L1 speakers avoid contractions in tags. Teach that contractions are
-    mandatory in natural speech.
-teaching:
-  methodology: PPP with intonation practice
-  tips:
-  - Start with positive statements + negative tags using do/does/did. Master these
-    before introducing other auxiliaries.
-  - 'Teach the opposite polarity rule explicitly: positive → negative, negative →
-    positive.'
-  - 'Practice intonation extensively: falling for confirmation, rising for genuine
-    questions. This is essential for correct meaning.'
-  - 'Use pair work: Student A makes a statement, Student B adds the correct tag with
-    appropriate intonation.'
-  - 'Teach the special cases: ''I am'' → ''aren''t I?'', ''Let''s'' → ''shall we?'',
-    ''There is'' → ''isn''t there?'''
-  recommended_activities:
-  - name: Tag Matching
-    duration: 10
-    adaptation_notes: 'Give students statements and separate tags. They match them
-      correctly: ''You like coffee'' + ''don''t you?'' Practices the opposite polarity
-      rule.'
-  - name: Intonation Practice
-    duration: 10
-    adaptation_notes: Teacher says a statement with a tag. Students identify if it
-      is confirmation (falling) or genuine question (rising). Then students practice
-      both.
-  - name: Tag Interview
-    duration: 15
-    adaptation_notes: 'Students interview a partner using question tags: ''You like
-      coffee, don''t you?'' ''You don''t eat meat, do you?'' Practices all tag forms
-      in conversation.'
-  - name: Falling or Rising?
-    duration: 10
-    adaptation_notes: 'Teacher says tag questions with different intonation. Students
-      identify: confirmation (falling) or genuine question (rising). Practices listening
-      for intonation.'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*You like coffee, isn''t it?*'
-  correction: You like coffee, don't you?
-  explanation: Tag questions use the same auxiliary as the main clause. 'You like'
-    uses 'do' (not 'be'), so the tag is 'don't you' NOT 'isn't it'.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - German
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

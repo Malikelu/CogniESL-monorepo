@@ -1,182 +1,192 @@
-grammar_point: as_long_as
-title: As long as (positive condition)
-description: Conjunction meaning on the condition that or since, used to set positive
-  conditions.
-level: B2
-meaning:
-  core_meaning: Sets a positive condition that must be met for the main action to
-    happen; also means since (cause).
-  timeline: Used in first conditional (future) and zero conditional (general truths).
-  contrast: 'As long as = Positive condition: "As long as you study, you pass" (if
-    you study)
-
-    Provided that = Formal positive condition: "Provided that you study, you pass"
-    (stricter)
-
-    Since = Cause: "As long as you''re here, help me" (since you''re here)
-
-    '
-  ccqs:
-  - question: As long as you arrive on time, we will leave. Will we leave if you arrive
-      late?
-    answer: No. The condition is arriving on time. If you arrive late, we will not
-      leave.
-    purpose: Tests understanding that as long as sets a necessary condition
-  - question: As long as you are here, help me set the table. Is the speaker asking
-      the person to leave?
-    answer: No. The speaker is saying since you are already here, you should help.
-      The person is already present.
-    purpose: Tests understanding of the since meaning of as long as
-  - question: You can borrow my car as long as you drive carefully. Can you drive
-      fast?
-    answer: No. The condition is driving carefully. If you do not drive carefully,
-      you cannot borrow the car.
-    purpose: Tests understanding that breaking the condition removes the result
-  example_generator:
-    contexts:
-    - everyday situations
-    cultural_notes: []
-    min_examples: 5
+citations:
+- claim: 'Core meaning: Sets a positive condition that must be met for the main action to happen; also means since (cause)'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 26: Logical Connectors'
+  tier: 4
+- claim: 'Register distribution: ''As long as'' is neutral in register. In formal writing, ''provided that'' may be preferred.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 26: Logical Connectors'
+  tier: 4
+- claim: 'Discourse function: ''As long as'' sets conditions: ''As long as you study, you will pass.'''
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 26: Logical Connectors'
+  tier: 4
+- claim: 'Common error ''Confusing ''as long as'' with ''as far as'': *''As long as I know'' for Portuguese, Spanish speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+common_errors:
+- correction: '''As far as I know, he is coming.'''
+  error: 'Confusing ''as long as'' with ''as far as'': *''As long as I know, he is coming.'''
+  explanation: '''As long as'' = condition. ''As far as'' = extent/degree.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: D
+description: Conjunction meaning on the condition that or since, used to set positive conditions.
+dialectal_variation: []
+discourse_notes:
+- note: '''As long as'' sets conditions: ''As long as you study, you will pass.'''
 form:
   affirmative:
-    structure: As long as + present simple, will + base verb (or present simple +
-      as long as + present simple for zero conditional)
     example_generator:
       contexts:
       - education and school
       - weather and nature
       min_examples: 4
+    structure: As long as + present simple, will + base verb (or present simple + as long as + present simple for zero conditional)
   negative:
-    structure: As long as + don't/doesn't + present simple, will + verb
     example_generator:
       contexts:
       - food and daily routines
       min_examples: 4
+    structure: As long as + don't/doesn't + present simple, will + verb
   questions:
-    structure: Will + subject + verb + as long as + present simple?
     example_generator:
       contexts:
       - shopping and commerce
       min_examples: 4
+    structure: Will + subject + verb + as long as + present simple?
+grammar_point: as_long_as
+level: B2
+meaning:
+  ccqs:
+  - answer: No. The condition is arriving on time. If you arrive late, we will not leave.
+    purpose: Tests understanding that as long as sets a necessary condition
+    question: As long as you arrive on time, we will leave. Will we leave if you arrive late?
+  - answer: No. The speaker is saying since you are already here, you should help. The person is already present.
+    purpose: Tests understanding of the since meaning of as long as
+    question: As long as you are here, help me set the table. Is the speaker asking the person to leave?
+  - answer: No. The condition is driving carefully. If you do not drive carefully, you cannot borrow the car.
+    purpose: Tests understanding that breaking the condition removes the result
+    question: You can borrow my car as long as you drive carefully. Can you drive fast?
+  - answer: 'No. In the first sentence, as long as refers to duration (for the entire time you need me). In the second sentence,
+      as long as sets a condition (on the condition that you pay me). Context determines which meaning is intended: when the
+      main clause describes a continuous state, it is duration; when it describes a contingent action, it is a conditional.'
+    purpose: 'Tests whether the learner can distinguish between the two meanings of as long as: duration (how long something
+      lasts) versus condition (on the condition that). This dual meaning is unique to this expression and learners who only
+      know one sense may misinterpret sentences that use the other.'
+    question: I will stay as long as you need me versus I will stay as long as you pay me -- does as long as mean the same
+      thing in both sentences?
+  contrast: 'As long as = Positive condition: "As long as you study, you pass" (if you study)
+
+    Provided that = Formal positive condition: "Provided that you study, you pass" (stricter)
+
+    Since = Cause: "As long as you''re here, help me" (since you''re here)
+
+    '
+  core_meaning: Sets a positive condition that must be met for the main action to happen; also means since (cause).
+  example_generator:
+    contexts:
+    - everyday situations
+    cultural_notes: []
+    min_examples: 5
+  timeline: Used in first conditional (future) and zero conditional (general truths).
+phonetics:
+- example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Many L1 speakers pronounce each word with full clarity. In natural speech, as reduces to a schwa and the whole
+    phrase flows smoothly.
+  note: As long as in connected speech reduces significantly
+  practice: Drill as long as you as a smooth, connected unit.
+- example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Speakers of languages without this sound (e.g., Spanish, Italian) may substitute a different consonant or add
+    an extra sound.
+  note: Long — the velar nasal sound can be challenging
+  practice: Drill long with the tongue touching the soft palate.
+register_notes:
+- note: '''As long as'' is neutral in register. In formal writing, ''provided that'' may be preferred.'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — ''As long as'' as conditional connector: formal conditional connectors are more common in academic
+    prose and news; conversation uses simpler alternatives (''if''). Ch. 10.2.8'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 10.2.8
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- type: grammar
-  rule: Do NOT use will after as long as — use present tense for future meaning
-  examples:
+- examples:
   - As long as it rains, we will stay. (correct)
   - As long as it will rain, we will stay. (incorrect)
-  explanation: Like if and unless, as long as uses present tense to refer to future
-    conditions.
-- type: meaning
+  explanation: Like if and unless, as long as uses present tense to refer to future conditions.
+  rule: Do NOT use will after as long as — use present tense for future meaning
+  type: grammar
+- examples:
+  - As long as you study, you will pass. Means the same as On the condition that you study, you will pass.
+  - You can go as long as you are back by 10. Means the same as You can go on the condition that you are back by 10.
+  explanation: The main clause result only happens if the condition is met. It is a strong condition.
   rule: As long as means on the condition that (positive condition)
-  examples:
-  - As long as you study, you will pass. Means the same as On the condition that you
-    study, you will pass.
-  - You can go as long as you are back by 10. Means the same as You can go on the
-    condition that you are back by 10.
-  explanation: The main clause result only happens if the condition is met. It is
-    a strong condition.
-- type: meaning
-  rule: As long as can also mean since or given that
-  examples:
+  type: meaning
+- examples:
   - As long as you are here, you might as well help. (since you are here)
-  - As long as we are on the topic, let me ask you something. (since we are on the
-    topic)
-  explanation: When the condition is already true, as long as means since — the speaker
-    uses the existing situation.
-- type: register
-  rule: Provided that is more formal than as long as
-  examples:
+  - As long as we are on the topic, let me ask you something. (since we are on the topic)
+  explanation: When the condition is already true, as long as means since — the speaker uses the existing situation.
+  rule: As long as can also mean since or given that
+  type: meaning
+- examples:
   - As long as you pay on time, we will hold your booking. (neutral)
   - Provided that you pay on time, we shall hold your booking. (formal/business)
-  explanation: Both mean the same thing, but provided that is preferred in formal
-    writing and contracts.
-- type: usage
-  rule: As long as can also refer to duration (length of time)
-  examples:
+  explanation: Both mean the same thing, but provided that is preferred in formal writing and contracts.
+  rule: Provided that is more formal than as long as
+  type: register
+- examples:
   - You can stay as long as you want. (duration — for any length of time)
   - I will help you for as long as it takes. (duration — until it is done)
-  explanation: 'As long as has two uses: condition (on the condition that) and duration
-    (for the length of time). Context determines the meaning.'
+  explanation: 'As long as has two uses: condition (on the condition that) and duration (for the length of time). Context
+    determines the meaning.'
+  rule: As long as can also refer to duration (length of time)
+  type: usage
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students role-play negotiations using ''as long as'': ''I will help you as long as you promise to study.''
+      ''I will lend you my car as long as you return it by 5pm.'''
+    duration: 15
+    name: Condition Negotiation Role-Play
+  - adaptation_notes: 'Students rewrite sentences using both structures: ''As long as you study, you will pass'' = ''Unless
+      you study, you will not pass.'' Discuss the meaning equivalence.'
+    duration: 10
+    name: As Long As vs Unless Contrast
+  - adaptation_notes: 'Students identify whether ''as long as'' expresses a condition or a duration: ''I will stay as long
+      as you need me'' (duration) vs ''I will stay as long as you pay me'' (condition).'
+    duration: 10
+    name: Duration or Condition?
+  tips:
+  - 'Contrast with provided that for formality: as long as (neutral) vs provided that (formal).'
+  - 'Practice with since meaning: As long as you are here, help me.'
+  - 'Role-play: Student sets positive conditions using as long as.'
+  - Explain no future tense after as long as.
+  - 'Swan PEU: ''As long as'' = condition — ''As long as you promise to be careful, you can go.'' Similar to ''provided that.''
+    Emphasizes the requirement. Informal compared to ''provided/providing that.'''
+title: As long as (positive condition)
 use:
-- name: First Conditional (Positive Conditions)
-  description: Set positive conditions for future actions.
+- description: Set positive conditions for future actions.
   examples:
   - As long as you arrive on time, we will leave.
   - I will sign as long as you read the terms.
   key_point: As long as + present simple, will + verb.
-- name: Zero Conditional (General Truths)
-  description: Set positive conditions for general truths/habits.
+  name: First Conditional (Positive Conditions)
+- description: Set positive conditions for general truths/habits.
   examples:
   - Plants grow as long as you water them.
   - I go out as long as it is sunny.
   key_point: As long as + present simple, present simple.
-- name: Cause (Since)
-  description: Means since (because you are already in a state).
+  name: Zero Conditional (General Truths)
+- description: Means since (because you are already in a state).
   examples:
   - As long as you are here, help me.
   - As long as we are talking, tell me about it.
   key_point: Means since in casual speech.
-phonetics:
-- note: As long as in connected speech reduces significantly
-  l1_issue: Many L1 speakers pronounce each word with full clarity. In natural speech,
-    as reduces to a schwa and the whole phrase flows smoothly.
-  practice: Drill as long as you as a smooth, connected unit.
-  example_generator:
-    contexts:
-    - connected speech
-- note: Long — the velar nasal sound can be challenging
-  l1_issue: Speakers of languages without this sound (e.g., Spanish, Italian) may
-    substitute a different consonant or add an extra sound.
-  practice: Drill long with the tongue touching the soft palate.
-  example_generator:
-    contexts:
-    - connected speech
-teaching:
-  methodology: PPP
-  tips:
-  - 'Contrast with provided that for formality: as long as (neutral) vs provided that
-    (formal).'
-  - 'Practice with since meaning: As long as you are here, help me.'
-  - 'Role-play: Student sets positive conditions using as long as.'
-  - Explain no future tense after as long as.
-  recommended_activities:
-  - name: Condition Negotiation Role-Play
-    duration: 15
-    adaptation_notes: 'Students role-play negotiations using ''as long as'': ''I will
-      help you as long as you promise to study.'' ''I will lend you my car as long
-      as you return it by 5pm.'''
-  - name: As Long As vs Unless Contrast
-    duration: 10
-    adaptation_notes: 'Students rewrite sentences using both structures: ''As long
-      as you study, you will pass'' = ''Unless you study, you will not pass.'' Discuss
-      the meaning equivalence.'
-  - name: Duration or Condition?
-    duration: 10
-    adaptation_notes: 'Students identify whether ''as long as'' expresses a condition
-      or a duration: ''I will stay as long as you need me'' (duration) vs ''I will
-      stay as long as you pay me'' (condition).'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: 'Confusing ''as long as'' with ''as far as'': *''As long as I know, he is
-    coming.'''
-  correction: '''As far as I know, he is coming.'''
-  explanation: '''As long as'' = condition. ''As far as'' = extent/degree.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-register_notes:
-- note: '''As long as'' is neutral in register. In formal writing, ''provided that''
-    may be preferred.'
-dialectal_variation:
-- note: No significant BrE/AmE differences.
-discourse_notes:
-- note: '''As long as'' sets conditions: ''As long as you study, you will pass.'''
+  name: Cause (Since)

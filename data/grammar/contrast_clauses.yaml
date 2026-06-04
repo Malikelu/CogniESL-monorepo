@@ -1,13 +1,116 @@
+citations:
+- claim: 'Core meaning: Highlights differences or unexpected contrasts between two ideas, people, or situations'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 26: Logical Connectors'
+  tier: 1
+- claim: 'Discourse function: In academic writing, relative clauses are essential for precision and are a marker of proficient
+    wri'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 26: Logical Connectors'
+  tier: 1
+- claim: Common error '*While I was young, I lived in London.* (ambiguous)' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- claim: Understanding contrast clauses is essential for academic writing — Oshima & Hogue emphasize how writers use these
+    structures to create clear, coherent prose
+  flagged: false
+  reliability: B
+  source: 'Oshima and Hogue (2006) Introduction to Academic Writing, 3rd ed. Pearson. Ch. 5: Complex Sentences in Academic
+    Writing'
+  tier: 2
+common_errors:
+- correction: When I was young, I lived in London.
+  error: '*While I was young, I lived in London.* (ambiguous)'
+  explanation: '''While'' with past simple can be ambiguous between contrast and time meanings. For background time periods,
+    ''when'' is clearer. ''While'' is best with continuous tenses for simultaneous actions rather than background time.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+- correction: My sister likes coffee, whereas I prefer tea.
+  error: '*Whereas my sister likes coffee but I prefer tea.*'
+  explanation: '''Whereas'' already signals contrast; adding ''but'' creates redundancy. Also, ''whereas'' joins two clauses
+    within one sentence -- it is not used as a sentence-initial connector like ''however''.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+- correction: I like writing. In contrast, my sister likes reading.
+  error: '*I like writing. In contrast, my sister, she likes reading.*'
+  explanation: '''In contrast'' already introduces the contrasting element. Adding a pronoun (''she'') after the noun (''my
+    sister'') creates a double subject. ''In contrast'' does not require dislocation of this type.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Arabic
+  reliability: D
+- correction: While it is cold outside, I wear a coat.
+  error: '*While is cold outside, I wear a coat.*'
+  explanation: Missing subject and verb after 'while'. 'While' introduces a dependent clause requiring both subject and verb.
+    This fragment error occurs when learners treat 'while' like a preposition rather than a conjunction.
+  flagged: true
+  l1_groups:
+  - Chinese
+  - Japanese
+  - Arabic
+  reliability: D
+description: Structures that show differences between two ideas or facts. Essential for comparative writing.
+dialectal_variation: []
+discourse_notes:
+- note: Contrast clauses (while, whereas, but) highlight differences between two propositions and structure comparative argumentation.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - work and professional life
+      - comparing opinions
+      - cultural differences
+      min_examples: 4
+    structure: 'While + clause, + clause: "While I like coffee, she likes tea."
+
+      Clause + whereas + clause: "I like coffee, whereas she likes tea."
+
+      Sentence. In contrast, + sentence: "I like coffee. In contrast, she likes tea."
+
+      '
+  negative:
+    example_generator:
+      contexts:
+      - everyday situations
+      - opinions
+      min_examples: 4
+    structure: Either clause can be negative.
+  questions:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: Questions less common; use 'while' as conjunction.
 grammar_point: contrast_clauses
-title: Contrast Clauses (while, whereas, in contrast)
-description: Structures that show differences between two ideas or facts. Essential
-  for comparative writing.
 level: B2
 meaning:
-  core_meaning: Highlights differences or unexpected contrasts between two ideas,
-    people, or situations.
-  timeline: N/A (Contrast clauses show relationships, not time — though 'while' can
-    also mean 'during'.)
+  ccqs:
+  - answer: Yes, it is a contrast clause.
+    purpose: Tests whether the learner can identify a contrast clause and distinguish it from other types of subordinate clauses.
+    question: Does this sentence show a difference between two things?
+  - answer: If it means 'during', it is a time clause. If it means 'but/however', it is a contrast clause.
+    purpose: Tests whether the learner can distinguish the dual meaning of 'while' (time vs contrast) and identify which meaning
+      is intended in context.
+    question: Is the meaning about time ('during') or contrast ('but/however')?
+  - answer: '''Whereas'' and ''in contrast'' are formal (writing). ''While'' works in both. ''But'' is informal.'
+    purpose: Tests whether the learner understands the formality spectrum of contrast connectors and can choose the appropriate
+      register.
+    question: Is this formal or informal?
+  - answer: Yes, in most cases — but 'while' is less formal and can also mean 'during'.
+    purpose: Tests whether the learner understands the formality differences between contrast connectors (whereas/in contrast
+      = formal; while/but = less formal).
+    question: Can we replace 'whereas' with 'while' without changing the meaning?
   contrast: '"While" = during time OR contrast (context determines)
 
 
@@ -20,29 +123,7 @@ meaning:
     "On the other hand" = informal alternative
 
     '
-  ccqs:
-  - question: Does this sentence show a difference between two things?
-    answer: Yes, it is a contrast clause.
-    purpose: Tests whether the learner understands that '-ed' adjectives describe
-      how someone feels (experiencer) while '-ing' adjectives describe what causes
-      the feeling (stimulus).
-  - question: Is the meaning about time ('during') or contrast ('but/however')?
-    answer: If it means 'during', it is a time clause. If it means 'but/however',
-      it is a contrast clause.
-    purpose: Tests whether the learner understands the time reference of the situation.
-      Correct temporal identification is essential for selecting the right grammatical
-      structure.
-  - question: Is this formal or informal?
-    answer: '''Whereas'' and ''in contrast'' are formal (writing). ''While'' works
-      in both. ''But'' is informal.'
-    purpose: Tests whether the learner understands the key concept of contrast clauses.
-      This is important because mastering this distinction is essential for accurate
-      and natural English at B2 level.
-  - question: Can we replace 'whereas' with 'while' without changing the meaning?
-    answer: Yes, in most cases — but 'while' is less formal and can also mean 'during'.
-    purpose: Tests whether the learner understands the difference between present
-      ability (can) and past ability or polite possibility (could). This is important
-      for expressing ability and making requests.
+  core_meaning: Highlights differences or unexpected contrasts between two ideas, people, or situations.
   example_generator:
     contexts:
     - academic writing
@@ -51,66 +132,83 @@ meaning:
     - formal discussions
     cultural_notes:
     - Contrast clauses are essential in academic and professional English
-    - Overusing 'but' in formal writing is a common learner error — 'whereas' and
-      'while' are preferred
+    - Overusing 'but' in formal writing is a common learner error — 'whereas' and 'while' are preferred
     min_examples: 5
-form:
-  affirmative:
-    structure: 'While + clause, + clause: "While I like coffee, she likes tea."
-
-      Clause + whereas + clause: "I like coffee, whereas she likes tea."
-
-      Sentence. In contrast, + sentence: "I like coffee. In contrast, she likes tea."
-
-      '
-    example_generator:
-      contexts:
-      - work and professional life
-      - comparing opinions
-      - cultural differences
-      min_examples: 4
-  negative:
-    structure: Either clause can be negative.
-    example_generator:
-      contexts:
-      - everyday situations
-      - opinions
-      min_examples: 4
-  questions:
-    structure: Questions less common; use 'while' as conjunction.
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
+  timeline: N/A (Contrast clauses show relationships, not time — though 'while' can also mean 'during'.)
+phonetics:
+- example_generator:
+    contexts:
+    - punctuation
+    - reading aloud
+  l1_issue: Learners may not pause at the comma, making the contrast less clear
+  note: 'Comma pause after the contrast clause: ''While I like coffee [pause], she likes tea.'''
+- example_generator:
+    contexts:
+    - word stress
+  l1_issue: Many learners mispronounce 'whereas' as two equal stresses or stress the first syllable
+  note: '''Whereas'' is pronounced /weərˈæz/ — stress on the second syllable'
+register_notes:
+- note: In conversation, defining relative clauses are more common than non-defining.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In academic writing, both defining and non-defining relative clauses are used extensively.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Contrast clauses: formal connectors (''whereas'', ''while'') are more common in academic prose;
+    informal (''but'', ''though'') dominate conversation. Ch. 10.4.1.5'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 10.4.1.5
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 26: Logical Connectors'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: '''While'' can express contrast OR time — context determines the meaning'
-  type: grammatical
-  examples:
+- examples:
   - While I was cooking, the phone rang. (time)
   - While I enjoy cooking, I hate washing up. (contrast)
-- rule: '''Whereas'' expresses contrast only — never time'
+  rule: '''While'' can express contrast OR time — context determines the meaning'
   type: grammatical
-  examples:
+- examples:
   - She loves sports, whereas he prefers reading.
   - The North is industrial, whereas the South is agricultural.
-- rule: '''In contrast'' is a sentence connector — it starts a new sentence or follows
-    a semicolon'
+  rule: '''Whereas'' expresses contrast only — never time'
   type: grammatical
-  examples:
+- examples:
   - The economy is growing. In contrast, unemployment remains high.
   - She is outgoing; in contrast, her brother is very shy.
-- rule: '''On the other hand'' introduces a contrasting point, often after ''on the
-    one hand'''
+  rule: '''In contrast'' is a sentence connector — it starts a new sentence or follows a semicolon'
   type: grammatical
-  examples:
+- examples:
   - On the one hand, it's cheap. On the other hand, the quality is poor.
   - She's very talented. On the other hand, she lacks experience.
-- rule: 'Punctuation: ''while'' and ''whereas'' join two clauses with a comma; ''in
-    contrast'' starts a new sentence'
-  type: punctuation
-  examples:
+  rule: '''On the other hand'' introduces a contrasting point, often after ''on the one hand'''
+  type: grammatical
+- examples:
   - While it was raining, we stayed inside. (comma after while-clause)
   - It was raining. In contrast, yesterday was sunny. (full stop before in contrast)
+  rule: 'Punctuation: ''while'' and ''whereas'' join two clauses with a comma; ''in contrast'' starts a new sentence'
+  type: punctuation
+teaching:
+  methodology: Guided discovery with contrastive analysis
+  recommended_activities:
+  - adaptation_notes: Students write a short essay comparing two cities, countries, or lifestyles using contrast clauses.
+    duration: 20
+    name: Compare and Contrast Essay
+  - adaptation_notes: Students rewrite informal sentences with 'but' using 'while', 'whereas', or 'in contrast' for a formal
+      register.
+    duration: 10
+    name: Register Transformation
+  tips:
+  - 'Compare two students: ''While Maria is tall, Juan is short.'''
+  - 'Practice with pros/cons: ''While it''s cheap, it''s low quality.'''
+  - 'Show register: ''but'' (speaking) vs ''whereas'' (writing).'
+  - 'Swan PEU: ''While'' and ''whereas'' for direct contrast — ''Some people love spicy food, whereas others hate it.'' ''While''
+    is more informal than ''whereas.'' Both clauses must express opposing ideas.'
+title: Contrast Clauses (while, whereas, in contrast)
 use:
 - context: Comparing Differences
   description: Show how two things are different.
@@ -130,92 +228,3 @@ use:
   - While some agree, others disagree.
   - Whereas A is cheap, B is expensive.
   - On the one hand, technology saves time. On the other hand, it creates new problems.
-phonetics:
-- note: 'Comma pause after the contrast clause: ''While I like coffee [pause], she
-    likes tea.'''
-  example_generator:
-    contexts:
-    - punctuation
-    - reading aloud
-  l1_issue: Learners may not pause at the comma, making the contrast less clear
-- note: '''Whereas'' is pronounced /weərˈæz/ — stress on the second syllable'
-  example_generator:
-    contexts:
-    - word stress
-  l1_issue: Many learners mispronounce 'whereas' as two equal stresses or stress the
-    first syllable
-teaching:
-  methodology: Guided discovery with contrastive analysis
-  tips:
-  - 'Compare two students: ''While Maria is tall, Juan is short.'''
-  - 'Practice with pros/cons: ''While it''s cheap, it''s low quality.'''
-  - 'Show register: ''but'' (speaking) vs ''whereas'' (writing).'
-  recommended_activities:
-  - name: Compare and Contrast Essay
-    duration: 20
-    adaptation_notes: Students write a short essay comparing two cities, countries,
-      or lifestyles using contrast clauses.
-  - name: Register Transformation
-    duration: 10
-    adaptation_notes: Students rewrite informal sentences with 'but' using 'while',
-      'whereas', or 'in contrast' for a formal register.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 13:
-    Adjectives, §13.1-13.8'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*While I was young, I lived in London.* (ambiguous)'
-  correction: When I was young, I lived in London.
-  explanation: '''While'' with past simple can be ambiguous between contrast and time
-    meanings. For background time periods, ''when'' is clearer. ''While'' is best
-    with continuous tenses for simultaneous actions rather than background time.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: '*Whereas my sister likes coffee but I prefer tea.*'
-  correction: My sister likes coffee, whereas I prefer tea.
-  explanation: '''Whereas'' already signals contrast; adding ''but'' creates redundancy.
-    Also, ''whereas'' joins two clauses within one sentence -- it is not used as a
-    sentence-initial connector like ''however''.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-- error: '*I like writing. In contrast, my sister, she likes reading.*'
-  correction: I like writing. In contrast, my sister likes reading.
-  explanation: '''In contrast'' already introduces the contrasting element. Adding
-    a pronoun (''she'') after the noun (''my sister'') creates a double subject. ''In
-    contrast'' does not require dislocation of this type.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Arabic
-- error: '*While is cold outside, I wear a coat.*'
-  correction: While it is cold outside, I wear a coat.
-  explanation: Missing subject and verb after 'while'. 'While' introduces a dependent
-    clause requiring both subject and verb. This fragment error occurs when learners
-    treat 'while' like a preposition rather than a conjunction.
-  l1_groups:
-  - Chinese
-  - Japanese
-  - Arabic
-register_notes:
-- note: In formal writing, relative clauses are essential for precision and are a
-    marker of proficient writing.
-- note: In conversation, defining relative clauses are more common than non-defining.
-- note: In academic writing, both defining and non-defining relative clauses are used
-    extensively.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In academic writing, relative clauses are essential for precision and are
-    a marker of proficient writing.
-- note: In conversation, defining relative clauses are more common than non-defining.
-- note: In formal writing, 'whom' is used for object relative clauses.

@@ -1,31 +1,88 @@
+citations:
+- claim: 'Core meaning: Extended absolute constructions with complex participles, multiple elements, or embedded clauses'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 4: Basic Structures (absolute constructions)'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 4: Basic Structures (absolute constructions)'
+  tier: 1
+- claim: Common error '*All the necessary preparations having been made, and the gu' for Portuguese, Spanish, German speakers
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 14: Non-finite clauses'
+  tier: 1
+common_errors:
+- correction: All the necessary preparations having been made and the guests having arrived, the ceremony began.
+  error: '*All the necessary preparations having been made, and the guests having arrived, the ceremony began.* (comma splice)'
+  explanation: In advanced absolute constructions with multiple elements, do not use a comma between the elements within the
+    absolute phrase. The comma comes only before the main clause.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - German
+  reliability: D
+- correction: The children having played outside, the parents watched TV.
+  error: '*The children been playing outside, the parents watched TV.*'
+  explanation: 'Advanced absolute constructions require a participle (having played), not a finite verb (been playing). The
+    structure is: noun + participle phrase.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+description: Extended absolute constructions with complex participles and multiple elements for advanced learners.
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - literary writing
+      - formal speeches
+      min_examples: 3
+    structure: Complex noun phrase + complex participle phrase, + main clause
+  negative:
+    example_generator:
+      contexts:
+      - formal contexts
+      min_examples: 3
+    structure: 'Complex phrase with negation: No objections having been raised, the motion was carried.'
+  questions:
+    example_generator:
+      contexts: []
+    min_examples: 0
+    structure: Not used in questions.
 grammar_point: absolute_constructions_advanced
-title: Absolute Constructions (Advanced)
-description: Extended absolute constructions with complex participles and multiple
-  elements for advanced learners.
 level: C2
 meaning:
-  core_meaning: Extended absolute constructions with complex participles, multiple
-    elements, or embedded clauses. These are highly formal and primarily found in
-    literary or academic writing.
-  timeline: Timeless — can be used with any tense.
-  contrast: Basic absolute = Weather permitting, we went. vs Advanced = All the necessary
-    preparations having been made and the guests having arrived, the ceremony began.
   ccqs:
-  - question: Does this absolute construction have multiple elements?
-    answer: Yes, it is an advanced absolute construction.
-    purpose: Tests whether the learner understands absolute constructions (noun +
-      participle) that modify the entire sentence, providing background information
-      in formal writing.
-  - question: Is this formal or informal?
-    answer: Very formal — literary or academic.
-    purpose: Tests whether the learner understands that advanced absolute constructions
-      with multiple elements (preparations having been made, guests having arrived)
-      are restricted to formal registers. This helps learners avoid using overly complex
-      structures in casual speech.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      absolute constructions advanced and explain why they are incorrect.
+  - answer: Yes, it is an advanced absolute construction.
+    purpose: Tests whether the learner understands absolute constructions (noun + participle) that modify the entire sentence,
+      providing background information in formal writing.
+    question: Does this absolute construction have multiple elements?
+  - answer: Very formal — literary or academic.
+    purpose: Tests whether the learner understands that advanced absolute constructions with multiple elements (preparations
+      having been made, guests having arrived) are restricted to formal registers. This helps learners avoid using overly
+      complex structures in casual speech.
+    question: Is this formal or informal?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with absolute constructions advanced and explain
+      why they are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: Yes, combining two elements is the key feature of advanced absolute constructions. You can chain multiple participle
+      phrases (guests having arrived, preparations having been made) before the main clause as long as they share the same
+      time frame and topic.
+    purpose: Tests whether the learner understands that the defining feature of advanced absolute constructions is the ability
+      to chain multiple noun + participle phrases into a single absolute expression. This distinguishes advanced usage from
+      basic single-element absolute constructions like "Weather permitting."
+    question: The guests having arrived, the ceremony began — can we combine two elements like this, or must we use separate
+      sentences?
+  contrast: Basic absolute = Weather permitting, we went. vs Advanced = All the necessary preparations having been made and
+    the guests having arrived, the ceremony began.
+  core_meaning: Extended absolute constructions with complex participles, multiple elements, or embedded clauses. These are
+    highly formal and primarily found in literary or academic writing.
   example_generator:
     contexts:
     - literary writing
@@ -36,101 +93,50 @@ meaning:
     - Extremely formal — rarely used even by native speakers
     - Primarily a written form
     min_examples: 3
-form:
-  affirmative:
-    structure: Complex noun phrase + complex participle phrase, + main clause
-    example_generator:
-      contexts:
-      - literary writing
-      - formal speeches
-      min_examples: 3
-  negative:
-    structure: 'Complex phrase with negation: No objections having been raised, the
-      motion was carried.'
-    example_generator:
-      contexts:
-      - formal contexts
-      min_examples: 3
-  questions:
-    structure: Not used in questions.
-    example_generator:
-      contexts: []
-    min_examples: 0
+  timeline: Timeless — can be used with any tense.
+phonetics:
+- example_generator:
+    contexts:
+    - reading aloud
+  l1_issue: Extremely advanced — most L1 speakers will never need to produce this structure
+  note: Multiple pauses for the different elements of the absolute phrase
+register_notes:
+- note: Biber et al. (2021) — Advanced absolute constructions are primarily a literary/written feature. Rare in conversation;
+    most common in fiction and formal prose. Register-restricted structure. Ch. 11.2
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 11.2
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 14: Non-finite clauses'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 4: Basic Structures (absolute constructions)'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Ch. 14: Non-finite Clauses'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners. Ch. 13: Advanced structures'
+  validation: Swan (2016) Practical English Usage, 4th ed.(absolute phrases)
 sub_rules:
-- rule: Multiple participles can be chained
-  type: grammatical
-  examples:
+- examples:
   - The data having been collected and analyzed, we wrote the report.
   - All preparations having been made and approved, the event proceeded.
-- rule: Can include passive and active participles
+  rule: Multiple participles can be chained
   type: grammatical
-  examples:
+- examples:
   - The work having been finished and the tools put away, he went home.
+  rule: Can include passive and active participles
+  type: grammatical
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Students identify and analyze advanced absolute constructions in texts.
+    duration: 15
+    name: Literary Identification
+  tips:
+  - Use only with advanced students
+  - Focus on recognition rather than production
+  - Use authentic literary examples
+  - 'Swan PEU: Absolute constructions with past/present participles — ''The work completed, we went home.'' ''He stood there,
+    arms folded.'' The participle describes the situation of its own subject. Very formal.'
+title: Absolute Constructions (Advanced)
 use:
 - context: Literary writing
   description: Creating complex, formal prose
   examples:
   - The sun having risen and the fog having lifted, the valley revealed its beauty.
   - All things having been considered and discussed, the committee reached a decision.
-phonetics:
-- note: Multiple pauses for the different elements of the absolute phrase
-  example_generator:
-    contexts:
-    - reading aloud
-  l1_issue: Extremely advanced — most L1 speakers will never need to produce this
-    structure
-teaching:
-  methodology: Guided discovery
-  tips:
-  - Use only with advanced students
-  - Focus on recognition rather than production
-  - Use authentic literary examples
-  recommended_activities:
-  - name: Literary Identification
-    duration: 15
-    adaptation_notes: Students identify and analyze advanced absolute constructions
-      in texts.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 4:
-    Basic Structures, §4.10 (absolute constructions)'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 14: Non-finite Clauses, §14.5'
-  validation: Swan (2016) Practical English Usage, 4th ed. Entries 15-20 (absolute
-    phrases)
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    14: Non-finite clauses'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 13: Advanced structures'
-common_errors:
-- error: '*All the necessary preparations having been made, and the guests having
-    arrived, the ceremony began.* (comma splice)'
-  correction: All the necessary preparations having been made and the guests having
-    arrived, the ceremony began.
-  explanation: In advanced absolute constructions with multiple elements, do not use
-    a comma between the elements within the absolute phrase. The comma comes only
-    before the main clause.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - German
-- error: '*The children been playing outside, the parents watched TV.*'
-  correction: The children having played outside, the parents watched TV.
-  explanation: 'Advanced absolute constructions require a participle (having played),
-    not a finite verb (been playing). The structure is: noun + participle phrase.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

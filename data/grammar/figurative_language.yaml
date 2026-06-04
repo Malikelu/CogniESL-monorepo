@@ -1,31 +1,83 @@
+citations:
+- claim: 'Core meaning: Figurative language uses words and phrases in non-literal ways to create vivid imagery, emotional
+    im'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 36: Conclusion'
+  tier: 4
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 36: Conclusion'
+  tier: 4
+- claim: Common error '*It's raining cats and dogs -- where are the animals?*' for All L1 groups speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+common_errors:
+- correction: It's raining very heavily.
+  error: '*It''s raining cats and dogs -- where are the animals?*'
+  explanation: This is an idiom. The figurative meaning is 'raining heavily', not literally animals falling from the sky.
+    Many L1s have different weather idioms.
+  flagged: true
+  l1_groups:
+  - All L1 groups
+  reliability: D
+description: Non-literal language including metaphors, similes, personification, hyperbole, and other figures of speech that
+  create vivid, expressive meaning.
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - literary analysis
+      - casual speech
+      - advertising
+      min_examples: 4
+    structure: 'Various forms: metaphor (A is B), simile (A is like/as B), personification (giving human qualities to non-human
+      things), hyperbole (deliberate exaggeration)'
+  negative:
+    example_generator:
+      contexts:
+      - understatement
+      - litotes
+      min_examples: 3
+    structure: 'Negated figurative expressions: He is not the sharpest tool in the shed. / It is not rocket science.'
+  questions:
+    example_generator:
+      contexts:
+      - emphatic agreement
+      - sarcasm
+      min_examples: 3
+    structure: 'Rhetorical questions with figurative language: Is the Pope Catholic? / Does a bear live in the woods?'
 grammar_point: figurative_language
-title: Figurative Language
-description: Non-literal language including metaphors, similes, personification, hyperbole,
-  and other figures of speech that create vivid, expressive meaning.
 level: C2
 meaning:
-  core_meaning: Figurative language uses words and phrases in non-literal ways to
-    create vivid imagery, emotional impact, and expressive depth. It goes beyond the
-    dictionary meaning of words to convey complex ideas and feelings.
-  timeline: Timeless — figurative language describes qualities and relationships,
-    not temporal events.
-  contrast: Literal = She is very happy. Figurative = She is on cloud nine. / She
-    is over the moon.
   ccqs:
-  - question: Does this expression mean something different from its literal words?
-    answer: Yes, it is figurative language.
-    purpose: Tests whether the learner can distinguish between literal and figurative
-      meanings. This is essential for understanding idioms, metaphors, and natural
-      speech.
-  - question: Does it create a comparison, exaggeration, or image?
-    answer: Yes, that is the function of figurative language.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Does it create a comparison,
-      exaggeration, or imag...' checks conceptual understanding, not just memorization.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      figurative language and explain why they are incorrect.
+  - answer: Yes, it is figurative language.
+    purpose: Tests whether the learner can distinguish between literal and figurative meanings. This is essential for understanding
+      idioms, metaphors, and natural speech.
+    question: Does this expression mean something different from its literal words?
+  - answer: Yes, that is the function of figurative language.
+    purpose: Tests whether the learner can identify and apply the correct form/meaning of this grammar point in context. The
+      question 'Does it create a comparison, exaggeration, or imag...' checks conceptual understanding, not just memorization.
+    question: Does it create a comparison, exaggeration, or image?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with figurative language and explain why they
+      are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: It is an idiom — a fixed expression whose meaning ('deeply insulting') cannot be deduced from the individual words.
+      Unlike a metaphor where the comparison is transparent ("Time is money"), idioms must be learned as complete units. It
+      also has metaphorical origins, but its fixedness and non-compositional meaning make it primarily idiomatic.
+    purpose: 'Tests whether the learner can distinguish between different categories of figurative language. While metaphors
+      allow compositional interpretation (A IS B), idioms are arbitrary fixed chunks. This distinction matters for language
+      teaching: metaphors can be unpacked, but idioms must be memorized. Recognizing that an expression is both metaphorical
+      in origin and idiomatic in function is a C2-level analysis skill.'
+    question: '"The news was a slap in the face." Is this a metaphor, simile, hyperbole, or idiom?'
+  contrast: Literal = She is very happy. Figurative = She is on cloud nine. / She is over the moon.
+  core_meaning: Figurative language uses words and phrases in non-literal ways to create vivid imagery, emotional impact,
+    and expressive depth. It goes beyond the dictionary meaning of words to convey complex ideas and feelings.
   example_generator:
     contexts:
     - literature and poetry
@@ -34,107 +86,120 @@ meaning:
     - political rhetoric
     cultural_notes:
     - Many figurative expressions are culture-specific and do not translate directly
-    - Understanding figurative language is essential for advanced comprehension of
-      English media and literature
+    - Understanding figurative language is essential for advanced comprehension of English media and literature
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Various forms: metaphor (A is B), simile (A is like/as B), personification
-      (giving human qualities to non-human things), hyperbole (deliberate exaggeration)'
-    example_generator:
-      contexts:
-      - literary analysis
-      - casual speech
-      - advertising
-      min_examples: 4
-  negative:
-    structure: 'Negated figurative expressions: He is not the sharpest tool in the
-      shed. / It is not rocket science.'
-    example_generator:
-      contexts:
-      - understatement
-      - litotes
-      min_examples: 3
-  questions:
-    structure: 'Rhetorical questions with figurative language: Is the Pope Catholic?
-      / Does a bear live in the woods?'
-    example_generator:
-      contexts:
-      - emphatic agreement
-      - sarcasm
-      min_examples: 3
+  timeline: Timeless — figurative language describes qualities and relationships, not temporal events.
+phonetics:
+- example_generator:
+    contexts:
+    - spoken idioms
+    - literary reading
+  l1_issue: Learners may try to translate figurative expressions literally from their L1, leading to confusion.
+  note: Figurative expressions are often produced as fixed chunks with a specific stress pattern that should not be broken
+    up.
+- example_generator:
+    contexts:
+    - emphatic speech
+    - storytelling
+  l1_issue: Learners from cultures that value literal accuracy may find hyperbole uncomfortable or dishonest.
+  note: 'Hyperbole is typically spoken with exaggerated intonation and emphasis: I have told you a MILLION times!'
+register_notes:
+- note: 'Biber et al. (2021) — Figurative language: fiction and literary prose use far more figurative expressions; academic
+    prose uses some conventional metaphors. Conversation uses more idioms. Ch. 7.2.1'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 7.2.1
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: 'Metaphor: a direct comparison stating one thing IS another, without like
-    or as'
-  type: rhetorical
-  examples:
+- examples:
   - Time is money.
   - He has a heart of gold.
   - The world is a stage.
   - Her voice is music to my ears.
-- rule: 'Simile: a comparison using like or as'
+  rule: 'Metaphor: a direct comparison stating one thing IS another, without like or as'
   type: rhetorical
-  examples:
+- examples:
   - She is as busy as a bee.
   - He runs like the wind.
   - It is like talking to a brick wall.
   - She sings like an angel.
-- rule: 'Personification: giving human qualities to animals, objects, or abstract
-    concepts'
+  rule: 'Simile: a comparison using like or as'
   type: rhetorical
-  examples:
+- examples:
   - The wind howled through the trees.
   - Opportunity knocked at his door.
   - The flowers danced in the breeze.
   - Fear gripped the nation.
-- rule: 'Hyperbole: deliberate exaggeration for emphasis or effect'
+  rule: 'Personification: giving human qualities to animals, objects, or abstract concepts'
   type: rhetorical
-  examples:
+- examples:
   - I have told you a million times.
   - This bag weighs a ton.
   - I am so hungry I could eat a horse.
   - She is older than the hills.
-- rule: 'Litotes: deliberate understatement, often using a negative to affirm a positive'
+  rule: 'Hyperbole: deliberate exaggeration for emphasis or effect'
   type: rhetorical
-  examples:
+- examples:
   - She is not unkind. (meaning: she is quite kind)
   - It was not a bad performance. (meaning: it was good)
   - He is not the friendliest person. (meaning: he is unfriendly)
   - That is not impossible. (meaning: it is possible)
-- rule: 'Idiomatic expressions: fixed phrases whose meaning cannot be deduced from
-    the individual words'
-  type: lexical
-  examples:
+  rule: 'Litotes: deliberate understatement, often using a negative to affirm a positive'
+  type: rhetorical
+- examples:
   - break the ice (start a conversation)
   - hit the nail on the head (be exactly right)
   - let the cat out of the bag (reveal a secret)
   - burn the midnight oil (work late into the night)
-- rule: 'Synecdoche and metonymy: using a part to represent the whole, or an associated
-    thing to represent the concept'
-  type: rhetorical
-  examples:
+  rule: 'Idiomatic expressions: fixed phrases whose meaning cannot be deduced from the individual words'
+  type: lexical
+- examples:
   - The Crown announced new policies. (The Crown = the monarchy)
   - All hands on deck. (hands = sailors/workers)
   - The pen is mightier than the sword. (pen = written words; sword = military force)
+  rule: 'Synecdoche and metonymy: using a part to represent the whole, or an associated thing to represent the concept'
+  type: rhetorical
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Students draw both the literal and figurative meaning of expressions, then explain the difference.
+    duration: 15
+    name: Literal vs Figurative
+  - adaptation_notes: Students find and categorise figurative language in a song, poem, or news article.
+    duration: 15
+    name: Metaphor Hunt
+  - adaptation_notes: Students write original metaphors, similes, and hyperboles on a given topic, then share with the class.
+    duration: 20
+    name: Create Your Own
+  tips:
+  - 'Start with the most common figurative types: metaphor, simile, and hyperbole.'
+  - Use visual aids — draw the literal meaning vs. the figurative meaning to highlight the difference.
+  - Teach idioms in thematic groups (body, animals, weather) to aid memorisation.
+  - Encourage students to keep a figurative language journal, collecting examples from media they consume.
+  - Discuss cultural differences — many figurative expressions do not translate across languages.
+  - 'Swan vocabulary covers metaphor and figurative language. Idioms (entries 321-635) often have figurative meanings: ''break
+    the ice,'' ''hit the nail on the head.'' Swan also addresses false friends and subtle meaning differences.'
+title: Figurative Language
 use:
 - context: Literature and poetry
-  description: Figurative language is the foundation of literary expression, creating
-    imagery and emotional resonance.
+  description: Figurative language is the foundation of literary expression, creating imagery and emotional resonance.
   examples:
   - Hope is the thing with feathers that perches in the soul. (Emily Dickinson)
   - The fog comes on little cat feet. (Carl Sandburg)
   - All the world is a stage, and all the men and women merely players. (Shakespeare)
 - context: Everyday conversation
-  description: Native speakers use figurative language constantly, often without realising
-    it.
+  description: Native speakers use figurative language constantly, often without realising it.
   examples:
   - I am feeling under the weather today.
   - That test was a piece of cake.
   - He spilled the beans about the surprise party.
   - She has a heart of gold.
 - context: Advertising and media
-  description: Advertisers use figurative language to make products memorable and
-    appealing.
+  description: Advertisers use figurative language to make products memorable and appealing.
   examples:
   - Red Bull gives you wings.
   - Melts in your mouth, not in your hands. (M&Ms)
@@ -146,74 +211,3 @@ use:
   - The tide of public opinion is turning.
   - A wall of silence surrounds the investigation.
   - The seeds of change have been planted.
-phonetics:
-- note: Figurative expressions are often produced as fixed chunks with a specific
-    stress pattern that should not be broken up.
-  example_generator:
-    contexts:
-    - spoken idioms
-    - literary reading
-  l1_issue: Learners may try to translate figurative expressions literally from their
-    L1, leading to confusion.
-- note: 'Hyperbole is typically spoken with exaggerated intonation and emphasis: I
-    have told you a MILLION times!'
-  example_generator:
-    contexts:
-    - emphatic speech
-    - storytelling
-  l1_issue: Learners from cultures that value literal accuracy may find hyperbole
-    uncomfortable or dishonest.
-teaching:
-  methodology: Guided discovery
-  tips:
-  - 'Start with the most common figurative types: metaphor, simile, and hyperbole.'
-  - Use visual aids — draw the literal meaning vs. the figurative meaning to highlight
-    the difference.
-  - Teach idioms in thematic groups (body, animals, weather) to aid memorisation.
-  - Encourage students to keep a figurative language journal, collecting examples
-    from media they consume.
-  - Discuss cultural differences — many figurative expressions do not translate across
-    languages.
-  recommended_activities:
-  - name: Literal vs Figurative
-    duration: 15
-    adaptation_notes: Students draw both the literal and figurative meaning of expressions,
-      then explain the difference.
-  - name: Metaphor Hunt
-    duration: 15
-    adaptation_notes: Students find and categorise figurative language in a song,
-      poem, or news article.
-  - name: Create Your Own
-    duration: 20
-    adaptation_notes: Students write original metaphors, similes, and hyperboles on
-      a given topic, then share with the class.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*It''s raining cats and dogs -- where are the animals?*'
-  correction: It's raining very heavily.
-  explanation: This is an idiom. The figurative meaning is 'raining heavily', not
-    literally animals falling from the sky. Many L1s have different weather idioms.
-  l1_groups:
-  - All L1 groups
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

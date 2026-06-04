@@ -1,33 +1,101 @@
-grammar_point: tense_shifts_narrative
-title: Tense Shifts in Narrative
+citations:
+- claim: 'Core meaning: Narrative tense shifts involve changing between past, present,
+    and future tenses within a story to c'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 4
+- claim: 'Register distribution: The historical present (or narrative present) is
+    the dominant tense for vivid spoken anecdotes and s'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 4
+- claim: 'Discourse function: Tense shifts are a defining feature of English narrative
+    style. They are essential for vivid storyte'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 4
+- claim: 'Common error ''Using only past tense throughout a spoken anecdote: *''So
+    I w'' for Portuguese, Spanish, Japanese speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: 'Dialectal variation: The historical present is more common in British English
+    spoken narratives. American English uses it'
+  reliability: B
+  source: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  tier: 1
+- claim: 'Tense choice in discourse signals temporal relationships and narrative structure:
+    present for immediacy, past for remoteness, future for prediction'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9: Tense-Aspect-Modality
+    in Discourse'
+  tier: 1
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for
+    L1-specific error patterns in English. Their learner English framework documents
+    how each L1 group produces characteristic errors in this grammatical domain, enabling
+    teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+    and Other Problems, 2nd ed. Cambridge University Press.'
+  tier: 2
+common_errors:
+- correction: So I'm waiting for the bus and a woman comes up to me and she asks me...
+  error: 'Using only past tense throughout a spoken anecdote: *''So I waited for the
+    bus and a woman came up to me and she asked me...'''
+  explanation: In spoken English, the historical present is the default for vivid
+    storytelling. Using only past tense throughout a spoken anecdote sounds flat and
+    unnatural. The historical present brings the story to life.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Japanese
+  reliability: D
+- correction: She arrived at the hotel. She had booked it weeks earlier.
+  error: 'Using past simple instead of past perfect for flashbacks: *''She arrived
+    at the hotel. She booked it weeks earlier.'''
+  explanation: When going back to an earlier event in a narrative, past perfect is
+    required to show that the event happened before the main past timeline. Using
+    past simple for both events makes it unclear which happened first.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+- correction: She left the village. She would never return.
+  error: 'Using ''will'' instead of ''would'' for flash-forwards: *''She left the
+    village. She will never return.'''
+  explanation: In a past-tense narrative, flash-forwards use 'would' (future-in-the-past),
+    not 'will'. 'Will' breaks the past narrative frame and sounds like the narrator
+    has jumped to the present.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
 description: Understanding and using tense shifts in storytelling, including the historical
   present, flashbacks, and flash-forwards.
-level: B2
-meaning:
-  core_meaning: Narrative tense shifts involve changing between past, present, and
-    future tenses within a story to create dramatic effect, indicate time changes,
-    or bring events to life. The most common shifts are from past to present (historical
-    present) and from past to past perfect (flashback).
-  timeline: Tense shifts move the listener/reader between different time frames within
-    the narrative.
-  contrast: 'Compare with consistent past tense narration: ''He walked in and sat
-    down'' vs. shifted: ''He walks in and sits down'' (historical present for vividness).'
-  ccqs:
-  - question: Is the whole story in the same tense?
-    answer: No -- the tense shifts to show different time frames or create effect.
-    purpose: Tests whether the learner understands that narratives in English commonly
-      shift tenses for stylistic and structural purposes, rather than maintaining
-      one tense throughout.
-  - question: Why does the narrator switch to present tense in a past story?
-    answer: To make the story more vivid and dramatic -- it's called the historical
-      present.
-    purpose: Tests whether the learner knows the term and function of the historical
-      present -- the most common and accessible narrative tense shift in English.
-  - question: When we go back to an earlier event in a story, which tense do we use?
-    answer: Past perfect -- to show it happened before the main past events.
-    purpose: Tests whether the learner knows that past perfect is used for flashbacks
-      in narrative, which is the standard way to signal a shift to an earlier time
-      frame in storytelling.
+dialectal_variation:
+- note: The historical present is more common in British English spoken narratives.
+    American English uses it as well but may use past tense more frequently in some
+    contexts.
+discourse_notes:
+- note: Tense shifts are a defining feature of English narrative style. They are essential
+    for vivid storytelling, film summaries, and literary fiction.
+- 'GB3 Ch.9: Tense serves discourse functions beyond time reference — historical present
+  (vividness), backgrounding (past for supporting info), frame-elaboration (past perfect
+  to simple past), interactive present perfect (topic-opening). Source: Celce-Murcia
+  & Larsen-Freeman (1999) GB3 Ch.9: Tense-Aspect-Modality in Discourse.'
 example_generator:
   contexts:
   - storytelling
@@ -41,61 +109,166 @@ example_generator:
   min_examples: 5
 form:
   affirmative:
-    structure: Past simple -> Present simple (historical present) / Past simple ->
-      Past perfect (flashback) / Past simple -> Future-in-the-past (flash-forward)
     example_generator:
       contexts:
       - oral storytelling
       - written narrative
       - film summaries
       min_examples: 4
+    structure: Past simple -> Present simple (historical present) / Past simple ->
+      Past perfect (flashback) / Past simple -> Future-in-the-past (flash-forward)
   negative:
-    structure: 'Negative forms follow the tense being used: didn''t (past), don''t/doesn''t
-      (present), hadn''t (past perfect)'
     example_generator:
       contexts:
       - negative events in stories
       - denying past actions
       min_examples: 3
+    structure: 'Negative forms follow the tense being used: didn''t (past), don''t/doesn''t
+      (present), hadn''t (past perfect)'
   questions:
-    structure: 'Questions within narratives follow the tense of the section: ''What
-      did he do?'' (past) / ''What does he do?'' (historical present)'
     example_generator:
       contexts:
       - dialogue within stories
       - narrative questions
       min_examples: 3
+    structure: 'Questions within narratives follow the tense of the section: ''What
+      did he do?'' (past) / ''What does he do?'' (historical present)'
+grammar_point: tense_shifts_narrative
+level: B2
+meaning:
+  ccqs:
+  - answer: No -- the tense shifts to show different time frames or create effect.
+    purpose: Tests whether the learner understands that narratives in English commonly
+      shift tenses for stylistic and structural purposes, rather than maintaining
+      one tense throughout.
+    question: Is the whole story in the same tense?
+  - answer: To make the story more vivid and dramatic -- it's called the historical
+      present.
+    purpose: Tests whether the learner knows the term and function of the historical
+      present -- the most common and accessible narrative tense shift in English.
+    question: Why does the narrator switch to present tense in a past story?
+  - answer: Past perfect -- to show it happened before the main past events.
+    purpose: Tests whether the learner knows that past perfect is used for flashbacks
+      in narrative, which is the standard way to signal a shift to an earlier time
+      frame in storytelling.
+    question: When we go back to an earlier event in a story, which tense do we use?
+  - answer: '''He said he was tired.'' In reported speech, tenses shift back: present
+      → past.'
+    purpose: Tests whether the learner applies tense backshift in reported speech
+      (Swan PEU 2016, entries 54-55).
+    question: Which is correct in reported speech? *'He said he is tired' or 'He said
+      he was tired'?
+  contrast: 'Compare with consistent past tense narration: ''He walked in and sat
+    down'' vs. shifted: ''He walks in and sits down'' (historical present for vividness).'
+  core_meaning: Narrative tense shifts involve changing between past, present, and
+    future tenses within a story to create dramatic effect, indicate time changes,
+    or bring events to life. The most common shifts are from past to present (historical
+    present) and from past to past perfect (flashback).
+  timeline: Tense shifts move the listener/reader between different time frames within
+    the narrative.
+phonetics:
+- example_generator:
+    contexts:
+    - storytelling practice
+    - dramatic reading
+  l1_issue: Speakers of languages with strict tense consistency rules (e.g., Japanese)
+    may find tense shifting unnatural and may overuse one tense throughout narratives.
+  note: The historical present often carries heightened intonation and faster pace,
+    mimicking the excitement of live action.
+register_notes:
+- note: 'The historical present (or narrative present) is the dominant tense for vivid
+    spoken anecdotes and storytelling: ''So I''m walking down the street and this
+    guy comes up to me...'' It is standard in film and book summaries (''In The Godfather,
+    Michael Corleone starts as an outsider but gradually becomes the family''s most
+    ruthless member''), sports commentary (''She shoots and scores!''), and joke-telling.
+    However, formal written narratives -- academic histories, legal depositions, and
+    formal reports -- tend to maintain past tense consistently and avoid the historical
+    present. Flashback (past perfect) and flash-forward (''would''-clauses) shifts
+    are features of literary fiction and planned written narrative rather than spontaneous
+    speech: ''She left the village. She would never return.'' Teachers should note
+    that British English uses the historical present more freely in conversation than
+    American English, and that learners whose L1 maintains strict tense consistency
+    (e.g., Japanese, Turkish) may need explicit instruction and extensive listening
+    practice to internalize this pattern.'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Tense shifts in narrative: fiction uses more tense
+    variation (historical present, flashback); academic prose maintains consistent
+    tense. Register determines acceptable tense shifting. Ch. 6.2.2'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 6.2.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7:
+    The Tense-Aspect System-7.5'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: 'Historical present: switching from past to present simple to describe past
-    events vividly.'
-  type: grammatical
-  examples:
+- examples:
   - So I'm walking down the street and this guy comes up to me...
   - Yesterday she walks into the office and says, 'I quit!'
-- rule: 'Flashback with past perfect: shifting from past simple to past perfect to
-    go back to an earlier event.'
+  rule: 'Historical present: switching from past to present simple to describe past
+    events vividly.'
   type: grammatical
-  examples:
+- examples:
   - She arrived at the hotel. She had booked it weeks earlier.
   - He opened the letter. He had been waiting for it all week.
-- rule: 'Flash-forward with ''would'': shifting from past to ''would + infinitive''
-    to jump ahead.'
+  rule: 'Flashback with past perfect: shifting from past simple to past perfect to
+    go back to an earlier event.'
   type: grammatical
-  examples:
+- examples:
   - She left the village. She would never return.
   - He made a decision that would change his life forever.
-- rule: 'Direct speech within narrative: the quoted speech uses its own tense, independent
-    of the narrative frame.'
+  rule: 'Flash-forward with ''would'': shifting from past to ''would + infinitive''
+    to jump ahead.'
   type: grammatical
-  examples:
+- examples:
   - She said, 'I am leaving now.' (present in direct speech within past narrative)
   - He told me, 'I have never been so angry.' (present perfect in direct speech)
-- rule: 'Free indirect speech: blending the narrator''s and character''s voice, often
-    shifting tense subtly.'
-  type: stylistic
-  examples:
+  rule: 'Direct speech within narrative: the quoted speech uses its own tense, independent
+    of the narrative frame.'
+  type: grammatical
+- examples:
   - She was leaving. Tomorrow would be different. She felt it in her bones.
   - He walked on. The road was long, but he was determined.
+  rule: 'Free indirect speech: blending the narrator''s and character''s voice, often
+    shifting tense subtly.'
+  type: stylistic
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Students tell a personal anecdote using the historical present
+      for vividness.
+    duration: 15
+    name: Anecdote performance
+  - adaptation_notes: Give students a flat past-tense narrative and have them rewrite
+      it with tense shifts for dramatic effect.
+    duration: 15
+    name: Story reconstruction
+  - adaptation_notes: Students write a plot summary of a film using the narrative
+      present, with flashbacks in past perfect.
+    duration: 20
+    name: Film summary writing
+  tips:
+  - Start with the historical present in spoken anecdotes -- it's the most accessible
+    and commonly used shift.
+  - Use short video clips of storytellers or comedians to demonstrate natural tense
+    shifting.
+  - Teach flashback (past perfect) and flash-forward (would) shifts in written narrative
+    contexts.
+  - 'Practise with story retelling: students hear a story and retell it using appropriate
+    tense shifts.'
+  - Encourage students to notice tense shifts in novels, films, and podcasts.
+  - 'Swan narrative tense shifting: Tense can shift from past to historic present
+    for vividness: ''So yesterday I''m walking down the street and this guy comes
+    up to me...'' Also: tense backshift in reported speech; modal remoteness (conditionals).'
+title: Tense Shifts in Narrative
 use:
 - context: Oral storytelling and anecdotes
   description: The historical present is the default tense for vivid spoken narratives
@@ -119,89 +292,3 @@ use:
   examples:
   - The Prime Minister announced new measures. He said the situation was under control.
     Critics, however, say the response has been inadequate.
-phonetics:
-- note: The historical present often carries heightened intonation and faster pace,
-    mimicking the excitement of live action.
-  example_generator:
-    contexts:
-    - storytelling practice
-    - dramatic reading
-  l1_issue: Speakers of languages with strict tense consistency rules (e.g., Japanese)
-    may find tense shifting unnatural and may overuse one tense throughout narratives.
-teaching:
-  methodology: Guided discovery
-  tips:
-  - Start with the historical present in spoken anecdotes -- it's the most accessible
-    and commonly used shift.
-  - Use short video clips of storytellers or comedians to demonstrate natural tense
-    shifting.
-  - Teach flashback (past perfect) and flash-forward (would) shifts in written narrative
-    contexts.
-  - 'Practise with story retelling: students hear a story and retell it using appropriate
-    tense shifts.'
-  - Encourage students to notice tense shifts in novels, films, and podcasts.
-  recommended_activities:
-  - name: Anecdote performance
-    duration: 15
-    adaptation_notes: Students tell a personal anecdote using the historical present
-      for vividness.
-  - name: Story reconstruction
-    duration: 15
-    adaptation_notes: Give students a flat past-tense narrative and have them rewrite
-      it with tense shifts for dramatic effect.
-  - name: Film summary writing
-    duration: 20
-    adaptation_notes: Students write a plot summary of a film using the narrative
-      present, with flashbacks in past perfect.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: 'Using only past tense throughout a spoken anecdote: *''So I waited for the
-    bus and a woman came up to me and she asked me...'''
-  correction: So I'm waiting for the bus and a woman comes up to me and she asks me...
-  explanation: In spoken English, the historical present is the default for vivid
-    storytelling. Using only past tense throughout a spoken anecdote sounds flat and
-    unnatural. The historical present brings the story to life.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Japanese
-- error: 'Using past simple instead of past perfect for flashbacks: *''She arrived
-    at the hotel. She booked it weeks earlier.'''
-  correction: She arrived at the hotel. She had booked it weeks earlier.
-  explanation: When going back to an earlier event in a narrative, past perfect is
-    required to show that the event happened before the main past timeline. Using
-    past simple for both events makes it unclear which happened first.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-- error: 'Using ''will'' instead of ''would'' for flash-forwards: *''She left the
-    village. She will never return.'''
-  correction: She left the village. She would never return.
-  explanation: In a past-tense narrative, flash-forwards use 'would' (future-in-the-past),
-    not 'will'. 'Will' breaks the past narrative frame and sounds like the narrator
-    has jumped to the present.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: The historical present is standard in spoken narratives and film summaries.
-    Flashback and flash-forward shifts are common in written narratives. All are appropriate
-    in both formal and informal contexts.
-dialectal_variation:
-- note: The historical present is more common in British English spoken narratives.
-    American English uses it as well but may use past tense more frequently in some
-    contexts.
-discourse_notes:
-- note: Tense shifts are a defining feature of English narrative style. They are essential
-    for vivid storytelling, film summaries, and literary fiction.

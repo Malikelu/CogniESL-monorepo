@@ -1,58 +1,54 @@
-grammar_point: another_other_others
-title: Another / Other / Others
-description: Words used to refer to additional or different people and things. Another
-  (one more), other (different), others (other people/things). Essential for comparing
-  and adding.
-level: A2
-meaning:
-  core_meaning: Another = one more/additional. Other = different/additional (general).
-    Others = other people or things (pronoun).
-  timeline: N/A (Not tense-based; these are determiners/pronouns showing addition
-    or difference.)
-  contrast: '''ANOTHER'' = One more (singular): "I want another cookie." (one more
-    cookie)
-
-    ''OTHER'' = Different/additional: "Other cookies are stale." (different cookies)
-
-    ''OTHERS'' = Other people/things (no noun): "Some others are coming." (other people)
-
-    '
-  ccqs:
-  - question: I finished my coffee and ordered another. Did I order one more or two
-      more?
-    answer: One more. Another means one additional item (singular).
-    purpose: Tests understanding that another means one more (singular)
-  - question: Some students stayed, but others left. Did all the students stay?
-    answer: No. Others means some different students — some stayed and some left.
-    purpose: Tests understanding that others refers to a different group
-  - question: Do you have other plans? Am I asking about the same plans or different
-      plans?
-    answer: Different plans. Other means different from the ones already mentioned
-      or known.
-    purpose: Tests understanding that other means different, not the same
-  example_generator:
-    contexts:
-    - everyday situations
-    cultural_notes: []
-    min_examples: 5
+citations:
+- claim: 'Core meaning: Another = one more/additional'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17: Partitives, Collectives, and Quantifiers'
+  tier: 4
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17: Partitives, Collectives, and Quantifiers'
+  tier: 4
+- claim: Common error '*I need other pen.*' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+common_errors:
+- correction: I need another pen.
+  error: '*I need other pen.*'
+  explanation: '''Another'' is for singular countable nouns (another pen). ''Other'' is for plural or uncountable (other pens,
+    other advice).'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+description: Words used to refer to additional or different people and things. Another (one more), other (different), others
+  (other people/things). Essential for comparing and adding.
+dialectal_variation: []
+discourse_notes: []
 form:
   affirmative:
-    structure: 'Another + singular countable noun: "another book", "another day"
-
-      Other + plural/uncountable noun: "other books", "other water"
-
-      Other + singular (different one): "the other book" (specific), "another book"
-      (additional)
-
-      Others (pronoun, no noun): "some others", "the others"
-
-      '
     example_generator:
       contexts:
       - education and school
       - entertainment and media
       min_examples: 4
+    structure: 'Another + singular countable noun: "another book", "another day"
+
+      Other + plural/uncountable noun: "other books", "other water"
+
+      Other + singular (different one): "the other book" (specific), "another book" (additional)
+
+      Others (pronoun, no noun): "some others", "the others"
+
+      '
   negative:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
     structure: 'Another: "I don''t need another."
 
       Other: "There are no other options."
@@ -60,11 +56,11 @@ form:
       Others: "Others don''t agree."
 
       '
+  questions:
     example_generator:
       contexts:
       - everyday situations
       min_examples: 4
-  questions:
     structure: 'Another: "Do you want another?"
 
       Other: "Are there other choices?"
@@ -72,137 +68,137 @@ form:
       Others: "What about the others?"
 
       '
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
+grammar_point: another_other_others
+level: A2
+meaning:
+  ccqs:
+  - answer: One more. Another means one additional item (singular).
+    purpose: Tests understanding that another means one more (singular)
+    question: I finished my coffee and ordered another. Did I order one more or two more?
+  - answer: No. Others means some different students — some stayed and some left.
+    purpose: Tests understanding that others refers to a different group
+    question: Some students stayed, but others left. Did all the students stay?
+  - answer: Different plans. Other means different from the ones already mentioned or known.
+    purpose: Tests understanding that other means different, not the same
+    question: Do you have other plans? Am I asking about the same plans or different plans?
+  - answer: Another cookie means one more cookie (additional, no specific limit). The other cookie means the remaining one
+      of two specific cookies. Another adds to the quantity, while the other refers specifically to the second (or last) item
+      in a known pair. If there is only one cookie left from a plate of two, you ask for the other cookie.
+    purpose: Tests whether the learner distinguishes between another (one more, unspecified) and the other (the specific remaining
+      one of a known set). This distinction is crucial because using another when there is only one left implies more exist,
+      while the other correctly signals the final item.
+    question: Another cookie versus The other cookie -- what is the difference in meaning?
+  contrast: '''ANOTHER'' = One more (singular): "I want another cookie." (one more cookie)
+
+    ''OTHER'' = Different/additional: "Other cookies are stale." (different cookies)
+
+    ''OTHERS'' = Other people/things (no noun): "Some others are coming." (other people)
+
+    '
+  core_meaning: Another = one more/additional. Other = different/additional (general). Others = other people or things (pronoun).
+  example_generator:
+    contexts:
+    - everyday situations
+    cultural_notes: []
+    min_examples: 5
+  timeline: N/A (Not tense-based; these are determiners/pronouns showing addition or difference.)
+phonetics:
+- example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Many L1 speakers pronounce each syllable clearly. In natural speech, the first syllable reduces to a schwa.
+  note: Another — the first syllable is a schwa, very weak
+  practice: Drill another one with a smooth, unstressed first syllable.
+- example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Speakers of languages that devoice final consonants (e.g., German, Russian, Turkish) may pronounce others with
+    a final unvoiced sound instead of the correct voiced ending.
+  note: Others — the final voiced consonant can be challenging
+  practice: Drill others are with a voiced final sound linking smoothly to the following vowel.
+register_notes:
+- note: 'Biber et al. (2021) — Determiners and indefinite pronouns (''another'', ''other'', ''others''): conversation uses
+    more indefinite expressions; academic prose uses more specific referential expressions. Ch. 4.4.4'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 4.4.4
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17: Partitives, Collectives and Quantifiers'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- type: grammar
-  rule: Another is used only with singular countable nouns
-  examples:
+- examples:
   - another book (correct — singular)
   - another books (incorrect — plural)
   - another water (incorrect — uncountable)
-  explanation: Another means an + other and can only modify singular countable nouns.
-    Use more for plurals and uncountables.
-- type: grammar
-  rule: Other is used with plural and uncountable nouns
-  examples:
+  explanation: Another means an + other and can only modify singular countable nouns. Use more for plurals and uncountables.
+  rule: Another is used only with singular countable nouns
+  type: grammar
+- examples:
   - other books (plural)
   - other information (uncountable)
   - the other book (singular with the — specific one)
-  explanation: Other works with plural and uncountable nouns. With singular nouns,
-    it needs a determiner like the.
-- type: grammar
-  rule: Others is a pronoun and stands alone without a following noun
-  examples:
+  explanation: Other works with plural and uncountable nouns. With singular nouns, it needs a determiner like the.
+  rule: Other is used with plural and uncountable nouns
+  type: grammar
+- examples:
   - Some students passed; others failed. (no noun after others)
   - I want the others. (pronoun — replaces the other ones)
-  explanation: Others replaces a noun that is already understood from context. Never
-    put a noun after others.
-- type: meaning
-  rule: Another means additional while the other means the remaining one of two
-  examples:
+  explanation: Others replaces a noun that is already understood from context. Never put a noun after others.
+  rule: Others is a pronoun and stands alone without a following noun
+  type: grammar
+- examples:
   - I want another slice. (one more, no specific limit)
   - I want the other slice. (the remaining one — there are two total)
-  explanation: Another adds to the quantity. The other refers to the second of two
-    specific items.
-- type: usage
-  rule: The others means all the remaining people or things in a group
-  examples:
+  explanation: Another adds to the quantity. The other refers to the second of two specific items.
+  rule: Another means additional while the other means the remaining one of two
+  type: meaning
+- examples:
   - Three students passed; the others failed. (all remaining students)
   - I will take the others. (all the remaining items)
   explanation: The others refers to the rest of a specific group, not just some.
+  rule: The others means all the remaining people or things in a group
+  type: usage
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students draw cards with nouns. They must use another, other, or others correctly: ''I have one book.
+      I need another book. I have other books at home.'''
+    duration: 10
+    name: Another vs Other Card Game
+  - adaptation_notes: 'Students survey classmates about preferences. They report: ''Some students like football. Others prefer
+      basketball. The others do not like sports.'''
+    duration: 15
+    name: Class Survey — Some, Others, The Others
+  - adaptation_notes: 'Show two similar pictures. Students describe the differences using another, other, others: ''In this
+      picture, another person is sitting. The other people are standing.'''
+    duration: 10
+    name: Picture Difference Game
+  tips:
+  - 'Use classroom objects: This pen is broken. Give me another pen. vs Other pens are in the drawer.'
+  - Teach another means one more explicitly.
+  - 'Practice with student groups: Some students, other students, others.'
+  - 'Contrast: Another (additional) vs The other (the remaining one).'
+  - 'Swan PEU: ''Another'' = an + other (singular), ''others'' = plural. ''The other'' (specific remaining), ''other'' (general).
+    ''Another three days'' = three more days. Idiomatic uses: ''one after another,'' ''each other.'''
+title: Another / Other / Others
 use:
-- name: Adding One More (Another)
-  description: Request or state one additional item.
+- description: Request or state one additional item.
   examples:
   - Can I have another glass?
   - I'll stay another day.
   key_point: Another means one more singular item.
-- name: Referring to Different Items (Other)
-  description: Talk about different or additional items (plural or uncountable).
+  name: Adding One More (Another)
+- description: Talk about different or additional items (plural or uncountable).
   examples:
   - Other countries do this.
   - Do you have other ideas?
-  key_point: Other with plural noun means different ones. The other means the specific
-    different one.
-- name: Referring to Other People/Things (Others)
-  description: Use as pronoun when noun is clear from context.
+  key_point: Other with plural noun means different ones. The other means the specific different one.
+  name: Referring to Different Items (Other)
+- description: Use as pronoun when noun is clear from context.
   examples:
   - Some like it, others don't.
   - Help the others.
   key_point: Others is a pronoun with no following noun.
-phonetics:
-- note: Another — the first syllable is a schwa, very weak
-  l1_issue: Many L1 speakers pronounce each syllable clearly. In natural speech, the
-    first syllable reduces to a schwa.
-  practice: Drill another one with a smooth, unstressed first syllable.
-  example_generator:
-    contexts:
-    - connected speech
-- note: Others — the final voiced consonant can be challenging
-  l1_issue: Speakers of languages that devoice final consonants (e.g., German, Russian,
-    Turkish) may pronounce others with a final unvoiced sound instead of the correct
-    voiced ending.
-  practice: Drill others are with a voiced final sound linking smoothly to the following
-    vowel.
-  example_generator:
-    contexts:
-    - connected speech
-teaching:
-  methodology: PPP
-  tips:
-  - 'Use classroom objects: This pen is broken. Give me another pen. vs Other pens
-    are in the drawer.'
-  - Teach another means one more explicitly.
-  - 'Practice with student groups: Some students, other students, others.'
-  - 'Contrast: Another (additional) vs The other (the remaining one).'
-  recommended_activities:
-  - name: Another vs Other Card Game
-    duration: 10
-    adaptation_notes: 'Students draw cards with nouns. They must use another, other,
-      or others correctly: ''I have one book. I need another book. I have other books
-      at home.'''
-  - name: Class Survey — Some, Others, The Others
-    duration: 15
-    adaptation_notes: 'Students survey classmates about preferences. They report:
-      ''Some students like football. Others prefer basketball. The others do not like
-      sports.'''
-  - name: Picture Difference Game
-    duration: 10
-    adaptation_notes: 'Show two similar pictures. Students describe the differences
-      using another, other, others: ''In this picture, another person is sitting.
-      The other people are standing.'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I need other pen.*'
-  correction: I need another pen.
-  explanation: '''Another'' is for singular countable nouns (another pen). ''Other''
-    is for plural or uncountable (other pens, other advice).'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.
+  name: Referring to Other People/Things (Others)

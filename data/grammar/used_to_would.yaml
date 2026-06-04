@@ -1,162 +1,42 @@
-grammar_point: used_to_would
-title: Used To vs Would (Past Habits)
-description: Contrast between 'used to' (past habits + states) and 'would' (past habits
-  only, no states) for describing repeated past actions.
-level: B1-B2
-meaning:
-  core_meaning: Both describe past habits, but 'used to' can also describe past states;
-    'would' only describes past actions (no states).
-  timeline: 'Past only: Both refer to repeated past actions/states that no longer
-    happen.'
-  contrast: 'Used to (actions + states): "I used to be tall." (state) / "I used to
-    run." (action)
-
-    Would (only actions): "I would run." (action) / "I would be tall." (incorrect,
-    state)
-
-    '
-  ccqs:
-  - question: What is the difference between used to and would
-    answer: Used to describes past states and habits. Would describes repeated past
-      actions only.
-    purpose: Tests whether the learner understands a key concept of used_to_would.
-      This is fundamental for correct use of this grammar point.
-  - question: Can we use a different structure here with the same meaning?
-    answer: No — changing the structure would change the meaning or make the sentence
-      ungrammatical.
-    purpose: Tests whether the learner understands that used to would is the only
-      appropriate structure for this meaning/context.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      used to would and explain why they are incorrect.
-  example_generator:
-    contexts:
-    - everyday situations
-    cultural_notes: []
-    min_examples: 5
-form:
-  affirmative:
-    structure: 'Used to: Subject + used to + Base Verb (actions or states): "I used
-      to smoke." "I used to be shy."
-
-      Would: Subject + would + Base Verb (only actions, no states): "I would smoke."
-      (correct) / "I would be shy." (incorrect)
-
-      '
-    example_generator:
-      contexts:
-      - weather and nature
-      min_examples: 4
-  negative:
-    structure: 'Used to: didn''t use to + Base Verb: "I didn''t use to like coffee."
-
-      Would: wouldn''t + Base Verb: "I wouldn''t smoke." (but less common than used
-      to negative)
-
-      '
-    example_generator:
-      contexts:
-      - food and daily routines
-      min_examples: 4
-  questions:
-    structure: 'Used to: Did + Subject + use to + Base Verb: "Did you use to live
-      here?"
-
-      Would: Would + Subject + Base Verb: "Would you go to the park?" (less common
-      for habits)
-
-      '
-    example_generator:
-      contexts:
-      - sports and hobbies
-      min_examples: 4
-sub_rules:
-- rule: Used to describes past states and habits
-  type: semantic
-  examples:
-  - I used to live in London (state)
-  - I used to play football every day (habit)
-  - She used to have long hair (state)
-- rule: Would describes repeated past actions only (not states)
-  type: semantic
-  examples:
-  - Every summer we would go to the beach (repeated action)
-  - He would always bring flowers (habitual action)
-  - She would sit and read for hours (repeated action)
-- rule: Would cannot be used for past states — only for repeated actions
-  type: grammatical
-  examples:
-  - I would live in London (WRONG — state, use used to)
-  - I would play football every day (OK — repeated action)
-  - She would have long hair (WRONG — state, use used to)
-use:
-- name: Past Habits (Actions)
-  description: Both 'used to' and 'would' work for repeated past actions.
-  examples:
-  - I used to/would walk to school.
-  - We used to/would visit grandma every summer.
-  key_point: Interchangeable for actions, but 'would' is more literary/storytelling.
-- name: Past States
-  description: Only 'used to' works for past states (be, have, know).
-  examples:
-  - I used to be happy. (correct) / I would be happy. (incorrect)
-  key_point: Would cannot describe states; only actions.
-- name: Storytelling
-  description: '''Would'' is more common in stories/narratives about past habits.'
-  examples:
-  - Every morning, he would wake up early and walk to the market.
-  key_point: Would adds a nostalgic, narrative tone.
-phonetics:
-- note: 'Would is often reduced to /d/ in narrative: ''Every summer we''d go to the
-    beach'' /ˈevri ˈsʌmə wiːd ɡəʊ tə ðə biːtʃ/. This reduction is very common in storytelling.'
-  example_generator:
-    contexts:
-    - would reduction
-  l1_issue: Learners may not recognize would when reduced to /d/. Teach the context
-    clues that distinguish it from had.
-teaching:
-  methodology: PPP
-  tips:
-  - 'Week 1: Used to for past habits + states.'
-  - 'Week 2: Would for past habits (actions only, storytelling).'
-  - 'Week 3: Contrast used to vs would; highlight state vs action.'
-  - 'Use childhood stories: Students write past habits with ''used to'' and ''would''
-    (actions only).'
-  recommended_activities:
-  - name: Used To or Would
-    duration: 10
-    adaptation_notes: 'Students choose: ''I ___ live in London.'' (used to — state)
-      ''I ___ play football every day.'' (used to or would — habit).'
-  - name: Childhood Memories
-    duration: 15
-    adaptation_notes: 'Students describe their childhood using both structures: ''I
-      used to live in a small house. Every day I would walk to school.'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
-    Modals, §9.1-9.6'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+citations:
+- claim: 'Core meaning: Both describe past habits, but ''used to'' can also describe
+    past states; ''would'' only describes past '
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal
+    Auxiliaries and Related Phrasal Forms-9.6'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used for everyday
+    communication and is among the most frequent patterns'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal
+    Auxiliaries and Related Phrasal Forms-9.6'
+  tier: 1
+- claim: Common error '*I use to play football.*' for Portuguese, Spanish, Chinese
+    speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
     University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
+  tier: 1
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for
+    L1-specific error patterns in English. Their learner English framework documents
+    how each L1 group produces characteristic errors in this grammatical domain, enabling
+    teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+    and Other Problems, 2nd ed. Cambridge University Press.'
+  tier: 2
 common_errors:
-- error: '*I use to play football.*'
-  correction: I used to play football.
+- correction: I used to play football.
+  error: '*I use to play football.*'
   explanation: Used to always has -d in affirmative.
+  flagged: true
   l1_groups:
   - Portuguese
   - Spanish
   - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
+  reliability: D
+description: Contrast between 'used to' (past habits + states) and 'would' (past habits
+  only, no states) for describing repeated past actions.
+dialectal_variation: []
 discourse_notes:
 - note: In conversation, this structure is used for everyday communication and is
     among the most frequent patterns in spoken English.
@@ -164,3 +44,177 @@ discourse_notes:
     knowledge, methodology, and findings.
 - note: In news reports, this structure is used for reporting events and attributing
     statements.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - weather and nature
+      min_examples: 4
+    structure: 'Used to: Subject + used to + Base Verb (actions or states): "I used
+      to smoke." "I used to be shy."
+
+      Would: Subject + would + Base Verb (only actions, no states): "I would smoke."
+      (correct) / "I would be shy." (incorrect)
+
+      '
+  negative:
+    example_generator:
+      contexts:
+      - food and daily routines
+      min_examples: 4
+    structure: 'Used to: didn''t use to + Base Verb: "I didn''t use to like coffee."
+
+      Would: wouldn''t + Base Verb: "I wouldn''t smoke." (but less common than used
+      to negative)
+
+      '
+  questions:
+    example_generator:
+      contexts:
+      - sports and hobbies
+      min_examples: 4
+    structure: 'Used to: Did + Subject + use to + Base Verb: "Did you use to live
+      here?"
+
+      Would: Would + Subject + Base Verb: "Would you go to the park?" (less common
+      for habits)
+
+      '
+grammar_point: used_to_would
+level: B1-B2
+meaning:
+  ccqs:
+  - answer: Used to describes past states and habits. Would describes repeated past
+      actions only.
+    purpose: Tests whether the learner understands a key concept of used_to_would.
+      This is fundamental for correct use of this grammar point.
+    question: Can you explain the difference between used to and would by giving an
+      example of when to use each?
+  - answer: No — changing the structure would change the meaning or make the sentence
+      ungrammatical.
+    purpose: Tests whether the learner understands that used to would is the only
+      appropriate structure for this meaning/context.
+    question: Can we use a different structure here with the same meaning?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with
+      used to would and explain why they are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: '''I used to live in London.'' ''Would'' can describe past actions but
+      NOT past states. Use ''used to'' for states.'
+    purpose: Tests whether the learner knows that 'would' is for past actions only,
+      not states (Swan PEU 2016, entry 68).
+    question: Which is correct for a past state? *'I would live in London' or 'I used
+      to live in London'?
+  contrast: 'Used to (actions + states): "I used to be tall." (state) / "I used to
+    run." (action)
+
+    Would (only actions): "I would run." (action) / "I would be tall." (incorrect,
+    state)
+
+    '
+  core_meaning: Both describe past habits, but 'used to' can also describe past states;
+    'would' only describes past actions (no states).
+  example_generator:
+    contexts:
+    - everyday situations
+    cultural_notes: []
+    min_examples: 5
+  timeline: 'Past only: Both refer to repeated past actions/states that no longer
+    happen.'
+phonetics:
+- example_generator:
+    contexts:
+    - would reduction
+  l1_issue: Learners may not recognize would when reduced to /d/. Teach the context
+    clues that distinguish it from had.
+  note: 'Would is often reduced to /d/ in narrative: ''Every summer we''d go to the
+    beach'' /ˈevri ˈsʌmə wiːd ɡəʊ tə ðə biːtʃ/. This reduction is very common in storytelling.'
+register_notes:
+- note: 'Biber et al. (2021) — ''Used to'' and ''would'' for past habits: more common
+    in conversation and narrative contexts. Academic prose rarely uses these (prefers
+    past simple). Ch. 6.2.2'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 6.2.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
+    Modals-9.6'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+sub_rules:
+- examples:
+  - I used to live in London (state)
+  - I used to play football every day (habit)
+  - She used to have long hair (state)
+  rule: Used to describes past states and habits
+  type: semantic
+- examples:
+  - Every summer we would go to the beach (repeated action)
+  - He would always bring flowers (habitual action)
+  - She would sit and read for hours (repeated action)
+  rule: Would describes repeated past actions only (not states)
+  type: semantic
+- examples:
+  - I would live in London (WRONG — state, use used to)
+  - I would play football every day (OK — repeated action)
+  - She would have long hair (WRONG — state, use used to)
+  rule: Would cannot be used for past states — only for repeated actions
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students choose: ''I ___ live in London.'' (used to — state)
+      ''I ___ play football every day.'' (used to or would — habit).'
+    duration: 10
+    name: Used To or Would
+  - adaptation_notes: 'Students describe their childhood using both structures: ''I
+      used to live in a small house. Every day I would walk to school.'''
+    duration: 15
+    name: Childhood Memories
+  tips:
+  - 'Parrott (2000) Ch. 17: Used to expresses past habits and states that no longer
+    continue. Would expresses past habitual actions only (not states). Would is more
+    common in narrative and nostalgic contexts. Used to is more factual and can be
+    used with both actions and states.'
+  - 'GB3 Ch. 9: Frame-Elaboration Hypothesis (Suh 1992) — in oral narratives, used
+    to FRAMES (introduces) a past habitual episode, while would ELABORATES (provides
+    details). Example: ''The bad thing was they used to laugh at us... They would
+    laugh because we''d bring tortillas... They would have their nice little lunch
+    boxes.'' Teaching insight: teach used to + would as a discourse pair, not isolated
+    forms. Source: Celce-Murcia & Larsen-Freeman (2015) GB3 3rd ed. Ch. 9 §9.3.'
+  - 'GB3 Ch. 9: Used to ... but for contrast — ''Alice used to be a kindergarten teacher,
+    but she doesn''t work outside the home anymore.'' The first clause (used to) states
+    a past state, the second clause (present) contrasts with present. Teach these
+    shorter frames for lower-level students. Source: GB3 3rd ed. Ch. 9 §9.3.'
+  - Week 1: Used to for past habits + states.
+  - Week 2: Would for past habits (actions only, storytelling).
+  - 'Week 3: Contrast used to vs would; highlight state vs action.'
+  - 'Use childhood stories: Students write past habits with ''used to'' and ''would''
+    (actions only).'
+  - 'Swan PEU: ''Used to'' covers both past states AND past actions: ''I used to live
+    in London'' (state) + ''I used to go swimming every day'' (action). ''Would''
+    covers only repeated actions, not states: ''Every summer we would go to the beach.''
+    NOT ''I would be tall.'''
+title: Used To vs Would (Past Habits)
+use:
+- description: Both 'used to' and 'would' work for repeated past actions.
+  examples:
+  - I used to/would walk to school.
+  - We used to/would visit grandma every summer.
+  key_point: Interchangeable for actions, but 'would' is more literary/storytelling.
+  name: Past Habits (Actions)
+- description: Only 'used to' works for past states (be, have, know).
+  examples:
+  - I used to be happy. (correct) / I would be happy. (incorrect)
+  key_point: Would cannot describe states; only actions.
+  name: Past States
+- description: '''Would'' is more common in stories/narratives about past habits.'
+  examples:
+  - Every morning, he would wake up early and walk to the market.
+  key_point: Would adds a nostalgic, narrative tone.
+  name: Storytelling

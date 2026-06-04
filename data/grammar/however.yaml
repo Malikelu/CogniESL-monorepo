@@ -1,15 +1,129 @@
-grammar_point: however
-title: However (Contrast Adverb)
+citations:
+- claim: 'Core meaning: Shows strong contrast between two independent ideas, stronger
+    than ''but'''
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday
+    communication.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs'
+  tier: 1
+- claim: Common error '*It was raining, however we went out.*' for Portuguese, Spanish,
+    French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: This structure functions and signal
+    relationships between ideas
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs — conjunctive adverbs link sentences and signal discourse relations'
+  tier: 1
+- claim: Oshima & Hogue's Great Writing series demonstrates how this grammatical structure
+    functions in academic writing contexts. Their approach connects grammar instruction
+    to writing outcomes, showing learners how accurate use of this structure improves
+    paragraph cohesion, essay organization, and academic register.
+  source: Oshima, A. and Hogue, A. (2006). Introduction to Academic Writing, 3rd ed.
+    Pearson Longman.
+  tier: 2
+common_errors:
+- correction: It was raining; however, we went out. / It was raining. However, we
+    went out.
+  error: '*It was raining, however we went out.*'
+  explanation: '''However'' cannot join two clauses with a comma (comma splice). Use
+    a semicolon or start a new sentence.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  reliability: D
+- correction: It was raining. However, we went out.
+  error: 'Using ''however'' as conjunction with comma: *''It was raining, however
+    we went out.'''
+  explanation: 'Swan PEU: "However" is a conjunctive adverb, not a coordinating
+    conjunction. It needs a semicolon or new sentence -- not just a comma.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan Entry 75. Swan (2016) Practical English Usage, 4th ed. Oxford University
+    Press.
 description: Adverb that shows strong contrast between two sentences or ideas. Essential
   for formal writing.
+dialectal_variation: []
+discourse_notes:
+- note: As a conjunctive adverb, however signals strong contrast between independent
+    sentences. In conversation, but is the default; however is strongly associated with
+    academic prose and formal writing (Biber et al. 1999, Ch. 10.4).
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - work and professional life
+      - food and daily routines
+      - weather and nature
+      min_examples: 4
+    structure: 'Sentence. However, + sentence: "I like tea. However, I don''t drink
+      it often."
+
+
+      Sentence; however, + sentence: "I like tea; however, I don''t drink it often."
+
+
+      However + adjective/adverb: "However hard I try..."
+
+
+      '
+  negative:
+    example_generator:
+      contexts:
+      - everyday situations
+      - negation
+      min_examples: 4
+    structure: However position unchanged in negatives.
+  questions:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: However not used in questions directly.
+grammar_point: however
 level: B2
 meaning:
-  core_meaning: Shows strong contrast between two independent ideas, stronger than
-    'but'. This grammar point is essential for expressing however in English. Learners
-    at this level need to understand both the form and the appropriate contexts for
-    use. Common errors include confusion with related structures and inappropriate
-    register use.
-  timeline: N/A (However is about contrast, not time.)
+  ccqs:
+  - answer: No, it connects two separate sentences or is placed after a semicolon.
+    purpose: Tests whether the learner understands that 'however' is a conjunctive
+      adverb, not a conjunction. It cannot join two clauses with a comma alone.
+    question: '''Does ''''however'''' connect two clauses within one sentence like
+      ''''but''''?'''
+  - answer: '''More formal — used in writing, not casual speech.'''
+    purpose: Tests whether the learner can identify and apply the correct form/meaning
+      of this grammar point in context. The question 'Is 'however' more formal or
+      informal?...' checks conceptual understanding, not just memorization.
+    question: '''Is ''''however'''' more formal or informal?'''
+  - answer: Yes, all three positions are possible with appropriate punctuation.
+    purpose: Tests whether the learner can distinguish between 'however' as a conjunctive
+      adverb between sentences and 'however + adjective/adverb' meaning 'no matter
+      how.' The word functions differently in these two patterns and learners frequently
+      confuse them.
+    question: '''Can ''''however'''' go at the beginning, middle, or end of a sentence?'''
+  - answer: '''No matter how.'' When ''however'' directly modifies an adjective or
+      adverb (however + adj/adv), it means ''no matter how'' and does not connect
+      two sentences. This is a different use from however as a contrast adverb.'
+    purpose: Tests whether the learner can distinguish between 'however' as a conjunctive
+      adverb between sentences and 'however + adjective/adverb' meaning 'no matter
+      how.' The word functions differently in these two patterns and learners frequently
+      confuse them.
+    question: However tired she was, she continued working. What does 'however' mean
+      in this sentence -- contrast or 'no matter how'?
   contrast: '''However'' = formal contrast between sentences
 
 
@@ -23,21 +137,11 @@ meaning:
 
 
     '
-  ccqs:
-  - question: Does 'however' connect two clauses within one sentence like 'but'?
-    answer: No, it connects two separate sentences or is placed after a semicolon.
-    purpose: Tests whether the learner understands that 'however' is a conjunctive
-      adverb, not a conjunction. It cannot join two clauses with a comma alone.
-  - question: Is 'however' more formal or informal?
-    answer: More formal — used in writing, not casual speech.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Is 'however' more formal or
-      informal?...' checks conceptual understanding, not just memorization.
-  - question: Can 'however' go at the beginning, middle, or end of a sentence?
-    answer: Yes, all three positions are possible with appropriate punctuation.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Can 'however' go at the beginning,
-      middle, or end ...' checks conceptual understanding, not just memorization.
+  core_meaning: Shows strong contrast between two independent ideas, stronger than
+    'but'. This grammar point is essential for expressing however in English. Learners
+    at this level need to understand both the form and the appropriate contexts for
+    use. Common errors include confusion with related structures and inappropriate
+    register use.
   example_generator:
     contexts:
     - formal writing
@@ -47,141 +151,98 @@ meaning:
     - In spoken English, 'but' is preferred; 'however' sounds overly formal in conversation
     - Common in IELTS and Cambridge writing tasks for coherence marks
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Sentence. However, + sentence: "I like tea. However, I don''t drink
-      it often."
-
-
-      Sentence; however, + sentence: "I like tea; however, I don''t drink it often."
-
-
-      However + adjective/adverb: "However hard I try..."
-
-
-      '
-    example_generator:
-      contexts:
-      - work and professional life
-      - food and daily routines
-      - weather and nature
-      min_examples: 4
-  negative:
-    structure: However position unchanged in negatives.
-    example_generator:
-      contexts:
-      - everyday situations
-      - negation
-      min_examples: 4
-  questions:
-    structure: However not used in questions directly.
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
-sub_rules:
-- rule: However as a contrast adverb requires a full stop or semicolon before it
-  type: punctuation
-  examples:
-  - I wanted to go. However, I was too tired. (correct)
-  - I wanted to go, however, I was too tired. (incorrect — comma splice)
-- rule: However can appear at the beginning, middle, or end of the second sentence
-  type: grammatical
-  examples:
-  - It was raining. However, we went out. (beginning)
-  - It was raining. We, however, went out. (middle)
-  - It was raining. We went out, however. (end)
-- rule: However + adjective/adverb means 'no matter how'
-  type: grammatical
-  examples:
-  - However hard I try, I can't solve this problem.
-  - However fast she runs, she always comes last.
-- rule: However must not be confused with 'how ever' (two words) which means 'in what
-    way'
-  type: lexical
-  examples:
-  - However did you manage? (in what way)
-  - I'll help however I can. (no matter how)
-use:
-- name: Sentence Contrast
-  description: Connect two contrasting sentences (formal writing).
-  examples:
-  - The price is high. However, the quality is excellent.
-  - It's difficult; however, it's worth it.
-  key_point: However connects TWO sentences (unlike 'but' which connects clauses).
-- name: Emphatic Modifier
-  description: Means 'no matter how' with adjectives/adverbs.
-  examples:
-  - However hard I try...
-  - However fast he runs...
-  key_point: However + adjective/adverb = 'no matter how much/hard'.
-- name: Formal Academic Writing
-  description: Common in essays and reports.
-  examples:
-  - The data is limited. However, trends are clear.
-  key_point: Avoid in spoken English — use 'but' instead.
+  timeline: N/A (However is about contrast, not time.)
 phonetics:
-- note: 'Stress on the first syllable: HOW-ever. In mid-sentence position, it is often
-    unstressed.'
-  example_generator:
+- example_generator:
     contexts:
     - formal speech
     - sentence stress
   l1_issue: Some L1 speakers place 'however' inside a single sentence with commas,
     creating comma splices.
-- note: When used sentence-initially, 'however' carries a falling-rising intonation
-    pattern
-  example_generator:
+  note: 'Stress on the first syllable: HOW-ever. In mid-sentence position, it is often
+    unstressed.'
+- example_generator:
     contexts:
     - intonation
   l1_issue: Learners may use flat intonation, making the contrast less clear to listeners.
+  note: When used sentence-initially, 'however' carries a falling-rising intonation
+    pattern
+register_notes:
+- note: 'Biber et al. (1999) — ''However'' as linking adverbial: strongly associated
+    with academic prose and formal writing. Conversation uses ''but'' instead. ''However''
+    frequency in academic prose is many times higher than in conversation. Ch. 10.4'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 10.4
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+sub_rules:
+- examples:
+  - I wanted to go. However, I was too tired. (correct)
+  - I wanted to go, however, I was too tired. (incorrect — comma splice)
+  rule: However as a contrast adverb requires a full stop or semicolon before it
+  type: punctuation
+- examples:
+  - It was raining. However, we went out. (beginning)
+  - It was raining. We, however, went out. (middle)
+  - It was raining. We went out, however. (end)
+  rule: However can appear at the beginning, middle, or end of the second sentence
+  type: grammatical
+- examples:
+  - However hard I try, I can't solve this problem.
+  - However fast she runs, she always comes last.
+  rule: However + adjective/adverb means 'no matter how'
+  type: grammatical
+- examples:
+  - However did you manage? (in what way)
+  - I'll help however I can. (no matter how)
+  rule: However must not be confused with 'how ever' (two words) which means 'in what
+    way'
+  type: lexical
 teaching:
   methodology: Guided discovery with contrastive analysis
+  recommended_activities:
+  - adaptation_notes: Students rewrite informal paragraphs replacing 'but' with 'however'
+      and correcting punctuation.
+    duration: 15
+    name: Essay Connector Practice
+  - adaptation_notes: Given a sentence with 'however' at the beginning, students rewrite
+      it with 'however' in mid and end positions.
+    duration: 10
+    name: Position Swap
   tips:
   - 'Teach as ''sentences only'' rule: However connects full sentences, not clauses.'
   - 'Practice essay writing: ''Some say X. However, others argue Y.'''
   - 'Show register difference: ''But'' (speaking) vs ''However'' (writing).'
   - 'Use punctuation drills: full stop + However vs semicolon + however.'
-  recommended_activities:
-  - name: Essay Connector Practice
-    duration: 15
-    adaptation_notes: Students rewrite informal paragraphs replacing 'but' with 'however'
-      and correcting punctuation.
-  - name: Position Swap
-    duration: 10
-    adaptation_notes: Given a sentence with 'however' at the beginning, students rewrite
-      it with 'however' in mid and end positions.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 14:
-    Adverbs, §14.1-14.8'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*It was raining, however we went out.*'
-  correction: It was raining; however, we went out. / It was raining. However, we
-    went out.
-  explanation: '''However'' cannot join two clauses with a comma (comma splice). Use
-    a semicolon or start a new sentence.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - German
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.
+  - 'Swan PEU: The semicolon rule -- Conjunctive adverbs (however, therefore,
+    moreover, nevertheless, consequently) need a semicolon or period before them.'
+  - 'Swan PEU: "However" can also mean "no matter how" -- "However hard I tried,
+    I could not open it." (concessive use).'
+title: However (Contrast Adverb)
+use:
+- description: Connect two contrasting sentences (formal writing).
+  examples:
+  - The price is high. However, the quality is excellent.
+  - It's difficult; however, it's worth it.
+  key_point: However connects TWO sentences (unlike 'but' which connects clauses).
+  name: Sentence Contrast
+- description: Means 'no matter how' with adjectives/adverbs.
+  examples:
+  - However hard I try...
+  - However fast he runs...
+  key_point: However + adjective/adverb = 'no matter how much/hard'.
+  name: Emphatic Modifier
+- description: Common in essays and reports.
+  examples:
+  - The data is limited. However, trends are clear.
+  key_point: Avoid in spoken English — use 'but' instead.
+  name: Formal Academic Writing

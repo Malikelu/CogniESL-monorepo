@@ -1,32 +1,54 @@
-grammar_point: reported_commands
-title: Reported Commands, Requests, and Advice
-description: A structure to paraphrase orders, requests, or advice given in the past,
-  using reporting verbs followed by an infinitive.
-level: B1
-meaning:
-  core_meaning: Reports orders, polite requests, or advice given in the past, using
-    an infinitive structure instead of the original imperative.
-  timeline: The reporting verb is in past tense; the infinitive (to + base verb) does
-    not change tense (no backshift).
-  contrast: 'Direct command: ''Sit down!'' (imperative, exclamation mark) Reported
-    command: He told me to sit down (infinitive, no exclamation) ''Tell'' = Order
-    (direct); ''ask'' = Polite request; ''advise'' = Advice ''Say'' is never used
-    for commands – use ''tell'', ''ask'', or ''order''. '
-  ccqs:
-  - question: How do we report a command
-    answer: Use tell or ask or order plus person plus to plus base verb.
-    purpose: Tests whether the learner knows the correct reporting verb + object +
-      to-infinitive structure for commands, and understands that 'say' cannot be used
-      for commands.
-  - question: Can we use a different structure here with the same meaning?
-    answer: No — changing the structure would change the meaning or make the sentence
-      ungrammatical.
-    purpose: Tests whether the learner understands that reported commands is the only
-      appropriate structure for this meaning/context.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      reported commands and explain why they are incorrect.
+citations:
+- claim: 'Core meaning: Reports orders, polite requests, or advice given in the past, using an infinitive structure instead '
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24: Reported Speech and Writing'
+  tier: 4
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24: Reported Speech and Writing'
+  tier: 4
+- claim: 'Common error ''Omitting ''to'' in reported commands: *''He told me sit down.'''' for Portuguese, Spanish, French
+    speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+common_errors:
+- correction: He told me to sit down.
+  error: 'Omitting ''to'' in reported commands: *''He told me sit down.'''
+  explanation: The infinitive marker 'to' is required between the object and the base verb in reported commands. Many L1s
+    that use bare infinitives after verbs (e.g., Portuguese, Spanish) drop 'to' here.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+- correction: He told me to leave.
+  error: 'Using ''say'' instead of ''tell'': *''He said me to leave.'''
+  explanation: Use 'tell' (for orders) or 'ask' (for requests) with the object + to-infinitive pattern. 'Say' cannot take
+    an object + to-infinitive and is used for reported statements, not commands.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+- correction: He told me not to worry.
+  error: 'Wrong word order in negatives: *''He told me to not worry.'''
+  explanation: In reported commands, 'not' comes before 'to' (not to + verb), not split between 'to' and the verb. The standard
+    order is 'told someone not to do something'.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - German
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Word order'
+description: A structure to paraphrase orders, requests, or advice given in the past, using reporting verbs followed by an
+  infinitive.
+dialectal_variation: []
+discourse_notes: []
 example_generator:
   contexts:
   - everyday situations
@@ -34,137 +56,125 @@ example_generator:
   min_examples: 5
 form:
   affirmative:
-    structure: 'Orders: Tell/order + someone + to + base verb Requests: Ask + someone
-      + to + base verb (more polite) Advice: Advise + someone + to + base verb No
-      tense backshift for the infinitive (always base verb) '
     example_generator:
       contexts:
       - education and school
       min_examples: 4
+    structure: 'Orders: Tell/order + someone + to + base verb Requests: Ask + someone + to + base verb (more polite) Advice:
+      Advise + someone + to + base verb No tense backshift for the infinitive (always base verb) '
   negative:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
     structure: Reporting verb + someone + not to + base verb
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
   questions:
-    structure: N/A (Reported commands are statements about an order/request, no interrogative
-      form)
     example_generator:
       contexts:
       - everyday situations
       min_examples: 4
+    structure: N/A (Reported commands are statements about an order/request, no interrogative form)
+grammar_point: reported_commands
+level: B1
+meaning:
+  ccqs:
+  - answer: Use tell or ask or order plus person plus to plus base verb.
+    purpose: Tests whether the learner knows the correct reporting verb + object + to-infinitive structure for commands, and
+      understands that 'say' cannot be used for commands.
+    question: How do we report a command
+  - answer: No — changing the structure would change the meaning or make the sentence ungrammatical.
+    purpose: Tests whether the learner understands that reported commands is the only appropriate structure for this meaning/context.
+    question: Can we use a different structure here with the same meaning?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with reported commands and explain why they are
+      incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: No. 'Say' cannot be used with an object + to-infinitive for commands. The correct form is 'She told me to leave'.
+      'Tell' requires an object (tell someone to do something), while 'say' does not take a direct object before the that-clause
+      (She said that I should leave). 'Say' is for reported statements, not commands.
+    purpose: Tests whether the learner can distinguish between 'say' and 'tell' in the context of reported commands. 'Tell'
+      takes an object + to-infinitive (tell someone to do something), while 'say' cannot be used with this pattern. This is
+      one of the most persistent errors in reported commands because many learners default to 'say' as their all-purpose reporting
+      verb.
+    question: Is 'She said me to leave' correct for reporting a command?
+  contrast: 'Direct command: ''Sit down!'' (imperative, exclamation mark) Reported command: He told me to sit down (infinitive,
+    no exclamation) ''Tell'' = Order (direct); ''ask'' = Polite request; ''advise'' = Advice ''Say'' is never used for commands
+    – use ''tell'', ''ask'', or ''order''. '
+  core_meaning: Reports orders, polite requests, or advice given in the past, using an infinitive structure instead of the
+    original imperative.
+  timeline: The reporting verb is in past tense; the infinitive (to + base verb) does not change tense (no backshift).
+phonetics:
+- example_generator:
+    contexts:
+    - reported speech pronunciation
+  l1_issue: 'Portuguese speakers may omit ''to'' in reported commands. Teach the full structure: ''told me to sit'' NOT ''told
+    me sit.'''
+  note: 'To is weak before verbs: ''told me to sit'' → /təʊld miː tə sɪt/. The to reduces to a schwa.'
+register_notes: []
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Tell/ask/order + object + to + base verb
-  type: grammatical
-  examples:
+- examples:
   - He told me to sit down
   - She asked him to be quiet
   - The teacher ordered them to stop
-- rule: 'Negative: tell/ask/order + object + not to + base verb'
+  rule: Tell/ask/order + object + to + base verb
   type: grammatical
-  examples:
+- examples:
   - He told me not to worry
   - She asked him not to be late
   - The teacher ordered them not to talk
-- rule: 'Other reporting verbs for commands: advise, warn, remind, encourage'
+  rule: 'Negative: tell/ask/order + object + not to + base verb'
   type: grammatical
-  examples:
+- examples:
   - She advised me to study more
   - He warned us not to go there
   - She reminded me to call
-use:
-- name: Authority Orders
-  description: Report commands from people in authority (bosses, teachers, parents).
-  examples:
-  - The teacher told the students to open their books.
-  - The boss ordered the team to finish the project.
-  key_point: Use 'tell' or 'order' for direct commands.
-- name: Polite Requests
-  description: Report polite requests or favors asked in the past.
-  examples:
-  - He asked me to pick up some groceries.
-  - 'She asked if I could wait (wait, no – that''s a question. For requests: ''She
-    asked me to wait''.)'
-  key_point: Use 'ask' for polite, non-authoritative requests.
-- name: Advice Reporting
-  description: Report advice or recommendations given to you.
-  examples:
-  - My doctor advised me to exercise more.
-  - She advised me not to quit my job.
-  key_point: Use 'advise' for professional or personal recommendations.
-phonetics:
-- note: 'To is weak before verbs: ''told me to sit'' → /təʊld miː tə sɪt/. The to
-    reduces to a schwa.'
-  example_generator:
-    contexts:
-    - reported speech pronunciation
-  l1_issue: 'Portuguese speakers may omit ''to'' in reported commands. Teach the full
-    structure: ''told me to sit'' NOT ''told me sit.'''
+  rule: 'Other reporting verbs for commands: advise, warn, remind, encourage'
+  type: grammatical
 teaching:
   methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Teacher gives direct commands. Students report them: ''Sit down!'' → ''He told us to sit down.'' ''Do
+      not talk!'' → ''She told us not to talk.'''
+    duration: 15
+    name: Command Reporting
+  - adaptation_notes: 'Students match reporting verbs to situations: ''Be quiet!'' (order), ''Please help me'' (ask), ''You
+      should study'' (advise).'
+    duration: 10
+    name: Reporting Verbs
   tips:
   - Start with simple 'tell' commands, then add 'ask' and 'order'.
   - Contrast direct imperatives with reported commands side by side.
   - Practice negative commands early to avoid 'to not' errors.
-  recommended_activities:
-  - name: Command Reporting
-    duration: 15
-    adaptation_notes: 'Teacher gives direct commands. Students report them: ''Sit
-      down!'' → ''He told us to sit down.'' ''Do not talk!'' → ''She told us not to
-      talk.'''
-  - name: Reporting Verbs
-    duration: 10
-    adaptation_notes: 'Students match reporting verbs to situations: ''Be quiet!''
-      (order), ''Please help me'' (ask), ''You should study'' (advise).'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: 'Omitting ''to'' in reported commands: *''He told me sit down.'''
-  correction: He told me to sit down.
-  explanation: The infinitive marker 'to' is required between the object and the base
-    verb in reported commands. Many L1s that use bare infinitives after verbs (e.g.,
-    Portuguese, Spanish) drop 'to' here.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: 'Using ''say'' instead of ''tell'': *''He said me to leave.'''
-  correction: He told me to leave.
-  explanation: Use 'tell' (for orders) or 'ask' (for requests) with the object + to-infinitive
-    pattern. 'Say' cannot take an object + to-infinitive and is used for reported
-    statements, not commands.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-- error: 'Wrong word order in negatives: *''He told me to not worry.'''
-  correction: He told me not to worry.
-  explanation: In reported commands, 'not' comes before 'to' (not to + verb), not
-    split between 'to' and the verb. The standard order is 'told someone not to do
-    something'.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - German
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.
+  - 'Swan PEU: Commands in reported speech — ''He told me to leave.'' ''She asked him to wait.'' Infinitive form for imperative
+    reporting. Negative: ''He told me not to go.'''
+teaching_tips:
+- source: 'Celce-Murcia & Larsen-Freeman (1999) The Grammar Book: An ESL/EFL Teacher''s Course, 2nd ed. Heinle & Heinle.'
+  tip: 'INDIRECT IMPERATIVES: Reported commands use to-infinitive: ''Finish the homework by Monday'' → ''He told us to finish
+    the homework.'' NOT *''that we finish'' (except with mandative verbs like demand/insist, which DO take subjunctive that-clauses).
+    Source: Ch.24 p.452.'
+title: Reported Commands, Requests, and Advice
+use:
+- description: Report commands from people in authority (bosses, teachers, parents).
+  examples:
+  - The teacher told the students to open their books.
+  - The boss ordered the team to finish the project.
+  key_point: Use 'tell' or 'order' for direct commands.
+  name: Authority Orders
+- description: Report polite requests or favors asked in the past.
+  examples:
+  - He asked me to pick up some groceries.
+  - 'She asked if I could wait (wait, no – that''s a question. For requests: ''She asked me to wait''.)'
+  key_point: Use 'ask' for polite, non-authoritative requests.
+  name: Polite Requests
+- description: Report advice or recommendations given to you.
+  examples:
+  - My doctor advised me to exercise more.
+  - She advised me not to quit my job.
+  key_point: Use 'advise' for professional or personal recommendations.
+  name: Advice Reporting

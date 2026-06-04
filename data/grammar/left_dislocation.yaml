@@ -1,36 +1,85 @@
+citations:
+- claim: 'Core meaning: Left-dislocation involves taking a noun phrase (the topic) from inside a sentence and placing it at '
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 30: Focus and Emphasis'
+  tier: 4
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 30: Focus and Emphasis'
+  tier: 4
+- claim: Common error '*My brother, he is a doctor.*' for Portuguese, Spanish, Italian speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+common_errors:
+- correction: My brother is a doctor. / As for my brother, he's a doctor.
+  error: '*My brother, he is a doctor.*'
+  explanation: Left dislocation (topic + pronoun) is common in informal speech. In formal English, use standard SVO order
+    or 'as for'.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Italian
+  - Greek
+  reliability: D
+description: A discourse strategy where a noun phrase is moved to the beginning of the sentence and replaced by a pronoun
+  in its original position, used to establish topic or contrast.
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - everyday conversation
+      - spoken narratives
+      - informal writing
+      min_examples: 4
+    structure: Dislocated noun phrase, comma, main clause with pronoun or pro-form referring back to the dislocated element.
+  negative:
+    example_generator:
+      contexts:
+      - expressing dislike
+      - negative opinions
+      min_examples: 3
+    structure: Dislocated noun phrase, comma, negative main clause with pronoun or pro-form.
+  questions:
+    example_generator:
+      contexts:
+      - asking about topics
+      - checking knowledge
+      min_examples: 3
+    structure: Dislocated noun phrase, comma, question with pronoun or pro-form.
 grammar_point: left_dislocation
-title: Left-Dislocation (Topic-Comment Structure)
-description: A discourse strategy where a noun phrase is moved to the beginning of
-  the sentence and replaced by a pronoun in its original position, used to establish
-  topic or contrast.
 level: C1
 meaning:
-  core_meaning: Left-dislocation involves taking a noun phrase (the topic) from inside
-    a sentence and placing it at the front, leaving a pronoun or pro-form in the original
-    position. This highlights the topic and creates a clear topic-comment structure.
-  timeline: Can be used with any tense. The structure is about discourse organisation,
-    not time reference.
-  contrast: 'Standard: I love that new restaurant on the corner. Left-dislocation:
-    That new restaurant on the corner, I love it. Same meaning, different focus. Cleft
-    sentence: It is that new restaurant on the corner that I love. Different emphasis.
-    Right-dislocation: I love it, that new restaurant on the corner. Topic comes after.'
   ccqs:
-  - question: In the sentence That book, I really enjoyed it, what is the topic?
-    answer: That book. It has been moved to the front for emphasis.
-    purpose: Tests whether the learner understands that English can move a topic to
-      the beginning of a sentence and refer back to it with a pronoun. This is common
-      in informal speech.
-  - question: Is left-dislocation grammatically correct in formal writing?
-    answer: It is more common in speech and informal writing. In formal writing, cleft
-      sentences are preferred.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Is left-dislocation grammatically
-      correct in forma...' checks conceptual understanding, not just memorization.
-  - question: What replaces the dislocated noun in the main clause?
-    answer: A pronoun such as it, he, she, they, this, or that.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'What replaces the dislocated
-      noun in the main clau...' checks conceptual understanding, not just memorization.
+  - answer: That book. It has been moved to the front for emphasis.
+    purpose: Tests whether the learner understands that English can move a topic to the beginning of a sentence and refer
+      back to it with a pronoun. This is common in informal speech.
+    question: In the sentence That book, I really enjoyed it, what is the topic?
+  - answer: It is more common in speech and informal writing. In formal writing, cleft sentences are preferred.
+    purpose: Tests whether the learner can identify and apply the correct form/meaning of this grammar point in context. The
+      question 'Is left-dislocation grammatically correct in forma...' checks conceptual understanding, not just memorization.
+    question: Is left-dislocation grammatically correct in formal writing?
+  - answer: A pronoun such as it, he, she, they, this, or that.
+    purpose: Tests whether the learner can identify and apply the correct form/meaning of this grammar point in context. The
+      question 'What replaces the dislocated noun in the main clau...' checks conceptual understanding, not just memorization.
+    question: What replaces the dislocated noun in the main clause?
+  - answer: Left-dislocation leaves a pronoun in the main clause (That book, I enjoyed it). Topicalisation moves the element
+      without leaving a pronoun (That book I enjoyed). Both front the topic, but only left-dislocation has a resumptive pronoun.
+    purpose: Tests whether the learner can distinguish left-dislocation from the related structure of topicalisation. The
+      key diagnostic is the presence or absence of a pronoun referring back to the fronted element, which is a crucial structural
+      difference at the C1 discourse level.
+    question: Can you explain the difference between left-dislocation and topicalisation by giving an example of when to use
+      each?
+  contrast: 'Standard: I love that new restaurant on the corner. Left-dislocation: That new restaurant on the corner, I love
+    it. Same meaning, different focus. Cleft sentence: It is that new restaurant on the corner that I love. Different emphasis.
+    Right-dislocation: I love it, that new restaurant on the corner. Topic comes after.'
+  core_meaning: Left-dislocation involves taking a noun phrase (the topic) from inside a sentence and placing it at the front,
+    leaving a pronoun or pro-form in the original position. This highlights the topic and creates a clear topic-comment structure.
   example_generator:
     contexts:
     - casual conversation
@@ -42,151 +91,102 @@ meaning:
     - It is a natural feature of topic-prominent discourse
     - Learners may not encounter it in textbooks but will hear it constantly
     min_examples: 5
-form:
-  affirmative:
-    structure: Dislocated noun phrase, comma, main clause with pronoun or pro-form
-      referring back to the dislocated element.
-    example_generator:
-      contexts:
-      - everyday conversation
-      - spoken narratives
-      - informal writing
-      min_examples: 4
-  negative:
-    structure: Dislocated noun phrase, comma, negative main clause with pronoun or
-      pro-form.
-    example_generator:
-      contexts:
-      - expressing dislike
-      - negative opinions
-      min_examples: 3
-  questions:
-    structure: Dislocated noun phrase, comma, question with pronoun or pro-form.
-    example_generator:
-      contexts:
-      - asking about topics
-      - checking knowledge
-      min_examples: 3
+  timeline: Can be used with any tense. The structure is about discourse organisation, not time reference.
+phonetics:
+- example_generator:
+    contexts:
+    - spoken English
+  l1_issue: Learners from topic-prominent languages such as Japanese, Korean, or Turkish may find this structure natural but
+    overuse it in formal writing
+  note: The dislocated element is spoken with a distinct intonation contour, followed by a pause before the main clause
+- example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Learners may stress the pronoun, making the sentence sound redundant or unnatural
+  note: The pronoun referring back to the dislocated element is typically unstressed
+register_notes:
+- note: 'Biber et al. (2021) — Left dislocation (topic-comment): overwhelmingly conversational; rare in written registers.
+    Feature of online spoken production. Ch. 14'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 14
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: The dislocated element is always followed by a comma in writing or a pause
-    in speech
-  type: punctuation
-  examples:
+- examples:
   - Your brother, I saw him at the shop.
   - That film we watched last night, it was brilliant.
-- rule: The pronoun in the main clause must agree with the dislocated noun in number
-    and gender
-  type: grammatical
-  examples:
+  rule: The dislocated element is always followed by a comma in writing or a pause in speech
+  type: punctuation
+- examples:
   - Those students, they always arrive late.
   - My sister, she works in London.
-- rule: Left-dislocation can dislocate objects, subjects, and prepositional phrases
+  rule: The pronoun in the main clause must agree with the dislocated noun in number and gender
   type: grammatical
-  examples:
+- examples:
   - The money, I put it in the bank.
   - John, he never calls.
   - In London, I lived there for ten years.
-- rule: The dislocated element can be modified by relative clauses or other structures
+  rule: Left-dislocation can dislocate objects, subjects, and prepositional phrases
   type: grammatical
-  examples:
+- examples:
   - The man who lives next door, he is a doctor.
   - That book you recommended, I finished it yesterday.
-- rule: Left-dislocation is distinct from topicalisation, which does not leave a pronoun
+  rule: The dislocated element can be modified by relative clauses or other structures
   type: grammatical
-  examples:
+- examples:
   - That book I really enjoyed. (topicalisation, no pronoun)
   - That book, I really enjoyed it. (left-dislocation, with pronoun)
-use:
-- name: Establishing topic in conversation
-  description: Introducing or shifting to a new topic in spoken discourse
-  examples:
-  - That new teacher, she is really strict.
-  - Your cousin from Canada, is he still visiting?
-  key_point: Helps listeners identify what the sentence is about before processing
-    the comment.
-- name: Expressing contrast
-  description: Highlighting one item against another
-  examples:
-  - I like Sarah, but her brother, I cannot stand him.
-  - The food was good. The service, I was not impressed by it.
-  key_point: The dislocation creates a natural contrastive focus.
-- name: Managing information flow
-  description: Presenting known information first, then adding new information
-  examples:
-  - That meeting on Friday, I have already prepared for it.
-  - The report you asked about, I finished it this morning.
-  key_point: Follows the given-before-new information principle.
-- name: Emphatic or emotional expression
-  description: Adding emotional weight to a statement
-  examples:
-  - That song, it always makes me cry.
-  - My grandmother, she was the strongest person I ever knew.
-  key_point: The separation of topic from comment creates dramatic emphasis.
-phonetics:
-- note: The dislocated element is spoken with a distinct intonation contour, followed
-    by a pause before the main clause
-  example_generator:
-    contexts:
-    - spoken English
-  l1_issue: Learners from topic-prominent languages such as Japanese, Korean, or Turkish
-    may find this structure natural but overuse it in formal writing
-- note: The pronoun referring back to the dislocated element is typically unstressed
-  example_generator:
-    contexts:
-    - connected speech
-  l1_issue: Learners may stress the pronoun, making the sentence sound redundant or
-    unnatural
+  rule: Left-dislocation is distinct from topicalisation, which does not leave a pronoun
+  type: grammatical
 teaching:
   methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Play audio clips from films or interviews. Students identify left-dislocated structures and explain
+      their function.
+    duration: 10
+    name: Spot the dislocation
+  - adaptation_notes: Students rewrite standard sentences using left-dislocation. Then rewrite the same sentences using cleft
+      structures. Compare the effects.
+    duration: 15
+    name: Topic-comment transformation
+  - adaptation_notes: Students practise natural conversation using left-dislocation to introduce and contrast topics. Pair
+      work with feedback.
+    duration: 20
+    name: Conversation practice
   tips:
   - Use authentic spoken examples from films, interviews, and conversations
   - Ask students to identify the topic and the comment in left-dislocated sentences
   - Contrast left-dislocation with standard word order and with cleft sentences
-  - 'Discuss register: when is it appropriate in conversation vs inappropriate in
-    formal essays'
-  recommended_activities:
-  - name: Spot the dislocation
-    duration: 10
-    adaptation_notes: Play audio clips from films or interviews. Students identify
-      left-dislocated structures and explain their function.
-  - name: Topic-comment transformation
-    duration: 15
-    adaptation_notes: Students rewrite standard sentences using left-dislocation.
-      Then rewrite the same sentences using cleft structures. Compare the effects.
-  - name: Conversation practice
-    duration: 20
-    adaptation_notes: Students practise natural conversation using left-dislocation
-      to introduce and contrast topics. Pair work with feedback.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*My brother, he is a doctor.*'
-  correction: My brother is a doctor. / As for my brother, he's a doctor.
-  explanation: Left dislocation (topic + pronoun) is common in informal speech. In
-    formal English, use standard SVO order or 'as for'.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Italian
-  - Greek
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.
+  - 'Discuss register: when is it appropriate in conversation vs inappropriate in formal essays'
+  - 'Swan PEU: Left dislocation — ''My brother, he''s a doctor.'' = theme + comment structure. Common in informal spoken English.
+    The pronoun (''he'') is required. NOT acceptable in formal writing but natural in speech.'
+title: Left-Dislocation (Topic-Comment Structure)
+use:
+- description: Introducing or shifting to a new topic in spoken discourse
+  examples:
+  - That new teacher, she is really strict.
+  - Your cousin from Canada, is he still visiting?
+  key_point: Helps listeners identify what the sentence is about before processing the comment.
+  name: Establishing topic in conversation
+- description: Highlighting one item against another
+  examples:
+  - I like Sarah, but her brother, I cannot stand him.
+  - The food was good. The service, I was not impressed by it.
+  key_point: The dislocation creates a natural contrastive focus.
+  name: Expressing contrast
+- description: Presenting known information first, then adding new information
+  examples:
+  - That meeting on Friday, I have already prepared for it.
+  - The report you asked about, I finished it this morning.
+  key_point: Follows the given-before-new information principle.
+  name: Managing information flow
+- description: Adding emotional weight to a statement
+  examples:
+  - That song, it always makes me cry.
+  - My grandmother, she was the strongest person I ever knew.
+  key_point: The separation of topic from comment creates dramatic emphasis.
+  name: Emphatic or emotional expression

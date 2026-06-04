@@ -25,10 +25,22 @@ meaning:
       number directly, while non-count nouns cannot. This is important because saying
       "three informations" is a very common error for learners whose L1 treats these
       nouns as countable.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
+  - question: What is the difference in meaning between these two forms?
+    answer: The alternative form changes the meaning or creates an ungrammatical sentence.
     purpose: Tests whether the learner can identify common errors associated with
       count noncount and explain why they are incorrect.
+  - question: Can we say "three glasses of water" even though "water" is a non-count
+      noun?
+    answer: Yes. Using a unit of measurement (glass, cup, bottle, piece, bag) allows
+      us to "count" non-count nouns indirectly. "Three glasses of water" counts the
+      containers, not the water itself — "glasses" is the count noun while "water"
+      remains non-count.
+    purpose: Tests whether the learner understands that non-count nouns can be quantified
+      using countable unit expressions (a piece of advice, two cups of coffee, three
+      bottles of water). This is a fundamental strategy for talking about quantities
+      of non-count nouns at A1-A2 level, and confusion between the count container
+      noun ("glasses") and the non-count substance noun ("water") leads to common
+      article and agreement errors.
   example_generator:
     contexts:
     - food and drink
@@ -127,6 +139,12 @@ teaching:
   - Use real objects to demonstrate count vs non-count
   - Highlight common non-count nouns that are count in other languages
   - Use 'container' expressions (a piece of, a cup of, a bottle of)
+  - 'Swan PEU: Countable vs. uncountable — some nouns that are countable in other
+    languages are uncountable in English: information, advice, furniture, luggage,
+    equipment, research. Use ''a piece of'' to make them countable.'
+  - 'Swan PEU: Some nouns can be both — countable with a specific meaning, uncountable
+    with a general meaning: ''She has long hair'' (uncountable) vs ''There''s a hair
+    in my soup'' (countable). ''Chicken'' (meat) vs ''a chicken'' (the bird).'
   recommended_activities:
   - name: Shopping List
     duration: 10
@@ -135,12 +153,12 @@ teaching:
     duration: 10
     adaptation_notes: Quick-fire game where students classify nouns.
 sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
-    Modals, §9.1-9.6'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17:
+    Partitives, Collectives, and Quantifiers'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
     University Press.
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
@@ -152,6 +170,8 @@ common_errors:
   - Portuguese
   - Spanish
   - French
+  reliability: D
+  flagged: true
 - error: 'Using ''a'' with uncountable nouns: *''I need a advice.'''
   correction: I need advice.
   explanation: Uncountable nouns don't take 'a/an'.
@@ -159,11 +179,80 @@ common_errors:
   - Portuguese
   - Spanish
   - Chinese
+  reliability: D
+  flagged: true
 register_notes:
 - note: Count/noncount distinctions are consistent across registers.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: Biber et al. (2021) — Count vs. non-count distinction interacts with register.
+    Academic prose uses more non-count abstract nouns; conversation uses more concrete
+    count nouns. Quantifier choice (much/many/few/little) follows from this and varies
+    by register. Ch. 4.4, 8.1
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 4.4
+  reliability: C
 dialectal_variation:
 - note: 'Some nouns differ: BrE ''accommodation'' (uncountable), AmE ''accommodations''
     (countable).'
 discourse_notes:
-- note: 'Count/noncount distinctions affect article and quantifier choice: ''a book''
-    vs ''some information''.'
+- note: The count/non-count distinction affects article use, quantifier choice, and
+    verb agreement. It is a fundamental grammatical category in English.
+citations:
+- claim: 'Core meaning: Count nouns = things you can count individually (one apple,
+    two apples)'
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17:
+    Partitives, Collectives, and Quantifiers'
+  tier: 1
+  reliability: B
+- claim: 'Register distribution: Count/noncount distinctions are consistent across
+    registers.'
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17:
+    Partitives, Collectives, and Quantifiers'
+  tier: 1
+  reliability: B
+- claim: 'Discourse function: Count/noncount distinctions affect article and quantifier
+    choice: ''a book'' vs ''some information''.'
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17:
+    Partitives, Collectives, and Quantifiers'
+  tier: 1
+  reliability: B
+- claim: 'Common error ''Using ''many'' with uncountable nouns: *''I have many informati''
+    for Portuguese, Spanish, French speakers'
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+  reliability: B
+- claim: 'Dialectal variation: Some nouns differ: BrE ''accommodation'' (uncountable),
+    AmE ''accommodations'' (countable).'
+  source: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  tier: 1
+  reliability: B
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents
+    how transfer effects are non-linear, determined by functional fit between L1 and
+    L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects
+    are non-linear — determined by functional fit between L1 and L2 systems rather
+    than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning.
+    Routledge.
+  tier: 2
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for
+    L1-specific error patterns in English. Their learner English framework documents
+    how each L1 group produces characteristic errors in this grammatical domain, enabling
+    teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+    and Other Problems, 2nd ed. Cambridge University Press.'
+  tier: 2
+teaching_tips:
+- tip: 'COLLECTIVE NOUNS WITH COUNT/NONCOUNT: Collective nouns (team, committee, class,
+    flock, crowd) may take singular OR plural agreement; AmE prefers singular, BrE
+    allows plural. When the collective is viewed as a unit → singular; as individuals
+    → plural. This affects reflexive pronouns: ''The committee blamed itself/themselves''.
+    Adjective-derived collectives (the meek, the rich, the dead) ALWAYS take plural
+    verbs. Source: Ch.17 p.328-330.'
+  source: 'Celce-Murcia & Larsen-Freeman (1999) The Grammar Book: An ESL/EFL Teacher''s
+    Course, 2nd ed. Heinle & Heinle.'

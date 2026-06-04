@@ -1,83 +1,189 @@
-grammar_point: narrative_tenses
-title: Narrative Tenses (Past Simple, Past Continuous, Past Perfect)
+citations:
+- claim: 'Core meaning: Past Simple = completed past action; Past Continuous = background/past
+    action in progress; Past Perf'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 4
+- claim: 'Discourse function: In conversation, this structure is used for everyday
+    communication and is among the most frequent patterns'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 4
+- claim: Common error '*I was walking down the street when I have seen a friend.*'
+    for Portuguese, Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+common_errors:
+- correction: I was walking down the street when I saw a friend.
+  error: '*I was walking down the street when I have seen a friend.*'
+  explanation: In narratives, use past continuous for background actions and past
+    simple for completed actions. Do not mix present perfect with past continuous
+    in narrative.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
 description: Tenses used to tell stories in the past, showing sequence of events,
   background, and completed actions before a past time.
+dialectal_variation: []
+discourse_notes:
+- note: 'GB3 Ch. 7: The narrative tense system in English — past simple for main events,
+    past continuous for background, past perfect for earlier events — is a discourse-level
+    phenomenon. Tense choice in narrative is not just about time reference but about
+    managing the listener/reader''s attention and creating temporal depth.'
+- note: 'Biber et al. (2021): Fiction writing makes the most varied use of past tenses,
+    including the historic present for vividness ("So he walks up to me and says...").
+    Conversation uses past tense for past narrative. Academic prose rarely uses past
+    tense for narrative purposes.'
+form:
+  affirmative:
+    example_generator:
+    - I walked. / I was walking. / I had walked.
+    min_examples: 4
+    structure: 'Past Simple: Subject + V2/ed / Past Continuous: Subject + was/were
+      + V-ing / Past Perfect: Subject + had + V3'
+  negative:
+    example_generator:
+    - I didn't walk. / I wasn't walking. / I hadn't walked.
+    min_examples: 4
+    structure: 'Past Simple: Subject + didn''t + V1 / Past Continuous: Subject + wasn''t/weren''t
+      + V-ing / Past Perfect: Subject + hadn''t + V3'
+  questions:
+    example_generator:
+    - Did you walk? / Were you walking? / Had you walked?
+    min_examples: 4
+    structure: 'Past Simple: Did + subject + V1? / Past Continuous: Was/were + subject
+      + V-ing? / Past Perfect: Had + subject + V3?'
+grammar_point: narrative_tenses
 level: B1
 meaning:
-  core_meaning: Past Simple = completed past action; Past Continuous = background/past
-    action in progress; Past Perfect = action completed before another past action.
-  timeline: 'Past timeline: Past Perfect (earlier) → Past Simple (main event) → Past
-    Continuous (background during main event).'
+  ccqs:
+  - answer: Past simple is the main narrative tense.
+    purpose: Tests whether the learner understands a key concept of narrative_tenses.
+      This is fundamental for correct use of this grammar point.
+    question: Which tense moves a story forward?
+  - answer: Past continuous describes background actions.
+    purpose: Tests whether the learner understands a key concept of narrative_tenses.
+      This is fundamental for correct use of this grammar point.
+    question: Which tense sets the scene in a story?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with
+      narrative tenses and explain why they are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: Past perfect (had eaten) shows that the eating was completed before the
+      arrival. If we said when I arrived, they ate, it would mean the eating happened
+      after or at the moment of arrival. Past perfect is essential for showing that
+      one past event was completed before another past event in narrative sequencing.
+    purpose: Tests whether the learner understands the functional reason for choosing
+      past perfect over past simple in narrative. The past perfect is not just a more
+      complex tense -- it specifically signals that an action was completed before
+      the main past timeline, which is crucial for accurate storytelling and avoiding
+      ambiguity about event order.
+    question: In the sentence when I arrived, they had already eaten, why is past
+      perfect used instead of past simple for the eating?
   contrast: '''Past Simple'' = ''I ate breakfast (completed).'' ''Past Continuous''
     = ''I was eating when the phone rang (in progress during another action).'' ''Past
     Perfect'' = ''I had eaten before the phone rang (completed before another past
     action).'''
-  ccqs:
-  - question: Which tense moves a story forward?
-    answer: Past simple is the main narrative tense.
-    purpose: Tests whether the learner understands a key concept of narrative_tenses.
-      This is fundamental for correct use of this grammar point.
-  - question: Which tense sets the scene in a story?
-    answer: Past continuous describes background actions.
-    purpose: Tests whether the learner understands a key concept of narrative_tenses.
-      This is fundamental for correct use of this grammar point.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      narrative tenses and explain why they are incorrect.
+  core_meaning: Past Simple = completed past action; Past Continuous = background/past
+    action in progress; Past Perfect = action completed before another past action.
   example_generator:
     contexts:
     - everyday situations
     cultural_notes:
     - These three tenses work together in most English narratives
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Past Simple: Subject + V2/ed / Past Continuous: Subject + was/were
-      + V-ing / Past Perfect: Subject + had + V3'
-    example_generator:
-    - I walked. / I was walking. / I had walked.
-    min_examples: 4
-  negative:
-    structure: 'Past Simple: Subject + didn''t + V1 / Past Continuous: Subject + wasn''t/weren''t
-      + V-ing / Past Perfect: Subject + hadn''t + V3'
-    example_generator:
-    - I didn't walk. / I wasn't walking. / I hadn't walked.
-    min_examples: 4
-  questions:
-    structure: 'Past Simple: Did + subject + V1? / Past Continuous: Was/were + subject
-      + V-ing? / Past Perfect: Had + subject + V3?'
-    example_generator:
-    - Did you walk? / Were you walking? / Had you walked?
-    min_examples: 4
+  timeline: 'Past timeline: Past Perfect (earlier) → Past Simple (main event) → Past
+    Continuous (background during main event).'
+phonetics:
+- example_generator:
+  - narrative stress patterns
+  l1_issue: 'Learners may use the same tense for all narrative events. Teach the distinction:
+    past simple for main events, past continuous for background.'
+  note: 'In narrative, the past simple verbs carry the main stress: ''She OPENED the
+    door. She SAW a stranger.'' Background information in past continuous is less
+    stressed.'
+register_notes:
+- note: 'Biber et al. (2021) — Narrative tense system: fiction and conversational
+    storytelling use different tense patterns. Fiction uses past tense with flashback/flashforward;
+    conversation uses past tense with present for vividness. Ch. 6.2.2'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 6.2.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7:
+    The Tense-Aspect System'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Past simple is the main narrative tense — it moves the story forward
-  type: discourse
-  examples:
+- examples:
   - She opened the door and saw a stranger
   - He picked up the phone and called the police
-- rule: Past continuous sets the scene — it describes what was happening as background
+  rule: Past simple is the main narrative tense — it moves the story forward
   type: discourse
-  examples:
+- examples:
   - The sun was shining and birds were singing
   - People were walking in the street
-- rule: Past perfect provides background information — it describes events that happened
-    before the main story
+  rule: Past continuous sets the scene — it describes what was happening as background
   type: discourse
-  examples:
+- examples:
   - She had never seen him before
   - He had already left when she arrived
-- rule: 'Time clauses with ''when'': Past Perfect emphasizes completion before the
-    past moment; Past Simple presents actions as a sequence'
+  rule: Past perfect provides background information — it describes events that happened
+    before the main story
   type: discourse
-  examples:
+- examples:
   - '''When I arrived, they had eaten'' (eating was completed before arrival)'
   - '''When I arrived, they ate'' (eating happened after arrival)'
-- rule: Past continuous + past simple describes interrupted actions
+  rule: 'Time clauses with ''when'': Past Perfect emphasizes completion before the
+    past moment; Past Simple presents actions as a sequence'
   type: discourse
-  examples:
+- examples:
   - I was cooking when the phone rang
   - She was walking home when it started to rain
+  rule: Past continuous + past simple describes interrupted actions
+  type: discourse
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students build a story: one starts with past continuous (background),
+      another continues with past simple (event), another adds past perfect (background).'
+    duration: 15
+    name: Story Building
+  - adaptation_notes: Show a short story. Students identify which tense is used for
+      each sentence and why.
+    duration: 10
+    name: Tense Identification
+  tips:
+  - 'GB3 Ch. 7: Conversational historical present — simple present used for past events
+    in narration to create vividness: ''So he stands up in the boat and waves his
+    arms to catch our attention.'' This is NOT a tense error — it''s a deliberate
+    rhetorical choice. Source: Celce-Murcia & Larsen-Freeman (2015) GB3 3rd ed. Ch.
+    7 §7.2 (use h).'
+  - 'Use timeline drawings to show sequence: Past Perfect (left) → Past Simple (middle)
+    → Past Continuous (background).'
+  - Practice with personal stories using all three tenses.
+  - 'Drill time clauses: ''When I arrived, they had eaten'' (Past Perfect) vs ''When
+    I arrived, they ate'' (Past Simple).'
+  - 'Swan PEU: Narrative tense choices — past simple (main events), past continuous
+    (background), past perfect (flashback): ''I was walking home when I saw an old
+    friend. He had just come back from abroad.'''
+  - 'Swan PEU: ''Would'' and ''used to'' for past habitual actions — ''We would spend
+    summers at the beach.'' Contrast with narrative ''would'' for future-in-the-past.'
+title: Narrative Tenses (Past Simple, Past Continuous, Past Perfect)
 use:
 - context: Sequence of Events (Past Simple)
   examples:
@@ -88,62 +194,3 @@ use:
 - context: Earlier Completed Action (Past Perfect)
   examples:
   - By the time I arrived, the movie had started.
-phonetics:
-- note: 'In narrative, the past simple verbs carry the main stress: ''She OPENED the
-    door. She SAW a stranger.'' Background information in past continuous is less
-    stressed.'
-  example_generator:
-  - narrative stress patterns
-  l1_issue: 'Learners may use the same tense for all narrative events. Teach the distinction:
-    past simple for main events, past continuous for background.'
-teaching:
-  methodology: PPP
-  tips:
-  - 'Use timeline drawings to show sequence: Past Perfect (left) → Past Simple (middle)
-    → Past Continuous (background).'
-  - Practice with personal stories using all three tenses.
-  - 'Drill time clauses: ''When I arrived, they had eaten'' (Past Perfect) vs ''When
-    I arrived, they ate'' (Past Simple).'
-  recommended_activities:
-  - name: Story Building
-    duration: 15
-    adaptation_notes: 'Students build a story: one starts with past continuous (background),
-      another continues with past simple (event), another adds past perfect (background).'
-  - name: Tense Identification
-    duration: 10
-    adaptation_notes: Show a short story. Students identify which tense is used for
-      each sentence and why.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I was walking down the street when I have seen a friend.*'
-  correction: I was walking down the street when I saw a friend.
-  explanation: In narratives, use past continuous for background actions and past
-    simple for completed actions. Do not mix present perfect with past continuous
-    in narrative.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used for everyday communication and is
-    among the most frequent patterns in spoken English.
-- note: In academic writing, this structure appears in discussions of established
-    knowledge, methodology, and findings.
-- note: In news reports, this structure is used for reporting events and attributing
-    statements.

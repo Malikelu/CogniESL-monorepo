@@ -20,10 +20,17 @@ meaning:
       ungrammatical.
     purpose: Tests whether the learner understands that shall is the only appropriate
       structure for this meaning/context.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
+  - question: What is the difference in meaning between these two forms?
+    answer: The alternative form changes the meaning or creates an ungrammatical sentence.
     purpose: Tests whether the learner can identify common errors associated with
       shall and explain why they are incorrect.
+  - question: Which is more natural in modern English? 'Shall we go now?' or 'Do you
+      want to go now?'
+    answer: '''Shall we go now?'' is correct but formal/old-fashioned. In modern English
+      (especially AmE), ''Do you want to go now?'' or ''Should we go now?'' is more
+      common.'
+    purpose: Tests whether the learner understands the declining use of 'shall' vs
+      'will' in modern English (Swan PEU 2016, entries 139-140).
 example_generator:
   contexts:
   - everyday situations
@@ -108,6 +115,14 @@ teaching:
   - 'Week 3: Contrast with will/going to; highlight regional (British vs American)
     differences.'
   - 'Use legal text examples: Students rewrite ''must'' as ''shall'' in mock contracts.'
+  - 'Swan PEU: ''Shall'' — for offers and suggestions with I/we: ''Shall I open the
+    window?'' ''Shall we go?'' (suggestions). In BrE, ''shall'' marks future formally
+    (''We shall overcome''). In legal documents, ''shall'' = obligation.'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 3: CGEL (Ch.3)
+    notes that ''shall'' is declining in modern English, especially in AmE. In BrE,
+    ''shall'' survives in first-person questions for suggestions (''Shall we go?'')
+    and in formal/legal language (''The tenant shall pay rent''). For most learners,
+    ''will'' is acceptable in all persons. CGEL treats ''shall'' as a marginal modal.'
   recommended_activities:
   - name: Shall I
     duration: 10
@@ -118,12 +133,12 @@ teaching:
     adaptation_notes: 'Students choose the correct form for different situations:
       suggestions (shall), promises (will), formal future (shall -- BrE).'
 sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
-    Modals, §9.1-9.6'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8:
+    Modal Auxiliaries and Related Phrasal Forms'
   secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
     University Press.
   teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
     University of Michigan Press.
@@ -138,6 +153,8 @@ common_errors:
   - Portuguese
   - Spanish
   - Chinese
+  reliability: D
+  flagged: true
 - error: 'Using ''shall'' with second and third persons for predictions: *''You shall
     be fine'''
   correction: You will be fine.
@@ -148,6 +165,8 @@ common_errors:
   - Portuguese
   - Spanish
   - French
+  reliability: D
+  flagged: true
 - error: 'Confusing ''shall'' with ''should'': *''I shall study harder'' (when giving
     advice to oneself)'
   correction: I should study harder.
@@ -158,9 +177,19 @@ common_errors:
   - Portuguese
   - Spanish
   - German
+  reliability: D
+  flagged: true
 register_notes:
 - note: '''Shall'' is formal and primarily British. In American English it is limited
     to legal documents and formal questions (''Shall we?'').'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: Biber et al. (1999) — 'Shall' has become rare in modern English across all
+    registers; mostly restricted to formal/legal BrE contexts. Ch. 6.6.2
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 6.6.2
+  reliability: C
 dialectal_variation:
 - note: Primarily British English. In American English, 'will' has almost entirely
     replaced 'shall' for ordinary future reference. American legal/formal writing
@@ -168,3 +197,41 @@ dialectal_variation:
 discourse_notes:
 - note: In modern English, 'shall' appears mainly in formal questions for suggestions
     ('Shall we go?'), legal/formal documents, and British English formal prose.
+citations:
+- claim: 'Core meaning: Expresses formal future actions, polite offers, suggestions,
+    or mandatory obligations (legal/formal)'
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal
+    Auxiliaries and Related Phrasal Forms'
+  tier: 1
+  reliability: B
+- claim: 'Register distribution: ''Shall'' is formal and primarily British. In American
+    English it is limited to legal documents and formal questions (''Shall we?'').'
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal
+    Auxiliaries and Related Phrasal Forms'
+  tier: 1
+  reliability: B
+- claim: 'Discourse function: In modern English, ''shall'' appears mainly in formal
+    questions for suggestions (''Shall we go?''), legal documents, and formal writing.'
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal
+    Auxiliaries and Related Phrasal Forms'
+  tier: 1
+  reliability: B
+- claim: Common error 'Using 'shall' in American English contexts where 'will' is
+    e' for Portuguese, Spanish, Chinese speakers
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+  reliability: B
+- claim: 'Dialectal variation: Primarily British English. In American English, ''will''
+    has almost entirely replaced ''shall'' for ordi'
+  source: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  tier: 1
+  reliability: B
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for
+    L1-specific error patterns in English. Their learner English framework documents
+    how each L1 group produces characteristic errors in this grammatical domain, enabling
+    teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+    and Other Problems, 2nd ed. Cambridge University Press.'
+  tier: 2

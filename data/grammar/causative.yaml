@@ -1,30 +1,139 @@
-grammar_point: causative
-title: Causative Structures
+citations:
+- claim: 'Core meaning: Causative structures show that someone causes something to
+    happen or causes someone to do something'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 18:
+    Passive Voice (causative constructions)'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday
+    communication.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 18:
+    Passive Voice (causative constructions)'
+  tier: 1
+- claim: Common error '*I did my hair cut yesterday.* (arranged for someone)' for
+    Portuguese, Spanish speakers
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 18: Causative
+    structures'
+  tier: 1
+- claim: 'Causative structures function in discourse to express different types of
+    causation: arranging services (have/get something done), forcing (make someone
+    do), and allowing (let someone do).'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 18:
+    Passive Voice (causative constructions)'
+  tier: 2
+common_errors:
+- correction: I had my hair cut yesterday.
+  error: '*I did my hair cut yesterday.* (arranged for someone)'
+  explanation: The causative uses 'have/get + object + past participle' to express
+    arranging a service. Using 'do' changes the meaning to performing the action yourself.
+    'Do' is not used as a causative verb for services.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: D
+- correction: I made him apologize.
+  error: '*I made him to apologize.*'
+  explanation: After 'make' (causative meaning 'force'), use the bare infinitive (without
+    'to'). 'Make + person + base verb' is a fixed structure. Adding 'to' before the
+    verb is influenced by other causative patterns like 'ask him to apologize'.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Chinese
+  reliability: D
+- correction: She let me borrow her car.
+  error: '*She let me to borrow her car.*'
+  explanation: After 'let', use the bare infinitive (without 'to'). 'Let + person
+    + base verb' is the fixed pattern. Adding 'to' occurs because most other causatives
+    ('ask', 'tell', 'want') do take 'to'.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+- correction: I had my car repaired by the mechanic.
+  error: '*I had repaired my car by the mechanic.*'
+  explanation: In causative 'have', the object (what is done) comes immediately after
+    'have', not at the end. 'Had my car repaired' (not 'had repaired my car'). The
+    past participle modifies the object.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
 description: 'Structures showing that someone causes something to happen: have something
   done, get something done, make someone do something.'
+dialectal_variation: []
+discourse_notes:
+- 'Causative structures express different types of causation: arranging a service
+  (have/get something done), forcing (make someone do), allowing (let someone do),
+  and experiencing an event (had my wallet stolen). Source: Celce-Murcia & Larsen-Freeman
+  (2015) GB3 Ch. 18.'
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - services
+      - obligations
+      - permissions
+      min_examples: 4
+    structure: 'Have/get + object + past participle: I had my hair cut. / Make/let/have
+      + person + base verb: She made him apologize.'
+  negative:
+    example_generator:
+      contexts:
+      - negative causatives
+      min_examples: 3
+    structure: 'Same patterns with negation: I did not have my hair cut. / She did
+      not make him apologize.'
+  questions:
+    example_generator:
+      contexts:
+      - question formation
+      min_examples: 3
+    structure: 'Did + subject + have + object + past participle?: Did you have your
+      hair cut?'
+grammar_point: causative
 level: B2
 meaning:
-  core_meaning: Causative structures show that someone causes something to happen
-    or causes someone to do something. Have/get something done = arrange for someone
-    else to do it. Make/let/have someone do = cause/allow someone to do it.
-  timeline: Depends on the tense used.
-  contrast: Causative = I had my hair cut. (someone else cut it) vs Active = I cut
-    my hair. (I did it myself)
   ccqs:
-  - question: Did the subject do the action themselves?
-    answer: No, someone else did it (causative).
+  - answer: No, someone else did it (causative).
     purpose: Tests whether the learner understands the causative structure (have/get
       something done) for arranging services, and the difference between 'have' (neutral/formal)
       and 'get' (informal).
-  - question: Is this about arranging or forcing?
-    answer: Arrange = have/get, Force/Allow = make/let/have.
-    purpose: Tests whether the learner understands that '-ed' adjectives describe
-      how someone feels (experiencer) while '-ing' adjectives describe what causes
-      the feeling (stimulus).
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      causative and explain why they are incorrect.
+    question: Did the subject do the action themselves?
+  - answer: Arrange = have/get, Force/Allow = make/let/have.
+    purpose: Tests whether the learner can distinguish arranging a service (have/get
+      something done) from forcing or allowing someone to do something (make/let/have
+      someone do something).
+    question: Is this about arranging or forcing?
+  - answer: No. This is the "experience" use of causative "have" — something unpleasant
+      happened to the subject without their arrangement or control.
+    purpose: Tests whether the learner understands the "experience/happen to" use
+      of causative "have/get" (I had my wallet stolen, She had her leg broken), which
+      describes things that happen to someone without their control. This is a distinct
+      meaning from the "arrange a service" use (I had my hair cut), and confusing
+      them leads to absurd interpretations in context.
+    question: What is the difference in meaning between these two forms?
+  - answer: '''I had my hair cut.'' Causative ''have'' uses: have + object + past
+      participle (no ''to'').'
+    purpose: 'Tests whether the learner knows the causative structure: have + object
+      + past participle (Swan PEU 2016, entry 105.10).'
+    question: Which is correct? *'I had my hair to cut' or 'I had my hair cut'?
+  contrast: Causative = I had my hair cut. (someone else cut it) vs Active = I cut
+    my hair. (I did it myself)
+  core_meaning: Causative structures show that someone causes something to happen
+    or causes someone to do something. Have/get something done = arrange for someone
+    else to do it. Make/let/have someone do = cause/allow someone to do it.
   example_generator:
     contexts:
     - services and arrangements
@@ -35,58 +144,82 @@ meaning:
     - Causative structures are used very frequently in English
     - Some L1 speakers avoid them, making speech sound unnatural
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Have/get + object + past participle: I had my hair cut. / Make/let/have
-      + person + base verb: She made him apologize.'
-    example_generator:
-      contexts:
-      - services
-      - obligations
-      - permissions
-      min_examples: 4
-  negative:
-    structure: 'Same patterns with negation: I did not have my hair cut. / She did
-      not make him apologize.'
-    example_generator:
-      contexts:
-      - negative causatives
-      min_examples: 3
-  questions:
-    structure: 'Did + subject + have + object + past participle?: Did you have your
-      hair cut?'
-    example_generator:
-      contexts:
-      - question formation
-      min_examples: 3
+  timeline: Depends on the tense used.
+phonetics:
+- example_generator:
+    contexts:
+    - sentence stress
+  l1_issue: Many L1 speakers avoid causative structures, using longer paraphrases
+    instead
+  note: Stress on the causative verb (have/get/make/let) to show who is causing the
+    action
+register_notes:
+- note: 'Biber et al. (2021) — Causative constructions: register distribution differs.
+    ''Get'' causative is strongly conversational; ''have'' causative is neutral; ''make''
+    causative appears across registers. Ch. 5.2.4'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 5.2.4
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch.
+    16: Causative structures'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 18:
+    Passive Voice (causative constructions)'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 30: Information Packaging'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 4: Causative'
+  validation: Swan (2016) Practical English Usage, 4th ed.(causative have/get)
 sub_rules:
-- rule: Have/get something done — arrange for someone to do it
-  type: grammatical
-  examples:
+- examples:
   - I had my car serviced.
   - She got her nails done.
   - We need to have the roof repaired.
-- rule: Make someone do something — force or require
+  rule: Have/get something done — arrange for someone to do it
   type: grammatical
-  examples:
+- examples:
   - The teacher made us apologize.
   - My boss made me work late.
-- rule: Let someone do something — allow or permit
+  rule: Make someone do something — force or require
   type: grammatical
-  examples:
+- examples:
   - My parents let me stay out late.
   - Let me help you.
-- rule: Have someone do something — arrange or request (less forceful than make)
+  rule: Let someone do something — allow or permit
   type: grammatical
-  examples:
+- examples:
   - I had the mechanic check the car.
   - She had her assistant book the tickets.
-- rule: Have something happen — experience something (often unpleasant)
-  type: semantic
-  examples:
+  rule: Have someone do something — arrange or request (less forceful than make)
+  type: grammatical
+- examples:
   - I had my car stolen last week.
   - She had her bag snatched on the bus.
   - He had his phone hacked.
+  rule: Have something happen — experience something (often unpleasant)
+  type: semantic
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Students practice arranging services using have/get something
+      done.
+    duration: 15
+    name: Service Role Play
+  tips:
+  - Use real-life scenarios (services, obligations)
+  - Contrast causative vs active explicitly
+  - Practice all four patterns: have, get, make, let
+  - 'Swan PEU: Causative ''have'' — ''I had my car serviced.'' Someone else did the
+    action for me. NOT the same as ''I serviced my car.'' Causative ''get'': ''I got
+    my hair cut.'' More informal.'
+teaching_tips:
+- source: 'Celce-Murcia & Larsen-Freeman (1999) The Grammar Book: An ESL/EFL Teacher''s
+    Course, 2nd ed. Heinle & Heinle.'
+  tip: 'EXPERIENTIAL HAVE vs. CAUSATIVE HAVE: ''Mary had her purse snatched'' (experiential
+    — it happened to her) vs. ''Mary had her hair cut'' (causative — she arranged
+    it). Get-passive is also experiential: ''Barry got invited'' (it happened to Barry).
+    Source: Ch.18 p.346.'
+title: Causative Structures
 use:
 - context: Services
   description: Arranging for someone to do something for you
@@ -99,83 +232,3 @@ use:
   examples:
   - The teacher made the students rewrite the essay.
   - My parents let me go to the party.
-phonetics:
-- note: Stress on the causative verb (have/get/make/let) to show who is causing the
-    action
-  example_generator:
-    contexts:
-    - sentence stress
-  l1_issue: Many L1 speakers avoid causative structures, using longer paraphrases
-    instead
-teaching:
-  methodology: PPP
-  tips:
-  - Use real-life scenarios (services, obligations)
-  - Contrast causative vs active explicitly
-  - Practice all four patterns: have, get, make, let
-  recommended_activities:
-  - name: Service Role Play
-    duration: 15
-    adaptation_notes: Students practice arranging services using have/get something
-      done.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8:
-    Passive Voice, §8.6 (causative constructions)'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 16: Information Packaging, §16.3'
-  validation: Swan (2016) Practical English Usage, 4th ed. Entries 95-100 (causative
-    have/get)
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    8: Causative structures'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 4: Causative'
-common_errors:
-- error: '*I did my hair cut yesterday.* (arranged for someone)'
-  correction: I had my hair cut yesterday.
-  explanation: The causative uses 'have/get + object + past participle' to express
-    arranging a service. Using 'do' changes the meaning to performing the action yourself.
-    'Do' is not used as a causative verb for services.
-  l1_groups:
-  - Portuguese
-  - Spanish
-- error: '*I made him to apologize.*'
-  correction: I made him apologize.
-  explanation: After 'make' (causative meaning 'force'), use the bare infinitive (without
-    'to'). 'Make + person + base verb' is a fixed structure. Adding 'to' before the
-    verb is influenced by other causative patterns like 'ask him to apologize'.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - Chinese
-- error: '*She let me to borrow her car.*'
-  correction: She let me borrow her car.
-  explanation: After 'let', use the bare infinitive (without 'to'). 'Let + person
-    + base verb' is the fixed pattern. Adding 'to' occurs because most other causatives
-    ('ask', 'tell', 'want') do take 'to'.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: '*I had repaired my car by the mechanic.*'
-  correction: I had my car repaired by the mechanic.
-  explanation: In causative 'have', the object (what is done) comes immediately after
-    'have', not at the end. 'Had my car repaired' (not 'had repaired my car'). The
-    past participle modifies the object.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

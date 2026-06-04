@@ -1,42 +1,118 @@
-grammar_point: negative_questions
-title: Negative Questions (Surprise/Assumption Checking)
+citations:
+- claim: 'Core meaning: Expresses surprise at something unexpected, checks an assumption
+    the speaker has, or confirms a shar'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 4: Basic
+    Structures'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday
+    communication.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 4: Basic
+    Structures'
+  tier: 1
+- claim: Common error '*Why you don't like coffee?*' for Portuguese, Spanish, Chinese
+    speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents
+    how transfer effects are non-linear, determined by functional fit between L1 and
+    L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects
+    are non-linear — determined by functional fit between L1 and L2 systems rather
+    than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning.
+    Routledge.
+  tier: 2
+common_errors:
+- correction: Why don't you like coffee?
+  error: '*Why you don''t like coffee?*'
+  explanation: Negative questions use auxiliary + subject order (don't you), not statement
+    order (you don't). This is a common error across all L1 groups.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Japanese
+  - Korean
+  - French
+  - Italian
+  - German
+  - Dutch
+  - Russian
+  - Polish
+  - Arabic
+  - Turkish
+  - Thai
+  - Farsi
+  - Hindi
+  - Swahili
+  - Malay
+  reliability: D
+- correction: I didn't see anybody. / She doesn't help him ever. / She never helps
+    him.
+  error: 'Using double negatives: *''I didn''t see nobody.'' / *''She doesn''t help
+    him never.'''
+  explanation: 'Swan & Smith (2001) Ch. 22: Spanish and French (among others) allow
+    double negatives as standard grammatical constructions. In English, only one negative
+    element is permitted per clause. Double negatives in English create a positive
+    meaning, leading to confusion.'
+  l1_groups:
+  - Spanish
+  - Portuguese
+  - French
+  - Italian
+  - Russian
+  - Polish
+  - Arabic
+  - Dutch
+  - German
+  reliability: B
+  source: 'Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+    Ch. 22: Spanish speakers, Negatives section; Ch. 26: French speakers.'
+- correction: Do you like coffee?
+  error: 'Using negative question for neutral question: *''Do not you like coffee?''
+    (neutral)'
+  explanation: 'Swan PEU: Negative questions express surprise, expectation, or invitation.
+    "Do not you like coffee?" = "I am surprised you do not like it."'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan Entry 44.2. Swan (2016) Practical English Usage, 4th ed. Oxford University
+    Press.
+- correction: '''Do not you like coffee?'' ''No, I do not.'' / ''Yes, I do.'''
+  error: 'Answering negative questions wrong: *''Do not you like coffee?'' ''Yes''
+    (meaning: I do not like it)'
+  explanation: 'Swan PEU: Yes/no answers to negative questions follow the FACT, not
+    the question form. "Yes" = I do like it. "No" = I do not like it.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Japanese
+  reliability: B
+  source: Swan Entry 44.2. Swan (2016) Practical English Usage, 4th ed. Oxford University
+    Press.
 description: Questions that start with a negative auxiliary (n't or not) to express
   surprise, check assumptions, or confirm expectations.
-level: B1
-meaning:
-  core_meaning: Expresses surprise at something unexpected, checks an assumption the
-    speaker has, or confirms a shared expectation. 'Why don't you X?' is a fixed suggestion
-    structure, not a true negative question.
-  timeline: Uses the same auxiliary tenses as positive questions (present, past, etc.).
-  contrast: 'Positive question: ''Do you like coffee?'' (neutral information)
-
-    Negative question: ''Don''t you like coffee?'' (surprise that you don''t, or assumes
-    you do)
-
-    ''Why don''t you X?'' = Suggestion: ''Why don''t you sit down?'' (not a real negative
-    question)
-
-    '
-  ccqs:
-  - question: When do we use negative questions
-    answer: To express surprise, make suggestions, or check information.
-    purpose: Tests whether the learner understands that negative questions (Don't
-      you like it?) are used to express surprise or seek confirmation, not to ask
-      a genuine question.
-  - question: How do we answer negative questions
-    answer: Answer based on the fact, not the question form.
-    purpose: Tests understanding of negative_questions.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      negative questions and explain why they are incorrect.
-  example_generator:
-    contexts:
-    - everyday situations
-    cultural_notes: []
-    min_examples: 5
+dialectal_variation: []
+discourse_notes:
+- note: 'Negative questions serve pragmatic functions in discourse: expressing surprise,
+    seeking confirmation, and making suggestions. The form carries different illocutionary
+    force than positive questions.'
 form:
   affirmative:
+    example_generator:
+      contexts:
+      - entertainment and media
+      - social interactions
+      min_examples: 4
     structure: 'Yes/No negative questions: Auxiliary + n''t + subject + verb / Auxiliary
       + subject + not + verb (less common)
 
@@ -46,118 +122,145 @@ form:
       be)
 
       '
-    example_generator:
-      contexts:
-      - entertainment and media
-      - social interactions
-      min_examples: 4
   negative:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
     structure: 'Double negative is incorrect: ''Don''t you not like coffee?'' is wrong'
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
   questions:
-    structure: Same as affirmative, with question mark
     example_generator:
       contexts:
       - everyday situations
       min_examples: 4
+    structure: Same as affirmative, with question mark
+grammar_point: negative_questions
+level: B1
+meaning:
+  ccqs:
+  - answer: To express surprise, make suggestions, or check information.
+    purpose: Tests whether the learner understands that negative questions (Don't
+      you like it?) are used to express surprise or seek confirmation, not to ask
+      a genuine question.
+    question: When do we use negative questions
+  - answer: Answer based on the fact, not the question form.
+    purpose: Tests understanding of negative_questions.
+    question: How do we answer negative questions
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with
+      negative questions and explain why they are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: It is a suggestion. 'Why don't you...?' is a fixed polite suggestion structure,
+      not a genuine negative question asking for a reason.
+    purpose: Tests whether the learner can distinguish between true negative questions
+      (used to express surprise or check assumptions, like 'Don't you like coffee?')
+      and the fixed suggestion structure 'Why don't you...?' which functions as a
+      polite imperative rather than a real question.
+    question: Is 'Why don't you sit down?' a real question or a suggestion?
+  contrast: 'Positive question: ''Do you like coffee?'' (neutral information)
+
+    Negative question: ''Don''t you like coffee?'' (surprise that you don''t, or assumes
+    you do)
+
+    ''Why don''t you X?'' = Suggestion: ''Why don''t you sit down?'' (not a real negative
+    question)
+
+    '
+  core_meaning: Expresses surprise at something unexpected, checks an assumption the
+    speaker has, or confirms a shared expectation. 'Why don't you X?' is a fixed suggestion
+    structure, not a true negative question.
+  example_generator:
+    contexts:
+    - everyday situations
+    cultural_notes: []
+    min_examples: 5
+  timeline: Uses the same auxiliary tenses as positive questions (present, past, etc.).
+phonetics:
+- example_generator:
+    contexts:
+    - negative question intonation
+  l1_issue: Portuguese and Spanish speakers often use rising intonation for all questions.
+    Teach falling intonation for negative questions expecting agreement.
+  note: 'Negative questions often have rising intonation when expressing surprise:
+    ''Do not you like coffee? ↗'' Falling intonation when expecting agreement: ''Do
+    not you like coffee? ↘'''
+register_notes:
+- note: 'Biber et al. (1999) — Negative questions and negation: register distribution
+    differs markedly. Contracted negatives (don''t, can''t) dominate in conversation;
+    full forms more common in academic prose. Ch. 3.8'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 3.8
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 4:
+    Basic Structures'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Negative questions express surprise or disbelief
-  type: pragmatic
-  examples:
+- examples:
   - Do not you like coffee? (I am surprised you do not)
   - Is she not coming? (I thought she was)
   - Have they not finished yet? (I am surprised)
-- rule: Negative questions can make suggestions or invitations
+  rule: Negative questions express surprise or disbelief
   type: pragmatic
-  examples:
+- examples:
   - Will you not sit down? (please sit)
   - Shall we not go out for a change? (suggestion)
   - Do not you want to try some? (invitation)
-- rule: Answer negative questions based on the fact, not the question form
+  rule: Negative questions can make suggestions or invitations
   type: pragmatic
-  examples:
+- examples:
   - Do not you like coffee? — Yes, I do (I like it) / No, I do not (I do not like
     it)
   - Is she not coming? — Yes, she is (she is coming) / No, she is not (she is not
     coming)
+  rule: Answer negative questions based on the fact, not the question form
+  type: pragmatic
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Teacher makes statements. Students respond with negative questions
+      expressing surprise: ''I do not eat meat.'' → ''Do not you eat meat?!'''
+    duration: 10
+    name: Surprise Questions
+  - adaptation_notes: 'Students practice forming and answering negative questions:
+      ''Do not you like...?'' ''Yes, I do.'' / ''No, I do not.'''
+    duration: 15
+    name: Negative Question Practice
+  tips:
+  - 'CGEL Ch. 3: CGEL distinguishes clausal negation (negating the whole clause with
+    ''not'': She is not coming) from subclausal negation (negating only a constituent:
+    Not everyone agrees). The position of ''not'' determines the scope of negation.'
+  - Contrast positive and negative questions with clear examples of speaker expectations.
+  - Teach 'Why don't you X?' as a separate suggestion structure early to avoid confusion.
+  - 'Practice with role-plays: use negative questions to express surprise politely.'
+  - 'Swan PEU: Negative questions express surprise ("Do not you know?"), expectation
+    ("Will not you stay?"), or invitations ("Will not you come in?").'
+  - 'Swan PEU: Answering negative questions -- Yes/No follows the FACT in English,
+    unlike some L1s where the answer agrees with the question form.'
+title: Negative Questions (Surprise/Assumption Checking)
 use:
-- name: Expressing Surprise
-  description: Show surprise that something is not the case.
+- description: Show surprise that something is not the case.
   examples:
   - Don't you know the answer? (I expected you to know)
   - Haven't you eaten yet? (I thought you had)
   key_point: Implies the speaker thought the opposite was true.
-- name: Checking Assumptions
-  description: Confirm a belief or assumption the speaker holds.
+  name: Expressing Surprise
+- description: Confirm a belief or assumption the speaker holds.
   examples:
   - Aren't you hungry? (I assume you are)
   - Didn't we meet last year? (I think we did)
   key_point: Seeks confirmation of the speaker's belief.
-- name: Suggestion (Why don't you?)
-  description: Fixed structure 'Why don't you X?' to make a polite suggestion (not
+  name: Checking Assumptions
+- description: Fixed structure 'Why don't you X?' to make a polite suggestion (not
     a true negative question).
   examples:
   - Why don't you take a break?
   - Why doesn't he call her?
   key_point: This is a set suggestion phrase, not a question about a negative action.
-phonetics:
-- note: 'Negative questions often have rising intonation when expressing surprise:
-    ''Do not you like coffee? ↗'' Falling intonation when expecting agreement: ''Do
-    not you like coffee? ↘'''
-  example_generator:
-    contexts:
-    - negative question intonation
-  l1_issue: Portuguese and Spanish speakers often use rising intonation for all questions.
-    Teach falling intonation for negative questions expecting agreement.
-teaching:
-  methodology: PPP
-  tips:
-  - Contrast positive and negative questions with clear examples of speaker expectations.
-  - Teach 'Why don't you X?' as a separate suggestion structure early to avoid confusion.
-  - 'Practice with role-plays: use negative questions to express surprise politely.'
-  recommended_activities:
-  - name: Surprise Questions
-    duration: 10
-    adaptation_notes: 'Teacher makes statements. Students respond with negative questions
-      expressing surprise: ''I do not eat meat.'' → ''Do not you eat meat?!'''
-  - name: Negative Question Practice
-    duration: 15
-    adaptation_notes: 'Students practice forming and answering negative questions:
-      ''Do not you like...?'' ''Yes, I do.'' / ''No, I do not.'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 4:
-    Basic Structures, §4.6-4.8'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*Why you don''t like coffee?*'
-  correction: Why don't you like coffee?
-  explanation: Negative questions use auxiliary + subject order (don't you), not statement
-    order (you don't). This is a common error across all L1 groups.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-  - Japanese
-  - Korean
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.
+  name: Suggestion (Why don't you?)

@@ -1,29 +1,161 @@
-grammar_point: superlatives
-title: Superlative Forms
+citations:
+- claim: 'Core meaning: Superlatives identify the extreme (highest or lowest) degree
+    of a quality among three or more items, people, or places.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 20:
+    Degree -- Complements and Superlatives, 35.3'
+  tier: 4
+- claim: 'Register distribution: In formal writing, superlatives are standard and
+    expected. Register variation is marked by vocabulary and style rather than by
+    superlative form itself.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 20:
+    Degree -- Complements and Superlatives, 35.3'
+  tier: 4
+- claim: 'Discourse function: Superlatives establish relationships of degree between
+    entities and are used for emphasis, evaluation, and persuasion across registers.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 20:
+    Degree -- Complements and Superlatives, 35.3'
+  tier: 4
+- claim: Common error '*She is the most smartest student.*' for Portuguese, Spanish,
+    Arabic speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: 'Superlatives are used across all registers for emphasis and evaluation:
+    in academic writing for measured claims (''the most significant finding''), in
+    advertising for superlative claims (''the best value''), and in conversation for
+    evaluative talk (''the worst day'').'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 20:
+    Degree -- Complements and Superlatives, 35.3'
+  tier: 1
+common_errors:
+- correction: She is the smartest student.
+  error: '*She is the most smartest student.*'
+  explanation: 'Double superlative: ''most'' + ''-est'' on the same adjective. One
+    marker is sufficient. One-syllable adjectives take ''-est''. This error occurs
+    when learners are uncertain which superlative form to use and add both.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Arabic
+  reliability: D
+- correction: This is the most expensive restaurant in town.
+  error: '*This is the more expensive restaurant in town.'''
+  explanation: Superlative (not comparative) required when comparing 3+ items. 'More'
+    is comparative; 'most' is superlative. Swan & Smith (2001) note that Spanish uses
+    'más' for both comparative and superlative, leading to this error (*Barcelona
+    is the more large city).
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - French
+  - Italian
+  reliability: B
+  source: 'Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+    Ch. 22: Spanish speakers.'
+- correction: He is the taller of the two brothers.
+  error: '*He is the tallest of the two brothers.*'
+  explanation: Comparative (not superlative) is used when comparing exactly two items.
+    Superlatives require three or more. L1s that don't distinguish these forms often
+    default to superlative in all comparison contexts.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Chinese
+  - Vietnamese
+  reliability: D
+- correction: This is the most beautiful place I have ever seen.
+  error: '*This is most beautiful place I have ever seen.*'
+  explanation: Superlative requires the definite article 'the' before it. Learners
+    from article-less languages (Chinese, Japanese, Korean) frequently omit this article,
+    producing a grammatically incomplete phrase.
+  flagged: true
+  l1_groups:
+  - Chinese
+  - Japanese
+  - Korean
+  - Arabic
+  reliability: D
+- correction: London is the biggest city in England.
+  error: '*London is the biggest city of England.*'
+  explanation: Superlatives expressing location within a geographic area use 'in',
+    not 'of'. 'Of' is used for belonging/grouping (the best of the class), while 'in'
+    is used for physical/geographic areas.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
 description: Using superlative adjectives and adverbs to express the highest degree
   of a quality within a group or category.
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - descriptions
+      - comparisons
+      - recommendations
+      min_examples: 4
+    structure: the + adjective-est (short adjectives) OR the + most + adjective (long
+      adjectives) / the + adverb + -est OR the + most + adverb
+  negative:
+    example_generator:
+      contexts:
+      - expressing minimum degree
+      - negative descriptions
+      min_examples: 3
+    structure: the + least + adjective/adverb (e.g., 'the least expensive', 'the least
+      carefully')
+  questions:
+    example_generator:
+      contexts:
+      - asking for information
+      - quizzes
+      - discussions
+      min_examples: 3
+    structure: Which/Who + is + the + superlative? (e.g., 'Which is the tallest building?')
+grammar_point: superlatives
 level: A2
 meaning:
-  core_meaning: Superlatives identify the extreme (highest or lowest) degree of a
-    quality among three or more items, people, or places. They answer the question
-    'which one is the most/least?'
-  timeline: Timeless structure — can refer to present, past, or future comparisons.
+  ccqs:
+  - answer: More than two — that's why we use the superlative.
+    purpose: Tests whether the learner understands when to use comparative vs. superlative
+      forms. This distinction depends on how many items are being compared.
+    question: Are we comparing two things or more than two?
+  - answer: Yes — 'the biggest', 'the most interesting'.
+    purpose: Tests whether the learner understands when to use comparative vs. superlative
+      forms. This distinction depends on how many items are being compared.
+    question: Do we use 'the' before the superlative?
+  - answer: 'No — one-syllable adjectives use ''-est'': ''the biggest''.'
+    purpose: Tests whether the learner understands when to use comparative vs. superlative
+      forms. This distinction depends on how many items are being compared.
+    question: Is 'more big' correct for the superlative?
+  - answer: '''She is the tallest girl.'' Use EITHER the + -est OR the + most, not
+      both together.'
+    purpose: Tests whether the learner avoids double marking (*most tallest) in superlatives
+      (Swan PEU 2016, entries 114-115).
+    question: Which is correct? *'She is the most tallest girl' or 'She is the tallest
+      girl'?
   contrast: 'Compare with comparatives (comparing two items: ''bigger'') vs. superlatives
     (comparing three or more: ''biggest''). Superlatives typically use ''the'' before
     the form.'
-  ccqs:
-  - question: Are we comparing two things or more than two?
-    answer: More than two — that's why we use the superlative.
-    purpose: Tests whether the learner understands when to use comparative vs. superlative
-      forms. This distinction depends on how many items are being compared.
-  - question: Do we use 'the' before the superlative?
-    answer: Yes — 'the biggest', 'the most interesting'.
-    purpose: Tests whether the learner understands when to use comparative vs. superlative
-      forms. This distinction depends on how many items are being compared.
-  - question: Is 'more big' correct for the superlative?
-    answer: 'No — one-syllable adjectives use ''-est'': ''the biggest''.'
-    purpose: Tests whether the learner understands when to use comparative vs. superlative
-      forms. This distinction depends on how many items are being compared.
+  core_meaning: Superlatives identify the extreme (highest or lowest) degree of a
+    quality among three or more items, people, or places. They answer the question
+    'which one is the most/least?'
   example_generator:
     contexts:
     - describing places
@@ -33,83 +165,125 @@ meaning:
     cultural_notes:
     - Superlatives are heavily used in tourism, advertising, and travel English.
     min_examples: 5
-form:
-  affirmative:
-    structure: the + adjective-est (short adjectives) OR the + most + adjective (long
-      adjectives) / the + adverb + -est OR the + most + adverb
-    example_generator:
-      contexts:
-      - descriptions
-      - comparisons
-      - recommendations
-      min_examples: 4
-  negative:
-    structure: the + least + adjective/adverb (e.g., 'the least expensive', 'the least
-      carefully')
-    example_generator:
-      contexts:
-      - expressing minimum degree
-      - negative descriptions
-      min_examples: 3
-  questions:
-    structure: Which/Who + is + the + superlative? (e.g., 'Which is the tallest building?')
-    example_generator:
-      contexts:
-      - asking for information
-      - quizzes
-      - discussions
-      min_examples: 3
+  timeline: Timeless structure — can refer to present, past, or future comparisons.
+phonetics:
+- example_generator:
+    contexts:
+    - pronunciation drills
+    - speaking practice
+  l1_issue: Speakers whose languages use 'more + adjective' for all comparisons (e.g.,
+    Portuguese 'mais grande') may overgeneralise and say 'more big' instead of 'biggest'.
+  note: 'The ''-est'' ending is pronounced /ɪst/ and is unstressed: ''the tallést''.
+    ''Most'' is stressed: ''the MOST beautiful''.'
+register_notes:
+- note: 'Biber et al. (1999) — Superlative distribution: register-dependent. Academic
+    prose uses more superlatives for emphasis in argumentation; conversation uses
+    more superlatives in evaluative talk. Ch. 7.7.3'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 7.7.3
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: 'One-syllable adjectives add -est: tall → tallest, fast → fastest, big → biggest
-    (double consonant)'
-  type: grammatical
-  examples:
+- examples:
   - the tallest building
   - the fastest car
   - the biggest city
-- rule: 'Two-syllable adjectives ending in -y change to -iest: happy → happiest, easy
-    → easiest'
+  rule: 'One-syllable adjectives add -est: tall → tallest, fast → fastest, big → biggest
+    (double consonant)'
   type: grammatical
-  examples:
+- examples:
   - the happiest day
   - the easiest question
   - the busiest street
-- rule: 'Most two-syllable adjectives and all three-syllable adjectives use ''most'':
-    most careful, most beautiful, most important'
+  rule: 'Two-syllable adjectives ending in -y change to -iest: happy → happiest, easy
+    → easiest'
   type: grammatical
-  examples:
+- examples:
   - the most beautiful sunset
   - the most important decision
   - the most interesting book
-- rule: 'Irregular superlatives: good → best, bad → worst, far → farthest/furthest,
-    little → least, much/many → most'
-  type: lexical
-  examples:
+  rule: 'Most two-syllable adjectives and all three-syllable adjectives use ''most'':
+    most careful, most beautiful, most important'
+  type: grammatical
+- examples:
   - the best restaurant
   - the worst experience
   - the farthest distance
   - the least amount
-- rule: 'Superlative + noun + in + place/group: ''the tallest student in the class'',
-    ''the oldest building in the city'''
-  type: grammatical
-  examples:
+  rule: 'Irregular superlatives: good → best, bad → worst, far → farthest/furthest,
+    little → least, much/many → most'
+  type: lexical
+- examples:
   - the most expensive hotel in town
   - the fastest runner in the team
   - the best restaurant in London
-- rule: 'Superlative + I''ve ever + past participle: ''the best film I''ve ever seen'',
-    ''the worst meal I''ve ever had'''
+  rule: 'Superlative + noun + in + place/group: ''the tallest student in the class'',
+    ''the oldest building in the city'''
   type: grammatical
-  examples:
+- examples:
   - the most beautiful place I've ever visited
   - the hardest exam I've ever taken
   - the kindest person I've ever met
-- rule: 'Superlative with ordinal numbers: ''the second largest'', ''the third most
-    popular'''
+  rule: 'Superlative + I''ve ever + past participle: ''the best film I''ve ever seen'',
+    ''the worst meal I''ve ever had'''
   type: grammatical
-  examples:
+- examples:
   - the second tallest building in the world
   - the third most visited museum
   - the fourth largest economy
+  rule: 'Superlative with ordinal numbers: ''the second largest'', ''the third most
+    popular'''
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students survey classmates and report findings using superlatives:
+      ''Maria is the tallest in the class.'''
+    duration: 15
+    name: Class survey
+  - adaptation_notes: 'World knowledge quiz: ''What is the largest ocean? The highest
+      mountain?'''
+    duration: 10
+    name: Superlative quiz
+  - adaptation_notes: Students create a travel brochure for their city/country using
+      at least 8 superlatives.
+    duration: 20
+    name: Travel brochure
+  tips:
+  - 'Parrott (2000): Parrott (2000) Ch. 6: Superlatives: the + -est (short) or the
+    most + adj (long). Irregular: best, worst, furthest. In informal English, least
+    is rare; the opposite is expressed with the + negative. Superlatives without the
+    when the comparison group is implied: She is happiest when reading.'
+  - Start with common irregular superlatives (best, worst, most) as they appear frequently.
+  - Use visual aids — pictures of people or objects to compare — to make the concept
+    concrete.
+  - 'Teach the spelling rules explicitly: doubling consonants (biggest), changing
+    -y to -iest (happiest).'
+  - 'Practice with real-world data: tallest buildings, longest rivers, most populated
+    cities.'
+  - 'Introduce ''in'' vs. ''of'' for specifying the group: ''in the class'' (people/places),
+    ''of the year'' (time).'
+  - 'Swan PEU: ''The'' + superlative — ''the best,'' ''the tallest,'' ''the most expensive.''
+    Without ''the'': ''best wishes,'' ''kindest regards,'' ''with best wishes.'' Superlative
+    + infinitive: ''She was the first person to arrive.'''
+teaching_tips:
+- source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book: An ESL/EFL Teacher''s
+    Course, 3rd ed. Heinle & Heinle.'
+  tip: 'SUPERLATIVE vs. COMPARATIVE: Superlatives require three or more items in the
+    comparison set (''the tallest student in the class''). Comparatives require only
+    two (''taller than John''). Many L1s do not distinguish these forms morphologically,
+    leading to errors like *''the tallest of the two.'' Teach the three-item minimum
+    explicitly with visual aids: two people = comparative, three or more = superlative.
+    Source: Ch.20 p.466-469.'
+title: Superlative Forms
 use:
 - context: Travel and tourism
   description: Describing destinations, attractions, and experiences.
@@ -135,108 +309,3 @@ use:
   - the fastest internet available
   - the most trusted brand
   - the best value for money
-phonetics:
-- note: 'The ''-est'' ending is pronounced /ɪst/ and is unstressed: ''the tallést''.
-    ''Most'' is stressed: ''the MOST beautiful''.'
-  example_generator:
-    contexts:
-    - pronunciation drills
-    - speaking practice
-  l1_issue: Speakers whose languages use 'more + adjective' for all comparisons (e.g.,
-    Portuguese 'mais grande') may overgeneralise and say 'more big' instead of 'biggest'.
-teaching:
-  methodology: PPP
-  tips:
-  - Start with common irregular superlatives (best, worst, most) as they appear frequently.
-  - Use visual aids — pictures of people or objects to compare — to make the concept
-    concrete.
-  - 'Teach the spelling rules explicitly: doubling consonants (biggest), changing
-    -y to -iest (happiest).'
-  - 'Practice with real-world data: tallest buildings, longest rivers, most populated
-    cities.'
-  - 'Introduce ''in'' vs. ''of'' for specifying the group: ''in the class'' (people/places),
-    ''of the year'' (time).'
-  recommended_activities:
-  - name: Class survey
-    duration: 15
-    adaptation_notes: 'Students survey classmates and report findings using superlatives:
-      ''Maria is the tallest in the class.'''
-  - name: Superlative quiz
-    duration: 10
-    adaptation_notes: 'World knowledge quiz: ''What is the largest ocean? The highest
-      mountain?'''
-  - name: Travel brochure
-    duration: 20
-    adaptation_notes: Students create a travel brochure for their city/country using
-      at least 8 superlatives.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*She is the most smartest student.*'
-  correction: She is the smartest student.
-  explanation: 'Double superlative: ''most'' + ''-est'' on the same adjective. One
-    marker is sufficient. One-syllable adjectives take ''-est''. This error occurs
-    when learners are uncertain which superlative form to use and add both.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Arabic
-- error: '*This is the more expensive restaurant in town.*'
-  correction: This is the most expensive restaurant in town.
-  explanation: Superlative (not comparative) required when comparing 3+ items. 'More'
-    is comparative; 'most' is superlative. Learners often default to the 'more' form
-    they practiced first before learning superlatives.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-- error: '*He is the tallest of the two brothers.*'
-  correction: He is the taller of the two brothers.
-  explanation: Comparative (not superlative) is used when comparing exactly two items.
-    Superlatives require three or more. L1s that don't distinguish these forms often
-    default to superlative in all comparison contexts.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - Chinese
-- error: '*This is most beautiful place I have ever seen.*'
-  correction: This is the most beautiful place I have ever seen.
-  explanation: Superlative requires the definite article 'the' before it. Learners
-    from article-less languages (Chinese, Japanese, Korean) frequently omit this article,
-    producing a grammatically incomplete phrase.
-  l1_groups:
-  - Chinese
-  - Japanese
-  - Korean
-  - Arabic
-- error: '*London is the biggest city of England.*'
-  correction: London is the biggest city in England.
-  explanation: Superlatives expressing location within a geographic area use 'in',
-    not 'of'. 'Of' is used for belonging/grouping (the best of the class), while 'in'
-    is used for physical/geographic areas.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

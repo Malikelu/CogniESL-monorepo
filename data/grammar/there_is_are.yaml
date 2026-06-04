@@ -1,32 +1,130 @@
+citations:
+- claim: 'Core meaning: ''There is / There are'' introduces the existence or presence of something'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 30: Information Packaging-16.4 (existential
+    there)'
+  tier: 1
+- claim: 'Register distribution: ''There is/are'' is neutral in register.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 30: Information Packaging-16.4 (existential
+    there)'
+  tier: 1
+- claim: 'Discourse function: ''There is/are'' introduces new information: ''There is a problem. The problem is serious.'''
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 30: Information Packaging-16.4 (existential
+    there)'
+  tier: 1
+- claim: 'Common error ''Using ''there is'' with plural nouns: *''There is many people.'''' for Portuguese, Spanish, French
+    speakers'
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 15: There-constructions-15.3'
+  tier: 1
+- claim: 'Dialectal variation: In informal speech, ''there''s'' is used with both singular and plural: ''There''s many people.''
+    (non-sta'
+  reliability: B
+  source: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Ch. 30: Information Packaging (existential
+    clauses)'
+  tier: 1
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents how transfer effects are non-linear,
+    determined by functional fit between L1 and L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects are non-linear — determined by functional
+    fit between L1 and L2 systems rather than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning. Routledge.
+  tier: 2
+common_errors:
+- correction: There are many people.
+  error: 'Using ''there is'' with plural nouns: *''There is many people.'''
+  explanation: Use 'there are' with plural nouns, 'there is' with singular.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+- correction: There is a problem.
+  error: 'Using ''it'' instead of ''there'': *''It is a problem.'' (existence)'
+  explanation: Use 'there is/are' to say something exists. 'It' refers to something specific.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: D
+- correction: There are many people here.
+  error: 'Using ''there is'' with plural: *''There is many people here.'''
+  explanation: 'Swan PEU: ''There is/are'' agrees with the noun that follows. ''There is a book'' vs ''There are books.''
+    However, ''There''s'' is often used with plurals in informal speech.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: There are many people here.
+  error: 'Using ''it is'' instead of ''there is'': *''It is many people here.'''
+  explanation: 'Swan PEU: ''There is/are'' introduces new information / announces existence. ''It is'' refers to something
+    already mentioned or known. ''There''s a letter for you'' (announcing) vs ''It''s from your mother'' (referring back).'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+description: Using 'there is' and 'there are' to state the existence or presence of something, and to introduce new information
+  into discourse.
+dialectal_variation:
+- note: 'In informal speech, ''there''s'' is used with both singular and plural: ''There''s many people.'' (non-standard but
+    common)'
+discourse_notes:
+- note: '''There is/are'' introduces new information: ''There is a problem. The problem is serious.'''
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - describing
+      - stating existence
+      - introducing
+      min_examples: 4
+    structure: There is + singular/uncountable noun / There are + plural noun
+  negative:
+    example_generator:
+      contexts:
+      - stating absence
+      - denying existence
+      min_examples: 3
+    structure: There is not (isn't) + singular/uncountable noun / There are not (aren't) + plural noun / There is no + noun
+      / There are no + noun
+  questions:
+    example_generator:
+      contexts:
+      - asking about existence
+      - checking availability
+      min_examples: 3
+    structure: Is there + singular/uncountable noun? / Are there + plural noun?
 grammar_point: there_is_are
-title: There is / There are (Existential)
-description: Using 'there is' and 'there are' to state the existence or presence of
-  something, and to introduce new information into discourse.
 level: A1
 meaning:
-  core_meaning: '''There is / There are'' introduces the existence or presence of
-    something. It tells us that something exists, is present, or happens. The subject
-    comes after the verb.'
-  timeline: 'Can be used in any tense: there is/are (present), there was/were (past),
-    there will be (future), there has been / there have been (present perfect).'
-  contrast: 'Compare with ''it is'': ''There is a book on the table'' (existence of
-    a book) vs. ''It is on the table'' (location of a known thing). ''There'' introduces
-    something new; ''it'' refers to something already known.'
   ccqs:
-  - question: Are we talking about something that exists or something we already know
-      about?
-    answer: Something that exists or is present — we're introducing it.
-    purpose: Tests whether the learner understands that 'there is/are' is used to
-      introduce new information or state the existence of something.
-  - question: Do we use 'there is' or 'there are' with plural nouns?
-    answer: '''There are'' with plural nouns.'
-    purpose: Tests whether the learner knows to use "there are" with plural nouns.
-      This is important because "there is" with plural nouns is one of the most common
-      A1 errors.
-  - question: Is 'there' the subject of the sentence?
-    answer: No — the real subject comes after the verb. 'There' is a dummy subject.
-    purpose: Tests whether the learner understands that 'there' in 'there is/are'
-      is an expletive subject, not a place adverb.
+  - answer: Something that exists or is present — we're introducing it.
+    purpose: Tests whether the learner understands that 'there is/are' is used to introduce new information or state the existence
+      of something.
+    question: Are we talking about something that exists or something we already know about?
+  - answer: '''There are'' with plural nouns.'
+    purpose: Tests whether the learner knows to use "there are" with plural nouns. This is important because "there is" with
+      plural nouns is one of the most common A1 errors.
+    question: Do we use 'there is' or 'there are' with plural nouns?
+  - answer: No — the real subject comes after the verb. 'There' is a dummy subject.
+    purpose: Tests whether the learner understands that 'there' in 'there is/are' is an expletive subject, not a place adverb.
+    question: Is 'there' the subject of the sentence?
+  - answer: '''There are three books on the table.'' The verb agrees with the real subject that follows: ''three books'' (plural)
+      → ''there are''.'
+    purpose: Tests whether the learner makes 'there is/are' agree with the noun that follows (Swan PEU 2016, entry 593).
+    question: Which is correct? *'There is three books on the table' or 'There are three books on the table'?
+  contrast: 'Compare with ''it is'': ''There is a book on the table'' (existence of a book) vs. ''It is on the table'' (location
+    of a known thing). ''There'' introduces something new; ''it'' refers to something already known.'
+  core_meaning: '''There is / There are'' introduces the existence or presence of something. It tells us that something exists,
+    is present, or happens. The subject comes after the verb.'
   example_generator:
     contexts:
     - describing rooms
@@ -35,85 +133,133 @@ meaning:
     - giving directions
     - describing events
     cultural_notes:
-    - This is one of the first structures taught in English and is essential for everyday
-      communication.
+    - This is one of the first structures taught in English and is essential for everyday communication.
     min_examples: 5
-form:
-  affirmative:
-    structure: There is + singular/uncountable noun / There are + plural noun
-    example_generator:
-      contexts:
-      - describing
-      - stating existence
-      - introducing
-      min_examples: 4
-  negative:
-    structure: There is not (isn't) + singular/uncountable noun / There are not (aren't)
-      + plural noun / There is no + noun / There are no + noun
-    example_generator:
-      contexts:
-      - stating absence
-      - denying existence
-      min_examples: 3
-  questions:
-    structure: Is there + singular/uncountable noun? / Are there + plural noun?
-    example_generator:
-      contexts:
-      - asking about existence
-      - checking availability
-      min_examples: 3
+  timeline: 'Can be used in any tense: there is/are (present), there was/were (past), there will be (future), there has been
+    / there have been (present perfect).'
+phonetics:
+- example_generator:
+    contexts:
+    - listening practice
+    - pronunciation drills
+  l1_issue: Speakers of languages that don't use an existential construction (e.g., Spanish 'Hay', Japanese 'あります') may try
+    to translate directly and omit 'there' or use 'it is' instead.
+  note: '''There is'' is often contracted to /ðeərɪz/ or even /ðəz/ in rapid speech. ''There are'' is /ðeərɑː/.'
+- example_generator:
+    contexts:
+    - past tense narration
+    - storytelling
+  l1_issue: Learners may confuse 'there', 'their', and 'they're' in writing, though they sound the same.
+  note: '''There was'' is pronounced /ðeə wɒz/ and ''There were'' is /ðeə wɜː/. The ''were'' is often reduced in connected
+    speech.'
+register_notes:
+- note: '''There is/are'' is neutral in register.'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In formal writing, ''there'' + be introduces topics: ''There are several reasons for this.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Existential there-constructions: very frequent in conversation and fiction; also common in
+    news and academic prose. Always introduces new (indefinite) information. Ch. 11.4'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 11.4
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 15: There-constructions-15.3'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 30: Information Packaging-16.4 (existential
+    there)'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Ch. 30: Information Packaging (existential
+    clauses)'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners. Ch. 7: There is/are'
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(there is/are: existence, introduction)'
 sub_rules:
-- rule: '''There is'' with singular nouns: ''There is a cat in the garden.'''
-  type: grammatical
-  examples:
+- examples:
   - There is a problem with the computer.
   - There is an apple on the table.
   - There is a good film on tonight.
-- rule: '''There are'' with plural nouns: ''There are three cats in the garden.'''
+  rule: '''There is'' with singular nouns: ''There is a cat in the garden.'''
   type: grammatical
-  examples:
+- examples:
   - There are many people at the party.
   - There are some books on the shelf.
   - There are no buses on Sundays.
-- rule: '''There is'' with uncountable nouns: ''There is some milk in the fridge.'''
+  rule: '''There are'' with plural nouns: ''There are three cats in the garden.'''
   type: grammatical
-  examples:
+- examples:
   - There is no time to waste.
   - There is some information missing.
   - There is too much noise.
-- rule: 'Contractions in speech: ''there''s'' is commonly used even with plurals in
-    informal speech, though ''there are'' is grammatically correct.'
+  rule: '''There is'' with uncountable nouns: ''There is some milk in the fridge.'''
   type: grammatical
-  examples:
+- examples:
   - There's a good restaurant nearby.
   - There's two ways to do this. (informal)
   - There are two ways to do this. (formal)
-- rule: 'Past tense: ''There was'' (singular) / ''There were'' (plural)'
+  rule: 'Contractions in speech: ''there''s'' is commonly used even with plurals in informal speech, though ''there are''
+    is grammatically correct.'
   type: grammatical
-  examples:
+- examples:
   - There was a storm last night.
   - There were many guests at the wedding.
   - There was no one at home.
-- rule: 'Future: ''There will be'' (all nouns)'
+  rule: 'Past tense: ''There was'' (singular) / ''There were'' (plural)'
   type: grammatical
-  examples:
+- examples:
   - There will be a meeting tomorrow.
   - There will be no school on Friday.
   - There will be opportunities ahead.
-- rule: 'Present perfect: ''There has been'' (singular/uncountable) / ''There have
-    been'' (plural)'
+  rule: 'Future: ''There will be'' (all nouns)'
   type: grammatical
-  examples:
+- examples:
   - There has been an accident on the motorway.
   - There have been several complaints.
   - There has been no response yet.
-- rule: 'With modals: ''There might be'', ''There could be'', ''There should be'',
-    ''There must be'''
+  rule: 'Present perfect: ''There has been'' (singular/uncountable) / ''There have been'' (plural)'
   type: grammatical
-  examples:
+- examples:
   - There might be a delay.
   - There could be a better solution.
   - There must be a mistake.
+  rule: 'With modals: ''There might be'', ''There could be'', ''There should be'', ''There must be'''
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Hide objects around the room. Students describe what they find: ''There is a pen under the chair.'''
+    duration: 10
+    name: Classroom treasure hunt
+  - adaptation_notes: 'Students describe a busy picture using ''there is/are'': ''There are five people in the park.'''
+    duration: 10
+    name: Picture description
+  - adaptation_notes: Students make statements about the classroom or school. Others say if they are true or false.
+    duration: 10
+    name: True or false
+  - adaptation_notes: Students ask each other 'Is there...?' and 'Are there...?' questions about their town, school, or home.
+    duration: 10
+    name: Question practice
+  tips:
+  - 'GB3 Ch. 23: Existential there is unstressed and acts as subject, followed by an indefinite NP. Distinguish from deictic
+    there (stressed, locational). Existential works in tags (''There is a boy, isn''t there?'') and can be negated (''There
+    isn''t anyone''). Deictic there can move position; existential cannot. Source: Celce-Murcia & Larsen-Freeman (2015) GB3
+    3rd ed. Ch. 23 23.2.'
+  - 'CGEL Ch. 16: The definiteness restriction in existential there-constructions has five types of exceptions: definite NPs
+    with list readings, definite NPs with new information, definite NPs with existential import, proper names in presentational
+    contexts, and definite NPs with be specifying.'
+  - Start with 'there is' and concrete, visible objects in the classroom.
+  - Use realia and pictures to make the concept of existence tangible.
+  - Introduce 'there are' only after students are comfortable with 'there is'.
+  - Practice the difference between 'there is' (singular) and 'there are' (plural) extensively.
+  - 'Use the structure for classroom routines: ''There is homework today. There are no classes tomorrow.'''
+  - Introduce negatives and questions in the same lesson to give a complete picture.
+  - 'Swan PEU: ''There is'' for existence/announcement. ''It is'' for identification/reference. ''There''s a man at the door''
+    (announcing) vs ''It''s John'' (identifying).'
+  - 'Swan PEU: In informal speech, ''There''s'' is common with plural nouns. In writing, use ''There are'' with plurals.'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 16: CGEL (Ch.16) notes that formal agreement requires
+    plural ''be'' with plural notional subject (''There ARE several problems''), but colloquial ''There''s several problems''
+    is widespread and accepted in speech. CGEL treats this as a register distinction, not an error. Teaching implication:
+    accept ''there''s + plural'' in conversation but insist on ''there are + plural'' in formal writing.'
+title: There is / There are (Existential)
 use:
 - context: Describing places and rooms
   description: Stating what exists in a location.
@@ -139,85 +285,3 @@ use:
   - There is something I need to tell you.
   - There are a few things we should discuss.
   - There was an interesting article in the paper today.
-phonetics:
-- note: '''There is'' is often contracted to /ðeərɪz/ or even /ðəz/ in rapid speech.
-    ''There are'' is /ðeərɑː/.'
-  example_generator:
-    contexts:
-    - listening practice
-    - pronunciation drills
-  l1_issue: Speakers of languages that don't use an existential construction (e.g.,
-    Spanish 'Hay', Japanese 'あります') may try to translate directly and omit 'there'
-    or use 'it is' instead.
-- note: '''There was'' is pronounced /ðeə wɒz/ and ''There were'' is /ðeə wɜː/. The
-    ''were'' is often reduced in connected speech.'
-  example_generator:
-    contexts:
-    - past tense narration
-    - storytelling
-  l1_issue: Learners may confuse 'there', 'their', and 'they're' in writing, though
-    they sound the same.
-teaching:
-  methodology: PPP
-  tips:
-  - Start with 'there is' and concrete, visible objects in the classroom.
-  - Use realia and pictures to make the concept of existence tangible.
-  - Introduce 'there are' only after students are comfortable with 'there is'.
-  - Practice the difference between 'there is' (singular) and 'there are' (plural)
-    extensively.
-  - 'Use the structure for classroom routines: ''There is homework today. There are
-    no classes tomorrow.'''
-  - Introduce negatives and questions in the same lesson to give a complete picture.
-  recommended_activities:
-  - name: Classroom treasure hunt
-    duration: 10
-    adaptation_notes: 'Hide objects around the room. Students describe what they find:
-      ''There is a pen under the chair.'''
-  - name: Picture description
-    duration: 10
-    adaptation_notes: 'Students describe a busy picture using ''there is/are'': ''There
-      are five people in the park.'''
-  - name: True or false
-    duration: 10
-    adaptation_notes: Students make statements about the classroom or school. Others
-      say if they are true or false.
-  - name: Question practice
-    duration: 10
-    adaptation_notes: Students ask each other 'Is there...?' and 'Are there...?' questions
-      about their town, school, or home.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
-    Information Packaging, §16.3-16.4 (existential there)'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 16: Information Packaging, §16.4 (existential clauses)'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 570-575 (there
-    is/are: existence, introduction)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    15: There-constructions, §15.1-15.3'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 7: There is/are'
-common_errors:
-- error: 'Using ''there is'' with plural nouns: *''There is many people.'''
-  correction: There are many people.
-  explanation: Use 'there are' with plural nouns, 'there is' with singular.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: 'Using ''it'' instead of ''there'': *''It is a problem.'' (existence)'
-  correction: There is a problem.
-  explanation: Use 'there is/are' to say something exists. 'It' refers to something
-    specific.
-  l1_groups:
-  - Portuguese
-  - Spanish
-register_notes:
-- note: '''There is/are'' is neutral in register.'
-- note: 'In formal writing, ''there'' + be introduces topics: ''There are several
-    reasons for this.'''
-dialectal_variation:
-- note: 'In informal speech, ''there''s'' is used with both singular and plural: ''There''s
-    many people.'' (non-standard but common)'
-discourse_notes:
-- note: '''There is/are'' introduces new information: ''There is a problem. The problem
-    is serious.'''

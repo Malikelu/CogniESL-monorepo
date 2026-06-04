@@ -1,30 +1,62 @@
-id: hangman
-name: Hangman
-category: games
-description: A classic letter-guessing game where students guess letters to complete
-  a hidden word before the figure is drawn. Encourages awareness of letter frequency,
-  spelling patterns, and vocabulary review in a competitive, low-pressure format.
-targetStructures:
-- vocabulary
+adaptableToTopic: true
 bestForLevels:
 - A1
 - A2
 - B1
+category: games
+citations:
+- claim: The "Hangman" activity engages through targeted practice
+  flagged: false
+  reliability: B
+  source: Peregoy & Boyle (2023) Reading, Writing, and Learning in ESL. Ch. 5
+  tier: 2
+- claim: Hangman is a letter-guessing game in which learners guess letters to spell
+    a hidden word, with each incorrect guess adding part of a figure. The goal is
+    to complete the word before the figure is drawn (typically 13 incorrect guesses).
+  flagged: false
+  reliability: B
+  source: 'Wright, A., Betteridge, D. & Buckby, M. (2006). Games for Language Learning,
+    3rd ed. Cambridge University Press. Ch. 6.10: Hangman spelling'
+  tier: 1
+- claim: "Based on the Guessing / Yes-No question activities, Word/letter-based game formats, Vocabulary game formats from Watcyn-Jones (1981), which uses game-based pair and group work to make grammar practice dynamic and engaging."
+  source: 'Watcyn-Jones, P. (1981) Grammar Games and Activities. Penguin Books.'
+  tier: 2
+  reliability: 'B'
+  flagged: false
+description: A classic letter-guessing game where students guess letters to complete
+  a hidden word before the figure is drawn. Encourages awareness of letter frequency,
+  spelling patterns, and vocabulary review in a competitive, low-pressure format.
+differentiation:
+  extension: Use longer or more complex words. Have students take turns being the
+    hangman leader. Challenge students to guess the word before any letters are revealed
+    (strategic guessing based on letter frequency).
+  support: Allow students to work in pairs. Give a hint about the word category. Provide
+    a letter frequency chart as reference. Use shorter words.
+digitalReady: false
 duration: 10
-groupSize: whole-class
 energyRequired: low
-prepTime: none
-materials:
-- Whiteboard and markers
+exampleSnippet:
+  execution:
+  - 'Word: ''banana''. Blanks: _ _ _ _ _ _'
+  - 'Student guesses ''a''. Result: _ a _ a _ a'
+  - 'Student guesses ''n''. Result: _ a n a n a'
+  - 'Student guesses ''b''. Result: b a n a n a. Correct!'
+  teacherDialogue:
+  - '"What is the most common letter in English? Yes, ''e''! That is a good first
+    guess."'
+  - '"Can anyone guess the word now? It is a yellow fruit!"'
+  topic: vocabulary review and spelling
 format:
 - in-person
-requiresTech: false
-digitalReady: false
+grammar_focus:
+- vocabulary
+- spelling
+groupSize: whole-class
 hasAudioComponent: false
 hasPrintableComponent: false
 hasSlidesComponent: false
 hasVisualComponent: true
-adaptableToTopic: true
+id: hangman
 instructions:
 - Choose a word from the current lesson vocabulary. Write a blank for each letter
   on the board.
@@ -37,30 +69,6 @@ instructions:
 - The students lose if the hangman is completed before they guess the word.
 - 'Discuss: Which letters did you guess first? Why? (Introduce the concept of letter
   frequency.)'
-script:
-- '"I am thinking of a word. It has 6 letters. What letter do you want to guess first?"'
-- '"Yes! There is an ''e'' in the word. Let me write it in."'
-- '"No, there is no ''k''. That is one wrong guess. Let me draw the head."'
-setupInstructions: Choose 3-4 words from current vocabulary. Have the whiteboard ready.
-  Optionally prepare a reference chart showing English letter frequency (E, T, A,
-  O, I, N, S, H, R, D, L, C, U, M, W, F, G, Y, P, B are the most common).
-exampleSnippet:
-  topic: vocabulary review and spelling
-  execution:
-  - 'Word: ''banana''. Blanks: _ _ _ _ _ _'
-  - 'Student guesses ''a''. Result: _ a _ a _ a'
-  - 'Student guesses ''n''. Result: _ a n a n a'
-  - 'Student guesses ''b''. Result: b a n a n a. Correct!'
-  teacherDialogue:
-  - '"What is the most common letter in English? Yes, ''e''! That is a good first
-    guess."'
-  - '"Can anyone guess the word now? It is a yellow fruit!"'
-differentiation:
-  support: Allow students to work in pairs. Give a hint about the word category. Provide
-    a letter frequency chart as reference. Use shorter words.
-  extension: Use longer or more complex words. Have students take turns being the
-    hangman leader. Challenge students to guess the word before any letters are revealed
-    (strategic guessing based on letter frequency).
 keywords:
 - games
 - spelling
@@ -69,4 +77,45 @@ keywords:
 - guessing
 - classic
 - letter frequency
-l1Enhanced: true
+l1_enhanced:
+- adaptation: Pair Spanish-speaking students for L1 contrastive discussions. Provide
+    bilingual glossaries for key terms.
+  language: Spanish
+  priority: low
+- adaptation: Arabic is written right-to-left. Allow extra time for reading English
+    text. Provide left-to-right reading guides.
+  language: Arabic
+  priority: medium
+- adaptation: Mandarin is tonal. Activities involving listening/speaking should include
+    minimal pair practice for word-level stress.
+  language: Mandarin
+  priority: medium
+l1_specific: []
+materials:
+- Whiteboard and markers
+name: Hangman
+prepTime: none
+requiresTech: false
+script:
+- '"I am thinking of a word. It has 6 letters. What letter do you want to guess first?"'
+- '"Yes! There is an ''e'' in the word. Let me write it in."'
+- '"No, there is no ''k''. That is one wrong guess. Let me draw the head."'
+setupInstructions: Choose 3-4 words from current vocabulary. Have the whiteboard ready.
+  Optionally prepare a reference chart showing English letter frequency (E, T, A,
+  O, I, N, S, H, R, D, L, C, U, M, W, F, G, Y, P, B are the most common).
+skill_areas:
+- vocabulary
+- speaking
+sources:
+- name: Wright, A., Betteridge, D. & Buckby, M. (2006). Games for Language Learning,
+    3rd ed. Cambridge University Press.
+  relevance: 'Ch. 6.10: Hangman spelling'
+- Peregoy & Boyle (2023) Reading, Writing, and Learning in ESL, 8th ed.
+  - 'Watcyn-Jones, P. (1981) Grammar Games and Activities. Penguin Books.'
+teaching_tips:
+- context: Sensitivity
+  tip: 'If the hangman image is inappropriate for your context, alternatives include writing
+    "I AM THE WINNER" or "NEXT TIME LUCKY" letter by letter as mistakes are made, or simply
+    playing with 12 dashes as the countdown.'
+- context: Pair variation
+  tip: 'Hangman works well in pairs, giving more learners active practice time.'

@@ -1,55 +1,32 @@
-id: spin-the-bottle
-name: Spin the Bottle
-category: review
-description: A randomized questioning activity where a bottle is spun and the student
-  it points to must answer a review question. Gamifies review sessions and manages
-  cold-calling in a low-stress, playful manner.
-targetStructures:
-- clauses
+adaptableToTopic: true
+bestForAges:
+- teens
+- adults
 bestForLevels:
 - A1
 - A2
 - B1
 - B2
-bestForAges:
-- teens
-- adults
-duration: 10
-groupSize: whole-class
-energyRequired: medium
-prepTime: low
-materials:
-- Empty bottle or spinner
-- Prepared review questions
-format:
-- in-person
-requiresTech: false
+category: review
+citations:
+- claim: Randomized cold-calling through gamified review increases equitable participation
+    and reduces anxiety in mixed-level classrooms.
+  flagged: false
+  reliability: B
+  source: Peregoy & Boyle (2023) Reading, Writing, and Learning in ESL. Ch. 5
+  tier: 2
+description: A randomized questioning activity where a bottle is spun and the student
+  it points to must answer a review question. Gamifies review sessions and manages
+  cold-calling in a low-stress, playful manner.
+differentiation:
+  extension: Require advanced students to answer with a full sentence and add a follow-up
+    detail. Have them also create a follow-up question for the class.
+  support: Give struggling students easier questions or allow them to choose from
+    two questions. Let them consult notes.
 digitalReady: false
-hasAudioComponent: false
-hasPrintableComponent: false
-hasSlidesComponent: false
-hasVisualComponent: false
-adaptableToTopic: true
-instructions:
-- Arrange students in a circle (or around a central table). Place the bottle in the
-  center.
-- Prepare a set of review questions covering recent vocabulary, grammar, or content.
-- Spin the bottle. When it stops, ask the student it points to a review question.
-- The student answers. If correct, they earn a point (or stay in the game). If incorrect,
-  the question goes to the next student.
-- Spin again. Continue until all questions are used or time is up.
-- Optionally, let the answering student spin the bottle for the next question.
-script:
-- Spin the bottle! It is pointing to... Ahmed. What is the past tense of 'go'? Go
-  ahead!
-- Went! Correct! Now Ahmed, you spin for the next question.
-- 'The bottle points to Yuki. Complete this sentence: If I had more time, I ____.'
-- '"Good try -- ''would travel'' is correct. Yuki, spin again!"'
-setupInstructions: Get an empty bottle (or use a digital spinner as an alternative).
-  Prepare 10-15 review questions covering your current lesson material. Arrange seating
-  in a circle if possible.
+duration: 10
+energyRequired: medium
 exampleSnippet:
-  topic: past simple review
   execution:
   - 'Question: ''What did you eat for breakfast?'' Student answers: ''I ate toast
     and eggs.'''
@@ -59,11 +36,25 @@ exampleSnippet:
   teacherDialogue:
   - Spin! Okay, the bottle chose you. Here is your question...
   - Not quite -- anyone else want to try? The answer is 'bought.'
-differentiation:
-  support: Give struggling students easier questions or allow them to choose from
-    two questions. Let them consult notes.
-  extension: Require advanced students to answer with a full sentence and add a follow-up
-    detail. Have them also create a follow-up question for the class.
+  topic: past simple review
+format:
+- in-person
+grammar_focus: []
+groupSize: whole-class
+hasAudioComponent: false
+hasPrintableComponent: false
+hasSlidesComponent: false
+hasVisualComponent: false
+id: spin-the-bottle
+instructions:
+- Arrange students in a circle (or around a central table). Place the bottle in the
+  center.
+- Prepare a set of review questions covering recent vocabulary, grammar, or content.
+- Spin the bottle. When it stops, ask the student it points to a review question.
+- The student answers. If correct, they earn a point (or stay in the game). If incorrect,
+  the question goes to the next student.
+- Spin again. Continue until all questions are used or time is up.
+- Optionally, let the answering student spin the bottle for the next question.
 keywords:
 - review
 - random selection
@@ -71,4 +62,49 @@ keywords:
 - bottle
 - questioning
 - gamified review
-l1Enhanced: true
+l1_enhanced:
+- adaptation: Spanish allows null subjects. Ensure activities require explicit subject
+    pronouns in all English sentences during Q&A rounds.
+  language: Spanish
+  priority: high
+- adaptation: Arabic speakers may produce VSO order in spoken English. Cold-calling
+    via randomizer targets spontaneous accuracy.
+  language: Arabic
+  priority: high
+- adaptation: Mandarin speakers may avoid answering with full sentences. Require minimum
+    3-word answers to build sentence-level fluency.
+  language: Mandarin
+  priority: medium
+l1_specific: []
+materials:
+- Empty bottle or spinner
+- Prepared review questions
+name: Spin the Bottle
+prepTime: low
+requiresTech: false
+script:
+- Spin the bottle! It is pointing to... Ahmed. What is the past tense of 'go'? Go
+  ahead!
+- Went! Correct! Now Ahmed, you spin for the next question.
+- 'The bottle points to Yuki. Complete this sentence: If I had more time, I ____.'
+- '"Good try -- ''would travel'' is correct. Yuki, spin again!"'
+setupInstructions: Get an empty bottle (or use a digital spinner as an alternative).
+  Prepare 10-15 review questions covering your current lesson material. Arrange seating
+  in a circle if possible.
+skill_areas:
+- grammar
+- integrated
+sources:
+
+- author: Ur, Penny
+  year: 1988
+  title: 'Grammar Practice Activities: A Practical Guide for Teachers'
+  publisher: Cambridge University Press
+- author: Peregoy, S. & Boyle, O.
+  year: 2023
+  title: Reading, Writing, and Learning in ESL
+  edition: 8th ed.
+  publisher: Pearson
+  chapter: 'Ch. 5: Oral English Development for Multilingual Learners'
+targetStructures: []
+teaching_tips: ''

@@ -1,45 +1,132 @@
+citations:
+- claim: 'Core meaning: Ask questions indirectly to be more polite, less direct, or when embedding a question in a statement'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 13: Wh-Questions'
+  tier: 4
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 13: Wh-Questions'
+  tier: 4
+- claim: Common error '*Can you tell me where is the station?*' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- claim: Indirect questions serve key interactional functions, including information-seeking, politeness, and softening requests
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 13: Wh-Questions'
+  tier: 1
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for L1-specific error patterns in English.
+    Their learner English framework documents how each L1 group produces characteristic errors in this grammatical domain,
+    enabling teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference and Other Problems, 2nd ed. Cambridge
+    University Press.'
+  tier: 2
+- claim: Oshima & Hogue's Great Writing series demonstrates how this grammatical structure functions in academic writing contexts.
+    Their approach connects grammar instruction to writing outcomes, showing learners how accurate use of this structure improves
+    paragraph cohesion, essay organization, and academic register.
+  source: Oshima, A. and Hogue, A. (2006). Introduction to Academic Writing, 3rd ed. Pearson Longman.
+  tier: 2
+common_errors:
+- correction: Can you tell me where the station is?
+  error: '*Can you tell me where is the station?*'
+  explanation: Indirect questions use statement order (where the station is), not question order (where is the station). This
+    is a very common error.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  - Chinese
+  reliability: D
+- correction: Can you tell me where the station is?
+  error: 'Inverting subject/verb in indirect question: *''Can you tell me where is the station?'''
+  explanation: 'Swan PEU: After question words in indirect questions, use statement word order (subject + verb), NOT question
+    word order.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Chinese
+  - Japanese
+  reliability: B
+  source: Swan Entry 372. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+- correction: I wonder whether he will come.
+  error: 'Using ''if'' instead of ''whether'' (formal): *''I wonder if he will come.'' (formal/written)'
+  explanation: 'Swan PEU: "Whether" is preferred in formal writing. "If" is common in speech. "Whether" suggests two alternatives;
+    "if" suggests a condition.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan Entry 373. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+description: Polite ways to ask questions by embedding them in a statement, using question word + subject + verb (no inversion).
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - weather and nature
+      - asking for directions
+      - customer service
+      min_examples: 4
+    structure: 'Introduction + question word + subject + verb: "Can you tell me where the station is?"
+
+
+      Yes/No indirect: If/whether + subject + verb: "Do you know if he is coming?"
+
+
+      '
+  negative:
+    example_generator:
+      contexts:
+      - everyday situations
+      - negation
+      min_examples: 4
+    structure: 'Negative in the embedded question: ''Can you tell me where the station isn''t?'' (rare), more common: ''I
+      don''t know where the station is.'''
+  questions:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: 'Invert introduction verb: ''Could you tell me where the station is?'''
 grammar_point: indirect_questions
-title: Indirect Questions (Polite Information Requests)
-description: Polite ways to ask questions by embedding them in a statement, using
-  question word + subject + verb (no inversion).
 level: B2
 meaning:
-  core_meaning: Ask questions indirectly to be more polite, less direct, or when embedding
-    a question in a statement.
-  timeline: N/A (Applies to all tenses; embedded question matches the time of the
-    action).
+  ccqs:
+  - answer: 'No — it uses normal statement word order: subject + verb.'
+    purpose: Tests whether the learner understands that indirect questions use statement word order (subject + verb), not
+      question word order (auxiliary + subject).
+    question: Does the embedded question use question word order (verb before subject)?
+  - answer: More polite — it softens the request.
+    purpose: Tests whether the learner can identify and apply the correct form/meaning of this grammar point in context. The
+      question 'Is an indirect question more or less polite than a...' checks conceptual understanding, not just memorization.
+    question: Is an indirect question more or less polite than a direct question?
+  - answer: Both — 'if' and 'whether' are interchangeable in indirect yes/no questions.
+    purpose: Tests whether the learner can identify and apply the correct form/meaning of this grammar point in context. The
+      question 'Do we use 'if' or 'whether' for yes/no indirect qu...' checks conceptual understanding, not just memorization.
+    question: Do we use 'if' or 'whether' for yes/no indirect questions?
+  - answer: no — it should be 'Can you tell me where the station is?' (no inversion in the embedded part).
+    purpose: Tests whether the learner can identify and apply the correct form/meaning of this grammar point in context. The
+      question 'Does 'Can you tell me where is the station?' follo...' checks conceptual understanding, not just memorization.
+    question: Does 'Can you tell me where is the station?' follow the correct pattern?
   contrast: '''Direct Question'' = Inverted, direct: "Where is the station?"
 
 
-    ''Indirect Question'' = No inversion, polite: "Can you tell me where the station
-    is?"
+    ''Indirect Question'' = No inversion, polite: "Can you tell me where the station is?"
 
 
     ''Yes/No Indirect'' = If/whether: "Do you know if he is coming?"
 
 
     '
-  ccqs:
-  - question: Does the embedded question use question word order (verb before subject)?
-    answer: 'No — it uses normal statement word order: subject + verb.'
-    purpose: Tests whether the learner understands that indirect questions use statement
-      word order (subject + verb), not question word order (auxiliary + subject).
-  - question: Is an indirect question more or less polite than a direct question?
-    answer: More polite — it softens the request.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Is an indirect question more
-      or less polite than a...' checks conceptual understanding, not just memorization.
-  - question: Do we use 'if' or 'whether' for yes/no indirect questions?
-    answer: Both — 'if' and 'whether' are interchangeable in indirect yes/no questions.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Do we use 'if' or 'whether'
-      for yes/no indirect qu...' checks conceptual understanding, not just memorization.
-  - question: Does 'Can you tell me where is the station?' follow the correct pattern?
-    answer: no — it should be 'Can you tell me where the station is?' (no inversion
-      in the embedded part).
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Does 'Can you tell me where
-      is the station?' follo...' checks conceptual understanding, not just memorization.
+  core_meaning: Ask questions indirectly to be more polite, less direct, or when embedding a question in a statement.
   example_generator:
     contexts:
     - everyday situations
@@ -47,155 +134,101 @@ meaning:
     - customer service
     - workplace communication
     cultural_notes:
-    - Indirect questions are essential for polite English, especially with strangers
-      and in professional settings
+    - Indirect questions are essential for polite English, especially with strangers and in professional settings
     - Direct questions can sound rude or demanding in British English culture
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Introduction + question word + subject + verb: "Can you tell me where
-      the station is?"
-
-
-      Yes/No indirect: If/whether + subject + verb: "Do you know if he is coming?"
-
-
-      '
-    example_generator:
-      contexts:
-      - weather and nature
-      - asking for directions
-      - customer service
-      min_examples: 4
-  negative:
-    structure: 'Negative in the embedded question: ''Can you tell me where the station
-      isn''t?'' (rare), more common: ''I don''t know where the station is.'''
-    example_generator:
-      contexts:
-      - everyday situations
-      - negation
-      min_examples: 4
-  questions:
-    structure: 'Invert introduction verb: ''Could you tell me where the station is?'''
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
+  timeline: N/A (Applies to all tenses; embedded question matches the time of the action).
+phonetics:
+- example_generator:
+    contexts:
+    - question intonation
+  l1_issue: Learners may use question intonation throughout, making 'where is he?' sound like a direct question even within
+    an indirect structure.
+  note: The introduction phrase often has rising intonation, while the embedded question falls
+- example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Learners may pronounce 'whether' too carefully, making it stand out unnaturally in casual speech.
+  note: '''Whether'' is often reduced to /ˈwɛð.ər/ in fast speech, sometimes sounding like ''wether'''
+register_notes: []
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Embedded questions use statement word order (subject before verb), not question
-    word order
-  type: grammatical
-  examples:
+- examples:
   - Do you know where the bank is? (correct — subject 'the bank' before verb 'is')
   - Do you know where is the bank? (incorrect — inverted word order)
-- rule: 'Common introduction phrases: Can you tell me..., Do you know..., I wonder...,
-    I''d like to know..., Could you explain...'
-  type: lexical
-  examples:
+  rule: Embedded questions use statement word order (subject before verb), not question word order
+  type: grammatical
+- examples:
   - Can you tell me what time it is?
   - Do you know whether the shop is open?
   - I wonder how much this costs.
-- rule: If and whether are interchangeable in indirect yes/no questions
-  type: grammatical
-  examples:
+  rule: 'Common introduction phrases: Can you tell me..., Do you know..., I wonder..., I''d like to know..., Could you explain...'
+  type: lexical
+- examples:
   - I don't know if he's coming.
   - I don't know whether he's coming.
-- rule: No auxiliary 'do/does/did' in the embedded question
+  rule: If and whether are interchangeable in indirect yes/no questions
   type: grammatical
-  examples:
+- examples:
   - Tell me what you want. (not 'what do you want' when embedded)
   - I wonder where she lives. (not 'where does she live' when embedded)
-- rule: Indirect questions can stand alone without an introduction phrase
+  rule: No auxiliary 'do/does/did' in the embedded question
   type: grammatical
-  examples:
+- examples:
   - I don't know where he is. (statement with embedded question)
   - I wonder if she'll come. (standalone indirect question)
-use:
-- name: Polite Requests for Information
-  description: Ask strangers or superiors for information politely.
-  examples:
-  - Excuse me, can you tell me where the restroom is?
-  - Do you know what time the meeting starts?
-  key_point: More polite than direct questions.
-- name: Embedded Questions in Statements
-  description: Include a question in a statement.
-  examples:
-  - I wonder if he will come.
-  - She asked whether I liked it.
-  key_point: Common in reported speech.
-- name: Yes/No Indirect Questions
-  description: Use if/whether for yes/no questions.
-  examples:
-  - Do you know if it is raining?
-  - I don't know whether he is here.
-  key_point: If and whether are interchangeable here.
-phonetics:
-- note: The introduction phrase often has rising intonation, while the embedded question
-    falls
-  example_generator:
-    contexts:
-    - question intonation
-  l1_issue: Learners may use question intonation throughout, making 'where is he?'
-    sound like a direct question even within an indirect structure.
-- note: '''Whether'' is often reduced to /ˈwɛð.ər/ in fast speech, sometimes sounding
-    like ''wether'''
-  example_generator:
-    contexts:
-    - connected speech
-  l1_issue: Learners may pronounce 'whether' too carefully, making it stand out unnaturally
-    in casual speech.
+  rule: Indirect questions can stand alone without an introduction phrase
+  type: grammatical
 teaching:
   methodology: PPP with contrastive analysis
+  recommended_activities:
+  - adaptation_notes: Students rewrite direct questions as indirect questions for a role-play scenario (hotel reception, tourist
+      information).
+    duration: 15
+    name: Politeness Upgrade
+  - adaptation_notes: Students are given incorrect indirect questions and must identify and correct the word order.
+    duration: 10
+    name: Word Order Fix
+  - adaptation_notes: Pairs role-play customer and shop assistant, with the customer required to use indirect questions.
+    duration: 15
+    name: Shop Assistant Role-Play
   tips:
   - 'Week 1: Wh- indirect questions (no inversion).'
   - 'Week 2: Yes/No indirect questions (if/whether).'
   - 'Week 3: Contrast direct vs indirect questions.'
   - 'Role-play: Ask strangers for directions using indirect questions.'
   - 'Use error correction drills: give students incorrect indirect questions to fix.'
-  recommended_activities:
-  - name: Politeness Upgrade
-    duration: 15
-    adaptation_notes: Students rewrite direct questions as indirect questions for
-      a role-play scenario (hotel reception, tourist information).
-  - name: Word Order Fix
-    duration: 10
-    adaptation_notes: Students are given incorrect indirect questions and must identify
-      and correct the word order.
-  - name: Shop Assistant Role-Play
-    duration: 15
-    adaptation_notes: Pairs role-play customer and shop assistant, with the customer
-      required to use indirect questions.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*Can you tell me where is the station?*'
-  correction: Can you tell me where the station is?
-  explanation: Indirect questions use statement order (where the station is), not
-    question order (where is the station). This is a very common error.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - German
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.
+  - 'Swan PEU: Indirect questions = question word + subject + verb. "Where is it?" (direct) -> "Can you tell me where it is?"
+    (indirect).'
+  - 'Swan PEU: "Whether" for alternatives -- "I do not know whether to stay or go." "If" cannot be used with "or" in this
+    way.'
+teaching_tips:
+- source: 'Celce-Murcia & Larsen-Freeman (1999) The Grammar Book: An ESL/EFL Teacher''s Course, 2nd ed. Heinle & Heinle.'
+  tip: 'INDIRECT QUESTION FORM: Indirect questions require normal (uninverted) subject-verb word order: ''She asked me if
+    I had time then'' NOT *''She asked me if did I have time then''. This is a common error. Embedded questions never have
+    subject-operator inversion. Sequence-of-tense: present → past, now → then, here → there, this → that. Source: Ch.24 p.452-458.'
+title: Indirect Questions (Polite Information Requests)
+use:
+- description: Ask strangers or superiors for information politely.
+  examples:
+  - Excuse me, can you tell me where the restroom is?
+  - Do you know what time the meeting starts?
+  key_point: More polite than direct questions.
+  name: Polite Requests for Information
+- description: Include a question in a statement.
+  examples:
+  - I wonder if he will come.
+  - She asked whether I liked it.
+  key_point: Common in reported speech.
+  name: Embedded Questions in Statements
+- description: Use if/whether for yes/no questions.
+  examples:
+  - Do you know if it is raining?
+  - I don't know whether he is here.
+  key_point: If and whether are interchangeable here.
+  name: Yes/No Indirect Questions

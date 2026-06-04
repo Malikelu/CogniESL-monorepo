@@ -1,32 +1,139 @@
+citations:
+- claim: 'Core meaning: Advanced conditional structures allow speakers to express nuanced hypothetical situations that mix
+    t'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27: Conditionals-10.6'
+  tier: 1
+- claim: 'Register distribution: Advanced conditionals (mixed, inverted, implied) are primarily used in formal writing and
+    academic p'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27: Conditionals-10.6'
+  tier: 1
+- claim: 'Discourse function: Advanced conditionals create sophisticated narratives that connect different time frames.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27: Conditionals-10.6'
+  tier: 1
+- claim: 'Common error ''Mixing conditional types incorrectly: *''If I would have stud'' for Portuguese, Spanish, French speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- claim: 'Dialectal variation: Inverted conditionals are more common in BrE formal writing than AmE.'
+  reliability: B
+  source: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  tier: 1
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents how transfer effects are non-linear,
+    determined by functional fit between L1 and L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects are non-linear — determined by functional
+    fit between L1 and L2 systems rather than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning. Routledge.
+  tier: 2
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for L1-specific error patterns in English.
+    Their learner English framework documents how each L1 group produces characteristic errors in this grammatical domain,
+    enabling teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference and Other Problems, 2nd ed. Cambridge
+    University Press.'
+  tier: 2
+common_errors:
+- correction: If I had studied, I would pass now.
+  error: 'Mixing conditional types incorrectly: *''If I would have studied, I would pass.'''
+  explanation: 'Mixed conditional Type 1: if + past perfect (past condition), would + base (present result). Don''t use ''would
+    have'' in the if-clause.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Conditionals'
+- correction: Had I known, I would have helped.
+  error: 'Using ''if'' with inverted conditionals: *''If had I known, I would have helped.'''
+  explanation: 'Inverted conditionals drop ''if'' and invert subject and auxiliary: ''Had I known'' (not ''If had I known'').'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Conditionals'
+- correction: If you study, you will pass.
+  error: 'Using ''unless'' with negative verb: *''Unless you do not study, you will pass.'''
+  explanation: 'Swan PEU: ''Unless'' = ''if not''. ''Unless you do not study'' = ''If you study'' (double negative), which
+    reverses the intended meaning.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: If I were rich, I would travel.
+  error: 'Using ''was'' instead of ''were'' in formal conditionals: *''If I was rich, I would travel.'' (formal context)'
+  explanation: 'Swan PEU: In formal English, ''were'' is used for all persons in hypothetical conditionals. ''If I were'',
+    ''If he were''. ''Was'' is informal.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+description: Mixed conditionals, implied conditionals, inverted conditionals, and other complex conditional structures beyond
+  the basic three types.
+dialectal_variation:
+- note: Inverted conditionals are more common in BrE formal writing than AmE.
+- note: 'In some dialects, ''should'' is used for first person inverted conditionals: ''Should I be late...'' (formal BrE)'
+discourse_notes:
+- note: Advanced conditionals create sophisticated narratives that connect different time frames.
+- note: Inverted conditionals add formality and emphasis to written arguments.
+- note: 'Implied conditionals allow writers to set up hypotheticals concisely: ''Without X, Y would not have happened.'''
+- note: In academic writing, advanced conditionals are used for discussing alternative research outcomes and theoretical implications.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - regret and reflection
+      - formal writing
+      - hypothetical reasoning
+      min_examples: 4
+    structure: 'Mixed: If + past perfect, would + base verb. Inverted: Had + subject + past participle, would + have + past
+      participle.'
+  negative:
+    example_generator:
+      contexts:
+      - negative hypotheticals
+      - formal alternatives to if
+      min_examples: 3
+    structure: 'If + had not + past participle, would not + have + past participle. Implied: But for + noun, would + base
+      verb.'
+  questions:
+    example_generator:
+      contexts:
+      - formal questions
+      - speculative questions
+      min_examples: 3
+    structure: Had + subject + past participle, would + subject + have + past participle? / What if + subject + had + past
+      participle?
 grammar_point: conditionals_advanced
-title: Advanced Conditionals
-description: Mixed conditionals, implied conditionals, inverted conditionals, and
-  other complex conditional structures beyond the basic three types.
 level: C1
 meaning:
-  core_meaning: Advanced conditional structures allow speakers to express nuanced
-    hypothetical situations that mix time frames, imply conditions without using 'if',
-    or use formal inverted structures for stylistic effect.
-  timeline: Varies — mixed conditionals combine different time frames; inverted conditionals
-    follow the same time rules as standard conditionals.
-  contrast: Standard 3rd conditional = If I had studied, I would have passed. Mixed
-    = If I had studied, I would be a doctor now. Inverted = Had I studied, I would
-    have passed.
   ccqs:
-  - question: Does this conditional mix past and present time frames?
-    answer: Yes, it is a mixed conditional.
-    purpose: Tests whether the learner can identify a mixed conditional (combining
-      past and present time frames). This is important because recognizing mixed conditionals
-      is a hallmark of advanced English proficiency.
-  - question: Is the 'if' clause replaced by inversion?
-    answer: Yes, this is an inverted conditional (formal register).
-    purpose: Tests whether the learner can identify an inverted conditional (formal
-      register where "if" is dropped and subject-auxiliary are inverted). This is
-      important because inversion is a key feature of formal written English.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      conditionals advanced and explain why they are incorrect.
+  - answer: Yes, it is a mixed conditional.
+    purpose: Tests whether the learner can identify a mixed conditional (combining past and present time frames). This is
+      important because recognizing mixed conditionals is a hallmark of advanced English proficiency.
+    question: Does this conditional mix past and present time frames?
+  - answer: Yes, this is an inverted conditional (formal register).
+    purpose: Tests whether the learner can identify an inverted conditional (formal register where "if" is dropped and subject-auxiliary
+      are inverted). This is important because inversion is a key feature of formal written English.
+    question: Is the 'if' clause replaced by inversion?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with conditionals advanced and explain why they
+      are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: Learners often make errors with this structure that change the intended meaning.
+    purpose: Tests whether the learner can identify and correct a common error associated with conditionals advanced. Recognizing
+      typical mistakes helps learners self-edit and produce more accurate English.
+    question: Can you identify and correct the error in this sentence related to this grammar point?
+  contrast: Standard 3rd conditional = If I had studied, I would have passed. Mixed = If I had studied, I would be a doctor
+    now. Inverted = Had I studied, I would have passed.
+  core_meaning: Advanced conditional structures allow speakers to express nuanced hypothetical situations that mix time frames,
+    imply conditions without using 'if', or use formal inverted structures for stylistic effect.
   example_generator:
     contexts:
     - reflecting on past choices
@@ -34,75 +141,124 @@ meaning:
     - hypothetical discussions
     - academic analysis
     cultural_notes:
-    - Inverted conditionals are common in formal writing and literary English but
-      rare in casual speech
+    - Inverted conditionals are common in formal writing and literary English but rare in casual speech
     - Mixed conditionals are a hallmark of advanced proficiency
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Mixed: If + past perfect, would + base verb. Inverted: Had + subject
-      + past participle, would + have + past participle.'
-    example_generator:
-      contexts:
-      - regret and reflection
-      - formal writing
-      - hypothetical reasoning
-      min_examples: 4
-  negative:
-    structure: 'If + had not + past participle, would not + have + past participle.
-      Implied: But for + noun, would + base verb.'
-    example_generator:
-      contexts:
-      - negative hypotheticals
-      - formal alternatives to if
-      min_examples: 3
-  questions:
-    structure: Had + subject + past participle, would + subject + have + past participle?
-      / What if + subject + had + past participle?
-    example_generator:
-      contexts:
-      - formal questions
-      - speculative questions
-      min_examples: 3
+  timeline: Varies — mixed conditionals combine different time frames; inverted conditionals follow the same time rules as
+    standard conditionals.
+phonetics:
+- example_generator:
+    contexts:
+    - formal speeches
+    - academic presentations
+  l1_issue: Inverted word order is challenging for speakers from languages that do not use subject-auxiliary inversion in
+    conditionals.
+  note: Inverted conditionals are typically spoken with a formal, measured pace and clear pauses around the conditional clause.
+- example_generator:
+    contexts:
+    - spontaneous speech
+    - oral exams
+  l1_issue: Learners often default to a single conditional pattern rather than mixing time frames.
+  note: Mixed conditionals require careful attention to tense shifts in both clauses, which can be difficult to produce fluently.
+register_notes:
+- note: Advanced conditionals (mixed, inverted, implied) are primarily used in formal writing and academic prose.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Inverted conditionals are common in formal speeches and legal language: ''Had the defendant been present...'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Implied conditionals are used for sophisticated argumentation: ''Without this intervention, the outcome would have
+    been different.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In conversation, advanced conditionals are rare. Most speakers use standard first, second, and third conditionals.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Advanced conditional structures: formal inversion conditionals (Had I known...) are rare in
+    conversation, more common in literary/formal writing. Mixed conditionals appear in planned discourse. Ch. 10.2.8.12'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 10.2.8.12
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27: Conditionals-10.6'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: 'Mixed conditional (past condition, present result): If + past perfect, would
-    + base verb'
-  type: grammatical
-  examples:
+- examples:
   - If I had taken that job, I would be living in London now.
   - If she had accepted the offer, she would be the manager today.
   - If we had left earlier, we would not be stuck in traffic.
-- rule: 'Mixed conditional (present condition, past result): If + past simple, would
-    have + past participle'
+  rule: 'Mixed conditional (past condition, present result): If + past perfect, would + base verb'
   type: grammatical
-  examples:
+- examples:
   - If I were braver, I would have confronted him at the time.
   - If she were more organised, she would have finished the project on time.
   - If he were taller, he would have made the basketball team.
-- rule: 'Inverted conditional (formal, replacing ''if''): Had/Were/Should + subject
-    + complement'
+  rule: 'Mixed conditional (present condition, past result): If + past simple, would have + past participle'
   type: grammatical
-  examples:
+- examples:
   - Had I known, I would have helped. (If I had known...)
   - Were she here, she would agree. (If she were here...)
   - Should you need anything, please call. (If you should need...)
-- rule: 'Implied conditionals without ''if'': But for, without, otherwise, supposing'
+  rule: 'Inverted conditional (formal, replacing ''if''): Had/Were/Should + subject + complement'
   type: grammatical
-  examples:
+- examples:
   - But for your help, I would have failed. (If it were not for your help...)
   - Without the rain, the match would have gone ahead. (If it had not rained...)
   - Otherwise, we would have been on time. (If the train had not been delayed...)
   - Supposing you won the lottery, what would you do?
-- rule: 'Conditional with ''unless'' meaning ''if...not'': Unless + present/past,
-    will/would + base verb'
+  rule: 'Implied conditionals without ''if'': But for, without, otherwise, supposing'
   type: grammatical
-  examples:
+- examples:
   - Unless you hurry, we will miss the train.
   - Unless she had reminded me, I would have forgotten.
+  rule: 'Conditional with ''unless'' meaning ''if...not'': Unless + present/past, will/would + base verb'
+  type: grammatical
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Students match past conditions to present results using mixed conditionals, drawing timelines to support
+      understanding.
+    duration: 15
+    name: Timeline Matching
+  - adaptation_notes: Students rewrite standard conditional sentences using inversion and implied conditionals for a formal
+      register.
+    duration: 15
+    name: Formal Rewrite
+  - adaptation_notes: Students discuss hypothetical life choices using mixed conditionals in pairs or small groups.
+    duration: 20
+    name: What If Discussion
+  tips:
+  - 'Use timelines to visualise mixed conditionals: draw a past event arrow and a present result arrow.'
+  - Introduce inversion as a formal alternative to 'if' — start with 'Had I...' and 'Were she...' as the most common patterns.
+  - Practice transforming standard conditionals into inverted and implied forms.
+  - Use real-life scenarios (career choices, travel decisions) to make mixed conditionals meaningful.
+  - 'Swan PEU: ''Unless'' = ''if not''. ''Unless you hurry, you''ll miss the train'' = ''If you do not hurry, you''ll miss
+    the train''. Do not use ''unless'' with a negative verb.'
+  - 'Swan PEU: ''Were'' vs ''was'' in conditionals — ''If I were you'' (formal/correct) vs ''If I was you'' (informal). Both
+    are used; ''were'' is more traditional.'
+  - 'Swan PEU: Mixed conditionals — past condition + present result. ''If I had studied medicine, I would be a doctor now.''
+    (past → present).'
+teaching_tips:
+- source: 'Celce-Murcia & Larsen-Freeman (1999) The Grammar Book: An ESL/EFL Teacher''s Course, 2nd ed. National Geographic Learning.'
+  tip: 'CONDITIONAL TAXONOMY (BEYOND 3 TYPES): GB3 identifies factual (generic + implicit inference), future (1st conditional
+    + weakened forms with ''happen to''/''should''), counterfactual/hypothetical (past and present unreal), sarcastic (''If
+    you had any brains, you''d be dangerous''), and contrastive (''I''ll let you off, but if you do it again...''). The traditional
+    ''zero/first/second/third'' 4-type system misses several important conditional types. Source: Ch.27 p.420-426.'
+- source: 'Celce-Murcia & Larsen-Freeman (1999) The Grammar Book: An ESL/EFL Teacher''s Course, 2nd ed. National Geographic Learning.'
+  tip: 'WERE-SUBJUNCTIVE AND INVERSION: Subjunctive ''were'' occurs in counterfactual if-clauses: ''If I WERE rich, I would
+    travel.'' This is NOT past tense. Subjunctive were is restricted to if-clauses (*''I were happy'' is ungrammatical in
+    main clauses). Inversion: Had/Should/Were can front with subject deletion: ''Had we known...'', ''Were he here...'', ''Should
+    you need help...'' Source: Ch.27 p.420-426.'
+title: Advanced Conditionals
 use:
 - context: Expressing regret and reflection
-  description: Mixed conditionals allow speakers to connect past decisions with present
-    consequences.
+  description: Mixed conditionals allow speakers to connect past decisions with present consequences.
   examples:
   - If I had studied medicine, I would be a doctor now.
   - If I had not moved to this city, I would never have met you.
@@ -121,93 +277,3 @@ use:
   examples:
   - Should you wish to discuss this further, my door is always open.
   - Were you to reconsider, we would be happy to make a new offer.
-phonetics:
-- note: Inverted conditionals are typically spoken with a formal, measured pace and
-    clear pauses around the conditional clause.
-  example_generator:
-    contexts:
-    - formal speeches
-    - academic presentations
-  l1_issue: Inverted word order is challenging for speakers from languages that do
-    not use subject-auxiliary inversion in conditionals.
-- note: Mixed conditionals require careful attention to tense shifts in both clauses,
-    which can be difficult to produce fluently.
-  example_generator:
-    contexts:
-    - spontaneous speech
-    - oral exams
-  l1_issue: Learners often default to a single conditional pattern rather than mixing
-    time frames.
-teaching:
-  methodology: Guided discovery
-  tips:
-  - 'Use timelines to visualise mixed conditionals: draw a past event arrow and a
-    present result arrow.'
-  - Introduce inversion as a formal alternative to 'if' — start with 'Had I...' and
-    'Were she...' as the most common patterns.
-  - Practice transforming standard conditionals into inverted and implied forms.
-  - Use real-life scenarios (career choices, travel decisions) to make mixed conditionals
-    meaningful.
-  recommended_activities:
-  - name: Timeline Matching
-    duration: 15
-    adaptation_notes: Students match past conditions to present results using mixed
-      conditionals, drawing timelines to support understanding.
-  - name: Formal Rewrite
-    duration: 15
-    adaptation_notes: Students rewrite standard conditional sentences using inversion
-      and implied conditionals for a formal register.
-  - name: What If Discussion
-    duration: 20
-    adaptation_notes: Students discuss hypothetical life choices using mixed conditionals
-      in pairs or small groups.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 10:
-    Conditionals, §10.1-10.6'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: 'Mixing conditional types incorrectly: *''If I would have studied, I would
-    pass.'''
-  correction: If I had studied, I would pass now.
-  explanation: 'Mixed conditional Type 1: if + past perfect (past condition), would
-    + base (present result). Don''t use ''would have'' in the if-clause.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - German
-- error: 'Using ''if'' with inverted conditionals: *''If had I known, I would have
-    helped.'''
-  correction: Had I known, I would have helped.
-  explanation: 'Inverted conditionals drop ''if'' and invert subject and auxiliary:
-    ''Had I known'' (not ''If had I known'').'
-  l1_groups:
-  - Portuguese
-  - Spanish
-register_notes:
-- note: Advanced conditionals (mixed, inverted, implied) are primarily used in formal
-    writing and academic prose.
-- note: 'Inverted conditionals are common in formal speeches and legal language: ''Had
-    the defendant been present...'''
-- note: 'Implied conditionals are used for sophisticated argumentation: ''Without
-    this intervention, the outcome would have been different.'''
-- note: In conversation, advanced conditionals are rare. Most speakers use standard
-    first, second, and third conditionals.
-dialectal_variation:
-- note: Inverted conditionals are more common in BrE formal writing than AmE.
-- note: 'In some dialects, ''should'' is used for first person inverted conditionals:
-    ''Should I be late...'' (formal BrE)'
-discourse_notes:
-- note: Advanced conditionals create sophisticated narratives that connect different
-    time frames.
-- note: Inverted conditionals add formality and emphasis to written arguments.
-- note: 'Implied conditionals allow writers to set up hypotheticals concisely: ''Without
-    X, Y would not have happened.'''
-- note: In academic writing, advanced conditionals are used for discussing alternative
-    research outcomes and theoretical implications.

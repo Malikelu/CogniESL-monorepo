@@ -1,29 +1,137 @@
-grammar_point: complex_noun_phrases
-title: Complex Noun Phrases
+citations:
+- claim: 'Core meaning: Complex noun phrases combine multiple modifiers — both before
+    and after the head noun — to pack deta'
+  reliability: B
+  source: 'Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch.
+    4-5: Noun phrase structure (premodification, postmodification, register distribution)'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday
+    communication.'
+  reliability: B
+  source: 'Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch.
+    4-5: Noun phrase structure (premodification, postmodification, register distribution)'
+  tier: 1
+- claim: Common error '*The about climate change report was interesting.*' for Portuguese,
+    Spanish, French speakers
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
+    Reference and Possession-16.3'
+  tier: 1
+  flagged: false
+- claim: Oshima & Hogue's Great Writing series demonstrates how this grammatical structure
+    functions in academic writing contexts. Their approach connects grammar instruction
+    to writing outcomes, showing learners how accurate use of this structure improves
+    paragraph cohesion, essay organization, and academic register.
+  source: Oshima, A. and Hogue, A. (2006). Introduction to Academic Writing, 3rd ed.
+    Pearson Longman.
+  tier: 2
+common_errors:
+- correction: The report about climate change was interesting.
+  error: '*The about climate change report was interesting.*'
+  explanation: Prepositional phrase post-modifiers go AFTER the noun they modify,
+    not before. In English, heavy modifiers follow the head noun, unlike some L1s
+    that allow pre-nominal prepositional phrases.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Arabic
+  reliability: D
+- correction: The man sitting on the bench was reading.
+  error: '*The sitting on the bench man was reading.*'
+  explanation: Participial post-modifiers come immediately after the noun they modify.
+    Placing the participle before the noun creates confusion about what is being modified.
+    English keeps modifiers close to their heads.
+  flagged: true
+  l1_groups:
+  - Spanish
+  - French
+  - Arabic
+  - Korean
+  reliability: D
+- correction: A police car was parked outside.
+  error: '*A police an car was parked outside.*'
+  explanation: Noun-noun compounds in English don't take articles between the modifier
+    and head noun. 'Police' modifies 'car' directly. Both words together form one
+    noun phrase with a single article.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Arabic
+  reliability: D
+- correction: The book which I told you about is on the table.
+  error: '*The book which I told you about it is on the table.*'
+  explanation: In relative clauses, the relative pronoun ('which') replaces the object.
+    Adding 'it' after the preposition creates a double object. This resumptive pronoun
+    error is common in L1s that require pronouns in relative clauses (Arabic, Hebrew).
+  l1_groups:
+  - Arabic
+  - Hebrew
+  - Portuguese
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Relative clauses'
 description: Noun phrases with multiple pre-modifiers and post-modifiers that create
   detailed, specific references.
+dialectal_variation: []
+discourse_notes:
+- note: Complex noun phrases with multiple premodifiers allow dense information packaging
+    in academic writing.
+  affirmative:
+    example_generator:
+      contexts:
+      - academic descriptions
+      - news headlines
+      - everyday descriptions
+      min_examples: 4
+    structure: (determiner) + pre-modifiers + head noun + post-modifier(s)
+  negative:
+    example_generator:
+      contexts:
+      - expressing absence
+      - negated descriptions
+      min_examples: 3
+    structure: 'Same structure with negation in the clause or with negative determiners:
+      no such thing as a perfect solution to the problem'
+  questions:
+    example_generator:
+      contexts:
+      - asking for identification
+      - clarifying descriptions
+      min_examples: 3
+    structure: 'Wh-determiner + complex NP: Which tall man in the grey suit did you
+      mean?'
+grammar_point: complex_noun_phrases
 level: B2
 meaning:
+  ccqs:
+  - answer: Yes, it has multiple pre- and/or post-modifiers.
+    question: Does this noun phrase contain more than one modifier?
+    purpose: 'Tests whether the learner understands the specific structural and semantic
+      properties of complex noun phrases (CCQ #1).'
+  - answer: Often yes — 'the man talking to John' = 'the man who is talking to John.'
+    question: Can the post-modifier be replaced by a relative clause?
+    purpose: 'Tests whether the learner understands the specific structural and semantic
+      properties of complex noun phrases (CCQ #2).'
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner understands noun-plus-noun compounding as a
+      pre-modification strategy in complex noun phrases. Unlike adjective modification,
+      English allows multiple nouns to stack before a head noun (chicken soup recipe
+      book), which is confusing for learners whose L1 uses post-modification or prepositions
+      for the same relationships. Recognizing noun chains is essential for reading
+      academic and technical texts at B2 level.
+    question: What is the difference in meaning between these two forms?
+  - answer: '''A three-life story.'' In compound adjectives before nouns, the number
+      is singular.'
+    purpose: Tests whether the learner uses singular nouns in compound adjectives
+      (Swan PEU 2016, entry 112.3).
+    question: Which is correct? *'a three-lives story' or 'a three-life story'?
+  contrast: Simple NP = the dog. Complex NP = the large, elderly, brown-and-white
+    rescue dog that lives next door.
   core_meaning: Complex noun phrases combine multiple modifiers — both before and
     after the head noun — to pack detailed information into a single phrase. They
     allow speakers to be precise and economical.
-  timeline: Timeless — noun phrases describe states or identities, not actions.
-  contrast: Simple NP = the dog. Complex NP = the large, elderly, brown-and-white
-    rescue dog that lives next door.
-  ccqs:
-  - question: Does this noun phrase contain more than one modifier?
-    answer: Yes, it has multiple pre- and/or post-modifiers.
-    purpose: Tests whether the learner understands when to use comparative vs. superlative
-      forms. This distinction depends on how many items are being compared.
-  - question: Can the post-modifier be replaced by a relative clause?
-    answer: Often yes — 'the man talking to John' = 'the man who is talking to John.'
-    purpose: Tests whether the learner understands the difference between present
-      ability (can) and past ability or polite possibility (could). This is important
-      for expressing ability and making requests.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      complex noun phrases and explain why they are incorrect.
   example_generator:
     contexts:
     - academic writing
@@ -34,57 +142,105 @@ meaning:
     - English relies heavily on noun phrase complexity rather than verb-heavy constructions
     - Overuse can make text dense and hard to follow
     min_examples: 5
-form:
-  affirmative:
-    structure: (determiner) + pre-modifiers + head noun + post-modifier(s)
-    example_generator:
-      contexts:
-      - academic descriptions
-      - news headlines
-      - everyday descriptions
-      min_examples: 4
-  negative:
-    structure: 'Same structure with negation in the clause or with negative determiners:
-      no such thing as a perfect solution to the problem'
-    example_generator:
-      contexts:
-      - expressing absence
-      - negated descriptions
-      min_examples: 3
-  questions:
-    structure: 'Wh-determiner + complex NP: Which tall man in the grey suit did you
-      mean?'
-    example_generator:
-      contexts:
-      - asking for identification
-      - clarifying descriptions
-      min_examples: 3
+  timeline: Timeless — noun phrases describe states or identities, not actions.
+phonetics:
+- example_generator:
+    contexts:
+    - spoken descriptions
+    - presentations
+  l1_issue: Speakers from languages with post-nominal adjectives (e.g. Spanish, French)
+    may place modifiers after the noun incorrectly.
+  note: Complex NPs are typically produced as a single intonation unit with stress
+    on the head noun and any contrastive modifiers.
+- example_generator:
+    contexts:
+    - spontaneous speech
+    - oral presentations
+  l1_issue: Long pre-modifier strings are challenging for speakers whose L1 uses fewer
+    pre-modifiers.
+  note: In spoken English, speakers often pause before heavy post-modifiers to plan
+    the rest of the phrase.
+register_notes:
+- note: 'Biber et al. (2021) — Complex noun phrases: academic prose has far more complex
+    NPs with multiple premodifiers and postmodification (relative clauses, PPs, appositives)
+    than any other register. Conversation uses predominantly simple NPs. Ch. 8.1.1'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 8.1.1
+sources:
+  corpus_evidence: Biber et al. (1999) LSWE Corpus — Complex noun phrases with multiple
+    premodifiers and postmodifiers are far more common in academic prose and news
+    than in conversation and fiction. Academic prose has the highest density of noun
+    phrases with premodification (adjectives, nouns, participles before the head noun).
+    Conversation favors simple noun phrases with pronouns. Prepositional phrases are
+    the most common postmodifier type across all registers.
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch.
+    4-5: Noun phrase structure (premodification, postmodification, register distribution)'
+  secondary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
+    Reference and Possession'
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: 'Pre-modifier order follows OSASCOMP: determiner, opinion, size, age, shape,
-    colour, origin, material, purpose, head noun'
-  type: grammatical
-  examples:
+- examples:
   - a beautiful large old round red Italian leather travelling bag
   - a charming small new rectangular blue Japanese ceramic flower vase
-- rule: Post-modifiers include relative clauses, prepositional phrases, participle
-    clauses, infinitives, and appositives
+  rule: 'Pre-modifier order follows OSASCOMP: determiner, opinion, size, age, shape,
+    colour, origin, material, purpose, head noun'
   type: grammatical
-  examples:
+- examples:
   - the woman who lives next door
   - the book on the shelf behind you
   - the man talking to the teacher
   - the letter written by Churchill
   - the best time to plant a tree
-- rule: Multiple post-modifiers can stack within a single noun phrase
+  rule: Post-modifiers include relative clauses, prepositional phrases, participle
+    clauses, infinitives, and appositives
   type: grammatical
-  examples:
+- examples:
   - the report published last week that changed government policy
   - the student sitting in the front row who always asks questions
-- rule: Noun-plus-noun compounds function as pre-modifiers before the head noun
-  type: lexical
-  examples:
+  rule: Multiple post-modifiers can stack within a single noun phrase
+  type: grammatical
+- examples:
   - a hospital emergency department waiting room
   - an online language learning platform
+  rule: Noun-plus-noun compounds function as pre-modifiers before the head noun
+  type: lexical
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Students start with a bare noun and take turns adding modifiers.
+      The group judges whether the order is correct.
+    duration: 15
+    name: NP Expansion Game
+  - adaptation_notes: Students unpack dense newspaper headlines into full sentences,
+      identifying each modifier's function.
+    duration: 20
+    name: Headline Decoder
+  - adaptation_notes: Students describe a detailed image using complex NPs. Encourage
+      both pre- and post-modification.
+    duration: 10
+    name: Describe the Picture
+  tips:
+  - 'Start with simple NPs and add modifiers one at a time: the dog, the large dog,
+    the large brown dog, the large brown dog in the garden.'
+  - 'Use the OSASCOMP mnemonic for adjective order: Opinion, Size, Age, Shape, Colour,
+    Origin, Material, Purpose.'
+  - Have students expand newspaper headlines into full complex NPs.
+  - Practice reducing relative clauses to participle clauses for more concise NPs.
+  - 'Swan noun phrase coverage: determiners (133-172), noun modifiers (125-126), apposition
+    (129-130). Long pre-/post-modification: ''a beautiful old Italian leather traveling
+    bag'' — adjective order follows OSAShCOMP.'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 5: CGEL (Ch.5)
+    analyzes NP structure as: (Pre-head modifier(s)) + HEAD + (Post-head modifier(s)).
+    Post-head modifiers include relative clauses (''the book [that I read]''), prepositional
+    phrases (''the book [on the table]''), appositives (''my friend [the doctor]''),
+    and non-finite clauses (''the man [standing by the door]''). Academic prose uses
+    much more complex NPs with postmodification than conversation.'
+title: Complex Noun Phrases
 use:
 - context: Academic and formal writing
   description: Complex NPs are essential in academic English for precise, compact
@@ -112,104 +268,3 @@ use:
   - The high-speed digital data transmission cable needs replacing.
   - We need to update the customer relationship management software used by the sales
     team.
-phonetics:
-- note: Complex NPs are typically produced as a single intonation unit with stress
-    on the head noun and any contrastive modifiers.
-  example_generator:
-    contexts:
-    - spoken descriptions
-    - presentations
-  l1_issue: Speakers from languages with post-nominal adjectives (e.g. Spanish, French)
-    may place modifiers after the noun incorrectly.
-- note: In spoken English, speakers often pause before heavy post-modifiers to plan
-    the rest of the phrase.
-  example_generator:
-    contexts:
-    - spontaneous speech
-    - oral presentations
-  l1_issue: Long pre-modifier strings are challenging for speakers whose L1 uses fewer
-    pre-modifiers.
-teaching:
-  methodology: Guided discovery
-  tips:
-  - 'Start with simple NPs and add modifiers one at a time: the dog, the large dog,
-    the large brown dog, the large brown dog in the garden.'
-  - 'Use the OSASCOMP mnemonic for adjective order: Opinion, Size, Age, Shape, Colour,
-    Origin, Material, Purpose.'
-  - Have students expand newspaper headlines into full complex NPs.
-  - Practice reducing relative clauses to participle clauses for more concise NPs.
-  recommended_activities:
-  - name: NP Expansion Game
-    duration: 15
-    adaptation_notes: Students start with a bare noun and take turns adding modifiers.
-      The group judges whether the order is correct.
-  - name: Headline Decoder
-    duration: 20
-    adaptation_notes: Students unpack dense newspaper headlines into full sentences,
-      identifying each modifier's function.
-  - name: Describe the Picture
-    duration: 10
-    adaptation_notes: Students describe a detailed image using complex NPs. Encourage
-      both pre- and post-modification.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.6-12.13'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*The about climate change report was interesting.*'
-  correction: The report about climate change was interesting.
-  explanation: Prepositional phrase post-modifiers go AFTER the noun they modify,
-    not before. In English, heavy modifiers follow the head noun, unlike some L1s
-    that allow pre-nominal prepositional phrases.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - Arabic
-- error: '*The sitting on the bench man was reading.*'
-  correction: The man sitting on the bench was reading.
-  explanation: Participial post-modifiers come immediately after the noun they modify.
-    Placing the participle before the noun creates confusion about what is being modified.
-    English keeps modifiers close to their heads.
-  l1_groups:
-  - Spanish
-  - French
-  - Arabic
-  - Korean
-- error: '*A police an car was parked outside.*'
-  correction: A police car was parked outside.
-  explanation: Noun-noun compounds in English don't take articles between the modifier
-    and head noun. 'Police' modifies 'car' directly. Both words together form one
-    noun phrase with a single article.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Arabic
-- error: '*The book which I told you about it is on the table.*'
-  correction: The book which I told you about is on the table.
-  explanation: In relative clauses, the relative pronoun ('which') replaces the object.
-    Adding 'it' after the preposition creates a double object. This resumptive pronoun
-    error is common in L1s that require pronouns in relative clauses (Arabic, Hebrew).
-  l1_groups:
-  - Arabic
-  - Hebrew
-  - Portuguese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

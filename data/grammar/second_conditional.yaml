@@ -1,35 +1,170 @@
-grammar_point: second_conditional
-title: Second Conditional (Unreal Present/Future)
+citations:
+- claim: 'Core meaning: Describes hypothetical situations that are unlikely, impossible,
+    or contrary to current fact, with imagined results.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27:
+    Conditionals'
+  tier: 1
+- claim: 'Register distribution: In formal writing, second conditional is used for
+    hypothetical scenarios: ''If the government were to raise taxes, the economy would
+    suffer.'''
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27:
+    Conditionals'
+  tier: 1
+- claim: 'Discourse function: Second conditional is used for polite requests and suggestions:
+    ''If you could help me, I would be grateful.'''
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27:
+    Conditionals'
+  tier: 1
+- claim: 'Common error ''Using ''would'' in the if-clause: *''If I would study, I
+    would pass.'''' for Portuguese, Spanish, French speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: 'Dialectal variation: In formal English, ''were'' is used for all persons
+    in second conditional: ''If I were you'', ''If he were here.'' In informal English,
+    ''was'' is common: ''If I was you'', ''If he was here.'''
+  reliability: B
+  source: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+common_errors:
+- correction: If I studied, I would pass.
+  error: 'Using ''would'' in the if-clause: *''If I would study, I would pass.'''
+  explanation: In second conditional, the if-clause uses past simple, not 'would'.
+    'Would' only appears in the main clause.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Conditionals'
+- correction: If I studied, I would pass.
+  error: 'Using present tense in the if-clause: *''If I study, I would pass.'''
+  explanation: Second conditional requires past simple in the if-clause to show unreality,
+    not present simple.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Conditionals'
+- correction: If I were you, I would study.
+  error: 'Using ''was'' instead of ''were'' in formal English: *''If I was you, I
+    would study.'''
+  explanation: In formal English, 'were' is used for all persons in second conditional.
+    'Was' is common in informal speech but considered non-standard.
+  l1_groups:
+  - All L1 groups
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Conditionals'
+- correction: If I had time, I would go.
+  error: 'Using ''would'' in both clauses: *''If I would have time, I would go.'''
+  explanation: 'Swan PEU: In second conditional, use past simple in the if-clause,
+    "would" in the main clause. "Would" in the if-clause is non-standard.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+- correction: If I were you...
+  error: 'Using ''was'' instead of ''were'' (formal): *''If I was you...'' (formal
+    context)'
+  explanation: 'Swan PEU: In formal English, "were" is used for all persons in hypothetical
+    conditionals. "Was" is informal but very common.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 description: Used to talk about unreal, hypothetical, or unlikely situations in the
   present or future, and their probable results.
+dialectal_variation:
+- note: 'In formal English, ''were'' is used for all persons in second conditional:
+    ''If I were you, If he were here.'' In informal English, ''was'' is common: ''If
+    I was you, If he was here.'''
+- note: 'Some dialects use ''would'' in both clauses: ''If I would study, I would
+    pass.'' This is non-standard.'
+- note: 'In some varieties of English, ''should'' replaces ''would'' in first person:
+    ''If I studied, I should pass.'' (formal BrE)'
+discourse_notes:
+- note: 'Second conditional is used for polite requests and suggestions: ''If you
+    could help me, I would be grateful.'''
+- note: 'Second conditional is used for giving advice: ''If I were you, I would talk
+    to the teacher.'''
+- note: 'Second conditional creates hypothetical scenarios in academic writing: ''If
+    this theory were correct, we would expect to see...'''
+- note: 'In conversation, second conditional is used for imagining alternatives: ''If
+    I won the lottery, I would travel the world.'''
+form:
+  affirmative:
+    example_generator:
+    - If I won the lottery, I would travel the world.
+    - If I had more time, I would learn another language.
+    - If she studied harder, she would pass the exam.
+    min_examples: 4
+    structure: If + past simple, would + base verb
+  negative:
+    example_generator:
+    - If I didn't like coffee, I wouldn't drink it.
+    - If she didn't have a car, she wouldn't drive to work.
+    - If they didn't live far away, they would visit more often.
+    min_examples: 4
+    structure: If + past simple (negative), would not (wouldn't) + base verb
+  questions:
+    example_generator:
+    - Would you travel if you won the lottery?
+    - Would she pass if she studied harder?
+    - Would they come if we invited them?
+    min_examples: 4
+    structure: Would + subject + base verb if + past simple?
+grammar_point: second_conditional
 level: B1
 meaning:
-  core_meaning: Describes hypothetical situations that are unlikely, impossible, or
-    contrary to current fact, with imagined results. The situation in the if-clause
-    is NOT real — it is imaginary. We use past tense in the if-clause, but we are
-    talking about the present or future, not the past.
-  timeline: 'Present/Future: Refers to current or future situations that are not real.
-    The past tense in the if-clause shows unreality, not past time.'
-  contrast: '''First Conditional'' = ''If I win the lottery, I will travel.'' (real,
-    possible future) vs ''Second Conditional'' = ''If I won the lottery, I would travel.''
-    (unlikely, hypothetical)'
   ccqs:
-  - question: Is this situation real or hypothetical?
-    answer: Hypothetical — it is not real. We are imagining.
+  - answer: Hypothetical — it is not real. We are imagining.
     purpose: Tests whether the learner understands that second conditional describes
       unreal/hypothetical situations, not real possibilities. This is the fundamental
       distinction from first conditional.
-  - question: Are we talking about the past when we use past tense in the if-clause?
-    answer: No — we use past tense to show unreality, not past time. We are talking
+    question: Why do we use past tense in second conditional even when we are talking
+      about the present or future?
+  - answer: No — we use past tense to show unreality, not past time. We are talking
       about now or the future.
     purpose: Tests whether the learner understands that the past tense in the if-clause
       is a grammatical marker of unreality, not a reference to past time. This is
       the most conceptually difficult aspect of second conditional.
-  - question: Is this likely to happen?
-    answer: No — it is unlikely or impossible. That is why we use second conditional.
+    question: Are we talking about the past when we use past tense in the if-clause?
+  - answer: No — it is unlikely or impossible. That is why we use second conditional.
     purpose: Tests whether the learner can identify the semantic component of unlikelihood
       that triggers second conditional. If the situation is likely, use first conditional.
       If unlikely or impossible, use second conditional.
+    question: Is this likely to happen?
+  - answer: Yes. 'Would' expresses a definite result ('If I had more time, I would
+      learn piano' — I definitely would). 'Could' expresses possibility or ability
+      ('If I had more time, I could learn piano' — it would be possible for me, but
+      I might not). 'Might' expresses uncertainty ('If I had more time, I might learn
+      piano' — maybe, maybe not). All three are grammatically correct in second conditional,
+      but they convey different degrees of certainty.
+    purpose: Tests whether the learner understands that 'would' is not the only modal
+      verb possible in the main clause of second conditional. 'Could' (ability/possibility)
+      and 'might' (uncertainty) are also grammatically correct and change the meaning
+      of the result clause. This distinction is important at B1 level because it allows
+      learners to express nuanced hypothetical outcomes rather than just definite
+      ones.
+    question: Can we use 'could' instead of 'would' in the main clause of a second
+      conditional? What changes?
+  contrast: '''First Conditional'' = ''If I win the lottery, I will travel.'' (real,
+    possible future) vs ''Second Conditional'' = ''If I won the lottery, I would travel.''
+    (unlikely, hypothetical)'
+  core_meaning: Describes hypothetical situations that are unlikely, impossible, or
+    contrary to current fact, with imagined results. The situation in the if-clause
+    is NOT real — it is imaginary. We use past tense in the if-clause, but we are
+    talking about the present or future, not the past.
   example_generator:
     contexts:
     - hypothetical situations
@@ -41,59 +176,144 @@ meaning:
     - Avoid examples that assume wealth or privilege
     - Keep examples imaginative and fun for students
     min_examples: 5
-form:
-  affirmative:
-    structure: If + past simple, would + base verb
-    example_generator:
-    - If I won the lottery, I would travel the world.
-    - If I had more time, I would learn another language.
-    - If she studied harder, she would pass the exam.
-    min_examples: 4
-  negative:
-    structure: If + past simple (negative), would not (wouldn't) + base verb
-    example_generator:
-    - If I didn't like coffee, I wouldn't drink it.
-    - If she didn't have a car, she wouldn't drive to work.
-    - If they didn't live far away, they would visit more often.
-    min_examples: 4
-  questions:
-    structure: Would + subject + base verb if + past simple?
-    example_generator:
-    - Would you travel if you won the lottery?
-    - Would she pass if she studied harder?
-    - Would they come if we invited them?
-    min_examples: 4
+  timeline: 'Present/Future: Refers to current or future situations that are not real.
+    The past tense in the if-clause shows unreality, not past time.'
+phonetics:
+- example_generator:
+  - I'd /aɪd/
+  - you'd /juːd/
+  - he'd /hiːd/
+  l1_issue: Many L1 speakers over-pronounce 'would' as /wʊd/. Teach the contracted
+    forms for natural speech.
+  note: 'Contraction of ''would'': I would → I''d /aɪd/, you would → you''d /juːd/,
+    he would → he''d /hiːd/. Full forms sound overly formal in casual speech.'
+- example_generator:
+  - if /ɪf/
+  - if I /ɪf aɪ/
+  l1_issue: Portuguese speakers may pronounce 'if' as /ifi/. Teach the short form
+    /ɪf/.
+  note: 'Weak form of ''if'' in connected speech: /ɪf/. ''If I won'' sounds like /ɪf
+    aɪ wʌn/.'
+register_notes:
+- note: 'In formal writing, second conditional is used for hypothetical scenarios:
+    ''If the government were to raise taxes, the economy would suffer.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In conversation, second conditional is common for giving advice: ''If I were
+    you, I would study harder.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In academic writing, second conditional is used for discussing hypothetical
+    research outcomes: ''If the sample were larger, the results would be more reliable.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In formal writing, conditionals appear in discussions of likely outcomes and
+    theoretical scenarios.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In conversation, conditionals are used for hypothetical scenarios and polite
+    requests.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In academic writing, conditionals express logical relationships between propositions.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (1999) — Second conditional (hypothetical): register distribution
+    patterns. Informal variants (If I was) are frequent in conversation; formal ''were''
+    is more common in writing. Ch. 10.2.8.12'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 10.2.8.12
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27:
+    Conditionals'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: 'Use ''were'' (not ''was'') for all persons in formal English: If I were,
-    if he were, if she were'
-  type: grammatical
-  examples:
+- examples:
   - If I were you, I would study. (formal)
   - If I was you, I would study. (informal, common in speech)
   - If he were rich, he would travel.
   - If she were here, she would help.
-- rule: '''If I were you'' is a fixed phrase for giving advice'
-  type: pragmatic
-  examples:
+  rule: 'Use ''were'' (not ''was'') for all persons in formal English: If I were,
+    if he were, if she were'
+  type: grammatical
+- examples:
   - If I were you, I would apologize.
   - If I were you, I would see a doctor.
   - If I were you, I would accept the offer.
-- rule: 'Other modals can replace ''would'': could (ability/possibility), might (possibility)'
-  type: grammatical
-  examples:
+  rule: '''If I were you'' is a fixed phrase for giving advice'
+  type: pragmatic
+- examples:
   - If I had more time, I could learn piano.
   - If she studied, she might pass.
   - If we left now, we could catch the train.
-- rule: The if-clause can come first or second. When first, use a comma.
-  type: punctuation
-  examples:
+  rule: 'Other modals can replace ''would'': could (ability/possibility), might (possibility)'
+  type: grammatical
+- examples:
   - If I won the lottery, I would travel. (comma)
   - I would travel if I won the lottery. (no comma)
-- rule: Second conditional is NOT about the past — it is about unreal present/future
-  type: semantic
-  examples:
+  rule: The if-clause can come first or second. When first, use a comma.
+  type: punctuation
+- examples:
   - If I had a car now, I would drive to work. (present — I don't have a car)
   - If I won the lottery tomorrow, I would quit my job. (future — unlikely)
+  rule: Second conditional is NOT about the past — it is about unreal present/future
+  type: semantic
+teaching:
+  methodology: Guided discovery with imaginative scenarios
+  recommended_activities:
+  - adaptation_notes: 'Students complete the sentence: ''If I had a million dollars,
+      I would...'' Then share with the class. Fun way to practice the structure.'
+    duration: 15
+    name: If I Had a Million Dollars
+  - adaptation_notes: 'Students write problem letters (like an agony aunt column).
+      Others respond with advice: ''If I were you, I would...'' Practices the advice
+      function.'
+    duration: 15
+    name: Advice Column
+  - adaptation_notes: 'Students describe their dream house using second conditional:
+      ''If I had a dream house, it would have a swimming pool. It would be near the
+      beach.'' Practices imagined results.'
+    duration: 15
+    name: Dream House
+  - adaptation_notes: 'Teacher says a situation. Students decide: first or second
+      conditional? ''It might rain tomorrow.'' (first — possible) ''I were a bird.''
+      (second — impossible).'
+    duration: 10
+    name: First or Second?
+  tips:
+  - Emphasize that the past tense in the if-clause does NOT mean past time. It shows
+    unreality. Use a timeline to clarify.
+  - Teach 'If I were you' as a fixed phrase for advice. Drill it with different scenarios.
+  - 'Use dream scenarios: ''If I had a million dollars, I would...'' This makes the
+    grammar fun and personal.'
+  - 'Contrast with first conditional: ''If I win (possible) vs If I won (unlikely).''
+    Use the same context to show the difference.'
+  - Teach 'were' for all persons in formal English, but acknowledge that 'was' is
+    common in informal speech.
+  - 'Swan PEU: Second conditional = present unreal. "If I had a million dollars, I
+    would travel the world." (I do not have a million dollars).'
+  - 'Swan PEU: "Were" vs "was" -- "If I were rich" (formal) vs "If I was rich" (informal).
+    Both are used; "were" is more traditional.'
+  - 'HYPOTHETICAL CONDITIONAL: Second conditional (''If I had money, I would travel'')
+    expresses present hypothetical/unreal situations. ''Would'' in the if-clause is
+    prescriptively frowned upon but commonly used by native speakers in informal speech
+    (''If I would have known...'' for ''If I had known...''). This is a documented
+    feature of colloquial English grammar. Source: Celce-Murcia & Larsen-Freeman (1999)
+    The Grammar Book, 2nd ed. Ch.27 p.420-424.'
+title: Second Conditional (Unreal Present/Future)
 use:
 - context: Unlikely or impossible situations
   description: Talking about situations that are very unlikely or impossible
@@ -121,114 +341,3 @@ use:
   - If I had a million dollars, I would travel the world.
   - If I could speak five languages, I would work for the UN.
   - If I didn't have to work, I would spend more time with my family.
-phonetics:
-- note: 'Contraction of ''would'': I would → I''d /aɪd/, you would → you''d /juːd/,
-    he would → he''d /hiːd/. Full forms sound overly formal in casual speech.'
-  example_generator:
-  - I'd /aɪd/
-  - you'd /juːd/
-  - he'd /hiːd/
-  l1_issue: Many L1 speakers over-pronounce 'would' as /wʊd/. Teach the contracted
-    forms for natural speech.
-- note: 'Weak form of ''if'' in connected speech: /ɪf/. ''If I won'' sounds like /ɪf
-    aɪ wʌn/.'
-  example_generator:
-  - if /ɪf/
-  - if I /ɪf aɪ/
-  l1_issue: Portuguese speakers may pronounce 'if' as /ifi/. Teach the short form
-    /ɪf/.
-teaching:
-  methodology: Guided discovery with imaginative scenarios
-  tips:
-  - Emphasize that the past tense in the if-clause does NOT mean past time. It shows
-    unreality. Use a timeline to clarify.
-  - Teach 'If I were you' as a fixed phrase for advice. Drill it with different scenarios.
-  - 'Use dream scenarios: ''If I had a million dollars, I would...'' This makes the
-    grammar fun and personal.'
-  - 'Contrast with first conditional: ''If I win (possible) vs If I won (unlikely).''
-    Use the same context to show the difference.'
-  - Teach 'were' for all persons in formal English, but acknowledge that 'was' is
-    common in informal speech.
-  recommended_activities:
-  - name: If I Had a Million Dollars
-    duration: 15
-    adaptation_notes: 'Students complete the sentence: ''If I had a million dollars,
-      I would...'' Then share with the class. Fun way to practice the structure.'
-  - name: Advice Column
-    duration: 15
-    adaptation_notes: 'Students write problem letters (like an agony aunt column).
-      Others respond with advice: ''If I were you, I would...'' Practices the advice
-      function.'
-  - name: Dream House
-    duration: 15
-    adaptation_notes: 'Students describe their dream house using second conditional:
-      ''If I had a dream house, it would have a swimming pool. It would be near the
-      beach.'' Practices imagined results.'
-  - name: First or Second?
-    duration: 10
-    adaptation_notes: 'Teacher says a situation. Students decide: first or second
-      conditional? ''It might rain tomorrow.'' (first — possible) ''I were a bird.''
-      (second — impossible).'
-common_errors:
-- error: 'Using ''would'' in the if-clause: *''If I would study, I would pass.'''
-  correction: If I studied, I would pass.
-  explanation: In second conditional, the if-clause uses past simple, not 'would'.
-    'Would' only appears in the main clause.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - German
-- error: 'Using present tense in the if-clause: *''If I study, I would pass.'''
-  correction: If I studied, I would pass.
-  explanation: Second conditional requires past simple in the if-clause to show unreality,
-    not present simple.
-  l1_groups:
-  - Portuguese
-  - Spanish
-- error: 'Using ''was'' instead of ''were'' in formal English: *''If I was you, I
-    would study.'''
-  correction: If I were you, I would study.
-  explanation: In formal English, 'were' is used for all persons in second conditional.
-    'Was' is common in informal speech but considered non-standard.
-  l1_groups:
-  - All L1 groups
-register_notes:
-- note: 'In formal writing, second conditional is used for hypothetical scenarios:
-    ''If the government were to raise taxes, the economy would suffer.'''
-- note: 'In conversation, second conditional is common for giving advice: ''If I were
-    you, I would study harder.'''
-- note: 'In academic writing, second conditional is used for discussing hypothetical
-    research outcomes: ''If the sample were larger, the results would be more reliable.'''
-- note: In formal writing, conditionals appear in discussions of likely outcomes and
-    theoretical scenarios.
-- note: In conversation, conditionals are used for hypothetical scenarios and polite
-    requests.
-- note: In academic writing, conditionals express logical relationships between propositions.
-dialectal_variation:
-- note: 'In formal English, ''were'' is used for all persons in second conditional:
-    ''If I were you, If he were here.'' In informal English, ''was'' is common: ''If
-    I was you, If he was here.'''
-- note: 'Some dialects use ''would'' in both clauses: ''If I would study, I would
-    pass.'' This is non-standard.'
-- note: 'In some varieties of English, ''should'' replaces ''would'' in first person:
-    ''If I studied, I should pass.'' (formal BrE)'
-discourse_notes:
-- note: 'Second conditional is used for polite requests and suggestions: ''If you
-    could help me, I would be grateful.'''
-- note: 'Second conditional is used for giving advice: ''If I were you, I would talk
-    to the teacher.'''
-- note: 'Second conditional creates hypothetical scenarios in academic writing: ''If
-    this theory were correct, we would expect to see...'''
-- note: 'In conversation, second conditional is used for imagining alternatives: ''If
-    I won the lottery, I would travel the world.'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 10:
-    Conditionals, §10.1-10.6'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.

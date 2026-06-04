@@ -1,33 +1,44 @@
-id: memory-chain-game
-name: Memory Chain Game
-category: games
-description: Students build a chain of sentences, each repeating all previous sentences
-  and adding a new one. Builds memory, listening, and sentence construction.
-targetStructures:
-- verb-tenses
-- vocabulary
-- sentence-structure
+adaptableToTopic: true
 bestForLevels:
 - A1
 - A2
 - B1
 - B2
+category: games
+citations:
+- claim: Memory chain activities develop oral fluency and listening accuracy through
+    structured repetition, supporting language production in low-anxiety contexts.
+  source: Peregoy & Boyle (2023) Reading, Writing, and Learning in ESL, 8th ed.
+  tier: 2
+  reliability: B
+  flagged: false
+- claim: 'Memory chain games where students build progressively longer sentence chains in a group format'
+  source: 'Watcyn-Jones, P. (1981) Grammar Games and Activities. Penguin Books, Board and card games section, Activity 70 and Activities 86-87'
+  tier: 3
+  reliability: B
+  flagged: false
+description: Students build a chain of sentences, each repeating all previous sentences
+  and adding a new one. Builds memory, listening, and sentence construction.
+differentiation:
+  extension: 'Require longer chains. Add constraints: each sentence must use a specific
+    grammar point.'
+  support: Use shorter chains. Allow students to look at notes.
+digitalReady: true
 duration: 10
-groupSize: whole-class
 energyRequired: medium
-prepTime: none
-materials:
-- None
 format:
 - in-person
 - online
-requiresTech: false
-digitalReady: true
+grammar_focus:
+- sentence_structure
+- verb_tenses
+- word_order
+groupSize: whole-class
 hasAudioComponent: false
 hasPrintableComponent: false
 hasSlidesComponent: false
 hasVisualComponent: false
-adaptableToTopic: true
+id: memory-chain-game
 instructions:
 - 'Start with a simple sentence. Example: I went to the store.'
 - 'Student 1 repeats and adds: I went to the store, and I bought milk.'
@@ -36,18 +47,42 @@ instructions:
 - Continue around the room. Each student repeats the entire chain before adding.
 - If a student makes a mistake, they are out or the class helps correct.
 - Continue until the chain becomes too long or everyone has had a turn.
-script:
-- 'I will start: I went to the store. Now you repeat that and add something new.'
-- Excellent! The chain is getting long. Can you remember all of it?
-setupInstructions: No setup needed. Choose a starting sentence connected to your lesson.
-differentiation:
-  support: Use shorter chains. Allow students to look at notes.
-  extension: 'Require longer chains. Add constraints: each sentence must use a specific
-    grammar point.'
 keywords:
 - memory
 - chain
 - listening
 - repetition
 - sentences
-l1Enhanced: true
+l1_enhanced:
+- adaptation: 'Spanish speakers may confuse present perfect and past simple. Provide
+    explicit contrast: "he comido" (present perfect) vs "comí" (past simple).'
+  language: Spanish
+  priority: high
+- adaptation: Arabic has perfective/imperfective aspect rather than tense. Provide
+    timeline visuals to illustrate English tense system.
+  language: Arabic
+  priority: high
+- adaptation: Mandarin has no verb inflection for tense. Tense is indicated by time
+    words (yesterday, now) and aspect markers (le, zhe). Provide explicit verb conjugation
+    practice.
+  language: Mandarin
+  priority: high
+l1_specific: []
+materials:
+- None
+name: Memory Chain Game
+prepTime: none
+requiresTech: false
+script:
+- 'I will start: I went to the store. Now you repeat that and add something new.'
+- Excellent! The chain is getting long. Can you remember all of it?
+setupInstructions: No setup needed. Choose a starting sentence connected to your lesson.
+skill_areas:
+- grammar
+- speaking
+sources: []
+targetStructures:
+- verb-tenses
+- vocabulary
+- sentence-structure
+teaching_tips: ''

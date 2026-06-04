@@ -1,0 +1,1827 @@
+language: French
+language_code: fr
+schema_version: '3.0'
+grammar_points:
+  articles:
+    interference_patterns:
+    - pattern: Omission of article before professions
+      example: 'FR ''Elle est medecin'' (she is doctor) -> Error: ''She is doctor''
+        -> Correct: ''She is a doctor'''
+      frequency: 5
+      persistence: 4
+      communicative_impact: 3
+    - pattern: Partitive article confusion
+      example: 'FR ''Je veux du pain'' (I want of-the bread) -> Error: ''I want of
+        bread'' -> Correct: ''I want bread'' / ''I want some bread'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+    examples:
+    - wrong: She is doctor.
+      correct: She is a doctor.
+    - wrong: I want of bread.
+      correct: I want some bread.
+    - wrong: He is the best student of class.
+      correct: He is the best student in the class.
+    why_it_happens: French requires an article before professions ('elle est medecin'
+      uses 'est' without article in French but English requires 'a/an'). French also
+      uses partitive articles (du, de la, des) that have no direct English equivalent.
+      French learners may omit articles or transfer partitive constructions.
+    teacher_tips:
+      how_to_explain: 'Teach: English REQUIRES ''a/an'' after ''be'' for professions.
+        Contrast: FR ''Elle est medecin'' -> EN ''She is a doctor''. For partitives,
+        teach: ''du/de la/des'' = ''some'' or nothing in English.'
+      where_to_start: Start with the profession pattern (highest frequency). Then
+        teach partitive articles.
+      sequencing: 'Week 1: Articles with professions. Week 2: Partitive articles.
+        Week 3: Definite vs indefinite. Week 4: Article review.'
+      exercises:
+      - name: Article Audit
+        type: error-correction
+        description: 20 sentences with French-influenced article errors. Students
+          correct.
+        duration: 15
+      - name: FR-to-EN Translation
+        type: translation
+        description: Translate 15 French sentences focusing on article differences.
+        duration: 20
+      - name: Article Decision Tree
+        type: fill-in-the-blank
+        description: Students complete a flowchart for article choice.
+        duration: 10
+      - name: Profession Flashcards
+        type: matching
+        description: Students match French professions with correct English forms
+          (with a/an).
+        duration: 10
+    sources:
+    - Swan & Smith "Learner English" Ch. 6 (French)
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 5
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for articles
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: French speakers, pp. 51-71'
+      tier: 1
+    - claim: 'Grammar point: articles'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Article usage varies significantly across languages; many languages have
+        no article system
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See articles entries 133-142
+      tier: 2
+    - claim: French uses definite articles before professions and abstract nouns (PEU
+        articles entries)
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See relevant entry
+      tier: 2
+    - claim: ELLs commonly omit indefinite article when descriptive adjectives come
+        between determiner and noun
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 153
+      tier: 2
+    - claim: French uses articles before professions and abstract nouns (p. 153)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: See relevant section
+      tier: 2
+  negation:
+    interference_patterns:
+    - pattern: Omission of do-support in negation
+      example: 'FR ''Je ne sais pas'' (I not know not) -> Error: ''I not know'' ->
+        Correct: ''I do not know'''
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
+    - pattern: Post-verbal negation
+      example: 'FR ''Je sais not'' -> Error: ''I know not'' -> Correct: ''I do not
+        know'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+    examples:
+    - wrong: I not know the answer.
+      correct: I do not know the answer.
+    - wrong: She not likes coffee.
+      correct: She does not like coffee.
+    - wrong: They not have time.
+      correct: They do not have time.
+    why_it_happens: French negation wraps the verb with 'ne...pas' (je ne sais pas).
+      English uses 'do/does/did + not + base verb'. French learners may transfer the
+      post-verbal negation pattern or omit do-support entirely.
+    teacher_tips:
+      how_to_explain: 'Teach the formula: do/does/did + not + base verb. Drill: I
+        do not, you do not, he does not, she does not. Emphasize that ''not'' goes
+        AFTER the auxiliary, not after the main verb.'
+      where_to_start: Start with present simple negation. Then past simple. Then questions.
+      sequencing: 'Week 1: Present simple negation. Week 2: Past simple negation.
+        Week 3: Negative questions. Week 4: Review.'
+      exercises:
+      - name: Negation Transformation
+        type: sentence-rewrite
+        description: Students rewrite 15 affirmative sentences as negative using do-support.
+        duration: 15
+      - name: FR Negation Translation
+        type: translation
+        description: Translate 15 French ne...pas sentences into correct English.
+        duration: 15
+      - name: Error Correction
+        type: error-correction
+        description: 15 sentences with negation errors. Students correct.
+        duration: 10
+      - name: Negative Story
+        type: composition
+        description: Students write a short story using at least 5 different negative
+          forms.
+        duration: 15
+    sources:
+    - Swan & Smith "Learner English" Ch. 6
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 5
+    persistence: 5
+    communicative_impact: 4
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for negation
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: French speakers, pp. 51-71'
+      tier: 1
+    - claim: 'Grammar point: negation'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: French uses ne...pas wrapping the verb (p. 59)
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: See relevant section
+      tier: 2
+    - claim: 'Negation patterns vary: pre-verbal particles, post-verbal markers, double
+        negation'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See negation entries
+      tier: 2
+    - claim: French uses ne...pas wrapping the verb (PEU negation entries)
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See relevant entry
+      tier: 2
+    - claim: 'Double negation transferred from L1 (Spanish, Arabic, etc.): *I don''t
+        have no reason'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 1
+      tier: 2
+    - claim: French uses ne...pas wrapping the verb (p. 1)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: See relevant section
+      tier: 2
+  question_formation:
+    interference_patterns:
+    - pattern: Est-ce que without inversion
+      example: 'FR ''Est-ce que tu aimes?'' (is-it that you like?) -> Error: ''Is
+        it that you like?'' -> Correct: ''Do you like?'''
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
+    - pattern: Use of rising intonation only
+      example: 'FR ''Tu aimes le cafe?'' (you like the coffee?) -> Error: ''You like
+        coffee?'' -> Correct: ''Do you like coffee?'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+    examples:
+    - wrong: You like coffee?
+      correct: Do you like coffee?
+    - wrong: Is it that she comes?
+      correct: Is she coming?
+    - wrong: Where you go?
+      correct: Where do you go?
+    why_it_happens: French forms questions with 'est-ce que' (is-it that) or simply
+      by raising intonation. English requires do-support and subject-verb inversion.
+      French learners may transfer the intonation-only pattern or use 'is it that'
+      constructions.
+    teacher_tips:
+      how_to_explain: 'Teach two question types: (1) Yes/no: Do/Does/Did + subject
+        + base verb? (2) Wh-: Wh- word + do/does/did + subject + base verb? For ''be''
+        and modals, just invert.'
+      where_to_start: Start with yes/no questions with 'be' (easier). Then teach do/does/did
+        questions.
+      sequencing: 'Week 1: Yes/no questions with be. Week 2: Yes/no questions with
+        do/does/did. Week 3: Wh- questions. Week 4: Tag questions.'
+      exercises:
+      - name: Question Formation
+        type: sentence-rewrite
+        description: Students convert 15 statements to questions using correct inversion
+          and do-support.
+        duration: 15
+      - name: FR Question Translation
+        type: translation
+        description: Translate 15 French est-ce que questions into correct English.
+        duration: 15
+      - name: Interview Activity
+        type: oral-drill
+        description: Students interview each other using wh- and yes/no questions.
+        duration: 15
+      - name: Question Error Correction
+        type: error-correction
+        description: 10 sentences with question formation errors. Students correct.
+        duration: 10
+    sources:
+    - Swan & Smith "Learner English" Ch. 6
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 5
+    persistence: 5
+    communicative_impact: 4
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for question formation
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: French speakers, pp. 51-71'
+      tier: 1
+    - claim: 'Grammar point: question formation'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: 'Question formation varies: some languages use particles, others use
+        intonation only'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See question entries
+      tier: 2
+  adjective_placement:
+    interference_patterns:
+    - pattern: Post-nominal adjective placement
+      example: 'FR ''une maison blanche'' (a house white) -> Error: ''a house white''
+        -> Correct: ''a white house'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 2
+    - pattern: Adjectives that change meaning by position
+      example: FR 'un grand homme' (a great man) vs 'un homme grand' (a tall man)
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+    examples:
+    - wrong: She bought a car red.
+      correct: She bought a red car.
+    - wrong: He has eyes blue.
+      correct: He has blue eyes.
+    - wrong: I need a pen new.
+      correct: I need a new pen.
+    why_it_happens: French typically places adjectives AFTER the noun (une maison
+      blanche = a house white), unlike English which places most adjectives BEFORE
+      the noun. Some French adjectives can go before or after with meaning changes.
+      French learners transfer the post-nominal pattern.
+    teacher_tips:
+      how_to_explain: 'Teach the English order: adjective + noun. French order: noun
+        + adjective (usually). Drill: ''a big house'' (not ''a house big''), ''a red
+        car'' (not ''a car red'').'
+      where_to_start: 'Start with the basic rule: adjective before noun. Then teach
+        the OSASCOMP order for multiple adjectives.'
+      sequencing: 'Week 1: Single adjective before noun. Week 2: Multiple adjectives
+        (OSASCOMP). Week 3: Adjectives that follow nouns (enough, alive). Week 4:
+        Review.'
+      exercises:
+      - name: Adjective Swap
+        type: sentence-rewrite
+        description: Students rewrite 10 French-influenced phrases with adjectives
+          before nouns.
+        duration: 10
+      - name: FR-to-EN Adjective Translation
+        type: translation
+        description: Translate 15 French noun phrases into correct English word order.
+        duration: 15
+      - name: Picture Description
+        type: oral-drill
+        description: Students describe pictures using correct adjective-noun order.
+        duration: 10
+      - name: Adjective Order
+        type: sentence-rewrite
+        description: Students arrange 10 sets of adjectives in correct English order.
+        duration: 10
+    sources:
+    - Swan & Smith "Learner English" Ch. 6
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 2
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for adjective placement
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: French speakers, pp. 51-71'
+      tier: 1
+    - claim: 'Grammar point: adjective placement'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+  verb_tenses:
+    interference_patterns:
+    - pattern: Use of present perfect for recent past
+      example: 'FR ''J''ai mange'' (I have eaten) -> Error: ''I have eaten lunch''
+        (when meaning simple past) -> Correct: ''I ate lunch'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Use of passe compose for all past
+      example: 'FR ''Je suis alle'' (I am gone) -> Error: ''I am gone to the store''
+        -> Correct: ''I went to the store'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+    examples:
+    - wrong: I have gone to the store yesterday.
+      correct: I went to the store yesterday.
+    - wrong: She has arrived last week.
+      correct: She arrived last week.
+    - wrong: We have finished the project on Monday.
+      correct: We finished the project on Monday.
+    why_it_happens: French uses passe compose (j'ai mange) for completed actions,
+      which maps to both English simple past and present perfect. French learners
+      may overuse present perfect when simple past is needed, especially with specific
+      past time markers (yesterday, last week).
+    teacher_tips:
+      how_to_explain: 'Teach: Specific past time (yesterday, last week, in 2010) ->
+        Simple Past. No specific time + present relevance -> Present Perfect. Words
+        like ''yet'', ''already'', ''ever'', ''never'' -> usually Present Perfect.'
+      where_to_start: Start with simple past (concrete, easier). Then introduce present
+        perfect.
+      sequencing: 'Week 1: Simple past with time markers. Week 2: Present perfect
+        for experiences. Week 3: Present perfect with already/yet/just. Week 4: Contrastive
+        practice.'
+      exercises:
+      - name: Tense Decision
+        type: fill-in-the-blank
+        description: 20 sentences with blank for past simple or present perfect. Students
+          choose and explain.
+        duration: 15
+      - name: FR Tense Translation
+        type: translation
+        description: Translate 15 French passe compose sentences into correct English
+          tense.
+        duration: 15
+      - name: Time Marker Sort
+        type: matching
+        description: Students match time expressions to the correct tense.
+        duration: 10
+      - name: Interview Activity
+        type: oral-drill
+        description: Students ask each other Have you ever...? questions.
+        duration: 15
+    sources:
+    - Swan & Smith "Learner English" Ch. 6
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for verb tenses
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: French speakers, pp. 51-71'
+      tier: 1
+    - claim: 'Grammar point: verb tenses'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Past tense is realized through -ed inflection or irregular vowel/consonant
+        changes
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: p. 89
+      tier: 2
+    - claim: Tense-aspect systems vary widely across languages; some have no morphological
+        tense
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See tense entries
+      tier: 2
+    - claim: ELLs internalize incorrect patterns from overuse of be (e.g., *I am take
+        the bus)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 231
+      tier: 2
+  subjunctive:
+    interference_patterns:
+    - pattern: Use of indicative where subjunctive is needed
+      example: 'FR ''Il faut que tu fais'' -> Error: ''It is necessary that you do''
+        -> Correct: ''It is necessary that you do'' (same in modern English)'
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Overuse of should for subjunctive
+      example: 'FR ''Je veux que tu viennes'' -> Error: ''I want that you should come''
+        -> Correct: ''I want you to come'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    examples:
+    - wrong: I want that you should come.
+      correct: I want you to come.
+    - wrong: It is important that he should study.
+      correct: It is important that he study.
+    - wrong: She suggests that we should leave.
+      correct: She suggests that we leave.
+    why_it_happens: French has a fully conjugated subjunctive mood used after expressions
+      of doubt, desire, and necessity. English has a much-reduced subjunctive (bare
+      infinitive in formal contexts). French learners may overuse 'should' as a substitute
+      for the subjunctive.
+    teacher_tips:
+      how_to_explain: 'Teach: After suggest, demand, require, important -> base form
+        (no -s, no should). In modern English, ''I suggest that he go'' (formal) =
+        ''I suggest that he should go'' (informal). For ''want'', use ''want + person
+        + to + verb''.'
+      where_to_start: Start with 'want + person + to + verb'. Then teach mandative
+        subjunctive.
+      sequencing: 'Week 1: Want/wish + person + to. Week 2: Suggest/demand/require
+        + base form. Week 3: It is important that + base form. Week 4: Review.'
+      exercises:
+      - name: Subjunctive Transformation
+        type: sentence-rewrite
+        description: Students rewrite 10 sentences using correct subjunctive patterns.
+        duration: 15
+      - name: FR Subjunctive Translation
+        type: translation
+        description: Translate 15 French subjunctive sentences into correct English.
+        duration: 15
+      - name: Should or Base Form?
+        type: error-correction
+        description: 10 sentences where students choose between should and base form.
+        duration: 10
+      - name: Formal vs Informal
+        type: sentence-rewrite
+        description: Students rewrite 5 informal sentences in formal subjunctive form.
+        duration: 10
+    sources:
+    - Swan & Smith "Learner English" Ch. 6
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 3
+    persistence: 3
+    communicative_impact: 2
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for subjunctive
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: French speakers, pp. 51-71'
+      tier: 1
+    - claim: 'Grammar point: subjunctive'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+  pronouns:
+    interference_patterns:
+    - pattern: Use of on as impersonal pronoun
+      example: 'FR ''On mange'' (one eats) -> Error: ''One eats here'' (too formal)
+        -> Correct: ''People eat here'' / ''We eat here'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Use of y and en pronouns
+      example: 'FR ''J''y vais'' (I there go) -> Error: ''I go there'' (correct) but
+        ''J''en veux'' (I of-it want) -> Error: ''I want of it'' -> Correct: ''I want
+        some'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 3
+    examples:
+    - wrong: One eats here every day.
+      correct: People eat here every day.
+    - wrong: I of-it want some.
+      correct: I want some.
+    - wrong: I there go tomorrow.
+      correct: I go there tomorrow.
+    why_it_happens: French uses 'on' (one/people/we) as an impersonal pronoun, which
+      is more natural than English 'one'. French also has unique pronouns 'y' (there/it)
+      and 'en' (of it/some) that have no direct English equivalent.
+    teacher_tips:
+      how_to_explain: 'Teach: French ''on'' = ''people/we/you'' in English (not ''one''
+        which is too formal). French ''y'' = ''there''. French ''en'' = ''some/of
+        it''.'
+      where_to_start: Start with 'on' -> 'people/we'. Then teach 'y' and 'en'.
+      sequencing: 'Week 1: On -> people/we. Week 2: Y -> there. Week 3: En -> some/of
+        it. Week 4: Review.'
+      exercises:
+      - name: Pronoun Translation
+        type: translation
+        description: Translate 15 French sentences with on, y, en into correct English.
+        duration: 15
+      - name: On Substitution
+        type: sentence-rewrite
+        description: Students rewrite 10 sentences replacing 'one' with 'people' or
+          'we'.
+        duration: 10
+      - name: Y and En Practice
+        type: fill-in-the-blank
+        description: 15 sentences where students replace y and en with English equivalents.
+        duration: 10
+      - name: FR Pronoun Review
+        type: error-correction
+        description: 10 sentences with pronoun errors. Students correct.
+        duration: 10
+    sources:
+    - Swan & Smith "Learner English" Ch. 6
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 2
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for pronouns
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: French speakers, pp. 51-71'
+      tier: 1
+    - claim: 'Grammar point: pronouns'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Pro-drop languages (Spanish, Italian, Portuguese) allow subject pronoun
+        omission, leading to omission errors in English
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: p. 75
+      tier: 2
+    - claim: Pro-drop languages (Spanish, Italian, Portuguese) allow subject pronoun
+        omission
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See pronoun entries 173-176
+      tier: 2
+    - claim: ELLs omit subject pronouns (pro-drop L1s) or use wrong case forms
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 45
+      tier: 2
+  prepositions:
+    interference_patterns:
+    - pattern: Transfer of French prepositions
+      example: 'FR ''Je pense a'' (I think to) -> Error: ''I think to you'' -> Correct:
+        ''I think of you'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    - pattern: Use of de/du for possession
+      example: 'FR ''Le livre de Jean'' (the book of Jean) -> Error: ''The book of
+        Jean'' -> Correct: ''Jean''s book'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+    examples:
+    - wrong: I think to you often.
+      correct: I think of you often.
+    - wrong: The book of Jean is interesting.
+      correct: Jean's book is interesting.
+    - wrong: I go at school.
+      correct: I go to school.
+    why_it_happens: French prepositions often differ from English. French 'penser
+      a' (think to) vs English 'think of'. French uses 'de' (of) for possession where
+      English uses 's or of. French 'aller a' (go to) vs English 'go to'.
+    teacher_tips:
+      how_to_explain: 'Teach common French-English preposition differences: penser
+        a = think of, aller a = go to, parler de = talk about. For possession: use
+        ''s for people, of for things.'
+      where_to_start: Start with the most common preposition transfers. Then teach
+        possession.
+      sequencing: 'Week 1: Verb + preposition differences. Week 2: Prepositions of
+        place. Week 3: Prepositions of time. Week 4: Review.'
+      exercises:
+      - name: Preposition Translation
+        type: translation
+        description: Translate 15 French sentences with correct English prepositions.
+        duration: 15
+      - name: Preposition Error Hunt
+        type: error-correction
+        description: A paragraph with 10 preposition errors. Students find and fix.
+        duration: 15
+      - name: FR Preposition Match
+        type: matching
+        description: Students match French prepositions with English equivalents.
+        duration: 10
+      - name: Possession Practice
+        type: sentence-rewrite
+        description: Students rewrite 10 de phrases using English possessive forms.
+        duration: 10
+    sources:
+    - Swan & Smith "Learner English" Ch. 6
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for prepositions
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: French speakers, pp. 51-71'
+      tier: 1
+    - claim: 'Grammar point: prepositions'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Prepositions signal relationships that compensate for lost noun inflections
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: p. 84
+      tier: 2
+    - claim: Preposition usage is highly language-specific and a major source of errors
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See preposition entries
+      tier: 2
+    - claim: 'Preposition combinations must be taught explicitly: rote memorization,
+        direct instruction, or extensive reading'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 171
+      tier: 2
+  false_friends:
+    interference_patterns:
+    - pattern: Confusion of actuellement (currently) with actually
+      example: 'FR ''actuellement'' = currently -> Error: ''Actually, I live in Paris''
+        -> Correct: ''Currently, I live in Paris'''
+      frequency: 5
+      persistence: 4
+      communicative_impact: 4
+    - pattern: Confusion of assister (attend) with assist
+      example: 'FR ''assister a'' = to attend -> Error: ''I will assist the meeting''
+        -> Correct: ''I will attend the meeting'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 4
+    examples:
+    - wrong: Actually, I work in a bank.
+      correct: Currently, I work in a bank.
+    - wrong: I will assist the meeting.
+      correct: I will attend the meeting.
+    - wrong: The food is exquisite!
+      correct: The food is delicious!
+    why_it_happens: French and English share many Latin-derived cognates, but some
+      have shifted meaning. These 'false friends' cause high-impact communication
+      errors because the words look similar but mean different things.
+    teacher_tips:
+      how_to_explain: Create a 'False Friends Wall' in the classroom. List the top
+        20 FR-EN false friends with both meanings. Have students create flashcards.
+      where_to_start: 'Start with the highest-impact false friends: actually/currently,
+        attend/assist, delicious/exquisite.'
+      sequencing: 'Week 1: Top 10 false friends. Week 2: Next 10 false friends. Week
+        3: Context-based practice. Week 4: Review.'
+      exercises:
+      - name: False Friend Flashcards
+        type: matching
+        description: Students create flashcards for 20 false friends and quiz each
+          other.
+        duration: 15
+      - name: Context Clues
+        type: fill-in-the-blank
+        description: 15 sentences where students choose between false friend pairs
+          based on context.
+        duration: 10
+      - name: FR-EN False Friend Translation
+        type: translation
+        description: Translate 10 French sentences containing false friends into correct
+          English.
+        duration: 15
+      - name: False Friend Story
+        type: composition
+        description: Students write a short story using at least 5 false friends correctly.
+        duration: 20
+    sources:
+    - Swan & Smith "Learner English" Ch. 6
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 5
+    persistence: 4
+    communicative_impact: 4
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for false friends
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: French speakers, pp. 51-71'
+      tier: 1
+    - claim: 'Grammar point: false friends'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: False friends (cognates with different meanings) cause high-impact errors
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See vocabulary problem entries
+      tier: 2
+    - claim: 'French-English false friends: actuellement/currently, assist/attend,
+        etc. (PEU vocabulary)'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See relevant entry
+      tier: 2
+    - claim: False friends cause high-impact communication errors; must be taught
+        explicitly
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 213
+      tier: 2
+    - claim: 'French-English false friends: actuellement/currently (p. 213)'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: See relevant section
+      tier: 2
+  passive_voice:
+    interference_patterns:
+    - pattern: Avoidance of passive voice
+      example: 'FR uses ''on'' for impersonal -> Error: ''One sells books here'' ->
+        Correct: ''Books are sold here'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    - pattern: Use of on instead of passive
+      example: 'FR ''On parle francais'' (one speaks French) -> Error: ''One speaks
+        French here'' -> Correct: ''French is spoken here'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+    examples:
+    - wrong: One sells books in this store.
+      correct: Books are sold in this store.
+    - wrong: One speaks French here.
+      correct: French is spoken here.
+    - wrong: One built this house in 1900.
+      correct: This house was built in 1900.
+    why_it_happens: French uses 'on' (one/people) for impersonal constructions where
+      English prefers passive voice. French learners may transfer the 'on' construction,
+      creating awkward English.
+    teacher_tips:
+      how_to_explain: 'Teach the passive formula: be + past participle. Show when
+        to use it: when the action is more important than the agent, when the agent
+        is unknown, or in formal writing.'
+      where_to_start: Start with the passive formula. Then teach when to use passive
+        vs active.
+      sequencing: 'Week 1: Passive formula (be + past participle). Week 2: Present
+        and past passive. Week 3: When to use passive. Week 4: Passive in formal writing.'
+      exercises:
+      - name: Active to Passive
+        type: sentence-rewrite
+        description: Students convert 15 active sentences to passive voice.
+        duration: 15
+      - name: FR On to EN Passive
+        type: translation
+        description: Translate 15 French on sentences into English passive.
+        duration: 15
+      - name: Passive to Active
+        type: sentence-rewrite
+        description: Students convert 10 passive sentences to active, adding an agent.
+        duration: 10
+      - name: News Headlines
+        type: composition
+        description: Students write 5 news headlines using passive voice.
+        duration: 10
+    sources:
+    - Swan & Smith "Learner English" Ch. 6
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for passive voice
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: French speakers, pp. 51-71'
+      tier: 1
+    - claim: 'Grammar point: passive voice'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Passive voice availability and usage varies across languages
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See passive entries
+      tier: 2
+    - claim: ELLs avoid passive in contexts where L1 uses different structures
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 294
+      tier: 2
+  conditionals:
+    interference_patterns:
+    - pattern: Use of present tense in if-clauses
+      example: 'FR ''Si j''ai le temps'' (if I have the time) -> Error: ''If I will
+        have time'' -> Correct: ''If I have time'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+    - pattern: Use of conditionnel for hypothetical
+      example: 'FR ''Si j''avais le temps, je ferais'' -> Error: ''If I would have
+        time, I would do'' -> Correct: ''If I had time, I would do'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+    examples:
+    - wrong: If I will see him, I will tell him.
+      correct: If I see him, I will tell him.
+    - wrong: If I would have money, I would travel.
+      correct: If I had money, I would travel.
+    - wrong: If she will come, we will celebrate.
+      correct: If she comes, we will celebrate.
+    why_it_happens: French uses the present tense in si-clauses (si j'ai = if I have),
+      which is similar to English. However, French also uses the conditional in si-clauses
+      for hypotheticals, leading to 'would' in the English if-clause.
+    teacher_tips:
+      how_to_explain: 'Teach: NO WILL/WOULD IN IF-CLAUSE. First conditional: If +
+        present, will + base. Second conditional: If + past, would + base. Write the
+        formula on the board.'
+      where_to_start: Start with first conditional (real/possible). Then teach second
+        conditional (unreal/hypothetical).
+      sequencing: 'Week 1: First conditional. Week 2: Second conditional. Week 3:
+        Zero conditional. Week 4: Mixed conditionals.'
+      exercises:
+      - name: If-Clause Fix
+        type: error-correction
+        description: 15 sentences with will/would in the if-clause. Students correct.
+        duration: 10
+      - name: Conditional Chain
+        type: sentence-rewrite
+        description: Students transform 10 zero conditionals into first and second
+          conditionals.
+        duration: 10
+      - name: FR Conditional Translation
+        type: translation
+        description: Translate 15 French conditional sentences into correct English.
+        duration: 15
+      - name: Hypothetical Discussion
+        type: oral-drill
+        description: Students discuss hypothetical situations using second conditional.
+        duration: 15
+    sources:
+    - Swan & Smith "Learner English" Ch. 6
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for conditionals
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: French speakers, pp. 51-71'
+      tier: 1
+    - claim: 'Grammar point: conditionals'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Conditional structures vary; some languages use morphological mood, others
+        use particles
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See conditional entries
+      tier: 2
+    - claim: 'Common error: *If I would have known (transfer from L1 conditional structures)'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 322
+      tier: 2
+  gerund_infinitive:
+    interference_patterns:
+    - pattern: Use of infinitive after prepositions
+      example: 'FR ''avant de manger'' (before to-eat) -> Error: ''Before to eat''
+        -> Correct: ''Before eating'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    - pattern: Use of apres + past infinitive
+      example: 'FR ''apres avoir mange'' (after having eaten) -> Error: ''After having
+        eaten'' (correct but formal) -> Correct: ''After eating'''
+      frequency: 3
+      persistence: 2
+      communicative_impact: 1
+    examples:
+    - wrong: Before to leave, say goodbye.
+      correct: Before leaving, say goodbye.
+    - wrong: After to finish, we went home.
+      correct: After finishing, we went home.
+    - wrong: I want going to the store.
+      correct: I want to go to the store.
+    why_it_happens: French uses the infinitive after prepositions (avant de manger
+      = before to-eat). English uses gerund after prepositions (before eating). French
+      also uses past infinitive (apres avoir mange) where English uses gerund.
+    teacher_tips:
+      how_to_explain: 'Teach: After prepositions (before, after, without, by, for)
+        -> always gerund (-ing). After verbs -> check if it takes infinitive, gerund,
+        or both.'
+      where_to_start: Start with preposition + gerund (easier rule). Then teach verb
+        + infinitive vs verb + gerund.
+      sequencing: 'Week 1: Preposition + gerund. Week 2: Verb + infinitive (want,
+        need, hope). Week 3: Verb + gerund (enjoy, finish, avoid). Week 4: Verbs that
+        take both.'
+      exercises:
+      - name: Preposition + Gerund
+        type: fill-in-the-blank
+        description: 15 sentences with prepositions followed by blank. Students fill
+          with gerund.
+        duration: 10
+      - name: FR Gerund Translation
+        type: translation
+        description: Translate 15 French preposition + infinitive sentences into English
+          gerund.
+        duration: 15
+      - name: Verb Pattern Sort
+        type: matching
+        description: Students sort 20 verbs into takes infinitive, takes gerund, or
+          both columns.
+        duration: 10
+      - name: Sentence Building
+        type: sentence-rewrite
+        description: Students rewrite 10 sentences changing the verb form.
+        duration: 10
+    sources:
+    - Swan & Smith "Learner English" Ch. 6
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for gerund infinitive
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: French speakers, pp. 51-71'
+      tier: 1
+    - claim: 'Grammar point: gerund infinitive'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Gerund/infinitive distribution varies across languages
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See gerund/infinitive entries
+      tier: 2
+    - claim: 'ELLs experience interference with gerund/infinitive: *I can to read
+        it, *I can reading it'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 206
+      tier: 2
+  relative_clauses:
+    interference_patterns:
+    - pattern: Use of dont for whose/of which
+      example: 'FR ''le livre dont je parle'' (the book of-which I speak) -> Error:
+        ''The book of which I speak'' (correct but formal) -> Correct: ''The book
+        I''m talking about'''
+      frequency: 3
+      persistence: 2
+      communicative_impact: 1
+    - pattern: Use of que for both that and which
+      example: 'FR ''que'' = that/which -> Error: ''The book which I read'' (correct)
+        but overuse of which'
+      frequency: 3
+      persistence: 2
+      communicative_impact: 1
+    examples:
+    - wrong: The man which I met is my boss.
+      correct: The man that I met is my boss.
+    - wrong: The car who is parked outside is mine.
+      correct: The car that is parked outside is mine.
+    - wrong: The book what I read was interesting.
+      correct: The book that I read was interesting.
+    why_it_happens: French uses 'que' as a universal relative pronoun and 'dont' for
+      possession/of-which. English distinguishes that/which/who/whose. French learners
+      may overuse 'which' or use 'what' as a relative pronoun.
+    teacher_tips:
+      how_to_explain: 'Teach: For people -> who/that. For things -> that/which. ''That''
+        for essential info (restrictive). ''Which'' for extra info (non-restrictive,
+        with comma). ''What'' is NEVER a relative pronoun.'
+      where_to_start: Start with 'that' as the default relative pronoun. Then introduce
+        'who' for people and 'which' for non-restrictive clauses.
+      sequencing: 'Week 1: That for things and people. Week 2: Who for people. Week
+        3: Which for non-restrictive clauses. Week 4: Omitting relative pronouns.'
+      exercises:
+      - name: Relative Pronoun Choice
+        type: fill-in-the-blank
+        description: 15 sentences where students choose that/which/who.
+        duration: 10
+      - name: FR Relative Translation
+        type: translation
+        description: Translate 15 French relative clauses into correct English.
+        duration: 15
+      - name: Relative Clause Combining
+        type: sentence-rewrite
+        description: Students combine 10 pairs of sentences using relative pronouns.
+        duration: 15
+      - name: Description Activity
+        type: oral-drill
+        description: Students describe people and things using relative clauses.
+        duration: 10
+    sources:
+    - Swan & Smith "Learner English" Ch. 6
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 3
+    persistence: 2
+    communicative_impact: 1
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for relative clauses
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: French speakers, pp. 51-71'
+      tier: 1
+    - claim: 'Grammar point: relative clauses'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: 'Relative clause structure varies: pre-nominal vs post-nominal, resumptive
+        pronouns'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See relative clause entries
+      tier: 2
+    - claim: 'ELLs transfer L1 relative clause structure: resumptive pronouns, pre-nominal
+        clauses'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 199
+      tier: 2
+  phonology:
+    interference_patterns:
+    - pattern: Silent consonant pronunciation
+      example: 'FR silent final consonants -> Error: pronouncing all final consonants'
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Confusion of /h/ and silent h
+      example: 'FR silent h -> Error: ''I have a horse'' (pronouncing h) vs ''I have
+        an hour'' (omitting h)'
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+    examples:
+    - wrong: I am wery happy.
+      correct: I am very happy.
+    - wrong: I have an our.
+      correct: I have an hour.
+    - wrong: He is from the hitery.
+      correct: He is from history.
+    why_it_happens: French has many silent final consonants and a silent 'h' at the
+      beginning of words. English pronounces most final consonants and has both pronounced
+      and silent 'h'. French learners may either pronounce silent letters or fail
+      to pronounce required sounds.
+    teacher_tips:
+      how_to_explain: 'Teach: English ''h'' is pronounced at the start of most words
+        (hour, honest are exceptions). Most final consonants are pronounced in English.
+        Practice: house, horse, happy (h pronounced). Hour, honest, honor (h silent).'
+      where_to_start: Start with 'h' pronunciation. Then teach final consonant pronunciation.
+      sequencing: 'Week 1: H pronunciation. Week 2: Final consonants. Week 3: TH sounds.
+        Week 4: Review.'
+      exercises:
+      - name: H Pronunciation
+        type: oral-drill
+        description: Students practice 20 words with h, distinguishing pronounced
+          vs silent.
+        duration: 10
+      - name: Final Consonant Practice
+        type: oral-drill
+        description: Students practice pronouncing final consonants in 20 words.
+        duration: 10
+      - name: Minimal Pairs
+        type: matching
+        description: 'Students distinguish: house/our, horse/orse, hit/it.'
+        duration: 10
+      - name: Dictation
+        type: fill-in-the-blank
+        description: Teacher dictates words with target sounds. Students write them.
+        duration: 10
+    sources:
+    - Swan & Smith "Learner English" Ch. 6
+    - Underhill "Sound Foundations"
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for phonology
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: French speakers, pp. 51-71'
+      tier: 1
+    - claim: 'Grammar point: phonology'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Phonological interference pattern
+      source: Underhill (2005) 'Sound Foundations', Macmillan
+      location: See relevant phonology section
+      tier: 2
+    - claim: Phonological transfer from L1 causes pronunciation errors
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See pronunciation entries
+      tier: 2
+    - claim: Single pronunciation errors rarely impede communication; focus on patterns
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 272
+      tier: 2
+  countability:
+    interference_patterns:
+    - pattern: Pluralization of uncountable nouns
+      example: 'FR ''des informations'' (some informations) -> Error: ''informations''
+        -> Correct: ''information'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+    - pattern: Use of des for some
+      example: 'FR ''des'' = some -> Error: ''I have some informations'' -> Correct:
+        ''I have some information'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 3
+    examples:
+    - wrong: I have many homeworks.
+      correct: I have a lot of homework.
+    - wrong: She gave me good advices.
+      correct: She gave me good advice.
+    - wrong: We need more furnitures.
+      correct: We need more furniture.
+    why_it_happens: 'French treats many nouns as countable that are uncountable in
+      English: ''des informations'' (informations), ''des conseils'' (advices). French
+      learners pluralize these and use ''many'' instead of ''much''.'
+    teacher_tips:
+      how_to_explain: 'Create a list of common uncountable nouns: information, advice,
+        furniture, luggage, homework, research, news, equipment. Teach: ''a piece
+        of...'', ''some...'', ''much...'' for uncountables.'
+      where_to_start: Start with the countable/uncountable distinction. Then teach
+        much/many.
+      sequencing: 'Week 1: Common uncountable nouns. Week 2: Much/many vs a lot of.
+        Week 3: Partitives. Week 4: Review.'
+      exercises:
+      - name: Countable or Not?
+        type: matching
+        description: Students categorize 30 nouns as countable or uncountable.
+        duration: 10
+      - name: Quantifier Choice
+        type: fill-in-the-blank
+        description: 20 sentences where students choose much/many/a lot of.
+        duration: 10
+      - name: FR Countability Translation
+        type: translation
+        description: Translate 15 French sentences, correcting countability errors.
+        duration: 15
+      - name: Uncountable Noun Hunt
+        type: error-correction
+        description: A paragraph with 10 countability errors. Students find and fix.
+        duration: 15
+    sources:
+    - Swan & Smith "Learner English" Ch. 6
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for countability
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: French speakers, pp. 51-71'
+      tier: 1
+    - claim: 'Grammar point: countability'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Countability distinctions vary across languages; some nouns are countable
+        in L1 but uncountable in English
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See countability entries
+      tier: 2
+    - claim: Count/mass noun distinctions vary by L1; Spanish uses have for age (*I
+        have 27 years old)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 89
+      tier: 2
+  reported_speech:
+    interference_patterns:
+    - pattern: No backshift of tenses
+      example: 'FR ''Il dit qu''il est fatigue'' -> Error: ''He said that he is tired''
+        -> Correct: ''He said that he was tired'''
+      frequency: 4
+      persistence: 4
+      communicative_impact: 3
+    - pattern: Use of que for that
+      example: 'FR ''Il dit que'' (he says that) -> Error: ''He says that he is tired''
+        (correct) but no backshift'
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+    examples:
+    - wrong: She said that she is tired.
+      correct: She said that she was tired.
+    - wrong: He told me that he will come.
+      correct: He told me that he would come.
+    - wrong: They said that they are leaving.
+      correct: They said that they were leaving.
+    why_it_happens: French reported speech often retains the original tense, especially
+      when the reported information is still true. English requires backshift (present
+      -> past, will -> would). French learners transfer the L1 pattern.
+    teacher_tips:
+      how_to_explain: 'Teach the backshift rule: Direct speech present -> reported
+        past. Direct will -> reported would. Direct can -> reported could.'
+      where_to_start: Start with the basic backshift pattern. Then teach pronoun changes.
+      sequencing: 'Week 1: Say/tell + backshift. Week 2: Pronoun changes. Week 3:
+        Modal backshift. Week 4: Questions and commands in reported speech.'
+      exercises:
+      - name: Backshift Practice
+        type: sentence-rewrite
+        description: Students convert 15 direct speech sentences to reported speech.
+        duration: 15
+      - name: FR Reported Speech Translation
+        type: translation
+        description: Translate 15 French reported speech sentences into correct English.
+        duration: 15
+      - name: News Reporter
+        type: composition
+        description: Students write a short news article using reported speech.
+        duration: 20
+      - name: Telephone Game
+        type: oral-drill
+        description: 'Students play telephone: first student says something, next
+          reports it.'
+        duration: 10
+    sources:
+    - Swan & Smith "Learner English" Ch. 6
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 4
+    communicative_impact: 3
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for reported speech
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: French speakers, pp. 51-71'
+      tier: 1
+    - claim: 'Grammar point: reported speech'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Reported speech conventions vary; some languages retain original tense
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See reported speech entries
+      tier: 2
+    - claim: ELLs retain original tense in reported speech (no backshift)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 294
+      tier: 2
+  possessives:
+    interference_patterns:
+    - pattern: Use of a + possessive
+      example: 'FR ''a moi'' (to me) -> Error: ''The book is to me'' -> Correct: ''The
+        book is mine'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Use of de for possession
+      example: 'FR ''le livre de Jean'' -> Error: ''The book of Jean'' -> Correct:
+        ''Jean''s book'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+    examples:
+    - wrong: The book is to me.
+      correct: The book is mine.
+    - wrong: The car of my father is blue.
+      correct: My father's car is blue.
+    - wrong: He broke the leg.
+      correct: He broke his leg.
+    why_it_happens: French uses 'de' (of) for possession and 'a moi/toi/lui' for emphasis.
+      English uses 's for people and possessive adjectives (my, your, his). French
+      learners may transfer the de construction.
+    teacher_tips:
+      how_to_explain: 'Teach: Use ''s for people (Jean''s book). Use of for things
+        (the leg of the table). For body parts and family: use possessive adjectives
+        (my mother, his leg).'
+      where_to_start: Start with 's for people. Then teach possessive adjectives.
+      sequencing: 'Week 1: ''S for people. Week 2: Possessive adjectives. Week 3:
+        Of for things. Week 4: Review.'
+      exercises:
+      - name: Possessive Formation
+        type: sentence-rewrite
+        description: Students rewrite 10 de phrases using English possessive forms.
+        duration: 10
+      - name: Body Parts
+        type: oral-drill
+        description: Students describe injuries using possessives.
+        duration: 10
+      - name: FR Possessive Translation
+        type: translation
+        description: Translate 15 French possessive sentences into correct English.
+        duration: 15
+      - name: Family Description
+        type: composition
+        description: Students describe their family using possessive adjectives.
+        duration: 15
+    sources:
+    - Swan & Smith "Learner English" Ch. 6
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 2
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for possessives
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: French speakers, pp. 51-71'
+      tier: 1
+    - claim: 'Grammar point: possessives'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Possession is expressed differently across languages (postpositions,
+        particles, word order)
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See possession entries
+      tier: 2
+    - claim: 'ELLs confuse possessive forms: *students vs *student''s'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 45
+      tier: 2
+  linking_words:
+    interference_patterns:
+    - pattern: Use of mais at sentence start
+      example: 'FR ''mais'' = but/however -> Error: ''But, I think...'' -> Correct:
+        ''However, I think...'''
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+    - pattern: Use of donc for so/therefore
+      example: 'FR ''donc'' = so/therefore -> Error: ''Donc, we left'' -> Correct:
+        ''So, we left'' / ''Therefore, we left'''
+      frequency: 3
+      persistence: 2
+      communicative_impact: 1
+    examples:
+    - wrong: But, I think we should go.
+      correct: However, I think we should go.
+    - wrong: Donc, we left early.
+      correct: So, we left early.
+    - wrong: Although it rained, but we went out.
+      correct: Although it rained, we went out.
+    why_it_happens: French 'mais' functions as both 'but' and 'however'. French also
+      uses double conjunctions ('bien que...mais' = although...but), which is redundant
+      in English.
+    teacher_tips:
+      how_to_explain: 'Teach: ''However'' for formal writing. ''But'' for informal.
+        ''Although'' and ''but'' NEVER together in English.'
+      where_to_start: Start with 'but' vs 'however'. Then teach double conjunction
+        redundancy.
+      sequencing: 'Week 1: But vs however. Week 2: Although/but redundancy. Week 3:
+        Other linking words. Week 4: Review.'
+      exercises:
+      - name: Formal vs Informal
+        type: sentence-rewrite
+        description: Students rewrite 10 informal sentences using formal linking words.
+        duration: 10
+      - name: Double Conjunction Fix
+        type: error-correction
+        description: 10 sentences with although...but. Students remove the redundant
+          conjunction.
+        duration: 10
+      - name: Linking Word Sort
+        type: matching
+        description: Students categorize 15 linking words by function.
+        duration: 10
+      - name: FR Conjunction Translation
+        type: translation
+        description: Translate 15 French sentences with correct English linking words.
+        duration: 15
+    sources:
+    - Swan & Smith "Learner English" Ch. 6
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 3
+    persistence: 2
+    communicative_impact: 2
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for linking words
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: French speakers, pp. 51-71'
+      tier: 1
+    - claim: 'Grammar point: linking words'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Discourse connectors vary; some languages use double conjunctions
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See conjunction entries
+      tier: 2
+    - claim: ELLs use double conjunctions transferred from L1 (although...but)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 294
+      tier: 2
+  comparatives:
+    interference_patterns:
+    - pattern: Use of plus for all comparatives
+      example: 'FR ''plus grand'' (more big) -> Error: ''more big'' -> Correct: ''bigger'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Use of le plus for all superlatives
+      example: 'FR ''le plus grand'' (the most big) -> Error: ''the most big'' ->
+        Correct: ''the biggest'''
+      frequency: 3
+      persistence: 2
+      communicative_impact: 2
+    examples:
+    - wrong: This car is more big than that one.
+      correct: This car is bigger than that one.
+    - wrong: She is the most tall in the class.
+      correct: She is the tallest in the class.
+    - wrong: He is more old than me.
+      correct: He is older than me.
+    why_it_happens: French forms comparatives with 'plus' + adjective and superlatives
+      with 'le/la plus' + adjective. English uses -er/-est for short adjectives and
+      more/most for long ones.
+    teacher_tips:
+      how_to_explain: 'Teach: 1-2 syllable adjectives -> -er/-est. 3+ syllable adjectives
+        -> more/most. Exceptions: good -> better -> best.'
+      where_to_start: Start with -er/-est rule. Then teach more/most. Then teach irregulars.
+      sequencing: 'Week 1: -er/-est with short adjectives. Week 2: More/most with
+        long adjectives. Week 3: Irregular comparatives. Week 4: Comparative structures.'
+      exercises:
+      - name: Comparative Formation
+        type: sentence-rewrite
+        description: Students rewrite 10 sentences, changing more + adj to -er where
+          appropriate.
+        duration: 10
+      - name: Superlative Challenge
+        type: fill-in-the-blank
+        description: 15 sentences where students form the correct superlative.
+        duration: 10
+      - name: FR Comparative Translation
+        type: translation
+        description: Translate 15 French comparative sentences into correct English.
+        duration: 10
+      - name: Comparison Paragraph
+        type: composition
+        description: Students write a paragraph comparing two things using at least
+          5 comparatives.
+        duration: 15
+    sources:
+    - Swan & Smith "Learner English" Ch. 6
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 2
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for comparatives
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: French speakers, pp. 51-71'
+      tier: 1
+    - claim: 'Grammar point: comparatives'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: 'Comparative formation varies: morphological vs analytic'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See comparative entries
+      tier: 2
+    - claim: Comparative formation varies by L1; explicit practice needed
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 295
+      tier: 2
+  adverbs:
+    interference_patterns:
+    - pattern: Use of adjective instead of adverb
+      example: 'FR ''lent'' = slow/slowly -> Error: ''He drives very slow'' -> Correct:
+        ''He drives very slowly'''
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+    examples:
+    - wrong: He runs very fastly.
+      correct: He runs very fast. / He runs very quickly.
+    - wrong: She speaks English good.
+      correct: She speaks English well.
+    - wrong: They arrived lately.
+      correct: They arrived late.
+    why_it_happens: French does not always distinguish morphologically between adjectives
+      and adverbs. English requires -ly for most adverbs. French learners use adjectives
+      where English requires adverbs.
+    teacher_tips:
+      how_to_explain: 'Teach: Adjective describes a noun. Adverb describes a verb.
+        Most adverbs add -ly. Exceptions: fast, hard, late (same form). Good -> well
+        (irregular).'
+      where_to_start: Start with the -ly rule. Then teach exceptions. Then teach good/well.
+      sequencing: 'Week 1: Adjective vs adverb. Week 2: Adding -ly. Week 3: Exceptions.
+        Week 4: Good vs well.'
+      exercises:
+      - name: Adjective or Adverb?
+        type: fill-in-the-blank
+        description: 15 sentences where students choose between adjective and adverb
+          form.
+        duration: 10
+      - name: Adverb Formation
+        type: sentence-rewrite
+        description: Students rewrite 10 sentences, changing adjectives to adverbs.
+        duration: 10
+      - name: FR Adverb Translation
+        type: translation
+        description: Translate 15 French sentences, choosing correct English adverb
+          form.
+        duration: 10
+      - name: Adverb Error Hunt
+        type: error-correction
+        description: A paragraph with 10 adverb errors. Students find and fix.
+        duration: 15
+    sources:
+    - Swan & Smith "Learner English" Ch. 6
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 2
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for adverbs
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: French speakers, pp. 51-71'
+      tier: 1
+    - claim: 'Grammar point: adverbs'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: 'Adverb placement varies: some languages place adjectives where English
+        uses adverbs'
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See adverb entries
+      tier: 2
+    - claim: ELLs use adjectives where English requires adverbs (transfer from L1)
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 266
+      tier: 2
+  modal_verbs:
+    interference_patterns:
+    - pattern: Use of pouvoir for can/may
+      example: 'FR ''je peux'' = I can/I may -> Error: ''I can go?'' (informal) ->
+        Correct: ''May I go?'' (formal)'
+      frequency: 4
+      persistence: 3
+      communicative_impact: 2
+    - pattern: Use of devoir for must/should
+      example: 'FR ''je dois'' = I must/I should -> Error: ''I must go'' (too strong)
+        -> Correct: ''I should go'''
+      frequency: 3
+      persistence: 3
+      communicative_impact: 2
+    examples:
+    - wrong: I can have some water?
+      correct: May I have some water?
+    - wrong: You must to go to the doctor.
+      correct: You should go to the doctor.
+    - wrong: She can to swim very well.
+      correct: She can swim very well.
+    why_it_happens: French 'pouvoir' covers can/could/may/might. French 'devoir' covers
+      must/should/have to. French learners may use 'can' for all situations or 'must'
+      when 'should' is more appropriate.
+    teacher_tips:
+      how_to_explain: 'Teach modal hierarchy: can (ability), may (permission, formal),
+        could (polite request), should (advice), must (obligation).'
+      where_to_start: Start with 'can' for ability. Then 'may' for permission. Then
+        'could' for polite requests.
+      sequencing: 'Week 1: Can (ability). Week 2: May (permission). Week 3: Could
+        (politeness). Week 4: Should/must (advice/obligation).'
+      exercises:
+      - name: Modal Choice
+        type: fill-in-the-blank
+        description: 15 sentences where students choose the correct modal.
+        duration: 10
+      - name: Politeness Role-play
+        type: oral-drill
+        description: Students practice polite requests using May I...? and Could you...?
+        duration: 15
+      - name: Modal Error Correction
+        type: error-correction
+        description: 10 sentences with modal errors. Students correct.
+        duration: 10
+      - name: FR Modal Translation
+        type: translation
+        description: Translate 15 French modal verb sentences into correct English.
+        duration: 15
+    sources:
+    - Swan & Smith "Learner English" Ch. 6
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 4
+    persistence: 3
+    communicative_impact: 2
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for modal verbs
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: French speakers, pp. 51-71'
+      tier: 1
+    - claim: 'Grammar point: modal verbs'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Modal systems vary widely; some languages have no direct equivalents
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See modal entries 77-86
+      tier: 2
+    - claim: 'Common ELL errors: *I can to go, *she might to believe (adding to after
+        modals)'
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 225
+      tier: 2
+  subject_verb_agreement:
+    interference_patterns:
+    - pattern: Omission of third-person -s
+      example: 'FR ''il aime'' (he likes) -> Error: ''He like'' -> Correct: ''He likes'''
+      frequency: 5
+      persistence: 5
+      communicative_impact: 4
+    examples:
+    - wrong: She like chocolate.
+      correct: She likes chocolate.
+    - wrong: He go to school every day.
+      correct: He goes to school every day.
+    - wrong: The news are good.
+      correct: The news is good.
+    why_it_happens: French verb conjugation includes person/number marking, but the
+      third-person singular form is often similar to other persons. English third-person
+      singular -s is a unique marker that French learners frequently omit.
+    teacher_tips:
+      how_to_explain: 'Teach the ''he/she/it + verb-s'' rule as non-negotiable. Drill:
+        I like, you like, he likes, she likes, it likes, we like, they like.'
+      where_to_start: Start with third-person -s in present simple. Then teach does/doesn't.
+      sequencing: 'Week 1: Third-person -s. Week 2: Does/doesn''t in questions/negatives.
+        Week 3: Irregular third-person forms. Week 4: Review.'
+      exercises:
+      - name: Agreement Drill
+        type: oral-drill
+        description: Students describe a classmate daily routine using third-person
+          -s.
+        duration: 10
+      - name: Subject-Verb Match
+        type: fill-in-the-blank
+        description: 20 sentences where students choose the correct verb form.
+        duration: 10
+      - name: Error Correction
+        type: error-correction
+        description: 15 sentences with agreement errors. Students correct.
+        duration: 10
+      - name: Daily Routine Writing
+        type: composition
+        description: Students write about another person daily routine using third-person
+          -s.
+        duration: 15
+    sources:
+    - Swan & Smith "Learner English" Ch. 6
+    - Parrott "Grammar for English Language Teachers"
+    source_count: 2
+    source_type: textbook
+    frequency: 5
+    persistence: 5
+    communicative_impact: 4
+    flagged: false
+    tier: 1
+    source_rank: 1
+    citations:
+    - claim: Interference pattern for subject verb agreement
+      source: 'Swan & Smith (2001) ''Learner English: A Teacher''s Guide to Interference
+        and Other Problems'', 2nd ed., Cambridge University Press'
+      location: 'Chapter: French speakers, pp. 51-71'
+      tier: 1
+    - claim: 'Grammar point: subject verb agreement'
+      source: Parrott (2000) 'Grammar for English Language Teachers', Cambridge University
+        Press
+      location: See relevant grammar point section
+      tier: 2
+    - claim: Topic-prominent L1 learners find subject-verb agreement more difficult
+      source: 'Celce-Murcia & Larsen-Freeman (2015) ''The Grammar Book: Form, Meaning,
+        and Use for English Language Teachers'', 3rd ed., National Geographic Learning/Cengage'
+      location: p. 61
+      tier: 2
+    - claim: SVA is difficult for learners whose L1 has no subject-verb agreement
+      source: Swan (2016) 'Practical English Usage', 4th ed., Oxford University Press
+      location: See SVA entries
+      tier: 2
+    - claim: SVA errors persist because the correct and incorrect forms often sound
+        similar
+      source: 'Folse (2009) ''Keys to Teaching Grammar to English Language Learners:
+        A Practical Handbook'', University of Michigan Press'
+      location: p. 314
+      tier: 2

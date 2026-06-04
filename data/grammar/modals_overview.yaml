@@ -1,71 +1,188 @@
-grammar_point: modals_overview
-title: Modal Verbs Overview (All Functions & Levels)
+citations:
+- claim: 'Core meaning: Modals express speaker attitude: ability, permission, possibility,
+    obligation, prediction, deduction'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal
+    Auxiliaries and Related Phrasal Forms-9.6'
+  tier: 1
+- claim: 'Discourse function: In conversation, modals are essential for politeness,
+    expressing degrees of certainty, and making re'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal
+    Auxiliaries and Related Phrasal Forms-9.6'
+  tier: 1
+- claim: Common error '*You must to wear a seatbelt.*' for Portuguese, Spanish, French
+    speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: CGEL analyzes auxiliaries as a subclass of lexical verbs defined by NICE
+    properties.
+  reliability: A
+  source: Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 3
+  tier: 2
+- claim: L1 transfer in modals overview varies significantly across language backgrounds
+    — Swan & Smith document contrastive patterns for speakers of different L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents
+    how transfer effects are non-linear, determined by functional fit between L1 and
+    L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects
+    are non-linear — determined by functional fit between L1 and L2 systems rather
+    than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning.
+    Routledge.
+  tier: 2
+common_errors:
+- correction: You must wear a seatbelt.
+  error: '*You must to wear a seatbelt.*'
+  explanation: 'Modal verbs are followed by the base verb (no ''to''). This applies
+    to ALL modals: can, could, must, should, would, may, might.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Modal verbs'
 description: Comprehensive overview of all modal verbs, their functions, CEFR levels
   (A2-C1), and common uses. Serves as a teacher reference.
+dialectal_variation: []
+discourse_notes:
+- note: In conversation, modals are essential for politeness, expressing degrees of
+    certainty, and making requests.
+- note: 'In academic writing, modals express hedging and caution: ''These results
+    may suggest...'' ''It could be argued that...'''
+- note: 'In legal and regulatory language, modals express obligation and permission:
+    ''All passengers must wear seatbelts.'''
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: 'Subject + modal + base verb (no to, no -s): ''I can swim'', ''She
+      might come'''
+  negative:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: 'Subject + modal + not + base verb: ''I can''t swim'', ''She might
+      not come'''
+  questions:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: 'Modal + subject + base verb: ''Can you swim?'', ''Might she come?'''
+grammar_point: modals_overview
 level: A2-C1
 meaning:
-  core_meaning: 'Modals express speaker attitude: ability, permission, possibility,
-    obligation, prediction, deduction, or request.'
-  timeline: 'Present: can, may, will, must; Past: could, might, would, should; Future:
-    will, shall'
-  contrast: Each modal has unique functions; no two modals are identical in all contexts.
   ccqs:
-  - question: What do modal verbs express
-    answer: Modals express ability, permission, obligation, possibility, and advice.
+  - answer: Modals express ability, permission, obligation, possibility, and advice.
     purpose: Tests whether the learner understands a key concept of modals_overview.
       This is fundamental for correct use of this grammar point.
-  - question: Do modals change form for he/she/it
-    answer: No. Modals never add -s for third person singular.
+    question: What do modal verbs express
+  - answer: No. Modals never add -s for third person singular.
     purpose: Tests whether the learner understands a key concept of modals_overview.
       This is fundamental for correct use of this grammar point.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
+    question: Do modals change form for he/she/it
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
     purpose: Tests whether the learner can identify common errors associated with
       modals overview and explain why they are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: Must. Must expresses positive logical deduction (near certainty based
+      on evidence). For negative deduction, use can't (she can't be at home -- her
+      car is not here). This is distinct from must for obligation (you must wear a
+      seatbelt) and requires the learner to recognise the same modal serving different
+      functions.
+    question: Which modal is used for logical deduction about the present, such as
+      she must be at home because her car is outside?
+  contrast: Each modal has unique functions; no two modals are identical in all contexts.
+  core_meaning: 'Modals express speaker attitude: ability, permission, possibility,
+    obligation, prediction, deduction, or request.'
   example_generator:
     contexts:
     - everyday situations
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Subject + modal + base verb (no to, no -s): ''I can swim'', ''She
-      might come'''
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
-  negative:
-    structure: 'Subject + modal + not + base verb: ''I can''t swim'', ''She might
-      not come'''
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
-  questions:
-    structure: 'Modal + subject + base verb: ''Can you swim?'', ''Might she come?'''
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
+  timeline: 'Present: can, may, will, must; Past: could, might, would, should; Future:
+    will, shall'
+phonetics:
+- example_generator:
+    contexts:
+    - modal reduction
+  l1_issue: Learners may over-pronounce modals, making their speech sound unnatural.
+    Teach the weak forms.
+  note: 'Modal verbs are usually unstressed in connected speech: ''I can go'' → /aɪ
+    kən ɡəʊ/, ''She must leave'' → /ʃi məst liːv/. The stress falls on the main verb.'
+processing_note: 'McManus (2022): Modals are a clear case of complex form-meaning
+  mappings. The same modal verb can express multiple meanings (epistemic, deontic,
+  dynamic) — these are construction-level mappings that vary crosslinguistically.
+  Learners must build new mappings for each use, not assume 1:1 L1-L2 correspondence.
+  Processing Instruction helps learners attend to modal meaning distinctions in input.'
+register_notes:
+- note: 'Biber GSWE: Modals are most frequent in conversation and least frequent in
+    academic prose. The only exception is ''may'' which is more common in academic
+    writing. Semi-modals (have to, be going to) are 5x more common in conversation
+    than their single-modal equivalents.'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In conversation, modals are essential for politeness: ''Could you pass the
+    salt?'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In legal language, ''must'' expresses strong obligation: ''All passengers
+    must wear seatbelts.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: Biber et al. (2021) — Modal verbs make up just 10-15% of finite verb phrases
+    in all registers. Absence of a modal signals 'unquestioned validity' stance. Distinct
+    distribution patterns for each modal across conversation, fiction, news, academic
+    prose. Ch. 6.6
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 6.6
+- note: CGEL (Ch.3) notes that modals comprise only 10-15% of finite verb phrases
+    across all registers. The remaining 85-90% are tensed lexical verbs. This means
+    modals, while functionally important, are statistically infrequent in natural
+    discourse.
+  source: Team observation
+  reliability: D
+  tier: 4
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8:
+    Modal Auxiliaries and Related Phrasal Forms'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Modals never change form for third person singular — no -s ending
-  type: grammatical
-  examples:
+- examples:
   - He can swim (NOT He cans swim)
   - She must go (NOT She musts go)
   - It will rain (NOT It wills rain)
-- rule: Modals are followed by the base form of the verb without to
+  rule: Modals never change form for third person singular — no -s ending
   type: grammatical
-  examples:
+- examples:
   - I can swim (NOT I can to swim)
   - She must go (NOT She must to go)
   - They should study (NOT They should to study)
-- rule: 'Common modals: can (ability), could (past ability), may (permission), might
-    (possibility), will (future), would (conditional), shall (suggestion), should
-    (advice), must (obligation)'
-  type: lexical
-  examples:
+  rule: Modals are followed by the base form of the verb without to
+  type: grammatical
+- examples:
   - I can help you
   - She could swim when she was 5
   - You may leave now
@@ -75,105 +192,110 @@ sub_rules:
   - Shall we dance?
   - You should study
   - You must wear a seatbelt
+  rule: 'Common modals: can (ability), could (past ability), may (permission), might
+    (possibility), will (future), would (conditional), shall (suggestion), should
+    (advice), must (obligation)'
+  type: lexical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students sort modals by function: ability, permission, obligation,
+      possibility, advice.'
+    duration: 10
+    name: Modal Verb Sorting
+  - adaptation_notes: 'Students complete sentences with the correct modal: ''You ___
+      wear a seatbelt.'' (must) ''She ___ swim when she was 5.'' (could).'
+    duration: 15
+    name: Modal Gap Fill
+  tips:
+  - 'Biber et al. (2021) GSWE. John Benjamins. Ch. 6.6.1: Modals and semi-modals are
+    most common in conversation, least common in academic prose. Semi-modals are five
+    times more common in conversation than in written registers. Can, will, would
+    are the most frequent modals; shall is rare. In fiction and conversation, modals
+    are more common in BrE than AmE.'
+  - 'GB3 Ch. 8: Three types of modal meaning — logical probability (epistemic), social
+    interaction (deontic), and ability/tendency (dynamic). Each modal has at least
+    two meanings. Example: can = ability (''I can swim''), permission (''Can I go?''),
+    possibility (''It can''t be raining''). Source: Celce-Murcia & Larsen-Freeman
+    (2015) GB3 3rd ed. Ch. 8 §8.2.'
+  - 'GB3 Ch. 8: Core meaning (force-dynamic) framework — can = potential force, could
+    = weakened potential, must = irresistible force, should = weakened obliging force,
+    will = force of commitment, would = weakened force of commitment. These extend
+    across logical, social, and ability domains. Source: GB3 3rd ed. Ch. 8 §8.2 (citing
+    Sweetser 1990, Tyler 2012).'
+  - 'GB3 Ch. 8: Modal advice scale — might/could < should/ought to/had better < must/have
+    to/have got to/need to. Request scale — Can/Could/Will/Would/May (increasing politeness).
+    Logical probability scale — must/has to (high) > will/would > should/ought to
+    > may > could/might (low). Source: GB3 3rd ed. Ch. 8 §8.3.'
+  - 'CGEL Ch. 3: Auxiliaries have NICE properties — Negation (can''t, won''t), Inversion
+    (Can you?), Code (I can too), Emphasis (I DO like it). These properties distinguish
+    auxiliaries from lexical verbs and explain why do-support is required for lexical
+    verbs in questions and negatives.'
+  - 'CGEL Ch. 3: English has three kinds of modality — epistemic (factual probability:
+    She must be home), deontic (obligation: You must go), and dynamic (ability/willingness:
+    She can swim). These are distinguished by their logical properties, not just meaning.'
+  - Map modals by function and level for staged teaching.
+  - 'Use color-coded charts: green for ability, blue for permission, etc.'
+  - Practice deduction modals (must/can't) with mystery scenarios.
+  - 'Swan PEU: Modal auxiliaries — can, could, may, might, must, shall, should, will,
+    would. Core properties: (1) no -s on 3rd person singular, (2) followed by bare
+    infinitive, (3) form questions by inversion (no do-support), (4) form negatives
+    with ''not.'''
+  - 'Swan PEU: Semi-modals — need, dare, used to, have (got) to, be able to, had better.
+    These behave partially like modals and partially like full verbs.'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 3: CGEL (Ch.3)
+    analyzes auxiliaries as a SUBCLASS of lexical verbs (not a separate part of speech).
+    The defining properties are NICE: Negation (She can''t come), Inversion  (Can
+    she come?), Code (She can come and so can he), Emphasis (She CAN come). This explains
+    why auxiliaries pattern together without positing a separate category.'
+  - 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: GB3 analyzes
+    modality along three dimensions: EPISTEMIC (possibility/necessity: ''She may be
+    there''), DEONTIC (permission/obligation: ''You must leave''), and DYNAMIC (ability/willingness:
+    ''She can swim''). The same modal verb can express different modality types depending
+    on context: ''She must be there'' (epistemic deduction) vs ''She must leave''
+    (deontic obligation). This three-way distinction helps learners interpret ambiguous
+    modal uses.'
+title: Modal Verbs Overview (All Functions & Levels)
 use:
-- name: Ability (can, could)
-  level: A2
-  description: Present/past ability.
+- description: Present/past ability.
   examples:
   - I can swim.
   - I could swim when I was 10.
   key_point: Could for past ability, can for present.
-- name: Permission (can, may, could)
   level: A2
-  description: Ask/give permission.
+  name: Ability (can, could)
+- description: Ask/give permission.
   examples:
   - Can I go?
   - May I enter?
   key_point: May is more formal than can.
-- name: Possibility (may, might, could)
-  level: B1
-  description: Likelihood of events.
+  level: A2
+  name: Permission (can, may, could)
+- description: Likelihood of events.
   examples:
   - It may rain.
   - It could be true.
   key_point: Might is less certain than may.
-- name: Obligation (must, should, ought to)
-  level: A2-B1
-  description: Duty/necessity.
+  level: B1
+  name: Possibility (may, might, could)
+- description: Duty/necessity.
   examples:
   - You must wear a helmet.
   - You should study.
   key_point: Must is stronger than should.
-- name: Prediction (will, shall)
-  level: A2
-  description: Future events.
+  level: A2-B1
+  name: Obligation (must, should, ought to)
+- description: Future events.
   examples:
   - It will rain tomorrow.
   - We shall overcome.
   key_point: Shall is formal, mostly British English.
-- name: Deduction (must, can't)
-  level: B2
-  description: Logical conclusion.
+  level: A2
+  name: Prediction (will, shall)
+- description: Logical conclusion.
   examples:
   - He must be tired.
   - She can't be at home.
   key_point: Must = positive deduction, can't = negative deduction.
-phonetics:
-- note: 'Modal verbs are usually unstressed in connected speech: ''I can go'' → /aɪ
-    kən ɡəʊ/, ''She must leave'' → /ʃi məst liːv/. The stress falls on the main verb.'
-  example_generator:
-    contexts:
-    - modal reduction
-  l1_issue: Learners may over-pronounce modals, making their speech sound unnatural.
-    Teach the weak forms.
-teaching:
-  methodology: PPP
-  tips:
-  - Map modals by function and level for staged teaching.
-  - 'Use color-coded charts: green for ability, blue for permission, etc.'
-  - Practice deduction modals (must/can't) with mystery scenarios.
-  recommended_activities:
-  - name: Modal Verb Sorting
-    duration: 10
-    adaptation_notes: 'Students sort modals by function: ability, permission, obligation,
-      possibility, advice.'
-  - name: Modal Gap Fill
-    duration: 15
-    adaptation_notes: 'Students complete sentences with the correct modal: ''You ___
-      wear a seatbelt.'' (must) ''She ___ swim when she was 5.'' (could).'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
-    Modals, §9.1-9.6'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*You must to wear a seatbelt.*'
-  correction: You must wear a seatbelt.
-  explanation: 'Modal verbs are followed by the base verb (no ''to''). This applies
-    to ALL modals: can, could, must, should, would, may, might.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - Italian
-register_notes:
-- note: 'In formal writing, modals express hedging and caution: ''These results may
-    suggest...'''
-- note: 'In conversation, modals are essential for politeness: ''Could you pass the
-    salt?'''
-- note: 'In legal language, ''must'' expresses strong obligation: ''All passengers
-    must wear seatbelts.'''
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, modals are essential for politeness, expressing degrees of
-    certainty, and making requests.
-- note: 'In academic writing, modals express hedging and caution: ''These results
-    may suggest...'' ''It could be argued that...'''
-- note: 'In legal and regulatory language, modals express obligation and permission:
-    ''All passengers must wear seatbelts.'''
+  level: B2
+  name: Deduction (must, can't)

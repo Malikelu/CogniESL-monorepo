@@ -1,14 +1,104 @@
-grammar_point: modal_remoteness
-title: Modal Remoteness (Past Tense for Hypothetical Meaning)
+citations:
+- claim: 'Core meaning: Past tense forms are used not to indicate past time but to
+    create distance from reality — expressing'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal
+    Auxiliaries and Related Phrasal Forms'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used for everyday
+    communication and is among the most frequent patterns'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal
+    Auxiliaries and Related Phrasal Forms'
+  tier: 1
+- claim: Common error '*If I would have money, I would buy a car.*' for Portuguese,
+    Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+common_errors:
+- correction: If I had money, I would buy a car.
+  error: '*If I would have money, I would buy a car.*'
+  explanation: In hypothetical conditionals, use past tense (had) not 'would have'
+    in the if-clause. 'Would have' is for the main clause of third conditionals.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Conditionals'
 description: Using past tense forms (especially modals) to express hypothetical, tentative,
   or polite distance from reality rather than past time.
+dialectal_variation: []
+discourse_notes:
+- note: In conversation, this structure is used for everyday communication and is
+    among the most frequent patterns in spoken English.
+- note: In academic writing, this structure appears in discussions of established
+    knowledge, methodology, and findings.
+- note: In news reports, this structure is used for reporting events and attributing
+    statements.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - hypothetical scenarios
+      - polite requests
+      - tentative language
+      min_examples: 4
+    structure: 'Hypothetical conditionals: If + past simple, would/could/might + base
+      verb. ''If I had more money, I would travel.'' Polite requests: Could/Would
+      + subject + base verb. ''Could you open the window?'' Tentative modals: might,
+      could (instead of may, can). ''We might consider another option.'''
+  negative:
+    example_generator:
+      contexts:
+      - negative conditions
+      - negative polite requests
+      min_examples: 3
+    structure: 'Negative hypothetical: If + subject + didn''t + base verb, subject
+      + would/could/might + base verb. ''If I didn''t have to work, I would come.''
+      Negative polite request: Could/Would + subject + not + base verb. ''Could you
+      not interrupt?'''
+  questions:
+    example_generator:
+      contexts:
+      - hypothetical questions
+      - polite questions
+      min_examples: 3
+    structure: 'Hypothetical questions: Would/Could/Might + subject + base verb? ''Would
+      you help me if I asked?'' Polite questions: Could/Would + subject + base verb?
+      ''Could I borrow your pen?'''
+grammar_point: modal_remoteness
 level: B2
 meaning:
-  core_meaning: Past tense forms are used not to indicate past time but to create
-    distance from reality — expressing hypothetical situations, polite requests, or
-    tentative suggestions. The 'remoteness' is psychological, not temporal.
-  timeline: Present/future reference despite past tense form. 'If I had a million
-    dollars...' refers to now or the future, not the past.
+  ccqs:
+  - answer: No — it refers to an unreal present/future situation. The past tense creates
+      hypothetical distance.
+    purpose: Tests whether the learner understands a key concept of modal_remoteness.
+      This is fundamental for correct use of this grammar point.
+    question: Does 'If I had a million dollars' refer to the past?
+  - answer: No — it is a polite present request. The past form 'could' softens the
+      request.
+    purpose: Tests whether the learner understands a key concept of modal_remoteness.
+      This is fundamental for correct use of this grammar point.
+    question: Is 'Could you help me?' about past ability?
+  - answer: No — it means the speaker does not know now. The past tense 'knew' expresses
+      present unreality.
+    purpose: Tests whether the learner understands a key concept of modal_remoteness.
+      This is fundamental for correct use of this grammar point.
+    question: Does 'I wish I knew' mean the speaker knew in the past?
+  - answer: Yes. Could is the more polite form because it uses past tense for remoteness,
+      creating psychological distance that softens the request. Can is more direct
+      and would only be appropriate in informal contexts or with close acquaintances.
+      Could is preferred in formal or unfamiliar situations.
+    purpose: Tests whether the learner understands how past tense modals create pragmatic
+      politeness through psychological distance. The modal remoteness principle that
+      operates in conditionals also applies to requests, which is a cross-functional
+      understanding of how tense choice affects interpersonal meaning in English.
+    question: Is there a difference in politeness between I wonder if you can help
+      me and I wonder if you could help me?
   contrast: 'Direct (present/future real): "If I have time, I will help you." (I might
     have time)
 
@@ -21,22 +111,9 @@ meaning:
     we may go.")
 
     '
-  ccqs:
-  - question: Does 'If I had a million dollars' refer to the past?
-    answer: No — it refers to an unreal present/future situation. The past tense creates
-      hypothetical distance.
-    purpose: Tests whether the learner understands a key concept of modal_remoteness.
-      This is fundamental for correct use of this grammar point.
-  - question: Is 'Could you help me?' about past ability?
-    answer: No — it is a polite present request. The past form 'could' softens the
-      request.
-    purpose: Tests whether the learner understands a key concept of modal_remoteness.
-      This is fundamental for correct use of this grammar point.
-  - question: Does 'I wish I knew' mean the speaker knew in the past?
-    answer: No — it means the speaker does not know now. The past tense 'knew' expresses
-      present unreality.
-    purpose: Tests whether the learner understands a key concept of modal_remoteness.
-      This is fundamental for correct use of this grammar point.
+  core_meaning: Past tense forms are used not to indicate past time but to create
+    distance from reality — expressing hypothetical situations, polite requests, or
+    tentative suggestions. The 'remoteness' is psychological, not temporal.
   example_generator:
     contexts:
     - hypothetical situations
@@ -50,125 +127,107 @@ meaning:
     - Overuse of tentative forms can make non-native speakers sound uncertain or lacking
       confidence in professional contexts
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Hypothetical conditionals: If + past simple, would/could/might + base
-      verb. ''If I had more money, I would travel.'' Polite requests: Could/Would
-      + subject + base verb. ''Could you open the window?'' Tentative modals: might,
-      could (instead of may, can). ''We might consider another option.'''
-    example_generator:
-      contexts:
-      - hypothetical scenarios
-      - polite requests
-      - tentative language
-      min_examples: 4
-  negative:
-    structure: 'Negative hypothetical: If + subject + didn''t + base verb, subject
-      + would/could/might + base verb. ''If I didn''t have to work, I would come.''
-      Negative polite request: Could/Would + subject + not + base verb. ''Could you
-      not interrupt?'''
-    example_generator:
-      contexts:
-      - negative conditions
-      - negative polite requests
-      min_examples: 3
-  questions:
-    structure: 'Hypothetical questions: Would/Could/Might + subject + base verb? ''Would
-      you help me if I asked?'' Polite questions: Could/Would + subject + base verb?
-      ''Could I borrow your pen?'''
-    example_generator:
-      contexts:
-      - hypothetical questions
-      - polite questions
-      min_examples: 3
-sub_rules:
-- rule: Second conditional — unreal present/future
-  type: grammatical
-  examples:
-  - If I were you, I would accept the offer.
-  - If she studied harder, she would pass the exam.
-  - If they lived closer, we would see them more often.
-- rule: Third conditional — unreal past
-  type: grammatical
-  examples:
-  - If I had known, I would have told you.
-  - If we had left earlier, we would have caught the train.
-  - If he had asked, she would have helped.
-- rule: Polite requests with 'could' and 'would'
-  type: pragmatic
-  examples:
-  - Could you pass the salt, please?
-  - Would you mind closing the door?
-  - Could I possibly borrow your phone?
-- rule: '''I wish'' + past simple for present regrets'
-  type: grammatical
-  examples:
-  - I wish I spoke French.
-  - I wish I had more free time.
-  - I wish I knew the answer.
-- rule: '''If only'' + past for strong wishes'
-  type: grammatical
-  examples:
-  - If only I had more money.
-  - If only she were here.
-  - If only I had studied harder.
-- rule: Tentative suggestions with 'might' and 'could'
-  type: pragmatic
-  examples:
-  - We might consider a different approach.
-  - You could try restarting the computer.
-  - Perhaps we could meet on Friday instead.
-use:
-- name: Hypothetical conditionals (Second conditional)
-  description: Using past tense in the if-clause and 'would' in the main clause to
-    talk about unreal or unlikely present/future situations.
-  examples:
-  - If I won the lottery, I would buy a house.
-  - If she were here, she would know what to do.
-  - If I didn't have to work tomorrow, I would come to the party.
-  key_point: The past tense does not refer to past time — it signals that the situation
-    is unreal or unlikely.
-- name: Unreal past (Third conditional)
-  description: Using past perfect in the if-clause and 'would have' in the main clause
-    to imagine a different past.
-  examples:
-  - If I had studied harder, I would have passed the exam.
-  - If we had taken the other road, we would have arrived on time.
-  - If she had known, she would have helped.
-  key_point: Used to express regret or speculate about how the past could have been
-    different.
-- name: Polite requests and tentativeness
-  description: Using past tense modals (could, would) to make requests more polite
-    and suggestions less direct.
-  examples:
-  - Could you help me with this?
-  - Would you mind if I opened the window?
-  - I was wondering if you could lend me a hand.
-  key_point: The past tense creates social distance, which increases politeness. Direct
-    forms (can, will) can sound abrupt in formal contexts.
-- name: Wishes and regrets
-  description: Using 'wish' + past simple (present regret) or past perfect (past regret)
-    to express desires about unreality.
-  examples:
-  - I wish I were taller. (present — I am not tall)
-  - I wish I had said something. (past — I didn't say anything)
-  - I wish it weren't raining. (present — it is raining)
-  key_point: After 'wish', the past tense signals that the speaker knows the situation
-    is not (or was not) true.
+  timeline: Present/future reference despite past tense form. 'If I had a million
+    dollars...' refers to now or the future, not the past.
 phonetics:
-- note: 'In polite requests, ''could'' and ''would'' are often reduced in connected
-    speech: /kəd/ and /wəd/. The full forms /kʊd/ and /wʊd/ sound overly formal or
-    emphatic.'
-  example_generator:
+- example_generator:
     contexts:
     - natural conversation
     - polite requests
   l1_issue: Speakers whose L1 does not use tense for politeness (e.g., Spanish, Chinese)
     may find it confusing that past tense forms are used for present meaning. They
     may interpret 'Could you help me?' as referring to past ability.
+  note: 'In polite requests, ''could'' and ''would'' are often reduced in connected
+    speech: /kəd/ and /wəd/. The full forms /kʊd/ and /wʊd/ sound overly formal or
+    emphatic.'
+register_notes:
+- note: 'In conversation, modals are essential for politeness: ''Could you pass the
+    salt?'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In legal language, ''must'' expresses strong obligation: ''All passengers
+    must wear seatbelts.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Modal remoteness (past tense for hypotheticality):
+    past tenses in conditionals signal unreality/contingency, not past time. Register
+    distribution of remoteness markers differs. Ch. 6.6, 10.2.8'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 6.6
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8:
+    Modal Auxiliaries and Related Phrasal Forms'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+sub_rules:
+- examples:
+  - If I were you, I would accept the offer.
+  - If she studied harder, she would pass the exam.
+  - If they lived closer, we would see them more often.
+  rule: Second conditional — unreal present/future
+  type: grammatical
+- examples:
+  - If I had known, I would have told you.
+  - If we had left earlier, we would have caught the train.
+  - If he had asked, she would have helped.
+  rule: Third conditional — unreal past
+  type: grammatical
+- examples:
+  - Could you pass the salt, please?
+  - Would you mind closing the door?
+  - Could I possibly borrow your phone?
+  rule: Polite requests with 'could' and 'would'
+  type: pragmatic
+- examples:
+  - I wish I spoke French.
+  - I wish I had more free time.
+  - I wish I knew the answer.
+  rule: '''I wish'' + past simple for present regrets'
+  type: grammatical
+- examples:
+  - If only I had more money.
+  - If only she were here.
+  - If only I had studied harder.
+  rule: '''If only'' + past for strong wishes'
+  type: grammatical
+- examples:
+  - We might consider a different approach.
+  - You could try restarting the computer.
+  - Perhaps we could meet on Friday instead.
+  rule: Tentative suggestions with 'might' and 'could'
+  type: pragmatic
 teaching:
   methodology: Guided discovery — present contrasting examples and help students identify
     the remoteness principle
+  recommended_activities:
+  - adaptation_notes: 'Give students sentences and ask: Is this real or unreal? Is
+      it about now or the past? ''If I had a car...'' (unreal, now) vs. ''If I had
+      had a car...'' (unreal, past).'
+    duration: 15
+    name: Reality check
+  - adaptation_notes: 'Students rank requests from most direct to most polite: ''Open
+      the door.'' / ''Can you open the door?'' / ''Could you open the door?'' / ''Would
+      you mind opening the door?'' / ''I was wondering if you could possibly open
+      the door.'''
+    duration: 10
+    name: Politeness ranking
+  - adaptation_notes: Students write five wishes using 'I wish...' and 'If only...'
+      — three about the present, two about the past. Share and discuss in pairs.
+    duration: 15
+    name: Wish list
+  - adaptation_notes: 'Build a chain of third conditionals: ''If I had studied harder,
+      I would have passed. If I had passed, I would have gone to university. If I
+      had gone to university...'' Encourage creative and humorous chains.'
+    duration: 20
+    name: Conditional chain
   tips:
   - Start with the concept of 'distance from reality' rather than 'past time' — use
     a timeline diagram showing psychological distance.
@@ -179,60 +238,44 @@ teaching:
   - 'Use role-plays: asking for favours, making suggestions, expressing regrets.'
   - Highlight that 'were' (not 'was') is standard in formal English after 'if I' and
     'I wish I'.
-  recommended_activities:
-  - name: Reality check
-    duration: 15
-    adaptation_notes: 'Give students sentences and ask: Is this real or unreal? Is
-      it about now or the past? ''If I had a car...'' (unreal, now) vs. ''If I had
-      had a car...'' (unreal, past).'
-  - name: Politeness ranking
-    duration: 10
-    adaptation_notes: 'Students rank requests from most direct to most polite: ''Open
-      the door.'' / ''Can you open the door?'' / ''Could you open the door?'' / ''Would
-      you mind opening the door?'' / ''I was wondering if you could possibly open
-      the door.'''
-  - name: Wish list
-    duration: 15
-    adaptation_notes: Students write five wishes using 'I wish...' and 'If only...'
-      — three about the present, two about the past. Share and discuss in pairs.
-  - name: Conditional chain
-    duration: 20
-    adaptation_notes: 'Build a chain of third conditionals: ''If I had studied harder,
-      I would have passed. If I had passed, I would have gone to university. If I
-      had gone to university...'' Encourage creative and humorous chains.'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
-    Modals, §9.1-9.6'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*If I would have money, I would buy a car.*'
-  correction: If I had money, I would buy a car.
-  explanation: In hypothetical conditionals, use past tense (had) not 'would have'
-    in the if-clause. 'Would have' is for the main clause of third conditionals.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - German
-register_notes:
-- note: 'In formal writing, modals express hedging and caution: ''These results may
-    suggest...'''
-- note: 'In conversation, modals are essential for politeness: ''Could you pass the
-    salt?'''
-- note: 'In legal language, ''must'' expresses strong obligation: ''All passengers
-    must wear seatbelts.'''
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used for everyday communication and is
-    among the most frequent patterns in spoken English.
-- note: In academic writing, this structure appears in discussions of established
-    knowledge, methodology, and findings.
-- note: In news reports, this structure is used for reporting events and attributing
-    statements.
+  - 'Swan PEU: Remoteness — past tense modals express hypothetical/unreal meanings.
+    ''If I could fly, I would visit you every day.'' These are NOT about the past
+    — they express distance from reality. Same pattern as second conditional.'
+title: Modal Remoteness (Past Tense for Hypothetical Meaning)
+use:
+- description: Using past tense in the if-clause and 'would' in the main clause to
+    talk about unreal or unlikely present/future situations.
+  examples:
+  - If I won the lottery, I would buy a house.
+  - If she were here, she would know what to do.
+  - If I didn't have to work tomorrow, I would come to the party.
+  key_point: The past tense does not refer to past time — it signals that the situation
+    is unreal or unlikely.
+  name: Hypothetical conditionals (Second conditional)
+- description: Using past perfect in the if-clause and 'would have' in the main clause
+    to imagine a different past.
+  examples:
+  - If I had studied harder, I would have passed the exam.
+  - If we had taken the other road, we would have arrived on time.
+  - If she had known, she would have helped.
+  key_point: Used to express regret or speculate about how the past could have been
+    different.
+  name: Unreal past (Third conditional)
+- description: Using past tense modals (could, would) to make requests more polite
+    and suggestions less direct.
+  examples:
+  - Could you help me with this?
+  - Would you mind if I opened the window?
+  - I was wondering if you could lend me a hand.
+  key_point: The past tense creates social distance, which increases politeness. Direct
+    forms (can, will) can sound abrupt in formal contexts.
+  name: Polite requests and tentativeness
+- description: Using 'wish' + past simple (present regret) or past perfect (past regret)
+    to express desires about unreality.
+  examples:
+  - I wish I were taller. (present — I am not tall)
+  - I wish I had said something. (past — I didn't say anything)
+  - I wish it weren't raining. (present — it is raining)
+  key_point: After 'wish', the past tense signals that the speaker knows the situation
+    is not (or was not) true.
+  name: Wishes and regrets

@@ -1,34 +1,71 @@
-id: error-correction-code
-name: Error Correction Code
-category: grammar-practice
-description: Students receive a text with coded errors (G=grammar, S=spelling, P=punctuation,
-  W=word choice, WO=word order). They identify and correct each error type.
-targetStructures:
-- verb-tenses
-- sentence-structure
-- clauses
+adaptableToTopic: true
 bestForLevels:
 - A2
 - B1
 - B2
 - C1
+category: grammar-practice
+citations:
+- claim: "Penny Ur provides communicative practice activities for interrogatives following a communicative methodology"
+  source: 'Ur, Penny (1988) Grammar Practice Activities: A Practical Guide for Teachers. Cambridge University Press, Ch. 15: Interrogatives'
+  tier: 2
+  reliability: B
+  flagged: false
+- claim: "Penny Ur provides practice activities and teaching guidelines for interrogatives following a communicative methodology."
+  source: 'Ur, Penny (1988) Grammar Practice Activities: A Practical Guide for Teachers. Cambridge University Press, Ch. 15: Interrogatives'
+  tier: 2
+  reliability: B
+  flagged: false
+- claim: Error correction activities develop metalinguistic awareness by requiring
+    students to categorize and fix different error types (grammar, spelling, punctuation,
+    word choice, word order).
+  flagged: false
+  reliability: B
+  source: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. National
+    Geographic Learning / Cengage.
+  tier: 2
+
+- claim: "Error analysis distinguishes overt errors (superficially ill-formed) from covert errors (well-formed but not matching speaker intention). Error-correction activities should address both types."
+  source: "James, C. (1998) Errors in Language Learning and Use: Exploring Error Analysis. Longman, Ch. 3."
+  tier: 2
+  reliability: A
+  flagged: false
+
+- claim: "James proposes a four-way classification of learner deviance (Ch. 3): slips (self-correctable unaided), mistakes (correctable if pointed out), errors (not self-correctable until further learning occurs), and solecisms (breaches of prescriptive rules). Teachers can use this framework to decide which errors to correct and how."
+  source: "James, C. (1998) Errors in Language Learning and Use: Exploring Error Analysis. Longman, Ch. 3, pp. 81-84."
+  tier: 1
+  reliability: A
+  flagged: false
+
+- claim: "Based on the Right or wrong / Error identification, Right word, wrong place / Word order, Word/letter-based game formats from Watcyn-Jones (1981), which uses game-based pair and group work to make grammar practice dynamic and engaging."
+  source: 'Watcyn-Jones, P. (1981) Grammar Games and Activities. Penguin Books.'
+  tier: 2
+  reliability: 'B'
+  flagged: false
+description: Students receive a text with coded errors (G=grammar, S=spelling, P=punctuation,
+  W=word choice, WO=word order). They identify and correct each error type.
+differentiation:
+  extension: Use more errors (15-20) with subtle mistakes. Remove the codes -- students
+    must identify error types themselves.
+  support: Use fewer errors (6-8). Include the correction alongside the code. Use
+    simpler error types.
+digitalReady: true
 duration: 20
-groupSize: pairs
 energyRequired: medium
-prepTime: medium
-materials:
-- Texts with coded errors
-- Error code reference sheet
 format:
 - in-person
 - online
-requiresTech: false
-digitalReady: true
+grammar_focus:
+- clauses
+- sentence_structure
+- verb_tenses
+- word_order
+groupSize: pairs
 hasAudioComponent: false
 hasPrintableComponent: true
 hasSlidesComponent: false
 hasVisualComponent: false
-adaptableToTopic: true
+id: error-correction-code
 instructions:
 - 'Give each pair a text with 10-15 errors marked with codes: G (grammar), S (spelling),
   P (punctuation), W (word choice), WO (word order).'
@@ -40,6 +77,33 @@ instructions:
 - 'Students categorize the errors they found: How many of each type?'
 - 'Discuss: Which error type is hardest for you? How can you avoid these errors in
   your own writing?'
+keywords:
+- error correction
+- codes
+- editing
+- grammar
+- proofreading
+l1_enhanced:
+- adaptation: 'Spanish speakers may confuse present perfect and past simple. Provide
+    explicit contrast: "he comido" (present perfect) vs "comí" (past simple).'
+  language: Spanish
+  priority: high
+- adaptation: Arabic has perfective/imperfective aspect rather than tense. Provide
+    timeline visuals to illustrate English tense system.
+  language: Arabic
+  priority: high
+- adaptation: Mandarin has no verb inflection for tense. Tense is indicated by time
+    words (yesterday, now) and aspect markers (le, zhe). Provide explicit verb conjugation
+    practice.
+  language: Mandarin
+  priority: high
+l1_specific: []
+materials:
+- Texts with coded errors
+- Error code reference sheet
+name: Error Correction Code
+prepTime: medium
+requiresTech: false
 script:
 - This text has 12 errors. Each error has a code. Your job is to find and correct
   all of them.
@@ -47,15 +111,44 @@ script:
   here?
 setupInstructions: Create texts with 10-15 errors of different types. Mark each error
   with its code. Prepare an answer key.
-differentiation:
-  support: Use fewer errors (6-8). Include the correction alongside the code. Use
-    simpler error types.
-  extension: Use more errors (15-20) with subtle mistakes. Remove the codes -- students
-    must identify error types themselves.
-keywords:
-- error correction
-- codes
-- editing
+skill_areas:
 - grammar
-- proofreading
-l1Enhanced: true
+sources:
+  - 'Ur, Penny (1988) Grammar Practice Activities: A Practical Guide for Teachers. Cambridge University Press'
+  - 'Watcyn-Jones, P. (1981) Grammar Games and Activities. Penguin Books.'
+  - 'James, C. (1998) Errors in Language Learning and Use: Exploring Error Analysis. Longman'
+targetStructures:
+- verb-tenses
+- sentence-structure
+- clauses
+teaching_tips:
+- context: Scaffolding difficulty
+  tip: Start with the most obvious error types (S for spelling, P for punctuation)
+    before moving to grammar errors. This builds confidence and ensures all students
+    can participate.
+- context: Error analysis
+  tip: After pairs compare corrections, ask them to explain WHY each error is wrong
+    — not just what the correct form is. This develops metalinguistic awareness.
+- context: Diagnostic use
+  tip: The categorization step ("How many of each type?") is valuable data. Track
+    which error types are hardest for your class and prioritize those in future lessons.
+- context: Error classification
+  tip: Use James's four-way classification (slips, mistakes, errors, solecisms) to prioritize correction. Slips and mistakes are self-correctable with prompting; errors require targeted instruction. Not all deviance needs the same response.
+- context: Diagnostic response strategy
+  tip: >-
+    Distinguish errors from mistakes when giving feedback. Errors are competence gaps
+    that cannot be fixed by correction alone. Mistakes are performance lapses that
+    students CAN correct if the deviance is pointed out. Ask students to self-correct first:
+    if they can it was a mistake; if they cannot it is an error requiring explicit
+    instruction (James, C. 1998, Ch. 3, pp. 77-84).
+- context: Scaffolding correction with graduated prompts
+  tip: >-
+    Use James distinction between first-order and second-order mistakes to scaffold help.
+    For first-order mistakes, simply signal that something is wrong and let students
+    self-correct. For second-order mistakes, point to the exact location and hint at the
+    nature of the deviance. This graduated approach keeps students in productive
+    struggle rather than giving away answers (James, C. 1998, Ch. 3, pp. 82-83).
+
+
+
+

@@ -35,21 +35,11 @@ from .template_registry import (
 )
 
 
-# Sub-agent model: read from env so it can be changed without touching code.
-# Priority: SUB_AGENT_MODEL env var → hardcoded default below.
-# Currently configured via SUB_AGENT_MODEL=openrouter/openai/gpt-4.1 in .env.
-# The hardcoded default here is only used if SUB_AGENT_MODEL is unset.
-_PLANNER_MODEL_DEFAULT = "openrouter/openai/gpt-4.1"
-_PLANNER_MODEL_OAI = "gpt-4o-mini"
+# Sub-agent model: DeepSeek v4 flash only.
+_PLANNER_MODEL_DEFAULT = "deepseek/deepseek-v4-flash"
 
 
 def _get_planner_model_id() -> str:
-    # BG_SUB_AGENT_MODEL takes priority over SUB_AGENT_MODEL.
-    # Since all slide generation now runs in the background thread,
-    # this effectively IS the sub-agent model in production.
-    # Railway env var guide:
-    #   BG_SUB_AGENT_MODEL=openrouter/deepseek/deepseek-v4-flash   # prod (cheap)
-    #   BG_SUB_AGENT_MODEL=openrouter/owl-alpha                    # testing (free)
     return os.getenv("BG_SUB_AGENT_MODEL") or os.getenv("SUB_AGENT_MODEL", _PLANNER_MODEL_DEFAULT)
 
 
@@ -157,74 +147,14 @@ def _normalise_model_id(model_id: str, provider: str) -> str:
 def _make_planner_agent(tool=None) -> "tuple[Agent, bool]":
     """Create a fresh, stateless agent instance for one InsertNewSlides call.
 
-    Model priority:
-    0. OPENAI_BASE_URL + OPENAI_API_KEY + bare model name (no '/') → OpenAI SDK direct,
-       bypasses LiteLLM entirely. Use this for background-thread generation to avoid
-       LiteLLM's internal asyncio worker tasks conflicting with threading.Thread.
-       Railway: set OPENAI_BASE_URL=https://api.deepseek.com/v1, OPENAI_API_KEY=<deepseek_key>,
-       SUB_AGENT_MODEL=deepseek-chat (no slash).
-    1. ANTHROPIC_API_KEY  → anthropic/{model_id}
-    2. OPENAI_API_KEY     → openai/{model_id}   (direct, no proxy)
-    3. OPENROUTER_API_KEY → openrouter/{model_id}
-    4. No key found       → raise immediately with a clear message
-
-    Set SUB_AGENT_MODEL in .env to control the model, e.g.:
-      SUB_AGENT_MODEL=gpt-4.1-mini
-      SUB_AGENT_MODEL=claude-3-5-sonnet-20241022
-
-    Returns (agent, is_codex=False).
+    ONLY DeepSeek is supported. Uses DEEPSEEK_API_KEY from .env.
     """
-    anthropic_key = os.getenv("ANTHROPIC_API_KEY")
-    openai_key = os.getenv("OPENAI_API_KEY")
-    openrouter_key = os.getenv("OPENROUTER_API_KEY")
-    openai_base_url = os.getenv("OPENAI_BASE_URL")
     model_id = _get_planner_model_id()
-    is_codex = False
-
-    # Priority 0: direct OpenAI SDK when OPENAI_BASE_URL is set and model has no provider prefix.
-    # This avoids LiteLLM's background asyncio tasks which cause silent failures in threads.
-    if openai_key and openai_base_url and "/" not in model_id:
-        from openai import AsyncOpenAI
-        _direct_client = AsyncOpenAI(api_key=openai_key, base_url=openai_base_url)
-        _direct_model = _CodexResponsesModel(model=model_id, openai_client=_direct_client)
-        return Agent(
-            name="Slide Planner",
-            description="Creates structured slide outline plans.",
-            instructions=(
-                "You generate JSON plans for slide creation. "
-                "Output must be valid JSON only, no markdown fences, no extra text."
-            ),
-            tools=[],
-            model=_direct_model,
-            model_settings=ModelSettings(verbosity=None),
-        ), False
-
     deepseek_key = os.getenv("DEEPSEEK_API_KEY")
+    if not deepseek_key:
+        raise RuntimeError("DEEPSEEK_API_KEY is required. Set it in .env")
 
-    # Honor explicit provider prefix in model_id (e.g. "openrouter/google/gemini-2.5-flash").
-    # This lets .env pin a specific provider regardless of which API keys are present.
-    if model_id.startswith("openrouter/") and openrouter_key:
-        model = LitellmModel(model=model_id, api_key=openrouter_key)
-    elif model_id.startswith("anthropic/") and anthropic_key:
-        model = LitellmModel(model=model_id, api_key=anthropic_key)
-    elif model_id.startswith("openai/") and openai_key:
-        model = LitellmModel(model=model_id, api_key=openai_key)
-    elif model_id.startswith("deepseek/") and deepseek_key:
-        # Pass the key explicitly — avoids LiteLLM env-var resolution failures in
-        # background threads (threading.Thread + asyncio.run() context).
-        model = LitellmModel(model=model_id, api_key=deepseek_key)
-    elif anthropic_key:
-        model = LitellmModel(model=_normalise_model_id(model_id, "anthropic"), api_key=anthropic_key)
-    elif openai_key:
-        # Explicit "openai/" prefix tells LiteLLM to route to api.openai.com directly,
-        # preventing it from guessing openrouter or another provider.
-        model = LitellmModel(model=_normalise_model_id(model_id, "openai"), api_key=openai_key)
-    elif openrouter_key:
-        model = LitellmModel(model=_normalise_model_id(model_id, "openrouter"), api_key=openrouter_key)
-    else:
-        raise RuntimeError(
-            "No API key found. Set ANTHROPIC_API_KEY, OPENAI_API_KEY, OPENROUTER_API_KEY, or DEEPSEEK_API_KEY in .env"
-        )
+    model = LitellmModel(model=model_id, api_key=deepseek_key)
     agent = Agent(
         name="Slide Planner",
         description="Creates structured slide outline plans.",
@@ -232,6 +162,11 @@ def _make_planner_agent(tool=None) -> "tuple[Agent, bool]":
             "You generate JSON plans for slide creation. "
             "Output must be valid JSON only, no markdown fences, no extra text."
         ),
+        tools=[],
+        model=model,
+        model_settings=ModelSettings(verbosity=None),
+    )
+    return agent, False
         tools=[],
         model=model,
         model_settings=ModelSettings(

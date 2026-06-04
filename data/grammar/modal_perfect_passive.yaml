@@ -1,43 +1,105 @@
+citations:
+- claim: 'Core meaning: The modal perfect passive combines three grammatical elements: a modal verb (must, should, could,
+    mi'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms-9.6'
+  tier: 1
+- claim: 'Discourse function: In conversation, modals are essential for politeness, expressing degrees of certainty, and making
+    re'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms-9.6'
+  tier: 1
+- claim: Common error '*The report must been finished yesterday.*' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents how transfer effects are non-linear,
+    determined by functional fit between L1 and L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects are non-linear — determined by functional
+    fit between L1 and L2 systems rather than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning. Routledge.
+  tier: 2
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for L1-specific error patterns in English.
+    Their learner English framework documents how each L1 group produces characteristic errors in this grammatical domain,
+    enabling teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference and Other Problems, 2nd ed. Cambridge
+    University Press.'
+  tier: 2
+common_errors:
+- correction: The report must have been finished yesterday.
+  error: '*The report must been finished yesterday.*'
+  explanation: Modal perfect passive requires 'have been + past participle' after the modal, not 'been + past participle'
+    alone.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+description: A complex verb structure combining a modal verb, perfect aspect (have + past participle), and passive voice (be
+  + past participle), used to express speculation, obligation, or criticism about past events.
+dialectal_variation: []
+discourse_notes:
+- note: In conversation, modals are essential for politeness, expressing degrees of certainty, and making requests.
+- note: 'In academic writing, modals express hedging and caution: ''These results may suggest...'' ''It could be argued that...'''
+- note: 'In legal and regulatory language, modals express obligation and permission: ''All passengers must wear seatbelts.'''
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - formal writing
+      - news reports
+      - academic texts
+      min_examples: 4
+    structure: 'Subject + modal (must/should/could/might/may) + have + been + past participle. Examples: The documents should
+      have been filed. The mistake must have been noticed.'
+  negative:
+    example_generator:
+      contexts:
+      - criticism
+      - negative deductions
+      min_examples: 3
+    structure: 'Subject + modal + not + have + been + past participle. Examples: The warning should not have been ignored.
+      The data might not have been verified.'
+  questions:
+    example_generator:
+      contexts:
+      - formal enquiries
+      - questioning past decisions
+      min_examples: 3
+    structure: 'Modal + subject + have + been + past participle? Examples: Should the report have been submitted earlier?
+      Could the accident have been prevented?'
 grammar_point: modal_perfect_passive
-title: Modal Perfect Passive (should have been done / must have been taken)
-description: A complex verb structure combining a modal verb, perfect aspect (have
-  + past participle), and passive voice (be + past participle), used to express speculation,
-  obligation, or criticism about past events.
 level: C1
 meaning:
-  core_meaning: 'The modal perfect passive combines three grammatical elements: a
-    modal verb (must, should, could, might, may), the perfect infinitive (have + past
-    participle), and the passive voice (been + past participle). It is used to speculate
-    about past events, express criticism or regret about what was or was not done,
-    or indicate logical conclusions about past situations.'
-  timeline: Always refers to the past. The modal perfect passive looks back from the
-    present at a past event and makes a judgement, speculation, or deduction about
-    it.
-  contrast: 'Modal perfect active: He must have taken the money. (speculation about
-    who did it) Modal perfect passive: The money must have been taken. (speculation
-    about what happened to it) Simple passive: The money was taken. (neutral statement)
-    Modal passive: The money should be taken. (present/future obligation) Modal perfect
-    passive: The money should have been taken. (past obligation not fulfilled)'
   ccqs:
-  - question: In The letter should have been sent, was the letter sent?
-    answer: No. The structure implies it was NOT sent, but it should have been.
-    purpose: Tests whether the learner understands a key concept of modal_perfect_passive.
-      This is fundamental for correct use of this grammar point.
-  - question: What is the difference between must have been and might have been?
-    answer: Must have been expresses a strong logical conclusion. Might have been
-      expresses a possibility.
-    purpose: Tests whether the learner understands a key concept of modal_perfect_passive.
-      This is fundamental for correct use of this grammar point.
-  - question: Is The report could have been finished correct?
-    answer: Yes. It means it was possible to finish the report (but it may or may
-      not have been finished).
-    purpose: Tests whether the learner understands a key concept of modal_perfect_passive.
-      This is fundamental for correct use of this grammar point.
-  - question: Can we use will in the modal perfect passive?
-    answer: 'Not standardly. We use would for past willingness or hypotheticals: The
-      work would have been completed if we had more time.'
-    purpose: Tests whether the learner understands a key concept of modal_perfect_passive.
-      This is fundamental for correct use of this grammar point.
+  - answer: No. The structure implies it was NOT sent, but it should have been.
+    purpose: Tests whether the learner understands a key concept of modal_perfect_passive. This is fundamental for correct
+      use of this grammar point.
+    question: In The letter should have been sent, was the letter sent?
+  - answer: Must have been expresses a strong logical conclusion. Might have been expresses a possibility.
+    purpose: Tests whether the learner understands a key concept of modal_perfect_passive. This is fundamental for correct
+      use of this grammar point.
+    question: Can you explain the difference between must have been and might have been by giving an example of when to use
+      each?
+  - answer: Yes. It means it was possible to finish the report (but it may or may not have been finished).
+    purpose: Tests whether the learner understands a key concept of modal_perfect_passive. This is fundamental for correct
+      use of this grammar point.
+    question: Is The report could have been finished correct?
+  - answer: 'Not standardly. We use would for past willingness or hypotheticals: The work would have been completed if we
+      had more time.'
+    purpose: Tests whether the learner understands a key concept of modal_perfect_passive. This is fundamental for correct
+      use of this grammar point.
+    question: Can we use will in the modal perfect passive?
+  contrast: 'Modal perfect active: He must have taken the money. (speculation about who did it) Modal perfect passive: The
+    money must have been taken. (speculation about what happened to it) Simple passive: The money was taken. (neutral statement)
+    Modal passive: The money should be taken. (present/future obligation) Modal perfect passive: The money should have been
+    taken. (past obligation not fulfilled)'
+  core_meaning: 'The modal perfect passive combines three grammatical elements: a modal verb (must, should, could, might,
+    may), the perfect infinitive (have + past participle), and the passive voice (been + past participle). It is used to speculate
+    about past events, express criticism or regret about what was or was not done, or indicate logical conclusions about past
+    situations.'
   example_generator:
     contexts:
     - academic writing
@@ -49,172 +111,129 @@ meaning:
     - It allows speakers to express criticism indirectly and diplomatically
     - Understanding it is essential for advanced reading comprehension
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Subject + modal (must/should/could/might/may) + have + been + past
-      participle. Examples: The documents should have been filed. The mistake must
-      have been noticed.'
-    example_generator:
-      contexts:
-      - formal writing
-      - news reports
-      - academic texts
-      min_examples: 4
-  negative:
-    structure: 'Subject + modal + not + have + been + past participle. Examples: The
-      warning should not have been ignored. The data might not have been verified.'
-    example_generator:
-      contexts:
-      - criticism
-      - negative deductions
-      min_examples: 3
-  questions:
-    structure: 'Modal + subject + have + been + past participle? Examples: Should
-      the report have been submitted earlier? Could the accident have been prevented?'
-    example_generator:
-      contexts:
-      - formal enquiries
-      - questioning past decisions
-      min_examples: 3
+  timeline: Always refers to the past. The modal perfect passive looks back from the present at a past event and makes a judgement,
+    speculation, or deduction about it.
+phonetics:
+- example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Learners may over-pronounce have as a full syllable, making the structure sound unnatural
+  note: 'The have in modal perfect structures is typically reduced to /əv/ or even /v/ in connected speech: should-uv-been,
+    must-av-been'
+- example_generator:
+    contexts:
+    - stress patterns
+  l1_issue: Stressing been can make the sentence sound emphatic when neutral delivery is intended
+  note: 'The been following have is typically unstressed: should have BEN done'
+register_notes:
+- note: 'In conversation, modals are essential for politeness: ''Could you pass the salt?'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In legal language, ''must'' expresses strong obligation: ''All passengers must wear seatbelts.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Modal + perfect + passive combinations: rare across all registers; most common in formal/written
+    English. Ch. 6.5, 6.7'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 6.5
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Must have been. Strong logical deduction about a past passive action
-  type: grammatical
-  examples:
+- examples:
   - The building must have been constructed in the 19th century.
   - The error must have been caused by a software bug.
   - She must have been informed of the decision.
-- rule: Should have been. Criticism or regret about something that was not done (or
-    praise for something that was done correctly)
+  rule: Must have been. Strong logical deduction about a past passive action
   type: grammatical
-  examples:
+- examples:
   - The report should have been submitted on Friday.
   - The problem should have been identified earlier.
   - You should have been told about the changes.
-- rule: Could have been. Past possibility or ability that may or may not have happened
+  rule: Should have been. Criticism or regret about something that was not done (or praise for something that was done correctly)
   type: grammatical
-  examples:
+- examples:
   - The painting could have been damaged during transport.
   - The meeting could have been rescheduled.
   - It could have been a mistake.
-- rule: Might have been. Weaker possibility about a past passive action
+  rule: Could have been. Past possibility or ability that may or may not have happened
   type: grammatical
-  examples:
+- examples:
   - The letter might have been lost in the post.
   - The data might have been corrupted.
   - He might have been overlooked for the promotion.
-- rule: May have been. Similar to might, slightly more formal
+  rule: Might have been. Weaker possibility about a past passive action
   type: grammatical
-  examples:
+- examples:
   - The evidence may have been tampered with.
   - The decision may have been influenced by external factors.
-- rule: Cannot/can not have been. Strong negative deduction about a past passive action
+  rule: May have been. Similar to might, slightly more formal
   type: grammatical
-  examples:
+- examples:
   - The document cannot have been signed yesterday; the manager was away.
   - This cannot have been the original plan.
+  rule: Cannot/can not have been. Strong negative deduction about a past passive action
+  type: grammatical
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Give students components (modal, have, been, past participle) and ask them to assemble correct sentences.
+      Start with active, then move to passive.
+    duration: 10
+    name: Structure building
+  - adaptation_notes: 'Students match modal perfect passive sentences to their meanings: deduction, criticism, possibility.
+      Discuss the clues that signal each meaning.'
+    duration: 15
+    name: Meaning matching
+  - adaptation_notes: Students read a news article and identify all modal perfect passive structures. Discuss why the journalist
+      chose each form.
+    duration: 20
+    name: News report analysis
+  - adaptation_notes: Students write a formal complaint using should have been and should not have been to express what went
+      wrong.
+    duration: 20
+    name: Complaint letter writing
+  tips:
+  - 'Build up gradually: teach modal perfect active first, then add passive'
+  - 'Use a table showing the structure: modal + have + been + past participle'
+  - 'Provide context clues that signal each meaning: must (evidence), should (criticism), could/might (possibility)'
+  - Use news articles and academic texts as authentic examples
+  - 'Swan PEU: Modal + have + been + past participle — ''She must have been delayed,'' ''It might have been stolen,'' ''They
+    should have been informed.'' Past deduction and past obligation in passive form. Extremely useful in formal communication.'
+title: Modal Perfect Passive (should have been done / must have been taken)
 use:
-- name: Speculation and deduction about the past
-  description: Drawing conclusions about what probably happened based on evidence
+- description: Drawing conclusions about what probably happened based on evidence
   examples:
   - The bridge must have been built in the 1960s; it has that style.
   - The message might have been intercepted.
   key_point: Must expresses certainty; might and could express possibility.
-- name: Criticism and regret
-  description: Expressing that something should or should not have been done
+  name: Speculation and deduction about the past
+- description: Expressing that something should or should not have been done
   examples:
   - The project should have been managed more carefully.
   - This should not have been allowed to happen.
   key_point: Should have been is one of the most common forms for expressing criticism.
-- name: Academic and scientific writing
-  description: Discussing past research, findings, and possibilities
+  name: Criticism and regret
+- description: Discussing past research, findings, and possibilities
   examples:
   - The results could have been affected by sampling bias.
   - The experiment should have been conducted under controlled conditions.
   key_point: Allows writers to discuss past events with appropriate tentativeness.
-- name: News and journalism
-  description: Reporting on past events with varying degrees of certainty
+  name: Academic and scientific writing
+- description: Reporting on past events with varying degrees of certainty
   examples:
   - The minister may have been aware of the scandal.
   - The funds could have been misappropriated.
   key_point: Journalists use might, may, and could to avoid making unverified claims.
-- name: Legal and formal complaints
-  description: Expressing that proper procedures were or were not followed
+  name: News and journalism
+- description: Expressing that proper procedures were or were not followed
   examples:
   - The defendant should have been informed of his rights.
   - The evidence should not have been admitted.
   key_point: The structure allows formal, indirect criticism.
-phonetics:
-- note: 'The have in modal perfect structures is typically reduced to /əv/ or even
-    /v/ in connected speech: should-uv-been, must-av-been'
-  example_generator:
-    contexts:
-    - connected speech
-  l1_issue: Learners may over-pronounce have as a full syllable, making the structure
-    sound unnatural
-- note: 'The been following have is typically unstressed: should have BEN done'
-  example_generator:
-    contexts:
-    - stress patterns
-  l1_issue: Stressing been can make the sentence sound emphatic when neutral delivery
-    is intended
-teaching:
-  methodology: Guided discovery
-  tips:
-  - 'Build up gradually: teach modal perfect active first, then add passive'
-  - 'Use a table showing the structure: modal + have + been + past participle'
-  - 'Provide context clues that signal each meaning: must (evidence), should (criticism),
-    could/might (possibility)'
-  - Use news articles and academic texts as authentic examples
-  recommended_activities:
-  - name: Structure building
-    duration: 10
-    adaptation_notes: Give students components (modal, have, been, past participle)
-      and ask them to assemble correct sentences. Start with active, then move to
-      passive.
-  - name: Meaning matching
-    duration: 15
-    adaptation_notes: 'Students match modal perfect passive sentences to their meanings:
-      deduction, criticism, possibility. Discuss the clues that signal each meaning.'
-  - name: News report analysis
-    duration: 20
-    adaptation_notes: Students read a news article and identify all modal perfect
-      passive structures. Discuss why the journalist chose each form.
-  - name: Complaint letter writing
-    duration: 20
-    adaptation_notes: Students write a formal complaint using should have been and
-      should not have been to express what went wrong.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
-    Modals, §9.1-9.6'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*The report must been finished yesterday.*'
-  correction: The report must have been finished yesterday.
-  explanation: Modal perfect passive requires 'have been + past participle' after
-    the modal, not 'been + past participle' alone.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: 'In formal writing, modals express hedging and caution: ''These results may
-    suggest...'''
-- note: 'In conversation, modals are essential for politeness: ''Could you pass the
-    salt?'''
-- note: 'In legal language, ''must'' expresses strong obligation: ''All passengers
-    must wear seatbelts.'''
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, modals are essential for politeness, expressing degrees of
-    certainty, and making requests.
-- note: 'In academic writing, modals express hedging and caution: ''These results
-    may suggest...'' ''It could be argued that...'''
-- note: 'In legal and regulatory language, modals express obligation and permission:
-    ''All passengers must wear seatbelts.'''
+  name: Legal and formal complaints

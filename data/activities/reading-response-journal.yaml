@@ -1,33 +1,51 @@
-id: reading-response-journal
-name: Reading Response Journal
-category: reading
-description: 'After reading, students write a structured response: summary, personal
-  connection, question, and prediction. Develops critical reading and writing skills.'
-targetStructures:
-- reading-comprehension
-- writing-accuracy
+adaptableToTopic: true
 bestForLevels:
 - A2
 - B1
 - B2
 - C1
+category: reading
+citations:
+- claim: Structured reading response journals develop critical reading and writing
+    skills through summary, personal connection, questioning, and prediction.
+  flagged: false
+  reliability: B
+  source: Peregoy & Boyle (2023) Reading, Writing, and Learning in ESL, 8th ed.
+  tier: 2
+- claim: Reflective writing about reading helps learners process texts at deeper levels
+    and make personal connections to content.
+  source: Peregoy, S. & Boyle, O. (2017). Reading, Writing, and Learning in ESL, 7th
+    ed. Pearson.
+  tier: 2
+  reliability: B
+  flagged: false
+- claim: Personal response to texts is part of TBL. Willis (1996) describes how text-based
+    tasks involve learners reacting to content and processing for meaning.
+  source: Willis, J. (1996) A Framework for Task-Based Learning. Longman.
+  tier: 2
+  reliability: B
+  flagged: false
+description: 'After reading, students write a structured response: summary, personal
+  connection, question, and prediction. Develops critical reading and writing skills.'
+differentiation:
+  extension: 'Require longer, more detailed responses. Add a section: ''What is the
+    author''s purpose?'''
+  support: Provide sentence starters for each section. Use shorter texts. Allow drawing
+    for the summary.
+digitalReady: true
 duration: 15
-groupSize: individuals
 energyRequired: low
-prepTime: low
-materials:
-- Reading texts
-- Response journal templates
 format:
 - in-person
 - online
-requiresTech: false
-digitalReady: true
+grammar_focus:
+- grammar_accuracy
+groupSize: individuals
 hasAudioComponent: false
 hasPrintableComponent: true
 hasSlidesComponent: false
 hasVisualComponent: false
-adaptableToTopic: true
+id: reading-response-journal
 instructions:
 - Give students a reading text. They read silently.
 - 'After reading, students write a response using the format: (1) Summary: What was
@@ -37,21 +55,54 @@ instructions:
 - 'Optional: Students share their responses in pairs or small groups.'
 - Collect journals periodically to track reading comprehension and writing development.
 - 'Discuss: Which part of the response was hardest? Why?'
-script:
-- '"The text silently. Then write your response: summary, connection, question, and
-  prediction."'
-- '"Your time. There are no wrong answers -- I want to think about your thinking."'
-setupInstructions: Select engaging texts at the appropriate level. Create a response
-  journal template with the four sections.
-differentiation:
-  support: Provide sentence starters for each section. Use shorter texts. Allow drawing
-    for the summary.
-  extension: 'Require longer, more detailed responses. Add a section: ''What is the
-    author''s purpose?'''
 keywords:
 - response journal
 - critical reading
 - writing
 - reflection
 - comprehension
-l1Enhanced: true
+l1_enhanced:
+- adaptation: Spanish-speaking students may benefit from writing initial summaries
+    in L1 before translating to English, especially at lower levels.
+  language: Spanish
+  priority: low
+- adaptation: Arabic is written right-to-left. Provide response templates with clear
+    left-to-right layout. Allow extra time for writing.
+  language: Arabic
+  priority: medium
+- adaptation: Mandarin writers may produce shorter responses due to L1 writing conventions.
+    Encourage elaboration with sentence starters for each section.
+  language: Mandarin
+  priority: medium
+l1_specific: []
+materials:
+- Reading texts
+- Response journal templates
+name: Reading Response Journal
+prepTime: low
+requiresTech: false
+script:
+- '"The text silently. Then write your response: summary, connection, question, and
+  prediction."'
+- '"Your time. There are no wrong answers -- I want to think about your thinking."'
+setupInstructions: Select engaging texts at the appropriate level. Create a response
+  journal template with the four sections.
+skill_areas:
+- reading
+sources:
+- Willis, J. (1996) A Framework for Task-Based Learning. Longman.
+targetStructures:
+- reading-comprehension
+- writing-accuracy
+teaching_tips:
+- context: Students may struggle with the "connection" section, writing only surface-level
+    responses.
+  tip: Model a personal connection yourself first. Show how a text connects to your
+    own life, culture, or experience. Depth matters more than length.
+- context: Lower-level students may not know how to formulate questions about a text.
+  tip: Provide question stems such as "Why did the author..." and "What would happen
+    if..." to help generate genuine questions.
+- tip: In TBL, reading tasks should involve personal engagement with text content.
+    Response journals encourage learners to process texts for meaning. (Willis 1996,
+    Ch. 5.1)
+  context: TBL methodology

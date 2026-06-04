@@ -1,30 +1,67 @@
-grammar_point: sentential_aspect
-title: Sentential Aspect
-description: 'The relationship between action and time: perfective (completed) vs
-  progressive (ongoing) vs habitual (repeated).'
-level: C1
-meaning:
-  core_meaning: Sentential aspect describes how an action relates to time. Perfective
-    = completed action. Progressive = ongoing action. Habitual = repeated action.
-  timeline: Varies by aspect — perfective = completed, progressive = ongoing, habitual
-    = repeated.
-  contrast: Perfective = I wrote a letter. (completed) vs Progressive = I was writing
-    a letter. (ongoing)
-  ccqs:
-  - question: Is the action completed or ongoing?
-    answer: Completed = perfective, ongoing = progressive
-    purpose: Tests whether the learner can distinguish between the two primary sentential
-      aspects (perfective and progressive), which is fundamental to understanding
-      how English conveys the internal structure of events.
-  - question: Does this happen regularly?
-    answer: Yes = habitual aspect.
-    purpose: Tests whether the learner can identify the habitual aspect as a distinct
-      category from perfective and progressive, which helps them understand how English
-      encodes repeated or customary actions.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      sentential aspect and explain why they are incorrect.
+citations:
+- claim: 'Core meaning: Sentential aspect describes how an action relates to time'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The Tense-Aspect System-7.3'
+  tier: 4
+- claim: 'Register distribution: This is a metalinguistic concept used primarily in academic and linguistic contexts.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The Tense-Aspect System-7.3'
+  tier: 4
+- claim: 'Discourse function: This concept is relevant to academic and linguistic discourse rather than everyday conversation.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The Tense-Aspect System-7.3'
+  tier: 4
+- claim: 'Common error ''Using progressive for habitual actions: *''I am writing lette'' for Portuguese, Spanish, Chinese
+    speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for L1-specific error patterns in English.
+    Their learner English framework documents how each L1 group produces characteristic errors in this grammatical domain,
+    enabling teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference and Other Problems, 2nd ed. Cambridge
+    University Press.'
+  tier: 2
+common_errors:
+- correction: I write letters every day.
+  error: 'Using progressive for habitual actions: *''I am writing letters every day.'''
+  explanation: The progressive aspect describes an ongoing action at a specific moment, not a repeated or customary action.
+    Habitual actions use the present simple, not the present continuous.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+- correction: He was writing the report at 3pm yesterday.
+  error: 'Using perfective for ongoing actions: *''He wrote the report at 3pm yesterday'' (meaning he was in the process)'
+  explanation: The perfective (past simple) suggests a completed action. To describe an action in progress at a specific past
+    time, use the progressive (past continuous) instead.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Japanese
+  reliability: D
+- correction: Past simple can be progressive (was writing). Present can be perfective (I write now). Aspect and tense are
+    independent.
+  error: 'Confusing tense with aspect: treating ''past tense'' and ''perfective aspect'' as the same concept.'
+  explanation: Tense locates an event in time (past, present, future). Aspect describes how the event unfolds in time (completed,
+    ongoing, repeated). A past tense sentence can have progressive aspect, and a present tense sentence can have perfective
+    aspect. Learners from aspect-prominent languages may find this distinction difficult.
+  flagged: true
+  l1_groups:
+  - Russian
+  - Arabic
+  - Chinese
+  reliability: D
+description: 'The relationship between action and time: perfective (completed) vs progressive (ongoing) vs habitual (repeated).'
+dialectal_variation: []
+discourse_notes:
+- note: This concept is relevant to academic and linguistic discourse rather than everyday conversation.
 example_generator:
   contexts:
   - academic writing
@@ -35,117 +72,120 @@ example_generator:
   min_examples: 5
 form:
   affirmative:
-    structure: 'Perfective: Subject + past simple: I wrote a letter. / Progressive:
-      Subject + be + verb-ing: I was writing a letter.'
     example_generator:
       contexts:
       - academic writing
       - linguistic analysis
       - advanced grammar
       min_examples: 4
+    structure: 'Perfective: Subject + past simple: I wrote a letter. / Progressive: Subject + be + verb-ing: I was writing
+      a letter.'
   negative:
-    structure: 'Same patterns with negation: I did not write a letter. / I was not
-      writing a letter.'
     example_generator:
       contexts:
       - academic writing
       - linguistic analysis
       - advanced grammar
       min_examples: 4
+    structure: 'Same patterns with negation: I did not write a letter. / I was not writing a letter.'
   questions:
-    structure: 'Did + subject + verb?: Did you write a letter?'
     example_generator:
       contexts:
       - academic writing
       - linguistic analysis
       - advanced grammar
       min_examples: 4
+    structure: 'Did + subject + verb?: Did you write a letter?'
+grammar_point: sentential_aspect
+level: C1
+meaning:
+  ccqs:
+  - answer: Completed = perfective, ongoing = progressive
+    purpose: Tests whether the learner can distinguish between the two primary sentential aspects (perfective and progressive),
+      which is fundamental to understanding how English conveys the internal structure of events.
+    question: Is the action completed or ongoing?
+  - answer: Yes = habitual aspect.
+    purpose: Tests whether the learner can identify the habitual aspect as a distinct category from perfective and progressive,
+      which helps them understand how English encodes repeated or customary actions.
+    question: Does this happen regularly?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with sentential aspect and explain why they are
+      incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: It is progressive aspect (specifically present perfect progressive). Even though 'present perfect' is the tense,
+      the aspect is progressive because the verb phrase 'has been writing' focuses on the ongoing, uncompleted nature of the
+      action over a period of time. The -ing form (present participle) is the marker of progressive aspect, and 'for two hours'
+      emphasises the duration of the ongoing activity.
+    purpose: Tests whether the learner can separate the concept of tense from the concept of aspect when analysing sentential
+      aspect. A single sentence can combine any tense with any aspect — 'has been writing' is present tense + perfect aspect
+      + progressive aspect. At C1 level, learners need to identify that the progressive aspect is signalled by the be + -ing
+      structure regardless of the tense used, and that aspect describes how the event unfolds in time rather than when it
+      occurs.
+    question: Is 'She has been writing a letter for two hours' perfective, progressive, or habitual aspect?
+  contrast: Perfective = I wrote a letter. (completed) vs Progressive = I was writing a letter. (ongoing)
+  core_meaning: Sentential aspect describes how an action relates to time. Perfective = completed action. Progressive = ongoing
+    action. Habitual = repeated action.
+  timeline: Varies by aspect — perfective = completed, progressive = ongoing, habitual = repeated.
+phonetics:
+- example_generator:
+    contexts:
+    - written English
+  l1_issue: This is a metalinguistic concept — most L1 speakers do not analyze aspect explicitly.
+  note: No specific phonetic pattern
+register_notes:
+- note: This is a metalinguistic concept used primarily in academic and linguistic contexts.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Sentential aspect (perfect and progressive): register distribution varies. Academic prose uses
+    more perfect aspect; conversation uses more progressive. Ch. 6.3'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 6.3
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The Tense-Aspect System-7.5'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Perfective aspect — completed actions
-  type: grammatical
-  examples:
+- examples:
   - I wrote a letter.
   - She finished the project.
-- rule: Progressive aspect — ongoing actions
+  rule: Perfective aspect — completed actions
   type: grammatical
-  examples:
+- examples:
   - I was writing a letter.
   - She was working on the project.
-- rule: Habitual aspect — repeated actions
+  rule: Progressive aspect — ongoing actions
   type: grammatical
-  examples:
+- examples:
   - I write letters every day.
   - She always arrives early.
+  rule: Habitual aspect — repeated actions
+  type: grammatical
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Students identify and classify aspect in authentic texts.
+    duration: 15
+    name: Aspect Identification
+  tips:
+  - 'GB3 Ch. 7: Core meanings — simple aspect = events as complete wholes (no room for further development). Perfect aspect
+    = ''prior'' (retrospective point of view). Progressive aspect = imperfective (incomplete, limited duration). Perfect progressive
+    = combination of prior + incomplete. Source: Celce-Murcia & Larsen-Freeman (2015) GB3 3rd ed. Ch. 7 §7.1-7.2.'
+  - 'GB3 Ch. 7: The 12 tense-aspect combinations are a system of 5 building blocks: 3 tenses (present, past, future in simple
+    form) + 2 aspects (perfect, progressive). Only the ''northwest'' combinations (present progressive, simple present, simple
+    past) are high frequency. Southeast combinations (past perfect progressive, future perfect progressive) are rare. Source:
+    GB3 Ch. 7 §7.1.'
+  - Use timelines to visualize aspects
+  - Contrast perfective vs progressive explicitly
+  - Use authentic texts for analysis
+  - 'Swan aspect coverage: perfect (have + pp) marks anteriority/relevance; progressive (be + -ing) marks ongoing action;
+    simple (no auxiliary) marks punctual/habitual. The choice of aspect is a separate choice from tense.'
+title: Sentential Aspect
 use:
 - context: Academic analysis
   description: Describing how actions relate to time
   examples:
   - The perfective aspect presents the action as completed.
   - The progressive aspect focuses on the internal structure of the event.
-phonetics:
-- note: No specific phonetic pattern
-  example_generator:
-    contexts:
-    - written English
-  l1_issue: This is a metalinguistic concept — most L1 speakers do not analyze aspect
-    explicitly.
-teaching:
-  methodology: Guided discovery
-  tips:
-  - Use timelines to visualize aspects
-  - Contrast perfective vs progressive explicitly
-  - Use authentic texts for analysis
-  recommended_activities:
-  - name: Aspect Identification
-    duration: 15
-    adaptation_notes: Students identify and classify aspect in authentic texts.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: 'Using progressive for habitual actions: *''I am writing letters every day.'''
-  correction: I write letters every day.
-  explanation: The progressive aspect describes an ongoing action at a specific moment,
-    not a repeated or customary action. Habitual actions use the present simple, not
-    the present continuous.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-- error: 'Using perfective for ongoing actions: *''He wrote the report at 3pm yesterday''
-    (meaning he was in the process)'
-  correction: He was writing the report at 3pm yesterday.
-  explanation: The perfective (past simple) suggests a completed action. To describe
-    an action in progress at a specific past time, use the progressive (past continuous)
-    instead.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Japanese
-- error: 'Confusing tense with aspect: treating ''past tense'' and ''perfective aspect''
-    as the same concept.'
-  correction: Past simple can be progressive (was writing). Present can be perfective
-    (I write now). Aspect and tense are independent.
-  explanation: Tense locates an event in time (past, present, future). Aspect describes
-    how the event unfolds in time (completed, ongoing, repeated). A past tense sentence
-    can have progressive aspect, and a present tense sentence can have perfective
-    aspect. Learners from aspect-prominent languages may find this distinction difficult.
-  l1_groups:
-  - Russian
-  - Arabic
-  - Chinese
-register_notes:
-- note: This is a metalinguistic concept used primarily in academic and linguistic
-    contexts.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core theory of sentential aspect.
-discourse_notes:
-- note: This concept is relevant to academic and linguistic discourse rather than
-    everyday conversation.

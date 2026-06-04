@@ -1,27 +1,114 @@
+citations:
+- claim: 'Core meaning: Object pronouns receive the action of the verb'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession-16.5, 12.14-12.15'
+  tier: 1
+- claim: 'Register distribution: Object pronouns are neutral in register.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession'
+  tier: 1
+- claim: 'Discourse function: In conversation, object pronouns avoid repetition: ''I saw John. I spoke to him.'''
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession'
+  tier: 1
+- claim: 'Common error ''Using subject pronouns as objects: *''I saw she.'''' for Portuguese, Spanish, Chinese speakers'
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 11: Pronouns, 11.2-11.3'
+  tier: 1
+- claim: 'Dialectal variation: In informal speech, ''me'' is sometimes used as subject: ''Me and him went.'' (non-standard)'
+  reliability: B
+  source: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Ch. 5: Nouns and Noun Phrases, 5.8 (pronouns)'
+  tier: 1
+- claim: L1 transfer in object pronouns varies significantly across language backgrounds — Swan & Smith document contrastive
+    patterns for speakers of different L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents how transfer effects are non-linear,
+    determined by functional fit between L1 and L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects are non-linear — determined by functional
+    fit between L1 and L2 systems rather than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning. Routledge.
+  tier: 2
+common_errors:
+- correction: I saw her.
+  error: 'Using subject pronouns as objects: *''I saw she.'''
+  explanation: Use object pronouns (me, you, him, her, it, us, them) after verbs and prepositions.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+- correction: John and I went.
+  error: 'Confusing ''I'' and ''me'': *''Me and John went.'''
+  explanation: Use subject pronouns (I, you, he, she, we, they) as the subject of a sentence.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: D
+description: 'Pronouns that replace the object of a sentence: me, you, him, her, it, us, them.'
+dialectal_variation:
+- note: 'In informal speech, ''me'' is sometimes used as subject: ''Me and him went.'' (non-standard)'
+discourse_notes:
+- note: 'In conversation, object pronouns avoid repetition: ''I saw John. I spoke to him.'''
+- note: 'In academic writing, object pronouns create cohesion: ''The participants were interviewed. They were asked about
+    their experiences.'''
+- note: 'In informal speech, object pronouns are common in phrasal verbs: ''Pick it up.'' ''Throw them away.'''
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - daily activities
+      - interactions
+      - requests
+      min_examples: 4
+    structure: 'Verb + object pronoun: ''She sees me.'', ''I like him.'''
+  negative:
+    example_generator:
+      contexts:
+      - daily activities
+      - interactions
+      - requests
+      min_examples: 4
+    structure: 'Verb + not + object pronoun or auxiliary + not: ''She doesn''t see me.'''
+  questions:
+    example_generator:
+      contexts:
+      - daily activities
+      - interactions
+      - requests
+      min_examples: 4
+    structure: 'Auxiliary + subject + verb + object pronoun?: ''Does she see me?'''
 grammar_point: object_pronouns
-title: Object Pronouns
-description: 'Pronouns that replace the object of a sentence: me, you, him, her, it,
-  us, them.'
 level: A1
 meaning:
-  core_meaning: Object pronouns receive the action of the verb. They come after the
-    verb or preposition.
-  timeline: Timeless — applies to all tenses.
-  contrast: '''Subject pronoun'' = ''I see her.'' (I do the action) vs ''Object pronoun''
-    = ''She sees me.'' (I receive the action)'
   ccqs:
-  - question: Does the pronoun receive the action in this sentence?
-    answer: Yes — the object pronoun is the receiver of the action.
-    purpose: Tests whether the learner can identify the object of a sentence and choose
-      the correct object pronoun (me, you, him, her, it, us, them).
-  - question: Does the pronoun come before or after the verb?
-    answer: After the verb (or after a preposition).
-    purpose: Tests whether the learner understands that object pronouns follow the
-      verb or preposition, unlike subject pronouns which precede the verb.
-  - question: Is this a subject or object position?
-    answer: Object position — the pronoun receives the action.
-    purpose: Tests whether the learner can distinguish subject position (before verb)
-      from object position and choose the correct pronoun form.
+  - answer: Yes — the object pronoun is the receiver of the action.
+    purpose: Tests whether the learner can identify the object of a sentence and choose the correct object pronoun (me, you,
+      him, her, it, us, them).
+    question: Does the pronoun receive the action in this sentence?
+  - answer: After the verb (or after a preposition).
+    purpose: Tests whether the learner understands that object pronouns follow the verb or preposition, unlike subject pronouns
+      which precede the verb.
+    question: Does the pronoun come before or after the verb?
+  - answer: Object position — the pronoun receives the action.
+    purpose: Tests whether the learner can distinguish subject position (before verb) from object position and choose the
+      correct pronoun form.
+    question: Is this a subject or object position?
+  - answer: After a preposition ('to'), we must use object pronouns (him, her, them, us), not subject pronouns (he, she, they,
+      we). 'Him' is the object form required after the preposition 'to.'
+    purpose: Tests whether the learner understands that object pronouns must be used after prepositions, not just after verbs.
+      Many learners correctly use object pronouns after verbs but forget this rule when a preposition is involved.
+    question: In the sentence 'She gave it to him,' why can we not say 'She gave it to he'?
+  contrast: '''Subject pronoun'' = ''I see her.'' (I do the action) vs ''Object pronoun'' = ''She sees me.'' (I receive the
+    action)'
+  core_meaning: Object pronouns receive the action of the verb. They come after the verb or preposition.
   example_generator:
     contexts:
     - daily activities
@@ -30,43 +117,64 @@ meaning:
     - describing relationships
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Verb + object pronoun: ''She sees me.'', ''I like him.'''
-    example_generator:
-      contexts:
-      - daily activities
-      - interactions
-      - requests
-      min_examples: 4
-  negative:
-    structure: 'Verb + not + object pronoun or auxiliary + not: ''She doesn''t see
-      me.'''
-    example_generator:
-      contexts:
-      - daily activities
-      - interactions
-      - requests
-      min_examples: 4
-  questions:
-    structure: 'Auxiliary + subject + verb + object pronoun?: ''Does she see me?'''
-    example_generator:
-      contexts:
-      - daily activities
-      - interactions
-      - requests
-      min_examples: 4
+  timeline: Timeless — applies to all tenses.
+phonetics:
+- contexts:
+  - connected speech
+  example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Some L1 speakers use subject pronouns in object position
+  note: 'Weak forms: /hiːm/ → /ɪm/ (him), /hɜːr/ → /ər/ (her)'
+register_notes:
+- note: Object pronouns are neutral in register.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In formal writing, ''whom'' is used as an object pronoun: ''The candidate whom we interviewed was impressive.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In conversation, ''who'' often replaces ''whom'': ''Who did you see?'' (informal)'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Object pronoun use: much higher in conversation than academic prose. Academic prose avoids
+    pronouns in favor of full noun phrases for explicitness. Pronoun density is one of the strongest conversation vs. writing
+    discriminators. Ch. 4.1.2'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 4.1.2
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 11: Pronouns, 11.2-11.3'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession-16.5, 12.14-12.15'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Ch. 5: Nouns and Noun Phrases, 5.8
+    (pronouns)'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners. Ch. 6: Object pronouns'
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(pronouns: object forms, word order)'
 sub_rules:
-- rule: '''You'' and ''it'' are the same for subject and object'
-  type: grammatical
-  examples:
+- examples:
   - I like you. / You like me.
   - I see it. It is here.
-- rule: Object pronouns after prepositions
+  rule: '''You'' and ''it'' are the same for subject and object'
   type: grammatical
-  examples:
+- examples:
   - Give it to me.
   - She's talking to him.
+  rule: Object pronouns after prepositions
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Students match sentences with correct object pronouns.
+    duration: 10
+    name: Object Pronoun Bingo
+  tips:
+  - Contrast subject vs object pronouns explicitly
+  - Use physical actions to show who receives the action
+  - 'Swan PEU: Object pronouns — me, you, him, her, it, us, them. After prepositions: ''between you and me'' (NOT ''I'').
+    After ''than'' in comparatives: ''taller than her'' (informal) / ''taller than she'' (formal). After ''it is/was'': ''It
+    was me'' is natural in speech.'
+title: Object Pronouns
 use:
 - context: Daily interactions
   description: Using object pronouns in conversation
@@ -79,62 +187,3 @@ use:
   examples:
   - This is for you.
   - Come with me.
-phonetics:
-- note: 'Weak forms: /hiːm/ → /ɪm/ (him), /hɜːr/ → /ər/ (her)'
-  contexts:
-  - connected speech
-  l1_issue: Some L1 speakers use subject pronouns in object position
-  example_generator:
-    contexts:
-    - connected speech
-teaching:
-  methodology: PPP
-  tips:
-  - Contrast subject vs object pronouns explicitly
-  - Use physical actions to show who receives the action
-  recommended_activities:
-  - name: Object Pronoun Bingo
-    duration: 10
-    adaptation_notes: Students match sentences with correct object pronouns.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, 12.14-12.15'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 5: Nouns and Noun Phrases, 5.8 (pronouns)'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 85-95 (pronouns:
-    object forms, word order)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    11: Pronouns, 11.2-11.3'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 6: Object pronouns'
-common_errors:
-- error: 'Using subject pronouns as objects: *''I saw she.'''
-  correction: I saw her.
-  explanation: Use object pronouns (me, you, him, her, it, us, them) after verbs and
-    prepositions.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-- error: 'Confusing ''I'' and ''me'': *''Me and John went.'''
-  correction: John and I went.
-  explanation: Use subject pronouns (I, you, he, she, we, they) as the subject of
-    a sentence.
-  l1_groups:
-  - Portuguese
-  - Spanish
-register_notes:
-- note: Object pronouns are neutral in register.
-- note: 'In formal writing, ''whom'' is used as an object pronoun: ''The candidate
-    whom we interviewed was impressive.'''
-- note: 'In conversation, ''who'' often replaces ''whom'': ''Who did you see?'' (informal)'
-dialectal_variation:
-- note: 'In informal speech, ''me'' is sometimes used as subject: ''Me and him went.''
-    (non-standard)'
-discourse_notes:
-- note: 'In conversation, object pronouns avoid repetition: ''I saw John. I spoke
-    to him.'''
-- note: 'In academic writing, object pronouns create cohesion: ''The participants
-    were interviewed. They were asked about their experiences.'''
-- note: 'In informal speech, object pronouns are common in phrasal verbs: ''Pick it
-    up.'' ''Throw them away.'''

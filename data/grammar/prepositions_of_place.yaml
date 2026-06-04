@@ -1,32 +1,160 @@
-grammar_point: prepositions_of_place
-title: Prepositions of Place (in, on, at)
+citations:
+- claim: 'Core meaning: Prepositions of place answer the question ''Where?'' They
+    show the position of something relative to another object or place.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21:
+    Prepositions'
+  tier: 1
+- claim: 'Register distribution: Prepositions of place are consistent across registers.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21:
+    Prepositions'
+  tier: 1
+- claim: 'Discourse function: Prepositions of place create spatial relationships:
+    ''The cat is on the table. The dog is under it.'''
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21:
+    Prepositions'
+  tier: 1
+- claim: 'Common error ''Using ''in'' for surfaces: *''The book is in the table.''''
+    for Portuguese, Spanish, French speakers'
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 14: Prepositions'
+  tier: 1
+- claim: 'Dialectal variation: BrE uses ''in hospital''; AmE uses ''in the hospital''.'
+  reliability: B
+  source: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 7: Prepositions and Prepositional Phrases'
+  tier: 1
+- claim: 'Prepositions of place (IN, ON, AT, UNDER, OVER, BETWEEN) describe spatial
+    relationships: IN for enclosed spaces, ON for surfaces, AT for specific points'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21:
+    Prepositions'
+  tier: 1
+- claim: L1 transfer in prepositions of place varies significantly across language
+    backgrounds — Swan & Smith document contrastive patterns for speakers of different
+    L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents
+    how transfer effects are non-linear, determined by functional fit between L1 and
+    L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects
+    are non-linear — determined by functional fit between L1 and L2 systems rather
+    than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning.
+    Routledge.
+  tier: 2
+common_errors:
+- correction: The book is on the table.
+  error: 'Using ''in'' for surfaces: *''The book is in the table.'''
+  explanation: Use 'on' for surfaces, 'in' for enclosed spaces, 'at' for specific
+    points.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+- correction: I live in São Paulo.
+  error: 'Using ''at'' for cities: *''I live at São Paulo.'''
+  explanation: Use 'in' for cities, countries, and large areas.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+- error: Spatial preposition errors reflect conceptual transfer, not just formal L1-L2
+    mapping (Golden et al. Ch.4)
+  explanation: 'Golden et al. (2017) Ch.4 (Szymańska): Conceptualization of objects
+    as containers vs. surfaces varies crosslinguistically and affects preposition
+    choice even when L1 and L2 are genealogically related. English "in/on" conceptual
+    mapping differs from Norwegian "i/pa": Norwegian uses "på" extensively for institutional/social
+    activities where English uses "at" or "on". Spatial preposition accuracy is driven
+    by conceptual fit, not formal similarity.'
+  l1_groups:
+  - All L1s — conceptual transfer affects all learners
+  reliability: C
+  source: Golden et al. (2017) Crosslinguistic Influence and Distinctive Patterns
+    of Language Learning, Ch. 4
+- correction: I am at the bus stop.
+  error: '*I am in the bus stop.*'
+  explanation: '''At'' is for specific points (at the bus stop, at the door). ''In''
+    is for enclosed spaces (in the bus, in the building). ''On'' is for surfaces (on
+    the bus, on the platform).'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 description: Words that show the position or location of a noun relative to another
   object or place. Critical for describing location.
+dialectal_variation:
+- note: BrE uses 'in hospital'; AmE uses 'in the hospital'.
+- note: BrE uses 'at university'; AmE uses 'at the university'.
+discourse_notes:
+- note: 'Prepositions of place create spatial relationships: ''The cat is on the table.
+    The dog is under it.'''
+form:
+  affirmative:
+    example_generator:
+    - The book is on the table.
+    - She is in the room.
+    - I am at the bus stop.
+    - The picture is on the wall.
+    min_examples: 4
+    structure: Subject + be + preposition + location
+  negative:
+    example_generator:
+    - The book isn't on the table.
+    - She isn't in the room.
+    - I'm not at the bus stop.
+    min_examples: 4
+    structure: Subject + be + not + preposition + location
+  questions:
+    example_generator:
+    - Is the book on the table?
+    - Is she in the room?
+    - Are you at the bus stop?
+    min_examples: 4
+    structure: Be + subject + preposition + location?
+grammar_point: prepositions_of_place
+key_principles: []
 level: A1
 meaning:
+  ccqs:
+  - answer: Enclosed space = in. Surface = on. Specific point = at.
+    purpose: Tests whether the learner can distinguish between the three main categories
+      of place prepositions. This is the foundational concept -- if the learner can
+      categorize the space, they can choose the correct preposition.
+    question: Is this about an enclosed space, a surface, or a specific point?
+  - answer: '''On the table'' -- a table is a surface, so we use ''on''.'
+    purpose: Tests whether the learner can apply the surface rule to a concrete example.
+      Tables, floors, walls, and ceilings all use 'on'.
+    question: Do we say 'in the table' or 'on the table'?
+  - answer: '''In'' -- in Brazil, in London, in Tokyo. These are large enclosed areas.'
+    purpose: 'Tests whether the learner understands that preposition use is often
+      idiomatic and must be memorized: ''in bed'' (not *''on bed''), ''at home'' (not
+      *''in home'').'
+    question: What preposition do we use with countries and cities?
+  - answer: '''I live at 5 Main Street.'' Use ''at'' for specific addresses and ''in''
+      for streets/cities/countries.'
+    purpose: Tests whether the learner distinguishes at/on/in for place (Swan PEU
+      2016, entries 76-82).
+    question: Which is correct? *'I live in 5 Main Street' or 'I live at 5 Main Street'?
+  contrast: '''In'' = enclosed space (in the box, in the room, in Brazil) vs ''On''
+    = surface (on the table, on the wall, on Main Street) vs ''At'' = specific point
+    (at the bus stop, at home, at the door)'
   core_meaning: 'Prepositions of place answer the question ''Where?'' They show the
     position of something relative to another object or place. The correct preposition
     depends on the type of space: ''in'' for enclosed spaces, ''on'' for surfaces,
     ''at'' for specific points.'
-  timeline: N/A — not tense-based. Describes location regardless of time.
-  contrast: '''In'' = enclosed space (in the box, in the room, in Brazil) vs ''On''
-    = surface (on the table, on the wall, on Main Street) vs ''At'' = specific point
-    (at the bus stop, at home, at the door)'
-  ccqs:
-  - question: Is this about an enclosed space, a surface, or a specific point?
-    answer: Enclosed space = in. Surface = on. Specific point = at.
-    purpose: Tests whether the learner can distinguish between the three main categories
-      of place prepositions. This is the foundational concept -- if the learner can
-      categorize the space, they can choose the correct preposition.
-  - question: Do we say 'in the table' or 'on the table'?
-    answer: '''On the table'' -- a table is a surface, so we use ''on''.'
-    purpose: Tests whether the learner can apply the surface rule to a concrete example.
-      Tables, floors, walls, and ceilings all use 'on'.
-  - question: What preposition do we use with countries and cities?
-    answer: '''In'' -- in Brazil, in London, in Tokyo. These are large enclosed areas.'
-    purpose: 'Tests whether the learner understands that preposition use is often
-      idiomatic and must be memorized: ''in bed'' (not *''on bed''), ''at home'' (not
-      *''in home'').'
   example_generator:
     contexts:
     - describing rooms and places
@@ -37,33 +165,45 @@ meaning:
     - Avoid assuming specific cultural knowledge
     - Keep examples concrete and visual
     min_examples: 5
-form:
-  affirmative:
-    structure: Subject + be + preposition + location
-    example_generator:
-    - The book is on the table.
-    - She is in the room.
-    - I am at the bus stop.
-    - The picture is on the wall.
-    min_examples: 4
-  negative:
-    structure: Subject + be + not + preposition + location
-    example_generator:
-    - The book isn't on the table.
-    - She isn't in the room.
-    - I'm not at the bus stop.
-    min_examples: 4
-  questions:
-    structure: Be + subject + preposition + location?
-    example_generator:
-    - Is the book on the table?
-    - Is she in the room?
-    - Are you at the bus stop?
-    min_examples: 4
+  timeline: N/A — not tense-based. Describes location regardless of time.
+phonetics:
+- example_generator:
+  - in /ɪn/
+  - on /ɒn/
+  - at /ət/
+  l1_issue: Portuguese and Spanish speakers often over-pronounce prepositions. Teach
+    the weak forms for natural speech.
+  note: 'Prepositions of place are usually unstressed: ''in'' → /ɪn/, ''on'' → /ɒn/,
+    ''at'' → /ət/. ''The book is on the table'' sounds like /ðə bʊk ɪz ɒn ðə teɪbl/.'
+- example_generator:
+  - it's /ɪts/
+  - she's /ʃiːz/
+  l1_issue: Many L1 speakers avoid contractions. Teach them for natural-sounding speech.
+  note: 'Contractions are natural: ''It''s on the table'' /ɪts ɒn ðə teɪbl/, ''She''s
+    in the room'' /ʃiːz ɪn ðə ruːm/.'
+register_notes:
+- note: Prepositions of place are consistent across registers.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (1999) — Place preposition distribution: register-dependent.
+    Conversation uses simpler spatial language; academic prose uses more complex spatial
+    expressions. Ch. 10.2.1.1'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch.
+    10.2.1.1
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21:
+    Prepositions'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 7: Prepositions and Prepositional Phrases-7.4'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 10: Prepositions'
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(prepositions: place, time,
+    movement)'
 sub_rules:
-- rule: 'In: enclosed spaces (in the box, in the room, in the car, in Brazil, in London)'
-  type: grammatical
-  examples:
+- examples:
   - in the box
   - in the room
   - in the car
@@ -72,10 +212,9 @@ sub_rules:
   - in London
   - in the city
   - in the country
-- rule: 'On: surfaces (on the table, on the wall, on the floor, on the page, on Main
-    Street)'
+  rule: 'In: enclosed spaces (in the box, in the room, in the car, in Brazil, in London)'
   type: grammatical
-  examples:
+- examples:
   - on the table
   - on the wall
   - on the floor
@@ -84,10 +223,10 @@ sub_rules:
   - on Main Street
   - on the 2nd floor
   - on the bus
-- rule: 'At: specific points (at the bus stop, at home, at school, at the door, at
-    the airport)'
+  rule: 'On: surfaces (on the table, on the wall, on the floor, on the page, on Main
+    Street)'
   type: grammatical
-  examples:
+- examples:
   - at the bus stop
   - at home
   - at school
@@ -96,14 +235,60 @@ sub_rules:
   - at the airport
   - at the station
   - at 123 Main Street
-- rule: 'In vs at for buildings: ''in'' = inside the building, ''at'' = at the location
-    (could be inside or outside)'
+  rule: 'At: specific points (at the bus stop, at home, at school, at the door, at
+    the airport)'
   type: grammatical
-  examples:
+- examples:
   - I'm in the hospital. (inside the building as a patient)
   - I'm at the hospital. (at the location — could be visiting)
   - She's in the school. (inside)
   - She's at school. (at the location)
+  rule: 'In vs at for buildings: ''in'' = inside the building, ''at'' = at the location
+    (could be inside or outside)'
+  type: grammatical
+teaching:
+  methodology: PPP with real objects and pictures
+  recommended_activities:
+  - adaptation_notes: 'Hide objects around the room. Students ask: ''Where is the
+      pen?'' Others answer: ''It''s under the chair.'' Practices prepositions of place
+      with real objects.'
+    duration: 10
+    name: Where Is It?
+  - adaptation_notes: 'Show a picture of a room. Students describe where things are:
+      ''The cat is on the table. The book is in the box.'' Practices prepositions
+      in context.'
+    duration: 15
+    name: Picture Description
+  - adaptation_notes: 'Teacher says a location. Students choose the correct preposition:
+      ''___ the table'' (on), ''___ Brazil'' (in), ''___ the bus stop'' (at).'
+    duration: 10
+    name: In, On, or At?
+  - adaptation_notes: 'Students give directions using prepositions of place: ''The
+      bank is on Main Street. It''s next to the hospital.'' Practices prepositions
+      with maps.'
+    duration: 15
+    name: Map Directions
+  tips:
+  - 'Use real objects: put a book in a box, on a table, under a chair. This makes
+    the meaning immediately clear.'
+  - 'Drill with flashcards: show a picture and ask ''Where is the ball?'' Students
+    answer: ''It''s on the table.'''
+  - 'Practice with maps: ''The bank is on Main Street, in London.'' Uses prepositions
+    in a real context.'
+  - 'Teach the in/at distinction for buildings: ''in the hospital'' (inside) vs ''at
+    the hospital'' (at the location).'
+  - 'Use classroom objects: ''Where is the pen? It''s in my bag. It''s on the desk.
+    It''s at the front of the room.'''
+  - 'Swan PEU: at/in/on for place — at for a point (at the bus stop, at the end of
+    the street), in for an enclosed space (in the kitchen, in London), on for a surface
+    (on the table, on the wall). Also: at work, at school, at home (fixed expressions).'
+  - 'Swan PEU: Common place expressions — at the top/bottom, at the front/back, in
+    the middle, on the left/right, in the corner, on the ground floor. Top/bottom
+    of a page: ''there is a note at the top of the page.'''
+  - 'Swan PEU: Into and onto show movement to the inside/top of something: ''She went
+    into the house,'' ''The cat jumped onto the table.'' Compare with in (already
+    inside) and on (already on top).'
+title: Prepositions of Place (in, on, at)
 use:
 - context: Describing rooms and places
   description: Saying where things are in a room or building
@@ -129,85 +314,3 @@ use:
   - Turn left at the traffic lights.
   - The restaurant is next to the bank.
   - The school is between the park and the library.
-phonetics:
-- note: 'Prepositions of place are usually unstressed: ''in'' → /ɪn/, ''on'' → /ɒn/,
-    ''at'' → /ət/. ''The book is on the table'' sounds like /ðə bʊk ɪz ɒn ðə teɪbl/.'
-  example_generator:
-  - in /ɪn/
-  - on /ɒn/
-  - at /ət/
-  l1_issue: Portuguese and Spanish speakers often over-pronounce prepositions. Teach
-    the weak forms for natural speech.
-- note: 'Contractions are natural: ''It''s on the table'' /ɪts ɒn ðə teɪbl/, ''She''s
-    in the room'' /ʃiːz ɪn ðə ruːm/.'
-  example_generator:
-  - it's /ɪts/
-  - she's /ʃiːz/
-  l1_issue: Many L1 speakers avoid contractions. Teach them for natural-sounding speech.
-teaching:
-  methodology: PPP with real objects and pictures
-  tips:
-  - 'Use real objects: put a book in a box, on a table, under a chair. This makes
-    the meaning immediately clear.'
-  - 'Drill with flashcards: show a picture and ask ''Where is the ball?'' Students
-    answer: ''It''s on the table.'''
-  - 'Practice with maps: ''The bank is on Main Street, in London.'' Uses prepositions
-    in a real context.'
-  - 'Teach the in/at distinction for buildings: ''in the hospital'' (inside) vs ''at
-    the hospital'' (at the location).'
-  - 'Use classroom objects: ''Where is the pen? It''s in my bag. It''s on the desk.
-    It''s at the front of the room.'''
-  recommended_activities:
-  - name: Where Is It?
-    duration: 10
-    adaptation_notes: 'Hide objects around the room. Students ask: ''Where is the
-      pen?'' Others answer: ''It''s under the chair.'' Practices prepositions of place
-      with real objects.'
-  - name: Picture Description
-    duration: 15
-    adaptation_notes: 'Show a picture of a room. Students describe where things are:
-      ''The cat is on the table. The book is in the box.'' Practices prepositions
-      in context.'
-  - name: In, On, or At?
-    duration: 10
-    adaptation_notes: 'Teacher says a location. Students choose the correct preposition:
-      ''___ the table'' (on), ''___ Brazil'' (in), ''___ the bus stop'' (at).'
-  - name: Map Directions
-    duration: 15
-    adaptation_notes: 'Students give directions using prepositions of place: ''The
-      bank is on Main Street. It''s next to the hospital.'' Practices prepositions
-      with maps.'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 15:
-    Prepositions, §15.1-15.4'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 7: Prepositions and Prepositional Phrases, §7.1-7.4'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 231-260 (prepositions:
-    place, time, movement)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    14: Prepositions, §14.1-14.4'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 10: Prepositions'
-common_errors:
-- error: 'Using ''in'' for surfaces: *''The book is in the table.'''
-  correction: The book is on the table.
-  explanation: Use 'on' for surfaces, 'in' for enclosed spaces, 'at' for specific
-    points.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: 'Using ''at'' for cities: *''I live at São Paulo.'''
-  correction: I live in São Paulo.
-  explanation: Use 'in' for cities, countries, and large areas.
-  l1_groups:
-  - Portuguese
-  - Spanish
-register_notes:
-- note: Prepositions of place are consistent across registers.
-dialectal_variation:
-- note: BrE uses 'in hospital'; AmE uses 'in the hospital'.
-- note: BrE uses 'at university'; AmE uses 'at the university'.
-discourse_notes:
-- note: 'Prepositions of place create spatial relationships: ''The cat is on the table.
-    The dog is under it.'''

@@ -1,29 +1,149 @@
-grammar_point: clauses_contrast
-title: Clauses of Contrast
+citations:
+- claim: 'Core meaning: Contrast clauses show that two ideas are different or surprising
+    in relation to each other'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24:
+    Coordination (contrastive clauses)'
+  tier: 1
+- claim: 'Register distribution: In formal writing, contrast clauses are essential
+    for structured argumentation, presenting balanced viewpoints, and connecting opposing
+    ideas. Informal contrast is more common in conversation.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24:
+    Coordination (contrastive clauses)'
+  tier: 1
+- claim: 'Discourse function: Contrast clauses signal unexpected or opposing relationships
+    between propositions, guiding the reader through the argument.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24:
+    Coordination (contrastive clauses)'
+  tier: 1
+- claim: Common error '*Although he is rich, but he is unhappy.*' for Portuguese,
+    Spanish, Chinese speakers
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 24: Linking
+    words'
+  tier: 1
+- claim: Understanding clauses contrast is essential for academic writing — Oshima
+    & Hogue emphasize how writers use these structures to create clear, coherent prose
+  flagged: false
+  reliability: B
+  source: 'Oshima and Hogue (2006) Introduction to Academic Writing, 3rd ed. Pearson.
+    Ch. 5: Complex Sentences in Academic Writing'
+  tier: 2
+common_errors:
+- correction: Although he is rich, he is unhappy.
+  error: '*Although he is rich, but he is unhappy.*'
+  explanation: Using 'although' and 'but' together is redundant -- both signal contrast.
+    Choose one. This is a transfer error from L1s where using both conjunctions is
+    required or acceptable (Chinese 虽然...但是, Portuguese 'mas/porém' stacking).
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Korean
+  reliability: D
+- correction: Despite being tired, he kept working.
+  error: '*Despite he was tired, he kept working.*'
+  explanation: '''Despite'' must be followed by a noun or gerund, not a full clause
+    with subject + verb. Use ''despite the fact that + clause'' or ''despite + -ing''.
+    Confusion arises because ''although'' and ''despite'' have the same meaning but
+    different grammar.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Arabic
+  reliability: D
+- correction: Although it was raining, we went out.
+  error: '*Although the rain, we went out.*'
+  explanation: '''Although'' introduces a full clause (subject + verb), not just a
+    noun. ''The rain'' is a noun phrase; it needs a verb to form a clause. To express
+    this with a noun, use ''Despite the rain, we went out''.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+- correction: I went out, though it was raining.
+  error: '*I went out. Though it was raining.* (as two sentences)'
+  explanation: '''Though'' at the end of a sentence still connects to the previous
+    sentence as a dependent clause. Starting a new independent sentence with ''though''
+    creates a fragment in formal writing. Attach it with a comma.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Arabic
+  reliability: D
 description: 'Structures used to show contrast between two ideas: although, even though,
   though, despite, in spite of, while, whereas.'
+dialectal_variation: []
+discourse_notes:
+- note: Contrast clauses (although, even though, while, whereas, despite, in spite
+    of) structure arguments by highlighting differences between propositions, essential
+    in compare-contrast discourse across registers.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - contrast with clauses
+      - contrast with nouns
+      min_examples: 4
+    structure: Although/Even though + clause, + main clause / Despite/In spite of
+      + noun/-ing + comma + main clause
+  negative:
+    example_generator:
+      contexts:
+      - negative contrast
+      min_examples: 3
+    structure: 'Same structure: Although he did not study, he passed. / Despite not
+      studying, he passed.'
+  questions:
+    example_generator:
+      contexts: []
+    min_examples: 0
+    structure: Not typically used in questions.
+grammar_point: clauses_contrast
 level: B1
 meaning:
-  core_meaning: Contrast clauses show that two ideas are different or surprising in
-    relation to each other. Although X, Y = X is true, but Y is also true (surprisingly).
-  timeline: Depends on the tense used in each clause.
-  contrast: Although = Although it was raining, we went out. (contrast) vs Because
-    = Because it was raining, we stayed home. (cause)
   ccqs:
-  - question: Are these two ideas surprising together?
-    answer: Yes, that is contrast.
-    purpose: Tests whether the learner understands that '-ed' adjectives describe
-      how someone feels (experiencer) while '-ing' adjectives describe what causes
-      the feeling (stimulus).
-  - question: Is one idea a cause and the other a result?
-    answer: No, that is cause, not contrast.
+  - answer: Yes, that is contrast.
+    purpose: Tests whether the learner understands that contrast clauses express a
+      surprising or unexpected relationship between two ideas, where both are true
+      but seem to oppose each other.
+    question: Are these two ideas surprising together?
+  - answer: No, that is cause, not contrast.
     purpose: Tests whether the learner understands the key concept of clauses contrast.
       This is important because mastering this distinction is essential for accurate
       and natural English at B1 level.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      clauses contrast and explain why they are incorrect.
+    question: Is one idea a cause and the other a result?
+  - answer: Comparing two directly related items. "Whereas" is used for direct side-by-side
+      comparison of two clauses, while "although/even though" express a surprising
+      or concessive relationship.
+    purpose: Tests whether the learner can distinguish "whereas" and "while" (direct
+      comparison between parallel clauses) from "although/even though" (concessive
+      contrast where one clause unexpectedly coexists with the other). "Whereas she
+      is tall, her sister is short" compares two facts, whereas "Although she is short,
+      she plays basketball" shows an unexpected contrast — a key distinction in clauses
+      of contrast at B1 level.
+    question: What is the difference in meaning between these two forms?
+  - answer: Do not use 'but' with 'although/though' — choose one conjunction. 'Although
+      it was raining, we went out' is correct. 'Although it was raining, but we went
+      out' is incorrect because both words signal contrast, creating redundancy.
+    purpose: Tests whether the learner understands that 'although' and 'but' cannot
+      co-occur in standard English. This is a common error for learners whose L1s
+      use both conjunctions together (e.g., Chinese 虽然...但是, Portuguese embora...mas).
+    question: Why is 'Although it was raining, we went out' correct but 'Although
+      it was raining, but we went out' wrong?
+  contrast: Although = Although it was raining, we went out. (contrast) vs Because
+    = Because it was raining, we stayed home. (cause)
+  core_meaning: Contrast clauses show that two ideas are different or surprising in
+    relation to each other. Although X, Y = X is true, but Y is also true (surprisingly).
   example_generator:
     contexts:
     - comparing and contrasting
@@ -34,47 +154,65 @@ meaning:
     - Some languages use different structures for contrast
     - English has many options — choosing the right one depends on register
     min_examples: 5
-form:
-  affirmative:
-    structure: Although/Even though + clause, + main clause / Despite/In spite of
-      + noun/-ing + comma + main clause
-    example_generator:
-      contexts:
-      - contrast with clauses
-      - contrast with nouns
-      min_examples: 4
-  negative:
-    structure: 'Same structure: Although he did not study, he passed. / Despite not
-      studying, he passed.'
-    example_generator:
-      contexts:
-      - negative contrast
-      min_examples: 3
-  questions:
-    structure: Not typically used in questions.
-    example_generator:
-      contexts: []
-    min_examples: 0
+  timeline: Depends on the tense used in each clause.
+phonetics:
+- example_generator:
+    contexts:
+    - contrastive stress
+  l1_issue: Some L1 speakers use but instead of although in formal writing
+  note: Stress on the contrasting element
+register_notes:
+- note: 'Biber et al. (2021) — Contrast/concession clauses: formal connectors (''whereas'',
+    ''while'') are more common in academic prose; informal (''but'', ''though'') dominate
+    conversation. Ch. 10.4.1.5'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 10.4.1.5
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch.
+    15: Linking words'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24:
+    Coordination (contrastive clauses)'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 15: Coordination'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 12: Contrast'
+  validation: Swan (2016) Practical English Usage, 4th ed.(although, though, while,
+    whereas)
 sub_rules:
-- rule: Although/Even though + clause (subject + verb)
-  type: grammatical
-  examples:
+- examples:
   - Although she was tired, she kept working.
   - Even though he tried hard, he failed.
-- rule: Despite/In spite of + noun or -ing (no subject + verb)
+  rule: Although/Even though + clause (subject + verb)
   type: grammatical
-  examples:
+- examples:
   - Despite the rain, we went out.
   - In spite of feeling tired, she kept working.
-- rule: Though is more informal, can go at the end
-  type: register
-  examples:
-  - It was raining. We went out, though.
-- rule: While and whereas for direct contrast between two clauses
+  rule: Despite/In spite of + noun or -ing (no subject + verb)
   type: grammatical
-  examples:
+- examples:
+  - It was raining. We went out, though.
+  rule: Though is more informal, can go at the end
+  type: register
+- examples:
   - I like coffee, while my sister prefers tea.
   - She is outgoing, whereas her brother is shy.
+  rule: While and whereas for direct contrast between two clauses
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Students create sentences about surprising facts using although/despite.
+    duration: 10
+    name: Surprising Facts
+  tips:
+  - Use real-life surprising situations
+  - Contrast with because (cause) vs although (contrast)
+  - Practice all structures explicitly
+  - 'Swan PEU: Contrast adverbial clauses — ''although/though'' (concession), ''whereas/while''
+    (direct contrast), ''even though'' (strong concession). ''Although it was raining,
+    we went out.'' = concession.'
+title: Clauses of Contrast
 use:
 - context: Expressing surprise
   description: When two facts are unexpectedly both true
@@ -86,84 +224,3 @@ use:
   examples:
   - While technology has benefits, it also has risks.
   - Although the plan is good, it is expensive.
-phonetics:
-- note: Stress on the contrasting element
-  example_generator:
-    contexts:
-    - contrastive stress
-  l1_issue: Some L1 speakers use but instead of although in formal writing
-teaching:
-  methodology: PPP
-  tips:
-  - Use real-life surprising situations
-  - Contrast with because (cause) vs although (contrast)
-  - Practice all structures explicitly
-  recommended_activities:
-  - name: Surprising Facts
-    duration: 10
-    adaptation_notes: Students create sentences about surprising facts using although/despite.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
-    Coordination, §16.6 (contrastive clauses)'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 15: Coordination, §15.2'
-  validation: Swan (2016) Practical English Usage, 4th ed. Entries 315-320 (although,
-    though, while, whereas)
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    15: Linking words'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 12: Contrast'
-common_errors:
-- error: '*Although he is rich, but he is unhappy.*'
-  correction: Although he is rich, he is unhappy.
-  explanation: Using 'although' and 'but' together is redundant -- both signal contrast.
-    Choose one. This is a transfer error from L1s where using both conjunctions is
-    required or acceptable (Chinese 虽然...但是, Portuguese 'mas/porém' stacking).
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-  - Korean
-- error: '*Despite he was tired, he kept working.*'
-  correction: Despite being tired, he kept working.
-  explanation: '''Despite'' must be followed by a noun or gerund, not a full clause
-    with subject + verb. Use ''despite the fact that + clause'' or ''despite + -ing''.
-    Confusion arises because ''although'' and ''despite'' have the same meaning but
-    different grammar.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - Arabic
-- error: '*Although the rain, we went out.*'
-  correction: Although it was raining, we went out.
-  explanation: '''Although'' introduces a full clause (subject + verb), not just a
-    noun. ''The rain'' is a noun phrase; it needs a verb to form a clause. To express
-    this with a noun, use ''Despite the rain, we went out''.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-- error: '*I went out. Though it was raining.* (as two sentences)'
-  correction: I went out, though it was raining.
-  explanation: '''Though'' at the end of a sentence still connects to the previous
-    sentence as a dependent clause. Starting a new independent sentence with ''though''
-    creates a fragment in formal writing. Attach it with a comma.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-  - Arabic
-register_notes:
-- note: In formal writing, relative clauses are essential for precision and are a
-    marker of proficient writing.
-- note: In conversation, defining relative clauses are more common than non-defining.
-- note: In academic writing, both defining and non-defining relative clauses are used
-    extensively.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In academic writing, relative clauses are essential for precision and are
-    a marker of proficient writing.
-- note: In conversation, defining relative clauses are more common than non-defining.
-- note: In formal writing, 'whom' is used for object relative clauses.

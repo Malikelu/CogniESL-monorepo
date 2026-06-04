@@ -1,42 +1,77 @@
-grammar_point: purpose_clauses_a2
-title: Purpose Clauses (so that / in order to)
-description: Simple structures to express why someone does something. At A2, we focus
-  on 'to + verb', 'in order to', and 'so that' to explain reasons and goals.
-level: A2
-meaning:
-  core_meaning: Expresses the goal or intention behind an action -- answers 'Why?'
-    with intention, not cause.
-  timeline: Present or past form shows when the intention existed.
-  contrast: '''To + verb'' = simple purpose (same subject): "I went to buy milk."
-
-    ''In order to'' = more formal/emphatic: "I went in order to buy milk."
-
-    ''So that'' = purpose with different subjects or modals: "I went so that I could
-    buy milk."
-
-    '
-  ccqs:
-  - question: When do we use so that instead of to
-    answer: When the purpose clause has a different subject.
-    purpose: Tests whether the learner can identify the purpose or goal of an action.
-      Purpose clauses require specific structures (to, in order to, so that) that
-      differ from reason clauses.
-  - question: Can we use a different structure here with the same meaning?
-    answer: No — changing the structure would change the meaning or make the sentence
-      ungrammatical.
-    purpose: Tests whether the learner understands that purpose clauses a2 is the
-      only appropriate structure for this meaning/context.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      purpose clauses a2 and explain why they are incorrect.
-  example_generator:
-    contexts:
-    - everyday situations
-    cultural_notes: []
-    min_examples: 5
+citations:
+- claim: 'Core meaning: Expresses the goal or intention behind an action -- answers ''Why?'' with intention, not cause'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24: Coordination (purpose clauses)'
+  tier: 1
+- claim: 'Discourse function: In academic writing, relative clauses are essential for precision and are a marker of proficient
+    wri'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24: Coordination (purpose clauses)'
+  tier: 1
+- claim: Common error '*I went to the store for to buy milk.*' for Portuguese, Spanish speakers
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 27: Purpose clauses'
+  tier: 1
+- claim: Oshima & Hogue's Great Writing series demonstrates how this grammatical structure functions in academic writing contexts.
+    Their approach connects grammar instruction to writing outcomes, showing learners how accurate use of this structure improves
+    paragraph cohesion, essay organization, and academic register.
+  source: Oshima, A. and Hogue, A. (2006). Introduction to Academic Writing, 3rd ed. Pearson Longman.
+  tier: 2
+common_errors:
+- correction: I went to the store to buy milk.
+  error: '*I went to the store for to buy milk.*'
+  explanation: Use 'to + base verb' for purpose, not 'for to + verb'. This archaic form ('for to') does not exist in modern
+    standard English. The error comes from overgeneralizing 'for' as a purpose marker before infinitives.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: D
+- correction: I study English to get a better job.
+  error: '*I study English for get a better job.*'
+  explanation: Purpose is expressed with 'to + infinitive', not 'for + base verb'. 'For' is followed by a noun (for a job),
+    not a verb. This error directly translates the structure from Portuguese/Spanish 'para conseguir'.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: D
+- correction: She called him so that he could come early.
+  error: '*She called him so that he can come early.*'
+  explanation: '''So that'' purpose clause requires a modal that matches the tense of the main verb. If the main verb is past
+    (''called''), the modal should be ''can'' to ''could''. Tense harmony between clauses is expected.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Korean
+  reliability: D
+- correction: I am saving money in order to buy a car.
+  error: '*I am saving money in order I can buy a car.*'
+  explanation: '''In order to'' (not ''in order'' alone) introduces a purpose infinitive. The full form requires ''to'' before
+    the verb. Dropping ''to'' creates an incomplete structure. Same rule applies to ''so as to''.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Chinese
+  reliability: D
+description: Simple structures to express why someone does something. At A2, we focus on 'to + verb', 'in order to', and 'so
+  that' to explain reasons and goals.
+dialectal_variation: []
+discourse_notes:
+- note: Purpose clauses at A2 level focus on basic to-infinitive structures (I study to learn), progressing to more complex
+    patterns.
 form:
   affirmative:
+    example_generator:
+      contexts:
+      - education and school
+      - shopping and commerce
+      - health and wellbeing
+      min_examples: 4
     structure: 'to + verb: "I went to buy milk."
 
       in order to + verb: "I went in order to buy milk."
@@ -44,137 +79,122 @@ form:
       so that + subject + can/will: "I went so that I can buy milk."
 
       '
+  negative:
     example_generator:
       contexts:
       - education and school
-      - shopping and commerce
-      - health and wellbeing
       min_examples: 4
-  negative:
     structure: 'in order not to + verb: "I left early in order not to be late."
 
       so that + subject + won''t/can''t: "I left early so that I won''t be late."
 
       '
-    example_generator:
-      contexts:
-      - education and school
-      min_examples: 4
   questions:
-    structure: Why + auxiliary + subject + verb? 'Why did you go?' 'To buy milk.'
     example_generator:
       contexts:
       - social interactions
       min_examples: 4
+    structure: Why + auxiliary + subject + verb? 'Why did you go?' 'To buy milk.'
+grammar_point: purpose_clauses_a2
+level: A2
+meaning:
+  ccqs:
+  - answer: When the purpose clause has a different subject.
+    purpose: Tests whether the learner can identify the purpose or goal of an action. Purpose clauses require specific structures
+      (to, in order to, so that) that differ from reason clauses.
+    question: When do we use so that instead of to
+  - answer: No — changing the structure would change the meaning or make the sentence ungrammatical.
+    purpose: Tests whether the learner understands that purpose clauses a2 is the only appropriate structure for this meaning/context.
+    question: Can we use a different structure here with the same meaning?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner knows the mandatory modal verb slot after 'so that'. At A2, learners frequently produce
+      'so that everyone understand' without a modal, which is ungrammatical. The 'so that' purpose clause requires a modal
+      (can, will, could, would) to be complete.
+    question: What is the difference in meaning between these two forms?
+  - answer: '''I study hard to pass the exam.'' For purpose, use ''to + infinitive'', NOT ''for to''.'
+    purpose: Tests whether the learner uses 'to + infinitive' (not 'for to') for purpose clauses (Swan PEU 2016, entry 113.2).
+    question: Which is correct? *'I study hard for to pass the exam' or 'I study hard to pass the exam'?
+  contrast: '''To + verb'' = simple purpose (same subject): "I went to buy milk."
+
+    ''In order to'' = more formal/emphatic: "I went in order to buy milk."
+
+    ''So that'' = purpose with different subjects or modals: "I went so that I could buy milk."
+
+    '
+  core_meaning: Expresses the goal or intention behind an action -- answers 'Why?' with intention, not cause.
+  example_generator:
+    contexts:
+    - everyday situations
+    cultural_notes: []
+    min_examples: 5
+  timeline: Present or past form shows when the intention existed.
+phonetics:
+- example_generator:
+    contexts:
+    - purpose clause pronunciation
+  l1_issue: Portuguese speakers may say 'for buy' instead of 'to buy'. Teach the correct form.
+  note: 'To is weak before verbs: ''to buy'' → /tə baɪ/, ''to study'' → /tə ˈstʌdi/.'
+register_notes:
+- note: In conversation, defining relative clauses are more common than non-defining.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In academic writing, both defining and non-defining relative clauses are used extensively.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Purpose clauses: academic prose uses more explicit purpose markers (in order to, so that);
+    conversation uses simpler markers (to-infinitive). Ch. 10.2'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 10.2
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 15: Purpose clauses'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24: Coordination (purpose clauses)'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Ch. 27: Coordination'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners. Ch. 12: Purpose'
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(purpose: to, in order to, so that)'
 sub_rules:
-- rule: To + base verb for same subject
-  type: grammatical
-  examples:
+- examples:
   - I went to the store to buy milk
   - She studies to pass the exam
-- rule: So that + subject + can/will/could/would (different subject)
+  rule: To + base verb for same subject
   type: grammatical
-  examples:
+- examples:
   - I spoke slowly so that they could understand
   - She left early so that she would not be late
+  rule: So that + subject + can/will/could/would (different subject)
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students explain their daily actions using purpose clauses: ''I woke up early to catch the bus.'''
+    duration: 15
+    name: Why Did You Do That
+  tips:
+  - 'Ask ''Why?'' and get ''To...'' answers: ''Why did you come?'' ''To see you.'''
+  - 'Practice the most common pattern first: ''I went to + verb''.'
+  - 'Compare: ''I came because I was invited'' (reason) vs ''I came to see you'' (purpose).'
+  - 'Swan PEU: A2 purpose — ''to + infinitive'' is the simplest and most common form for purpose: ''I study to learn,'' ''I
+    came to see you.'' Teach before introducing ''so that.'''
+title: Purpose Clauses (so that / in order to)
 use:
-- name: Simple Purpose (to + verb)
-  description: The most common way to express purpose. Same subject in both clauses.
+- description: The most common way to express purpose. Same subject in both clauses.
   examples:
   - I came to see you.
   - She called to say hello.
   - I study to pass the exam.
   key_point: Subject of main clause and purpose clause is the same.
-- name: Emphatic/Formal Purpose (in order to)
-  description: More formal or emphatic than 'to'. Same meaning, stronger tone.
+  name: Simple Purpose (to + verb)
+- description: More formal or emphatic than 'to'. Same meaning, stronger tone.
   examples:
   - I'm studying in order to pass.
   - We met in order to discuss the plan.
   key_point: In order to = 'to' with extra emphasis or formality.
-- name: Purpose with Modals (so that)
-  description: Used when you want to include a modal verb (can, could, will, would)
-    or a different subject.
+  name: Emphatic/Formal Purpose (in order to)
+- description: Used when you want to include a modal verb (can, could, will, would) or a different subject.
   examples:
   - I told him so that he would know.
   - She left early so that she wouldn't be late.
   - I speak slowly so that everyone can understand.
   key_point: So that + subject + modal verb (can, will, could, would).
-phonetics:
-- note: 'To is weak before verbs: ''to buy'' → /tə baɪ/, ''to study'' → /tə ˈstʌdi/.'
-  example_generator:
-    contexts:
-    - purpose clause pronunciation
-  l1_issue: Portuguese speakers may say 'for buy' instead of 'to buy'. Teach the correct
-    form.
-teaching:
-  methodology: PPP
-  tips:
-  - 'Ask ''Why?'' and get ''To...'' answers: ''Why did you come?'' ''To see you.'''
-  - 'Practice the most common pattern first: ''I went to + verb''.'
-  - 'Compare: ''I came because I was invited'' (reason) vs ''I came to see you'' (purpose).'
-  recommended_activities:
-  - name: Why Did You Do That
-    duration: 15
-    adaptation_notes: 'Students explain their daily actions using purpose clauses:
-      ''I woke up early to catch the bus.'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
-    Coordination, §16.7 (purpose clauses)'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 15: Coordination, §15.3'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 420-425 (purpose:
-    to, in order to, so that)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    15: Purpose clauses'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 12: Purpose'
-common_errors:
-- error: '*I went to the store for to buy milk.*'
-  correction: I went to the store to buy milk.
-  explanation: Use 'to + base verb' for purpose, not 'for to + verb'. This archaic
-    form ('for to') does not exist in modern standard English. The error comes from
-    overgeneralizing 'for' as a purpose marker before infinitives.
-  l1_groups:
-  - Portuguese
-  - Spanish
-- error: '*I study English for get a better job.*'
-  correction: I study English to get a better job.
-  explanation: Purpose is expressed with 'to + infinitive', not 'for + base verb'.
-    'For' is followed by a noun (for a job), not a verb. This error directly translates
-    the structure from Portuguese/Spanish 'para conseguir'.
-  l1_groups:
-  - Portuguese
-  - Spanish
-- error: '*She called him so that he can come early.*'
-  correction: She called him so that he could come early.
-  explanation: '''So that'' purpose clause requires a modal that matches the tense
-    of the main verb. If the main verb is past (''called''), the modal should be ''can''
-    to ''could''. Tense harmony between clauses is expected.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-  - Korean
-- error: '*I am saving money in order I can buy a car.*'
-  correction: I am saving money in order to buy a car.
-  explanation: '''In order to'' (not ''in order'' alone) introduces a purpose infinitive.
-    The full form requires ''to'' before the verb. Dropping ''to'' creates an incomplete
-    structure. Same rule applies to ''so as to''.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - Chinese
-register_notes:
-- note: In formal writing, relative clauses are essential for precision and are a
-    marker of proficient writing.
-- note: In conversation, defining relative clauses are more common than non-defining.
-- note: In academic writing, both defining and non-defining relative clauses are used
-    extensively.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In academic writing, relative clauses are essential for precision and are
-    a marker of proficient writing.
-- note: In conversation, defining relative clauses are more common than non-defining.
-- note: In formal writing, 'whom' is used for object relative clauses.
+  name: Purpose with Modals (so that)

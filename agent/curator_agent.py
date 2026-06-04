@@ -142,17 +142,15 @@ async def _generate_one(key: str) -> bool:
     from agency_swarm import set_openai_client
     import openai
 
-    openai_key = os.getenv("OPENAI_API_KEY") or os.getenv("OPENROUTER_API_KEY")
-    if not openai_key:
-        log.error("No OPENAI_API_KEY or OPENROUTER_API_KEY — cannot generate")
+    deepseek_key = os.getenv("DEEPSEEK_API_KEY")
+    if not deepseek_key:
+        log.error("DEEPSEEK_API_KEY is required")
         return False
 
-    # Configure client (use OpenRouter if specified)
-    base_url = os.getenv("OPENROUTER_BASE_URL", None)
     client = openai.AsyncOpenAI(
-        api_key=openai_key,
-        base_url=base_url,
-    ) if base_url else openai.AsyncOpenAI(api_key=openai_key)
+        api_key=deepseek_key,
+        base_url="https://api.deepseek.com/v1",
+    )
     set_openai_client(client)
 
     project_name = f"curator_{key}"

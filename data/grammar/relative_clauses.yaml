@@ -1,33 +1,193 @@
-grammar_point: relative_clauses
-title: Relative Clauses (Defining and Non-Defining)
+citations:
+- claim: 'Core meaning: Relative clauses add information about a noun'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 28:
+    Introduction to Relative Clauses'
+  tier: 1
+- claim: 'Register distribution: Relative clauses are used in all registers, from
+    informal conversation to academic writing.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 28:
+    Introduction to Relative Clauses'
+  tier: 1
+- claim: 'Discourse function: Relative clauses create cohesion by linking new information
+    to known information: ''A man walked into the bar'''
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 28:
+    Introduction to Relative Clauses'
+  tier: 1
+- claim: 'Common error ''Using ''that'' in non-defining clauses: *''My sister, that
+    lives'' for Portuguese, Spanish, French speakers'
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 13: Relative
+    clauses'
+  tier: 1
+- claim: 'Dialectal variation: In BrE, ''which'' can be used in defining clauses:
+    ''The book which I read.'' AmE strongly prefers ''that'' in defining clauses.'
+  reliability: B
+  source: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 12: Relative Clauses'
+  tier: 1
+- claim: CGEL distinguishes integrated vs supplementary (not restrictive vs non-restrictive)
+    relatives and identifies fused relatives (Ch.12).
+  reliability: A
+  source: Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 12
+  tier: 2
+- claim: Understanding relative clauses is essential for academic writing — Oshima
+    & Hogue emphasize how writers use these structures to create clear, coherent prose
+  flagged: false
+  reliability: B
+  source: 'Oshima and Hogue (2006) Introduction to Academic Writing, 3rd ed. Pearson.
+    Ch. 5: Complex Sentences in Academic Writing'
+  tier: 2
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents
+    how transfer effects are non-linear, determined by functional fit between L1 and
+    L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects
+    are non-linear — determined by functional fit between L1 and L2 systems rather
+    than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning.
+    Routledge.
+  tier: 2
+common_errors:
+- correction: My sister, who lives in Paris, is visiting.
+  error: 'Using ''that'' in non-defining clauses: *''My sister, that lives in Paris,
+    is visiting.'''
+  explanation: '''That'' cannot be used in non-defining relative clauses.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+- correction: The man who came yesterday was rude.
+  error: 'Using ''which'' for people: *''The man which came yesterday was rude.'''
+  explanation: 'Swan PEU: ''Who'' for people, ''which'' for things. ''That'' can replace
+    either in defining relative clauses. Swan & Smith (2001) note that Spanish, French,
+    and Dutch do not distinguish relative pronouns by person/thing in the same way
+    English does.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Dutch
+  - Italian
+  reliability: B
+  source: 'Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+    Ch. 22: Spanish speakers; Ch. 26: French speakers; Ch. 1: Dutch speakers.'
+- correction: The man who came yesterday was rude.
+  error: 'Using double subject: *''The man who he came yesterday was rude.'''
+  explanation: 'Swan PEU: The relative pronoun replaces the subject/object. Adding
+    ''he/she'' creates a double subject error. Common in L1s with resumptive pronouns
+    (Arabic, Persian).'
+  l1_groups:
+  - Arabic
+  - Persian
+  - Portuguese
+  - Spanish
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: The man who came yesterday was rude.
+  error: 'Omitting relative pronoun when it''s the subject: *''The man came yesterday
+    was rude.'''
+  explanation: 'Swan PEU: When the relative pronoun is the subject of the relative
+    clause, it cannot be omitted. Swan & Smith (2001) note that Spanish, French, and
+    other L1s allow contact clauses (zero relative) where English requires an overt
+    pronoun.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Japanese
+  - French
+  - Italian
+  - Korean
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
 description: Clauses that modify nouns, providing essential (defining) or extra (non-defining)
   information about the noun they describe.
+dialectal_variation:
+- note: 'In BrE, ''which'' can be used in defining clauses: ''The book which I read.''
+    AmE strongly prefers ''that'' in defining clauses.'
+- note: 'In some dialects, ''what'' replaces ''that'': ''The book what I read.'' (non-standard)'
+- note: 'In informal speech, relative pronouns are often omitted when they are the
+    object: ''The guy (who) I met yesterday.'''
+discourse_notes:
+- note: 'Relative clauses create cohesion by linking new information to known information:
+    ''A man walked into the bar. The man, who was wearing a hat, ordered a drink.'''
+- note: 'Defining clauses identify which person/thing we mean: ''The book that I recommended''
+    (specific book).'
+- note: 'Non-defining clauses add extra information: ''My sister, who lives in Paris,
+    is visiting'' (we already know which sister).'
+- note: 'In academic writing, relative clauses allow complex ideas to be expressed
+    concisely: ''The theory that was proposed by Smith has been widely accepted.'''
+- note: 'CGEL (Ch.12) identifies FUSED RELATIVE constructions: ''what I need'' (fused
+    relative with ''what''), ''whoever did this'' (fused relative with ''-ever''),
+    ''the poor'' (fused-head NP with adjective as head). In fused relatives, there
+    is NO separate antecedent NP — the relativizer itself functions as head. This
+    is fundamentally different from ''the thing that I need.'''
+  source: Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 12
+form:
+  affirmative:
+    example_generator:
+    - The book that I bought is red. (defining)
+    - The book, which I bought yesterday, is red. (non-defining)
+    - The woman who lives next door is a doctor. (defining)
+    - My sister, who lives in Paris, is visiting. (non-defining)
+    min_examples: 4
+    structure: 'Defining: Noun + relative pronoun (who/which/that) + clause (no commas)
+      / Non-defining: Noun + comma + relative pronoun (who/which) + clause + comma'
+  negative:
+    example_generator:
+    - The book that I didn't buy is blue.
+    - The woman who doesn't live here anymore moved away.
+    - The restaurant, which we didn't like, has closed.
+    min_examples: 4
+    structure: Negative relative clauses add 'not' before the verb
+  questions:
+    example_generator:
+    - Do you know the girl who lives next door?
+    - Have you read the book that I recommended?
+    - Is this the restaurant where we had dinner?
+    min_examples: 4
+    structure: Questions with relative clauses follow standard question order
+grammar_point: relative_clauses
 level: B1
 meaning:
+  ccqs:
+  - answer: Yes = defining (no commas). No = non-defining (use commas).
+    purpose: Tests whether the learner understands the difference between defining
+      relative clauses (essential information, no commas) and non-defining relative
+      clauses (extra information, with commas).
+    question: Is the information essential to identify the noun?
+  - answer: Yes = non-defining. No = defining.
+    purpose: Tests whether the learner can apply the 'removal test' to distinguish
+      between defining and non-defining clauses. If the sentence still makes sense
+      without the clause, it is non-defining.
+    question: Can we remove the relative clause and the sentence still makes sense?
+  - answer: No -- only 'who' or 'which'. 'That' is for defining clauses only.
+    purpose: Tests whether the learner knows the structural rule that 'that' cannot
+      be used in non-defining relative clauses. This is a common error at B1-B2 level.
+    question: Do we use 'that' in non-defining relative clauses?
+  - answer: No. 'What' cannot be used as a relative pronoun after a noun. The correct
+      forms are 'The book that I bought is interesting' (defining) or 'The book, which
+      I bought yesterday, is interesting' (non-defining). 'What' is used in fused
+      relative constructions ('What I bought was interesting') but never after an
+      antecedent noun.
+    purpose: Tests whether the learner knows that 'what' cannot function as a relative
+      pronoun modifying a noun. This is a common error among learners whose L1 uses
+      the same word for both 'what' and 'that/which' (e.g., Portuguese 'que', Spanish
+      'que'). In standard English, 'what' is only used in free/fused relative clauses,
+      not in clauses that modify an explicit noun.
+    question: Can we say 'The book what I bought is interesting'?
+  contrast: '''Defining'' = ''The book that I bought is red.'' (specific book — essential
+    info) vs ''Non-defining'' = ''The book, which I bought yesterday, is red.'' (extra
+    info — can be removed)'
   core_meaning: Relative clauses add information about a noun. Defining relative clauses
     identify WHICH person or thing we mean (essential information). Non-defining relative
     clauses add extra information that is not essential (the sentence would still
     make sense without it).
-  timeline: N/A — relative clauses match the tense of the main clause. They can refer
-    to past, present, or future.
-  contrast: '''Defining'' = ''The book that I bought is red.'' (specific book — essential
-    info) vs ''Non-defining'' = ''The book, which I bought yesterday, is red.'' (extra
-    info — can be removed)'
-  ccqs:
-  - question: Is the information essential to identify the noun?
-    answer: Yes = defining (no commas). No = non-defining (use commas).
-    purpose: Tests whether the learner understands the difference between defining
-      relative clauses (essential information, no commas) and non-defining relative
-      clauses (extra information, with commas).
-  - question: Can we remove the relative clause and the sentence still makes sense?
-    answer: Yes = non-defining. No = defining.
-    purpose: Tests whether the learner can apply the 'removal test' to distinguish
-      between defining and non-defining clauses. If the sentence still makes sense
-      without the clause, it is non-defining.
-  - question: Do we use 'that' in non-defining relative clauses?
-    answer: No -- only 'who' or 'which'. 'That' is for defining clauses only.
-    purpose: Tests whether the learner knows the structural rule that 'that' cannot
-      be used in non-defining relative clauses. This is a common error at B1-B2 level.
   example_generator:
     contexts:
     - describing people
@@ -39,65 +199,152 @@ meaning:
     - Avoid examples that assume specific cultural knowledge
     - Keep examples concrete and relatable
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Defining: Noun + relative pronoun (who/which/that) + clause (no commas)
-      / Non-defining: Noun + comma + relative pronoun (who/which) + clause + comma'
-    example_generator:
-    - The book that I bought is red. (defining)
-    - The book, which I bought yesterday, is red. (non-defining)
-    - The woman who lives next door is a doctor. (defining)
-    - My sister, who lives in Paris, is visiting. (non-defining)
-    min_examples: 4
-  negative:
-    structure: Negative relative clauses add 'not' before the verb
-    example_generator:
-    - The book that I didn't buy is blue.
-    - The woman who doesn't live here anymore moved away.
-    - The restaurant, which we didn't like, has closed.
-    min_examples: 4
-  questions:
-    structure: Questions with relative clauses follow standard question order
-    example_generator:
-    - Do you know the girl who lives next door?
-    - Have you read the book that I recommended?
-    - Is this the restaurant where we had dinner?
-    min_examples: 4
+  timeline: N/A — relative clauses match the tense of the main clause. They can refer
+    to past, present, or future.
+phonetics:
+- example_generator:
+  - who /huː/ or /uː/
+  - which /wɪtʃ/
+  - that /ðət/
+  l1_issue: Portuguese and Spanish speakers often over-pronounce relative pronouns.
+    Teach weak forms for natural speech.
+  note: 'Relative pronouns are usually unstressed in connected speech: ''who'' → /huː/
+    or even /uː/, ''which'' → /wɪtʃ/ with weak stress, ''that'' → /ðət/.'
+- example_generator:
+  - Pause before and after non-defining clauses
+  l1_issue: Many L1 speakers do not pause for commas in relative clauses. Teach the
+    pause to improve clarity.
+  note: 'In non-defining clauses, the comma creates a pause in speech: ''My sister,
+    / pause / who lives in Paris, / pause / is visiting.'''
+register_notes:
+- note: Relative clauses are used in all registers, from informal conversation to
+    academic writing.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In academic writing, relative clauses are essential for precision: ''The
+    participants who completed the survey were aged 18-25.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In formal writing, non-defining clauses add supplementary information: ''The
+    study, which was conducted in 2020, found that...'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In conversation, relative clauses are often reduced or omitted: ''The guy
+    (who) I met yesterday'' (informal).'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (1999) — Relative clause distribution: academic prose has far
+    more relative clauses (especially with which, whose, of which) than conversation.
+    Conversation prefers that and zero relative. Ch. 8.7.1.2'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 8.7.1.2
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch.
+    13: Relative clauses'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 28:
+    Introduction to Relative Clauses'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 12: Relative Clauses'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 12: Relative clauses'
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(relative clauses: defining,
+    non-defining, who, which, that, where)'
 sub_rules:
-- rule: 'Relative pronouns: who (people), which (things), that (people and things,
-    defining only), whose (possession), where (places), when (time)'
-  type: grammatical
-  examples:
+- examples:
   - The man who called you is my brother.
   - The book which I read was interesting.
   - The student that passed the exam studied hard.
   - The woman whose car was stolen called the police.
   - The city where I was born is beautiful.
   - I remember the day when we met.
-- rule: 'Defining relative clauses: no commas, can use ''that'', essential information'
-  type: punctuation
-  examples:
+  rule: 'Relative pronouns: who (people), which (things), that (people and things,
+    defining only), whose (possession), where (places), when (time)'
+  type: grammatical
+- examples:
   - The book that I bought is red. (no commas, essential)
   - I like movies that have happy endings.
-- rule: 'Non-defining relative clauses: use commas, cannot use ''that'', extra information'
+  rule: 'Defining relative clauses: no commas, can use ''that'', essential information'
   type: punctuation
-  examples:
+- examples:
   - My sister, who lives in Paris, is visiting. (commas, extra info)
   - The Eiffel Tower, which is in France, is famous.
-- rule: Relative pronoun can be omitted when it is the object of the clause (defining
-    only)
-  type: grammatical
-  examples:
+  rule: 'Non-defining relative clauses: use commas, cannot use ''that'', extra information'
+  type: punctuation
+- examples:
   - The book (that) I bought is red. (object — can omit)
   - The girl (who) you met is my sister. (object — can omit)
   - The man who called you is my brother. (subject — CANNOT omit)
-- rule: Prepositions can go before the relative pronoun (formal) or at the end (informal)
+  rule: Relative pronoun can be omitted when it is the object of the clause (defining
+    only)
   type: grammatical
-  examples:
+- examples:
   - The person to whom I spoke was helpful. (formal)
   - The person who I spoke to was helpful. (informal)
   - The city in which I live is beautiful. (formal)
   - The city which I live in is beautiful. (informal)
+  rule: Prepositions can go before the relative pronoun (formal) or at the end (informal)
+  type: grammatical
+teaching:
+  methodology: Guided discovery with sentence combining
+  recommended_activities:
+  - adaptation_notes: 'Give students pairs of simple sentences. They combine them
+      using relative clauses: ''The man is my brother. He called you.'' → ''The man
+      who called you is my brother.'''
+    duration: 15
+    name: Sentence Combining
+  - adaptation_notes: Show sentences with and without commas. Students identify whether
+      they are defining or non-defining and explain why.
+    duration: 10
+    name: Defining or Non-Defining?
+  - adaptation_notes: 'Show a busy picture. Students describe people and things using
+      relative clauses: ''The woman who is wearing a red dress is my teacher.'' ''The
+      car, which is parked outside, is mine.'''
+    duration: 15
+    name: Describe the Picture
+  - adaptation_notes: 'Students choose the correct relative pronoun: ''The person
+      ___ called you is my brother.'' (who/which/that). Practices choosing the right
+      pronoun.'
+    duration: 10
+    name: Relative Pronoun Quiz
+  tips:
+  - Start with defining relative clauses using 'who' and 'which'. Master these before
+    introducing non-defining.
+  - 'Use color coding: highlight nouns in blue, relative clauses in yellow. Defining
+    = no commas, non-defining = commas.'
+  - Teach the comma rule explicitly. This is the most common error — students forget
+    commas in non-defining clauses.
+  - 'Practice relative pronoun omission: ''The book (that) I bought.'' Only omit when
+    the pronoun is the object.'
+  - 'Use sentence combining: give two simple sentences and students combine them with
+    a relative clause. ''The woman is a doctor. She lives next door.'' → ''The woman
+    who lives next door is a doctor.'''
+  - 'Swan PEU: Defining vs non-defining relative clauses — ''My brother who lives
+    in London'' (I have more than one) vs ''My brother, who lives in London'' (I have
+    only one).'
+  - 'Swan PEU: ''Whom'' is the object form of ''who'' but is increasingly replaced
+    by ''who'' in informal English. ''The man (who/whom) I saw''.'
+  - 'Swan PEU: ''Where'', ''when'', ''why'' as relative adverbs — ''the place where
+    we met'', ''the day when we met'', ''the reason why I left''.'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 12: CGEL (Ch.12)
+    distinguishes INTEGRATED (restrictive) relatives — ''the book [that I read]''
+    — from SUPPLEMENTARY (non-restrictive) relatives — ''the book, [which I read],
+    was great.'' CGEL avoids the terms ''restrictive/non-restrictive'' because the
+    distinction is syntactic (integrated into NP structure vs. detached supplement),
+    not just semantic. Fused relatives (''what I need'' = ''the thing that I need'')
+    are a third type where the relativizer fuses with the head noun.'
+  - 'Celce-Murcia & Larsen-Freeman (1999) The Grammar Book, 2nd ed. Heinle & Heinle.
+    Ch. 28-29: GB 2nd ed. (Ch.28-29) distinguishes INTEGRATED (restrictive) relatives
+    — ''the book [that I read]'' — from SUPPLEMENTARY (non-strictive) relatives —
+    ''the book, [which I read], was great.'' Supplementary relatives are syntactically
+    detached (like a comment) while integrated relatives are part of the NP. This
+    affects pronoun choice: ''that'' for integrated (informal), ''which'' for both,
+    ''who'' for human antecedents. Whose for possessive: ''the man whose car was stolen.'''
+title: Relative Clauses (Defining and Non-Defining)
 use:
 - context: Describing people
   description: Identifying or giving information about people
@@ -125,96 +372,3 @@ use:
   - I remember the day when we first met.
   - The year when I graduated was 2015.
   - That was the moment when everything changed.
-phonetics:
-- note: 'Relative pronouns are usually unstressed in connected speech: ''who'' → /huː/
-    or even /uː/, ''which'' → /wɪtʃ/ with weak stress, ''that'' → /ðət/.'
-  example_generator:
-  - who /huː/ or /uː/
-  - which /wɪtʃ/
-  - that /ðət/
-  l1_issue: Portuguese and Spanish speakers often over-pronounce relative pronouns.
-    Teach weak forms for natural speech.
-- note: 'In non-defining clauses, the comma creates a pause in speech: ''My sister,
-    / pause / who lives in Paris, / pause / is visiting.'''
-  example_generator:
-  - Pause before and after non-defining clauses
-  l1_issue: Many L1 speakers do not pause for commas in relative clauses. Teach the
-    pause to improve clarity.
-teaching:
-  methodology: Guided discovery with sentence combining
-  tips:
-  - Start with defining relative clauses using 'who' and 'which'. Master these before
-    introducing non-defining.
-  - 'Use color coding: highlight nouns in blue, relative clauses in yellow. Defining
-    = no commas, non-defining = commas.'
-  - Teach the comma rule explicitly. This is the most common error — students forget
-    commas in non-defining clauses.
-  - 'Practice relative pronoun omission: ''The book (that) I bought.'' Only omit when
-    the pronoun is the object.'
-  - 'Use sentence combining: give two simple sentences and students combine them with
-    a relative clause. ''The woman is a doctor. She lives next door.'' → ''The woman
-    who lives next door is a doctor.'''
-  recommended_activities:
-  - name: Sentence Combining
-    duration: 15
-    adaptation_notes: 'Give students pairs of simple sentences. They combine them
-      using relative clauses: ''The man is my brother. He called you.'' → ''The man
-      who called you is my brother.'''
-  - name: Defining or Non-Defining?
-    duration: 10
-    adaptation_notes: Show sentences with and without commas. Students identify whether
-      they are defining or non-defining and explain why.
-  - name: Describe the Picture
-    duration: 15
-    adaptation_notes: 'Show a busy picture. Students describe people and things using
-      relative clauses: ''The woman who is wearing a red dress is my teacher.'' ''The
-      car, which is parked outside, is mine.'''
-  - name: Relative Pronoun Quiz
-    duration: 10
-    adaptation_notes: 'Students choose the correct relative pronoun: ''The person
-      ___ called you is my brother.'' (who/which/that). Practices choosing the right
-      pronoun.'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
-    Relative Clauses, §11.1-11.5'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 12: Relative Clauses, §12.1-12.5'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 470-480 (relative
-    clauses: defining, non-defining, who, which, that, where)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    13: Relative clauses, §13.1-13.4'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 12: Relative clauses'
-common_errors:
-- error: 'Using ''that'' in non-defining clauses: *''My sister, that lives in Paris,
-    is visiting.'''
-  correction: My sister, who lives in Paris, is visiting.
-  explanation: '''That'' cannot be used in non-defining relative clauses.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: Relative clauses are used in all registers, from informal conversation to
-    academic writing.
-- note: 'In academic writing, relative clauses are essential for precision: ''The
-    participants who completed the survey were aged 18-25.'''
-- note: 'In formal writing, non-defining clauses add supplementary information: ''The
-    study, which was conducted in 2020, found that...'''
-- note: 'In conversation, relative clauses are often reduced or omitted: ''The guy
-    (who) I met yesterday'' (informal).'
-dialectal_variation:
-- note: 'In BrE, ''which'' can be used in defining clauses: ''The book which I read.''
-    AmE strongly prefers ''that'' in defining clauses.'
-- note: 'In some dialects, ''what'' replaces ''that'': ''The book what I read.'' (non-standard)'
-- note: 'In informal speech, relative pronouns are often omitted when they are the
-    object: ''The guy (who) I met yesterday.'''
-discourse_notes:
-- note: 'Relative clauses create cohesion by linking new information to known information:
-    ''A man walked into the bar. The man, who was wearing a hat, ordered a drink.'''
-- note: 'Defining clauses identify which person/thing we mean: ''The book that I recommended''
-    (specific book).'
-- note: 'Non-defining clauses add extra information: ''My sister, who lives in Paris,
-    is visiting'' (we already know which sister).'
-- note: 'In academic writing, relative clauses allow complex ideas to be expressed
-    concisely: ''The theory that was proposed by Smith has been widely accepted.'''

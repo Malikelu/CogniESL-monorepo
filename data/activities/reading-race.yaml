@@ -1,33 +1,49 @@
-id: reading-race
-name: Reading Race
-category: reading
-description: Teams race to find specific information in a text. The first team to
-  correctly answer all comprehension questions wins.
-targetStructures:
-- reading-comprehension
-- sentence-structure
+adaptableToTopic: true
 bestForLevels:
 - A1
 - A2
 - B1
 - B2
+category: reading
+citations:
+- claim: Scanning and skimming races develop reading speed and information-location
+    skills through competitive team-based practice.
+  flagged: false
+  reliability: B
+  source: Peregoy & Boyle (2023) Reading, Writing, and Learning in ESL, 8th ed.
+  tier: 2
+- claim: Timed reading activities with clear goals increase student engagement and
+    motivation in reading comprehension tasks.
+  source: Peregoy, S. & Boyle, O. (2017). Reading, Writing, and Learning in ESL, 7th
+    ed. Pearson.
+  tier: 2
+  reliability: B
+  flagged: false
+- claim: Tasks with time constraints develop reading fluency. Willis (1996) notes
+    that reading is more controllable than listening and allows time for reflection.
+  source: Willis, J. (1996) A Framework for Task-Based Learning. Longman.
+  tier: 2
+  reliability: B
+  flagged: false
+description: Teams race to find specific information in a text. The first team to
+  correctly answer all comprehension questions wins.
+differentiation:
+  extension: Include inference questions. Add a bonus question.
+  support: Use shorter texts. Allow teams to have one hint.
+digitalReady: false
 duration: 20
-groupSize: small-groups
 energyRequired: high
-prepTime: medium
-materials:
-- Texts (one per team)
-- Question sheets
-- Answer key
 format:
 - in-person
-requiresTech: false
-digitalReady: false
+grammar_focus:
+- reading_comprehension
+- scanning_skimming
+groupSize: small-groups
 hasAudioComponent: false
 hasPrintableComponent: true
 hasSlidesComponent: false
 hasVisualComponent: false
-adaptableToTopic: true
+id: reading-race
 instructions:
 - Divide the class into teams of 3-4. Give each team a copy of the same text.
 - Give each team a question sheet with 10-15 scanning questions.
@@ -35,18 +51,52 @@ instructions:
 - The first team to finish calls Done! Check their answers.
 - The team with the most correct answers wins.
 - 'Discuss: What strategies did you use to find answers quickly?'
-script:
-- You have 15 questions. Find the answers as fast as you can. Ready? Go!
-- Team 3 says they are done! Let us check...
-setupInstructions: Prepare a text and 10-15 scanning questions with clear, findable
-  answers.
-differentiation:
-  support: Use shorter texts. Allow teams to have one hint.
-  extension: Include inference questions. Add a bonus question.
 keywords:
 - scanning
 - skimming
 - speed reading
 - comprehension
 - competition
-l1Enhanced: true
+l1_enhanced:
+- adaptation: Pair Spanish-speaking students to compare cognates that may appear in
+    English texts, using them as scanning shortcuts.
+  language: Spanish
+  priority: low
+- adaptation: Arabic is written right-to-left. Allow extra time for left-to-right
+    scanning. Provide a reading guide (ruler or finger) to track lines.
+  language: Arabic
+  priority: medium
+- adaptation: Mandarin readers may be accustomed to character-based processing. Encourage
+    word-level rather than letter-by-letter scanning for English texts.
+  language: Mandarin
+  priority: medium
+l1_specific: []
+materials:
+- Texts (one per team)
+- Question sheets
+- Answer key
+name: Reading Race
+prepTime: medium
+requiresTech: false
+script:
+- You have 15 questions. Find the answers as fast as you can. Ready? Go!
+- Team 3 says they are done! Let us check...
+setupInstructions: Prepare a text and 10-15 scanning questions with clear, findable
+  answers.
+skill_areas:
+- reading
+sources:
+- Willis, J. (1996) A Framework for Task-Based Learning. Longman.
+targetStructures:
+- reading-comprehension
+- sentence-structure
+teaching_tips:
+- context: Some teams may finish much faster than others.
+  tip: Have a second set of harder questions ready for fast finishers. This keeps
+    all teams working and prevents early winners from disengaging.
+- context: Students may guess line numbers instead of actually finding answers.
+  tip: Require teams to underline the answer in the text. This ensures they are actually
+    reading, not just scanning randomly.
+- tip: Timed reading tasks build fluency. Good readers adjust their speed according
+    to purpose - fast for overview, slow for detail. (Willis 1996, Ch. 5.3)
+  context: TBL methodology

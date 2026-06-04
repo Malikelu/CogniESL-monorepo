@@ -1,44 +1,59 @@
-grammar_point: cleft_sentences
-title: Cleft Sentences (It-Clefts and Wh-Clefts)
+citations:
+- claim: 'Core meaning: Emphasize a specific part of a sentence to correct misinformation
+    or highlight importance, rather than stating a neutral fact'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 30:
+    Information Packaging'
+  tier: 4
+- claim: Common error '*It was John which broke the window.*' for Portuguese, Spanish,
+    Chinese speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: Understanding cleft sentences is essential for academic writing — Oshima
+    & Hogue emphasize how writers use these structures to create clear, coherent prose
+  flagged: false
+  reliability: B
+  source: 'Oshima and Hogue (2006) Introduction to Academic Writing, 3rd ed. Pearson.
+    Ch. 5: Complex Sentences in Academic Writing'
+  tier: 2
+common_errors:
+- correction: It was John who broke the window.
+  error: '*It was John which broke the window.*'
+  explanation: Use who for people in cleft sentences.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+- error: Swedish/Celtic L1 overuse it-clefts; Finns avoid them (L1 frequency + formal
+    similarity)
+  explanation: 'Odlin (Ch.5, Ch.6): Jarvis (1998): 23/70 Swedes used clefts vs. 9/140
+    Finns. Native Swedes: 24/36; native Finns: 1/66 (chi2=22.1, p<.001). Celtic English
+    (Filppula 1986): 2.8 clefts/1000 words in W. Ireland vs. 0.7 in Br. English. Transfer
+    depends on BOTH L1 frequency AND formal similarity.'
+  l1_groups:
+  - Swedish
+  - Irish
+  - Scottish Gaelic
+  - Welsh
+  - Finnish
+  reliability: C
+  source: Odlin, T. Explorations of Language Transfer, Ch. 5-6
 description: Sentence structures that emphasize a specific word or phrase by splitting
   the sentence into two parts, using 'it' (it-clefts) or 'wh-' words (wh-clefts) as
   the focus.
-level: C1
-meaning:
-  core_meaning: Emphasize a specific part of a sentence to correct misinformation
-    or highlight importance, rather than stating a neutral fact.
-  timeline: 'It-clefts: Present (it is) and past (it was). Wh-clefts: Present and
-    past tense agreement with the emphasized element.'
-  contrast: '''Neutral sentence'' = No emphasis: "John called me." (fact)
-
-    ''It-cleft'' = Emphasize John: "It was John that called me." (not Mary)
-
-    ''Wh-cleft'' = Emphasize the action: "What John did was call me." (not text)
-
-    '
-  ccqs:
-  - question: It was John that called me. Did Mary call?
-    answer: No. John called. The speaker is correcting the assumption that Mary called.
-    purpose: Tests whether the learner understands that it-cleft sentences (It was
-      X that...) are used to emphasize and correct a specific element. This is common
-      in spoken English when correcting misunderstandings.
-  - question: What I need is a holiday. Does the speaker need a new phone?
-    answer: No. The speaker needs a holiday. This is the emphasized element.
-    purpose: Tests whether the learner understands that wh-cleft sentences (What X
-      is...) emphasize the element after 'be'. The structure highlights what is truly
-      needed, wanted, or happening.
-  - question: Is 'It was in Paris that we met' emphasizing the time or the place?
-    answer: The place. 'In Paris' is the emphasized element.
-    purpose: Tests whether the learner understands the time reference of the situation.
-      Correct temporal identification is essential for selecting the right grammatical
-      structure.
-  example_generator:
-    contexts:
-    - everyday situations
-    cultural_notes: []
-    min_examples: 5
+dialectal_variation: []
+discourse_notes: []
 form:
   affirmative:
+    example_generator:
+      contexts:
+      - food and daily routines
+      min_examples: 4
     structure: 'It-cleft: It + be + emphasized element + that/who + remaining clause:
       "It was John that called." (emphasizes John)
 
@@ -49,116 +64,155 @@ form:
       we met."
 
       '
-    example_generator:
-      contexts:
-      - food and daily routines
-      min_examples: 4
   negative:
-    structure: 'It + be + not + emphasized element + that/who: ''It wasn''t me that
-      broke the vase.'' Wh-cleft negative: ''What I don''t like is spicy food.'''
     example_generator:
       contexts:
       - education and school
       min_examples: 4
+    structure: 'It + be + not + emphasized element + that/who: ''It wasn''t me that
+      broke the vase.'' Wh-cleft negative: ''What I don''t like is spicy food.'''
   questions:
-    structure: 'Invert be verb for it-cleft questions: ''Is it coffee that you drink?''
-      ''Was it John that called?'' Wh-cleft questions: ''What is it that you want?'''
     example_generator:
       contexts:
       - everyday situations
       min_examples: 4
-sub_rules:
-- rule: 'The it-cleft follows the pattern: It + be + focused element + that/who +
-    clause. Use who for people and that for everything else'
-  type: grammatical
-  examples:
-  - It was Maria who called (not that called)
-  - It was the blue car that caused the accident
-  - It is the teacher that students remember most
-- rule: 'The wh-cleft follows the pattern: What/Where/When + subject + verb + be +
-    focused element. What is by far the most common wh-word'
-  type: grammatical
-  examples:
-  - What I need is a good night's sleep
-  - What she said was very helpful
-  - What we want is more time
-- rule: In it-clefts, always use that for time and place, never when or where
-  type: grammatical
-  examples:
-  - It was last summer that I visited Paris (not when)
-  - It was in London that they met (not where)
-use:
-- name: Correct Misinformation (It-Clefts)
-  description: Emphasize the correct person, thing, time, or place to correct a mistake.
-  examples:
-  - It was Tuesday that we arrived, not Monday.
-  - It is Mary who won the prize, not Sarah.
-  key_point: Most common use of it-clefts.
-- name: Highlight Importance (Wh-Clefts)
-  description: Emphasize the most important part of a situation, often in spoken English.
-  examples:
-  - What I really need is a vacation.
-  - Where we should go is the beach.
-  key_point: Wh-clefts are more common in spoken than written English.
-- name: Emphasize Time/Place (It-Clefts)
-  description: Focus on when or where an action happened.
-  examples:
-  - It was in 2020 that the pandemic started.
-  - It is at 5pm that the meeting ends.
-  key_point: Use 'that' for time/place, never 'when/where' in it-clefts.
-phonetics:
-- note: 'In cleft sentences, the focused element receives strong stress: ''It was
-    MARIA who called.'' ''What I NEED is a good night''s sleep.'''
+    structure: 'Invert be verb for it-cleft questions: ''Is it coffee that you drink?''
+      ''Was it John that called?'' Wh-cleft questions: ''What is it that you want?'''
+grammar_point: cleft_sentences
+level: C1
+meaning:
+  ccqs:
+  - answer: No. John called. The speaker is correcting the assumption that Mary called.
+    purpose: Tests whether the learner understands that it-cleft sentences (It was
+      X that...) are used to emphasize and correct a specific element. This is common
+      in spoken English when correcting misunderstandings.
+    question: It was John that called me. Did Mary call?
+  - answer: No. The speaker needs a holiday. This is the emphasized element.
+    purpose: Tests whether the learner understands that wh-cleft sentences (What X
+      is...) emphasize the element after 'be'. The structure highlights what is truly
+      needed, wanted, or happening.
+    question: What I need is a holiday. Does the speaker need a new phone?
+  - answer: The place. 'In Paris' is the emphasized element.
+    purpose: Tests whether the learner understands the time reference of the situation.
+      Correct temporal identification is essential for selecting the right grammatical
+      structure.
+    question: Is 'It was in Paris that we met' emphasizing the time or the place?
+  - answer: No. In standard it-cleft sentences, always use "that" (not "where" or
+      "when") after the emphasized element, even when emphasizing place or time.
+    purpose: Tests whether the learner understands the fixed rule that it-cleft sentences
+      use "that" (not "where," "when," or "how") after the emphasized element. "It
+      was in Paris that we met" is correct; "It was in Paris where we met" is non-standard.
+      This is a common error because learners naturally want to match the relative
+      word to the type of information being emphasized.
+    question: Can we say "It was in Paris where we met" instead of "It was in Paris
+      that we met"?
+  contrast: '''Neutral sentence'' = No emphasis: "John called me." (fact)
+
+    ''It-cleft'' = Emphasize John: "It was John that called me." (not Mary)
+
+    ''Wh-cleft'' = Emphasize the action: "What John did was call me." (not text)
+
+    '
+  core_meaning: Emphasize a specific part of a sentence to correct misinformation
+    or highlight importance, rather than stating a neutral fact.
   example_generator:
+    contexts:
+    - everyday situations
+    cultural_notes: []
+    min_examples: 5
+  timeline: 'It-clefts: Present (it is) and past (it was). Wh-clefts: Present and
+    past tense agreement with the emphasized element.'
+phonetics:
+- example_generator:
     contexts:
     - cleft sentence stress
   l1_issue: Learners may not stress the focused element sufficiently, making the cleft
     sentence sound flat.
+  note: 'In cleft sentences, the focused element receives strong stress: ''It was
+    MARIA who called.'' ''What I NEED is a good night''s sleep.'''
+register_notes:
+- note: 'Biber et al. (2021) — It-clefts, wh-clefts, and reversed wh-clefts: distribution
+    varies by register. Clefts are more common in conversation and news than in academic
+    prose. Reversed wh-clefts (What I need is...) are primarily conversational. Ch.
+    11.6.4'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 11.6.4
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+sub_rules:
+- examples:
+  - It was Maria who called (not that called)
+  - It was the blue car that caused the accident
+  - It is the teacher that students remember most
+  rule: 'The it-cleft follows the pattern: It + be + focused element + that/who +
+    clause. Use who for people and that for everything else'
+  type: grammatical
+- examples:
+  - What I need is a good night's sleep
+  - What she said was very helpful
+  - What we want is more time
+  rule: 'The wh-cleft follows the pattern: What/Where/When + subject + verb + be +
+    focused element. What is by far the most common wh-word'
+  type: grammatical
+- examples:
+  - It was last summer that I visited Paris (not when)
+  - It was in London that they met (not where)
+  rule: In it-clefts, always use that for time and place, never when or where
+  type: grammatical
 teaching:
   methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Give students simple sentences. They transform them into cleft
+      sentences: ''Maria called.'' → ''It was Maria who called.'''
+    duration: 15
+    name: Cleft Sentence Transformation
+  - adaptation_notes: Students write a paragraph about an important event, then rewrite
+      key sentences using cleft structures to emphasize different elements.
+    duration: 15
+    name: Focus on the Important Part
   tips:
+  - 'CGEL Ch. 4: CGEL distinguishes five canonical clause types (declarative, interrogative,
+    imperative, exclamative, subordinate) based on syntactic form, not illocutionary
+    force. Clefts are a packaging device that can apply to multiple clause types.'
   - 'Week 1: It-clefts (present/past, correct misinformation).'
   - 'Week 2: Wh-clefts (what/where/when, highlight importance).'
   - 'Week 3: Contrast neutral sentences with cleft sentences.'
   - 'Use dialogue scenarios: ''I thought you liked tea.'' ''No, it is coffee that
     I like!'''
-  recommended_activities:
-  - name: Cleft Sentence Transformation
-    duration: 15
-    adaptation_notes: 'Give students simple sentences. They transform them into cleft
-      sentences: ''Maria called.'' → ''It was Maria who called.'''
-  - name: Focus on the Important Part
-    duration: 15
-    adaptation_notes: Students write a paragraph about an important event, then rewrite
-      key sentences using cleft structures to emphasize different elements.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*It was John which broke the window.*'
-  correction: It was John who broke the window.
-  explanation: Use who for people in cleft sentences.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.
+  - 'Swan PEU: Cleft sentences — ''It is the children that need help'' (it-cleft)
+    and ''What we need is more time'' (wh-cleft). These are focus structures that
+    put emphasis on a specific element. Common in written and formal spoken English.'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 16: CGEL (Ch.16)
+    analyzes cleft constructions as information packaging devices: It-clefts (''It
+    was JOHN who left'') for FOCUS, wh-clefts/pseudo-clefts (''What we need is water'')
+    for THEME-RHEME packaging. The ''it'' in it-clefts is a dummy subject; the cleft
+    clause is a relative construction. Teaching implication: clefts are used to highlight/contrast
+    specific information, not just for emphasis.'
+title: Cleft Sentences (It-Clefts and Wh-Clefts)
+use:
+- description: Emphasize the correct person, thing, time, or place to correct a mistake.
+  examples:
+  - It was Tuesday that we arrived, not Monday.
+  - It is Mary who won the prize, not Sarah.
+  key_point: Most common use of it-clefts.
+  name: Correct Misinformation (It-Clefts)
+- description: Emphasize the most important part of a situation, often in spoken English.
+  examples:
+  - What I really need is a vacation.
+  - Where we should go is the beach.
+  key_point: Wh-clefts are more common in spoken than written English.
+  name: Highlight Importance (Wh-Clefts)
+- description: Focus on when or where an action happened.
+  examples:
+  - It was in 2020 that the pandemic started.
+  - It is at 5pm that the meeting ends.
+  key_point: Use 'that' for time/place, never 'when/where' in it-clefts.
+  name: Emphasize Time/Place (It-Clefts)

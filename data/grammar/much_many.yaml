@@ -1,15 +1,154 @@
-grammar_point: much_many
-title: Much and Many (Quantifiers)
+citations:
+- claim: 'Core meaning: Much quantifies uncountable nouns (cannot be counted individually);
+    many quantifies countable plural'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17:
+    Partitives, Collectives and Quantifiers'
+  tier: 1
+- claim: 'Register distribution: ''Much'' and ''many'' are standard in academic prose
+    and formal writing. In conversation, ''a lot of'' replaces both in affirmative
+    sentences.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17:
+    Partitives, Collectives, and Quantifiers'
+  tier: 1
+- claim: 'Discourse function: In conversation, ''much'' and ''many'' appear mainly
+    in questions and negatives. ''A lot of'' is the default affirmative quantifier
+    in informal speech.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17:
+    Partitives, Collectives, and Quantifiers'
+  tier: 1
+- claim: Common error '*I have many time.*' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: The much/many distinction is one of the most basic quantifier rules in English,
+    but L1 transfer causes persistent errors even at intermediate levels
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17:
+    Partitives, Collectives and Quantifiers'
+  tier: 2
+- claim: L1 transfer in much/many varies significantly across language backgrounds
+    — Swan & Smith document contrastive patterns for speakers of different L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+common_errors:
+- correction: I have much time.
+  error: '*I have many time.*'
+  explanation: Many is for countable nouns. Time is uncountable, so use much.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+- correction: Do you have many books?
+  error: '*Do you have much books?*'
+  explanation: Much is for uncountable nouns. Books are countable, so use many.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+- correction: I have many friends here.
+  error: '*I have much friends here.*'
+  explanation: Much is for uncountable nouns. Friends are countable, so use many.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Japanese
+  reliability: D
+- correction: many people
+  error: 'Using ''much'' with countable nouns: *''much people'''
+  explanation: 'Swan PEU: "Much" for uncountable, "many" for countable. "Much information"
+    (OK). "Many books" (OK).'
+  l1_groups: &id001
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan Entry 138. Swan (2016) Practical English Usage, 4th ed. Oxford University
+    Press.
+- correction: much information
+  error: 'Using ''many'' with uncountable nouns (in questions/negatives): *''many
+    information'''
+  explanation: 'Swan PEU: Use "much" with uncountable nouns even in questions and
+    negatives. "How much time?" NOT "How many time?"'
+  l1_groups: *id001
+  reliability: B
+  source: Swan Entry 138. Swan (2016) Practical English Usage, 4th ed. Oxford University
+    Press.
 description: 'Quantifiers to ask about or describe quantity: much (uncountable nouns),
   many (countable plural nouns). Used mainly in questions and negatives; less common
   in affirmative sentences (replaced by a lot of).'
+dialectal_variation: []
+discourse_notes:
+- note: Much and many express large quantity. Much is used with non-count nouns, many
+    with count nouns. Both are more common in questions and negatives.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: 'Much + uncountable noun (formal affirmative): "I don''t have much
+      time." (negative) / "I have much work to do." (formal affirmative)
+
+      Many + countable plural noun: "Many students passed the exam." (affirmative)
+      / "I don''t have many friends." (negative)
+
+      '
+  negative:
+    example_generator:
+      contexts:
+      - food and daily routines
+      min_examples: 4
+    structure: 'Much/many follow negative verbs: ''We don''t have much money.'' ''They
+      don''t have many options.'''
+  questions:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: How much + uncountable noun? How many + countable plural noun?
+grammar_point: much_many
 level: A2
 meaning:
-  core_meaning: Much quantifies uncountable nouns (cannot be counted individually);
-    many quantifies countable plural nouns (can be counted individually). Both refer
-    to large quantities.
-  timeline: N/A (Quantifiers are not tense-based; they describe quantity regardless
-    of time.)
+  ccqs:
+  - answer: Much with uncountable nouns. Many with countable plural nouns.
+    purpose: Tests whether the learner can distinguish between much (uncountable)
+      and many (countable). This is one of the most fundamental quantifier rules at
+      A2 level.
+    question: When do we use much and when do we use many
+  - answer: Yes, but a lot of is more common in informal speech.
+    purpose: Tests whether the learner knows that much/many are mainly used in questions
+      and negatives, while a lot of is preferred in affirmative sentences. This affects
+      natural-sounding speech.
+    question: Can we use much and many in affirmative sentences
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with
+      much many and explain why they are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: Advice is uncountable in English. Use much, a lot of, or a piece of with
+      it, not many. Say I do not have much advice or I have a lot of advice, not I
+      have many advices. This is a common error because many languages treat advice
+      as countable.
+    purpose: Tests whether the learner can apply the much/many distinction to specific
+      nouns that are often miscategorised. Advice is one of the most frequently misused
+      nouns with many because learners assume it is countable. Understanding that
+      English treats it as uncountable (requiring much, not many) is essential for
+      accurate quantifier use.
+    question: Is advice a countable or uncountable noun, and which quantifier should
+      we use with it?
   contrast: 'Much = Uncountable nouns: water, time, money, information
 
     Many = Countable plural nouns: books, people, cars, ideas
@@ -18,158 +157,120 @@ meaning:
     of time" (not "I have much time")
 
     '
-  ccqs:
-  - question: When do we use much and when do we use many
-    answer: Much with uncountable nouns. Many with countable plural nouns.
-    purpose: Tests whether the learner can distinguish between much (uncountable)
-      and many (countable). This is one of the most fundamental quantifier rules at
-      A2 level.
-  - question: Can we use much and many in affirmative sentences
-    answer: Yes, but a lot of is more common in informal speech.
-    purpose: Tests whether the learner knows that much/many are mainly used in questions
-      and negatives, while a lot of is preferred in affirmative sentences. This affects
-      natural-sounding speech.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      much many and explain why they are incorrect.
+  core_meaning: Much quantifies uncountable nouns (cannot be counted individually);
+    many quantifies countable plural nouns (can be counted individually). Both refer
+    to large quantities.
   example_generator:
     contexts:
     - everyday situations
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Much + uncountable noun (formal affirmative): "I don''t have much
-      time." (negative) / "I have much work to do." (formal affirmative)
-
-      Many + countable plural noun: "Many students passed the exam." (affirmative)
-      / "I don''t have many friends." (negative)
-
-      '
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
-  negative:
-    structure: 'Much/many follow negative verbs: ''We don''t have much money.'' ''They
-      don''t have many options.'''
-    example_generator:
-      contexts:
-      - food and daily routines
-      min_examples: 4
-  questions:
-    structure: How much + uncountable noun? How many + countable plural noun?
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
-sub_rules:
-- rule: Much is used with uncountable nouns in questions and negatives
-  type: grammatical
-  examples:
-  - How much time do we have?
-  - I do not have much money
-  - She does not have much patience
-- rule: Many is used with countable plural nouns in questions and negatives
-  type: grammatical
-  examples:
-  - How many people came?
-  - I do not have many friends
-  - She does not have many books
-- rule: A lot of can be used with both countable and uncountable nouns in affirmative
-    sentences
-  type: grammatical
-  examples:
-  - I have a lot of time (uncountable)
-  - I have a lot of friends (countable)
-  - She has a lot of money (uncountable)
-  - She has a lot of books (countable)
-use:
-- name: Questions About Quantity
-  description: Ask about the amount of uncountable or countable plural nouns.
-  examples:
-  - How much sugar is in this?
-  - How many countries have you visited?
-  key_point: How much = uncountable; How many = countable plural.
-- name: Negative Statements
-  description: Describe lack of quantity in negatives.
-  examples:
-  - I don't have much experience.
-  - We don't have many chairs.
-  key_point: Common in negatives; rare in informal affirmatives.
-- name: Formal Affirmatives
-  description: Use much in formal writing/speech for uncountable nouns.
-  examples:
-  - Much research has been done on this topic.
-  - Many experts agree.
-  key_point: Formal only; use a lot of for informal affirmatives.
+  timeline: N/A (Quantifiers are not tense-based; they describe quantity regardless
+    of time.)
 phonetics:
-- note: Much is pronounced /mʌtʃ/ and many is pronounced /ˈmeni/. In connected speech,
-    much is often reduced.
-  example_generator:
+- example_generator:
     contexts:
     - much vs many pronunciation
   l1_issue: 'Learners may confuse much and many. Teach the clear distinction: much
     + uncountable, many + countable.'
+  note: Much is pronounced /mʌtʃ/ and many is pronounced /ˈmeni/. In connected speech,
+    much is often reduced.
+register_notes:
+- note: In formal writing, conditionals appear in discussions of likely outcomes and
+    theoretical scenarios.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In conversation, conditionals are used for hypothetical scenarios and polite
+    requests.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In academic writing, conditionals express logical relationships between propositions.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Quantifier distribution: ''much/many'' patterns differ
+    by register. Academic prose uses more ''many'' with countable nouns; conversation
+    uses more ''a lot of'' as a general quantifier. Ch. 4.4.4'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 4.4.4
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17:
+    Partitives, Collectives and Quantifiers'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+sub_rules:
+- examples:
+  - How much time do we have?
+  - I do not have much money
+  - She does not have much patience
+  rule: Much is used with uncountable nouns in questions and negatives
+  type: grammatical
+- examples:
+  - How many people came?
+  - I do not have many friends
+  - She does not have many books
+  rule: Many is used with countable plural nouns in questions and negatives
+  type: grammatical
+- examples:
+  - I have a lot of time (uncountable)
+  - I have a lot of friends (countable)
+  - She has a lot of money (uncountable)
+  - She has a lot of books (countable)
+  rule: A lot of can be used with both countable and uncountable nouns in affirmative
+    sentences
+  type: grammatical
 teaching:
   methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students choose between much and many: ''How ___ time do we
+      have?'' (much) ''How ___ people came?'' (many).'
+    duration: 10
+    name: Much or Many
+  - adaptation_notes: Students sort nouns into countable and uncountable, then create
+      sentences with much, many, and a lot of.
+    duration: 15
+    name: Countable or Uncountable
   tips:
   - 'Week 1: Sort nouns into countable/uncountable, pair with many/much.'
   - 'Week 2: Drill ''How much/many'' questions with real objects (water vs books).'
   - 'Week 3: Contrast much/many with a lot of in affirmative sentences.'
-  recommended_activities:
-  - name: Much or Many
-    duration: 10
-    adaptation_notes: 'Students choose between much and many: ''How ___ time do we
-      have?'' (much) ''How ___ people came?'' (many).'
-  - name: Countable or Uncountable
-    duration: 15
-    adaptation_notes: Students sort nouns into countable and uncountable, then create
-      sentences with much, many, and a lot of.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.6-12.13'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I have many time.*'
-  correction: I have much time.
-  explanation: Many is for countable nouns. Time is uncountable, so use much.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: '*Do you have much books?*'
-  correction: Do you have many books?
-  explanation: Much is for uncountable nouns. Books are countable, so use many.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-- error: '*I have much friends here.*'
-  correction: I have many friends here.
-  explanation: Much is for uncountable nouns. Friends are countable, so use many.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Japanese
-register_notes:
-- note: In formal writing, conditionals appear in discussions of likely outcomes and
-    theoretical scenarios.
-- note: In conversation, conditionals are used for hypothetical scenarios and polite
-    requests.
-- note: In academic writing, conditionals express logical relationships between propositions.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, conditionals are used for hypothetical scenarios, polite
-    requests, and future planning.
-- note: In academic writing, conditionals appear in discussions of likely outcomes
-    and theoretical scenarios.
-- note: In negotiations and planning, conditionals set conditions and explore possibilities.
+  - 'Swan PEU: "Much" (uncountable) vs "many" (countable). "A lot of" works for both
+    in informal speech.'
+  - 'Swan PEU: "A few/few" (countable). "A little/little" (uncountable). "Few" = not
+    enough. "A few" = some.'
+teaching_tips:
+- source: 'Celce-Murcia & Larsen-Freeman (1999) The Grammar Book: An ESL/EFL Teacher''s
+    Course, 2nd ed. Heinle & Heinle.'
+  tip: 'MUCH/MANY REGISTER PATTERN: Much is restricted in affirmative statements in
+    casual English (*''Jake has much fun'' is odd), but acceptable in formal writing
+    (''I have much experience''). Native speakers prefer ''a lot of'' in informal
+    affirmatives. ESL/EFL students should learn the semantic difference between quantifiers
+    on the positive vs. negative continua. Source: Ch.17 p.336-337 (Neumann 1975).'
+title: Much and Many (Quantifiers)
+use:
+- description: Ask about the amount of uncountable or countable plural nouns.
+  examples:
+  - How much sugar is in this?
+  - How many countries have you visited?
+  key_point: How much = uncountable; How many = countable plural.
+  name: Questions About Quantity
+- description: Describe lack of quantity in negatives.
+  examples:
+  - I don't have much experience.
+  - We don't have many chairs.
+  key_point: Common in negatives; rare in informal affirmatives.
+  name: Negative Statements
+- description: Use much in formal writing/speech for uncountable nouns.
+  examples:
+  - Much research has been done on this topic.
+  - Many experts agree.
+  key_point: Formal only; use a lot of for informal affirmatives.
+  name: Formal Affirmatives

@@ -1,38 +1,59 @@
-grammar_point: reporting_verbs
-title: Reporting Verbs (Beyond Say and Tell)
-description: Verbs used to report what someone said, thought, or felt, with different
-  grammatical structures depending on the verb's meaning and register. More precise
-  and formal than 'say' and 'tell'.
-level: B2
-meaning:
-  core_meaning: Reporting verbs convey not just WHAT was said, but HOW and WHY it
-    was said. Each verb carries a specific nuance — whether the speaker is promising,
-    refusing, suggesting, admitting, etc. The grammatical structure changes depending
-    on the verb (that-clause, to-infinitive, gerund, etc.).
-  timeline: 'Follows standard tense rules: reporting verb tense determines the tense
-    of the following clause (backshift for past reporting verbs).'
-  contrast: '''Say'' = neutral, general reporting (He said that...) vs ''Promise''
-    = commitment (He promised to...) vs ''Suggest'' = proposal (He suggested going...)
-    vs ''Admit'' = confession (He admitted that...)'
-  ccqs:
-  - question: Is this a neutral report, or does the verb add meaning about the speaker's
-      intent?
-    answer: The verb adds meaning — it tells us whether the speaker was promising,
-      refusing, suggesting, admitting, etc.
-    purpose: Tests whether the learner understands that reporting verbs are not just
-      alternatives for 'say' but carry specific meaning about the speaker's intention,
-      attitude, or the speech act being performed.
-  - question: What grammatical structure follows this reporting verb?
-    answer: 'It depends on the verb: that-clause, to-infinitive, gerund, or object
-      + to-infinitive. Each verb has its own pattern.'
-    purpose: Tests whether the learner knows that different reporting verbs require
-      different syntactic patterns after them, which is a common source of errors
-      at B2 level.
-  - question: Is this verb formal or informal?
-    answer: Some reporting verbs are formal (state, argue, claim) and others are neutral
-      (say, tell). Choose based on context.
-    purpose: Tests the learner's awareness of the register of reporting verbs, helping
-      them select the appropriate verb for the context (formal writing vs casual conversation).
+citations:
+- claim: 'Core meaning: Reporting verbs convey not just WHAT was said, but HOW and WHY it was said'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24: Reported Speech and Writing'
+  tier: 4
+- claim: 'Register distribution: Formal reporting verbs (state, argue, claim) are preferred in academic and journalistic writing.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24: Reported Speech and Writing'
+  tier: 4
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24: Reported Speech and Writing'
+  tier: 4
+- claim: 'Common error ''Using wrong structure after reporting verb: *''He suggested t'' for Portuguese, Spanish, Chinese
+    speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+common_errors:
+- correction: He suggested going. / He suggested that we go.
+  error: 'Using wrong structure after reporting verb: *''He suggested to go.'''
+  explanation: '''Suggest'' takes a gerund or a that-clause, NOT a to-infinitive. Many learners incorrectly pair it with the
+    infinitive because other reporting verbs (like ''agree'' or ''promise'') take the infinitive.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+- correction: He told me that he was tired. / He said that he was tired.
+  error: 'Using ''say'' with object + that-clause: *''He said me that he was tired.'''
+  explanation: '''Say'' cannot take a direct object before a that-clause. Use ''tell'' when the person being addressed is
+    specified. This is one of the most common reporting verb errors.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Japanese
+  reliability: D
+- correction: She asked me to help.
+  error: 'Using gerund after Category 4 verbs: *''She asked me helping.'''
+  explanation: '''Ask'' is a Category 4 verb (object + to-infinitive), not a gerund verb. Using a gerund after ''ask'' is
+    ungrammatical. Learners often confuse Category 4 and Category 5 patterns.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Korean
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Gerunds and infinitives'
+description: Verbs used to report what someone said, thought, or felt, with different grammatical structures depending on
+  the verb's meaning and register. More precise and formal than 'say' and 'tell'.
+dialectal_variation: []
+discourse_notes: []
 example_generator:
   contexts:
   - everyday conversations
@@ -41,14 +62,12 @@ example_generator:
   - workplace communication
   - legal contexts
   cultural_notes:
-  - Formal reporting verbs (state, argue, claim) are common in academic writing and
-    news reports
+  - Formal reporting verbs (state, argue, claim) are common in academic writing and news reports
   - Informal reporting verbs (say, tell) are more common in everyday conversation
   - Some reporting verbs have cultural implications (admit, deny, claim)
   min_examples: 5
 form:
   affirmative:
-    structure: 'Category 1: Verb + (that) + clause / Category 5: Verb + gerund'
     example_generator:
     - He said (that) he was tired. (Category 1)
     - She told me (that) she was leaving. (Category 2)
@@ -56,8 +75,8 @@ form:
     - She asked me to help. (Category 4)
     - He suggested going to the cinema. (Category 5)
     min_examples: 4
+    structure: 'Category 1: Verb + (that) + clause / Category 5: Verb + gerund'
   negative:
-    structure: Verb + not + (structure) depending on category
     example_generator:
     - He said (that) he wasn't tired.
     - She told me (that) she wasn't leaving.
@@ -65,52 +84,140 @@ form:
     - She asked me not to tell anyone.
     - He denied stealing the money.
     min_examples: 4
+    structure: Verb + not + (structure) depending on category
   questions:
-    structure: Verb + if/whether/wh-word + (structure) depending on category
     example_generator:
     - He asked if I was tired.
     - She asked me whether I wanted to come.
     - He wanted to know what I thought.
     min_examples: 4
+    structure: Verb + if/whether/wh-word + (structure) depending on category
+grammar_point: reporting_verbs
+level: B2
+meaning:
+  ccqs:
+  - answer: The verb adds meaning — it tells us whether the speaker was promising, refusing, suggesting, admitting, etc.
+    purpose: Tests whether the learner understands that reporting verbs are not just alternatives for 'say' but carry specific
+      meaning about the speaker's intention, attitude, or the speech act being performed.
+    question: Is this a neutral report, or does the verb add meaning about the speaker's intent?
+  - answer: 'It depends on the verb: that-clause, to-infinitive, gerund, or object + to-infinitive. Each verb has its own
+      pattern.'
+    purpose: Tests whether the learner knows that different reporting verbs require different syntactic patterns after them,
+      which is a common source of errors at B2 level.
+    question: What grammatical structure follows this reporting verb?
+  - answer: Some reporting verbs are formal (state, argue, claim) and others are neutral (say, tell). Choose based on context.
+    purpose: Tests the learner's awareness of the register of reporting verbs, helping them select the appropriate verb for
+      the context (formal writing vs casual conversation).
+    question: Is this verb formal or informal?
+  - answer: Learners often make errors with this structure that change the intended meaning.
+    purpose: Tests whether the learner can identify and correct a common error associated with reporting verbs. Recognizing
+      typical mistakes helps learners self-edit and produce more accurate English.
+    question: Can you identify and correct the error in this sentence related to this grammar point?
+  contrast: '''Say'' = neutral, general reporting (He said that...) vs ''Promise'' = commitment (He promised to...) vs ''Suggest''
+    = proposal (He suggested going...) vs ''Admit'' = confession (He admitted that...)'
+  core_meaning: Reporting verbs convey not just WHAT was said, but HOW and WHY it was said. Each verb carries a specific nuance
+    — whether the speaker is promising, refusing, suggesting, admitting, etc. The grammatical structure changes depending
+    on the verb (that-clause, to-infinitive, gerund, etc.).
+  timeline: 'Follows standard tense rules: reporting verb tense determines the tense of the following clause (backshift for
+    past reporting verbs).'
+phonetics:
+- example_generator:
+  - report /rɪˈpɔːt/
+  - suggest /səˈdʒest/
+  - recommend /rekəˈmend/
+  l1_issue: Portuguese speakers may stress the wrong syllable in multi-syllable reporting verbs. Drill correct stress patterns.
+  note: 'Many reporting verbs have stress on the second syllable: re''PORT, sug''GEST, re''COMMEND, a''DMIT, de''NY, a''GREE,
+    pro''MISE, re''FUSE.'
+- example_generator:
+  - that /ðət/
+  l1_issue: Many L1 speakers over-pronounce 'that' as /ðæt/. Teach the weak form for natural speech.
+  note: 'Weak form of ''that'' in reported speech: /ðət/. ''He said that he was tired'' sounds like /hiː sed ðət hiː wəz taɪəd/.'
+register_notes:
+- note: Formal reporting verbs (state, argue, claim) are preferred in academic and journalistic writing.
+  reliability: D
+  source: Team observation
+  tier: 4
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: 'Category 1: Verb + (that) + clause (say, think, believe, report, claim, state,
-    argue, explain, mention, notice, realize, suggest)'
-  type: grammatical
-  examples:
+- examples:
   - He said (that) he was tired.
   - She believed (that) it was true.
   - They reported (that) the situation was improving.
-- rule: 'Category 2: Verb + object + (that) + clause (tell, inform, remind, warn,
-    assure, convince, persuade)'
+  rule: 'Category 1: Verb + (that) + clause (say, think, believe, report, claim, state, argue, explain, mention, notice, realize,
+    suggest)'
   type: grammatical
-  examples:
+- examples:
   - She told me (that) she was leaving.
   - He informed us (that) the meeting was cancelled.
   - They warned us (that) it was dangerous.
-- rule: 'Category 3: Verb + to-infinitive (agree, promise, refuse, offer, decide,
-    hope, plan, threaten, demand, claim)'
+  rule: 'Category 2: Verb + object + (that) + clause (tell, inform, remind, warn, assure, convince, persuade)'
   type: grammatical
-  examples:
+- examples:
   - He agreed to help.
   - She promised to call.
   - They refused to pay.
   - He offered to drive.
-- rule: 'Category 4: Verb + object + to-infinitive (ask, tell, order, advise, invite,
-    allow, encourage, warn, instruct, persuade)'
+  rule: 'Category 3: Verb + to-infinitive (agree, promise, refuse, offer, decide, hope, plan, threaten, demand, claim)'
   type: grammatical
-  examples:
+- examples:
   - She asked me to help.
   - He told me to wait.
   - They ordered us to leave.
   - She advised me to study more.
-- rule: 'Category 5: Verb + gerund (suggest, recommend, deny, admit, avoid, enjoy,
-    finish, imagine, mind, practice)'
+  rule: 'Category 4: Verb + object + to-infinitive (ask, tell, order, advise, invite, allow, encourage, warn, instruct, persuade)'
   type: grammatical
-  examples:
+- examples:
   - He suggested going to the cinema.
   - She recommended reading this book.
   - He denied stealing the money.
   - She admitted making a mistake.
+  rule: 'Category 5: Verb + gerund (suggest, recommend, deny, admit, avoid, enjoy, finish, imagine, mind, practice)'
+  type: grammatical
+teaching:
+  methodology: Categorization and pattern recognition
+  recommended_activities:
+  - adaptation_notes: Give students a list of 20 reporting verbs. They categorize them into 5 groups based on their grammatical
+      structure. Then check as a class.
+    duration: 10
+    name: Reporting Verb Categorization
+  - adaptation_notes: 'Show real news headlines. Students rewrite them using different reporting verbs: ''The president says...''
+      → ''The president claims/argues/states...'' Practices formal reporting.'
+    duration: 15
+    name: News Headline Reporting
+  - adaptation_notes: 'Give students direct speech. They rewrite using appropriate reporting verbs: ''I will help you.'' →
+      He promised to help. ''Don''t touch that!'' → She warned me not to touch it.'
+    duration: 15
+    name: Direct to Reported
+  - adaptation_notes: 'Students choose the correct structure: ''He suggested ___ (to go/going).'' ''She asked me ___ (to help/helping).''
+      Practices the 5 categories.'
+    duration: 10
+    name: Verb Structure Quiz
+  tips:
+  - Teach reporting verbs in 5 categories based on their grammatical structure. This makes the patterns clear and memorable.
+  - Create a reference list of common reporting verbs with their structures. Students should keep this as a study aid.
+  - 'Practice matching verbs to contexts: formal academic writing (state, argue, claim) vs casual conversation (say, tell).'
+  - Drill the difference between 'suggest going' (gerund) and 'suggest that...' (that-clause). This is a common error.
+  - 'Use news headlines as authentic examples: ''The president claims that...'' ''Scientists report that...'''
+  - 'Swan PEU: ''Say'' vs ''tell'' — ''say'' does NOT take indirect object: ''She said that...'' ''She said to me that...''
+    BUT ''tell'' requires indirect object: ''She told me that...'' Common error: ''She said me'' is wrong.'
+  - 'Swan PEU: ''Whether'' for indirect questions — same function as ''if'' for yes/no questions. ''Whether'' is slightly
+    more formal. ''Whether or not'' is emphatic: ''I don''t know whether or not he''ll come.'''
+teaching_tips:
+- source: 'Celce-Murcia & Larsen-Freeman (1999) The Grammar Book: An ESL/EFL Teacher''s Course, 2nd ed. Heinle & Heinle.'
+  tip: 'REPORTING VERB COMPLEMENT PATTERNS: Each reporting verb has specific complementation: say requires to + indirect object
+    (''She said TO me that...'' NOT *''She said me that...''); tell requires indirect object but no to (''She told me that...'');
+    inform requires that-clause, NOT infinitive (*''informed them to go'' → ''informed them that...''); ask takes if/whether
+    for yes/no questions and wh- for information questions. Source: Ch.24 p.452-458.'
+- source: 'Celce-Murcia & Larsen-Freeman (1999) The Grammar Book: An ESL/EFL Teacher''s Course, 2nd ed. Heinle & Heinle.'
+  tip: 'SAY vs. TELL vs. ASK complement patterns: say + to + recipient (''She said TO me that...''). Tell + recipient without
+    to (''She told me that...''). Ask + if/whether (yes/no Q) or wh-word. Inform + that-clause ONLY (*''informed them to go'').
+    Tell does not take to + recipient (*''tell to me''). Source: Ch.24 p.452-458.'
+title: Reporting Verbs (Beyond Say and Tell)
 use:
 - context: Speech reporting with nuance
   description: Reporting what someone said with specific meaning about their intent
@@ -142,99 +249,3 @@ use:
   - The doctor advised him to exercise more.
   - They invited us to the party.
   - She warned me not to go alone.
-phonetics:
-- note: 'Many reporting verbs have stress on the second syllable: re''PORT, sug''GEST,
-    re''COMMEND, a''DMIT, de''NY, a''GREE, pro''MISE, re''FUSE.'
-  example_generator:
-  - report /rɪˈpɔːt/
-  - suggest /səˈdʒest/
-  - recommend /rekəˈmend/
-  l1_issue: Portuguese speakers may stress the wrong syllable in multi-syllable reporting
-    verbs. Drill correct stress patterns.
-- note: 'Weak form of ''that'' in reported speech: /ðət/. ''He said that he was tired''
-    sounds like /hiː sed ðət hiː wəz taɪəd/.'
-  example_generator:
-  - that /ðət/
-  l1_issue: Many L1 speakers over-pronounce 'that' as /ðæt/. Teach the weak form for
-    natural speech.
-teaching:
-  methodology: Categorization and pattern recognition
-  tips:
-  - Teach reporting verbs in 5 categories based on their grammatical structure. This
-    makes the patterns clear and memorable.
-  - Create a reference list of common reporting verbs with their structures. Students
-    should keep this as a study aid.
-  - 'Practice matching verbs to contexts: formal academic writing (state, argue, claim)
-    vs casual conversation (say, tell).'
-  - Drill the difference between 'suggest going' (gerund) and 'suggest that...' (that-clause).
-    This is a common error.
-  - 'Use news headlines as authentic examples: ''The president claims that...'' ''Scientists
-    report that...'''
-  recommended_activities:
-  - name: Reporting Verb Categorization
-    duration: 10
-    adaptation_notes: Give students a list of 20 reporting verbs. They categorize
-      them into 5 groups based on their grammatical structure. Then check as a class.
-  - name: News Headline Reporting
-    duration: 15
-    adaptation_notes: 'Show real news headlines. Students rewrite them using different
-      reporting verbs: ''The president says...'' → ''The president claims/argues/states...''
-      Practices formal reporting.'
-  - name: Direct to Reported
-    duration: 15
-    adaptation_notes: 'Give students direct speech. They rewrite using appropriate
-      reporting verbs: ''I will help you.'' → He promised to help. ''Don''t touch
-      that!'' → She warned me not to touch it.'
-  - name: Verb Structure Quiz
-    duration: 10
-    adaptation_notes: 'Students choose the correct structure: ''He suggested ___ (to
-      go/going).'' ''She asked me ___ (to help/helping).'' Practices the 5 categories.'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: 'Using wrong structure after reporting verb: *''He suggested to go.'''
-  correction: He suggested going. / He suggested that we go.
-  explanation: '''Suggest'' takes a gerund or a that-clause, NOT a to-infinitive.
-    Many learners incorrectly pair it with the infinitive because other reporting
-    verbs (like ''agree'' or ''promise'') take the infinitive.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-- error: 'Using ''say'' with object + that-clause: *''He said me that he was tired.'''
-  correction: He told me that he was tired. / He said that he was tired.
-  explanation: '''Say'' cannot take a direct object before a that-clause. Use ''tell''
-    when the person being addressed is specified. This is one of the most common reporting
-    verb errors.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Japanese
-- error: 'Using gerund after Category 4 verbs: *''She asked me helping.'''
-  correction: She asked me to help.
-  explanation: '''Ask'' is a Category 4 verb (object + to-infinitive), not a gerund
-    verb. Using a gerund after ''ask'' is ungrammatical. Learners often confuse Category
-    4 and Category 5 patterns.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Korean
-register_notes:
-- note: Formal reporting verbs (state, argue, claim) are preferred in academic and
-    journalistic writing.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

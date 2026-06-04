@@ -1,31 +1,50 @@
-id: reading-theater
-name: Reading Theater
-category: reading
-description: 'Reading Theater -- a reading activity. Give each student a copy of a
-  short text. Round 1: Read the text aloud as a news reporter. Serious, formal, clear....'
-targetStructures:
-- reading-comprehension
-- pronunciation
+adaptableToTopic: true
 bestForLevels:
 - A1
 - A2
 - B1
 - B2
+category: reading
+citations:
+- claim: Repeated reading with varied voices and styles develops fluency, prosody,
+    and deeper comprehension through multiple encounters with the same text.
+  flagged: false
+  reliability: B
+  source: Peregoy & Boyle (2023) Reading, Writing, and Learning in ESL, 8th ed.
+  tier: 2
+- claim: Using different voices and registers during reading aloud helps learners
+    explore how delivery affects meaning and engagement.
+  source: Peregoy, S. & Boyle, O. (2017). Reading, Writing, and Learning in ESL, 7th
+    ed. Pearson.
+  tier: 2
+  reliability: B
+  flagged: false
+- claim: Reading performance tasks combine reading fluency with public presentation.
+    Willis (1996) describes how the report stage involves presenting to audiences.
+  source: Willis, J. (1996) A Framework for Task-Based Learning. Longman.
+  tier: 2
+  reliability: B
+  flagged: false
+description: 'Reading Theater -- a reading activity. Give each student a copy of a
+  short text. Round 1: Read the text aloud as a news reporter. Serious, formal, clear....'
+differentiation:
+  extension: 'Use longer texts. Add styles: whisper reading, robot reading, opera
+    singing. Have students explain how each style changes the meaning.'
+  support: Use shorter texts. Allow students to read with a partner. Focus on one
+    style.
+digitalReady: false
 duration: 15
-groupSize: whole-class
 energyRequired: medium
-prepTime: low
-materials:
-- Short texts (news articles, stories, dialogues)
 format:
 - in-person
-requiresTech: false
-digitalReady: false
+grammar_focus:
+- pronunciation
+groupSize: whole-class
 hasAudioComponent: false
 hasPrintableComponent: true
 hasSlidesComponent: false
 hasVisualComponent: false
-adaptableToTopic: true
+id: reading-theater
 instructions:
 - Give each student a copy of a short text.
 - 'Round 1: Read the text aloud as a news reporter. Serious, formal, clear.'
@@ -35,20 +54,51 @@ instructions:
 - 'Discuss: How did the different readings change the meaning? Which was most fun?
   Which helped you understand the text best?'
 - 'Discuss: How does reading aloud help with comprehension?'
-script:
-- '"This text as a news reporter. Serious, formal, clear. Ready?"'
-- Now read it as a sports commentator! Excited! Dramatic! Go!
-setupInstructions: Select short texts that work well with different reading styles.
-  News articles, stories, and dialogues all work well.
-differentiation:
-  support: Use shorter texts. Allow students to read with a partner. Focus on one
-    style.
-  extension: 'Use longer texts. Add styles: whisper reading, robot reading, opera
-    singing. Have students explain how each style changes the meaning.'
 keywords:
 - reading theater
 - fluency
 - expression
 - repeated reading
 - voices
-l1Enhanced: true
+l1_enhanced:
+- adaptation: Pair Spanish-speaking students to compare how emotion and formality
+    are conveyed through voice in English vs Spanish.
+  language: Spanish
+  priority: low
+- adaptation: Arabic speakers may struggle with /p/ vs /b/ distinction (no /p/ phoneme
+    in Arabic). Include minimal pin/bin pairs during oral reading practice.
+  language: Arabic
+  priority: high
+- adaptation: Mandarin speakers may carry L1 tonal patterns into English reading.
+    Focus on how English uses pitch for emotion and emphasis rather than to distinguish
+    word meaning.
+  language: Mandarin
+  priority: medium
+l1_specific: []
+materials:
+- Short texts (news articles, stories, dialogues)
+name: Reading Theater
+prepTime: low
+requiresTech: false
+script:
+- '"This text as a news reporter. Serious, formal, clear. Ready?"'
+- Now read it as a sports commentator! Excited! Dramatic! Go!
+setupInstructions: Select short texts that work well with different reading styles.
+  News articles, stories, and dialogues all work well.
+skill_areas:
+- reading
+sources:
+- Willis, J. (1996) A Framework for Task-Based Learning. Longman.
+targetStructures:
+- reading-comprehension
+- pronunciation
+teaching_tips:
+- context: Students may feel self-conscious reading in funny voices.
+  tip: Demonstrate yourself first. Read a sentence as a news reporter, then as a sports
+    commentator. Your willingness to be silly gives students permission to try.
+- context: Some rounds may be too easy or too hard depending on the text.
+  tip: Choose texts with dialogue or multiple characters for the dialogue round. Choose
+    descriptive texts for the dramatic reading round. Match text type to reading style.
+- tip: Reading theater combines reading practice with the TBL report stage principle
+    of presenting to an audience. (Willis 1996, Ch. 4.4)
+  context: TBL methodology

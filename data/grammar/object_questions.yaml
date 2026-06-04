@@ -1,13 +1,99 @@
-grammar_point: object_questions
-title: Object Questions (Who/What/Which as Object)
+citations:
+- claim: 'Core meaning: Asks about the object (receiver) of an action, with the question
+    word functioning as the sentence''s '
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
+    Yes No Questions'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday
+    communication.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
+    Yes No Questions'
+  tier: 1
+- claim: Common error '*Who you like?*' for Portuguese, Spanish, Chinese speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for
+    L1-specific error patterns in English. Their learner English framework documents
+    how each L1 group produces characteristic errors in this grammatical domain, enabling
+    teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+    and Other Problems, 2nd ed. Cambridge University Press.'
+  tier: 2
+common_errors:
+- correction: Who do you like?
+  error: '*Who you like?*'
+  explanation: Object questions require subject-auxiliary inversion (do you like).
+    Subject questions (Who likes tea?) do not use an auxiliary.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Japanese
+  - Korean
+  reliability: D
 description: Questions where the question word (who, what, which) is the object of
   the sentence, requiring auxiliary verb inversion.
+dialectal_variation: []
+discourse_notes:
+- note: Object questions require auxiliary do-support and affect information flow
+    differently from subject questions.
+  affirmative:
+    example_generator:
+      contexts:
+      - entertainment and media
+      - shopping and commerce
+      min_examples: 4
+    structure: 'Question word (who/what/which + noun) + auxiliary (do/does/did) +
+      subject + main verb
+
+      Auxiliary matches the tense of the action (do/does for present, did for past)
+
+      '
+  negative:
+    example_generator:
+      contexts:
+      - entertainment and media
+      min_examples: 4
+    structure: Question word + auxiliary + subject + not + main verb
+  questions:
+    example_generator:
+      contexts:
+      - entertainment and media
+      - social interactions
+      min_examples: 4
+    structure: Same as affirmative, with question mark
+grammar_point: object_questions
 level: A2
 meaning:
-  core_meaning: Asks about the object (receiver) of an action, with the question word
-    functioning as the sentence's object.
-  timeline: Uses auxiliary verbs do/does (present) or did (past) to match the action's
-    tense.
+  ccqs:
+  - answer: Yes. Object questions need an auxiliary.
+    purpose: Tests whether the learner understands the difference between subject
+      questions (Who likes coffee?) and object questions (Who do you like?). Object
+      questions require an auxiliary; subject questions do not.
+    question: Do we use do/does/did in object questions
+  - answer: No — changing the structure would change the meaning or make the sentence
+      ungrammatical.
+    purpose: Tests whether the learner understands that object questions is the only
+      appropriate structure for this meaning/context.
+    question: Can we use a different structure here with the same meaning?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with
+      object questions and explain why they are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: In 'Who did you see?', 'who' is the object (you saw someone). In 'Who
+      saw you?', 'who' is the subject (someone saw you). Object questions use an auxiliary
+      (did + base verb); subject questions do not.
+    purpose: Tests whether the learner can distinguish between object questions (requiring
+      auxiliary + subject + base verb) and subject questions (requiring no auxiliary).
+      This distinction is fundamental because the same question word 'who' produces
+      two different grammatical structures depending on its function.
+    question: Can you explain the difference between 'Who did you see at the party'
+      and 'Who saw you at the party' by giving an example of when to use each?
   contrast: 'Object question: ''Who did you see?'' (who is the object, uses did +
     inversion)
 
@@ -17,144 +103,94 @@ meaning:
     vs ''What broke?'' (subject)
 
     '
-  ccqs:
-  - question: Do we use do/does/did in object questions
-    answer: Yes. Object questions need an auxiliary.
-    purpose: Tests whether the learner understands the difference between subject
-      questions (Who likes coffee?) and object questions (Who do you like?). Object
-      questions require an auxiliary; subject questions do not.
-  - question: Can we use a different structure here with the same meaning?
-    answer: No — changing the structure would change the meaning or make the sentence
-      ungrammatical.
-    purpose: Tests whether the learner understands that object questions is the only
-      appropriate structure for this meaning/context.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      object questions and explain why they are incorrect.
+  core_meaning: Asks about the object (receiver) of an action, with the question word
+    functioning as the sentence's object.
   example_generator:
     contexts:
     - everyday situations
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Question word (who/what/which + noun) + auxiliary (do/does/did) +
-      subject + main verb
-
-      Auxiliary matches the tense of the action (do/does for present, did for past)
-
-      '
-    example_generator:
-      contexts:
-      - entertainment and media
-      - shopping and commerce
-      min_examples: 4
-  negative:
-    structure: Question word + auxiliary + subject + not + main verb
-    example_generator:
-      contexts:
-      - entertainment and media
-      min_examples: 4
-  questions:
-    structure: Same as affirmative, with question mark
-    example_generator:
-      contexts:
-      - entertainment and media
-      - social interactions
-      min_examples: 4
-sub_rules:
-- rule: 'Object questions use the pattern: wh-word + auxiliary + subject + main verb'
-  type: word_order
-  examples:
-  - Who did you call? (you = subject, who = object)
-  - What did she buy? (she = subject, what = object)
-  - Where did they go? (they = subject, where = adverb)
-- rule: 'Subject questions use the pattern: wh-word + verb (no auxiliary needed)'
-  type: word_order
-  examples:
-  - Who called you? (who = subject)
-  - What happened? (what = subject)
-  - Who wants coffee? (who = subject)
-- rule: 'The key difference: subject questions do not use do/does/did'
-  type: grammatical
-  examples:
-  - Who called you? (subject question — no auxiliary)
-  - Who did you call? (object question — uses auxiliary)
-use:
-- name: Asking About the Receiver
-  description: Ask who or what received an action.
-  examples:
-  - Who did you call?
-  - What did you cook for dinner?
-  key_point: The question word is the one that the action was done to.
-- name: Asking About Things/Choices
-  description: Ask what thing or which option was the object.
-  examples:
-  - What did you find in the box?
-  - Which color did you choose?
-  key_point: Use 'what' for unknown things, 'which' for known choices.
-- name: Past and Present Events
-  description: Ask about past or present actions where the object is unknown.
-  examples:
-  - Who did you meet yesterday?
-  - What do you want for lunch?
-  key_point: Auxiliary (do/does/did) matches the event's time.
+  timeline: Uses auxiliary verbs do/does (present) or did (past) to match the action's
+    tense.
 phonetics:
-- note: 'Object questions typically have falling intonation: ''Who did you call? ↘''
-    Subject questions also fall: ''Who called you? ↘'''
-  example_generator:
+- example_generator:
     contexts:
     - question intonation
   l1_issue: Portuguese and Spanish speakers often use rising intonation for all questions.
     Teach falling intonation for wh- questions.
+  note: 'Object questions typically have falling intonation: ''Who did you call? ↘''
+    Subject questions also fall: ''Who called you? ↘'''
+register_notes:
+- note: 'Biber et al. (2021) — Object questions (wh- + auxiliary + subject): overwhelmingly
+    conversational. Direct questions are strongly conversational; academic prose uses
+    almost no direct questions. Ch. 3.13.2'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 3.13.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
+    Yes No Questions'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+sub_rules:
+- examples:
+  - Who did you call? (you = subject, who = object)
+  - What did she buy? (she = subject, what = object)
+  - Where did they go? (they = subject, where = adverb)
+  rule: 'Object questions use the pattern: wh-word + auxiliary + subject + main verb'
+  type: word_order
+- examples:
+  - Who called you? (who = subject)
+  - What happened? (what = subject)
+  - Who wants coffee? (who = subject)
+  rule: 'Subject questions use the pattern: wh-word + verb (no auxiliary needed)'
+  type: word_order
+- examples:
+  - Who called you? (subject question — no auxiliary)
+  - Who did you call? (object question — uses auxiliary)
+  rule: 'The key difference: subject questions do not use do/does/did'
+  type: grammatical
 teaching:
   methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students identify whether questions are subject or object:
+      ''Who called you?'' (subject) vs ''Who did you call?'' (object).'
+    duration: 10
+    name: Subject or Object
+  - adaptation_notes: 'Give students answers. They form the correct question: ''I
+      called Maria.'' → ''Who did you call?'''
+    duration: 15
+    name: Question Formation
   tips:
   - First contrast object and subject questions side by side to highlight the inversion
     difference.
   - Start with 'who' questions, then add 'what' and 'which'.
   - Use timeline drills to practice present (do/does) vs past (did) auxiliaries.
-  recommended_activities:
-  - name: Subject or Object
-    duration: 10
-    adaptation_notes: 'Students identify whether questions are subject or object:
-      ''Who called you?'' (subject) vs ''Who did you call?'' (object).'
-  - name: Question Formation
-    duration: 15
-    adaptation_notes: 'Give students answers. They form the correct question: ''I
-      called Maria.'' → ''Who did you call?'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
-    Relative Clauses, §11.1-11.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*Who you like?*'
-  correction: Who do you like?
-  explanation: Object questions require subject-auxiliary inversion (do you like).
-    Subject questions (Who likes tea?) do not use an auxiliary.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-  - Japanese
-  - Korean
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.
+  - 'Swan PEU: Object questions (who/what as object) — ''Who did you see?'' NOT ''Who
+    did you see him?'' The object pronoun is NOT repeated: ''What did you buy it?''
+    is wrong. The question word replaces the object.'
+title: Object Questions (Who/What/Which as Object)
+use:
+- description: Ask who or what received an action.
+  examples:
+  - Who did you call?
+  - What did you cook for dinner?
+  key_point: The question word is the one that the action was done to.
+  name: Asking About the Receiver
+- description: Ask what thing or which option was the object.
+  examples:
+  - What did you find in the box?
+  - Which color did you choose?
+  key_point: Use 'what' for unknown things, 'which' for known choices.
+  name: Asking About Things/Choices
+- description: Ask about past or present actions where the object is unknown.
+  examples:
+  - Who did you meet yesterday?
+  - What do you want for lunch?
+  key_point: Auxiliary (do/does/did) matches the event's time.
+  name: Past and Present Events

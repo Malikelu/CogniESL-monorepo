@@ -1,35 +1,51 @@
-id: literature-circles
-name: Literature Circles
-category: reading
-description: Small groups each read a different book or text. Members have roles (Discussion
-  Director, Summarizer, Vocabulary Enricher, Connector). Groups meet to discuss and
-  share insights.
-targetStructures:
-- reading-comprehension
-- clauses
-- discourse
+adaptableToTopic: true
 bestForLevels:
 - B1
 - B2
 - C1
+category: reading
+citations:
+- claim: The "Literature Circles" activity builds reading comprehension
+  flagged: false
+  reliability: B
+  source: Peregoy & Boyle (2023) Reading, Writing, and Learning in ESL. Ch. 9
+  tier: 2
+- claim: Structured reading roles (Discussion Director, Summarizer, Vocabulary Enricher)
+    promote collaborative comprehension and metacognitive awareness.
+  source: Peregoy, S. & Boyle, O. (2023). Reading, Writing, and Learning in ESL, 8th
+    ed. Pearson.
+  tier: 2
+  reliability: B
+  flagged: false
+- claim: Group discussion of texts is part of TBL text-based tasks. Willis (1996)
+    describes how text-based tasks involve talking about the text.
+  source: Willis, J. (1996) A Framework for Task-Based Learning. Longman.
+  tier: 2
+  reliability: B
+  flagged: false
+description: Small groups each read a different book or text. Members have roles (Discussion
+  Director, Summarizer, Vocabulary Enricher, Connector). Groups meet to discuss and
+  share insights.
+differentiation:
+  extension: Use longer, more complex texts. Require groups to create a presentation
+    about their text for the class.
+  support: Use shorter, simpler texts. Provide reading guides with specific questions.
+    Allow more preparation time.
+digitalReady: true
 duration: 30
-groupSize: small-groups
 energyRequired: medium
-prepTime: high
-materials:
-- Different texts for each group
-- Role cards
-- Discussion guides
 format:
 - in-person
 - online
-requiresTech: false
-digitalReady: true
+grammar_focus:
+- discourse_markers
+- linking_words
+groupSize: small-groups
 hasAudioComponent: false
 hasPrintableComponent: true
 hasSlidesComponent: false
 hasVisualComponent: false
-adaptableToTopic: true
+id: literature-circles
 instructions:
 - 'Assign each group a different text at the appropriate level. Assign roles: Discussion
   Director (leads discussion), Summarizer (summarizes key points), Vocabulary Enricher
@@ -43,21 +59,57 @@ instructions:
 - Back in original groups, students share what they learned from other groups.
 - 'Discuss: What did you learn from other groups'' texts? How did your role help you
   understand the text?'
-script:
-- Each group has a different text. You each have a role. Read your text and prepare
-  your role for discussion.
-- Now share with your group. Summarizer, start us off.
-setupInstructions: Select 4-6 texts at the appropriate level. Create role cards with
-  responsibilities. Prepare discussion guides.
-differentiation:
-  support: Use shorter, simpler texts. Provide reading guides with specific questions.
-    Allow more preparation time.
-  extension: Use longer, more complex texts. Require groups to create a presentation
-    about their text for the class.
 keywords:
 - literature circles
 - roles
 - discussion
 - reading
 - collaboration
-l1Enhanced: true
+l1_enhanced:
+- adaptation: Spanish allows null subjects. Ensure activities require explicit subject
+    pronouns in all English sentences.
+  language: Spanish
+  priority: high
+- adaptation: Arabic is written right-to-left. Allow extra time for reading English
+    text. Provide left-to-right reading guides.
+  language: Arabic
+  priority: medium
+- adaptation: Mandarin relative clauses precede the noun (prenominal). English relative
+    clauses follow the noun (postnominal). Provide structural comparison.
+  language: Mandarin
+  priority: high
+l1_specific: []
+materials:
+- Different texts for each group
+- Role cards
+- Discussion guides
+name: Literature Circles
+prepTime: high
+requiresTech: false
+script:
+- Each group has a different text. You each have a role. Read your text and prepare
+  your role for discussion.
+- Now share with your group. Summarizer, start us off.
+setupInstructions: Select 4-6 texts at the appropriate level. Create role cards with
+  responsibilities. Prepare discussion guides.
+skill_areas:
+- reading
+sources:
+- author: Peregoy, S. & Boyle, O.
+  edition: 8th ed.
+  title: Reading, Writing, and Learning in ESL
+  year: 2023
+- Willis, J. (1996) A Framework for Task-Based Learning. Longman.
+targetStructures:
+- discourse
+- reading-comprehension
+teaching_tips:
+- tip: Before starting, model each role with a short sample text. Show what a good
+    Discussion Director question sounds like vs. a simple yes/no question.
+  source: Peregoy & Boyle (2023) Ch. 9
+- tip: The Connector role is often the weakest. Provide sentence frames like "This
+    reminds me of..." or "In my experience..." to help students make real-world links.
+  source: Peregoy & Boyle (2023) Ch. 9
+- tip: Literature circles combine reading with meaningful interaction around texts.
+    Students discuss content and process meaning together. (Willis 1996, Ch. 5.1)
+  context: TBL methodology

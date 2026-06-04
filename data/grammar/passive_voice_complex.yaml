@@ -1,20 +1,147 @@
+citations:
+- claim: 'Core meaning: Complex passive structures go beyond the basic ''be + past participle'' to include passive reporting
+    v'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms-9.6'
+  tier: 1
+- claim: 'Register distribution: In academic writing, passive voice is standard in methodology and results sections.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms-9.6'
+  tier: 1
+- claim: 'Discourse function: In academic writing, passive voice is standard in methodology and results sections.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms-9.6'
+  tier: 1
+- claim: Common error '*He is said that he is the richest man.*' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents how transfer effects are non-linear,
+    determined by functional fit between L1 and L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects are non-linear — determined by functional
+    fit between L1 and L2 systems rather than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning. Routledge.
+  tier: 2
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for L1-specific error patterns in English.
+    Their learner English framework documents how each L1 group produces characteristic errors in this grammatical domain,
+    enabling teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference and Other Problems, 2nd ed. Cambridge
+    University Press.'
+  tier: 2
+common_errors:
+- correction: He is said to be the richest man.
+  error: '*He is said that he is the richest man.*'
+  explanation: 'Passive reporting verbs take ''to + infinitive'', not ''that + clause''. Use either active: ''People say that
+    he is rich'' or passive: ''He is said to be rich'', but not a hybrid of both patterns.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+- correction: The building is expected to be completed soon.
+  error: '*The building is expected that it will be completed soon.*'
+  explanation: 'Double subject in passive reporting: ''the building'' is already the subject. Adding ''it'' creates a redundancy.
+    The structure is ''subject + be + past participle + to-infinitive''.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Arabic
+  reliability: D
+- correction: The report is expected to be published soon.
+  error: '*The report is expected to will be published soon.*'
+  explanation: After 'to' infinitive, use the base form only -- never add 'will'. The passive infinitive 'to be published'
+    already carries future meaning from 'is expected'.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+- correction: She made him apologize for what he did.
+  error: '*She made him to apologize for what he did.*'
+  explanation: Causative 'make' takes the bare infinitive (without 'to'). Adding 'to' after 'make + person' is a very common
+    error caused by other causative verbs that do take 'to' (ask, tell, want him to).
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Chinese
+  reliability: D
+- correction: He is said to be rich.
+  error: 'Using ''that'' instead of to-infinitive in passive reporting: *''He is said that he is rich.'''
+  explanation: 'Swan PEU: Passive reporting verbs take to-infinitive, not that-clause.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+description: Advanced passive structures including reporting verbs in the passive, double passives, passive with infinitives,
+  and passive with modal verbs for formal and academic expression.
+dialectal_variation: []
+discourse_notes:
+- note: In academic writing, passive voice is standard in methodology and results sections.
+- note: In news reports, passive voice is used when the agent is unknown or irrelevant.
+- note: In conversation, passive voice is less common; active voice is preferred.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - reporting verbs
+      - double passives
+      - formal announcements
+      min_examples: 4
+    structure: 'Reporting verb passive: Subject + be + said/believed/thought/known/reported/expected/considered + to-infinitive
+      — ''She is known to be an expert.'' / With perfect infinitive (past meaning): Subject + be + said/believed + to have
+      + past participle — ''He is said to have left the country.'' / Double passive: Subject + be + expected/required/ordered
+      + to be + past participle — ''The work is expected to be finished by Monday.'''
+  negative:
+    example_generator:
+      contexts:
+      - negative reporting
+      - denial
+      - absence of expectation
+      min_examples: 3
+    structure: Subject + be + not + said/believed/known + to-infinitive — 'He is not known to have any criminal record.' /
+      'She is not believed to be in danger.' / 'The project is not expected to be completed on time.'
+  questions:
+    example_generator:
+      contexts:
+      - checking rumours
+      - confirming expectations
+      - verifying reports
+      min_examples: 3
+    structure: Is/Are + subject + said/believed/known + to-infinitive? — 'Is he said to be the richest man?' / 'Are the results
+      expected to be positive?' / 'Was she believed to have escaped?'
 grammar_point: passive_voice_complex
-title: Complex Passive Voice (is said to / was believed to / is expected to)
-description: Advanced passive structures including reporting verbs in the passive,
-  double passives, passive with infinitives, and passive with modal verbs for formal
-  and academic expression.
 level: B2
 meaning:
-  core_meaning: Complex passive structures go beyond the basic 'be + past participle'
-    to include passive reporting verbs (is said to, is believed to), double passives
-    (is expected to be completed), and passives with infinitives and modals. These
-    structures are used in formal writing, academic discourse, and news reporting
-    to create distance, objectivity, and conciseness.
-  timeline: 'Present reporting passive: is/are + said/believed/thought + to-infinitive
-    — ''He is said to be the richest man in the world.'' / Past reporting passive:
-    was/were + said/believed + to have + past participle — ''She was believed to have
-    escaped.'' / Future passive: is/are + expected/likely + to-infinitive — ''The
-    results are expected to be announced tomorrow.'''
+  ccqs:
+  - answer: We don't know exactly — it is a general belief or rumour. The passive reporting structure allows us to report
+      what people say without naming the source.
+    purpose: Tests whether the learner understands passive reporting structures (is said to, is believed to) and how they
+      differ from active reporting (people say that).
+    question: In 'He is said to be rich,' who says this?
+  - answer: '"To be rich" means he is rich now. "To have been rich" means he was rich in the past (but may not be now).'
+    purpose: Tests whether the learner understands how cleft sentences (it-clefts and wh-clefts) are used to emphasize specific
+      information. The structure changes the focus of the sentence.
+    question: Can you explain the difference between 'He is said to be rich' and 'He is said to have been rich' by giving
+      an example of when to use each?
+  - answer: Two. 'Is expected' (passive) + 'to be completed' (passive infinitive). This is called a double passive.
+    purpose: Tests whether the learner can distinguish between existential 'there' (indicating existence) and dummy 'it' (used
+      for weather, time, distance). Confusing these is a very common beginner error.
+    question: In 'The building is expected to be completed by June,' how many passive structures are there?
+  - answer: To create distance and objectivity. It allows them to report claims without confirming them as facts and without
+      naming (or having to name) the source.
+    purpose: Tests whether the learner can identify whether a sentence is active or passive. Understanding voice is essential
+      for choosing the correct verb form and word order.
+    question: Why do journalists use passive reporting instead of active?
   contrast: 'Active reporting: "People say that he is the richest man."
 
     Passive reporting: "He is said to be the richest man."
@@ -28,33 +155,9 @@ meaning:
     Double passive: "The report is expected to be completed by Friday."
 
     '
-  ccqs:
-  - question: In 'He is said to be rich,' who says this?
-    answer: We don't know exactly — it is a general belief or rumour. The passive
-      reporting structure allows us to report what people say without naming the source.
-    purpose: Tests whether the learner understands passive reporting structures (is
-      said to, is believed to) and how they differ from active reporting (people say
-      that).
-  - question: What is the difference between 'He is said to be rich' and 'He is said
-      to have been rich'?
-    answer: '"To be rich" means he is rich now. "To have been rich" means he was rich
-      in the past (but may not be now).'
-    purpose: Tests whether the learner understands how cleft sentences (it-clefts
-      and wh-clefts) are used to emphasize specific information. The structure changes
-      the focus of the sentence.
-  - question: In 'The building is expected to be completed by June,' how many passive
-      structures are there?
-    answer: Two. 'Is expected' (passive) + 'to be completed' (passive infinitive).
-      This is called a double passive.
-    purpose: Tests whether the learner can distinguish between existential 'there'
-      (indicating existence) and dummy 'it' (used for weather, time, distance). Confusing
-      these is a very common beginner error.
-  - question: Why do journalists use passive reporting instead of active?
-    answer: To create distance and objectivity. It allows them to report claims without
-      confirming them as facts and without naming (or having to name) the source.
-    purpose: Tests whether the learner can identify whether a sentence is active or
-      passive. Understanding voice is essential for choosing the correct verb form
-      and word order.
+  core_meaning: Complex passive structures go beyond the basic 'be + past participle' to include passive reporting verbs (is
+    said to, is believed to), double passives (is expected to be completed), and passives with infinitives and modals. These
+    structures are used in formal writing, academic discourse, and news reporting to create distance, objectivity, and conciseness.
   example_generator:
     contexts:
     - news reporting
@@ -63,92 +166,133 @@ meaning:
     - rumours and speculation
     - official announcements
     cultural_notes:
-    - Passive reporting structures are extremely common in quality journalism (BBC,
-      The Guardian, The New York Times). They allow writers to attribute claims without
-      endorsing them. This is a key skill for critical reading.
-    - 'In academic writing, passive reporting is used to summarise research findings
-      objectively: ''The results are thought to indicate...'' / ''The method is considered
-      to be reliable.'''
+    - Passive reporting structures are extremely common in quality journalism (BBC, The Guardian, The New York Times). They
+      allow writers to attribute claims without endorsing them. This is a key skill for critical reading.
+    - 'In academic writing, passive reporting is used to summarise research findings objectively: ''The results are thought
+      to indicate...'' / ''The method is considered to be reliable.'''
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Reporting verb passive: Subject + be + said/believed/thought/known/reported/expected/considered
-      + to-infinitive — ''She is known to be an expert.'' / With perfect infinitive
-      (past meaning): Subject + be + said/believed + to have + past participle — ''He
-      is said to have left the country.'' / Double passive: Subject + be + expected/required/ordered
-      + to be + past participle — ''The work is expected to be finished by Monday.'''
-    example_generator:
-      contexts:
-      - reporting verbs
-      - double passives
-      - formal announcements
-      min_examples: 4
-  negative:
-    structure: Subject + be + not + said/believed/known + to-infinitive — 'He is not
-      known to have any criminal record.' / 'She is not believed to be in danger.'
-      / 'The project is not expected to be completed on time.'
-    example_generator:
-      contexts:
-      - negative reporting
-      - denial
-      - absence of expectation
-      min_examples: 3
-  questions:
-    structure: Is/Are + subject + said/believed/known + to-infinitive? — 'Is he said
-      to be the richest man?' / 'Are the results expected to be positive?' / 'Was
-      she believed to have escaped?'
-    example_generator:
-      contexts:
-      - checking rumours
-      - confirming expectations
-      - verifying reports
-      min_examples: 3
+  timeline: 'Present reporting passive: is/are + said/believed/thought + to-infinitive — ''He is said to be the richest man
+    in the world.'' / Past reporting passive: was/were + said/believed + to have + past participle — ''She was believed to
+    have escaped.'' / Future passive: is/are + expected/likely + to-infinitive — ''The results are expected to be announced
+    tomorrow.'''
+phonetics:
+- example_generator:
+    contexts:
+    - stress patterns
+    - information focus
+  l1_issue: Learners may stress the reporting verb equally, losing the natural focus on the new information. Practice with
+    contrastive stress drills.
+  note: 'In passive reporting structures, the reporting verb (said, believed, known) is usually unstressed, and the main information
+    (the to-infinitive clause) carries the primary stress: ''He is said to be RICH.'' /hi ɪz sed tu bi rɪtʃ/.'
+- example_generator:
+    contexts:
+    - connected speech
+    - weak forms
+  l1_issue: Learners may pronounce 'to' as /tuː/ and 'have' as /hæv/ in all contexts. Drill the reduced forms for natural-sounding
+    speech.
+  note: 'The word ''to'' in the to-infinitive is reduced to /tə/ in connected speech: ''He is said to be'' /hi ɪz sed tə bi/.
+    The ''have'' in perfect infinitives is reduced to /əv/ or /ə/: ''She is said to have left'' /ʃi ɪz sed tə əv left/.'
+register_notes:
+- note: In formal writing, passive voice is used to depersonalize and focus on the process.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In conversation, passive voice is less common; active voice is preferred.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Complex passive combinations (modal + passive, perfect + passive, progressive + passive): register
+    distribution varies. Modal passives (should be done) span registers; perfect progressive passives are rare across all
+    registers. Ch. 6.5'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 6.5
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Reporting verbs in the passive — say, believe, think, know, report, expect,
-    consider, understand, allege, claim
-  type: grammatical
-  examples:
+- examples:
   - He is said to be a genius. (People say he is a genius.)
   - She is believed to live abroad. (People believe she lives abroad.)
   - They are thought to have fled the country. (People think they fled.)
   - The company is expected to announce record profits. (People expect this.)
-- rule: Perfect infinitive (to have + past participle) — for past events
+  rule: Reporting verbs in the passive — say, believe, think, know, report, expect, consider, understand, allege, claim
   type: grammatical
-  examples:
+- examples:
   - He is said to have resigned. (People say he resigned.)
   - She is believed to have been a spy. (People believe she was a spy.)
   - The painting is thought to have been destroyed. (People think it was destroyed.)
-- rule: Double passive — passive verb + passive infinitive
+  rule: Perfect infinitive (to have + past participle) — for past events
   type: grammatical
-  examples:
+- examples:
   - The building is expected to be completed by 2025.
   - The law is due to be passed next month.
   - The prisoners were ordered to be released.
   - The car is supposed to be repaired by Friday.
-- rule: Passive with 'get' — informal alternative
+  rule: Double passive — passive verb + passive infinitive
   type: grammatical
-  examples:
+- examples:
   - He got promoted last week. (He was promoted.)
   - She got fired for being late. (She was fired.)
   - They got invited to the wedding. (They were invited.)
-- rule: Passive with modals — modal + be + past participle
+  rule: Passive with 'get' — informal alternative
   type: grammatical
-  examples:
+- examples:
   - The work must be completed by Friday.
   - This information should not be shared.
   - The problem can be solved easily.
   - The meeting might be postponed.
+  rule: Passive with modals — modal + be + past participle
+  type: grammatical
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: 'Give students 10 active reporting sentences. They transform each to passive reporting: ''People say
+      that she is an expert.'' → ''She is said to be an expert.'' Include past events: ''People believe he stole the money.''
+      → ''He is believed to have stolen the money.'''
+    duration: 20
+    name: Active to passive reporting transformation
+  - adaptation_notes: 'Provide a short news article (200-250 words). Students underline all passive reporting structures and
+      identify: (a) the reporting verb, (b) whether it refers to present or past, (c) what the active equivalent would be.'
+    duration: 15
+    name: News analysis
+  - adaptation_notes: 'Students complete sentences using double passives: ''The new bridge is expected...'' → ''The new bridge
+      is expected to be completed by 2026.'' Provide 8 sentence stems.'
+    duration: 15
+    name: Double passive practice
+  - adaptation_notes: 'Students work in pairs. Student A makes a rumour about a famous person. Student B reports it using
+      passive reporting: ''I heard that Brad Pitt is moving to London.'' → ''Brad Pitt is said to be moving to London.'' Rotate
+      roles.'
+    duration: 20
+    name: Rumour mill
+  tips:
+  - 'Start with active reporting: ''People say that he is rich.'' Then show the transformation: ''He is said to be rich.''
+    Use a step-by-step process: (1) Move the subject forward, (2) Make the reporting verb passive, (3) Change the that-clause
+    to a to-infinitive.'
+  - 'Create a reference chart of reporting verbs: say, believe, think, know, report, expect, consider, understand, allege,
+    claim. Show which are most common in news vs. academic writing.'
+  - Use real news headlines for analysis. Have students identify passive reporting structures and rewrite them in active voice
+    to understand the transformation.
+  - 'Teach the perfect infinitive (to have + past participle) for past events with a timeline: ''He is said to be rich'' (now)
+    vs. ''He is said to have been rich'' (past).'
+  - 'Practice double passives with workplace scenarios: ''The report is expected to be finished by...'' / ''The building is
+    scheduled to be completed by...'''
+  - 'Swan PEU: The passive reporting transformation -- Active: ''People say he is rich.'' -> Passive: ''He is said to be rich.''
+    Three steps: move subject forward, make reporting verb passive, change that-clause to to-infinitive.'
+  - 'Swan PEU: ''Is said to have + past participle'' for past events. ''He is said to have left the country.'''
+  - 'Swan PEU: Double passive with ''expected'', ''required'', ''ordered''. ''The work is expected to be finished by Friday.'''
+title: Complex Passive Voice (is said to / was believed to / is expected to)
 use:
 - context: News and journalism
-  description: Passive reporting is a cornerstone of news writing, allowing journalists
-    to report claims objectively.
+  description: Passive reporting is a cornerstone of news writing, allowing journalists to report claims objectively.
   examples:
   - The president is said to be considering resignation.
   - Three people are believed to have been killed in the explosion.
   - The suspect is known to have connections to organised crime.
 - context: Academic writing
-  description: Used to summarise research findings and attribute claims to sources
-    without direct quotation.
+  description: Used to summarise research findings and attribute claims to sources without direct quotation.
   examples:
   - The results are thought to support the hypothesis.
   - This method is considered to be the most reliable.
@@ -165,123 +309,3 @@ use:
   - She is supposed to be the best doctor in the town.
   - He is meant to be very rich.
   - They are rumoured to be getting divorced.
-phonetics:
-- note: 'In passive reporting structures, the reporting verb (said, believed, known)
-    is usually unstressed, and the main information (the to-infinitive clause) carries
-    the primary stress: ''He is said to be RICH.'' /hi ɪz sed tu bi rɪtʃ/.'
-  example_generator:
-    contexts:
-    - stress patterns
-    - information focus
-  l1_issue: Learners may stress the reporting verb equally, losing the natural focus
-    on the new information. Practice with contrastive stress drills.
-- note: 'The word ''to'' in the to-infinitive is reduced to /tə/ in connected speech:
-    ''He is said to be'' /hi ɪz sed tə bi/. The ''have'' in perfect infinitives is
-    reduced to /əv/ or /ə/: ''She is said to have left'' /ʃi ɪz sed tə əv left/.'
-  example_generator:
-    contexts:
-    - connected speech
-    - weak forms
-  l1_issue: Learners may pronounce 'to' as /tuː/ and 'have' as /hæv/ in all contexts.
-    Drill the reduced forms for natural-sounding speech.
-teaching:
-  methodology: Guided discovery
-  tips:
-  - 'Start with active reporting: ''People say that he is rich.'' Then show the transformation:
-    ''He is said to be rich.'' Use a step-by-step process: (1) Move the subject forward,
-    (2) Make the reporting verb passive, (3) Change the that-clause to a to-infinitive.'
-  - 'Create a reference chart of reporting verbs: say, believe, think, know, report,
-    expect, consider, understand, allege, claim. Show which are most common in news
-    vs. academic writing.'
-  - Use real news headlines for analysis. Have students identify passive reporting
-    structures and rewrite them in active voice to understand the transformation.
-  - 'Teach the perfect infinitive (to have + past participle) for past events with
-    a timeline: ''He is said to be rich'' (now) vs. ''He is said to have been rich''
-    (past).'
-  - 'Practice double passives with workplace scenarios: ''The report is expected to
-    be finished by...'' / ''The building is scheduled to be completed by...'''
-  recommended_activities:
-  - name: Active to passive reporting transformation
-    duration: 20
-    adaptation_notes: 'Give students 10 active reporting sentences. They transform
-      each to passive reporting: ''People say that she is an expert.'' → ''She is
-      said to be an expert.'' Include past events: ''People believe he stole the money.''
-      → ''He is believed to have stolen the money.'''
-  - name: News analysis
-    duration: 15
-    adaptation_notes: 'Provide a short news article (200-250 words). Students underline
-      all passive reporting structures and identify: (a) the reporting verb, (b) whether
-      it refers to present or past, (c) what the active equivalent would be.'
-  - name: Double passive practice
-    duration: 15
-    adaptation_notes: 'Students complete sentences using double passives: ''The new
-      bridge is expected...'' → ''The new bridge is expected to be completed by 2026.''
-      Provide 8 sentence stems.'
-  - name: Rumour mill
-    duration: 20
-    adaptation_notes: 'Students work in pairs. Student A makes a rumour about a famous
-      person. Student B reports it using passive reporting: ''I heard that Brad Pitt
-      is moving to London.'' → ''Brad Pitt is said to be moving to London.'' Rotate
-      roles.'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
-    Modals, §9.1-9.6'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*He is said that he is the richest man.*'
-  correction: He is said to be the richest man.
-  explanation: 'Passive reporting verbs take ''to + infinitive'', not ''that + clause''.
-    Use either active: ''People say that he is rich'' or passive: ''He is said to
-    be rich'', but not a hybrid of both patterns.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: '*The building is expected that it will be completed soon.*'
-  correction: The building is expected to be completed soon.
-  explanation: 'Double subject in passive reporting: ''the building'' is already the
-    subject. Adding ''it'' creates a redundancy. The structure is ''subject + be +
-    past participle + to-infinitive''.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-  - Arabic
-- error: '*The report is expected to will be published soon.*'
-  correction: The report is expected to be published soon.
-  explanation: After 'to' infinitive, use the base form only -- never add 'will'.
-    The passive infinitive 'to be published' already carries future meaning from 'is
-    expected'.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: '*She made him to apologize for what he did.*'
-  correction: She made him apologize for what he did.
-  explanation: Causative 'make' takes the bare infinitive (without 'to'). Adding 'to'
-    after 'make + person' is a very common error caused by other causative verbs that
-    do take 'to' (ask, tell, want him to).
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - Chinese
-register_notes:
-- note: In academic writing, passive voice is standard in methodology and results
-    sections.
-- note: In formal writing, passive voice is used to depersonalize and focus on the
-    process.
-- note: In conversation, passive voice is less common; active voice is preferred.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In academic writing, passive voice is standard in methodology and results
-    sections.
-- note: In news reports, passive voice is used when the agent is unknown or irrelevant.
-- note: In conversation, passive voice is less common; active voice is preferred.

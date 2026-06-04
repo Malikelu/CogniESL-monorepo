@@ -1,36 +1,111 @@
-grammar_point: formal_omission
-title: Formal Omission (Conjunction Reduction, Whiz-Deletion, and Gapping)
+citations:
+- claim: 'Core meaning: In formal and literary English, speakers and writers frequently
+    omit elements that are recoverable from context.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24:
+    Coordination'
+  tier: 1
+- claim: 'Register distribution: In formal writing, omission patterns such as conjunction
+    reduction, whiz-deletion, and gapping create tighter, more elegant prose.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24:
+    Coordination'
+  tier: 1
+- claim: 'Discourse function: Omission in formal English creates structural parallelism
+    and conciseness, allowing writers to pack more information into fewer words.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24:
+    Coordination'
+  tier: 1
+- claim: Common error '*If I had known, I would have come.* (formal)' for Portuguese,
+    Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: Oshima & Hogue's Great Writing series demonstrates how this grammatical structure
+    functions in academic writing contexts. Their approach connects grammar instruction
+    to writing outcomes, showing learners how accurate use of this structure improves
+    paragraph cohesion, essay organization, and academic register.
+  source: Oshima, A. and Hogue, A. (2006). Introduction to Academic Writing, 3rd ed.
+    Pearson Longman.
+  tier: 2
+common_errors: []
 description: Advanced omission patterns in formal and literary English where repeated
   or predictable elements are left out for conciseness and stylistic effect.
+dialectal_variation: []
+discourse_notes:
+- note: Ellipsis in formal English allows omission of recoverable elements, creating
+    structural parallelism and conciseness.
+  affirmative:
+    example_generator:
+      contexts:
+      - academic writing
+      - literary prose
+      - news reporting
+      - formal speeches
+      min_examples: 4
+    structure: 'Conjunction reduction: Subject + Verb1 + and + Verb2 (omitted repeated
+      subject) / Whiz-deletion: Noun + -ing/-ed phrase (omitted who/which + be) /
+      Gapping: Subject1 + Verb + Object1 + and + Subject2 + Object2 (omitted repeated
+      verb)'
+  negative:
+    example_generator:
+      contexts:
+      - argumentation
+      - contrastive writing
+      - formal debate
+      min_examples: 3
+    structure: 'Conjunction reduction with ''not'': Subject + Auxiliary + not + Verb1
+      + but + Verb2 / Gapping with negation: Subject1 + Auxiliary + not + Object1
+      + but + Subject2 + Object2'
+  questions:
+    example_generator:
+      contexts:
+      - formal inquiry
+      min_examples: 2
+    structure: Omission in questions is rare in formal English; full forms are preferred
+      for clarity.
+grammar_point: formal_omission
 level: C2
 meaning:
+  ccqs:
+  - answer: Yes — 'The woman sitting there' (whiz-deletion).
+    purpose: Tests whether the learner knows that formal English can omit 'if' and
+      invert subject and auxiliary (Had I known...). This is common in academic writing.
+    question: Can we omit 'who is' in 'The woman who is sitting there'?
+  - answer: 'Yes — it avoids repetition in coordinated clauses: ''John ate the pie,
+      and Mary the cake.'''
+    purpose: Tests whether the learner can identify and apply the correct form/meaning
+      of this grammar point in context. The question 'Is gapping common in formal
+      writing?...' checks conceptual understanding, not just memorization.
+    question: Is gapping common in formal writing?
+  - answer: No — 'She sang and danced' (conjunction reduction).
+    purpose: Tests whether the learner can identify and apply the correct form/meaning
+      of this grammar point in context. The question 'Do we need the repeated subject
+      in 'She sang and s...' checks conceptual understanding, not just memorization.
+    question: Do we need the repeated subject in 'She sang and she danced'?
+  - answer: The subject 'she' and the verb 'were' were omitted — this is a reduced
+      adverbial clause, where a subordinate clause starting with 'when,' 'although,'
+      'if,' or 'while' has its subject and 'be' verb dropped because they match the
+      main clause subject. 'Although she was tired and hungry' becomes 'Although tired
+      and hungry' — a hallmark of formal and literary English style.
+    purpose: Tests whether the learner understands reduced adverbial clause omission
+      and how it differs from gapping, whiz-deletion, and conjunction reduction. This
+      is the fifth major type of formal omission and is particularly common in academic
+      and literary writing for creating concise, elegant sentences with concessive
+      and temporal subordination.
+    question: '"(Although she was) Tired and hungry, she continued the journey." What
+      was omitted here — and what type of omission is this?'
+  contrast: 'Full form: ''The man who was standing by the door left.'' / With whiz-deletion:
+    ''The man standing by the door left.'' — The reduced form is more concise and
+    common in formal writing.'
   core_meaning: 'In formal and literary English, speakers and writers frequently omit
     elements that are recoverable from context. This includes: (1) conjunction reduction
     (omitting repeated subjects/auxiliaries in coordinated clauses), (2) whiz-deletion
     (omitting ''who/which + be'' in relative clauses), and (3) gapping (omitting repeated
     verbs in coordinated structures). These omissions create tighter, more elegant
     prose.'
-  timeline: Applicable across all tenses; omission depends on structural parallelism
-    rather than time reference.
-  contrast: 'Full form: ''The man who was standing by the door left.'' / With whiz-deletion:
-    ''The man standing by the door left.'' — The reduced form is more concise and
-    common in formal writing.'
-  ccqs:
-  - question: Can we omit 'who is' in 'The woman who is sitting there'?
-    answer: Yes — 'The woman sitting there' (whiz-deletion).
-    purpose: Tests whether the learner knows that formal English can omit 'if' and
-      invert subject and auxiliary (Had I known...). This is common in academic writing.
-  - question: Is gapping common in formal writing?
-    answer: 'Yes — it avoids repetition in coordinated clauses: ''John ate the pie,
-      and Mary the cake.'''
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Is gapping common in formal
-      writing?...' checks conceptual understanding, not just memorization.
-  - question: Do we need the repeated subject in 'She sang and she danced'?
-    answer: No — 'She sang and danced' (conjunction reduction).
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Do we need the repeated subject
-      in 'She sang and s...' checks conceptual understanding, not just memorization.
   example_generator:
     contexts:
     - academic prose
@@ -43,69 +118,108 @@ meaning:
       with less flexible omission rules (e.g., Arabic, Japanese) may find these structures
       challenging.
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Conjunction reduction: Subject + Verb1 + and + Verb2 (omitted repeated
-      subject) / Whiz-deletion: Noun + -ing/-ed phrase (omitted who/which + be) /
-      Gapping: Subject1 + Verb + Object1 + and + Subject2 + Object2 (omitted repeated
-      verb)'
-    example_generator:
-      contexts:
-      - academic writing
-      - literary prose
-      - news reporting
-      - formal speeches
-      min_examples: 4
-  negative:
-    structure: 'Conjunction reduction with ''not'': Subject + Auxiliary + not + Verb1
-      + but + Verb2 / Gapping with negation: Subject1 + Auxiliary + not + Object1
-      + but + Subject2 + Object2'
-    example_generator:
-      contexts:
-      - argumentation
-      - contrastive writing
-      - formal debate
-      min_examples: 3
-  questions:
-    structure: Omission in questions is rare in formal English; full forms are preferred
-      for clarity.
-    example_generator:
-      contexts:
-      - formal inquiry
-      min_examples: 2
+  timeline: Applicable across all tenses; omission depends on structural parallelism
+    rather than time reference.
+phonetics:
+- example_generator:
+  - contexts:
+    - rhythm and parallelism in gapping
+  l1_issue: Speakers of languages with strict verb-final or verb-medial word orders
+    may struggle with the flexibility required for gapping.
+  note: 'Gapped structures often have a rhythmic, parallel intonation pattern: ''John
+    ordered the STEAK, and Mary the FISH.'''
+- example_generator:
+  - contexts:
+    - connected speech in reduced relative clauses
+  l1_issue: Learners may insert a pause where none belongs, making the reduced clause
+    sound like an afterthought.
+  note: Reduced clauses (whiz-deletion) are typically spoken without a pause, forming
+    a single intonation unit with the head noun.
+register_notes:
+- note: Biber et al. (2021) — Omission patterns in formal writing differ from conversational
+    ellipsis. Formal prose permits subject-auxiliary omission in coordinated/participial
+    clauses. Register determines omission type. Ch. 8.6
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 8.6
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24:
+    Coordination-16.7'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Conjunction reduction (omitting repeated subject/auxiliary)
-  type: grammatical
-  examples:
+- examples:
   - She opened the door and (she) walked into the room.
   - He has written three books and (he) published dozens of articles.
   - They will arrive on Monday and (they) stay until Friday.
-- rule: Whiz-deletion (omitting relative pronoun + be)
+  rule: Conjunction reduction (omitting repeated subject/auxiliary)
   type: grammatical
-  examples:
+- examples:
   - The woman (who was) standing by the door was my aunt.
   - The report (that was) published yesterday contains alarming data.
   - Anyone (who is) wishing to participate should register by Friday.
   - The man (who is) accused of the crime pleaded not guilty.
-- rule: Gapping (omitting repeated verb in coordination)
+  rule: Whiz-deletion (omitting relative pronoun + be)
   type: grammatical
-  examples:
+- examples:
   - John ordered the steak, and Mary the fish.
   - Some students studied French, others German, and a few Spanish.
   - She gave him a book and her sister a CD.
-- rule: Reduced adverbial clauses (omitting subject + be)
+  rule: Gapping (omitting repeated verb in coordination)
   type: grammatical
-  examples:
+- examples:
   - (When he was) Walking to work, he noticed a strange light.
   - (Although she was) Tired and hungry, she continued the journey.
   - (If it is) Necessary, we will extend the deadline.
   - (When they are) Properly cooked, these mushrooms are delicious.
-- rule: Comparative deletion (omitting repeated elements after 'than'/'as')
+  rule: Reduced adverbial clauses (omitting subject + be)
   type: grammatical
-  examples:
+- examples:
   - She is taller than I (am tall).
   - He works harder than his brother (works hard).
   - More people came than we expected (people to come).
+  rule: Comparative deletion (omitting repeated elements after 'than'/'as')
+  type: grammatical
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Give students 10 reduced sentences. They must write out the
+      full, unreduced versions and identify what was omitted.
+    duration: 15
+    name: Expand the Reduction
+  - adaptation_notes: Give students 10 full sentences. They must reduce them by omitting
+      recoverable elements. Compare versions for naturalness.
+    duration: 15
+    name: Reduce the Sentence
+  - adaptation_notes: Students collect 10 news headlines that use omission, expand
+      them to full sentences, and discuss why the journalist chose to omit elements.
+    duration: 20
+    name: News Headline Analysis
+  - adaptation_notes: Students write sentences using gapping with parallel structures.
+      Peer review for grammaticality and naturalness.
+    duration: 20
+    name: Parallel Structure Challenge
+  tips:
+  - 'Start with the most common pattern: whiz-deletion in relative clauses, as students
+    encounter these frequently in reading.'
+  - 'Use ''expansion'' exercises first: give reduced forms and ask students to restore
+    the full form.'
+  - 'Then move to ''reduction'' exercises: give full forms and ask students to omit
+    recoverable elements.'
+  - Introduce gapping last, as it is the most abstract and requires strong awareness
+    of parallel structure.
+  - Use authentic texts (news headlines, academic abstracts) to show omission in context.
+  - Emphasise that omission is a sign of advanced proficiency — it should not be introduced
+    too early.
+  - 'Swan PEU: Omission of subject/verb in participle clauses — ''Walking down the
+    street, I saw an old friend.'' The subject of the participle = the subject of
+    the main clause. Dangling participles are a common error in formal writing.'
+title: Formal Omission (Conjunction Reduction, Whiz-Deletion, and Gapping)
 use:
 - context: Academic and scientific writing
   description: Omission creates the dense, concise prose expected in research papers
@@ -137,81 +251,3 @@ use:
   - We shall fight on the beaches, (we shall fight) on the landing grounds, (we shall
     fight) in the fields.
   - Some nations chose war, others peace.
-phonetics:
-- note: 'Gapped structures often have a rhythmic, parallel intonation pattern: ''John
-    ordered the STEAK, and Mary the FISH.'''
-  example_generator:
-  - contexts:
-    - rhythm and parallelism in gapping
-  l1_issue: Speakers of languages with strict verb-final or verb-medial word orders
-    may struggle with the flexibility required for gapping.
-- note: Reduced clauses (whiz-deletion) are typically spoken without a pause, forming
-    a single intonation unit with the head noun.
-  example_generator:
-  - contexts:
-    - connected speech in reduced relative clauses
-  l1_issue: Learners may insert a pause where none belongs, making the reduced clause
-    sound like an afterthought.
-teaching:
-  methodology: Guided discovery
-  tips:
-  - 'Start with the most common pattern: whiz-deletion in relative clauses, as students
-    encounter these frequently in reading.'
-  - 'Use ''expansion'' exercises first: give reduced forms and ask students to restore
-    the full form.'
-  - 'Then move to ''reduction'' exercises: give full forms and ask students to omit
-    recoverable elements.'
-  - Introduce gapping last, as it is the most abstract and requires strong awareness
-    of parallel structure.
-  - Use authentic texts (news headlines, academic abstracts) to show omission in context.
-  - Emphasise that omission is a sign of advanced proficiency — it should not be introduced
-    too early.
-  recommended_activities:
-  - name: Expand the Reduction
-    duration: 15
-    adaptation_notes: Give students 10 reduced sentences. They must write out the
-      full, unreduced versions and identify what was omitted.
-  - name: Reduce the Sentence
-    duration: 15
-    adaptation_notes: Give students 10 full sentences. They must reduce them by omitting
-      recoverable elements. Compare versions for naturalness.
-  - name: News Headline Analysis
-    duration: 20
-    adaptation_notes: Students collect 10 news headlines that use omission, expand
-      them to full sentences, and discuss why the journalist chose to omit elements.
-  - name: Parallel Structure Challenge
-    duration: 20
-    adaptation_notes: Students write sentences using gapping with parallel structures.
-      Peer review for grammaticality and naturalness.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
-    Coordination, §16.5-16.7'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*If I had known, I would have come.* (formal)'
-  correction: Had I known, I would have come.
-  explanation: In formal English, 'if' can be omitted and the auxiliary 'had' moves
-    to the front. This creates a more elegant, formal style.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

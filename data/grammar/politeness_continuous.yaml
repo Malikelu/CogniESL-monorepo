@@ -1,28 +1,106 @@
-grammar_point: politeness_continuous
-title: Politeness (Continuous Forms)
+citations:
+- claim: 'Core meaning: Continuous forms can soften statements, making them less direct
+    and more polite. The past continuous (I was wondering) creates social distance,
+    which increases politeness.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7:
+    The Tense-Aspect System (past tense remoteness = social distance)'
+  tier: 1
+- claim: 'Register distribution: Polite continuous forms (I was wondering, I was hoping)
+    are standard in formal/professional communication, especially in emails. Direct
+    forms (I want, I need) are appropriate in informal contexts but can sound
+    demanding in formal ones.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7:
+    The Tense-Aspect System'
+  tier: 1
+- claim: Common error '*I want to ask you something.* (direct)' for Portuguese, Spanish,
+    Japanese speakers
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 6: Politeness'
+  tier: 1
+common_errors:
+- correction: I was wondering if I could ask you something. / I was hoping you could
+    help me.
+  error: 'I want to ask you something. (grammatically correct but pragmatically direct;
+    may sound blunt in formal contexts)'
+  explanation: Continuous forms (was wondering, was hoping) soften requests and make
+    them more polite. Direct forms (I want, I need) can sound demanding to English
+    ears, especially in formal or professional contexts. The continuous form is not
+    grammatically required but is pragmatically preferred.
+  flagged: false
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Japanese
+  - Korean
+  reliability: D
 description: 'Using continuous forms to make statements more polite and less direct:
   I was wondering, I am hoping, I am looking forward to.'
+dialectal_variation: []
+discourse_notes:
+- 'The past continuous for politeness (I was wondering, I was hoping) leverages the
+  remoteness meaning of past tense to create social distance. This is distinct from
+  the temporal use of past tense. Source: Celce-Murcia & Larsen-Freeman (2015) GB3
+  Ch. 7: The Tense-Aspect System, §7.2.'
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - polite requests
+      - expressing hopes
+      - tentative suggestions
+      min_examples: 4
+    structure: 'Subject + be (present or past) + verb-ing + complement: ''I was wondering
+      if you could help.'' / ''I am hoping to hear from you soon.'' / ''We were wondering
+      whether you might be free.'''
+  negative:
+    example_generator:
+      contexts:
+      - negative politeness
+      - softening disagreement
+      - managing expectations
+      min_examples: 3
+    structure: 'Subject + be + not + verb-ing: ''I am not expecting a reply immediately.''
+      / ''I was not suggesting that you were wrong.'' / ''We are not looking to change
+      the arrangement.'''
+  questions:
+    example_generator:
+      contexts:
+      - polite enquiries
+      - offering help
+      - checking intentions
+      min_examples: 3
+    structure: 'Was/Were + subject + verb-ing + complement: ''Were you looking for
+      something?'' / ''Was there anything you needed?'' / ''Were you hoping to speak
+      to me?'''
+grammar_point: politeness_continuous
 level: B2
 meaning:
-  core_meaning: Continuous forms can soften statements, making them less direct and
-    more polite. The continuous aspect creates a sense of tentativeness or ongoing
-    process, which sounds less demanding and more considerate of the listener.
-  timeline: Present — the politeness applies to the current interaction. Past continuous
-    forms (I was wondering) add even more distance and therefore more politeness.
+  ccqs:
+  - answer: Indirect — they are being polite.
+    purpose: Tests whether the learner knows that English uses continuous forms (I
+      was wondering, I was hoping) to make requests more polite and less direct.
+    question: Is this speaker being direct or indirect?
+  - answer: Yes — it sounds less demanding and more tentative.
+    purpose: Tests understanding of politeness_continuous.
+    question: Does the continuous form make the request softer?
+  - answer: More polite — the past continuous creates more distance.
+    purpose: Tests whether the learner knows that past continuous (I was wondering)
+      creates more politeness than present continuous (I wonder) through greater social
+      distance.
+    question: Is 'I was wondering' more or less polite than 'I wonder'?
+  - answer: "I was wondering if you could possibly help me with this report. The combination of past continuous (was wondering) + modal (could) + adverb (possibly) creates maximum politeness through layered indirectness."
+    purpose: Tests whether the learner can construct a highly polite request by
+      combining past continuous with modal verbs and softening adverbs.
+    question: Which is more polite -- 'Can you help me?' or 'I was wondering if you
+      could possibly help me with this report'? Why?
   contrast: Direct = 'I want to ask you something.' vs Polite continuous = 'I was
     wondering if I could ask you something.' / Direct = 'Can you help me?' vs Polite
     = 'I was wondering if you could help me.'
-  ccqs:
-  - question: Is this speaker being direct or indirect?
-    answer: Indirect — they are being polite.
-    purpose: Tests whether the learner knows that English uses continuous forms (I
-      was wondering, I was hoping) to make requests more polite and less direct.
-  - question: Does the continuous form make the request softer?
-    answer: Yes — it sounds less demanding and more tentative.
-    purpose: Tests understanding of politeness_continuous.
-  - question: Is 'I was wondering' more or less polite than 'I wonder'?
-    answer: More polite — the past continuous creates more distance.
-    purpose: Tests understanding of politeness_continuous.
+  core_meaning: Continuous forms can soften statements, making them less direct and
+    more polite. The continuous aspect creates a sense of tentativeness or ongoing
+    process, which sounds less demanding and more considerate of the listener.
   example_generator:
     contexts:
     - making requests
@@ -37,72 +115,118 @@ meaning:
     - British English tends to use more indirect/polite forms than American English
     - In emails, polite continuous forms are the standard for requests
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Subject + be (present or past) + verb-ing + complement: ''I was wondering
-      if you could help.'' / ''I am hoping to hear from you soon.'' / ''We were wondering
-      whether you might be free.'''
-    example_generator:
-      contexts:
-      - polite requests
-      - expressing hopes
-      - tentative suggestions
-      min_examples: 4
-  negative:
-    structure: 'Subject + be + not + verb-ing: ''I am not expecting a reply immediately.''
-      / ''I was not suggesting that you were wrong.'' / ''We are not looking to change
-      the arrangement.'''
-    example_generator:
-      contexts:
-      - negative politeness
-      - softening disagreement
-      - managing expectations
-      min_examples: 3
-  questions:
-    structure: 'Was/Were + subject + verb-ing + complement: ''Were you looking for
-      something?'' / ''Was there anything you needed?'' / ''Were you hoping to speak
-      to me?'''
-    example_generator:
-      contexts:
-      - polite enquiries
-      - offering help
-      - checking intentions
-      min_examples: 3
+  timeline: Present — the politeness applies to the current interaction. Past continuous
+    forms (I was wondering) add even more distance and therefore more politeness.
+phonetics:
+- example_generator:
+    contexts:
+    - intonation patterns
+  l1_issue: Speakers whose L1 does not use continuous forms for politeness may sound
+    too direct or blunt. The intonation pattern (softer, more tentative) is as important
+    as the grammar.
+  note: Polite continuous forms are typically spoken with softer, lower intonation
+    than direct statements. The overall tone should sound tentative, not demanding.
+- example_generator:
+    contexts:
+    - connected speech
+    - weak forms
+  l1_issue: Learners may over-pronounce 'was' as /wɒz/, making the phrase sound less
+    natural and more emphatic than intended.
+  note: 'In ''I was wondering'', the ''was'' is often reduced to /wəz/ in connected
+    speech: /aɪ wəz wʌndərɪŋ/.'
+register_notes:
+- note: 'Biber et al. (1999) — Progressive for politeness (''I was hoping...'', ''I
+    was wondering...''): more common in conversation than academic prose. Past continuous
+    softens requests. Ch. 6.3'
+  reliability: B
+  source: Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch. 6.3
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch.
+    6: Politeness'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7:
+    The Tense-Aspect System (past tense remoteness = social distance)'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 3: The Verb'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 3: Politeness'
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(politeness:
+    continuous for tentativeness)'
 sub_rules:
-- rule: '''I was wondering'' is more polite than ''I wonder'' — the past continuous
-    adds distance'
-  type: pragmatic
-  examples:
+- examples:
   - I wonder if you can help. (neutral)
   - I was wondering if you could help. (more polite)
   - I was wondering if you might be able to help. (most polite — double softening)
-- rule: '''I am hoping'' is softer than ''I hope'' — the continuous form sounds less
-    certain and therefore less demanding'
+  rule: '''I was wondering'' is more polite than ''I wonder'' — the past continuous
+    adds distance'
   type: pragmatic
-  examples:
+- examples:
   - I hope you can come. (direct)
   - I am hoping you can come. (softer, more tentative)
   - I was hoping you might be able to come. (most polite)
-- rule: '''I am looking forward to'' expresses polite anticipation — standard in formal
-    correspondence'
+  rule: '''I am hoping'' is softer than ''I hope'' — the continuous form sounds less
+    certain and therefore less demanding'
   type: pragmatic
-  examples:
+- examples:
   - I am looking forward to hearing from you.
   - I am looking forward to our meeting.
   - We are looking forward to working with you.
-- rule: '''I was thinking'' softens suggestions and opinions'
+  rule: '''I am looking forward to'' expresses polite anticipation — standard in formal
+    correspondence'
   type: pragmatic
-  examples:
+- examples:
   - I was thinking we could try a different approach.
   - I was thinking it might be better to wait.
   - I was just wondering if there is a better time.
-- rule: Modal verbs (could, might, would) add further politeness when combined with
-    continuous forms
+  rule: '''I was thinking'' softens suggestions and opinions'
   type: pragmatic
-  examples:
+- examples:
   - I was wondering if you could help.
   - I was hoping you might consider my suggestion.
   - I was thinking we could meet on Friday.
+  rule: Modal verbs (could, might, would) add further politeness when combined with
+    continuous forms
+  type: pragmatic
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students transform direct statements into polite continuous
+      forms. Example: ''Send me the file.'' -> ''I was wondering if you could send
+      me the file.'''
+    duration: 15
+    name: Politeness Makeover
+  - adaptation_notes: Students receive a blunt, direct email and rewrite it using
+      polite continuous forms appropriate for professional communication.
+    duration: 15
+    name: Email Rewrite
+  - adaptation_notes: Students practise making the same request to a friend (direct)
+      and to a boss (polite continuous). Discuss how the language changes.
+    duration: 10
+    name: 'Role-Play: Asking Your Boss'
+  tips:
+  - 'GB3 Ch. 7: Past tense core meaning = remoteness, which extends to SOCIAL distance.
+    This explains: ''Did you want something?'' (polite offer, not past time), ''What
+    was it that you wanted?'' (polite query by sales clerk), ''I was hoping you could
+    lend me $10'' (past progressive adds tentativeness through the progressive''s
+    incompleteness). Teaching insight: The ''remoteness'' concept unifies time, reality,
+    AND social distance. Source: Celce-Murcia & Larsen-Freeman (2015) GB3 3rd ed.
+    Ch. 7 §7.2 (citing Knowles 1979).'
+  - Start by contrasting direct and polite forms side by side so students hear the
+    difference.
+  - 'Role-play formal vs informal situations: asking a friend (direct) vs asking a
+    boss (polite continuous).'
+  - Use authentic emails to show how polite continuous forms are used in real professional
+    communication.
+  - 'Practice the ''politeness scale'': I want -> I was hoping -> I was wondering
+    if you might -> I was wondering if you might possibly.'
+  - Emphasise that the grammar alone is not enough — intonation and context matter
+    for politeness.
+  - 'Swan PEU: Politeness strategies — past continuous softens requests: ''I
+    was wondering if you could help me'' (more polite than ''I wonder if...''). ''I
+    was hoping to speak to you'' (less direct than ''I want to speak to you'').'
+  - 'Swan PEU: Past tense modals (could, would) increase politeness: ''Would
+    you mind opening the window?'' ''Could I borrow your pen?'' The past form creates
+    politeness through indirectness.'
+title: Politeness (Continuous Forms)
 use:
 - context: Making requests in emails and formal communication
   description: Polite continuous forms are the standard for professional email requests.
@@ -121,82 +245,3 @@ use:
   - Were you looking for someone?
   - I was wondering if there is anything I can help with.
   - I am not sure if this is what you need, but I thought it might be useful.
-phonetics:
-- note: Polite continuous forms are typically spoken with softer, lower intonation
-    than direct statements. The overall tone should sound tentative, not demanding.
-  example_generator:
-    contexts:
-    - intonation patterns
-  l1_issue: Speakers whose L1 does not use continuous forms for politeness may sound
-    too direct or blunt. The intonation pattern (softer, more tentative) is as important
-    as the grammar.
-- note: 'In ''I was wondering'', the ''was'' is often reduced to /wəz/ in connected
-    speech: /aɪ wəz wʌndərɪŋ/.'
-  example_generator:
-    contexts:
-    - connected speech
-    - weak forms
-  l1_issue: Learners may over-pronounce 'was' as /wɒz/, making the phrase sound less
-    natural and more emphatic than intended.
-teaching:
-  methodology: PPP
-  tips:
-  - Start by contrasting direct and polite forms side by side so students hear the
-    difference.
-  - 'Role-play formal vs informal situations: asking a friend (direct) vs asking a
-    boss (polite continuous).'
-  - Use authentic emails to show how polite continuous forms are used in real professional
-    communication.
-  - 'Practice the ''politeness scale'': I want -> I was hoping -> I was wondering
-    if you might -> I was wondering if you might possibly.'
-  - Emphasise that the grammar alone is not enough — intonation and context matter
-    for politeness.
-  recommended_activities:
-  - name: Politeness Makeover
-    duration: 15
-    adaptation_notes: 'Students transform direct statements into polite continuous
-      forms. Example: ''Send me the file.'' -> ''I was wondering if you could send
-      me the file.'''
-  - name: Email Rewrite
-    duration: 15
-    adaptation_notes: Students receive a blunt, direct email and rewrite it using
-      polite continuous forms appropriate for professional communication.
-  - name: 'Role-Play: Asking Your Boss'
-    duration: 10
-    adaptation_notes: Students practise making the same request to a friend (direct)
-      and to a boss (polite continuous). Discuss how the language changes.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 5:
-    Present Tenses, §5.6 (politeness and tentativeness)'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 3: The Verb, §3.3'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 428-430 (politeness:
-    continuous for tentativeness)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    6: Politeness'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 3: Politeness'
-common_errors:
-- error: '*I want to ask you something.* (direct)'
-  correction: I was wondering if I could ask you something. / I was hoping you could
-    help me.
-  explanation: Continuous forms (was wondering, was hoping) soften requests and make
-    them more polite. Direct forms (I want, I need) can sound demanding.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Japanese
-  - Korean
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

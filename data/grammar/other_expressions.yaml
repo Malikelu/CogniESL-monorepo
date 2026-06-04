@@ -1,66 +1,59 @@
-grammar_point: other_expressions
-title: Other Future Expressions (present continuous, future perfect, future continuous)
-description: Alternative structures to talk about future events, including present
-  continuous for fixed arrangements, future perfect for completed actions by a future
-  time, and future continuous for ongoing future actions.
-level: B1
-meaning:
-  core_meaning: 'Different future structures emphasize different aspects: fixed arrangements
-    (present continuous), completed actions by a future time (future perfect), or
-    ongoing actions at a future time (future continuous).'
-  timeline: 'Present continuous: Future time with fixed plan (arranged with others)
-
-    Future perfect: Action completed before a specific future time
-
-    Future continuous: Action in progress at a specific future time
-
-    '
-  contrast: 'Present continuous (future) = Fixed arrangement with others: "I''m meeting
-    John at 5" (arranged)
-
-    Be going to = Personal plan: "I''m going to meet John next week" (personal plan,
-    not fixed yet)
-
-    Future perfect = Completed by X time: "I''ll have eaten by 7 PM"
-
-    Future continuous = In progress at X time: "I''ll be eating at 7 PM"
-
-    '
-  ccqs:
-  - question: What type of expressions are covered here
-    answer: Common fixed expressions and idiomatic phrases.
-    purpose: Tests whether the learner understands that many English expressions are
-      fixed and cannot be translated literally or modified freely.
-  - question: Can we use a different structure here with the same meaning?
-    answer: No — changing the structure would change the meaning or make the sentence
-      ungrammatical.
-    purpose: Tests whether the learner understands that other expressions is the only
-      appropriate structure for this meaning/context.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      other expressions and explain why they are incorrect.
-  example_generator:
-    contexts:
-    - everyday situations
-    cultural_notes: []
-    min_examples: 5
+citations:
+- claim: 'Core meaning: Different future structures emphasize different aspects: fixed arrangements (present continuous),
+    co'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 36: Conclusion'
+  tier: 4
+- claim: 'Discourse function: In conversation, this structure is used for everyday communication and is among the most frequent
+    patterns'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 36: Conclusion'
+  tier: 4
+- claim: Common error '*I have 25 years old.*' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+common_errors:
+- correction: I am 25 years old.
+  error: '*I have 25 years old.*'
+  explanation: English uses 'be' for age, not 'have'. This is a very common error because many L1s use 'have' for age (Spanish
+    'tengo 25 años', Portuguese 'tenho 25 anos').
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  reliability: D
+description: Alternative structures to talk about future events, including present continuous for fixed arrangements, future
+  perfect for completed actions by a future time, and future continuous for ongoing future actions.
+dialectal_variation: []
+discourse_notes:
+- note: In conversation, this structure is used for everyday communication and is among the most frequent patterns in spoken
+    English.
+- note: In academic writing, this structure appears in discussions of established knowledge, methodology, and findings.
+- note: In news reports, this structure is used for reporting events and attributing statements.
 form:
   affirmative:
-    structure: 'Present continuous (fixed arrangements): Subject + am/is/are + verb-ing
-      (with future time marker)
+    example_generator:
+      contexts:
+      - work and professional life
+      - social interactions
+      min_examples: 4
+    structure: 'Present continuous (fixed arrangements): Subject + am/is/are + verb-ing (with future time marker)
 
       Future perfect: Subject + will + have + past participle
 
       Future continuous: Subject + will + be + verb-ing
 
       '
+  negative:
     example_generator:
       contexts:
-      - work and professional life
-      - social interactions
+      - everyday situations
       min_examples: 4
-  negative:
     structure: 'Present continuous: Subject + am/is/are + not + verb-ing
 
       Future perfect: Subject + will + not + have + past participle
@@ -68,11 +61,11 @@ form:
       Future continuous: Subject + will + not + be + verb-ing
 
       '
+  questions:
     example_generator:
       contexts:
-      - everyday situations
+      - health and wellbeing
       min_examples: 4
-  questions:
     structure: 'Present continuous: Am/Is/Are + subject + verb-ing?
 
       Future perfect: Will + subject + have + past participle?
@@ -80,103 +73,118 @@ form:
       Future continuous: Will + subject + be + verb-ing?
 
       '
-    example_generator:
-      contexts:
-      - health and wellbeing
-      min_examples: 4
+grammar_point: other_expressions
+level: B1
+meaning:
+  ccqs:
+  - answer: Common fixed expressions and idiomatic phrases.
+    purpose: Tests whether the learner understands that many English expressions are fixed and cannot be translated literally
+      or modified freely.
+    question: What type of expressions are covered here
+  - answer: No — changing the structure would change the meaning or make the sentence ungrammatical.
+    purpose: Tests whether the learner understands that other expressions is the only appropriate structure for this meaning/context.
+    question: Can we use a different structure here with the same meaning?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with other expressions and explain why they are
+      incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: Present continuous for future arrangements -- 'We are meeting next Tuesday.' This structure is used for fixed
+      plans made with other people, not just personal intentions.
+    purpose: Tests whether the learner can distinguish between present continuous (fixed arrangements with others), be going
+      to (personal plans), and will (spontaneous decisions or predictions) when talking about future events. Choosing the
+      correct future expression depends on whether the plan is fixed and arranged with others.
+    question: Which future structure would you use to say that two people have already arranged and confirmed a meeting for
+      next Tuesday?
+  contrast: 'Present continuous (future) = Fixed arrangement with others: "I''m meeting John at 5" (arranged)
+
+    Be going to = Personal plan: "I''m going to meet John next week" (personal plan, not fixed yet)
+
+    Future perfect = Completed by X time: "I''ll have eaten by 7 PM"
+
+    Future continuous = In progress at X time: "I''ll be eating at 7 PM"
+
+    '
+  core_meaning: 'Different future structures emphasize different aspects: fixed arrangements (present continuous), completed
+    actions by a future time (future perfect), or ongoing actions at a future time (future continuous).'
+  example_generator:
+    contexts:
+    - everyday situations
+    cultural_notes: []
+    min_examples: 5
+  timeline: 'Present continuous: Future time with fixed plan (arranged with others)
+
+    Future perfect: Action completed before a specific future time
+
+    Future continuous: Action in progress at a specific future time
+
+    '
+phonetics:
+- example_generator:
+    contexts:
+    - fixed expression chunks
+  l1_issue: Learners may pronounce each word separately, sounding stilted. Teach fixed expressions as single units.
+  note: 'Fixed expressions are often pronounced as chunks: ''by the way'' → /baɪ ðə weɪ/, ''as a matter of fact'' → /əz ə
+    ˈmætər əv fækt/.'
+register_notes:
+- note: 'Biber et al. (2021) — General expression patterns: conversation uses more formulaic sequences and fixed expressions;
+    academic prose uses more lexical bundles. Register determines formulaic language type. Ch. 13.2'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 13.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Fixed expressions must be learned as chunks — the grammar may not follow normal
-    rules
-  type: lexical
-  examples:
+- examples:
   - by the way (NOT by the road)
   - as a matter of fact (NOT as a matter of the fact)
   - in spite of (NOT in spite for)
   - it is high time (NOT it is high hour)
-- rule: 'Register awareness: know when each expression is appropriate'
-  type: pragmatic
-  examples:
+  rule: Fixed expressions must be learned as chunks — the grammar may not follow normal rules
+  type: lexical
+- examples:
   - 'Formal: ''I am writing to inform you that...'''
   - 'Informal: ''Just wanted to let you know that...'''
   - 'Neutral: ''I wanted to tell you that...'''
+  rule: 'Register awareness: know when each expression is appropriate'
+  type: pragmatic
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Students match expressions to their meanings and appropriate contexts.
+    duration: 10
+    name: Expression Matching
+  - adaptation_notes: Students practice using expressions in appropriate formal and informal contexts.
+    duration: 15
+    name: Context Practice
+  tips:
+  - 'Use a class calendar: Mark fixed arrangements (present continuous), deadlines (future perfect), and scheduled activities
+    (future continuous).'
+  - 'Role-play: Student A makes a fixed arrangement, Student B uses present continuous to confirm.'
+  - 'Timeline practice: Draw a line with ''now'' and ''future time'' to mark completed (future perfect) vs in-progress (future
+    continuous) actions.'
+  - Contrast with be going to/will using real class examples.
+  - 'Swan PEU: ''Other expressions'' — ''another'' = an + other (singular), ''others'' = plural. ''The other'' (specific),
+    ''other'' (general). ''Each other/one another'' (reciprocal). ''No one/nobody'' (negation).'
+title: Other Future Expressions (present continuous, future perfect, future continuous)
 use:
-- name: Fixed Arrangements (Present Continuous)
-  description: Talk about future events arranged with other people (confirmed plans).
+- description: Talk about future events arranged with other people (confirmed plans).
   examples:
   - I am having dinner with my parents tonight.
   - She is taking the train to London tomorrow.
   key_point: Requires a future time marker and confirmation with others.
-- name: Completed Actions by Future Time (Future Perfect)
-  description: Talk about actions that will be finished before a specific future moment.
+  name: Fixed Arrangements (Present Continuous)
+- description: Talk about actions that will be finished before a specific future moment.
   examples:
   - By the time you arrive, I will have cleaned the house.
   - We will have saved enough money by December.
   key_point: Always use with a 'by [time]' phrase.
-- name: Ongoing Future Actions (Future Continuous)
-  description: Talk about actions that will be in progress at a specific future time.
+  name: Completed Actions by Future Time (Future Perfect)
+- description: Talk about actions that will be in progress at a specific future time.
   examples:
   - This time tomorrow, I will be flying to New York.
   - At 8 PM, we will be watching a movie.
   key_point: Focuses on the action being in progress, not completed.
-phonetics:
-- note: 'Fixed expressions are often pronounced as chunks: ''by the way'' → /baɪ ðə
-    weɪ/, ''as a matter of fact'' → /əz ə ˈmætər əv fækt/.'
-  example_generator:
-    contexts:
-    - fixed expression chunks
-  l1_issue: Learners may pronounce each word separately, sounding stilted. Teach fixed
-    expressions as single units.
-teaching:
-  methodology: PPP
-  tips:
-  - 'Use a class calendar: Mark fixed arrangements (present continuous), deadlines
-    (future perfect), and scheduled activities (future continuous).'
-  - 'Role-play: Student A makes a fixed arrangement, Student B uses present continuous
-    to confirm.'
-  - 'Timeline practice: Draw a line with ''now'' and ''future time'' to mark completed
-    (future perfect) vs in-progress (future continuous) actions.'
-  - Contrast with be going to/will using real class examples.
-  recommended_activities:
-  - name: Expression Matching
-    duration: 10
-    adaptation_notes: Students match expressions to their meanings and appropriate
-      contexts.
-  - name: Context Practice
-    duration: 15
-    adaptation_notes: Students practice using expressions in appropriate formal and
-      informal contexts.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I have 25 years old.*'
-  correction: I am 25 years old.
-  explanation: English uses 'be' for age, not 'have'. This is a very common error
-    because many L1s use 'have' for age (Spanish 'tengo 25 años', Portuguese 'tenho
-    25 anos').
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - Italian
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used for everyday communication and is
-    among the most frequent patterns in spoken English.
-- note: In academic writing, this structure appears in discussions of established
-    knowledge, methodology, and findings.
-- note: In news reports, this structure is used for reporting events and attributing
-    statements.
+  name: Ongoing Future Actions (Future Continuous)

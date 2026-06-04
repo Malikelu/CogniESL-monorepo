@@ -1,43 +1,58 @@
-grammar_point: passive_voice_all_tenses
-title: Passive Voice in All Tenses
-description: Describes actions where the focus is on the action or the receiver, not
-  the doer. Used across all major tenses.
-level: B1
-meaning:
-  core_meaning: The focus shifts from the doer (agent) to the action or the receiver
-    of the action. The agent may be unknown, obvious, or unimportant.
-  timeline: All tenses. The passive can be used in any tense by changing the form
-    of 'be'.
-  contrast: 'Active: "The chef cooked the meal." (focus on the chef)
-
-    Passive: "The meal was cooked by the chef." (focus on the meal)
-
-    Passive (agent omitted): "The meal was cooked." (we don''t care who cooked it)
-
-    '
-  ccqs:
-  - question: Can we use passive in all tenses?
-    answer: Yes. The tense of 'be' changes to match the tense.
-    purpose: Tests whether the learner understands that passive voice is not limited
-      to one tense -- it can be formed in all tenses by changing the form of 'be'
-      (is/was/will be/has been/etc.). This is essential for academic and professional
-      writing.
-  - question: Can we use a different structure here with the same meaning?
-    answer: No — changing the structure would change the meaning or make the sentence
-      ungrammatical.
-    purpose: Tests whether the learner understands that passive voice all tenses is
-      the only appropriate structure for this meaning/context.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      passive voice all tenses and explain why they are incorrect.
-  example_generator:
-    contexts:
-    - everyday situations
-    cultural_notes: []
-    min_examples: 5
+citations:
+- claim: 'Core meaning: The focus shifts from the doer (agent) to the action or the receiver of the action'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 18: Passive Voice-8.5'
+  tier: 1
+- claim: 'Register distribution: In academic writing, passive voice is standard in methodology and results sections.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 18: Passive Voice-8.5'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used for everyday communication and is among the most frequent
+    patterns'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 18: Passive Voice-8.5'
+  tier: 1
+- claim: Common error '*The letter is send yesterday.*' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents how transfer effects are non-linear,
+    determined by functional fit between L1 and L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects are non-linear — determined by functional
+    fit between L1 and L2 systems rather than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning. Routledge.
+  tier: 2
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for L1-specific error patterns in English.
+    Their learner English framework documents how each L1 group produces characteristic errors in this grammatical domain,
+    enabling teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference and Other Problems, 2nd ed. Cambridge
+    University Press.'
+  tier: 2
+common_errors:
+- correction: The letter was sent yesterday.
+  error: '*The letter is send yesterday.*'
+  explanation: Passive tense is determined by the form of 'be'. 'Yesterday' requires past tense (was sent), not present (is
+    sent).
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+description: Describes actions where the focus is on the action or the receiver, not the doer. Used across all major tenses.
+dialectal_variation: []
+discourse_notes:
+- note: In conversation, this structure is used for everyday communication and is among the most frequent patterns in spoken
+    English.
+- note: In academic writing, this structure appears in discussions of established knowledge, methodology, and findings.
+- note: In news reports, this structure is used for reporting events and attributing statements.
 form:
   affirmative:
+    example_generator:
+      contexts:
+      - food and daily routines
+      min_examples: 4
     structure: 'Subject + appropriate ''be'' form + past participle (V3)
 
       Present Simple: am/is/are + V3: "The letter is written."
@@ -52,140 +67,162 @@ form:
 
       Future Simple: will + be + V3: "The letter will be written."
 
-      Modal: modal + be + V3: "The letter should be written."
+      Modal: ''modal + be + V3: "The letter should be written."''
+
+      ''
 
       '
-    example_generator:
-      contexts:
-      - food and daily routines
-      min_examples: 4
   negative:
-    structure: Add 'not' after the first auxiliary verb.
     example_generator:
       contexts:
       - everyday situations
       min_examples: 4
+    structure: Add 'not' after the first auxiliary verb.
   questions:
-    structure: Move the first auxiliary verb before the subject.
     example_generator:
       contexts:
       - travel and places
       min_examples: 4
+    structure: Move the first auxiliary verb before the subject.
+grammar_point: passive_voice_all_tenses
+level: B1
+meaning:
+  ccqs:
+  - answer: Yes. The tense of 'be' changes to match the tense.
+    purpose: Tests whether the learner understands that passive voice is not limited to one tense -- it can be formed in all
+      tenses by changing the form of 'be' (is/was/will be/has been/etc.). This is essential for academic and professional
+      writing.
+    question: Can we use passive in all tenses?
+  - answer: No — changing the structure would change the meaning or make the sentence ungrammatical.
+    purpose: Tests whether the learner understands that passive voice all tenses is the only appropriate structure for this
+      meaning/context.
+    question: Can we use a different structure here with the same meaning?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with passive voice all tenses and explain why
+      they are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: Learners often make errors with this structure that change the intended meaning.
+    purpose: Tests whether the learner can identify and correct a common error associated with passive voice all tenses. Recognizing
+      typical mistakes helps learners self-edit and produce more accurate English.
+    question: Can you identify and correct the error in this sentence related to this grammar point?
+  contrast: 'Active: "The chef cooked the meal." (focus on the chef)
+
+    Passive: "The meal was cooked by the chef." (focus on the meal)
+
+    Passive (agent omitted): "The meal was cooked." (we don''t care who cooked it)
+
+    '
+  core_meaning: The focus shifts from the doer (agent) to the action or the receiver of the action. The agent may be unknown,
+    obvious, or unimportant.
+  example_generator:
+    contexts:
+    - everyday situations
+    cultural_notes: []
+    min_examples: 5
+  timeline: All tenses. The passive can be used in any tense by changing the form of 'be'.
+phonetics:
+- example_generator:
+    contexts:
+    - passive stress
+  l1_issue: 'Many L1 speakers struggle with past participle pronunciation. Drill common irregular forms: written, spoken,
+    built, made, taken, given.'
+  note: 'In passive sentences, the past participle is usually stressed: ''The letter is WRITTEN'', ''The building was DESTROYED.'''
+register_notes:
+- note: In formal writing, passive voice is used to depersonalize and focus on the process.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In conversation, passive voice is less common; active voice is preferred.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Passive voice across all tenses: academic prose has highest frequency; conversation has lowest.
+    Short passive is preferred over long passive by a wide margin. Ch. 6.4.1'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 6.4.1
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 18: Passive Voice-8.5'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: 'Present simple passive: am/is/are + past participle'
-  type: grammatical
-  examples:
+- examples:
   - The letter is written every day
   - English is spoken worldwide
   - The cars are made in Japan
-- rule: 'Past simple passive: was/were + past participle'
+  rule: 'Present simple passive: am/is/are + past participle'
   type: grammatical
-  examples:
+- examples:
   - The letter was written yesterday
   - The building was destroyed in the fire
   - The cars were made in the 1990s
-- rule: 'Future passive: will be + past participle'
+  rule: 'Past simple passive: was/were + past participle'
   type: grammatical
-  examples:
+- examples:
   - The letter will be written tomorrow
   - The building will be completed next year
-- rule: 'Present perfect passive: has/have been + past participle'
+  rule: 'Future passive: will be + past participle'
   type: grammatical
-  examples:
+- examples:
   - The letter has been written
   - The building has been completed
-- rule: 'Modal passive: modal + be + past participle'
+  rule: 'Present perfect passive: has/have been + past participle'
   type: grammatical
-  examples:
+- examples:
   - The letter must be written today
   - The building can be visited
+  rule: 'Modal passive: modal + be + past participle'
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Give students active sentences in different tenses. They transform them to passive: ''Someone writes
+      the letter'' → ''The letter is written.'''
+    duration: 15
+    name: Tense Transformation
+  - adaptation_notes: Students write a short news report using passive voice in different tenses.
+    duration: 15
+    name: News Report
+  tips:
+  - 'GB3 Ch. 18: Not just direct objects can become passive subjects — indirect objects (''Stephanie was given a promotion'')
+    and objects of prepositions (''Brad is being operated on'') can also become subjects. The preposition is stranded (left
+    behind). Source: Celce-Murcia & Larsen-Freeman (2015) GB3 3rd ed. Ch. 18 §18.1.'
+  - Start with present simple passive, then expand to other tenses one at a time.
+  - 'Practice converting active ↔ passive: ''Shakespeare wrote Hamlet'' → ''Hamlet was written by Shakespeare.'''
+  - 'Use real-world examples: news headlines, product labels (''Made in Italy''), instructions.'
+  - Highlight that passive is about focus, not just a grammar transformation.
+  - 'Swan Entry 57-62: Passive formation in all tenses — ''is done'' (present), ''was done'' (past), ''has been done'' (perfect),
+    ''will be done'' (future), ''is being done'' (continuous). Get-passive: ''got done'' (informal, result-focused).'
+  - 'Swan PEU: Two-object verbs in passive — ''He gave me a book'' → ''I was given a book'' (preferred) or ''A book was given
+    to me.'' Indirect object usually becomes passive subject.'
+title: Passive Voice in All Tenses
 use:
-- name: When the Agent is Unknown or Unimportant
-  description: The doer is not known, obvious, or not the focus of the sentence.
+- description: The doer is not known, obvious, or not the focus of the sentence.
   examples:
   - My car was stolen last night.
   - English is spoken here.
   - The bridge was built in 1890.
   key_point: Often the 'by + agent' phrase is omitted because it's not needed.
-- name: Formal and Academic Writing
-  description: Passive is common in scientific reports, news, and formal documents
-    to sound objective.
+  name: When the Agent is Unknown or Unimportant
+- description: Passive is common in scientific reports, news, and formal documents to sound objective.
   examples:
   - The experiment was conducted over 6 months.
   - It has been proven that exercise reduces stress.
   - The suspect was arrested at the scene.
   key_point: Creates an impersonal, objective tone.
-- name: Processes and Procedures
-  description: Describing how something is made, done, or processed.
+  name: Formal and Academic Writing
+- description: Describing how something is made, done, or processed.
   examples:
   - The grapes are harvested in autumn.
   - The data is analyzed by software.
   - The application is processed within 5 days.
   key_point: Focuses on the steps, not the people performing them.
-- name: To Be Diplomatic or Avoid Blame
-  description: Using passive to avoid saying who is responsible.
+  name: Processes and Procedures
+- description: Using passive to avoid saying who is responsible.
   examples:
   - Mistakes were made.
   - The deadline was missed.
   - Your complaint has been noted.
   key_point: Common in politics and business to avoid direct responsibility.
-phonetics:
-- note: 'In passive sentences, the past participle is usually stressed: ''The letter
-    is WRITTEN'', ''The building was DESTROYED.'''
-  example_generator:
-    contexts:
-    - passive stress
-  l1_issue: 'Many L1 speakers struggle with past participle pronunciation. Drill common
-    irregular forms: written, spoken, built, made, taken, given.'
-teaching:
-  methodology: PPP
-  tips:
-  - Start with present simple passive, then expand to other tenses one at a time.
-  - 'Practice converting active ↔ passive: ''Shakespeare wrote Hamlet'' → ''Hamlet
-    was written by Shakespeare.'''
-  - 'Use real-world examples: news headlines, product labels (''Made in Italy''),
-    instructions.'
-  - Highlight that passive is about focus, not just a grammar transformation.
-  recommended_activities:
-  - name: Tense Transformation
-    duration: 15
-    adaptation_notes: 'Give students active sentences in different tenses. They transform
-      them to passive: ''Someone writes the letter'' → ''The letter is written.'''
-  - name: News Report
-    duration: 15
-    adaptation_notes: Students write a short news report using passive voice in different
-      tenses.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8:
-    Passive Voice, §8.1-8.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*The letter is send yesterday.*'
-  correction: The letter was sent yesterday.
-  explanation: Passive tense is determined by the form of 'be'. 'Yesterday' requires
-    past tense (was sent), not present (is sent).
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: In academic writing, passive voice is standard in methodology and results
-    sections.
-- note: In formal writing, passive voice is used to depersonalize and focus on the
-    process.
-- note: In conversation, passive voice is less common; active voice is preferred.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used for everyday communication and is
-    among the most frequent patterns in spoken English.
-- note: In academic writing, this structure appears in discussions of established
-    knowledge, methodology, and findings.
-- note: In news reports, this structure is used for reporting events and attributing
-    statements.
+  name: To Be Diplomatic or Avoid Blame

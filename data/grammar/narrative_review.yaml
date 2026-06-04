@@ -1,18 +1,104 @@
-grammar_point: narrative_review
-title: Narrative Review (Using Past Simple, Past Continuous, and Past Perfect Together)
+citations:
+- claim: 'Core meaning: Narrative review refers to the coordinated use of past tenses
+    — past simple, past continuous, and pa'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 4
+- claim: 'Discourse function: In conversation, this structure is used for everyday
+    communication and is among the most frequent patterns'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The
+    Tense-Aspect System'
+  tier: 4
+- claim: Common error '*The movie was good. The main character goes on a journey.*
+    ' for Portuguese, Spanish speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+common_errors:
+- correction: The movie was good. The main character went on a journey. (consistent
+    past) / The movie is good. The main character goes on a journey. (consistent present
+    for review)
+  error: '*The movie was good. The main character goes on a journey.* (tense inconsistency)'
+  explanation: Narrative reviews should maintain consistent tense. Use past for recounting
+    events, present for commentary and evaluation.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: D
 description: Combining past simple, past continuous, and past perfect tenses to tell
   coherent stories with clear time relationships.
+dialectal_variation: []
+discourse_notes:
+- note: Narrative tenses are the backbone of storytelling across all registers. Fiction
+    writers, journalists, and everyday speakers all use the past simple/past continuous/past
+    perfect system, though fiction makes the most varied use (including historic present
+    for vividness).
+- note: 'GB3 Ch. 7: In conversational narrative, speakers use past simple for main
+    events, past continuous for scene-setting ("It was raining, the wind was howling"),
+    and past perfect for flashbacks ("I had never seen anything like it"). The historic
+    present ("So he walks up to me and says...") is a deliberate rhetorical choice
+    for vividness, not a tense error.'
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - storytelling
+      - news reports
+      - witness accounts
+      min_examples: 4
+    structure: 'Past simple (main events): Subject + past verb — ''She walked into
+      the room.'' | Past continuous (background): Subject + was/were + -ing — ''It
+      was raining heavily.'' | Past perfect (earlier events): Subject + had + past
+      participle — ''He had left an hour earlier.'' These three are combined within
+      a single narrative.'
+  negative:
+    example_generator:
+      contexts:
+      - describing what didn't happen
+      - negative events in stories
+      min_examples: 3
+    structure: 'Past simple negative: Subject + didn''t + base verb — ''She didn''t
+      see the sign.'' | Past continuous negative: Subject + wasn''t/weren''t + -ing
+      — ''They weren''t listening.'' | Past perfect negative: Subject + hadn''t +
+      past participle — ''He hadn''t noticed the mistake.'''
+  questions:
+    example_generator:
+      contexts:
+      - police interviews
+      - asking about past events
+      - clarifying timelines
+      min_examples: 3
+    structure: 'Past simple questions: Did + subject + base verb? — ''Did you hear
+      the noise?'' | Past continuous questions: Was/Were + subject + -ing? — ''Were
+      you sleeping at the time?'' | Past perfect questions: Had + subject + past participle?
+      — ''Had she already left when you arrived?'''
+grammar_point: narrative_review
 level: B2
 meaning:
-  core_meaning: 'Narrative review refers to the coordinated use of past tenses — past
-    simple, past continuous, and past perfect — to construct clear, well-structured
-    narratives. Each tense plays a specific role: the past simple for main events,
-    the past continuous for background actions and scene-setting, and the past perfect
-    for events that happened before the main narrative timeframe.'
-  timeline: Past perfect (earliest events) → Past continuous (background/ongoing actions)
-    → Past simple (main events in sequence). The past perfect pushes events further
-    back, the past continuous sets the scene, and the past simple drives the story
-    forward.
+  ccqs:
+  - answer: Past simple — it moves the narrative forward event by event.
+    purpose: Tests whether the learner understands a key concept of narrative_review.
+      This is fundamental for correct use of this grammar point.
+    question: Which tense do we use for the main events in a story?
+  - answer: Past continuous — it provides background and atmosphere.
+    purpose: Tests whether the learner understands a key concept of narrative_review.
+      This is fundamental for correct use of this grammar point.
+    question: Which tense sets the scene or describes what was already happening?
+  - answer: Past perfect — it reaches back to an earlier time.
+    purpose: Tests whether the learner understands a key concept of narrative_review.
+      This is fundamental for correct use of this grammar point.
+    question: Which tense shows something happened before the main story events?
+  - answer: Yes, but it sounds flat. Using all three tenses adds depth, clarity, and
+      dramatic effect.
+    purpose: Tests whether the learner understands a key concept of narrative_review.
+      This is fundamental for correct use of this grammar point.
+    question: Can we tell a good story using only the past simple?
   contrast: 'Past simple only: "I arrived at the station. The train left. I missed
     it." (flat, no time depth)
 
@@ -27,24 +113,11 @@ meaning:
     (clear: the break-in happened before she arrived)
 
     '
-  ccqs:
-  - question: Which tense do we use for the main events in a story?
-    answer: Past simple — it moves the narrative forward event by event.
-    purpose: Tests whether the learner understands a key concept of narrative_review.
-      This is fundamental for correct use of this grammar point.
-  - question: Which tense sets the scene or describes what was already happening?
-    answer: Past continuous — it provides background and atmosphere.
-    purpose: Tests whether the learner understands a key concept of narrative_review.
-      This is fundamental for correct use of this grammar point.
-  - question: Which tense shows something happened before the main story events?
-    answer: Past perfect — it reaches back to an earlier time.
-    purpose: Tests whether the learner understands a key concept of narrative_review.
-      This is fundamental for correct use of this grammar point.
-  - question: Can we tell a good story using only the past simple?
-    answer: Yes, but it sounds flat. Using all three tenses adds depth, clarity, and
-      dramatic effect.
-    purpose: Tests whether the learner understands a key concept of narrative_review.
-      This is fundamental for correct use of this grammar point.
+  core_meaning: 'Narrative review refers to the coordinated use of past tenses — past
+    simple, past continuous, and past perfect — to construct clear, well-structured
+    narratives. Each tense plays a specific role: the past simple for main events,
+    the past continuous for background actions and scene-setting, and the past perfect
+    for events that happened before the main narrative timeframe.'
   example_generator:
     contexts:
     - personal anecdotes
@@ -61,72 +134,119 @@ meaning:
       with 'already' or 'just', but in writing and formal speech, the past perfect
       is expected.
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Past simple (main events): Subject + past verb — ''She walked into
-      the room.'' | Past continuous (background): Subject + was/were + -ing — ''It
-      was raining heavily.'' | Past perfect (earlier events): Subject + had + past
-      participle — ''He had left an hour earlier.'' These three are combined within
-      a single narrative.'
-    example_generator:
-      contexts:
-      - storytelling
-      - news reports
-      - witness accounts
-      min_examples: 4
-  negative:
-    structure: 'Past simple negative: Subject + didn''t + base verb — ''She didn''t
-      see the sign.'' | Past continuous negative: Subject + wasn''t/weren''t + -ing
-      — ''They weren''t listening.'' | Past perfect negative: Subject + hadn''t +
-      past participle — ''He hadn''t noticed the mistake.'''
-    example_generator:
-      contexts:
-      - describing what didn't happen
-      - negative events in stories
-      min_examples: 3
-  questions:
-    structure: 'Past simple questions: Did + subject + base verb? — ''Did you hear
-      the noise?'' | Past continuous questions: Was/Were + subject + -ing? — ''Were
-      you sleeping at the time?'' | Past perfect questions: Had + subject + past participle?
-      — ''Had she already left when you arrived?'''
-    example_generator:
-      contexts:
-      - police interviews
-      - asking about past events
-      - clarifying timelines
-      min_examples: 3
+  timeline: Past perfect (earliest events) → Past continuous (background/ongoing actions)
+    → Past simple (main events in sequence). The past perfect pushes events further
+    back, the past continuous sets the scene, and the past simple drives the story
+    forward.
+phonetics:
+- example_generator:
+    contexts:
+    - natural storytelling
+    - dramatic narration
+  l1_issue: Learners whose languages have fewer past tense distinctions may overuse
+    the past simple. Speakers of Slavic languages, which have aspectual rather than
+    temporal distinctions, may find the English system of layered past tenses conceptually
+    challenging.
+  note: 'In spoken narratives, the past continuous often has a longer, more drawn-out
+    delivery to create atmosphere: ''It was RAIning... the wind was HOWling...'' The
+    past simple events are delivered more briskly to move the story forward.'
+- example_generator:
+    contexts:
+    - connected speech
+    - listening comprehension
+  l1_issue: The contracted form 'd (had) can be confused with 'd (would) in speech.
+    Context usually clarifies, but learners should be aware of the distinction.
+  note: 'The past perfect ''had'' is often reduced to /əd/ or even /d/ in connected
+    speech: ''He''d already left'' /hiːd ɔːlˈredi left/. Learners may miss this in
+    listening.'
+register_notes:
+- note: 'Biber et al. (2021) — Narrative tense patterns: fiction uses more past tense
+    with strategic present-tense shifts for vividness. Conversation uses past tense
+    for past narrative. Register determines narrative tense choice. Ch. 6.2.2'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 6.2.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7:
+    The Tense-Aspect System'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Past continuous for scene-setting
-  type: discourse
-  examples:
+- examples:
   - It was raining and the wind was howling.
   - The sun was shining and birds were singing.
   - People were chatting quietly in the background.
-- rule: Past simple for the main sequence of events
+  rule: Past continuous for scene-setting
   type: discourse
-  examples:
+- examples:
   - She walked in, sat down, and opened her laptop.
   - He grabbed his coat and ran out of the door.
   - The car swerved, hit a lamp post, and came to a stop.
-- rule: Past perfect for flashbacks and earlier events
-  type: grammatical
-  examples:
+  rule: Past simple for the main sequence of events
+  type: discourse
+- examples:
   - She had never seen him before that day.
   - They had been planning the trip for months.
   - He realised he had left his keys at home.
-- rule: Time clauses with 'when', 'while', 'before', 'after'
+  rule: Past perfect for flashbacks and earlier events
   type: grammatical
-  examples:
+- examples:
   - When I arrived, the meeting had already started.
   - While she was cooking, the phone rang.
   - After he had finished his homework, he went out to play.
-- rule: Mixing tenses for dramatic effect
-  type: discourse
-  examples:
+  rule: Time clauses with 'when', 'while', 'before', 'after'
+  type: grammatical
+- examples:
   - I was walking home when suddenly I heard a scream. Someone had broken into the
     house next door.
   - She opened the letter. Her hands were trembling. She had been dreading this moment
     for weeks.
+  rule: Mixing tenses for dramatic effect
+  type: discourse
+teaching:
+  methodology: PPP (Presentation, Practice, Production)
+  recommended_activities:
+  - adaptation_notes: Give students 8-10 sentences from a story, each using a different
+      past tense. Students arrange them on a timeline and then retell the story in
+      the correct order, explaining why each tense is used.
+    duration: 20
+    name: Timeline story
+  - adaptation_notes: Provide students with a set of facts about an event (some background,
+      some main events). Students write a short news report using past simple, past
+      continuous, and past perfect appropriately.
+    duration: 25
+    name: News report writing
+  - adaptation_notes: In pairs, one student is a police officer and the other is a
+      witness. The 'witness' describes what happened using all three past tenses.
+      The 'officer' asks follow-up questions. Swap roles.
+    duration: 15
+    name: Witness interview
+  - adaptation_notes: Give students a simple three-sentence story in the past simple.
+      They must expand it by adding background (past continuous) and earlier events
+      (past perfect) to make it more vivid and detailed.
+    duration: 15
+    name: Story expansion
+  tips:
+  - Start with a short story told entirely in the past simple. Then retell it, adding
+    past continuous for scene-setting and past perfect for earlier events. Ask students
+    which version sounds more vivid.
+  - Use a timeline diagram on the board to show the relationship between the three
+    past tenses. Draw arrows to show which events came first.
+  - Give students a jumbled set of sentences and ask them to put them in order, identifying
+    which tense each one uses and why.
+  - Use film clips or short stories as listening/reading material. Students identify
+    and categorise the past tenses used.
+  - Practice with 'when', 'while', 'before', and 'after' to show how these conjunctions
+    determine tense choice.
+  - 'Swan narrative toolkit: past simple (events), past continuous (background), past
+    perfect (flashback), ''would/used to'' (habits), historic present (vividness).
+    Mix of tenses creates rich narrative texture.'
+title: Narrative Review (Using Past Simple, Past Continuous, and Past Perfect Together)
 use:
 - context: Personal storytelling and anecdotes
   description: When telling stories about personal experiences, speakers naturally
@@ -162,93 +282,3 @@ use:
     dust was floating in the air and the floorboards groaned under her feet.
   - He had waited his whole life for this moment. Now it was here, and he couldn't
     believe it.
-phonetics:
-- note: 'In spoken narratives, the past continuous often has a longer, more drawn-out
-    delivery to create atmosphere: ''It was RAIning... the wind was HOWling...'' The
-    past simple events are delivered more briskly to move the story forward.'
-  example_generator:
-    contexts:
-    - natural storytelling
-    - dramatic narration
-  l1_issue: Learners whose languages have fewer past tense distinctions may overuse
-    the past simple. Speakers of Slavic languages, which have aspectual rather than
-    temporal distinctions, may find the English system of layered past tenses conceptually
-    challenging.
-- note: 'The past perfect ''had'' is often reduced to /əd/ or even /d/ in connected
-    speech: ''He''d already left'' /hiːd ɔːlˈredi left/. Learners may miss this in
-    listening.'
-  example_generator:
-    contexts:
-    - connected speech
-    - listening comprehension
-  l1_issue: The contracted form 'd (had) can be confused with 'd (would) in speech.
-    Context usually clarifies, but learners should be aware of the distinction.
-teaching:
-  methodology: PPP (Presentation, Practice, Production)
-  tips:
-  - Start with a short story told entirely in the past simple. Then retell it, adding
-    past continuous for scene-setting and past perfect for earlier events. Ask students
-    which version sounds more vivid.
-  - Use a timeline diagram on the board to show the relationship between the three
-    past tenses. Draw arrows to show which events came first.
-  - Give students a jumbled set of sentences and ask them to put them in order, identifying
-    which tense each one uses and why.
-  - Use film clips or short stories as listening/reading material. Students identify
-    and categorise the past tenses used.
-  - Practice with 'when', 'while', 'before', and 'after' to show how these conjunctions
-    determine tense choice.
-  recommended_activities:
-  - name: Timeline story
-    duration: 20
-    adaptation_notes: Give students 8-10 sentences from a story, each using a different
-      past tense. Students arrange them on a timeline and then retell the story in
-      the correct order, explaining why each tense is used.
-  - name: News report writing
-    duration: 25
-    adaptation_notes: Provide students with a set of facts about an event (some background,
-      some main events). Students write a short news report using past simple, past
-      continuous, and past perfect appropriately.
-  - name: Witness interview
-    duration: 15
-    adaptation_notes: In pairs, one student is a police officer and the other is a
-      witness. The 'witness' describes what happened using all three past tenses.
-      The 'officer' asks follow-up questions. Swap roles.
-  - name: Story expansion
-    duration: 15
-    adaptation_notes: Give students a simple three-sentence story in the past simple.
-      They must expand it by adding background (past continuous) and earlier events
-      (past perfect) to make it more vivid and detailed.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*The movie was good. The main character goes on a journey.* (tense inconsistency)'
-  correction: The movie was good. The main character went on a journey. (consistent
-    past) / The movie is good. The main character goes on a journey. (consistent present
-    for review)
-  explanation: Narrative reviews should maintain consistent tense. Use past for recounting
-    events, present for commentary and evaluation.
-  l1_groups:
-  - Portuguese
-  - Spanish
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used for everyday communication and is
-    among the most frequent patterns in spoken English.
-- note: In academic writing, this structure appears in discussions of established
-    knowledge, methodology, and findings.
-- note: In news reports, this structure is used for reporting events and attributing
-    statements.

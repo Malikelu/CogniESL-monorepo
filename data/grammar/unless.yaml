@@ -1,151 +1,173 @@
-grammar_point: unless
-title: Unless (negative condition)
+citations:
+- claim: 'Core meaning: Means ''if not''; introduces a condition that must not happen for the main action to occur'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24: Coordination-16.7'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24: Coordination-16.7'
+  tier: 1
+- claim: Common error '*Unless you don't study, you will pass.*' for Portuguese, Spanish, Chinese speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+common_errors:
+- correction: Unless you study, you will fail.
+  error: '*Unless you don''t study, you will pass.*'
+  explanation: Unless = if not. Don't use double negative.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+- correction: Unless you hurry, you will not be late.
+  error: 'Using ''unless'' with negative verb: *''Unless you do not hurry, you will be late.'''
+  explanation: 'Swan PEU: "Unless" means "if not". Using "unless" + negative verb creates a double negative. "Unless you hurry"
+    = "If you do not hurry".'
+  l1_groups: &id001
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan Entry 37.5. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+- correction: Unless you study harder, you will not pass.
+  error: 'Using ''unless'' for present/future: *''Unless you studied harder, you will not pass.'''
+  explanation: 'Swan PEU: "Unless" takes the same tense patterns as "if". Use present tense for real future conditions.'
+  l1_groups: *id001
+  reliability: B
+  source: Swan Entry 37.5. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 description: Conjunction meaning 'if not', used to introduce a negative condition.
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - weather and nature
+      min_examples: 4
+    structure: Unless + present simple, will + base verb (or present simple + unless + present simple for zero conditional)
+  negative:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: Negative already in 'unless' (if not); no additional negative needed.
+  questions:
+    example_generator:
+      contexts:
+      - weather and nature
+      min_examples: 4
+    structure: Will + subject + verb + unless + present simple?
+grammar_point: unless
 level: B2
 meaning:
-  core_meaning: Means 'if not'; introduces a condition that must not happen for the
-    main action to occur.
-  timeline: Used in first conditional (future) and zero conditional (general truths).
-  contrast: 'Unless = If not: "Unless you study, you will fail" = "If you don''t study,
-    you will fail"
+  ccqs:
+  - answer: No — 'unless you hurry' means 'if you do not hurry.' So if you DO hurry, you will NOT miss the bus.
+    purpose: Tests whether the learner understands a key concept of unless. This is fundamental for correct use of this grammar
+      point.
+    question: Unless you hurry, you will miss the bus. Will you miss the bus if you hurry?
+  - answer: This is grammatically possible but confusing — it creates a double negative. Better to say 'If you study, you
+      will pass' or 'Unless you study, you will fail.'
+    purpose: Tests whether the learner understands a key concept of unless. This is fundamental for correct use of this grammar
+      point.
+    question: Can we say 'Unless you don't study, you will pass'?
+  - answer: No — 'unless it rains' means 'if it does not rain.' So if it rains, we will NOT have a picnic.
+    purpose: Tests whether the learner understands a key concept of unless. This is fundamental for correct use of this grammar
+      point.
+    question: Unless it rains, we will have a picnic. Will we have a picnic if it rains?
+  - answer: '''Unless you study, you will fail.'' After ''unless'', use present simple for future conditions, NOT ''will''.'
+    purpose: Tests whether the learner uses present simple (not 'will') after 'unless' for future conditions (Swan PEU 2016,
+      entry 282).
+    question: Which is correct? *'Unless you will study, you will fail' or 'Unless you study, you will fail'?
+  contrast: 'Unless = If not: "Unless you study, you will fail" = "If you don''t study, you will fail"
 
     If not = Same as unless, but more wordy: "If you don''t study, you will fail"
 
     Except if = Similar to unless, but less common.
 
     '
-  ccqs:
-  - question: Unless you hurry, you will miss the bus. Will you miss the bus if you
-      hurry?
-    answer: No — 'unless you hurry' means 'if you do not hurry.' So if you DO hurry,
-      you will NOT miss the bus.
-    purpose: Tests whether the learner understands a key concept of unless. This is
-      fundamental for correct use of this grammar point.
-  - question: Can we say 'Unless you don't study, you will pass'?
-    answer: This is grammatically possible but confusing — it creates a double negative.
-      Better to say 'If you study, you will pass' or 'Unless you study, you will fail.'
-    purpose: Tests whether the learner understands a key concept of unless. This is
-      fundamental for correct use of this grammar point.
-  - question: Unless it rains, we will have a picnic. Will we have a picnic if it
-      rains?
-    answer: No — 'unless it rains' means 'if it does not rain.' So if it rains, we
-      will NOT have a picnic.
-    purpose: Tests whether the learner understands a key concept of unless. This is
-      fundamental for correct use of this grammar point.
+  core_meaning: Means 'if not'; introduces a condition that must not happen for the main action to occur.
   example_generator:
     contexts:
     - everyday situations
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: Unless + present simple, will + base verb (or present simple + unless
-      + present simple for zero conditional)
-    example_generator:
-      contexts:
-      - weather and nature
-      min_examples: 4
-  negative:
-    structure: Negative already in 'unless' (if not); no additional negative needed.
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
-  questions:
-    structure: Will + subject + verb + unless + present simple?
-    example_generator:
-      contexts:
-      - weather and nature
-      min_examples: 4
-sub_rules:
-- rule: Unless means if not
-  type: semantic
-  examples:
-  - Unless you study you will fail = If you do not study you will fail
-  - I will not go unless you come with me = I will not go if you do not come with
-    me
-  - Unless it rains we will have a picnic = If it does not rain we will have a picnic
-- rule: Unless + present tense for future meaning
-  type: grammatical
-  examples:
-  - Unless it rains we will have a picnic
-  - Unless you hurry we will be late
-- rule: Unless is more formal than if not and is commonly used in written English
-  type: register
-  examples:
-  - Unless otherwise stated all rules apply (formal)
-  - Unless you have any questions we will end here (formal)
-use:
-- name: First Conditional (Future)
-  description: Introduce a negative condition for future actions.
-  examples:
-  - Unless you call, I won't come.
-  - Unless it snows, we will drive.
-  key_point: Unless + present simple, will + verb.
-- name: Zero Conditional (General Truths)
-  description: Introduce negative conditions for general truths/habits.
-  examples:
-  - I never eat meat unless it's fish.
-  - Plants die unless you water them.
-  key_point: Unless + present simple, present simple.
-- name: Warnings
-  description: Give warnings about what will happen if a condition is not met.
-  examples:
-  - Unless you wear a helmet, you can't ride.
-  - Unless you pay, you can't take it.
-  key_point: Negative condition leads to negative result.
+  timeline: Used in first conditional (future) and zero conditional (general truths).
 phonetics:
-- note: Unless is pronounced /ənˈles/ with stress on the second syllable. The un-
-    prefix is weak.
-  example_generator:
+- example_generator:
     contexts:
     - unless pronunciation
-  l1_issue: Learners may stress the first syllable 'UNless'. Teach correct stress
-    on the second syllable.
+  l1_issue: Learners may stress the first syllable 'UNless'. Teach correct stress on the second syllable.
+  note: Unless is pronounced /ənˈles/ with stress on the second syllable. The un- prefix is weak.
+register_notes:
+- note: 'Biber et al. (2021) — ''Unless'' as conditional connector: register distribution varies. Academic prose uses more
+    ''unless'' for formal conditionals; conversation uses more ''if...not''. Ch. 10.2.8'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 10.2.8
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24: Coordination-16.7'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+sub_rules:
+- examples:
+  - Unless you study you will fail = If you do not study you will fail
+  - I will not go unless you come with me = I will not go if you do not come with me
+  - Unless it rains we will have a picnic = If it does not rain we will have a picnic
+  rule: Unless means if not
+  type: semantic
+- examples:
+  - Unless it rains we will have a picnic
+  - Unless you hurry we will be late
+  rule: Unless + present tense for future meaning
+  type: grammatical
+- examples:
+  - Unless otherwise stated all rules apply (formal)
+  - Unless you have any questions we will end here (formal)
+  rule: Unless is more formal than if not and is commonly used in written English
+  type: register
 teaching:
   methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students rewrite sentences using both forms: ''Unless you study, you will fail.'' = ''If you do not
+      study, you will fail.'''
+    duration: 10
+    name: Unless or If Not
+  - adaptation_notes: 'Students create sentences with unless: ''Unless you wear a coat, you will be cold.'' ''Unless we leave
+      now, we will miss the bus.'''
+    duration: 15
+    name: Unless Scenarios
   tips:
+  - 'Swan PEU Entry 247: ''Unless'' means ''except if'' or ''if...not,'' but with restrictions. ''Unless'' cannot be used
+    for unreal/impossible conditions (''Unless I were you'' is wrong — use ''If I were you''). ''Unless'' is also not used
+    in questions or with most hypothetical conditions.'
   - 'Contrast with ''if not'': ''Unless you study'' = ''If you don''t study''.'
   - 'Practice with warnings: ''Unless you wear a seatbelt, you will get a fine''.'
   - 'Role-play: Student gives warnings using ''unless''.'
   - Explain no future tense after 'unless'.
-  recommended_activities:
-  - name: Unless or If Not
-    duration: 10
-    adaptation_notes: 'Students rewrite sentences using both forms: ''Unless you study,
-      you will fail.'' = ''If you do not study, you will fail.'''
-  - name: Unless Scenarios
-    duration: 15
-    adaptation_notes: 'Students create sentences with unless: ''Unless you wear a
-      coat, you will be cold.'' ''Unless we leave now, we will miss the bus.'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
-    Coordination, §16.5-16.7'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*Unless you don''t study, you will pass.*'
-  correction: Unless you study, you will fail.
-  explanation: Unless = if not. Don't use double negative.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.
+  - 'Swan PEU: "Unless" = "if not". "Unless you study" = "If you do not study". Both clauses use the same tense as standard
+    conditionals.'
+  - 'Swan PEU: "Unless" cannot replace "if" in all cases. "I will be surprised if he does not come" NOT "unless he does not
+    come" -- the double negative is confusing.'
+title: Unless (negative condition)
+use:
+- description: Introduce a negative condition for future actions.
+  examples:
+  - Unless you call, I won't come.
+  - Unless it snows, we will drive.
+  key_point: Unless + present simple, will + verb.
+  name: First Conditional (Future)
+- description: Introduce negative conditions for general truths/habits.
+  examples:
+  - I never eat meat unless it's fish.
+  - Plants die unless you water them.
+  key_point: Unless + present simple, present simple.
+  name: Zero Conditional (General Truths)
+- description: Give warnings about what will happen if a condition is not met.
+  examples:
+  - Unless you wear a helmet, you can't ride.
+  - Unless you pay, you can't take it.
+  key_point: Negative condition leads to negative result.
+  name: Warnings

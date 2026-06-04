@@ -1,43 +1,108 @@
-grammar_point: inverted_conditionals
-title: Inverted Conditionals (had I known/should you need)
+citations:
+- claim: 'Core meaning: A formal alternative to standard if-clauses, where the conjunction
+    if is omitted and the auxiliary verb is placed before the subject.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27:
+    Conditionals'
+  tier: 1
+- claim: 'Register distribution: Inverted conditionals are strongly associated with formal
+    writing (academic prose, legal documents, formal speech). They are rare in conversation
+    where standard if-clauses are overwhelmingly preferred.'
+  reliability: B
+  source: 'Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 10.2.8.12'
+  tier: 2
+- claim: 'Discourse function: Inverted conditionals signal formality and sophistication.
+    Their use in formal writing projects authority and precision, while their rarity in
+    conversation means misuse (e.g., in casual speech) sounds affected.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27:
+    Conditionals'
+  tier: 1
+- claim: Common error '*If I had known, I would have come.* (formal)' for Portuguese,
+    Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+common_errors:
+- correction: Had I known, I would have come.
+  error: '*If I had known, I would have come.* (formal)'
+  explanation: In formal English, 'if' can be omitted and the auxiliary moves to the
+    front. Common in Had I known, Were I you, Should you need.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Conditionals'
 description: Formal conditionals that omit if by inverting subject and auxiliary,
   used in academic writing, legal language, and formal speech.
+dialectal_variation: []
+discourse_notes:
+- note: 'Inverted conditionals serve a discourse function of signaling formality and authority. They appear primarily in written academic prose, legal documents, and formal speeches. In conversation, standard if-clauses are overwhelmingly preferred; using inverted conditionals in casual speech sounds affected or pretentious (Biber et al. 1999, Ch. 10.2.8.12).'
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - formal writing
+      - hypothetical scenarios
+      - academic essays
+      min_examples: 4
+    structure: 'Third conditional inversion: Had + subject + past participle, would/could/might
+      + have + past participle. First conditional inversion: Should + subject + base
+      verb, will/can/may + base verb. Second conditional inversion: Were + subject
+      + to + base verb, would/could/might + base verb.'
+  negative:
+    example_generator:
+      contexts:
+      - negative hypotheticals
+      - formal warnings
+      min_examples: 3
+    structure: Had + subject + not + past participle. Should + subject + not + base
+      verb. Were + subject + not + to + base verb.
+  questions:
+    example_generator:
+      contexts:
+      - checking understanding
+      - formal enquiries
+      min_examples: 3
+    structure: Inverted conditionals are not used in direct questions. They appear
+      only in conditional statements. Standard question forms are used instead.
+grammar_point: inverted_conditionals
 level: B2
 meaning:
-  core_meaning: A formal alternative to standard if-clauses, where the conjunction
-    if is omitted and the auxiliary verb is placed before the subject. This creates
-    a more literary, sophisticated, or authoritative tone.
-  timeline: Had + subject + past participle refers to unreal past (third conditional).
-    Should + subject + base verb refers to possible future (first conditional). Were
-    + subject + to-infinitive refers to hypothetical present or future (second conditional).
+  ccqs:
+  - answer: Yes. Identical in meaning, but Had I known is more formal
+    purpose: Tests whether the learner knows that formal English can omit 'if' and
+      invert subject and auxiliary in conditional clauses (Had I known, Were I you,
+      Should you need).
+    question: Is Had I known the same as If I had known?
+  - answer: Future. It means If you should need help (possible future event)
+    purpose: Tests whether the learner can identify and apply the correct form/meaning
+      of this grammar point in context. The question 'In Should you need help, is
+      this past or future?...' checks conceptual understanding, not just memorization.
+    question: In Should you need help, is this past or future?
+  - answer: No. The correct form is Had I known (past participle, not have + past
+      participle)
+    purpose: Tests whether the learner can identify and apply the correct form/meaning
+      of this grammar point in context. The question 'Can we say Had I have known?...'
+      checks conceptual understanding, not just memorization.
+    question: Can we say Had I have known?
+  - answer: Yes. Both are second conditional, but Were she to come is more formal
+      and hypothetical
+    purpose: Tests whether the learner can identify and apply the correct form/meaning
+      of this grammar point in context. The question 'Is Were she to come the same
+      as If she came?...' checks conceptual understanding, not just memorization.
+    question: Is Were she to come the same as If she came?
   contrast: 'Standard third conditional: If I had known, I would have helped. Inverted
     third conditional: Had I known, I would have helped. Standard first conditional:
     If you should need help, call me. Inverted first conditional: Should you need
     help, call me. Standard second conditional: If I were to ask, would you help?
     Inverted second conditional: Were I to ask, would you help?'
-  ccqs:
-  - question: Is Had I known the same as If I had known?
-    answer: Yes. Identical in meaning, but Had I known is more formal
-    purpose: Tests whether the learner knows that formal English can omit 'if' and
-      invert subject and auxiliary in conditional clauses (Had I known, Were I you,
-      Should you need).
-  - question: In Should you need help, is this past or future?
-    answer: Future. It means If you should need help (possible future event)
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'In Should you need help, is
-      this past or future?...' checks conceptual understanding, not just memorization.
-  - question: Can we say Had I have known?
-    answer: No. The correct form is Had I known (past participle, not have + past
-      participle)
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Can we say Had I have known?...'
-      checks conceptual understanding, not just memorization.
-  - question: Is Were she to come the same as If she came?
-    answer: Yes. Both are second conditional, but Were she to come is more formal
-      and hypothetical
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Is Were she to come the same
-      as If she came?...' checks conceptual understanding, not just memorization.
+  core_meaning: A formal alternative to standard if-clauses, where the conjunction
+    if is omitted and the auxiliary verb is placed before the subject. This creates
+    a more literary, sophisticated, or authoritative tone.
   example_generator:
     contexts:
     - academic writing
@@ -49,104 +114,83 @@ meaning:
     - Common in British English formal writing; less common in American English
     - Using inverted conditionals in casual speech may sound pretentious
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Third conditional inversion: Had + subject + past participle, would/could/might
-      + have + past participle. First conditional inversion: Should + subject + base
-      verb, will/can/may + base verb. Second conditional inversion: Were + subject
-      + to + base verb, would/could/might + base verb.'
-    example_generator:
-      contexts:
-      - formal writing
-      - hypothetical scenarios
-      - academic essays
-      min_examples: 4
-  negative:
-    structure: Had + subject + not + past participle. Should + subject + not + base
-      verb. Were + subject + not + to + base verb.
-    example_generator:
-      contexts:
-      - negative hypotheticals
-      - formal warnings
-      min_examples: 3
-  questions:
-    structure: Inverted conditionals are not used in direct questions. They appear
-      only in conditional statements. Standard question forms are used instead.
-    example_generator:
-      contexts:
-      - checking understanding
-      - formal enquiries
-      min_examples: 3
-sub_rules:
-- rule: Had + subject + past participle. Third conditional inversion (unreal past)
-  type: grammatical
-  examples:
-  - Had I known about the delay, I would have taken a different route.
-  - Had they invested earlier, they would be wealthy now.
-  - Had she studied medicine, she would have become a doctor.
-- rule: Should + subject + base verb. First conditional inversion (formal future possibility)
-  type: grammatical
-  examples:
-  - Should you require further assistance, please do not hesitate to contact us.
-  - Should the weather deteriorate, the event will be cancelled.
-  - Should anyone object, please raise your hand now.
-- rule: Were + subject + to + base verb. Second conditional inversion (hypothetical)
-  type: grammatical
-  examples:
-  - Were I to win the lottery, I would travel the world.
-  - Were she to apply, she would almost certainly be accepted.
-  - Were we to postpone the meeting, we might miss the deadline.
-- rule: Were + subject (without to-infinitive). Alternative second conditional inversion
-  type: grammatical
-  examples:
-  - Were I you, I would accept the offer.
-  - Were he here, he would know what to do.
-  - Were it not for your help, we would have failed.
-- rule: Had + subject + not + past participle. Negative third conditional inversion
-  type: grammatical
-  examples:
-  - Had it not been for the rain, the picnic would have been perfect.
-  - Had I not seen it with my own eyes, I would not have believed it.
-  - Had they not intervened, the situation would have escalated.
-use:
-- name: Academic and formal writing
-  description: Adding sophistication to essays, reports, and research papers
-  examples:
-  - Had the experiment been conducted differently, the results might have varied significantly.
-  - Were this theory correct, it would revolutionise our understanding of physics.
-  key_point: Common in academic writing. Shows command of formal register.
-- name: Legal and official documents
-  description: Formal conditional statements in contracts and regulations
-  examples:
-  - Should either party breach the agreement, legal action may be taken.
-  - Were the terms not met, the contract would be rendered void.
-  key_point: Legal English favours inverted conditionals for precision and formality.
-- name: Formal speeches and presentations
-  description: Adding rhetorical weight to public speaking
-  examples:
-  - Were we to ignore this problem, we would future generations to suffer.
-  - Had the government acted sooner, many lives could have been saved.
-  key_point: Creates a sense of gravitas and authority.
-- name: Polite and indirect requests
-  description: Softening requests in formal correspondence
-  examples:
-  - Should you have any questions, please feel free to ask.
-  - Were you able to send the documents by Friday, I would be most grateful.
-  key_point: More polite and less direct than standard if-clauses.
+  timeline: Had + subject + past participle refers to unreal past (third conditional).
+    Should + subject + base verb refers to possible future (first conditional). Were
+    + subject + to-infinitive refers to hypothetical present or future (second conditional).
 phonetics:
-- note: The inverted auxiliary receives slight stress, creating a formal rhythm
-  example_generator:
+- example_generator:
     contexts:
     - formal speech
   l1_issue: Learners may struggle with the unusual word order, inserting if by habit
-- note: In spoken English, inverted conditionals are often delivered with a measured,
-    deliberate pace
-  example_generator:
+  note: The inverted auxiliary receives slight stress, creating a formal rhythm
+- example_generator:
     contexts:
     - public speaking
   l1_issue: Rapid delivery can make inverted conditionals sound unnatural or rushed
+  note: In spoken English, inverted conditionals are often delivered with a measured,
+    deliberate pace
+register_notes:
+- note: 'Biber et al. (1999) — Inverted conditionals (Had I known..., Should you need...): rare in conversation; more common in literary/formal writing. Register-restricted. Ch. 10.2.8.12'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 10.2.8.12
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27:
+    Conditionals'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+sub_rules:
+- examples:
+  - Had I known about the delay, I would have taken a different route.
+  - Had they invested earlier, they would be wealthy now.
+  - Had she studied medicine, she would have become a doctor.
+  rule: Had + subject + past participle. Third conditional inversion (unreal past)
+  type: grammatical
+- examples:
+  - Should you require further assistance, please do not hesitate to contact us.
+  - Should the weather deteriorate, the event will be cancelled.
+  - Should anyone object, please raise your hand now.
+  rule: Should + subject + base verb. First conditional inversion (formal future possibility)
+  type: grammatical
+- examples:
+  - Were I to win the lottery, I would travel the world.
+  - Were she to apply, she would almost certainly be accepted.
+  - Were we to postpone the meeting, we might miss the deadline.
+  rule: Were + subject + to + base verb. Second conditional inversion (hypothetical)
+  type: grammatical
+- examples:
+  - Were I you, I would accept the offer.
+  - Were he here, he would know what to do.
+  - Were it not for your help, we would have failed.
+  rule: Were + subject (without to-infinitive). Alternative second conditional inversion
+  type: grammatical
+- examples:
+  - Had it not been for the rain, the picnic would have been perfect.
+  - Had I not seen it with my own eyes, I would not have believed it.
+  - Had they not intervened, the situation would have escalated.
+  rule: Had + subject + not + past participle. Negative third conditional inversion
+  type: grammatical
 teaching:
   methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Students rewrite standard if-conditionals as inverted conditionals.
+      Provide a mix of first, second, and third conditionals.
+    duration: 15
+    name: Conditional transformation
+  - adaptation_notes: Students match inverted conditionals to appropriate contexts
+      (academic essay, legal document, formal speech, casual chat). Discuss why some
+      are inappropriate.
+    duration: 10
+    name: Register matching
+  - adaptation_notes: Students write a formal letter (complaint, enquiry, or application)
+      using at least three inverted conditionals. Peer review for correctness and
+      register.
+    duration: 25
+    name: Formal letter writing
   tips:
   - 'Begin with standard if-conditionals, then show the transformation: remove if,
     move auxiliary before subject'
@@ -155,53 +199,42 @@ teaching:
   - 'Emphasise register: inverted conditionals are for formal writing and speech,
     not casual conversation'
   - Use authentic examples from news articles, academic texts, and legal documents
-  recommended_activities:
-  - name: Conditional transformation
-    duration: 15
-    adaptation_notes: Students rewrite standard if-conditionals as inverted conditionals.
-      Provide a mix of first, second, and third conditionals.
-  - name: Register matching
-    duration: 10
-    adaptation_notes: Students match inverted conditionals to appropriate contexts
-      (academic essay, legal document, formal speech, casual chat). Discuss why some
-      are inappropriate.
-  - name: Formal letter writing
-    duration: 25
-    adaptation_notes: Students write a formal letter (complaint, enquiry, or application)
-      using at least three inverted conditionals. Peer review for correctness and
-      register.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 10:
-    Conditionals, §10.1-10.6'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*If I had known, I would have come.* (formal)'
-  correction: Had I known, I would have come.
-  explanation: In formal English, 'if' can be omitted and the auxiliary moves to the
-    front. Common in Had I known, Were I you, Should you need.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: 'In formal writing, modals express hedging and caution: ''These results may
-    suggest...'''
-- note: 'In conversation, modals are essential for politeness: ''Could you pass the
-    salt?'''
-- note: 'In legal language, ''must'' expresses strong obligation: ''All passengers
-    must wear seatbelts.'''
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, modals are essential for politeness, expressing degrees of
-    certainty, and making requests.
-- note: 'In academic writing, modals express hedging and caution: ''These results
-    may suggest...'' ''It could be argued that...'''
-- note: 'In legal and regulatory language, modals express obligation and permission:
-    ''All passengers must wear seatbelts.'''
+  - 'Swan PEU: Inverted conditionals (formal) — ''Had I known, I wouldn''''t
+    have gone.'' = ''If I had known.'' ''Were she here, she''d agree.'' = ''If she
+    were here.'' ''Should you need help, call me.'' = ''If you should need help.''
+    Register: very formal.'
+teaching_tips:
+- source: 'Celce-Murcia & Larsen-Freeman (1999) The Grammar Book: An ESL/EFL Teacher''s
+    Course, 2nd ed. Heinle & Heinle.'
+  tip: 'CONDITIONAL INVERSION (FORMAL): Three types of inversion in conditionals:
+    Had + subject + past participle (''Had I known...'' = ''If I had known...'').
+    Should + subject + bare infinitive (''Should you need help...'' = ''If you need
+    help...''). Were + subject + infinitive/complement (''Were he here...'' = ''If
+    he were here...''). These are formal/literary and do not occur in everyday conversational
+    English. Source: Ch.27 p.420-426.'
+title: Inverted Conditionals (had I known/should you need)
+use:
+- description: Adding sophistication to essays, reports, and research papers
+  examples:
+  - Had the experiment been conducted differently, the results might have varied significantly.
+  - Were this theory correct, it would revolutionise our understanding of physics.
+  key_point: Common in academic writing. Shows command of formal register.
+  name: Academic and formal writing
+- description: Formal conditional statements in contracts and regulations
+  examples:
+  - Should either party breach the agreement, legal action may be taken.
+  - Were the terms not met, the contract would be rendered void.
+  key_point: Legal English favours inverted conditionals for precision and formality.
+  name: Legal and official documents
+- description: Adding rhetorical weight to public speaking
+  examples:
+  - Were we to ignore this problem, we would future generations to suffer.
+  - Had the government acted sooner, many lives could have been saved.
+  key_point: Creates a sense of gravitas and authority.
+  name: Formal speeches and presentations
+- description: Softening requests in formal correspondence
+  examples:
+  - Should you have any questions, please feel free to ask.
+  - Were you able to send the documents by Friday, I would be most grateful.
+  key_point: More polite and less direct than standard if-clauses.
+  name: Polite and indirect requests

@@ -1,33 +1,35 @@
-id: pictionary-relay
-name: Pictionary Relay
-category: games
-description: Teams race to draw and guess vocabulary words. One student draws, their
-  team guesses, then the next student draws. Fast-paced team competition.
-targetStructures:
-- vocabulary
-- speaking-fluency
+adaptableToTopic: true
 bestForLevels:
 - A1
 - A2
 - B1
 - B2
+category: games
+citations:
+- claim: "Team relay drawing games for vocabulary practice in a competitive format"
+  source: "Watcyn-Jones, P. (1981) Grammar Games and Activities. Penguin Books, Board and card games section, Activities 72-73."
+  tier: 3
+  reliability: B
+  flagged: false
+description: Teams race to draw and guess vocabulary words. One student draws, their
+  team guesses, then the next student draws. Fast-paced team competition.
+differentiation:
+  extension: 'Use more abstract words. Add a rule: the drawer cannot use stick figures.'
+  support: Use easier, more concrete words. Allow the drawer to say the first letter.
+digitalReady: false
 duration: 15
-groupSize: small-groups
 energyRequired: high
-prepTime: low
-materials:
-- Whiteboard or large paper
-- Markers
-- Word cards
 format:
 - in-person
-requiresTech: false
-digitalReady: false
+grammar_focus:
+- vocabulary
+- sentence_structure
+groupSize: small-groups
 hasAudioComponent: false
 hasPrintableComponent: false
 hasSlidesComponent: false
-hasVisualComponent: false
-adaptableToTopic: true
+hasVisualComponent: true
+id: pictionary-relay
 instructions:
 - Divide the class into teams of 4-5. Line up each team facing the board.
 - The first student draws a word card. They have 60 seconds to draw it (no letters,
@@ -35,18 +37,62 @@ instructions:
 - Their team guesses. When they guess correctly, the next student draws.
 - The first team to finish all their cards wins.
 - Review any words that were hard to draw or guess.
-script:
-- First student, draw your word. No talking, no letters! Your team guesses. Go!
-- '"Correct! Next student, draw!"'
-setupInstructions: Prepare 15-20 word cards per team using vocabulary from your current
-  unit.
-differentiation:
-  support: Use easier, more concrete words. Allow the drawer to say the first letter.
-  extension: 'Use more abstract words. Add a rule: the drawer cannot use stick figures.'
 keywords:
 - pictionary
 - drawing
 - guessing
 - relay
 - team
-l1Enhanced: true
+l1_enhanced:
+- language: Spanish
+  adaptation: Spanish relay communication norms (rapid turn-taking) generally transfer
+    well to English relay games.
+  priority: low
+- language: Arabic
+  adaptation: In Arabic team discussions, multiple overlapping speakers is normal.
+    Channel this energy into rapid guessing rather than sequential turns.
+  priority: low
+- language: Mandarin
+  adaptation: Mandarin speakers may wait to be called on rather than call out guesses.
+    Encourage the game culture of spontaneous, overlapping guesses.
+  priority: low
+l1_specific: []
+materials:
+- Whiteboard or large paper
+- Markers
+- Word cards
+name: Pictionary Relay
+prepTime: low
+requiresTech: false
+script:
+- First student, draw your word. No talking, no letters! Your team guesses. Go!
+- '"Correct! Next student, draw!"'
+setupInstructions: Prepare 15-20 word cards per team using vocabulary from your current
+  unit.
+skill_areas:
+- grammar
+- speaking
+sources:
+- name: Wright, A. et al. (2006). Games for Language Learning, 3rd ed. Cambridge University
+    Press.
+  relevance: Relay-format team games for vocabulary practice
+- name: Thornbury, S. (2002). How to Teach Vocabulary. Longman.
+  relevance: Vocabulary game repetition and reinforcement techniques
+- Watcyn-Jones, P. (1981) Grammar Games and Activities. Penguin Books.
+targetStructures:
+- vocabulary
+- speaking-fluency
+teaching_tips:
+- context: Topic guidance
+  tip: 'Tell the class the topic area (e.g., animals, food) before drawing begins. This
+    narrows the search space and supports lower-level learners.'
+- context: Relay dynamics
+  tip: 'Key difference from standard Pictionary: the relay format means all teams
+    are drawing simultaneously. Set clear start/end signals (whistle, timer visible
+    to all).'
+- context: Team size
+  tip: Teams of 4 work best. Fewer = too many turns per person; more = waiting time
+    reduces engagement.
+- context: Word card management
+  tip: Guessed cards go to the bottom of the pile, not removed. This means teams can
+    re-encounter words, reinforcing learning through repetition.

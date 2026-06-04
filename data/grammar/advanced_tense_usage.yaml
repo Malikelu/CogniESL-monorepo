@@ -1,30 +1,148 @@
-grammar_point: advanced_tense_usage
-title: Advanced Tense Usage
+citations:
+- claim: 'Core meaning: Advanced tense usage involves complex combinations of tenses
+    to express subtle meanings, including m'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27:
+    Conditionals'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used for everyday
+    communication and is among the most frequent patterns'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27:
+    Conditionals'
+  tier: 1
+- claim: Common error '*If I studied harder, I would pass the exam now.*' for Portuguese,
+    Spanish, Chinese speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for
+    L1-specific error patterns in English. Their learner English framework documents
+    how each L1 group produces characteristic errors in this grammatical domain, enabling
+    teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+    and Other Problems, 2nd ed. Cambridge University Press.'
+  tier: 2
+common_errors:
+- correction: If I had studied harder, I would pass the exam now.
+  error: '*If I studied harder, I would pass the exam now.*'
+  explanation: Mixed conditional (past condition + present result) requires past perfect
+    in the if-clause, not simple past. Using simple past makes it a second conditional
+    (hypothetical present) rather than a mixed conditional about the past affecting
+    the present.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - French
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Conditionals'
+- correction: She said she was tired yesterday.
+  error: '*She said she is tired yesterday.*'
+  explanation: 'Tense harmony in reported speech: when the reporting verb is past
+    (''said''), the reported verb typically backshifts (''is'' to ''was''). Not backshifting
+    is increasingly accepted but still considered informal.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Korean
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Reported speech'
+- correction: He told me he had finished the work last week.
+  error: '*He told me he has finished the work last week.*'
+  explanation: Past reporting verb ('told') + completed action in the past requires
+    past perfect ('had finished') to show the action was completed before the reporting.
+    'Has finished' contradicts 'last week'.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Arabic
+  reliability: B
+- correction: If I had studied, I would have passed.
+  error: '*If I would have studied, I would have passed.*'
+  explanation: In third conditional, the if-clause takes past perfect (not 'would
+    have'). Using 'would have' in the if-clause is an extremely common error known
+    as the 'double would' error.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Chinese
+  - Arabic
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Conditionals'
 description: Complex tense combinations and nuanced uses of tenses in advanced English,
   including mixed conditionals and tense harmony.
+dialectal_variation: []
+discourse_notes:
+- note: Mixed conditionals are common in academic writing and formal speech when discussing
+    hypothetical scenarios and their present consequences.
+- note: Tense harmony in reported speech is essential in formal writing; in informal
+    speech, backshift is often optional when the situation is still true.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - mixed conditionals
+      - reported speech
+      - complex narratives
+      min_examples: 4
+    structure: 'Mixed conditional: If + past perfect, would + base verb'
+  negative:
+    example_generator:
+      contexts:
+      - negative mixed conditionals
+      min_examples: 3
+    structure: If + past perfect, would not + base verb
+  questions:
+    example_generator:
+    - Would you be happier now if you had chosen a different career?
+    - Would she have passed the exam if she had studied harder?
+    structure: Would + subject + base verb/have + past participle if + past perfect/past
+      simple?
+grammar_point: advanced_tense_usage
 level: C1
 meaning:
+  ccqs:
+  - answer: Yes, that is advanced tense usage.
+    purpose: Tests whether the learner understands the time reference of the situation.
+      Correct temporal identification is essential for selecting the right grammatical
+      structure.
+    question: Does this sentence mix different time references?
+  - answer: Yes, that is a mixed conditional.
+    purpose: Tests whether the learner understands the time reference of the situation.
+      Correct temporal identification is essential for selecting the right grammatical
+      structure.
+    question: Is the condition in the past but the result in the present?
+  - answer: '"If I had studied harder, I would pass the exam now" is a mixed conditional
+      — the past condition affects the present result. "If I studied harder, I would
+      pass the exam" is a second conditional about a present or future hypothetical.
+      The key difference is the time reference of the condition.
+
+      '
+    purpose: Tests whether the learner can identify common errors associated with
+      advanced tense usage and explain why they are incorrect.
+    question: What is the difference in meaning between "If I had studied harder,
+      I would pass the exam now" and "If I studied harder, I would pass the exam"?
+  - answer: 'It means she was tired at the time she spoke. The backshift from "is"
+      to "was" (after the past tense reporting verb "said") places the tiredness in
+      the past. If she is still tired now, a speaker might choose not to backshift:
+      "She said she is tired," which implies the situation continues.'
+    purpose: Tests whether the learner understands tense harmony (backshift) in reported
+      speech and the choice speakers have about whether to backshift. This distinction
+      is crucial in advanced English because choosing not to backshift can signal
+      that a past statement is still true or relevant in the present.
+    question: She said she was tired — does this mean she was tired at the time of
+      speaking, or she is still tired now?
+  contrast: Basic = If I had money, I would buy a car. vs Advanced = If I had studied
+    harder, I would be in a better job now.
   core_meaning: Advanced tense usage involves complex combinations of tenses to express
     subtle meanings, including mixed conditionals (past condition + present result),
     tense harmony in complex sentences, and nuanced temporal relationships.
-  timeline: Varies — can mix past, present, and future references.
-  contrast: Basic = If I had money, I would buy a car. vs Advanced = If I had studied
-    harder, I would be in a better job now.
-  ccqs:
-  - question: Does this sentence mix different time references?
-    answer: Yes, that is advanced tense usage.
-    purpose: Tests whether the learner understands the time reference of the situation.
-      Correct temporal identification is essential for selecting the right grammatical
-      structure.
-  - question: Is the condition in the past but the result in the present?
-    answer: Yes, that is a mixed conditional.
-    purpose: Tests whether the learner understands the time reference of the situation.
-      Correct temporal identification is essential for selecting the right grammatical
-      structure.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      advanced tense usage and explain why they are incorrect.
   example_generator:
     contexts:
     - academic writing
@@ -35,43 +153,65 @@ meaning:
     - Mastery of advanced tense usage distinguishes proficient speakers
     - Errors in tense harmony are common even at advanced levels
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Mixed conditional: If + past perfect, would + base verb'
-    example_generator:
-      contexts:
-      - mixed conditionals
-      - reported speech
-      - complex narratives
-      min_examples: 4
-  negative:
-    structure: If + past perfect, would not + base verb
-    example_generator:
-      contexts:
-      - negative mixed conditionals
-      min_examples: 3
-  questions:
-    structure: Would + subject + base verb/have + past participle if + past perfect/past
-      simple?
-    example_generator:
-    - Would you be happier now if you had chosen a different career?
-    - Would she have passed the exam if she had studied harder?
+  timeline: Varies — can mix past, present, and future references.
+phonetics:
+- example_generator:
+    contexts:
+    - temporal reference
+  l1_issue: Tense harmony errors are very common — many L1 speakers keep the original
+    tense in reported speech
+  note: Stress on time reference words (now, then, yesterday) to clarify temporal
+    relationships
+register_notes:
+- note: 'Biber et al. (2021) — Tense and aspect combinations across registers: academic
+    prose favors present tense for general validity; fiction prefers past for narrative;
+    conversation uses present for immediate context. Modals comprise only 10-15% of
+    all finite verb phrases. Ch. 6.2.2, 6.6'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 6.2.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27:
+    Conditionals'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Mixed conditional — past condition + present result
-  type: grammatical
-  examples:
+- examples:
   - If I had studied harder, I would be in a better job now.
   - If she had accepted the offer, she would be living in London now.
-- rule: Mixed conditional — present condition + past result
+  rule: Mixed conditional — past condition + present result
   type: grammatical
-  examples:
+- examples:
   - If I were braver, I would have spoken up.
   - If he were more careful, he would not have made that mistake.
-- rule: Tense harmony in reported speech
+  rule: Mixed conditional — present condition + past result
   type: grammatical
-  examples:
+- examples:
   - She said she was tired. (not is tired in formal reported speech)
   - He told me he had finished. (backshift from present perfect to past perfect)
+  rule: Tense harmony in reported speech
+  type: grammatical
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Students discuss how different past choices would affect their
+      present using mixed conditionals.
+    duration: 15
+    name: What If?
+  tips:
+  - Use timelines to visualize mixed time references
+  - Contrast basic conditionals with mixed conditionals
+  - Practice with real-life hypothetical scenarios
+  - 'Swan (2016) PEU: In reported speech, backshift is optional when the reported
+    situation is still true at the time of reporting. "She said she was tired" (she
+    may or may not still be tired) vs "She said she is tired" (the tiredness is still
+    relevant now).'
+title: Advanced Tense Usage
 use:
 - context: Hypothetical reasoning
   description: Discussing how different past choices would affect the present
@@ -83,89 +223,3 @@ use:
   examples:
   - She explained that she had been waiting for hours.
   - He said that he would have helped if he had known.
-phonetics:
-- note: Stress on time reference words (now, then, yesterday) to clarify temporal
-    relationships
-  example_generator:
-    contexts:
-    - temporal reference
-  l1_issue: Tense harmony errors are very common — many L1 speakers keep the original
-    tense in reported speech
-teaching:
-  methodology: Guided discovery
-  tips:
-  - Use timelines to visualize mixed time references
-  - Contrast basic conditionals with mixed conditionals
-  - Practice with real-life hypothetical scenarios
-  recommended_activities:
-  - name: What If?
-    duration: 15
-    adaptation_notes: Students discuss how different past choices would affect their
-      present using mixed conditionals.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 10:
-    Conditionals, §10.1-10.6'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*If I studied harder, I would pass the exam now.*'
-  correction: If I had studied harder, I would pass the exam now.
-  explanation: Mixed conditional (past condition + present result) requires past perfect
-    in the if-clause, not simple past. Using simple past makes it a second conditional
-    (hypothetical present) rather than a mixed conditional about the past affecting
-    the present.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-  - French
-- error: '*She said she is tired yesterday.*'
-  correction: She said she was tired yesterday.
-  explanation: 'Tense harmony in reported speech: when the reporting verb is past
-    (''said''), the reported verb typically backshifts (''is'' to ''was''). Not backshifting
-    is increasingly accepted but still considered informal.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-  - Korean
-- error: '*He told me he has finished the work last week.*'
-  correction: He told me he had finished the work last week.
-  explanation: Past reporting verb ('told') + completed action in the past requires
-    past perfect ('had finished') to show the action was completed before the reporting.
-    'Has finished' contradicts 'last week'.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-  - Arabic
-- error: '*If I would have studied, I would have passed.*'
-  correction: If I had studied, I would have passed.
-  explanation: In third conditional, the if-clause takes past perfect (not 'would
-    have'). Using 'would have' in the if-clause is an extremely common error known
-    as the 'double would' error.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - Chinese
-  - Arabic
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used for everyday communication and is
-    among the most frequent patterns in spoken English.
-- note: In academic writing, this structure appears in discussions of established
-    knowledge, methodology, and findings.
-- note: In news reports, this structure is used for reporting events and attributing
-    statements.

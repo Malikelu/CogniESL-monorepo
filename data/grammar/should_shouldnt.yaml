@@ -1,156 +1,47 @@
-grammar_point: should_shouldnt
-title: Should / Shouldn't (advice, recommendations, expectations)
-description: Modal verbs used to give advice, make recommendations, and talk about
-  what is the right or sensible thing to do.
-level: A2
-meaning:
-  core_meaning: Expresses advice, recommendations, or what is the correct/sensible
-    action in a situation.
-  timeline: Refers to present or future actions; used for general advice or specific
-    situations.
-  contrast: 'Should = Advice/recommendation: "You should see a doctor" (suggestion)
-
-    Must = Obligation/rule: "You must wear a seatbelt" (rule)
-
-    Ought to = Similar to should, more formal: "You ought to apologize" (formal)
-
-    '
-  ccqs:
-  - question: Is should stronger or weaker than must?
-    answer: Weaker. Should is advice. Must is obligation.
-    purpose: Tests whether the learner understands that 'should' expresses advice,
-      recommendation, and expectation, not strong obligation (which requires 'must').
-  - question: Can we use 'should' for rules and laws?
-    answer: No -- use 'must' or 'have to' for rules and laws. 'Should' is for advice
-      and recommendations, not requirements.
-    purpose: Tests whether the learner can distinguish 'should' (advice) from 'must'
-      (obligation) and 'could' (possibility).
-  - question: '[Add specific question for CCQ 3]'
-    answer: '[Add specific answer for CCQ 3]'
-    purpose: Tests whether the learner understands that 'should' is invariable (no
-      -s in third person) and is followed by the base form of the verb.
-  - question: '[Add specific question for CCQ 4]'
-    answer: '[Add specific answer for CCQ 4]'
-    purpose: 'Tests whether the learner can use ''should have + past participle''
-      for past advice that was not followed: ''You should have studied harder.'''
-  example_generator:
-    contexts:
-    - everyday situations
-    cultural_notes: []
-    min_examples: 5
-form:
-  affirmative:
-    structure: Subject + should + base verb
-    example_generator:
-      contexts:
-      - education and school
-      - food and daily routines
-      min_examples: 4
-  negative:
-    structure: Subject + shouldn't (should not) + base verb
-    example_generator:
-      contexts:
-      - food and daily routines
-      min_examples: 4
-  questions:
-    structure: Should + subject + base verb?
-    example_generator:
-      contexts:
-      - health and wellbeing
-      - social interactions
-      min_examples: 4
-sub_rules:
-- rule: Should for advice and recommendations
-  type: semantic
-  examples:
-  - You should study more
-  - She should see a doctor
-  - We should leave early
-- rule: Should not for negative advice
-  type: semantic
-  examples:
-  - You should not eat so much sugar
-  - She should not work so hard
-  - We should not waste time
-- rule: Should for expectations
-  type: semantic
-  examples:
-  - The train should arrive at 8pm
-  - He should be there by now
-  - It should be easy
-use:
-- name: Giving Advice
-  description: Suggest what someone ought to do in a situation.
-  examples:
-  - If you're tired, you should go to bed early.
-  - You should try the new Italian restaurant.
-  key_point: Advice is subjective; the speaker thinks it's a good idea.
-- name: Making Recommendations
-  description: Recommend actions or choices to others.
-  examples:
-  - We should buy the blue one; it's cheaper.
-  - You should visit Paris in spring.
-  key_point: Recommendations are based on the speaker's opinion or experience.
-- name: Expectations
-  description: Talk about what is likely or expected to happen.
-  examples:
-  - The train should arrive at 5 PM.
-  - He should be here soon.
-  key_point: Expectation is based on probability, not certainty.
-phonetics:
-- note: 'Should is often weak: /ʃəd/ or even /ʃd/. ''You should study'' → /juː ʃəd
-    ˈstʌdi/. Should not → /ˈʃʊdənt/.'
-  example_generator:
-    contexts:
-    - should pronunciation
-  l1_issue: Portuguese speakers may pronounce 'should' as /ʃaʊld/ or /ʃuːld/. Teach
-    the correct pronunciation /ʃʊd/.
-teaching:
-  methodology: PPP
-  tips:
-  - 'Use real class scenarios: ''I have a headache'' → ''You should take medicine''.'
-  - 'Role-play: Student A has a problem, Student B gives advice using ''should''.'
-  - 'Contrast with ''must'' using rules vs advice: ''You must stop at red lights''
-    (rule) vs ''You should stop for pedestrians'' (advice).'
-  - Practice with health, travel, and study scenarios.
-  recommended_activities:
-  - name: Advice Column
-    duration: 15
-    adaptation_notes: 'Students write problem letters. Others respond with advice
-      using should: ''You should talk to your teacher.'' ''You should not worry so
-      much.'''
-  - name: Should or Must
-    duration: 10
-    adaptation_notes: 'Students choose: ''You ___ wear a seatbelt'' (must — law) vs
-      ''You ___ exercise more'' (should — advice).'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
-    Modals, §9.4 (advice and obligation)'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 3: The Verb, §3.9 (deontic modality)'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 150-155 (should/ought
-    to: advice, expectation)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    9: Modals, §9.4-9.5'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 8: Should and ought to'
+citations:
+- claim: 'Core meaning: Expresses advice, recommendations, or what is the correct/sensible
+    action in a situation'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal
+    Auxiliaries and Related Phrasal Forms (advice and obligation)'
+  tier: 1
+- claim: 'Register distribution: In conversation, ''should'' is the most common way
+    to give advice: ''You should see a doctor.'''
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal
+    Auxiliaries and Related Phrasal Forms (advice and obligation)'
+  tier: 1
+- claim: 'Discourse function: In conversation, ''should'' is the most common way to
+    give advice: ''You should see a doctor.'' ''You sho'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal
+    Auxiliaries and Related Phrasal Forms (advice and obligation)'
+  tier: 1
+- claim: Common error '*You should to see a doctor.*' for Portuguese, Spanish, Chinese
+    speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed.
+  tier: 1
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for
+    L1-specific error patterns in English. Their learner English framework documents
+    how each L1 group produces characteristic errors in this grammatical domain, enabling
+    teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+    and Other Problems, 2nd ed. Cambridge University Press.'
+  tier: 2
 common_errors:
-- error: '*You should to see a doctor.*'
-  correction: You should see a doctor.
+- correction: You should see a doctor.
+  error: '*You should to see a doctor.*'
   explanation: Should + base verb, no to.
   l1_groups:
   - Portuguese
   - Spanish
   - Chinese
-register_notes:
-- note: 'In conversation, ''should'' is the most common way to give advice: ''You
-    should see a doctor.'''
-- note: 'In academic writing, ''should'' expresses recommendations: ''Further research
-    should investigate this phenomenon.'''
-- note: 'In formal writing, ''ought to'' is a more formal alternative to ''should'':
-    ''Students ought to attend all classes.'''
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Modal verbs'
+description: Modal verbs used to give advice, make recommendations, and talk about
+  what is the right or sensible thing to do.
+dialectal_variation: []
 discourse_notes:
 - note: 'In conversation, ''should'' is the most common way to give advice: ''You
     should see a doctor.'' ''You shouldn''t worry so much.'''
@@ -158,3 +49,163 @@ discourse_notes:
     should investigate this phenomenon.'''
 - note: 'In news reports, ''should'' appears in expert opinions: ''The government
     should take immediate action.'''
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - education and school
+      - food and daily routines
+      min_examples: 4
+    structure: Subject + should + base verb
+  negative:
+    example_generator:
+      contexts:
+      - food and daily routines
+      min_examples: 4
+    structure: Subject + shouldn't (should not) + base verb
+  questions:
+    example_generator:
+      contexts:
+      - health and wellbeing
+      - social interactions
+      min_examples: 4
+    structure: Should + subject + base verb?
+grammar_point: should_shouldnt
+level: A2
+meaning:
+  ccqs:
+  - answer: Weaker. Should is advice. Must is obligation.
+    purpose: Tests whether the learner understands that 'should' expresses advice,
+      recommendation, and expectation, not strong obligation (which requires 'must').
+    question: Is should stronger or weaker than must?
+  - answer: No -- use 'must' or 'have to' for rules and laws. 'Should' is for advice
+      and recommendations, not requirements.
+    purpose: Tests whether the learner can distinguish 'should' (advice) from 'must'
+      (obligation) and 'could' (possibility).
+    question: Can we use 'should' for rules and laws?
+  - answer: She should see a doctor. Should is invariable — no -s in third person,
+      and it takes the base form (no -s on the main verb).
+    purpose: 'Tests whether the learner knows that should is a modal: invariable,
+      followed by base verb (Swan PEU 2016, entry 150).'
+    question: Is it 'She should sees a doctor' or 'She should see a doctor'?
+  - answer: I should have studied harder. Should have + past participle = past advice
+      that was not followed.
+    purpose: Tests whether the learner can use should have + past participle for unfulfilled
+      past advice (Swan PEU 2016, entry 150).
+    question: '''How do you say you regret not studying for the test?'''
+  contrast: 'Should = Advice/recommendation: "You should see a doctor" (suggestion)
+
+    Must = Obligation/rule: "You must wear a seatbelt" (rule)
+
+    Ought to = Similar to should, more formal: "You ought to apologize" (formal)
+
+    '
+  core_meaning: Expresses advice, recommendations, or what is the correct/sensible
+    action in a situation.
+  example_generator:
+    contexts:
+    - everyday situations
+    cultural_notes: []
+    min_examples: 5
+  timeline: Refers to present or future actions; used for general advice or specific
+    situations.
+phonetics:
+- example_generator:
+    contexts:
+    - should pronunciation
+  l1_issue: Portuguese speakers may pronounce 'should' as /ʃaʊld/ or /ʃuːld/. Teach
+    the correct pronunciation /ʃʊd/.
+  note: 'Should is often weak: /ʃəd/ or even /ʃd/. ''You should study'' → /juː ʃəd
+    ˈstʌdi/. Should not → /ˈʃʊdənt/.'
+register_notes:
+- note: 'In conversation, ''should'' is the most common way to give advice: ''You
+    should see a doctor.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In academic writing, ''should'' expresses recommendations: ''Further research
+    should investigate this phenomenon.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In formal writing, ''ought to'' is a more formal alternative to ''should'':
+    ''Students ought to attend all classes.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — ''Should'' and ''shouldn''t'': register distribution
+    varies by function (advice, expectation, obligation). Academic prose uses ''should''
+    for hedging. Ch. 6.6.2'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 6.6.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8:
+    Modal Auxiliaries and Related Phrasal Forms (advice and obligation)'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 3: The Verb (deontic modality)'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 8: Should and ought to'
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(should/ought to: advice,
+    expectation)'
+sub_rules:
+- examples:
+  - You should study more
+  - She should see a doctor
+  - We should leave early
+  rule: Should for advice and recommendations
+  type: semantic
+- examples:
+  - You should not eat so much sugar
+  - She should not work so hard
+  - We should not waste time
+  rule: Should not for negative advice
+  type: semantic
+- examples:
+  - The train should arrive at 8pm
+  - He should be there by now
+  - It should be easy
+  rule: Should for expectations
+  type: semantic
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students write problem letters. Others respond with advice
+      using should: ''You should talk to your teacher.'' ''You should not worry so
+      much.'''
+    duration: 15
+    name: Advice Column
+  - adaptation_notes: 'Students choose: ''You ___ wear a seatbelt'' (must — law) vs
+      ''You ___ exercise more'' (should — advice).'
+    duration: 10
+    name: Should or Must
+  tips:
+  - 'Use real class scenarios: ''I have a headache'' → ''You should take medicine''.'
+  - 'Role-play: Student A has a problem, Student B gives advice using ''should''.'
+  - 'Contrast with ''must'' using rules vs advice: ''You must stop at red lights''
+    (rule) vs ''You should stop for pedestrians'' (advice).'
+  - Practice with health, travel, and study scenarios.
+  - 'Swan PEU: ''Should'' for advice/recommendation — ''You should eat more vegetables.''
+    Also for expectation: ''The train should arrive at 3pm.'' Past form: ''should
+    have + pp'' for unfulfilled obligation: ''You should have called.'''
+title: Should / Shouldn't (advice, recommendations, expectations)
+use:
+- description: Suggest what someone ought to do in a situation.
+  examples:
+  - If you're tired, you should go to bed early.
+  - You should try the new Italian restaurant.
+  key_point: Advice is subjective; the speaker thinks it's a good idea.
+  name: Giving Advice
+- description: Recommend actions or choices to others.
+  examples:
+  - We should buy the blue one; it's cheaper.
+  - You should visit Paris in spring.
+  key_point: Recommendations are based on the speaker's opinion or experience.
+  name: Making Recommendations
+- description: Talk about what is likely or expected to happen.
+  examples:
+  - The train should arrive at 5 PM.
+  - He should be here soon.
+  key_point: Expectation is based on probability, not certainty.
+  name: Expectations

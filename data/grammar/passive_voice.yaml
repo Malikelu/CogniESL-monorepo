@@ -1,32 +1,145 @@
+citations:
+- claim: 'Core meaning: Shifts focus from the doer (agent) to the action or the person/thing affected by the action'
+  reliability: B
+  source: 'Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch. 6.4: Passive voice (register distribution,
+    be-passive vs get-passive, verbs uncommon in passive)'
+  tier: 1
+- claim: 'Register distribution: Passive voice is far more common in academic prose and news than in conversation and fiction
+    (Biber '
+  reliability: B
+  source: 'Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch. 6.4: Passive voice (register distribution,
+    be-passive vs get-passive, verbs uncommon in passive)'
+  tier: 1
+- claim: 'Discourse function: Passive voice foregrounds the patient rather than the agent.'
+  reliability: B
+  source: 'Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch. 6.4: Passive voice (register distribution,
+    be-passive vs get-passive, verbs uncommon in passive)'
+  tier: 1
+- claim: 'Common error ''Using intransitive verbs in passive: *''The accident was happ'' for Portuguese, Spanish, Arabic speakers'
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 18: Passive voice-8.12'
+  tier: 1
+- claim: 'Dialectal variation: BrE sometimes uses "get-passive" informally: "He got promoted." Biber corpus: get-passive is
+    almost '
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 18: The Passive Voice Voice-8.5'
+  tier: 1
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents how transfer effects are non-linear,
+    determined by functional fit between L1 and L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects are non-linear — determined by functional
+    fit between L1 and L2 systems rather than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning. Routledge.
+  tier: 2
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for L1-specific error patterns in English.
+    Their learner English framework documents how each L1 group produces characteristic errors in this grammatical domain,
+    enabling teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference and Other Problems, 2nd ed. Cambridge
+    University Press.'
+  tier: 2
+common_errors:
+- correction: The accident happened.
+  error: 'Using intransitive verbs in passive: *''The accident was happened.'''
+  explanation: Only transitive verbs can be made passive.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Arabic
+  reliability: D
+- correction: The accident happened yesterday.
+  error: 'Using passive with intransitive verbs: *''The accident was happened yesterday.'''
+  explanation: 'Swan PEU: Only transitive verbs (verbs that take an object) can be passive. Intransitive verbs (happen, arrive,
+    die, sleep) cannot be passive.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Arabic
+  reliability: B
+  source: Swan Entry 57. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+- correction: The Mona Lisa was painted by Leonardo da Vinci.
+  error: 'Omitting ''by'' agent when important: *''The Mona Lisa was painted.'' (context: painter matters)'
+  explanation: 'Swan PEU: Include the "by" agent when it is important information. Omit it when the agent is unknown or unimportant.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Chinese
+  - Japanese
+  reliability: B
+  source: Swan Entry 58. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+- error: '[See Passive Underuse transfer patterns]'
+  explanation: Mandarin bèi (被) passive traditionally carries adversity semantics; Thai has similar restrictions. Learners
+    avoid neutral English passives.
+  l1_groups:
+  - Mandarin
+  - Thai
+  reliability: C
+  source: 'L1 Interference ESL Teacher Resources — Comparative Analysis of Cross-Linguistic Influence: Best-in-Class Resources
+    and L1 Interference Databases for English Language Educators.'
+  tier: 4
+description: Focuses on the action or recipient of the action, not the doer. Formed with be + past participle (V3). Used when
+  the doer is unknown, unimportant, or obvious.
+dialectal_variation:
+- note: 'BrE sometimes uses "get-passive" informally: "He got promoted." Biber corpus: get-passive is almost exclusively conversational,
+    conveying a dynamic/process sense (become + past participle). Written registers prefer be-passive or "become" instead.'
+discourse_notes:
+- note: Passive voice foregrounds the patient rather than the agent.
+- note: Passive is used when the agent is unknown, unimportant, or obvious.
+- note: In scientific writing, passive creates an impersonal tone.
+form:
+  affirmative:
+    example_generator:
+    - The book is written. (present)
+    - The book was written. (past)
+    - The book will be written. (future)
+    - The book must be written. (modal)
+    min_examples: 4
+    structure: 'Subject + be + past participle (V3). The tense of ''be'' determines the time: present = am/is/are, past =
+      was/were, future = will be, modal = modal + be.'
+  negative:
+    example_generator:
+    - The book isn't written.
+    - The car wasn't repaired.
+    - The letter won't be sent.
+    - The work can't be finished today.
+    min_examples: 4
+    structure: Subject + be + not + past participle
+  questions:
+    example_generator:
+    - Is English spoken here?
+    - Was the car repaired?
+    - Will the report be finished?
+    - Can the work be done today?
+    min_examples: 4
+    structure: Be + subject + past participle?
 grammar_point: passive_voice
-title: Passive Voice (be + past participle)
-description: Focuses on the action or recipient of the action, not the doer. Formed
-  with be + past participle (V3). Used when the doer is unknown, unimportant, or obvious.
 level: B1
 meaning:
-  core_meaning: Shifts focus from the doer (agent) to the action or the person/thing
-    affected by the action. The doer can be omitted or added with 'by' if needed.
-    The passive is used when the action itself is more important than who did it.
-  timeline: 'Follows active voice tense: Present Passive = present action, Past Passive
-    = past action, Future Passive = future action. The tense of ''be'' determines
-    the time.'
-  contrast: '''Active'' = ''I wrote the book.'' (focus on doer: I) vs ''Passive''
-    = ''The book was written (by me).'' (focus on book, the recipient of the action)'
   ccqs:
-  - question: Is the focus on who did the action, or on the action itself?
-    answer: On the action or the recipient -- that is passive voice.
-    purpose: Tests whether the learner understands that passive voice is used when
-      the action or result is more important than the agent, or when the agent is
-      unknown or irrelevant.
-  - question: Do we know who did the action?
-    answer: Not necessarily -- the doer may be unknown, unimportant, or obvious.
-    purpose: 'Tests whether the learner can form passive voice correctly: ''be'' +
-      past participle, with the tense carried by ''be''.'
-  - question: Can we add 'by + doer' to a passive sentence?
-    answer: Yes, but only when the doer is important or unknown. Often it is omitted.
-    purpose: 'Tests whether the learner can distinguish active from passive voice
-      and convert between them: ''The cat chased the mouse.'' → ''The mouse was chased
-      by the cat.'''
+  - answer: On the action or the recipient -- that is passive voice.
+    purpose: Tests whether the learner understands that passive voice is used when the action or result is more important
+      than the agent, or when the agent is unknown or irrelevant.
+    question: Is the focus on who did the action, or on the action itself?
+  - answer: Not necessarily -- the doer may be unknown, unimportant, or obvious.
+    purpose: 'Tests whether the learner can form passive voice correctly: ''be'' + past participle, with the tense carried
+      by ''be''.'
+    question: Do we know who did the action?
+  - answer: Yes, but only when the doer is important or unknown. Often it is omitted.
+    purpose: 'Tests whether the learner can distinguish active from passive voice and convert between them: ''The cat chased
+      the mouse.'' → ''The mouse was chased by the cat.'''
+    question: Can we add 'by + doer' to a passive sentence?
+  - answer: No. 'Happen' is an intransitive verb and has no object, so it cannot be made passive. Only transitive verbs (verbs
+      that take a direct object) can be passivized.
+    purpose: Tests whether the learner understands that only transitive verbs can be converted to passive voice. Intransitive
+      verbs like happen, arrive, sleep, and exist have no object to promote to subject position, making passive formation
+      impossible.
+    question: Can we make the verb 'happen' passive -- *'The accident was happened yesterday'?
+  contrast: '''Active'' = ''I wrote the book.'' (focus on doer: I) vs ''Passive'' = ''The book was written (by me).'' (focus
+    on book, the recipient of the action)'
+  core_meaning: Shifts focus from the doer (agent) to the action or the person/thing affected by the action. The doer can
+    be omitted or added with 'by' if needed. The passive is used when the action itself is more important than who did it.
   example_generator:
     contexts:
     - news reports
@@ -35,71 +148,159 @@ meaning:
     - everyday situations
     - processes and instructions
     cultural_notes:
-    - Passive voice is very common in news reports, scientific writing, and formal
-      texts
+    - Passive voice is very common in news reports, scientific writing, and formal texts
     - Some languages use passive voice much less frequently than English
     - Overuse of passive can make writing sound impersonal — teach appropriate use
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Subject + be + past participle (V3). The tense of ''be'' determines
-      the time: present = am/is/are, past = was/were, future = will be, modal = modal
-      + be.'
-    example_generator:
-    - The book is written. (present)
-    - The book was written. (past)
-    - The book will be written. (future)
-    - The book must be written. (modal)
-    min_examples: 4
-  negative:
-    structure: Subject + be + not + past participle
-    example_generator:
-    - The book isn't written.
-    - The car wasn't repaired.
-    - The letter won't be sent.
-    - The work can't be finished today.
-    min_examples: 4
-  questions:
-    structure: Be + subject + past participle?
-    example_generator:
-    - Is English spoken here?
-    - Was the car repaired?
-    - Will the report be finished?
-    - Can the work be done today?
-    min_examples: 4
+  timeline: 'Follows active voice tense: Present Passive = present action, Past Passive = past action, Future Passive = future
+    action. The tense of ''be'' determines the time.'
+phonetics:
+- example_generator:
+  - worked /wɜːkt/ (voiceless → /t/)
+  - played /pleɪd/ (voiced → /d/)
+  - wanted /wɒntɪd/ (/t/ ending → /ɪd/)
+  l1_issue: Portuguese and Spanish speakers often pronounce -ed as a full syllable /ed/ in all cases. Drill the three pronunciations.
+  note: 'The past participle ending -ed has three pronunciations: /t/ (worked, stopped), /d/ (played, lived), /ɪd/ (wanted,
+    needed). This is the same as Past Simple -ed pronunciation.'
+- example_generator:
+  - is /z/ or /s/
+  - are /ə/
+  - was /wəz/
+  l1_issue: Many L1 speakers over-pronounce 'be' in passive sentences. Teach weak forms for natural speech.
+  note: 'Weak form of ''be'' in passive: ''is'' → /z/ or /s/, ''are'' → /ə/, ''was'' → /wəz/, ''were'' → /wə/. ''The book
+    is written'' sounds like /ðə bʊk z rɪtn/.'
+register_notes:
+- note: 'Biber GSWE: The passive is most common in academic prose (~25% of all finite verbs) and least common in conversation
+    (~2%). Short passives (agent omitted) account for 80% of all passive constructions. The ''get'' passive is rare and restricted
+    to conversation.'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: Passive voice is far more common in academic prose and news than in conversation and fiction (Biber corpus). Academic
+    prose has the highest frequency of be-passive constructions.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In scientific writing, passive is traditional but modern style guides accept active voice.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: Overuse of passive can make writing sound impersonal and wordy.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Modal + passive combinations: can and should are the most common modals with passive voice in academic prose (e.g.,
+    "can be investigated," "should be noted"). Volition/prediction modals (will, shall) are notably rare with passive.'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: Perfect passive is moderately common in academic prose (present perfect passive over 1,000 times per million words)
+    and fiction (past perfect passive about 500 per million). Progressive passive and perfect progressive passive are generally
+    rare.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: Biber et al. (2021) — Passive distribution varies widely by text type. Short passive (agentless) is the norm; long
+    passive (with by-phrase) is less common. Academic prose and news use passive extensively; conversation uses it very rarely.
+    Ch. 11.3.2
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 11.3.2
+- note: CGEL notes that SHORT passive (without agent phrase) is far more common than LONG passive (with by-phrase/agent).
+    In academic prose, short passive dominates because the agent is often unknown, irrelevant, or recoverable from context.
+    Long passive is used when the agent is newsworthy or contrastive.
+  source: Team observation
+  reliability: D
+  tier: 4
+sources:
+  corpus_evidence: 'Biber et al. (1999) LSWE Corpus — Passive voice is far more common in academic prose and news than in
+    conversation and fiction. The be-passive dominates in writing; the get-passive is almost exclusively conversational (describing
+    a process: "got married," "got stuck," "got left behind"). Many transitive verbs (have, want, like, love, resemble, survive)
+    occur in passive less than 2% of the time. Two-object prepositional verbs (associate X with Y, base X on Y) occur mostly
+    in passive.'
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 8: Passive voice-8.12'
+  primary: 'Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch. 6.4: Passive voice (register distribution,
+    be-passive vs get-passive, verbs uncommon in passive)'
+  secondary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 18: Passive Voice-8.5'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners. Ch. 4: Passive voice'
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(passive: formation, use, agent omission)'
 sub_rules:
-- rule: Only transitive verbs (verbs that take an object) can be made passive
-  type: grammatical
-  examples:
+- examples:
   - The window was broken. (break = transitive, can be passive)
-  - The accident was happened. (happen = intransitive, CANNOT be passive — a common
-    learner error)
-  - The train was arrived on time. (arrive = intransitive, CANNOT be passive — another
-    common error)
-- rule: The doer can be added with 'by' when it is important or informative
+  - The accident was happened. (happen = intransitive, CANNOT be passive — a common learner error)
+  - The train was arrived on time. (arrive = intransitive, CANNOT be passive — another common error)
+  rule: Only transitive verbs (verbs that take an object) can be made passive
   type: grammatical
-  examples:
+- examples:
   - The book was written by Shakespeare.
   - The cake was made by my mother.
   - The building was designed by a famous architect.
-- rule: When the doer is unknown, unimportant, or obvious, omit the 'by' phrase
+  rule: The doer can be added with 'by' when it is important or informative
   type: grammatical
-  examples:
+- examples:
   - The bank was robbed last night. (unknown doer)
   - English is spoken here. (unimportant doer)
   - The patient was treated immediately. (obvious doer = doctor)
-- rule: Present passive for general truths and processes
-  type: semantic
-  examples:
+  rule: When the doer is unknown, unimportant, or obvious, omit the 'by' phrase
+  type: grammatical
+- examples:
   - Rice is grown in Asia.
   - Coffee is produced in Brazil.
   - The Eiffel Tower is visited by millions of people every year.
-- rule: Past passive for completed actions in the past
+  rule: Present passive for general truths and processes
   type: semantic
-  examples:
+- examples:
   - The bridge was built in 1990.
   - The letter was sent yesterday.
   - The window was broken during the storm.
+  rule: Past passive for completed actions in the past
+  type: semantic
+teaching:
+  methodology: Guided discovery with contrastive analysis
+  recommended_activities:
+  - adaptation_notes: Show real news headlines using passive voice. Students identify the passive structure and rewrite in
+      active voice (if possible). 'Three people were injured' → 'An accident injured three people.'
+    duration: 10
+    name: News Headlines
+  - adaptation_notes: 'Students describe how something is made (chocolate, coffee, cars) using present passive: ''The beans
+      are harvested. They are dried. They are roasted.'' Practices present passive for processes.'
+    duration: 15
+    name: Process Description
+  - adaptation_notes: 'Teacher says a sentence. Students identify if it is active or passive. Then transform it: ''The teacher
+      explained the lesson.'' (active) → ''The lesson was explained by the teacher.'' (passive)'
+    duration: 10
+    name: Active or Passive?
+  - adaptation_notes: 'Students write a short mystery story using passive voice: ''The window was broken. The jewelry was
+      stolen. The door was locked.'' Practices past passive for storytelling.'
+    duration: 15
+    name: Mystery Stories
+  tips:
+  - 'Biber et al. (2021) GSWE. John Benjamins. Ch. 6.4.1: Passives account for c.25% of finite verbs in academic prose, c.15%
+    in news, and only c.2% in conversation. Short passive (without agent) is far more common than long passive. Get-passive
+    is extremely rare, accounting for only ~0.1% of verbs, confined to conversation and colloquial fiction.'
+  - 'Parrott (2000) Ch. 22: Passive constructions serve specific discourse functions — choosing passive when the new or important
+    information is what happened to the subject (I''ve been sacked), who or what did it (composed by Puccini), or how it was
+    done (badly organised). Passive also avoids very long subjects (end-weight principle). Rules of thumb: describe processes,
+    formal/academic discourse, scientific experiments. Get-passive can imply responsibility (The vase got broken, Mum). Source:
+    Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 22: Passive constructions, 22.1-22.5.'
+  - 'GB3 Ch. 18: Core meaning of passive — it defocuses the agent (Shibatani 1985). The passive is a focus construction that
+    puts the patient in subject position. The subject is acted upon. This core meaning applies whether the agent is mentioned
+    or omitted. Source: Celce-Murcia & Larsen-Freeman (2015) GB3 3rd ed. Ch. 18 §18.3.'
+  - 'GB3 Ch. 18: Semantic constraints — some transitive verbs resist passive: verbs of containing (contain, hold, comprise),
+    measurement (weigh, cost), reciprocal (resemble), fitting (fit, suit), possession (have, belong). Get-passive (''got arrested'')
+    suggests subject responsibility and uses do-support in questions/negatives. Source: GB3 3rd ed. Ch. 18 §18.3-18.4.'
+  - 'CGEL Ch. 16: Distinguish verbal passives (The door was closed by someone — action) from adjectival passives (The door
+    was closed — state). The ''seem'' test helps: if ''seem'' works, it is adjectival (The door seemed closed).'
+  - 'Start with present passive: ''The window is cleaned every week.'' This is the most common and useful form.'
+  - 'Contrast active and passive with the same sentence: ''I clean the window'' vs ''The window is cleaned.'' Use the same
+    context to show the difference in focus.'
+  - 'Use real examples from news headlines: ''Three people were injured in an accident.'' This shows authentic use of passive.'
+  - 'Teach the ''by'' phrase as optional: ''The book was written (by Shakespeare).'' Only add ''by'' when the doer is important.'
+  - Practice transforming active to passive and vice versa. This helps students understand the relationship between the two
+    forms.
+  - 'Swan PEU: Passive = be + past participle. Use passive when the action/person affected is more important than who did
+    it.'
+  - 'Swan PEU: "Get" as passive auxiliary in informal speech. "He got caught." "She got promoted." Often replaces "be" passive.'
+title: Passive Voice (be + past participle)
 use:
 - context: News reports
   description: Reporting events when the doer is unknown or unimportant
@@ -125,85 +326,3 @@ use:
   - The package will be delivered tomorrow.
   - My car was repaired last week.
   - The restaurant is closed on Mondays.
-phonetics:
-- note: 'The past participle ending -ed has three pronunciations: /t/ (worked, stopped),
-    /d/ (played, lived), /ɪd/ (wanted, needed). This is the same as Past Simple -ed
-    pronunciation.'
-  example_generator:
-  - worked /wɜːkt/ (voiceless → /t/)
-  - played /pleɪd/ (voiced → /d/)
-  - wanted /wɒntɪd/ (/t/ ending → /ɪd/)
-  l1_issue: Portuguese and Spanish speakers often pronounce -ed as a full syllable
-    /ed/ in all cases. Drill the three pronunciations.
-- note: 'Weak form of ''be'' in passive: ''is'' → /z/ or /s/, ''are'' → /ə/, ''was''
-    → /wəz/, ''were'' → /wə/. ''The book is written'' sounds like /ðə bʊk z rɪtn/.'
-  example_generator:
-  - is /z/ or /s/
-  - are /ə/
-  - was /wəz/
-  l1_issue: Many L1 speakers over-pronounce 'be' in passive sentences. Teach weak
-    forms for natural speech.
-teaching:
-  methodology: Guided discovery with contrastive analysis
-  tips:
-  - 'Start with present passive: ''The window is cleaned every week.'' This is the
-    most common and useful form.'
-  - 'Contrast active and passive with the same sentence: ''I clean the window'' vs
-    ''The window is cleaned.'' Use the same context to show the difference in focus.'
-  - 'Use real examples from news headlines: ''Three people were injured in an accident.''
-    This shows authentic use of passive.'
-  - 'Teach the ''by'' phrase as optional: ''The book was written (by Shakespeare).''
-    Only add ''by'' when the doer is important.'
-  - Practice transforming active to passive and vice versa. This helps students understand
-    the relationship between the two forms.
-  recommended_activities:
-  - name: News Headlines
-    duration: 10
-    adaptation_notes: Show real news headlines using passive voice. Students identify
-      the passive structure and rewrite in active voice (if possible). 'Three people
-      were injured' → 'An accident injured three people.'
-  - name: Process Description
-    duration: 15
-    adaptation_notes: 'Students describe how something is made (chocolate, coffee,
-      cars) using present passive: ''The beans are harvested. They are dried. They
-      are roasted.'' Practices present passive for processes.'
-  - name: Active or Passive?
-    duration: 10
-    adaptation_notes: 'Teacher says a sentence. Students identify if it is active
-      or passive. Then transform it: ''The teacher explained the lesson.'' (active)
-      → ''The lesson was explained by the teacher.'' (passive)'
-  - name: Mystery Stories
-    duration: 15
-    adaptation_notes: 'Students write a short mystery story using passive voice: ''The
-      window was broken. The jewelry was stolen. The door was locked.'' Practices
-      past passive for storytelling.'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8:
-    Passive Voice, §8.1-8.5'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 16: Information Packaging, §16.2 (passive voice)'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 370-385 (passive:
-    formation, use, agent omission)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    8: Passive voice, §8.10-8.12'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 4: Passive voice'
-common_errors:
-- error: 'Using intransitive verbs in passive: *''The accident was happened.'''
-  correction: The accident happened.
-  explanation: Only transitive verbs can be made passive.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Arabic
-register_notes:
-- note: Passive voice is more common in formal and academic writing than in conversation.
-- note: In scientific writing, passive is traditional but modern style guides accept
-    active voice.
-- note: Overuse of passive can make writing sound impersonal and wordy.
-dialectal_variation:
-- note: 'BrE sometimes uses "get-passive" informally: "He got promoted."'
-discourse_notes:
-- note: Passive voice foregrounds the patient rather than the agent.
-- note: Passive is used when the agent is unknown, unimportant, or obvious.
-- note: In scientific writing, passive creates an impersonal tone.

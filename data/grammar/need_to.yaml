@@ -1,16 +1,138 @@
-grammar_point: need_to
-title: Need to (necessity, obligation)
+citations:
+- claim: 'Core meaning: Expresses necessity or obligation; something is required or
+    important to do'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal
+    Auxiliaries and Related Phrasal Forms'
+  tier: 1
+- claim: 'Register distribution: ''Need to'' is neutral in register. In formal writing,
+    ''must'' or ''should'' may be preferred.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal
+    Auxiliaries and Related Phrasal Forms'
+  tier: 1
+- claim: 'Discourse function: ''Need to'' expresses necessity: ''I need to finish
+    this report.'''
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal
+    Auxiliaries and Related Phrasal Forms'
+  tier: 1
+- claim: 'Common error ''Using ''need'' as a regular verb: *''I need go.'''' for Portuguese,
+    Spanish, French speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: 'Dialectal variation: BrE uses ''needn''t'' for lack of necessity. AmE uses
+    ''don''t need to''.'
+  reliability: B
+  source: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  tier: 1
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for
+    L1-specific error patterns in English. Their learner English framework documents
+    how each L1 group produces characteristic errors in this grammatical domain, enabling
+    teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+    and Other Problems, 2nd ed. Cambridge University Press.'
+  tier: 2
+common_errors:
+- correction: I need to go.
+  error: 'Using ''need'' as a regular verb: *''I need go.'''
+  explanation: '''Need'' as a main verb requires ''to'' before the infinitive.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+- correction: I must go.
+  error: 'Using ''must'' and ''need to'' interchangeably: *''I must to go.'''
+  explanation: '''Must'' is a modal and doesn''t take ''to''. ''Need to'' is a main
+    verb and requires ''to''.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Modal verbs'
+- correction: He needs to study.
+  error: 'Using ''need'' as modal in affirmative: *''He need study.'''
+  explanation: 'Swan PEU: In affirmative statements, ''need'' is a regular verb (needs
+    to). As a modal, ''need'' is only used in questions and negatives primarily in
+    British English.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: You mustn't park here.
+  error: 'Confusing ''needn''t'' and ''mustn''t'': *''You needn''t park here.'' (meaning:
+    forbidden)'
+  explanation: 'Swan PEU: ''Needn''t'' = no necessity (optional). ''Mustn''t'' = prohibition
+    (forbidden). These are opposites.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
 description: Semi-modal verb used to express necessity or obligation to do something,
   similar to 'must' but less formal.
+dialectal_variation:
+- note: BrE uses 'needn't' for lack of necessity. AmE uses 'don't need to'.
+discourse_notes:
+- note: '''Need to'' expresses necessity: ''I need to finish this report.'''
+- note: '''Don''t need to'' expresses lack of necessity: ''You don''t need to bring
+    anything.'''
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - work and professional life
+      - education and school
+      - shopping and commerce
+      min_examples: 4
+    structure: Subject + need(s) to + base verb (third person singular adds -s)
+  negative:
+    example_generator:
+      contexts:
+      - work and professional life
+      min_examples: 4
+    structure: Subject + don't/doesn't need to + base verb
+  questions:
+    example_generator:
+      contexts:
+      - entertainment and media
+      - social interactions
+      min_examples: 4
+    structure: Do/Does + subject + need to + base verb?
+grammar_point: need_to
 level: A1
 meaning:
-  core_meaning: Expresses necessity or obligation; something is required or important
-    to do. This grammar point is essential for expressing need to in English. Learners
-    at this level need to understand both the form and the appropriate contexts for
-    use. Common errors include confusion with related structures and inappropriate
-    register use.
-  timeline: Refers to present or future necessity; can also refer to past with 'needed
-    to'.
+  ccqs:
+  - answer: 'Base verb. I need to study. Not: I need to studying.'
+    purpose: Tests whether the learner understands that "need to" is followed by the
+      base verb (infinitive with "to"), not the -ing form. This is important because
+      "need to" is a semi-modal and follows different patterns from modal verbs like
+      "must" or "can".
+    question: Is need to followed by base verb or ing
+  - answer: No — changing the structure would change the meaning or make the sentence
+      ungrammatical.
+    purpose: Tests whether the learner understands that need to is the only appropriate
+      structure for this meaning/context.
+    question: Can we use a different structure here with the same meaning?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with
+      need to and explain why they are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: Learners often make errors with this structure that change the intended
+      meaning.
+    purpose: Tests whether the learner can identify and correct a common error associated
+      with need to. Recognizing typical mistakes helps learners self-edit and produce
+      more accurate English.
+    question: Can you identify and correct the error in this sentence related to this
+      grammar point?
   contrast: 'Need to = Necessity (neutral): "I need to go to the bank" (required)
 
     Must = Stronger obligation (rule): "I must go to the bank" (more urgent/rule)
@@ -18,145 +140,130 @@ meaning:
     Need to = Less formal than ''must''; common in daily conversation.
 
     '
-  ccqs:
-  - question: Is need to followed by base verb or ing
-    answer: 'Base verb. I need to study. Not: I need to studying.'
-    purpose: Tests whether the learner understands that "need to" is followed by the
-      base verb (infinitive with "to"), not the -ing form. This is important because
-      "need to" is a semi-modal and follows different patterns from modal verbs like
-      "must" or "can".
-  - question: Can we use a different structure here with the same meaning?
-    answer: No — changing the structure would change the meaning or make the sentence
-      ungrammatical.
-    purpose: Tests whether the learner understands that need to is the only appropriate
-      structure for this meaning/context.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      need to and explain why they are incorrect.
+  core_meaning: Expresses necessity or obligation; something is required or important
+    to do. This grammar point is essential for expressing need to in English. Learners
+    at this level need to understand both the form and the appropriate contexts for
+    use. Common errors include confusion with related structures and inappropriate
+    register use.
   example_generator:
     contexts:
     - everyday situations
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: Subject + need(s) to + base verb (third person singular adds -s)
-    example_generator:
-      contexts:
-      - work and professional life
-      - education and school
-      - shopping and commerce
-      min_examples: 4
-  negative:
-    structure: Subject + don't/doesn't need to + base verb
-    example_generator:
-      contexts:
-      - work and professional life
-      min_examples: 4
-  questions:
-    structure: Do/Does + subject + need to + base verb?
-    example_generator:
-      contexts:
-      - entertainment and media
-      - social interactions
-      min_examples: 4
-sub_rules:
-- rule: Need to is followed by the base form of the verb (infinitive with to)
-  type: grammatical
-  examples:
-  - I need to study
-  - She needs to work
-  - They need to leave
-- rule: Need to expresses necessity — something is necessary or important
-  type: semantic
-  examples:
-  - I need to study for the exam (it is necessary)
-  - She needs to see a doctor (it is important)
-  - We need to leave early (it is necessary)
-- rule: The negative form is do not need to (no necessity)
-  type: grammatical
-  examples:
-  - I do not need to study (it is not necessary)
-  - She does not need to come (it is not required)
-  - We do not need to hurry (there is no rush)
-use:
-- name: Daily Necessities
-  description: Talk about things required for daily life or tasks.
-  examples:
-  - I need to drink water every day.
-  - You need to sleep 8 hours.
-  key_point: Necessity is based on personal or practical needs.
-- name: Obligations
-  description: Talk about things you have to do (work, school, etc.).
-  examples:
-  - I need to attend the meeting at 9 AM.
-  - She needs to submit the report by Friday.
-  key_point: Obligation is less strong than 'must'.
-- name: Future Plans
-  description: Talk about things required in the future.
-  examples:
-  - We need to buy a gift for the party.
-  - You need to pack your bags tonight.
-  key_point: Future necessity is often marked with time words.
+  timeline: Refers to present or future necessity; can also refer to past with 'needed
+    to'.
 phonetics:
-- note: 'Need to is often reduced in connected speech: ''I need to'' → /aɪ niːd tə/.
-    The to is reduced to a schwa.'
-  example_generator:
+- example_generator:
     contexts:
     - need to reduction
   l1_issue: Learners may over-pronounce 'to' as /tuː/. Teach the reduced form /tə/
     for natural speech.
+  note: 'Need to is often reduced in connected speech: ''I need to'' → /aɪ niːd tə/.
+    The to is reduced to a schwa.'
+register_notes:
+- note: '''Need to'' is neutral in register. In formal writing, ''must'' or ''should''
+    may be preferred.'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: '''Needn''t'' (BrE) is the negative form: ''You needn''t worry.'' AmE uses
+    ''don''t need to''.'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (1999) — ''Need to'' as semi-modal: register distribution shows
+    it is more common in conversation and informal writing than in academic prose.
+    Ch. 6.6.4.2'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 6.6.4.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8:
+    Modal Auxiliaries and Related Phrasal Forms'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+sub_rules:
+- examples:
+  - I need to study
+  - She needs to work
+  - They need to leave
+  rule: Need to is followed by the base form of the verb (infinitive with to)
+  type: grammatical
+- examples:
+  - I need to study for the exam (it is necessary)
+  - She needs to see a doctor (it is important)
+  - We need to leave early (it is necessary)
+  rule: Need to expresses necessity — something is necessary or important
+  type: semantic
+- examples:
+  - I do not need to study (it is not necessary)
+  - She does not need to come (it is not required)
+  - We do not need to hurry (there is no rush)
+  rule: The negative form is do not need to (no necessity)
+  type: grammatical
 teaching:
   methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students describe what they need to do today: ''I need to study.
+      I need to go to the gym.'''
+    duration: 10
+    name: Daily Necessities
+  - adaptation_notes: 'Students choose: ''I ___ go to the doctor.'' (need to) ''I
+      ___ wear a tie.'' (do not need to).'
+    duration: 15
+    name: Need To or Do Not Need To
   tips:
+  - 'Parrott (2000) Ch. 11: Need can be used as a modal verb (primarily in negative:
+    She needn''t bring the files) or as a main verb (She needed to explain). As a
+    modal, need is used when the speaker is in a position of authority and can give
+    permission or remove obligation. Dare is similarly used as a modal in fossilised
+    expressions (I dare say, How dare you?). Source: Parrott (2000) Grammar for English
+    Language Teachers, 2nd ed. Ch. 11: Modal verbs, 11.2.'
   - 'Use real daily tasks: ''I need to drink coffee'' (student example).'
   - 'Contrast with ''must'' using scenarios: ''I need to study'' (personal) vs ''I
     must study'' (rule).'
   - 'Practice with third person: ''He needs to...'', ''She needs to...''.'
   - 'Role-play: Student A lists things they need to do today.'
-  recommended_activities:
-  - name: Daily Necessities
-    duration: 10
-    adaptation_notes: 'Students describe what they need to do today: ''I need to study.
-      I need to go to the gym.'''
-  - name: Need To or Do Not Need To
-    duration: 15
-    adaptation_notes: 'Students choose: ''I ___ go to the doctor.'' (need to) ''I
-      ___ wear a tie.'' (do not need to).'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
-    Modals, §9.1-9.6'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: 'Using ''need'' as a regular verb: *''I need go.'''
-  correction: I need to go.
-  explanation: '''Need'' as a main verb requires ''to'' before the infinitive.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: 'Using ''must'' and ''need to'' interchangeably: *''I must to go.'''
-  correction: I must go.
-  explanation: '''Must'' is a modal and doesn''t take ''to''. ''Need to'' is a main
-    verb and requires ''to''.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-register_notes:
-- note: '''Need to'' is neutral in register. In formal writing, ''must'' or ''should''
-    may be preferred.'
-- note: '''Needn''t'' (BrE) is the negative form: ''You needn''t worry.'' AmE uses
-    ''don''t need to''.'
-dialectal_variation:
-- note: BrE uses 'needn't' for lack of necessity. AmE uses 'don't need to'.
-discourse_notes:
-- note: '''Need to'' expresses necessity: ''I need to finish this report.'''
-- note: '''Don''t need to'' expresses lack of necessity: ''You don''t need to bring
-    anything.'''
+  - 'Swan PEU: ''Need'' as regular verb (AmE/informal) vs modal (BrE/formal). ''Do
+    you need to go?'' vs ''Need you go?''.'
+  - 'Swan PEU: ''Needn''t have + past participle'' = action was done but was unnecessary.
+    ''You needn''t have worried'' (you worried, but it was not needed).'
+  - 'Swan PEU: ''Didn''t need to'' vs ''needn''t have''. ''I didn''t need to go''
+    (whether I went or not, it was not necessary). ''I needn''t have gone'' (I went,
+    but it was not necessary).'
+  - 'Swan PEU: ''Need'' as semi-modal — ''Need she come?'' (formal/BrE modal use).
+    More common: full verb ''She needs to come.'' Negative: ''She needn''t come''
+    (modal) = ''She doesn''t need to come'' (full verb). Both OK.'
+  - 'Swan PEU: ''Needn''t have + pp'' vs ''didn''t need to'' — ''She needn''t have
+    waited'' (she waited, unnecessarily). ''She didn''t need to wait'' (we don''t
+    know if she waited or not).'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 3: CGEL (Ch.3)
+    analyzes ''need'' as both a LEXICAL verb (''I need to go'') and a MARGINAL modal
+    (''Need I go?''). As a modal, ''need'' has no -s form, takes bare infinitive,
+    and is used mainly in negatives and questions: ''Need I say more?'' vs ''I don''t
+    need to go.'' The lexical verb use is more common in modern English.'
+title: Need to (necessity, obligation)
+use:
+- description: Talk about things required for daily life or tasks.
+  examples:
+  - I need to drink water every day.
+  - You need to sleep 8 hours.
+  key_point: Necessity is based on personal or practical needs.
+  name: Daily Necessities
+- description: Talk about things you have to do (work, school, etc.).
+  examples:
+  - I need to attend the meeting at 9 AM.
+  - She needs to submit the report by Friday.
+  key_point: Obligation is less strong than 'must'.
+  name: Obligations
+- description: Talk about things required in the future.
+  examples:
+  - We need to buy a gift for the party.
+  - You need to pack your bags tonight.
+  key_point: Future necessity is often marked with time words.
+  name: Future Plans

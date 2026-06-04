@@ -1,35 +1,125 @@
+citations:
+- claim: 'Core meaning: Describes past situations that were contrary to fact — they did NOT happen'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27: Conditionals-10.6'
+  tier: 1
+- claim: 'Register distribution: In formal writing, third conditional is used for hypothetical past scenarios: ''If the government
+    had'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27: Conditionals-10.6'
+  tier: 1
+- claim: 'Discourse function: Third conditional creates counterfactual narratives: ''If I had taken that job, I would have
+    moved to'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27: Conditionals-10.6'
+  tier: 1
+- claim: 'Common error ''Using ''would have'' in the if-clause: *''If I would have studi'' for Portuguese, Spanish, French
+    speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+common_errors:
+- correction: If I had studied, I would have passed.
+  error: 'Using ''would have'' in the if-clause: *''If I would have studied, I would have passed.'''
+  explanation: In third conditional, the if-clause uses past perfect (had + past participle), not 'would have'. 'Would have'
+    only appears in the main clause.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Conditionals'
+- correction: If I had studied, I would have passed.
+  error: 'Using past simple instead of past perfect: *''If I studied, I would have passed.'''
+  explanation: Third conditional requires past perfect in the if-clause to show the unreal past condition.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Conditionals'
+- correction: If I had studied harder, I would have passed.
+  error: 'Omitting ''had'': *''If I studied harder, I would have passed.'''
+  explanation: Past perfect requires 'had' + past participle. Omitting 'had' makes it second conditional.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Japanese
+  reliability: B
+  source: 'Swan (2016) Practical English Usage, 4th ed.: Conditionals'
+- correction: If I had studied, I would have passed.
+  error: 'Using ''had have'': *''If I had have studied, I would have passed.'''
+  explanation: 'Swan PEU: "Had have" in the if-clause is a common error. The correct form is past perfect: "had studied".'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan Entry 37.4. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+description: Used to talk about hypothetical situations in the past that did not happen, and their imagined results. Expresses
+  regret or hypothetical past scenarios.
+dialectal_variation:
+- note: In informal speech, 'would have' is often contracted to 'would've' /wʊdəv/.
+- note: 'In some dialects, ''had'' may be reduced to /əd/ or even omitted in fast speech: ''If I''d studied'' or ''If I studied''
+    (non-standard).'
+discourse_notes:
+- note: 'Third conditional creates counterfactual narratives: ''If I had taken that job, I would have moved to London. My
+    whole life would have been different.'''
+- note: 'Third conditional is used for expressing regret about past decisions: ''If I had studied harder, I would have passed
+    the exam.'''
+- note: 'In academic writing, third conditional is used for discussing alternative research outcomes: ''If the methodology
+    had been different, the results might have varied.'''
+- note: 'Third conditional can be used for indirect criticism: ''If you had listened to me, this wouldn''t have happened.'''
+form:
+  affirmative:
+    example_generator:
+    - If I had studied, I would have passed the test.
+    - If she had left earlier, she would have caught the train.
+    - If they had known, they would have helped.
+    min_examples: 4
+    structure: If + past perfect, would have + past participle
+  negative:
+    example_generator:
+    - If I hadn't eaten so much, I wouldn't have felt sick.
+    - If she hadn't missed the bus, she wouldn't have been late.
+    - If they hadn't spent so much, they would have saved money.
+    min_examples: 4
+    structure: If + past perfect (negative), would not have (wouldn't have) + past participle
+  questions:
+    example_generator:
+    - Would you have passed if you had studied?
+    - Would she have caught the train if she had left earlier?
+    - Would they have helped if they had known?
+    min_examples: 4
+    structure: Would + subject + have + past participle if + past perfect?
 grammar_point: third_conditional
-title: Third Conditional (Unreal Past)
-description: Used to talk about hypothetical situations in the past that did not happen,
-  and their imagined results. Expresses regret or hypothetical past scenarios.
 level: B2
 meaning:
-  core_meaning: Describes past situations that were contrary to fact — they did NOT
-    happen. We imagine what WOULD HAVE happened if the past had been different. Used
-    for regret, criticism, or imagining alternative past scenarios. The past cannot
-    be changed — this is purely hypothetical.
-  timeline: 'Past: Refers to past situations that did not happen. Both the condition
-    and the result are in the past. The situation is impossible to change.'
-  contrast: '''Second Conditional'' = ''If I won, I would travel.'' (unreal present/future)
-    vs ''Third Conditional'' = ''If I had won, I would have traveled.'' (unreal past
-    — it did not happen)'
   ccqs:
-  - question: Did this situation actually happen?
-    answer: No — it is hypothetical. The past was different.
-    purpose: Tests whether the learner understands that third conditional describes
-      past situations that did NOT happen. This is the fundamental distinction from
-      first and second conditional (which refer to present/future).
-  - question: Can we change the past?
-    answer: No — that is why we use third conditional. We are imagining an alternative
-      past.
-    purpose: Tests whether the learner understands the counterfactual nature of third
-      conditional. The past is fixed; we are only imagining what would have been different.
-  - question: Is this about regret, criticism, or imagination?
-    answer: It could be any of these. Third conditional is used for all three.
-    purpose: Tests whether the learner understands the range of communicative functions
-      of third conditional. It is not just about regret -- it can express criticism
-      ("If you had studied harder, you would have passed") or pure imagination ("If
+  - answer: No — it is hypothetical. The past was different.
+    purpose: Tests whether the learner understands that third conditional describes past situations that did NOT happen. This
+      is the fundamental distinction from first and second conditional (which refer to present/future).
+    question: Did this situation actually happen?
+  - answer: No — that is why we use third conditional. We are imagining an alternative past.
+    purpose: Tests whether the learner understands the counterfactual nature of third conditional. The past is fixed; we are
+      only imagining what would have been different.
+    question: Can we change the past?
+  - answer: It could be any of these. Third conditional is used for all three.
+    purpose: Tests whether the learner understands the range of communicative functions of third conditional. It is not just
+      about regret -- it can express criticism ("If you had studied harder, you would have passed") or pure imagination ("If
       dinosaurs had survived, humans would not exist").
+    question: Is this about regret, criticism, or imagination?
+  - answer: '''If I had known, I would have told you.'' In the third conditional, the if-clause uses past perfect (had + past
+      participle), NOT ''would have''.'
+    purpose: Tests whether the learner knows that third conditional if-clause uses past perfect, not 'would have' (Swan PEU
+      2016, entries 277-278).
+    question: Which is correct? *'If I would have known, I would have told you' or 'If I had known, I would have told you'?
+  contrast: '''Second Conditional'' = ''If I won, I would travel.'' (unreal present/future) vs ''Third Conditional'' = ''If
+    I had won, I would have traveled.'' (unreal past — it did not happen)'
+  core_meaning: Describes past situations that were contrary to fact — they did NOT happen. We imagine what WOULD HAVE happened
+    if the past had been different. Used for regret, criticism, or imagining alternative past scenarios. The past cannot be
+    changed — this is purely hypothetical.
   example_generator:
     contexts:
     - regret
@@ -41,61 +131,130 @@ meaning:
     - Avoid examples that may trigger strong emotional responses
     - Keep examples imaginative but respectful
     min_examples: 5
-form:
-  affirmative:
-    structure: If + past perfect, would have + past participle
-    example_generator:
-    - If I had studied, I would have passed the test.
-    - If she had left earlier, she would have caught the train.
-    - If they had known, they would have helped.
-    min_examples: 4
-  negative:
-    structure: If + past perfect (negative), would not have (wouldn't have) + past
-      participle
-    example_generator:
-    - If I hadn't eaten so much, I wouldn't have felt sick.
-    - If she hadn't missed the bus, she wouldn't have been late.
-    - If they hadn't spent so much, they would have saved money.
-    min_examples: 4
-  questions:
-    structure: Would + subject + have + past participle if + past perfect?
-    example_generator:
-    - Would you have passed if you had studied?
-    - Would she have caught the train if she had left earlier?
-    - Would they have helped if they had known?
-    min_examples: 4
+  timeline: 'Past: Refers to past situations that did not happen. Both the condition and the result are in the past. The situation
+    is impossible to change.'
+phonetics:
+- example_generator:
+  - would have → would've /wʊdəv/
+  - wouldn't have /wʊdəntəv/
+  - had → /əd/ or /d/
+  l1_issue: Many L1 speakers over-pronounce 'would have' as /wʊd hæv/. Teach the contracted form /wʊdəv/ for natural speech.
+  note: 'Contractions are essential: ''would have'' → ''would''ve'' /wʊdəv/, ''would not have'' → ''wouldn''t have'' /wʊdəntəv/,
+    ''had'' → /əd/ or /d/.'
+- example_generator:
+  - if I had → /ɪf aɪd/
+  - if she had → /ɪf ʃiːd/
+  l1_issue: Portuguese and Spanish speakers often over-pronounce 'had' in third conditional. Teach the reduced form.
+  note: In connected speech, 'if I had' often reduces to /ɪf aɪd/ or even /ɪfəd/. 'If I had studied' sounds like /ɪf aɪd stʌdid/.
+register_notes:
+- note: 'In formal writing, third conditional is used for hypothetical past scenarios: ''If the government had acted sooner,
+    the crisis would have been averted.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In conversation, third conditional is common for expressing regret: ''If I had known, I would have helped.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In academic writing, third conditional is used for counterfactual reasoning: ''If the sample had been larger, the
+    results would have been more reliable.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In formal writing, conditionals appear in discussions of likely outcomes and theoretical scenarios.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In conversation, conditionals are used for hypothetical scenarios and polite requests.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In academic writing, conditionals express logical relationships between propositions.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Third conditional (past counterfactual): primarily in planned/written discourse; rare in casual
+    conversation. Ch. 10.2.8.12'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 10.2.8.12
+- note: 'Biber et al. (2021) — Third conditional (past counterfactual): primarily in planned/written discourse; rare in casual
+    conversation. Academic and reflective writing uses these more. Ch. 10.2.8.12'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 10.2.8.12
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27: Conditionals-10.6'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Third conditional for regret about the past
-  type: semantic
-  examples:
+- examples:
   - If I had studied harder, I would have passed the exam.
   - If she had accepted the job, she would have moved to London.
   - If they had saved money, they would have bought a house.
-- rule: Third conditional for imagining alternative past scenarios
+  rule: Third conditional for regret about the past
   type: semantic
-  examples:
+- examples:
   - If the Titanic hadn't sunk, it would have reached New York.
   - If I had been born in another country, I would have spoken a different language.
   - If the internet had never been invented, life would have been very different.
-- rule: Third conditional for indirect criticism
-  type: pragmatic
-  examples:
+  rule: Third conditional for imagining alternative past scenarios
+  type: semantic
+- examples:
   - If you had listened, you wouldn't have made a mistake.
   - If he had followed the rules, this wouldn't have happened.
   - If she had been more careful, she wouldn't have had an accident.
-- rule: 'Mixed conditional: if + past perfect, would + base verb (past condition →
-    present result)'
-  type: grammatical
-  examples:
+  rule: Third conditional for indirect criticism
+  type: pragmatic
+- examples:
   - If I had studied medicine, I would be a doctor now.
   - If she had accepted that job, she would be living in Paris now.
   - If they had saved money, they would own a house now.
-- rule: Third conditional with 'could have' for ability/possibility
+  rule: 'Mixed conditional: if + past perfect, would + base verb (past condition → present result)'
   type: grammatical
-  examples:
+- examples:
   - If I had studied, I could have passed.
   - If she had left earlier, she could have caught the train.
   - If they had known, they could have helped.
+  rule: Third conditional with 'could have' for ability/possibility
+  type: grammatical
+teaching:
+  methodology: Guided discovery with regret scenarios
+  recommended_activities:
+  - adaptation_notes: 'Students write 5 sentences about regrets using third conditional: ''If I had studied harder, I would
+      have passed.'' Then share with a partner.'
+    duration: 15
+    name: Regret Stories
+  - adaptation_notes: 'Teacher gives past scenarios. Students imagine alternative outcomes: ''You missed the bus.'' → ''If
+      I hadn''t missed the bus, I wouldn''t have been late.'''
+    duration: 15
+    name: What If?
+  - adaptation_notes: 'Students discuss alternative history scenarios: ''If World War II hadn''t happened...'' ''If the internet
+      had never been invented...'' Practices third conditional with imaginative scenarios.'
+    duration: 15
+    name: Alternative History
+  - adaptation_notes: 'Teacher says a situation. Students decide: second or third conditional? ''I don''t have a car.'' (second
+      — present) ''I didn''t have a car yesterday.'' (third — past). Practices distinguishing the two.'
+    duration: 10
+    name: Second or Third?
+  tips:
+  - 'Start with the structure: if + past perfect, would have + past participle. Drill this until it becomes automatic.'
+  - 'Use regret scenarios: ''If I had studied harder, I would have passed.'' This is the most common and relatable use.'
+  - 'Contrast with second conditional: ''If I won (now/future) vs If I had won (past).'' Use timelines to show the difference.'
+  - 'Teach mixed conditional as an extension: ''If I had studied medicine (past), I would be a doctor now (present).'''
+  - 'Use alternative history scenarios to make it fun: ''If dinosaurs hadn''t become extinct...'' ''If the internet had never
+    been invented...'''
+  - 'Swan PEU: Third conditional = past unreal. "If I had studied harder, I would have passed the exam." (I did not study,
+    I did not pass).'
+  - 'Swan PEU: "Had had" in the if-clause is correct when the past perfect requires "had" as the main verb. "If I had had
+    more time, I would have finished."'
+teaching_tips:
+- source: 'Celce-Murcia & Larsen-Freeman (1999) The Grammar Book: An ESL/EFL Teacher''s Course, 2nd ed. Heinle & Heinle.'
+  tip: 'COUNTERFACTUAL MEANING: Third conditionals (''If I had known, I would have helped'') are not purely about past time
+    — they express COUNTERFACTUAL meaning (the speaker DIDN''T know and DIDN''T help). The past perfect in the if-clause signals
+    hypothetical distance from reality, not just past time. Same for mixed conditionals: present result of past condition
+    (''If I had studied harder, I would be in medical school now''). Source: Ch.27 p.420-422.'
+title: Third Conditional (Unreal Past)
 use:
 - context: Regret
   description: Expressing regret about past actions or inactions
@@ -118,117 +277,3 @@ use:
   - If he had followed the instructions, the project wouldn't have failed.
   - If she had been more careful, she wouldn't have had an accident.
   - If they had planned better, the event would have been a success.
-phonetics:
-- note: 'Contractions are essential: ''would have'' → ''would''ve'' /wʊdəv/, ''would
-    not have'' → ''wouldn''t have'' /wʊdəntəv/, ''had'' → /əd/ or /d/.'
-  example_generator:
-  - would have → would've /wʊdəv/
-  - wouldn't have /wʊdəntəv/
-  - had → /əd/ or /d/
-  l1_issue: Many L1 speakers over-pronounce 'would have' as /wʊd hæv/. Teach the contracted
-    form /wʊdəv/ for natural speech.
-- note: In connected speech, 'if I had' often reduces to /ɪf aɪd/ or even /ɪfəd/.
-    'If I had studied' sounds like /ɪf aɪd stʌdid/.
-  example_generator:
-  - if I had → /ɪf aɪd/
-  - if she had → /ɪf ʃiːd/
-  l1_issue: Portuguese and Spanish speakers often over-pronounce 'had' in third conditional.
-    Teach the reduced form.
-teaching:
-  methodology: Guided discovery with regret scenarios
-  tips:
-  - 'Start with the structure: if + past perfect, would have + past participle. Drill
-    this until it becomes automatic.'
-  - 'Use regret scenarios: ''If I had studied harder, I would have passed.'' This
-    is the most common and relatable use.'
-  - 'Contrast with second conditional: ''If I won (now/future) vs If I had won (past).''
-    Use timelines to show the difference.'
-  - 'Teach mixed conditional as an extension: ''If I had studied medicine (past),
-    I would be a doctor now (present).'''
-  - 'Use alternative history scenarios to make it fun: ''If dinosaurs hadn''t become
-    extinct...'' ''If the internet had never been invented...'''
-  recommended_activities:
-  - name: Regret Stories
-    duration: 15
-    adaptation_notes: 'Students write 5 sentences about regrets using third conditional:
-      ''If I had studied harder, I would have passed.'' Then share with a partner.'
-  - name: What If?
-    duration: 15
-    adaptation_notes: 'Teacher gives past scenarios. Students imagine alternative
-      outcomes: ''You missed the bus.'' → ''If I hadn''t missed the bus, I wouldn''t
-      have been late.'''
-  - name: Alternative History
-    duration: 15
-    adaptation_notes: 'Students discuss alternative history scenarios: ''If World
-      War II hadn''t happened...'' ''If the internet had never been invented...''
-      Practices third conditional with imaginative scenarios.'
-  - name: Second or Third?
-    duration: 10
-    adaptation_notes: 'Teacher says a situation. Students decide: second or third
-      conditional? ''I don''t have a car.'' (second — present) ''I didn''t have a
-      car yesterday.'' (third — past). Practices distinguishing the two.'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 10:
-    Conditionals, §10.1-10.6'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: 'Using ''would have'' in the if-clause: *''If I would have studied, I would
-    have passed.'''
-  correction: If I had studied, I would have passed.
-  explanation: In third conditional, the if-clause uses past perfect (had + past participle),
-    not 'would have'. 'Would have' only appears in the main clause.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - German
-- error: 'Using past simple instead of past perfect: *''If I studied, I would have
-    passed.'''
-  correction: If I had studied, I would have passed.
-  explanation: Third conditional requires past perfect in the if-clause to show the
-    unreal past condition.
-  l1_groups:
-  - Portuguese
-  - Spanish
-- error: 'Omitting ''had'': *''If I studied harder, I would have passed.'''
-  correction: If I had studied harder, I would have passed.
-  explanation: Past perfect requires 'had' + past participle. Omitting 'had' makes
-    it second conditional.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-  - Japanese
-register_notes:
-- note: 'In formal writing, third conditional is used for hypothetical past scenarios:
-    ''If the government had acted sooner, the crisis would have been averted.'''
-- note: 'In conversation, third conditional is common for expressing regret: ''If
-    I had known, I would have helped.'''
-- note: 'In academic writing, third conditional is used for counterfactual reasoning:
-    ''If the sample had been larger, the results would have been more reliable.'''
-- note: In formal writing, conditionals appear in discussions of likely outcomes and
-    theoretical scenarios.
-- note: In conversation, conditionals are used for hypothetical scenarios and polite
-    requests.
-- note: In academic writing, conditionals express logical relationships between propositions.
-dialectal_variation:
-- note: No significant BrE/AmE differences in third conditional formation.
-- note: In informal speech, 'would have' is often contracted to 'would've' /wʊdəv/.
-- note: 'In some dialects, ''had'' may be reduced to /əd/ or even omitted in fast
-    speech: ''If I''d studied'' or ''If I studied'' (non-standard).'
-discourse_notes:
-- note: 'Third conditional creates counterfactual narratives: ''If I had taken that
-    job, I would have moved to London. My whole life would have been different.'''
-- note: 'Third conditional is used for expressing regret about past decisions: ''If
-    I had studied harder, I would have passed the exam.'''
-- note: 'In academic writing, third conditional is used for discussing alternative
-    research outcomes: ''If the methodology had been different, the results might
-    have varied.'''
-- note: 'Third conditional can be used for indirect criticism: ''If you had listened
-    to me, this wouldn''t have happened.'''

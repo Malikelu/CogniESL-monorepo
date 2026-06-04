@@ -1,36 +1,120 @@
-grammar_point: fronting
-title: Fronting for Emphasis (Never have I..., Only then did I..., Beautiful she was)
+citations:
+- claim: 'Core meaning: Fronting is the movement of an element (adverbial, complement,
+    or object) from its normal position t'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 30:
+    Focus and Emphasis'
+  tier: 4
+- claim: Common error '*Never I have seen such a beautiful sight.*' for Portuguese,
+    Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: Understanding fronting is essential for academic writing — Oshima & Hogue
+    emphasize how writers use these structures to create clear, coherent prose
+  flagged: false
+  reliability: B
+  source: 'Oshima and Hogue (2006) Introduction to Academic Writing, 3rd ed. Pearson.
+    Ch. 5: Complex Sentences in Academic Writing'
+  tier: 2
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents
+    how transfer effects are non-linear, determined by functional fit between L1 and
+    L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects
+    are non-linear — determined by functional fit between L1 and L2 systems rather
+    than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning.
+    Routledge.
+  tier: 2
+common_errors:
+- correction: Never have I seen such a beautiful sight.
+  error: '*Never I have seen such a beautiful sight.*'
+  explanation: When negative adverbs (never, rarely, seldom) are fronted, subject-auxiliary
+    inversion is required.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  reliability: D
 description: Moving elements to the beginning of a sentence for emphasis, dramatic
   effect, or stylistic purposes, often triggering subject-auxiliary inversion.
+dialectal_variation: []
+discourse_notes:
+- note: Fronting moves a non-subject element to sentence-initial position for emphasis
+    or discourse cohesion, creating marked word order.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - literary narrative
+      - formal speech
+      - news reporting
+      - academic writing
+      min_examples: 4
+    structure: Negative/Restrictive Adverb + Auxiliary + Subject + Main Verb / Fronted
+      Complement + Subject + Verb (no inversion) / Fronted Object + Subject + Verb
+      (no inversion)
+  negative:
+    example_generator:
+      contexts:
+      - emphatic contrast
+      - formal argumentation
+      min_examples: 3
+    structure: Negative Adverb + Auxiliary + Subject + not + Verb (double negation,
+      rare) / Not only + Auxiliary + Subject + Verb + but also...
+  questions:
+    example_generator:
+      contexts:
+      - rhetorical questions
+      - dramatic speech
+      min_examples: 2
+    structure: 'Fronting in questions is rare and mostly rhetorical: ''Never have
+      you seen such a thing?'''
+grammar_point: fronting
 level: C1
 meaning:
+  ccqs:
+  - answer: Yes — 'Never have I...', 'Seldom does he...', 'Hardly had she...'
+    purpose: Tests whether the learner understands that English can move elements
+      to the front of a sentence for emphasis or stylistic effect, often requiring
+      inversion.
+    question: Does fronting a negative adverb require inversion?
+  - answer: Yes — 'A wonderful speaker she was' (no inversion needed, but literary).
+    purpose: Tests whether the learner can identify and apply the correct form/meaning
+      of this grammar point in context. The question 'Can we front a complement without
+      inversion?...' checks conceptual understanding, not just memorization.
+    question: Can we front a complement without inversion?
+  - answer: Some types are (e.g., 'That I don't know'), but most fronting is formal
+      or literary.
+    purpose: Tests whether the learner can identify and apply the correct form/meaning
+      of this grammar point in context. The question 'Is fronting common in everyday
+      conversation?...' checks conceptual understanding, not just memorization.
+    question: Is fronting common in everyday conversation?
+  - answer: The fronted element is the adverbial phrase 'Only after the war.' Inversion
+      is required because 'only' followed by a time expression at the beginning of
+      a sentence triggers subject-auxiliary inversion. The auxiliary 'did' moves before
+      the subject 'they.' This is different from 'only' in mid-position ('They only
+      understood after the war'), which does not trigger inversion.
+    purpose: Tests whether the learner understands that 'only' followed by a time/condition
+      adverbial at the start of a sentence requires inversion, while 'only' in mid-sentence
+      does not. This distinction between fronted 'only' phrases (requiring inversion)
+      and mid-sentence 'only' (no inversion) is a common source of errors in formal
+      writing and is essential for C1-level accuracy.
+    question: '"Only after the war did they understand the cost." What is the fronted
+      element, and why is inversion required?'
+  contrast: 'Normal: ''I have never seen such a beautiful sunset.'' / Fronted: ''Never
+    have I seen such a beautiful sunset.'' — The fronted version is more dramatic
+    and emphatic.'
   core_meaning: Fronting is the movement of an element (adverbial, complement, or
     object) from its normal position to the beginning of the sentence for emphasis
     or dramatic effect. When negative or restrictive adverbs are fronted, subject-auxiliary
     inversion is required. Fronting of complements and objects does not always require
     inversion but creates a literary or dramatic tone.
-  timeline: Applicable across all tenses; the auxiliary used in inversion matches
-    the tense of the original sentence.
-  contrast: 'Normal: ''I have never seen such a beautiful sunset.'' / Fronted: ''Never
-    have I seen such a beautiful sunset.'' — The fronted version is more dramatic
-    and emphatic.'
-  ccqs:
-  - question: Does fronting a negative adverb require inversion?
-    answer: Yes — 'Never have I...', 'Seldom does he...', 'Hardly had she...'
-    purpose: Tests whether the learner understands that English can move elements
-      to the front of a sentence for emphasis or stylistic effect, often requiring
-      inversion.
-  - question: Can we front a complement without inversion?
-    answer: Yes — 'A wonderful speaker she was' (no inversion needed, but literary).
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Can we front a complement without
-      inversion?...' checks conceptual understanding, not just memorization.
-  - question: Is fronting common in everyday conversation?
-    answer: Some types are (e.g., 'That I don't know'), but most fronting is formal
-      or literary.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Is fronting common in everyday
-      conversation?...' checks conceptual understanding, not just memorization.
   example_generator:
     contexts:
     - literary prose
@@ -43,38 +127,41 @@ meaning:
       English, it is less common in speech but still appears in writing and formal
       contexts.
     min_examples: 5
-form:
-  affirmative:
-    structure: Negative/Restrictive Adverb + Auxiliary + Subject + Main Verb / Fronted
-      Complement + Subject + Verb (no inversion) / Fronted Object + Subject + Verb
-      (no inversion)
-    example_generator:
-      contexts:
-      - literary narrative
-      - formal speech
-      - news reporting
-      - academic writing
-      min_examples: 4
-  negative:
-    structure: Negative Adverb + Auxiliary + Subject + not + Verb (double negation,
-      rare) / Not only + Auxiliary + Subject + Verb + but also...
-    example_generator:
-      contexts:
-      - emphatic contrast
-      - formal argumentation
-      min_examples: 3
-  questions:
-    structure: 'Fronting in questions is rare and mostly rhetorical: ''Never have
-      you seen such a thing?'''
-    example_generator:
-      contexts:
-      - rhetorical questions
-      - dramatic speech
-      min_examples: 2
+  timeline: Applicable across all tenses; the auxiliary used in inversion matches
+    the tense of the original sentence.
+phonetics:
+- example_generator:
+    contexts:
+    - stress patterns in negative fronting
+  l1_issue: Speakers from languages without inversion (e.g., Korean, Turkish) may
+    produce '*Never I have seen...' — the inversion rule must be explicitly taught.
+  note: 'Fronted negative adverbs carry strong stress, and the inverted auxiliary
+    is typically unstressed: ''NEVER have I...'', ''HARDLY had she...'''
+- example_generator:
+    contexts:
+    - pausing and intonation after fronted elements
+  l1_issue: Learners may run the fronted element into the clause without a pause,
+    losing the dramatic effect.
+  note: A slight pause (comma intonation) typically follows the fronted element before
+    the inverted clause.
+register_notes:
+- note: 'Biber et al. (2021) — Fronting (preposing): distribution varies by register.
+    More common in conversation and fiction; rare in academic prose. Fronted adverbials
+    are more common than fronted objects. Ch. 11.2.1'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 11.2.1
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Fronting negative adverbs (inversion required)
-  type: grammatical
-  examples:
+- examples:
   - Never have I been so embarrassed.
   - Rarely does one encounter such generosity.
   - Seldom had they witnessed such a spectacle.
@@ -83,31 +170,77 @@ sub_rules:
   - Little did they know what was about to happen.
   - Nowhere could the missing documents be found.
   - Not once did he apologise for his behaviour.
-- rule: Fronting 'only' expressions (inversion required)
+  rule: Fronting negative adverbs (inversion required)
   type: grammatical
-  examples:
+- examples:
   - Only then did I realise the truth.
   - Only after the war did they understand the cost.
   - Only by working hard can you achieve success.
   - Only when it rains does the river flood.
-- rule: Fronting 'so' and 'such' (inversion required)
+  rule: Fronting 'only' expressions (inversion required)
   type: grammatical
-  examples:
+- examples:
   - So beautiful was the sunset that everyone stopped to look.
   - Such was the noise that we couldn't sleep.
   - So quickly did he run that no one could catch him.
-- rule: Fronting complements (no inversion, literary)
-  type: stylistic
-  examples:
+  rule: Fronting 'so' and 'such' (inversion required)
+  type: grammatical
+- examples:
   - A more dedicated teacher you could not wish to meet.
   - Happy she was, for the first time in years.
   - Strange though it may sound, I actually enjoyed the experience.
-- rule: Fronting objects (no inversion, informal)
+  rule: Fronting complements (no inversion, literary)
   type: stylistic
-  examples:
+- examples:
   - That I don't know. (fronted object in response to a question)
   - This much I can tell you.
   - A good thing I didn't say anything!
+  rule: Fronting objects (no inversion, informal)
+  type: stylistic
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: 'Adapt the party game: students make true sentences about themselves
+      using ''Never have I ever...'' Others respond with ''I have!'' if they have.
+      Great for practising inversion in a fun context.'
+    duration: 15
+    name: Never Have I Ever (Grammar Edition)
+  - adaptation_notes: Give students 10 normal sentences. They must rewrite each with
+      fronting and inversion. Check that the auxiliary matches the tense.
+    duration: 15
+    name: Fronting Transformation Drill
+  - adaptation_notes: Students read a short literary extract and identify all examples
+      of fronting. They classify the type and discuss the effect.
+    duration: 20
+    name: Literary Fronting Hunt
+  - adaptation_notes: Students write a short speech (e.g., a campaign speech, a toast)
+      that must include at least four examples of fronting for dramatic effect.
+    duration: 25
+    name: Speech Writing
+  tips:
+  - 'CGEL Ch. 16: CGEL systematically classifies non-canonical word orders into three
+    types: preposing (fronting), postposing (extraposition), and inversion. Each has
+    specific discourse-pragmatic functions: preposing gives thematic prominence, postposing
+    avoids end-weight, inversion marks information structure.'
+  - 'Start with the most common pattern: ''Never have I ever...'' (the game provides
+    a fun entry point).'
+  - 'Teach the inversion rule explicitly: fronted negative comes before auxiliary
+    before subject.'
+  - Use a 'normal to fronted' transformation exercise to build awareness.
+  - Introduce 'only after/then/when' fronting next, as it is very common in writing.
+  - Save complement and object fronting for later — these are more literary and less
+    productive.
+  - Use authentic literary and journalistic texts to show fronting in context.
+  - 'Swan PEU: Fronting — moving an element to the beginning of the clause for emphasis:
+    ''That I will never allow.'' ''This book I really enjoyed.'' More common in writing.
+    Inversion may follow fronting with negative elements.'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 16: CGEL (Ch.16)
+    analyzes fronting as an information packaging device that places a non-subject
+    constituent in clause-initial position for focus or contrast: ''Never had I seen
+    such beauty'' (negative fronting), ''This book I really enjoyed'' (topicalization).
+    Fronting is more common in writing than conversation and is often accompanied
+    by inversion when the fronted element is negative.'
+title: Fronting for Emphasis (Never have I..., Only then did I..., Beautiful she was)
 use:
 - context: Literary and narrative writing
   description: Fronting creates dramatic tension, suspense, or poetic rhythm in fiction
@@ -138,82 +271,3 @@ use:
   examples:
   - Only through rigorous analysis can valid conclusions be drawn.
   - Rarely has this phenomenon been studied in such depth.
-phonetics:
-- note: 'Fronted negative adverbs carry strong stress, and the inverted auxiliary
-    is typically unstressed: ''NEVER have I...'', ''HARDLY had she...'''
-  example_generator:
-    contexts:
-    - stress patterns in negative fronting
-  l1_issue: Speakers from languages without inversion (e.g., Korean, Turkish) may
-    produce '*Never I have seen...' — the inversion rule must be explicitly taught.
-- note: A slight pause (comma intonation) typically follows the fronted element before
-    the inverted clause.
-  example_generator:
-    contexts:
-    - pausing and intonation after fronted elements
-  l1_issue: Learners may run the fronted element into the clause without a pause,
-    losing the dramatic effect.
-teaching:
-  methodology: Guided discovery
-  tips:
-  - 'Start with the most common pattern: ''Never have I ever...'' (the game provides
-    a fun entry point).'
-  - 'Teach the inversion rule explicitly: fronted negative comes before auxiliary
-    before subject.'
-  - Use a 'normal to fronted' transformation exercise to build awareness.
-  - Introduce 'only after/then/when' fronting next, as it is very common in writing.
-  - Save complement and object fronting for later — these are more literary and less
-    productive.
-  - Use authentic literary and journalistic texts to show fronting in context.
-  recommended_activities:
-  - name: Never Have I Ever (Grammar Edition)
-    duration: 15
-    adaptation_notes: 'Adapt the party game: students make true sentences about themselves
-      using ''Never have I ever...'' Others respond with ''I have!'' if they have.
-      Great for practising inversion in a fun context.'
-  - name: Fronting Transformation Drill
-    duration: 15
-    adaptation_notes: Give students 10 normal sentences. They must rewrite each with
-      fronting and inversion. Check that the auxiliary matches the tense.
-  - name: Literary Fronting Hunt
-    duration: 20
-    adaptation_notes: Students read a short literary extract and identify all examples
-      of fronting. They classify the type and discuss the effect.
-  - name: Speech Writing
-    duration: 25
-    adaptation_notes: Students write a short speech (e.g., a campaign speech, a toast)
-      that must include at least four examples of fronting for dramatic effect.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*Never I have seen such a beautiful sight.*'
-  correction: Never have I seen such a beautiful sight.
-  explanation: When negative adverbs (never, rarely, seldom) are fronted, subject-auxiliary
-    inversion is required.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - German
-register_notes:
-- note: In formal writing, conditionals appear in discussions of likely outcomes and
-    theoretical scenarios.
-- note: In conversation, conditionals are used for hypothetical scenarios and polite
-    requests.
-- note: In academic writing, conditionals express logical relationships between propositions.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, conditionals are used for hypothetical scenarios, polite
-    requests, and future planning.
-- note: In academic writing, conditionals appear in discussions of likely outcomes
-    and theoretical scenarios.
-- note: In negotiations and planning, conditionals set conditions and explore possibilities.

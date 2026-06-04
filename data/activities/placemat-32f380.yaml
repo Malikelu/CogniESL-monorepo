@@ -1,31 +1,34 @@
-id: placemat-32f380
-name: Placemat
-category: review
-description: Students divide a paper into sections and fill each with different aspects
-  of a topic (vocabulary, grammar, questions, facts). A collaborative review tool
-  that organizes learning visually.
-targetStructures:
-- vocabulary
+adaptableToTopic: true
+bestForAges:
+- adults
 bestForLevels:
 - A2
 - B1
-bestForAges:
-- adults
+category: review
+citations: []
+description: Students divide a paper into sections and fill each with different aspects
+  of a topic (vocabulary, grammar, questions, facts). A collaborative review tool
+  that organizes learning visually.
+differentiation:
+  extension: 'Challenge advanced students: require longer or more complex output,
+    add grammar constraints, have them create their own version, or teach the concept
+    to a peer.'
+  support: 'Provide additional scaffolding: simplify instructions, allow pair work,
+    offer word banks or sentence starters, and give more time.'
+digitalReady: true
 duration: 10
-groupSize: individuals
 energyRequired: low
-prepTime: none
-materials:
-- paper
 format:
 - in-person
-requiresTech: false
-digitalReady: true
+grammar_focus:
+- grammar_accuracy
+- sentence_structure
+groupSize: individuals
 hasAudioComponent: false
 hasPrintableComponent: true
 hasSlidesComponent: false
 hasVisualComponent: true
-adaptableToTopic: true
+id: placemat-32f380
 instructions:
 - Give each group of 4 students a large piece of paper.
 - They divide it into 4 sections (one per student) with a shared center.
@@ -34,18 +37,60 @@ instructions:
 - In the center, they write the most important thing the group learned.
 - Groups rotate placemats and read each other's work. They can add comments or questions.
 - Display placemats on the wall as a visual summary of the unit.
-script:
-- '"Paper into 4."'
-- '"Topic in center."'
-- '"Corners: vocab, grammar, question, fact."'
-differentiation:
-  support: 'Provide additional scaffolding: simplify instructions, allow pair work,
-    offer word banks or sentence starters, and give more time.'
-  extension: 'Challenge advanced students: require longer or more complex output,
-    add grammar constraints, have them create their own version, or teach the concept
-    to a peer.'
 keywords:
 - placemat
 - categorize
 - review
-l1Enhanced: true
+l1_enhanced:
+- language: Spanish
+  adaptation: Spanish speakers may write longer text than peers. Provide word-count
+    guidelines per section to keep sections balanced.
+  priority: low
+- language: Arabic
+  adaptation: Arabic RTL writing direction may affect placemat spatial organization.
+    Some students may orient their section right-to-left. Use a template with clear
+    English LTR sections.
+  priority: medium
+- language: Mandarin
+  adaptation: 'Mandarin speakers may include characters/hanzi in their written sections.
+    Clarify: English response required unless bilingual mode is explicitly activated.'
+  priority: medium
+l1_specific: []
+materials:
+- paper
+name: Placemat
+prepTime: none
+requiresTech: false
+script:
+- '"Paper into 4."'
+- '"Topic in center."'
+- '"Corners: vocab, grammar, question, fact."'
+skill_areas:
+- grammar
+- integrated
+citations:
+- claim: "Based on the Vocabulary game formats from Watcyn-Jones (1981), which uses game-based pair and group work to make grammar practice dynamic and engaging."
+  source: 'Watcyn-Jones, P. (1981) Grammar Games and Activities. Penguin Books.'
+  tier: 2
+  reliability: 'B'
+  flagged: false
+sources:
+- name: Zwiers, J. & Crawford, M. (2011). Academic Classroom Conversations. Stenhouse
+    Publishers.
+  relevance: Collaborative review tools and visual learning organizers
+- name: Barkley, E. et al. (2014). Collaborative Learning Techniques, 2nd ed. Jossey-Bass.
+  relevance: Structured group review and peer feedback techniques
+- Ur, Penny (1988) Grammar Practice Activities, Cambridge University Press.
+  - 'Watcyn-Jones, P. (1981) Grammar Games and Activities. Penguin Books.'
+targetStructures:
+- vocabulary
+teaching_tips:
+- context: Setup
+  tip: Use A3 paper minimum. Larger is better — students need room to write. Consider
+    pre-printing section labels if time is tight.
+- context: Time management
+  tip: Give 5-7 minutes for individual sections, then 3 minutes for the center. The
+    center 'most important thing' step requires negotiation — model this beforehand.
+- context: Follow-up
+  tip: The gallery walk (rotating placemats) is where the real learning happens. Give
+    sticky notes for comments/questions so the original writers get peer feedback.

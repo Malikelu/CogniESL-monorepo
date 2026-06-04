@@ -1,59 +1,51 @@
-grammar_point: infinitive_of_purpose
-title: Infinitive of Purpose (to + verb for why)
-description: Uses 'to + infinitive' to explain WHY someone does something. Answers
-  the question 'What for?' or 'Why?'
-level: B1
-meaning:
-  core_meaning: Explains the reason or goal behind an action. The infinitive tells
-    you the purpose.
-  timeline: The purpose comes after the action in the sentence, but logically it exists
-    before (it's the reason you do the action).
-  contrast: '''I went to the store to buy milk.'' = purpose (why I went).
-
-
-    ''I went to the store and bought milk.'' = sequence of actions (no purpose, just
-    what happened).
-
-
-    '
-  ccqs:
-  - question: Does 'to + verb' explain why someone does something?
-    answer: Yes — it shows the purpose or reason.
-    purpose: Tests whether the learner understands that 'to + base verb' expresses
-      purpose (why someone does something). This is one of the most common uses of
-      the infinitive.
-  - question: Can we answer 'Why did you go?' with 'To buy milk'?
-    answer: Yes — 'to + verb' can stand alone as a short answer about purpose.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Can we answer 'Why did you go?'
-      with 'To buy milk'...' checks conceptual understanding, not just memorization.
-  - question: Is 'I went to the store to buy milk' the same as 'I went to the store
-      for buy milk'?
-    answer: No — 'for' must be followed by a noun (for milk), not a verb. Use 'to
-      + verb' for purpose with a verb.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Is 'I went to the store to buy
-      milk' the same as '...' checks conceptual understanding, not just memorization.
-  - question: Does the subject of the main clause and the infinitive have to be the
-      same person?
-    answer: Yes — 'I went to buy milk' means I buy the milk. For different subjects,
-      use 'for + person + to'.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Does the subject of the main
-      clause and the infini...' checks conceptual understanding, not just memorization.
-  example_generator:
-    contexts:
-    - everyday situations
-    - shopping and commerce
-    - social interactions
-    - work and professional life
-    cultural_notes:
-    - One of the first ways learners express purpose in English — simpler than 'so
-      that' or 'in order to'
-    - Common in instructions, recipes, and directions
-    min_examples: 5
+citations:
+- claim: 'Core meaning: Explains the reason or goal behind an action'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 31: Complementation'
+  tier: 4
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 31: Complementation'
+  tier: 4
+- claim: Common error '*I went to the store for buy milk.*' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- claim: Infinitive of purpose functions in discourse to connect an action with its intended goal, establishing a reason-result
+    relationship between clauses
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 31: Complementation'
+  tier: 1
+- claim: Oshima & Hogue's Great Writing series demonstrates how this grammatical structure functions in academic writing contexts.
+    Their approach connects grammar instruction to writing outcomes, showing learners how accurate use of this structure improves
+    paragraph cohesion, essay organization, and academic register.
+  source: Oshima, A. and Hogue, A. (2006). Introduction to Academic Writing, 3rd ed. Pearson Longman.
+  tier: 2
+common_errors:
+- correction: I went to the store to buy milk.
+  error: '*I went to the store for buy milk.*'
+  explanation: Purpose is expressed with 'to + base verb', not 'for + verb'. 'For' is used with nouns (for milk), not verbs.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  reliability: D
+description: Uses 'to + infinitive' to explain WHY someone does something. Answers the question 'What for?' or 'Why?'
+dialectal_variation: []
+discourse_notes: []
 form:
   affirmative:
+    example_generator:
+      contexts:
+      - shopping and commerce
+      - social interactions
+      - work and professional life
+      min_examples: 4
     structure: 'Main clause + to + V1 (infinitive of purpose).
 
 
@@ -61,139 +53,145 @@ form:
 
 
       '
-    example_generator:
-      contexts:
-      - shopping and commerce
-      - social interactions
-      - work and professional life
-      min_examples: 4
   negative:
-    structure: Use 'in order not to' or 'so as not to' for negative purpose.
     example_generator:
       contexts:
       - everyday situations
       - negation
       min_examples: 4
+    structure: Use 'in order not to' or 'so as not to' for negative purpose.
   questions:
-    structure: Questions about purpose use 'Why...?' or 'What...for?'
     example_generator:
       contexts:
       - shopping and commerce
       - social interactions
       min_examples: 4
+    structure: Questions about purpose use 'Why...?' or 'What...for?'
+grammar_point: infinitive_of_purpose
+level: B1
+meaning:
+  ccqs:
+  - answer: Yes — it shows the purpose or reason.
+    purpose: Tests whether the learner understands that 'to + base verb' expresses purpose (why someone does something). This
+      is one of the most common uses of the infinitive.
+    question: Does 'to + verb' explain why someone does something?
+  - answer: Yes — 'to + verb' can stand alone as a short answer about purpose.
+    purpose: Tests whether the learner can identify and apply the correct form/meaning of this grammar point in context. The
+      question 'Can we answer 'Why did you go?' with 'To buy milk'...' checks conceptual understanding, not just memorization.
+    question: Can we answer 'Why did you go?' with 'To buy milk'?
+  - answer: No — 'for' must be followed by a noun (for milk), not a verb. Use 'to + verb' for purpose with a verb.
+    purpose: Tests whether the learner can identify and apply the correct form/meaning of this grammar point in context. The
+      question 'Is 'I went to the store to buy milk' the same as '...' checks conceptual understanding, not just memorization.
+    question: Is 'I went to the store to buy milk' the same as 'I went to the store for buy milk'?
+  - answer: Yes — 'I went to buy milk' means I buy the milk. For different subjects, use 'for + person + to'.
+    purpose: Tests whether the learner can identify and apply the correct form/meaning of this grammar point in context. The
+      question 'Does the subject of the main clause and the infini...' checks conceptual understanding, not just memorization.
+    question: Does the subject of the main clause and the infinitive have to be the same person?
+  contrast: '''I went to the store to buy milk.'' = purpose (why I went).
+
+
+    ''I went to the store and bought milk.'' = sequence of actions (no purpose, just what happened).
+
+
+    '
+  core_meaning: Explains the reason or goal behind an action. The infinitive tells you the purpose.
+  example_generator:
+    contexts:
+    - everyday situations
+    - shopping and commerce
+    - social interactions
+    - work and professional life
+    cultural_notes:
+    - One of the first ways learners express purpose in English — simpler than 'so that' or 'in order to'
+    - Common in instructions, recipes, and directions
+    min_examples: 5
+  timeline: The purpose comes after the action in the sentence, but logically it exists before (it's the reason you do the
+    action).
+phonetics:
+- example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Learners may over-pronounce 'to' as /tuː/ in all positions, sounding unnatural in fluent speech.
+  note: The 'to' in infinitive of purpose is often reduced to /tə/ in connected speech
+- example_generator:
+    contexts:
+    - sentence stress
+  l1_issue: Equal stress on all words makes the purpose less clear to listeners.
+  note: 'Stress falls on the main verb of purpose, not on ''to'': I went to the shop to BUY milk.'
+register_notes: []
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: The subject of the main clause and the infinitive must be the same person
-  type: grammatical
-  examples:
+- examples:
   - I went to the shop to buy bread. (I buy — same subject)
-  - I went to the shop for my wife to buy bread. (different subjects — use 'for +
-    person + to')
-- rule: '''In order to'' and ''so as to'' are more formal alternatives to ''to'''
-  type: register
-  examples:
+  - I went to the shop for my wife to buy bread. (different subjects — use 'for + person + to')
+  rule: The subject of the main clause and the infinitive must be the same person
+  type: grammatical
+- examples:
   - She studied hard in order to pass the exam. (formal)
   - She studied hard to pass the exam. (neutral)
-- rule: Negative purpose uses 'in order not to' or 'so as not to' — not 'to not'
-  type: grammatical
-  examples:
+  rule: '''In order to'' and ''so as to'' are more formal alternatives to ''to'''
+  type: register
+- examples:
   - He left early so as not to miss the train. (correct)
   - He left early to not miss the train. (less formal, sometimes considered incorrect)
-- rule: Short answers can use just 'to + verb'
+  rule: Negative purpose uses 'in order not to' or 'so as not to' — not 'to not'
   type: grammatical
-  examples:
+- examples:
   - Why are you here? — To learn English.
   - What's this for? — To open jars.
-- rule: '''For + noun'' can also express purpose but cannot take a verb'
+  rule: Short answers can use just 'to + verb'
   type: grammatical
-  examples:
+- examples:
   - I went to the shop for milk. (for + noun)
   - I went to the shop to buy milk. (to + verb)
+  rule: '''For + noun'' can also express purpose but cannot take a verb'
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Students ask each other 'Why...?' questions and must answer with 'to + verb'. Chain continues with follow-up
+      questions.
+    duration: 10
+    name: Why Chain
+  - adaptation_notes: Students are given sentences and must identify whether 'to + verb' shows purpose or sequence.
+    duration: 10
+    name: Purpose or Sequence?
+  - adaptation_notes: Students interview a partner about their daily routine, asking 'Why do you...?' and recording answers
+      with infinitives of purpose.
+    duration: 15
+    name: Daily Routine Interview
+  tips:
+  - Ask students 'Why do you...?' questions and have them answer with 'to + verb'.
+  - 'Contrast purpose vs function: ''I use a pen to write'' (purpose) vs ''A pen is for writing'' (function).'
+  - 'Practice the ''for + person + to'' structure: ''I made lunch for my kids to eat at school.'''
+  - 'Use real-life scenarios: Why do you study English? Why do you go to the gym?'
+  - 'Swan PEU: Infinitive of purpose — ''I came here to study English.'' ''She went to the shops to buy bread.'' Simple and
+    direct way to express purpose. More common than ''so that'' in spoken English.'
+  - 'Swan PEU: ''In order to'' and ''so as to'' are more formal versions: ''The company invested heavily in order to increase
+    production.'' Negative: ''so as not to'' + inf.'
+title: Infinitive of Purpose (to + verb for why)
 use:
-- name: Explaining Why You Do Something
-  description: The most common use — giving the reason for an action.
+- description: The most common use — giving the reason for an action.
   examples:
   - I go to the gym to stay healthy.
   - She took a taxi to save time.
   - We moved to London to find a better job.
   key_point: The subject of the main clause and the infinitive must be the same person.
-- name: Answering 'Why?' Questions
-  description: Short answers using just the infinitive.
+  name: Explaining Why You Do Something
+- description: Short answers using just the infinitive.
   examples:
   - Why are you here? — To learn English.
   - Why did he quit? — To spend more time with his family.
   key_point: In short answers, 'to + verb' replaces a full clause.
-- name: Formal Purpose (in order to / so as to)
-  description: More formal alternatives to 'to + verb'.
+  name: Answering 'Why?' Questions
+- description: More formal alternatives to 'to + verb'.
   examples:
   - The company invested in technology in order to improve efficiency.
   - He left early so as not to miss his flight.
-  key_point: '''In order to'' and ''so as to'' are more formal but mean the same as
-    ''to''.'
-phonetics:
-- note: The 'to' in infinitive of purpose is often reduced to /tə/ in connected speech
-  example_generator:
-    contexts:
-    - connected speech
-  l1_issue: Learners may over-pronounce 'to' as /tuː/ in all positions, sounding unnatural
-    in fluent speech.
-- note: 'Stress falls on the main verb of purpose, not on ''to'': I went to the shop
-    to BUY milk.'
-  example_generator:
-    contexts:
-    - sentence stress
-  l1_issue: Equal stress on all words makes the purpose less clear to listeners.
-teaching:
-  methodology: PPP
-  tips:
-  - Ask students 'Why do you...?' questions and have them answer with 'to + verb'.
-  - 'Contrast purpose vs function: ''I use a pen to write'' (purpose) vs ''A pen is
-    for writing'' (function).'
-  - 'Practice the ''for + person + to'' structure: ''I made lunch for my kids to eat
-    at school.'''
-  - 'Use real-life scenarios: Why do you study English? Why do you go to the gym?'
-  recommended_activities:
-  - name: Why Chain
-    duration: 10
-    adaptation_notes: Students ask each other 'Why...?' questions and must answer
-      with 'to + verb'. Chain continues with follow-up questions.
-  - name: Purpose or Sequence?
-    duration: 10
-    adaptation_notes: Students are given sentences and must identify whether 'to +
-      verb' shows purpose or sequence.
-  - name: Daily Routine Interview
-    duration: 15
-    adaptation_notes: Students interview a partner about their daily routine, asking
-      'Why do you...?' and recording answers with infinitives of purpose.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I went to the store for buy milk.*'
-  correction: I went to the store to buy milk.
-  explanation: Purpose is expressed with 'to + base verb', not 'for + verb'. 'For'
-    is used with nouns (for milk), not verbs.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - Italian
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.
+  key_point: '''In order to'' and ''so as to'' are more formal but mean the same as ''to''.'
+  name: Formal Purpose (in order to / so as to)

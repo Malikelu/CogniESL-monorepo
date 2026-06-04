@@ -1,61 +1,35 @@
-id: adjective-draw
-name: Adjective Draw
-category: listening
-description: The teacher describes a scene rich in adjectives and nouns while students
-  draw what they hear. A listening comprehension activity that reinforces adjective-noun
-  order, descriptive vocabulary, and the ability to process spoken English into visual
-  representation.
-targetStructures:
-- adjectives
-- prepositions
+adaptableToTopic: true
+bestForAges:
+- kids
+- teens
 bestForLevels:
 - A1
 - A2
 - B1
-bestForAges:
-- kids
-- teens
-duration: 15
-groupSize: whole-class
-energyRequired: low
-prepTime: medium
-materials:
-- Paper and colored pencils or markers
-- Prepared description scripts
-format:
-- in-person
-- online
-requiresTech: false
+category: listening
+citations:
+- claim: The "Adjective Draw" activity develops listening comprehension through visual stimuli
+    and structured practice
+  flagged: false
+  reliability: B
+  source: 'Peregoy, S. & Boyle, O. (2023). Reading, Writing, and Learning in ESL, 8th ed. Pearson. Ch. 5: Oral English Development for Multilingual Learners'
+  tier: 2
+description: The teacher describes a scene rich in adjectives and nouns while students
+  draw what they hear. A listening comprehension activity that reinforces adjective-noun
+  order, descriptive vocabulary, and the ability to process spoken English into visual
+  representation.
+differentiation:
+  extension: 'Advanced students can take turns giving the descriptions themselves,
+    using more complex adjective strings following OSASCOMP order (opinion-size-age-shape-color-origin-material-purpose).
+    They can also add prepositional phrases and relative clauses: ''the tall thin
+    man who was wearing a long green coat made of wool.'''
+  support: Provide a word bank of key adjectives and nouns on the board. Use shorter,
+    simpler descriptions with fewer adjectives. Allow students to pause and ask clarification
+    questions. Pair weaker students with stronger ones.
 digitalReady: true
-hasAudioComponent: false
-hasPrintableComponent: true
-hasSlidesComponent: false
-hasVisualComponent: true
-adaptableToTopic: true
-instructions:
-- 'Prepare a detailed description of a scene that uses many adjectives and nouns.
-  Example: ''There is a big red house with a small green door and two tall trees beside
-  it.'''
-- Students listen to your description and draw what they hear. They must not see the
-  original image.
-- Read the description twice. Students draw as they listen.
-- 'Show the original image. Students compare their drawings. Discuss: What did you
-  miss? What was hard to understand?'
-- Students write their own description of a scene for a partner to draw.
-- 'Discuss: Which adjectives were most helpful for drawing accurately?'
-script:
-- '"Close your eyes and listen. I am going to describe a crazy scene. You need to
-  draw exactly what you hear. I will read it three times, so do not worry if you miss
-  something the first time."'
-- '"Here we go: There is a small round table in the middle of the room. On the table
-  there is a big blue cup and a tiny silver spoon. Behind the table, there is a tall
-  thin man wearing a long green coat."'
-setupInstructions: Prepare 2-3 descriptive passages rich in adjectives and nouns at
-  the appropriate level. Each passage should describe a fantastical or humorous scene
-  with 8-12 descriptive elements. Prepare an answer key image to show students afterward.
-  Ensure all students have paper and drawing materials.
+duration: 15
+energyRequired: low
 exampleSnippet:
-  topic: adjective order (OSASCOMP)
   execution:
   - The teacher reads a description of a fantastical scene three times. Students draw
     as they listen. After the third reading, students compare their drawings with
@@ -69,14 +43,30 @@ exampleSnippet:
     NOT say \"a blue big cup.\" What comes before shape? Age! Listen for the order."'
   - '"Compare your drawing with your partner. Did you both draw the same thing? What
     details did you hear differently?"'
-differentiation:
-  support: Provide a word bank of key adjectives and nouns on the board. Use shorter,
-    simpler descriptions with fewer adjectives. Allow students to pause and ask clarification
-    questions. Pair weaker students with stronger ones.
-  extension: 'Advanced students can take turns giving the descriptions themselves,
-    using more complex adjective strings following OSASCOMP order (opinion-size-age-shape-color-origin-material-purpose).
-    They can also add prepositional phrases and relative clauses: ''the tall thin
-    man who was wearing a long green coat made of wool.'''
+  topic: adjective order (OSASCOMP)
+format:
+- in-person
+- online
+grammar_focus:
+- adjective_order
+- adjective_strings
+groupSize: whole-class
+hasAudioComponent: false
+hasPrintableComponent: true
+hasSlidesComponent: false
+hasVisualComponent: true
+id: adjective-draw
+instructions:
+- 'Prepare a detailed description of a scene that uses many adjectives and nouns.
+  Example: ''There is a big red house with a small green door and two tall trees beside
+  it.'''
+- Students listen to your description and draw what they hear. They must not see the
+  original image.
+- Read the description twice. Students draw as they listen.
+- 'Show the original image. Students compare their drawings. Discuss: What did you
+  miss? What was hard to understand?'
+- Students write their own description of a scene for a partner to draw.
+- 'Discuss: Which adjectives were most helpful for drawing accurately?'
 keywords:
 - adjectives
 - listening comprehension
@@ -85,4 +75,42 @@ keywords:
 - adjective order
 - prepositions
 - visualization
-l1Enhanced: true
+l1_enhanced:
+- adaptation: Spanish adjective order differs from English (noun + adjective rather than adjective + noun). Provide explicit practice reversing L1 order e.g. "casa big" -> "big house".
+  language: Spanish
+  priority: high
+- adaptation: Arabic adjectives follow the noun and agree in definiteness. Remind students English adjectives precede the noun and don't take articles.
+  language: Arabic
+  priority: high
+- adaptation: Mandarin classifiers (measure words) can confuse learners when mapping to English noun phrases. Focus on English OSASCOMP order without classifier equivalents.
+  language: Mandarin
+  priority: medium
+l1_specific: []
+materials:
+- Paper and colored pencils or markers
+- Prepared description scripts
+name: Adjective Draw
+prepTime: medium
+requiresTech: false
+script:
+- '"Close your eyes and listen. I am going to describe a crazy scene. You need to
+  draw exactly what you hear. I will read it three times, so do not worry if you miss
+  something the first time."'
+- '"Here we go: There is a small round table in the middle of the room. On the table
+  there is a big blue cup and a tiny silver spoon. Behind the table, there is a tall
+  thin man wearing a long green coat."'
+setupInstructions: Prepare 2-3 descriptive passages rich in adjectives and nouns at
+  the appropriate level. Each passage should describe a fantastical or humorous scene
+  with 8-12 descriptive elements. Prepare an answer key image to show students afterward.
+  Ensure all students have paper and drawing materials.
+skill_areas:
+- listening
+sources:
+- author: Klippel, F.
+  year: 1984
+  title: Keep Talking - Communicative Fluency Activities for Language Teaching
+  publisher: Cambridge University Press
+targetStructures:
+- adjectives
+- prepositions
+teaching_tips: ''

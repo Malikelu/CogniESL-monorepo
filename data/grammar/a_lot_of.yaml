@@ -1,15 +1,91 @@
+citations:
+- claim: 'Core meaning: Indicates a large quantity of either countable plural or uncountable nouns'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17: Partitives, Collectives and Quantifiers'
+  tier: 1
+- claim: 'Register distribution: ''A lot of'' is informal. In formal writing, use ''many'', ''much'', or ''numerous''.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17: Partitives, Collectives, and Quantifiers'
+  tier: 1
+- claim: 'Discourse function: ''A lot of'' expresses large quantity in conversation: ''A lot of people came to the party.'''
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17: Partitives, Collectives, and Quantifiers'
+  tier: 1
+- claim: 'Common error ''Using ''a lot of'' in formal writing: *''A lot of people attend'' for All L1 groups speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- claim: L1 transfer in a lot of varies significantly across language backgrounds — Swan & Smith document contrastive patterns
+    for speakers of different L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+common_errors:
+- correction: Many people attended. / A large number of people attended.
+  error: 'Using ''a lot of'' in formal writing: *''A lot of people attended.'''
+  explanation: In formal writing, use 'many', 'numerous', or 'a large number of' instead of 'a lot of'.
+  flagged: true
+  l1_groups:
+  - All L1 groups
+  reliability: D
+- correction: '''Lots of people came.'' is correct but informal.'
+  error: 'Confusing ''a lot of'' and ''lots of'': *''Lots of people came.'' (thinking it''s wrong)'
+  explanation: Both 'a lot of' and 'lots of' are correct. 'Lots of' is more informal.
+  flagged: true
+  l1_groups:
+  - All L1 groups
+  reliability: D
+description: Informal quantifier used with both countable plural and uncountable nouns to describe large quantities. Suitable
+  for all sentence types (affirmative, negative, questions) in informal contexts.
+dialectal_variation: []
+discourse_notes:
+- note: '''A lot of'' expresses large quantity in conversation: ''A lot of people came to the party.'''
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: 'A lot of + countable plural noun: "I have a lot of books."
+
+      A lot of + uncountable noun: "We drank a lot of water."
+
+      '
+  negative:
+    example_generator:
+      contexts:
+      - food and daily routines
+      - shopping and commerce
+      min_examples: 4
+    structure: 'A lot of follows negative verbs: ''I don''t have a lot of time.'' ''We didn''t see a lot of people.'''
+  questions:
+    example_generator:
+      contexts:
+      - entertainment and media
+      - social interactions
+      min_examples: 4
+    structure: 'A lot of follows auxiliary verbs in questions: ''Do you have a lot of homework?'' ''Is there a lot of traffic?'''
 grammar_point: a_lot_of
-title: A Lot Of (Quantifier)
-description: Informal quantifier used with both countable plural and uncountable nouns
-  to describe large quantities. Suitable for all sentence types (affirmative, negative,
-  questions) in informal contexts.
 level: A2
 meaning:
-  core_meaning: Indicates a large quantity of either countable plural or uncountable
-    nouns. Informal equivalent of 'much' (uncountable) and 'many' (countable plural)
-    in affirmatives.
-  timeline: N/A (Quantifiers are not tense-based; they describe quantity regardless
-    of time.)
+  ccqs:
+  - answer: Informal. In formal writing, we would say She has many friends.
+    purpose: Tests understanding of register (informal vs formal)
+    question: She has a lot of friends. Is this formal or informal English?
+  - answer: Yes. A lot of works with uncountable nouns like water as well as countable plural nouns like books.
+    purpose: Tests understanding that a lot of works with all noun types
+    question: Can we say a lot of water? Why or why not?
+  - answer: Yes. Unlike much and many, a lot of can be used naturally in questions as well as affirmatives.
+    purpose: Tests understanding that a lot of works in all sentence types
+    question: Do you have a lot of homework? Is this a correct question?
+  - answer: No. A lot without of is an adverb meaning very much (I like it a lot). A lot of is a quantifier followed by a
+      noun (a lot of books). They look similar but function differently.
+    purpose: Tests whether the learner can distinguish between the adverb a lot (no noun follows) and the quantifier a lot
+      of (noun follows). Confusing the two leads to errors like I have a lot books or I like it a lot of.
+    question: I like it a lot versus I have a lot of books -- are these the same grammar structure?
   contrast: 'A lot of = Informal, all noun types, all sentence types
 
     Much/Many = Formal (much) or neutral, questions/negatives preferred
@@ -17,168 +93,127 @@ meaning:
     Lots of = Informal, same as a lot of (plural form, same meaning)
 
     '
-  ccqs:
-  - question: She has a lot of friends. Is this formal or informal English?
-    answer: Informal. In formal writing, we would say She has many friends.
-    purpose: Tests understanding of register (informal vs formal)
-  - question: Can we say a lot of water? Why or why not?
-    answer: Yes. A lot of works with uncountable nouns like water as well as countable
-      plural nouns like books.
-    purpose: Tests understanding that a lot of works with all noun types
-  - question: Do you have a lot of homework? Is this a correct question?
-    answer: Yes. Unlike much and many, a lot of can be used naturally in questions
-      as well as affirmatives.
-    purpose: Tests understanding that a lot of works in all sentence types
+  core_meaning: Indicates a large quantity of either countable plural or uncountable nouns. Informal equivalent of 'much'
+    (uncountable) and 'many' (countable plural) in affirmatives.
   example_generator:
     contexts:
     - everyday situations
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: 'A lot of + countable plural noun: "I have a lot of books."
-
-      A lot of + uncountable noun: "We drank a lot of water."
-
-      '
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
-  negative:
-    structure: 'A lot of follows negative verbs: ''I don''t have a lot of time.''
-      ''We didn''t see a lot of people.'''
-    example_generator:
-      contexts:
-      - food and daily routines
-      - shopping and commerce
-      min_examples: 4
-  questions:
-    structure: 'A lot of follows auxiliary verbs in questions: ''Do you have a lot
-      of homework?'' ''Is there a lot of traffic?'''
-    example_generator:
-      contexts:
-      - entertainment and media
-      - social interactions
-      min_examples: 4
+  timeline: N/A (Quantifiers are not tense-based; they describe quantity regardless of time.)
+phonetics:
+- example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Many L1 speakers pronounce each word separately and clearly (A - LOT - OF), which sounds stilted. In natural speech,
+    the words blend together with weak forms.
+  note: A lot of in connected speech is often reduced
+  practice: Drill the reduced form in sentences like a lot of people as a smooth unit.
+- example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Speakers of languages that avoid consonant clusters (e.g., Japanese, Spanish) may insert a vowel. The ending should
+    be a single smooth sound.
+  note: Lots of — the consonant cluster can be challenging
+  practice: Drill lots of as one smooth unit.
+register_notes:
+- note: '''A lot of'' is informal. In formal writing, use ''many'', ''much'', or ''numerous''.'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: '''Lots of'' is even more informal than ''a lot of''.'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: Biber et al. (2021) — Vague quantifiers ('a lot of', 'loads of') are strongly conversational. Academic prose prefers
+    precise quantifiers ('many', 'numerous', 'considerable'). Register choice for vague vs. precise quantification is one
+    of the strongest register correlates. Ch. 4.4.4
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 4.4.4
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17: Partitives, Collectives and Quantifiers'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- type: usage
-  rule: A lot of works with both countable plural and uncountable nouns
-  examples:
+- examples:
   - a lot of cars (countable)
   - a lot of traffic (uncountable)
-  explanation: Unlike many (countable only) and much (uncountable only), a lot of
-    works with both.
-- type: register
-  rule: A lot of is informal; avoid in formal writing
-  examples:
+  explanation: Unlike many (countable only) and much (uncountable only), a lot of works with both.
+  rule: A lot of works with both countable plural and uncountable nouns
+  type: usage
+- examples:
   - 'Informal: A lot of people attended.'
   - 'Formal: Many people attended.'
   explanation: In academic or professional writing, use many or much instead.
-- type: form
-  rule: Lots of is an informal variant with the same meaning
-  examples:
+  rule: A lot of is informal; avoid in formal writing
+  type: register
+- examples:
   - Lots of people came to the party.
   - She has lots of experience.
   explanation: Lots of is even more informal than a lot of but means the same thing.
-- type: error_warning
-  rule: Do not confuse a lot of with a lot (adverb)
-  examples:
+  rule: Lots of is an informal variant with the same meaning
+  type: form
+- examples:
   - I like it a lot. (adverb — no noun follows)
   - I have a lot of books. (quantifier — noun follows)
   explanation: A lot without of is an adverb meaning very much.
-- type: usage
-  rule: A lot of can be used in affirmatives, negatives, and questions
-  examples:
+  rule: Do not confuse a lot of with a lot (adverb)
+  type: error_warning
+- examples:
   - 'Affirmative: I have a lot of time.'
   - 'Negative: I do not have a lot of time.'
   - 'Question: Do you have a lot of time?'
-  explanation: Unlike much, which is mainly used in negatives and questions, a lot
-    of is natural in all three.
-use:
-- name: Affirmative Statements
-  description: Describe large quantities in informal affirmatives (replaces much/many).
-  examples:
-  - I have a lot of work to do.
-  - They bought a lot of food.
-  key_point: Preferred over much/many in informal affirmatives.
-- name: Questions and Negatives
-  description: Ask about or describe lack of quantity in questions/negatives.
-  examples:
-  - Do you have a lot of free time?
-  - We don't have a lot of options.
-  key_point: Interchangeable with much/many here, but more informal.
-- name: All Noun Types
-  description: Works with both countable plural and uncountable nouns.
-  examples:
-  - A lot of cars (countable)
-  - A lot of rain (uncountable)
-  key_point: No need to distinguish countable/uncountable like much/many.
-phonetics:
-- note: A lot of in connected speech is often reduced
-  l1_issue: Many L1 speakers pronounce each word separately and clearly (A - LOT -
-    OF), which sounds stilted. In natural speech, the words blend together with weak
-    forms.
-  practice: Drill the reduced form in sentences like a lot of people as a smooth unit.
-  example_generator:
-    contexts:
-    - connected speech
-- note: Lots of — the consonant cluster can be challenging
-  l1_issue: Speakers of languages that avoid consonant clusters (e.g., Japanese, Spanish)
-    may insert a vowel. The ending should be a single smooth sound.
-  practice: Drill lots of as one smooth unit.
-  example_generator:
-    contexts:
-    - connected speech
+  explanation: Unlike much, which is mainly used in negatives and questions, a lot of is natural in all three.
+  rule: A lot of can be used in affirmatives, negatives, and questions
+  type: usage
 teaching:
   methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students survey classmates using ''How much...?'' and ''How many...?'' questions. They report back:
+      ''Most people have a lot of books. Few people have much free time.'''
+    duration: 15
+    name: Survey — How much/many/a lot of
+  - adaptation_notes: 'Students rewrite informal sentences using formal quantifiers: ''a lot of'' → ''much/many/a great deal
+      of''. Discuss register differences.'
+    duration: 10
+    name: Formal vs Informal Rewrite
+  - adaptation_notes: 'Show pictures with different quantities. Students describe them using appropriate quantifiers: ''There
+      is a lot of water. There are few people.'''
+    duration: 10
+    name: Picture Quantifier Game
   tips:
   - 'Week 1: Introduce as the ''easy'' quantifier for all nouns in informal speech.'
   - 'Week 2: Contrast with much/many in formal vs informal contexts.'
   - 'Use real objects: Count books (a lot of books) vs measure water (a lot of water).'
-  recommended_activities:
-  - name: Survey — How much/many/a lot of
-    duration: 15
-    adaptation_notes: 'Students survey classmates using ''How much...?'' and ''How
-      many...?'' questions. They report back: ''Most people have a lot of books. Few
-      people have much free time.'''
-  - name: Formal vs Informal Rewrite
-    duration: 10
-    adaptation_notes: 'Students rewrite informal sentences using formal quantifiers:
-      ''a lot of'' → ''much/many/a great deal of''. Discuss register differences.'
-  - name: Picture Quantifier Game
-    duration: 10
-    adaptation_notes: 'Show pictures with different quantities. Students describe
-      them using appropriate quantifiers: ''There is a lot of water. There are few
-      people.'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.6-12.13'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: 'Using ''a lot of'' in formal writing: *''A lot of people attended.'''
-  correction: Many people attended. / A large number of people attended.
-  explanation: In formal writing, use 'many', 'numerous', or 'a large number of' instead
-    of 'a lot of'.
-  l1_groups:
-  - All L1 groups
-- error: 'Confusing ''a lot of'' and ''lots of'': *''Lots of people came.'' (thinking
-    it''s wrong)'
-  correction: '''Lots of people came.'' is correct but informal.'
-  explanation: Both 'a lot of' and 'lots of' are correct. 'Lots of' is more informal.
-  l1_groups:
-  - All L1 groups
-register_notes:
-- note: '''A lot of'' is informal. In formal writing, use ''many'', ''much'', or ''numerous''.'
-- note: '''Lots of'' is even more informal than ''a lot of''.'
-dialectal_variation:
-- note: No significant BrE/AmE differences.
-discourse_notes:
-- note: '''A lot of'' expresses large quantity in conversation: ''A lot of people
-    came to the party.'''
+  - 'Swan PEU: ''A lot of/lots of'' — informal quantifiers for both countable and uncountable nouns. ''A lot of people'' and
+    ''a lot of water.'' In formal writing, use ''many/much'' or ''a great deal of.'''
+  - 'Swan PEU: Quantifying expressions — ''a lot of,'' ''lots of,'' ''plenty of,'' ''a great deal of.'' Register teaching:
+    informal (a lot of) vs. formal (much/many/numerous/considerable). Teach learners to vary in writing.'
+teaching_tips:
+- source: 'Celce-Murcia & Larsen-Freeman (1999) The Grammar Book: An ESL/EFL Teacher''s Course, 2nd ed. Heinle & Heinle.'
+  tip: 'PARTITIVE NOUNS — OPEN CLASS: Partitives are a productive open class with patterns including container (a bottle of),
+    portion (a slice of), individual members (a piece of), parts/fractions (a segment of), shape (a ball of), pair (a pair
+    of), and idiomatic (a school of fish, a pride of lions). Students should practice with supermarket/recipe activities.
+    -ful can be added to some partitives (a spoonful, a mouthful, a houseful). Source: Ch.17 p.327-328.'
+title: A Lot Of (Quantifier)
+use:
+- description: Describe large quantities in informal affirmatives (replaces much/many).
+  examples:
+  - I have a lot of work to do.
+  - They bought a lot of food.
+  key_point: Preferred over much/many in informal affirmatives.
+  name: Affirmative Statements
+- description: Ask about or describe lack of quantity in questions/negatives.
+  examples:
+  - Do you have a lot of free time?
+  - We don't have a lot of options.
+  key_point: Interchangeable with much/many here, but more informal.
+  name: Questions and Negatives
+- description: Works with both countable plural and uncountable nouns.
+  examples:
+  - A lot of cars (countable)
+  - A lot of rain (uncountable)
+  key_point: No need to distinguish countable/uncountable like much/many.
+  name: All Noun Types

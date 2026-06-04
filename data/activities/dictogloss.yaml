@@ -1,36 +1,54 @@
-id: dictogloss
-name: Dictogloss
-category: listening
-description: 'Dictogloss -- a listening activity. Choose a short text (100-150 words)
-  with target grammar and vocabulary. Tell students: I will read a short text. Take
-  notes on key words. You will NOT...'
-targetStructures:
-- listening-comprehension
-- verb-tenses
-- clauses
-- discourse
+adaptableToTopic: true
 bestForLevels:
 - A2
 - B1
 - B2
 - C1
+category: listening
+citations:
+- claim: 'The "Dictogloss" activity supports language learning through listening-focused
+    practice. Students listen to a short text, take notes on key words, then work in
+    groups to reconstruct the original from combined notes.'
+  flagged: false
+  reliability: B
+  source: Peregoy, S. & Boyle, O. (2023). Reading, Writing, and Learning in ESL, 8th
+    ed. Pearson.
+  tier: 2
+- claim: Klippel describes reconstruction-based listening activities where students
+    must collaboratively rebuild a heard text from memory and notes. This develops
+    notetaking skills, listening for gist and detail, and metalinguistic awareness as
+    groups debate the correct reconstruction.
+  flagged: false
+  reliability: A
+  source: "Klippel, F. (1984). Keep Talking: Communicative Fluency Activities for Language
+    Teaching. Cambridge University Press. Section 2.4: Jigsaw tasks."
+  tier: 2
+description: 'Dictogloss -- a listening activity. Choose a short text (100-150 words)
+  with target grammar and vocabulary. Tell students: I will read a short text. Take
+  notes on key words. You will NOT catch every word. After listening twice, groups
+  reconstruct the text from combined notes.'
+differentiation:
+  extension: Use longer texts. Read only once. Require groups to match the original
+    exactly.
+  support: Use shorter texts. Read more slowly. Provide the first and last sentences
+    as anchors.
+digitalReady: true
 duration: 25
-groupSize: small-groups
 energyRequired: medium
-prepTime: low
-materials:
-- Short text prepared by teacher
-- Paper for notes
 format:
 - in-person
 - online
-requiresTech: false
-digitalReady: true
+grammar_focus:
+- clauses
+- discourse_markers
+- linking_words
+- verb_tenses
+groupSize: small-groups
 hasAudioComponent: false
 hasPrintableComponent: false
 hasSlidesComponent: false
 hasVisualComponent: false
-adaptableToTopic: true
+id: dictogloss
 instructions:
 - Choose a short text (100-150 words) with target grammar and vocabulary.
 - 'Tell students: I will read a short text. Take notes on key words. You will NOT
@@ -40,6 +58,33 @@ instructions:
 - Students work in groups to reconstruct the text from their combined notes.
 - Display the original. Groups compare their version.
 - 'Discuss: What note-taking strategies helped?'
+keywords:
+- dictogloss
+- reconstruction
+- note-taking
+- listening
+- collaboration
+l1_enhanced:
+- adaptation: 'Spanish speakers may confuse present perfect and past simple. Provide
+    explicit contrast: "he comido" (present perfect) vs "comí" (past simple).'
+  language: Spanish
+  priority: high
+- adaptation: Arabic has perfective/imperfective aspect rather than tense. Provide
+    timeline visuals to illustrate English tense system.
+  language: Arabic
+  priority: high
+- adaptation: Mandarin has no verb inflection for tense. Tense is indicated by time
+    words (yesterday, now) and aspect markers (le, zhe). Provide explicit verb conjugation
+    practice.
+  language: Mandarin
+  priority: high
+l1_specific: []
+materials:
+- Short text prepared by teacher
+- Paper for notes
+name: Dictogloss
+prepTime: low
+requiresTech: false
 script:
 - I am going to read a short text twice. Take notes on key words -- nouns, verbs,
   adjectives.
@@ -47,15 +92,21 @@ script:
   to the original as you can.
 setupInstructions: Prepare a short text with clear structure. Practice reading at
   natural speed.
-differentiation:
-  support: Use shorter texts. Read more slowly. Provide the first and last sentences
-    as anchors.
-  extension: Use longer texts. Read only once. Require groups to match the original
-    exactly.
-keywords:
-- dictogloss
-- reconstruction
-- note-taking
+skill_areas:
 - listening
-- collaboration
-l1Enhanced: true
+sources:
+- author: Peregoy, S. & Boyle, O.
+  year: 2023
+  title: Reading, Writing, and Learning in ESL
+  edition: 8th ed.
+  publisher: Pearson
+- author: Klippel, F.
+  year: 1984
+  title: Keep Talking - Communicative Fluency Activities for Language Teaching
+  publisher: Cambridge University Press
+targetStructures:
+- listening-comprehension
+- verb-tenses
+- clauses
+- discourse
+teaching_tips: ''

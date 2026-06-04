@@ -1,15 +1,122 @@
+citations:
+- claim: 'Core meaning: Provides the cause or reason for an action or situation'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24: Coordination (reason clauses)'
+  tier: 1
+- claim: 'Discourse function: In academic writing, relative clauses are essential for precision and are a marker of proficient
+    wri'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24: Coordination (reason clauses)'
+  tier: 1
+- claim: Common error '*Because of he was tired, he went to bed.*' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 24: Reason clauses'
+  tier: 1
+- claim: Understanding reason clauses is essential for academic writing — Oshima & Hogue emphasize how writers use these structures
+    to create clear, coherent prose
+  flagged: false
+  reliability: B
+  source: 'Oshima and Hogue (2006) Introduction to Academic Writing, 3rd ed. Pearson. Ch. 5: Complex Sentences in Academic
+    Writing'
+  tier: 2
+common_errors:
+- correction: Because he was tired, he went to bed.
+  error: '*Because of he was tired, he went to bed.*'
+  explanation: '''Because of'' is followed by a noun or noun phrase; ''because'' introduces a full clause with subject + verb.
+    This confusion is extremely common because the two forms are similar but require different complementation.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+- correction: Because the traffic was heavy, I was late.
+  error: '*Because of the traffic was heavy, I was late.*'
+  explanation: '''Because of'' requires a noun phrase, not a clause. ''The traffic was heavy'' is a clause and needs ''because''
+    (without ''of''). This is one of the most persistent at B1-B2 level across all L1 backgrounds.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Arabic
+  reliability: D
+- correction: Since you are here, let us start.
+  error: '*Since you are here, so let us start.*'
+  explanation: '''Since'' (reason) and ''so'' (result) should not appear in the same sentence. Both signal a causal relationship;
+    using both is redundant. Choose one: ''Since X, Y'' or ''X, so Y''.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+- correction: I was late because of the rain.
+  error: '*I was late because the rain.*'
+  explanation: '''The rain'' is a noun, not a clause. Use ''because of + noun'' (not ''because + noun''). Learners often know
+    ''because'' but forget the ''of'' variant needed before noun phrases, producing an incomplete causal expression.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Chinese
+  reliability: D
+description: Structures that explain why something happened. Essential for giving explanations.
+dialectal_variation: []
+discourse_notes:
+- note: Reason clauses (because, since, as) provide causal explanations, essential for argumentation and expository writing
+    at all levels.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - food and daily routines
+      - weather and nature
+      min_examples: 4
+    structure: 'Main clause + because + clause: "I went because I was bored."
+
+      Since/As + clause, + main clause: "Since I was bored, I went out."
+
+      Main clause + because of + noun: "I went because of boredom."
+
+      '
+  negative:
+    example_generator:
+      contexts:
+      - health and wellbeing
+      - social interactions
+      min_examples: 4
+    structure: Negative in either clause.
+  questions:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: Why + auxiliary + subject + verb?
 grammar_point: reason_clauses
-title: Reason Clauses (because, since, as, because of)
-description: Structures that explain why something happened. Essential for giving
-  explanations.
 level: B1
 meaning:
-  core_meaning: Provides the cause or reason for an action or situation. Answers 'Why?'
-    This grammar point is essential for expressing reason clauses in English. Learners
-    at this level need to understand both the form and the appropriate contexts for
-    use. Common errors include confusion with related structures and inappropriate
-    register use.
-  timeline: Reason clause tense matches main clause tense (usually).
+  ccqs:
+  - answer: Because introduces the reason. So introduces the result.
+    purpose: Tests whether the learner can identify the reason/cause in a sentence. Understanding causal relationships is
+      essential for using reason conjunctions correctly.
+    question: Can you explain the difference between because and so by giving an example of when to use each?
+  - answer: No — changing the structure would change the meaning or make the sentence ungrammatical.
+    purpose: Tests whether the learner understands that reason clauses is the only appropriate structure for this meaning/context.
+    question: Can we use a different structure here with the same meaning?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with reason clauses and explain why they are
+      incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: 'The first uses ''because + clause'' (subject + verb: ''I was sick''), which gives a full reason. The second uses
+      ''because of + noun'' (a noun phrase: ''the sickness''), which is more concise. Both express the same reason, but ''because''
+      needs a full clause while ''because of'' needs only a noun phrase.'
+    purpose: Tests whether the learner can distinguish between 'because + clause' and 'because of + noun' as two parallel
+      ways to express reason. This distinction is essential because 'because of' cannot be followed by a clause with a finite
+      verb, and learners frequently produce errors like 'because of I was sick' or 'because the sickness'.
+    question: Can you explain the difference between 'I stayed home because I was sick' and 'I stayed home because of the
+      sickness' by giving an example of when to use each?
   contrast: '''Because'' = most common, neutral (all registers)
 
     ''Since/As'' = more formal, often at sentence start
@@ -19,171 +126,90 @@ meaning:
     ''Due to'' = very formal, usually after ''be''
 
     '
-  ccqs:
-  - question: What is the difference between because and so
-    answer: Because introduces the reason. So introduces the result.
-    purpose: Tests whether the learner can identify the reason/cause in a sentence.
-      Understanding causal relationships is essential for using reason conjunctions
-      correctly.
-  - question: Can we use a different structure here with the same meaning?
-    answer: No — changing the structure would change the meaning or make the sentence
-      ungrammatical.
-    purpose: Tests whether the learner understands that reason clauses is the only
-      appropriate structure for this meaning/context.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      reason clauses and explain why they are incorrect.
+  core_meaning: Provides the cause or reason for an action or situation. Answers 'Why?' This grammar point is essential for
+    expressing reason clauses in English. Learners at this level need to understand both the form and the appropriate contexts
+    for use. Common errors include confusion with related structures and inappropriate register use.
   example_generator:
     contexts:
     - everyday situations
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Main clause + because + clause: "I went because I was bored."
-
-      Since/As + clause, + main clause: "Since I was bored, I went out."
-
-      Main clause + because of + noun: "I went because of boredom."
-
-      '
-    example_generator:
-      contexts:
-      - food and daily routines
-      - weather and nature
-      min_examples: 4
-  negative:
-    structure: Negative in either clause.
-    example_generator:
-      contexts:
-      - health and wellbeing
-      - social interactions
-      min_examples: 4
-  questions:
-    structure: Why + auxiliary + subject + verb?
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
-sub_rules:
-- rule: Because + clause (reason)
-  type: grammatical
-  examples:
-  - I stayed home because I was sick
-  - She was late because there was traffic
-- rule: So + clause (result)
-  type: grammatical
-  examples:
-  - I was sick so I stayed home
-  - There was traffic so she was late
-- rule: Since/As + clause (reason — more formal)
-  type: grammatical
-  examples:
-  - Since it was raining, we stayed inside
-  - As she was tired, she went to bed early
-use:
-- name: Direct Reason (because)
-  description: Most common way to give reasons.
-  examples:
-  - I'm happy because you're here.
-  - We left because it was noisy.
-  key_point: Because is universal - use in all situations.
-- name: Formal Reason (since/as)
-  description: More formal, often fronted.
-  examples:
-  - Since you're busy, I'll go alone.
-  - As it was late, we left.
-  key_point: Since/as sound more formal than 'because'.
-- name: Noun Reason (because of/due to)
-  description: Reason expressed as noun, not clause.
-  examples:
-  - because of the rain
-  - due to the delay
-  key_point: Because of + noun; because + subject + verb.
+  timeline: Reason clause tense matches main clause tense (usually).
 phonetics:
-- note: 'Because is often reduced in connected speech: /kəz/ or /kɒz/. ''I stayed
-    home because I was sick'' → /aɪ steɪd həʊm kəz aɪ wəz sɪk/.'
-  example_generator:
+- example_generator:
     contexts:
     - because reduction
-  l1_issue: Many L1 speakers over-pronounce 'because' as /bɪˈkɒz/. Teach the reduced
-    forms.
+  l1_issue: Many L1 speakers over-pronounce 'because' as /bɪˈkɒz/. Teach the reduced forms.
+  note: 'Because is often reduced in connected speech: /kəz/ or /kɒz/. ''I stayed home because I was sick'' → /aɪ steɪd həʊm
+    kəz aɪ wəz sɪk/.'
+register_notes:
+- note: In conversation, defining relative clauses are more common than non-defining.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In academic writing, both defining and non-defining relative clauses are used extensively.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Reason/causal clauses: academic prose uses more explicit causal connectors; conversation uses
+    more implicit causation. Ch. 10.2.1.4'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 10.2.1.4
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 15: Reason clauses'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24: Coordination (reason clauses)'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Ch. 15: Coordination'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners. Ch. 12: Reason'
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(reason: because, since, as)'
+sub_rules:
+- examples:
+  - I stayed home because I was sick
+  - She was late because there was traffic
+  rule: Because + clause (reason)
+  type: grammatical
+- examples:
+  - I was sick so I stayed home
+  - There was traffic so she was late
+  rule: So + clause (result)
+  type: grammatical
+- examples:
+  - Since it was raining, we stayed inside
+  - As she was tired, she went to bed early
+  rule: Since/As + clause (reason — more formal)
+  type: grammatical
 teaching:
   methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Teacher says a result. Students give the reason: ''I stayed home.'' → ''I stayed home because I was
+      sick.'''
+    duration: 10
+    name: Why
+  - adaptation_notes: 'Students choose: ''I was tired, ___ I went to bed.'' (so) / ''I went to bed ___ I was tired.'' (because).'
+    duration: 10
+    name: Because or So
   tips:
   - 'Drill ''Why?'' questions: ''Why?'' ''Because...'''
   - 'Practice fronting: ''Since/As...'' at sentence start.'
   - 'Compare: ''because'' (all levels) vs ''since/as'' (formal only).'
-  recommended_activities:
-  - name: Why
-    duration: 10
-    adaptation_notes: 'Teacher says a result. Students give the reason: ''I stayed
-      home.'' → ''I stayed home because I was sick.'''
-  - name: Because or So
-    duration: 10
-    adaptation_notes: 'Students choose: ''I was tired, ___ I went to bed.'' (so) /
-      ''I went to bed ___ I was tired.'' (because).'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
-    Coordination, §16.7 (reason clauses)'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 15: Coordination, §15.3'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 415-420 (reason:
-    because, since, as)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    15: Reason clauses'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 12: Reason'
-common_errors:
-- error: '*Because of he was tired, he went to bed.*'
-  correction: Because he was tired, he went to bed.
-  explanation: '''Because of'' is followed by a noun or noun phrase; ''because'' introduces
-    a full clause with subject + verb. This confusion is extremely common because
-    the two forms are similar but require different complementation.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: '*Because of the traffic was heavy, I was late.*'
-  correction: Because the traffic was heavy, I was late.
-  explanation: '''Because of'' requires a noun phrase, not a clause. ''The traffic
-    was heavy'' is a clause and needs ''because'' (without ''of''). This is one of
-    the most persistent at B1-B2 level across all L1 backgrounds.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-  - Arabic
-- error: '*Since you are here, so let us start.*'
-  correction: Since you are here, let us start.
-  explanation: '''Since'' (reason) and ''so'' (result) should not appear in the same
-    sentence. Both signal a causal relationship; using both is redundant. Choose one:
-    ''Since X, Y'' or ''X, so Y''.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-- error: '*I was late because the rain.*'
-  correction: I was late because of the rain.
-  explanation: '''The rain'' is a noun, not a clause. Use ''because of + noun'' (not
-    ''because + noun''). Learners often know ''because'' but forget the ''of'' variant
-    needed before noun phrases, producing an incomplete causal expression.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - Chinese
-register_notes:
-- note: In formal writing, relative clauses are essential for precision and are a
-    marker of proficient writing.
-- note: In conversation, defining relative clauses are more common than non-defining.
-- note: In academic writing, both defining and non-defining relative clauses are used
-    extensively.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In academic writing, relative clauses are essential for precision and are
-    a marker of proficient writing.
-- note: In conversation, defining relative clauses are more common than non-defining.
-- note: In formal writing, 'whom' is used for object relative clauses.
+  - 'Swan PEU: Reason + result — ''because/so'': ''Because it was raining, we stayed in'' OR ''It was raining, so we stayed
+    in.'' Do NOT combine both: ''Because it was raining, so we stayed in'' is wrong.'
+title: Reason Clauses (because, since, as, because of)
+use:
+- description: Most common way to give reasons.
+  examples:
+  - I'm happy because you're here.
+  - We left because it was noisy.
+  key_point: Because is universal - use in all situations.
+  name: Direct Reason (because)
+- description: More formal, often fronted.
+  examples:
+  - Since you're busy, I'll go alone.
+  - As it was late, we left.
+  key_point: Since/as sound more formal than 'because'.
+  name: Formal Reason (since/as)
+- description: Reason expressed as noun, not clause.
+  examples:
+  - because of the rain
+  - due to the delay
+  key_point: Because of + noun; because + subject + verb.
+  name: Noun Reason (because of/due to)

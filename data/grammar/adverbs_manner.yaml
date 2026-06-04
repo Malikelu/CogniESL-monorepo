@@ -1,33 +1,126 @@
-grammar_point: adverbs_manner
-title: Adverbs of Manner
+citations:
+- claim: 'Core meaning: Adverbs of manner describe HOW an action is performed'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs'
+  tier: 1
+- claim: 'Register distribution: Manner adverbs are neutral in register.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs'
+  tier: 1
+- claim: 'Discourse function: Manner adverbs describe how actions are performed: ''She
+    spoke quietly.'''
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs'
+  tier: 1
+- claim: 'Common error ''Using adjective instead of adverb: *''She drives careful.''''
+    for Portuguese, Spanish, French speakers'
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 25: Adverbs'
+  tier: 1
+common_errors:
+- correction: She drives carefully.
+  error: 'Using adjective instead of adverb: *''She drives careful.'''
+  explanation: 'Swan PEU: Adverbs of manner modify verbs. ''She danced happily'' NOT
+    ''She danced happy.'' Use adverbs (not adjectives) to describe how an action is
+    performed.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+- correction: She drives carefully.
+  error: 'Placing manner adverb between verb and object: *''She speaks fluently English.'''
+  explanation: 'Swan PEU: Manner adverbs must not be placed between the verb and its
+    direct object. End position (after the object) is the standard slot. This is a
+    common cross-linguistic error — learners insert the adverb directly after the
+    verb following L1 patterns where verb-adverb adjacency is normal.'
+  l1_groups:
+  - French
+  - Italian
+  - Spanish
+  - Portuguese
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press. Ch. 5: Adverbs.'
 description: 'Words that tell us how something is done: quickly, slowly, carefully,
   well, badly, quietly, loudly.'
+dialectal_variation:
+- note: 'In informal speech, ''real'' is sometimes used instead of ''really'': ''She
+    drives real careful.'' (non-standard)'
+discourse_notes:
+- note: 'Manner adverbs describe how actions are performed: ''She spoke quietly.'''
+- note: Manner adverbs help create vivid description in narratives and precise instructions
+    in procedural texts.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - describing actions
+      - giving instructions
+      - telling stories
+      min_examples: 4
+    structure: 'Subject + verb + adverb: ''She sings beautifully.'', ''He drives carefully.'''
+  negative:
+    example_generator:
+      contexts:
+      - describing actions
+      - giving instructions
+      - telling stories
+      min_examples: 4
+    structure: 'Subject + verb + adverb (same position): ''She doesn''t sing beautifully.'''
+  questions:
+    example_generator:
+      contexts:
+      - describing actions
+      - giving instructions
+      - telling stories
+      min_examples: 4
+    structure: 'How + do/does + subject + verb?: ''How does she sing?'' → ''Beautifully.'''
+grammar_point: adverbs_manner
 level: A1
 meaning:
-  core_meaning: Adverbs of manner describe HOW an action is performed. They usually
-    go after the verb.
-  timeline: Timeless — describes the manner of an action in any tense.
+  ccqs:
+  - answer: The message is the same, but the focus is different. 'She drove carefully'
+      puts the focus on the manner (how she drove). 'Carefully, she drove' puts the
+      focus on the carefulness itself — it sounds more formal or literary.
+    purpose: Tests whether the learner understands that adverb position affects emphasis
+      and register, not just grammaticality. This matters because choosing the wrong
+      position can sound unnatural or overly formal in casual conversation.
+    question: '''She drove carefully to the store'' versus ''Carefully, she drove
+      to the store'' — do these mean the same thing? Which sounds more natural in
+      everyday conversation?'
+  - answer: '''I spoke quietly to the baby'' sounds natural. ''I quietly spoke to
+      the baby'' sounds slightly more formal or literary. Both are correct but the
+      end position is more common in conversation.'
+    purpose: Tests understanding that adverb position is not just a fixed rule but
+      a matter of naturalness and register. Most L1 transfer errors come from applying
+      L1 position rules without awareness of English naturalness patterns.
+    question: You want to tell someone you lowered your voice when talking to a baby.
+      Which sounds more natural in everyday English — 'I spoke quietly to the baby'
+      or 'I quietly spoke to the baby'?
+  - answer: '''She spoke quiet'' is wrong. We need an adverb (carefully, quietly,
+      fast) not an adjective (careful, quiet, fast-as-adjective) to describe how an
+      action is done. English uses -ly to turn most adjectives into adverbs of manner.'
+    purpose: Tests the adjective-vs-adverb distinction in a communicative context
+      (would the listener understand?), not as a labeling exercise.
+    question: A student writes 'She spoke quiet to the baby.' Is this clear to an
+      English listener? What's the difference between 'quiet' and 'quietly' here?
+  - answer: '''He runs fast'' — fast is an adverb here (not an adjective). Some words
+      like fast, hard, early, late have the same form for both adjective and adverb.
+      You do NOT need to add -ly. ''He runs fastly'' would be incorrect.'
+    purpose: Tests whether the learner knows that not all adverbs end in -ly, and
+      that adding -ly to words like ''fast'' or ''hard'' creates non-existent words.
+      This is a genuine learner confusion — some learners overgeneralize the -ly rule.
+    question: A student wants to say someone runs quickly. They write 'He runs fastly.'
+      Is 'fastly' a word? What should they say instead?
   contrast: '''Adverb of manner'' = ''She sings beautifully.'' (how?) vs ''Adverb
     of frequency'' = ''She always sings.'' (how often?)'
-  ccqs:
-  - question: Does this word tell us HOW something is done?
-    answer: Yes — it describes the manner of the action.
-    purpose: Tests whether the learner understands that adverbs of manner describe
-      how an action is performed and are typically formed by adding -ly to adjectives.
-  - question: Does it go after the verb?
-    answer: Yes — adverbs of manner usually go after the main verb or at the end of
-      the sentence.
-    purpose: Tests whether the learner knows the standard position of manner adverbs
-      (after the main verb or at the end of the sentence). Correct placement is crucial
-      because placing a manner adverb before the verb is a common L1 transfer error.
-  - question: '[Add specific question for CCQ 3]'
-    answer: '[Add specific answer for CCQ 3]'
-    purpose: 'Tests whether the learner understands adverb position: after the verb
-      or at the end of the clause: ''She speaks English fluently.'''
-  - question: '[Add specific question for CCQ 4]'
-    answer: '[Add specific answer for CCQ 4]'
-    purpose: 'Tests whether the learner can distinguish adverbs of manner from adjectives:
-      ''She is careful.'' (adjective) vs ''She drives carefully.'' (adverb)'
+  core_meaning: Adverbs of manner describe HOW an action is performed. They usually
+    go after the verb.
   example_generator:
     contexts:
     - describing actions
@@ -36,48 +129,85 @@ meaning:
     - describing people's behavior
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Subject + verb + adverb: ''She sings beautifully.'', ''He drives carefully.'''
-    example_generator:
-      contexts:
-      - describing actions
-      - giving instructions
-      - telling stories
-      min_examples: 4
-  negative:
-    structure: 'Subject + verb + adverb (same position): ''She doesn''t sing beautifully.'''
-    example_generator:
-      contexts:
-      - describing actions
-      - giving instructions
-      - telling stories
-      min_examples: 4
-  questions:
-    structure: 'How + do/does + subject + verb?: ''How does she sing?'' → ''Beautifully.'''
-    example_generator:
-      contexts:
-      - describing actions
-      - giving instructions
-      - telling stories
-      min_examples: 4
+  timeline: Timeless — describes the manner of an action in any tense.
+phonetics:
+- contexts:
+  - pronunciation
+  example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Some L1 speakers omit the -ly ending
+  note: -ly ending pronounced as /li/
+register_notes:
+- note: Manner adverbs are neutral in register.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In formal writing, adverbs add precision: ''The data were carefully analyzed.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: Biber et al. (1999) — Manner adverb distribution varies by register. Fiction
+    uses more manner adverbs for vivid description; academic prose uses fewer manner
+    adverbs and more degree/intensifying adverbs. Ch. 12.5
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 12.5
+- note: 'GB 2nd ed. (Ch.25) notes that adverb placement varies by register: formal
+    writing prefers mid-position adverbs (''The results clearly show...''); informal
+    speech prefers end-position (''The results show... clearly''). Fronted manner
+    adverbs are formal/literary: ''Quickly, she left the room'' (literary) vs ''She
+    quickly left the room'' (standard).'
+  source: Team observation
+  reliability: D
+  tier: 4
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch.
+    14: Adverbs'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 25:
+    Adverbs'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 6: Adverbs (adverbs of manner)'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 11: Adverbs of manner'
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(adverbs of manner and
+    adjectives), 194 (adverbs or adjectives: confusing cases).'
 sub_rules:
-- rule: 'Most adverbs of manner: adjective + -ly'
-  type: spelling
-  examples:
+- examples:
   - quick → quickly
   - careful → carefully
   - quiet → quietly
-- rule: 'Irregular: good → well, fast → fast, hard → hard'
-  type: irregular
-  examples:
+  rule: 'Most adverbs of manner: adjective + -ly'
+  type: spelling
+- examples:
   - She sings well. (not goodly)
   - He runs fast. (not fastly)
-- rule: 'Position: after the verb or at the end of the sentence'
-  type: word_order
-  examples:
+  rule: 'Irregular: good → well, fast → fast, hard → hard'
+  type: irregular
+- examples:
   - She speaks English fluently.
   - He drove carefully.
+  rule: 'Position: after the verb or at the end of the sentence'
+  type: word_order
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Students act out actions, others describe using adverbs.
+    duration: 10
+    name: Act and Describe
+  tips:
+  - Use actions and demonstrations
+  - Contrast adjective vs adverb (quick vs quickly)
+  - 'Swan PEU: Adverbs of manner should not be confused with adjectives. ''She danced
+    happily'' (adverb修饰verb) NOT ''She danced happy.'' Some adjective forms are used
+    as adverbs in informal AmE: ''She talks funny.'''
+  - 'Swan PEU: Adverbs of manner can also modify adjectives, past participles, other
+    adverbs, and prepositional phrases: ''terribly cold,'' ''badly cooked,'' ''unusually
+    fast,'' ''madly in love.'''
+  - 'Swan PEU: Confusing cases — some -ly words are adjectives not adverbs (friendly,
+    lively, lovely, ugly). Don''t say ''she spoke friendly''; say ''she spoke in a
+    friendly way'' OR ''she was friendly.'''
+title: Adverbs of Manner
 use:
 - context: Describing how people do things
   description: Talking about the quality of actions
@@ -89,53 +219,3 @@ use:
   examples:
   - Listen carefully.
   - Speak slowly and clearly.
-phonetics:
-- note: -ly ending pronounced as /li/
-  contexts:
-  - pronunciation
-  l1_issue: Some L1 speakers omit the -ly ending
-  example_generator:
-    contexts:
-    - connected speech
-teaching:
-  methodology: PPP
-  tips:
-  - Use actions and demonstrations
-  - Contrast adjective vs adverb (quick vs quickly)
-  recommended_activities:
-  - name: Act and Describe
-    duration: 10
-    adaptation_notes: Students act out actions, others describe using adverbs.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 14:
-    Adverbs, §14.1-14.3'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 6: Adverbs, §6.4 (adverbs of manner)'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 271-280 (adverbs
-    of manner: formation, position)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    14: Adverbs, §14.1-14.3'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 11: Adverbs of manner'
-common_errors:
-- error: 'Using adjective instead of adverb: *''She drives careful.'''
-  correction: She drives carefully.
-  explanation: Use adverbs (not adjectives) to describe how an action is performed.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: 'Placing adverb before the verb: *''She carefully drives.'' (emphasis)'
-  correction: She drives carefully.
-  explanation: Manner adverbs typically go after the verb or at the end of the sentence.
-  l1_groups:
-  - Portuguese
-  - Spanish
-register_notes:
-- note: Manner adverbs are neutral in register.
-- note: 'In formal writing, adverbs add precision: ''The data were carefully analyzed.'''
-dialectal_variation:
-- note: 'In informal speech, ''real'' is sometimes used instead of ''really'': ''She
-    drives real careful.'' (non-standard)'
-discourse_notes:
-- note: 'Manner adverbs describe how actions are performed: ''She spoke quietly.'''

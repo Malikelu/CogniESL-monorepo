@@ -1,31 +1,114 @@
-grammar_point: proper_nouns
-title: Proper Nouns
+citations:
+- claim: 'Core meaning: Proper nouns name specific, unique things — a particular person
+    (Maria), place (London), or thing (C'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
+    Reference and Possession'
+  tier: 1
+- claim: 'Register distribution: Proper noun article usage is consistent across registers.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
+    Reference and Possession'
+  tier: 1
+- claim: 'Discourse function: Proper nouns identify specific people, places, and things
+    without articles.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
+    Reference and Possession'
+  tier: 1
+- claim: 'Common error ''Using ''the'' with most country names: *''I visited the France.''
+    for Portuguese, Spanish speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: 'Dialectal variation: Some place names differ: ''the Hague'' (with article),
+    ''Hague'' (without in some contexts).'
+  reliability: B
+  source: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  tier: 1
+common_errors:
+- correction: I visited France.
+  error: 'Using ''the'' with most country names: *''I visited the France.'''
+  explanation: No article with most country names. Use 'the' with countries containing
+    'kingdom', 'states', 'republic'.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: D
+- correction: I met John.
+  error: 'Using ''the'' with most names: *''I met the John.'''
+  explanation: No article with most proper names.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: D
 description: Names of specific people, places, organizations, and things. Always capitalized.
   Usually used without articles.
+dialectal_variation:
+- note: 'Some place names differ: ''the Hague'' (with article), ''Hague'' (without
+    in some contexts).'
+discourse_notes:
+- note: Proper nouns name specific entities and typically do not take articles, except
+    in restricted contexts (the United States, the Amazon).
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - people
+      - places
+      - brands
+      - time expressions
+      min_examples: 5
+    structure: 'Capitalized noun: ''Maria'', ''London'', ''Monday'', ''Google'''
+  negative:
+    example_generator:
+      contexts:
+      - negative sentences with proper nouns
+      min_examples: 3
+    structure: 'Proper nouns don''t change form for negation — the verb is negated:
+      ''Maria doesn''t live in London.'''
+  questions:
+    example_generator:
+      contexts:
+      - questions with proper nouns
+      min_examples: 3
+    structure: 'Proper nouns don''t change form for questions — the verb changes:
+      ''Does Maria live in London?'''
+grammar_point: proper_nouns
 level: A1
 meaning:
-  core_meaning: Proper nouns name specific, unique things — a particular person (Maria),
-    place (London), or thing (Coca-Cola). They are always capitalized.
-  timeline: Timeless — proper nouns exist outside of tense.
+  ccqs:
+  - answer: Yes — it's a proper noun.
+    purpose: Tests whether the learner understands that proper nouns name specific,
+      unique people, places, or things. This is important because proper nouns are
+      always capitalized in English, unlike common nouns.
+    question: Does this noun name a specific person, place, or thing?
+  - answer: Yes — proper nouns are always capitalized.
+    purpose: Tests whether the learner knows that proper nouns are always capitalized.
+      This is a fundamental spelling rule that applies across all writing contexts.
+    question: Is it capitalized?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with
+      proper nouns and explain why they are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: '''I saw John yesterday.'' Proper nouns (names) normally do NOT take an
+      article.'
+    purpose: Tests whether the learner knows that proper nouns typically do not take
+      articles (Swan PEU 2016, entries 610-611).
+    question: Which is correct? *'I saw the John yesterday' or 'I saw John yesterday'?
   contrast: '''Proper noun'' = "London" (specific place)
 
     ''Common noun'' = "a city" (any city)
 
     '
-  ccqs:
-  - question: Does this noun name a specific person, place, or thing?
-    answer: Yes — it's a proper noun.
-    purpose: Tests whether the learner understands that proper nouns name specific,
-      unique people, places, or things. This is important because proper nouns are
-      always capitalized in English, unlike common nouns.
-  - question: Is it capitalized?
-    answer: Yes — proper nouns are always capitalized.
-    purpose: Tests whether the learner knows that proper nouns are always capitalized.
-      This is a fundamental spelling rule that applies across all writing contexts.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      proper nouns and explain why they are incorrect.
+  core_meaning: Proper nouns name specific, unique things — a particular person (Maria),
+    place (London), or thing (Coca-Cola). They are always capitalized.
   example_generator:
     contexts:
     - names of people
@@ -37,51 +120,73 @@ meaning:
     - Names vary across cultures — use diverse examples
     - Some cultures put family name first
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Capitalized noun: ''Maria'', ''London'', ''Monday'', ''Google'''
-    example_generator:
-      contexts:
-      - people
-      - places
-      - brands
-      - time expressions
-      min_examples: 5
-  negative:
-    structure: 'Proper nouns don''t change form for negation — the verb is negated:
-      ''Maria doesn''t live in London.'''
-    example_generator:
-      contexts:
-      - negative sentences with proper nouns
-      min_examples: 3
-  questions:
-    structure: 'Proper nouns don''t change form for questions — the verb changes:
-      ''Does Maria live in London?'''
-    example_generator:
-      contexts:
-      - questions with proper nouns
-      min_examples: 3
+  timeline: Timeless — proper nouns exist outside of tense.
+phonetics:
+- example_generator:
+    contexts:
+    - name pronunciation
+  l1_issue: Names from different languages may have unfamiliar sounds
+  note: Stress patterns vary by name — teach pronunciation of common names
+register_notes:
+- note: Proper noun article usage is consistent across registers.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Proper noun distribution: news uses more proper nouns
+    (named entities); conversation uses more pronouns instead. Academic prose varies
+    by discipline. Ch. 4.1.2, 8.1'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 4.1.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
+    Reference and Possession'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Most proper nouns don't use articles
-  type: grammatical
-  examples:
+- examples:
   - Maria ✅ / the Maria ❌
   - London ✅ / the London ❌ (usually)
-- rule: Some proper nouns DO use 'the'
+  rule: Most proper nouns don't use articles
   type: grammatical
-  examples:
+- examples:
   - the United States
   - the United Kingdom
   - the Nile
   - the Alps
   - the Pacific Ocean
-- rule: Days, months, and holidays are capitalized
-  type: spelling
-  examples:
+  rule: Some proper nouns DO use 'the'
+  type: grammatical
+- examples:
   - Monday
   - January
   - Christmas
   - Easter
+  rule: Days, months, and holidays are capitalized
+  type: spelling
+teaching:
+  methodology: PPP (Present-Practice-Produce)
+  recommended_activities:
+  - adaptation_notes: Students introduce themselves and others using proper nouns.
+    duration: 10
+    name: Name Game
+  - adaptation_notes: Match countries to their capital cities.
+    duration: 10
+    name: Capital City Quiz
+  tips:
+  - Use students' own names as examples
+  - Practice capitalization rules explicitly
+  - Use maps and photos for place names
+  - 'Swan PEU: Proper nouns — names of specific people, places, organizations. Usually
+    no article: ''John,'' ''Paris,'' ''Microsoft.'' But WITH ''the'' for: rivers (the
+    Amazon), mountain ranges (the Alps), plural countries (the Netherlands), newspapers
+    (the Times), cinemas/theatres (the Odeon).'
+title: Proper Nouns
 use:
 - context: Introducing people
   description: Using proper nouns for names
@@ -101,53 +206,3 @@ use:
   - I work on Monday.
   - My birthday is in July.
   - We celebrate Christmas.
-phonetics:
-- note: Stress patterns vary by name — teach pronunciation of common names
-  example_generator:
-    contexts:
-    - name pronunciation
-  l1_issue: Names from different languages may have unfamiliar sounds
-teaching:
-  methodology: PPP (Present-Practice-Produce)
-  tips:
-  - Use students' own names as examples
-  - Practice capitalization rules explicitly
-  - Use maps and photos for place names
-  recommended_activities:
-  - name: Name Game
-    duration: 10
-    adaptation_notes: Students introduce themselves and others using proper nouns.
-  - name: Capital City Quiz
-    duration: 10
-    adaptation_notes: Match countries to their capital cities.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: 'Using ''the'' with most country names: *''I visited the France.'''
-  correction: I visited France.
-  explanation: No article with most country names. Use 'the' with countries containing
-    'kingdom', 'states', 'republic'.
-  l1_groups:
-  - Portuguese
-  - Spanish
-- error: 'Using ''the'' with most names: *''I met the John.'''
-  correction: I met John.
-  explanation: No article with most proper names.
-  l1_groups:
-  - Portuguese
-  - Spanish
-register_notes:
-- note: Proper noun article usage is consistent across registers.
-dialectal_variation:
-- note: 'Some place names differ: ''the Hague'' (with article), ''Hague'' (without
-    in some contexts).'
-discourse_notes:
-- note: Proper nouns identify specific people, places, and things without articles.

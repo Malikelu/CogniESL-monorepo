@@ -1,33 +1,127 @@
-grammar_point: possessive_adjectives
-title: Possessive Adjectives
+citations:
+- claim: 'Core meaning: Possessive adjectives show who owns or is related to something'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
+    Reference and Possession'
+  tier: 1
+- claim: 'Register distribution: Possessive adjectives are consistent across registers.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
+    Reference and Possession'
+  tier: 1
+- claim: 'Discourse function: Possessive adjectives create cohesion: ''John lost his
+    keys. He was upset.'''
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
+    Reference and Possession'
+  tier: 1
+- claim: 'Common error ''Confusing ''your'' and ''you''re'': *''You''re book is here.''''
+    for All L1 groups speakers'
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 11: Possessives'
+  tier: 1
+- claim: L1 transfer in possessive adjectives varies significantly across language
+    backgrounds — Swan & Smith document contrastive patterns for speakers of different
+    L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+common_errors:
+- correction: Your book is here.
+  error: 'Confusing ''your'' and ''you''re'': *''You''re book is here.'''
+  explanation: 'Swan PEU: ''Your'' is a possessive determiner (= belonging to you).
+    ''You''re'' is a contraction of ''you are''. ''Your book'' NOT ''You''re book''.'
+  l1_groups:
+  - All L1 groups
+  reliability: B
+  source: Swan Entry 143. Swan (2016) Practical English Usage, 4th ed. Oxford University
+    Press.
+- correction: The dog wagged its tail.
+  error: 'Confusing ''its'' and ''it''s'': *''The dog wagged it''s tail.'''
+  explanation: 'Swan PEU: The possessive ''its'' has NO apostrophe. ''It''s'' is a
+    contraction meaning ''it is'' or ''it has''. ''The dog wagged its tail'' NOT ''it''s
+    tail''.'
+  l1_groups:
+  - All L1 groups
+  reliability: B
+  source: Swan Entry 143. Swan (2016) Practical English Usage, 4th ed. Oxford University
+    Press.
+- correction: Mary lost her keys.
+  error: 'Using ''his'' for female possessors: *''Mary lost his keys.'''
+  explanation: 'Swan PEU: Possessive determiners agree with the possessor, not the
+    thing owned. ''Mary lost her keys'' (Mary = female → her). ''John lost his keys''
+    (John = male → his).'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: B
+  source: Swan Entry 143. Swan (2016) Practical English Usage, 4th ed. Oxford University
+    Press.
 description: 'Words that show ownership or relationship: my, your, his, her, its,
   our, their.'
+dialectal_variation: []
+discourse_notes:
+- note: 'Possessive adjectives create cohesion: ''John lost his keys. He was upset.'''
+- note: '''Its'' vs ''it''s'' is one of the most common spelling errors in English.'
+- note: Possessive adjectives are used consistently across all registers and are among
+    the most frequent determiners in English.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - family and relationships
+      - personal belongings
+      - daily routines
+      min_examples: 4
+    structure: 'Possessive adjective + noun: ''my book'', ''her house'''
+  negative:
+    example_generator:
+      contexts:
+      - family and relationships
+      - personal belongings
+      - daily routines
+      min_examples: 4
+    structure: 'Subject + be + not + possessive + noun: ''This is not my book.'''
+  questions:
+    example_generator:
+      contexts:
+      - family and relationships
+      - personal belongings
+      - daily routines
+      min_examples: 4
+    structure: 'Whose + noun?: ''Whose book is this?'' → ''It''s mine.'''
+grammar_point: possessive_adjectives
 level: A1
 meaning:
-  core_meaning: Possessive adjectives show who owns or is related to something. They
-    come BEFORE the noun.
-  timeline: Timeless — shows a permanent or ongoing relationship.
-  contrast: '''Possessive adjective'' = ''my book'' (before noun) vs ''Possessive
-    pronoun'' = ''mine'' (replaces noun)'
   ccqs:
-  - question: Does this word come before a noun?
-    answer: Yes — it's a possessive adjective.
+  - answer: Yes — it's a possessive adjective.
     purpose: Tests whether the learner understands that possessive adjectives (my,
       your, his, her, its, our, their) show ownership and agree with the possessor,
       not the possessed noun.
-  - question: Does it show who owns something?
-    answer: Yes — that's its purpose.
+    question: Does this word come before a noun?
+  - answer: Yes — that's its purpose.
     purpose: 'Tests whether the learner can choose the correct possessive adjective
       based on the subject: I → my, you → your, he → his, she → her, it → its, we
       → our, they → their.'
-  - question: '[Add specific question for CCQ 3]'
-    answer: '[Add specific answer for CCQ 3]'
-    purpose: 'Tests whether the learner can distinguish possessive adjectives from
-      possessive pronouns: ''my book'' (adjective) vs ''mine'' (pronoun).'
-  - question: '[Add specific question for CCQ 4]'
-    answer: '[Add specific answer for CCQ 4]'
-    purpose: Tests whether the learner understands that 'its' (possessive) is different
-      from 'it's' (contraction of 'it is').
+    question: Does it show who owns something?
+  - answer: Its (no apostrophe) shows possession. ''It's'' = ''it is''. ''Its'' is
+      the possessive adjective.
+    purpose: Tests whether the learner can distinguish the possessive adjective ''its''
+      from the contraction ''it's'' (Swan PEU 2016, entry 143).
+    question: 'Which is correct: ''The dog wagged its tail'' or *''The dog wagged
+      it''s tail''?'
+  - answer: Mary lost her keys. Possessive adjectives agree with the possessor, not
+      the thing owned.
+    purpose: Tests whether the learner knows that possessive adjectives agree with
+      the possessor's gender (Swan PEU 2016, entry 143).
+    question: 'Which is correct: ''Mary lost her keys'' or *''Mary lost his keys''?'
+  contrast: '''Possessive adjective'' = ''my book'' (before noun) vs ''Possessive
+    pronoun'' = ''mine'' (replaces noun)'
+  core_meaning: Possessive adjectives show who owns or is related to something. They
+    come BEFORE the noun.
   example_generator:
     contexts:
     - family and relationships
@@ -36,42 +130,70 @@ meaning:
     - describing people
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Possessive adjective + noun: ''my book'', ''her house'''
-    example_generator:
-      contexts:
-      - family and relationships
-      - personal belongings
-      - daily routines
-      min_examples: 4
-  negative:
-    structure: 'Subject + be + not + possessive + noun: ''This is not my book.'''
-    example_generator:
-      contexts:
-      - family and relationships
-      - personal belongings
-      - daily routines
-      min_examples: 4
-  questions:
-    structure: 'Whose + noun?: ''Whose book is this?'' → ''It''s mine.'''
-    example_generator:
-      contexts:
-      - family and relationships
-      - personal belongings
-      - daily routines
-      min_examples: 4
+  timeline: Timeless — shows a permanent or ongoing relationship.
+phonetics:
+- contexts:
+  - connected speech
+  example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Some L1 speakers confuse 'his' and 'her'
+  note: Weak form of 'your' /jɔːr/ → /jər/ in connected speech
+register_notes:
+- note: Possessive adjectives are consistent across registers.
+  reliability: D
+  source: Team observation
+  tier: 4
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch.
+    11: Possessives'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
+    Reference and Possession'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 5: Nouns and Noun Phrases (possessives)'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 6: Possessive adjectives'
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(possessive determiners:
+    my, your, etc).'
 sub_rules:
-- rule: '''Its'' (possessive) vs ''it''s'' (it is)'
-  type: spelling
-  examples:
+- examples:
   - The dog wagged its tail. (possessive)
   - It's raining. (it is)
-- rule: Possessive adjectives don't change for plural nouns
-  type: grammatical
-  examples:
+  rule: '''Its'' (possessive) vs ''it''s'' (it is)'
+  type: spelling
+- examples:
   - my book / my books
   - her car / her cars
+  rule: Possessive adjectives don't change for plural nouns
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Students guess ownership of classroom objects.
+    duration: 10
+    name: Whose Is It?
+  tips:
+  - Use real objects to demonstrate possession
+  - Contrast with possessive 's
+  - 'Swan PEU: These are technically pronouns (not adjectives), though often called
+    ''possessive adjectives'' in older grammars. They function as determiners.'
+  - 'Swan PEU: Possessive determiners are NOT used with other determiners (the, a/an,
+    this). Use ''... of mine/yours'' structure instead: ''a friend of mine'' NOT ''a
+    my friend''.'
+  - 'Swan PEU: Spelling — ''its'' and ''whose'' have NO apostrophe as possessives.
+    ''It''s'' and ''who''s'' are contractions (it is/has, who is/has).'
+  - 'Swan PEU: Articles replace possessives in body part expressions after prepositions:
+    ''hit him on the head'' (NOT ''on his head''), ''pain in the stomach''. Exception
+    NOT the rule.'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 5: CGEL (Ch.5)
+    uses the term GENITIVE (not ''possessive'') for the -''s inflection. CGEL: -''s
+    is an INFLECTION (ending), not a clitic. Evidence: it attaches to the LAST word
+    of the NP, not the head: ''the King of Spain''s daughter'' (not *''the King''s
+    of Spain daughter''). The genitive expresses a range of meanings beyond possession:
+    subjective (''the teacher''s recommendation'' = the teacher recommended), objective
+    (''the prisoner''s release'' = someone released the prisoner), temporal (''today''s
+    news''), etc.'
+title: Possessive Adjectives
 use:
 - context: Family and relationships
   description: Describing family members
@@ -83,55 +205,3 @@ use:
   examples:
   - This is my phone.
   - Where is your bag?
-phonetics:
-- note: Weak form of 'your' /jɔːr/ → /jər/ in connected speech
-  contexts:
-  - connected speech
-  l1_issue: Some L1 speakers confuse 'his' and 'her'
-  example_generator:
-    contexts:
-    - connected speech
-teaching:
-  methodology: PPP
-  tips:
-  - Use real objects to demonstrate possession
-  - Contrast with possessive 's
-  recommended_activities:
-  - name: Whose Is It?
-    duration: 10
-    adaptation_notes: Students guess ownership of classroom objects.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.18-12.19'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 5: Nouns and Noun Phrases, §5.8 (possessives)'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 96-100 (possessives:
-    my, your, his, her, its, our, their)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    11: Possessives, §11.3'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 6: Possessive adjectives'
-common_errors:
-- error: 'Confusing ''your'' and ''you''re'': *''You''re book is here.'''
-  correction: Your book is here.
-  explanation: '''Your'' shows possession. ''You''re'' = ''you are''.'
-  l1_groups:
-  - All L1 groups
-- error: 'Confusing ''its'' and ''it''s'': *''The dog wagged it''s tail.'''
-  correction: The dog wagged its tail.
-  explanation: '''Its'' shows possession. ''It''s'' = ''it is'' or ''it has''.'
-  l1_groups:
-  - All L1 groups
-- error: 'Using ''his'' for female possessors: *''Mary lost his keys.'''
-  correction: Mary lost her keys.
-  explanation: Use 'her' for female possessors, 'his' for male.
-  l1_groups:
-  - Portuguese
-  - Spanish
-register_notes:
-- note: Possessive adjectives are consistent across registers.
-dialectal_variation:
-- note: No significant BrE/AmE differences.
-discourse_notes:
-- note: 'Possessive adjectives create cohesion: ''John lost his keys. He was upset.'''
-- note: '''Its'' vs ''it''s'' is one of the most common spelling errors in English.'

@@ -1,28 +1,86 @@
+citations:
+- claim: 'Core meaning: Past tense forms can show distance from reality, not distance in time'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27: Conditionals-10.6'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used for everyday communication and is among the most frequent
+    patterns'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27: Conditionals-10.6'
+  tier: 1
+- claim: Common error '*I wish I can speak English.*' for Portuguese, Spanish, Chinese speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for L1-specific error patterns in English.
+    Their learner English framework documents how each L1 group produces characteristic errors in this grammatical domain,
+    enabling teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference and Other Problems, 2nd ed. Cambridge
+    University Press.'
+  tier: 2
+common_errors:
+- correction: I wish I could speak English.
+  error: '*I wish I can speak English.*'
+  explanation: Wish + past tense for present wishes.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+description: Using past tense forms to express hypothetical, unreal, or polite meanings — not past time. Includes second conditional,
+  wishes, and polite requests.
+dialectal_variation: []
+discourse_notes:
+- note: In conversation, this structure is used for everyday communication and is among the most frequent patterns in spoken
+    English.
+- note: In academic writing, this structure appears in discussions of established knowledge, methodology, and findings.
+- note: In news reports, this structure is used for reporting events and attributing statements.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - second conditional
+      - wishes
+      - third conditional
+      min_examples: 4
+    structure: If + past simple, would + base verb / I wish + past simple / If only + past perfect
+  negative:
+    example_generator:
+      contexts:
+      - negative hypothetical
+      min_examples: 3
+    structure: If + past simple, would not + base verb / I wish + did not + verb
+  questions:
+    example_generator:
+      contexts:
+      - question formation
+      min_examples: 3
+    structure: 'What would you do if...?: What would you do if you won the lottery?'
 grammar_point: unreal_past_tenses
-title: Unreal Uses of Past Tenses
-description: Using past tense forms to express hypothetical, unreal, or polite meanings
-  — not past time. Includes second conditional, wishes, and polite requests.
 level: B2
 meaning:
-  core_meaning: Past tense forms can show distance from reality, not distance in time.
-    If I had money = I do not have money now (unreal). I wish I knew = I do not know
-    now (unreal).
-  timeline: Present/future hypothetical — the situation is imagined, not real.
-  contrast: Real = If I have time, I will help. (possible) vs Unreal = If I had time,
-    I would help. (hypothetical — I do not have time)
   ccqs:
-  - question: Is this situation real or imagined?
-    answer: Imagined = past tense for unreality.
-    purpose: Tests whether the learner understands a key concept of unreal_past_tenses.
-      This is fundamental for correct use of this grammar point.
-  - question: Are we talking about now or the past?
-    answer: Now, but using past tense to show it is unreal.
-    purpose: Tests whether the learner understands a key concept of unreal_past_tenses.
-      This is fundamental for correct use of this grammar point.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      unreal past tenses and explain why they are incorrect.
+  - answer: Imagined = past tense for unreality.
+    purpose: Tests whether the learner understands a key concept of unreal_past_tenses. This is fundamental for correct use
+      of this grammar point.
+    question: Is this situation real or imagined?
+  - answer: Now, but using past tense to show it is unreal.
+    purpose: Tests whether the learner understands a key concept of unreal_past_tenses. This is fundamental for correct use
+      of this grammar point.
+    question: Are we talking about now or the past?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with unreal past tenses and explain why they
+      are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: '''If I had time.'' For unreal/hypothetical present situations, use past tense after ''If''.'
+    purpose: Tests whether the learner understands that past tense forms express unreality in conditional sentences (Swan
+      PEU 2016, entries 274-275).
+    question: What tense do we use after 'If' to talk about an unreal present situation? 'If I have time' or 'If I had time'?
+  contrast: Real = If I have time, I will help. (possible) vs Unreal = If I had time, I would help. (hypothetical — I do not
+    have time)
+  core_meaning: Past tense forms can show distance from reality, not distance in time. If I had money = I do not have money
+    now (unreal). I wish I knew = I do not know now (unreal).
   example_generator:
     contexts:
     - hypothetical situations
@@ -33,48 +91,58 @@ meaning:
     - This is one of the most difficult areas for L1 speakers
     - Many languages do not use tense for unreality in the same way
     min_examples: 5
-form:
-  affirmative:
-    structure: If + past simple, would + base verb / I wish + past simple / If only
-      + past perfect
-    example_generator:
-      contexts:
-      - second conditional
-      - wishes
-      - third conditional
-      min_examples: 4
-  negative:
-    structure: If + past simple, would not + base verb / I wish + did not + verb
-    example_generator:
-      contexts:
-      - negative hypothetical
-      min_examples: 3
-  questions:
-    structure: 'What would you do if...?: What would you do if you won the lottery?'
-    example_generator:
-      contexts:
-      - question formation
-      min_examples: 3
+  timeline: Present/future hypothetical — the situation is imagined, not real.
+phonetics:
+- example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Many L1 speakers use present tense instead of past for hypotheticals
+  note: Weak form of would /wʊd/ → /əd/ in connected speech
+register_notes:
+- note: 'Biber et al. (2021) — Unreal past tenses (for hypotheticality): more common in fiction and literary prose (character
+    thought/dialogue) and in academic hedging. Casual conversation uses simpler hypotheticals. Ch. 10.2.8.12'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 10.2.8.12
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27: Conditionals-10.6'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Were for all persons in formal English (If I were...)
-  type: grammatical
-  examples:
+- examples:
   - If I were you, I would study. (formal)
   - If I was you, I would study. (informal)
-- rule: Wish + past simple for present wishes
+  rule: Were for all persons in formal English (If I were...)
   type: grammatical
-  examples:
+- examples:
   - I wish I spoke French. (I do not speak French now)
   - I wish I had more time. (I do not have more time now)
-- rule: Wish + past perfect for past regrets
+  rule: Wish + past simple for present wishes
   type: grammatical
-  examples:
+- examples:
   - I wish I had studied harder. (I did not study hard in the past)
   - I wish I had known. (I did not know)
-- rule: If only is stronger than I wish
-  type: pragmatic
-  examples:
+  rule: Wish + past perfect for past regrets
+  type: grammatical
+- examples:
   - If only I had more time! (stronger than I wish I had more time)
+  rule: If only is stronger than I wish
+  type: pragmatic
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Students discuss hypothetical situations using unreal past.
+    duration: 15
+    name: Hypothetical Scenarios
+  tips:
+  - Use the distance from reality metaphor
+  - Contrast real vs unreal conditionals explicitly
+  - Use timelines to visualize
+  - 'Swan PEU: ''Wish + past perfect'' for past regrets — ''I wish I had studied harder.'' ''If only I hadn''t said that.''
+    Both express regret about past actions. The past perfect signals the unreality.'
+  - 'Swan PEU: ''If only'' — stronger and more emotional than ''wish'': ''If only I had more time!'' Common in spoken English.'
+title: Unreal Uses of Past Tenses
 use:
 - context: Hypothetical situations
   description: Imagining different realities
@@ -86,51 +154,3 @@ use:
   examples:
   - I wish I spoke better English.
   - I wish I had studied harder at school.
-phonetics:
-- note: Weak form of would /wʊd/ → /əd/ in connected speech
-  example_generator:
-    contexts:
-    - connected speech
-  l1_issue: Many L1 speakers use present tense instead of past for hypotheticals
-teaching:
-  methodology: PPP
-  tips:
-  - Use the distance from reality metaphor
-  - Contrast real vs unreal conditionals explicitly
-  - Use timelines to visualize
-  recommended_activities:
-  - name: Hypothetical Scenarios
-    duration: 15
-    adaptation_notes: Students discuss hypothetical situations using unreal past.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 10:
-    Conditionals, §10.1-10.6'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I wish I can speak English.*'
-  correction: I wish I could speak English.
-  explanation: Wish + past tense for present wishes.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used for everyday communication and is
-    among the most frequent patterns in spoken English.
-- note: In academic writing, this structure appears in discussions of established
-    knowledge, methodology, and findings.
-- note: In news reports, this structure is used for reporting events and attributing
-    statements.

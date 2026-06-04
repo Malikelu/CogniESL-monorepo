@@ -1,106 +1,179 @@
-grammar_point: present_perfect_baseline
-title: Present Perfect Baseline (Core Uses)
-description: 'Simplified Present Perfect for A2 learners focusing on three core uses:
-  life experience, unfinished time, and recent results. Builds a foundation before
-  introducing more complex uses.'
-level: A2
-meaning:
-  core_meaning: 'A past action that is connected to the present moment. No specific
-    past time is mentioned. Three core uses at this level: (1) life experience — ever/never,
-    (2) unfinished time — for/since, (3) recent result — just/already/yet.'
-  timeline: Past action → present connection. The action happened at some unspecified
-    time before now, and it matters now.
-  contrast: '''I have eaten.'' (Present Perfect — no specific time, connected to now:
-    I am not hungry.) vs ''I ate yesterday.'' (Past Simple — specific finished time,
-    no present connection.)'
-  ccqs:
-  - question: Do we know exactly when this happened?
-    answer: No — the time is not specified.
-    purpose: Tests whether the learner understands that present perfect is used for
-      past actions where the exact time is either unknown or intentionally omitted,
-      which distinguishes it from past simple.
-  - question: Is this connected to now in some way?
-    answer: Yes — it is about experience, duration up to now, or a recent result.
-    purpose: Tests whether the learner understands the ''present relevance'' criterion
-      of present perfect — that the past action has some connection to the current
-      moment, whether through life experience, ongoing duration, or visible result.
-  - question: Can I say 'yesterday' with this tense?
-    answer: No — specific past time words (yesterday, last week, in 2010) are not
-      used with Present Perfect.
-    purpose: Tests whether the learner knows the restriction against definite past
-      time expressions with present perfect, which is one of the most important distributional
-      rules distinguishing it from past simple.
-    contexts:
-    - life experiences
-    - travel
-    - work history
-    - daily routines
-    - recent events
-    cultural_notes:
-    - British English uses Present Perfect more than American English (e.g., 'I have
-      just eaten' vs 'I just ate')
-    - This is one of the most challenging tenses for ESL learners across all L1 backgrounds
-    - The for/since distinction is a persistent error area even at higher levels
-    min_examples: 5
+citations:
+- claim: 'Core meaning: A past action that is connected to the present moment'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The Tense-Aspect System'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used for everyday communication and is among the most frequent
+    patterns'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The Tense-Aspect System'
+  tier: 1
+- claim: Common error '*I have seen that movie last week.*' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents how transfer effects are non-linear,
+    determined by functional fit between L1 and L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects are non-linear — determined by functional
+    fit between L1 and L2 systems rather than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning. Routledge.
+  tier: 2
+common_errors:
+- correction: I saw that movie last week. / I have seen that movie.
+  error: '*I have seen that movie last week.*'
+  explanation: Present perfect cannot be used with specific past time expressions (last week, yesterday, in 2020). Use past
+    simple for specific times.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  reliability: D
+description: 'Simplified Present Perfect for A2 learners focusing on three core uses: life experience, unfinished time, and
+  recent results. Builds a foundation before introducing more complex uses.'
+dialectal_variation: []
+discourse_notes:
+- note: In conversation, present perfect is among the most frequent patterns for discussing life experiences and recent events.
+- note: 'In academic writing, present perfect is used for reviewing established research: ''Several studies have found...''
+    and ''Previous work has shown...'''
+- note: 'In news reports, present perfect is used for recent events: ''The Prime Minister has announced a new policy.'''
 form:
   affirmative:
-    structure: 'Subject + have/has + past participle (V3): ''I have eaten.'' / ''She
-      has gone.'' / ''They have lived here for years.'''
     example_generator:
       contexts:
       - experience
       - duration
       - recent events
       min_examples: 4
+    structure: 'Subject + have/has + past participle (V3): ''I have eaten.'' / ''She has gone.'' / ''They have lived here
+      for years.'''
   negative:
-    structure: 'Subject + have not (haven''t) / has not (hasn''t) + past participle:
-      ''I haven''t eaten.'' / ''She hasn''t been to Paris.'' / ''They haven''t finished
-      yet.'''
     example_generator:
       contexts:
       - things not experienced
       - unfinished actions
       - expectations not met
       min_examples: 3
+    structure: 'Subject + have not (haven''t) / has not (hasn''t) + past participle: ''I haven''t eaten.'' / ''She hasn''t
+      been to Paris.'' / ''They haven''t finished yet.'''
   questions:
-    structure: 'Have/Has + subject + past participle: ''Have you ever been to London?''
-      / ''Has she finished?'' / ''Have they lived here long?'''
     example_generator:
       contexts:
       - asking about experience
       - checking completion
       - enquiring about duration
       min_examples: 3
+    structure: 'Have/Has + subject + past participle: ''Have you ever been to London?'' / ''Has she finished?'' / ''Have they
+      lived here long?'''
+grammar_point: present_perfect_baseline
+level: A2
+meaning:
+  ccqs:
+  - answer: No — the time is not specified.
+    purpose: Tests whether the learner understands that present perfect is used for past actions where the exact time is either
+      unknown or intentionally omitted, which distinguishes it from past simple.
+    question: Do we know exactly when this happened?
+  - answer: Yes — it is about experience, duration up to now, or a recent result.
+    purpose: Tests whether the learner understands the ''present relevance'' criterion of present perfect — that the past
+      action has some connection to the current moment, whether through life experience, ongoing duration, or visible result.
+    question: Is this connected to now in some way?
+  - answer: No — specific past time words (yesterday, last week, in 2010) are not used with Present Perfect.
+    purpose: Tests whether the learner knows the restriction against definite past time expressions with present perfect,
+      which is one of the most important distributional rules distinguishing it from past simple.
+    question: Can I say 'yesterday' with this tense?
+  - answer: '''Have you ever been to Paris?'' For ''at any time in your life up to now'', use present perfect, not past simple.'
+    purpose: Tests whether the learner uses present perfect for life experiences (ever, never) without specific past time
+      (Swan PEU 2016, entry 47).
+    question: Which is correct? *'Did you ever go to Paris' or 'Have you ever been to Paris'?
+  contrast: '''I have eaten.'' (Present Perfect — no specific time, connected to now: I am not hungry.) vs ''I ate yesterday.''
+    (Past Simple — specific finished time, no present connection.)'
+  core_meaning: 'A past action that is connected to the present moment. No specific past time is mentioned. Three core uses
+    at this level: (1) life experience — ever/never, (2) unfinished time — for/since, (3) recent result — just/already/yet.'
+  timeline: Past action → present connection. The action happened at some unspecified time before now, and it matters now.
+phonetics:
+- example_generator:
+    contexts:
+    - connected speech
+    - weak forms
+  l1_issue: Learners may over-pronounce 'have' as /hæv/ instead of /əv/ or /v/, making speech sound unnatural.
+  note: '''Have'' and ''has'' are weakly pronounced in connected speech: ''I have eaten'' → /aɪv iːtn/, ''She has gone'' →
+    /ʃiːz gɒn/.'
+- example_generator:
+    contexts:
+    - contractions
+  l1_issue: Learners may write 'I've' but say 'I have' in full, creating a mismatch between written and spoken fluency.
+  note: 'Contractions are standard in speech: ''I''ve'', ''she''s'', ''they''ve'', ''he''s''. In negatives: ''haven''t'' /hævnt/,
+    ''hasn''t'' /hæznt/.'
+register_notes:
+- note: 'Biber et al. (1999) — Perfect aspect: register distribution varies. Academic prose uses more perfect aspect; conversation
+    uses more perfect for recent events and experiential meaning. Ch. 6.3'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 6.3
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The Tense-Aspect System'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Use with 'ever' and 'never' for life experience
-  type: grammatical
-  examples:
+- examples:
   - Have you ever tried sushi?
   - I have never flown in a plane.
   - She has never been to Scotland.
   - Have they ever met the Queen?
-- rule: Use with 'for' (duration) and 'since' (starting point) for unfinished time
+  rule: Use with 'ever' and 'never' for life experience
   type: grammatical
-  examples:
+- examples:
   - I have lived here for five years.
   - She has worked here since 2019.
   - They have known each other for a long time.
   - He has been ill since Monday.
-- rule: Use with 'just' (very recently), 'already' (sooner than expected), and 'yet'
-    (up to now — questions and negatives)
+  rule: Use with 'for' (duration) and 'since' (starting point) for unfinished time
   type: grammatical
-  examples:
+- examples:
   - I have just eaten — I am not hungry.
   - She has already finished her homework.
   - Have you finished yet? / I haven't finished yet.
   - They have just arrived.
-- rule: 'Signal words: ever, never, just, already, yet, for, since, recently, so far,
-    up to now'
-  type: lexical
-  examples:
+  rule: Use with 'just' (very recently), 'already' (sooner than expected), and 'yet' (up to now — questions and negatives)
+  type: grammatical
+- examples:
   - I have recently started learning guitar.
   - So far, I have visited three countries.
   - Up to now, everything has been fine.
+  rule: 'Signal words: ever, never, just, already, yet, for, since, recently, so far, up to now'
+  type: lexical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Students receive a bingo card with experiences ('been to another country', 'tried unusual food', etc.).
+      They ask classmates 'Have you ever...?' and mark squares. First to complete a line wins.
+    duration: 15
+    name: Experience Bingo
+  - adaptation_notes: Students complete sentences choosing between 'for' and 'since'. Then they create their own sentences
+      about their lives.
+    duration: 10
+    name: For or Since?
+  - adaptation_notes: Teacher describes situations ('Maria is not hungry'). Students race to produce the correct sentence
+      ('She has just eaten'). Points for speed and accuracy.
+    duration: 10
+    name: Just, Already, Yet Race
+  tips:
+  - 'Teach only the three core uses at A2: experience (ever/never), duration (for/since), recent result (just/already/yet).'
+  - 'Use a visual timeline: draw a line from past to now, showing the connection.'
+  - 'Drill the signal words: ever, never, for, since, just, already, yet.'
+  - 'Contrast with Past Simple using time phrases: ''I have eaten (no time) vs I ate yesterday (specific time)''.'
+  - Avoid introducing more complex uses (e.g., Present Perfect with 'this week', 'today') until B1.
+  - 'Swan PEU: Present perfect vs. past simple — the central teaching issue. Present perfect connects past to present (''I
+    have lived here for 5 years'' = still living). Past simple = completely past (''I lived there for 5 years'' = no longer).
+    ''Already/yet/just/ever/never'' → present perfect. Specific time (''yesterday, in 2010, at 5pm'') → past simple.'
+  - 'GB3 Ch. 7: Present perfect vs. simple past boundary is the most taught but hardest distinction. Present perfect connects
+    past to present. Past simple = completely remote (''I lived there for 5 years'' = no longer). Truth values identical —
+    the choice is about speaker PERSPECTIVE (connection vs. remoteness). Source: Celce-Murcia & Larsen-Freeman (2015) GB3
+    Ch. 7 §7.5 (citing Inoue 1979).'
+title: Present Perfect Baseline (Core Uses)
 use:
 - context: Talking about life experience
   description: Describing things you have or have not done in your life up to now.
@@ -109,8 +182,7 @@ use:
   - She has never eaten octopus.
   - Have you ever ridden a horse?
 - context: Describing how long something has continued
-  description: Talking about actions or states that started in the past and continue
-    to the present.
+  description: Talking about actions or states that started in the past and continue to the present.
   examples:
   - I have studied English for three years.
   - She has lived in this city since 2015.
@@ -121,79 +193,3 @@ use:
   - I have just washed the car — it is clean now.
   - She has lost her keys — she cannot open the door.
   - I have already eaten dinner — I am full.
-phonetics:
-- note: '''Have'' and ''has'' are weakly pronounced in connected speech: ''I have
-    eaten'' → /aɪv iːtn/, ''She has gone'' → /ʃiːz gɒn/.'
-  example_generator:
-    contexts:
-    - connected speech
-    - weak forms
-  l1_issue: Learners may over-pronounce 'have' as /hæv/ instead of /əv/ or /v/, making
-    speech sound unnatural.
-- note: 'Contractions are standard in speech: ''I''ve'', ''she''s'', ''they''ve'',
-    ''he''s''. In negatives: ''haven''t'' /hævnt/, ''hasn''t'' /hæznt/.'
-  example_generator:
-    contexts:
-    - contractions
-  l1_issue: Learners may write 'I've' but say 'I have' in full, creating a mismatch
-    between written and spoken fluency.
-teaching:
-  methodology: PPP
-  tips:
-  - 'Teach only the three core uses at A2: experience (ever/never), duration (for/since),
-    recent result (just/already/yet).'
-  - 'Use a visual timeline: draw a line from past to now, showing the connection.'
-  - 'Drill the signal words: ever, never, for, since, just, already, yet.'
-  - 'Contrast with Past Simple using time phrases: ''I have eaten (no time) vs I ate
-    yesterday (specific time)''.'
-  - Avoid introducing more complex uses (e.g., Present Perfect with 'this week', 'today')
-    until B1.
-  recommended_activities:
-  - name: Experience Bingo
-    duration: 15
-    adaptation_notes: Students receive a bingo card with experiences ('been to another
-      country', 'tried unusual food', etc.). They ask classmates 'Have you ever...?'
-      and mark squares. First to complete a line wins.
-  - name: For or Since?
-    duration: 10
-    adaptation_notes: Students complete sentences choosing between 'for' and 'since'.
-      Then they create their own sentences about their lives.
-  - name: Just, Already, Yet Race
-    duration: 10
-    adaptation_notes: Teacher describes situations ('Maria is not hungry'). Students
-      race to produce the correct sentence ('She has just eaten'). Points for speed
-      and accuracy.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7:
-    Perfect Aspect, §7.1-7.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I have seen that movie last week.*'
-  correction: I saw that movie last week. / I have seen that movie.
-  explanation: Present perfect cannot be used with specific past time expressions
-    (last week, yesterday, in 2020). Use past simple for specific times.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - German
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used for everyday communication and is
-    among the most frequent patterns in spoken English.
-- note: In academic writing, this structure appears in discussions of established
-    knowledge, methodology, and findings.
-- note: In news reports, this structure is used for reporting events and attributing
-    statements.

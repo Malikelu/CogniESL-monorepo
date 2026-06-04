@@ -1,13 +1,92 @@
+citations:
+- claim: 'Core meaning: Shows ongoing action, simultaneous events, or reduces clause complexity by turning verbs into modifi'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 31: Complementation (-ing clauses)'
+  tier: 1
+- claim: 'Discourse function: In academic writing, relative clauses are essential for precision and are a marker of proficient
+    wri'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 31: Complementation (-ing clauses)'
+  tier: 1
+- claim: Common error '*To swim is fun.* (less natural)' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 16: Non-finite clauses'
+  tier: 1
+- claim: Oshima & Hogue's Great Writing series demonstrates how this grammatical structure functions in academic writing contexts.
+    Their approach connects grammar instruction to writing outcomes, showing learners how accurate use of this structure improves
+    paragraph cohesion, essay organization, and academic register.
+  source: Oshima, A. and Hogue, A. (2006). Introduction to Academic Writing, 3rd ed. Pearson Longman.
+  tier: 2
+common_errors:
+- correction: Swimming is fun.
+  error: '*To swim is fun.* (less natural)'
+  explanation: English prefers gerunds (-ing) as subjects rather than infinitives. Both are correct but gerunds sound more
+    natural.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+description: Clauses using verb-ing forms to combine ideas or show simultaneous actions. Essential for concise writing.
+dialectal_variation: []
+discourse_notes:
+- note: Participial -ing clauses function as reduced adverbial or relative structures. They allow compact information packaging
+    in written registers.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - education and school
+      - sports and hobbies
+      - entertainment and media
+      min_examples: 4
+    structure: '-ing form replacing clause: "I saw him crossing the street." (he was crossing)
+
+
+      -ing at start of sentence: "Crossing the street, I saw him." (While I was crossing...)
+
+
+      After preposition: "I''m good at swimming."
+
+
+      As subject: "Swimming is fun."
+
+
+      '
+  negative:
+    example_generator:
+      contexts:
+      - everyday situations
+      - negation
+      min_examples: 4
+    structure: 'Not + -ing: ''Not knowing the answer, I stayed quiet.'''
+  questions:
+    example_generator:
+      contexts:
+      - sports and hobbies
+      min_examples: 4
+    structure: Questions with -ing as subject.
 grammar_point: ing_clauses
-title: -ing Clauses (Participle Clauses)
-description: Clauses using verb-ing forms to combine ideas or show simultaneous actions.
-  Essential for concise writing.
 level: B1
 meaning:
-  core_meaning: Shows ongoing action, simultaneous events, or reduces clause complexity
-    by turning verbs into modifiers.
-  timeline: 'Can be past, present, or future depending on main verb: ''I saw him crossing''
-    (past), ''I see him crossing'' (present).'
+  ccqs:
+  - answer: Yes — the -ing clause shows simultaneous action.
+    purpose: Tests whether the learner understands that -ing clauses can function as nouns (subjects or objects) in a sentence.
+      This is essential for academic and formal writing.
+    question: Are the two actions happening at the same time?
+  - answer: Active — the subject of the main clause is also doing the -ing action.
+    purpose: Tests whether the learner can identify and apply the correct form/meaning of this grammar point in context. The
+      question 'Is the -ing clause active or passive?...' checks conceptual understanding, not just memorization.
+    question: Is the -ing clause active or passive?
+  - answer: No — the subject of both clauses must be the same, and the action must be simultaneous or causal.
+    purpose: Tests whether the learner can identify and apply the correct form/meaning of this grammar point in context. The
+      question 'Can any verb be used in a participle clause?...' checks conceptual understanding, not just memorization.
+    question: Can any verb be used in a participle clause?
+  - answer: Yes — the -ing clause is a reduced form of the while-clause.
+    purpose: Tests whether the learner can identify and apply the correct form/meaning of this grammar point in context. The
+      question 'Is 'Walking home, I saw a cat' the same as 'While ...' checks conceptual understanding, not just memorization.
+    question: Is 'Walking home, I saw a cat' the same as 'While I was walking home, I saw a cat'?
   contrast: '''-ing'' = active, ongoing, or simultaneous action
 
 
@@ -21,29 +100,7 @@ meaning:
 
 
     '
-  ccqs:
-  - question: Are the two actions happening at the same time?
-    answer: Yes — the -ing clause shows simultaneous action.
-    purpose: Tests whether the learner understands that -ing clauses can function
-      as nouns (subjects or objects) in a sentence. This is essential for academic
-      and formal writing.
-  - question: Is the -ing clause active or passive?
-    answer: Active — the subject of the main clause is also doing the -ing action.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Is the -ing clause active or
-      passive?...' checks conceptual understanding, not just memorization.
-  - question: Can any verb be used in a participle clause?
-    answer: No — the subject of both clauses must be the same, and the action must
-      be simultaneous or causal.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Can any verb be used in a participle
-      clause?...' checks conceptual understanding, not just memorization.
-  - question: Is 'Walking home, I saw a cat' the same as 'While I was walking home,
-      I saw a cat'?
-    answer: Yes — the -ing clause is a reduced form of the while-clause.
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Is 'Walking home, I saw a cat'
-      the same as 'While ...' checks conceptual understanding, not just memorization.
+  core_meaning: Shows ongoing action, simultaneous events, or reduces clause complexity by turning verbs into modifiers.
   example_generator:
     contexts:
     - everyday situations
@@ -54,159 +111,104 @@ meaning:
     - Very common in written English and formal speech
     - Overuse by learners can lead to dangling participles — a common error
     min_examples: 5
-form:
-  affirmative:
-    structure: '-ing form replacing clause: "I saw him crossing the street." (he was
-      crossing)
-
-
-      -ing at start of sentence: "Crossing the street, I saw him." (While I was crossing...)
-
-
-      After preposition: "I''m good at swimming."
-
-
-      As subject: "Swimming is fun."
-
-
-      '
-    example_generator:
-      contexts:
-      - education and school
-      - sports and hobbies
-      - entertainment and media
-      min_examples: 4
-  negative:
-    structure: 'Not + -ing: ''Not knowing the answer, I stayed quiet.'''
-    example_generator:
-      contexts:
-      - everyday situations
-      - negation
-      min_examples: 4
-  questions:
-    structure: Questions with -ing as subject.
-    example_generator:
-      contexts:
-      - sports and hobbies
-      min_examples: 4
-sub_rules:
-- rule: Subject of -ing clause must match main clause subject (dangling participle
-    error)
-  type: grammatical
-  examples:
-  - Walking home, I saw a cat. (I was walking — correct)
-  - Walking home, a cat was seen. (the cat wasn't walking — dangling participle)
-- rule: -ing clauses at the beginning of a sentence are followed by a comma
-  type: punctuation
-  examples:
-  - Having finished my homework, I went out. (comma required)
-  - After finishing my homework I went out. (comma optional)
-- rule: 'Perfect participle: ''Having + past participle'' for actions completed before
-    the main clause'
-  type: grammatical
-  examples:
-  - Having finished the report, she went home. (she finished first, then went home)
-  - Having studied for hours, he felt confident.
-- rule: 'Passive participle: ''Being + past participle'' or ''Having been + past participle'''
-  type: grammatical
-  examples:
-  - Being a student, I get a discount. (Because I am a student)
-  - Having been invited, she felt obliged to attend. (Because she had been invited)
-- rule: After prepositions, always use -ing (never infinitive)
-  type: grammatical
-  examples:
-  - I'm interested in learning English. (not 'to learn')
-  - She's good at swimming. (not 'to swim')
-use:
-- name: Reduced Adverbial Clauses
-  description: Replace 'while/when + subject + verb' with -ing.
-  examples:
-  - Walking home, I saw a cat. (While I was walking...)
-  key_point: Subject of -ing clause must match main clause subject.
-- name: After Verbs
-  description: Certain verbs are followed by -ing.
-  examples:
-  - I enjoy swimming.
-  - She avoids eating meat.
-  - He suggested going home.
-  key_point: These are NOT participle clauses — just verb + -ing.
-- name: As Subject/Object
-  description: Using -ing form as noun.
-  examples:
-  - Swimming is fun. (subject)
-  - I like swimming. (object)
-  key_point: When -ing acts as a noun (gerund).
-- name: Cause and Result
-  description: Show reason or result with -ing clauses.
-  examples:
-  - Not having enough money, she couldn't buy the dress. (reason)
-  - He dropped the glass, breaking it into pieces. (result)
-  key_point: The -ing clause can show cause (at start) or result (at end).
+  timeline: 'Can be past, present, or future depending on main verb: ''I saw him crossing'' (past), ''I see him crossing''
+    (present).'
 phonetics:
-- note: The -ing ending is pronounced /ɪŋ/, not /ɪn/ — the 'g' is a velar nasal, not
-    a hard /g/
-  example_generator:
+- example_generator:
     contexts:
     - pronunciation
-  l1_issue: Many learners pronounce -ing as /ɪn/ (dropping the velar nasal), which
-    is informal but acceptable in some dialects. However, /ɪŋ/ is standard.
-- note: In participle clauses at the start of a sentence, there is a natural pause
-    (comma) before the main clause
-  example_generator:
+  l1_issue: Many learners pronounce -ing as /ɪn/ (dropping the velar nasal), which is informal but acceptable in some dialects.
+    However, /ɪŋ/ is standard.
+  note: The -ing ending is pronounced /ɪŋ/, not /ɪn/ — the 'g' is a velar nasal, not a hard /g/
+- example_generator:
     contexts:
     - intonation
     - pausing
-  l1_issue: Learners may run the -ing clause into the main clause without a pause,
-    making it harder to parse.
+  l1_issue: Learners may run the -ing clause into the main clause without a pause, making it harder to parse.
+  note: In participle clauses at the start of a sentence, there is a natural pause (comma) before the main clause
+register_notes:
+- note: In conversation, defining relative clauses are more common than non-defining.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In academic writing, both defining and non-defining relative clauses are used extensively.
+  reliability: D
+  source: Team observation
+  tier: 4
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 16: Non-finite clauses'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 31: Complementation (-ing clauses)'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Ch. 14: Non-finite Clauses'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners. Ch. 13: -ing clauses'
+  validation: Swan (2016) Practical English Usage, 4th ed.(-ing clauses)
+sub_rules:
+- examples:
+  - Walking home, I saw a cat. (I was walking — correct)
+  - Walking home, a cat was seen. (the cat wasn't walking — dangling participle)
+  rule: Subject of -ing clause must match main clause subject (dangling participle error)
+  type: grammatical
+- examples:
+  - Having finished my homework, I went out. (comma required)
+  - After finishing my homework I went out. (comma optional)
+  rule: -ing clauses at the beginning of a sentence are followed by a comma
+  type: punctuation
+- examples:
+  - Having finished the report, she went home. (she finished first, then went home)
+  - Having studied for hours, he felt confident.
+  rule: 'Perfect participle: ''Having + past participle'' for actions completed before the main clause'
+  type: grammatical
+- examples:
+  - Being a student, I get a discount. (Because I am a student)
+  - Having been invited, she felt obliged to attend. (Because she had been invited)
+  rule: 'Passive participle: ''Being + past participle'' or ''Having been + past participle'''
+  type: grammatical
+- examples:
+  - I'm interested in learning English. (not 'to learn')
+  - She's good at swimming. (not 'to swim')
+  rule: After prepositions, always use -ing (never infinitive)
+  type: grammatical
 teaching:
   methodology: Guided discovery with sentence transformation
+  recommended_activities:
+  - adaptation_notes: Students rewrite full clauses (while/when + subject + verb) as -ing clauses.
+    duration: 15
+    name: Clause Reduction
+  - adaptation_notes: Students identify and correct dangling participles in humorous example sentences.
+    duration: 10
+    name: Dangling Participle Hunt
+  - adaptation_notes: Students describe a sequence of pictures using -ing clauses to show simultaneous actions.
+    duration: 15
+    name: Picture Story
   tips:
   - 'Draw stick figures: ''I walking → I see cat'' to show subject match.'
   - 'Practice reduction: ''While I was walking'' → ''Walking''.'
   - 'Teach preposition + -ing: ''good at swimming'', ''interested in learning''.'
   - Highlight dangling participles as a common error — use humorous examples.
-  recommended_activities:
-  - name: Clause Reduction
-    duration: 15
-    adaptation_notes: Students rewrite full clauses (while/when + subject + verb)
-      as -ing clauses.
-  - name: Dangling Participle Hunt
-    duration: 10
-    adaptation_notes: Students identify and correct dangling participles in humorous
-      example sentences.
-  - name: Picture Story
-    duration: 15
-    adaptation_notes: Students describe a sequence of pictures using -ing clauses
-      to show simultaneous actions.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17:
-    Complementation, §17.3 (-ing clauses)'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 14: Non-finite Clauses, §14.2'
-  validation: Swan (2016) Practical English Usage, 4th ed. Entries 295-305 (-ing clauses)
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    16: Non-finite clauses'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 13: -ing clauses'
-common_errors:
-- error: '*To swim is fun.* (less natural)'
-  correction: Swimming is fun.
-  explanation: English prefers gerunds (-ing) as subjects rather than infinitives.
-    Both are correct but gerunds sound more natural.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: In formal writing, relative clauses are essential for precision and are a
-    marker of proficient writing.
-- note: In conversation, defining relative clauses are more common than non-defining.
-- note: In academic writing, both defining and non-defining relative clauses are used
-    extensively.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In academic writing, relative clauses are essential for precision and are
-    a marker of proficient writing.
-- note: In conversation, defining relative clauses are more common than non-defining.
-- note: In formal writing, 'whom' is used for object relative clauses.
+  - 'Swan PEU: -ing clauses for accompanying circumstances — ''She walked out, slamming the door.'' ''He sat in the corner
+    reading a book.'' These add vivid detail to narrative writing.'
+title: -ing Clauses (Participle Clauses)
+use:
+- description: Replace 'while/when + subject + verb' with -ing.
+  examples:
+  - Walking home, I saw a cat. (While I was walking...)
+  key_point: Subject of -ing clause must match main clause subject.
+  name: Reduced Adverbial Clauses
+- description: Certain verbs are followed by -ing.
+  examples:
+  - I enjoy swimming.
+  - She avoids eating meat.
+  - He suggested going home.
+  key_point: These are NOT participle clauses — just verb + -ing.
+  name: After Verbs
+- description: Using -ing form as noun.
+  examples:
+  - Swimming is fun. (subject)
+  - I like swimming. (object)
+  key_point: When -ing acts as a noun (gerund).
+  name: As Subject/Object
+- description: Show reason or result with -ing clauses.
+  examples:
+  - Not having enough money, she couldn't buy the dress. (reason)
+  - He dropped the glass, breaking it into pieces. (result)
+  key_point: The -ing clause can show cause (at start) or result (at end).
+  name: Cause and Result

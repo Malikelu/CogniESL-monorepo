@@ -1,16 +1,119 @@
-grammar_point: alternatives_to_if
-title: Alternatives to If (Unless, Provided that, As long as, Even if, In case, Supposing)
+citations:
+- claim: 'Core meaning: Express conditions with specific nuances: UNLESS = except
+    if (negative condition), PROVIDED THAT/AS '
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27:
+    Conditionals'
+  tier: 1
+- claim: 'Register distribution: ''Provided that'' and ''as long as'' are more formal
+    than ''if''.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27:
+    Conditionals'
+  tier: 1
+- claim: 'Discourse function: Alternative conditionals add variety: ''Provided that
+    you study, you will pass.'''
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27:
+    Conditionals'
+  tier: 1
+- claim: 'Common error ''Using ''unless'' with positive meaning: *''Unless you study,
+    yo'' for Portuguese, Spanish, French speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: Conditional structures in discourse establish hypothetical relationships
+    between events or states
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27:
+    Conditionals'
+  tier: 1
+common_errors:
+- correction: Unless you study, you will fail.
+  error: 'Using ''unless'' with positive meaning: *''Unless you study, you will pass.'''
+  explanation: '''Unless'' = ''if not''. It introduces a negative condition.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+- correction: Unless you study, you will fail.
+  error: 'Using ''unless'' with double negative: *''Unless you don''t study, you will
+    fail.'''
+  explanation: '''Unless'' already contains a negative meaning (= if...not). Adding
+    ''don''t'' creates a double negative that reverses the meaning. ''Unless you study,
+    you will fail'' is the correct form.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed. Swan Entry 18.
 description: 'Conditional structures that replace ''if'' for specific meanings: unless
   (negative condition), provided that/as long as (positive conditions), even if (contrast),
   in case (preparation), supposing (hypothetical).'
+dialectal_variation: null
+discourse_notes:
+- note: Alternatives to if (unless, provided that, as long as, supposing, in case)
+    express conditional meaning through different conjunctions with specific constraints.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - weather and nature
+      min_examples: 4
+    structure: 'Unless/Provided that/As long as/Even if/In case/Supposing + present
+      tense, will/can/may + base verb.
+
+      Examples: "Unless it rains, I will go.", "Provided that you study, you will
+      pass."
+
+      '
+  negative:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: 'Negative auxiliaries (don''t/doesn''t/won''t) go in the present tense
+      clause: ''Unless you don''t hurry'' (awkward, better: ''If you don''t hurry'').'
+  questions:
+    example_generator:
+      contexts:
+      - education and school
+      min_examples: 4
+    structure: 'Question form applies to the main clause (with will/can): ''If it
+      rains, will you stay home?'' becomes ''Unless it rains, will you stay home?'''
+grammar_point: alternatives_to_if
 level: B2
 meaning:
-  core_meaning: 'Express conditions with specific nuances: UNLESS = except if (negative
-    condition), PROVIDED THAT/AS LONG AS = on the condition that (positive), EVEN
-    IF = despite the condition (contrast), IN CASE = to be prepared (preparation),
-    SUPPOSING = hypothetical scenario.'
-  timeline: Future time frame (like first conditional) for Unless/Provided that/Even
-    if/In case; Supposing can be present or hypothetical past.
+  ccqs:
+  - answer: Not exactly. Unless you study means if you do NOT study. So the sentence
+      means If you do not study, you will fail. It does not guarantee you will pass
+      if you do study.
+    purpose: Tests understanding that unless means if not (negative condition)
+    question: Unless you study, you will fail. Does this mean If you study, you will
+      pass?
+  - answer: No. Even if means the result is the same regardless of the condition.
+      I will go whether it rains or not.
+    purpose: Tests understanding that even if means the condition does not affect
+      the result
+    question: Even if it rains, I will go. Will the rain change my decision?
+  - answer: No. In case means you do something now to prepare for a possible future
+      event. The rain has not happened yet.
+    purpose: Tests understanding that in case means preparation, not a condition
+    question: Take an umbrella in case it rains. Has it started raining?
+  - answer: Yes. Provided that sets a stronger, more explicit condition implying a
+      specific requirement that must be strictly met, often used in formal or contractual
+      contexts. A simple if is neutral and does not carry that sense of stipulation.
+      Provided that is common in business agreements, legal language, and formal negotiations.
+    purpose: Tests whether the learner understands the register and pragmatic force
+      of provided that compared to a neutral if. This distinction matters because
+      using provided that in casual speech sounds overly formal, while using if in
+      a contract may sound insufficiently precise.
+    question: Provided that you study, you will pass versus If you study, you will
+      pass -- is there a difference in meaning?
   contrast: '''If it rains, I will stay'' = Neutral condition.
 
     ''Unless it rains, I will go'' = Except if it rains (negative condition).
@@ -22,187 +125,151 @@ meaning:
     ''In case it rains'' = Preparation for possibility (not a real condition).
 
     '
-  ccqs:
-  - question: Unless you study, you will fail. Does this mean If you study, you will
-      pass?
-    answer: Not exactly. Unless you study means if you do NOT study. So the sentence
-      means If you do not study, you will fail. It does not guarantee you will pass
-      if you do study.
-    purpose: Tests understanding that unless means if not (negative condition)
-  - question: Even if it rains, I will go. Will the rain change my decision?
-    answer: No. Even if means the result is the same regardless of the condition.
-      I will go whether it rains or not.
-    purpose: Tests understanding that even if means the condition does not affect
-      the result
-  - question: Take an umbrella in case it rains. Has it started raining?
-    answer: No. In case means you do something now to prepare for a possible future
-      event. The rain has not happened yet.
-    purpose: Tests understanding that in case means preparation, not a condition
+  core_meaning: 'Express conditions with specific nuances: UNLESS = except if (negative
+    condition), PROVIDED THAT/AS LONG AS = on the condition that (positive), EVEN
+    IF = despite the condition (contrast), IN CASE = to be prepared (preparation),
+    SUPPOSING = hypothetical scenario.'
   example_generator:
     contexts:
     - everyday situations
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Unless/Provided that/As long as/Even if/In case/Supposing + present
-      tense, will/can/may + base verb.
-
-      Examples: "Unless it rains, I will go.", "Provided that you study, you will
-      pass."
-
-      '
-    example_generator:
-      contexts:
-      - weather and nature
-      min_examples: 4
-  negative:
-    structure: 'Negative auxiliaries (don''t/doesn''t/won''t) go in the present tense
-      clause: ''Unless you don''t hurry'' (awkward, better: ''If you don''t hurry'').'
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
-  questions:
-    structure: 'Question form applies to the main clause (with will/can): ''If it
-      rains, will you stay home?'' becomes ''Unless it rains, will you stay home?'''
-    example_generator:
-      contexts:
-      - education and school
-      min_examples: 4
+  timeline: Future time frame (like first conditional) for Unless/Provided that/Even
+    if/In case; Supposing can be present or hypothetical past.
+phonetics:
+- example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Many L1 speakers stress the first syllable. The natural pronunciation
+    has weak first syllable and stress on the second.
+  note: Unless — the first syllable is a schwa, often reduced
+  practice: Drill unless you with stress on the second syllable.
+- example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Speakers may over-pronounce in as a full syllable. In natural speech,
+    in case it flows smoothly.
+  note: In case — the first word reduces in connected speech
+  practice: Drill in case it rains as a connected unit.
+register_notes:
+- note: '''Provided that'' and ''as long as'' are more formal than ''if''.'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: '''Unless'' is neutral in register.'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: Biber et al. (1999) — Conditional alternatives to 'if' (provided that, unless,
+    as long as, in case) have register-distributed preferences. Formal alternatives
+    are more common in academic prose and news; informal alternatives dominate conversation.
+    Ch. 10.2.8
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 10.2.8
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27:
+    Conditionals'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- type: grammar
-  rule: NEVER use will in the unless-clause
-  examples:
+- examples:
   - Unless it rains, I will go. (correct)
   - Unless it will rain, I will go. (incorrect)
   explanation: Like if-clauses, unless-clauses use present tense to refer to future.
-- type: meaning
-  rule: Unless means except if or if not
-  examples:
+  rule: NEVER use will in the unless-clause
+  type: grammar
+- examples:
   - Unless you hurry, you will be late. means the same as If you do not hurry, you
     will be late.
   explanation: Unless introduces the only exception to the main clause result.
-- type: meaning
-  rule: Even if is different from If — the result does not change
-  examples:
+  rule: Unless means except if or if not
+  type: meaning
+- examples:
   - If it rains, I will stay home. (rain means I stay)
   - Even if it rains, I will go. (rain or no rain — I go anyway)
   explanation: Even if emphasises that the condition is irrelevant to the result.
-- type: meaning
-  rule: In case means preparation, not a condition
-  examples:
+  rule: Even if is different from If — the result does not change
+  type: meaning
+- examples:
   - Take an umbrella in case it rains. (take it now, before rain)
   - If it rains, take an umbrella. (take it only after it starts raining)
   explanation: In case means doing something in advance as a precaution.
-- type: register
-  rule: Provided that is more formal than as long as
-  examples:
+  rule: In case means preparation, not a condition
+  type: meaning
+- examples:
   - Provided that you pay in advance, we will hold the room. (formal/business)
   - As long as you pay in advance, we will hold the room. (neutral)
   explanation: Both mean on the condition that, but provided that is more formal.
-use:
-- name: Unless (Negative Condition)
-  description: Replace 'if not' with a stronger, more concise negative condition.
-  examples:
-  - Unless you apologize, I won't speak to you.
-  - I won't go unless you come too.
-  key_point: NEVER use 'will' in the unless-clause. Unless = except if.
-- name: Provided that / As long as (Positive Conditions)
-  description: Stronger than 'if' — emphasize a necessary condition.
-  examples:
-  - Provided that you pay me, I will do it.
-  - As long as you're happy, I'm happy.
-  key_point: Both mean 'on the condition that'. Provided that is slightly more formal.
-- name: Even if (Contrast)
-  description: The result doesn't change regardless of the condition.
-  examples:
-  - Even if you study, you might fail. (studying won't guarantee pass)
-  - I love him even if he is difficult.
-  key_point: Even if = despite the condition. Contrast with 'if' (result depends on
-    condition).
-- name: In case (Preparation)
-  description: Do something now to be ready for a possible future situation.
-  examples:
-  - Take an umbrella in case it rains.
-  - Save money in case you lose your job.
-  key_point: In case = preparation. Not a real condition — the action happens BEFORE
-    the possible event.
-- name: Supposing (Hypothetical)
-  description: Introduce a hypothetical scenario (like 'what if').
-  examples:
-  - Supposing you were rich, what would you buy?
-  - Supposing it rains, where will we meet?
-  key_point: Supposing is more formal than 'what if'. Can be used with past tense
-    for hypotheticals.
-phonetics:
-- note: Unless — the first syllable is a schwa, often reduced
-  l1_issue: Many L1 speakers stress the first syllable. The natural pronunciation
-    has weak first syllable and stress on the second.
-  practice: Drill unless you with stress on the second syllable.
-  example_generator:
-    contexts:
-    - connected speech
-- note: In case — the first word reduces in connected speech
-  l1_issue: Speakers may over-pronounce in as a full syllable. In natural speech,
-    in case it flows smoothly.
-  practice: Drill in case it rains as a connected unit.
-  example_generator:
-    contexts:
-    - connected speech
+  rule: Provided that is more formal than as long as
+  type: register
 teaching:
   methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Student A starts with a conditional: ''If I had more time...''
+      Student B continues: ''I would travel more.'' Then Student B starts a new conditional
+      with an alternative to if: ''Supposing you won the lottery...'''
+    duration: 15
+    name: Conditional Chain Game
+  - adaptation_notes: 'Give students scenario cards. They create conditionals using
+      different structures: if, unless, supposing, provided that, as long as. Discuss
+      the subtle meaning differences.'
+    duration: 15
+    name: Scenario Cards
+  - adaptation_notes: 'Show sentences with errors in conditional alternatives. Students
+      race to identify and fix them: ''Unless you will study, you fail'' → ''Unless
+      you study, you will fail.'''
+    duration: 10
+    name: Error Correction Race
   tips:
   - 'Week1: Unless (negative condition, no will).'
   - 'Week2: Provided that/As long as (positive conditions).'
   - 'Week3: Even if (contrast) vs In case (preparation).'
   - 'Week4: Supposing (hypothetical). Use real-life scenarios: ''Unless you study,
     you fail'' (serious tone).'
-  recommended_activities:
-  - name: Conditional Chain Game
-    duration: 15
-    adaptation_notes: 'Student A starts with a conditional: ''If I had more time...''
-      Student B continues: ''I would travel more.'' Then Student B starts a new conditional
-      with an alternative to if: ''Supposing you won the lottery...'''
-  - name: Scenario Cards
-    duration: 15
-    adaptation_notes: 'Give students scenario cards. They create conditionals using
-      different structures: if, unless, supposing, provided that, as long as. Discuss
-      the subtle meaning differences.'
-  - name: Error Correction Race
-    duration: 10
-    adaptation_notes: 'Show sentences with errors in conditional alternatives. Students
-      race to identify and fix them: ''Unless you will study, you fail'' → ''Unless
-      you study, you will fail.'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 10:
-    Conditionals, §10.1-10.6'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: 'Using ''unless'' with positive meaning: *''Unless you study, you will pass.'''
-  correction: Unless you study, you will fail.
-  explanation: '''Unless'' = ''if not''. It introduces a negative condition.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: 'Using ''provided'' without ''that'': *''Provided you study, you will pass.'''
-  correction: Provided (that) you study, you will pass.
-  explanation: '''Provided (that)'' and ''providing (that)'' are correct. ''That''
-    is optional but recommended for clarity.'
-  l1_groups:
-  - All L1 groups
-register_notes:
-- note: '''Provided that'' and ''as long as'' are more formal than ''if''.'
-- note: '''Unless'' is neutral in register.'
-dialectal_variation:
-- note: No significant BrE/AmE differences.
-discourse_notes:
-- note: 'Alternative conditionals add variety: ''Provided that you study, you will
-    pass.'''
+  - 'Swan PEU: Alternatives to ''if'' — unless (= if not), provided/providing that,
+    as long as, on condition that, supposing, in case. Also: inversion (Were I you,
+    Had they known) as formal alternatives.'
+  - 'Swan PEU: ''Unless'' = ''if not'' — ''Unless you hurry, you''ll be late.'' =
+    ''If you don''t hurry, you''ll be late.'' NOT ''Unless you don''t hurry, you''ll
+    be late.'' (double negative).'
+title: Alternatives to If (Unless, Provided that, As long as, Even if, In case, Supposing)
+use:
+- description: Replace 'if not' with a stronger, more concise negative condition.
+  examples:
+  - Unless you apologize, I won't speak to you.
+  - I won't go unless you come too.
+  key_point: NEVER use 'will' in the unless-clause. Unless = except if.
+  name: Unless (Negative Condition)
+- description: Stronger than 'if' — emphasize a necessary condition.
+  examples:
+  - Provided that you pay me, I will do it.
+  - As long as you're happy, I'm happy.
+  key_point: Both mean 'on the condition that'. Provided that is slightly more formal.
+  name: Provided that / As long as (Positive Conditions)
+- description: The result doesn't change regardless of the condition.
+  examples:
+  - Even if you study, you might fail. (studying won't guarantee pass)
+  - I love him even if he is difficult.
+  key_point: Even if = despite the condition. Contrast with 'if' (result depends on
+    condition).
+  name: Even if (Contrast)
+- description: Do something now to be ready for a possible future situation.
+  examples:
+  - Take an umbrella in case it rains.
+  - Save money in case you lose your job.
+  key_point: In case = preparation. Not a real condition — the action happens BEFORE
+    the possible event.
+  name: In case (Preparation)
+- description: Introduce a hypothetical scenario (like 'what if').
+  examples:
+  - Supposing you were rich, what would you buy?
+  - Supposing it rains, where will we meet?
+  key_point: Supposing is more formal than 'what if'. Can be used with past tense
+    for hypotheticals.
+  name: Supposing (Hypothetical)

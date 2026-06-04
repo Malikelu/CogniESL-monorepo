@@ -1,34 +1,109 @@
+citations:
+- claim: 'Core meaning: Expressing how you feel about something or someone — from mild enjoyment (like) to strong positive
+    f'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The Tense-Aspect System-7.5'
+  tier: 1
+- claim: 'Register distribution: ''Like'', ''love'', ''hate'' are neutral in register.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The Tense-Aspect System-7.5'
+  tier: 1
+- claim: 'Discourse function: ''Like'', ''love'', ''hate'' express personal preferences in conversation.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The Tense-Aspect System-7.5'
+  tier: 1
+- claim: 'Common error ''Using infinitive after ''like'': *''I like to swim.'' (general p'' for Portuguese, Spanish speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- claim: 'Dialectal variation: AmE accepts ''like + infinitive'': ''I like to swim.'' BrE prefers ''like + gerund'': ''I like
+    swimming.'' B'
+  reliability: B
+  source: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  tier: 1
+common_errors:
+- correction: I like swimming.
+  error: 'Using infinitive after ''like'': *''I like to swim.'' (general preference)'
+  explanation: For general preferences, use 'like + gerund'. 'Like + infinitive' is more common in AmE.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: D
+- correction: I like swimming.
+  error: 'Using base form: *''I like swim.'''
+  explanation: '''Like'' is followed by a gerund (-ing), not the base form.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+description: Expressing preferences, enjoyment, and strong feelings about things, people, or activities using like, love,
+  and hate with nouns or gerunds.
+dialectal_variation:
+- note: 'AmE accepts ''like + infinitive'': ''I like to swim.'' BrE prefers ''like + gerund'': ''I like swimming.'' Both are
+    correct.'
+discourse_notes:
+- note: '''Like'', ''love'', ''hate'' express personal preferences in conversation.'
+- note: 'These verbs can be used for polite invitations: ''Would you like to join us?'''
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - food
+      - hobbies
+      - music
+      - sports
+      - daily activities
+      min_examples: 4
+    structure: 'Subject + like/love/hate + noun/gerund: ''I like chocolate.'' / ''She loves reading.'' / ''They hate waiting.'''
+  negative:
+    example_generator:
+      contexts:
+      - dislikes
+      - things you avoid
+      - neutral feelings
+      min_examples: 3
+    structure: 'Subject + do not/does not + like/love/hate + noun/gerund: ''I don''t like spinach.'' / ''She doesn''t love
+      crowded places.'' / ''They don''t hate it, but they don''t love it.'''
+  questions:
+    example_generator:
+      contexts:
+      - asking about preferences
+      - getting to know someone
+      - making suggestions
+      min_examples: 3
+    structure: 'Do/Does + subject + like/love/hate + noun/gerund?: ''Do you like coffee?'' / ''Does she love dancing?'' /
+      ''Do they hate flying?'''
 grammar_point: like_love_hate
-title: Like / Love / Hate + Noun/Gerund
-description: Expressing preferences, enjoyment, and strong feelings about things,
-  people, or activities using like, love, and hate with nouns or gerunds.
 level: A1
 meaning:
-  core_meaning: Expressing how you feel about something or someone — from mild enjoyment
-    (like) to strong positive feeling (love) to strong negative feeling (hate). These
-    are general preferences, not feelings happening only right now.
-  timeline: Present time — describes general, ongoing preferences. Not about a single
-    moment but about how you usually feel.
-  contrast: '''I like coffee'' = I enjoy it generally. vs ''I am enjoying this coffee''
-    = right now, this particular cup. / ''I love chocolate'' = very strong positive
-    feeling, stronger than ''like''. / ''I hate spinach'' = very strong negative feeling,
-    stronger than ''don''t like''.'
   ccqs:
-  - question: Is this about how you feel in general or just right now?
-    answer: In general — it is a preference I have.
-    purpose: Tests whether the learner understands that like/love/hate express general
-      preferences, not feelings happening only at this moment. This is important because
-      it distinguishes these verbs from the present continuous for current activities.
-  - question: Is 'love' stronger or weaker than 'like'?
-    answer: Stronger — love is a very strong positive feeling.
-    purpose: Tests whether the learner understands the intensity scale. like is weaker
-      than love, and don't like is weaker than hate. This is important because choosing
-      the wrong intensity level can lead to miscommunication.
-  - question: Can I use these with activities as well as things?
-    answer: Yes — with a gerund (I love swimming) or a noun (I love music).
-    purpose: Tests whether the learner understands that like/love/hate can be followed
-      by a gerund (verb-ing) for activities. This is important because using the base
-      form after "like" is a very common beginner error.
+  - answer: In general — it is a preference I have.
+    purpose: Tests whether the learner understands that like/love/hate express general preferences, not feelings happening
+      only at this moment. This is important because it distinguishes these verbs from the present continuous for current
+      activities.
+    question: Is this about how you feel in general or just right now?
+  - answer: Stronger — love is a very strong positive feeling.
+    purpose: Tests whether the learner understands the intensity scale. like is weaker than love, and don't like is weaker
+      than hate. This is important because choosing the wrong intensity level can lead to miscommunication.
+    question: Is 'love' stronger or weaker than 'like'?
+  - answer: Yes — with a gerund (I love swimming) or a noun (I love music).
+    purpose: Tests whether the learner understands that like/love/hate can be followed by a gerund (verb-ing) for activities.
+      This is important because using the base form after "like" is a very common beginner error.
+    question: Can I use these with activities as well as things?
+  - answer: Yes. Like + to-infinitive is acceptable (I like to swim). Love and hate can also take the infinitive, especially
+      in American English. However, the gerund form is more common for general preferences in both dialects.
+    purpose: Tests whether the learner knows that like, love, and hate can take either a gerund or a to-infinitive, unlike
+      many other verbs of preference. This is important because the gerund vs infinitive distinction with these verbs does
+      not change meaning the way it does with verbs like stop, remember, or try.
+    question: Can like, love, and hate be followed by an infinitive with to?
+  contrast: '''I like coffee'' = I enjoy it generally. vs ''I am enjoying this coffee'' = right now, this particular cup.
+    / ''I love chocolate'' = very strong positive feeling, stronger than ''like''. / ''I hate spinach'' = very strong negative
+    feeling, stronger than ''don''t like''.'
+  core_meaning: Expressing how you feel about something or someone — from mild enjoyment (like) to strong positive feeling
+    (love) to strong negative feeling (hate). These are general preferences, not feelings happening only right now.
   example_generator:
     contexts:
     - food and drink
@@ -41,65 +116,93 @@ meaning:
     - '''I love you'' is a very strong statement in English and used carefully'
     - Saying 'I hate' about a person is very strong; 'I don't like' is softer
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Subject + like/love/hate + noun/gerund: ''I like chocolate.'' / ''She
-      loves reading.'' / ''They hate waiting.'''
-    example_generator:
-      contexts:
-      - food
-      - hobbies
-      - music
-      - sports
-      - daily activities
-      min_examples: 4
-  negative:
-    structure: 'Subject + do not/does not + like/love/hate + noun/gerund: ''I don''t
-      like spinach.'' / ''She doesn''t love crowded places.'' / ''They don''t hate
-      it, but they don''t love it.'''
-    example_generator:
-      contexts:
-      - dislikes
-      - things you avoid
-      - neutral feelings
-      min_examples: 3
-  questions:
-    structure: 'Do/Does + subject + like/love/hate + noun/gerund?: ''Do you like coffee?''
-      / ''Does she love dancing?'' / ''Do they hate flying?'''
-    example_generator:
-      contexts:
-      - asking about preferences
-      - getting to know someone
-      - making suggestions
-      min_examples: 3
+  timeline: Present time — describes general, ongoing preferences. Not about a single moment but about how you usually feel.
+phonetics:
+- example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Some L1 speakers confuse 'like' (enjoy) with 'like' (similar to). Context usually clarifies, but learners may
+    produce 'I am like coffee' by analogy with their L1.
+  note: 'In natural speech, ''like'' is often reduced: ''I like it'' → /aɪ laɪk ɪt/ with weak stress on ''like'' in connected
+    speech.'
+- example_generator:
+    contexts:
+    - emphasis and contrast
+  l1_issue: Learners may not use stress to intensify, making 'I love' sound flat and less natural.
+  note: 'Stress can change meaning: ''I LOVE chocolate'' (strong emphasis) vs ''I love CHOCOLATE'' (contrasting with something
+    else).'
+register_notes:
+- note: '''Like'', ''love'', ''hate'' are neutral in register.'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In formal writing, ''enjoy'' is preferred over ''like'': ''I enjoy reading.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Stative verbs of emotion (''like'', ''love'', ''hate''): normally non-progressive, but conversation
+    increasingly uses progressive forms (''I''m loving it'') for immediacy. Progressive statives are conversational and informal.
+    Academic prose avoids them. Ch. 6.3.3.1'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 6.3.3.1
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The Tense-Aspect System-7.5'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Use a noun after like/love/hate for things, people, or places
-  type: grammatical
-  examples:
+- examples:
   - I like chocolate.
   - She loves her grandmother.
   - They hate big cities.
-- rule: Use a gerund (verb + -ing) after like/love/hate for activities
+  rule: Use a noun after like/love/hate for things, people, or places
   type: grammatical
-  examples:
+- examples:
   - I like swimming.
   - She loves reading.
   - They hate getting up early.
-- rule: 'Gradation of feeling: like → really like → love / don''t like → really don''t
-    like → hate'
-  type: lexical
-  examples:
+  rule: Use a gerund (verb + -ing) after like/love/hate for activities
+  type: grammatical
+- examples:
   - I like pizza. → I really like pizza. → I love pizza.
   - I don't like spinach. → I really don't like spinach. → I hate spinach.
-- rule: Use 'quite' before 'like' to reduce the strength (British English)
+  rule: 'Gradation of feeling: like → really like → love / don''t like → really don''t like → hate'
   type: lexical
-  examples:
+- examples:
   - I quite like jazz. (I like it a little, not a lot)
   - She quite likes her new boss.
+  rule: Use 'quite' before 'like' to reduce the strength (British English)
+  type: lexical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students circulate and ask 5 classmates ''Do you like...?'' about food, hobbies, and activities. They
+      report findings: ''Maria loves swimming but hates running.'''
+    duration: 10
+    name: Preference Survey
+  - adaptation_notes: Teacher calls out items (coffee, spiders, football, etc.). Students physically position themselves on
+      a line from 'hate' to 'love' and say their sentence.
+    duration: 10
+    name: Like/Love/Hate Line-Up
+  - adaptation_notes: 'Students create a simple poster or digital slide: ''I like... / I love... / I hate...'' with images.
+      Present to the class.'
+    duration: 15
+    name: My Favourites Poster
+  tips:
+  - Start with food and drink — it is the most relatable context for all learners.
+  - 'Use picture flashcards: show images and students say ''I like / I love / I hate...'''
+  - 'Introduce the gradation scale early: like → really like → love.'
+  - 'Practice the gerund form explicitly: ''I like + verb-ing'' is a common error point.'
+  - 'Use surveys: students ask each other ''Do you like...?'' and report back.'
+  - 'Swan PEU: ''Like/love/hate'' take both to-inf and -ing with little meaning difference: ''I like swimming'' = ''I like
+    to swim.'' ''Would like'' always takes to-inf: ''I would like to swim.'''
+  - 'Swan PEU: ''Would prefer'' takes to-inf; ''would rather'' takes bare infinitive: ''I''d prefer to go now'' vs ''I''d
+    rather go now.'' Both express preference; ''rather'' is slightly more informal.'
+title: Like / Love / Hate + Noun/Gerund
 use:
 - context: Talking about food preferences
-  description: One of the most common everyday uses — discussing what you enjoy or
-    dislike eating.
+  description: One of the most common everyday uses — discussing what you enjoy or dislike eating.
   examples:
   - I love Italian food.
   - Do you like spicy dishes?
@@ -111,84 +214,8 @@ use:
   - He loves playing football.
   - They hate doing housework.
 - context: Expressing feelings about people
-  description: Like and love can express feelings about people; hate expresses strong
-    dislike.
+  description: Like and love can express feelings about people; hate expresses strong dislike.
   examples:
   - I like my new colleague.
   - She loves her children.
   - He hates his neighbour.
-phonetics:
-- note: 'In natural speech, ''like'' is often reduced: ''I like it'' → /aɪ laɪk ɪt/
-    with weak stress on ''like'' in connected speech.'
-  example_generator:
-    contexts:
-    - connected speech
-  l1_issue: Some L1 speakers confuse 'like' (enjoy) with 'like' (similar to). Context
-    usually clarifies, but learners may produce 'I am like coffee' by analogy with
-    their L1.
-- note: 'Stress can change meaning: ''I LOVE chocolate'' (strong emphasis) vs ''I
-    love CHOCOLATE'' (contrasting with something else).'
-  example_generator:
-    contexts:
-    - emphasis and contrast
-  l1_issue: Learners may not use stress to intensify, making 'I love' sound flat and
-    less natural.
-teaching:
-  methodology: PPP
-  tips:
-  - Start with food and drink — it is the most relatable context for all learners.
-  - 'Use picture flashcards: show images and students say ''I like / I love / I hate...'''
-  - 'Introduce the gradation scale early: like → really like → love.'
-  - 'Practice the gerund form explicitly: ''I like + verb-ing'' is a common error
-    point.'
-  - 'Use surveys: students ask each other ''Do you like...?'' and report back.'
-  recommended_activities:
-  - name: Preference Survey
-    duration: 10
-    adaptation_notes: 'Students circulate and ask 5 classmates ''Do you like...?''
-      about food, hobbies, and activities. They report findings: ''Maria loves swimming
-      but hates running.'''
-  - name: Like/Love/Hate Line-Up
-    duration: 10
-    adaptation_notes: Teacher calls out items (coffee, spiders, football, etc.). Students
-      physically position themselves on a line from 'hate' to 'love' and say their
-      sentence.
-  - name: My Favourites Poster
-    duration: 15
-    adaptation_notes: 'Students create a simple poster or digital slide: ''I like...
-      / I love... / I hate...'' with images. Present to the class.'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.6-12.13'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: 'Using infinitive after ''like'': *''I like to swim.'' (general preference)'
-  correction: I like swimming.
-  explanation: For general preferences, use 'like + gerund'. 'Like + infinitive' is
-    more common in AmE.
-  l1_groups:
-  - Portuguese
-  - Spanish
-- error: 'Using base form: *''I like swim.'''
-  correction: I like swimming.
-  explanation: '''Like'' is followed by a gerund (-ing), not the base form.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: '''Like'', ''love'', ''hate'' are neutral in register.'
-- note: 'In formal writing, ''enjoy'' is preferred over ''like'': ''I enjoy reading.'''
-dialectal_variation:
-- note: 'AmE accepts ''like + infinitive'': ''I like to swim.'' BrE prefers ''like
-    + gerund'': ''I like swimming.'' Both are correct.'
-discourse_notes:
-- note: '''Like'', ''love'', ''hate'' express personal preferences in conversation.'
-- note: 'These verbs can be used for polite invitations: ''Would you like to join
-    us?'''

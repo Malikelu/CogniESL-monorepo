@@ -1,30 +1,156 @@
-grammar_point: subject_pronouns
-title: Subject Pronouns
+citations:
+- claim: 'Core meaning: Subject pronouns replace nouns to avoid repetition'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
+    Reference and Possession'
+  tier: 1
+- claim: 'Register distribution: Subject pronouns are used in all registers, from
+    casual conversation to academic writing, with forma'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
+    Reference and Possession'
+  tier: 1
+- claim: 'Discourse function: In conversation, subject pronouns are often omitted
+    in pro-drop languages (Spanish, Arabic, Japanese'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
+    Reference and Possession'
+  tier: 1
+- claim: 'Common error ''Using object pronouns as subjects: *''Me and John went.''''
+    for Portuguese, Spanish speakers'
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 11: Pronouns,
+    11.1-11.3'
+  tier: 1
+- claim: 'Dialectal variation: In informal speech, ''me'' is sometimes used as subject:
+    ''Me and him went.'' (non-standard)'
+  reliability: B
+  source: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 5: Nouns and Noun Phrases, 5.8 (pronouns)'
+  tier: 1
+- claim: Pronouns in discourse create cohesion by referring back to previously mentioned
+    entities
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
+    Reference and Possession'
+  tier: 2
+- claim: L1 transfer in subject pronouns varies significantly across language backgrounds
+    — Swan & Smith document contrastive patterns for speakers of different L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents
+    how transfer effects are non-linear, determined by functional fit between L1 and
+    L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects
+    are non-linear — determined by functional fit between L1 and L2 systems rather
+    than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning.
+    Routledge.
+  tier: 2
+common_errors:
+- correction: John and I went.
+  error: 'Using object pronouns as subjects: *''Me and John went.'''
+  explanation: Use subject pronouns (I, you, he, she, we, they) as the subject.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: B
+- correction: She is Spanish. / They have gone home. / It was raining.
+  error: 'Dropping subject pronouns: *''Is Spanish.'' / *''Have gone home.'' / *''Was
+    raining.'''
+  explanation: 'Swan & Smith (2001): Spanish, Italian, Japanese, Korean, and other
+    pro-drop languages allow subject omission because verb endings indicate person/number.
+    English requires explicit subject pronouns in all finite clauses.'
+  l1_groups:
+  - Spanish
+  - Italian
+  - Japanese
+  - Korean
+  - Portuguese
+  reliability: B
+  source: 'Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+    Ch. 22: Spanish speakers; Ch. 27: Italian speakers; Ch. 39: Japanese speakers;
+    Ch. 41: Korean speakers.'
+- correction: Between you and me.
+  error: 'Using ''I'' after prepositions: *''Between you and I.'''
+  explanation: Use object pronouns (me, you, him, her, us, them) after prepositions.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: B
 description: 'Pronouns that replace the subject of a sentence: I, you, he, she, it,
   we, they.'
+dialectal_variation:
+- note: 'In informal speech, ''me'' is sometimes used as subject: ''Me and him went.''
+    (non-standard)'
+discourse_notes:
+- note: In conversation, subject pronouns are often omitted in pro-drop languages
+    (Spanish, Arabic, Japanese) but are required in English.
+- note: In academic writing, subject pronouns create cohesion by referring back to
+    previously mentioned nouns.
+- note: 'In informal speech, ''you'' is used generically: ''You never know what might
+    happen.'' (meaning ''people in general'').'
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - introductions
+      - describing people
+      - daily activities
+      min_examples: 4
+    structure: 'Subject + verb: ''I walk.'', ''She reads.'''
+  negative:
+    example_generator:
+      contexts:
+      - introductions
+      - describing people
+      - daily activities
+      min_examples: 4
+    structure: 'Subject + don''t/doesn''t + verb: ''I don''t walk.'', ''She doesn''t
+      read.'''
+  questions:
+    example_generator:
+      contexts:
+      - introductions
+      - describing people
+      - daily activities
+      min_examples: 4
+    structure: 'Do/Does + subject + verb?: ''Do I walk?'', ''Does she read?'''
+grammar_point: subject_pronouns
 level: A1
 meaning:
-  core_meaning: Subject pronouns replace nouns to avoid repetition. They refer to
-    the person or thing performing the action.
-  timeline: Timeless — applies to all tenses.
-  contrast: '''Subject pronoun'' = ''She reads.'' (replaces a name) vs ''Noun'' =
-    ''Maria reads.'' (specific name)'
   ccqs:
-  - question: Does the subject pronoun perform the action in this sentence?
-    answer: Yes — the subject pronoun is the doer of the action.
+  - answer: Yes — the subject pronoun is the doer of the action.
     purpose: Tests whether the learner can identify the subject of a sentence and
       choose the correct subject pronoun (I, you, he, she, it, we, they). This tests
       grammatical role recognition, not just meaning.
-  - question: Is the pronoun singular or plural?
-    answer: It depends on the referent — singular (I, you, he, she, it) or plural
+    question: Does the subject pronoun perform the action in this sentence?
+  - answer: It depends on the referent — singular (I, you, he, she, it) or plural
       (we, they).
     purpose: Tests whether the learner understands that subject pronouns must agree
       in number with their referent, which affects verb agreement in the sentence.
-  - question: Can we omit the subject pronoun in English?
-    answer: No — English requires an explicit subject pronoun in all finite clauses.
+    question: Is the pronoun singular or plural?
+  - answer: No — English requires an explicit subject pronoun in all finite clauses.
     purpose: Tests whether the learner understands that English is not a pro-drop
       language. This is critical for speakers of Spanish, Arabic, Japanese, and other
       pro-drop L1s who may produce '*Am happy' instead of 'I am happy'.
+    question: Can we omit the subject pronoun in English?
+  - answer: '''John and I went to the shop.'' Use subject pronouns (I, he, she, we,
+      they) when the pronoun is the subject. Put yourself last.'
+    purpose: Tests whether the learner uses subject pronouns (not object pronouns)
+      for subjects (Swan PEU 2016, entry 143).
+    question: Which is correct? *'Me and John went to the shop' or 'John and I went
+      to the shop'?
+  contrast: '''Subject pronoun'' = ''She reads.'' (replaces a name) vs ''Noun'' =
+    ''Maria reads.'' (specific name)'
+  core_meaning: Subject pronouns replace nouns to avoid repetition. They refer to
+    the person or thing performing the action.
   example_generator:
     contexts:
     - introductions
@@ -33,42 +159,62 @@ meaning:
     - family
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Subject + verb: ''I walk.'', ''She reads.'''
-    example_generator:
-      contexts:
-      - introductions
-      - describing people
-      - daily activities
-      min_examples: 4
-  negative:
-    structure: 'Subject + don''t/doesn''t + verb: ''I don''t walk.'', ''She doesn''t
-      read.'''
-    example_generator:
-      contexts:
-      - introductions
-      - describing people
-      - daily activities
-      min_examples: 4
-  questions:
-    structure: 'Do/Does + subject + verb?: ''Do I walk?'', ''Does she read?'''
-    example_generator:
-      contexts:
-      - introductions
-      - describing people
-      - daily activities
-      min_examples: 4
+  timeline: Timeless — applies to all tenses.
+phonetics:
+- contexts:
+  - connected speech
+  example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Some L1 speakers over-pronounce subject pronouns
+  note: Weak form of 'he' /hiː/ → /hɪ/ in connected speech
+register_notes:
+- note: Subject pronouns are used in all registers, from casual conversation to academic
+    writing, with formality marked by contraction use rather than pronoun choice.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In conversation, subject pronouns are among the most frequent words in English.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (1999) — Subject pronoun use: much higher in conversation than
+    in academic prose. Academic prose uses predominantly full noun phrases. Ch. 4.1.2'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 4.1.2
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch.
+    11: Pronouns, 11.1-11.3'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
+    Reference and Possession'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 5: Nouns and Noun Phrases, 5.8 (pronouns)'
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(pronouns: personal, possessive,
+    reflexive)'
 sub_rules:
-- rule: '''I'' is always capitalized'
-  type: spelling
-  examples:
+- examples:
   - I am happy. ✅ / i am happy. ❌
-- rule: '''You'' is the same for singular and plural'
-  type: grammatical
-  examples:
+  rule: '''I'' is always capitalized'
+  type: spelling
+- examples:
   - You are my friend. (singular)
   - You are my friends. (plural)
+  rule: '''You'' is the same for singular and plural'
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Replace nouns with pronouns in simple sentences.
+    duration: 10
+    name: Pronoun Substitution
+  tips:
+  - Use substitution drills (name → pronoun)
+  - Use visual aids showing who each pronoun refers to
+  - 'Swan PEU: Subject pronouns — I, you, he, she, it, we, they. After ''be'': ''It
+    is I'' (formal) / ''It''s me'' (natural/informal). After ''than'': ''taller than
+    I'' (formal) / ''taller than me'' (informal) / ''taller than him.'''
+title: Subject Pronouns
 use:
 - context: Introducing yourself
   description: Using 'I' to talk about yourself
@@ -80,59 +226,3 @@ use:
   examples:
   - She is a teacher.
   - They are my friends.
-phonetics:
-- note: Weak form of 'he' /hiː/ → /hɪ/ in connected speech
-  contexts:
-  - connected speech
-  l1_issue: Some L1 speakers over-pronounce subject pronouns
-  example_generator:
-    contexts:
-    - connected speech
-teaching:
-  methodology: PPP
-  tips:
-  - Use substitution drills (name → pronoun)
-  - Use visual aids showing who each pronoun refers to
-  recommended_activities:
-  - name: Pronoun Substitution
-    duration: 10
-    adaptation_notes: Replace nouns with pronouns in simple sentences.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, 12.14-12.15'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 5: Nouns and Noun Phrases, 5.8 (pronouns)'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 81-100 (pronouns:
-    personal, possessive, reflexive)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    11: Pronouns, 11.1-11.3'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 6: Pronouns'
-common_errors:
-- error: 'Using object pronouns as subjects: *''Me and John went.'''
-  correction: John and I went.
-  explanation: Use subject pronouns (I, you, he, she, we, they) as the subject.
-  l1_groups:
-  - Portuguese
-  - Spanish
-- error: 'Using ''I'' after prepositions: *''Between you and I.'''
-  correction: Between you and me.
-  explanation: Use object pronouns (me, you, him, her, us, them) after prepositions.
-  l1_groups:
-  - Portuguese
-  - Spanish
-register_notes:
-- note: Subject pronouns are used in all registers, from casual conversation to academic writing, with formality marked by contraction use rather than pronoun choice.
-- note: 'In formal writing, avoid contractions with subject pronouns: ''I am'' (not
-    ''I''m''), ''they are'' (not ''they''re'').'
-- note: In conversation, subject pronouns are among the most frequent words in English.
-dialectal_variation:
-- note: 'In informal speech, ''me'' is sometimes used as subject: ''Me and him went.''
-    (non-standard)'
-discourse_notes:
-- note: In conversation, subject pronouns are often omitted in pro-drop languages
-    (Spanish, Arabic, Japanese) but are required in English.
-- note: In academic writing, subject pronouns create cohesion by referring back to
-    previously mentioned nouns.
-- note: 'In informal speech, ''you'' is used generically: ''You never know what might
-    happen.'' (meaning ''people in general'').'

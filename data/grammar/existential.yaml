@@ -1,28 +1,95 @@
-grammar_point: existential
-title: Existential Constructions (There is/are)
+citations:
+- claim: 'Core meaning: There is/are introduces the existence of something'
+  reliability: B
+  source: 'Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch. 5-6: Existential there, register distribution'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  reliability: B
+  source: 'Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch. 5-6: Existential there, register distribution'
+  tier: 1
+- claim: Common error '*It is many books on the table.*' for Portuguese, Spanish, Chinese speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- note: 'Biber et al. (2021) GSWE Ch. 1.3.2/1.3.4: Dialect differences between AmE and BrE exist primarily in frequency and
+    register distribution rather than core grammatical structure.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 23: Nonreferential Subjects: Ambient It and
+    Existential There-23.2'
+  tier: 4
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents how transfer effects are non-linear,
+    determined by functional fit between L1 and L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects are non-linear — determined by functional
+    fit between L1 and L2 systems rather than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning. Routledge.
+  tier: 2
+- claim: Oshima & Hogue's Great Writing series demonstrates how this grammatical structure functions in academic writing contexts.
+    Their approach connects grammar instruction to writing outcomes, showing learners how accurate use of this structure improves
+    paragraph cohesion, essay organization, and academic register.
+  source: Oshima, A. and Hogue, A. (2006). Introduction to Academic Writing, 3rd ed. Pearson Longman.
+  tier: 2
+common_errors:
+- correction: There are many books on the table.
+  error: '*It is many books on the table.*'
+  explanation: Use there is/are for existence.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
 description: Using there is/are to say that something exists or is present.
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - describing places
+      - talking about what exists
+      - introducing new information
+      min_examples: 4
+    structure: 'There is + singular noun: There is a book on the table. / There are + plural noun: There are many people in
+      the room.'
+  negative:
+    example_generator:
+      contexts:
+      - describing places
+      - talking about what exists
+      - introducing new information
+      min_examples: 4
+    structure: 'There is/are + not + noun: There is not a solution. / There are not any tickets left.'
+  questions:
+    example_generator:
+      contexts:
+      - describing places
+      - talking about what exists
+      - introducing new information
+      min_examples: 4
+    structure: 'Is/Are + there + noun?: Is there a problem? / Are there any questions?'
+grammar_point: existential
 level: A2
 meaning:
-  core_meaning: There is/are introduces the existence of something. There is not a
-    place — it is a grammatical subject. The real subject comes after the verb.
-  timeline: Present (there is/are) or past (there was/were).
-  contrast: There is = There is a book on the table. (existence) vs A book is on the
-    table. (location)
   ccqs:
-  - question: Are we saying something exists?
-    answer: Yes — use there is/are.
-    purpose: Tests whether the learner understands that 'there is/are' is used to
-      state the existence of something. 'There is a book on the table' = a book exists
-      on the table. This is the fundamental structure for introducing new information.
-  - question: Is this new information?
-    answer: Yes — there is/are introduces new information.
-    purpose: 'Tests whether the learner understands that ''there is/are'' is used
-      for first mention (new information). Once introduced, use ''the'' for subsequent
-      reference: ''There is a book on the table. The book is red.'''
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      existential and explain why they are incorrect.
+  - answer: Yes — use there is/are.
+    purpose: Tests whether the learner understands that 'there is/are' is used to state the existence of something. 'There
+      is a book on the table' = a book exists on the table. This is the fundamental structure for introducing new information.
+    question: Are we saying something exists?
+  - answer: Yes — there is/are introduces new information.
+    purpose: 'Tests whether the learner understands that ''there is/are'' is used for first mention (new information). Once
+      introduced, use ''the'' for subsequent reference: ''There is a book on the table. The book is red.'''
+    question: Is this new information?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with existential and explain why they are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: '''There are many people here.'' Use ''there is/are'' to say that something exists.'
+    purpose: Tests whether the learner uses 'there is/are' (not 'it is') to express existence (Swan PEU 2016, entry 593).
+    question: Which is correct? *'It is many people here' or 'There are many people here'?
+  contrast: There is = There is a book on the table. (existence) vs A book is on the table. (location)
+  core_meaning: There is/are introduces the existence of something. There is not a place — it is a grammatical subject. The
+    real subject comes after the verb.
   example_generator:
     contexts:
     - describing places
@@ -31,49 +98,64 @@ meaning:
     - describing scenes
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: 'There is + singular noun: There is a book on the table. / There are
-      + plural noun: There are many people in the room.'
-    example_generator:
-      contexts:
-      - describing places
-      - talking about what exists
-      - introducing new information
-      min_examples: 4
-  negative:
-    structure: 'There is/are + not + noun: There is not a solution. / There are not
-      any tickets left.'
-    example_generator:
-      contexts:
-      - describing places
-      - talking about what exists
-      - introducing new information
-      min_examples: 4
-  questions:
-    structure: 'Is/Are + there + noun?: Is there a problem? / Are there any questions?'
-    example_generator:
-      contexts:
-      - describing places
-      - talking about what exists
-      - introducing new information
-      min_examples: 4
+  timeline: Present (there is/are) or past (there was/were).
+phonetics:
+- example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Some L1 speakers omit there or it as dummy subjects.
+  note: Weak form of there /ðeər/ → /ðər/
+register_notes:
+- note: 'Biber et al. (2021) — Existential there: much more common than locative inversion; distribution varies by register.
+    Primarily used to introduce new information with indefinite subject. Very frequent in conversation. Ch. 11.4.8'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 11.4.8
+sources:
+  corpus_evidence: Biber et al. (1999) LSWE Corpus — Existential there is far more common in conversation and fiction than
+    in academic prose and news. In conversation, it often introduces new referents in discourse. In academic prose, existential
+    there is relatively rare; writers prefer other information-packaging structures (fronting, passives, nominalizations).
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Biber et al. (1999) Grammar of Spoken and Written English. Longman. Ch. 5-6: Existential there, register distribution'
+  secondary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Use is with singular nouns and non-count nouns
-  type: grammatical
-  examples:
+- examples:
   - There is a book.
   - There is some water.
-- rule: Use are with plural nouns
+  rule: Use is with singular nouns and non-count nouns
   type: grammatical
-  examples:
+- examples:
   - There are many people.
   - There are three books.
-- rule: There is not a place in this structure
-  type: semantic
-  examples:
+  rule: Use are with plural nouns
+  type: grammatical
+- examples:
   - There is a book. (existence)
   - The book is there. (location)
+  rule: There is not a place in this structure
+  type: semantic
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Students describe what exists in different locations using there is/are.
+    duration: 10
+    name: What is in the Room?
+  tips:
+  - 'CGEL Ch. 16: CGEL distinguishes presentational there (There appeared a man) from existential there (There is a book).
+    Presentational there introduces new entities into discourse and allows a wider range of verbs, while existential there
+    asserts existence.'
+  - Use real situations to demonstrate existence
+  - Contrast with location (the book is there)
+  - Practice with classroom objects and people
+  - 'Swan PEU: Existential ''there'' — ''There is a book on the table.'' = ''a book exists on the table.'' Used to introduce
+    new information, especially with indefinite subjects (a, some, any, no). Informal ''there''s'' is used even with plural
+    subjects.'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 16: CGEL (Ch.16) analyzes existential ''there'' as a
+    DUMMY PRONOUN (not an adverb). It is a syntactic subject (satisfies subject-aux inversion: ''Is there a problem?'') but
+    semantically empty. This explains why existential requires ''be'' (*''There have a problem'') — ''there'' needs a copula
+    to link to the notional subject. CGEL rejects the traditional analysis of ''there'' as an adverb of place in existentials.'
+title: Existential Constructions (There is/are)
 use:
 - context: Describing places
   description: Saying what exists in a location
@@ -85,51 +167,3 @@ use:
   examples:
   - There is a new student in our class.
   - There are some things I need to tell you.
-phonetics:
-- note: Weak form of there /ðeər/ → /ðər/
-  example_generator:
-    contexts:
-    - connected speech
-  l1_issue: Some L1 speakers omit there or it as dummy subjects.
-teaching:
-  methodology: PPP
-  tips:
-  - Use real situations to demonstrate existence
-  - Contrast with location (the book is there)
-  - Practice with classroom objects and people
-  recommended_activities:
-  - name: What is in the Room?
-    duration: 10
-    adaptation_notes: Students describe what exists in different locations using there
-      is/are.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*It is many books on the table.*'
-  correction: There are many books on the table.
-  explanation: Use there is/are for existence.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

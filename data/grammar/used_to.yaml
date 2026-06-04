@@ -1,169 +1,219 @@
-grammar_point: used_to
-title: Used To (Past Habits and States)
-description: Used to describe past habits or states that no longer happen or exist
-  in the present.
-level: A2-B1
-meaning:
-  core_meaning: Describes past habits or states that were true in the past but are
-    no longer true in the present.
-  timeline: 'Past only: Refers to repeated actions or states in the past with no present
-    connection.'
-  contrast: 'Used to (past habit, no more): "I used to smoke." (I don''t smoke now)
-
-    Would (past habit, no states): "I would smoke." (only actions, not states like
-    ''be tall'')
-
-    '
-  ccqs:
-  - question: I used to play tennis. Do I play tennis now?
-    answer: No — 'used to' means the action was true in the past but is not true now.
-    purpose: Tests whether the learner understands a key concept of used_to. This
-      is fundamental for correct use of this grammar point.
-  - question: Can we say 'I used to be tall'?
-    answer: Yes — 'used to' can describe both past actions and past states. 'I used
-      to be tall' means I was tall in the past but I am not now.
-    purpose: Tests whether the learner understands a key concept of used_to. This
-      is fundamental for correct use of this grammar point.
-  - question: Can we say 'I used to go to Paris last year'?
-    answer: 'No — ''used to'' is for repeated past habits, not single events. For
-      a single event, use Past Simple: ''I went to Paris last year.'''
-    purpose: Tests whether the learner understands a key concept of used_to. This
-      is fundamental for correct use of this grammar point.
-  example_generator:
-    contexts:
-    - everyday situations
-    cultural_notes: []
-    min_examples: 5
+citations:
+- claim: 'Core meaning: Describes past habits or states that were true in the past but are no longer true in the present'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The Tense-Aspect System'
+  tier: 4
+- claim: 'Discourse function: In conversation, this structure is used for everyday communication and is among the most frequent
+    patterns'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The Tense-Aspect System'
+  tier: 4
+- claim: Common error '*I use to play football.*' for Portuguese, Spanish, Chinese speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for L1-specific error patterns in English.
+    Their learner English framework documents how each L1 group produces characteristic errors in this grammatical domain,
+    enabling teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference and Other Problems, 2nd ed. Cambridge
+    University Press.'
+  tier: 2
+common_errors:
+- correction: I used to play football.
+  error: '*I use to play football.*'
+  explanation: Used to always has -d in affirmative.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+- correction: I am used to waking up early.
+  error: 'Confusing ''used to'' and ''be used to'': *''I am used to wake up early.'''
+  explanation: 'Swan PEU: ''Used to + base verb'' = past habit. ''Be used to + gerund'' = be accustomed to. These are completely
+    different.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: I used to be tall when I was young.
+  error: 'Using ''would'' for past states: *''I would be tall when I was young.'''
+  explanation: 'Swan PEU: ''Would'' can only describe repeated past actions, NOT states. For states (be tall, live in, have),
+    use ''used to''.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: I used to play football.
+  error: 'Omitting ''to'' after ''used'' in affirmative: *''I used play football.'''
+  explanation: 'Swan PEU: In affirmative statements, ''used to'' always has ''to''. Only in questions/negatives does the pronunciation
+    change: ''Did you use to...?'''
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+description: Used to describe past habits or states that no longer happen or exist in the present.
+dialectal_variation: []
+discourse_notes:
+- note: In conversation, this structure is used for everyday communication and is among the most frequent patterns in spoken
+    English.
+- note: In academic writing, this structure appears in discussions of established knowledge, methodology, and findings.
+- note: In news reports, this structure is used for reporting events and attributing statements.
 form:
   affirmative:
-    structure: 'Subject + used to + Base Verb: "I used to smoke." "She used to live
-      in Paris."
-
-      Only refers to past; no present or future use.
-
-      '
     example_generator:
       contexts:
       - everyday situations
       min_examples: 4
-  negative:
-    structure: 'Subject + didn''t use to + Base Verb: "I didn''t use to like coffee."
-      (preferred in British English)
+    structure: 'Subject + used to + Base Verb: "I used to smoke." "She used to live in Paris."
 
-      Alternative: Subject + used not to + Base Verb: "I used not to like coffee."
-      (formal)
+      Only refers to past; no present or future use.
 
       '
+  negative:
     example_generator:
       contexts:
       - work and professional life
       - food and daily routines
       min_examples: 4
-  questions:
-    structure: 'Did + Subject + use to + Base Verb: "Did you use to live here?" (preferred)
+    structure: 'Subject + didn''t use to + Base Verb: "I didn''t use to like coffee." (preferred in British English)
 
-      Alternative: Used + Subject + to + Base Verb: "Used you to live here?" (British
-      formal)
+      Alternative: Subject + used not to + Base Verb: "I used not to like coffee." (formal)
 
       '
+  questions:
     example_generator:
       contexts:
       - work and professional life
       - sports and hobbies
       min_examples: 4
+    structure: 'Did + Subject + use to + Base Verb: "Did you use to live here?" (preferred)
+
+      Alternative: Used + Subject + to + Base Verb: "Used you to live here?" (British formal)
+
+      '
+grammar_point: used_to
+level: A2-B1
+meaning:
+  ccqs:
+  - answer: No — 'used to' means the action was true in the past but is not true now.
+    purpose: Tests whether the learner understands a key concept of used_to. This is fundamental for correct use of this grammar
+      point.
+    question: I used to play tennis. Do I play tennis now?
+  - answer: Yes — 'used to' can describe both past actions and past states. 'I used to be tall' means I was tall in the past
+      but I am not now.
+    purpose: Tests whether the learner understands a key concept of used_to. This is fundamental for correct use of this grammar
+      point.
+    question: Can we say 'I used to be tall'?
+  - answer: 'No — ''used to'' is for repeated past habits, not single events. For a single event, use Past Simple: ''I went
+      to Paris last year.'''
+    purpose: Tests whether the learner understands a key concept of used_to. This is fundamental for correct use of this grammar
+      point.
+    question: Can we say 'I used to go to Paris last year'?
+  - answer: '''I used to play football.'' ''Used to'' (past habit) always has the -d in statements.'
+    purpose: Tests whether the learner spells and pronounces 'used to' correctly with the -d (Swan PEU 2016, entry 67).
+    question: Which is correct? *'I use to play football' or 'I used to play football'?
+  contrast: 'Used to (past habit, no more): "I used to smoke." (I don''t smoke now)
+
+    Would (past habit, no states): "I would smoke." (only actions, not states like ''be tall'')
+
+    '
+  core_meaning: Describes past habits or states that were true in the past but are no longer true in the present.
+  example_generator:
+    contexts:
+    - everyday situations
+    cultural_notes: []
+    min_examples: 5
+  timeline: 'Past only: Refers to repeated actions or states in the past with no present connection.'
+phonetics:
+- example_generator:
+    contexts:
+    - used to pronunciation
+  l1_issue: Learners may pronounce 'used to' as /juːzd tə/. Teach the correct pronunciation /juːst tə/ for past habits.
+  note: Used to is pronounced /juːst tə/ — the 'd' in 'used' is pronounced as /t/ because it is followed by 'to'. This is
+    different from 'used to' meaning accustomed to, which is pronounced /juːzd tə/.
+register_notes:
+- note: 'Biber et al. (2021) — ''Used to'' for past habits: register distribution skews toward conversation and narrative.
+    Academic prose rarely uses ''used to'' (prefers past simple for past states). Ch. 6.2.2'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 6.2.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 7: The Tense-Aspect System-7.5'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Used to + base verb for past habits or states that are no longer true
-  type: grammatical
-  examples:
+- examples:
   - I used to play football (but I do not now)
   - She used to live in London (but she does not now)
   - They used to be friends (but they are not now)
-- rule: 'Negative: did not use to'
+  rule: Used to + base verb for past habits or states that are no longer true
   type: grammatical
-  examples:
+- examples:
   - I did not use to like coffee
   - She did not use to exercise
   - They did not use to eat out
-- rule: 'Question: Did + subject + use to'
+  rule: 'Negative: did not use to'
   type: grammatical
-  examples:
+- examples:
   - Did you use to play football
   - Did she use to live in London
   - Did they use to be friends
-use:
-- name: Past Habits
-  description: Repeated actions in the past that no longer happen.
-  examples:
-  - I used to go to the gym every day.
-  - She used to call me every night.
-  key_point: Action happened regularly in the past, stopped now.
-- name: Past States
-  description: Past states that are no longer true (used to can describe states; would
-    cannot).
-  examples:
-  - I used to be shy.
-  - They used to live in a small house.
-  key_point: Used to is the only one of the two that can describe past states.
-- name: Contrast with Present
-  description: Highlight change from past to present.
-  examples:
-  - I used to hate coffee, but now I love it.
-  - She used to be poor, but now she's rich.
-  key_point: Common with 'but now' to show change.
-phonetics:
-- note: Used to is pronounced /juːst tə/ — the 'd' in 'used' is pronounced as /t/
-    because it is followed by 'to'. This is different from 'used to' meaning accustomed
-    to, which is pronounced /juːzd tə/.
-  example_generator:
-    contexts:
-    - used to pronunciation
-  l1_issue: Learners may pronounce 'used to' as /juːzd tə/. Teach the correct pronunciation
-    /juːst tə/ for past habits.
+  rule: 'Question: Did + subject + use to'
+  type: grammatical
 teaching:
   methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students compare their past and present habits: ''I used to play video games every day, but now I only
+      play on weekends.'''
+    duration: 15
+    name: Past and Present
+  - adaptation_notes: 'Students interview each other about past habits: ''Did you use to have a pet?'' ''What did you use
+      to do after school?'''
+    duration: 15
+    name: Used To Interview
   tips:
   - 'Week 1: Affirmative ''used to'' + base verb for past habits.'
   - 'Week 2: Negative (didn''t use to) and questions (Did you use to...).'
   - 'Week 3: Contrast with ''would'' (only actions, no states).'
   - 'Use timeline: Draw past vs present to show ''used to'' stops in the past.'
-  recommended_activities:
-  - name: Past and Present
-    duration: 15
-    adaptation_notes: 'Students compare their past and present habits: ''I used to
-      play video games every day, but now I only play on weekends.'''
-  - name: Used To Interview
-    duration: 15
-    adaptation_notes: 'Students interview each other about past habits: ''Did you
-      use to have a pet?'' ''What did you use to do after school?'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I use to play football.*'
-  correction: I used to play football.
-  explanation: Used to always has -d in affirmative.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used for everyday communication and is
-    among the most frequent patterns in spoken English.
-- note: In academic writing, this structure appears in discussions of established
-    knowledge, methodology, and findings.
-- note: In news reports, this structure is used for reporting events and attributing
-    statements.
+  - 'Swan PEU: The ''used to'' vs ''be used to'' distinction is critical. ''I used to smoke'' (past habit -- I do not now).
+    ''I am used to smoking'' (accustomed to it -- present).'
+  - 'Swan PEU: Pronunciation -- ''used to'' (past habit) = /ju:st ta/. ''Be used to'' (accustomed) = /ju:zd ta/. Different
+    sounds!'
+  - 'Swan PEU: ''Would'' for past habits -- only for actions, not states. ''I would walk to school'' (OK). ''I would be tall''
+    (WRONG -- use ''I used to be tall'').'
+  - 'GB3 Ch. 7: ''Used to'' vs. ''would'' for past habits — both describe repeated past actions, but ''used to'' covers BOTH
+    states and actions (''I used to live in London'' + ''I used to go swimming''). ''Would'' covers ONLY repeated actions,
+    NOT states (''Every summer we would go to the beach'' ✓ but NOT ''I would be tall'' ✗). Source: Celce-Murcia & Larsen-Freeman
+    (2015) GB3 Ch. 7 and Ch. 25.'
+title: Used To (Past Habits and States)
+use:
+- description: Repeated actions in the past that no longer happen.
+  examples:
+  - I used to go to the gym every day.
+  - She used to call me every night.
+  key_point: Action happened regularly in the past, stopped now.
+  name: Past Habits
+- description: Past states that are no longer true (used to can describe states; would cannot).
+  examples:
+  - I used to be shy.
+  - They used to live in a small house.
+  key_point: Used to is the only one of the two that can describe past states.
+  name: Past States
+- description: Highlight change from past to present.
+  examples:
+  - I used to hate coffee, but now I love it.
+  - She used to be poor, but now she's rich.
+  key_point: Common with 'but now' to show change.
+  name: Contrast with Present

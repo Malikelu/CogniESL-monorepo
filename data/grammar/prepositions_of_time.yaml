@@ -1,32 +1,192 @@
-grammar_point: prepositions_of_time
-title: Prepositions of Time (in, on, at)
+citations:
+- claim: 'Core meaning: Prepositions of time answer the question ''When?'' They show
+    the relationship between an action and a time period.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21:
+    Prepositions'
+  tier: 1
+- claim: 'Register distribution: Prepositions of time are consistent across registers.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21:
+    Prepositions'
+  tier: 1
+- claim: 'Discourse function: Prepositions of time create temporal cohesion: ''In
+    2020, the pandemic began. By March, schools had closed.'''
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21:
+    Prepositions'
+  tier: 1
+- claim: 'Common error ''Using ''in'' with days: *''I see him in Monday.'''' for Portuguese,
+    Spanish, French speakers'
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 14: Prepositions'
+  tier: 1
+- claim: 'Dialectal variation: BrE uses ''at the weekend''; AmE uses ''on the weekend''.'
+  reliability: B
+  source: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 7: Prepositions and Prepositional Phrases (temporal prepositions)'
+  tier: 1
+- claim: 'Prepositions of time (AT, IN, ON, DURING, SINCE, FOR, BY, UNTIL) establish
+    temporal relationships: AT for clock time, IN for periods, ON for days/dates'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21:
+    Prepositions'
+  tier: 1
+- claim: L1 transfer in prepositions of time varies significantly across language
+    backgrounds — Swan & Smith document contrastive patterns for speakers of different
+    L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents
+    how transfer effects are non-linear, determined by functional fit between L1 and
+    L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects
+    are non-linear — determined by functional fit between L1 and L2 systems rather
+    than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning.
+    Routledge.
+  tier: 2
+common_errors:
+- correction: I see him on Monday.
+  error: 'Using ''in'' with days: *''I see him in Monday.'''
+  explanation: Use 'on' with days, 'in' with months/years, 'at' with times.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  - Dutch
+  - Italian
+  - Russian
+  - Polish
+  - Arabic
+  - Turkish
+  - Japanese
+  - Korean
+  - Thai
+  - Farsi
+  - Hindi
+  - Swahili
+  - Malay
+  - Chinese
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+- correction: I was born in January.
+  error: 'Using ''at'' with months: *''I was born at January.'''
+  explanation: 'Swan PEU: ''In'' for months, years, seasons, parts of day. ''At''
+    for clock times, mealtimes, night, weekend (BrE).'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  - Russian
+  - Polish
+  - Arabic
+  - Turkish
+  - Japanese
+  - Chinese
+  - Korean
+  - Thai
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: I saw her last Monday.
+  error: 'Using ''on'' with ''last/next/every'': *''I saw her on last Monday.'''
+  explanation: 'Swan PEU: No preposition with ''last'', ''next'', ''this'', ''every'',
+    ''yesterday'', ''tomorrow''. ''Last Monday'' not ''on last Monday''.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  - Italian
+  - Russian
+  - Polish
+  - Arabic
+  - Turkish
+  - Japanese
+  - Chinese
+  - Korean
+  - Thai
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 description: Words that show when an action happens. Critical for time clarity in
   English.
+dialectal_variation:
+- note: BrE uses 'at the weekend'; AmE uses 'on the weekend'.
+discourse_notes:
+- note: 'Prepositions of time create temporal cohesion: ''In 2020, the pandemic began.
+    By March, schools had closed.'''
+- note: '''At'', ''on'', ''in'' form a hierarchy of specificity: at 3pm, on Monday,
+    in March.'
+form:
+  affirmative:
+    example_generator:
+    - I work in the morning.
+    - She arrived on Monday.
+    - The class starts at 9am.
+    - We have lived here for 5 years.
+    - He has worked here since 2020.
+    min_examples: 4
+    structure: Subject + verb + preposition + time expression
+  negative:
+    example_generator:
+    - I don't work in the morning.
+    - She didn't arrive on Monday.
+    - The class doesn't start at 9am.
+    min_examples: 4
+    structure: Subject + don't/doesn't/didn't + verb + preposition + time
+  questions:
+    example_generator:
+    - Do you work in the morning?
+    - Did she arrive on Monday?
+    - What time does the class start?
+    min_examples: 4
+    structure: Do/Does/Did + subject + verb + preposition + time?
+grammar_point: prepositions_of_time
+key_principles:
+- explanation: 'GB3 Ch.21: Prepositions encode spatial (IN/ON/AT), temporal, and metaphorical
+    relationships. Many are fixed collocations (rely ON, interested IN, discuss +
+    0). L1 issues: Spanish ''en'' covers in/on/at; Mandarin different spatial system;
+    Arabic different mappings. Source: Celce-Murcia & Larsen-Freeman (2015) GB3 Ch.21:
+    Prepositions.'
+  flagged: false
+  principle: Preposition usage and L1 transfer
+  reliability: B
 level: A1
 meaning:
+  ccqs:
+  - answer: Exact time = at. Day/date = on. Month/year/part of day = in.
+    purpose: Tests whether the learner can distinguish between the three main categories
+      of time prepositions. This is the foundational concept -- the granularity of
+      the time reference determines the preposition.
+    question: Is this an exact time, a day, or a longer period?
+  - answer: '''On Monday'' -- days always use ''on''.'
+    purpose: Tests whether the learner knows the specific rule for days of the week.
+      This is one of the most basic and frequently tested rules at A1 level.
+    question: Do we say 'in Monday' or 'on Monday'?
+  - answer: '''For'' = duration (for 2 hours). ''Since'' = starting point (since 2020).'
+    purpose: Tests whether the learner can distinguish between duration (how long)
+      and starting point (when began). This is essential for present perfect and is
+      a common source of confusion across all L1 groups.
+    question: Can you explain the difference between 'for' and 'since' by giving an
+      example of when to use each?
+  - answer: '''I will see you on Monday.'' Use ''on'' for specific days, ''in'' for
+      months/years/seasons, ''at'' for clock times.'
+    purpose: 'Tests whether the learner uses the correct time preposition: at/on/in
+      (Swan PEU 2016, entries 76-82).'
+    question: Which is correct? *'I will see you in Monday' or 'I will see you on
+      Monday'?
+  contrast: '''At'' = specific time (at 5pm, at noon) vs ''On'' = days/dates (on Monday,
+    on July 4th) vs ''In'' = months/years/parts of day (in July, in 2023, in the morning)'
   core_meaning: 'Prepositions of time answer the question ''When?'' They show the
     relationship between an action and a time period. The correct preposition depends
     on how specific the time reference is: ''at'' for exact times, ''on'' for days
     and dates, ''in'' for longer periods.'
-  timeline: Specific time points (at 3pm), days (on Monday), months/years (in 2023),
-    duration (for 2 hours), starting point (since 2020).
-  contrast: '''At'' = specific time (at 5pm, at noon) vs ''On'' = days/dates (on Monday,
-    on July 4th) vs ''In'' = months/years/parts of day (in July, in 2023, in the morning)'
-  ccqs:
-  - question: Is this an exact time, a day, or a longer period?
-    answer: Exact time = at. Day/date = on. Month/year/part of day = in.
-    purpose: Tests whether the learner can distinguish between the three main categories
-      of time prepositions. This is the foundational concept -- the granularity of
-      the time reference determines the preposition.
-  - question: Do we say 'in Monday' or 'on Monday'?
-    answer: '''On Monday'' -- days always use ''on''.'
-    purpose: Tests whether the learner knows the specific rule for days of the week.
-      This is one of the most basic and frequently tested rules at A1 level.
-  - question: What is the difference between 'for' and 'since'?
-    answer: '''For'' = duration (for 2 hours). ''Since'' = starting point (since 2020).'
-    purpose: Tests whether the learner can distinguish between duration (how long)
-      and starting point (when began). This is essential for present perfect and is
-      a common source of confusion across all L1 groups.
   example_generator:
     contexts:
     - daily routines
@@ -38,54 +198,72 @@ meaning:
     - Avoid assuming specific cultural practices
     - Keep examples concrete and relatable
     min_examples: 5
-form:
-  affirmative:
-    structure: Subject + verb + preposition + time expression
-    example_generator:
-    - I work in the morning.
-    - She arrived on Monday.
-    - The class starts at 9am.
-    - We have lived here for 5 years.
-    - He has worked here since 2020.
-    min_examples: 4
-  negative:
-    structure: Subject + don't/doesn't/didn't + verb + preposition + time
-    example_generator:
-    - I don't work in the morning.
-    - She didn't arrive on Monday.
-    - The class doesn't start at 9am.
-    min_examples: 4
-  questions:
-    structure: Do/Does/Did + subject + verb + preposition + time?
-    example_generator:
-    - Do you work in the morning?
-    - Did she arrive on Monday?
-    - What time does the class start?
-    min_examples: 4
+  timeline: Specific time points (at 3pm), days (on Monday), months/years (in 2023),
+    duration (for 2 hours), starting point (since 2020).
+phonetics:
+- example_generator:
+  - at /ət/
+  - on /ɒn/
+  - in /ɪn/
+  - for /fə/
+  - since /sɪns/
+  l1_issue: Portuguese and Spanish speakers often over-pronounce prepositions. Teach
+    the weak forms for natural speech.
+  note: 'Prepositions of time are usually unstressed in connected speech: ''at'' →
+    /ət/, ''on'' → /ɒn/, ''in'' → /ɪn/. ''I work in the morning'' sounds like /aɪ
+    wɜːk ɪn ðə mɔːnɪŋ/.'
+- example_generator:
+  - What time is it at? /wɒts ɪt ət/
+  - Where are you at? /weər ɑːr juː ət/
+  l1_issue: Many L1 speakers are taught that prepositions should not end sentences.
+    Explain that in informal spoken English, this is very common.
+  note: 'Contractions with ''at'': ''What time''s it at?'' /wɒts ɪt ət/. The preposition
+    often comes at the end of questions in informal speech.'
+register_notes:
+- note: Prepositions of time are consistent across registers.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In formal writing, ''on'' is used with specific dates: ''On the 15th of March.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (1999) — Time preposition distribution: academic prose uses
+    more complex temporal expressions. Ch. 10.2.1.2'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. Longman Publishing
+    Company. Ch. 10.2.1.2
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch.
+    14: Prepositions-14.7'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21:
+    Prepositions'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 7: Prepositions and Prepositional Phrases (temporal prepositions)'
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(prepositions of time:
+    at, in, on, for, since, during)'
 sub_rules:
-- rule: 'At: exact times (at 3pm, at noon, at midnight, at night, at the moment, at
-    present)'
-  type: grammatical
-  examples:
+- examples:
   - at 8am
   - at 5:30
   - at noon
   - at midnight
   - at night
   - at the moment
-- rule: 'On: days and dates (on Monday, on July 4th, on Christmas Day, on my birthday)'
+  rule: 'At: exact times (at 3pm, at noon, at midnight, at night, at the moment, at
+    present)'
   type: grammatical
-  examples:
+- examples:
   - on Monday
   - on Tuesday morning
   - on July 4th
   - on Christmas Day
   - on my birthday
   - on weekends
-- rule: 'In: months, years, seasons, parts of day (in July, in 2023, in the morning,
-    in summer)'
+  rule: 'On: days and dates (on Monday, on July 4th, on Christmas Day, on my birthday)'
   type: grammatical
-  examples:
+- examples:
   - in July
   - in 2023
   - in the morning
@@ -93,29 +271,84 @@ sub_rules:
   - in the evening
   - in summer
   - in winter
-- rule: 'Exception: ''at night'' (NOT ''in night''), ''at the weekend'' (British)
-    / ''on the weekend'' (American)'
+  rule: 'In: months, years, seasons, parts of day (in July, in 2023, in the morning,
+    in summer)'
   type: grammatical
-  examples:
+- examples:
   - at night
   - at the weekend (BrE)
   - on the weekend (AmE)
-- rule: 'For: duration of time (for 2 hours, for 3 days, for a week, for years)'
+  rule: 'Exception: ''at night'' (NOT ''in night''), ''at the weekend'' (British)
+    / ''on the weekend'' (American)'
   type: grammatical
-  examples:
+- examples:
   - for 2 hours
   - for 3 days
   - for a week
   - for months
   - for years
-- rule: 'Since: starting point in time (since 2020, since Monday, since I was a child)'
+  rule: 'For: duration of time (for 2 hours, for 3 days, for a week, for years)'
   type: grammatical
-  examples:
+- examples:
   - since 2020
   - since Monday
   - since January
   - since I was a child
   - since last year
+  rule: 'Since: starting point in time (since 2020, since Monday, since I was a child)'
+  type: grammatical
+teaching:
+  methodology: PPP with visual timelines and calendars
+  recommended_activities:
+  - adaptation_notes: 'Teacher says a time expression. Students choose the correct
+      preposition: ''___ Monday'' (on), ''___ 3pm'' (at), ''___ July'' (in). Practices
+      choosing the right preposition.'
+    duration: 10
+    name: At, On, or In?
+  - adaptation_notes: 'Students ask about each other''s daily routines: ''What time
+      do you wake up?'' ''I wake up at 7am.'' ''When do you exercise?'' ''I exercise
+      in the morning.'' Practices prepositions of time in context.'
+    duration: 15
+    name: Daily Routine Interview
+  - adaptation_notes: 'Teacher says a time expression. Students choose ''for'' or
+      ''since'': ''___ 2 hours'' (for), ''___ 2020'' (since), ''___ Monday'' (since),
+      ''___ a week'' (for).'
+    duration: 10
+    name: For or Since?
+  - adaptation_notes: 'Students ask about each other''s schedules: ''When is your
+      birthday?'' ''It''s on July 4th.'' ''When do you have English class?'' ''It''s
+      on Monday at 9am.'' Practices prepositions with real dates and times.'
+    duration: 15
+    name: Calendar Game
+  tips:
+  - 'GB3 Ch. 21: Time prepositions can be optionally deleted — for with time spans
+    (We lived here (for) 12 years), on before days ((On) Saturday). Obligatory deletion
+    after last/next/this (*on last Friday), with every/all (*for all week), before
+    home/downtown/here/there (*to home). AmE deletes more freely than BrE. Source:
+    Celce-Murcia & Larsen-Freeman (2015) GB3 3rd ed. Ch. 21 §21.1.'
+  - Use a clock for 'at' times, a calendar for 'on' days, and a timeline for 'in'
+    periods. Visual aids make the rules concrete.
+  - 'Drill with schedules: ''The bus leaves at 8am on Monday in July.'' This practices
+    all three prepositions in one sentence.'
+  - 'Contrast ''for'' and ''since'' with timelines: ''for'' = a line (duration), ''since''
+    = a point (starting point).'
+  - 'Use real examples from students'' lives: ''What time do you wake up? When is
+    your birthday? How long have you studied English?'''
+  - 'Teach the exception: ''at night'' (NOT ''in night''). This is a very common error.'
+  - 'Swan PEU: The preposition pyramid — ''at'' (specific time: at 5pm), ''on'' (day:
+    on Monday), ''in'' (longer: in July). From specific to general.'
+  - 'Swan PEU: No preposition with ''last/next/this/every/yesterday/tomorrow''. This
+    is a very common error — drill it.'
+  - 'Swan PEU: ''For'' vs ''since'' with time — ''for'' + period (for 3 years), ''since''
+    + starting point (since 2020). Used with present perfect.'
+  - 'Swan PEU: at/in/on for time — at for precise clock times (at 3pm, at noon, at
+    midnight), in for parts of day/months/years (in the morning, in January, in 2025),
+    on for days and dates (on Monday, on 4 July).'
+  - 'Swan PEU: Difficult cases — ''last/next/every'' take no preposition: ''last Monday''
+    (not ''on last Monday''), ''next week'' (not ''in next week''). ''At night,''
+    ''at the weekend'' (BrE), ''at the moment,'' ''at the end of.'' ''In the afternoon''
+    but ''on Monday afternoon.'''
+title: Prepositions of Time (in, on, at)
 use:
 - context: Daily routines
   description: Talking about when things happen regularly
@@ -144,85 +377,3 @@ use:
   - She has worked here since 2020.
   - We have been waiting for 2 hours.
   - He has known her since childhood.
-phonetics:
-- note: 'Prepositions of time are usually unstressed in connected speech: ''at'' →
-    /ət/, ''on'' → /ɒn/, ''in'' → /ɪn/. ''I work in the morning'' sounds like /aɪ
-    wɜːk ɪn ðə mɔːnɪŋ/.'
-  example_generator:
-  - at /ət/
-  - on /ɒn/
-  - in /ɪn/
-  - for /fə/
-  - since /sɪns/
-  l1_issue: Portuguese and Spanish speakers often over-pronounce prepositions. Teach
-    the weak forms for natural speech.
-- note: 'Contractions with ''at'': ''What time''s it at?'' /wɒts ɪt ət/. The preposition
-    often comes at the end of questions in informal speech.'
-  example_generator:
-  - What time is it at? /wɒts ɪt ət/
-  - Where are you at? /weər ɑːr juː ət/
-  l1_issue: Many L1 speakers are taught that prepositions should not end sentences.
-    Explain that in informal spoken English, this is very common.
-teaching:
-  methodology: PPP with visual timelines and calendars
-  tips:
-  - Use a clock for 'at' times, a calendar for 'on' days, and a timeline for 'in'
-    periods. Visual aids make the rules concrete.
-  - 'Drill with schedules: ''The bus leaves at 8am on Monday in July.'' This practices
-    all three prepositions in one sentence.'
-  - 'Contrast ''for'' and ''since'' with timelines: ''for'' = a line (duration), ''since''
-    = a point (starting point).'
-  - 'Use real examples from students'' lives: ''What time do you wake up? When is
-    your birthday? How long have you studied English?'''
-  - 'Teach the exception: ''at night'' (NOT ''in night''). This is a very common error.'
-  recommended_activities:
-  - name: At, On, or In?
-    duration: 10
-    adaptation_notes: 'Teacher says a time expression. Students choose the correct
-      preposition: ''___ Monday'' (on), ''___ 3pm'' (at), ''___ July'' (in). Practices
-      choosing the right preposition.'
-  - name: Daily Routine Interview
-    duration: 15
-    adaptation_notes: 'Students ask about each other''s daily routines: ''What time
-      do you wake up?'' ''I wake up at 7am.'' ''When do you exercise?'' ''I exercise
-      in the morning.'' Practices prepositions of time in context.'
-  - name: For or Since?
-    duration: 10
-    adaptation_notes: 'Teacher says a time expression. Students choose ''for'' or
-      ''since'': ''___ 2 hours'' (for), ''___ 2020'' (since), ''___ Monday'' (since),
-      ''___ a week'' (for).'
-  - name: Calendar Game
-    duration: 15
-    adaptation_notes: 'Students ask about each other''s schedules: ''When is your
-      birthday?'' ''It''s on July 4th.'' ''When do you have English class?'' ''It''s
-      on Monday at 9am.'' Practices prepositions with real dates and times.'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 15:
-    Prepositions, §15.5-15.7'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 7: Prepositions and Prepositional Phrases, §7.3 (temporal prepositions)'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 240-255 (prepositions
-    of time: at, in, on, for, since, during)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    14: Prepositions, §14.5-14.7'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 10: Prepositions of time'
-common_errors:
-- error: 'Using ''in'' with days: *''I see him in Monday.'''
-  correction: I see him on Monday.
-  explanation: Use 'on' with days, 'in' with months/years, 'at' with times.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: Prepositions of time are consistent across registers.
-- note: 'In formal writing, ''on'' is used with specific dates: ''On the 15th of March.'''
-dialectal_variation:
-- note: BrE uses 'at the weekend'; AmE uses 'on the weekend'.
-- note: BrE uses 'in hospital'; AmE uses 'in the hospital'.
-discourse_notes:
-- note: 'Prepositions of time create temporal cohesion: ''In 2020, the pandemic began.
-    By March, schools had closed.'''
-- note: '''At'', ''on'', ''in'' form a hierarchy of specificity: at 3pm, on Monday,
-    in March.'

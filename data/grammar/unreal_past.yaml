@@ -1,162 +1,187 @@
+citations:
+- claim: 'Core meaning: Past simple tense is used to describe situations that are not real in the present or future (unreal,'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27: Conditionals-10.6'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used for everyday communication and is among the most frequent
+    patterns'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27: Conditionals-10.6'
+  tier: 1
+- claim: Common error '*I wish I can speak English.*' for Portuguese, Spanish, Chinese speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+common_errors:
+- correction: I wish I could speak English.
+  error: '*I wish I can speak English.*'
+  explanation: Wish + past tense for present wishes.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+- correction: If I had money, I would buy a car.
+  error: 'Using present tense for unreal present: *''If I have money, I would buy a car.'''
+  explanation: 'Swan PEU: For unreal/hypothetical present situations, use past simple (not present) in the if-clause. ''If
+    I had money'' (not ''If I have money'').'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: If I had money, I would buy a car.
+  error: 'Using ''would'' in the if-clause: *''If I would have money, I would buy a car.'''
+  explanation: 'Swan PEU: ''Would'' is NOT used in the if-clause of conditionals. Use past simple (second conditional) or
+    past perfect (third conditional).'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - German
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+description: Using past simple tense to describe unreal, hypothetical, or wishful situations in the present or future (used
+  in second conditional, wishes, 'if only' statements).
+dialectal_variation: []
+discourse_notes:
+- note: In conversation, this structure is used for everyday communication and is among the most frequent patterns in spoken
+    English.
+- note: In academic writing, this structure appears in discussions of established knowledge, methodology, and findings.
+- note: In news reports, this structure is used for reporting events and attributing statements.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: 'Past Simple tense to describe present/future unreal situations: "I wish I was/were taller." "If only I had
+      more time."
+
+      Used in: Second conditional if clauses, wishes, ''if only'', ''it''s time''.
+
+      '
+  negative:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: 'Past Simple negative: "I wish I didn''t have to work." "If only it wasn''t raining."
+
+      '
+  questions:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: 'Questions with unreal past: "Do you wish you were taller?" "What if I had more money?"
+
+      '
 grammar_point: unreal_past
-title: Unreal Past (Past Simple for Unreal Present/Future)
-description: Using past simple tense to describe unreal, hypothetical, or wishful
-  situations in the present or future (used in second conditional, wishes, 'if only'
-  statements).
 level: B2
 meaning:
-  core_meaning: Past simple tense is used to describe situations that are not real
-    in the present or future (unreal, hypothetical, wishful).
-  timeline: 'Present/Future: Refers to current or future situations that are not real,
-    even though past simple tense is used.'
+  ccqs:
+  - answer: Using past tense to talk about hypothetical present situations.
+    purpose: Tests understanding that past tense can express hypothetical present situations (unreal past)
+    question: Can we use past tense to talk about the PRESENT? When do we do this? Give an example.
+  - answer: No — changing the structure would change the meaning or make the sentence ungrammatical.
+    purpose: Tests whether the learner understands that unreal past is the only appropriate structure for this meaning/context.
+    question: Can we use a different structure here with the same meaning?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with unreal past and explain why they are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: '''If I were rich, I would travel.'' In hypothetical/unreal present conditions, formal English uses ''were'' for
+      all persons.'
+    purpose: Tests whether the learner uses past tense (were) for present unreal/hypothetical situations (Swan PEU 2016, entries
+      274-275).
+    question: Which is correct? *'If I was rich, I would travel' or 'If I were rich, I would travel'?
   contrast: 'Real Past: "I lived in Paris (10 years ago)." (real past)
 
     Unreal Past: "I wish I lived in Paris." (present unreal)
 
     '
-  ccqs:
-  - question: What is the unreal past
-    answer: Using past tense to talk about hypothetical present situations.
-    purpose: Tests whether the learner understands a key concept of unreal_past. This
-      is fundamental for correct use of this grammar point.
-  - question: Can we use a different structure here with the same meaning?
-    answer: No — changing the structure would change the meaning or make the sentence
-      ungrammatical.
-    purpose: Tests whether the learner understands that unreal past is the only appropriate
-      structure for this meaning/context.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      unreal past and explain why they are incorrect.
+  core_meaning: Past simple tense is used to describe situations that are not real in the present or future (unreal, hypothetical,
+    wishful).
   example_generator:
     contexts:
     - everyday situations
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Past Simple tense to describe present/future unreal situations: "I
-      wish I was/were taller." "If only I had more time."
-
-      Used in: Second conditional if clauses, wishes, ''if only'', ''it''s time''.
-
-      '
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
-  negative:
-    structure: 'Past Simple negative: "I wish I didn''t have to work." "If only it
-      wasn''t raining."
-
-      '
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
-  questions:
-    structure: 'Questions with unreal past: "Do you wish you were taller?" "What if
-      I had more money?"
-
-      '
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
+  timeline: 'Present/Future: Refers to current or future situations that are not real, even though past simple tense is used.'
+phonetics:
+- example_generator:
+    contexts:
+    - conditional contractions
+  l1_issue: Learners may not recognize the contracted forms in listening. Teach the full and contracted forms.
+  note: 'In unreal past conditionals, the auxiliary verb is often contracted: ''If I''d known'' /ɪf aɪd nəʊn/, ''If she''d
+    been'' /ɪf ʃiːd biːn/. These contractions are very common in speech.'
+register_notes:
+- note: 'Biber et al. (2021) — Unreal past (past tense for hypotheticality): register distribution of subjunctive-like patterns
+    differs. Formal writing and academic prose use more overt hypothetical markers. Ch. 10.2.8.12'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 10.2.8.12
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 27: Conditionals-10.6'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Past simple for hypothetical present situations (second conditional)
-  type: grammatical
-  examples:
+- examples:
   - If I had money I would buy a car
   - If she were here she would help
   - If they knew the answer they would tell us
-- rule: Past perfect for hypothetical past situations (third conditional)
+  rule: Past simple for hypothetical present situations (second conditional)
   type: grammatical
-  examples:
+- examples:
   - If I had studied harder I would have passed
   - If she had known she would have helped
   - If they had left earlier they would have caught the train
-- rule: Were is used for all persons in formal English (If I were, if he were). Was
-    is common in informal speech
-  type: register
-  examples:
+  rule: Past perfect for hypothetical past situations (third conditional)
+  type: grammatical
+- examples:
   - If I were you I would accept (formal)
   - If I was you I would accept (informal)
   - If she were here she would know what to do (formal)
-use:
-- name: Wishes
-  description: 'Express wishes about present/future situations: ''I wish I had a car.'''
-  examples:
-  - I wish I was/were younger.
-  - I wish it wasn't raining.
-  key_point: Wishes use Past Simple for present/future unreal situations.
-- name: If Only
-  description: 'Stronger than ''wish'': ''If only I had more time!'''
-  examples:
-  - If only I spoke French.
-  - If only it wasn't Monday.
-  key_point: More emphatic than 'wish'.
-- name: Second Conditional
-  description: 'If clauses in second conditional use Past Simple: ''If I won, I would
-    travel.'''
-  examples:
-  - If I had more money, I would buy a house.
-  key_point: Core of second conditional structure.
-phonetics:
-- note: 'In unreal past conditionals, the auxiliary verb is often contracted: ''If
-    I''d known'' /ɪf aɪd nəʊn/, ''If she''d been'' /ɪf ʃiːd biːn/. These contractions
-    are very common in speech.'
-  example_generator:
-    contexts:
-    - conditional contractions
-  l1_issue: Learners may not recognize the contracted forms in listening. Teach the
-    full and contracted forms.
+  rule: Were is used for all persons in formal English (If I were, if he were). Was is common in informal speech
+  type: register
 teaching:
   methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students identify whether conditionals are present unreal (second) or past unreal (third): ''If I had
+      money'' (present) vs ''If I had had money'' (past).'
+    duration: 10
+    name: Present or Past Unreal
+  - adaptation_notes: 'Students express wishes using unreal past: ''I wish I had more money.'' ''If only I had studied harder.'''
+    duration: 15
+    name: Wish and If Only
   tips:
   - 'Week 1: Wishes with Past Simple (I wish I had...).'
   - 'Week 2: ''If only'' and second conditional if clauses.'
   - 'Week 3: Formal ''were'' vs informal ''was''.'
   - 'Use wish prompts: Students write 3 wishes using Past Simple unreal past.'
-  recommended_activities:
-  - name: Present or Past Unreal
-    duration: 10
-    adaptation_notes: 'Students identify whether conditionals are present unreal (second)
-      or past unreal (third): ''If I had money'' (present) vs ''If I had had money''
-      (past).'
-  - name: Wish and If Only
-    duration: 15
-    adaptation_notes: 'Students express wishes using unreal past: ''I wish I had more
-      money.'' ''If only I had studied harder.'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 10:
-    Conditionals, §10.1-10.6'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I wish I can speak English.*'
-  correction: I wish I could speak English.
-  explanation: Wish + past tense for present wishes.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used for everyday communication and is
-    among the most frequent patterns in spoken English.
-- note: In academic writing, this structure appears in discussions of established
-    knowledge, methodology, and findings.
-- note: In news reports, this structure is used for reporting events and attributing
-    statements.
+  - 'Swan PEU: The ''unreal past'' — past tense forms do NOT refer to past time. ''If I had money'' = present unreal. ''If
+    I had had money'' = past unreal.'
+  - 'Swan PEU: ''Were'' for all persons in formal unreal past. ''If I were rich'', ''If he were here''. ''Was'' is common
+    in informal speech.'
+title: Unreal Past (Past Simple for Unreal Present/Future)
+use:
+- description: 'Express wishes about present/future situations: ''I wish I had a car.'''
+  examples:
+  - I wish I was/were younger.
+  - I wish it wasn't raining.
+  key_point: Wishes use Past Simple for present/future unreal situations.
+  name: Wishes
+- description: 'Stronger than ''wish'': ''If only I had more time!'''
+  examples:
+  - If only I spoke French.
+  - If only it wasn't Monday.
+  key_point: More emphatic than 'wish'.
+  name: If Only
+- description: 'If clauses in second conditional use Past Simple: ''If I won, I would travel.'''
+  examples:
+  - If I had more money, I would buy a house.
+  key_point: Core of second conditional structure.
+  name: Second Conditional

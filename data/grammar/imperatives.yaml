@@ -1,35 +1,153 @@
-grammar_point: imperatives
-title: Imperatives
+citations:
+- claim: 'Core meaning: Direct commands, instructions, requests, or warnings'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 4: Basic
+    Structures (imperative mood)'
+  tier: 1
+- claim: 'Register distribution: Imperatives can sound rude. In formal contexts, use
+    ''please'' or indirect forms: ''Could you please sit down.'''
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 4: Basic
+    Structures (imperative mood)'
+  tier: 1
+- claim: 'Discourse function: Imperatives create direct instructions: ''Turn left
+    at the traffic lights.'''
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 4: Basic
+    Structures (imperative mood)'
+  tier: 1
+- claim: 'Common error ''Adding ''you'' before imperative: *''You sit down.'''' for
+    Portuguese, Spanish speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: 'Dialectal variation: In some dialects, ''you'' is added for emphasis: ''You
+    sit down right now!'''
+  reliability: B
+  source: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 4: Mood (imperatives)'
+  tier: 1
+- claim: GB 2nd ed. provides syntactic evidence for underlying 'you' in imperatives
+    via reflexive pronoun agreement; imperatives are tenseless.
+  reliability: A
+  source: Celce-Murcia & Larsen-Freeman (1999) The Grammar Book, 2nd ed. Heinle &
+    Heinle. Ch. 12
+  tier: 2
+common_errors:
+- correction: Sit down.
+  error: 'Adding ''you'' before imperative: *''You sit down.'''
+  explanation: Imperatives don't have a subject. The subject 'you' is implied.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: D
+- correction: Sit down.
+  error: 'Using ''to'' before the verb: *''To sit down.'''
+  explanation: Imperatives use the base verb without 'to'.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+- correction: Don't sit down.
+  error: 'Using ''don''t'' for negative imperatives: *''Not sit down.'''
+  explanation: Negative imperatives use 'don't' + base verb.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+- correction: Let's not go.
+  error: 'Using negative of let''s incorrectly: *''Don''t let''s go.'''
+  explanation: 'Swan PEU: The negative of ''let''s'' is ''let''s not'', NOT ''don''t
+    let''s''. ''Let''s not argue'' is standard.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: Let's go.
+  error: 'Using ''let you'' instead of ''let''s'': *''Let you and I go.'''
+  explanation: 'Swan PEU: ''Let''s'' = ''let us'' (suggestion including speaker).
+    ''Let you and I'' is not a standard form.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
 description: Commands, requests, and instructions. The base form of the verb without
   a subject.
+dialectal_variation:
+- note: 'In some dialects, ''you'' is added for emphasis: ''You sit down right now!'''
+discourse_notes:
+- note: 'Imperatives create direct instructions: ''Turn left at the traffic lights.'''
+- note: In academic writing, imperatives are rare. Use passive or indirect forms instead.
+- note: 'GB 2nd ed. (Ch.12) identifies three grammatical negative imperative forms:
+    (1) ''Don''t you run!'' (contracted, subject present), (2) ''Don''t run!'' (contracted,
+    subject absent), (3) ''Do not run!'' (uncontracted, subject absent). Ungrammatical:
+    *''Do not you run!'' — subject + uncontracted do not is impossible.'
+  source: Celce-Murcia & Larsen-Freeman (1999) The Grammar Book, 2nd ed. Heinle &
+    Heinle. Ch. 12
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - classroom
+      - kitchen
+      - street directions
+      min_examples: 4
+    structure: 'Base verb (no subject): ''Sit down.'' ''Listen carefully.'''
+  negative:
+    example_generator:
+      contexts:
+      - warnings
+      - prohibitions
+      - safety rules
+      min_examples: 4
+    structure: 'Don''t + base verb: ''Don''t run.'' ''Don''t touch that.'''
+  questions:
+    example_generator:
+      contexts:
+      - polite requests
+      - offering help
+      min_examples: 3
+    structure: Imperatives don't have question forms. Use 'Can you...?' or 'Could
+      you...?' for polite requests.
+grammar_point: imperatives
 level: A1
 meaning:
-  core_meaning: Direct commands, instructions, requests, or warnings. The subject
-    'you' is implied but not stated.
-  timeline: Immediate — the action should happen now or soon.
+  ccqs:
+  - answer: 'Don''t sit down'' is the negative imperative. We form it with ''don''t''
+      + base verb: ''Don''t sit down,'' ''Don''t run,'' ''Don''t touch that.'''
+    purpose: Tests whether the learner can identify the negative imperative form and
+      state the rule for forming it (don't + base verb).
+    question: 'What is the negative imperative: ''Sit down'' or ''Don''t sit down''?
+      How do we form it?'
+  - answer: No, it's implied.
+    purpose: Tests whether the learner knows that imperatives have no stated subject
+      — 'you' is implied but not written.
+    question: Is the subject 'you' stated?
+  - answer: 'Add ''''please'''': ''''Please sit down.'''' Or use ''''Do sit down''''
+      for a warm, welcoming emphasis.'
+    purpose: Tests whether the learner knows strategies for softening imperatives
+      (Swan PEU 2016, entries 280-285).
+    question: How can you make 'Sit down' more polite?
+  - answer: Don't sit down. Negative imperatives use ''don't'' + base verb.
+    purpose: Tests whether the learner can form a negative imperative correctly —
+      don't + base verb.
+    question: What is the negative of 'Sit down'?
   contrast: '''Imperative'' = "Sit down." (direct command)
 
     ''Present Simple'' = "You sit down." (statement of fact)
 
     '
-  ccqs:
-  - question: Is the speaker telling someone to do something?
-    answer: Yes, it's a command or instruction.
-    purpose: Tests whether the learner understands that imperatives use the base form
-      of the verb with no subject, and are used for commands, instructions, invitations,
-      and warnings.
-  - question: Is the subject 'you' stated?
-    answer: No, it's implied.
-    purpose: 'Tests whether the learner can form negative imperatives with ''don''t'':
-      ''Don''t touch that!'' ''Don''t forget to call.'''
-  - question: '[Add specific question for CCQ 3]'
-    answer: '[Add specific answer for CCQ 3]'
-    purpose: 'Tests whether the learner understands how to soften imperatives for
-      politeness: ''Please sit down.'' ''Do come in.'''
-  - question: '[Add specific question for CCQ 4]'
-    answer: '[Add specific answer for CCQ 4]'
-    purpose: 'Tests whether the learner can distinguish imperatives from other verb
-      forms: ''Sit down.'' (imperative) vs ''He sits down.'' (present simple)'
+  core_meaning: Direct commands, instructions, requests, or warnings. The subject
+    'you' is implied but not stated.
   example_generator:
     contexts:
     - classroom instructions
@@ -41,42 +159,94 @@ meaning:
     - Use 'please' for polite requests
     - Avoid overly direct commands in conservative cultures
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Base verb (no subject): ''Sit down.'' ''Listen carefully.'''
-    example_generator:
-      contexts:
-      - classroom
-      - kitchen
-      - street directions
-      min_examples: 4
-  negative:
-    structure: 'Don''t + base verb: ''Don''t run.'' ''Don''t touch that.'''
-    example_generator:
-      contexts:
-      - warnings
-      - prohibitions
-      - safety rules
-      min_examples: 4
-  questions:
-    structure: Imperatives don't have question forms. Use 'Can you...?' or 'Could
-      you...?' for polite requests.
-    example_generator:
-      contexts:
-      - polite requests
-      - offering help
-      min_examples: 3
+  timeline: Immediate — the action should happen now or soon.
+phonetics:
+- example_generator:
+    contexts:
+    - commands
+    - instructions
+  l1_issue: Some L1 speakers may add an unnecessary subject pronoun
+  note: Stress on the verb in short imperatives
+register_notes:
+- note: 'Imperatives can sound rude. In formal contexts, use ''please'' or indirect
+    forms: ''Could you please sit down?'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In instructions and recipes, imperatives are standard: ''Mix the ingredients.
+    Bake for 30 minutes.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (1999) — Imperative clauses: register distribution varies. Common
+    in conversation (instructions, requests), instructional writing, and fiction dialogue.
+    Rare in academic prose except instructional texts. Ch. 3.13.4.2'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 3.13.4.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 4:
+    Basic Structures (imperative mood)'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 4: Mood (imperatives)'
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: 'Swan (2016) Practical English Usage, 4th ed. (imperatives: commands,
+    requests, let''s)'
 sub_rules:
-- rule: Polite imperatives with 'please'
-  type: pragmatic
-  examples:
+- examples:
   - Please sit down.
   - Please don't make noise.
-- rule: Let's for suggestions including the speaker
+  rule: Polite imperatives with 'please'
   type: pragmatic
-  examples:
+- examples:
   - Let's go.
   - Let's have a break.
+  rule: Let's for suggestions including the speaker
+  type: pragmatic
+teaching:
+  methodology: PPP (Present-Practice-Produce)
+  recommended_activities:
+  - adaptation_notes: Great for kids. For adults, use workplace instructions.
+    duration: 10
+    name: Simon Says
+  - adaptation_notes: Students write or follow a simple recipe using imperatives.
+    duration: 15
+    name: Recipe Instructions
+  tips:
+  - 'Parrott (2000) Ch. 12: Imperatives use base verb form without subject. Used for
+    commands, instructions, invitations, advice. Negative with do not/don''t. Emphatic
+    with do. Let''s for first person plural suggestions. Polite imperatives with please
+    at start or end.'
+  - 'Start with classroom instructions: ''Open your book. Sit down. Listen.'' These
+    is always the addressee (you). The negative imperative uses ''don''t'' uniformly:
+    Don''t be late (be) vs Don''t go (lexical verb). ''Let''s'' imperatives are a
+    distinct type with inclusive meaning (Let''s go = you and I).'
+  - Use physical actions (TPR) for teaching imperatives to beginners
+  - Contrast with 'please' for politeness
+  - Use real classroom instructions as practice
+  - 'Swan PEU: ''Let''s'' vs ''let''s not'' -- ''Let''s go'' (affirmative). ''Let''s
+    not go'' (negative). NOT ''Don''t let''s go''.'
+  - 'Swan PEU: ''Do'' for emphasis/warmth -- ''Do sit down'' (welcoming). ''Do be
+    careful'' (sincere warning).'
+  - 'Swan PEU: Softening imperatives -- ''Please close the door''. ''Could you close
+    the door?'' (more polite). ''Close the door!'' (direct/rude).'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 10: CGEL (Ch.10)
+    identifies THREE imperative types: (1) 2nd person (''Sit down'' — you is understood),
+    (2) 1st person plural (''Let''s sit down'' — ''let''s'' is an imperative with
+    overt subject), (3) 3rd person (''Somebody open the door'' — with explicit subject).
+    CGEL notes that imperatives lack tense morphology — they are not ''present tense''
+    but tenseless.'
+  - 'Celce-Murcia & Larsen-Freeman (1999) The Grammar Book, 2nd ed. Heinle & Heinle.
+    Ch. 12: GB 2nd ed. (Ch.12) provides syntactic evidence that imperatives have an
+    underlying ''you'' subject: reflexive pronoun agreement shows only 2nd person
+    is possible. ''Watch yourself!'' (correct — 2nd person reflexive). *''Watch myself!''
+    / *''Watch himself!'' (incorrect — proves 1st/3rd person NOT the subject). Imperatives
+    are TENSELESS: ''You be quiet!'' not *''You are quiet!'' — if imperatives had
+    present tense, subject-verb agreement would produce ''are''.'
+title: Imperatives
 use:
 - context: Classroom instructions
   description: Teachers use imperatives to give instructions
@@ -102,65 +272,3 @@ use:
   - Don't smoke.
   - Keep off the grass.
   - Watch your step.
-phonetics:
-- note: Stress on the verb in short imperatives
-  example_generator:
-    contexts:
-    - commands
-    - instructions
-  l1_issue: Some L1 speakers may add an unnecessary subject pronoun
-teaching:
-  methodology: PPP (Present-Practice-Produce)
-  tips:
-  - Use physical actions (TPR) for teaching imperatives to beginners
-  - Contrast with 'please' for politeness
-  - Use real classroom instructions as practice
-  recommended_activities:
-  - name: Simon Says
-    duration: 10
-    adaptation_notes: Great for kids. For adults, use workplace instructions.
-  - name: Recipe Instructions
-    duration: 15
-    adaptation_notes: Students write or follow a simple recipe using imperatives.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 4:
-    Basic Structures, §4.9 (imperative mood)'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 4: Mood, §4.6 (imperatives)'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 280-285 (imperatives:
-    commands, requests, let''s)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    12: Mood, §12.5-12.6'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 9: Imperatives'
-common_errors:
-- error: 'Adding ''you'' before imperative: *''You sit down.'''
-  correction: Sit down.
-  explanation: Imperatives don't have a subject. The subject 'you' is implied.
-  l1_groups:
-  - Portuguese
-  - Spanish
-- error: 'Using ''to'' before the verb: *''To sit down.'''
-  correction: Sit down.
-  explanation: Imperatives use the base verb without 'to'.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: 'Using ''don''t'' for negative imperatives: *''Not sit down.'''
-  correction: Don't sit down.
-  explanation: Negative imperatives use 'don't' + base verb.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: 'Imperatives can sound rude. In formal contexts, use ''please'' or indirect
-    forms: ''Could you please sit down?'''
-- note: 'In instructions and recipes, imperatives are standard: ''Mix the ingredients.
-    Bake for 30 minutes.'''
-dialectal_variation:
-- note: 'In some dialects, ''you'' is added for emphasis: ''You sit down right now!'''
-discourse_notes:
-- note: 'Imperatives create direct instructions: ''Turn left at the traffic lights.'''
-- note: In academic writing, imperatives are rare. Use passive or indirect forms instead.

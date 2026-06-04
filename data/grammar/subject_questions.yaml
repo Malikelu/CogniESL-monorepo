@@ -1,140 +1,45 @@
-grammar_point: subject_questions
-title: Subject Questions (Who/What/Which as Subject)
-description: Questions where the question word (who, what, which) is the subject of
-  the sentence, so no auxiliary verb inversion is used.
-level: A2
-meaning:
-  core_meaning: Asks about the subject (doer) of an action or state, with the question
-    word functioning as the sentence's subject.
-  timeline: 'Follows standard tense rules: verb tense matches the time of the action
-    (present, past, etc.).'
-  contrast: 'Subject question: ''Who saw you?'' (who is the subject, no inversion)
-    Object question: ''Who did you see?'' (who is the object, uses did + inversion)
-    ''What'' and ''which'' follow the same rule: ''What broke?'' (subject) vs ''What
-    did you break?'' (object) '
-  ccqs:
-  - question: Who broke the window? Is 'who' the subject or object of this sentence?
-    answer: '''Who'' is the subject -- it is the person who performed the action.
-      No auxiliary ''did'' is needed because the question word IS the subject.'
-    purpose: Tests whether the learner can determine whether a question word is the
-      subject or object, which is the critical distinction that determines whether
-      auxiliary 'do/does/did' is needed in question formation.
-  - question: Who did you see at the party? Is 'who' the subject or object here?
-    answer: '''Who'' is the object -- ''you'' is the subject (the person doing the
-      seeing). ''Who'' is the person being seen. That''s why we need the auxiliary
-      ''did.'''
-    purpose: Tests whether the learner can analyze a question to determine the grammatical
-      role of 'who', which determines the sentence structure (subject question vs
-      object question).
-  - question: What happened yesterday? Do we need 'did' in this question?
-    answer: No -- 'what' is the subject here (the thing that happened), so we do not
-      use 'did.' We say 'What happened?' NOT 'What did happen?'
-    purpose: Tests whether the learner can recognize when 'what' is the subject of
-      a question, which eliminates the need for auxiliary 'do/does/did' -- the most
-      common error in subject questions at A2 level.
-example_generator:
-  contexts:
-  - everyday situations
-  cultural_notes: []
-  min_examples: 5
-form:
-  affirmative:
-    structure: Question word (who/what/which + noun) + verb (no auxiliary do/does/did)
-      No inversion, no question mark? No, wait, subject questions still have a question
-      mark.
-    example_generator:
-      contexts:
-      - sports and hobbies
-      - social interactions
-      min_examples: 4
-  negative:
-    structure: Question word + verb + not + ...? (rare, but possible)
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
-  questions:
-    structure: Same as affirmative, with question mark (they are questions after all)
-    example_generator:
-      contexts:
-      - entertainment and media
-      - social interactions
-      min_examples: 4
-sub_rules:
-- rule: 'Subject questions: wh-word + verb (no auxiliary)'
-  type: word_order
-  examples:
-  - Who called you
-  - What happened
-  - Who wants coffee
-  - Which bus goes to the city center
-- rule: 'Object questions: wh-word + auxiliary + subject + verb'
-  type: word_order
-  examples:
-  - Who did you call
-  - What did she buy
-  - Where did they go
-- rule: 'The key difference: subject questions do not use do/does/did'
-  type: grammatical
-  examples:
-  - Who called you (subject question -- no auxiliary)
-  - Who did you call (object question -- uses auxiliary)
-use:
-- name: Asking About the Doer
-  description: Ask who or what performed an action.
-  examples:
-  - Who called you?
-  - What caused the accident?
-  key_point: The question word is the one doing the action.
-- name: Asking About Things/Choices
-  description: Ask what thing or which option is the subject.
-  examples:
-  - What fell off the table?
-  - Which color matches the sofa?
-  key_point: Use 'what' for unknown things, 'which' for known choices.
-- name: Present/Past Events
-  description: Ask about past or present events where the subject is unknown.
-  examples:
-  - Who won the race?
-  - What is making that noise?
-  key_point: Verb tense changes to match the event time.
-phonetics:
-- note: 'Subject questions typically have falling intonation: ''Who called you? ↘''
-    The stress falls on the wh-word and the main verb.'
-  example_generator:
-    contexts:
-    - subject question intonation
-  l1_issue: Learners may use rising intonation for subject questions. Teach falling
-    intonation.
-teaching:
-  methodology: PPP
-  tips:
-  - First contrast subject and object questions side by side to highlight the inversion
-    difference.
-  - Start with 'who' questions, then add 'what' and 'which'.
-  - 'Use real-life scenarios: ''Who ate my lunch?'' ''What made that sound?'''
-  recommended_activities:
-  - name: Subject or Object
-    duration: 10
-    adaptation_notes: 'Students identify: ''Who called you?'' (subject) vs ''Who did
-      you call?'' (object).'
-  - name: Question Formation
-    duration: 15
-    adaptation_notes: 'Give students answers. They form the correct question: ''Maria
-      called John.'' → ''Who called John?'' (subject) / ''Who did Maria call?'' (object).'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
-    Relative Clauses, §11.1-11.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
+citations:
+- claim: 'Core meaning: Asks about the subject (doer) of an action or state, with
+    the question word functioning as the sente'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
+    Yes No Questions'
+  tier: 1
+- claim: 'Register distribution: Subject questions are used in all registers, from
+    casual conversation to formal discourse. The disti'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
+    Yes No Questions'
+  tier: 1
+- claim: 'Discourse function: Subject questions are extremely common in everyday conversation,
+    particularly when the speaker wants'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
+    Yes No Questions'
+  tier: 1
+- claim: 'Common error ''Adding ''did'' to subject questions: *''Who did call you?''''
+    for Portuguese, Spanish, Chinese speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
     University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
+  tier: 1
+- claim: 'Question forms in discourse serve interactional functions: information-seeking,
+    confirmation, or rhetorical'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
+    Yes-No and Wh- Questions'
+  tier: 2
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for
+    L1-specific error patterns in English. Their learner English framework documents
+    how each L1 group produces characteristic errors in this grammatical domain, enabling
+    teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+    and Other Problems, 2nd ed. Cambridge University Press.'
+  tier: 2
 common_errors:
-- error: 'Adding ''did'' to subject questions: *''Who did call you?'''
-  correction: Who called you?
+- correction: Who called you?
+  error: 'Adding ''did'' to subject questions: *''Who did call you?'''
   explanation: When the question word (who/what/which) is the subject of the sentence,
     we do not use the auxiliary 'do/does/did'. The verb simply takes the appropriate
     tense form. This is the most common subject question error at A2 level.
@@ -142,8 +47,9 @@ common_errors:
   - Portuguese
   - Spanish
   - Chinese
-- error: 'Using inversion in subject questions: *''Who did broke the window?'''
-  correction: Who broke the window?
+  reliability: B
+- correction: Who broke the window?
+  error: 'Using inversion in subject questions: *''Who did broke the window?'''
   explanation: In subject questions, the question word IS the subject, so the verb
     follows directly without any auxiliary. Adding 'did' creates an ungrammatical
     double past marker.
@@ -151,9 +57,10 @@ common_errors:
   - Portuguese
   - Spanish
   - Arabic
-- error: 'Confusing subject and object questions: *''What you bought?'' (meaning ''What
+  reliability: B
+- correction: What did you buy? (object question) / What happened? (subject question)
+  error: 'Confusing subject and object questions: *''What you bought?'' (meaning ''What
     did you buy?'')'
-  correction: What did you buy? (object question) / What happened? (subject question)
   explanation: When the question word is the object, we need 'did' + subject + verb.
     When the question word is the subject, we use no auxiliary. The meaning changes
     depending on which is the subject.
@@ -161,12 +68,161 @@ common_errors:
   - Portuguese
   - Spanish
   - Japanese
+  reliability: B
+description: Questions where the question word (who, what, which) is the subject of
+  the sentence, so no auxiliary verb inversion is used.
+dialectal_variation: []
+discourse_notes:
+- note: Subject questions do not require do-support and follow statement word order,
+    making them structurally simpler than object questions.
+example_generator:
+  contexts:
+  - everyday situations
+  cultural_notes: []
+  min_examples: 5
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - sports and hobbies
+      - social interactions
+      min_examples: 4
+    structure: Question word (who/what/which + noun) + verb (no auxiliary do/does/did)
+      No inversion, no question mark? No, wait, subject questions still have a question
+      mark.
+  negative:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: Question word + verb + not + ...? (rare, but possible)
+  questions:
+    example_generator:
+      contexts:
+      - entertainment and media
+      - social interactions
+      min_examples: 4
+    structure: Same as affirmative, with question mark (they are questions after all)
+grammar_point: subject_questions
+level: A2
+meaning:
+  ccqs:
+  - answer: '''Who'' is the subject -- it is the person who performed the action.
+      No auxiliary ''did'' is needed because the question word IS the subject.'
+    purpose: Tests whether the learner can determine whether a question word is the
+      subject or object, which is the critical distinction that determines whether
+      auxiliary 'do/does/did' is needed in question formation.
+    question: Who broke the window? Is 'who' the subject or object of this sentence?
+  - answer: '''Who'' is the object -- ''you'' is the subject (the person doing the
+      seeing). ''Who'' is the person being seen. That''s why we need the auxiliary
+      ''did.'''
+    purpose: Tests whether the learner can analyze a question to determine the grammatical
+      role of 'who', which determines the sentence structure (subject question vs
+      object question).
+    question: Who did you see at the party? Is 'who' the subject or object here?
+  - answer: No -- 'what' is the subject here (the thing that happened), so we do not
+      use 'did.' We say 'What happened?' NOT 'What did happen?'
+    purpose: Tests whether the learner can recognize when 'what' is the subject of
+      a question, which eliminates the need for auxiliary 'do/does/did' -- the most
+      common error in subject questions at A2 level.
+    question: What happened yesterday? Do we need 'did' in this question?
+  - answer: '''Who broke the window?'' When ''who'' is the subject, do NOT use ''do/did''.'
+    purpose: Tests whether the learner knows that subject questions don't use 'do/did'
+      (Swan PEU 2016, entry 216.3).
+    question: Which is correct? *'Who did break the window?' or 'Who broke the window'?
+  contrast: 'Subject question: ''Who saw you?'' (who is the subject, no inversion)
+    Object question: ''Who did you see?'' (who is the object, uses did + inversion)
+    ''What'' and ''which'' follow the same rule: ''What broke?'' (subject) vs ''What
+    did you break?'' (object) '
+  core_meaning: Asks about the subject (doer) of an action or state, with the question
+    word functioning as the sentence's subject.
+  timeline: 'Follows standard tense rules: verb tense matches the time of the action
+    (present, past, etc.).'
+phonetics:
+- example_generator:
+    contexts:
+    - subject question intonation
+  l1_issue: Learners may use rising intonation for subject questions. Teach falling
+    intonation.
+  note: 'Subject questions typically have falling intonation: ''Who called you? ↘''
+    The stress falls on the wh-word and the main verb.'
 register_notes:
 - note: Subject questions are used in all registers, from casual conversation to formal
     discourse. The distinction between subject and object questions is grammatically
     obligatory.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: Subject questions are extremely common in everyday conversation, particularly
-    when the speaker wants to identify who performed an action or what caused something.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (1999) — Subject questions (who/what + verb): register distribution
+    differs. Direct questions are overwhelmingly conversational; academic prose uses
+    almost no direct questions. Ch. 3.13.2'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 3.13.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
+    Yes No Questions'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: null
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+sub_rules:
+- examples:
+  - Who called you
+  - What happened
+  - Who wants coffee
+  - Which bus goes to the city center
+  rule: 'Subject questions: wh-word + verb (no auxiliary)'
+  type: word_order
+- examples:
+  - Who did you call
+  - What did she buy
+  - Where did they go
+  rule: 'Object questions: wh-word + auxiliary + subject + verb'
+  type: word_order
+- examples:
+  - Who called you (subject question -- no auxiliary)
+  - Who did you call (object question -- uses auxiliary)
+  rule: 'The key difference: subject questions do not use do/does/did'
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students identify: ''Who called you?'' (subject) vs ''Who did
+      you call?'' (object).'
+    duration: 10
+    name: Subject or Object
+  - adaptation_notes: 'Give students answers. They form the correct question: ''Maria
+      called John.'' → ''Who called John?'' (subject) / ''Who did Maria call?'' (object).'
+    duration: 15
+    name: Question Formation
+  tips:
+  - First contrast subject and object questions side by side to highlight the inversion
+    difference.
+  - Start with 'who' questions, then add 'what' and 'which'.
+  - 'Use real-life scenarios: ''Who ate my lunch?'' ''What made that sound?'''
+  - 'Swan PEU: Subject questions — ''Who called you?'' (who = subject, no inversion).
+    ''What happened?'' Compare with object questions: ''Who did you call?'' (who =
+    object, needs inversion). Do NOT use ''do'' in subject questions with ''who/what.'''
+title: Subject Questions (Who/What/Which as Subject)
+use:
+- description: Ask who or what performed an action.
+  examples:
+  - Who called you?
+  - What caused the accident?
+  key_point: The question word is the one doing the action.
+  name: Asking About the Doer
+- description: Ask what thing or which option is the subject.
+  examples:
+  - What fell off the table?
+  - Which color matches the sofa?
+  key_point: Use 'what' for unknown things, 'which' for known choices.
+  name: Asking About Things/Choices
+- description: Ask about past or present events where the subject is unknown.
+  examples:
+  - Who won the race?
+  - What is making that noise?
+  key_point: Verb tense changes to match the event time.
+  name: Present/Past Events

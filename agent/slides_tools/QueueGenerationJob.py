@@ -324,9 +324,9 @@ def _build_worksheet_html(
         'h1 { color: #0b7272; border-bottom: 3px solid #0b7272; padding-bottom: 8px; }',
         'h2 { color: #333; margin-top: 30px; }',
         '.error { color: #dc2626; } .correct { color: #16a34a; }',
-        '.section { background: #f8fafc; padding: 20px; border-radius: 8px; margin: 15px 0; }',
+        '.section { background: #f8fafc; padding: 20px; margin: 15px 0; }',
         'ol li { margin: 10px 0; }',
-        '.answer-key { background: #f0fdf4; padding: 20px; border-radius: 8px; margin: 15px 0; }',
+        '.answer-key { background: #f0fdf4; padding: 20px; margin: 15px 0; }',
         '</style></head><body>',
         f'<h1>{grammar_point} — Worksheet</h1>',
         f'<p><strong>Core meaning:</strong> {_s(core)}</p>',
@@ -420,7 +420,7 @@ def _build_activity_guide_html(
         'body { font-family: "Segoe UI", Arial, sans-serif; padding: 40px; max-width: 800px; margin: 0 auto; }',
         'h1 { color: #0b7272; border-bottom: 3px solid #0b7272; padding-bottom: 8px; }',
         'h2 { color: #333; margin-top: 30px; }',
-        '.activity { background: #f8fafc; padding: 20px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #0b7272; }',
+        '.activity { background: #f8fafc; padding: 20px; margin: 15px 0; border-left: 4px solid #0b7272; }',
         '</style></head><body>',
         f'<h1>{grammar_point} — Activity Guide</h1>',
         f"<h2>Recommended Methodology</h2>",
@@ -583,7 +583,17 @@ def _run_generation(
                     )
 
                 if tasks:
-                    await asyncio.gather(*tasks)
+                    try:
+                        await asyncio.wait_for(
+                            asyncio.gather(*tasks),
+                            timeout=120  # 120s per batch — prevents hanging API calls from blocking the pipeline
+                        )
+                    except asyncio.TimeoutError:
+                        logger.error(
+                            f"Batch {i // BATCH_SIZE + 1}/{(len(slide_files) + BATCH_SIZE - 1)// BATCH_SIZE}: "
+                            f"TIMEOUT after 120s for job {job_id}. "
+                            f"Slides in this batch may be incomplete."
+                        )
                     logger.info(f"Batch {i // BATCH_SIZE + 1}/{(len(slide_files) + BATCH_SIZE - 1)// BATCH_SIZE}: "
                                 f"{len(tasks)} slides generated for job {job_id}")
 

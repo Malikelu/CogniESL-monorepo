@@ -1,13 +1,66 @@
+citations:
+- claim: 'Core meaning: Expresses polite desires, preferences, or requests; more formal and polite than ''want'''
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms-9.6'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms-9.6'
+  tier: 1
+- claim: Common error '*I would like to have a coffee.*' for Portuguese, Spanish, Chinese speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+common_errors:
+- correction: I would like a coffee.
+  error: '*I would like to have a coffee.*'
+  explanation: Would like + noun or to + verb.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+description: Phrase used to express polite desires, preferences, or make polite requests (more formal than 'want').
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - travel and places
+      min_examples: 4
+    structure: Subject + would like (I'd like) + noun/to + base verb
+  negative:
+    example_generator:
+      contexts:
+      - food and daily routines
+      - weather and nature
+      min_examples: 4
+    structure: Subject + wouldn't like + noun/to + base verb
+  questions:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: Would + subject + like + noun/to + base verb?
 grammar_point: would_like
-title: Would like (polite desires, requests)
-description: Phrase used to express polite desires, preferences, or make polite requests
-  (more formal than 'want').
 level: A2
 meaning:
-  core_meaning: Expresses polite desires, preferences, or requests; more formal and
-    polite than 'want'.
-  timeline: Refers to present desires or future plans; never used for past desires
-    (used 'wanted' instead).
+  ccqs:
+  - answer: Would like is more polite and formal than want.
+    purpose: Tests whether the learner understands a key concept of would_like. This is fundamental for correct use of this
+      grammar point.
+    question: Can you explain the difference between would like and want by giving an example of when to use each?
+  - answer: No — changing the structure would change the meaning or make the sentence ungrammatical.
+    purpose: Tests whether the learner understands that would like is the only appropriate structure for this meaning/context.
+    question: Can we use a different structure here with the same meaning?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with would like and explain why they are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: '''I would like to go to the cinema.'' ''Would like'' takes the to-infinitive, not the -ing form.'
+    purpose: Tests whether the learner knows that 'would like' is followed by to-infinitive, not -ing (Swan PEU 2016).
+    question: Which is correct? *'I would like going to the cinema' or 'I would like to go to the cinema'?
   contrast: 'Would like = Polite desire/request: "I''d like a coffee" (polite)
 
     Want = Casual desire: "I want a coffee" (casual)
@@ -15,136 +68,85 @@ meaning:
     Would like to = Future plan: "I''d like to visit Rome" (plan)
 
     '
-  ccqs:
-  - question: What is the difference between would like and want
-    answer: Would like is more polite and formal than want.
-    purpose: Tests whether the learner understands a key concept of would_like. This
-      is fundamental for correct use of this grammar point.
-  - question: Can we use a different structure here with the same meaning?
-    answer: No — changing the structure would change the meaning or make the sentence
-      ungrammatical.
-    purpose: Tests whether the learner understands that would like is the only appropriate
-      structure for this meaning/context.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      would like and explain why they are incorrect.
+  core_meaning: Expresses polite desires, preferences, or requests; more formal and polite than 'want'.
   example_generator:
     contexts:
     - everyday situations
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: Subject + would like (I'd like) + noun/to + base verb
-    example_generator:
-      contexts:
-      - travel and places
-      min_examples: 4
-  negative:
-    structure: Subject + wouldn't like + noun/to + base verb
-    example_generator:
-      contexts:
-      - food and daily routines
-      - weather and nature
-      min_examples: 4
-  questions:
-    structure: Would + subject + like + noun/to + base verb?
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
+  timeline: Refers to present desires or future plans; never used for past desires (used 'wanted' instead).
+phonetics:
+- example_generator:
+    contexts:
+    - would like contraction
+  l1_issue: Learners may not recognize 'I'd like' in listening. Teach the contraction as the standard form for offers and
+    requests.
+  note: 'Would like is often contracted: ''I''d like'' /aɪd laɪk/, ''She''d like'' /ʃiːd laɪk/. The contraction is very common
+    in offers and requests.'
+register_notes:
+- note: 'Biber et al. (2021) — ''Would like'' (polite desire): conversational preference for polite expression of desire.
+    Academic prose uses more explicit desiderative expressions. Ch. 6.6'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 6.6
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Would like + to + base verb (more polite than want)
-  type: grammatical
-  examples:
+- examples:
   - I would like to go
   - She would like to study
   - They would like to visit
-- rule: Would like + noun
+  rule: Would like + to + base verb (more polite than want)
   type: grammatical
-  examples:
+- examples:
   - I would like some coffee
   - She would like a new car
   - They would like more information
-- rule: Would you like...? is used for offers and invitations
-  type: pragmatic
-  examples:
+  rule: Would like + noun
+  type: grammatical
+- examples:
   - Would you like some tea (offer)
   - Would you like to come to dinner (invitation)
   - Would you like me to help (offer of assistance)
+  rule: Would you like...? is used for offers and invitations
+  type: pragmatic
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students practice making polite requests: ''I would like some water, please.'' ''Would you like to
+      sit down?'''
+    duration: 10
+    name: Polite Requests
+  - adaptation_notes: 'Students role-play ordering food: ''I would like the pasta.'' ''Would you like anything to drink?'''
+    duration: 15
+    name: Restaurant Role Play
+  tips:
+  - 'Use restaurant scenarios: ''I would like a burger, please''.'
+  - 'Role-play: Student orders food using ''would like''.'
+  - 'Contrast with ''want'' using casual vs formal settings: ''I want a coffee'' (casual) vs ''I would like a coffee'' (formal).'
+  - 'Practice invitations: ''Would you like to...?'''
+  - 'Swan PEU: ''Would like'' = polite form of ''want.'' ''I would like a coffee'' is more polite than ''I want a coffee.''
+    Use with to-infinitive for actions: ''I would like to book a room.'' NOT ''I would like that you come.'''
+title: Would like (polite desires, requests)
 use:
-- name: Polite Requests
-  description: Make polite requests for items or services.
+- description: Make polite requests for items or services.
   examples:
   - I would like the menu, please.
   - We would like to book a table.
   key_point: More polite than 'I want'.
-- name: Polite Desires
-  description: Express what you want in a polite way.
+  name: Polite Requests
+- description: Express what you want in a polite way.
   examples:
   - I would like a new phone.
   - She would like to learn Spanish.
   key_point: Shows good manners in formal settings.
-- name: Invitations
-  description: Politely invite someone to do something.
+  name: Polite Desires
+- description: Politely invite someone to do something.
   examples:
   - Would you like to come to my party?
   - Would you like to join us for dinner?
   key_point: More polite than 'Do you want to come?'
-phonetics:
-- note: 'Would like is often contracted: ''I''d like'' /aɪd laɪk/, ''She''d like''
-    /ʃiːd laɪk/. The contraction is very common in offers and requests.'
-  example_generator:
-    contexts:
-    - would like contraction
-  l1_issue: Learners may not recognize 'I'd like' in listening. Teach the contraction
-    as the standard form for offers and requests.
-teaching:
-  methodology: PPP
-  tips:
-  - 'Use restaurant scenarios: ''I would like a burger, please''.'
-  - 'Role-play: Student orders food using ''would like''.'
-  - 'Contrast with ''want'' using casual vs formal settings: ''I want a coffee'' (casual)
-    vs ''I would like a coffee'' (formal).'
-  - 'Practice invitations: ''Would you like to...?'''
-  recommended_activities:
-  - name: Polite Requests
-    duration: 10
-    adaptation_notes: 'Students practice making polite requests: ''I would like some
-      water, please.'' ''Would you like to sit down?'''
-  - name: Restaurant Role Play
-    duration: 15
-    adaptation_notes: 'Students role-play ordering food: ''I would like the pasta.''
-      ''Would you like anything to drink?'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
-    Modals, §9.1-9.6'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I would like to have a coffee.*'
-  correction: I would like a coffee.
-  explanation: Would like + noun or to + verb.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.
+  name: Invitations

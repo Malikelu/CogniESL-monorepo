@@ -1,25 +1,132 @@
-grammar_point: prepositions_place
-title: Prepositions of Place (At, In, On)
+citations:
+- claim: 'Core meaning: Prepositions of place tell us WHERE something is located'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21:
+    Prepositions'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday
+    communication.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21:
+    Prepositions'
+  tier: 1
+- claim: Common error '*I am in the bus stop.*' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: 'Prepositions of place (IN, ON, AT, UNDER, OVER, BETWEEN) describe spatial
+    relationships: IN for enclosed spaces, ON for surfaces, AT for specific points'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21:
+    Prepositions'
+  tier: 1
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents
+    how transfer effects are non-linear, determined by functional fit between L1 and
+    L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects
+    are non-linear — determined by functional fit between L1 and L2 systems rather
+    than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning.
+    Routledge.
+  tier: 2
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for
+    L1-specific error patterns in English. Their learner English framework documents
+    how each L1 group produces characteristic errors in this grammatical domain, enabling
+    teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+    and Other Problems, 2nd ed. Cambridge University Press.'
+  tier: 2
+common_errors:
+- correction: I am at the bus stop.
+  error: '*I am in the bus stop.*'
+  explanation: '''At'' is for specific points (at the bus stop, at the door). ''In''
+    is for enclosed spaces (in the bus, in the building). ''On'' is for surfaces (on
+    the bus, on the platform).'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+- error: Spatial preposition errors reflect conceptual transfer, not just formal L1-L2
+    mapping (Golden et al. Ch.4)
+  explanation: 'Golden et al. (2017) Ch.4 (Szymańska): Conceptualization of objects
+    as containers vs. surfaces varies crosslinguistically and affects preposition
+    choice even when L1 and L2 are genealogically related. Counter-intuitively, English-speaking
+    learners performed NO BETTER than Slavic learners on Norwegian spatial prepositions
+    despite shared Germanic origin. English "in/on" conceptual mapping differs from
+    Norwegian "i/pa": Norwegian uses "på" extensively for institutional/social activities
+    where English uses "at" or "on". Spatial preposition accuracy is driven by conceptual
+    fit, not formal similarity.'
+  l1_groups:
+  - All L1s — conceptual transfer affects all learners
+  reliability: C
+  source: Golden et al. (2017) Crosslinguistic Influence and Distinctive Patterns
+    of Language Learning, Ch. 4
+- error: Overgeneralizing 'in' for all locations from Spanish 'en' which covers in/on/at
+  explanation: Spanish 'en' maps to multiple English prepositions. Direct transfer
+    produces preposition errors.
+  l1_groups:
+  - Spanish
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
 description: 'Prepositions used to talk about where something is: at (specific point),
   in (enclosed space), on (surface).'
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - giving directions
+      - describing locations
+      - talking about where things are
+      min_examples: 4
+    structure: 'at + specific point: ''at the door'', ''at the bus stop'' / in + enclosed
+      space: ''in the room'', ''in London'' / on + surface: ''on the table'', ''on
+      the wall'''
+  negative:
+    example_generator:
+      contexts:
+      - giving directions
+      - describing locations
+      - talking about where things are
+      min_examples: 4
+    structure: 'Same preposition, negated verb: ''The book isn''t on the table.'''
+  questions:
+    example_generator:
+      contexts:
+      - giving directions
+      - describing locations
+      - talking about where things are
+      min_examples: 4
+    structure: 'Where + be?: ''Where is the cat?'' → ''On the table.'''
+grammar_point: prepositions_place
 level: A1
 meaning:
-  core_meaning: Prepositions of place tell us WHERE something is located. Each preposition
-    describes a different spatial relationship.
-  timeline: Timeless — describes location, not time.
-  contrast: '''At'' = specific point (at the door) vs ''In'' = enclosed space (in
-    the box) vs ''On'' = surface (on the table)'
   ccqs:
-  - question: Is it a specific point or address?
-    answer: Use 'at' (at the bus stop)
+  - answer: Use 'at' (at the bus stop)
     purpose: 'Tests whether the learner can distinguish between the three main place
       prepositions: in (enclosed space), on (surface), at (specific point).'
-  - question: Is it inside an enclosed space?
-    answer: Use 'in' (in the room)
+    question: Is it a specific point or address?
+  - answer: Use 'in' (in the room)
     purpose: Tests understanding of prepositions_place.
-  - question: Is it on a surface?
-    answer: Use 'on' (on the wall)
+    question: Is it inside an enclosed space?
+  - answer: Use 'on' (on the wall)
     purpose: Tests understanding of prepositions_place.
+    question: Is it on a surface?
+  - answer: '''I am good at maths.'' The fixed preposition after ''good'' is ''at''.
+      Many adjectives have fixed prepositions.'
+    purpose: Tests whether the learner uses the correct preposition after adjectives
+      (Swan PEU 2016, entries 83-85).
+    question: Which is correct? *'I am good in maths' or 'I am good at maths'?
+  contrast: '''At'' = specific point (at the door) vs ''In'' = enclosed space (in
+    the box) vs ''On'' = surface (on the table)'
+  core_meaning: Prepositions of place tell us WHERE something is located. Each preposition
+    describes a different spatial relationship.
   example_generator:
     contexts:
     - giving directions
@@ -28,49 +135,66 @@ meaning:
     - addresses
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: 'at + specific point: ''at the door'', ''at the bus stop'' / in + enclosed
-      space: ''in the room'', ''in London'' / on + surface: ''on the table'', ''on
-      the wall'''
-    example_generator:
-      contexts:
-      - giving directions
-      - describing locations
-      - talking about where things are
-      min_examples: 4
-  negative:
-    structure: 'Same preposition, negated verb: ''The book isn''t on the table.'''
-    example_generator:
-      contexts:
-      - giving directions
-      - describing locations
-      - talking about where things are
-      min_examples: 4
-  questions:
-    structure: 'Where + be?: ''Where is the cat?'' → ''On the table.'''
-    example_generator:
-      contexts:
-      - giving directions
-      - describing locations
-      - talking about where things are
-      min_examples: 4
+  timeline: Timeless — describes location, not time.
+phonetics:
+- contexts:
+  - connected speech
+  example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Some L1 speakers use 'in' for all locations
+  note: 'Weak forms: /æt/ → /ət/, /ɪn/ → /ən/, /ɒn/ → /ən/'
+register_notes:
+- note: 'Biber et al. (1999) — Place prepositions: register distribution varies. Conversation
+    uses more deictic spatial expressions; academic prose uses more precise locative
+    prepositions. Ch. 5.3.3'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. Longman Publishing
+    Company. Ch. 5.3.3
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21:
+    Prepositions'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: 'at: at the door, at home, at school, at work, at the bus stop'
-  type: grammatical
-  examples:
+- examples:
   - I'm at home.
   - Wait at the traffic lights.
-- rule: 'in: in the box, in the room, in London, in the park, in the car'
+  rule: 'at: at the door, at home, at school, at work, at the bus stop'
   type: grammatical
-  examples:
+- examples:
   - The keys are in my pocket.
   - I live in Brazil.
-- rule: 'on: on the table, on the wall, on the floor, on the bus, on Main Street'
+  rule: 'in: in the box, in the room, in London, in the park, in the car'
   type: grammatical
-  examples:
+- examples:
   - The book is on the desk.
   - I'm on the bus.
+  rule: 'on: on the table, on the wall, on the floor, on the bus, on Main Street'
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Hide objects and describe their location using prepositions.
+    duration: 10
+    name: Where Is It?
+  tips:
+  - Use real objects to demonstrate spatial relationships
+  - Draw diagrams to show at/in/on
+  - 'Swan PEU: Time and place prepositions — at precise points, in enclosed spaces/periods,
+    on surfaces/days. This distinction underlies most time and place preposition usage
+    in English.'
+  - 'Locative nouns (home, downtown, overseas, here, there) never occur with ''to''
+    with verbs of motion: ''go home'' not *''go to home''. When here/there occur with
+    stative verbs and ''in'', they use ''in'' only with the core meaning of physical
+    enclosure (''It''s in here'' = in this box). In broader senses, here/there appear
+    alone. Source: Celce-Murcia & Larsen-Freeman (2015) GB3 3rd ed. Ch. 21: Prepositions.'
+title: Prepositions of Place (At, In, On)
 use:
 - context: Giving directions
   description: Telling someone where to go or where something is
@@ -82,53 +206,3 @@ use:
   examples:
   - My phone is in my bag.
   - There's a picture on the wall.
-phonetics:
-- note: 'Weak forms: /æt/ → /ət/, /ɪn/ → /ən/, /ɒn/ → /ən/'
-  contexts:
-  - connected speech
-  l1_issue: Some L1 speakers use 'in' for all locations
-  example_generator:
-    contexts:
-    - connected speech
-teaching:
-  methodology: PPP
-  tips:
-  - Use real objects to demonstrate spatial relationships
-  - Draw diagrams to show at/in/on
-  recommended_activities:
-  - name: Where Is It?
-    duration: 10
-    adaptation_notes: Hide objects and describe their location using prepositions.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 15:
-    Prepositions, §15.1-15.7'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I am in the bus stop.*'
-  correction: I am at the bus stop.
-  explanation: '''At'' is for specific points (at the bus stop, at the door). ''In''
-    is for enclosed spaces (in the bus, in the building). ''On'' is for surfaces (on
-    the bus, on the platform).'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

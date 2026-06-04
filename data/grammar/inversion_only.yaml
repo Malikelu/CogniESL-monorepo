@@ -1,34 +1,129 @@
-grammar_point: inversion_only
-title: Inversion After Only (only after/only when/only if)
+citations:
+- claim: 'Core meaning: Emphasising that something happens exclusively under certain
+    conditions, at certain times, or in cer'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 30:
+    Focus and Emphasis'
+  tier: 4
+- claim: 'Register distribution: In formal writing, conditionals appear in discussions
+    of likely outcomes and theoretical scenarios.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 30:
+    Focus and Emphasis'
+  tier: 4
+- claim: 'Discourse function: In conversation, conditionals are used for hypothetical
+    scenarios, polite requests, and future plann'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 30:
+    Focus and Emphasis'
+  tier: 4
+- claim: Common error '*So beautiful the sunset was that...*' for Portuguese, Spanish,
+    French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents
+    how transfer effects are non-linear, determined by functional fit between L1 and
+    L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects
+    are non-linear — determined by functional fit between L1 and L2 systems rather
+    than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning.
+    Routledge.
+  tier: 2
+- claim: Oshima & Hogue's Great Writing series demonstrates how this grammatical structure
+    functions in academic writing contexts. Their approach connects grammar instruction
+    to writing outcomes, showing learners how accurate use of this structure improves
+    paragraph cohesion, essay organization, and academic register.
+  source: Oshima, A. and Hogue, A. (2006). Introduction to Academic Writing, 3rd ed.
+    Pearson Longman.
+  tier: 2
+common_errors:
+- correction: So beautiful was the sunset that...
+  error: '*So beautiful the sunset was that...*'
+  explanation: '''Such/so + adjective'' at the beginning of a sentence triggers inversion
+    for emphasis. This is formal/literary.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
 description: Subject-auxiliary inversion after 'only' phrases at the beginning of
   a sentence, used for dramatic or formal emphasis on exclusivity.
+dialectal_variation: []
+discourse_notes:
+- note: Inversion after only (Only then did she understand) requires subject-auxiliary
+    inversion when only + adverbial is fronted.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - formal writing
+      - narratives
+      - academic contexts
+      min_examples: 4
+    structure: Only + time/condition phrase + auxiliary (do/does/did/have/has/had/will/would/can/could/is/are/was/were)
+      + subject + main verb
+  negative:
+    example_generator:
+      contexts:
+      - expressing limitations
+      - formal complaints
+      min_examples: 3
+    structure: Only + phrase + auxiliary + subject + not + main verb / Only + phrase
+      + auxiliary + n't + subject + main verb
+  questions:
+    example_generator:
+      contexts:
+      - checking limitations
+      - clarifying scope
+      min_examples: 3
+    structure: 'Inversion after ''only'' is not used in direct questions. The structure
+      is for statements only. However, ''only'' can appear in questions normally:
+      ''Did you only eat one piece?'''
+grammar_point: inversion_only
 level: B2
 meaning:
-  core_meaning: Emphasising that something happens exclusively under certain conditions,
-    at certain times, or in certain circumstances. The inversion adds dramatic weight
-    and formality.
-  timeline: Can refer to past, present, or future depending on the tense of the main
-    clause. The 'only' phrase sets a temporal or conditional boundary.
+  ccqs:
+  - answer: No. Inversion is required when 'only' begins the sentence
+    purpose: Tests whether the learner knows that some expressions (so, such, hardly,
+      only) can trigger inversion even without explicit negation.
+    question: 'Is the normal word order acceptable: ''Only after the meeting I realised
+      the truth''?'
+  - answer: '''Did''. It replaces the past tense of ''understand'''
+    purpose: Tests whether the learner can identify and apply the correct form/meaning
+      of this grammar point in context. The question 'In 'Only then did she understand',
+      what is the aux...' checks conceptual understanding, not just memorization.
+    question: In 'Only then did she understand', what is the auxiliary?
+  - answer: No. It must be 'Only when he arrived did we leave' (inversion required)
+    purpose: Tests whether the learner can identify and apply the correct form/meaning
+      of this grammar point in context. The question 'Can we say 'Only when he arrived
+      we left'?...' checks conceptual understanding, not just memorization.
+    question: Can we say 'Only when he arrived we left'?
+  - answer: The first sentence uses inversion (auxiliary 'can' before subject 'you')
+      because 'Only after...' begins the sentence. The second sentence has normal
+      word order because 'only' appears within the clause. Both are grammatically
+      correct, but the inverted version is more formal and dramatic.
+    purpose: Tests whether the learner can distinguish sentence-initial 'only + phrase'
+      (which triggers inversion) from mid-sentence 'only' (which does not). The position
+      of 'only' in the sentence determines whether subject-auxiliary inversion is
+      required, a key grammatical rule for the inversion after 'only' structure.
+    question: Is there a difference between "Only after years of practice can you
+      master this skill" and "You can only master this skill after years of practice"?
+      Which one uses inversion and why?
   contrast: 'Normal order: I realised the truth only after the meeting. (neutral)
     Inverted order: Only after the meeting did I realise the truth. (emphatic, formal)
     Only + time/condition + auxiliary + subject + main verb (inversion required) Compare
     with: Not only... but also (different inversion pattern)'
-  ccqs:
-  - question: 'Is the normal word order acceptable: ''Only after the meeting I realised
-      the truth''?'
-    answer: No. Inversion is required when 'only' begins the sentence
-    purpose: Tests whether the learner knows that some expressions (so, such, hardly,
-      only) can trigger inversion even without explicit negation.
-  - question: In 'Only then did she understand', what is the auxiliary?
-    answer: '''Did''. It replaces the past tense of ''understand'''
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'In 'Only then did she understand',
-      what is the aux...' checks conceptual understanding, not just memorization.
-  - question: Can we say 'Only when he arrived we left'?
-    answer: No. It must be 'Only when he arrived did we leave' (inversion required)
-    purpose: Tests whether the learner can identify and apply the correct form/meaning
-      of this grammar point in context. The question 'Can we say 'Only when he arrived
-      we left'?...' checks conceptual understanding, not just memorization.
+  core_meaning: Emphasising that something happens exclusively under certain conditions,
+    at certain times, or in certain circumstances. The inversion adds dramatic weight
+    and formality.
   example_generator:
     contexts:
     - formal writing
@@ -39,107 +134,100 @@ meaning:
     - Inversion after 'only' is characteristic of formal written English
     - In spoken English, speakers often prefer normal order with heavy stress on 'only'
     min_examples: 5
-form:
-  affirmative:
-    structure: Only + time/condition phrase + auxiliary (do/does/did/have/has/had/will/would/can/could/is/are/was/were)
-      + subject + main verb
-    example_generator:
-      contexts:
-      - formal writing
-      - narratives
-      - academic contexts
-      min_examples: 4
-  negative:
-    structure: Only + phrase + auxiliary + subject + not + main verb / Only + phrase
-      + auxiliary + n't + subject + main verb
-    example_generator:
-      contexts:
-      - expressing limitations
-      - formal complaints
-      min_examples: 3
-  questions:
-    structure: 'Inversion after ''only'' is not used in direct questions. The structure
-      is for statements only. However, ''only'' can appear in questions normally:
-      ''Did you only eat one piece?'''
-    example_generator:
-      contexts:
-      - checking limitations
-      - clarifying scope
-      min_examples: 3
-sub_rules:
-- rule: Only after / Only when / Only once. Time-based inversion
-  type: grammatical
-  examples:
-  - Only after the war ended could they rebuild their lives.
-  - Only when the sun sets do the bats emerge.
-  - Only once had she ever seen such bravery.
-- rule: Only if. Conditional inversion (formal)
-  type: grammatical
-  examples:
-  - Only if you work hard will you pass the exam.
-  - Only if the weather improves can we proceed.
-- rule: Only by + gerund. Method-based inversion
-  type: grammatical
-  examples:
-  - Only by practising daily can you master a language.
-  - Only by working together will we solve this problem.
-- rule: Only then / Only later / Only afterwards. Adverb-based inversion
-  type: grammatical
-  examples:
-  - Only then did I understand the gravity of the situation.
-  - Only later did they discover the truth.
-- rule: Only with + noun. Means-based inversion
-  type: grammatical
-  examples:
-  - Only with patience and dedication can one succeed.
-  - Only with a valid passport may you enter the country.
-- rule: If the main clause is in the past and has no auxiliary, use 'did' + base verb
-  type: grammatical
-  examples:
-  - Only after years of effort did she achieve her goal.
-  - Only when the bell rang did the students leave.
-use:
-- name: Formal writing and academic essays
-  description: Adding emphasis and sophistication to written arguments
-  examples:
-  - Only through education can society progress.
-  - Only by analysing the data thoroughly can we draw valid conclusions.
-  key_point: Common in academic and formal registers. Avoid in casual conversation.
-- name: Dramatic narrative
-  description: Creating suspense or emphasis in storytelling
-  examples:
-  - Only when the door creaked open did she realise she was not alone.
-  - Only after the storm passed could they assess the damage.
-  key_point: The inversion delays the subject, building tension.
-- name: Expressing exclusivity of condition
-  description: Stating that one specific condition is required
-  examples:
-  - Only if you apologise will she consider forgiving you.
-  - Only by following the instructions exactly can you assemble it correctly.
-  key_point: Stronger and more formal than 'if' or 'when' alone.
-- name: News and journalism
-  description: Formal reporting style
-  examples:
-  - Only after a lengthy investigation were the facts revealed.
-  - Only then did the government acknowledge the crisis.
-  key_point: Adds gravity and formality to news reporting.
+  timeline: Can refer to past, present, or future depending on the tense of the main
+    clause. The 'only' phrase sets a temporal or conditional boundary.
 phonetics:
-- note: The 'only' phrase receives heavy stress, followed by a slight pause (comma
-    in writing) before the inverted clause
-  example_generator:
+- example_generator:
     contexts:
     - formal speech
   l1_issue: Speakers may forget to invert, producing 'Only after the meeting I realised'.
     A common error even at B2 level
-- note: 'The auxiliary in inverted clauses is typically unstressed: ''Only THEN did
-    she UNDERSTAND'''
-  example_generator:
+  note: The 'only' phrase receives heavy stress, followed by a slight pause (comma
+    in writing) before the inverted clause
+- example_generator:
     contexts:
     - emphasis patterns
   l1_issue: Learners may stress the auxiliary incorrectly, making the sentence sound
     unnatural
+  note: 'The auxiliary in inverted clauses is typically unstressed: ''Only THEN did
+    she UNDERSTAND'''
+register_notes:
+- note: In formal writing, conditionals appear in discussions of likely outcomes and
+    theoretical scenarios.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In conversation, conditionals are used for hypothetical scenarios and polite
+    requests.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In academic writing, conditionals express logical relationships between propositions.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Subject-auxiliary inversion: direct questions (requiring
+    inversion) are overwhelmingly conversational; conditional and negative inversion
+    are more common in written registers. Ch. 11.2, 3.13.2'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 11.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+sub_rules:
+- examples:
+  - Only after the war ended could they rebuild their lives.
+  - Only when the sun sets do the bats emerge.
+  - Only once had she ever seen such bravery.
+  rule: Only after / Only when / Only once. Time-based inversion
+  type: grammatical
+- examples:
+  - Only if you work hard will you pass the exam.
+  - Only if the weather improves can we proceed.
+  rule: Only if. Conditional inversion (formal)
+  type: grammatical
+- examples:
+  - Only by practising daily can you master a language.
+  - Only by working together will we solve this problem.
+  rule: Only by + gerund. Method-based inversion
+  type: grammatical
+- examples:
+  - Only then did I understand the gravity of the situation.
+  - Only later did they discover the truth.
+  rule: Only then / Only later / Only afterwards. Adverb-based inversion
+  type: grammatical
+- examples:
+  - Only with patience and dedication can one succeed.
+  - Only with a valid passport may you enter the country.
+  rule: Only with + noun. Means-based inversion
+  type: grammatical
+- examples:
+  - Only after years of effort did she achieve her goal.
+  - Only when the bell rang did the students leave.
+  rule: If the main clause is in the past and has no auxiliary, use 'did' + base verb
+  type: grammatical
 teaching:
   methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Give students normal-order sentences. They must rewrite with
+      'only' at the front and apply inversion. Work in pairs, then check as a class.
+    duration: 15
+    name: Transformation drill
+  - adaptation_notes: Students sort sentences into formal (inverted) and informal
+      (normal order) registers. Discuss when each is appropriate.
+    duration: 10
+    name: Formal vs informal sorting
+  - adaptation_notes: Students write a short dramatic narrative using at least three
+      'only' inversions. Share with the class.
+    duration: 20
+    name: Storytelling with inversion
   tips:
   - Start with normal-order sentences, then move 'only' to the front and show how
     inversion is required
@@ -148,49 +236,32 @@ teaching:
   - 'Contrast formal (inverted) vs informal (normal order with stress): ''Only THEN
     I understood'' (spoken) vs ''Only then did I understand'' (written)'
   - 'Provide a checklist: Only + phrase, comma, auxiliary, subject, main verb'
-  recommended_activities:
-  - name: Transformation drill
-    duration: 15
-    adaptation_notes: Give students normal-order sentences. They must rewrite with
-      'only' at the front and apply inversion. Work in pairs, then check as a class.
-  - name: Formal vs informal sorting
-    duration: 10
-    adaptation_notes: Students sort sentences into formal (inverted) and informal
-      (normal order) registers. Discuss when each is appropriate.
-  - name: Storytelling with inversion
-    duration: 20
-    adaptation_notes: Students write a short dramatic narrative using at least three
-      'only' inversions. Share with the class.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*So beautiful the sunset was that...*'
-  correction: So beautiful was the sunset that...
-  explanation: '''Such/so + adjective'' at the beginning of a sentence triggers inversion
-    for emphasis. This is formal/literary.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: In formal writing, conditionals appear in discussions of likely outcomes and
-    theoretical scenarios.
-- note: In conversation, conditionals are used for hypothetical scenarios and polite
-    requests.
-- note: In academic writing, conditionals express logical relationships between propositions.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, conditionals are used for hypothetical scenarios, polite
-    requests, and future planning.
-- note: In academic writing, conditionals appear in discussions of likely outcomes
-    and theoretical scenarios.
-- note: In negotiations and planning, conditionals set conditions and explore possibilities.
+  - 'Swan PEU: ''Only'' + inversion — ''Only then did I realize.'' ''Only in this
+    way can we succeed.'' ''Only after the war did peace return.'' The inversion happens
+    in the main clause (subject-auxiliary reverses).'
+title: Inversion After Only (only after/only when/only if)
+use:
+- description: Adding emphasis and sophistication to written arguments
+  examples:
+  - Only through education can society progress.
+  - Only by analysing the data thoroughly can we draw valid conclusions.
+  key_point: Common in academic and formal registers. Avoid in casual conversation.
+  name: Formal writing and academic essays
+- description: Creating suspense or emphasis in storytelling
+  examples:
+  - Only when the door creaked open did she realise she was not alone.
+  - Only after the storm passed could they assess the damage.
+  key_point: The inversion delays the subject, building tension.
+  name: Dramatic narrative
+- description: Stating that one specific condition is required
+  examples:
+  - Only if you apologise will she consider forgiving you.
+  - Only by following the instructions exactly can you assemble it correctly.
+  key_point: Stronger and more formal than 'if' or 'when' alone.
+  name: Expressing exclusivity of condition
+- description: Formal reporting style
+  examples:
+  - Only after a lengthy investigation were the facts revealed.
+  - Only then did the government acknowledge the crisis.
+  key_point: Adds gravity and formality to news reporting.
+  name: News and journalism

@@ -1,15 +1,103 @@
-grammar_point: litotes
-title: Litotes
+citations:
+- claim: 'Core meaning: Litotes is a rhetorical device that affirms something by negating
+    its opposite'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 30:
+    Focus and Emphasis'
+  tier: 4
+- claim: 'Register distribution: Litotes is characteristic of British English understatement.
+    In academic prose it serves as hedging; in conversation it frequently carries
+    ironic force (Huddleston & Pullum 2002, Ch. 16).'
+  flagged: false
+  reliability: B
+  source: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press. Ch. 16: Information Packaging'
+  tier: 2
+- claim: 'Discourse function: Litotes functions as a pragmatic softener — it allows
+    speakers to express evaluation (praise, criticism, irony) indirectly. The gap
+    between the understatement and reality creates politeness, humor, or sarcasm.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 30:
+    Focus and Emphasis'
+  tier: 4
+- claim: 'Common error ''*The food was not bad.* (literal: the food was acceptable)''
+    for German, Dutch, Chinese speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+common_errors:
+- correction: The food was not bad. (= the food was quite good, not just acceptable)
+  error: 'The food was not bad. (interpreted literally: the food was merely acceptable)'
+  explanation: Litotes expresses understatement through negation. 'Not bad' means
+    'quite good' in English, not just 'acceptable'. Learners from some L1 backgrounds
+    may miss the pragmatic force and interpret it literally.
+  flagged: true
+  l1_groups:
+  - German
+  - Dutch
+  - Chinese
+  reliability: D
 description: A figure of speech using deliberate understatement by negating the opposite,
   often to express moderate praise, soften criticism, or create irony.
+dialectal_variation: []
+discourse_notes:
+- 'Litotes is a hallmark of British English understatement. In formal writing, it serves as hedging and diplomatic softening (''not without merit'', ''not inconsistent with''). In conversation, it frequently carries ironic force (''not the brightest bulb''). Source: Celce-Murcia & Larsen-Freeman (2015) GB3 Ch. 30: Focus and Emphasis.'
+
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - giving moderate praise
+      - softening criticism
+      - diplomatic language
+      min_examples: 4
+    structure: 'Subject + be/not + un-/in-/im-/non- + adjective (negating the opposite):
+      ''She is not unintelligent.'' (= she is quite intelligent) / ''It was not a
+      bad meal.'' (= it was a good meal) / ''He is not without charm.'' (= he is charming)'
+  negative:
+    example_generator:
+      contexts:
+      - expressing possibility
+      - cautious optimism
+      - diplomatic language
+      min_examples: 4
+    structure: 'Litotes is inherently a negative structure (it negates the opposite).
+      A ''negative litotes'' would be a double negative affirming the positive: ''It
+      is not impossible.'' (= it is possible)'
+  questions:
+    example_generator:
+      contexts: []
+      min_examples: 0
+    structure: 'Litotes is not typically used in questions. Direct questions are preferred:
+      ''Was it good?'' rather than ''Was it not bad?'''
+grammar_point: litotes
 level: C2
 meaning:
-  core_meaning: Litotes is a rhetorical device that affirms something by negating
-    its opposite. Instead of saying something is 'good', litotes says it is 'not bad'.
-    Instead of saying someone is 'attractive', it says they are 'not unattractive'.
-    The effect is understatement — the speaker deliberately says less than they mean,
-    often for politeness, irony, or emphasis.
-  timeline: Timeless — litotes can be used in any tense.
+  ccqs:
+  - answer: Yes — litotes affirms by negating the opposite.
+    purpose: Tests whether the learner understands that litotes works by affirming through negation \u2014 saying something positive by negating its opposite.
+    question: Is the speaker saying something positive by using a negative?
+  - answer: Understated — litotes deliberately says less than the full meaning.
+    purpose: Tests whether the learner understands that litotes deliberately understates \u2014 the speaker says less than they mean, creating a hedged or ironic effect.
+    question: Is the speaker being direct or understated?
+  - question: "'He is not unintelligent' — Is the speaker saying he is stupid or intelligent?"
+    answer: "Intelligent. 'Not unintelligent' is litotes — the speaker uses double negation (not + un-) to understate a positive quality."
+    purpose: 'Tests whether the learner can decode litotes with negative prefixes (un-, in-, im-, non-) and understand that the surface negative conveys a positive meaning.'
+  - question: "'She is not unattractive' — Is the speaker saying she is ugly, average, or attractive?"
+    answer: "'Attractive. ''Not unattractive'' is litotes — the speaker uses a negative (not) plus a negative prefix (un-) to understate a positive quality.'"
+    purpose: 'Tests whether the learner can decode the meaning of litotes with negative prefixes (un-, in-, im-, non-). Understanding that ''not unattractive'' means ''attractive'' (not just ''okay'') is essential for C2-level pragmatic comprehension.'
+  - answer: Criticising. Not the most brilliant is an ironic understatement meaning
+      the student is not very intelligent. The litotes softens the criticism but the
+      intended meaning is clearly negative.
+    purpose: Tests whether the learner can detect the ironic or sarcastic use of litotes.
+      Not the most + positive adjective is a common pattern for veiled criticism,
+      and understanding the speaker's true intent is essential for C2-level pragmatic
+      comprehension of litotes in context.
+    question: Is the speaker in not the most brilliant student praising or criticising
+      the student?
   contrast: 'Direct statement: "She is very talented."
 
     Litotes: "She is not without talent." (same meaning, but understated)
@@ -19,19 +107,11 @@ meaning:
     Litotes: "It was not a bad performance." (understated praise)
 
     '
-  ccqs:
-  - question: Is the speaker saying something positive by using a negative?
-    answer: Yes — litotes affirms by negating the opposite.
-    purpose: Tests whether the learner understands a key concept of litotes. This
-      is fundamental for correct use of this grammar point.
-  - question: Is the speaker being direct or understated?
-    answer: Understated — litotes deliberately says less than the full meaning.
-    purpose: Tests whether the learner understands a key concept of litotes. This
-      is fundamental for correct use of this grammar point.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      litotes and explain why they are incorrect.
+  core_meaning: Litotes is a rhetorical device that affirms something by negating
+    its opposite. Instead of saying something is 'good', litotes says it is 'not bad'.
+    Instead of saying someone is 'attractive', it says they are 'not unattractive'.
+    The effect is understatement — the speaker deliberately says less than they mean,
+    often for politeness, irony, or emphasis.
   example_generator:
     contexts:
     - literary analysis
@@ -46,111 +126,86 @@ meaning:
     - In American English, litotes is less common and may sound overly formal or indirect
     - Overuse can sound evasive or insincere in cultures that value directness
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Subject + be/not + un-/in-/im-/non- + adjective (negating the opposite):
-      ''She is not unintelligent.'' (= she is quite intelligent) / ''It was not a
-      bad meal.'' (= it was a good meal) / ''He is not without charm.'' (= he is charming)'
-    example_generator:
-      contexts:
-      - giving moderate praise
-      - softening criticism
-      - diplomatic language
-      min_examples: 4
-  negative:
-    structure: 'Litotes is inherently a negative structure (it negates the opposite).
-      A ''negative litotes'' would be a double negative affirming the positive: ''It
-      is not impossible.'' (= it is possible)'
-    example_generator:
-      contexts:
-      - expressing possibility
-      - cautious optimism
-      - diplomatic language
-      min_examples: 4
-  questions:
-    structure: 'Litotes is not typically used in questions. Direct questions are preferred:
-      ''Was it good?'' rather than ''Was it not bad?'''
-    example_generator:
-      contexts: []
-      min_examples: 0
-sub_rules:
-- rule: Negating a negative adjective prefix (un-, in-, im-, non-)
-  type: morphological
-  examples:
-  - not unkind (= kind)
-  - not unattractive (= attractive)
-  - not impossible (= possible)
-  - not insignificant (= significant)
-  - not uncommon (= fairly common)
-- rule: Negating 'without' + noun
-  type: grammatical
-  examples:
-  - not without merit (= has merit)
-  - not without difficulty (= with some difficulty)
-  - not without reason (= with good reason)
-  - not without charm (= charming)
-- rule: Negating 'bad' or 'poor' for moderate praise
-  type: semantic
-  examples:
-  - not a bad idea (= a good idea)
-  - not a bad performance (= a good performance)
-  - not bad at all (= quite good)
-- rule: Negating 'the' + superlative for emphasis
-  type: semantic
-  examples:
-  - not the worst (= quite good)
-  - not the best (= not very good — ironic)
-  - not the most brilliant (= not very clever — ironic criticism)
-- rule: Litotes for irony or sarcasm
-  type: pragmatic
-  examples:
-  - '''Not the brightest bulb in the box.'' (= not very intelligent — sarcastic)'
-  - Not exactly a masterpiece. (= it is quite bad — ironic understatement)
-use:
-- name: Moderate praise in British English
-  description: Litotes is a hallmark of British understatement, used to give praise
-    without appearing too enthusiastic.
-  examples:
-  - '''How was the meal?'' — ''Not bad, actually.'' (= quite good)'
-  - '''She''s not unpretty.'' (= she is attractive)'
-  - '''It was not a bad performance.'' (= it was good)'
-  key_point: The speaker deliberately understates to avoid appearing too effusive.
-- name: Softening criticism
-  description: Litotes can soften a negative comment by expressing it indirectly.
-  examples:
-  - '''I''m not convinced by his argument.'' (= I disagree)'
-  - '''That was not the wisest decision.'' (= it was a foolish decision)'
-  - '''He is not the most reliable person.'' (= he is unreliable)'
-  key_point: The understatement makes the criticism less direct and more polite.
-- name: Diplomatic and formal language
-  description: Used in diplomatic, legal, and academic language to express positions
-    cautiously.
-  examples:
-  - '''The results are not inconsistent with our hypothesis.'' (= they support it)'
-  - '''This is not without precedent.'' (= there are precedents)'
-  - '''The proposal is not without merit.'' (= it has merit)'
-  key_point: Common in formal registers where directness may be inappropriate.
-- name: Irony and humour
-  description: Litotes can be used for ironic or humorous effect.
-  examples:
-  - '''Winning the lottery was not the worst thing that ever happened to me.'' (=
-    it was the best thing)'
-  - '''He''s not exactly a genius.'' (= he is not very clever)'
-  - '''It''s not the Ritz, but it''ll do.'' (= it is basic but acceptable)'
-  key_point: The gap between the understatement and the reality creates humour.
+  timeline: Timeless — litotes can be used in any tense.
 phonetics:
-- note: 'In litotes, the negative element (''not'') is often stressed for emphasis:
-    ''It was NOT a bad performance.'' The understated quality comes from the contrast
-    between the stress on the negative and the modesty of the claim.'
-  example_generator:
+- example_generator:
     contexts:
     - natural conversation
     - formal speech
   l1_issue: Speakers from cultures that value directness (e.g., German, Dutch) may
     find litotes confusing or evasive. Speakers from cultures that value indirectness
     (e.g., Japanese) may find it natural.
+  note: 'In litotes, the negative element (''not'') is often stressed for emphasis:
+    ''It was NOT a bad performance.'' The understated quality comes from the contrast
+    between the stress on the negative and the modesty of the claim.'
+register_notes:
+- note: 'Biber et al. (1999) — Litotes and understatement: register distribution varies.
+    Academic prose uses understatement for hedging; conversation for ironic/litotic
+    effect. Ch. 12.5'
+  reliability: C
+  source: Biber et al. (1999) Longman Grammar of Spoken and Written English. Longman
+    Publishing Company. Ch. 12.5
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+sub_rules:
+- examples:
+  - not unkind (= kind)
+  - not unattractive (= attractive)
+  - not impossible (= possible)
+  - not insignificant (= significant)
+  - not uncommon (= fairly common)
+  rule: Negating a negative adjective prefix (un-, in-, im-, non-)
+  type: morphological
+- examples:
+  - not without merit (= has merit)
+  - not without difficulty (= with some difficulty)
+  - not without reason (= with good reason)
+  - not without charm (= charming)
+  rule: Negating 'without' + noun
+  type: grammatical
+- examples:
+  - not a bad idea (= a good idea)
+  - not a bad performance (= a good performance)
+  - not bad at all (= quite good)
+  rule: Negating 'bad' or 'poor' for moderate praise
+  type: semantic
+- examples:
+  - not the worst (= quite good)
+  - not the best (= not very good — ironic)
+  - not the most brilliant (= not very clever — ironic criticism)
+  rule: Negating 'the' + superlative for emphasis
+  type: semantic
+- examples:
+  - '''Not the brightest bulb in the box.'' (= not very intelligent — sarcastic)'
+  - Not exactly a masterpiece. (= it is quite bad — ironic understatement)
+  rule: Litotes for irony or sarcasm
+  type: pragmatic
 teaching:
   methodology: Awareness-raising through authentic texts and cultural discussion
+  recommended_activities:
+  - adaptation_notes: Provide a text (literary extract, film transcript) and have
+      students identify examples of litotes. Discuss the intended meaning.
+    duration: 15
+    name: Litotes identification
+  - adaptation_notes: 'Students rewrite direct statements as litotes and vice versa:
+      ''She is talented'' → ''She is not without talent.'''
+    duration: 15
+    name: Direct vs. litotes rewriting
+  - adaptation_notes: Discuss the role of understatement in different cultures. How
+      does litotes compare to communication styles in students' L1 cultures?
+    duration: 20
+    name: Cultural discussion
+  - adaptation_notes: Provide sentences using litotes and have students determine
+      whether the speaker is being sincere, ironic, or sarcastic.
+    duration: 15
+    name: Irony detection
   tips:
   - This is a receptive skill at C2 — students should understand litotes when they
     encounter it, not necessarily produce it.
@@ -159,50 +214,39 @@ teaching:
   - Discuss the cultural dimension — litotes is a key feature of British communication
     style.
   - Contrast litotes with hyperbole (exaggeration) to show different rhetorical strategies.
-  recommended_activities:
-  - name: Litotes identification
-    duration: 15
-    adaptation_notes: Provide a text (literary extract, film transcript) and have
-      students identify examples of litotes. Discuss the intended meaning.
-  - name: Direct vs. litotes rewriting
-    duration: 15
-    adaptation_notes: 'Students rewrite direct statements as litotes and vice versa:
-      ''She is talented'' → ''She is not without talent.'''
-  - name: Cultural discussion
-    duration: 20
-    adaptation_notes: Discuss the role of understatement in different cultures. How
-      does litotes compare to communication styles in students' L1 cultures?
-  - name: Irony detection
-    duration: 15
-    adaptation_notes: Provide sentences using litotes and have students determine
-      whether the speaker is being sincere, ironic, or sarcastic.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*The food was not bad.* (literal: the food was acceptable)'
-  correction: The food was not bad. (= the food was quite good)
-  explanation: Litotes expresses understatement through negation. 'Not bad' means
-    'quite good' in English, not 'acceptable'.
-  l1_groups:
-  - All L1 groups
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.
+  - 'Swan PEU: Litotes — understatement through negative of the opposite: ''not
+    bad'' = good, ''not untypical'' = typical, ''not impossible'' = possible. Common
+    in British English. Often conveys ironic or moderate evaluation.'
+title: Litotes
+use:
+- description: Litotes is a hallmark of British understatement, used to give praise
+    without appearing too enthusiastic.
+  examples:
+  - '''How was the meal?'' — ''Not bad, actually.'' (= quite good)'
+  - '''She''s not unpretty.'' (= she is attractive)'
+  - '''It was not a bad performance.'' (= it was good)'
+  key_point: The speaker deliberately understates to avoid appearing too effusive.
+  name: Moderate praise in British English
+- description: Litotes can soften a negative comment by expressing it indirectly.
+  examples:
+  - '''I''m not convinced by his argument.'' (= I disagree)'
+  - '''That was not the wisest decision.'' (= it was a foolish decision)'
+  - '''He is not the most reliable person.'' (= he is unreliable)'
+  key_point: The understatement makes the criticism less direct and more polite.
+  name: Softening criticism
+- description: Used in diplomatic, legal, and academic language to express positions
+    cautiously.
+  examples:
+  - '''The results are not inconsistent with our hypothesis.'' (= they support it)'
+  - '''This is not without precedent.'' (= there are precedents)'
+  - '''The proposal is not without merit.'' (= it has merit)'
+  key_point: Common in formal registers where directness may be inappropriate.
+  name: Diplomatic and formal language
+- description: Litotes can be used for ironic or humorous effect.
+  examples:
+  - '''Winning the lottery was not the worst thing that ever happened to me.'' (=
+    it was the best thing)'
+  - '''He''s not exactly a genius.'' (= he is not very clever)'
+  - '''It''s not the Ritz, but it''ll do.'' (= it is basic but acceptable)'
+  key_point: The gap between the understatement and the reality creates humour.
+  name: Irony and humour

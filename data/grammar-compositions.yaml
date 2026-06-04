@@ -1,0 +1,766 @@
+# grammar-compositions.yaml
+# Cross-cutting grammar structures registry for CogniESL
+#
+# Maps each base grammar point to the cross-cutting structures that belong in its lesson:
+#   - wh_questions   (A1): WH question formation specific to this tense
+#   - short_answers  (A1): Short answer formation specific to this tense
+#   - question_tags  (A2): Question tag formation specific to this tense
+#
+# DESIGN PRINCIPLE (Solution C):
+#   - This file is the ONLY place composition mappings live. Never add them to individual
+#     grammar YAML files — that would scatter the same concept across 20+ files.
+#   - The tense-specific structure and examples live HERE.
+#   - The pedagogical depth (CCQs, teaching tips, common errors) lives in the
+#     cross-cutting YAML files: question_forms.yaml and question_tags.yaml.
+#   - slide_plan.py reads this registry and merges both sources into each task brief.
+#
+# To add a new cross-cutting structure (e.g., passive, reported speech):
+#   1. Create or confirm the cross-cutting YAML exists in data/grammar/
+#   2. Add a new topic entry to each affected base grammar point below
+#   3. No changes needed to any existing grammar YAML or to slide_plan.py logic
+#
+# cross_cutting_source values must match filenames in data/grammar/ (without .yaml)
+
+compositions:
+
+  # ─── PRESENT SIMPLE ───────────────────────────────────────────────────────
+  - base: present_simple
+    topics:
+      - topic: wh_questions
+        level_min: A1
+        label: "WH Questions — Present Simple"
+        cross_cutting_source: question_forms
+        structure: "Wh- word + do/does + subject + base verb?"
+        examples:
+          - "What do you eat for breakfast?"
+          - "Where does she work?"
+          - "Who do you live with?"
+          - "When does the train leave?"
+          - "Why does he study English?"
+          - "How do they get to school?"
+      - topic: short_answers
+        level_min: A1
+        label: "Short Answers — Present Simple"
+        cross_cutting_source: question_forms
+        structure: "Yes/No, subject + do/does / don't/doesn't."
+        examples:
+          - "Do you like coffee? — Yes, I do. / No, I don't."
+          - "Does she work here? — Yes, she does. / No, she doesn't."
+          - "Do they speak French? — Yes, they do. / No, they don't."
+          - "Does he drive? — Yes, he does. / No, he doesn't."
+      - topic: question_tags
+        level_min: A2
+        label: "Question Tags — Present Simple"
+        cross_cutting_source: question_tags
+        structure: "Positive statement + don't/doesn't + pronoun? / Negative statement + do/does + pronoun?"
+        examples:
+          - "You like coffee, don't you?"
+          - "She works here, doesn't she?"
+          - "They don't eat meat, do they?"
+          - "He doesn't drive, does he?"
+
+  # ─── PAST SIMPLE ──────────────────────────────────────────────────────────
+  - base: past_simple
+    topics:
+      - topic: wh_questions
+        level_min: A1
+        label: "WH Questions — Past Simple"
+        cross_cutting_source: question_forms
+        structure: "Wh- word + did + subject + base verb?"
+        examples:
+          - "What did you do yesterday?"
+          - "Where did she go last night?"
+          - "Who did you meet at the party?"
+          - "When did it happen?"
+          - "Why did he leave early?"
+          - "How did they get here?"
+      - topic: short_answers
+        level_min: A1
+        label: "Short Answers — Past Simple"
+        cross_cutting_source: question_forms
+        structure: "Yes/No, subject + did / didn't."
+        examples:
+          - "Did you go to school? — Yes, I did. / No, I didn't."
+          - "Did she call you? — Yes, she did. / No, she didn't."
+          - "Did they finish? — Yes, they did. / No, they didn't."
+          - "Did he win? — Yes, he did. / No, he didn't."
+      - topic: question_tags
+        level_min: A2
+        label: "Question Tags — Past Simple"
+        cross_cutting_source: question_tags
+        structure: "Positive statement + didn't + pronoun? / Negative statement + did + pronoun?"
+        examples:
+          - "You went to school yesterday, didn't you?"
+          - "She called you, didn't she?"
+          - "They left early, didn't they?"
+          - "He didn't come, did he?"
+
+  # ─── PRESENT CONTINUOUS ───────────────────────────────────────────────────
+  - base: present_continuous
+    topics:
+      - topic: wh_questions
+        level_min: A1
+        label: "WH Questions — Present Continuous"
+        cross_cutting_source: question_forms
+        structure: "Wh- word + am/is/are + subject + verb-ing?"
+        examples:
+          - "What are you doing right now?"
+          - "Where is she going?"
+          - "Who are they meeting?"
+          - "Why are you crying?"
+          - "When are they leaving?"
+          - "How are you feeling?"
+      - topic: short_answers
+        level_min: A1
+        label: "Short Answers — Present Continuous"
+        cross_cutting_source: question_forms
+        structure: "Yes/No, subject + am/is/are / 'm not/isn't/aren't."
+        examples:
+          - "Are you working? — Yes, I am. / No, I'm not."
+          - "Is she coming? — Yes, she is. / No, she isn't."
+          - "Are they waiting? — Yes, they are. / No, they aren't."
+          - "Am I interrupting? — Yes, you are. / No, you aren't."
+      - topic: question_tags
+        level_min: A2
+        label: "Question Tags — Present Continuous"
+        cross_cutting_source: question_tags
+        structure: "Positive statement + isn't/aren't + pronoun? / Negative statement + is/are + pronoun?"
+        examples:
+          - "You're leaving, aren't you?"
+          - "She's working, isn't she?"
+          - "They aren't coming, are they?"
+          - "He isn't sleeping, is he?"
+
+  # ─── PAST CONTINUOUS ──────────────────────────────────────────────────────
+  - base: past_continuous
+    topics:
+      - topic: wh_questions
+        level_min: A1
+        label: "WH Questions — Past Continuous"
+        cross_cutting_source: question_forms
+        structure: "Wh- word + was/were + subject + verb-ing?"
+        examples:
+          - "What were you doing at 8pm?"
+          - "Where was she going?"
+          - "Who were they arguing with?"
+          - "Why was he crying?"
+          - "What was the dog eating?"
+          - "How were you feeling?"
+      - topic: short_answers
+        level_min: A1
+        label: "Short Answers — Past Continuous"
+        cross_cutting_source: question_forms
+        structure: "Yes/No, subject + was/were / wasn't/weren't."
+        examples:
+          - "Were you sleeping? — Yes, I was. / No, I wasn't."
+          - "Was she working? — Yes, she was. / No, she wasn't."
+          - "Were they arguing? — Yes, they were. / No, they weren't."
+          - "Was he listening? — Yes, he was. / No, he wasn't."
+      - topic: question_tags
+        level_min: A2
+        label: "Question Tags — Past Continuous"
+        cross_cutting_source: question_tags
+        structure: "Positive statement + wasn't/weren't + pronoun? / Negative statement + was/were + pronoun?"
+        examples:
+          - "You were sleeping, weren't you?"
+          - "She was working, wasn't she?"
+          - "They weren't listening, were they?"
+          - "He wasn't paying attention, was he?"
+
+  # ─── PRESENT PERFECT ──────────────────────────────────────────────────────
+  - base: present_perfect
+    topics:
+      - topic: wh_questions
+        level_min: A1
+        label: "WH Questions — Present Perfect"
+        cross_cutting_source: question_forms
+        structure: "Wh- word + have/has + subject + past participle?"
+        examples:
+          - "What have you done?"
+          - "Where has she gone?"
+          - "How long have you lived here?"
+          - "Who have you spoken to?"
+          - "Why has he left?"
+          - "How many times have you visited Paris?"
+      - topic: short_answers
+        level_min: A1
+        label: "Short Answers — Present Perfect"
+        cross_cutting_source: question_forms
+        structure: "Yes/No, subject + have/has / haven't/hasn't."
+        examples:
+          - "Have you finished? — Yes, I have. / No, I haven't."
+          - "Has she arrived? — Yes, she has. / No, she hasn't."
+          - "Have they called? — Yes, they have. / No, they haven't."
+          - "Has he eaten? — Yes, he has. / No, he hasn't."
+      - topic: question_tags
+        level_min: A2
+        label: "Question Tags — Present Perfect"
+        cross_cutting_source: question_tags
+        structure: "Positive statement + haven't/hasn't + pronoun? / Negative statement + have/has + pronoun?"
+        examples:
+          - "You've been here before, haven't you?"
+          - "She has finished, hasn't she?"
+          - "They haven't called, have they?"
+          - "He hasn't eaten, has he?"
+
+  # ─── PRESENT PERFECT CONTINUOUS ───────────────────────────────────────────
+  - base: present_perfect_continuous
+    topics:
+      - topic: wh_questions
+        level_min: A1
+        label: "WH Questions — Present Perfect Continuous"
+        cross_cutting_source: question_forms
+        structure: "Wh- word + have/has + subject + been + verb-ing?"
+        examples:
+          - "What have you been doing?"
+          - "How long has she been waiting?"
+          - "Why have they been arguing?"
+          - "Where have you been going every evening?"
+          - "How long has he been studying English?"
+      - topic: short_answers
+        level_min: A1
+        label: "Short Answers — Present Perfect Continuous"
+        cross_cutting_source: question_forms
+        structure: "Yes/No, subject + have/has / haven't/hasn't."
+        examples:
+          - "Have you been waiting long? — Yes, I have. / No, I haven't."
+          - "Has she been working all day? — Yes, she has. / No, she hasn't."
+          - "Have they been arguing? — Yes, they have. / No, they haven't."
+      - topic: question_tags
+        level_min: A2
+        label: "Question Tags — Present Perfect Continuous"
+        cross_cutting_source: question_tags
+        structure: "Positive statement + haven't/hasn't + pronoun? / Negative statement + have/has + pronoun?"
+        examples:
+          - "You've been working hard, haven't you?"
+          - "She has been studying all night, hasn't she?"
+          - "They haven't been trying, have they?"
+          - "He hasn't been sleeping well, has he?"
+
+  # ─── PAST PERFECT ─────────────────────────────────────────────────────────
+  - base: past_perfect
+    topics:
+      - topic: wh_questions
+        level_min: A1
+        label: "WH Questions — Past Perfect"
+        cross_cutting_source: question_forms
+        structure: "Wh- word + had + subject + past participle?"
+        examples:
+          - "What had you done before she arrived?"
+          - "Where had she gone?"
+          - "How long had you waited?"
+          - "Why had they left so early?"
+          - "Who had you spoken to before the meeting?"
+      - topic: short_answers
+        level_min: A1
+        label: "Short Answers — Past Perfect"
+        cross_cutting_source: question_forms
+        structure: "Yes/No, subject + had / hadn't."
+        examples:
+          - "Had you finished? — Yes, I had. / No, I hadn't."
+          - "Had she called? — Yes, she had. / No, she hadn't."
+          - "Had they left? — Yes, they had. / No, they hadn't."
+          - "Had he eaten? — Yes, he had. / No, he hadn't."
+      - topic: question_tags
+        level_min: A2
+        label: "Question Tags — Past Perfect"
+        cross_cutting_source: question_tags
+        structure: "Positive statement + hadn't + pronoun? / Negative statement + had + pronoun?"
+        examples:
+          - "You had finished, hadn't you?"
+          - "She had called, hadn't she?"
+          - "They hadn't left, had they?"
+          - "He hadn't eaten, had he?"
+
+  # ─── PAST PERFECT CONTINUOUS ──────────────────────────────────────────────
+  - base: past_perfect_continuous
+    topics:
+      - topic: wh_questions
+        level_min: A1
+        label: "WH Questions — Past Perfect Continuous"
+        cross_cutting_source: question_forms
+        structure: "Wh- word + had + subject + been + verb-ing?"
+        examples:
+          - "What had you been doing before she arrived?"
+          - "How long had she been waiting?"
+          - "Why had they been arguing?"
+          - "Where had he been working?"
+      - topic: short_answers
+        level_min: A1
+        label: "Short Answers — Past Perfect Continuous"
+        cross_cutting_source: question_forms
+        structure: "Yes/No, subject + had / hadn't."
+        examples:
+          - "Had you been waiting long? — Yes, I had. / No, I hadn't."
+          - "Had she been working? — Yes, she had. / No, she hadn't."
+          - "Had they been arguing? — Yes, they had. / No, they hadn't."
+      - topic: question_tags
+        level_min: A2
+        label: "Question Tags — Past Perfect Continuous"
+        cross_cutting_source: question_tags
+        structure: "Positive statement + hadn't + pronoun? / Negative statement + had + pronoun?"
+        examples:
+          - "You had been waiting for hours, hadn't you?"
+          - "She had been sleeping, hadn't she?"
+          - "They hadn't been trying, had they?"
+
+  # ─── FUTURE WILL ──────────────────────────────────────────────────────────
+  - base: future_will
+    topics:
+      - topic: wh_questions
+        level_min: A1
+        label: "WH Questions — Future (will)"
+        cross_cutting_source: question_forms
+        structure: "Wh- word + will + subject + base verb?"
+        examples:
+          - "What will you do tomorrow?"
+          - "Where will she go?"
+          - "When will they arrive?"
+          - "Who will you call?"
+          - "Why will he leave early?"
+          - "How will they get there?"
+      - topic: short_answers
+        level_min: A1
+        label: "Short Answers — Future (will)"
+        cross_cutting_source: question_forms
+        structure: "Yes/No, subject + will / won't."
+        examples:
+          - "Will you come? — Yes, I will. / No, I won't."
+          - "Will she call? — Yes, she will. / No, she won't."
+          - "Will they stay? — Yes, they will. / No, they won't."
+          - "Will he help? — Yes, he will. / No, he won't."
+      - topic: question_tags
+        level_min: A2
+        label: "Question Tags — Future (will)"
+        cross_cutting_source: question_tags
+        structure: "Positive statement + won't + pronoun? / Negative statement + will + pronoun?"
+        examples:
+          - "You'll come to the party, won't you?"
+          - "She will help, won't she?"
+          - "They won't forget, will they?"
+          - "He won't be late, will he?"
+
+  # ─── BE GOING TO ──────────────────────────────────────────────────────────
+  - base: be_going_to
+    topics:
+      - topic: wh_questions
+        level_min: A1
+        label: "WH Questions — Be Going To"
+        cross_cutting_source: question_forms
+        structure: "Wh- word + am/is/are + subject + going to + base verb?"
+        examples:
+          - "What are you going to do this weekend?"
+          - "Where is she going to go?"
+          - "When are they going to arrive?"
+          - "Who are you going to call?"
+          - "Why is he going to leave?"
+          - "How are they going to get there?"
+      - topic: short_answers
+        level_min: A1
+        label: "Short Answers — Be Going To"
+        cross_cutting_source: question_forms
+        structure: "Yes/No, subject + am/is/are / 'm not/isn't/aren't."
+        examples:
+          - "Are you going to come? — Yes, I am. / No, I'm not."
+          - "Is she going to call? — Yes, she is. / No, she isn't."
+          - "Are they going to stay? — Yes, they are. / No, they aren't."
+          - "Is he going to help? — Yes, he is. / No, he isn't."
+      - topic: question_tags
+        level_min: A2
+        label: "Question Tags — Be Going To"
+        cross_cutting_source: question_tags
+        structure: "Positive statement + isn't/aren't + pronoun? / Negative statement + is/are + pronoun?"
+        examples:
+          - "You're going to come, aren't you?"
+          - "She's going to call, isn't she?"
+          - "They aren't going to stay, are they?"
+          - "He isn't going to help, is he?"
+
+  # ─── FUTURE GOING TO (alias file) ─────────────────────────────────────────
+  - base: future_going_to
+    topics:
+      - topic: wh_questions
+        level_min: A1
+        label: "WH Questions — Going To Future"
+        cross_cutting_source: question_forms
+        structure: "Wh- word + am/is/are + subject + going to + base verb?"
+        examples:
+          - "What are you going to do this weekend?"
+          - "Where is she going to go?"
+          - "When are they going to arrive?"
+          - "Who are you going to call?"
+          - "Why is he going to leave?"
+          - "How are they going to get there?"
+      - topic: short_answers
+        level_min: A1
+        label: "Short Answers — Going To Future"
+        cross_cutting_source: question_forms
+        structure: "Yes/No, subject + am/is/are / 'm not/isn't/aren't."
+        examples:
+          - "Are you going to come? — Yes, I am. / No, I'm not."
+          - "Is she going to call? — Yes, she is. / No, she isn't."
+          - "Are they going to stay? — Yes, they are. / No, they aren't."
+      - topic: question_tags
+        level_min: A2
+        label: "Question Tags — Going To Future"
+        cross_cutting_source: question_tags
+        structure: "Positive statement + isn't/aren't + pronoun? / Negative statement + is/are + pronoun?"
+        examples:
+          - "You're going to come, aren't you?"
+          - "She's going to call, isn't she?"
+          - "They aren't going to stay, are they?"
+
+  # ─── FUTURE CONTINUOUS ────────────────────────────────────────────────────
+  - base: future_continuous
+    topics:
+      - topic: wh_questions
+        level_min: A1
+        label: "WH Questions — Future Continuous"
+        cross_cutting_source: question_forms
+        structure: "Wh- word + will + subject + be + verb-ing?"
+        examples:
+          - "What will you be doing at 8pm tonight?"
+          - "Where will she be staying?"
+          - "Who will they be meeting?"
+          - "Why will he be working on Sunday?"
+      - topic: short_answers
+        level_min: A1
+        label: "Short Answers — Future Continuous"
+        cross_cutting_source: question_forms
+        structure: "Yes/No, subject + will / won't."
+        examples:
+          - "Will you be working? — Yes, I will. / No, I won't."
+          - "Will she be joining us? — Yes, she will. / No, she won't."
+          - "Will they be waiting? — Yes, they will. / No, they won't."
+      - topic: question_tags
+        level_min: A2
+        label: "Question Tags — Future Continuous"
+        cross_cutting_source: question_tags
+        structure: "Positive statement + won't + pronoun? / Negative statement + will + pronoun?"
+        examples:
+          - "You'll be working late, won't you?"
+          - "She will be joining us, won't she?"
+          - "They won't be coming, will they?"
+
+  # ─── FUTURE PERFECT ───────────────────────────────────────────────────────
+  - base: future_perfect
+    topics:
+      - topic: wh_questions
+        level_min: A1
+        label: "WH Questions — Future Perfect"
+        cross_cutting_source: question_forms
+        structure: "Wh- word + will + subject + have + past participle?"
+        examples:
+          - "What will you have done by then?"
+          - "Where will she have gone?"
+          - "How much will they have saved?"
+          - "Who will you have spoken to?"
+      - topic: short_answers
+        level_min: A1
+        label: "Short Answers — Future Perfect"
+        cross_cutting_source: question_forms
+        structure: "Yes/No, subject + will / won't."
+        examples:
+          - "Will you have finished? — Yes, I will. / No, I won't."
+          - "Will she have arrived? — Yes, she will. / No, she won't."
+          - "Will they have left? — Yes, they will. / No, they won't."
+      - topic: question_tags
+        level_min: A2
+        label: "Question Tags — Future Perfect"
+        cross_cutting_source: question_tags
+        structure: "Positive statement + won't + pronoun? / Negative statement + will + pronoun?"
+        examples:
+          - "You'll have finished by noon, won't you?"
+          - "She will have arrived, won't she?"
+          - "They won't have left, will they?"
+
+  # ─── FUTURE PERFECT SIMPLE (alias file) ───────────────────────────────────
+  - base: future_perfect_simple
+    topics:
+      - topic: wh_questions
+        level_min: A1
+        label: "WH Questions — Future Perfect Simple"
+        cross_cutting_source: question_forms
+        structure: "Wh- word + will + subject + have + past participle?"
+        examples:
+          - "What will you have done by then?"
+          - "Where will she have gone?"
+          - "How much will they have saved?"
+      - topic: short_answers
+        level_min: A1
+        label: "Short Answers — Future Perfect Simple"
+        cross_cutting_source: question_forms
+        structure: "Yes/No, subject + will / won't."
+        examples:
+          - "Will you have finished? — Yes, I will. / No, I won't."
+          - "Will she have arrived? — Yes, she will. / No, she won't."
+      - topic: question_tags
+        level_min: A2
+        label: "Question Tags — Future Perfect Simple"
+        cross_cutting_source: question_tags
+        structure: "Positive statement + won't + pronoun? / Negative statement + will + pronoun?"
+        examples:
+          - "You'll have finished by noon, won't you?"
+          - "They won't have left, will they?"
+
+  # ─── FUTURE PERFECT CONTINUOUS ────────────────────────────────────────────
+  - base: future_perfect_continuous
+    topics:
+      - topic: wh_questions
+        level_min: A1
+        label: "WH Questions — Future Perfect Continuous"
+        cross_cutting_source: question_forms
+        structure: "Wh- word + will + subject + have been + verb-ing?"
+        examples:
+          - "How long will you have been waiting?"
+          - "What will she have been doing?"
+          - "How long will they have been working?"
+      - topic: short_answers
+        level_min: A1
+        label: "Short Answers — Future Perfect Continuous"
+        cross_cutting_source: question_forms
+        structure: "Yes/No, subject + will / won't."
+        examples:
+          - "Will you have been waiting long? — Yes, I will. / No, I won't."
+          - "Will she have been working? — Yes, she will. / No, she won't."
+      - topic: question_tags
+        level_min: A2
+        label: "Question Tags — Future Perfect Continuous"
+        cross_cutting_source: question_tags
+        structure: "Positive statement + won't + pronoun? / Negative statement + will + pronoun?"
+        examples:
+          - "You'll have been working for three hours, won't you?"
+          - "She won't have been waiting long, will she?"
+
+  # ─── USED TO ──────────────────────────────────────────────────────────────
+  - base: used_to
+    topics:
+      - topic: wh_questions
+        level_min: A1
+        label: "WH Questions — Used To"
+        cross_cutting_source: question_forms
+        structure: "Wh- word + did + subject + use to + base verb?"
+        examples:
+          - "What did you use to do as a child?"
+          - "Where did she use to live?"
+          - "Who did you use to spend time with?"
+          - "When did they use to meet?"
+          - "Why did he use to get up so early?"
+      - topic: short_answers
+        level_min: A1
+        label: "Short Answers — Used To"
+        cross_cutting_source: question_forms
+        structure: "Yes/No, subject + did / didn't."
+        examples:
+          - "Did you use to play football? — Yes, I did. / No, I didn't."
+          - "Did she use to work here? — Yes, she did. / No, she didn't."
+          - "Did they use to live abroad? — Yes, they did. / No, they didn't."
+      - topic: question_tags
+        level_min: A2
+        label: "Question Tags — Used To"
+        cross_cutting_source: question_tags
+        structure: "Positive statement + didn't + pronoun? / Negative statement + did + pronoun?"
+        examples:
+          - "You used to live here, didn't you?"
+          - "She used to work here, didn't she?"
+          - "They didn't use to argue, did they?"
+          - "He used to drive, didn't he?"
+
+  # ─── USED TO / WOULD (PAST HABITS) ────────────────────────────────────────
+  - base: used_to_would
+    topics:
+      - topic: wh_questions
+        level_min: A1
+        label: "WH Questions — Used To / Would"
+        cross_cutting_source: question_forms
+        structure: "Wh- word + would + subject + base verb? / Wh- word + did + subject + use to + base verb?"
+        examples:
+          - "What would you do every summer as a child?"
+          - "Where would she go on weekends?"
+          - "Who would you visit?"
+          - "What did you use to eat for breakfast?"
+      - topic: short_answers
+        level_min: A1
+        label: "Short Answers — Used To / Would"
+        cross_cutting_source: question_forms
+        structure: "Yes/No, subject + would / wouldn't. / Yes/No, subject + did / didn't."
+        examples:
+          - "Would you visit every year? — Yes, I would. / No, I wouldn't."
+          - "Did you use to play football? — Yes, I did. / No, I didn't."
+      - topic: question_tags
+        level_min: A2
+        label: "Question Tags — Used To / Would"
+        cross_cutting_source: question_tags
+        structure: "Would statement + wouldn't + pronoun? / Used to statement + didn't + pronoun?"
+        examples:
+          - "You would visit every year, wouldn't you?"
+          - "She wouldn't complain, would she?"
+          - "You used to live here, didn't you?"
+
+  # ─── WILL / WOULD HABITS ──────────────────────────────────────────────────
+  - base: will_would_habits
+    topics:
+      - topic: wh_questions
+        level_min: A1
+        label: "WH Questions — Will/Would Habits"
+        cross_cutting_source: question_forms
+        structure: "Wh- word + will/would + subject + base verb?"
+        examples:
+          - "What will she do when something upsets her?"
+          - "What would he do every morning as a child?"
+          - "Where would they go on holidays?"
+          - "Who would you turn to in a crisis?"
+      - topic: short_answers
+        level_min: A1
+        label: "Short Answers — Will/Would Habits"
+        cross_cutting_source: question_forms
+        structure: "Yes/No, subject + will/would / won't/wouldn't."
+        examples:
+          - "Will she always react that way? — Yes, she will. / No, she won't."
+          - "Would he do that every time? — Yes, he would. / No, he wouldn't."
+      - topic: question_tags
+        level_min: A2
+        label: "Question Tags — Will/Would Habits"
+        cross_cutting_source: question_tags
+        structure: "Positive statement + won't/wouldn't + pronoun? / Negative statement + will/would + pronoun?"
+        examples:
+          - "She will always say that, won't she?"
+          - "He would never complain, would he?"
+          - "They won't change, will they?"
+
+  # ─── MODALS (GENERAL) ─────────────────────────────────────────────────────
+  - base: modals
+    topics:
+      - topic: wh_questions
+        level_min: A1
+        label: "WH Questions — Modals"
+        cross_cutting_source: question_forms
+        structure: "Wh- word + modal + subject + base verb?"
+        examples:
+          - "What can you do?"
+          - "Where should she go?"
+          - "When must you leave?"
+          - "Who could help us?"
+          - "Why might he be late?"
+          - "How should they respond?"
+      - topic: short_answers
+        level_min: A1
+        label: "Short Answers — Modals"
+        cross_cutting_source: question_forms
+        structure: "Yes/No, subject + modal / modal + not."
+        examples:
+          - "Can you swim? — Yes, I can. / No, I can't."
+          - "Should she go? — Yes, she should. / No, she shouldn't."
+          - "Must you leave? — Yes, I must. / No, I don't have to."
+          - "Could they help? — Yes, they could. / No, they couldn't."
+      - topic: question_tags
+        level_min: A2
+        label: "Question Tags — Modals"
+        cross_cutting_source: question_tags
+        structure: "Positive statement + modal + n't + pronoun? / Negative statement + modal + pronoun?"
+        examples:
+          - "You can swim, can't you?"
+          - "She should call, shouldn't she?"
+          - "They could help, couldn't they?"
+          - "He won't forget, will he?"
+
+  # ─── MODALS OVERVIEW ──────────────────────────────────────────────────────
+  - base: modals_overview
+    topics:
+      - topic: wh_questions
+        level_min: A1
+        label: "WH Questions — Modals Overview"
+        cross_cutting_source: question_forms
+        structure: "Wh- word + modal + subject + base verb?"
+        examples:
+          - "What can you do to help?"
+          - "Where should we go?"
+          - "When might she arrive?"
+          - "Who could do this job?"
+          - "Why must you leave now?"
+      - topic: short_answers
+        level_min: A1
+        label: "Short Answers — Modals Overview"
+        cross_cutting_source: question_forms
+        structure: "Yes/No, subject + modal / modal + not."
+        examples:
+          - "Can you help? — Yes, I can. / No, I can't."
+          - "Should we go? — Yes, we should. / No, we shouldn't."
+          - "Must you do it now? — Yes, I must. / No, I don't have to."
+      - topic: question_tags
+        level_min: A2
+        label: "Question Tags — Modals Overview"
+        cross_cutting_source: question_tags
+        structure: "Positive statement + modal + n't + pronoun? / Negative statement + modal + pronoun?"
+        examples:
+          - "You can drive, can't you?"
+          - "She should know, shouldn't she?"
+          - "They might come, mightn't they?"
+          - "He couldn't do it, could he?"
+
+  # ─── MODALS — PAST (could have / should have / would have) ────────────────
+  - base: modals_past
+    topics:
+      - topic: wh_questions
+        level_min: A1
+        label: "WH Questions — Past Modals"
+        cross_cutting_source: question_forms
+        structure: "Wh- word + modal + have + past participle?"
+        examples:
+          - "What could he have done differently?"
+          - "Where should she have gone?"
+          - "Why might they have left?"
+          - "Who could have helped?"
+          - "What would you have done?"
+      - topic: short_answers
+        level_min: A1
+        label: "Short Answers — Past Modals"
+        cross_cutting_source: question_forms
+        structure: "Yes/No, subject + modal + have."
+        examples:
+          - "Could you have done it? — Yes, I could have. / No, I couldn't have."
+          - "Should she have called? — Yes, she should have. / No, she shouldn't have."
+          - "Would they have helped? — Yes, they would have. / No, they wouldn't have."
+      - topic: question_tags
+        level_min: A2
+        label: "Question Tags — Past Modals"
+        cross_cutting_source: question_tags
+        structure: "Positive statement + modal + n't + have + pronoun? / Negative statement + modal + have + pronoun?"
+        examples:
+          - "You could have told me, couldn't you?"
+          - "She should have called, shouldn't she?"
+          - "They wouldn't have known, would they?"
+          - "He couldn't have done it alone, could he?"
+
+  # ─── MODALS PERFECT ───────────────────────────────────────────────────────
+  - base: modals_perfect
+    topics:
+      - topic: wh_questions
+        level_min: A1
+        label: "WH Questions — Modal Perfect"
+        cross_cutting_source: question_forms
+        structure: "Wh- word + modal + have + past participle?"
+        examples:
+          - "What must have happened?"
+          - "Where might she have gone?"
+          - "Why can't he have known?"
+          - "Who could have done this?"
+          - "How long might they have been waiting?"
+      - topic: short_answers
+        level_min: A1
+        label: "Short Answers — Modal Perfect"
+        cross_cutting_source: question_forms
+        structure: "Yes/No, subject + modal + have."
+        examples:
+          - "Could she have forgotten? — Yes, she could have. / No, she couldn't have."
+          - "Must it have been expensive? — Yes, it must have. / No, it needn't have been."
+          - "Might they have left? — Yes, they might have. / No, they mightn't have."
+      - topic: question_tags
+        level_min: A2
+        label: "Question Tags — Modal Perfect"
+        cross_cutting_source: question_tags
+        structure: "Positive statement + modal + n't + have + pronoun? / Negative statement + modal + have + pronoun?"
+        examples:
+          - "She must have known, mustn't she?"
+          - "You could have called, couldn't you?"
+          - "They might not have seen it, might they?"

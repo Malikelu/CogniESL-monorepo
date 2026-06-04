@@ -1,37 +1,105 @@
-grammar_point: deixis
-title: Deixis (Spatial, Temporal, Social)
+citations:
+- claim: 'Core meaning: Deictic words ''point to'' elements in the context of the
+    utterance — they cannot be understood withou'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
+    The Tense-Aspect System'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday
+    communication.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
+    The Tense-Aspect System'
+  tier: 1
+- claim: Common error '*I want this book there.* (pointing to a book far away)' for
+    Portuguese, Spanish, Chinese speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+common_errors:
+- correction: I want that book there.
+  error: '*I want this book there.* (pointing to a book far away)'
+  explanation: '''This'' is for things near the speaker. ''That'' is for things far
+    from the speaker. Using ''this'' for distant objects is a common error.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
 description: 'Words whose meaning depends entirely on the context of the utterance:
   here/there, now/then, I/you. The same word points to different things depending
   on who speaks, where, and when.'
+dialectal_variation: []
+discourse_notes:
+- note: Deictic expressions anchor utterances in context — person deixis (I/you),
+    place deixis (here/there), time deixis (now/then), and discourse deixis (this/that
+    referring to preceding text).
+  affirmative:
+    example_generator:
+      contexts:
+      - spatial references
+      - temporal references
+      - social references
+      min_examples: 4
+    structure: 'Deictic word placed according to its function: spatial (= this/that,
+      here/there), temporal (= now/then, today/yesterday), personal (= I/you, we/they).
+      No conjugation changes for deixis itself.'
+  negative:
+    example_generator:
+      contexts:
+      - rejecting
+      - denying
+      - correcting
+      min_examples: 3
+    structure: 'Negation applies to the main verb, not the deictic word: ''This is
+      not mine'' / ''I do not want that now'' / ''They are not here.'''
+  questions:
+    example_generator:
+      contexts:
+      - checking location
+      - confirming time
+      - asking about ownership
+      min_examples: 3
+    structure: 'Deictic words in questions often involve shifting to the listener''s
+      perspective: ''Can you bring that here?'' / ''Will you be there tomorrow?''
+      / ''Is this yours?'''
+grammar_point: deixis
 level: C2
 meaning:
-  core_meaning: Deictic words 'point to' elements in the context of the utterance
-    — they cannot be understood without knowing who is speaking, where they are, and
-    when the utterance occurs.
-  timeline: Varies — deictic words shift meaning based on the moment of speaking.
-    'Now' always means the present moment of the speaker; 'tomorrow' is always the
-    day after the utterance.
-  contrast: '''The cat is here'' (near me) vs ''The cat is there'' (away from me).
-    The physical meaning changes entirely based on the speaker''s location. Unlike
-    non-deictic words, deictic words have no fixed reference.'
   ccqs:
-  - question: If I say 'here' and you say 'here' from a different room, do we mean
-      the same place?
-    answer: No — 'here' points to each speaker's location.
+  - answer: No — 'here' points to each speaker's location.
     purpose: Tests whether the learner understands that deictic words (this/that/here/there)
       depend on the speaker's physical or psychological distance. This is fundamental
       for clear reference in speech and writing.
-  - question: If I say 'tomorrow' on Monday and you say 'tomorrow' on Friday, do we
-      mean the same day?
-    answer: No — 'tomorrow' is always the day after the utterance.
+    question: If I say 'here' and you say 'here' from a different room, do we mean
+      the same place?
+  - answer: No — 'tomorrow' is always the day after the utterance.
     purpose: Tests whether the learner can identify and apply the correct form/meaning
       of this grammar point in context. The question 'If I say 'tomorrow' on Monday
       and you say 'tomorro...' checks conceptual understanding, not just memorization.
-  - question: Does 'I' always refer to the same person?
-    answer: No — 'I' refers to whoever is speaking at that moment.
+    question: If I say 'tomorrow' on Monday and you say 'tomorrow' on Friday, do we
+      mean the same day?
+  - answer: No — 'I' refers to whoever is speaking at that moment.
     purpose: Tests whether the learner can identify and apply the correct form/meaning
       of this grammar point in context. The question 'Does 'I' always refer to the
       same person?...' checks conceptual understanding, not just memorization.
+    question: Does 'I' always refer to the same person?
+  - answer: It usually changes — 'here' becomes 'there' because the deictic centre
+      shifts from the original speaker to the reporter. For example, 'She said, "Come
+      here"' becomes 'She told me to go there.'
+    purpose: Tests whether the learner understands that deictic words shift reference
+      in reported speech. Spatial ('here' to 'there'), temporal ('now' to 'then'),
+      and personal ('I' to 'she/he') deixis all change when the deictic centre transfers
+      to the reporter. This is essential for accurate reported speech.
+    question: In reported speech, does 'here' stay as 'here' or change?
+  contrast: '''The cat is here'' (near me) vs ''The cat is there'' (away from me).
+    The physical meaning changes entirely based on the speaker''s location. Unlike
+    non-deictic words, deictic words have no fixed reference.'
+  core_meaning: Deictic words 'point to' elements in the context of the utterance
+    — they cannot be understood without knowing who is speaking, where they are, and
+    when the utterance occurs.
   example_generator:
     contexts:
     - giving directions
@@ -44,64 +112,98 @@ meaning:
     - Some languages have more complex deictic systems (e.g., three-way spatial distinction)
     - Phone conversations rely heavily on spatial deixis without visual support
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Deictic word placed according to its function: spatial (= this/that,
-      here/there), temporal (= now/then, today/yesterday), personal (= I/you, we/they).
-      No conjugation changes for deixis itself.'
-    example_generator:
-      contexts:
-      - spatial references
-      - temporal references
-      - social references
-      min_examples: 4
-  negative:
-    structure: 'Negation applies to the main verb, not the deictic word: ''This is
-      not mine'' / ''I do not want that now'' / ''They are not here.'''
-    example_generator:
-      contexts:
-      - rejecting
-      - denying
-      - correcting
-      min_examples: 3
-  questions:
-    structure: 'Deictic words in questions often involve shifting to the listener''s
-      perspective: ''Can you bring that here?'' / ''Will you be there tomorrow?''
-      / ''Is this yours?'''
-    example_generator:
-      contexts:
-      - checking location
-      - confirming time
-      - asking about ownership
-      min_examples: 3
+  timeline: Varies — deictic words shift meaning based on the moment of speaking.
+    'Now' always means the present moment of the speaker; 'tomorrow' is always the
+    day after the utterance.
+phonetics:
+- example_generator:
+    contexts:
+    - face-to-face communication
+  l1_issue: Learners whose L1 has fewer deictic distinctions (e.g., one word for this/that)
+    may under-use English spatial deixis or confuse here/there.
+  note: Spatial deictic words are often accompanied by gestures in speech (pointing,
+    nodding towards a location).
+- example_generator:
+    contexts:
+    - emphasis and contrast
+  l1_issue: Some L1 speakers may over-use explicit time phrases (at 3pm on Monday)
+    where native speakers would use deixis (then, that day).
+  note: 'Temporal deictic words are unstressed in natural speech unless contrasted:
+    ''I said THEN, not now.'''
+register_notes:
+- note: 'Biber et al. (2021) — Deictic expressions (this, that, here, now): conversation
+    uses more exophoric deixis (pointing to context); academic prose uses more endophoric/text-internal
+    deixis. Ch. 12.3'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 12.3
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
+    The Tense-Aspect System'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Spatial deixis — pointing to physical location relative to the speaker
-  type: grammatical
-  examples:
+- examples:
   - This book (near me) is interesting.
   - That book (away from mine) is yours.
   - Come here (towards me).
   - Go there (away from me).
   - Bring it here (to my location).
-- rule: Temporal deixis — pointing to time relative to the moment of speaking
+  rule: Spatial deixis — pointing to physical location relative to the speaker
   type: grammatical
-  examples:
+- examples:
   - I am busy now (at this moment).
   - I will do it later (after now).
   - We met then (at that past time).
   - See you this Friday (the Friday of this week).
-- rule: Social (person) deixis — pointing to participants in the conversation
+  rule: Temporal deixis — pointing to time relative to the moment of speaking
   type: grammatical
-  examples:
+- examples:
   - I will help you (speaker = I, listener = you).
   - We should discuss it (speaker + others).
   - They do not know (third parties, not present).
-- rule: Discourse deixis — pointing to parts of the text or conversation itself
+  rule: Social (person) deixis — pointing to participants in the conversation
   type: grammatical
-  examples:
+- examples:
   - This is important (what I am about to say).
   - That was a good point (what you just said).
   - As mentioned above (earlier in the text).
+  rule: Discourse deixis — pointing to parts of the text or conversation itself
+  type: grammatical
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Hide objects around the room. Students give directions using
+      spatial deixis (here/there/this/that). Works well for A1-B1 levels.
+    duration: 15
+    name: Classroom Treasure Hunt
+  - adaptation_notes: Students rewrite a passage converting direct speech to reported
+      speech, changing all deictic references (I→he/she, here→there, now→then, etc.).
+    duration: 10
+    name: Deixis Transformation
+  - adaptation_notes: 'Quick-fire activity: teacher points to objects/times/people
+      and students produce correct deictic expression. Great warm-up.'
+    duration: 5
+    name: Point and Say
+  tips:
+  - 'Use physical objects in the classroom to demonstrate spatial deixis: hold up
+    a pen and say ''this'', point to a pen on a student''s desk and say ''that''.'
+  - Role-play phone conversations where visual context is absent — students must use
+    deixis without pointing.
+  - Compare deictic systems across languages to raise awareness of differences.
+  - 'Use classroom timeline activities for temporal deixis: ''now'', ''yesterday'',
+    ''next week''.'
+  - 'Show how deixis shifts in reported speech: ''here'' becomes ''there'', ''now''
+    becomes ''then''.'
+  - 'Swan deixis: Reference tied to the speaker''s context. Person (I/you), place
+    (here/there), time (now/then). (deictics) change meaning based on who says them
+    when. ''This'' = near speaker, ''that'' = far; ''now'' = moment of speaking.'
+title: Deixis (Spatial, Temporal, Social)
 use:
 - context: Giving directions
   description: Spatial deixis is essential when guiding someone through physical space.
@@ -120,75 +222,3 @@ use:
   examples:
   - As mentioned above (written) vs As I just said (spoken)
   - See the diagram below (written) vs Look at this (spoken)
-phonetics:
-- note: Spatial deictic words are often accompanied by gestures in speech (pointing,
-    nodding towards a location).
-  example_generator:
-    contexts:
-    - face-to-face communication
-  l1_issue: Learners whose L1 has fewer deictic distinctions (e.g., one word for this/that)
-    may under-use English spatial deixis or confuse here/there.
-- note: 'Temporal deictic words are unstressed in natural speech unless contrasted:
-    ''I said THEN, not now.'''
-  example_generator:
-    contexts:
-    - emphasis and contrast
-  l1_issue: Some L1 speakers may over-use explicit time phrases (at 3pm on Monday)
-    where native speakers would use deixis (then, that day).
-teaching:
-  methodology: Guided discovery
-  tips:
-  - 'Use physical objects in the classroom to demonstrate spatial deixis: hold up
-    a pen and say ''this'', point to a pen on a student''s desk and say ''that''.'
-  - Role-play phone conversations where visual context is absent — students must use
-    deixis without pointing.
-  - Compare deictic systems across languages to raise awareness of differences.
-  - 'Use classroom timeline activities for temporal deixis: ''now'', ''yesterday'',
-    ''next week''.'
-  - 'Show how deixis shifts in reported speech: ''here'' becomes ''there'', ''now''
-    becomes ''then''.'
-  recommended_activities:
-  - name: Classroom Treasure Hunt
-    duration: 15
-    adaptation_notes: Hide objects around the room. Students give directions using
-      spatial deixis (here/there/this/that). Works well for A1-B1 levels.
-  - name: Deixis Transformation
-    duration: 10
-    adaptation_notes: Students rewrite a passage converting direct speech to reported
-      speech, changing all deictic references (I→he/she, here→there, now→then, etc.).
-  - name: Point and Say
-    duration: 5
-    adaptation_notes: 'Quick-fire activity: teacher points to objects/times/people
-      and students produce correct deictic expression. Great warm-up.'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 11:
-    Relative Clauses, §11.1-11.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I want this book there.* (pointing to a book far away)'
-  correction: I want that book there.
-  explanation: '''This'' is for things near the speaker. ''That'' is for things far
-    from the speaker. Using ''this'' for distant objects is a common error.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

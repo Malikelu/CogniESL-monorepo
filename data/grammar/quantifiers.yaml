@@ -1,33 +1,209 @@
+citations:
+- claim: 'Core meaning: Quantifiers tell us how much or how many of something'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17: Partitives, Collectives and Quantifiers'
+  tier: 1
+- claim: 'Register distribution: Quantifiers are neutral in register for everyday use.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17: Partitives, Collectives, and Quantifiers-17.4'
+  tier: 1
+- claim: 'Discourse function: Quantifiers establish quantity in discourse: ''Several people attended. Most were students.
+    Few were '
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17: Partitives, Collectives, and Quantifiers-17.4'
+  tier: 1
+- claim: 'Common error ''Using ''much'' with countable nouns: *''I have much friends.'''' for Portuguese, Spanish, French
+    speakers'
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 10: Determiners-10.8'
+  tier: 1
+- claim: 'Dialectal variation: In AmE, ''a lot of'' is increasingly accepted in formal writing. In BrE, ''many'' or ''a great
+    deal of'' i'
+  reliability: B
+  source: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Ch. 5: Nouns and Noun Phrases (quantification)'
+  tier: 1
+- claim: L1 transfer in quantifiers varies significantly across language backgrounds — Swan & Smith document contrastive patterns
+    for speakers of different L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+common_errors:
+- correction: I have many friends.
+  error: 'Using ''much'' with countable nouns: *''I have much friends.'''
+  explanation: 'Swan PEU: ''Much'' is used with singular (uncountable) nouns; ''many'' is used with plurals. ''I haven''t
+    got much time'' (uncountable) vs ''I don''t know many of your friends'' (plural).'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan Entry 165. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+- correction: I have much money.
+  error: 'Using ''many'' with uncountable nouns: *''I have many money.'''
+  explanation: 'Swan PEU: ''Many'' is only for countable nouns. ''Much'' is for uncountable nouns. ''I have much money'' is
+    grammatical but formal; in informal speech, ''I have a lot of money'' is more natural.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: B
+  source: Swan Entry 165. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+- correction: I have a few friends.
+  error: 'Confusing ''a few'' and ''few'': *''I have few friends.'' (meaning some)'
+  explanation: '''A few'' = some (positive connotation). ''Few'' = almost none (negative connotation). ''I have a few friends''
+    = I have some friends (positive). ''I have few friends'' = I almost have no friends (negative).'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+- correction: I have a little time.
+  error: 'Confusing ''a little'' and ''little'': *''I have little time.'' (meaning some)'
+  explanation: '''A little'' = some (positive). ''Little'' = almost none (negative). Same distinction as ''a few/few'' but
+    for uncountable nouns.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+- correction: Many people attended the conference. / A large number of people attended the conference.
+  error: 'Using ''a lot of'' in formal writing: *''A lot of people attended the conference.'''
+  explanation: 'Swan Entries 165.4, 172: ''A lot of'' is informal. In formal writing, use ''many'' (countable), ''much'' (uncountable),
+    ''numerous'', or ''a considerable number/amount of''. Swan PEU: in informal affirmative clauses, ''much/many'' are unusual;
+    use ''a lot of/lots of/plenty of'' instead.'
+  l1_groups:
+  - All L1 groups
+  reliability: B
+  source: Swan Entry 165.4, 172. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+- correction: Unstressed some /səm/ = indefinite small quantity, introduces new information, used in offers and requests ('Would
+    you like some tea?'). Stressed SOME /sʌm/ = restricted or limited quantity ('I have SOME money, but not much'). Unstressed
+    any = existence in questions and negatives ('Do you have any milk?'). Stressed ANY = unrestricted quantity or free choice
+    ('Take ANY seat you like').
+  error: 'Treating stressed and unstressed some/any as purely phonetic variants rather than semantic/pragmatic distinctions:
+    *''I want SOME help.'' (implying you help others but not me) used without awareness of meaning shift.'
+  explanation: Parrott (2000) identifies this as a semantic and pragmatic distinction, not merely a phonetic one. Stressed
+    some implies a restriction or contrast ('I have SOME idea' = a partial, limited idea). Stressed any implies freedom from
+    restriction or an open choice ('ANY time is fine' = there is no restriction on time). Learners who are taught only the
+    affirmative/negative/question rule for some/any miss these meaning contrasts entirely.
+  l1_groups:
+  - All L1 groups
+  reliability: A
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press. Ch. 3: Quantifiers-3.6.'
+- correction: another = one more, a different one — singular and indefinite ('Give me another chance'). other = different
+    ones — used with plural nouns or with the ('I have other options', 'the other day').
+  error: 'Confusing ''another'' and ''other'': European learners use ''another'' where ''other'' is needed (*''I have another
+    options''); non-European learners use ''other'' where ''another'' is needed (*''Give me other chance'').'
+  explanation: 'Parrott (2000) treats another vs other as a major learner difficulty with a clear L1-group split. European
+    learners (especially Romance L1s) tend to overgeneralise ''another'' to plural or definite contexts (*''another options'',
+    *''another people''). Non-European learners (especially East Asian L1s) tend to use bare ''other'' where ''another'' is
+    required (*''other chance'', *''other solution''). Key rule: another is always singular and indefinite; other can be singular
+    (with the) or plural.'
+  l1_groups:
+  - Romance L1s (European)
+  - East Asian L1s
+  - Arabic
+  reliability: A
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press. Ch. 3: Quantifiers-3.6.'
+- correction: Each student has a book. / Every person is happy.
+  error: 'Using a plural verb after each or every: *''Each student have a book.'' / *''Every person are happy.'''
+  explanation: Parrott (2000) notes that each and every always take singular verbs, regardless of the number of people or
+    things referred to. Each focuses on individual members of a group one by one; every refers to all members but grammatically
+    treats them as a collective singular. Both require a third-person singular verb (has, is, does, was, etc.).
+  l1_groups:
+  - All L1 groups
+  reliability: A
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press. Ch. 3: Quantifiers-3.6.'
+- correction: Neither option is available. / Neither of them is ready.
+  error: 'Using a plural verb after neither: *''Neither option are available.'' / *''Neither of them are ready.'''
+  explanation: Parrott (2000) identifies neither as taking a singular verb in standard formal English, even though it refers
+    to two things. The same applies to either. In informal spoken English, a plural verb after 'neither of them' is common
+    and increasingly accepted, but formal written English requires the singular. Learners should be taught the formal rule
+    and made aware of the informal variation.
+  l1_groups:
+  - All L1 groups
+  reliability: A
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press. Ch. 3: Quantifiers-3.6.'
+- correction: I have a lot of money. (informal) / I have much money. (formal written only)
+  error: 'Using ''much'' in affirmative sentences in informal contexts: *''I have much money.'' (sounds unnatural in spoken
+    English)'
+  explanation: Parrott (2000) notes that 'much' in affirmative sentences is restricted to formal registers. In everyday spoken
+    and informal written English, 'a lot of' or 'lots of' is the natural choice ('She has a lot of experience'). Using 'much'
+    in an affirmative informal context sounds stilted or overly formal (*'I have much work to do' in casual conversation).
+    Much is fully natural in negatives and questions at all registers ('I don't have much time', 'How much does it cost?').
+  l1_groups:
+  - All L1 groups
+  reliability: A
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press. Ch. 3: Quantifiers-3.6.'
+description: Words that show amount or quantity of nouns. Choice depends on countable/uncountable nouns and sentence type
+  (affirmative, negative, question).
+dialectal_variation:
+- note: In AmE, 'a lot of' is increasingly accepted in formal writing. In BrE, 'many' or 'a great deal of' is still preferred
+    in formal contexts.
+- note: 'In some dialects, ''lots of'' replaces ''a lot of'': ''Lots of people came.'' (informal)'
+discourse_notes:
+- note: 'Quantifiers establish quantity in discourse: ''Several people attended. Most were students. Few were teachers.'''
+- note: '''A few'' and ''few'' create different discourse implications: ''A few people came'' (some did, positive) vs ''Few
+    people came'' (almost none, negative).'
+- note: 'In academic writing, quantifiers express the scope of findings: ''Most participants agreed. A few disagreed. Few
+    strongly opposed.'''
+- note: 'Quantifiers create cohesion by referring back: ''Many people attended. Most were satisfied. Few complained.'''
+form:
+  affirmative:
+    example_generator:
+    - many books
+    - much water
+    - a lot of friends
+    - some rice
+    min_examples: 4
+    structure: 'Countable: many, a few, several, a lot of + plural noun / Uncountable: much, a little, a lot of + uncountable
+      noun / Both: some + noun'
+  negative:
+    example_generator:
+    - I don't have many friends.
+    - There isn't much water.
+    - She has few interests.
+    - He has little money.
+    min_examples: 4
+    structure: 'Countable: not many, not any, few + plural noun / Uncountable: not much, not any, little + uncountable noun'
+  questions:
+    example_generator:
+    - Do you have many friends?
+    - Is there much water?
+    - Are there any apples?
+    - Do you have much time?
+    min_examples: 4
+    structure: 'Countable: many, any + plural noun / Uncountable: much, any + uncountable noun'
 grammar_point: quantifiers
-title: Quantifiers (some, any, much, many, a lot of)
-description: Words that show amount or quantity of nouns. Choice depends on countable/uncountable
-  nouns and sentence type (affirmative, negative, question).
 level: A1
 meaning:
-  core_meaning: Quantifiers tell us how much or how many of something. The correct
-    quantifier depends on whether the noun is countable or uncountable, and whether
-    the sentence is affirmative, negative, or a question.
-  timeline: N/A — quantifiers are not tense-based. They describe quantity in any tense.
-  contrast: '''Many'' = countable plural (many apples) vs ''Much'' = uncountable (much
-    water) vs ''A lot of'' = both (a lot of apples, a lot of water)'
   ccqs:
-  - question: Is the noun countable (can we count individual items) or uncountable
-      (a mass/substance)?
-    answer: Countable = many, a few, few. Uncountable = much, a little, little.
-    purpose: Tests whether the learner can distinguish countable from uncountable
-      nouns, which determines quantifier choice. This is a fundamental skill because
-      using "much" with countable nouns or "many" with uncountables is one of the
-      most common A1 errors.
-  - question: Is this an affirmative sentence, negative sentence, or question?
-    answer: Affirmative = some. Negative/Question = any.
-    purpose: Tests whether the learner can use 'a lot of/lots of' with both countable
-      and uncountable nouns in informal contexts.
-  - question: Does 'a few' mean the same as 'few'?
-    answer: No — 'a few' = some (positive meaning). 'few' = almost none (negative
-      meaning).
-    purpose: 'Tests whether the learner understands the difference between ''few/a
-      few'' (countable) and ''little/a little'' (uncountable): ''few'' = not many
-      (negative), ''a few'' = some (positive).'
+  - answer: Countable = many, a few, few. Uncountable = much, a little, little.
+    purpose: Tests whether the learner can distinguish countable from uncountable nouns, which determines quantifier choice.
+      This is a fundamental skill because using "much" with countable nouns or "many" with uncountables is one of the most
+      common A1 errors.
+    question: Is the noun countable (can we count individual items) or uncountable (a mass/substance)?
+  - answer: Affirmative = some. Negative/Question = any.
+    purpose: Tests whether the learner can use 'a lot of/lots of' with both countable and uncountable nouns in informal contexts.
+    question: Is this an affirmative sentence, negative sentence, or question?
+  - answer: No — 'a few' = some (positive meaning). 'few' = almost none (negative meaning).
+    purpose: 'Tests whether the learner understands the difference between ''few/a few'' (countable) and ''little/a little''
+      (uncountable): ''few'' = not many (negative), ''a few'' = some (positive).'
+    question: Does 'a few' mean the same as 'few'?
+  - answer: '''A lot of'' is informal. In formal writing, use ''much'' (uncountable) or ''many'' (countable) or ''a great
+      deal of'' / ''a considerable amount of'' instead. For example: ''Much research has been conducted'' rather than ''A
+      lot of research has been conducted.'''
+    purpose: Tests whether the learner understands the register restrictions on ''a lot of'' versus other quantifiers. While
+      ''a lot of'' is perfectly natural in spoken English and informal writing, formal academic and professional writing requires
+      more formal alternatives like ''much'', ''many'', ''numerous'', or ''a considerable number of''.
+    question: Can we say 'I have a lot of money' in a formal essay, or should we use something else?
+  contrast: '''Many'' = countable plural (many apples) vs ''Much'' = uncountable (much water) vs ''A lot of'' = both (a lot
+    of apples, a lot of water)'
+  core_meaning: Quantifiers tell us how much or how many of something. The correct quantifier depends on whether the noun
+    is countable or uncountable, and whether the sentence is affirmative, negative, or a question.
   example_generator:
     contexts:
     - food and drink
@@ -39,76 +215,138 @@ meaning:
     - Avoid alcohol references
     - Keep examples simple and concrete for A1 level
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Countable: many, a few, several, a lot of + plural noun / Uncountable:
-      much, a little, a lot of + uncountable noun / Both: some + noun'
-    example_generator:
-    - many books
-    - much water
-    - a lot of friends
-    - some rice
-    min_examples: 4
-  negative:
-    structure: 'Countable: not many, not any, few + plural noun / Uncountable: not
-      much, not any, little + uncountable noun'
-    example_generator:
-    - I don't have many friends.
-    - There isn't much water.
-    - She has few interests.
-    - He has little money.
-    min_examples: 4
-  questions:
-    structure: 'Countable: many, any + plural noun / Uncountable: much, any + uncountable
-      noun'
-    example_generator:
-    - Do you have many friends?
-    - Is there much water?
-    - Are there any apples?
-    - Do you have much time?
-    min_examples: 4
+  timeline: N/A — quantifiers are not tense-based. They describe quantity in any tense.
+phonetics:
+- example_generator:
+  - some water /səm wɔːtə/
+  - some friends /səm frendz/
+  l1_issue: Many L1 speakers over-pronounce 'some' as /sʌm/. Teach the weak form for natural-sounding speech.
+  note: 'Weak form of ''some'' in connected speech: /səm/ not /sʌm/. ''Some books'' sounds like /səm bʊks/.'
+- example_generator:
+  - any water /əni wɔːtə/
+  - any friends /əni frendz/
+  l1_issue: Portuguese speakers may pronounce 'any' as /eni/ which can sound like 'enny'. Teach the weak form /əni/.
+  note: 'Weak form of ''any'' in connected speech: /əni/ not /eni/. ''Any books'' sounds like /əni bʊks/.'
+register_notes:
+- note: Quantifiers are neutral in register for everyday use.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In academic writing, ''a number of'' is more formal than ''many'': ''A number of studies have found...'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In formal writing, ''much'' is preferred over ''a lot of'' with uncountable nouns: ''Much research has been conducted.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: '''A few'' and ''a little'' are positive; ''few'' and ''little'' are negative. This distinction is important in all
+    registers.'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: Biber et al. (2021) — Quantifier distribution varies by register. Conversation uses more vague quantifiers (a lot
+    of, loads of); academic prose uses more precise quantification. Ch. 4.4.4
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 4.4.4
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 10: Determiners-10.8'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17: Partitives, Collectives and Quantifiers'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Ch. 5: Nouns and Noun Phrases (quantification)'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners. Ch. 7: Quantifiers'
+  validation: Swan (2016) Practical English Usage, 4th ed.(some/any), 165 (much/many), 168 (a few/few, a little/little), 172
+    (quantifying expressions).
 sub_rules:
-- rule: 'Countable nouns: many, a few, few, several, a lot of'
-  type: grammatical
-  examples:
+- examples:
   - many students
   - a few cookies
   - few chances
   - several options
   - a lot of people
-- rule: 'Uncountable nouns: much, a little, little, a lot of'
+  rule: 'Countable nouns: many, a few, few, several, a lot of'
   type: grammatical
-  examples:
+- examples:
   - much time
   - a little sugar
   - little money
   - a lot of water
-- rule: 'A few vs few: a few = some (positive), few = almost none (negative)'
-  type: semantic
-  examples:
+  rule: 'Uncountable nouns: much, a little, little, a lot of'
+  type: grammatical
+- examples:
   - I have a few friends. (some friends — positive)
   - I have few friends. (almost no friends — negative)
-- rule: 'A little vs little: a little = some (positive), little = almost none (negative)'
+  rule: 'A few vs few: a few = some (positive), few = almost none (negative)'
   type: semantic
-  examples:
+- examples:
   - I have a little money. (some money — positive)
   - I have little money. (almost no money — negative)
-- rule: 'Some vs any: some in affirmative, any in negative and questions'
-  type: grammatical
-  examples:
+  rule: 'A little vs little: a little = some (positive), little = almost none (negative)'
+  type: semantic
+- examples:
   - I have some bread. (affirmative)
   - I don't have any bread. (negative)
   - Do you have any bread? (question)
-- rule: 'Exception: some in polite questions and offers'
-  type: pragmatic
-  examples:
+  rule: 'Some vs any: some in affirmative, any in negative and questions'
+  type: grammatical
+- examples:
   - Can I have some water? (polite question)
   - Would you like some tea? (offer)
-- rule: A lot of works with both countable and uncountable nouns
-  type: grammatical
-  examples:
+  rule: 'Exception: some in polite questions and offers'
+  type: pragmatic
+- examples:
   - a lot of books (countable)
   - a lot of water (uncountable)
+  rule: A lot of works with both countable and uncountable nouns
+  type: grammatical
+teaching:
+  methodology: PPP (Present-Practice-Produce)
+  recommended_activities:
+  - adaptation_notes: 'Teacher says a noun. Students hold up ''C'' (countable) or ''U'' (uncountable) cards. Then students
+      say the correct quantifier: ''many books'' or ''much water''.'
+    duration: 10
+    name: Countable or Uncountable?
+  - adaptation_notes: 'Teacher says a sentence frame. Students complete with ''some'' or ''any'': ''I have ___ bread.'' (some)
+      ''Do you have ___ milk?'' (any) ''I don''t have ___ money.'' (any)'
+    duration: 10
+    name: Some or Any?
+  - adaptation_notes: 'Students practice shopping dialogues: ''Do you have any apples?'' ''Yes, I have some.'' ''How many
+      do you want?'' ''I need a lot of apples.'' Practices quantifiers in authentic context.'
+    duration: 15
+    name: Shopping Role Play
+  - adaptation_notes: 'Show two pictures: one person with a few friends (happy) and one with few friends (sad). Students describe
+      the pictures using ''a few'' and ''few''. Reinforces the meaning difference.'
+    duration: 10
+    name: A Few vs Few
+  tips:
+  - 'Parrott (2000) Ch. 3: Quantifiers are determiners that signal quantity. Each time we use a noun we must decide if a quantifier
+    is needed and which one. Choice involves meaning, grammatical factors, and formality. Quantifiers include all, another,
+    any, both, each, either/neither, enough, every, few/a few, little/a little, many, much, more, no, several, some, a lot
+    of. They appear at the beginning of noun phrases.'
+  - 'Parrott (2000): Parrott (2000) Ch. 3: Each/every take singular verbs. Neither takes singular verb. Formality affects
+    quantifier choice — much in affirmative is formal only. Some (stressed) vs any (stressed) marks speaker attitude toward
+    quantity. Each emphasizes individuals; every emphasizes the group.'
+  - 'Use real objects to demonstrate countable vs uncountable: count apples (countable) vs pour water (uncountable). This
+    makes the concept physical and memorable.'
+  - Drill the a few/few and a little/little distinction explicitly. This is a common source of confusion even at higher levels.
+  - 'Teach the some/any rule early: some for affirmative, any for negative and questions. Then teach the exception (polite
+    questions with some).'
+  - 'Use visual aids: show a glass with a little water (positive) vs a glass with little water (almost empty, negative).'
+  - 'Practice with shopping role-plays: ''Do you have any...?'' ''I need some...'' This gives authentic context.'
+  - 'Swan PEU: In informal style, much/many are mostly used in questions and negatives. In affirmative clauses, use ''a lot
+    of/lots of/plenty of''. Formal style allows much: ''Much has been written about unemployment.'''
+  - 'Swan PEU: The ''a'' makes all the difference. ''few'' = not many (negative); ''a few'' = some (positive). ''little''
+    = not much (negative); ''a little'' = some (positive). ''Quite a few'' = considerable number (informal).'
+  - 'Swan PEU: some in affirmatives, any in questions/negatives. Exception: some in offers/requests (''Would you like some
+    tea?''). any after negative words (never, hardly, without).'
+teaching_tips:
+- source: 'Celce-Murcia & Larsen-Freeman (1999) The Grammar Book: An ESL/EFL Teacher''s Course, 2nd ed. Heinle & Heinle.'
+  tip: 'THE TWO CONTINUUM MODEL: Quantifiers should be taught on positive and negative continua. A few / a little (positive)
+    vs. few / little (negative) — the presence/absence of the indefinite article signals a completely different connotation.
+    ESL/EFL students who drop the article in ''a few'' accidentally signal a negative meaning (e.g., ''I have few friends''
+    = not many, vs. ''I have a few friends''  = some positive number). Also: much is unacceptable in short positive answers
+    (*''Much.'' → ''A little.''/''Quite a lot.''), and native speakers prefer ''many'' over ''a lot of'' in formal affirmative
+    writing. Source: Ch.17 p.328-337.'
+title: Quantifiers (some, any, much, many, a lot of)
 use:
 - context: Talking about quantity in everyday life
   description: Describing how much or how many of something
@@ -137,125 +375,3 @@ use:
   - Can I have some water?
   - Would you like some coffee?
   - Could I have some help?
-phonetics:
-- note: 'Weak form of ''some'' in connected speech: /səm/ not /sʌm/. ''Some books''
-    sounds like /səm bʊks/.'
-  example_generator:
-  - some water /səm wɔːtə/
-  - some friends /səm frendz/
-  l1_issue: Many L1 speakers over-pronounce 'some' as /sʌm/. Teach the weak form for
-    natural-sounding speech.
-- note: 'Weak form of ''any'' in connected speech: /əni/ not /eni/. ''Any books''
-    sounds like /əni bʊks/.'
-  example_generator:
-  - any water /əni wɔːtə/
-  - any friends /əni frendz/
-  l1_issue: Portuguese speakers may pronounce 'any' as /eni/ which can sound like
-    'enny'. Teach the weak form /əni/.
-teaching:
-  methodology: PPP (Present-Practice-Produce)
-  tips:
-  - 'Use real objects to demonstrate countable vs uncountable: count apples (countable)
-    vs pour water (uncountable). This makes the concept physical and memorable.'
-  - Drill the a few/few and a little/little distinction explicitly. This is a common
-    source of confusion even at higher levels.
-  - 'Teach the some/any rule early: some for affirmative, any for negative and questions.
-    Then teach the exception (polite questions with some).'
-  - 'Use visual aids: show a glass with a little water (positive) vs a glass with
-    little water (almost empty, negative).'
-  - 'Practice with shopping role-plays: ''Do you have any...?'' ''I need some...''
-    This gives authentic context.'
-  recommended_activities:
-  - name: Countable or Uncountable?
-    duration: 10
-    adaptation_notes: 'Teacher says a noun. Students hold up ''C'' (countable) or
-      ''U'' (uncountable) cards. Then students say the correct quantifier: ''many
-      books'' or ''much water''.'
-  - name: Some or Any?
-    duration: 10
-    adaptation_notes: 'Teacher says a sentence frame. Students complete with ''some''
-      or ''any'': ''I have ___ bread.'' (some) ''Do you have ___ milk?'' (any) ''I
-      don''t have ___ money.'' (any)'
-  - name: Shopping Role Play
-    duration: 15
-    adaptation_notes: 'Students practice shopping dialogues: ''Do you have any apples?''
-      ''Yes, I have some.'' ''How many do you want?'' ''I need a lot of apples.''
-      Practices quantifiers in authentic context.'
-  - name: A Few vs Few
-    duration: 10
-    adaptation_notes: 'Show two pictures: one person with a few friends (happy) and
-      one with few friends (sad). Students describe the pictures using ''a few'' and
-      ''few''. Reinforces the meaning difference.'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.11-12.13'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 5: Nouns and Noun Phrases, §5.6 (quantification)'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 526-540 (quantifiers:
-    much, many, a lot of, few, little, several)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    10: Determiners, §10.7-10.8'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 7: Quantifiers'
-common_errors:
-- error: 'Using ''much'' with countable nouns: *''I have much friends.'''
-  correction: I have many friends.
-  explanation: Use 'many' with countable nouns (friends, books, cars), 'much' with
-    uncountable nouns (money, water, time). This is one of the most common A1 errors.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: 'Using ''many'' with uncountable nouns: *''I have many money.'''
-  correction: I have much money.
-  explanation: Use 'much' with uncountable nouns. 'Many' is only for countable nouns.
-  l1_groups:
-  - Portuguese
-  - Spanish
-- error: 'Confusing ''a few'' and ''few'': *''I have few friends.'' (meaning some)'
-  correction: I have a few friends.
-  explanation: '''A few'' = some (positive connotation). ''Few'' = almost none (negative
-    connotation). ''I have a few friends'' = I have some friends (positive). ''I have
-    few friends'' = I almost have no friends (negative).'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-- error: 'Confusing ''a little'' and ''little'': *''I have little time.'' (meaning
-    some)'
-  correction: I have a little time.
-  explanation: '''A little'' = some (positive). ''Little'' = almost none (negative).
-    Same distinction as ''a few/few'' but for uncountable nouns.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-- error: 'Using ''a lot of'' in formal writing: *''A lot of people attended the conference.'''
-  correction: Many people attended the conference. / A large number of people attended
-    the conference.
-  explanation: '''A lot of'' is informal. In formal writing, use ''many'', ''numerous'',
-    or ''a large number of''.'
-  l1_groups:
-  - All L1 groups
-register_notes:
-- note: Quantifiers are neutral in register for everyday use.
-- note: 'In academic writing, ''a number of'' is more formal than ''many'': ''A number
-    of studies have found...'''
-- note: 'In formal writing, ''much'' is preferred over ''a lot of'' with uncountable
-    nouns: ''Much research has been conducted.'''
-- note: '''A few'' and ''a little'' are positive; ''few'' and ''little'' are negative.
-    This distinction is important in all registers.'
-dialectal_variation:
-- note: In AmE, 'a lot of' is increasingly accepted in formal writing. In BrE, 'many'
-    or 'a great deal of' is still preferred in formal contexts.
-- note: 'In some dialects, ''lots of'' replaces ''a lot of'': ''Lots of people came.''
-    (informal)'
-discourse_notes:
-- note: 'Quantifiers establish quantity in discourse: ''Several people attended. Most
-    were students. Few were teachers.'''
-- note: '''A few'' and ''few'' create different discourse implications: ''A few people
-    came'' (some did, positive) vs ''Few people came'' (almost none, negative).'
-- note: 'In academic writing, quantifiers express the scope of findings: ''Most participants
-    agreed. A few disagreed. Few strongly opposed.'''
-- note: 'Quantifiers create cohesion by referring back: ''Many people attended. Most
-    were satisfied. Few complained.'''

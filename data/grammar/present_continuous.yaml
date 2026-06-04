@@ -1,31 +1,151 @@
-grammar_point: present_continuous
-title: Present Continuous (am/is/are + V-ing)
+citations:
+- claim: 'Core meaning: Describes an action that is in progress at the moment of speaking,
+    a temporary situation, or a fixed'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 5: Present
+    Tenses-5.6'
+  tier: 1
+- claim: 'Register distribution: In formal writing, present continuous is used for
+    describing ongoing processes: ''The economy is grow'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 5: Present
+    Tenses-5.6'
+  tier: 1
+- claim: 'Discourse function: Present continuous is used to set the scene in narratives:
+    ''The sun was shining. Birds were singing.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 5: Present
+    Tenses-5.6'
+  tier: 1
+- claim: 'Common error ''Using present continuous for stative verbs: *''I am knowing
+    t'' for Portuguese, Spanish, French speakers'
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 6: Present
+    tenses-6.7'
+  tier: 1
+- claim: L1 transfer in present continuous varies significantly across language backgrounds
+    — Swan & Smith document contrastive patterns for speakers of different L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+common_errors:
+- correction: I know the answer.
+  error: 'Using present continuous for stative verbs: *''I am knowing the answer.'''
+  explanation: Stative verbs are not normally used in continuous forms. Swan & Smith
+    (2001) note that Spanish and French speakers in particular overgeneralize the
+    progressive to stative verbs (*I am having a motorbike, *She wasn't knowing that
+    he died).
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  reliability: B
+  source: 'Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+    Ch. 22: Spanish speakers; Ch. 26: French speakers.'
+- correction: I am eating lunch.
+  error: 'Omitting the auxiliary: *''I eating lunch.'''
+  explanation: Present continuous requires am/is/are + verb-ing.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  - Japanese
+  reliability: D
+- correction: I like this wine.
+  error: 'Using present continuous for stative verbs: *''I am liking this wine.'''
+  explanation: 'Swan PEU: Stative verbs (like, know, believe, want, understand) are
+    not normally used in continuous forms.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  - French
+  reliability: B
+  source: Swan Entry 4.1. Swan (2016) Practical English Usage, 4th ed. Oxford University
+    Press.
+- correction: I live in London.
+  error: 'Using present continuous for permanent situations: *''I am living in London.''
+    (permanent)'
+  explanation: 'Swan PEU: Use present simple for permanent situations, present continuous
+    for temporary ones. "I am living in London (for now)."'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan Entry 4.3. Swan (2016) Practical English Usage, 4th ed. Oxford University
+    Press.
 description: Describes actions happening now, temporary actions, or future arrangements.
   Sometimes called present progressive.
+dialectal_variation:
+- note: 'In some dialects, ''be'' may be omitted: ''He working.'' (AAVE, some Caribbean
+    English)'
+discourse_notes:
+- note: 'Present continuous is used to set the scene in narratives: ''The sun was
+    shining. Birds were singing.'''
+- note: Present continuous creates a sense of immediacy and involvement in storytelling.
+- note: 'In academic writing, present continuous is used for describing ongoing research:
+    ''We are currently investigating...'''
+- note: 'Present continuous with future meaning requires a time expression: ''I am
+    meeting John tomorrow.'''
+form:
+  affirmative:
+    example_generator:
+    - I am walking.
+    - She is working.
+    - They are studying.
+    - He is cooking.
+    min_examples: 4
+    structure: Subject + am/is/are + verb-ing
+  negative:
+    example_generator:
+    - I am not walking.
+    - She is not (isn't) working.
+    - They are not (aren't) studying.
+    - He is not (isn't) cooking.
+    min_examples: 4
+    structure: Subject + am/is/are + not + verb-ing
+  questions:
+    example_generator:
+    - Am I walking?
+    - Is she working?
+    - Are they studying?
+    - Is he cooking?
+    min_examples: 4
+    structure: Am/Is/Are + subject + verb-ing?
+grammar_point: present_continuous
 level: A1
 meaning:
-  core_meaning: Describes an action that is in progress at the moment of speaking,
-    a temporary situation, or a fixed future arrangement. The key idea is that the
-    action is NOT finished — it is ongoing.
-  timeline: 'Present time: right now, around now, or a planned near-future event.'
-  contrast: '''Present Continuous'' = ''I am eating.'' (right now, in progress) vs
-    ''Present Simple'' = ''I eat.'' (habit, general truth)'
   ccqs:
-  - question: Is this action happening right now, at this exact moment?
-    answer: Yes — it is in progress and not finished.
+  - answer: Yes — it is in progress and not finished.
     purpose: Tests whether the learner understands that present continuous describes
       actions happening at the moment of speaking, not habitual actions (which require
       present simple).
-  - question: Is this a permanent situation or a temporary one?
-    answer: Temporary — it is happening around now but will change.
+    question: Is this action happening right now, at this exact moment?
+  - answer: Temporary — it is happening around now but will change.
     purpose: Tests whether the learner can identify time expressions that signal continuous
       aspect (now, at the moment, right now) and distinguish them from habitual time
       expressions (always, usually, every day).
-  - question: Can we use words like 'now', 'right now', 'at the moment' with this?
-    answer: Yes — these time expressions go with the Present Continuous.
+    question: Is this a permanent situation or a temporary one?
+  - answer: Yes — these time expressions go with the Present Continuous.
     purpose: Tests whether the learner can identify the lexical markers that signal
       present continuous. Time expressions like 'now', 'right now', 'at the moment'
       are the key signals for this tense.
+    question: Can we use words like 'now', 'right now', 'at the moment' with this?
+  - answer: '''I know the answer.'' Stative verbs like ''know'', ''believe'', ''want'',
+      ''belong'' are NOT normally used in progressive forms.'
+    purpose: Tests whether the learner knows that stative verbs are not normally used
+      in progressive forms (Swan PEU 2016, entry 32.4).
+    question: Which is correct? *'I am knowing the answer' or 'I know the answer'?
+  contrast: '''Present Continuous'' = ''I am eating.'' (right now, in progress) vs
+    ''Present Simple'' = ''I eat.'' (habit, general truth)'
+  core_meaning: Describes an action that is in progress at the moment of speaking,
+    a temporary situation, or a fixed future arrangement. The key idea is that the
+    action is NOT finished — it is ongoing.
   example_generator:
     contexts:
     - actions happening now
@@ -37,65 +157,156 @@ meaning:
     - Avoid examples with alcohol, politics, or religion
     - Include diverse names and contexts
     min_examples: 5
-form:
-  affirmative:
-    structure: Subject + am/is/are + verb-ing
-    example_generator:
-    - I am walking.
-    - She is working.
-    - They are studying.
-    - He is cooking.
-    min_examples: 4
-  negative:
-    structure: Subject + am/is/are + not + verb-ing
-    example_generator:
-    - I am not walking.
-    - She is not (isn't) working.
-    - They are not (aren't) studying.
-    - He is not (isn't) cooking.
-    min_examples: 4
-  questions:
-    structure: Am/Is/Are + subject + verb-ing?
-    example_generator:
-    - Am I walking?
-    - Is she working?
-    - Are they studying?
-    - Is he cooking?
-    min_examples: 4
+  timeline: 'Present time: right now, around now, or a planned near-future event.'
+phonetics:
+- example_generator:
+  - I am → I'm /aɪm/
+  - She is → She's /ʃiːz/
+  - They are → They're /ðeə/
+  l1_issue: Portuguese and Spanish speakers often omit the verb 'to be' in English
+    because their languages do not use a copula in the same way. Drill 'I am', 'she
+    is', 'they are' explicitly.
+  note: 'Contractions are essential in spoken English: I''m, you''re, he''s, she''s,
+    it''s, we''re, they''re. Full forms sound unnatural in casual speech.'
+- example_generator:
+  - working /wɜːkɪŋ/
+  - studying /stʌdɪɪŋ/
+  l1_issue: Many L1 speakers add a hard /g/ sound at the end of -ing. Teach the correct
+    /ɪŋ/ pronunciation early.
+  note: The -ing ending is pronounced /ɪŋ/ not /iŋg/. No hard 'g' sound.
+register_notes:
+- note: 'In formal writing, present continuous is used for describing ongoing processes:
+    ''The economy is growing at 3% per year.'''
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In conversation, present continuous with ''always'' expresses annoyance:
+    ''He is always complaining.'' (emotional overuse)'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: Present continuous is more common in informal speech than in formal writing.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In academic writing, present continuous is rare; present simple is preferred
+    for general statements.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In conversation, present continuous is used for temporary situations and future
+    arrangements.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: Biber et al. (2021) — Progressive aspect distribution varies across registers.
+    Used for present intention and ongoing events in conversation; less frequent relative
+    to simple present in academic prose. Ch. 6.3.1-6.3.3
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 6.3.1-6.3.3
+- note: 'GB 2nd ed. (Ch.9) notes that the progressive is used for interpersonal politeness:
+    ''I was wondering if you could help'' (less direct than ''I wonder if you could
+    help''), ''I''m hoping you can attend'' (less direct than ''I hope you can attend'').
+    The progressive presents the mental state as ongoing/unbounded, creating interpersonal
+    distance. This use is common in requests, complaints, and suggestions.'
+  source: Team observation
+  reliability: D
+  tier: 4
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch.
+    6: Present tenses-6.7'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 5:
+    Present Tenses-5.6'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 3: The Verb (progressive aspect)'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 3: Present progressive'
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(present progressive: temporary
+    situations)'
 sub_rules:
-- rule: 'Spelling: verbs ending in -e, drop the e and add -ing'
-  type: spelling
-  examples:
+- examples:
   - make → making
   - write → writing
   - come → coming
   - drive → driving
-- rule: 'Spelling: verbs ending in consonant-vowel-consonant, double the final consonant'
+  rule: 'Spelling: verbs ending in -e, drop the e and add -ing'
   type: spelling
-  examples:
+- examples:
   - run → running
   - swim → swimming
   - sit → sitting
   - stop → stopping
-- rule: 'Spelling: verbs ending in -ie, change -ie to -y and add -ing'
+  rule: 'Spelling: verbs ending in consonant-vowel-consonant, double the final consonant'
   type: spelling
-  examples:
+- examples:
   - die → dying
   - lie → lying
   - tie → tying
-- rule: 'Spelling: verbs ending in -ee, just add -ing (no dropping)'
+  rule: 'Spelling: verbs ending in -ie, change -ie to -y and add -ing'
   type: spelling
-  examples:
+- examples:
   - see → seeing
   - agree → agreeing
   - free → freeing
-- rule: 'Common time expressions: now, right now, at the moment, currently, today,
-    this week'
-  type: lexical
-  examples:
+  rule: 'Spelling: verbs ending in -ee, just add -ing (no dropping)'
+  type: spelling
+- examples:
   - I am working now.
   - She is studying at the moment.
   - They are traveling this week.
+  rule: 'Common time expressions: now, right now, at the moment, currently, today,
+    this week'
+  type: lexical
+teaching:
+  methodology: PPP (Present-Practice-Produce)
+  recommended_activities:
+  - adaptation_notes: 'One student mimes an action. Others guess: ''Are you swimming?''
+      ''Yes, I am.'' Great for practicing questions and affirmative/negative.'
+    duration: 10
+    name: Mime Game
+  - adaptation_notes: 'Students look around the room and describe what everyone is
+      doing: ''Pedro is sitting. Maria is writing.'' Practices third person -s with
+      present continuous.'
+    duration: 10
+    name: Classroom Snapshot
+  - adaptation_notes: Show a busy picture (airport, restaurant, park). Students describe
+      what people are doing. Good for practicing all persons.
+    duration: 15
+    name: Picture Description
+  - adaptation_notes: 'Students ask about each other''s plans for the weekend using
+      present continuous: ''What are you doing on Saturday?'' Practices future arrangement
+      meaning.'
+    duration: 15
+    name: Future Plans Interview
+  tips:
+  - 'Act out actions while saying them: ''I am jumping'', ''She is writing''. This
+    makes the meaning immediately clear.'
+  - 'Use the classroom as a resource: ''Pedro is sitting. Maria is writing. We are
+    learning English.'''
+  - Drill contractions from the start — full forms sound unnatural in spoken English.
+  - 'Contrast with Present Simple early: ''I eat breakfast (every day) vs I am eating
+    breakfast (right now).'''
+  - Teach the spelling rules for -ing explicitly. This is a common source of errors.
+  - 'Swan PEU: The stative/dynamic distinction -- some verbs have BOTH uses. "I see
+    the mountain" (stative) vs "I am seeing the doctor at 10" (dynamic, arrangement).'
+  - 'Swan PEU: "Have" -- "I have a car" (stative, possession). "I am having lunch"
+    (dynamic, eating). Different meanings.'
+  - 'GB3 Ch. 7: Present progressive uses — (a) activity in progress (''He is attending
+    a meeting now''), (b) extended/temporary present (''I''m studying geology''),
+    (c) repetition/iteration (''Henry is kicking the soccer ball''), (d) future when
+    planned (''She''s coming tomorrow''), (e) change in progress (''She''s becoming
+    more like her mother''), (f) emotional present habit with ''always'' (''He''s
+    always delivering in a clutch situation'' — approving/disapproving). Source: Celce-Murcia
+    & Larsen-Freeman (2015) GB3 Ch. 7 §7.2.'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 3: CGEL (Ch.3)
+    analyzes the progressive as marking an situation as UNBOUNDED (in progress) and
+    typically TEMPORARY. This explains: (1) why statives resist the progressive (*''I
+    am knowing'' — knowledge is bounded/permanent), (2) why the progressive implies
+    temporariness (''I''m living in London'' vs ''I live in London''), (3) why the
+    progressive is used for politeness (''I was hoping...'' — presents the hope as
+    ongoing/unbounded, less direct).'
+title: Present Continuous (am/is/are + V-ing)
 use:
 - context: Action happening now
   description: Action in progress at the moment of speaking
@@ -121,98 +332,3 @@ use:
   - The weather is getting colder.
   - Your English is improving.
   - The population is growing.
-phonetics:
-- note: 'Contractions are essential in spoken English: I''m, you''re, he''s, she''s,
-    it''s, we''re, they''re. Full forms sound unnatural in casual speech.'
-  example_generator:
-  - I am → I'm /aɪm/
-  - She is → She's /ʃiːz/
-  - They are → They're /ðeə/
-  l1_issue: Portuguese and Spanish speakers often omit the verb 'to be' in English
-    because their languages do not use a copula in the same way. Drill 'I am', 'she
-    is', 'they are' explicitly.
-- note: The -ing ending is pronounced /ɪŋ/ not /iŋg/. No hard 'g' sound.
-  example_generator:
-  - working /wɜːkɪŋ/
-  - studying /stʌdɪɪŋ/
-  l1_issue: Many L1 speakers add a hard /g/ sound at the end of -ing. Teach the correct
-    /ɪŋ/ pronunciation early.
-teaching:
-  methodology: PPP (Present-Practice-Produce)
-  tips:
-  - 'Act out actions while saying them: ''I am jumping'', ''She is writing''. This
-    makes the meaning immediately clear.'
-  - 'Use the classroom as a resource: ''Pedro is sitting. Maria is writing. We are
-    learning English.'''
-  - Drill contractions from the start — full forms sound unnatural in spoken English.
-  - 'Contrast with Present Simple early: ''I eat breakfast (every day) vs I am eating
-    breakfast (right now).'''
-  - Teach the spelling rules for -ing explicitly. This is a common source of errors.
-  recommended_activities:
-  - name: Mime Game
-    duration: 10
-    adaptation_notes: 'One student mimes an action. Others guess: ''Are you swimming?''
-      ''Yes, I am.'' Great for practicing questions and affirmative/negative.'
-  - name: Classroom Snapshot
-    duration: 10
-    adaptation_notes: 'Students look around the room and describe what everyone is
-      doing: ''Pedro is sitting. Maria is writing.'' Practices third person -s with
-      present continuous.'
-  - name: Picture Description
-    duration: 15
-    adaptation_notes: Show a busy picture (airport, restaurant, park). Students describe
-      what people are doing. Good for practicing all persons.
-  - name: Future Plans Interview
-    duration: 15
-    adaptation_notes: 'Students ask about each other''s plans for the weekend using
-      present continuous: ''What are you doing on Saturday?'' Practices future arrangement
-      meaning.'
-register_notes:
-- note: 'In formal writing, present continuous is used for describing ongoing processes:
-    ''The economy is growing at 3% per year.'''
-- note: 'In conversation, present continuous with ''always'' expresses annoyance:
-    ''He is always complaining.'' (emotional overuse)'
-- note: Present continuous is more common in informal speech than in formal writing.
-- note: In academic writing, present continuous is rare; present simple is preferred
-    for general statements.
-- note: In conversation, present continuous is used for temporary situations and future
-    arrangements.
-dialectal_variation:
-- note: No significant BrE/AmE differences in present continuous formation.
-- note: 'In some dialects, ''be'' may be omitted: ''He working.'' (AAVE, some Caribbean
-    English)'
-discourse_notes:
-- note: 'Present continuous is used to set the scene in narratives: ''The sun was
-    shining. Birds were singing.'''
-- note: Present continuous creates a sense of immediacy and involvement in storytelling.
-- note: 'In academic writing, present continuous is used for describing ongoing research:
-    ''We are currently investigating...'''
-- note: 'Present continuous with future meaning requires a time expression: ''I am
-    meeting John tomorrow.'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 5:
-    Present Tenses, §5.4-5.6'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 3: The Verb, §3.3 (progressive aspect)'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 428-430 (present
-    progressive: temporary situations)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    6: Present tenses, §6.5-6.7'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 3: Present progressive'
-common_errors:
-- error: 'Using present continuous for stative verbs: *''I am knowing the answer.'''
-  correction: I know the answer.
-  explanation: Stative verbs are not normally used in continuous forms.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: 'Omitting the auxiliary: *''I eating lunch.'''
-  correction: I am eating lunch.
-  explanation: Present continuous requires am/is/are + verb-ing.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-  - Japanese

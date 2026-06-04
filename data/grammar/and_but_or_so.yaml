@@ -1,12 +1,124 @@
-grammar_point: and_but_or_so
-title: Coordinating Conjunctions (and, but, or, so)
+citations:
+- claim: 'Core meaning: Connects equal elements: addition (and), contrast (but), choice
+    (or), result (so)'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24:
+    Conjunction'
+  tier: 1
+- claim: 'Register distribution: ''And'', ''but'', ''or'', ''so'' are neutral in register.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24:
+    Conjunction'
+  tier: 1
+- claim: 'Discourse function: Coordinating conjunctions link clauses: ''I woke up
+    and had breakfast.'''
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24:
+    Conjunction'
+  tier: 1
+- claim: 'Common error ''Using ''but'' when ''and'' is needed: *''I like coffee but
+    tea.'''' for Portuguese, Spanish speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: CGEL analyzes 'and' as semantically empty, taking meaning from context (Ch.15).
+  reliability: A
+  source: Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 15
+  tier: 2
+- claim: Conjunctions and connectors in discourse establish logical relationships
+    between clauses and sentences
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24:
+    Conjunction'
+  tier: 1
+- claim: Understanding and but or so is essential for academic writing — Oshima &
+    Hogue emphasize how writers use these structures to create clear, coherent prose
+  flagged: false
+  reliability: B
+  source: 'Oshima and Hogue (2006) Introduction to Academic Writing, 3rd ed. Pearson.
+    Ch. 5: Complex Sentences in Academic Writing'
+  tier: 2
+common_errors:
+- correction: I like coffee and tea.
+  error: 'Using ''but'' when ''and'' is needed: *''I like coffee but tea.'''
+  explanation: 'Swan PEU: ''and'' joins similar/related items; ''but'' joins contrasting
+    items. ''I like coffee and tea'' (both are true together). ''I like coffee but
+    not tea'' (contrast).'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: B
+  source: Swan Entry 226. Swan (2016) Practical English Usage, 4th ed. Oxford University
+    Press.
+- correction: It rained, so we stayed home.
+  error: 'Using ''so'' when ''because'' is needed: *''I stayed home so it rained.''
+    (wrong direction)'
+  explanation: 'Swan PEU: ''so'' shows result/consequence (''It rained, so we stayed
+    home''). For reason, use ''because'' (''I stayed home because it rained''). With
+    ''so'', the cause comes first and the result comes after.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: B
+  source: Swan Entry 226. Swan (2016) Practical English Usage, 4th ed. Oxford University
+    Press.
 description: Words that join equal grammatical elements (words, phrases, clauses).
   Essential for sentence connection.
+dialectal_variation: []
+discourse_notes:
+- note: 'Coordinating conjunctions link clauses: ''I woke up and had breakfast.'''
+- note: In formal writing, 'however' and 'therefore' may replace 'but' and 'so' for
+    more academic register.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - entertainment and media
+      min_examples: 4
+    structure: 'Word + conjunction + word: "apples and oranges"
+
+      Phrase + conjunction + phrase: "in the morning and in the evening"
+
+      Clause + conjunction + clause: "I like tea, and she likes coffee."
+
+      '
+  negative:
+    example_generator:
+      contexts:
+      - entertainment and media
+      min_examples: 4
+    structure: 'Conjunction unchanged in negatives: ''I don''t like tea or coffee.'''
+  questions:
+    example_generator:
+      contexts:
+      - everyday situations
+      min_examples: 4
+    structure: 'Conjunction in same position: ''Do you want tea or coffee?'''
+grammar_point: and_but_or_so
 level: A1
 meaning:
-  core_meaning: 'Connects equal elements: addition (and), contrast (but), choice (or),
-    result (so).'
-  timeline: N/A (Conjunctions show relationships, not time.)
+  ccqs:
+  - answer: Both. And means both things are true — I like tea AND coffee.
+    purpose: Tests understanding that and adds or combines items
+    question: I like tea and coffee. Do I like only one drink or both?
+  - answer: No. It is cold AND sunny. But shows these two ideas are surprising together.
+    purpose: Tests understanding that but shows contrast between two true ideas
+    question: It is cold but sunny. Is the weather only cold?
+  - answer: Usually or means choose one. If you want both, you would say and instead.
+    purpose: Tests understanding that or presents alternatives, not combinations
+    question: Do you want tea or coffee? Can I choose both?
+  - answer: In English negative sentences, or replaces and to connect items. Saying
+      I do not like tea and coffee could be ambiguous (it might mean you do not like
+      them together). I do not like tea or coffee is clear -- you dislike both. In
+      negatives, or is the default connector.
+    purpose: Tests whether the learner understands that or replaces and in negative
+      sentences. This is a fundamental rule of English coordination that learners
+      from many L1 backgrounds get wrong because their native languages often keep
+      and in negative constructions.
+    question: I like tea or coffee in a negative sentence becomes I do not like tea
+      or coffee. Why do we use or instead of and here?
   contrast: '''And'' = addition (positive connection)
 
     ''But'' = contrast (opposite ideas)
@@ -16,124 +128,108 @@ meaning:
     ''So'' = result/consequence
 
     '
-  ccqs:
-  - question: I like tea and coffee. Do I like only one drink or both?
-    answer: Both. And means both things are true — I like tea AND coffee.
-    purpose: Tests understanding that and adds or combines items
-  - question: It is cold but sunny. Is the weather only cold?
-    answer: No. It is cold AND sunny. But shows these two ideas are surprising together.
-    purpose: Tests understanding that but shows contrast between two true ideas
-  - question: Do you want tea or coffee? Can I choose both?
-    answer: Usually or means choose one. If you want both, you would say and instead.
-    purpose: Tests understanding that or presents alternatives, not combinations
+  core_meaning: 'Connects equal elements: addition (and), contrast (but), choice (or),
+    result (so).'
   example_generator:
     contexts:
     - everyday situations
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Word + conjunction + word: "apples and oranges"
-
-      Phrase + conjunction + phrase: "in the morning and in the evening"
-
-      Clause + conjunction + clause: "I like tea, and she likes coffee."
-
-      '
-    example_generator:
-      contexts:
-      - entertainment and media
-      min_examples: 4
-  negative:
-    structure: 'Conjunction unchanged in negatives: ''I don''t like tea or coffee.'''
-    example_generator:
-      contexts:
-      - entertainment and media
-      min_examples: 4
-  questions:
-    structure: 'Conjunction in same position: ''Do you want tea or coffee?'''
-    example_generator:
-      contexts:
-      - everyday situations
-      min_examples: 4
+  timeline: N/A (Conjunctions show relationships, not time.)
+phonetics:
+- example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Many L1 speakers pronounce and as a full word with a clear vowel. In natural
+    speech, it reduces to a schwa or even just /n/.
+  note: And is almost always reduced to a weak form in connected speech
+  practice: Drill common pairs like fish and chips and salt and pepper with reduced
+    and.
+- example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Speakers may over-pronounce but with full stress. In natural speech, it
+    is usually unstressed.
+  note: But — the vowel reduces to schwa in connected speech
+  practice: Drill but in phrases like cheap but good and small but strong.
+register_notes:
+- note: '''And'', ''but'', ''or'', ''so'' are neutral in register.'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In formal writing, 'however' and 'therefore' may replace 'but' and 'so'.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: Biber et al. (1999) — Coordinating conjunctions ('and', 'but', 'or', 'so')
+    are overwhelmingly more common in conversation than academic prose. 'And' is the
+    most frequent in conversation; academic prose uses more subordination. Coordination
+    tags (and stuff, and so on) are strongly conversational. Ch. 2.9.2, 14
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 2.9.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 24:
+    Conjunction'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed.(and/but/or), 227 (not...or/nor).
 sub_rules:
-- type: grammar
-  rule: And joins similar or related ideas
-  examples:
+- examples:
   - bread and butter (common pair)
   - I cooked and she cleaned. (two related actions)
   explanation: And adds information. Both parts are true or desired together.
-- type: grammar
-  rule: But joins contrasting or unexpected ideas
-  examples:
+  rule: And joins similar or related ideas
+  type: grammar
+- examples:
   - She is smart but lazy. (positive and negative)
   - I called but she did not answer. (expected vs actual)
   explanation: But signals that the second idea contrasts with or surprises given
     the first.
-- type: grammar
-  rule: Or presents alternatives and in negatives it replaces and
-  examples:
+  rule: But joins contrasting or unexpected ideas
+  type: grammar
+- examples:
   - Tea or coffee? (positive choice)
   - I do not like tea or coffee. (negative — or replaces and)
   explanation: In negative sentences, use or not and to connect items.
-- type: grammar
-  rule: So shows result or consequence (cause then effect)
-  examples:
+  rule: Or presents alternatives and in negatives it replaces and
+  type: grammar
+- examples:
   - It rained, so we stayed home. (rain is cause, staying home is result)
   - I was tired, so I went to bed. (tiredness is cause, bed is result)
   explanation: So answers what happened because of this. The clause before so is the
     cause.
-- type: punctuation
-  rule: Use a comma before the conjunction when joining two independent clauses
-  examples:
+  rule: So shows result or consequence (cause then effect)
+  type: grammar
+- examples:
   - I like tea, and she likes coffee. (comma before and)
   - It was late, so we left. (comma before so)
   - I like tea and coffee. (no comma — joining words, not clauses)
   explanation: When both sides of the conjunction can stand alone as sentences, use
     a comma.
-use:
-- name: Addition (and)
-  description: Add similar ideas or items.
-  examples:
-  - I like tea and coffee.
-  - She sings and dances.
-  key_point: And joins equal elements (both nouns, both verbs, both clauses).
-- name: Contrast (but)
-  description: Show opposite or unexpected ideas.
-  examples:
-  - It's cold but sunny.
-  - He is rich but unhappy.
-  key_point: But shows surprise or opposition between ideas.
-- name: Choice (or)
-  description: Offer alternatives or choices.
-  examples:
-  - Tea or coffee?
-  - Now or later?
-  key_point: Or means choose one (not both).
-- name: Result (so)
-  description: Show consequence of an action.
-  examples:
-  - It rained, so we stayed home.
-  - I was hungry, so I ate.
-  key_point: So means the result of what came before.
-phonetics:
-- note: And is almost always reduced to a weak form in connected speech
-  l1_issue: Many L1 speakers pronounce and as a full word with a clear vowel. In natural
-    speech, it reduces to a schwa or even just /n/.
-  practice: Drill common pairs like fish and chips and salt and pepper with reduced
-    and.
-  example_generator:
-    contexts:
-    - connected speech
-- note: But — the vowel reduces to schwa in connected speech
-  l1_issue: Speakers may over-pronounce but with full stress. In natural speech, it
-    is usually unstressed.
-  practice: Drill but in phrases like cheap but good and small but strong.
-  example_generator:
-    contexts:
-    - connected speech
+  rule: Use a comma before the conjunction when joining two independent clauses
+  type: punctuation
 teaching:
   methodology: PPP
+  recommended_activities:
+  - adaptation_notes: 'Students sort conjunctions by function: addition (and), contrast
+      (but), choice (or), result (so). Then create sentences with each.'
+    duration: 10
+    name: Conjunction Sorting Game
+  - adaptation_notes: 'Label four corners of the room: and, but, or, so. Teacher says
+      a sentence stem. Students go to the corner with the correct conjunction to complete
+      it.'
+    duration: 10
+    name: Four Corners
+  - adaptation_notes: 'Students build a story together, each adding a sentence with
+      a different conjunction: ''I woke up late. AND I missed the bus. SO I was late
+      for work. BUT my boss was understanding.'''
+    duration: 15
+    name: Story Building with Conjunctions
   tips:
   - 'Use colored blocks: blue for and, red for but, green for or, yellow for so.'
   - 'Practice with shopping lists: I need apples and oranges (both), tea or coffee
@@ -141,48 +237,43 @@ teaching:
   - 'Act out but: I am happy (smile) plus but I am tired (yawn) equals contrast.'
   - 'Use cause-effect cards for so: match cause cards (It rained) with effect cards
     (We stayed home).'
-  recommended_activities:
-  - name: Conjunction Sorting Game
-    duration: 10
-    adaptation_notes: 'Students sort conjunctions by function: addition (and), contrast
-      (but), choice (or), result (so). Then create sentences with each.'
-  - name: Four Corners
-    duration: 10
-    adaptation_notes: 'Label four corners of the room: and, but, or, so. Teacher says
-      a sentence stem. Students go to the corner with the correct conjunction to complete
-      it.'
-  - name: Story Building with Conjunctions
-    duration: 15
-    adaptation_notes: 'Students build a story together, each adding a sentence with
-      a different conjunction: ''I woke up late. AND I missed the bus. SO I was late
-      for work. BUT my boss was understanding.'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
-    Coordination, §16.5-16.7'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: 'Using ''but'' when ''and'' is needed: *''I like coffee but tea.'''
-  correction: I like coffee and tea.
-  explanation: Use 'and' for addition, 'but' for contrast.
-  l1_groups:
-  - Portuguese
-  - Spanish
-- error: 'Using ''so'' for reason: *''I was tired so I went to bed.'' (reason)'
-  correction: I was tired, so I went to bed.
-  explanation: Use 'so' for result, 'because' for reason.
-  l1_groups:
-  - Portuguese
-  - Spanish
-register_notes:
-- note: '''And'', ''but'', ''or'', ''so'' are neutral in register.'
-- note: In formal writing, 'however' and 'therefore' may replace 'but' and 'so'.
-dialectal_variation:
-- note: No significant BrE/AmE differences.
-discourse_notes:
-- note: 'Coordinating conjunctions link clauses: ''I woke up and had breakfast.'''
+  - 'Swan PEU: ''and'' joins grammatically similar expressions — words, phrases, or
+    clauses. With more than two items, ''and'' usually goes only before the last:
+    ''We drank, talked and danced.'' Fixed order in pairs: ''bread and butter'' NOT
+    ''butter and bread''.'
+  - 'Swan PEU: ''but'' joins contrasting ideas. ''They were poor but happy.'' Most
+    often joins clauses: ''We wanted to stay but we simply didn''t have time.'''
+  - 'Swan Entry 226.3/227: After a negative verb, use ''or'' NOT ''and'': ''He doesn''t
+    smoke or drink'' NOT ''He doesn''t smoke and drink.'' Key rule for negatives.'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 15: CGEL (Ch.15)
+    analyzes ''and'' as SEMANTICALLY EMPTY — it takes its meaning from context: temporal
+    (''He sat down and ate'' = and then), resultative (''He fell and hurt himself''
+    = and as a result), contrastive (''He is short and powerful'' = but/and yet).
+    This explains why L1s with different ''and'' semantics may overtransfer. ''But''
+    is intrinsically adversative and cannot coordinate more than two elements easily.'
+title: Coordinating Conjunctions (and, but, or, so)
+use:
+- description: Add similar ideas or items.
+  examples:
+  - I like tea and coffee.
+  - She sings and dances.
+  key_point: And joins equal elements (both nouns, both verbs, both clauses).
+  name: Addition (and)
+- description: Show opposite or unexpected ideas.
+  examples:
+  - It's cold but sunny.
+  - He is rich but unhappy.
+  key_point: But shows surprise or opposition between ideas.
+  name: Contrast (but)
+- description: Offer alternatives or choices.
+  examples:
+  - Tea or coffee?
+  - Now or later?
+  key_point: Or means choose one (not both).
+  name: Choice (or)
+- description: Show consequence of an action.
+  examples:
+  - It rained, so we stayed home.
+  - I was hungry, so I ate.
+  key_point: So means the result of what came before.
+  name: Result (so)

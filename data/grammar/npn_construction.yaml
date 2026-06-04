@@ -1,31 +1,75 @@
+citations:
+- claim: 'Core meaning: N-P-N constructions use a noun + preposition + noun to quantify or describe non-count nouns'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession'
+  tier: 1
+- claim: Common error '*I need an advice.*' for Portuguese, Spanish, Chinese speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+common_errors:
+- correction: I need some advice.
+  error: '*I need an advice.*'
+  explanation: Advice is uncountable.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
+description: 'Noun + Preposition + Noun constructions: a glass of water, a piece of advice, a cup of tea.'
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - food
+      - drink
+      - measurements
+      min_examples: 4
+    structure: 'Unit noun + of + noun: a glass of water, a piece of advice, a cup of tea'
+  negative:
+    example_generator:
+      contexts:
+      - negation
+      min_examples: 3
+    structure: 'No/not any + noun: no water / not any advice'
+  questions:
+    example_generator:
+      contexts:
+      - asking about quantity
+      min_examples: 3
+    structure: 'How much/many + noun?: How much water do you want?'
 grammar_point: npn_construction
-title: N-P-N Construction
-description: 'Noun + Preposition + Noun constructions: a glass of water, a piece of
-  advice, a cup of tea.'
 level: B1
 meaning:
-  core_meaning: N-P-N constructions use a noun + preposition + noun to quantify or
-    describe non-count nouns. The first noun is a unit or quantity, the preposition
-    is usually 'of'.
-  timeline: Timeless — describes quantities, not time.
-  contrast: Direct = some water vs N-P-N = a glass of water (specific quantity)
   ccqs:
-  - question: Is this an N-P-N construction?
-    answer: Yes, it is an N-P-N construction.
-    purpose: Tests whether the learner can identify N-P-N (noun-preposition-noun)
-      constructions like 'a glass of water' or 'a piece of advice.' The first noun
-      specifies the unit/quantity, and the preposition 'of' links it to the second
-      noun.
-  - question: What is the unit of measurement?
-    answer: The first noun (glass, piece, cup, etc.).
-    purpose: Tests whether the learner understands that in N-P-N constructions, the
-      first noun functions as a unit of measurement or container. 'A glass of water'
-      = the glass is the unit. Different nouns specify different units (a piece of,
-      a cup of, a slice of).
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      npn construction and explain why they are incorrect.
+  - answer: Yes, it is an N-P-N construction.
+    purpose: Tests understanding that the first noun in noun-preposition-noun construction is the unit/measure
+    question: In 'a glass of water', which noun is the unit of measurement? Is it 'glass' or 'water'?
+  - answer: The first noun (glass, piece, cup, etc.).
+    purpose: Tests whether the learner understands that in N-P-N constructions, the first noun functions as a unit of measurement
+      or container. 'A glass of water' = the glass is the unit. Different nouns specify different units (a piece of, a cup
+      of, a slice of).
+    question: What is the unit of measurement?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with N-P-N constructions and explain why they
+      are incorrect. This tests error recognition and metalinguistic awareness.
+    question: What is the difference in meaning between these two forms?
+  - answer: Two slices of bread. Bread is uncountable in English, so you cannot say 'two breads.' You need an N-P-N construction
+      like 'two slices of bread' or 'two loaves of bread.' Similarly, 'two pieces of advice' not 'two advices.'
+    purpose: Tests whether the learner can apply N-P-N constructions to solve a real communication problem -- how to quantify
+      uncountable nouns. This tests productive knowledge of the structure, going beyond identification to actual use in context.
+    question: How would you ask for an unspecified amount of bread or advice -- 'two breads' or 'two slices of bread'?
+  contrast: Direct = some water vs N-P-N = a glass of water (specific quantity)
+  core_meaning: N-P-N constructions use a noun + preposition + noun to quantify or describe non-count nouns. The first noun
+    is a unit or quantity, the preposition is usually 'of'.
   example_generator:
     contexts:
     - food and drink
@@ -36,44 +80,53 @@ meaning:
     - Different languages use different units — a piece of advice not a bit of advice
     - Some N-P-N are fixed expressions that must be memorized
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Unit noun + of + noun: a glass of water, a piece of advice, a cup
-      of tea'
-    example_generator:
-      contexts:
-      - food
-      - drink
-      - measurements
-      min_examples: 4
-  negative:
-    structure: 'No/not any + noun: no water / not any advice'
-    example_generator:
-      contexts:
-      - negation
-      min_examples: 3
-  questions:
-    structure: 'How much/many + noun?: How much water do you want?'
-    example_generator:
-      contexts:
-      - asking about quantity
-      min_examples: 3
+  timeline: Timeless — describes quantities, not time.
+phonetics:
+- example_generator:
+    contexts:
+    - sentence stress
+  l1_issue: Some L1 speakers use direct translation (a water instead of a glass of water)
+  note: 'Stress on the unit noun: a GLASS of water'
+register_notes:
+- note: 'Biber et al. (2021) — NPN constructions (day by day, step by step): register distribution varies; more common in
+    narrative and formal prose. Conversation uses simpler temporal/sequential expressions. Ch. 8.1'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 8.1
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Common N-P-N with 'of'
-  type: lexical
-  examples:
+- examples:
   - a glass of water
   - a piece of advice
   - a cup of tea
   - a slice of bread
   - a bottle of milk
-- rule: Other prepositions in N-P-N
+  rule: Common N-P-N with 'of'
   type: lexical
-  examples:
+- examples:
   - a bag of rice
   - a box of chocolates
   - a jar of jam
   - a can of soda
+  rule: Other prepositions in N-P-N
+  type: lexical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Students create shopping lists using N-P-N constructions.
+    duration: 10
+    name: Shopping List
+  tips:
+  - Teach as fixed expressions
+  - Use real objects for demonstration
+  - Practice with food and drink contexts
+  - 'Swan PEU: N-P-N — ''a cup of tea,'' ''a glass of water,'' ''a piece of advice,'' ''a slice of bread.'' Measure/container
+    words with ''of.'' Important for countable/uncountable distinction: ''a piece of information'' (NOT ''an information'').'
+title: N-P-N Construction
 use:
 - context: Food and drink
   description: Ordering or describing quantities
@@ -81,51 +134,3 @@ use:
   - Can I have a glass of water?
   - She gave me a piece of advice.
   - I would like a cup of tea.
-phonetics:
-- note: 'Stress on the unit noun: a GLASS of water'
-  example_generator:
-    contexts:
-    - sentence stress
-  l1_issue: Some L1 speakers use direct translation (a water instead of a glass of
-    water)
-teaching:
-  methodology: PPP
-  tips:
-  - Teach as fixed expressions
-  - Use real objects for demonstration
-  - Practice with food and drink contexts
-  recommended_activities:
-  - name: Shopping List
-    duration: 10
-    adaptation_notes: Students create shopping lists using N-P-N constructions.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.6-12.13'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I need an advice.*'
-  correction: I need some advice.
-  explanation: Advice is uncountable.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

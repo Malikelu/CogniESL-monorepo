@@ -1,54 +1,71 @@
-grammar_point: have_get_something_done
-title: Causative Have/Get (Something Done for You)
-description: A structure to describe arranging for someone else to do a service or
-  task for you, rather than doing it yourself.
-level: B2
-meaning:
-  core_meaning: Indicates that you arranged for someone else (usually a professional)
-    to do a task for you, not that you did it yourself.
-  timeline: 'Follows standard tense rules: ''have/get'' changes tense, past participle
-    remains the same.'
-  contrast: '''I cut my hair'' = You did it yourself
-
-
-    ''I had my hair cut'' = Someone else (hairdresser) did it for you
-
-
-    ''My hair was cut'' = Passive voice (someone cut it, but no emphasis on you arranging
-    it)
-
-
-    ''Have'' is neutral/formal; ''get'' is informal/spoken.
-
-
-    '
-  ccqs:
-  - question: Did the subject do the action themselves?
-    answer: No, someone else did it for them.
-    purpose: Tests whether the learner understands the key concept of have get something
-      done. This is important because mastering this distinction is essential for
-      accurate and natural English at B2 level.
-  - question: Is this about arranging a service or doing it yourself?
-    answer: Arranging a service — causative.
-    purpose: Tests whether the learner can distinguish between existential 'there'
-      (indicating existence) and dummy 'it' (used for weather, time, distance). Confusing
-      these is a very common beginner error.
-  - question: Is 'have' more formal or informal than 'get' in this structure?
-    answer: '''Have'' is more formal; ''get'' is informal.'
-    purpose: Tests whether the learner understands when to use comparative vs. superlative
-      forms. This distinction depends on how many items are being compared.
-  example_generator:
-    contexts:
-    - everyday situations
-    - professional services
-    - repairs and maintenance
-    cultural_notes:
-    - Very common in British English for services like haircuts, car repairs, and
-      home maintenance
-    - In American English, 'get' is more common in spoken language
-    min_examples: 5
+citations:
+- claim: 'Core meaning: Have/get something done indicates that you arranged for someone else to do a task for you, not that you did it yourself'
+  flagged: false
+  reliability: B
+  source: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  tier: 2
+- claim: 'Register distribution: The causative have/get is more common in spoken and informal written English.'
+  flagged: false
+  reliability: B
+  source: Biber et al. (1999) Grammar of Spoken and Written English. Ch. 5.2.4
+  tier: 2
+- claim: 'Discourse function: In conversation, causative have/get is used to describe arranging services and personal tasks.'
+  flagged: false
+  reliability: B
+  source: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  tier: 2
+- claim: Common error '*She got her hair to be cut.*' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+common_errors:
+- correction: She got her hair cut.
+  error: '*She got her hair to be cut.*'
+  explanation: Causative 'get' uses 'get + object + past participle', not 'get + object + to be + participle'. The 'to be' is redundant and ungrammatical in this structure.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan Entries 66-67. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+- correction: I had the leak fixed by the plumber.
+  error: '*I had fixed by the plumber the leak.*'
+  explanation: 'Word order in causative with agent: ''have + object + past participle + by + agent''. The object (''the leak'') must come immediately after ''have'', not after the past participle.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Chinese
+  reliability: B
+  source: Swan Entries 66-67. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+- correction: We got our house painted last month.
+  error: '*We got our house painted it last month.*'
+  explanation: The object ('house') appears once in the causative structure. Adding 'it' after the past participle creates a double object error. 'Our house' and 'it' refer to the same thing.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Arabic
+  reliability: B
+  source: Swan Entries 66-67. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+- correction: Did you get your car serviced yesterday?
+  error: '*Did you got your car serviced yesterday?*'
+  explanation: After the auxiliary 'did', use the base form 'get' (not 'got'). 'Did' already carries the past tense. Common error in question formation with causative structures.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: B
+  source: Swan Entries 66-67. Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
+description: A structure to describe arranging for someone else to do a service or task for you, rather than doing it yourself.
+dialectal_variation: []
+discourse_notes: []
 form:
   affirmative:
+    example_generator:
+      contexts:
+      - everyday situations
+      - professional services
+      min_examples: 4
     structure: 'Have + object + past participle (neutral/formal)
 
 
@@ -59,157 +76,140 @@ form:
 
 
       '
-    example_generator:
-      contexts:
-      - everyday situations
-      - professional services
-      min_examples: 4
   negative:
-    structure: Didn't have/get + object + past participle / Haven't/Hasn't had/got
-      + object + past participle
     example_generator:
       contexts:
       - negation
       - weather and nature
       min_examples: 4
+    structure: Didn't have/get + object + past participle / Haven't/Hasn't had/got + object + past participle
   questions:
-    structure: Did you have/get + object + past participle? / Have you had/got + object
-      + past participle?
     example_generator:
       contexts:
       - sports and hobbies
       - everyday situations
       min_examples: 4
+    structure: Did you have/get + object + past participle? / Have you had/got + object + past participle?
+grammar_point: have_get_something_done
+level: B2
+meaning:
+  ccqs:
+  - answer: A painter she hired. The causative means she arranged for someone else to do the action.
+    purpose: Tests whether the learner understands that the causative means the subject did NOT perform the action themselves.
+    question: Maria had her apartment painted last week. Who painted it?
+  - answer: '''I washed my car'' = I did it myself. ''I had my car washed'' = I arranged for someone else to wash it.'
+    purpose: Tests whether the learner can distinguish between performing an action and arranging for someone else to do it.
+    question: 'What is the difference: ''I washed my car'' vs ''I had my car washed''?'
+  - answer: They didn't service it themselves — they paid someone (a mechanic). The causative 'have + object + past participle' always means arranging a service.
+    purpose: Tests whether the learner understands that causative 'have' implies arranging a service, regardless of formality.
+    question: A friend says, 'I had my car serviced.' What do you know?
+  - answer: No. Someone else washed it for you -- you arranged the service. In causative have/get something done, the subject causes the action but does not perform it.
+    purpose: Tests whether the learner can distinguish causative 'I had my car washed' (arranged) from 'I washed my car' (did it myself).
+    question: I had my car washed yesterday. Did I wash it myself?
+  contrast: '''I cut my hair'' = You did it yourself
+
+
+    ''I had my hair cut'' = Someone else (hairdresser) did it for you
+
+
+    ''My hair was cut'' = Passive voice (someone cut it, but no emphasis on you arranging it)
+
+
+    ''Have'' is neutral/formal; ''get'' is informal/spoken.
+
+
+    '
+  core_meaning: Indicates that you arranged for someone else (usually a professional) to do a task for you, not that you did it yourself.
+  example_generator:
+    contexts:
+    - everyday situations
+    - professional services
+    - repairs and maintenance
+    cultural_notes:
+    - Very common in British English for services like haircuts, car repairs, and home maintenance
+    - In American English, 'get' is more common in spoken language
+    min_examples: 5
+  timeline: 'Follows standard tense rules: ''have/get'' changes tense, past participle remains the same.'
+phonetics:
+- example_generator:
+    contexts:
+    - sentence stress
+  l1_issue: Speakers of languages without causative structures may use passive voice instead, losing the nuance of personal arrangement.
+  note: 'Stress on the past participle: I had my hair CUT.'
+- example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Learners may over-pronounce 'get' as a full vowel, sounding unnatural in casual speech.
+  note: 'In ''get'' forms, ''get'' is often reduced in connected speech: /gɒt/ or /gət/'
+register_notes:
+- note: 'Biber et al. (1999) — Causative ''have/get something done'': register distribution skewed toward spoken and informal written English. Ch. 5.2.4'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 5.2.4
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Use 'have' for neutral/formal register, 'get' for informal/spoken
-  type: register
-  examples:
+- examples:
   - I had my car serviced at the garage. (formal)
   - I got my car serviced at the garage. (informal)
-- rule: Tense is carried by 'have/get', never by the past participle
-  type: grammatical
-  examples:
+  rule: Use 'have' for neutral/formal register, 'get' for informal/spoken
+  type: register
+- examples:
   - I will have my hair cut tomorrow. (future)
   - She is having her house painted now. (present continuous)
   - They had their roof fixed last week. (past simple)
-- rule: 'Causative vs passive: causative emphasises arrangement, passive emphasises
-    the action'
+  rule: Tense is carried by 'have/get', never by the past participle
   type: grammatical
-  examples:
+- examples:
   - I had my watch repaired. (I arranged it — causative)
   - My watch was repaired. (focus on the watch — passive)
-- rule: Get can imply more effort or difficulty in arranging
-  type: pragmatic
-  examples:
+  rule: 'Causative vs passive: causative emphasises arrangement, passive emphasises the action'
+  type: grammatical
+- examples:
   - I finally got my visa approved. (it was difficult)
   - I had my visa approved. (neutral)
+  rule: Get can imply more effort or difficulty in arranging
+  type: pragmatic
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Students role-play calling a plumber, dentist, or mechanic using 'I need to have/get something done'.
+    duration: 15
+    name: Service Role-Play
+  - adaptation_notes: Show pairs of images (broken phone/repaired phone) and students describe using causative have/get.
+    duration: 10
+    name: Before and After
+  tips:
+  - 'Start with relatable examples: haircuts, car repairs, phone fixes.'
+  - 'Contrast causative with doing it yourself: ''I washed my car'' vs ''I had my car washed''.'
+  - Practice all tenses with timelines (yesterday, every month, next week).
+  - 'Use picture prompts: show before/after and ask students to describe using causative.'
+  - 'Swan PEU: Causative ''have'' — ''I had my hair cut'' means someone else cut it for me (I arranged it). NOT the same as ''I cut my hair'' (I did it myself) or ''I had her cut my hair'' (I told/asked
+    her). The causative meaning is a specific grammatical function.'
+  - 'Swan PEU: Causative ''get'' — ''I got my hair cut'' is more informal than ''had''. ''Get'' often implies some effort was needed: ''I finally got my computer fixed.'' Both take the past participle after
+    the object.'
+  - 'Swan PEU: Causative in different tenses — ''I''m having my house painted'' (present), ''I''ve had my car serviced'' (perfect), ''I''ll have the documents sent'' (future). Teach the pattern with time
+    expressions for each tense.'
+title: Causative Have/Get (Something Done for You)
 use:
-- name: Professional Services
-  description: Arrange for paid professionals to complete tasks.
+- description: Arrange for paid professionals to complete tasks.
   examples:
   - I had my teeth cleaned at the dentist.
   - He gets his suit dry-cleaned every week.
   key_point: 'Most common use: services you pay someone to do.'
-- name: Repairs and Maintenance
-  description: Arrange for repairs to objects you own.
+  name: Professional Services
+- description: Arrange for repairs to objects you own.
   examples:
   - We had our roof fixed after the storm.
   - I need to get my phone screen replaced.
   key_point: Focuses on the result, not the repair process.
-- name: Personal Arrangements
-  description: Arrange for personal tasks like documents, photos, etc.
+  name: Repairs and Maintenance
+- description: Arrange for personal tasks like documents, photos, etc.
   examples:
   - She had her wedding photos taken last month.
   - I got my visa renewed yesterday.
   key_point: Covers any task you arrange for someone else to do.
-phonetics:
-- note: 'Stress on the past participle: I had my hair CUT.'
-  example_generator:
-    contexts:
-    - sentence stress
-  l1_issue: Speakers of languages without causative structures may use passive voice
-    instead, losing the nuance of personal arrangement.
-- note: 'In ''get'' forms, ''get'' is often reduced in connected speech: /gɒt/ or
-    /gət/'
-  example_generator:
-    contexts:
-    - connected speech
-  l1_issue: Learners may over-pronounce 'get' as a full vowel, sounding unnatural
-    in casual speech.
-teaching:
-  methodology: PPP
-  tips:
-  - 'Start with relatable examples: haircuts, car repairs, phone fixes.'
-  - 'Contrast causative with doing it yourself: ''I washed my car'' vs ''I had my
-    car washed''.'
-  - Practice all tenses with timelines (yesterday, every month, next week).
-  - 'Use picture prompts: show before/after and ask students to describe using causative.'
-  recommended_activities:
-  - name: Service Role-Play
-    duration: 15
-    adaptation_notes: Students role-play calling a plumber, dentist, or mechanic using
-      'I need to have/get something done'.
-  - name: Before and After
-    duration: 10
-    adaptation_notes: Show pairs of images (broken phone/repaired phone) and students
-      describe using causative have/get.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*She got her hair to be cut.*'
-  correction: She got her hair cut.
-  explanation: Causative 'get' uses 'get + object + past participle', not 'get + object
-    + to be + participle'. The 'to be' is redundant and ungrammatical in this structure.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-- error: '*I had fixed by the plumber the leak.*'
-  correction: I had the leak fixed by the plumber.
-  explanation: 'Word order in causative with agent: ''have + object + past participle
-    + by + agent''. The object (''the leak'') must come immediately after ''have'',
-    not after the past participle.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-  - Chinese
-- error: '*We got our house painted it last month.*'
-  correction: We got our house painted last month.
-  explanation: The object ('house') appears once in the causative structure. Adding
-    'it' after the past participle creates a double object error. 'Our house' and
-    'it' refer to the same thing.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Arabic
-- error: '*Did you got your car serviced yesterday?*'
-  correction: Did you get your car serviced yesterday?
-  explanation: After the auxiliary 'did', use the base form 'get' (not 'got'). 'Did'
-    already carries the past tense. Common error in question formation with causative
-    structures.
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.
+  name: Personal Arrangements

@@ -1,14 +1,192 @@
-grammar_point: countable_uncountable
-title: Countable & Uncountable Nouns
+citations:
+- claim: 'Core meaning: Countable nouns are individual items that can be counted with
+    numbers; Uncountable nouns are substan'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17:
+    Partitives, Collectives and Quantifiers'
+  tier: 1
+- claim: 'Register distribution: In academic writing, countability affects article
+    use and quantifier selection.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17:
+    Partitives, Collectives, and Quantifiers'
+  tier: 1
+- claim: 'Discourse function: In academic writing, countability affects article use
+    and quantifier selection: ''The research provid'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17:
+    Partitives, Collectives, and Quantifiers'
+  tier: 1
+- claim: Common error '*I need an advice.*' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 10: Determiners-10.4'
+  tier: 1
+- claim: L1 transfer in countable uncountable varies significantly across language
+    backgrounds — Swan & Smith document contrastive patterns for speakers of different
+    L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+common_errors:
+- correction: I need some advice. / I need a piece of advice.
+  error: '*I need an advice.*'
+  explanation: '''Advice'' is uncountable. Cannot use ''an''. Use ''some advice''
+    or ''a piece of advice''.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+- correction: much information / a lot of advice
+  error: 'Using ''many'' with uncountable nouns: *''many informations'' / *''many
+    advice'''
+  explanation: 'Swan PEU: ''Many'' for countable, ''much'' for uncountable. Some nouns
+    that are countable in other languages (information, advice, progress, research,
+    news, furniture, luggage) are uncountable in English.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: a piece of furniture / a piece of luggage
+  error: 'Using ''a piece of'' incorrectly: *''a furniture'' / *''a luggage'''
+  explanation: 'Swan PEU: Uncountable nouns need a ''measure word'' to express a single
+    item. ''A piece of'', ''a bit of'', ''an item of'', ''a sheet of''.'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Arabic
+  reliability: B
+  source: Swan (2016) Practical English Usage, 4th ed.
+- correction: ''
+  error: See Swan & Smith (2001) for L1-specific patterns
+  explanation: 'Swan & Smith (2001), Ch. 22. Spanish mass nouns made plural: *furnitures,
+    *informations. Also: singular for symmetrical things (*a trouser), irregular plural
+    overgeneralization (*childs).'
+  flagged: false
+  l1_groups:
+  - Spanish
+  reliability: B
+  source: 'Swan & Smith (2001) Learner English: A Teacher''s Guide to Interference
+    and Other Problems, 2nd ed. Cambridge University Press.'
+- correction: accommodation / bread / research / travel / homework
+  error: '*an accommodation / *a bread / *a research / *a travel / *a homework'
+  explanation: 'Parrott (2000) Ch. 1: Several nouns surprise learners by being uncountable
+    in English: accommodation, bread, information, money, news, rubbish, spaghetti,
+    travel, weather, homework, research, knowledge. Hair is uncountable when referring
+    to the mass (her hair is long) but countable for individual strands (a hair in
+    my soup). Some originally-plural nouns are now commonly used as uncountable: data
+    (the data is), media (the media is). Parrott recommends teaching these explicitly
+    as vocabulary items rather than applying countability rules.
+
+    '
+  flagged: false
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  - Italian
+  - Russian
+  - Arabic
+  - Chinese
+  - Japanese
+  - Korean
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press. Ch. 1: Nouns-1.5.'
+- correction: two pieces of wood / a fact / much furniture / a lot of furniture
+  error: '*two woods (meaning pieces of wood) / *a truth (meaning a fact) / *many
+    furnitures'
+  explanation: 'Parrott (2000) Ch. 1: Some nouns can be both countable and uncountable
+    with a meaning shift. wood [U] = material; wood [C] = a forest. truth [U] = abstract
+    concept; truth [C] = a specific true fact (rare, formal). furniture, luggage,
+    equipment are always uncountable — "a piece of furniture," "two items of luggage."
+    L1s with gender/number agreement often transfer plural marking to English uncountable
+    nouns systematically.
+
+    '
+  flagged: false
+  l1_groups:
+  - Spanish
+  - French
+  - Italian
+  - Portuguese
+  - German
+  - Russian
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press. Ch. 1: Nouns'
 description: 'Nouns that can be counted individually (countable: book, apple) vs nouns
   that cannot be counted (uncountable: water, information), with specific quantifiers
   for each.'
+dialectal_variation: []
+discourse_notes:
+- note: The countable/uncountable distinction affects article use, quantifier choice
+    (many vs much), and plural marking.
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - entertainment and media
+      - food and drink
+      - shopping
+      min_examples: 4
+    structure: 'Countable: Singular (a/an + noun), plural (noun + s/es): "a book",
+      "two books"
+
+      Uncountable: Singular only, no a/an: "water", "information"
+
+      Quantifiers: Countable (many, few, a few, number of); Uncountable (much, little,
+      a little, amount of)
+
+      '
+  negative:
+    example_generator:
+      contexts:
+      - everyday situations
+      - shopping
+      min_examples: 4
+    structure: 'Countable: ''I don''t have any books.'' Uncountable: ''I don''t have
+      any water.'''
+  questions:
+    example_generator:
+      contexts:
+      - entertainment and media
+      - food and drink
+      min_examples: 4
+    structure: 'Countable: ''Are there any books?'' Uncountable: ''Is there any water?'''
+grammar_point: countable_uncountable
 level: A1
 meaning:
-  core_meaning: Countable nouns are individual items that can be counted with numbers;
-    Uncountable nouns are substances, concepts, or mass nouns that cannot be counted
-    individually.
-  timeline: N/A (Applies to all tenses; noun form does not change with tense).
+  ccqs:
+  - answer: Yes = countable. No = uncountable.
+    purpose: Tests whether the learner can apply the 'can you count it?' test to determine
+      countability. This is the foundational skill for choosing correct quantifiers
+      (many/much, a few/a little, etc.).
+    question: Can we count this noun? Can we say 'one book, two books'?
+  - answer: Yes = countable (a book). No = uncountable (not 'a water').
+    purpose: Tests whether the learner knows that indefinite articles can only be
+      used with singular countable nouns. This is a reliable test for countability
+      that works for most nouns.
+    question: Can we use 'a' or 'an' before this noun?
+  - answer: '''Many'' = countable (many books). ''Much'' = uncountable (much water).'
+    purpose: Tests whether the learner can choose the correct quantifier based on
+      countability. This is essential for natural-sounding English -- saying 'many
+      water' or 'much books' is a very common error.
+    question: Do we use 'many' or 'much' with this noun?
+  - answer: Yes = countable (books, apples). No = uncountable (not 'informations',
+      'advices').
+    purpose: Tests whether the learner knows that uncountable nouns cannot take plural
+      -s. This is one of the most common errors across all L1 groups -- learners pluralize
+      uncountable nouns like 'information', 'advice', 'furniture', 'luggage'.
+    question: Can this noun have a plural -s?
   contrast: '"Countable" = Can be plural: "book → books"
 
 
@@ -18,28 +196,9 @@ meaning:
     "Quantifiers" = Many/few for countable; Much/little for uncountable.
 
     '
-  ccqs:
-  - question: Can we count this noun? Can we say 'one book, two books'?
-    answer: Yes = countable. No = uncountable.
-    purpose: Tests whether the learner can apply the 'can you count it?' test to determine
-      countability. This is the foundational skill for choosing correct quantifiers
-      (many/much, a few/a little, etc.).
-  - question: Can we use 'a' or 'an' before this noun?
-    answer: Yes = countable (a book). No = uncountable (not 'a water').
-    purpose: Tests whether the learner knows that indefinite articles can only be
-      used with singular countable nouns. This is a reliable test for countability
-      that works for most nouns.
-  - question: Do we use 'many' or 'much' with this noun?
-    answer: '''Many'' = countable (many books). ''Much'' = uncountable (much water).'
-    purpose: Tests whether the learner can choose the correct quantifier based on
-      countability. This is essential for natural-sounding English -- saying 'many
-      water' or 'much books' is a very common error.
-  - question: Can this noun have a plural -s?
-    answer: Yes = countable (books, apples). No = uncountable (not 'informations',
-      'advices').
-    purpose: Tests whether the learner knows that uncountable nouns cannot take plural
-      -s. This is one of the most common errors across all L1 groups -- learners pluralize
-      uncountable nouns like 'information', 'advice', 'furniture', 'luggage'.
+  core_meaning: Countable nouns are individual items that can be counted with numbers;
+    Uncountable nouns are substances, concepts, or mass nouns that cannot be counted
+    individually.
   example_generator:
     contexts:
     - everyday situations
@@ -51,78 +210,141 @@ meaning:
       (e.g., 'information', 'advice', 'furniture', 'luggage')
     - This is one of the most common sources of errors for beginner learners
     min_examples: 5
-form:
-  affirmative:
-    structure: 'Countable: Singular (a/an + noun), plural (noun + s/es): "a book",
-      "two books"
-
-      Uncountable: Singular only, no a/an: "water", "information"
-
-      Quantifiers: Countable (many, few, a few, number of); Uncountable (much, little,
-      a little, amount of)
-
-      '
-    example_generator:
-      contexts:
-      - entertainment and media
-      - food and drink
-      - shopping
-      min_examples: 4
-  negative:
-    structure: 'Countable: ''I don''t have any books.'' Uncountable: ''I don''t have
-      any water.'''
-    example_generator:
-      contexts:
-      - everyday situations
-      - shopping
-      min_examples: 4
-  questions:
-    structure: 'Countable: ''Are there any books?'' Uncountable: ''Is there any water?'''
-    example_generator:
-      contexts:
-      - entertainment and media
-      - food and drink
-      min_examples: 4
+  timeline: N/A (Applies to all tenses; noun form does not change with tense).
+phonetics:
+- example_generator:
+    contexts:
+    - common errors
+  l1_issue: Many languages treat these nouns as countable, leading to overgeneralisation
+    of plural -s
+  note: 'No phonetic difference, but learners may add plural -s to uncountable nouns:
+    *''informations'', *''advices'', *''furnitures'''
+- example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Learners may not recognise 'much' in natural speech due to reduction
+  note: '''Much'' is often reduced to /mətʃ/ in connected speech'
+register_notes:
+- note: In academic writing, countability affects article use and quantifier selection.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'In conversation, errors with countability are common: ''I need an information''
+    (incorrect)'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: In formal writing, correct countability marking is a marker of proficient
+    English.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Countable/uncountable noun distinction: academic prose
+    uses more abstract/uncountable nouns; conversation uses more concrete/countable
+    nouns. Ch. 4.3.2'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 4.3.2
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch.
+    10: Determiners-10.4'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17:
+    Partitives, Collectives and Quantifiers'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 5: Nouns and Noun Phrases-5.4 (count/mass distinction)'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 7: Countable and uncountable nouns'
+  validation: Swan (2016) Practical English Usage, 4th ed.(countable and uncountable
+    nouns)
 sub_rules:
-- rule: 'Common uncountable nouns: advice, information, furniture, luggage, news,
-    weather, traffic, homework, research, knowledge'
-  type: lexical
-  examples:
+- examples:
   - She gave me good advice.
   - The furniture is new.
   - I have too much homework.
-- rule: 'Uncountable nouns can be made countable with a unit of measurement: a piece
-    of advice, a glass of water, an item of furniture'
-  type: grammatical
-  examples:
+  rule: 'Common uncountable nouns: advice, information, furniture, luggage, news,
+    weather, traffic, homework, research, knowledge'
+  type: lexical
+- examples:
   - a piece of advice
   - a glass of water
   - a slice of bread
   - a item of news
   - a piece of furniture
-- rule: 'Some nouns can be both countable and uncountable with different meanings:
-    ''glass'' (material) vs ''a glass'' (container)'
-  type: lexical
-  examples:
+  rule: 'Uncountable nouns can be made countable with a unit of measurement: a piece
+    of advice, a glass of water, an item of furniture'
+  type: grammatical
+- examples:
   - Glass is made from sand. (uncountable material)
   - I drank a glass of water. (countable container)
   - I need some paper. (material)
   - I need a paper. (newspaper)
-- rule: '''Some'' and ''any'' work with both countable and uncountable nouns'
-  type: grammatical
-  examples:
+  rule: 'Some nouns can be both countable and uncountable with different meanings:
+    ''glass'' (material) vs ''a glass'' (container)'
+  type: lexical
+- examples:
   - I have some books. (countable)
   - I have some water. (uncountable)
   - Do you have any apples? (countable)
   - Do you have any milk? (uncountable)
-- rule: '''A few'' = some (positive); ''few'' = almost none (negative). ''A little''
-    = some (positive); ''little'' = almost none (negative)'
+  rule: '''Some'' and ''any'' work with both countable and uncountable nouns'
   type: grammatical
-  examples:
+- examples:
   - I have a few friends. (some — positive)
   - I have few friends. (almost none — negative)
   - I have a little time. (some — positive)
   - I have little time. (almost none — negative)
+  rule: '''A few'' = some (positive); ''few'' = almost none (negative). ''A little''
+    = some (positive); ''little'' = almost none (negative)'
+  type: grammatical
+teaching:
+  methodology: PPP with realia
+  recommended_activities:
+  - adaptation_notes: Students sort a list of 20 nouns into countable and uncountable
+      columns. Discuss any that can be both.
+    duration: 10
+    name: Sort the Nouns
+  - adaptation_notes: Students write a shopping list using correct quantifiers (many
+      apples, much rice, a few eggs, a little milk).
+    duration: 15
+    name: Shopping List
+  tips:
+  - 'Parrott (2000) Ch. 1: Nouns convey substantial information. Learners need to
+    know countable/uncountable status and plural forms. Nouns modify other nouns (stone
+    wall, football match).'
+  - 'Parrott (2000): Some nouns are ''deceptively uncountable'' — they are uncountable
+    in English but countable in many other languages: information, advice, news, furniture,
+    homework, evidence, research, progress. This is a major source of L1 transfer
+    errors.'
+  - 'CGEL Ch. 5: Countability is determined by the sense, not a fixed property of
+    nouns. Many nouns have both count and non-count uses — ''I like cake'' (non-count)
+    vs ''She baked three cakes'' (count). Servings, varieties, and animal/meat pairs
+    follow systematic polysemy patterns.'
+  - 'Week 1: Countable nouns (singular/plural, a/an).'
+  - 'Week 2: Uncountable nouns (common examples, no a/an/-s).'
+  - 'Week 3: Quantifiers (many/much, few/little).'
+  - 'Use real objects: Count books (countable), pour water (uncountable).'
+  - 'Swan PEU: Make a list of ''false friends'' — nouns countable in L1 but uncountable
+    in English: information, advice, progress, research, news, weather, traffic, homework,
+    work, furniture, luggage, equipment.'
+  - 'Swan PEU: Some nouns can be both countable and uncountable with different meanings:
+    ''glass'' (material) vs ''a glass'' (container), ''coffee'' (substance) vs ''a
+    coffee'' (cup of coffee).'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 5: CGEL (Ch.5)
+    analyzes the count/mass distinction as a property of the NOUN (not the referent).
+    Count nouns can be pluralized and take numerals (''two books''); mass nouns cannot
+    (*''two waters''). Some nouns can be both with meaning shifts: ''coffee'' (mass:
+    substance) vs ''a coffee'' (count: cup of coffee). CGEL notes that the count/mass
+    distinction is LEXICAL, not semantic — ''furniture'' is mass in English but count
+    in French (les meubles).'
+teaching_tips:
+- source: 'Celce-Murcia & Larsen-Freeman (1999) The Grammar Book: An ESL/EFL Teacher''s
+    Course, 2nd ed. Heinle & Heinle.'
+  tip: 'QUANTIFIER DISTRIBUTION ACROSS COUNT/NONCOUNT: Quantifiers follow two continua
+    (positive/negative). Some, a lot of, enough work with both. Many/few/several are
+    count-only; much/little are noncount-only. Increasingly ''less'' replaces ''fewer''
+    with count nouns in informal English. Comparative: much→more, many→more, few→fewer,
+    little→less. Superlative: most, most, fewest, least. Source: Ch.17 p.333-334.'
+title: Countable & Uncountable Nouns
 use:
 - context: Countable Nouns (Objects, People, Animals)
   description: 'Physical items that can be counted: books, cars, students, dogs.'
@@ -150,65 +372,3 @@ use:
   - I don't have much time.
   - There is a little milk left.
   - How much sugar do you want?
-phonetics:
-- note: 'No phonetic difference, but learners may add plural -s to uncountable nouns:
-    *''informations'', *''advices'', *''furnitures'''
-  example_generator:
-    contexts:
-    - common errors
-  l1_issue: Many languages treat these nouns as countable, leading to overgeneralisation
-    of plural -s
-- note: '''Much'' is often reduced to /mətʃ/ in connected speech'
-  example_generator:
-    contexts:
-    - connected speech
-  l1_issue: Learners may not recognise 'much' in natural speech due to reduction
-teaching:
-  methodology: PPP with realia
-  tips:
-  - 'Week 1: Countable nouns (singular/plural, a/an).'
-  - 'Week 2: Uncountable nouns (common examples, no a/an/-s).'
-  - 'Week 3: Quantifiers (many/much, few/little).'
-  - 'Use real objects: Count books (countable), pour water (uncountable).'
-  recommended_activities:
-  - name: Sort the Nouns
-    duration: 10
-    adaptation_notes: Students sort a list of 20 nouns into countable and uncountable
-      columns. Discuss any that can be both.
-  - name: Shopping List
-    duration: 15
-    adaptation_notes: Students write a shopping list using correct quantifiers (many
-      apples, much rice, a few eggs, a little milk).
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.6-12.8'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 5: Nouns and Noun Phrases, §5.3-5.4 (count/mass distinction)'
-  validation: Swan (2016) Practical English Usage, 4th ed. Entries 46-80 (countable
-    and uncountable nouns)
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    10: Determiners, §10.3-10.4'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 7: Countable and uncountable nouns'
-common_errors:
-- error: '*I need an advice.*'
-  correction: I need some advice. / I need a piece of advice.
-  explanation: '''Advice'' is uncountable. Cannot use ''an''. Use ''some advice''
-    or ''a piece of advice''.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: In academic writing, countability affects article use and quantifier selection.
-- note: 'In conversation, errors with countability are common: ''I need an information''
-    (incorrect)'
-- note: In formal writing, correct countability marking is a marker of proficient
-    English.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: 'In academic writing, countability affects article use and quantifier selection:
-    ''The research provides evidence (uncountable) for three studies (countable).'''
-- note: 'In conversation, errors with countability are common: ''I need an information''
-    (incorrect) vs ''I need some information.'' (correct)'

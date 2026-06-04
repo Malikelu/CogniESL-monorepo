@@ -1,36 +1,46 @@
-id: escape-room
-name: Grammar Escape Room
-category: review
-description: Students solve grammar and vocabulary puzzles to escape the room. Each
-  puzzle solved reveals a code that unlocks the next challenge. Highly engaging review.
-targetStructures:
-- verb-tenses
-- vocabulary
-- clauses
-- sentence-structure
+adaptableToTopic: true
 bestForLevels:
 - A2
 - B1
 - B2
 - C1
+category: review
+citations:
+- claim: Gamified review activities increase student engagement and provide spaced
+    repetition of grammar points in a low-anxiety competitive format.
+  flagged: false
+  reliability: B
+  source: Peregoy, S. F., Boyle, O. F., & Amendum, S. J. (2023). Reading, Writing,
+    and Learning in ESL (8th ed.). Pearson.
+  tier: 2
+- claim: "Based on the Vocabulary game formats, Team-based grammar game formats from Watcyn-Jones (1981), which uses game-based pair and group work to make grammar practice dynamic and engaging."
+  source: 'Watcyn-Jones, P. (1981) Grammar Games and Activities. Penguin Books.'
+  tier: 2
+  reliability: 'B'
+  flagged: false
+description: Students solve grammar and vocabulary puzzles to escape the room. Each
+  puzzle solved reveals a code that unlocks the next challenge. Highly engaging review.
+differentiation:
+  extension: Add bonus puzzles for fast teams. Include more complex grammar. Reduce
+    time per station.
+  support: Provide hints at each station. Use simpler puzzles. Allow more time per
+    station.
+digitalReady: false
 duration: 40
-groupSize: small-groups
 energyRequired: high
-prepTime: high
-materials:
-- Puzzle cards
-- Lock boxes or digital locks
-- Answer keys
-- Timer
 format:
 - in-person
-requiresTech: false
-digitalReady: false
+grammar_focus:
+- clauses
+- sentence_structure
+- verb_tenses
+- word_order
+groupSize: small-groups
 hasAudioComponent: false
 hasPrintableComponent: true
 hasSlidesComponent: false
 hasVisualComponent: false
-adaptableToTopic: true
+id: escape-room
 instructions:
 - Create 5-6 puzzle stations. Each station has a grammar or vocabulary challenge.
   Solving it reveals a code for the final lock.
@@ -43,6 +53,35 @@ instructions:
 - The first team to escape wins. Review any puzzles that stumped multiple teams.
 - 'Discuss: Which grammar points were hardest? What strategies helped you solve the
   puzzles?'
+keywords:
+- escape room
+- puzzle
+- review
+- competition
+- team work
+l1_enhanced:
+- adaptation: 'Spanish speakers may confuse present perfect and past simple. Provide
+    explicit contrast: "he comido" (present perfect) vs "comí" (past simple).'
+  language: Spanish
+  priority: high
+- adaptation: Arabic has perfective/imperfective aspect rather than tense. Provide
+    timeline visuals to illustrate English tense system.
+  language: Arabic
+  priority: high
+- adaptation: Mandarin has no verb inflection for tense. Tense is indicated by time
+    words (yesterday, now) and aspect markers (le, zhe). Provide explicit verb conjugation
+    practice.
+  language: Mandarin
+  priority: high
+l1_specific: []
+materials:
+- Puzzle cards
+- Lock boxes or digital locks
+- Answer keys
+- Timer
+name: Grammar Escape Room
+prepTime: high
+requiresTech: false
 script:
 - '"To the Grammar Escape Room! Solve each puzzle to get a code number. Use all the
   numbers to unlock the final lock!"'
@@ -50,15 +89,24 @@ script:
   the next station.
 setupInstructions: Create 5-6 puzzle stations with increasing difficulty. Prepare
   lock boxes or use a digital lock system. Test all puzzles before class.
-differentiation:
-  support: Provide hints at each station. Use simpler puzzles. Allow more time per
-    station.
-  extension: Add bonus puzzles for fast teams. Include more complex grammar. Reduce
-    time per station.
-keywords:
-- escape room
-- puzzle
-- review
-- competition
-- team work
-l1Enhanced: true
+skill_areas:
+- grammar
+- integrated
+sources:
+- Ur, Penny (1988) Grammar Practice Activities, Cambridge University Press.
+  - 'Watcyn-Jones, P. (1981) Grammar Games and Activities. Penguin Books.'
+targetStructures:
+- verb-tenses
+- vocabulary
+- clauses
+- sentence-structure
+teaching_tips:
+- context: Preparation
+  tip: Test all puzzles before class. A puzzle that takes you 3 minutes may take students
+    10. Adjust difficulty or time limits accordingly.
+- context: During the activity
+  tip: If a team is stuck for more than 3 minutes at a station, offer a hint. The
+    goal is engagement, not frustration. Prepare 2-3 hints per station in advance.
+- context: Post-activity review
+  tip: The post-activity review is essential — go through any puzzle that stumped
+    multiple teams. This is where the targeted grammar review happens.

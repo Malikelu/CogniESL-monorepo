@@ -1,42 +1,41 @@
 grammar_point: appositives
 title: Appositives
-description: A noun or noun phrase that sits next to another noun to rename, identify,
-  or describe it. Appositives can be restrictive (essential) or non-restrictive (extra
-  information set off by commas).
+description: A noun or noun phrase that sits next to another noun to rename, identify, or describe it. Appositives can be
+  restrictive (essential) or non-restrictive (extra information set off by commas).
 level: B2
 meaning:
-  core_meaning: An appositive is a noun or noun phrase placed beside another noun
-    to provide additional identification or description. It renames or clarifies the
-    noun it follows or precedes.
+  core_meaning: An appositive is a noun or noun phrase placed beside another noun to provide additional identification or
+    description. It renames or clarifies the noun it follows or precedes.
   timeline: Timeless — appositives can appear in any tense.
   contrast: 'Without appositive: "My friend is a doctor."
 
-    With appositive: "My friend Sarah is a doctor." (Sarah = appositive, identifies
-    which friend)
+    With appositive: "My friend Sarah is a doctor." (Sarah = appositive, identifies which friend)
 
-    Non-restrictive: "Mr Jones, our neighbour, is retiring." (extra information, set
-    off by commas)
+    Non-restrictive: "Mr Jones, our neighbour, is retiring." (extra information, set off by commas)
 
     '
   ccqs:
-  - question: Does the appositive tell us which specific person/thing is meant, or
-      does it just add extra information?
-    answer: If essential for identification, no commas (restrictive). If extra information,
-      use commas (non-restrictive).
-    purpose: Tests whether the learner understands the restrictive vs non-restrictive
-      distinction. Restrictive appositives identify which specific person/thing (no
-      commas). Non-restrictive appositives add extra information (require commas).
+  - question: Does the appositive tell us which specific person/thing is meant, or does it just add extra information?
+    answer: If essential for identification, no commas (restrictive). If extra information, use commas (non-restrictive).
+    purpose: Tests whether the learner understands the restrictive vs non-restrictive distinction. Restrictive appositives
+      identify which specific person/thing (no commas). Non-restrictive appositives add extra information (require commas).
       This is the core concept for correct punctuation.
   - question: Can you remove the appositive and the sentence still makes sense?
-    answer: If yes, it is non-restrictive and needs commas. If removing it changes
-      the meaning or makes it unclear, it is restrictive.
-    purpose: 'Tests whether the learner can apply the removability test: if the sentence
-      still makes sense without the appositive, it is non-restrictive and needs commas.
-      If removing it changes the meaning, it is restrictive and needs no commas.'
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      appositives and explain why they are incorrect.
+    answer: If yes, it is non-restrictive and needs commas. If removing it changes the meaning or makes it unclear, it is
+      restrictive.
+    purpose: 'Tests whether the learner can apply the removability test: if the sentence still makes sense without the appositive,
+      it is non-restrictive and needs commas. If removing it changes the meaning, it is restrictive and needs no commas.'
+  - question: What is the difference in meaning between these two forms?
+    answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with appositives and explain why they are incorrect.
+  - question: My brother Tom lives in London (no commas) versus My brother, Tom, lives in London (with commas) -- which one
+      implies you have more than one brother?
+    answer: My brother Tom (no commas, restrictive) implies you have more than one brother and are specifying which one. My
+      brother, Tom, (with commas, non-restrictive) implies you have only one brother, and Tom is simply extra information
+      about him. The commas completely change the meaning regarding how many brothers you have.
+    purpose: Tests whether the learner understands that comma usage in appositives is not arbitrary -- it changes the fundamental
+      meaning of the sentence. This is a high-stakes punctuation choice because misplacing commas can lead listeners or readers
+      to draw incorrect conclusions about family relationships, specificity, and shared knowledge.
   example_generator:
     contexts:
     - biographical writing
@@ -51,9 +50,8 @@ meaning:
     min_examples: 5
 form:
   affirmative:
-    structure: 'Noun + appositive (no commas if restrictive): ''My brother Tom lives
-      in London.'' / Noun + , + appositive + , (commas if non-restrictive): ''My brother,
-      Tom, lives in London.'' (implies I have only one brother)'
+    structure: 'Noun + appositive (no commas if restrictive): ''My brother Tom lives in London.'' / Noun + , + appositive
+      + , (commas if non-restrictive): ''My brother, Tom, lives in London.'' (implies I have only one brother)'
     example_generator:
       contexts:
       - introductions
@@ -62,9 +60,8 @@ form:
       - formal writing
       min_examples: 4
   negative:
-    structure: 'The appositive structure is the same in negative sentences: ''My colleague,
-      Dr Patel, wasn''t at the meeting.'' / ''The author J.K. Rowling didn''t expect
-      the books to be so successful.'''
+    structure: 'The appositive structure is the same in negative sentences: ''My colleague, Dr Patel, wasn''t at the meeting.''
+      / ''The author J.K. Rowling didn''t expect the books to be so successful.'''
     example_generator:
       contexts:
       - negative statements about people
@@ -72,8 +69,8 @@ form:
       - formal writing
       min_examples: 3
   questions:
-    structure: 'Appositives can appear in questions: ''Is your friend Maria coming
-      tonight?'' / ''Have you read 1984, George Orwell''s most famous novel?'''
+    structure: 'Appositives can appear in questions: ''Is your friend Maria coming tonight?'' / ''Have you read 1984, George
+      Orwell''s most famous novel?'''
     example_generator:
       contexts:
       - asking for confirmation
@@ -90,8 +87,7 @@ sub_rules:
 - rule: Non-restrictive appositive — with commas
   type: punctuation
   examples:
-  - Sarah, my best friend, is a doctor. (extra information — I have only one best
-    friend)
+  - Sarah, my best friend, is a doctor. (extra information — I have only one best friend)
   - London, the capital of England, is very diverse.
   - Shakespeare, the famous playwright, was born in Stratford-upon-Avon.
 - rule: Appositive at the beginning of a sentence
@@ -107,16 +103,14 @@ sub_rules:
   - Dr Smith will see you now.
 use:
 - name: Introducing and identifying people
-  description: Used to provide someone's name, title, or role when first mentioning
-    them.
+  description: Used to provide someone's name, title, or role when first mentioning them.
   examples:
   - My neighbour, Mrs Chen, grows beautiful roses.
   - The CEO, James Wilson, announced record profits.
   - I spoke to Dr Patel, our family doctor.
   key_point: Essential in introductions, biographies, and news writing.
 - name: Adding descriptive detail in writing
-  description: Used in formal and academic writing to add information concisely without
-    a separate clause.
+  description: Used in formal and academic writing to add information concisely without a separate clause.
   examples:
   - The Amazon, the world's largest rainforest, is under threat.
   - Einstein, a theoretical physicist, developed the theory of relativity.
@@ -130,89 +124,94 @@ use:
   - We visited Lake Windermere, the largest lake in England.
   key_point: Helps avoid ambiguity when more than one person or thing could be meant.
 phonetics:
-- note: Non-restrictive appositives are marked by a pause (reflected in writing by
-    commas) and a slight drop in pitch before the appositive, with the pitch resuming
-    after it.
+- note: Non-restrictive appositives are marked by a pause (reflected in writing by commas) and a slight drop in pitch before
+    the appositive, with the pitch resuming after it.
   example_generator:
     contexts:
     - formal speech
     - presentations
     - reading aloud
-  l1_issue: Learners may omit commas around non-restrictive appositives, which can
-    change the meaning of the sentence.
+  l1_issue: Learners may omit commas around non-restrictive appositives, which can change the meaning of the sentence.
 teaching:
   methodology: Discovery learning with authentic texts
   recommended_activities:
   - name: Comma decision
     duration: 15
-    adaptation_notes: Give students sentences with appositives and have them decide
-      whether commas are needed. Discuss how the meaning changes.
+    adaptation_notes: Give students sentences with appositives and have them decide whether commas are needed. Discuss how
+      the meaning changes.
   - name: Biography writing
     duration: 20
-    adaptation_notes: Students write a short biography of a famous person, using at
-      least three appositives. Peer review for correct comma usage.
+    adaptation_notes: Students write a short biography of a famous person, using at least three appositives. Peer review for
+      correct comma usage.
   - name: Sentence combining
     duration: 10
-    adaptation_notes: 'Give two simple sentences and have students combine them using
-      an appositive: ''Paris is the capital of France. It is beautiful.'' → ''Paris,
-      the capital of France, is beautiful.'''
+    adaptation_notes: 'Give two simple sentences and have students combine them using an appositive: ''Paris is the capital
+      of France. It is beautiful.'' → ''Paris, the capital of France, is beautiful.'''
   tips:
   - 'Teach the comma rule clearly: essential = no commas, extra information = commas.'
-  - Use the 'removal test' — if you can remove the phrase and the sentence still identifies
-    the right person/thing, use commas.
+  - Use the 'removal test' — if you can remove the phrase and the sentence still identifies the right person/thing, use commas.
   - Provide plenty of examples from authentic texts (news articles, biographies).
-  - Contrast restrictive and non-restrictive appositives side by side to highlight
-    the difference.
+  - Contrast restrictive and non-restrictive appositives side by side to highlight the difference.
+  - 'Swan PEU: Restrictive vs. non-restrictive apposition — ''My friend John'' vs ''My friend, John.'' The comma changes meaning:
+    restrictive (which friend? John) vs non-restrictive (extra info about my one friend).'
 sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 9:
-    Modals, §9.1-9.6'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
   validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
 common_errors:
 - error: '*My friend Sarah is a doctor.* (I have multiple friends named Sarah)'
-  correction: My friend Sarah is a doctor. (restrictive -- no commas, identifies which
-    Sarah)
-  explanation: Restrictive appositives identify which specific person/thing and do
-    NOT use commas. 'My friend Sarah' implies I have multiple friends and I mean Sarah
-    specifically.
+  correction: My friend Sarah is a doctor. (restrictive -- no commas, identifies which Sarah)
+  explanation: Restrictive appositives identify which specific person/thing and do NOT use commas. 'My friend Sarah' implies
+    I have multiple friends and I mean Sarah specifically.
   l1_groups:
   - Portuguese
   - Spanish
   - Chinese
+  reliability: D
+  flagged: true
 - error: '*My brother, Tom, lives in London.* (I have multiple brothers)'
-  correction: My brother Tom lives in London. (restrictive -- no commas needed because
-    I have multiple brothers and need to specify which one)
-  explanation: When the listener does NOT know which person/thing is meant, the appositive
-    is restrictive and takes no commas. Using commas implies there is only one brother.
+  correction: My brother Tom lives in London. (restrictive -- no commas needed because I have multiple brothers and need to
+    specify which one)
+  explanation: When the listener does NOT know which person/thing is meant, the appositive is restrictive and takes no commas.
+    Using commas implies there is only one brother.
   l1_groups:
   - Portuguese
   - Spanish
   - Arabic
+  reliability: D
+  flagged: true
 - error: '*London the capital of England is very diverse.*'
   correction: London, the capital of England, is very diverse.
-  explanation: Non-restrictive appositives add extra information and MUST be set off
-    by commas. 'The capital of England' is extra information about London (there is
-    only one London in this context).
+  explanation: Non-restrictive appositives add extra information and MUST be set off by commas. 'The capital of England' is
+    extra information about London (there is only one London in this context).
   l1_groups:
   - Portuguese
   - Spanish
   - Chinese
   - Japanese
+  reliability: D
+  flagged: true
 register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
+- note: 'Biber et al. (2021) — Appositive noun phrases: more common in news and academic prose than in conversation. Register
+    distribution reflects information density. Ch. 8.10.1'
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 8.10.1
+  reliability: C
+dialectal_variation: []
 discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.
+- note: Appositives rename or describe adjacent noun phrases. Restrictive appositives define; non-restrictive appositives
+    add extra information set off by commas.
+citations:
+- claim: 'Core meaning: An appositive is a noun or noun phrase placed beside another noun to provide additional identificati'
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms-9.6'
+  tier: 1
+  reliability: B
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 8: Modal Auxiliaries and Related Phrasal Forms-9.6'
+  tier: 1
+  reliability: B
+- claim: Common error '*My friend Sarah is a doctor.* (I have multiple friends name' for Portuguese, Spanish, Chinese speakers
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+  reliability: B

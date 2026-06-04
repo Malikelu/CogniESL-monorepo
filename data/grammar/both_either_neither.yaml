@@ -1,29 +1,119 @@
-grammar_point: both_either_neither
-title: Both / Either / Neither
+citations:
+- claim: 'Core meaning: Both means two things together'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17:
+    Partitives, Collectives, and Quantifiers'
+  tier: 4
+- claim: 'Register distribution: ''Both/either/neither'' are neutral in register.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17:
+    Partitives, Collectives, and Quantifiers'
+  tier: 4
+- claim: 'Discourse function: These determiners specify quantity: ''Both books are
+    good.'' / ''Either option works.'' / ''Neither answe'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17:
+    Partitives, Collectives, and Quantifiers'
+  tier: 4
+- claim: 'Common error ''Using ''either'' for two positive items: *''I like either
+    coffe'' for Portuguese, Spanish speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: 'Both, either, and neither function in discourse to quantify reference to
+    two items: both = inclusive, either = selective, neither = exclusive negative.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17:
+    Partitives, Collectives, and Quantifiers'
+  tier: 2
+common_errors:
+- correction: I like both coffee and tea.
+  error: 'Using ''either'' for two positive items: *''I like either coffee or tea.''
+    (both)'
+  explanation: '''Both'' = two together. ''Either'' = one of two. ''Neither'' = not
+    one or the other.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: D
+- correction: I like neither coffee nor tea.
+  error: 'Using ''neither'' without ''nor'': *''I like neither coffee.'''
+  explanation: '''Neither'' must be paired with ''nor''.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: D
 description: 'Quantifiers used to talk about two people or things: both (two together),
   either (one of two), neither (not one of two).'
+dialectal_variation: []
+discourse_notes:
+- note: 'These determiners specify quantity: ''Both books are good.'' / ''Either option
+    works.'' / ''Neither answer is correct.'''
+- 'In discourse, both/either/neither quantify reference to two items: both = inclusive
+  (the two together), either = selective (one of the two), neither = exclusive negative
+  (not one and not the other). Source: Celce-Murcia & Larsen-Freeman (2015) GB3 Ch.
+  17.'
+form:
+  affirmative:
+    example_generator:
+    - Both students are here.
+    - Either option works.
+    - Neither student came.
+    min_examples: 4
+    structure: Both + plural noun / Either + singular noun / Neither + singular noun
+  negative:
+    example_generator:
+    - I do not like either.
+    - I like neither.
+    - Neither option suits me.
+    min_examples: 4
+    structure: Not + either / Neither (already negative, never add not)
+  questions:
+    example_generator:
+    - Are both students coming?
+    - Do both of you agree?
+    - Is either option acceptable?
+    min_examples: 4
+    structure: Are both...? / Do both...? / Is either...?
+grammar_point: both_either_neither
 level: A2
 meaning:
-  core_meaning: Both means two things together. Either means one of two (a choice).
-    Neither means not one of two (negative choice).
-  timeline: N/A — these are quantifiers showing quantity or choice between two items.
-  contrast: Both = two together. Either = one of two. Neither = not one of two.
   ccqs:
-  - question: Both students passed the exam. Did one pass or two pass?
-    answer: Two. Both always means the two together.
+  - answer: Two. Both always means the two together.
     purpose: Tests whether the learner can distinguish between 'both' (two together),
       'either' (one of two), and 'neither' (not one of two). These quantifiers have
       distinct meanings and grammatical requirements.
-  - question: You can take either road. Can you take both roads?
-    answer: No. Either means one of the two, not both.
-    purpose: Tests whether the learner understands the difference between present
-      ability (can) and past ability or polite possibility (could). This is important
-      for expressing ability and making requests.
-  - question: Neither restaurant is open. Is the first restaurant open? Is the second?
-    answer: No. Neither restaurant is open. Both are closed.
-    purpose: Tests whether the learner knows that superlatives require the definite
-      article 'the'. Omitting the article is a common error, especially for learners
-      from article-less L1s.
+    question: Both students passed the exam. Did one pass or two pass?
+  - answer: No. Either means one of the two, not both.
+    purpose: Tests whether the learner understands that 'either' means one of two
+      (a choice), not both. Learners often confuse 'either' with 'both'.
+    question: You can take either road. Can you take both roads?
+  - answer: No. Neither restaurant is open. Both are closed.
+    purpose: Tests whether the learner understands that 'neither' means both options
+      are negative. This is a key concept for using 'neither' correctly.
+    question: Neither restaurant is open. Is the first restaurant open? Is the second?
+  - answer: No. I do not like either is a negative verb plus either. I like neither
+      uses a negative quantifier with a positive verb (neither = not one or the other).
+      Both sentences express the same meaning (disliking both options), but their
+      grammar differs. A common error is I do not like neither, which creates a double
+      negative.
+    purpose: Tests whether the learner understands the different grammatical patterns
+      for expressing negative agreement with two items. Learning neither with a positive
+      verb (rather than double negation) is essential because I do not like neither
+      is grammatically incorrect in standard English, despite being common in some
+      dialects.
+    question: I do not like either versus I like neither -- are these sentences grammatically
+      the same?
+  contrast: Both = two together. Either = one of two. Neither = not one of two.
+  core_meaning: Both means two things together. Either means one of two (a choice).
+    Neither means not one of two (negative choice).
   example_generator:
     contexts:
     - everyday situations
@@ -31,56 +121,100 @@ meaning:
     - Me neither is extremely common in informal spoken English
     - Either and neither take singular verbs in formal English
     min_examples: 5
-form:
-  affirmative:
-    structure: Both + plural noun / Either + singular noun / Neither + singular noun
-    example_generator:
-    - Both students are here.
-    - Either option works.
-    - Neither student came.
-    min_examples: 4
-  negative:
-    structure: Not + either / Neither (already negative, never add not)
-    example_generator:
-    - I do not like either.
-    - I like neither.
-    - Neither option suits me.
-    min_examples: 4
-  questions:
-    structure: Are both...? / Do both...? / Is either...?
-    example_generator:
-    - Are both students coming?
-    - Do both of you agree?
-    - Is either option acceptable?
-    min_examples: 4
+  timeline: N/A — these are quantifiers showing quantity or choice between two items.
+phonetics:
+- example_generator:
+  - both → /bəʊð/
+  - either → /ˈaɪðə/
+  - neither → /ˈnaɪðə/
+  l1_issue: Many learners substitute /d/ or /z/ for /ð/. Spanish speakers may use
+    /d/; French and German speakers may use /z/ or /s/.
+  note: The th in both, either, neither is the voiced dental fricative /ð/. The tongue
+    tip touches the back of the upper teeth.
+- example_generator:
+  - either → /ˈaɪðə/
+  - neither → /ˈnaɪðə/
+  l1_issue: Some learners use second-syllable stress /aɪˈðə/, which is a regional
+    variant but can confuse.
+  note: 'Either and neither have first-syllable stress: /ˈaɪðə/ and /ˈnaɪðə/. The
+    second syllable is reduced to a schwa.'
+register_notes:
+- note: '''Both/either/neither'' are neutral in register.'
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Correlative and distributive quantifiers (''both'',
+    ''either'', ''neither''): academic prose uses these more for precise logical coordination;
+    conversation uses simpler additive expressions. Ch. 4.4.4'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 4.4.4
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 17:
+    Partitives, Collectives and Quantifiers'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: Both is always followed by a plural noun or pronoun, and the verb is plural
-  type: grammatical
-  examples:
+- examples:
   - Both dogs are friendly (correct)
   - Both dog is friendly (WRONG)
-- rule: Either and neither are followed by a singular noun and take a singular verb
+  rule: Both is always followed by a plural noun or pronoun, and the verb is plural
   type: grammatical
-  examples:
+- examples:
   - Either option is fine (correct)
   - Neither student came (correct)
-- rule: With either of and neither of, the noun must be plural but the verb is usually
-    singular in formal English
+  rule: Either and neither are followed by a singular noun and take a singular verb
   type: grammatical
-  examples:
+- examples:
   - Either of the answers is correct (formal)
   - Either of the answers are correct (informal, common)
   - Neither of them was available
-- rule: Me neither is a common informal short response to agree with a negative statement
-  type: pragmatic
-  examples:
+  rule: With either of and neither of, the noun must be plural but the verb is usually
+    singular in formal English
+  type: grammatical
+- examples:
   - I do not like spinach. — Me neither.
   - I cannot swim. — Neither can I.
-- rule: Neither is already negative — never use not with neither (double negative)
-  type: grammatical
-  examples:
+  rule: Me neither is a common informal short response to agree with a negative statement
+  type: pragmatic
+- examples:
   - I like neither (correct)
   - I do not like neither (WRONG — double negative)
+  rule: Neither is already negative — never use not with neither (double negative)
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Hold up two objects. Students make sentences using both, either,
+      and neither.
+    duration: 10
+    name: Two Objects Three Words
+  - adaptation_notes: Students take turns making negative statements. The next student
+      agrees using neither or me neither.
+    duration: 15
+    name: Neither Do I
+  - adaptation_notes: Present pairs of options. Students discuss using either and
+      neither to make a group decision.
+    duration: 15
+    name: Either Or Decision Game
+  tips:
+  - 'Use two real objects: ''Both pens are blue.'' ''Either pen works.'' ''Neither
+    pen is red.'''
+  - 'Practice with student pairs: ''Both Maria and You...'' makes it concrete.'
+  - Teach 'Me neither' as a short response early — very common in speech.
+  - 'Contrast: all (3+) vs both (2) vs each (one by one).'
+  - 'Swan PEU: ''Both'' = two together: ''Both my parents are teachers.'' Plural verb:
+    ''Both are correct.'' Not ''both of them are'' in short responses — ''Both'' alone:
+    ''Which one?'' ''Both.'''
+  - 'Swan PEU: ''Either'' = one of two (positive). ''Do you want tea or coffee?''
+    ''Either.'' = any one is fine. ''Neither'' = not one and not the other: ''Neither
+    of them came.'' Singular verb: ''Neither is correct.'''
+title: Both / Either / Neither
 use:
 - context: Showing agreement (both)
   examples:
@@ -97,72 +231,3 @@ use:
   - Neither option suits me.
   - I like neither team.
   - Neither restaurant is open.
-phonetics:
-- note: The th in both, either, neither is the voiced dental fricative /ð/. The tongue
-    tip touches the back of the upper teeth.
-  example_generator:
-  - both → /bəʊð/
-  - either → /ˈaɪðə/
-  - neither → /ˈnaɪðə/
-  l1_issue: Many learners substitute /d/ or /z/ for /ð/. Spanish speakers may use
-    /d/; French and German speakers may use /z/ or /s/.
-- note: 'Either and neither have first-syllable stress: /ˈaɪðə/ and /ˈnaɪðə/. The
-    second syllable is reduced to a schwa.'
-  example_generator:
-  - either → /ˈaɪðə/
-  - neither → /ˈnaɪðə/
-  l1_issue: Some learners use second-syllable stress /aɪˈðə/, which is a regional
-    variant but can confuse.
-teaching:
-  methodology: PPP
-  tips:
-  - 'Use two real objects: ''Both pens are blue.'' ''Either pen works.'' ''Neither
-    pen is red.'''
-  - 'Practice with student pairs: ''Both Maria and You...'' makes it concrete.'
-  - Teach 'Me neither' as a short response early — very common in speech.
-  - 'Contrast: all (3+) vs both (2) vs each (one by one).'
-  recommended_activities:
-  - name: Two Objects Three Words
-    duration: 10
-    adaptation_notes: Hold up two objects. Students make sentences using both, either,
-      and neither.
-  - name: Neither Do I
-    duration: 15
-    adaptation_notes: Students take turns making negative statements. The next student
-      agrees using neither or me neither.
-  - name: Either Or Decision Game
-    duration: 15
-    adaptation_notes: Present pairs of options. Students discuss using either and
-      neither to make a group decision.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: 'Using ''either'' for two positive items: *''I like either coffee or tea.''
-    (both)'
-  correction: I like both coffee and tea.
-  explanation: '''Both'' = two together. ''Either'' = one of two. ''Neither'' = not
-    one or the other.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-- error: 'Using ''neither'' without ''nor'': *''I like neither coffee.'''
-  correction: I like neither coffee nor tea.
-  explanation: '''Neither'' must be paired with ''nor''.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-register_notes:
-- note: '''Both/either/neither'' are neutral in register.'
-dialectal_variation:
-- note: No significant BrE/AmE differences.
-discourse_notes:
-- note: 'These determiners specify quantity: ''Both books are good.'' / ''Either option
-    works.'' / ''Neither answer is correct.'''

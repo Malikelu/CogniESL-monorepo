@@ -75,21 +75,29 @@ class GenerateFlashcardPdf(BaseTool):
         if self.l1_language:
             title += " - " + self.l1_language
 
-        fronts_html = ""
-        backs_html = ""
+        fronts_rows = ""
+        backs_rows = ""
         for i, (front, back) in enumerate(cards):
-            fronts_html += (
-                '<div class="card">'
-                '<div class="card-num">' + str(i + 1) + '</div>'
+            num = str(i + 1)
+            fronts_rows += (
+                '<td class="card">'
+                '<div class="card-num">' + num + '.</div>'
                 '<div class="card-front">' + front + '</div>'
-                '</div>'
+                '</td>'
             )
-            backs_html += (
-                '<div class="card back-card">'
-                '<div class="card-num">' + str(i + 1) + '</div>'
+            backs_rows += (
+                '<td class="card back-card">'
+                '<div class="card-num">' + num + '.</div>'
                 '<div class="card-back">' + back + '</div>'
-                '</div>'
+                '</td>'
             )
+            if (i + 1) % 2 == 0 or i == len(cards) - 1:
+                if fronts_rows:
+                    fronts_html += '<tr>' + fronts_rows + '</tr>'
+                    fronts_rows = ""
+                if backs_rows:
+                    backs_html += '<tr>' + backs_rows + '</tr>'
+                    backs_rows = ""
 
         html = (
             '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>' + title + '</title>'
@@ -98,20 +106,20 @@ class GenerateFlashcardPdf(BaseTool):
             'body { font-family: Inter, Arial, sans-serif; margin: 0; padding: 12pt; }'
             '.page-title { text-align: center; font-size: 14pt; font-weight: 700; color: #0b7272; margin-bottom: 12pt; }'
             '.page-label { text-align: center; font-size: 10pt; color: #6b7280; margin-bottom: 8pt; font-style: italic; }'
-            '.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8pt; }'
-            '.card { position: relative; border: 1px solid #d1d5db; border-radius: 6pt; padding: 12pt 8pt; min-height: 90pt; display: flex; flex-direction: column; align-items: center; justify-content: center; page-break-inside: avoid; }'
+            'table.grid { width: 100%; border-collapse: separate; border-spacing: 8pt; }'
+            '.card { border: 1px solid #d1d5db; padding: 12pt 8pt; min-height: 90pt; vertical-align: middle; text-align: center; page-break-inside: avoid; width: 50%; }'
             '.back-card { background: #f8fafc; }'
-            '.card-num { position: absolute; top: 3pt; right: 5pt; font-size: 8pt; color: #9ca3af; }'
-            '.card-front { font-size: 13pt; font-weight: 600; color: #1f2937; text-align: center; }'
-            '.card-back { font-size: 12pt; font-weight: 500; color: #0b7272; text-align: center; }'
+            '.card-num { font-size: 8pt; color: #9ca3af; text-align: left; }'
+            '.card-front { font-size: 13pt; font-weight: 600; color: #1f2937; padding-top: 6pt; }'
+            '.card-back { font-size: 12pt; font-weight: 500; color: #0b7272; padding-top: 6pt; }'
             '</style></head><body>'
             '<div class="page-title">' + title + '</div>'
-            '<div class="page-label">Front - Look at the prompt. Try to say the correct answer.</div>'
-            '<div class="grid">' + fronts_html + '</div>'
+            '<div class="page-label">Front — Look at the prompt. Try to say the correct answer.</div>'
+            '<table class="grid"><tbody>' + fronts_html + '</tbody></table>'
             '<div style="page-break-before: always;"></div>'
             '<div class="page-title">' + title + '</div>'
-            '<div class="page-label">Back - Check your answers.</div>'
-            '<div class="grid">' + backs_html + '</div>'
+            '<div class="page-label">Back — Check your answers.</div>'
+            '<table class="grid"><tbody>' + backs_html + '</tbody></table>'
             '</body></html>'
         )
 

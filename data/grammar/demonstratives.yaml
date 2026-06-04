@@ -1,30 +1,96 @@
+citations:
+- claim: 'Core meaning: Demonstratives point to specific things'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession'
+  tier: 1
+- claim: 'Register distribution: Demonstratives are consistent across registers.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession-16.3'
+  tier: 1
+- claim: 'Discourse function: Demonstratives create spatial and discourse reference: ''This idea (near) vs that idea (far).'''
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession-16.3'
+  tier: 1
+- claim: 'Common error ''Using ''this'' for plural: *''This books are mine.'''' for Portuguese, Spanish speakers'
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 10: Demonstratives'
+  tier: 1
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents how transfer effects are non-linear,
+    determined by functional fit between L1 and L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects are non-linear — determined by functional
+    fit between L1 and L2 systems rather than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning. Routledge.
+  tier: 2
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for L1-specific error patterns in English.
+    Their learner English framework documents how each L1 group produces characteristic errors in this grammatical domain,
+    enabling teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference and Other Problems, 2nd ed. Cambridge
+    University Press.'
+  tier: 2
+common_errors:
+- correction: These books are mine.
+  error: 'Using ''this'' for plural: *''This books are mine.'''
+  explanation: Use 'this/that' for singular, 'these/those' for plural.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: D
+description: 'Words that point to specific things based on distance: this (near), that (far), these (near plural), those (far
+  plural).'
+dialectal_variation: []
+discourse_notes:
+- note: 'Demonstratives create spatial and discourse reference: ''This idea (near) vs that idea (far).'''
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - classroom objects
+      - shopping
+      - pointing at things
+      min_examples: 4
+    structure: 'This/That + singular noun: ''This book is mine.'' / These/Those + plural noun: ''These books are mine.'''
+  negative:
+    example_generator:
+      contexts:
+      - classroom objects
+      - shopping
+      - pointing at things
+      min_examples: 4
+    structure: 'This/That + be + not: ''This is not my book.'''
+  questions:
+    example_generator:
+      contexts:
+      - classroom objects
+      - shopping
+      - pointing at things
+      min_examples: 4
+    structure: 'Is this/that...?: ''Is this your bag?'' / Are these/those...?: ''Are those your shoes?'''
 grammar_point: demonstratives
-title: Demonstratives (This, That, These, Those)
-description: 'Words that point to specific things based on distance: this (near),
-  that (far), these (near plural), those (far plural).'
 level: A1
 meaning:
-  core_meaning: Demonstratives point to specific things. This/these = near the speaker.
-    That/those = far from the speaker.
-  timeline: Present — refers to things visible or known in the current context.
-  contrast: '''This'' = near (this book here) vs ''That'' = far (that book there)'
   ccqs:
-  - question: Is the thing near or far?
-    answer: Near = this/these, Far = that/those
-    purpose: 'Tests whether the learner understands the two-way distinction: ''this/these''
-      (near speaker) vs ''that/those'' (far from speaker).'
-  - question: Is it one thing or more than one?
-    answer: One = this/that, More = these/those
-    purpose: Tests whether the learner can choose singular ('this/that') vs plural
-      ('these/those') based on the noun.
-  - question: '[Add specific question for CCQ 3]'
-    answer: '[Add specific answer for CCQ 3]'
-    purpose: Tests whether the learner understands that demonstratives can be used
-      as pronouns ('This is nice.') or determiners ('This book is nice.').
-  - question: '[Add specific question for CCQ 4]'
-    answer: '[Add specific answer for CCQ 4]'
-    purpose: 'Tests whether the learner can use demonstratives for discourse reference:
-      ''This is what I mean...'' (referring to upcoming information)'
+  - answer: Near = this/these, Far = that/those
+    purpose: 'Tests whether the learner understands the two-way distinction: ''this/these'' (near speaker) vs ''that/those''
+      (far from speaker).'
+    question: Is the thing near or far?
+  - answer: One = this/that, More = these/those
+    purpose: Tests whether the learner can choose singular ('this/that') vs plural ('these/those') based on the noun.
+    question: Is it one thing or more than one?
+  - answer: 'Yes — demonstratives can be used alone as pronouns: ''''This is nice.'''' Or as determiners before a noun: ''''This
+      book is nice.'''''
+    purpose: Tests whether the learner understands that demonstratives function as both pronouns and determiners (Swan PEU
+      2016, entries 560-565).
+    question: Can you say 'This is nice' without a noun after 'this'?
+  - answer: These books are mine. Use ''this/that'' for singular, ''these/those'' for plural.
+    purpose: Tests whether the learner can choose the correct demonstrative for singular vs plural nouns (Swan PEU 2016, entry
+      560).
+    question: 'Which is correct: *''This books are mine'' or ''These books are mine''?'
+  contrast: '''This'' = near (this book here) vs ''That'' = far (that book there)'
+  core_meaning: Demonstratives point to specific things. This/these = near the speaker. That/those = far from the speaker.
   example_generator:
     contexts:
     - classroom objects
@@ -33,44 +99,59 @@ meaning:
     - describing locations
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: 'This/That + singular noun: ''This book is mine.'' / These/Those +
-      plural noun: ''These books are mine.'''
-    example_generator:
-      contexts:
-      - classroom objects
-      - shopping
-      - pointing at things
-      min_examples: 4
-  negative:
-    structure: 'This/That + be + not: ''This is not my book.'''
-    example_generator:
-      contexts:
-      - classroom objects
-      - shopping
-      - pointing at things
-      min_examples: 4
-  questions:
-    structure: 'Is this/that...?: ''Is this your bag?'' / Are these/those...?: ''Are
-      those your shoes?'''
-    example_generator:
-      contexts:
-      - classroom objects
-      - shopping
-      - pointing at things
-      min_examples: 4
+  timeline: Present — refers to things visible or known in the current context.
+phonetics:
+- contexts:
+  - emphasis
+  example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Some L1 speakers use 'this' for both singular and plural
+  note: Strong /ðiːs/ when emphasizing vs weak /ðɪs/ in connected speech
+register_notes:
+- note: Demonstratives are consistent across registers.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Demonstrative pronouns/determiners: conversation uses more ''this'' for exophoric reference;
+    academic prose uses demonstratives more for anaphoric/textual cohesion. Ch. 4.1.2, 12.3'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 4.1.2
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 10: Demonstratives'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Ch. 5: Nouns and Noun Phrases (demonstratives)'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners. Ch. 7: Demonstratives'
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(demonstratives: this, that, these, those)'
 sub_rules:
-- rule: This/That for singular, These/Those for plural
-  type: grammatical
-  examples:
+- examples:
   - this book / these books
   - that car / those cars
-- rule: Can be used alone as pronouns
+  rule: This/That for singular, These/Those for plural
   type: grammatical
-  examples:
+- examples:
   - This is nice. (no noun)
   - I want that. (no noun)
+  rule: Can be used alone as pronouns
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Students point to objects and describe them with demonstratives.
+    duration: 10
+    name: Point and Say
+  tips:
+  - 'GB3 Ch. 16: Demonstratives vary along two dimensions — proximity (near/far) and number (singular/plural). This/these
+    = near, that/those = far. Demonstratives function as both determiners (''this form'') and pronouns (''please fill this
+    out''). The wh-word ''which'' is the associated interrogative. Source: Celce-Murcia & Larsen-Freeman (2015) GB3 3rd ed.
+    Ch. 16 §16.2.'
+  - Use real objects at different distances
+  - Gesture to reinforce near/far concept
+  - 'Swan PEU: demonstratives — this/these (near speaker), that/those (far from speaker). ''This'' for introducing people:
+    ''This is my friend Anna.'' ''That'' for identifying: ''That''''s my car over there.'''
+  - 'Swan PEU: Demonstratives in time reference — ''this week'' (current), ''that week'' (past). ''This morning'' (if still
+    morning), ''that morning'' (narrating past). Portuguese speakers often confuse this/that for time.'
+title: Demonstratives (This, That, These, Those)
 use:
 - context: Pointing at objects
   description: Identifying things near or far
@@ -82,45 +163,3 @@ use:
   examples:
   - I'd like this one.
   - How much are those?
-phonetics:
-- note: Strong /ðiːs/ when emphasizing vs weak /ðɪs/ in connected speech
-  contexts:
-  - emphasis
-  l1_issue: Some L1 speakers use 'this' for both singular and plural
-  example_generator:
-    contexts:
-    - connected speech
-teaching:
-  methodology: PPP
-  tips:
-  - Use real objects at different distances
-  - Gesture to reinforce near/far concept
-  recommended_activities:
-  - name: Point and Say
-    duration: 10
-    adaptation_notes: Students point to objects and describe them with demonstratives.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.22-12.23'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 5: Nouns and Noun Phrases, §5.9 (demonstratives)'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 560-565 (demonstratives:
-    this, that, these, those)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    10: Demonstratives, §10.9'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 7: Demonstratives'
-common_errors:
-- error: 'Using ''this'' for plural: *''This books are mine.'''
-  correction: These books are mine.
-  explanation: Use 'this/that' for singular, 'these/those' for plural.
-  l1_groups:
-  - Portuguese
-  - Spanish
-register_notes:
-- note: Demonstratives are consistent across registers.
-dialectal_variation:
-- note: No significant BrE/AmE differences.
-discourse_notes:
-- note: 'Demonstratives create spatial and discourse reference: ''This idea (near)
-    vs that idea (far).'''

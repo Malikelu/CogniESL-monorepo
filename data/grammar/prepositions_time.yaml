@@ -1,25 +1,113 @@
-grammar_point: prepositions_time
-title: Prepositions of Time (At, In, On)
+citations:
+- claim: 'Core meaning: Prepositions of time tell us WHEN something happens'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21:
+    Prepositions'
+  tier: 1
+- claim: 'Discourse function: In conversation, this structure is used in everyday
+    communication.'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21:
+    Prepositions'
+  tier: 1
+- claim: Common error '*I will meet you in Monday.*' for Portuguese, Spanish, French
+    speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: 'Prepositions of time (AT, IN, ON, DURING, SINCE, FOR, BY, UNTIL) establish
+    temporal relationships: AT for clock time, IN for periods, ON for days/dates'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21:
+    Prepositions'
+  tier: 1
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents
+    how transfer effects are non-linear, determined by functional fit between L1 and
+    L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects
+    are non-linear — determined by functional fit between L1 and L2 systems rather
+    than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning.
+    Routledge.
+  tier: 2
+- claim: Swan & Smith (2001) provide the definitive cross-linguistic reference for
+    L1-specific error patterns in English. Their learner English framework documents
+    how each L1 group produces characteristic errors in this grammatical domain, enabling
+    teachers to anticipate and address transfer errors before they fossilize.
+  source: 'Swan, M. & Smith, B. (2001). Learner English: A Teacher''s Guide to Interference
+    and Other Problems, 2nd ed. Cambridge University Press.'
+  tier: 2
+common_errors:
+- correction: I will meet you on Monday.
+  error: '*I will meet you in Monday.*'
+  explanation: '''On'' is for days and dates (on Monday, on July 4th). ''In'' is for
+    months, years, and parts of day (in July, in 2023, in the morning). ''At'' is
+    for exact times (at 5pm, at noon).'
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: B
+  source: Swan Entries 209-214. Swan (2016) Practical English Usage, 4th ed. Oxford
+    University Press.
 description: 'Prepositions used to talk about when something happens: at (specific
   time), in (months/years/seasons), on (days/dates).'
+dialectal_variation: []
+discourse_notes: []
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - schedules and appointments
+      - daily routines
+      - holidays and special dates
+      min_examples: 4
+    structure: 'at + specific time: ''at 3pm'', ''at noon'' / in + month/year/season:
+      ''in July'', ''in 2024'' / on + day/date: ''on Monday'', ''on July 4th'''
+  negative:
+    example_generator:
+      contexts:
+      - schedules and appointments
+      - daily routines
+      - holidays and special dates
+      min_examples: 4
+    structure: 'Same preposition, negated verb: ''The class doesn''t start at 9am.'''
+  questions:
+    example_generator:
+      contexts:
+      - schedules and appointments
+      - daily routines
+      - holidays and special dates
+      min_examples: 4
+    structure: 'When + be/auxiliary?: ''When is the meeting?'' → ''At 3pm.'''
+grammar_point: prepositions_time
+key_principles: []
 level: A1
 meaning:
-  core_meaning: Prepositions of time tell us WHEN something happens. Each preposition
-    is used with different time expressions.
-  timeline: Specific to the time expression used with each preposition.
-  contrast: '''At'' = specific time (at 3pm) vs ''In'' = longer periods (in July)
-    vs ''On'' = days/dates (on Monday)'
   ccqs:
-  - question: Is it a specific clock time?
-    answer: Use 'at' (at 3pm)
+  - answer: Use 'at' (at 3pm)
     purpose: 'Tests whether the learner can distinguish between the three main time
       prepositions: at (exact time), on (days/dates), in (months/years/periods).'
-  - question: Is it a day or date?
-    answer: Use 'on' (on Monday)
+    question: Is it a specific clock time?
+  - answer: Use 'on' (on Monday)
     purpose: Tests understanding of prepositions_time.
-  - question: Is it a month, year, or season?
-    answer: Use 'in' (in July)
+    question: Is it a day or date?
+  - answer: Use 'in' (in July)
     purpose: Tests understanding of prepositions_time.
+    question: Is it a month, year, or season?
+  - answer: '''I have been waiting for two hours.'' Use ''for'' with a period of time
+      and ''since'' with a starting point.'
+    purpose: Tests whether the learner distinguishes 'for' (duration) from 'since'
+      (starting point) (Swan PEU 2016, entries 51-52).
+    question: Which is correct? *'I have been waiting since two hours' or 'I have
+      been waiting for two hours'?
+  contrast: '''At'' = specific time (at 3pm) vs ''In'' = longer periods (in July)
+    vs ''On'' = days/dates (on Monday)'
+  core_meaning: Prepositions of time tell us WHEN something happens. Each preposition
+    is used with different time expressions.
   example_generator:
     contexts:
     - schedules and appointments
@@ -28,53 +116,66 @@ meaning:
     - telling time
     cultural_notes: []
     min_examples: 5
-form:
-  affirmative:
-    structure: 'at + specific time: ''at 3pm'', ''at noon'' / in + month/year/season:
-      ''in July'', ''in 2024'' / on + day/date: ''on Monday'', ''on July 4th'''
-    example_generator:
-      contexts:
-      - schedules and appointments
-      - daily routines
-      - holidays and special dates
-      min_examples: 4
-  negative:
-    structure: 'Same preposition, negated verb: ''The class doesn''t start at 9am.'''
-    example_generator:
-      contexts:
-      - schedules and appointments
-      - daily routines
-      - holidays and special dates
-      min_examples: 4
-  questions:
-    structure: 'When + be/auxiliary?: ''When is the meeting?'' → ''At 3pm.'''
-    example_generator:
-      contexts:
-      - schedules and appointments
-      - daily routines
-      - holidays and special dates
-      min_examples: 4
+  timeline: Specific to the time expression used with each preposition.
+phonetics:
+- contexts:
+  - connected speech
+  example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Prepositions are often omitted or confused by L1 speakers
+  note: 'Weak forms: /æt/ → /ət/, /ɪn/ → /ən/, /ɒn/ → /ən/'
+register_notes:
+- note: 'Biber et al. (1999) — Time prepositions: register distribution varies. Academic
+    prose uses more precise and complex temporal prepositions; conversation uses simpler
+    markers. Ch. 5.3.3'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. Longman Publishing
+    Company. Ch. 5.3.3
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21:
+    Prepositions'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: 'at: at 3pm, at noon, at night, at the weekend'
-  type: grammatical
-  examples:
+- examples:
   - I wake up at 7am.
   - We rest at night.
-- rule: 'in: in the morning, in July, in 2024, in summer'
+  rule: 'at: at 3pm, at noon, at night, at the weekend'
   type: grammatical
-  examples:
+- examples:
   - I was born in 1990.
   - We swim in summer.
-- rule: 'on: on Monday, on July 4th, on my birthday'
+  rule: 'in: in the morning, in July, in 2024, in summer'
   type: grammatical
-  examples:
+- examples:
   - The class is on Monday.
   - We celebrate on Christmas Day.
-- rule: 'No preposition with: today, tomorrow, yesterday, last, next, this, every'
+  rule: 'on: on Monday, on July 4th, on my birthday'
   type: grammatical
-  examples:
+- examples:
   - I study every day. (not 'on every day')
   - See you tomorrow. (not 'on tomorrow')
+  rule: 'No preposition with: today, tomorrow, yesterday, last, next, this, every'
+  type: grammatical
+teaching:
+  methodology: PPP
+  recommended_activities:
+  - adaptation_notes: Students sort time expressions into at/in/on columns.
+    duration: 10
+    name: Time Preposition Sort
+  tips:
+  - Use a timeline to visualize at/in/on
+  - Create a chart with time expressions
+  - 'Swan PEU: Time and place prepositions — at precise points, in enclosed spaces/periods,
+    on surfaces/days. This distinction underlies most time and place preposition usage
+    in English.'
+title: Prepositions of Time (At, In, On)
 use:
 - context: Making appointments
   description: Scheduling meetings and events
@@ -86,53 +187,3 @@ use:
   examples:
   - I exercise in the morning.
   - We have class on Mondays.
-phonetics:
-- note: 'Weak forms: /æt/ → /ət/, /ɪn/ → /ən/, /ɒn/ → /ən/'
-  contexts:
-  - connected speech
-  l1_issue: Prepositions are often omitted or confused by L1 speakers
-  example_generator:
-    contexts:
-    - connected speech
-teaching:
-  methodology: PPP
-  tips:
-  - Use a timeline to visualize at/in/on
-  - Create a chart with time expressions
-  recommended_activities:
-  - name: Time Preposition Sort
-    duration: 10
-    adaptation_notes: Students sort time expressions into at/in/on columns.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 15:
-    Prepositions, §15.1-15.7'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I will meet you in Monday.*'
-  correction: I will meet you on Monday.
-  explanation: '''On'' is for days and dates (on Monday, on July 4th). ''In'' is for
-    months, years, and parts of day (in July, in 2023, in the morning). ''At'' is
-    for exact times (at 5pm, at noon).'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

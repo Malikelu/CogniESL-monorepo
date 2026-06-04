@@ -1,32 +1,120 @@
-grammar_point: possessive_pronouns
-title: Possessive Pronouns
+citations:
+- claim: 'Core meaning: Show ownership of a noun without repeating the noun itself'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession'
+  tier: 1
+- claim: 'Register distribution: Possessive pronouns are neutral in register.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
+    Reference and Possession'
+  tier: 1
+- claim: 'Discourse function: In conversation, possessive pronouns avoid repetition:
+    ''Is this your book?'' ''Yes, it''s mine.'''
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16:
+    Reference and Possession-16.6'
+  tier: 1
+- claim: 'Common error ''Confusing ''its'' and ''it''s'': *''The dog wagged it''s
+    tail.'''' for All L1 groups speakers'
+  reliability: B
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 11: Pronouns,
+    11.3 (possessives)'
+  tier: 1
+- claim: L1 transfer in possessive pronouns varies significantly across language backgrounds
+    — Swan & Smith document contrastive patterns for speakers of different L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+common_errors:
+- correction: The dog wagged its tail.
+  error: 'Confusing ''its'' and ''it''s'': *''The dog wagged it''s tail.'''
+  explanation: '''Its'' shows possession. ''It''s'' = ''it is''.'
+  flagged: true
+  l1_groups:
+  - All L1 groups
+  reliability: D
+- correction: This is my book.
+  error: 'Using ''mine'' instead of ''my'': *''This is mine book.'''
+  explanation: '''My'' is a possessive adjective (before a noun). ''Mine'' is a possessive
+    pronoun (stands alone).'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - Chinese
+  reliability: D
 description: 'Pronouns that replace possessive noun phrases to show ownership without
   repeating the owned noun: mine, yours, his, hers, its, ours, theirs.'
+dialectal_variation: []
+discourse_notes:
+- note: 'In conversation, possessive pronouns avoid repetition: ''Is this your book?''
+    ''Yes, it''s mine.'''
+- note: 'In academic writing, possessive pronouns create cohesion: ''The study has
+    its limitations.'''
+- note: 'In informal speech, possessive pronouns are common in short answers: ''Whose
+    is this?'' ''It''s mine.'''
+- note: 'Possessive pronouns (mine, yours, his, hers, ours, theirs) are among the most
+    frequent words in English and are used across all registers.'
+form:
+  affirmative:
+    example_generator:
+    - This is mine.
+    - That is yours.
+    - The red one is hers.
+    - The blue one is ours.
+    min_examples: 4
+    structure: Possessive pronoun stands alone (no noun follows). This is mine. =
+      This is my book.
+  negative:
+    example_generator:
+    - It's not theirs.
+    - That's not mine.
+    - This isn't hers.
+    - The car isn't ours.
+    min_examples: 4
+    structure: 'Possessive pronoun follows negative verb: It''s not theirs. That''s
+      not mine.'
+  questions:
+    example_generator:
+    - Is this theirs?
+    - Whose is this? It's mine.
+    - Is that yours?
+    - Are these ours?
+    min_examples: 4
+    structure: 'Possessive pronoun follows auxiliary verb in questions: Is this theirs?
+      Whose is this? It''s mine.'
+grammar_point: possessive_pronouns
 level: A1
 meaning:
-  core_meaning: Show ownership of a noun without repeating the noun itself. A possessive
-    pronoun replaces a possessive adjective + noun phrase. 'My book' becomes 'mine'.
-    The noun is understood from context and is not repeated.
-  timeline: N/A — possessive pronouns are not tense-based. They show ownership regardless
-    of time.
-  contrast: '''Possessive adjectives'' = modify nouns and are followed by the noun
-    (''my book''). ''Possessive pronouns'' = replace the noun phrase and stand alone
-    (''mine'' — no noun follows).'
   ccqs:
-  - question: Does this pronoun show ownership?
-    answer: Yes — it shows who owns something.
+  - answer: Yes — it shows who owns something.
     purpose: Tests whether the learner understands that possessive pronouns (mine,
       yours, his, hers, ours, theirs) show ownership and stand alone without a following
       noun.
-  - question: Is there a noun after the pronoun?
-    answer: No — possessive pronouns stand alone.
+    question: Does this pronoun show ownership?
+  - answer: No — possessive pronouns stand alone.
     purpose: Tests whether the learner can distinguish possessive pronouns (mine,
       yours) from possessive adjectives (my, your). Pronouns stand alone; adjectives
       modify nouns.
-  - question: Whose is it?
-    answer: It belongs to [person] — the possessive pronoun shows the owner.
+    question: Is there a noun after the pronoun?
+  - answer: It belongs to [person] — the possessive pronoun shows the owner.
     purpose: Tests whether the learner can identify the owner and choose the correct
       possessive pronoun.
+    question: Whose is it?
+  - answer: '''This book is hers.'' Possessive pronouns (hers, ours, theirs, yours,
+      mine) NEVER take an apostrophe.'
+    purpose: Tests whether the learner knows that possessive pronouns do not take
+      apostrophes (Swan PEU 2016, entry 143).
+    question: Which is correct? *'This book is her's' or 'This book is hers'?
+  contrast: '''Possessive adjectives'' = modify nouns and are followed by the noun
+    (''my book''). ''Possessive pronouns'' = replace the noun phrase and stand alone
+    (''mine'' — no noun follows).'
+  core_meaning: Show ownership of a noun without repeating the noun itself. A possessive
+    pronoun replaces a possessive adjective + noun phrase. 'My book' becomes 'mine'.
+    The noun is understood from context and is not repeated.
   example_generator:
     contexts:
     - everyday objects
@@ -37,67 +125,104 @@ meaning:
     - Avoid assuming specific cultural items
     - Keep examples concrete and visual
     min_examples: 5
-form:
-  affirmative:
-    structure: Possessive pronoun stands alone (no noun follows). This is mine. =
-      This is my book.
-    example_generator:
-    - This is mine.
-    - That is yours.
-    - The red one is hers.
-    - The blue one is ours.
-    min_examples: 4
-  negative:
-    structure: 'Possessive pronoun follows negative verb: It''s not theirs. That''s
-      not mine.'
-    example_generator:
-    - It's not theirs.
-    - That's not mine.
-    - This isn't hers.
-    - The car isn't ours.
-    min_examples: 4
-  questions:
-    structure: 'Possessive pronoun follows auxiliary verb in questions: Is this theirs?
-      Whose is this? It''s mine.'
-    example_generator:
-    - Is this theirs?
-    - Whose is this? It's mine.
-    - Is that yours?
-    - Are these ours?
-    min_examples: 4
+  timeline: N/A — possessive pronouns are not tense-based. They show ownership regardless
+    of time.
+phonetics:
+- example_generator:
+  - mine /maɪn/
+  - yours /jɔːz/
+  - hers /hɜːz/
+  - ours /aʊəz/
+  - theirs /ðeəz/
+  l1_issue: 'Portuguese and Spanish speakers may add a vowel sound before ''mine''
+    or ''yours''. Teach the correct pronunciation: /maɪn/ not /maɪni/.'
+  note: 'Stress on the possessive pronoun when contrasting: ''This is MINE, not YOURS.''
+    In unstressed positions, they are shorter: ''It''s mine'' /ɪts maɪn/.'
+sources:
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch.
+    11: Pronouns, 11.3 (possessives)'
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession'
+  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Ch. 5: Nouns and Noun Phrases, 5.8 (possessive pronouns)'
+  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    Ch. 6: Possessive pronouns'
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(possessive
+    pronouns: mine, yours, his, hers)'
 sub_rules:
-- rule: 'Complete list of possessive pronouns: mine, yours, his, hers, its, ours,
-    theirs'
-  type: lexical
-  examples:
+- examples:
   - This is mine.
   - That is yours.
   - The book is his.
   - The car is hers.
   - The decision is ours.
   - The house is theirs.
-- rule: Possessive pronouns never use apostrophes
-  type: spelling
-  examples:
+  rule: 'Complete list of possessive pronouns: mine, yours, his, hers, its, ours,
+    theirs'
+  type: lexical
+- examples:
   - hers (NOT her's)
   - ours (NOT our's)
   - theirs (NOT their's)
   - its (NOT it's — it's = it is)
-- rule: No noun follows a possessive pronoun
-  type: grammatical
-  examples:
+  rule: Possessive pronouns never use apostrophes
+  type: spelling
+- examples:
   - This is mine. (NOT This is mine book.)
   - The car is hers. (NOT The car is hers car.)
-- rule: 'Possessive adjective vs possessive pronoun: my/mine, your/yours, his/his,
-    her/hers, its/its, our/ours, their/theirs'
+  rule: No noun follows a possessive pronoun
   type: grammatical
-  examples:
+- examples:
   - my book → mine
   - your car → yours
   - his house → his
   - her bag → hers
   - our home → ours
   - their dog → theirs
+  rule: 'Possessive adjective vs possessive pronoun: my/mine, your/yours, his/his,
+    her/hers, its/its, our/ours, their/theirs'
+  type: grammatical
+teaching:
+  methodology: PPP with real objects
+  recommended_activities:
+  - adaptation_notes: 'Collect objects from students. Hold up each object: ''Whose
+      is this?'' Students respond: ''It''s mine.'' ''It''s hers.'' Practices possessive
+      pronouns with real objects.'
+    duration: 10
+    name: Whose Is It?
+  - adaptation_notes: 'Students chant the complete list: ''Mine, yours, his, hers,
+      its, ours, theirs.'' Repetition helps memorization.'
+    duration: 5
+    name: Possessive Pronoun Chant
+  - adaptation_notes: 'Teacher says a sentence with a possessive adjective. Students
+      rewrite with a possessive pronoun: ''My book is red.'' → ''Mine is red.'' Practices
+      the transformation.'
+    duration: 10
+    name: My vs Mine
+  - adaptation_notes: 'Students describe their belongings using possessive pronouns:
+      ''My phone is new. Yours is old. His is broken.'' Practices contrasting ownership.'
+    duration: 15
+    name: Ownership Game
+  tips:
+  - 'Memorize the complete list: mine, yours, his, hers, its, ours, theirs. Use a
+    chant or song to help memorization.'
+  - 'Contrast with possessive adjectives explicitly: ''my book'' vs ''mine''. Use
+    real objects: hold up your bag → ''This is mine'' vs ''This is my bag''.'
+  - 'Drill the apostrophe rule: possessive pronouns NEVER use apostrophes. ''Hers''
+    not ''her''s''. This is a very common error.'
+  - 'Use classroom objects: ''Whose pen is this? It''s mine. It''s hers. It''s theirs.''
+    Makes the grammar physical and immediate.'
+  - 'Swan PEU: Possessive pronouns (mine, yours, his, hers, ours, theirs) stand
+    alone: ''This is mine.'' Possessive adjectives (my, your, his, her, our, their)
+    go before nouns: ''This is my book.'' ''His'' serves as both adjective and pronoun.'
+  - 'Huddleston & Pullum (2002) CGEL. Cambridge University Press. Ch. 5: CGEL (Ch.5)
+    uses the term GENITIVE (not ''possessive'') for the -''s inflection. CGEL: -''s
+    is an INFLECTION (ending), not a clitic. Evidence: it attaches to the LAST word
+    of the NP, not the head: ''the King of Spain''s daughter'' (not *''the King''s
+    of Spain daughter''). The genitive expresses a range of meanings beyond possession:
+    subjective (''the teacher''s recommendation'' = the teacher recommended), objective
+    (''the prisoner''s release'' = someone released the prisoner), temporal (''today''s
+    news''), etc.'
+title: Possessive Pronouns
 use:
 - context: Avoiding repetition
   description: Replace possessive adjective + noun to avoid redundancy
@@ -112,82 +237,3 @@ use:
   - The decision is ours.
   - This seat is mine.
   - The mistake was theirs.
-phonetics:
-- note: 'Stress on the possessive pronoun when contrasting: ''This is MINE, not YOURS.''
-    In unstressed positions, they are shorter: ''It''s mine'' /ɪts maɪn/.'
-  example_generator:
-  - mine /maɪn/
-  - yours /jɔːz/
-  - hers /hɜːz/
-  - ours /aʊəz/
-  - theirs /ðeəz/
-  l1_issue: 'Portuguese and Spanish speakers may add a vowel sound before ''mine''
-    or ''yours''. Teach the correct pronunciation: /maɪn/ not /maɪni/.'
-teaching:
-  methodology: PPP with real objects
-  tips:
-  - 'Memorize the complete list: mine, yours, his, hers, its, ours, theirs. Use a
-    chant or song to help memorization.'
-  - 'Contrast with possessive adjectives explicitly: ''my book'' vs ''mine''. Use
-    real objects: hold up your bag → ''This is mine'' vs ''This is my bag''.'
-  - 'Drill the apostrophe rule: possessive pronouns NEVER use apostrophes. ''Hers''
-    not ''her''s''. This is a very common error.'
-  - 'Use classroom objects: ''Whose pen is this? It''s mine. It''s hers. It''s theirs.''
-    Makes the grammar physical and immediate.'
-  recommended_activities:
-  - name: Whose Is It?
-    duration: 10
-    adaptation_notes: 'Collect objects from students. Hold up each object: ''Whose
-      is this?'' Students respond: ''It''s mine.'' ''It''s hers.'' Practices possessive
-      pronouns with real objects.'
-  - name: Possessive Pronoun Chant
-    duration: 5
-    adaptation_notes: 'Students chant the complete list: ''Mine, yours, his, hers,
-      its, ours, theirs.'' Repetition helps memorization.'
-  - name: My vs Mine
-    duration: 10
-    adaptation_notes: 'Teacher says a sentence with a possessive adjective. Students
-      rewrite with a possessive pronoun: ''My book is red.'' → ''Mine is red.'' Practices
-      the transformation.'
-  - name: Ownership Game
-    duration: 15
-    adaptation_notes: 'Students describe their belongings using possessive pronouns:
-      ''My phone is new. Yours is old. His is broken.'' Practices contrasting ownership.'
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, 12.18-12.19'
-  secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Ch. 5: Nouns and Noun Phrases, 5.8 (possessive pronouns)'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 96-100 (possessive
-    pronouns: mine, yours, his, hers)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
-    11: Pronouns, 11.3 (possessives)'
-  teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    Ch. 6: Possessive pronouns'
-common_errors:
-- error: 'Confusing ''its'' and ''it''s'': *''The dog wagged it''s tail.'''
-  correction: The dog wagged its tail.
-  explanation: '''Its'' shows possession. ''It''s'' = ''it is''.'
-  l1_groups:
-  - All L1 groups
-- error: 'Using ''mine'' instead of ''my'': *''This is mine book.'''
-  correction: This is my book.
-  explanation: '''My'' is a possessive adjective (before a noun). ''Mine'' is a possessive
-    pronoun (stands alone).'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - Chinese
-register_notes:
-- note: Possessive pronouns are neutral in register.
-- note: 'In formal writing, avoid contractions: ''It is hers'' (not ''It''s hers'').'
-- note: In conversation, possessive pronouns are among the most frequent words.
-dialectal_variation:
-- note: No significant BrE/AmE differences.
-discourse_notes:
-- note: 'In conversation, possessive pronouns avoid repetition: ''Is this your book?''
-    ''Yes, it''s mine.'''
-- note: 'In academic writing, possessive pronouns create cohesion: ''The study has
-    its limitations.'''
-- note: 'In informal speech, possessive pronouns are common in short answers: ''Whose
-    is this?'' ''It''s mine.'''

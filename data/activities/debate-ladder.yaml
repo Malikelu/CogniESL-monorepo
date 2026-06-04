@@ -1,34 +1,52 @@
-id: debate-ladder
-name: Debate Ladder
-category: integrated-skills
-description: A tournament-style debate where pairs debate, winners advance to debate
-  other winners, and losers debate other losers. Everyone debates multiple times and
-  improves with each round.
-targetStructures:
-- speaking-fluency
-- discourse
-- sentence-structure
+adaptableToTopic: true
 bestForLevels:
 - B1
 - B2
 - C1
+category: integrated-skills
+citations:
+- claim: The "Debate Ladder" activity supports language learning through integrated-skills-focused
+    practice
+  flagged: false
+  reliability: B
+  source: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 1
+  tier: 2
+- claim: Debate and opinion-sharing activities are comparing tasks (Type 3) in task-based
+    learning. Learners compare different viewpoints, evaluate arguments, and reach
+    a position. The report stage gives learners practice in planned public speaking.
+  flagged: false
+  reliability: B
+  source: Willis, J. (1996). A Framework for Task-Based Learning. Longman.
+  tier: 2
+- claim: Competitive speaking tasks with multiple rounds align with TBL task cycle
+    principles. Willis (1996) describes how tasks with specific goals motivate learners.
+  source: Willis, J. (1996) A Framework for Task-Based Learning. Longman.
+  tier: 2
+  reliability: B
+  flagged: false
+description: A tournament-style debate where pairs debate, winners advance to debate
+  other winners, and losers debate other losers. Everyone debates multiple times and
+  improves with each round.
+differentiation:
+  extension: Add a rebuttal round. Require formal debate language. Have students research
+    their topics before debating.
+  support: Provide argument frames and useful phrases. Use simpler topics. Allow notes.
+digitalReady: false
 duration: 40
-groupSize: pairs
 energyRequired: high
-prepTime: medium
-materials:
-- Debate topics
-- Timer
-- Score sheets
 format:
 - in-person
-requiresTech: false
-digitalReady: false
+grammar_focus:
+- discourse_markers
+- linking_words
+- sentence_structure
+- word_order
+groupSize: pairs
 hasAudioComponent: false
 hasPrintableComponent: true
 hasSlidesComponent: false
 hasVisualComponent: false
-adaptableToTopic: true
+id: debate-ladder
 instructions:
 - Pair students randomly. Assign positions (For/Against) and a debate topic.
 - 'Round 1: Pairs debate (3 minutes per side). The class votes on the winner.'
@@ -37,19 +55,64 @@ instructions:
 - Track wins and losses. The student with the most wins is the champion.
 - 'Debrief: What made the best debaters successful? What language was most effective?'
 - 'Discuss: How did you improve over the rounds?'
-script:
-- '"Your partner. You are FOR, you are AGAINST. You have 3 minutes per side. Begin!"'
-- Round 2! Winners on this side, losers on that side. New partners, new topic. Go!
-setupInstructions: Prepare 8-10 debate topics. Create a tournament bracket. Prepare
-  score sheets for voting.
-differentiation:
-  support: Provide argument frames and useful phrases. Use simpler topics. Allow notes.
-  extension: Add a rebuttal round. Require formal debate language. Have students research
-    their topics before debating.
 keywords:
 - debate
 - tournament
 - ladder
 - competition
 - argument
-l1Enhanced: true
+l1_enhanced:
+- adaptation: Spanish speakers may benefit from explicit teaching of English debate
+    connectors (however, nevertheless, on the other hand) which do not have direct
+    1:1 equivalents in Spanish discourse markers.
+  language: Spanish
+  priority: medium
+- adaptation: 'Arabic speakers may prefer elaborate oral argumentation styles. Teach
+    concise English argument frames: "My first point is... My second point is... In
+    conclusion..." to help structure contributions.'
+  language: Arabic
+  priority: medium
+- adaptation: 'L1 pragmatic transfer from Mandarin may lead to avoiding direct confrontation.
+    Practice competitive debate language explicitly: "I challenge that point because..."
+    and "My opponent claims... but the evidence shows..."'
+  language: Mandarin
+  priority: medium
+l1_specific: []
+materials:
+- Debate topics
+- Timer
+- Score sheets
+name: Debate Ladder
+prepTime: medium
+requiresTech: false
+script:
+- '"Your partner. You are FOR, you are AGAINST. You have 3 minutes per side. Begin!"'
+- Round 2! Winners on this side, losers on that side. New partners, new topic. Go!
+setupInstructions: Prepare 8-10 debate topics. Create a tournament bracket. Prepare
+  score sheets for voting.
+skill_areas:
+- speaking
+- listening
+- reading
+sources:
+- Willis, J. (1996). A Framework for Task-Based Learning. Longman.
+targetStructures:
+- speaking-fluency
+- discourse
+- sentence-structure
+teaching_tips:
+- tip: 'Prepare a "debate phrase bank" on the board before starting: argument frames
+    ("The main reason is..."), agreement ("I agree with X that..."), disagreement
+    ("I see it differently because..."), and conclusion ("In my opinion...").'
+  context: Language support
+- tip: Keep rounds short (3 minutes per side) to maintain energy. Use a visible timer
+    so students learn to organize their arguments within time constraints.
+  context: Time management
+- tip: After round 1, give 2 minutes for students to note what went well and what
+    language they need for the next round. This builds strategic competence between
+    rounds.
+  context: Between-round reflection
+- tip: In TBL, tasks with clear goals and outcomes motivate learners. The planning
+    stage before each round helps students prepare and improve. (Willis 1996, Ch.
+    4.3)
+  context: TBL methodology

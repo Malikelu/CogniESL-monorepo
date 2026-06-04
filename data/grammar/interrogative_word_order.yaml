@@ -19,13 +19,23 @@ meaning:
     purpose: Tests whether the learner can distinguish yes/no questions (Do you...?)
       from wh-questions (What do you...?) and form each correctly.
   - question: Where is the auxiliary verb?
-    answer: Before the subject — English questions require subject-auxiliary inversion.
+    answer: '''Before the subject — English questions require subject-auxiliary inversion.'''
     purpose: 'Tests whether the learner understands that English questions require
       inversion: auxiliary + subject + main verb.'
   - question: Do we need DO-support here?
-    answer: Yes — when there is no auxiliary, we add do/does/did to form the question.
+    answer: '''Yes — when there is no auxiliary, we add do/does/did to form the question.'''
     purpose: 'Tests whether the learner understands DO-support: adding do/does/did
       when no auxiliary is present.'
+  - question: I don't know where he lives. Why do we say 'where he lives' (statement
+      order) and not 'where does he live' (question order)?
+    answer: Because this is an embedded (indirect) question, not a direct question.
+      After verbs like know, wonder, and ask, embedded questions use normal statement
+      word order (subject + verb), not inverted question order.
+    purpose: Tests whether the learner can distinguish between direct questions (What
+      does he want? - inversion required) and embedded/indirect questions (I wonder
+      what he wants - no inversion). The word order difference between direct and
+      embedded questions is one of the most challenging aspects of English question
+      formation.
   example_generator:
     contexts:
     - asking for directions
@@ -154,6 +164,10 @@ phonetics:
 teaching:
   methodology: PPP
   tips:
+  - 'CGEL Ch. 10: Clause type (syntactic form) and illocutionary force (pragmatic
+    function) are distinct. A declarative clause can ask a question (You''re leaving?)
+    and an interrogative can make a request (Could you pass the salt?). Teaching this
+    distinction helps learners understand indirect speech acts.'
   - Teach subject questions separately from object questions — they are structurally
     different and mixing them causes confusion
   - 'Use visual diagrams to show word order: Wh- + Aux + S + V for object questions
@@ -162,6 +176,12 @@ teaching:
     major error source
   - Use information-gap activities where students must ask each other questions to
     complete a task
+  - 'Swan PEU: Subject-auxiliary inversion in questions — ''Do you like coffee?''
+    ''Can she swim?'' ''Where did you go?'' After question words, the auxiliary comes
+    before the subject. Exception: subject questions: ''Who called you?'' (no inversion).'
+  - 'Swan PEU: Negative questions — ''Don''t you like coffee?'' Often expresses surprise
+    or expectation: ''Aren''t you ready yet?'' = I expected you to be ready. Different
+    function than simple questions.'
   recommended_activities:
   - name: Question formation race
     duration: 15
@@ -184,9 +204,9 @@ sources:
     Basic Structures, 4.6-4.8'
   secondary: 'Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
     Ch. 4: Questions, 4.3 (wh-movement)'
-  validation: 'Swan (2016) Practical English Usage, 4th ed. Entries 462-469 (wh-questions:
-    word order, do-support)'
-  pedagogical: 'Parrott (2010) Grammar for English Language Teachers, 2nd ed. Ch.
+  validation: 'Swan (2016) Practical English Usage, 4th ed.(wh-questions: word order,
+    do-support)'
+  pedagogical: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch.
     12: Questions, 12.2-12.3'
   teaching_practice: 'Folse (2009) Keys to Teaching Grammar to English Language Learners.
     Ch. 9: Wh-questions'
@@ -201,17 +221,85 @@ common_errors:
   - Chinese
   - Japanese
   - Korean
+  - Dutch
+  - German
+  reliability: D
+  flagged: true
+- error: See Swan & Smith (2001) for L1-specific patterns
+  correction: ''
+  explanation: Swan & Smith (2001). Dutch (no subject-aux inversion), German (verb-second),
+    French (est-ce que), Spanish (VSO possible, freer word order), Chinese (no wh-movement,
+    topic-prominent), Japanese (wh-in-situ).
+  l1_groups:
+  - Dutch
+  - German
+  - French
+  - Spanish
+  - Chinese
+  - Japanese
+  source: 'Swan & Smith (2001) Learner English: A Teacher''s Guide to Interference
+    and Other Problems, 2nd ed. Cambridge University Press.'
+  reliability: B
+  flagged: false
 register_notes:
 - note: Question formation is consistent across registers.
-- note: 'In formal writing, avoid contractions: ''Do you not think...?'' vs ''Don''t
-    you think...?'''
+  reliability: D
+  source: Team observation
+  tier: 4
 - note: 'In conversation, intonation can turn a statement into a question: ''You''re
     leaving?'''
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Interrogative structures (wh-questions, yes/no questions):
+    overwhelmingly conversational. Direct questions are among the strongest markers
+    of spoken language; academic prose uses almost no direct questions. Ch. 3.13.2'
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 3.13.2
+  reliability: C
+dialectal_variation: []
 discourse_notes:
 - note: 'In conversation, questions are the primary way to seek information: ''How
     are you?'' ''What do you think?'''
 - note: 'In academic writing, rhetorical questions engage the reader: ''What are the
     implications of these findings?'''
 - note: In interviews, question formation is critical for data collection.
+citations:
+- claim: 'Core meaning: Questions seek information'
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 4: Basic
+    Structures, 4.6-4.8'
+  tier: 1
+  reliability: B
+- claim: 'Register distribution: Question formation is consistent across registers.'
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 4: Basic
+    Structures, 4.6-4.8'
+  tier: 1
+  reliability: B
+- claim: 'Discourse function: In conversation, questions are the primary way to seek
+    information: ''How are you?'' ''What do you thin'
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 4: Basic
+    Structures, 4.6-4.8'
+  tier: 1
+  reliability: B
+- claim: Common error '*You like what?* (direct translation)' for Portuguese, Spanish,
+    Chinese speakers
+  source: 'Parrott (2000) Grammar for English Language Teachers, 2nd ed. Ch. 12: Questions,
+    12.2-12.3'
+  tier: 1
+  reliability: B
+- claim: McManus (2022) Crosslinguistic Influence and Second Language Learning documents
+    how transfer effects are non-linear, determined by functional fit between L1 and
+    L2 systems. His research shows that CLI operates at multiple linguistic levels
+    (phonological, lexical, morphosyntactic, pragmatic) and that transfer effects
+    are non-linear — determined by functional fit between L1 and L2 systems rather
+    than mere formal similarity. McManus (2022) documents that the L1 is always active
+    during L2 use and that transfer is a permanent feature of multilingual cognition.
+  source: McManus, K. (2022). Crosslinguistic Influence and Second Language Learning.
+    Routledge.
+  tier: 2
+processing_note: 'McManus (2022): Word-order differences between L1 and L2 are among
+  the hardest processing routines to restructure because learners process word order
+  as a primary cue to sentence meaning. The Inhibitory Control Model explains persistent
+  word-order transfer: L1 parsing routines are always competing and require inhibitory
+  control to suppress. Processing Instruction with structured input activities targeting
+  word-order parsing is recommended.'

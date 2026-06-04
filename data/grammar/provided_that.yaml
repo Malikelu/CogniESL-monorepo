@@ -1,92 +1,151 @@
-grammar_point: provided_that
-title: Provided That (Formal Condition)
-description: Formal conjunction meaning 'if' or 'on the condition that', used to set
-  strict conditions. More formal than 'if'.
-level: C1
-meaning:
-  core_meaning: Sets a formal, strict condition that must be met for the main action
-    to happen. It implies that the condition is non-negotiable — if the condition
-    is not met, the main action will not happen. More formal than 'if' and often used
-    in contracts, agreements, and formal writing.
-  timeline: Used in first conditional (future) and zero conditional (general truths).
-    The tense of the main clause determines the time reference.
-  contrast: '''Provided that'' = formal condition (''Provided that you pay, you can
-    enter.'') vs ''If'' = neutral condition (''If you pay, you can enter.'') vs ''As
-    long as'' = similar but slightly less formal.'
-  ccqs:
-  - question: Is this a strict condition or a general possibility?
-    answer: A strict condition — 'provided that' implies the condition must be met.
-    purpose: Tests whether the learner understands that ''provided that'' carries
-      a stronger, more non-negotiable sense than ''if,'' implying the condition is
-      mandatory for the outcome.
-  - question: Is this formal or informal?
-    answer: Very formal — used in contracts, agreements, and formal writing. Not used
-      in casual conversation.
-    purpose: Tests whether the learner is aware of the register distribution of ''provided
-      that,'' which is predominantly used in legal, academic, and professional contexts
-      and would sound out of place in everyday conversation.
-  - question: Can we use 'that' after 'provided'?
-    answer: Yes — 'that' is optional. 'Provided you pay' = 'Provided that you pay'.
-      Both are correct.
-    purpose: Tests whether the learner knows the optional nature of ''that'' after
-      ''provided,'' which gives them flexibility in formality — including ''that''
-      increases formality slightly.
-    contexts:
-    - formal agreements
-    - contracts and rules
-    - conditions and requirements
-    - professional communication
-    cultural_notes:
-    - Very common in legal and business English
-    - Rarely used in casual conversation
-    - The word 'that' is optional but adds formality
-    min_examples: 5
+citations:
+- claim: 'Core meaning: Sets a formal, strict condition that must be met for the main action to happen'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 26: Logical Connectors'
+  tier: 4
+- claim: 'Discourse function: In conversation, this structure is used in everyday communication.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 26: Logical Connectors'
+  tier: 4
+- claim: Common error '*I'll lend you the money if you pay me back.* (formal)' for Portuguese, Spanish, French speakers
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+common_errors:
+- correction: I'll lend you the money provided that you pay me back.
+  error: '*I''ll lend you the money if you pay me back.* (formal)'
+  explanation: '''Provided that'' is more formal than ''if'' and emphasizes that the condition must be met. It is common in
+    legal and business contexts.'
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  - French
+  reliability: D
+description: Formal conjunction meaning 'if' or 'on the condition that', used to set strict conditions. More formal than 'if'.
+dialectal_variation: []
+discourse_notes: []
 form:
   affirmative:
-    structure: Provided (that) + present simple, will + base verb (first conditional)
-      / Present simple + provided (that) + present simple (zero conditional)
     example_generator:
     - Provided that you arrive on time, we will leave.
     - I will sign the contract provided that you read the terms.
     - Plants grow provided that you water them.
     min_examples: 4
+    structure: Provided (that) + present simple, will + base verb (first conditional) / Present simple + provided (that) +
+      present simple (zero conditional)
   negative:
-    structure: Provided (that) + don't/doesn't + present simple, will + base verb
     example_generator:
     - Provided that you don't mind, I will sit here.
     - We will go ahead provided that no one objects.
     - Provided that she isn't too busy, she will help.
     min_examples: 4
+    structure: Provided (that) + don't/doesn't + present simple, will + base verb
   questions:
-    structure: Will + subject + base verb + provided (that) + present simple?
     example_generator:
     - Will you sign provided that I read the terms?
     - Will they agree provided that we meet their conditions?
     min_examples: 4
+    structure: Will + subject + base verb + provided (that) + present simple?
+grammar_point: provided_that
+level: C1
+meaning:
+  ccqs:
+  - answer: A strict condition — 'provided that' implies the condition must be met.
+    purpose: Tests whether the learner understands that ''provided that'' carries a stronger, more non-negotiable sense than
+      ''if,'' implying the condition is mandatory for the outcome.
+    question: Is this a strict condition or a general possibility?
+  - answer: Very formal — used in contracts, agreements, and formal writing. Not used in casual conversation.
+    purpose: Tests whether the learner is aware of the register distribution of ''provided that,'' which is predominantly
+      used in legal, academic, and professional contexts and would sound out of place in everyday conversation.
+    question: Is this formal or informal?
+  - answer: Yes — 'that' is optional. 'Provided you pay' = 'Provided that you pay'. Both are correct.
+    purpose: Tests whether the learner knows the optional nature of ''that'' after ''provided,'' which gives them flexibility
+      in formality — including ''that'' increases formality slightly.
+    question: Can we use 'that' after 'provided'?
+  - answer: '''Provided that you pay, I will help.'' After ''provided that'', use present simple for future conditions.'
+    purpose: Tests whether the learner uses present simple (not 'will') after 'provided that' (Swan PEU 2016, entry 282).
+    question: Which is correct? *'Provided that you will pay, I will help' or 'Provided that you pay, I will help'?
+  contrast: '''Provided that'' = formal condition (''Provided that you pay, you can enter.'') vs ''If'' = neutral condition
+    (''If you pay, you can enter.'') vs ''As long as'' = similar but slightly less formal.'
+  core_meaning: Sets a formal, strict condition that must be met for the main action to happen. It implies that the condition
+    is non-negotiable — if the condition is not met, the main action will not happen. More formal than 'if' and often used
+    in contracts, agreements, and formal writing.
+  timeline: Used in first conditional (future) and zero conditional (general truths). The tense of the main clause determines
+    the time reference.
+phonetics:
+- example_generator:
+  - provided /prəˈvaɪdɪd/
+  - that /ðət/ (weak)
+  l1_issue: Portuguese speakers may stress the first syllable 'PROvided'. Teach correct stress on the second syllable.
+  note: 'Stress falls on ''proVIDED'' (second syllable) and the key words in the condition: ''proVIDED that you PAY, you can
+    ENTER.'''
+- example_generator:
+  - provided /prəˈvaɪdɪd/
+  - you /juː/ (weak)
+  l1_issue: Many L1 speakers over-pronounce 'that' in 'provided that'. Teach the optional omission for natural speech.
+  note: 'When ''that'' is omitted, the sentence flows more smoothly: ''Provided you pay'' /prəˈvaɪdɪd juː peɪ/.'
+register_notes:
+- note: 'Biber et al. (2021) — ''Provided that'' as formal conditional connector: strongly associated with academic prose
+    and formal writing. Conversation uses simpler ''if''. Ch. 10.2.8'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 10.2.8
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: '''That'' is optional after ''provided'' — both forms are correct'
-  type: grammatical
-  examples:
+- examples:
   - Provided that you pay, you can enter.
   - Provided you pay, you can enter.
-- rule: Provided that for strict conditions (the condition MUST be met)
-  type: semantic
-  examples:
+  rule: '''That'' is optional after ''provided'' — both forms are correct'
+  type: grammatical
+- examples:
   - Provided that you follow the rules, you may stay.
   - I will attend provided that my schedule allows it.
   - The deal will go ahead provided that both parties agree.
-- rule: Contrast with 'if' (neutral) and 'as long as' (slightly less formal)
+  rule: Provided that for strict conditions (the condition MUST be met)
   type: semantic
-  examples:
+- examples:
   - If you pay, you can enter. (neutral)
   - Provided that you pay, you can enter. (formal, strict)
   - As long as you pay, you can enter. (slightly less formal)
-- rule: Common in legal, business, and academic writing
-  type: register
-  examples:
+  rule: Contrast with 'if' (neutral) and 'as long as' (slightly less formal)
+  type: semantic
+- examples:
   - Provided that the terms are met, the contract is valid.
   - Entry is free provided that you register in advance.
   - Provided that all requirements are met, the application will be approved.
+  rule: Common in legal, business, and academic writing
+  type: register
+teaching:
+  methodology: Guided discovery with contract scenarios
+  recommended_activities:
+  - adaptation_notes: 'Students write formal conditions using ''provided that'': ''Provided that you complete the course,
+      you will receive a certificate.'' Practices formal conditional structures.'
+    duration: 15
+    name: Formal Conditions
+  - adaptation_notes: 'Give students neutral sentences with ''if''. They rewrite them using ''provided that'': ''If you pay,
+      you can enter.'' → ''Provided that you pay, you can enter.'''
+    duration: 10
+    name: If vs Provided That
+  - adaptation_notes: 'Students role-play negotiating a contract. They set conditions using ''provided that'': ''Provided
+      that you deliver on time, we will pay the full amount.'''
+    duration: 15
+    name: Contract Role Play
+  tips:
+  - 'Use contract scenarios: ''Provided that you pay, you get the service.'' This shows the formal, conditional nature.'
+  - 'Contrast with ''if'' and ''as long as'' for formality levels: if (neutral) < as long as (less formal) < provided that
+    (very formal).'
+  - 'Role-play: students set formal conditions using ''provided that'' in business or legal scenarios.'
+  - Explain that 'that' is optional but adds formality. 'Provided that you pay' is more formal than 'Provided you pay'.
+  - 'Swan PEU: ''Provided/providing (that)'' = if, with emphasis on a requirement: ''You can go provided that you''''re back
+    by midnight.'' ''As long as'' is similar but less formal.'
+title: Provided That (Formal Condition)
 use:
 - context: Formal agreements and contracts
   description: Setting strict conditions in formal documents
@@ -107,77 +166,3 @@ use:
   - Plants grow provided that you water them.
   - Provided that you study regularly, you will improve.
   - Provided that the weather is good, we will have a picnic.
-phonetics:
-- note: 'Stress falls on ''proVIDED'' (second syllable) and the key words in the condition:
-    ''proVIDED that you PAY, you can ENTER.'''
-  example_generator:
-  - provided /prəˈvaɪdɪd/
-  - that /ðət/ (weak)
-  l1_issue: Portuguese speakers may stress the first syllable 'PROvided'. Teach correct
-    stress on the second syllable.
-- note: 'When ''that'' is omitted, the sentence flows more smoothly: ''Provided you
-    pay'' /prəˈvaɪdɪd juː peɪ/.'
-  example_generator:
-  - provided /prəˈvaɪdɪd/
-  - you /juː/ (weak)
-  l1_issue: Many L1 speakers over-pronounce 'that' in 'provided that'. Teach the optional
-    omission for natural speech.
-teaching:
-  methodology: Guided discovery with contract scenarios
-  tips:
-  - 'Use contract scenarios: ''Provided that you pay, you get the service.'' This
-    shows the formal, conditional nature.'
-  - 'Contrast with ''if'' and ''as long as'' for formality levels: if (neutral) <
-    as long as (less formal) < provided that (very formal).'
-  - 'Role-play: students set formal conditions using ''provided that'' in business
-    or legal scenarios.'
-  - Explain that 'that' is optional but adds formality. 'Provided that you pay' is
-    more formal than 'Provided you pay'.
-  recommended_activities:
-  - name: Formal Conditions
-    duration: 15
-    adaptation_notes: 'Students write formal conditions using ''provided that'': ''Provided
-      that you complete the course, you will receive a certificate.'' Practices formal
-      conditional structures.'
-  - name: If vs Provided That
-    duration: 10
-    adaptation_notes: 'Give students neutral sentences with ''if''. They rewrite them
-      using ''provided that'': ''If you pay, you can enter.'' → ''Provided that you
-      pay, you can enter.'''
-  - name: Contract Role Play
-    duration: 15
-    adaptation_notes: 'Students role-play negotiating a contract. They set conditions
-      using ''provided that'': ''Provided that you deliver on time, we will pay the
-      full amount.'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: '*I''ll lend you the money if you pay me back.* (formal)'
-  correction: I'll lend you the money provided that you pay me back.
-  explanation: '''Provided that'' is more formal than ''if'' and emphasizes that the
-    condition must be met. It is common in legal and business contexts.'
-  l1_groups:
-  - Portuguese
-  - Spanish
-  - French
-register_notes:
-- note: In formal writing, this structure is standard and expected. Register variation
-    is marked by vocabulary and style rather than grammatical form.
-- note: In formal writing, avoid contractions and use full forms.
-- note: In conversation, contractions and reduced forms are common.
-dialectal_variation:
-- note: No significant BrE/AmE differences in the core grammar of this structure.
-discourse_notes:
-- note: In conversation, this structure is used in everyday communication.
-- note: In academic writing, this structure appears in formal contexts and is a marker
-    of proficient English.
-- note: In professional contexts, correct use of this structure is expected in formal
-    writing.

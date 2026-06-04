@@ -1,36 +1,148 @@
-grammar_point: prepositions_of_movement
-title: Prepositions of Movement (to, from, into, out of, across, through)
+citations:
+- claim: 'Core meaning: Prepositions of movement show the direction or path of movement
+    — where something or someone is going.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21:
+    Prepositions'
+  tier: 4
+- claim: 'Register distribution: Prepositions of movement are consistent across registers.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21:
+    Prepositions'
+  tier: 4
+- claim: 'Discourse function: Prepositions of movement create dynamic descriptions:
+    ''She walked into the room and sat down.'''
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21:
+    Prepositions'
+  tier: 4
+- claim: 'Common error ''Using ''to'' for movement within: *''I went to the park.''
+    (inside)'' for Portuguese, Spanish speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  tier: 1
+- claim: Prepositions of movement (TO, TOWARD, INTO, ONTO, THROUGH, ACROSS, ALONG,
+    AROUND) describe direction and path of motion
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 21:
+    Prepositions'
+  tier: 1
+- claim: L1 transfer in prepositions of movement varies significantly across language
+    backgrounds — Swan & Smith document contrastive patterns for speakers of different
+    L1s
+  flagged: false
+  reliability: B
+  source: Swan & Smith (2001) Learner English, 2nd ed. Cambridge University Press.
+  tier: 2
+common_errors:
+- correction: I went into the park.
+  error: 'Using ''to'' when ''into'' is needed: *''I went to the park.'' (meaning:
+    entered the park)'
+  explanation: Use 'into' for movement from outside to inside. 'To' for direction
+    toward.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: B
+  source: Swan Entry 212. Swan (2016) Practical English Usage, 4th ed. Oxford University
+    Press.
+- correction: I walked into the room.
+  error: 'Confusing ''in'' and ''into'': *''I walked in the room.'' (movement)'
+  explanation: Use 'into' for movement. 'In' for location.
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: B
+  source: Swan Entry 212. Swan (2016) Practical English Usage, 4th ed. Oxford University
+    Press.
+- error: Spatial preposition errors reflect conceptual transfer, not just formal L1-L2
+    mapping (Golden et al. Ch.4)
+  explanation: 'Golden et al. (2017) Ch.4 (Szymańska): Conceptualization of objects
+    as containers vs. surfaces varies crosslinguistically and affects preposition
+    choice even when L1 and L2 are genealogically related. Counter-intuitively, English-speaking
+    learners performed NO BETTER than Slavic learners on Norwegian spatial prepositions
+    despite shared Germanic origin. English "in/on" conceptual mapping differs from
+    Norwegian "i/pa": Norwegian uses "på" extensively for institutional/social activities
+    where English uses "at" or "on". Spatial preposition accuracy is driven by conceptual
+    fit, not similar.'
+  l1_groups:
+  - All L1s — conceptual transfer affects all learners
+  reliability: C
+  source: Golden et al. (2017) Crosslinguistic Influence and Distinctive Patterns
+    of Language Learning, Ch. 4
 description: Words that show direction of movement from one place to another. Essential
   for describing travel and motion.
+dialectal_variation: []
+discourse_notes:
+- note: 'Prepositions of movement create dynamic descriptions: ''She walked into the
+    room and sat down.'''
+- note: Prepositions of movement are among the most frequent words in English and
+    are used across all registers, with spatial prepositions particularly common in
+    narrative and fiction writing.
+form:
+  affirmative:
+    example_generator:
+    - I go to school.
+    - She came from Spain.
+    - He walked into the room.
+    - They ran across the street.
+    - We drove through the tunnel.
+    min_examples: 4
+    structure: Verb of movement + preposition + destination/source
+  negative:
+    example_generator:
+    - I don't go to school on Sundays.
+    - She didn't come from Spain.
+    - He didn't walk into the room.
+    min_examples: 4
+    structure: Subject + don't/doesn't/didn't + verb + preposition + destination
+  questions:
+    example_generator:
+    - Where did you go?
+    - Where are you from?
+    - Where does she go to school?
+    min_examples: 4
+    structure: Where + do/does/did + subject + go/come from?
+grammar_point: prepositions_of_movement
+key_principles: []
 level: A1
 meaning:
-  core_meaning: Prepositions of movement show the direction or path of movement —
-    where something or someone is going. They answer 'Where to?' or 'Where from?'
-    The key idea is motion, not static position.
-  timeline: N/A — movement prepositions describe direction, not time. They can be
-    used with any tense.
-  contrast: '''To'' = toward a destination (go to school) vs ''From'' = starting point
-    (come from Spain) vs ''Into'' = entering a space (walk into the room) vs ''Across''
-    = surface movement (walk across the street) vs ''Through'' = movement inside/among
-    (drive through the tunnel)'
   ccqs:
-  - question: Is this about movement or static position?
-    answer: Movement — the preposition shows direction of travel.
+  - answer: Movement — the preposition shows direction of travel.
     purpose: Tests whether the learner understands that prepositions of movement show
       direction of travel, not static position. This is important because confusing
       "in" (position) with "into" (movement) is a very common error.
-  - question: Do we say 'go to home' or 'go home'?
-    answer: '''Go home'' — no preposition before ''home''. We say ''go to school''
+    question: Is this about movement or static position?
+  - answer: '''Go home'' — no preposition before ''home''. We say ''go to school''
       but ''go home''.'
     purpose: Tests whether the learner knows the exception "go home" (no preposition)
       vs. "go to school" (with preposition). This is important because "go to home"
       is one of the most frequent preposition errors at A1 level.
-  - question: What is the difference between 'across' and 'through'?
-    answer: '''Across'' = on a surface (across the street). ''Through'' = inside something
+    question: Do we say 'go to home' or 'go home'?
+  - answer: '''Across'' = on a surface (across the street). ''Through'' = inside something
       (through the tunnel).'
     purpose: Tests whether the learner understands the difference between "across"
       (surface movement) and "through" (movement inside something). This spatial distinction
       is important for giving and understanding directions.
+    question: Can you explain the difference between 'across' and 'through' by giving
+      an example of when to use each?
+  - answer: '''She arrived in London.'' ''Arrive'' takes ''in'' for cities/countries
+      and ''at'' for specific places. NOT *arrive to.'
+    purpose: Tests whether the learner knows that 'arrive' takes in/at, not 'to' (Swan
+      PEU 2016, entry 7.2).
+    question: Which is correct? *'She arrived to London' or 'She arrived in London'?
+  contrast: '''To'' = toward a destination (go to school) vs ''From'' = starting point
+    (come from Spain) vs ''Into'' = entering a space (walk into the room) vs ''Across''
+    = surface movement (walk across the street) vs ''Through'' = movement inside/among
+    (drive through the tunnel)'
+  core_meaning: Prepositions of movement show the direction or path of movement —
+    where something or someone is going. They answer 'Where to?' or 'Where from?'
+    The key idea is motion, not static position.
   example_generator:
     contexts:
     - daily travel
@@ -41,87 +153,141 @@ meaning:
     - Avoid assuming specific cultural knowledge
     - Keep examples concrete and visual
     min_examples: 5
-form:
-  affirmative:
-    structure: Verb of movement + preposition + destination/source
-    example_generator:
-    - I go to school.
-    - She came from Spain.
-    - He walked into the room.
-    - They ran across the street.
-    - We drove through the tunnel.
-    min_examples: 4
-  negative:
-    structure: Subject + don't/doesn't/didn't + verb + preposition + destination
-    example_generator:
-    - I don't go to school on Sundays.
-    - She didn't come from Spain.
-    - He didn't walk into the room.
-    min_examples: 4
-  questions:
-    structure: Where + do/does/did + subject + go/come from?
-    example_generator:
-    - Where did you go?
-    - Where are you from?
-    - Where does she go to school?
-    min_examples: 4
+  timeline: N/A — movement prepositions describe direction, not time. They can be
+    used with any tense.
+phonetics:
+- example_generator:
+  - to /tə/
+  - from /frəm/
+  - into /ɪntə/
+  - across /əˈkrɒs/
+  l1_issue: Portuguese and Spanish speakers often over-pronounce prepositions. Teach
+    the weak forms for natural speech.
+  note: 'Prepositions of movement are usually unstressed: ''to'' → /tə/, ''from''
+    → /frəm/, ''into'' → /ɪntə/. ''I go to school'' sounds like /aɪ gəʊ tə skuːl/.'
+- example_generator:
+  - want to → wanna /wɒnə/
+  - going to → gonna /ɡənə/
+  l1_issue: Many L1 speakers are not aware of these reductions. Teach them for listening
+    comprehension.
+  note: 'Contractions with ''to'': ''want to'' → /wɒnə/, ''going to'' → /ɡənə/, ''got
+    to'' → /ɡɒtə/.'
+register_notes:
+- note: Prepositions of movement are consistent across registers.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (1999) — Prepositions of movement: register distribution reflects
+    text type. Fiction uses more spatial prepositions (narrative movement); academic
+    prose uses fewer. Ch. 5.3.3'
+  reliability: C
+  source: Biber et al. (1999) Grammar of Spoken and Written English. John Benjamins
+    Publishing Company. Ch. 5.3.3
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge
+    University Press.
+  primary: Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed.
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
+    Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
+    University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: 'To: movement toward a destination (go to school, come to my house, walk to
-    the park)'
-  type: grammatical
-  examples:
+- examples:
   - go to school
   - come to my house
   - walk to the park
   - drive to work
   - fly to London
-- rule: 'From: starting point of movement (come from Spain, from the beginning, from
-    here)'
+  rule: 'To: movement toward a destination (go to school, come to my house, walk to
+    the park)'
   type: grammatical
-  examples:
+- examples:
   - come from Spain
   - from the beginning
   - from here to there
   - from my house to school
-- rule: 'Into: entering a 3D space (walk into the room, jump into the pool, get into
-    the car)'
+  rule: 'From: starting point of movement (come from Spain, from the beginning, from
+    here)'
   type: grammatical
-  examples:
+- examples:
   - walk into the room
   - jump into the pool
   - get into the car
   - go into the building
-- rule: 'Out of: exiting a 3D space (walk out of the room, get out of the car, run
-    out of the building)'
+  rule: 'Into: entering a 3D space (walk into the room, jump into the pool, get into
+    the car)'
   type: grammatical
-  examples:
+- examples:
   - walk out of the room
   - get out of the car
   - run out of the building
   - climb out of the window
-- rule: 'Across: movement on a surface (walk across the street, swim across the river,
-    fly across the ocean)'
+  rule: 'Out of: exiting a 3D space (walk out of the room, get out of the car, run
+    out of the building)'
   type: grammatical
-  examples:
+- examples:
   - walk across the street
   - swim across the river
   - fly across the ocean
   - run across the field
-- rule: 'Through: movement inside or among something (drive through the tunnel, walk
-    through the forest, look through the window)'
+  rule: 'Across: movement on a surface (walk across the street, swim across the river,
+    fly across the ocean)'
   type: grammatical
-  examples:
+- examples:
   - drive through the tunnel
   - walk through the forest
   - look through the window
   - go through the door
-- rule: 'Exception: ''go home'' (no preposition) vs ''go to school'' (with preposition)'
+  rule: 'Through: movement inside or among something (drive through the tunnel, walk
+    through the forest, look through the window)'
   type: grammatical
-  examples:
+- examples:
   - go home (NOT go to home)
   - go to school
   - go to the park
   - go to work
+  rule: 'Exception: ''go home'' (no preposition) vs ''go to school'' (with preposition)'
+  type: grammatical
+teaching:
+  methodology: PPP with physical movement and maps
+  recommended_activities:
+  - adaptation_notes: 'Teacher gives commands: ''Walk to the door. Go into the hallway.
+      Run across the room.'' Students physically perform the actions. Makes the grammar
+      physical.'
+    duration: 10
+    name: Classroom Movement
+  - adaptation_notes: 'Students give directions using a map: ''Go from the station
+      to the park through the city center.'' Practices prepositions with real locations.'
+    duration: 15
+    name: Map Directions
+  - adaptation_notes: 'Teacher says a destination. Students choose the correct preposition:
+      ''___ school'' (to), ''___ Spain'' (from), ''___ the room'' (into).'
+    duration: 10
+    name: To, From, or Into?
+  - adaptation_notes: 'Students write a short story about a journey using at least
+      6 prepositions of movement: ''I went to the station. I came from home. I walked
+      through the park...'''
+    duration: 15
+    name: Story Journey
+  tips:
+  - 'Use the classroom: students physically move ''to the door'', ''into the hallway'',
+    ''across the front''. This makes the meaning physical and memorable.'
+  - 'Draw arrows on the board: → (to), ← (from), ↗ (through), ↔ (across). Visual support
+    helps.'
+  - 'Practice with maps: ''Go from A to B through C.'' Uses prepositions in a real
+    context.'
+  - 'Teach the exception: ''go home'' (no preposition) vs ''go to school'' (with preposition).
+    This is a very common error.'
+  - 'Use action verbs: walk, run, drive, fly, swim, jump. These naturally pair with
+    movement prepositions.'
+  - 'Swan PEU: Direction prepositions — to (destination), into (entry to enclosed),
+    onto (movement to surface), through (passing within), across (crossing), along
+    (following), up/down, over/under, towards (direction without arrival).'
+  - 'Swan PEU: Compare movement prepositions: ''walk across the road'' (cross surface),
+    ''walk through the tunnel'' (pass within), ''walk along the beach'' (follow path).
+    Each describes a different type of spatial relationship.'
+title: Prepositions of Movement (to, from, into, out of, across, through)
 use:
 - context: Daily travel
   description: Talking about regular travel routes
@@ -147,83 +313,3 @@ use:
   - He walked through the door.
   - They swam across the river.
   - The bird flew through the window.
-phonetics:
-- note: 'Prepositions of movement are usually unstressed: ''to'' → /tə/, ''from''
-    → /frəm/, ''into'' → /ɪntə/. ''I go to school'' sounds like /aɪ gəʊ tə skuːl/.'
-  example_generator:
-  - to /tə/
-  - from /frəm/
-  - into /ɪntə/
-  - across /əˈkrɒs/
-  l1_issue: Portuguese and Spanish speakers often over-pronounce prepositions. Teach
-    the weak forms for natural speech.
-- note: 'Contractions with ''to'': ''want to'' → /wɒnə/, ''going to'' → /ɡənə/, ''got
-    to'' → /ɡɒtə/.'
-  example_generator:
-  - want to → wanna /wɒnə/
-  - going to → gonna /ɡənə/
-  l1_issue: Many L1 speakers are not aware of these reductions. Teach them for listening
-    comprehension.
-teaching:
-  methodology: PPP with physical movement and maps
-  tips:
-  - 'Use the classroom: students physically move ''to the door'', ''into the hallway'',
-    ''across the front''. This makes the meaning physical and memorable.'
-  - 'Draw arrows on the board: → (to), ← (from), ↗ (through), ↔ (across). Visual support
-    helps.'
-  - 'Practice with maps: ''Go from A to B through C.'' Uses prepositions in a real
-    context.'
-  - 'Teach the exception: ''go home'' (no preposition) vs ''go to school'' (with preposition).
-    This is a very common error.'
-  - 'Use action verbs: walk, run, drive, fly, swim, jump. These naturally pair with
-    movement prepositions.'
-  recommended_activities:
-  - name: Classroom Movement
-    duration: 10
-    adaptation_notes: 'Teacher gives commands: ''Walk to the door. Go into the hallway.
-      Run across the room.'' Students physically perform the actions. Makes the grammar
-      physical.'
-  - name: Map Directions
-    duration: 15
-    adaptation_notes: 'Students give directions using a map: ''Go from the station
-      to the park through the city center.'' Practices prepositions with real locations.'
-  - name: To, From, or Into?
-    duration: 10
-    adaptation_notes: 'Teacher says a destination. Students choose the correct preposition:
-      ''___ school'' (to), ''___ Spain'' (from), ''___ the room'' (into).'
-  - name: Story Journey
-    duration: 15
-    adaptation_notes: 'Students write a short story about a journey using at least
-      6 prepositions of movement: ''I went to the station. I came from home. I walked
-      through the park...'''
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: 'Using ''to'' for movement within: *''I went to the park.'' (inside)'
-  correction: I went into the park.
-  explanation: Use 'into' for movement from outside to inside. 'To' for direction
-    toward.
-  l1_groups:
-  - Portuguese
-  - Spanish
-- error: 'Confusing ''in'' and ''into'': *''I walked in the room.'' (movement)'
-  correction: I walked into the room.
-  explanation: Use 'into' for movement. 'In' for location.
-  l1_groups:
-  - Portuguese
-  - Spanish
-register_notes:
-- note: Prepositions of movement are consistent across registers.
-dialectal_variation:
-- note: No significant BrE/AmE differences.
-discourse_notes:
-- note: 'Prepositions of movement create dynamic descriptions: ''She walked into the
-    room and sat down.'''

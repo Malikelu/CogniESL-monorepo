@@ -1,30 +1,80 @@
+citations:
+- claim: 'Core meaning: The bare genitive is a fixed expression where the possessive ''s is used without an apostrophe in
+    cer'
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession'
+  tier: 1
+- claim: 'Register distribution: Possessive ''s is more common in informal writing. ''Of'' is preferred in formal writing
+    for inanimate '
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession'
+  tier: 1
+- claim: 'Discourse function: Possessive ''s shows relationships: ''John''s car'', ''the company''s policy''.'
+  flagged: false
+  reliability: B
+  source: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession'
+  tier: 1
+- claim: 'Common error ''Using ''s with inanimate objects: *''The table''s leg.'''' for Portuguese, Spanish speakers'
+  reliability: B
+  source: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  tier: 1
+common_errors:
+- correction: The leg of the table.
+  error: 'Using ''s with inanimate objects: *''The table''s leg.'''
+  explanation: Use 'of' for inanimate objects, 's for people and animals.
+  flagged: true
+  l1_groups:
+  - Portuguese
+  - Spanish
+  reliability: D
+description: 'The possessive form without an apostrophe for certain fixed expressions: for goodness sake, at death''s door.'
+dialectal_variation: []
+discourse_notes:
+- note: 'Possessive ''s shows relationships: ''John''s car'', ''the company''s policy''.'
+form:
+  affirmative:
+    example_generator:
+      contexts:
+      - fixed expressions
+      min_examples: 4
+    structure: 'Fixed expression: for goodness sake, at death''s door, out of harm''s way, for old times sake'
+  negative:
+    example_generator:
+      contexts: []
+    min_examples: 0
+    structure: Not applicable — these are fixed expressions.
+  questions:
+    example_generator:
+      contexts: []
+    min_examples: 0
+    structure: Not used in questions.
 grammar_point: bare_genitive
-title: Bare Genitive
-description: 'The possessive form without an apostrophe for certain fixed expressions:
-  for goodness sake, at death''s door.'
 level: C2
 meaning:
-  core_meaning: The bare genitive is a fixed expression where the possessive 's is
-    used without an apostrophe in certain idiomatic phrases. These are fossilized
-    expressions from older forms of English.
-  timeline: Timeless — fixed expressions.
-  contrast: Regular possessive = the dog's bone vs Bare genitive = for goodness sake
-    (no apostrophe)
   ccqs:
-  - question: Is this a fixed expression?
-    answer: Yes, bare genitives are always fixed idiomatic expressions.
-    purpose: Tests whether the learner understands that bare genitives are fixed idiomatic
-      expressions. This is important because these are fossilized forms from older
-      English and cannot be created with new expressions.
-  - question: Does it have an apostrophe?
-    answer: No, these are fossilized forms without apostrophes.
-    purpose: Tests whether the learner knows that these fixed forms do not use apostrophes.
-      This is important because the lack of apostrophe in these expressions is a historical
-      artifact that learners must simply memorize.
-  - question: What would be wrong with [alternative structure]?
-    answer: '[Alternative structure] would be incorrect because [reason].'
-    purpose: Tests whether the learner can identify common errors associated with
-      bare genitive and explain why they are incorrect.
+  - answer: Yes, bare genitives are always fixed idiomatic expressions.
+    purpose: Tests whether the learner understands that bare genitives are fixed idiomatic expressions. This is important
+      because these are fossilized forms from older English and cannot be created with new expressions.
+    question: Is this a fixed expression?
+  - answer: No, these are fossilized forms without apostrophes.
+    purpose: Tests whether the learner knows that these fixed forms do not use apostrophes. This is important because the
+      lack of apostrophe in these expressions is a historical artifact that learners must simply memorize.
+    question: Does it have an apostrophe?
+  - answer: The alternative form changes the meaning or creates an ungrammatical sentence.
+    purpose: Tests whether the learner can identify common errors associated with bare genitive and explain why they are incorrect.
+    question: What is the difference in meaning between these two forms?
+  - answer: These are fossilized forms from older English where the possessive was written without an apostrophe. The s in
+      goodness sake and old times sake reflects an archaic genitive endings pattern that has been preserved unchanged for
+      centuries. Modern English possessives always use apostrophes, but these fixed expressions are historical exceptions
+      that learners must simply memorize.
+    purpose: Tests whether the learner understands that bare genitives are historical relics of Middle English genitive endings,
+      not modern possessives. This is important because applying modern rules (adding apostrophes) would be incorrect in these
+      specific fossilized phrases.
+    question: For goodness sake and for old times sake -- why is there no apostrophe before the s in these expressions?
+  contrast: Regular possessive = the dog's bone vs Bare genitive = for goodness sake (no apostrophe)
+  core_meaning: The bare genitive is a fixed expression where the possessive 's is used without an apostrophe in certain idiomatic
+    phrases. These are fossilized expressions from older forms of English.
   example_generator:
     contexts:
     - fixed expressions
@@ -34,35 +84,52 @@ meaning:
     - These are very advanced, rare expressions
     - Most native speakers are not aware of the term bare genitive
     min_examples: 3
-form:
-  affirmative:
-    structure: 'Fixed expression: for goodness sake, at death''s door, out of harm''s
-      way, for old times sake'
-    example_generator:
-      contexts:
-      - fixed expressions
-      min_examples: 4
-  negative:
-    structure: Not applicable — these are fixed expressions.
-    example_generator:
-      contexts: []
-    min_examples: 0
-  questions:
-    structure: Not used in questions.
-    example_generator:
-      contexts: []
-    min_examples: 0
+  timeline: Timeless — fixed expressions.
+phonetics:
+- example_generator:
+    contexts:
+    - connected speech
+  l1_issue: Very advanced — most L1 speakers will not encounter these expressions frequently
+  note: These expressions are pronounced as single chunks
+register_notes:
+- note: Possessive 's is more common in informal writing. 'Of' is preferred in formal writing for inanimate objects.
+  reliability: D
+  source: Team observation
+  tier: 4
+- note: 'Biber et al. (2021) — Bare genitive (zero possessive): rare across all registers; most common in news with time expressions
+    and fixed phrases. Register-restricted. Ch. 2.10.5.2'
+  reliability: C
+  source: Biber et al. (2021) Grammar of Spoken and Written English. John Benjamins Publishing Company. Ch. 2.10.5.2
+sources:
+  pedagogical: Parrott (2000) Grammar for English Language Teachers, 2nd ed. Cambridge University Press.
+  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 16: Reference and Possession'
+  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language. Cambridge University Press.
+  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners. University of Michigan Press.
+  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
 sub_rules:
-- rule: These are fossilized expressions from older English
-  type: historical
-  examples:
+- examples:
   - for goodness sake (from for God's sake)
   - at death's door (from at the door of death)
-- rule: No apostrophe is used in these fixed forms
-  type: spelling
-  examples:
+  rule: These are fossilized expressions from older English
+  type: historical
+- examples:
   - for goodness sake is correct
   - for goodness's sake is incorrect
+  rule: No apostrophe is used in these fixed forms
+  type: spelling
+teaching:
+  methodology: Guided discovery
+  recommended_activities:
+  - adaptation_notes: Students match bare genitive expressions to their meanings.
+    duration: 10
+    name: Expression Matching
+  tips:
+  - Teach as fixed expressions, not as a grammar rule
+  - Use authentic examples from literature and film
+  - Explain the historical origin
+  - 'Swan PEU: Bare genitive (possessive without noun) — ''at the doctor''s,'' ''at my mother''s,'' ''at Harrods.'''' The
+    noun (house/office/shop) is understood from context. Also used with time: ''a moment''s thought.'''
+title: Bare Genitive
 use:
 - context: Fixed expressions
   description: Used in specific idiomatic phrases
@@ -70,44 +137,3 @@ use:
   - For goodness sake, be quiet!
   - He was at death's door.
   - They moved the children out of harm's way.
-phonetics:
-- note: These expressions are pronounced as single chunks
-  example_generator:
-    contexts:
-    - connected speech
-  l1_issue: Very advanced — most L1 speakers will not encounter these expressions
-    frequently
-teaching:
-  methodology: Guided discovery
-  tips:
-  - Teach as fixed expressions, not as a grammar rule
-  - Use authentic examples from literature and film
-  - Explain the historical origin
-  recommended_activities:
-  - name: Expression Matching
-    duration: 10
-    adaptation_notes: Students match bare genitive expressions to their meanings.
-sources:
-  primary: 'Celce-Murcia & Larsen-Freeman (2015) The Grammar Book, 3rd ed. Ch. 12:
-    Nouns and Determiners, §12.1-12.5'
-  secondary: Huddleston & Pullum (2002) The Cambridge Grammar of the English Language.
-    Cambridge University Press.
-  validation: Swan (2016) Practical English Usage, 4th ed. Oxford University Press.
-  pedagogical: Parrott (2010) Grammar for English Language Teachers, 2nd ed. Cambridge
-    University Press.
-  teaching_practice: Folse (2009) Keys to Teaching Grammar to English Language Learners.
-    University of Michigan Press.
-common_errors:
-- error: 'Using ''s with inanimate objects: *''The table''s leg.'''
-  correction: The leg of the table.
-  explanation: Use 'of' for inanimate objects, 's for people and animals.
-  l1_groups:
-  - Portuguese
-  - Spanish
-register_notes:
-- note: Possessive 's is more common in informal writing. 'Of' is preferred in formal
-    writing for inanimate objects.
-dialectal_variation:
-- note: No significant BrE/AmE differences.
-discourse_notes:
-- note: 'Possessive ''s shows relationships: ''John''s car'', ''the company''s policy''.'
