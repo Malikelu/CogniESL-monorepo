@@ -341,7 +341,7 @@ The registry is a flat YAML list. Each entry has one `base` key (matching `gramm
 | `structure` | The tense-specific formula string, e.g. `"Wh- word + did + subject + base verb?"` |
 | `examples` | 3–6 tense-correct example sentences, all human-authored |
 
-**Grammar points covered (21 total):**
+| Grammar points covered (22 total):
 
 | Group | Grammar points |
 |-------|---------------|
@@ -352,7 +352,7 @@ The registry is a flat YAML list. Each entry has one `base` key (matching `gramm
 | Past habits | `used_to`, `used_to_would`, `will_would_habits` |
 | Modals | `modals`, `modals_overview`, `modals_past`, `modals_perfect` |
 
-Each entry has 3 topics: `wh_questions` (A1), `short_answers` (A1), `question_tags` (A2).
+Each entry has 7 topics: `wh_questions` (A1), `short_answers` (A1), `question_tags` (A2), `negative_questions` (B1), `subject_object_questions` (A2), `passive_voice` (A2), `indirect_questions` (B2).
 
 **Example entry (past_simple):**
 
@@ -531,15 +531,18 @@ SPEAKER NOTES:
 
 ---
 
-### 7.6 What This Does NOT Yet Cover
+### 7.6 All 7 Cross-Cutting Structures Covered
 
-The registry currently covers three cross-cutting structures. The following are identified in Section 2.2 but not yet implemented:
+The registry now covers all 7 cross-cutting structures identified in Section 2.2:
 
-| Structure | CEFR | Status | Next step |
-|-----------|------|--------|-----------|
-| Negative questions | B1+ | Not in registry | Add `negative_questions.yaml` + registry entries |
-| Passive voice | A2–B1 | Not in registry | Add registry entries for affected tenses |
-| Reported speech | B1+ | Not in registry | Add registry entries |
-| Subject/object questions | A2 | Partially covered by WH slides | May need dedicated topic |
+| # | Structure | CEFR | In registry | Slides generated |
+|---|-----------|:----:|:-----------:|:----------------:|
+| 1 | WH questions | A1 | ✅ | ✅ For all 22 grammar points |
+| 2 | Short answers | A1 | ✅ | ✅ For all 22 grammar points |
+| 3 | Question tags | A2 | ✅ | ✅ For all 22 grammar points |
+| 4 | Negative questions | B1 | ✅ | ✅ For all 22 grammar points |
+| 5 | Subject/Object questions | A2 | ✅ | ✅ For all 22 grammar points |
+| 6 | Passive voice | A2–B1 | ✅ | ✅ For all 22 grammar points |
+| 7 | Indirect questions | B2 | ✅ | ✅ For all 22 grammar points |
 
-Adding any of these follows the same two-step pattern: confirm/create the cross-cutting YAML, add registry entries. No code changes required.
+**Total:** 154 topic entries (22 grammar points × 7 structures)

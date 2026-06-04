@@ -52,7 +52,8 @@ compositions:
         level_min: A2
         label: "Question Tags — Present Simple"
         cross_cutting_source: question_tags
-        structure: "Positive statement + don't/doesn't + pronoun? / Negative statement + do/does + pronoun?"
+        structure: "Positive statement + don't/doesn't + pronoun? / Negative statement
+          + do/does + pronoun?"
         examples:
           - "You like coffee, don't you?"
           - "She works here, doesn't she?"
@@ -60,6 +61,46 @@ compositions:
           - "He doesn't drive, does he?"
 
   # ─── PAST SIMPLE ──────────────────────────────────────────────────────────
+      - topic: negative_questions
+        level_min: B1
+        label: Negative Questions — Present Simple
+        cross_cutting_source: negative_questions
+        structure: Don't/Doesn't + subject + base verb?
+        examples:
+          - Don't you like coffee?
+          - Doesn't she work here?
+          - Don't they speak English?
+          - Why doesn't he study harder?
+      - topic: subject_object_questions
+        level_min: A2
+        label: Subject & Object Questions — Present Simple
+        cross_cutting_source: subject_questions
+        structure: 'Subject: Who/What + verb (no auxiliary) / Object: Who/What + do/does
+          + subject + verb?'
+        examples:
+          - 'Subject: Who lives here? / Object: Who do you live with?'
+          - 'Subject: What happened? / Object: What do you want?'
+          - 'Subject: Which bus goes downtown? / Object: Which bus do you take?'
+      - topic: passive_voice
+        level_min: A2
+        label: Passive Voice — Present Simple
+        cross_cutting_source: passive_basic
+        structure: Subject + am/is/are + past participle (by agent)
+        examples:
+          - Rice is grown in many countries.
+          - English is spoken worldwide.
+          - The window is cleaned every week.
+          - These books are sold in shops.
+      - topic: indirect_questions
+        level_min: B2
+        label: Indirect Questions — Present Simple
+        cross_cutting_source: indirect_questions
+        structure: Question word + subject + verb (statement order)
+        examples:
+          - Can you tell me where he lives?
+          - Do you know what she does?
+          - I wonder why they leave so early.
+          - Could you explain how this works?
   - base: past_simple
     topics:
       - topic: wh_questions
@@ -88,7 +129,8 @@ compositions:
         level_min: A2
         label: "Question Tags — Past Simple"
         cross_cutting_source: question_tags
-        structure: "Positive statement + didn't + pronoun? / Negative statement + did + pronoun?"
+        structure: "Positive statement + didn't + pronoun? / Negative statement +
+          did + pronoun?"
         examples:
           - "You went to school yesterday, didn't you?"
           - "She called you, didn't she?"
@@ -96,6 +138,46 @@ compositions:
           - "He didn't come, did he?"
 
   # ─── PRESENT CONTINUOUS ───────────────────────────────────────────────────
+      - topic: negative_questions
+        level_min: B1
+        label: Negative Questions — Past Simple
+        cross_cutting_source: negative_questions
+        structure: Didn't + subject + base verb?
+        examples:
+          - Didn't you go to school?
+          - Didn't she call you?
+          - Didn't they arrive on time?
+          - Why didn't he come?
+      - topic: subject_object_questions
+        level_min: A2
+        label: Subject & Object Questions — Past Simple
+        cross_cutting_source: subject_questions
+        structure: 'Subject: Who/What + past verb (no auxiliary) / Object: Who/What
+          + did + subject + base verb?'
+        examples:
+          - 'Subject: Who called? / Object: Who did you call?'
+          - 'Subject: What happened? / Object: What did you see?'
+          - 'Subject: Which team won? / Object: Which team did you support?'
+      - topic: passive_voice
+        level_min: A2
+        label: Passive Voice — Past Simple
+        cross_cutting_source: passive_basic
+        structure: Subject + was/were + past participle (by agent)
+        examples:
+          - The house was built in 1990.
+          - The letters were sent yesterday.
+          - The window was broken by the storm.
+          - The tickets were sold out.
+      - topic: indirect_questions
+        level_min: B2
+        label: Indirect Questions — Past Simple
+        cross_cutting_source: indirect_questions
+        structure: Question word + subject + past verb (statement order)
+        examples:
+          - Can you tell me where he lived?
+          - Do you know what she did?
+          - I wondered why they left early.
+          - Could you explain how it happened?
   - base: present_continuous
     topics:
       - topic: wh_questions
@@ -124,7 +206,8 @@ compositions:
         level_min: A2
         label: "Question Tags — Present Continuous"
         cross_cutting_source: question_tags
-        structure: "Positive statement + isn't/aren't + pronoun? / Negative statement + is/are + pronoun?"
+        structure: "Positive statement + isn't/aren't + pronoun? / Negative statement
+          + is/are + pronoun?"
         examples:
           - "You're leaving, aren't you?"
           - "She's working, isn't she?"
@@ -132,6 +215,46 @@ compositions:
           - "He isn't sleeping, is he?"
 
   # ─── PAST CONTINUOUS ──────────────────────────────────────────────────────
+      - topic: negative_questions
+        level_min: B1
+        label: Negative Questions — Present Continuous
+        cross_cutting_source: negative_questions
+        structure: Isn't/Aren't + subject + verb-ing?
+        examples:
+          - Aren't you coming?
+          - Isn't she working today?
+          - Aren't they joining us?
+          - Why isn't he listening?
+      - topic: subject_object_questions
+        level_min: A2
+        label: Subject & Object Questions — Present Continuous
+        cross_cutting_source: subject_questions
+        structure: 'Subject: Who/What + is/are + verb-ing? / Object: Who/What + is/are
+          + subject + verb-ing?'
+        examples:
+          - 'Subject: Who is calling? / Object: Who are you calling?'
+          - 'Subject: What is happening? / Object: What are you doing?'
+          - 'Subject: Which train is arriving? / Object: Which train are you taking?'
+      - topic: passive_voice
+        level_min: A2
+        label: Passive Voice — Present Continuous
+        cross_cutting_source: passive_basic
+        structure: Subject + am/is/are + being + past participle (by agent)
+        examples:
+          - The house is being painted.
+          - The report is being written.
+          - The cars are being repaired.
+          - Dinner is being prepared.
+      - topic: indirect_questions
+        level_min: B2
+        label: Indirect Questions — Present Continuous
+        cross_cutting_source: indirect_questions
+        structure: Question word + subject + is/are + verb-ing (statement order)
+        examples:
+          - Can you tell me where he is going?
+          - Do you know what she is doing?
+          - I wonder why they are leaving.
+          - Could you explain what is happening?
   - base: past_continuous
     topics:
       - topic: wh_questions
@@ -160,7 +283,8 @@ compositions:
         level_min: A2
         label: "Question Tags — Past Continuous"
         cross_cutting_source: question_tags
-        structure: "Positive statement + wasn't/weren't + pronoun? / Negative statement + was/were + pronoun?"
+        structure: "Positive statement + wasn't/weren't + pronoun? / Negative statement
+          + was/were + pronoun?"
         examples:
           - "You were sleeping, weren't you?"
           - "She was working, wasn't she?"
@@ -168,6 +292,47 @@ compositions:
           - "He wasn't paying attention, was he?"
 
   # ─── PRESENT PERFECT ──────────────────────────────────────────────────────
+      - topic: negative_questions
+        level_min: B1
+        label: Negative Questions — Past Continuous
+        cross_cutting_source: negative_questions
+        structure: Wasn't/Weren't + subject + verb-ing?
+        examples:
+          - Wasn't he sleeping?
+          - Wasn't she working?
+          - Weren't they listening?
+          - Why wasn't he coming?
+      - topic: subject_object_questions
+        level_min: A2
+        label: Subject & Object Questions — Past Continuous
+        cross_cutting_source: subject_questions
+        structure: 'Subject: Who/What + was/were + verb-ing? / Object: Who/What +
+          was/were + subject + verb-ing?'
+        examples:
+          - 'Subject: Who was calling? / Object: Who were you calling?'
+          - 'Subject: What was happening? / Object: What were you doing?'
+          - 'Subject: Which train was arriving? / Object: Which train were you taking?'
+      - topic: passive_voice
+        level_min: A2
+        label: Passive Voice — Past Continuous
+        cross_cutting_source: passive_basic
+        structure: Subject + was/were + being + past participle (by agent)
+        examples:
+          - The house was being painted when I arrived.
+          - The report was being written all morning.
+          - The cars were being repaired yesterday.
+          - Dinner was being prepared when we got home.
+      - topic: indirect_questions
+        level_min: B2
+        label: Indirect Questions — Past Continuous
+        cross_cutting_source: indirect_questions
+        structure: Question word + subject + was/were + verb-ing (statement 
+          order)
+        examples:
+          - Can you tell me where he was going?
+          - Do you know what she was doing?
+          - I wondered why they were leaving.
+          - Could you explain what was happening?
   - base: present_perfect
     topics:
       - topic: wh_questions
@@ -196,7 +361,8 @@ compositions:
         level_min: A2
         label: "Question Tags — Present Perfect"
         cross_cutting_source: question_tags
-        structure: "Positive statement + haven't/hasn't + pronoun? / Negative statement + have/has + pronoun?"
+        structure: "Positive statement + haven't/hasn't + pronoun? / Negative statement
+          + have/has + pronoun?"
         examples:
           - "You've been here before, haven't you?"
           - "She has finished, hasn't she?"
@@ -204,6 +370,47 @@ compositions:
           - "He hasn't eaten, has he?"
 
   # ─── PRESENT PERFECT CONTINUOUS ───────────────────────────────────────────
+      - topic: negative_questions
+        level_min: B1
+        label: Negative Questions — Present Perfect
+        cross_cutting_source: negative_questions
+        structure: Haven't/Hasn't + subject + past participle?
+        examples:
+          - Haven't you finished?
+          - Hasn't she called yet?
+          - Haven't they arrived?
+          - Why hasn't he replied?
+      - topic: subject_object_questions
+        level_min: A2
+        label: Subject & Object Questions — Present Perfect
+        cross_cutting_source: subject_questions
+        structure: 'Subject: Who/What + has/have + past participle? / Object: Who/What
+          + has/have + subject + past participle?'
+        examples:
+          - 'Subject: Who has called? / Object: Who have you called?'
+          - 'Subject: What has happened? / Object: What have you done?'
+          - 'Subject: Which team has won? / Object: Which team have you chosen?'
+      - topic: passive_voice
+        level_min: A2
+        label: Passive Voice — Present Perfect
+        cross_cutting_source: passive_basic
+        structure: Subject + has/have + been + past participle (by agent)
+        examples:
+          - The house has been sold.
+          - The letters have been sent.
+          - The work has been completed.
+          - All tickets have been reserved.
+      - topic: indirect_questions
+        level_min: B2
+        label: Indirect Questions — Present Perfect
+        cross_cutting_source: indirect_questions
+        structure: Question word + subject + has/have + past participle 
+          (statement order)
+        examples:
+          - Can you tell me where he has gone?
+          - Do you know what she has done?
+          - I wonder why they have left.
+          - Could you explain how this has happened?
   - base: present_perfect_continuous
     topics:
       - topic: wh_questions
@@ -230,7 +437,8 @@ compositions:
         level_min: A2
         label: "Question Tags — Present Perfect Continuous"
         cross_cutting_source: question_tags
-        structure: "Positive statement + haven't/hasn't + pronoun? / Negative statement + have/has + pronoun?"
+        structure: "Positive statement + haven't/hasn't + pronoun? / Negative statement
+          + have/has + pronoun?"
         examples:
           - "You've been working hard, haven't you?"
           - "She has been studying all night, hasn't she?"
@@ -238,6 +446,46 @@ compositions:
           - "He hasn't been sleeping well, has he?"
 
   # ─── PAST PERFECT ─────────────────────────────────────────────────────────
+      - topic: negative_questions
+        level_min: B1
+        label: Negative Questions — Present Perfect Continuous
+        cross_cutting_source: negative_questions
+        structure: Haven't/Hasn't + subject + been + verb-ing?
+        examples:
+          - Haven't you been waiting long?
+          - Hasn't she been working here?
+          - Haven't they been studying?
+          - Why hasn't he been sleeping?
+      - topic: subject_object_questions
+        level_min: A2
+        label: Subject & Object Questions — Present Perfect Continuous
+        cross_cutting_source: subject_questions
+        structure: 'Subject: Who/What + has/have + been + verb-ing? / Object: Who/What
+          + has/have + subject + been + verb-ing?'
+        examples:
+          - 'Subject: Who has been calling? / Object: Who have you been calling?'
+          - 'Subject: What has been happening? / Object: What have you been doing?'
+          - 'Subject: Which team has been winning? / Object: Which team have you been
+            supporting?'
+      - topic: passive_voice
+        level_min: A2
+        label: Passive Voice — Present Perfect Continuous
+        cross_cutting_source: passive_basic
+        structure: Subject + has/have + been + being + past participle (by 
+          agent) — rare
+        examples:
+          - The house has been being renovated for months.
+          - The reports have been being prepared all week.
+      - topic: indirect_questions
+        level_min: B2
+        label: Indirect Questions — Present Perfect Continuous
+        cross_cutting_source: indirect_questions
+        structure: Question word + subject + has/have + been + verb-ing 
+          (statement order)
+        examples:
+          - Can you tell me how long he has been waiting?
+          - I wonder what she has been doing.
+          - Do you know why they have been arguing?
   - base: past_perfect
     topics:
       - topic: wh_questions
@@ -265,7 +513,8 @@ compositions:
         level_min: A2
         label: "Question Tags — Past Perfect"
         cross_cutting_source: question_tags
-        structure: "Positive statement + hadn't + pronoun? / Negative statement + had + pronoun?"
+        structure: "Positive statement + hadn't + pronoun? / Negative statement +
+          had + pronoun?"
         examples:
           - "You had finished, hadn't you?"
           - "She had called, hadn't she?"
@@ -273,6 +522,45 @@ compositions:
           - "He hadn't eaten, had he?"
 
   # ─── PAST PERFECT CONTINUOUS ──────────────────────────────────────────────
+      - topic: negative_questions
+        level_min: B1
+        label: Negative Questions — Past Perfect
+        cross_cutting_source: negative_questions
+        structure: Hadn't + subject + past participle?
+        examples:
+          - Hadn't you finished before they arrived?
+          - Hadn't she called before you left?
+          - Hadn't they eaten already?
+          - Why hadn't he replied?
+      - topic: subject_object_questions
+        level_min: A2
+        label: Subject & Object Questions — Past Perfect
+        cross_cutting_source: subject_questions
+        structure: 'Subject: Who/What + had + past participle? / Object: Who/What
+          + had + subject + past participle?'
+        examples:
+          - 'Subject: Who had called? / Object: Who had you called?'
+          - 'Subject: What had happened? / Object: What had you done?'
+          - 'Subject: Which team had won? / Object: Which team had you chosen?'
+      - topic: passive_voice
+        level_min: A2
+        label: Passive Voice — Past Perfect
+        cross_cutting_source: passive_basic
+        structure: Subject + had + been + past participle (by agent)
+        examples:
+          - The house had been sold before I arrived.
+          - The work had been completed by then.
+          - The tickets had been reserved already.
+      - topic: indirect_questions
+        level_min: B2
+        label: Indirect Questions — Past Perfect
+        cross_cutting_source: indirect_questions
+        structure: Question word + subject + had + past participle (statement 
+          order)
+        examples:
+          - Can you tell me where he had gone?
+          - I wondered what she had done.
+          - Do you know why they had left?
   - base: past_perfect_continuous
     topics:
       - topic: wh_questions
@@ -298,13 +586,51 @@ compositions:
         level_min: A2
         label: "Question Tags — Past Perfect Continuous"
         cross_cutting_source: question_tags
-        structure: "Positive statement + hadn't + pronoun? / Negative statement + had + pronoun?"
+        structure: "Positive statement + hadn't + pronoun? / Negative statement +
+          had + pronoun?"
         examples:
           - "You had been waiting for hours, hadn't you?"
           - "She had been sleeping, hadn't she?"
           - "They hadn't been trying, had they?"
 
   # ─── FUTURE WILL ──────────────────────────────────────────────────────────
+      - topic: negative_questions
+        level_min: B1
+        label: Negative Questions — Past Perfect Continuous
+        cross_cutting_source: negative_questions
+        structure: Hadn't + subject + been + verb-ing?
+        examples:
+          - Hadn't you been waiting long?
+          - Hadn't she been working there long?
+          - Hadn't they been studying?
+          - Why hadn't he been sleeping?
+      - topic: subject_object_questions
+        level_min: A2
+        label: Subject & Object Questions — Past Perfect Continuous
+        cross_cutting_source: subject_questions
+        structure: 'Subject: Who/What + had + been + verb-ing? / Object: Who/What
+          + had + subject + been + verb-ing?'
+        examples:
+          - 'Subject: Who had been calling? / Object: Who had you been calling?'
+          - 'Subject: What had been happening? / Object: What had you been doing?'
+      - topic: passive_voice
+        level_min: A2
+        label: Passive Voice — Past Perfect Continuous
+        cross_cutting_source: passive_basic
+        structure: Subject + had + been + being + past participle (by agent) — 
+          rare
+        examples:
+          - The report had been being prepared for weeks before they requested 
+            changes.
+      - topic: indirect_questions
+        level_min: B2
+        label: Indirect Questions — Past Perfect Continuous
+        cross_cutting_source: indirect_questions
+        structure: Question word + subject + had + been + verb-ing (statement 
+          order)
+        examples:
+          - I wondered how long he had been waiting.
+          - Do you know what she had been doing?
   - base: future_will
     topics:
       - topic: wh_questions
@@ -333,7 +659,8 @@ compositions:
         level_min: A2
         label: "Question Tags — Future (will)"
         cross_cutting_source: question_tags
-        structure: "Positive statement + won't + pronoun? / Negative statement + will + pronoun?"
+        structure: "Positive statement + won't + pronoun? / Negative statement + will
+          + pronoun?"
         examples:
           - "You'll come to the party, won't you?"
           - "She will help, won't she?"
@@ -341,6 +668,46 @@ compositions:
           - "He won't be late, will he?"
 
   # ─── BE GOING TO ──────────────────────────────────────────────────────────
+      - topic: negative_questions
+        level_min: B1
+        label: Negative Questions — Future Will
+        cross_cutting_source: negative_questions
+        structure: Won't + subject + base verb?
+        examples:
+          - Won't you come?
+          - Won't she join us?
+          - Won't they arrive on time?
+          - Why won't he help?
+      - topic: subject_object_questions
+        level_min: A2
+        label: Subject & Object Questions — Future Will
+        cross_cutting_source: subject_questions
+        structure: 'Subject: Who/What + will + verb? / Object: Who/What + will + subject
+          + verb?'
+        examples:
+          - 'Subject: Who will come? / Object: Who will you invite?'
+          - 'Subject: What will happen? / Object: What will you do?'
+          - 'Subject: Which team will win? / Object: Which team will you support?'
+      - topic: passive_voice
+        level_min: A2
+        label: Passive Voice — Future Will
+        cross_cutting_source: passive_basic
+        structure: Subject + will + be + past participle (by agent)
+        examples:
+          - The house will be sold.
+          - The letters will be sent tomorrow.
+          - The work will be completed by Friday.
+          - All tickets will be reserved.
+      - topic: indirect_questions
+        level_min: B2
+        label: Indirect Questions — Future Will
+        cross_cutting_source: indirect_questions
+        structure: Question word + subject + will + verb (statement order)
+        examples:
+          - Can you tell me where he will go?
+          - Do you know what she will do?
+          - I wonder why they will leave.
+          - Could you explain how it will work?
   - base: be_going_to
     topics:
       - topic: wh_questions
@@ -369,7 +736,8 @@ compositions:
         level_min: A2
         label: "Question Tags — Be Going To"
         cross_cutting_source: question_tags
-        structure: "Positive statement + isn't/aren't + pronoun? / Negative statement + is/are + pronoun?"
+        structure: "Positive statement + isn't/aren't + pronoun? / Negative statement
+          + is/are + pronoun?"
         examples:
           - "You're going to come, aren't you?"
           - "She's going to call, isn't she?"
@@ -377,6 +745,50 @@ compositions:
           - "He isn't going to help, is he?"
 
   # ─── FUTURE GOING TO (alias file) ─────────────────────────────────────────
+      - &id001
+        topic: negative_questions
+        level_min: B1
+        label: Negative Questions — Be Going To
+        cross_cutting_source: negative_questions
+        structure: Isn't/Aren't + subject + going to + base verb?
+        examples:
+          - Aren't you going to come?
+          - Isn't she going to join?
+          - Aren't they going to help?
+          - Why isn't he going to reply?
+      - &id002
+        topic: subject_object_questions
+        level_min: A2
+        label: Subject & Object Questions — Be Going To
+        cross_cutting_source: subject_questions
+        structure: 'Subject: Who/What + is/are + going to + verb? / Object: Who/What
+          + is/are + subject + going to + verb?'
+        examples:
+          - 'Subject: Who is going to come? / Object: Who are you going to invite?'
+          - 'Subject: What is going to happen? / Object: What are you going to do?'
+          - 'Subject: Which team is going to win? / Object: Which team are you going
+            to support?'
+      - &id003
+        topic: passive_voice
+        level_min: A2
+        label: Passive Voice — Be Going To
+        cross_cutting_source: passive_basic
+        structure: Subject + is/are + going to + be + past participle (by agent)
+        examples:
+          - The house is going to be sold.
+          - The work is going to be completed.
+          - The reports are going to be sent.
+      - &id004
+        topic: indirect_questions
+        level_min: B2
+        label: Indirect Questions — Be Going To
+        cross_cutting_source: indirect_questions
+        structure: Question word + is/are + subject + going to + verb (statement
+          order)
+        examples:
+          - Can you tell me where he is going to go?
+          - Do you know what she is going to do?
+          - I wonder why they are going to leave.
   - base: future_going_to
     topics:
       - topic: wh_questions
@@ -404,13 +816,18 @@ compositions:
         level_min: A2
         label: "Question Tags — Going To Future"
         cross_cutting_source: question_tags
-        structure: "Positive statement + isn't/aren't + pronoun? / Negative statement + is/are + pronoun?"
+        structure: "Positive statement + isn't/aren't + pronoun? / Negative statement
+          + is/are + pronoun?"
         examples:
           - "You're going to come, aren't you?"
           - "She's going to call, isn't she?"
           - "They aren't going to stay, are they?"
 
   # ─── FUTURE CONTINUOUS ────────────────────────────────────────────────────
+      - *id001
+      - *id002
+      - *id003
+      - *id004
   - base: future_continuous
     topics:
       - topic: wh_questions
@@ -436,13 +853,53 @@ compositions:
         level_min: A2
         label: "Question Tags — Future Continuous"
         cross_cutting_source: question_tags
-        structure: "Positive statement + won't + pronoun? / Negative statement + will + pronoun?"
+        structure: "Positive statement + won't + pronoun? / Negative statement + will
+          + pronoun?"
         examples:
           - "You'll be working late, won't you?"
           - "She will be joining us, won't she?"
           - "They won't be coming, will they?"
 
   # ─── FUTURE PERFECT ───────────────────────────────────────────────────────
+      - topic: negative_questions
+        level_min: B1
+        label: Negative Questions — Future Continuous
+        cross_cutting_source: negative_questions
+        structure: Won't + subject + be + verb-ing?
+        examples:
+          - Won't you be working?
+          - Won't she be waiting?
+          - Won't they be arriving soon?
+          - Why won't he be joining?
+      - topic: subject_object_questions
+        level_min: A2
+        label: Subject & Object Questions — Future Continuous
+        cross_cutting_source: subject_questions
+        structure: 'Subject: Who/What + will + be + verb-ing? / Object: Who/What +
+          will + subject + be + verb-ing?'
+        examples:
+          - 'Subject: Who will be coming? / Object: Who will you be meeting?'
+          - 'Subject: What will be happening? / Object: What will you be doing?'
+          - 'Subject: Which train will be arriving? / Object: Which train will you
+            be taking?'
+      - topic: passive_voice
+        level_min: A2
+        label: Passive Voice — Future Continuous
+        cross_cutting_source: passive_basic
+        structure: Subject + will + be + being + past participle (by agent)
+        examples:
+          - The house will be being renovated.
+          - The work will be being done by the team.
+      - topic: indirect_questions
+        level_min: B2
+        label: Indirect Questions — Future Continuous
+        cross_cutting_source: indirect_questions
+        structure: Question word + subject + will + be + verb-ing (statement 
+          order)
+        examples:
+          - Can you tell me where he will be staying?
+          - I wonder what she will be doing.
+          - Do you know why they will be leaving early?
   - base: future_perfect
     topics:
       - topic: wh_questions
@@ -468,13 +925,58 @@ compositions:
         level_min: A2
         label: "Question Tags — Future Perfect"
         cross_cutting_source: question_tags
-        structure: "Positive statement + won't + pronoun? / Negative statement + will + pronoun?"
+        structure: "Positive statement + won't + pronoun? / Negative statement + will
+          + pronoun?"
         examples:
           - "You'll have finished by noon, won't you?"
           - "She will have arrived, won't she?"
           - "They won't have left, will they?"
 
   # ─── FUTURE PERFECT SIMPLE (alias file) ───────────────────────────────────
+      - &id005
+        topic: negative_questions
+        level_min: B1
+        label: Negative Questions — Future Perfect
+        cross_cutting_source: negative_questions
+        structure: Won't + subject + have + past participle?
+        examples:
+          - Won't you have finished by then?
+          - Won't she have arrived?
+          - Won't they have completed it?
+          - Why won't he have replied?
+      - &id006
+        topic: subject_object_questions
+        level_min: A2
+        label: Subject & Object Questions — Future Perfect
+        cross_cutting_source: subject_questions
+        structure: 'Subject: Who/What + will + have + past participle? / Object: Who/What
+          + will + subject + have + past participle?'
+        examples:
+          - 'Subject: Who will have finished? / Object: Who will you have contacted?'
+          - 'Subject: What will have happened? / Object: What will you have done?'
+          - 'Subject: Which team will have won? / Object: Which team will you have
+            chosen?'
+      - &id007
+        topic: passive_voice
+        level_min: A2
+        label: Passive Voice — Future Perfect
+        cross_cutting_source: passive_basic
+        structure: Subject + will + have + been + past participle (by agent)
+        examples:
+          - The house will have been sold by then.
+          - The work will have been completed by Friday.
+          - All tickets will have been reserved.
+      - &id008
+        topic: indirect_questions
+        level_min: B2
+        label: Indirect Questions — Future Perfect
+        cross_cutting_source: indirect_questions
+        structure: Question word + subject + will + have + past participle 
+          (statement order)
+        examples:
+          - I wonder where he will have gone by then.
+          - Do you know what she will have done?
+          - Could you tell me how much they will have spent?
   - base: future_perfect_simple
     topics:
       - topic: wh_questions
@@ -498,12 +1000,17 @@ compositions:
         level_min: A2
         label: "Question Tags — Future Perfect Simple"
         cross_cutting_source: question_tags
-        structure: "Positive statement + won't + pronoun? / Negative statement + will + pronoun?"
+        structure: "Positive statement + won't + pronoun? / Negative statement + will
+          + pronoun?"
         examples:
           - "You'll have finished by noon, won't you?"
           - "They won't have left, will they?"
 
   # ─── FUTURE PERFECT CONTINUOUS ────────────────────────────────────────────
+      - *id005
+      - *id006
+      - *id007
+      - *id008
   - base: future_perfect_continuous
     topics:
       - topic: wh_questions
@@ -527,12 +1034,51 @@ compositions:
         level_min: A2
         label: "Question Tags — Future Perfect Continuous"
         cross_cutting_source: question_tags
-        structure: "Positive statement + won't + pronoun? / Negative statement + will + pronoun?"
+        structure: "Positive statement + won't + pronoun? / Negative statement + will
+          + pronoun?"
         examples:
           - "You'll have been working for three hours, won't you?"
           - "She won't have been waiting long, will she?"
 
   # ─── USED TO ──────────────────────────────────────────────────────────────
+      - topic: negative_questions
+        level_min: B1
+        label: Negative Questions — Future Perfect Continuous
+        cross_cutting_source: negative_questions
+        structure: Won't + subject + have + been + verb-ing?
+        examples:
+          - Won't you have been studying for hours?
+          - Won't she have been working there long?
+          - Won't they have been waiting long?
+          - Why won't he have been sleeping?
+      - topic: subject_object_questions
+        level_min: A2
+        label: Subject & Object Questions — Future Perfect Continuous
+        cross_cutting_source: subject_questions
+        structure: 'Subject: Who/What + will + have + been + verb-ing? / Object: Who/What
+          + will + subject + have + been + verb-ing?'
+        examples:
+          - 'Subject: Who will have been waiting? / Object: Who will you have been
+            meeting with?'
+          - 'Subject: What will have been happening? / Object: What will you have
+            been doing?'
+      - topic: passive_voice
+        level_min: A2
+        label: Passive Voice — Future Perfect Continuous
+        cross_cutting_source: passive_basic
+        structure: Subject + will + have + been + being + past participle (by 
+          agent) — extremely rare
+        examples:
+          - The report will have been being prepared for weeks by then.
+      - topic: indirect_questions
+        level_min: B2
+        label: Indirect Questions — Future Perfect Continuous
+        cross_cutting_source: indirect_questions
+        structure: Question word + subject + will + have + been + verb-ing 
+          (statement order)
+        examples:
+          - I wonder how long he will have been working by then.
+          - Do you know what she will have been doing?
   - base: used_to
     topics:
       - topic: wh_questions
@@ -559,7 +1105,8 @@ compositions:
         level_min: A2
         label: "Question Tags — Used To"
         cross_cutting_source: question_tags
-        structure: "Positive statement + didn't + pronoun? / Negative statement + did + pronoun?"
+        structure: "Positive statement + didn't + pronoun? / Negative statement +
+          did + pronoun?"
         examples:
           - "You used to live here, didn't you?"
           - "She used to work here, didn't she?"
@@ -567,13 +1114,58 @@ compositions:
           - "He used to drive, didn't he?"
 
   # ─── USED TO / WOULD (PAST HABITS) ────────────────────────────────────────
+      - &id009
+        topic: negative_questions
+        level_min: B1
+        label: Negative Questions — Used To
+        cross_cutting_source: negative_questions
+        structure: Didn't + subject + use to + base verb?
+        examples:
+          - Didn't you use to live here?
+          - Didn't she use to work there?
+          - Didn't they use to play together?
+          - Why didn't he use to call?
+      - &id010
+        topic: subject_object_questions
+        level_min: A2
+        label: Subject & Object Questions — Used To
+        cross_cutting_source: subject_questions
+        structure: 'Subject: Who/What + used to + verb? / Object: Who/What + did +
+          subject + use to + verb?'
+        examples:
+          - 'Subject: Who used to live here? / Object: Who did you use to play with?'
+          - 'Subject: What used to happen? / Object: What did you use to do?'
+          - 'Subject: Which team used to win? / Object: Which team did you use to
+            support?'
+      - &id011
+        topic: passive_voice
+        level_min: A2
+        label: Passive Voice — Used To
+        cross_cutting_source: passive_basic
+        structure: Subject + used to + be + past participle (by agent)
+        examples:
+          - The house used to be owned by my family.
+          - These fields used to be farmed by local people.
+          - That building used to be used as a school.
+      - &id012
+        topic: indirect_questions
+        level_min: B2
+        label: Indirect Questions — Used To
+        cross_cutting_source: indirect_questions
+        structure: Question word + did + subject + use to + verb (statement 
+          order)
+        examples:
+          - Can you tell me where you used to live?
+          - I wonder what she used to do.
+          - Do you know why they used to argue so much?
   - base: used_to_would
     topics:
       - topic: wh_questions
         level_min: A1
         label: "WH Questions — Used To / Would"
         cross_cutting_source: question_forms
-        structure: "Wh- word + would + subject + base verb? / Wh- word + did + subject + use to + base verb?"
+        structure: "Wh- word + would + subject + base verb? / Wh- word + did + subject
+          + use to + base verb?"
         examples:
           - "What would you do every summer as a child?"
           - "Where would she go on weekends?"
@@ -583,7 +1175,8 @@ compositions:
         level_min: A1
         label: "Short Answers — Used To / Would"
         cross_cutting_source: question_forms
-        structure: "Yes/No, subject + would / wouldn't. / Yes/No, subject + did / didn't."
+        structure: "Yes/No, subject + would / wouldn't. / Yes/No, subject + did /
+          didn't."
         examples:
           - "Would you visit every year? — Yes, I would. / No, I wouldn't."
           - "Did you use to play football? — Yes, I did. / No, I didn't."
@@ -591,13 +1184,18 @@ compositions:
         level_min: A2
         label: "Question Tags — Used To / Would"
         cross_cutting_source: question_tags
-        structure: "Would statement + wouldn't + pronoun? / Used to statement + didn't + pronoun?"
+        structure: "Would statement + wouldn't + pronoun? / Used to statement + didn't
+          + pronoun?"
         examples:
           - "You would visit every year, wouldn't you?"
           - "She wouldn't complain, would she?"
           - "You used to live here, didn't you?"
 
   # ─── WILL / WOULD HABITS ──────────────────────────────────────────────────
+      - *id009
+      - *id010
+      - *id011
+      - *id012
   - base: will_would_habits
     topics:
       - topic: wh_questions
@@ -622,13 +1220,52 @@ compositions:
         level_min: A2
         label: "Question Tags — Will/Would Habits"
         cross_cutting_source: question_tags
-        structure: "Positive statement + won't/wouldn't + pronoun? / Negative statement + will/would + pronoun?"
+        structure: "Positive statement + won't/wouldn't + pronoun? / Negative statement
+          + will/would + pronoun?"
         examples:
           - "She will always say that, won't she?"
           - "He would never complain, would he?"
           - "They won't change, will they?"
 
   # ─── MODALS (GENERAL) ─────────────────────────────────────────────────────
+      - topic: negative_questions
+        level_min: B1
+        label: Negative Questions — Will/Would for Habits
+        cross_cutting_source: negative_questions
+        structure: Wouldn't + subject + base verb?
+        examples:
+          - Wouldn't he always arrive late?
+          - Wouldn't she always call at midnight?
+          - Wouldn't they always sit together?
+          - Why wouldn't he ever help?
+      - topic: subject_object_questions
+        level_min: A2
+        label: Subject & Object Questions — Will/Would for Habits
+        cross_cutting_source: subject_questions
+        structure: 'Subject: Who/What + would + verb? / Object: Who/What + would +
+          subject + verb?'
+        examples:
+          - 'Subject: Who would always arrive first? / Object: Who would you always
+            meet?'
+          - 'Subject: What would happen? / Object: What would you do when that happened?'
+      - topic: passive_voice
+        level_min: A2
+        label: Passive Voice — Will/Would for Habits
+        cross_cutting_source: passive_basic
+        structure: Subject + would + be + past participle (habitual passive — 
+          rare)
+        examples:
+          - The car would always be parked outside.
+          - The door would always be locked by 10pm.
+      - topic: indirect_questions
+        level_min: B2
+        label: Indirect Questions — Will/Would for Habits
+        cross_cutting_source: indirect_questions
+        structure: Question word + would + subject + verb (statement order)
+        examples:
+          - Can you tell me where he would always go?
+          - I wonder what she would do when it rained.
+          - Do you know why they would always fight?
   - base: modals
     topics:
       - topic: wh_questions
@@ -657,7 +1294,8 @@ compositions:
         level_min: A2
         label: "Question Tags — Modals"
         cross_cutting_source: question_tags
-        structure: "Positive statement + modal + n't + pronoun? / Negative statement + modal + pronoun?"
+        structure: "Positive statement + modal + n't + pronoun? / Negative statement
+          + modal + pronoun?"
         examples:
           - "You can swim, can't you?"
           - "She should call, shouldn't she?"
@@ -665,6 +1303,50 @@ compositions:
           - "He won't forget, will he?"
 
   # ─── MODALS OVERVIEW ──────────────────────────────────────────────────────
+      - &id013
+        topic: negative_questions
+        level_min: B1
+        label: Negative Questions — Modals
+        cross_cutting_source: negative_questions
+        structure: Modal + n't + subject + base verb?
+        examples:
+          - Can't you swim?
+          - Shouldn't she call?
+          - Couldn't they come?
+          - Mustn't he leave now?
+      - &id014
+        topic: subject_object_questions
+        level_min: A2
+        label: Subject & Object Questions — Modals
+        cross_cutting_source: subject_questions
+        structure: 'Subject: Who/What + modal + verb? / Object: Who/What + modal +
+          subject + verb?'
+        examples:
+          - 'Subject: Who can swim? / Object: Who can you see?'
+          - 'Subject: What should happen? / Object: What should I do?'
+          - 'Subject: Which bus can take us? / Object: Which bus can we take?'
+      - &id015
+        topic: passive_voice
+        level_min: A2
+        label: Passive Voice — Modals
+        cross_cutting_source: passive_basic
+        structure: Subject + modal + be + past participle (by agent)
+        examples:
+          - It can be done.
+          - She should be told.
+          - They must be informed.
+          - This could be fixed easily.
+      - &id016
+        topic: indirect_questions
+        level_min: B2
+        label: Indirect Questions — Modals
+        cross_cutting_source: indirect_questions
+        structure: Question word + subject + modal + verb (statement order)
+        examples:
+          - Can you tell me where I should go?
+          - Do you know what she can do?
+          - I wonder why they must leave.
+          - Could you explain how this works?
   - base: modals_overview
     topics:
       - topic: wh_questions
@@ -691,7 +1373,8 @@ compositions:
         level_min: A2
         label: "Question Tags — Modals Overview"
         cross_cutting_source: question_tags
-        structure: "Positive statement + modal + n't + pronoun? / Negative statement + modal + pronoun?"
+        structure: "Positive statement + modal + n't + pronoun? / Negative statement
+          + modal + pronoun?"
         examples:
           - "You can drive, can't you?"
           - "She should know, shouldn't she?"
@@ -699,6 +1382,10 @@ compositions:
           - "He couldn't do it, could he?"
 
   # ─── MODALS — PAST (could have / should have / would have) ────────────────
+      - *id013
+      - *id014
+      - *id015
+      - *id016
   - base: modals_past
     topics:
       - topic: wh_questions
@@ -725,7 +1412,8 @@ compositions:
         level_min: A2
         label: "Question Tags — Past Modals"
         cross_cutting_source: question_tags
-        structure: "Positive statement + modal + n't + have + pronoun? / Negative statement + modal + have + pronoun?"
+        structure: "Positive statement + modal + n't + have + pronoun? / Negative
+          statement + modal + have + pronoun?"
         examples:
           - "You could have told me, couldn't you?"
           - "She should have called, shouldn't she?"
@@ -733,6 +1421,51 @@ compositions:
           - "He couldn't have done it alone, could he?"
 
   # ─── MODALS PERFECT ───────────────────────────────────────────────────────
+      - &id017
+        topic: negative_questions
+        level_min: B1
+        label: Negative Questions — Past Modals
+        cross_cutting_source: negative_questions
+        structure: Modal + n't + have + past participle?
+        examples:
+          - Couldn't you have called?
+          - Shouldn't she have told you?
+          - Wouldn't they have known?
+          - Why mustn't he have seen it?
+      - &id018
+        topic: subject_object_questions
+        level_min: A2
+        label: Subject & Object Questions — Past Modals
+        cross_cutting_source: subject_questions
+        structure: 'Subject: Who/What + modal + have + past participle? / Object:
+          Who/What + modal + subject + have + past participle?'
+        examples:
+          - 'Subject: Who could have called? / Object: Who could you have called?'
+          - 'Subject: What should have happened? / Object: What should I have done?'
+          - 'Subject: Which train might have left? / Object: Which train might they
+            have caught?'
+      - &id019
+        topic: passive_voice
+        level_min: A2
+        label: Passive Voice — Past Modals
+        cross_cutting_source: passive_basic
+        structure: Subject + modal + have + been + past participle (by agent)
+        examples:
+          - It could have been done.
+          - She should have been told.
+          - The message might have been sent.
+          - This must have been fixed.
+      - &id020
+        topic: indirect_questions
+        level_min: B2
+        label: Indirect Questions — Past Modals
+        cross_cutting_source: indirect_questions
+        structure: Question word + subject + modal + have + past participle 
+          (statement order)
+        examples:
+          - I wonder where he could have gone.
+          - Do you know what she should have done?
+          - Could you explain why they might have left?
   - base: modals_perfect
     topics:
       - topic: wh_questions
@@ -753,14 +1486,20 @@ compositions:
         structure: "Yes/No, subject + modal + have."
         examples:
           - "Could she have forgotten? — Yes, she could have. / No, she couldn't have."
-          - "Must it have been expensive? — Yes, it must have. / No, it needn't have been."
+          - "Must it have been expensive? — Yes, it must have. / No, it needn't have
+            been."
           - "Might they have left? — Yes, they might have. / No, they mightn't have."
       - topic: question_tags
         level_min: A2
         label: "Question Tags — Modal Perfect"
         cross_cutting_source: question_tags
-        structure: "Positive statement + modal + n't + have + pronoun? / Negative statement + modal + have + pronoun?"
+        structure: "Positive statement + modal + n't + have + pronoun? / Negative
+          statement + modal + have + pronoun?"
         examples:
           - "She must have known, mustn't she?"
           - "You could have called, couldn't you?"
           - "They might not have seen it, might they?"
+      - *id017
+      - *id018
+      - *id019
+      - *id020
