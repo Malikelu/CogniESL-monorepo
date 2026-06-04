@@ -182,7 +182,7 @@ class QueueGenerationJob(BaseTool):
 # Background Generation Pipeline
 # ═══════════════════════════════════════════════════════════════════════════
 
-BATCH_SIZE = 2  # Number of slides to generate in parallel (reduced from 3 for API reliability)
+BATCH_SIZE = 1  # One slide at a time — prevents batch-level timeout from losing multiple slides
 
 
 def _run_background_generation(
@@ -229,6 +229,31 @@ def _get_mnt_path(project_name: str) -> Path:
     if Path("/app/data").is_dir():
         return Path("/app/data") / "mnt" / project_name
     return Path(__file__).parent.parent.parent / "mnt" / project_name
+
+
+# ── Crash-proof progress tracking ──────────────────────────────────────────
+
+_progress_lock = threading.Lock()
+
+
+def _write_progress(project_name: str, step: str, details: str = "") -> None:
+    """Write a persistent progress marker to disk.
+
+    Even if the process is killed immediately after, the last-written line
+    survives on the Railway volume so we can identify exactly where it died.
+    """
+    try:
+        import datetime
+        mnt = _get_mnt_path(project_name)
+        ts = datetime.datetime.utcnow().strftime("%H:%M:%S")
+        line = f"[{ts}] {step}  {details}\n"
+        path = mnt / ".pipeline_progress"
+        with _progress_lock:
+            path.parent.mkdir(parents=True, exist_ok=True)
+            with open(path, "a") as f:
+                f.write(line)
+    except Exception:
+        pass  # progress logging must never crash the pipeline
 
 
 def _list_slide_filenames(project_name: str, file_prefix: str = "slide") -> list[str]:
@@ -518,12 +543,15 @@ def _run_generation(
 
     try:
         # ── Step 1: Load YAML data ─────────────────────────────────────────────
+        _write_progress(project_name, "1:load-yaml", "start")
         grammar_data, l1_data_list = _load_yaml_data(grammar_point, l1_languages, age_group)
         if grammar_data is None:
             grammar_data = {}
         logger.info(f"Loaded YAML: grammar={'yes' if grammar_data else 'no'}, l1_files={len(l1_data_list)}")
+        _write_progress(project_name, "1:load-yaml", f"grammar={bool(grammar_data)}, l1={len(l1_data_list)}")
 
         # ── Step 2: Compute slide plan + build task_briefs ──────────────────────
+        _write_progress(project_name, "2:slide-plan", "start")
         from agent.slides_tools.slide_plan import compute_slide_plan, build_all_task_briefs
 
         slide_plan = compute_slide_plan(grammar_data, l1_languages, age_group)
@@ -539,6 +567,7 @@ def _run_generation(
             f"{total_brief_chars} total task_brief chars "
             f"({total_brief_chars // max(slide_count, 1)} avg) for job {job_id}"
         )
+        _write_progress(project_name, "2:slide-plan", f"{slide_count} slides, {total_brief_chars} chars")
 
         # Verify no thin task_briefs
         thin_briefs = [k for k, v in task_briefs.items() if len(v) < 200 and k != slide_count]
@@ -559,20 +588,23 @@ def _run_generation(
             theme = generate_theme(grammar_point, age_group)
             theme_path = write_theme_css(presentations_dir, theme)
             logger.info(f"Theme DNA: {theme_path.name} ({theme.get('mood', '?')}/{theme.get('font_heading', '?')})")
+            _write_progress(project_name, "3:theme", f"{theme_path.name}")
         except Exception as exc:
             logger.warning(f"Theme generation skipped: {exc}")
 
-        # ── Step 4: Run ModifySlide in parallel batches ─────────────────────────
+        # ── Step 4: Run ModifySlide sequentially (one slide at a time) ──────────
         async def _run_slide_batches():
             from agent.slides_tools.ModifySlide import ModifySlide
 
             # Get slide file names (may be 'slide_01.html', 'slide_02.html', ...)
             slide_files = _list_slide_filenames(project_name)
             delay = int(os.getenv("SLIDE_GENERATION_DELAY", "5"))  # seconds between batches
+            total_batches = (len(slide_files) + BATCH_SIZE - 1) // BATCH_SIZE
 
             for i in range(0, len(slide_files), BATCH_SIZE):
                 batch = slide_files[i:i + BATCH_SIZE]
                 tasks = []
+                batch_num = i // BATCH_SIZE + 1
                 for filename in batch:
                     # Extract slide index from filename
                     m = re.search(r'slide_(\d+)', filename)
@@ -589,19 +621,28 @@ def _run_generation(
                     )
 
                 if tasks:
-                    try:
-                        await asyncio.wait_for(
-                            asyncio.gather(*tasks),
-                            timeout=120  # 120s per batch — prevents hanging API calls from blocking the pipeline
-                        )
-                    except asyncio.TimeoutError:
-                        logger.error(
-                            f"Batch {i // BATCH_SIZE + 1}/{(len(slide_files) + BATCH_SIZE - 1)// BATCH_SIZE}: "
-                            f"TIMEOUT after 120s for job {job_id}. "
-                            f"Slides in this batch may be incomplete."
-                        )
-                    logger.info(f"Batch {i // BATCH_SIZE + 1}/{(len(slide_files) + BATCH_SIZE - 1)// BATCH_SIZE}: "
-                                f"{len(tasks)} slides generated for job {job_id}")
+                    batch_ok = True
+                    for t_idx, task in enumerate(tasks):
+                        # Individual task timeout — one slow slide doesn't block others
+                        filename = batch[t_idx]
+                        try:
+                            await asyncio.wait_for(task, timeout=300)
+                        except asyncio.TimeoutError:
+                            logger.error(
+                                f"Batch {batch_num}/{total_batches}: TIMEOUT after 300s for "
+                                f"{filename} (job {job_id}). Slide will be blank."
+                            )
+                            batch_ok = False
+                        except Exception as exc:
+                            logger.error(
+                                f"Batch {batch_num}/{total_batches}: ERROR on {filename}: {exc}"
+                            )
+                            batch_ok = False
+                    logger.info(
+                        f"Batch {batch_num}/{total_batches}: "
+                        f"{'ok' if batch_ok else 'partial fail'} "
+                        f"({len(tasks)} slides) for job {job_id}"
+                    )
 
                 if delay > 0 and i + BATCH_SIZE < len(slide_files):
                     await asyncio.sleep(delay)
@@ -609,6 +650,7 @@ def _run_generation(
         if has_slides and slide_count > 0:
             asyncio.run(_run_slide_batches())
             logger.info(f"All {slide_count} slides generated for job {job_id}")
+            _write_progress(project_name, "4:slides", f"{slide_count} slides done")
         elif not has_slides:
             logger.info(f"No slides requested for job {job_id}")
         else:
@@ -626,12 +668,14 @@ def _run_generation(
                     l1_languages=l1_list,
                 ).run()
                 logger.info(f"Validation: {validation_result[:300]}")
+                _write_progress(project_name, "5:validation", "ok")
             except Exception as exc:
                 logger.warning(f"Slide validation skipped: {exc}")
 
         # ── Step 6: Build offline bundle ────────────────────────────────────────
         bundle_path = None
         if has_slides and slide_count > 0:
+            _write_progress(project_name, "6:bundle", "start")
             try:
                 from agent.slides_tools.BuildOfflineBundle import BuildOfflineBundle
                 bundle_result = BuildOfflineBundle(
@@ -639,14 +683,17 @@ def _run_generation(
                     grammar_point=grammar_point,
                 ).run()
                 logger.info(f"Bundle: {bundle_result[:200]}")
+                _write_progress(project_name, "6:bundle", "done")
                 # Extract the bundle path from the result
                 bundle_path = f"./mnt/{project_name}/presentations/{project_name}.html"
             except Exception as exc:
+                _write_progress(project_name, "6:bundle", f"FAILED: {exc}")
                 logger.warning(f"Bundle build skipped: {exc}")
 
         # ── Step 7: Worksheet ───────────────────────────────────────────────────
         worksheet_paths = {}
         if has_worksheet:
+            _write_progress(project_name, "7:worksheet", "start")
             try:
                 from agent.docs_tools.CreateDocument import CreateDocument
                 html_content = _build_worksheet_html(
@@ -659,14 +706,16 @@ def _run_generation(
                     overwrite=True,
                 ).run()
                 logger.info(f"Worksheet: {str(doc_result)[:200]}")
+                _write_progress(project_name, "7:worksheet", "done")
                 worksheet_paths["source"] = f"./mnt/{project_name}/documents/{project_name}_worksheet.source.html"
             except Exception as exc:
+                _write_progress(project_name, "7:worksheet", f"FAILED: {exc}")
                 logger.warning(f"Worksheet generation skipped: {exc}")
 
         # ── Step 8: Activity Guide ──────────────────────────────────────────────
         activity_paths = {}
         if has_activity:
-            try:
+            _write_progress(project_name, "8:activity", "start")
                 from agent.docs_tools.CreateDocument import CreateDocument
                 html_content = _build_activity_guide_html(
                     grammar_data, grammar_point, age_group,
@@ -678,13 +727,16 @@ def _run_generation(
                     overwrite=True,
                 ).run()
                 logger.info(f"Activity guide: {str(doc_result)[:200]}")
+                _write_progress(project_name, "8:activity", "done")
                 activity_paths["source"] = f"./mnt/{project_name}/documents/{project_name}_activity_guide.source.html"
             except Exception as exc:
+                _write_progress(project_name, "8:activity", f"FAILED: {exc}")
                 logger.warning(f"Activity guide generation skipped: {exc}")
 
         # ── Step 9: Flashcards ──────────────────────────────────────────────────
         flashcard_path = None
         if has_flashcards:
+            _write_progress(project_name, "9:flashcards", "start")
             try:
                 from agent.docs_tools.GenerateFlashcardPdf import GenerateFlashcardPdf
                 common_errors = grammar_data.get("common_errors") or []
@@ -702,11 +754,14 @@ def _run_generation(
                     l1_patterns_json=json.dumps(l1_patterns[:10]),
                 ).run()
                 logger.info(f"Flashcards: {flash_result[:200]}")
+                _write_progress(project_name, "9:flashcards", "done")
                 flashcard_path = f"./mnt/{project_name}/documents/{project_name}_flashcards.source.html"
             except Exception as exc:
+                _write_progress(project_name, "9:flashcards", f"FAILED: {exc}")
                 logger.warning(f"Flashcard generation skipped: {exc}")
 
         # ── Step 10: Mark job complete ──────────────────────────────────────────
+        _write_progress(project_name, "10:mark-complete", "start")
         from agent.slides_tools.MarkJobComplete import MarkJobComplete
         mark_result = MarkJobComplete(
             job_id=job_id,
@@ -720,9 +775,12 @@ def _run_generation(
             flashcard_pdf_path=flashcard_path,
         ).run()
         logger.info(f"Job {job_id} complete: {mark_result[:200]}")
+        _write_progress(project_name, "10:mark-complete", "done")
+        _write_progress(project_name, "PIPELINE", "COMPLETE SUCCESS")
 
     except Exception as e:
         logger.error(f"Generation error for job {job_id}: {e}", exc_info=True)
+        _write_progress(project_name, "PIPELINE", f"FAILED: {e}")
         try:
             _jobs.mark_error(job_id, str(e))
         except Exception:

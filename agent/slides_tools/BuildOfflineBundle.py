@@ -14,12 +14,17 @@ The resulting file includes:
 Call AFTER all slides are generated and built, BEFORE SnapSlideForEmail and MarkJobComplete.
 
 Output: ./mnt/{project_name}/presentations/{project_name}.html
+
+WRITES PROGRESSIVELY TO A TEMP FILE to avoid holding the entire bundle in memory
+(raw slide HTML + inlined fonts + base64 images = several MB).
 """
 
 import base64
 import html
 import logging
+import os
 import re
+import tempfile
 import urllib.request
 from pathlib import Path
 
@@ -191,9 +196,10 @@ def _extract_speaker_notes(slide_html: str) -> str:
     return ""
 
 
-# ── Navigation shell template ──────────────────────────────────────────────
+# ── Navigation shell template parts ────────────────────────────────────────
+# Split into HEADER, IFRAMES_PLACEHOLDER, and FOOTER so we can write progressively.
 
-_NAV_SHELL = """\
+_HTML_HEADER = """\
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -381,7 +387,6 @@ _NAV_SHELL = """\
   function toggleNotes() {{
     notesOpen = !notesOpen;
     notesPnl.classList.toggle('open', notesOpen);
-    // Shrink stage when notes open
     document.getElementById('stage').style.bottom = notesOpen ? (52 + 180) + 'px' : '52px';
   }}
 
@@ -402,20 +407,17 @@ _NAV_SHELL = """\
     if (e.key === 'Escape' && notesOpen) toggleNotes();
   }});
 
-  // Initialise
   show(0);
 
-  // Load slide content from <script type="text/html"> tags into iframe srcdoc
-  // (avoids HTML-attribute escaping issues with large slide HTML)
   const slideData = document.querySelectorAll('script[type="text/cogniesl-slide"]');
   slideData.forEach((s, i) => {{
     frames[i].srcdoc = s.textContent;
   }});
 </script>
+"""
 
-<!-- Slide content stored in script tags to avoid attribute escaping issues -->
-{slide_scripts}
-
+# After header + iframes, we write slide scripts, then finish with the closing tags.
+_HTML_FOOTER = """\
 </body>
 </html>
 """
@@ -445,7 +447,6 @@ class BuildOfflineBundle(BaseTool):
     )
 
     def run(self) -> str:
-        # Slides are in presentations/; build output goes there too.
         presentations_dir = get_mnt_dir() / self.project_name / "presentations"
         slides = list_slide_files(presentations_dir)
 
@@ -454,58 +455,73 @@ class BuildOfflineBundle(BaseTool):
 
         log.info(f"[bundle] Building offline bundle for {self.project_name} ({len(slides)} slides)")
 
+        # ── Build slide iframes (small, all in memory) ───────────────────────────
         slide_iframes = []
-        slide_scripts = []
         notes_list = []
-
         for i, slide in enumerate(slides):
             raw_html = slide.path.read_text(encoding="utf-8")
-
-            # Extract speaker notes before inlining (they're in an attribute)
             notes_list.append(_extract_speaker_notes(raw_html))
-
-            # Inline all external resources
-            inlined_html = _inline_slide_resources(raw_html, slide.path)
-
-            # Each slide: an iframe + a <script type="text/cogniesl-slide"> tag
             active_cls = " active" if i == 0 else ""
             slide_iframes.append(
                 f'  <iframe class="slide-frame{active_cls}" id="slide-{i}" '
                 f'title="Slide {i+1}"></iframe>'
             )
-            # Store slide HTML in a script tag.
-            # Defensive: escape any </script> sequences inside the slide HTML so the
-            # browser doesn't terminate the outer script tag prematurely.
-            safe_html = inlined_html.replace("</script>", "<\\/script>")
-            slide_scripts.append(
-                f'<script type="text/cogniesl-slide">{safe_html}</script>'
-            )
 
-            log.info(f"[bundle] Processed slide {i+1}/{len(slides)}: {slide.path.name}")
-
-        # Build notes JSON (escape for JS string)
+        # ── Write bundle progressively to a temp file ───────────────────────────
         import json
         notes_json = json.dumps(notes_list)
-
-        # Render the shell
-        bundle_html = _NAV_SHELL.format(
-            title=html.escape(self.grammar_point or self.project_name),
-            total=len(slides),
-            slide_iframes="\n".join(slide_iframes),
-            slide_scripts="\n".join(slide_scripts),
-            notes_json=notes_json,
-        )
-
-        # Save bundle to the presentations directory
+        total_slides = len(slides)
         out_dir = presentations_dir
         out_dir.mkdir(parents=True, exist_ok=True)
         out_path = out_dir / f"{self.project_name}.html"
-        out_path.write_text(bundle_html, encoding="utf-8")
+
+        header_html = _HTML_HEADER.format(
+            title=html.escape(self.grammar_point or self.project_name),
+            total=total_slides,
+            slide_iframes="\n".join(slide_iframes),
+            notes_json=notes_json,
+        )
+
+        # Open a temp file and write progressively
+        fd, tmp_path = tempfile.mkstemp(suffix=".html", dir=str(out_dir))
+        try:
+            with os.fdopen(fd, "w", encoding="utf-8") as f:
+                # Write header (contains all iframes and JS up to </script>)
+                f.write(header_html)
+                del header_html  # free memory
+
+                # Write each slide as a <script type="text/cogniesl-slide"> tag
+                f.write("\n<!-- slide content -->\n")
+                for i, slide in enumerate(slides):
+                    raw_html = slide.path.read_text(encoding="utf-8")
+                    # Inline external resources (fonts, images) — this is the heavy part
+                    inlined_html = _inline_slide_resources(raw_html, slide.path)
+                    # Escape </script> so it doesn't break the outer script tag
+                    safe_html = inlined_html.replace("</script>", "<\\/script>")
+                    del inlined_html, raw_html  # free memory
+                    f.write(f'<script type="text/cogniesl-slide">{safe_html}</script>\n')
+                    del safe_html
+                    log.info(f"[bundle] Processed slide {i+1}/{total_slides}: {slide.path.name}")
+
+                # Write footer
+                f.write(_HTML_FOOTER)
+
+            # Atomic rename: temp → final (no partial file on crash)
+            if out_path.exists():
+                out_path.unlink()
+            os.rename(tmp_path, out_path)
+        except Exception:
+            # Clean up temp file on any error
+            try:
+                os.unlink(tmp_path)
+            except OSError:
+                pass
+            raise
 
         size_kb = out_path.stat().st_size // 1024
         return (
             f"Offline HTML bundle created: {out_path} ({size_kb} KB)\n"
-            f"Slides: {len(slides)}  |  Speaker notes: {sum(1 for n in notes_list if n)} slides\n"
+            f"Slides: {total_slides}  |  Speaker notes: {sum(1 for n in notes_list if n)} slides\n"
             f"Fonts inlined: Google Fonts + Font Awesome (works without internet)\n"
             f"Pass to MarkJobComplete as: html_bundle_path={out_path}\n\n"
             f"Teacher instructions:\n"
