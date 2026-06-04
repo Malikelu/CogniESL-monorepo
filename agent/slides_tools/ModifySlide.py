@@ -246,13 +246,19 @@ def _make_deepseek_client(tool=None) -> AsyncOpenAI:
 
 
 async def _call_deepseek(client: AsyncOpenAI, model_id: str, system_prompt: str, user_prompt: str) -> str:
-    """Call DeepSeek API directly and return the text response."""
+    """Call DeepSeek API directly and return the text response.
+
+    Uses reasoning_effort="non-thinking" to minimize latency.
+    In non-thinking mode, DeepSeek v4 flash outputs at 120-240 tokens/sec
+    with TTFT of 0.6-1.2s, vs 30-60s in reasoning mode.
+    """
     response = await client.chat.completions.create(
         model=model_id,
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt},
         ],
+        extra_body={"reasoning_effort": "non-thinking"},
     )
     return response.choices[0].message.content or ""
 
