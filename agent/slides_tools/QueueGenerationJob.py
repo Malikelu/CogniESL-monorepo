@@ -218,15 +218,17 @@ def _run_background_generation(
 def _get_mnt_path(project_name: str) -> Path:
     """Return the mnt directory path for this project.
 
-    On Railway (Docker) the persistent volume is at /app/data, so
-    the mnt dir is /app/data/mnt/{project}.  Locally it's
-    <project-root>/mnt/{project}.
+    Precedence:
+    1. COGNIESL_DATA_DIR env var (set on Railway by nixpacks)
+    2. /app/data (Railway persistent volume — detect by dir existence)
+    3. Project root (local dev fallback)
     """
-    if Path("/.dockerenv").is_file():
-        data_dir = os.getenv("COGNIESL_DATA_DIR", "/app/data")
-    else:
-        data_dir = os.getenv("COGNIESL_DATA_DIR", str(Path(__file__).parent.parent.parent))
-    return Path(data_dir) / "mnt" / project_name
+    data_dir = os.getenv("COGNIESL_DATA_DIR")
+    if data_dir:
+        return Path(data_dir) / "mnt" / project_name
+    if Path("/app/data").is_dir():
+        return Path("/app/data") / "mnt" / project_name
+    return Path(__file__).parent.parent.parent / "mnt" / project_name
 
 
 def _list_slide_filenames(project_name: str, file_prefix: str = "slide") -> list[str]:

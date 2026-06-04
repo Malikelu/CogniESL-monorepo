@@ -45,9 +45,19 @@ class SlideFile:
 
 
 def get_mnt_dir() -> Path:
+    """Return the mnt directory.
+
+    Precedence:
+    1. COGNIESL_DATA_DIR env var (set on Railway)
+    2. /app/data (Railway persistent volume — detect by dir existence)
+    3. Project root (local dev fallback)
+    """
     import os
-    if Path("/.dockerenv").is_file():
-        return Path(os.getenv("COGNIESL_DATA_DIR", "/app/data")) / "mnt"
+    data_dir = os.getenv("COGNIESL_DATA_DIR")
+    if data_dir:
+        return Path(data_dir) / "mnt"
+    if Path("/app/data").is_dir():
+        return Path("/app/data") / "mnt"
     return Path(__file__).parents[2] / "mnt"
 
 
