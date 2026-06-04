@@ -182,7 +182,7 @@ class QueueGenerationJob(BaseTool):
 # Background Generation Pipeline
 # ═══════════════════════════════════════════════════════════════════════════
 
-BATCH_SIZE = 1  # One slide at a time — prevents batch-level timeout from losing multiple slides
+BATCH_SIZE = 3  # Parallel slide generation — 3 slides at a time
 
 
 def _run_background_generation(
@@ -626,10 +626,10 @@ def _run_generation(
                         # Individual task timeout — one slow slide doesn't block others
                         filename = batch[t_idx]
                         try:
-                            await asyncio.wait_for(task, timeout=300)
+                            await asyncio.wait_for(task, timeout=120)
                         except asyncio.TimeoutError:
                             logger.error(
-                                f"Batch {batch_num}/{total_batches}: TIMEOUT after 300s for "
+                                f"Batch {batch_num}/{total_batches}: TIMEOUT after 120s for "
                                 f"{filename} (job {job_id}). Slide will be blank."
                             )
                             batch_ok = False

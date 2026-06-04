@@ -219,7 +219,7 @@ def _embed_local_images_as_base64(html: str, project_dir: Path) -> str:
 
 # Sub-agent model: DeepSeek v4 flash only.
 _HTML_WRITER_MODEL_DEFAULT = "deepseek-v4-flash"
-_HTML_WRITER_MAX_ATTEMPTS = 5
+_HTML_WRITER_MAX_ATTEMPTS = 3  # Reduced from 5 — fail fast, don't burn retries
 
 
 def _get_html_writer_model_id() -> str:
@@ -485,15 +485,19 @@ def _generate_minimal_html_fallback(
     <title>{title}</title>
     <style>
         {theme_css}
+        html, body {{
+            width: 1280px;
+            height: 720px;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }}
         body {{
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            margin: 0;
-            padding: 40px;
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
         }}
         .slide-wrapper {{
             width: 1280px;
@@ -506,6 +510,7 @@ def _generate_minimal_html_fallback(
             display: flex;
             flex-direction: column;
             justify-content: center;
+            overflow: hidden;
         }}
         h1 {{
             font-size: 48px;

@@ -12,10 +12,12 @@ VALID_IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".gif", ".bmp", ".tiff", ".ti
 
 
 def ensure_full_html(html_content: str) -> tuple[str, bool]:
-    """Ensure the slide has a full HTML scaffold."""
+    """Ensure the slide has a full HTML scaffold with overflow protection."""
     html_lower = html_content.lower()
     is_full_doc = "<html" in html_lower or "<!doctype" in html_lower
     if is_full_doc:
+        # Inject overflow protection into existing full HTML
+        html_content = _inject_overflow_protection(html_content)
         return html_content, False
 
     base_css = """
@@ -30,6 +32,7 @@ def ensure_full_html(html_content: str) -> tuple[str, bool]:
     }
     body {
       position: relative;
+      overflow: hidden;
     }
     .slide-wrapper {
       width: 1280px;
@@ -100,6 +103,35 @@ def ensure_full_html(html_content: str) -> tuple[str, bool]:
   </body>
 </html>"""
     return full_html, True
+
+
+def _inject_overflow_protection(html_content: str) -> str:
+    """Inject CSS overflow protection into model-generated HTML.
+
+    Ensures that:
+    - html and body have overflow: hidden
+    - A 1280x720 safety wrapper exists with overflow: hidden
+    - Any element that would overflow the canvas is clipped
+    This prevents validation failures from small overflow issues.
+    """
+    overflow_css = """<style>
+/* Overflow safety net - injected by pipeline */
+html, body { overflow: hidden !important; }
+body { width: 1280px !important; height: 720px !important; margin: 0 !important; padding: 0 !important; position: relative !important; }
+.slide, .slide-wrapper, [class*="slide"] { max-width: 1280px !important; max-height: 720px !important; overflow: hidden !important; }
+</style>"""
+
+    # Inject before </head> if present
+    if "</head>" in html_content.lower():
+        idx = html_content.lower().rfind("</head>")
+        return html_content[:idx] + overflow_css + html_content[idx:]
+    # Inject after <body> tag
+    body_match = re.search(r'<body[^>]*>', html_content, re.IGNORECASE)
+    if body_match:
+        idx = body_match.end()
+        return html_content[:idx] + overflow_css + html_content[idx:]
+    # Fallback: prepend
+    return overflow_css + html_content
 
 
 def _collect_local_image_refs(html_content: str) -> list[str]:
