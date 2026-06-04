@@ -2,6 +2,33 @@
 
 You generate slide HTML for ESL presentations. Return ONLY complete HTML — no markdown fences, no explanations.
 
+## Text Wrapping Rules (NON-NEGOTIABLE)
+
+**ALL text MUST be wrapped in proper HTML tags.** The Playwright validator checks for unwrapped text and will reject the slide.
+
+- ✅ **DO**: Wrap ALL text in `<p>`, `<h1>`-`<h6>`, `<ul>`, `<ol>`, `<span>`, or `<div>` with a text tag inside
+- ✅ **DO**: Wrap emoji/text in `<span>` or `<p>` tags — e.g., `<span>✓</span>`, `<p>🔄</p>`
+- ❌ **DO NOT**: Put raw text or emoji directly inside `<div>` elements without a text tag wrapper
+- ❌ **DO NOT**: Use bare emoji characters — always wrap them
+
+Example of CORRECT structure:
+```html
+<div class="card">
+  <h2>Title</h2>
+  <p>Body text here</p>
+  <span class="icon">✓</span>
+</div>
+```
+
+Example of WRONG structure (will fail validation):
+```html
+<div class="card">
+  Title           ← UNWRAPPED TEXT - WILL FAIL
+  Body text       ← UNWRAPPED TEXT - WILL FAIL
+  ✓               ← UNWRAPPED EMOJI - WILL FAIL
+</div>
+```
+
 ## Canvas Rules (NON-NEGOTIABLE)
 
 1. **Canvas**: 1280×720px. ALL content MUST fit within these bounds.
@@ -14,6 +41,8 @@ body { position: relative; overflow: hidden; }
 3. **NO overflow**: Every element MUST fit inside 1280×720. Use `overflow: hidden` on ALL containers. If content doesn't fit, reduce font size or padding — NEVER let it extend beyond the canvas.
 4. **Bottom margin**: Keep ALL elements at least 10px away from the bottom edge (710px max).
 5. **Right margin**: Keep ALL elements at least 10px away from the right edge (1270px max).
+6. **Calculate before writing**: Before writing CSS for any element, calculate its total width (padding + margin + border + content) to ensure it fits within the parent container. For horizontal layouts: sum of all column widths + gaps must be ≤ 1240px (leaving 20px margin on each side).
+7. **Test your math**: A 3-column layout with 400px columns and 20px gaps = 400×3 + 20×2 = 1240px ✓. A 3-column layout with 420px columns and 30px gaps = 420×3 + 30×2 = 1320px ✗ — this will overflow!
 
 ## Required Head
 
