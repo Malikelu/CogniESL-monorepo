@@ -109,9 +109,8 @@ class QueueGenerationJob(BaseTool):
                 level=_level_val,
             )
             if check_cache(_cache_key):
-                _dest = Path(os.getenv("COGNIESL_DATA_DIR", "/app/data")) / "mnt" / self.project_name / "presentations"
-                if not (_dest.parent.parent).exists():
-                    _dest = Path(__file__).parent.parent.parent / "mnt" / self.project_name / "presentations"
+                _dest = _get_mnt_path(self.project_name) / "presentations"
+                _dest.mkdir(parents=True, exist_ok=True)
                 copied = copy_from_cache(_cache_key, _dest)
                 if copied:
                     job_id = _jobs.create_job(
@@ -217,12 +216,17 @@ def _run_background_generation(
 # ── Helpers ──────────────────────────────────────────────────────────────────
 
 def _get_mnt_path(project_name: str) -> Path:
-    """Return the mnt directory path for this project."""
-    data_dir = os.getenv("COGNIESL_DATA_DIR", str(Path(__file__).parent.parent.parent))
-    candidate = Path(data_dir) / "mnt" / project_name
-    if candidate.parent.parent.exists():
-        return candidate
-    return Path(__file__).parent.parent.parent / "mnt" / project_name
+    """Return the mnt directory path for this project.
+
+    On Railway (Docker) the persistent volume is at /app/data, so
+    the mnt dir is /app/data/mnt/{project}.  Locally it's
+    <project-root>/mnt/{project}.
+    """
+    if Path("/.dockerenv").is_file():
+        data_dir = os.getenv("COGNIESL_DATA_DIR", "/app/data")
+    else:
+        data_dir = os.getenv("COGNIESL_DATA_DIR", str(Path(__file__).parent.parent.parent))
+    return Path(data_dir) / "mnt" / project_name
 
 
 def _list_slide_filenames(project_name: str, file_prefix: str = "slide") -> list[str]:
