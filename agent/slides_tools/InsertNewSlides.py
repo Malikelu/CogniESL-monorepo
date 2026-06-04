@@ -130,20 +130,6 @@ async def _agent_get_response(agent: Agent, prompt: str, *, use_stream: bool = F
     return await agent.get_response(prompt)
 
 
-def _normalise_model_id(model_id: str, provider: str) -> str:
-    """Return model_id with the correct provider prefix for LiteLLM routing.
-
-    LiteLLM uses 'provider/model' to route requests. Without the prefix it may
-    guess the wrong provider (e.g. openrouter instead of openai).
-    """
-    # Strip any existing provider prefix so we can re-add the right one cleanly
-    for prefix in ("openai/", "anthropic/", "openrouter/"):
-        if model_id.startswith(prefix):
-            model_id = model_id[len(prefix):]
-            break
-    return f"{provider}/{model_id}"
-
-
 def _make_planner_agent(tool=None) -> "tuple[Agent, bool]":
     """Create a fresh, stateless agent instance for one InsertNewSlides call.
 
@@ -167,14 +153,6 @@ def _make_planner_agent(tool=None) -> "tuple[Agent, bool]":
         model_settings=ModelSettings(verbosity=None),
     )
     return agent, False
-        tools=[],
-        model=model,
-        model_settings=ModelSettings(
-            verbosity=None if is_codex else "medium",
-            store=False if is_codex else None,
-        ),
-    )
-    return agent, is_codex
 
 
 def _run_awaitable(awaitable):
