@@ -1,6 +1,8 @@
 """CogniESL Server — FastAPI entry point. Run with: python server.py"""
 import asyncio
+import gzip
 import hashlib
+import json
 import logging
 import os
 import re
@@ -30,11 +32,13 @@ except Exception:
 import uvicorn
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.responses import JSONResponse, FileResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 
 from agent.cogniesl_agent import create_cogniesl_agent
 from agent import jobs as _jobs
+from agent.slides_tools.slide_file_utils import get_mnt_dir
 from auth import db as _auth_db
 from auth.auth import (
     AuthError,
@@ -108,7 +112,7 @@ _auth_db.init_auth_db()
 # scan for jobs with status='running' and check if their files exist on disk.
 # If so, mark them 'done'. If not, mark them 'error'.
 try:
-    data_dir = Path(os.getenv("COGNIESL_DATA_DIR", "/app/data"))
+    data_dir = get_mnt_dir().parent
     recovered = 0
     for job in _jobs.list_jobs(limit=200):
         if job.get("status") not in ("running", "processing"):
@@ -118,28 +122,40 @@ try:
             _jobs.mark_error(job["job_id"], "No project_name — lost on restart")
             continue
         # Check for slide files on disk
-        mnt_candidates = [
-            data_dir / "mnt" / project_name / "presentations",
-            Path(__file__).parent / "mnt" / project_name / "presentations",
-        ]
+        presentations_dir = get_mnt_dir() / project_name / "presentations"
         found_files = []
-        for candidate in mnt_candidates:
-            if candidate.exists():
-                for f in candidate.glob("slide_*.html"):
-                    found_files.append(str(f))
+        if presentations_dir.exists():
+            found_files = [str(f) for f in presentations_dir.glob("slide_*.html")]
         if found_files:
+            # F11: Check for checkpoint file to report partial progress
+            checkpoint_path = presentations_dir / "_checkpoint.json"
+            partial_msg = ""
+            if checkpoint_path.exists():
+                try:
+                    ck = json.loads(checkpoint_path.read_text(encoding="utf-8"))
+                    done = ck.get("completed_slides", [])
+                    total = ck.get("total_slides", 0)
+                    batch = ck.get("current_batch", "?")
+                    total_batches = ck.get("total_batches", "?")
+                    partial_msg = (
+                        f" (batch {batch}/{total_batches}, "
+                        f"{len(done)}/{total} slides completed before restart)"
+                    )
+                except (json.JSONDecodeError, OSError):
+                    pass
             _jobs.mark_done(job["job_id"], found_files)
             recovered += 1
-            logging.info(f"[recovery] Job {job['job_id']} recovered with {len(found_files)} files")
+            logging.info(
+                f"[recovery] Job {job['job_id']} recovered with "
+                f"{len(found_files)} files{partial_msg}"
+            )
         else:
             # Check if project.html bundle exists
-            for candidate in mnt_candidates:
-                bundle_path = candidate.parent / f"{project_name}.html"
-                if bundle_path.exists():
-                    _jobs.mark_done(job["job_id"], [str(bundle_path)])
-                    recovered += 1
-                    logging.info(f"[recovery] Job {job['job_id']} recovered (bundle found)")
-                    break
+            bundle_path = get_mnt_dir() / project_name / "presentations" / f"{project_name}.html"
+            if bundle_path.exists():
+                _jobs.mark_done(job["job_id"], [str(bundle_path)])
+                recovered += 1
+                logging.info(f"[recovery] Job {job['job_id']} recovered (bundle found)")
             else:
                 _jobs.mark_error(job["job_id"], "Restart recovery: no files found on disk")
                 logging.warning(f"[recovery] Job {job['job_id']} lost — no files on disk")
@@ -208,9 +224,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# F26: GZip compress responses (especially important for 100+ MB HTML bundles)
+app.add_middleware(GZipMiddleware, minimum_size=1000)
+
 
 # Mount generated slide HTML files so the presenter can load them by URL
-_SLIDES_MNT_DIR = Path(os.getenv("COGNIESL_DATA_DIR", Path(__file__).parent)) / "mnt"
+_SLIDES_MNT_DIR = get_mnt_dir()
 _SLIDES_MNT_DIR.mkdir(parents=True, exist_ok=True)
 app.mount("/slides", StaticFiles(directory=str(_SLIDES_MNT_DIR)), name="slides")
 logging.info(f"Mounted slides from {_SLIDES_MNT_DIR}")
@@ -243,7 +262,7 @@ async def admin_update_db():
     from agent.update_content import update_grammar, update_l1
     import sqlite3
     static_dir = Path(os.getenv("COGNIESL_STATIC_DIR", Path(__file__).parent / "data"))
-    db_path = Path(os.getenv("COGNIESL_DATA_DIR", "/app/data")) / "cogniesl.db"
+    db_path = get_mnt_dir().parent / "cogniesl.db"
 
     # Step 1: Bulk import all grammar + L1 files from static YAML dir
     import_content.run_import()
@@ -299,7 +318,7 @@ async def download_file(job_id: str, filename: str):
     Links of this form are sent in the completion email.
     """
     job = _jobs.get_job(job_id)
-    if not job or job.get("status") not in ("done", "running"):
+    if not job or job.get("status") != "done":
         return JSONResponse({"error": "File not available"}, status_code=404)
 
     project_name = job.get("project_name", "")
@@ -308,7 +327,7 @@ async def download_file(job_id: str, filename: str):
 
     # Sanitise filename — no path traversal
     safe_name = Path(filename).name
-    project_dir = Path(os.getenv("COGNIESL_DATA_DIR", Path(__file__).parent)) / "mnt" / project_name
+    project_dir = get_mnt_dir() / project_name
     for subdir in ("presentations", "documents"):
         candidate = project_dir / subdir / safe_name
         if candidate.exists() and candidate.is_file():
@@ -559,7 +578,7 @@ async def api_material_slides(material_id: str, request: Request):
         return JSONResponse({"error": "Not found"}, status_code=404)
 
     project_name = mat.get("project_name", "")
-    presentations_dir = Path(os.getenv("COGNIESL_DATA_DIR", Path(__file__).parent)) / "mnt" / project_name / "presentations"
+    presentations_dir = get_mnt_dir() / project_name / "presentations"
 
     slides = []
     for i in range(1, 100):
@@ -715,37 +734,12 @@ async def get_response(request: Request):
     _likely_generation = _is_approval or any(kw in message.lower() for kw in _generation_keywords)
 
     def _is_kickoff_message(text: str) -> bool:
-        """True if the agent sent a short announcement instead of calling tools.
-        Catches two failure modes:
-          1. Pre-brief kickoff: "Your brief is coming right up!" (should be calling DB tools)
-          2. Post-approval kickoff: "I'll start generating now" (should be calling QueueGenerationJob)
-        The actual Content Brief is always > 700 chars, so length guards against false positives."""
-        if len(text.strip()) > 700 or "/download/" in text:
-            return False
-        _kickoff_phrases = (
-            # Pre-brief kickoffs (agent announces DB search instead of doing it)
-            # NOTE: "coming up" removed — too generic (matches "Here's what's coming up")
-            "stay tuned", "coming right up",
-            "putting together", "will be ready", "brief is coming",
-            "getting your brief", "preparing your brief",
-            "here's a quick preview", "here's what i'm planning",
-            "here's a preview", "preview of what i'm planning",
-            "quick preview", "here's a quick overview",
-            # Post-approval kickoffs (agent announces generation instead of doing it)
-            "be right back", "give me a few", "one moment", "just a moment",
-            "starting now", "i'll start", "i will start", "i'll get started",
-            "i'll begin", "back shortly", "back soon", "back with your",
-            "generating your", "creating your", "building your",
-            "let me start", "let me generate", "let me build",
-            "i'll now", "i will now", "back in a few",
-            "i'm generating", "i am generating",
-            "i'm creating", "i am creating", "i'm building", "i am building",
-            "we're generating", "we are generating",
-            "materials are being generated",
-            "all ready for your review",
-        )
-        text_lower = text.lower()
-        return any(phrase in text_lower for phrase in _kickoff_phrases)
+        """Structurally detect holding messages: short text with no actual work done.
+
+        Real Content Briefs and generation results are always > 300 characters.
+        Download links are always substantive.
+        Replaces a fragile 30-phrase blacklist with a length-based structural check."""
+        return len(text.strip()) <= 300 and "/download/" not in text
 
     async def _run():
         response = await agent.get_response(message=message, agency_context=ctx)
@@ -887,14 +881,14 @@ async def get_response(request: Request):
 async def api_job_slides(job_id: str):
     """Return ordered slide metadata + speaker notes for the HTML presenter."""
     job = _jobs.get_job(job_id)
-    if not job or job.get("status") not in ("done", "running"):
+    if not job or job.get("status") != "done":
         return JSONResponse({"error": "Not available"}, status_code=404)
 
     project_name = job.get("project_name", "")
     if not project_name:
         return JSONResponse({"error": "No project"}, status_code=404)
 
-    presentations_dir = Path(os.getenv("COGNIESL_DATA_DIR", Path(__file__).parent)) / "mnt" / project_name / "presentations"
+    presentations_dir = get_mnt_dir() / project_name / "presentations"
     if not presentations_dir.exists():
         return JSONResponse({"error": "Slides not found"}, status_code=404)
 
@@ -935,14 +929,14 @@ async def api_job_bundle(job_id: str):
     import json as _json_mod
 
     job = _jobs.get_job(job_id)
-    if not job or job.get("status") not in ("done", "running"):
+    if not job or job.get("status") != "done":
         return JSONResponse({"error": "Not available"}, status_code=404)
 
     project_name = job.get("project_name", "")
     if not project_name:
         return JSONResponse({"error": "No project"}, status_code=404)
 
-    presentations_dir = Path(os.getenv("COGNIESL_DATA_DIR", Path(__file__).parent)) / "mnt" / project_name / "presentations"
+    presentations_dir = get_mnt_dir() / project_name / "presentations"
 
     # Inline _theme.css so it works without the server
     theme_css = ""
@@ -975,9 +969,12 @@ async def api_job_bundle(job_id: str):
     slides_json = slides_json.replace("</", "<\\/")  # </ → <\/ safe in JS parsers
     bundle = _BUNDLE_TEMPLATE.replace("__TITLE__", title).replace("__SLIDES_DATA__", slides_json)
 
+    # F26: If client supports gzip, compress the bundle to reduce transfer size
+    # (bundles are typically 100-130 MB due to base64-inlined images)
+    headers = {"Content-Disposition": f'attachment; filename="{project_name}.html"'}
     return HTMLResponse(
         content=bundle,
-        headers={"Content-Disposition": f'attachment; filename="{project_name}.html"'},
+        headers=headers,
     )
 
 

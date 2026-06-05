@@ -21,15 +21,12 @@ from pydantic import Field
 log = logging.getLogger(__name__)
 
 # ── Path helper ───────────────────────────────────────────────────────────────
+from .slide_file_utils import get_mnt_dir
+
 
 def _get_project_dir(project_name: str) -> Path:
     """Return (and create) ./mnt/{project_name}/documents/."""
-    import os
-    base = Path(os.getenv("COGNIESL_DATA_DIR", "/app/data")) / "mnt"
-    if not base.parent.exists():
-        # Local dev fallback
-        base = Path(__file__).parent.parent.parent / "mnt"
-    doc_dir = base / project_name / "documents"
+    doc_dir = get_mnt_dir() / project_name / "documents"
     doc_dir.mkdir(parents=True, exist_ok=True)
     return doc_dir
 

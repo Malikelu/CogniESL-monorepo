@@ -6,6 +6,21 @@ Setup:
   2. Add RESEND_API_KEY to .env
   3. Add COGNIESL_BASE_URL to .env (e.g. https://cogniesl.com or http://localhost:8080)
   4. Verify your sending domain at resend.com/domains (or use onboarding@resend.dev for testing)
+
+## Resend Domain Verification (F16)
+
+Resend sandbox mode (`onboarding@resend.dev`) can only deliver to the account
+owner's email. To send to real teachers, you must verify a sending domain:
+
+  1. Go to https://resend.com/domains → "Add Domain"
+  2. Enter your domain (e.g. cogniesl.com) and follow the DNS verification steps
+     (add TXT, MX, and DKIM records as shown)
+  3. Once verified, set COGNIESL_FROM_EMAIL in .env:
+       COGNIESL_FROM_EMAIL=CogniESL <marcos@cogniesl.com>
+  4. Test: generate a deck with a non-owner email address and confirm delivery
+
+Without domain verification, emails to anyone other than the Resend account
+owner will silently fail (Resend accepts them but does not deliver).
 """
 import logging
 import os
@@ -170,22 +185,36 @@ def _build_buttons(base_url: str, job_id: str, file_paths: list[str]) -> str:
 def _label_for_file(filename: str) -> tuple[str, str]:
     """Return (human label, emoji) for a file."""
     name = filename.lower()
+    # Content-type checks BEFORE generic extension checks so worksheet.source.html
+    # doesn't get mislabeled as "Download Presentation"
     if name.endswith(".pptx"):
         return "Download Slides (PowerPoint)", "📊"
-    if "worksheet" in name and name.endswith(".pdf"):
-        return "Download Worksheet (PDF)", "📄"
-    if "worksheet" in name and name.endswith(".docx"):
-        return "Download Worksheet (Word)", "📝"
-    if "activity" in name and name.endswith(".pdf"):
-        return "Download Activity Guide (PDF)", "🎮"
-    if "activity" in name and name.endswith(".docx"):
-        return "Download Activity Guide (Word)", "🎮"
+    if "worksheet" in name:
+        if name.endswith(".pdf"):
+            return "Download Worksheet (PDF)", "📄"
+        if name.endswith(".docx"):
+            return "Download Worksheet (Word)", "📝"
+        if name.endswith(".html"):
+            return "Download Worksheet (HTML)", "📄"
+    if "activity" in name:
+        if name.endswith(".pdf"):
+            return "Download Activity Guide (PDF)", "🎮"
+        if name.endswith(".docx"):
+            return "Download Activity Guide (Word)", "🎮"
+        if name.endswith(".html"):
+            return "Download Activity Guide (HTML)", "🎮"
+    if "flashcard" in name:
+        if name.endswith(".pdf"):
+            return "Download Flashcards (PDF)", "🃏"
+        if name.endswith(".html"):
+            return "Download Flashcards (HTML)", "🃏"
+    if "progress-tracker" in name:
+        if name.endswith(".pdf"):
+            return "Download Progress Tracker (PDF)", "📋"
+        if name.endswith(".html"):
+            return "Download Progress Tracker (HTML)", "📋"
     if name.endswith(".html"):
         return "Download Presentation (HTML — full animations, works offline)", "🎬"
-    if "flashcard" in name and name.endswith(".pdf"):
-        return "Download Flashcards (PDF)", "🃏"
-    if "progress-tracker" in name and name.endswith(".pdf"):
-        return "Download Progress Tracker (PDF)", "📋"
     if name.endswith(".pdf"):
         return "Download PDF", "📄"
     if name.endswith(".docx"):

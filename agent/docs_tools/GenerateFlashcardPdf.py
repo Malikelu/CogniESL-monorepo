@@ -8,6 +8,7 @@ from pathlib import Path
 from agency_swarm.tools import BaseTool
 from pydantic import Field
 
+from ..slides_tools.slide_file_utils import get_error_wrong, get_error_correction
 from .CreateDocument import CreateDocument
 from .ConvertDocument import ConvertDocument
 
@@ -40,8 +41,8 @@ class GenerateFlashcardPdf(BaseTool):
         cards = []
 
         for err in common_errors[:8]:
-            wrong = err.get("error", err.get("wrong", ""))
-            correct = err.get("correction", err.get("correct", ""))
+            wrong = get_error_wrong(err)
+            correct = get_error_correction(err)
             explanation = err.get("explanation", err.get("why", ""))
             if wrong and correct:
                 front = wrong.replace("*", "").strip()

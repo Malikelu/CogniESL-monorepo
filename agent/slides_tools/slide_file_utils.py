@@ -65,6 +65,32 @@ def get_project_dir(project_name: str) -> Path:
     return get_mnt_dir() / project_name / "presentations"
 
 
+# ── YAML field-name normalisation ───────────────────────────────────────────
+# Grammar YAML uses error/correction; L1 YAML uses example_wrong/example_correct;
+# some files use wrong/correct. These helpers normalise to a single access point
+# so field-name mismatches can't break slide or worksheet builders.
+
+
+def get_error_wrong(err: dict) -> str:
+    """Extract wrong/error sentence from a YAML common_errors entry.
+
+    Tries: error, wrong, example_wrong.
+    """
+    if not isinstance(err, dict):
+        return ""
+    return str(err.get("error", err.get("wrong", err.get("example_wrong", ""))) or "")
+
+
+def get_error_correction(err: dict) -> str:
+    """Extract correct sentence from a YAML common_errors entry.
+
+    Tries: correction, correct, example_correct.
+    """
+    if not isinstance(err, dict):
+        return ""
+    return str(err.get("correction", err.get("correct", err.get("example_correct", ""))) or "")
+
+
 def list_slide_files(project_dir: Path, file_prefix: str = "slide") -> list[SlideFile]:
     pattern = re.compile(rf"^{re.escape(file_prefix)}_(\d+)(.*)\.html$", re.IGNORECASE)
     slides: list[SlideFile] = []

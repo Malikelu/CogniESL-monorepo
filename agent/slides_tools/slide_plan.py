@@ -24,6 +24,8 @@ import os
 from pathlib import Path
 from typing import Any
 
+from .slide_file_utils import get_error_wrong, get_error_correction
+
 # ── Watermark ────────────────────────────────────────────────────────────────
 _WATERMARK = os.getenv("COGNIESL_WATERMARK", "free")
 
@@ -101,6 +103,7 @@ def compute_slide_plan(
     grammar_data: dict[str, Any],
     l1_languages: str,
     age_group: str,
+    level: str = "B1",
 ) -> list[dict[str, Any]]:
     """Determine the slide order and types from YAML grammar data.
 
@@ -203,6 +206,7 @@ def build_task_brief(
     l1_data_list: list[dict[str, Any]],
     age_group: str,
     l1_languages: str,
+    level: str = "B1",
 ) -> str:
     """Build a task_brief for a single slide from YAML data.
 
@@ -231,6 +235,8 @@ def build_task_brief(
     if builder is None:
         return f"SLIDE_TYPE: {slide_type}\nSlide title: {slide_meta.get('label', '')}"
 
+    if slide_type == "A0":
+        return builder(slide_meta, grammar_data, l1_data_list, age_group, l1_languages, level)
     return builder(slide_meta, grammar_data, l1_data_list, age_group, l1_languages)
 
 
@@ -240,13 +246,14 @@ def build_all_task_briefs(
     l1_data_list: list[dict[str, Any]],
     age_group: str,
     l1_languages: str,
+    level: str = "B1",
 ) -> dict[int, str]:
     """Build task_briefs for all slides in the plan.
 
     Returns {1: "task_brief for slide 01", 2: "..."} keyed by 1-based slide index.
     """
     return {
-        i + 1: build_task_brief(s, grammar_data, l1_data_list, age_group, l1_languages)
+        i + 1: build_task_brief(s, grammar_data, l1_data_list, age_group, l1_languages, level)
         for i, s in enumerate(slide_plan)
     }
 
@@ -264,6 +271,21 @@ def _fmt_label(title: str, subtitle: str = "") -> str:
     if subtitle:
         return f"{title}\nSubtitle: {subtitle}"
     return title
+
+
+def _extract_wrong_sentence(error_str: str) -> str:
+    """Extract the wrong sentence from verbose error labels.
+
+    YAML 'error' values are formatted like:
+      "Omitting third person -s: *'She walk to school.'"
+    This strips the label and returns just the wrong sentence.
+    If no *'...' or *"..." pattern is found, returns the input unchanged.
+    """
+    import re
+    match = re.search(r"\*'([^']+)'|\*\"([^\"]+)\"", error_str)
+    if match:
+        return match.group(1) or match.group(2)
+    return error_str
 
 
 def _get_ccq(grammar_data: dict, index: int) -> dict:
@@ -346,7 +368,7 @@ def _pick_errors_for_gapfill(grammar_data: dict, l1_languages: str, count: int =
         # Check if this error targets one of the specified L1s
         l1_groups = e.get("l1_groups") or e.get("l1_languages") or []
         l1_groups_str = _s(l1_groups).lower() if not isinstance(l1_groups, list) else " ".join(l1_groups).lower()
-        if any(l1 in l1_groups_str for l1 in l1_list) or not l1_list:
+        if any(l1 in l1_groups_str.split() for l1 in l1_list) or not l1_list:
             relevant.append(e)
     return relevant[:count] if relevant else errors[:count]
 
@@ -396,6 +418,7 @@ def _build_a0_brief(
     l1_data_list: list[dict],
     age_group: str,
     l1_languages: str,
+    level: str = "B1",
 ) -> str:
     """Build A0 Lesson Plan Cover task_brief."""
     grammar_point = _s(grammar_data.get("title", grammar_data.get("name", grammar_data.get("topic", ""))))
@@ -428,7 +451,7 @@ def _build_a0_brief(
         "Slide type: A0 Lesson Plan Cover",
         "Section: 0 of 8 (teacher briefing — first slide, not shown to students)",
         f"Grammar point: {grammar_point}",
-        "Level: B1",
+        f"Level: {level.upper()}",
         f"Age group: {age_group}",
         f"L1 language(s): {l1_languages}",
         f"WATERMARK: {_WATERMARK}",
@@ -457,8 +480,8 @@ def _build_a0_brief(
     lines.append("")
     lines.append("ANTICIPATED ERRORS — Top L1 patterns:")
     for i, err in enumerate(errors):
-        wrong = _s(err.get("error", err.get("wrong", err.get("example_wrong", ""))))
-        correct = _s(err.get("correction", err.get("correct", err.get("example_correct", ""))))
+        wrong = _s(get_error_wrong(err))
+        correct = _s(get_error_correction(err))
         lines.append(f"  Error {i+1}: Wrong: \"{wrong}\" → Correct: \"{correct}\"")
 
     lines.append("")
@@ -709,7 +732,7 @@ def _build_a5_brief(
             continue
         l1_groups = e.get("l1_groups") or e.get("l1_languages") or ""
         err_l1_str = _s(l1_groups).lower()
-        if any(l1 in err_l1_str for l1 in l1_list) or not l1_list:
+        if any(l1 in err_l1_str.split() for l1 in l1_list) or not l1_list:
             relevant_errors.append(e)
         if len(relevant_errors) >= 2:
             break
@@ -735,8 +758,9 @@ def _build_a5_brief(
         lines.append("")
         lines.append("COMMON ERRORS TO SHOW (filtered for specified L1 groups — paste verbatim):")
         for i, err in enumerate(relevant_errors):
-            wrong = _s(err.get("error", err.get("wrong", err.get("example_wrong", ""))))
-            correct = _s(err.get("correction", err.get("correct", err.get("example_correct", ""))))
+            wrong_raw = _s(get_error_wrong(err))
+            wrong = _extract_wrong_sentence(wrong_raw) if err.get("error") else wrong_raw
+            correct = _s(get_error_correction(err))
             l1_g = err.get("l1_groups", "")
             lines.append(f"  Error {i+1}: {wrong} (wrong) → {correct} (correct)")
             if l1_g:
@@ -748,7 +772,7 @@ def _build_a5_brief(
         "  Drill: give students a prompt, they produce the sentence.",
     ])
     if relevant_errors:
-        lines.append(f"  Watch for: {_s(relevant_errors[0].get('wrong', relevant_errors[0].get('example_wrong', '')))}")
+        lines.append(f"  Watch for: {_s(get_error_wrong(relevant_errors[0]))}")
 
     return "\n".join(lines)
 
@@ -831,8 +855,8 @@ def _build_a5_composition_brief(
         lines.append("")
         lines.append(f"COMMON ERRORS FROM {cross_cutting_source.upper()}.YAML (paste verbatim — show in slide):")
         for err in top_errors:
-            wrong = _s(err.get("error", err.get("wrong", "")))
-            correct = _s(err.get("correction", err.get("correct", "")))
+            wrong = _s(get_error_wrong(err))
+            correct = _s(get_error_correction(err))
             if wrong:
                 lines.append(f"  ❌ Wrong:   \"{wrong}\"")
                 lines.append(f"  ✅ Correct: \"{correct}\"")
@@ -1006,8 +1030,8 @@ def _build_a6_brief(
 
     # Pattern cards
     for i, p in enumerate(patterns[:5]):
-        wrong = _s(p.get("example_wrong", p.get("wrong", "")))
-        correct = _s(p.get("example_correct", p.get("correct", "")))
+        wrong = _s(get_error_wrong(p))
+        correct = _s(get_error_correction(p))
         tier = p.get("tier", "legacy")
         freq = _as_int(p.get("frequency", 0))
         persist = _as_int(p.get("persistence", 0))
@@ -1086,8 +1110,9 @@ def _build_a7_gap_fill_brief(
         f"YAML SOURCE — common_errors filtered for L1 groups:",
     ]
     for i, err in enumerate(errors[:4]):
-        wrong = _s(err.get("error", err.get("wrong", err.get("example_wrong", ""))))
-        correct = _s(err.get("correction", err.get("correct", err.get("example_correct", ""))))
+        wrong_raw = _s(get_error_wrong(err))
+        wrong = _extract_wrong_sentence(wrong_raw) if err.get("error") else wrong_raw
+        correct = _s(get_error_correction(err))
         explanation = _s(err.get("explanation", ""))
         lines.append(f"  Item {i+1}: wrong=\"{wrong}\" / correct=\"{correct}\" / explanation=\"{explanation}\"")
 
@@ -1096,7 +1121,7 @@ def _build_a7_gap_fill_brief(
         "SPEAKER NOTES: Teacher talk: Students work alone for 2 minutes, then compare with a partner.",
     ])
     if errors:
-        lines.append(f'  Watch for: {_s(errors[0].get("wrong", errors[0].get("example_wrong", "")))}')
+        lines.append(f'  Watch for: {_s(get_error_wrong(errors[0]))}')
 
     return "\n".join(lines)
 
@@ -1123,14 +1148,16 @@ def _build_a8_brief(
         if not isinstance(err, dict):
             continue
         l1_groups = _s(err.get("l1_groups", "")).lower()
-        if any(l1 in l1_groups for l1 in l1_list):
-            l1_error = _s(err.get("error", err.get("wrong", err.get("example_wrong", ""))))
-            l1_correct = _s(err.get("correction", err.get("correct", err.get("example_correct", ""))))
+        if any(l1 in l1_groups.split() for l1 in l1_list):
+            l1_error_raw = _s(get_error_wrong(err))
+            l1_error = _extract_wrong_sentence(l1_error_raw) if err.get("error") else l1_error_raw
+            l1_correct = _s(get_error_correction(err))
             break
     if not l1_error and common_errors:
         err = common_errors[0]
-        l1_error = _s(err.get("error", err.get("wrong", err.get("example_wrong", ""))) if isinstance(err, dict) else "")
-        l1_correct = _s(err.get("correction", err.get("correct", err.get("example_correct", ""))) if isinstance(err, dict) else "")
+        l1_error_raw = _s(get_error_wrong(err)) if isinstance(err, dict) else ""
+        l1_error = _extract_wrong_sentence(l1_error_raw) if (isinstance(err, dict) and err.get("error")) else l1_error_raw
+        l1_correct = _s(get_error_correction(err)) if isinstance(err, dict) else ""
 
     lines = [
         f"Slide title: Key Takeaways",

@@ -12,10 +12,9 @@ import threading
 from pathlib import Path
 from typing import Literal
 
-import os
 from dotenv import load_dotenv
 from agency_swarm.tools import BaseTool
-from openai import AsyncOpenAI
+from ._deepseek_client import make_deepseek_client, call_deepseek, resolve_sub_agent_model
 from pydantic import BaseModel, Field, ValidationError
 
 from .slide_file_utils import (
@@ -33,43 +32,7 @@ from .template_registry import (
 )
 
 
-# Sub-agent model: DeepSeek v4 flash only.
-_PLANNER_MODEL_DEFAULT = "deepseek-v4-flash"
-
-
-def _get_planner_model_id() -> str:
-    model = os.getenv("BG_SUB_AGENT_MODEL") or os.getenv("SUB_AGENT_MODEL", _PLANNER_MODEL_DEFAULT)
-    # Strip provider prefix if present (e.g. "deepseek/deepseek-v4-flash" -> "deepseek-v4-flash")
-    if "/" in model:
-        model = model.split("/", 1)[1]
-    return model
-
-
-def _make_deepseek_client(tool=None) -> AsyncOpenAI:
-    """Create a direct AsyncOpenAI client pointed at DeepSeek's API."""
-    deepseek_key = os.getenv("DEEPSEEK_API_KEY")
-    if not deepseek_key:
-        raise RuntimeError("DEEPSEEK_API_KEY is required. Set it in .env")
-    return AsyncOpenAI(
-        api_key=deepseek_key,
-        base_url="https://api.deepseek.com",
-    )
-
-
-async def _call_deepseek(client: AsyncOpenAI, model_id: str, system_prompt: str, user_prompt: str) -> str:
-    """Call DeepSeek API directly and return the text response.
-
-    Disables thinking mode to minimize latency.
-    """
-    response = await client.chat.completions.create(
-        model=model_id,
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt},
-        ],
-        extra_body={"thinking": {"type": "disabled"}},
-    )
-    return response.choices[0].message.content or ""
+# Sub-agent model: DeepSeek v4 flash only — client in _deepseek_client.py
 
 
 class _PlanSlide(BaseModel):
@@ -325,17 +288,17 @@ class InsertNewSlides(BaseTool):
         apply_renames(rename_map)
 
         try:
-            model_id = _get_planner_model_id()
+            model_id = resolve_sub_agent_model()
             system_prompt = (
                 "You generate JSON plans for slide creation. "
                 "Output must be valid JSON only, no markdown fences, no extra text."
             )
-            client = _make_deepseek_client(tool=self)
+            client = make_deepseek_client()
             prompt = _build_planner_prompt(
                 self.task_brief, n, insert_position, existing_templates
             )
             plan_text = _run_awaitable(
-                _call_deepseek(client, model_id, system_prompt, prompt)
+                call_deepseek(client, model_id, system_prompt, prompt)
             )
         except Exception as exc:
             return f"❌ Outline generation failed: {exc}"

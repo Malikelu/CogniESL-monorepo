@@ -18,6 +18,7 @@ if _cogniesl_root not in sys.path:
 from agent import jobs as _jobs
 from agent.email_sender import send_completion_email
 from agent.master_repository import get_combination_key, add_to_cache
+from .slide_file_utils import get_mnt_dir
 
 # Auth db may not be available during testing without auth setup
 try:
@@ -181,6 +182,13 @@ class MarkJobComplete(BaseTool):
                         level=_level,
                     )
                     _ref_file = Path(_primary_path)
+                    # Resolve relative path (e.g. ./mnt/project/...) against canonical mnt dir
+                    if not _ref_file.is_absolute():
+                        _rel = str(_ref_file)
+                        if _rel.startswith("./"):
+                            _rel = _rel[2:]
+                        if _rel.startswith("mnt/"):
+                            _ref_file = get_mnt_dir() / _rel[len("mnt/"):]
                     if _ref_file.exists() and _ref_file.parent.exists():
                         stored = add_to_cache(_cache_key, _ref_file.parent)
                         if stored:

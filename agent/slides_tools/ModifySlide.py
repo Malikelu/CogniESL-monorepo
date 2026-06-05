@@ -19,7 +19,7 @@ from pathlib import Path
 from typing import Any
 
 from agency_swarm.tools import BaseTool, tool_output_image_from_path
-from openai import AsyncOpenAI
+from ._deepseek_client import make_deepseek_client, call_deepseek, resolve_sub_agent_model
 from pydantic import Field
 
 from .slide_file_utils import get_project_dir
@@ -217,50 +217,9 @@ def _embed_local_images_as_base64(html: str, project_dir: Path) -> str:
     return html
 
 
-# Sub-agent model: DeepSeek v4 flash only.
+# Sub-agent model: DeepSeek v4 flash only — client in _deepseek_client.py
 _HTML_WRITER_MODEL_DEFAULT = "deepseek-v4-flash"
 _HTML_WRITER_MAX_ATTEMPTS = 3  # Reduced from 5 — fail fast, don't burn retries
-
-
-def _get_html_writer_model_id() -> str:
-    model = os.getenv("BG_SUB_AGENT_MODEL") or os.getenv("SUB_AGENT_MODEL", _HTML_WRITER_MODEL_DEFAULT)
-    # Strip provider prefix if present (e.g. "deepseek/deepseek-v4-flash" -> "deepseek-v4-flash")
-    if "/" in model:
-        model = model.split("/", 1)[1]
-    return model
-
-
-def _make_deepseek_client(tool=None) -> AsyncOpenAI:
-    """Create a direct AsyncOpenAI client pointed at DeepSeek's API.
-
-    Uses DEEPSEEK_API_KEY from .env. No agents SDK, no LiteLLM.
-    Calls go directly to https://api.deepseek.com/chat/completions.
-    """
-    deepseek_key = os.getenv("DEEPSEEK_API_KEY")
-    if not deepseek_key:
-        raise RuntimeError("DEEPSEEK_API_KEY is required. Set it in .env")
-    return AsyncOpenAI(
-        api_key=deepseek_key,
-        base_url="https://api.deepseek.com",
-    )
-
-
-async def _call_deepseek(client: AsyncOpenAI, model_id: str, system_prompt: str, user_prompt: str) -> str:
-    """Call DeepSeek API directly and return the text response.
-
-    Disables thinking mode to minimize latency. In non-thinking mode,
-    DeepSeek v4 flash outputs at 120-240 tokens/sec with TTFT 0.6-1.2s,
-    vs 30-60s in thinking mode (which defaults to enabled).
-    """
-    response = await client.chat.completions.create(
-        model=model_id,
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt},
-        ],
-        extra_body={"thinking": {"type": "disabled"}},
-    )
-    return response.choices[0].message.content or ""
 
 
 def _extract_html_from_output(text: str) -> str:
@@ -557,8 +516,9 @@ class ModifySlide(BaseTool):
 
     async def run(self):
         load_dotenv(override=True)
-        # Small throttle between slide calls to avoid hitting TPM limits on lower-tier accounts
-        _throttle_secs = float(os.getenv("SLIDE_GENERATION_DELAY", "3"))
+        # Minimal throttle between slide calls — only if SLIDE_GENERATION_DELAY is explicitly set.
+        # Default 0: slides run in true parallel batches, DeepSeek handles concurrency.
+        _throttle_secs = float(os.getenv("SLIDE_GENERATION_DELAY", "0"))
         if _throttle_secs > 0:
             await asyncio.sleep(_throttle_secs)
         project_dir = get_project_dir(self.project_name)
@@ -604,9 +564,9 @@ class ModifySlide(BaseTool):
         else:
             _tb_log.info(f"[{slide_filename}] task_brief={_tb_len} chars. Preview: {_tb_preview!r}")
 
-        model_id = _get_html_writer_model_id()
+        model_id = resolve_sub_agent_model()
         system_prompt = _read_html_writer_instructions()
-        client = _make_deepseek_client(tool=self)
+        client = make_deepseek_client()
 
         sub_results: list[str] = []
         last_validation_error = ""
@@ -631,7 +591,7 @@ class ModifySlide(BaseTool):
             )
 
             try:
-                output_text = await _call_deepseek(client, model_id, system_prompt, prompt)
+                output_text = await call_deepseek(client, model_id, system_prompt, prompt)
             except Exception as exc:
                 import traceback
                 err_str = str(exc)
@@ -697,10 +657,24 @@ class ModifySlide(BaseTool):
                 task_brief=self.task_brief,
                 theme_css=theme_css,
             )
+            _is_fallback = True
+        else:
+            _is_fallback = False
 
         final_html = _convert_css_bg_images_to_img_tags(final_html)
         final_html = _embed_local_images_as_base64(final_html, project_dir)
         slide_path.write_text(final_html, encoding="utf-8")
+
+        # Validate fallback slides — flag if they fail structural checks (F15)
+        if _is_fallback:
+            import logging as _fb2_logging
+            _fb2_logger = _fb2_logging.getLogger(__name__)
+            _fb_validation = await asyncio.to_thread(validate_html, final_html, project_dir, False)
+            if not _fb_validation.get("valid"):
+                _fb2_logger.warning(
+                    f"{slide_filename}: FALLBACK validation FAILED — "
+                    f"degraded slide: {str(_fb_validation.get('error', ''))[:200]}"
+                )
 
         # ---- Post-write size check -----------------------------------------------
         # If a placeholder (fallback) was written, retry once more.
@@ -710,7 +684,7 @@ class ModifySlide(BaseTool):
         _POST_WRITE_MIN = 4000
         _pw_written_size = slide_path.stat().st_size
         _is_closing_brand = "CLOSING_BRAND" in self.task_brief
-        if _pw_written_size < _POST_WRITE_MIN and not _is_closing_brand:
+        if _pw_written_size < _POST_WRITE_MIN and not _is_closing_brand and not _is_fallback:
             import logging as _pw_logging
             _pw_logger = _pw_logging.getLogger(__name__)
             _pw_logger.warning(
@@ -729,7 +703,7 @@ class ModifySlide(BaseTool):
                     current_html=None,
                     theme_css=theme_css,
                     retry_validation_error=_pw_err,
-                    previous_failed_html=None,
+                    previous_failed_html=final_html,
                 )
                 _size_str = str(_pw_written_size)
                 _pw_prompt = (
@@ -746,7 +720,7 @@ class ModifySlide(BaseTool):
                     f"{_pw_prompt}"
                 )
                 try:
-                    _pw_output = await _call_deepseek(client, model_id, system_prompt, _pw_prompt)
+                    _pw_output = await call_deepseek(client, model_id, system_prompt, _pw_prompt)
                 except Exception as _pw_exc:
                     _pw_err_str = str(_pw_exc)
                     # Universal backoff for ALL post-write retry errors

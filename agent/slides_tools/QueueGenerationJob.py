@@ -37,6 +37,7 @@ from agent.master_repository import (
     check_cache,
     copy_from_cache,
 )
+from .slide_file_utils import get_error_wrong, get_error_correction
 
 logger = logging.getLogger(__name__)
 
@@ -74,6 +75,10 @@ class QueueGenerationJob(BaseTool):
         ...,
         description="List of formats being generated (e.g. ['slides', 'worksheet', 'activity guide'])",
     )
+    level: str = Field(
+        default="B1",
+        description="Proficiency level (A1, A2, B1, B2, C1). Drives slide complexity, activity selection, and cache key.",
+    )
     teacher_email: str | None = Field(
         default=None,
         description="Teacher's email address for completion notification.",
@@ -100,7 +105,7 @@ class QueueGenerationJob(BaseTool):
 
         # ── Master Repository cache check ──────────────────────────────────────
         _l1_list = [l.strip() for l in self.l1_languages.split(",") if l.strip()]
-        _level_val = getattr(self, "level", None) or "b1"
+        _level_val = self.level.lower()
         if len(_l1_list) == 1:
             _cache_key = get_combination_key(
                 grammar=self.grammar_point,
@@ -155,6 +160,7 @@ class QueueGenerationJob(BaseTool):
                 self.teacher_email,
                 _user_id,
                 self.context.get('format_hint', ''),
+                self.level,
             ),
             daemon=True,
             name=f"bg-gen-{job_id}",
@@ -195,12 +201,13 @@ def _run_background_generation(
     teacher_email: str | None,
     user_id: str | None,
     format_hint: str,
+    level: str = "B1",
 ) -> None:
     """Run the full generation pipeline in a background thread."""
     try:
         _run_generation(
             job_id, project_name, grammar_point, l1_languages,
-            age_group, formats, teacher_email, user_id, format_hint,
+            age_group, formats, teacher_email, user_id, format_hint, level,
         )
     except Exception as e:
         logger.error(f"Background generation failed for job {job_id}: {e}", exc_info=True)
@@ -293,10 +300,41 @@ def _load_yaml_data(
         try:
             from agent.tools.GetL1InterferenceTool import GetL1InterferenceTool
             result = GetL1InterferenceTool(grammar_point=gram_slug, language=l1).run()
-            if isinstance(result, dict):
-                l1_data_list.append(result)
+            if isinstance(result, dict) and "data" in result and isinstance(result.get("data"), dict):
+                # Unwrap: GetL1InterferenceTool returns {language, grammar_point, data: {...}}
+                # Consumers expect flattened shape with interference_patterns at top level.
+                merged = {**result["data"], "language": result.get("language", l1),
+                          "grammar_point": result.get("grammar_point", gram_slug)}
+                l1_data_list.append(merged)
+            elif isinstance(result, dict):
+                l1_data_list.append(result)  # already-flat or error dict
         except Exception as exc:
             logger.warning(f"Could not load L1 YAML for {l1}: {exc}")
+
+    # ── Validate & normalize at load boundary (F6) ──────────────────────────
+    from .yaml_schema import (
+        validate_grammar_yaml,
+        validate_l1_yaml,
+        normalize_common_errors,
+    )
+
+    if grammar_data:
+        gw = validate_grammar_yaml(grammar_data)
+        for w in gw:
+            logger.warning(f"Grammar schema: {w}")
+        # Normalize common_errors so consumers always see canonical error/correction
+        if "common_errors" in grammar_data:
+            grammar_data["common_errors"] = normalize_common_errors(grammar_data["common_errors"])
+
+    for l1_data in l1_data_list:
+        lw = validate_l1_yaml(l1_data)
+        for w in lw:
+            logger.warning(f"L1 schema: {w}")
+        # Normalize interference_patterns to canonical error/correction
+        if "interference_patterns" in l1_data:
+            l1_data["interference_patterns"] = normalize_common_errors(
+                l1_data["interference_patterns"]
+            )
 
     return grammar_data, l1_data_list
 
@@ -305,6 +343,13 @@ def _create_blank_slides(project_name: str, count: int) -> None:
     """Create blank HTML placeholder files for all slides."""
     presentations_dir = _get_mnt_path(project_name) / "presentations"
     presentations_dir.mkdir(parents=True, exist_ok=True)
+
+    # Remove stale slide files from prior runs (F23)
+    for stale in presentations_dir.glob("slide_*.html"):
+        try:
+            stale.unlink()
+        except OSError:
+            pass
 
     blank_html = (
         "<!DOCTYPE html><html lang=\"en\"><head>"
@@ -368,8 +413,8 @@ def _build_worksheet_html(
     html_parts.append("<h2>Section A: Fill the Gap</h2>")
     html_parts.append("<p>Complete the sentences with the correct form.</p><ol>")
     for i, err in enumerate(errors[:4]):
-        wrong = _s(err.get("wrong", err.get("example_wrong", "")))
-        correct = _s(err.get("correct", err.get("example_correct", "")))
+        wrong = _s(get_error_wrong(err))
+        correct = _s(get_error_correction(err))
         explanation = _s(err.get("explanation", ""))
         gap_text = correct if correct else wrong
         html_parts.append(f"<li>{gap_text}</li>")
@@ -380,8 +425,8 @@ def _build_worksheet_html(
     html_parts.append("<h2>Section B: Error Correction</h2>")
     html_parts.append("<p>Each sentence has ONE error. Correct it.</p><ol>")
     for i, err in enumerate(errors[4:8], start=1):
-        wrong = _s(err.get("wrong", err.get("example_wrong", "")))
-        correct = _s(err.get("correct", err.get("example_correct", "")))
+        wrong = _s(get_error_wrong(err))
+        correct = _s(get_error_correction(err))
         if wrong:
             html_parts.append(f'<li><span class="error">{wrong}</span> → <span class="correct">{correct}</span></li>')
     html_parts.append("</ol></div>")
@@ -390,10 +435,11 @@ def _build_worksheet_html(
     if l1_patterns:
         html_parts.append('<div class="section">')
         html_parts.append("<h2>Section C: L1 Drill — Watch Your Language!</h2>")
-        html_parts.append("<p>Fix these sentences that [L1] speakers often get wrong.</p><ol>")
+        l1_display = l1_languages if l1_languages else "some"
+        html_parts.append(f"<p>Fix these sentences that {l1_display} speakers often get wrong.</p><ol>")
         for i, p in enumerate(l1_patterns[:4]):
-            wrong = _s(p.get("example_wrong", p.get("wrong", "")))
-            correct = _s(p.get("example_correct", p.get("correct", "")))
+            wrong = _s(get_error_wrong(p))
+            correct = _s(get_error_correction(p))
             if wrong:
                 html_parts.append(f'<li><span class="error">{wrong}</span> → <span class="correct">{correct}</span></li>')
         html_parts.append("</ol></div>")
@@ -410,7 +456,7 @@ def _build_worksheet_html(
     html_parts.append('<div class="answer-key">')
     html_parts.append("<h2>Answer Key</h2><ol>")
     for err in errors[:8]:
-        correct = _s(err.get("correct", err.get("example_correct", "")))
+        correct = _s(get_error_correction(err))
         if correct:
             html_parts.append(f"<li>{correct}</li>")
     html_parts.append("</ol>")
@@ -520,6 +566,7 @@ def _run_generation(
     teacher_email: str | None,
     user_id: str | None,
     format_hint: str | None,
+    level: str = "B1",
 ) -> None:
     """Core generation logic — runs in its own thread.
 
@@ -554,10 +601,10 @@ def _run_generation(
         _write_progress(project_name, "2:slide-plan", "start")
         from agent.slides_tools.slide_plan import compute_slide_plan, build_all_task_briefs
 
-        slide_plan = compute_slide_plan(grammar_data, l1_languages, age_group)
+        slide_plan = compute_slide_plan(grammar_data, l1_languages, age_group, level)
         slide_count = len(slide_plan)
         task_briefs = build_all_task_briefs(
-            slide_plan, grammar_data, l1_data_list, age_group, l1_languages
+            slide_plan, grammar_data, l1_data_list, age_group, l1_languages, level,
         )
 
         # Log task_brief sizes
@@ -591,14 +638,46 @@ def _run_generation(
             _write_progress(project_name, "3:theme", f"{theme_path.name}")
         except Exception as exc:
             logger.warning(f"Theme generation skipped: {exc}")
+            # F21: Write deterministic fallback theme so slides still have visual
+            # theming when the primary theme generator fails.
+            _FALLBACK_CSS = """\
+/*
+ * CogniESL Theme DNA — fallback (deterministic).
+ */
+:root {
+    --primary: #4F46E5;
+    --primary-light: #818CF8;
+    --primary-dark: #3730A3;
+    --secondary: #F59E0B;
+    --accent: #10B981;
+    --bg: #F8FAFC;
+    --bg-card: #FFFFFF;
+    --text-primary: #1E293B;
+    --text-secondary: #64748B;
+    --font-heading: 'Inter', system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+    --border-radius: 12px;
+    --shadow: 0 6px 24px rgba(0,0,0,0.08);
+}
+.slide { position: relative; background: var(--bg); color: var(--text-primary); font-family: var(--font-body); }
+.bg-card { background: var(--bg-card); border-radius: var(--border-radius); box-shadow: var(--shadow); }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
+"""
+            try:
+                presentations_dir = get_project_dir(project_name)
+                (presentations_dir / "_theme.css").write_text(_FALLBACK_CSS, encoding="utf-8")
+                logger.info("Fallback theme CSS written to _theme.css")
+                _write_progress(project_name, "3:theme", "_theme.css (fallback)")
+            except Exception as fb_exc:
+                logger.warning(f"Fallback theme also failed: {fb_exc}")
 
-        # ── Step 4: Run ModifySlide sequentially (one slide at a time) ──────────
+        # ── Step 4: Run ModifySlide in parallel batches (BATCH_SIZE at a time) ────
         async def _run_slide_batches():
             from agent.slides_tools.ModifySlide import ModifySlide
 
             # Get slide file names (may be 'slide_01.html', 'slide_02.html', ...)
             slide_files = _list_slide_filenames(project_name)
-            delay = int(os.getenv("SLIDE_GENERATION_DELAY", "5"))  # seconds between batches
+            delay = int(os.getenv("SLIDE_GENERATION_DELAY", "2"))  # seconds between batches
             total_batches = (len(slide_files) + BATCH_SIZE - 1) // BATCH_SIZE
 
             for i in range(0, len(slide_files), BATCH_SIZE):
@@ -621,21 +700,22 @@ def _run_generation(
                     )
 
                 if tasks:
+                    results = await asyncio.gather(
+                        *[asyncio.wait_for(t, timeout=120) for t in tasks],
+                        return_exceptions=True,
+                    )
                     batch_ok = True
-                    for t_idx, task in enumerate(tasks):
-                        # Individual task timeout — one slow slide doesn't block others
+                    for t_idx, result in enumerate(results):
                         filename = batch[t_idx]
-                        try:
-                            await asyncio.wait_for(task, timeout=120)
-                        except asyncio.TimeoutError:
+                        if isinstance(result, asyncio.TimeoutError):
                             logger.error(
                                 f"Batch {batch_num}/{total_batches}: TIMEOUT after 120s for "
                                 f"{filename} (job {job_id}). Slide will be blank."
                             )
                             batch_ok = False
-                        except Exception as exc:
+                        elif isinstance(result, Exception):
                             logger.error(
-                                f"Batch {batch_num}/{total_batches}: ERROR on {filename}: {exc}"
+                                f"Batch {batch_num}/{total_batches}: ERROR on {filename}: {result}"
                             )
                             batch_ok = False
                     logger.info(
@@ -643,6 +723,38 @@ def _run_generation(
                         f"{'ok' if batch_ok else 'partial fail'} "
                         f"({len(tasks)} slides) for job {job_id}"
                     )
+                    # F11: Write checkpoint after each batch so recovery on
+                    # restart can report partial progress (e.g. "28/32 done").
+                    try:
+                        import datetime as _dt
+                        checkpoint_path = presentations_dir / "_checkpoint.json"
+                        current = {}
+                        if checkpoint_path.exists():
+                            try:
+                                current = json.loads(checkpoint_path.read_text(encoding="utf-8"))
+                            except (json.JSONDecodeError, OSError):
+                                pass
+                        completed = list(set(
+                            current.get("completed_slides", []) +
+                            [int(re.search(r'slide_(\d+)', f).group(1))
+                             for f in batch if f not in [
+                                 batch[t_idx] for t_idx, r in enumerate(results)
+                                 if isinstance(r, Exception)
+                             ]]
+                        ))
+                        checkpoint = {
+                            "total_slides": len(slide_files),
+                            "completed_slides": sorted(completed),
+                            "current_batch": batch_num,
+                            "total_batches": total_batches,
+                            "last_updated": _dt.datetime.now(_dt.timezone.utc).isoformat(),
+                        }
+                        checkpoint_path.write_text(
+                            json.dumps(checkpoint, ensure_ascii=False, indent=2),
+                            encoding="utf-8",
+                        )
+                    except Exception:
+                        pass  # checkpoint is non-critical
 
                 if delay > 0 and i + BATCH_SIZE < len(slide_files):
                     await asyncio.sleep(delay)
@@ -761,6 +873,61 @@ def _run_generation(
                 _write_progress(project_name, "9:flashcards", f"FAILED: {exc}")
                 logger.warning(f"Flashcard generation skipped: {exc}")
 
+        # ── Step 9.5: Progress Tracker ────────────────────────────────────────
+        progress_tracker_path = None
+        _write_progress(project_name, "9.5:progress-tracker", "start")
+        try:
+            from agent.slides_tools.GenerateProgressTrackerPdf import GenerateProgressTrackerPdf
+
+            # Build can-do statements from CCQs and form examples
+            core_meaning = grammar_data.get("meaning", {}).get("core_meaning", "")
+            ccqs = grammar_data.get("meaning", {}).get("ccqs", [])
+            can_do_statements = []
+            if isinstance(ccqs, list):
+                for ccq in ccqs[:3]:
+                    if isinstance(ccq, dict):
+                        q = ccq.get("question", "") or ccq.get("q", "")
+                        if q:
+                            can_do_statements.append(q.rstrip("?"))
+            # Add form-oriented statements
+            form_data = grammar_data.get("form", {})
+            if form_data.get("affirmative"):
+                can_do_statements.append(f"Form affirmative sentences with {grammar_point}")
+            if form_data.get("negative"):
+                can_do_statements.append(f"Form negative sentences with {grammar_point}")
+            if form_data.get("questions"):
+                can_do_statements.append(f"Form questions with {grammar_point}")
+
+            # Extract L1 error pairs
+            l1_lang = ""
+            l1_pairs = []
+            for ld in l1_data_list:
+                l1_lang = ld.get("language", ld.get("name", ""))
+                patterns = ld.get("interference_patterns", [])
+                for p in patterns[:3]:
+                    if isinstance(p, dict):
+                        wrong = get_error_wrong(p)
+                        correct = get_error_correction(p)
+                        if wrong and correct:
+                            l1_pairs.append({"wrong": wrong, "correct": correct})
+                if l1_lang:
+                    break  # Use the first L1
+
+            tracker_result = GenerateProgressTrackerPdf(
+                project_name=project_name,
+                grammar_point=grammar_point,
+                core_meaning=str(core_meaning),
+                can_do_statements_json=json.dumps(can_do_statements[:6]),
+                l1_language=l1_lang,
+                l1_error_pairs_json=json.dumps(l1_pairs[:3]),
+            ).run()
+            logger.info(f"Progress tracker: {tracker_result[:200]}")
+            _write_progress(project_name, "9.5:progress-tracker", "done")
+            progress_tracker_path = f"./mnt/{project_name}/documents/{project_name}_progress-tracker.source.html"
+        except Exception as exc:
+            _write_progress(project_name, "9.5:progress-tracker", f"FAILED: {exc}")
+            logger.warning(f"Progress tracker skipped: {exc}")
+
         # ── Step 10: Mark job complete ──────────────────────────────────────────
         _write_progress(project_name, "10:mark-complete", "start")
         from agent.slides_tools.MarkJobComplete import MarkJobComplete
@@ -772,6 +939,7 @@ def _run_generation(
             worksheet_pdf_path=worksheet_paths.get("source"),
             activity_pdf_path=activity_paths.get("source"),
             flashcard_pdf_path=flashcard_path,
+            progress_tracker_pdf_path=progress_tracker_path,
         ).run()
         logger.info(f"Job {job_id} complete: {mark_result[:200]}")
         _write_progress(project_name, "10:mark-complete", "done")

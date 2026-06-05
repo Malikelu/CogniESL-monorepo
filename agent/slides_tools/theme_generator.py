@@ -275,6 +275,8 @@ def generate_theme(grammar_point: str, age_group: str) -> dict:
         text_l = 15
         muted_l = 45
 
+    _chosen_fonts = random.choice(_FONT_PAIRS)
+
     theme = {
         "mood": mood,
         "is_dark": is_dark,
@@ -293,8 +295,8 @@ def generate_theme(grammar_point: str, age_group: str) -> dict:
         "text_primary": _hsl(0, 0, text_l),
         "text_secondary": _hsl(0, 0, muted_l),
         # Typography
-        "font_heading": random.choice(_FONT_PAIRS)[0],
-        "font_body": random.choice(_FONT_PAIRS)[1],
+        "font_heading": _chosen_fonts[0],
+        "font_body": _chosen_fonts[1],
         # Decor
         "bg_pattern": random.choice(_BG_PATTERNS),
         # Misc
