@@ -37,7 +37,7 @@ from agent.master_repository import (
     check_cache,
     copy_from_cache,
 )
-from .slide_file_utils import get_error_wrong, get_error_correction
+from .slide_file_utils import get_error_wrong, get_error_correction, get_project_dir
 
 logger = logging.getLogger(__name__)
 
@@ -114,24 +114,29 @@ class QueueGenerationJob(BaseTool):
                 level=_level_val,
             )
             if check_cache(_cache_key):
+                job_id = _jobs.create_job(
+                    email=self.teacher_email,
+                    project_name=self.project_name,
+                    grammar_point=self.grammar_point,
+                    l1_languages=self.l1_languages,
+                    age_group=self.age_group,
+                    formats=self.formats,
+                    user_id=_user_id,
+                )
+                # TODO (Phase 2): Cache hit should spawn background thread to
+                # generate non-slide materials (worksheet, activity guide, etc.)
+                # while reusing cached slides. Currently returns slides only.
                 _dest = _get_mnt_path(self.project_name) / "presentations"
                 _dest.mkdir(parents=True, exist_ok=True)
                 copied = copy_from_cache(_cache_key, _dest)
                 if copied:
-                    job_id = _jobs.create_job(
-                        email=self.teacher_email,
-                        project_name=self.project_name,
-                        grammar_point=self.grammar_point,
-                        l1_languages=self.l1_languages,
-                        age_group=self.age_group,
-                        formats=self.formats,
-                        user_id=_user_id,
-                    )
                     return (
                         f"CACHE HIT ✅ job_id={job_id} — pre-generated slides found for "
                         f"'{_cache_key}'. Files copied to {_dest}. "
                         f"Skip generation — proceed directly to MarkJobComplete."
                     )
+                # Cache copy failed — fall through to normal generation
+                logger.warning(f"Cache copy failed for {_cache_key} — falling through to full generation")
 
         # ── Create job record ──────────────────────────────────────────────────
         job_id = _jobs.create_job(
@@ -571,22 +576,31 @@ def _run_generation(
     """Core generation logic — runs in its own thread.
 
     FULL PYTHON PIPELINE (no agent):
-      1. Load YAML data as dicts
+      1. Load YAML data as dicts (grammar + L1 interference)
       2. Compute slide plan → build task_briefs from YAML verbatim
-      3. Create blank slide placeholders
+      3. Create blank slide placeholders + generate theme CSS
       4. Call ModifySlide in parallel batches (BATCH_SIZE at a time)
       5. ValidateSlideSet
-      6. BuildOfflineBundle
-      7. CreateDocument for worksheet (if requested)
-      8. CreateDocument for activity guide (if requested)
-      9. GenerateFlashcardPdf (if requested)
-     10. MarkJobComplete
+      6. BuildOfflineBundle (self-contained HTML viewer — primary delivery format)
+
+      Core deliverables (always generated when formats include them):
+      7.  CreateDocument + ConvertDocument → worksheet (DOCX + PDF)
+      8.  CreateDocument + ConvertDocument → activity guide (DOCX + PDF)
+      9.  GenerateFlashcardPdf + ConvertDocument → flashcards (PDF)
+      9.5. GenerateProgressTrackerPdf + ConvertDocument → progress tracker (PDF)
+
+      Opt-in extras (only if teacher explicitly requests):
+      6.5. BuildPptxFromHtmlSlides → PowerPoint (triggered by "pptx" or
+           "powerpoint" in formats list — NOT automatic)
+
+     10. MarkJobComplete (update job status, send email, populate cache)
     """
     all_formats = [f.strip().lower() for f in formats] if isinstance(formats, list) else [formats.strip().lower()]
     has_slides = "slides" in all_formats or not all_formats
     has_worksheet = "worksheet" in all_formats
     has_activity = "activity" in all_formats or "activity guide" in all_formats
     has_flashcards = "flashcards" in all_formats or "flash card" in all_formats
+    has_pptx = "pptx" in all_formats or "powerpoint" in all_formats
 
     try:
         # ── Step 1: Load YAML data ─────────────────────────────────────────────
@@ -596,6 +610,8 @@ def _run_generation(
             grammar_data = {}
         logger.info(f"Loaded YAML: grammar={'yes' if grammar_data else 'no'}, l1_files={len(l1_data_list)}")
         _write_progress(project_name, "1:load-yaml", f"grammar={bool(grammar_data)}, l1={len(l1_data_list)}")
+        # Ensure presentations_dir is always set for later steps
+        presentations_dir = _get_mnt_path(project_name) / "presentations"
 
         # ── Step 2: Compute slide plan + build task_briefs ──────────────────────
         _write_progress(project_name, "2:slide-plan", "start")
@@ -628,10 +644,9 @@ def _run_generation(
         # ── Step 3b: Generate Theme DNA ─────────────────────────────────────────
         # Before any slides, generate and write a cohesive visual theme (_theme.css)
         # so every ModifySlide call shares the same color palette, fonts, and style.
+        presentations_dir = get_project_dir(project_name)
         try:
             from agent.slides_tools.theme_generator import generate_theme, write_theme_css
-            from agent.slides_tools.slide_file_utils import get_project_dir
-            presentations_dir = get_project_dir(project_name)
             theme = generate_theme(grammar_point, age_group)
             theme_path = write_theme_css(presentations_dir, theme)
             logger.info(f"Theme DNA: {theme_path.name} ({theme.get('mood', '?')}/{theme.get('font_heading', '?')})")
@@ -664,7 +679,6 @@ def _run_generation(
 h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
 """
             try:
-                presentations_dir = get_project_dir(project_name)
                 (presentations_dir / "_theme.css").write_text(_FALLBACK_CSS, encoding="utf-8")
                 logger.info("Fallback theme CSS written to _theme.css")
                 _write_progress(project_name, "3:theme", "_theme.css (fallback)")
@@ -802,6 +816,31 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
                 _write_progress(project_name, "6:bundle", f"FAILED: {exc}")
                 logger.warning(f"Bundle build skipped: {exc}")
 
+        # ── Step 6.5: Build PPTX (opt-in only — teacher must explicitly request) ──
+        pptx_path = None
+        if has_pptx and has_slides and slide_count > 0:
+            _write_progress(project_name, "6.5:pptx", "start")
+            try:
+                from agent.slides_tools.BuildPptxFromHtmlSlides import BuildPptxFromHtmlSlides
+                slide_names = sorted([
+                    f.stem for f in presentations_dir.glob("slide_*.html")
+                    if f.stat().st_size > 2500
+                ])
+                if slide_names:
+                    pptx_result = BuildPptxFromHtmlSlides(
+                        project_name=project_name,
+                        slide_names=slide_names,
+                        output_filename=project_name,
+                    ).run()
+                    logger.info(f"PPTX: {pptx_result[:200]}")
+                    _write_progress(project_name, "6.5:pptx", "done")
+                    pptx_path = f"./mnt/{project_name}/presentations/{project_name}.pptx"
+                else:
+                    _write_progress(project_name, "6.5:pptx", "skipped (no non-blank slides)")
+            except Exception as exc:
+                _write_progress(project_name, "6.5:pptx", f"FAILED: {exc}")
+                logger.warning(f"PPTX build skipped: {exc}")
+
         # ── Step 7: Worksheet ───────────────────────────────────────────────────
         worksheet_paths = {}
         if has_worksheet:
@@ -820,6 +859,19 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
                 logger.info(f"Worksheet: {str(doc_result)[:200]}")
                 _write_progress(project_name, "7:worksheet", "done")
                 worksheet_paths["source"] = f"./mnt/{project_name}/documents/{project_name}_worksheet.source.html"
+
+                # Convert to delivery formats (DOCX + PDF)
+                from agent.docs_tools.ConvertDocument import ConvertDocument
+                _write_progress(project_name, "7:worksheet-convert", "start")
+                for fmt in ("docx", "pdf"):
+                    cv_result = ConvertDocument(
+                        project_name=project_name,
+                        document_name=f"{project_name}_worksheet",
+                        output_format=fmt,
+                        overwrite=True,
+                    ).run()
+                    worksheet_paths[fmt] = f"./mnt/{project_name}/documents/{project_name}_worksheet.{fmt}"
+                _write_progress(project_name, "7:worksheet-convert", "done")
             except Exception as exc:
                 _write_progress(project_name, "7:worksheet", f"FAILED: {exc}")
                 logger.warning(f"Worksheet generation skipped: {exc}")
@@ -842,6 +894,19 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
                 logger.info(f"Activity guide: {str(doc_result)[:200]}")
                 _write_progress(project_name, "8:activity", "done")
                 activity_paths["source"] = f"./mnt/{project_name}/documents/{project_name}_activity_guide.source.html"
+
+                # Convert to delivery formats (DOCX + PDF)
+                from agent.docs_tools.ConvertDocument import ConvertDocument
+                _write_progress(project_name, "8:activity-convert", "start")
+                for fmt in ("docx", "pdf"):
+                    cv_result = ConvertDocument(
+                        project_name=project_name,
+                        document_name=f"{project_name}_activity_guide",
+                        output_format=fmt,
+                        overwrite=True,
+                    ).run()
+                    activity_paths[fmt] = f"./mnt/{project_name}/documents/{project_name}_activity_guide.{fmt}"
+                _write_progress(project_name, "8:activity-convert", "done")
             except Exception as exc:
                 _write_progress(project_name, "8:activity", f"FAILED: {exc}")
                 logger.warning(f"Activity guide generation skipped: {exc}")
@@ -854,11 +919,14 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
                 from agent.docs_tools.GenerateFlashcardPdf import GenerateFlashcardPdf
                 common_errors = grammar_data.get("common_errors") or []
                 l1_patterns = []
-                l1_lang_single = ""
+                l1_lang_names = []
                 for ld in l1_data_list:
                     patterns = ld.get("interference_patterns") or ld.get("patterns") or []
                     l1_patterns.extend(patterns)
-                    l1_lang_single = ld.get("language", ld.get("name", ""))
+                    lang = ld.get("language", ld.get("name", ""))
+                    if lang:
+                        l1_lang_names.append(lang)
+                l1_lang_single = ", ".join(l1_lang_names) if l1_lang_names else ""
                 flash_result = GenerateFlashcardPdf(
                     project_name=project_name,
                     grammar_point=grammar_point,
@@ -869,6 +937,18 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
                 logger.info(f"Flashcards: {flash_result[:200]}")
                 _write_progress(project_name, "9:flashcards", "done")
                 flashcard_path = f"./mnt/{project_name}/documents/{project_name}_flashcards.source.html"
+
+                # Convert to PDF
+                from agent.docs_tools.ConvertDocument import ConvertDocument
+                _write_progress(project_name, "9:flashcards-convert", "start")
+                ConvertDocument(
+                    project_name=project_name,
+                    document_name=f"{project_name}_flashcards",
+                    output_format="pdf",
+                    overwrite=True,
+                ).run()
+                flashcard_path = f"./mnt/{project_name}/documents/{project_name}_flashcards.pdf"
+                _write_progress(project_name, "9:flashcards-convert", "done")
             except Exception as exc:
                 _write_progress(project_name, "9:flashcards", f"FAILED: {exc}")
                 logger.warning(f"Flashcard generation skipped: {exc}")
@@ -924,6 +1004,18 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
             logger.info(f"Progress tracker: {tracker_result[:200]}")
             _write_progress(project_name, "9.5:progress-tracker", "done")
             progress_tracker_path = f"./mnt/{project_name}/documents/{project_name}_progress-tracker.source.html"
+
+            # Convert to PDF
+            from agent.docs_tools.ConvertDocument import ConvertDocument
+            _write_progress(project_name, "9.5:progress-tracker-convert", "start")
+            ConvertDocument(
+                project_name=project_name,
+                document_name=f"{project_name}_progress-tracker",
+                output_format="pdf",
+                overwrite=True,
+            ).run()
+            progress_tracker_path = f"./mnt/{project_name}/documents/{project_name}_progress-tracker.pdf"
+            _write_progress(project_name, "9.5:progress-tracker-convert", "done")
         except Exception as exc:
             _write_progress(project_name, "9.5:progress-tracker", f"FAILED: {exc}")
             logger.warning(f"Progress tracker skipped: {exc}")
@@ -935,9 +1027,12 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
             job_id=job_id,
             project_name=project_name,
             html_bundle_path=bundle_path,
+            pptx_path=pptx_path,
             slide_count=slide_count,
             worksheet_pdf_path=worksheet_paths.get("source"),
+            worksheet_docx_path=worksheet_paths.get("docx"),
             activity_pdf_path=activity_paths.get("source"),
+            activity_docx_path=activity_paths.get("docx"),
             flashcard_pdf_path=flashcard_path,
             progress_tracker_pdf_path=progress_tracker_path,
         ).run()

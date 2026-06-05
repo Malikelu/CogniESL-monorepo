@@ -54,6 +54,9 @@ async def call_deepseek(
     Disables thinking mode to minimize latency. In non-thinking mode,
     DeepSeek v4 flash outputs at 120-240 tokens/sec with TTFT 0.6-1.2s,
     vs 30-60s in thinking mode (which defaults to enabled).
+
+    Timeout set to 90s — batch-level asyncio.wait_for(120s) provides
+    an outer bound, this ensures individual API calls don't hang.
     """
     response = await client.chat.completions.create(
         model=model_id,
@@ -62,5 +65,6 @@ async def call_deepseek(
             {"role": "user", "content": user_prompt},
         ],
         extra_body={"thinking": {"type": "disabled"}},
+        timeout=90.0,
     )
     return response.choices[0].message.content or ""

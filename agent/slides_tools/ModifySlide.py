@@ -595,14 +595,19 @@ class ModifySlide(BaseTool):
             except Exception as exc:
                 import traceback
                 err_str = str(exc)
-                # Rate limit: wait and retry rather than failing immediately
+                # Rate limit: wait and retry WITHOUT consuming an attempt.
+                # DeepSeek rate limits are transient — the same prompt should work
+                # after a backoff; burning an attempt on a rate limit wastes retries.
                 if "RateLimitError" in type(exc).__name__ or "rate_limit" in err_str.lower() or "rate limit" in err_str.lower():
-                    wait = 15 * attempt  # 15s, 30s
+                    wait = 15 + (attempt * 5)  # 20s, 25s, 30s
                     import logging
                     logging.getLogger(__name__).warning(
                         f"Rate limit hit on attempt {attempt} for {slide_filename}. Waiting {wait}s before retry."
                     )
                     await asyncio.sleep(wait)
+                    # Don't set last_validation_error — the prompt was fine,
+                    # the API was just busy. Retry clean on next attempt.
+                    continue
                 last_validation_error = f"DeepSeek API error (attempt {attempt}): {exc}\n{traceback.format_exc()}"
                 continue
             sub_results.append(output_text)
