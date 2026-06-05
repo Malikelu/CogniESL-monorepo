@@ -246,10 +246,9 @@ class GenerateProgressTrackerPdf(BaseTool):
             l1_checks=l1_pairs[:5],
         )
 
-        # Determine file stem
-        safe_grammar = self.grammar_point.lower().replace(" ", "_").replace("/", "_")
-        safe_l1 = self.l1_language.lower().replace(" ", "_") if self.l1_language else "general"
-        stem = f"{safe_grammar}-{safe_l1}-progress-tracker"
+        # Use project_name as the stem so MarkJobComplete's expected path matches the file on disk.
+        # The pipeline (QueueGenerationJob.py) expects {project_name}_progress-tracker.{ext}.
+        stem = f"{self.project_name}_progress-tracker"
 
         # Write .source.html
         html_path = doc_dir / f"{stem}.source.html"

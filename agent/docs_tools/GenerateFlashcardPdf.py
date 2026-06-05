@@ -126,12 +126,7 @@ class GenerateFlashcardPdf(BaseTool):
             '</body></html>'
         )
 
-        doc_name = (
-            self.grammar_point.lower().replace(" ", "_")
-            + "-"
-            + (self.l1_language.lower() if self.l1_language else "general")
-            + "-flashcards"
-        )
+        doc_name = self.project_name + "_flashcards"
 
         doc_result = CreateDocument(
             project_name=self.project_name,
@@ -139,13 +134,13 @@ class GenerateFlashcardPdf(BaseTool):
             content={"type": "html", "value": html},
         ).run()
 
-        if doc_result.startswith("Error"):
+        if isinstance(doc_result, str) and doc_result.startswith("Error"):
             return doc_result
 
         pdf_result = ConvertDocument(
             project_name=self.project_name,
             document_name=doc_name,
-            target_format="pdf",
+            output_format="pdf",
         ).run()
 
         return pdf_result
