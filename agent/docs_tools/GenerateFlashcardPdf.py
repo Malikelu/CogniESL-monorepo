@@ -8,7 +8,7 @@ from pathlib import Path
 from agency_swarm.tools import BaseTool
 from pydantic import Field
 
-from ..slides_tools.slide_file_utils import get_error_wrong, get_error_correction
+from agent.slides_tools.slide_file_utils import get_error_wrong, get_error_correction
 from .CreateDocument import CreateDocument
 from .ConvertDocument import ConvertDocument
 

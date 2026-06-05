@@ -15,8 +15,8 @@ from agent.guardrails import require_esl_topic, validate_l1_content, validate_sl
 
 # Module-level imports for _select_tools() (used before create_cogniesl_agent() executes)
 from agency_swarm.tools import IPythonInterpreter
-from tools import SearchGrammarTool, SearchActivitiesTool, GetL1InterferenceTool
-from slides_tools import (
+from agent.tools import SearchGrammarTool, SearchActivitiesTool, GetL1InterferenceTool
+from agent.slides_tools import (
     InsertNewSlides,
     ModifySlide,
     ManageTheme,
@@ -25,24 +25,24 @@ from slides_tools import (
     ImageSearch,
     GenerateImage,
 )
-from slides_tools.QueueGenerationJob import QueueGenerationJob
-from slides_tools.MarkJobComplete import MarkJobComplete
-from slides_tools.BuildOfflineBundle import BuildOfflineBundle
-from slides_tools.SnapSlideForEmail import SnapSlideForEmail
-from shared_tools.CopyFile import CopyFile
-from utility_tools.ReadFile import ReadFile
-from validation_tools import (
+from agent.slides_tools.QueueGenerationJob import QueueGenerationJob
+from agent.slides_tools.MarkJobComplete import MarkJobComplete
+from agent.slides_tools.BuildOfflineBundle import BuildOfflineBundle
+from agent.slides_tools.SnapSlideForEmail import SnapSlideForEmail
+from agent.shared_tools.CopyFile import CopyFile
+from agent.utility_tools.ReadFile import ReadFile
+from agent.validation_tools import (
     ValidateSlideSet,
     ValidateAndFixSlides,
     ValidateL1Content,
 )
-from docs_tools.CreateDocument import CreateDocument
-from docs_tools.ConvertDocument import ConvertDocument
-from docs_tools.ModifyDocument import ModifyDocument
-from docs_tools.ViewDocument import ViewDocument
-from docs_tools.ListDocuments import ListDocuments
-from docs_tools.GenerateFlashcardPdf import GenerateFlashcardPdf
-from docs_tools.GenerateProgressTrackerPdf import GenerateProgressTrackerPdf
+from agent.docs_tools.CreateDocument import CreateDocument
+from agent.docs_tools.ConvertDocument import ConvertDocument
+from agent.docs_tools.ModifyDocument import ModifyDocument
+from agent.docs_tools.ViewDocument import ViewDocument
+from agent.docs_tools.ListDocuments import ListDocuments
+from agent.docs_tools.GenerateFlashcardPdf import GenerateFlashcardPdf
+from agent.docs_tools.GenerateProgressTrackerPdf import GenerateProgressTrackerPdf
 
 
 def _build_instructions() -> str:
