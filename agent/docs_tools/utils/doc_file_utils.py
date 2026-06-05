@@ -3,7 +3,7 @@
 import re
 from pathlib import Path
 
-from ...slides_tools.slide_file_utils import get_mnt_dir  # canonical implementation
+from agent.slides_tools.slide_file_utils import get_mnt_dir  # canonical implementation
 
 
 def get_project_dir(project_name: str) -> Path:
